@@ -1,9 +1,12 @@
 import { createClient } from "@/lib/supabase/server";
+import { ensureLessonUnlockedForUser } from "@/lib/queries/learning";
 
 export async function assertLessonUnlockedForUser(
   userId: string,
   lessonId: string
 ): Promise<{ ok: true } | { ok: false; error: string }> {
+  await ensureLessonUnlockedForUser(userId, lessonId);
+
   const supabase = await createClient();
 
   const { data: progress } = await supabase

@@ -19,6 +19,7 @@ import {
   parseJsonField,
   str,
 } from "@/lib/admin/form-utils";
+import { QUESTION_BANK_METADATA_KEY } from "@/lib/admin/constants";
 
 export async function getAdminContentTree(): Promise<AdminContentTree> {
   await requireAdmin();
@@ -65,6 +66,7 @@ export async function getAdminContentTree(): Promise<AdminContentTree> {
     exercises: (exercises ?? []).map((e) => ({
       ...e,
       content: (e.content ?? {}) as Record<string, unknown>,
+      metadata: (e.metadata ?? {}) as Record<string, unknown>,
     })),
     questions: questionsWithRelations,
   };
@@ -81,6 +83,7 @@ export async function getPendingReviewExercises(): Promise<AdminExercise[]> {
   return (data ?? []).map((e) => ({
     ...e,
     content: (e.content ?? {}) as Record<string, unknown>,
+    metadata: (e.metadata ?? {}) as Record<string, unknown>,
   }));
 }
 
@@ -123,6 +126,7 @@ export async function updateSkill(formData: FormData): Promise<ActionResult> {
       slug: str(formData, "slug").toLowerCase(),
       description: optionalStr(formData, "description"),
       icon: optionalStr(formData, "icon"),
+      sort_order: optionalInt(formData, "sortOrder") ?? undefined,
       is_active: formData.get("isActive") === "true",
     })
     .eq("id", id);
@@ -180,6 +184,7 @@ export async function updateUnit(formData: FormData): Promise<ActionResult> {
       slug: str(formData, "slug").toLowerCase(),
       description: optionalStr(formData, "description"),
       unlock_after_unit_id: optionalStr(formData, "unlockAfterUnitId"),
+      sort_order: optionalInt(formData, "sortOrder") ?? undefined,
       is_active: formData.get("isActive") === "true",
     })
     .eq("id", id);
@@ -237,6 +242,7 @@ export async function updateLesson(formData: FormData): Promise<ActionResult> {
       description: optionalStr(formData, "description"),
       estimated_minutes: optionalInt(formData, "estimatedMinutes") ?? 15,
       unlock_after_lesson_id: optionalStr(formData, "unlockAfterLessonId"),
+      sort_order: optionalInt(formData, "sortOrder") ?? undefined,
       is_active: formData.get("isActive") === "true",
     })
     .eq("id", id);
@@ -308,6 +314,7 @@ export async function updateExercise(formData: FormData): Promise<ActionResult> 
       content: content as Json,
       max_score: optionalInt(formData, "maxScore") ?? 100,
       time_limit_seconds: optionalInt(formData, "timeLimitSeconds"),
+      sort_order: optionalInt(formData, "sortOrder") ?? undefined,
     })
     .eq("id", id);
 
@@ -369,6 +376,164 @@ export async function updateExerciseStatus(
 
 export async function submitExerciseForReview(exerciseId: string): Promise<ActionResult> {
   return updateExerciseStatus(exerciseId, "pending_review");
+}
+
+async function ensureQuestionBankLesson(programId: string): Promise<string> {
+  const supabase = await createClient();
+
+  const { data: existingLevel } = await supabase
+    .from("levels")
+    .select("id")
+    .eq("program_id", programId)
+    .eq("slug", "internal")
+    .maybeSingle();
+
+  let levelId = existingLevel?.id;
+  if (!levelId) {
+    const { data: level, error } = await supabase
+      .from("levels")
+      .insert({
+        program_id: programId,
+        slug: "internal",
+        name: "Internal",
+        description: "Internal content containers",
+        sort_order: 9999,
+        is_active: false,
+        metadata: { internal: true } as Json,
+      })
+      .select("id")
+      .single();
+    if (error || !level) throw new Error(error?.message ?? "Failed to create internal level");
+    levelId = level.id;
+  }
+
+  const { data: existingSkill } = await supabase
+    .from("skills")
+    .select("id")
+    .eq("level_id", levelId)
+    .eq("slug", "question-banks")
+    .maybeSingle();
+
+  let skillId = existingSkill?.id;
+  if (!skillId) {
+    const { data: skill, error } = await supabase
+      .from("skills")
+      .insert({
+        level_id: levelId,
+        slug: "question-banks",
+        name: "Question Banks",
+        description: "Shared reusable question pools",
+        sort_order: 0,
+        is_active: false,
+        metadata: { internal: true } as Json,
+      })
+      .select("id")
+      .single();
+    if (error || !skill) throw new Error(error?.message ?? "Failed to create question bank skill");
+    skillId = skill.id;
+  }
+
+  const { data: existingUnit } = await supabase
+    .from("units")
+    .select("id")
+    .eq("skill_id", skillId)
+    .eq("slug", "shared-pool")
+    .maybeSingle();
+
+  let unitId = existingUnit?.id;
+  if (!unitId) {
+    const { data: unit, error } = await supabase
+      .from("units")
+      .insert({
+        skill_id: skillId,
+        slug: "shared-pool",
+        title: "Shared Pool",
+        description: "Container for question bank exercises",
+        sort_order: 0,
+        is_active: false,
+        metadata: { internal: true } as Json,
+      })
+      .select("id")
+      .single();
+    if (error || !unit) throw new Error(error?.message ?? "Failed to create question bank unit");
+    unitId = unit.id;
+  }
+
+  const { data: existingLesson } = await supabase
+    .from("lessons")
+    .select("id")
+    .eq("unit_id", unitId)
+    .eq("slug", "question-bank-container")
+    .maybeSingle();
+
+  if (existingLesson?.id) return existingLesson.id;
+
+  const { data: lesson, error } = await supabase
+    .from("lessons")
+    .insert({
+      unit_id: unitId,
+      slug: "question-bank-container",
+      title: "Question Bank Container",
+      description: "Holds reusable question bank exercises",
+      sort_order: 0,
+      estimated_minutes: 0,
+      is_active: false,
+      metadata: { internal: true } as Json,
+    })
+    .select("id")
+    .single();
+
+  if (error || !lesson) throw new Error(error?.message ?? "Failed to create question bank lesson");
+  return lesson.id;
+}
+
+export async function createQuestionBank(
+  formData: FormData
+): Promise<ActionResult<{ id: string }>> {
+  const user = await requireAdmin();
+  const supabase = await createClient();
+
+  const programId = str(formData, "programId");
+  const title = str(formData, "title");
+  const slug = str(formData, "slug").toLowerCase();
+  const exerciseType = str(formData, "exerciseType") as ExerciseType;
+
+  if (!programId || !title || !slug) {
+    return { success: false, error: "Program, title and slug required" };
+  }
+
+  try {
+    const lessonId = await ensureQuestionBankLesson(programId);
+
+    const { data, error } = await supabase
+      .from("exercises")
+      .insert({
+        lesson_id: lessonId,
+        slug,
+        title,
+        instructions: optionalStr(formData, "instructions"),
+        exercise_type: exerciseType,
+        content: {} as Json,
+        metadata: { [QUESTION_BANK_METADATA_KEY]: true } as Json,
+        max_score: 100,
+        sort_order: await nextSortOrder("exercises", "lesson_id", lessonId),
+        status: "published",
+        is_active: true,
+        created_by: user.id,
+      })
+      .select("id")
+      .single();
+
+    if (error || !data) return { success: false, error: error?.message ?? "Failed" };
+
+    await revalidateAdmin();
+    return { success: true, data: { id: data.id } };
+  } catch (err) {
+    return {
+      success: false,
+      error: err instanceof Error ? err.message : "Failed to create question bank",
+    };
+  }
 }
 
 // Legacy createQuestion kept for backward compat — delegates to questions.ts pattern inline

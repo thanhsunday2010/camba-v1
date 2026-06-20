@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { getCurrentUser } from "@/actions/auth";
 import { getUserGamification } from "@/lib/queries/user";
 import { getLearningPath, initializeLessonUnlocks } from "@/lib/queries/learning";
-import { LearningPathTree } from "@/components/learning/learning-path-tree";
+import { LearningUnitPath } from "@/components/learning/learning-unit-path";
 import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/button";
 import { ClipboardList } from "lucide-react";
@@ -54,14 +54,17 @@ export default async function LearningPage() {
   return (
     <div className="space-y-6">
       <div>
-        <p className="text-sm text-primary font-medium">{path.program.name}</p>
-        <h1 className="text-2xl font-bold text-gray-900">
-          {path.level.name} — {t("title")}
-        </h1>
+        <h1 className="text-2xl font-bold text-gray-900">{t("title")}</h1>
         <p className="text-sm text-gray-500 mt-1">{t("subtitle")}</p>
       </div>
 
-      <LearningPathTree skills={path.skills} masteryLabels={masteryLabels} />
+      <LearningUnitPath
+        levelName={path.level.name}
+        levelSlug={path.level.slug}
+        programName={path.program.name}
+        skills={path.skills}
+        masteryLabels={masteryLabels}
+      />
     </div>
   );
 }

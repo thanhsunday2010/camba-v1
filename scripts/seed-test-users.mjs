@@ -2,26 +2,26 @@ import { createClient } from "@supabase/supabase-js";
 import { readFileSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
 
-const TEST_PASSWORD = "CambaTest123!";
+const TEST_PASSWORD = "camba123";
 
 const TEST_USERS = [
   {
-    email: "student@test.camba.local",
+    email: "student@camba.me",
     fullName: "Học sinh Test",
     roles: ["student"],
   },
   {
-    email: "parent@test.camba.local",
+    email: "parent@camba.me",
     fullName: "Phụ huynh Test",
     roles: ["parent"],
   },
   {
-    email: "teacher@test.camba.local",
+    email: "teacher@camba.me",
     fullName: "Giáo viên Test",
     roles: ["teacher"],
   },
   {
-    email: "admin@test.camba.local",
+    email: "admin@camba.me",
     fullName: "Admin Test",
     roles: ["admin"],
   },
@@ -144,7 +144,8 @@ async function main() {
     console.log(`${account.roles[0].padEnd(8)} | ${account.email} | ${TEST_PASSWORD}`);
   }
   console.log("────────────────────────────────────────");
-  console.log("\nĐăng nhập tại: http://localhost:3000/vi/login");
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL?.trim() || "http://localhost:3000";
+  console.log(`\nĐăng nhập tại: ${appUrl.replace(/\/$/, "")}/vi/login`);
 }
 
 main().catch((error) => {

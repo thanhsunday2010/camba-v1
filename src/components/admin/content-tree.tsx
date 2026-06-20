@@ -3,6 +3,7 @@
 import { ChevronDown, ChevronRight, FileText, FolderOpen } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { isQuestionBankExercise } from "@/lib/admin/constants";
 import { StatusBadge } from "./shared/status-badge";
 import type {
   AdminContentTree,
@@ -134,7 +135,18 @@ export function ContentTree({ content, selection, onSelect }: ContentTreeProps) 
                                           <TreeRow
                                             key={exercise.id}
                                             label={exercise.title}
-                                            badge={<StatusBadge status={exercise.status} />}
+                                            badge={
+                                              <>
+                                                {isQuestionBankExercise(
+                                                  exercise.metadata as Record<string, unknown>
+                                                ) && (
+                                                  <span className="text-[10px] bg-violet-100 text-violet-700 px-1.5 rounded">
+                                                    QB
+                                                  </span>
+                                                )}
+                                                <StatusBadge status={exercise.status} />
+                                              </>
+                                            }
                                             isSelected={
                                               selection?.type === "exercise" &&
                                               selection.id === exercise.id

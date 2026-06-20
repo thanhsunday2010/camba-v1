@@ -1,6 +1,6 @@
 import { redirect, notFound } from "next/navigation";
 import { getCurrentUser } from "@/actions/auth";
-import { getLessonWithExercises, getLessonProgress } from "@/lib/queries/learning";
+import { getLessonWithExercises, getLessonProgress, ensureLessonUnlockedForUser } from "@/lib/queries/learning";
 import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
 import { LessonPlayer } from "@/components/learning/lesson-player";
 import { Link } from "@/i18n/routing";
@@ -16,12 +16,12 @@ export default async function LessonPage({ params }: LessonPageProps) {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
 
-  const [lesson, progress] = await Promise.all([
-    getLessonWithExercises(lessonId),
-    getLessonProgress(user.id, lessonId),
-  ]);
+  const lesson = await getLessonWithExercises(lessonId);
 
   if (!lesson) notFound();
+
+  await ensureLessonUnlockedForUser(user.id, lessonId);
+  const progress = await getLessonProgress(user.id, lessonId);
 
   const isUnlocked = isLessonUnlockedFromProgress(progress);
 

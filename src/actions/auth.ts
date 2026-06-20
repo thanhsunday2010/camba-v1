@@ -5,9 +5,8 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import type { ActionResult, AuthUser } from "@/types";
 import type { UserRole } from "@/types/database";
-import { getDashboardPath } from "@/lib/auth/roles";
 import { getAppUrl } from "@/lib/env";
-import { resolvePostAuthRedirect, sanitizeRedirectPath } from "@/lib/auth/redirect";
+import { resolveSignIn } from "@/lib/auth/sign-in";
 
 const AUTH_PATHS = {
   login: "/login",
@@ -41,32 +40,14 @@ export async function signUp(formData: FormData): Promise<ActionResult> {
 
 export async function signIn(formData: FormData): Promise<ActionResult> {
   const supabase = await createClient();
+  const outcome = await resolveSignIn(supabase, formData);
 
-  const email = formData.get("email") as string;
-  const password = formData.get("password") as string;
-  const redirectTo = sanitizeRedirectPath(formData.get("redirect") as string | null);
-
-  const { error } = await supabase.auth.signInWithPassword({
-    email,
-    password,
-  });
-
-  if (error) {
-    return { success: false, error: error.message };
+  if (!outcome.ok) {
+    return outcome.result;
   }
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  const roles = user
-    ? ((await supabase.from("user_roles").select("role").eq("user_id", user.id)).data?.map(
-        (r) => r.role
-      ) ?? ["student"])
-    : ["student"];
-
   revalidatePath("/", "layout");
-  redirect(resolvePostAuthRedirect(redirectTo, getDashboardPath(roles as UserRole[])));
+  redirect(outcome.redirectPath);
 }
 
 export async function signInWithGoogle(): Promise<void> {

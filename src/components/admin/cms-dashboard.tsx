@@ -19,6 +19,8 @@ import { PlacementTestEditor } from "./placement-test-editor";
 import { MockTestEditor } from "./mock-test-editor";
 import { BulkImportExport } from "./bulk-import-export";
 import { AiQuestionGenerator } from "./ai-question-generator";
+import { QuestionBankEditor } from "./question-bank-editor";
+import { ExerciseTypeSelect } from "./exercise-type-select";
 import { AdminMessage, useAdminMessage } from "./shared/admin-message";
 import type { AdminContentTree, AdminExercise } from "@/lib/admin/types";
 import type { AdminMockTest, AdminPlacementTest } from "@/lib/admin/types";
@@ -26,6 +28,7 @@ import type { AdminMockTest, AdminPlacementTest } from "@/lib/admin/types";
 type CmsTab =
   | "content"
   | "create"
+  | "question-banks"
   | "workflow"
   | "placement"
   | "mock"
@@ -42,6 +45,7 @@ interface CmsDashboardProps {
 const TABS: { id: CmsTab; label: string }[] = [
   { id: "content", label: "Nội dung" },
   { id: "create", label: "Tạo mới" },
+  { id: "question-banks", label: "Ngân hàng câu hỏi" },
   { id: "workflow", label: "Duyệt nội dung" },
   { id: "placement", label: "Placement test" },
   { id: "mock", label: "Mock test" },
@@ -122,6 +126,17 @@ export function CmsDashboard({
             />
           </div>
         </div>
+      )}
+
+      {tab === "question-banks" && (
+        <QuestionBankEditor
+          content={content}
+          onMessage={showMessage}
+          onSelectExercise={(exerciseId) => {
+            setSelection({ type: "exercise", id: exerciseId });
+            setTab("content");
+          }}
+        />
       )}
 
       {tab === "create" && (
@@ -234,14 +249,7 @@ export function CmsDashboard({
                   </select>
                   <Input name="title" placeholder="Tên bài tập" required />
                   <Input name="slug" placeholder="Slug" required />
-                  <select name="exerciseType" required className="w-full h-10 rounded-lg border px-3 text-sm">
-                    <option value="multiple_choice">Trắc nghiệm</option>
-                    <option value="gap_fill">Điền từ</option>
-                    <option value="matching">Nối cặp</option>
-                    <option value="sentence_ordering">Sắp xếp câu</option>
-                    <option value="writing">Bài viết</option>
-                    <option value="speaking">Bài nói</option>
-                  </select>
+                  <ExerciseTypeSelect />
                   <Button type="submit" size="sm" disabled={isPending}>Tạo bài tập</Button>
                 </form>
               </CardContent>
@@ -309,6 +317,7 @@ function CmsStats({
         { label: "Bài học", value: content.lessons.length },
         { label: "Bài tập", value: content.exercises.length },
         { label: "Câu hỏi", value: content.questions.length },
+        { label: "Ngân hàng", value: content.exercises.filter((e) => e.metadata?.is_question_bank === true).length },
         { label: "Placement", value: placementTests.length },
         { label: "Mock test", value: mockTests.length },
       ].map((s) => (

@@ -40,6 +40,7 @@
     "forgotPasswordTitle": "Quên mật khẩu",
     "forgotPasswordSubtitle": "Nhập email để nhận liên kết đặt lại mật khẩu",
     "loginWithGoogle": "Đăng nhập bằng Google",
+    "or": "hoặc",
     "registerWithGoogle": "Đăng ký bằng Google",
     "noAccount": "Chưa có tài khoản?",
     "hasAccount": "Đã có tài khoản?",
@@ -163,7 +164,13 @@
     "retryExercise": "Làm lại",
     "exercises": "bài tập",
     "completed": "hoàn thành",
-    "minutes": "phút"
+    "minutes": "phút",
+    "unitCount": "{count} unit",
+    "unitsWithContent": "{count} unit đã có bài học",
+    "unitLessonCount": "{count} bài học",
+    "unitComingSoon": "Nội dung đang được biên soạn",
+    "comingSoon": "Sắp ra mắt",
+    "skillNoContent": "Chưa có bài học cho kỹ năng này"
   },
   "placement": {
     "title": "Kiểm tra trình độ",

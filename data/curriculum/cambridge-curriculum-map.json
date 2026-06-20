@@ -1,0 +1,1288 @@
+{
+  "version": "1.1.0",
+  "program": {
+    "slug": "cambridge-english",
+    "name": "Cambridge English Exam Preparation"
+  },
+  "notes": [
+    "Unit-level breakdown (vocabulary, grammar, skills per unit) is included for all levels. Lessons and exercises are not included.",
+    "Recommended unit counts: Starters 10, Movers 10, Flyers 12, KET 12, PET 14 — aligned to theme coverage and vocabulary density per level.",
+    "Per-unit vocabulary arrays are sample anchors; full word lists should expand toward unitPlan.approximateVocabularyPerUnit during content authoring.",
+    "YLE levels (Starters, Movers, Flyers) align with Cambridge Young Learners exams.",
+    "KET and PET align with A2 Key for Schools and B1 Preliminary for Schools syllabi.",
+    "Vocabulary counts are cumulative targets for receptive + productive use at each level."
+  ],
+  "levels": [
+    {
+      "slug": "starters",
+      "name": "Cambridge Starters",
+      "examName": "Cambridge English Qualifications – Pre A1 Starters",
+      "cefr": "pre-a1",
+      "targetAge": "7-9",
+      "shieldAssessment": true,
+      "unitPlan": {
+        "count": 10,
+        "approximateVocabularyPerUnit": 40,
+        "designNote": "Pedagogical order: identity → numbers → description → concrete nouns → daily life → spaces → routines → activities → directions. Covers all 16 YLE Starters themes."
+      },
+      "learningObjectives": [
+        "Understand and use familiar everyday expressions and very basic phrases.",
+        "Introduce themselves and answer simple questions about personal details.",
+        "Interact in a simple way when the other person speaks slowly and clearly.",
+        "Recognise and name common objects, animals, places, and people in pictures.",
+        "Follow short, simple instructions in classroom and play contexts.",
+        "Demonstrate willingness to communicate using words, phrases, and gestures."
+      ],
+      "vocabularyScope": {
+        "targetWordCount": 400,
+        "coverage": "Cambridge YLE Starters word list (Pre-A1)",
+        "themes": [
+          "Animals",
+          "The body and the face",
+          "Clothes",
+          "Colours",
+          "Family and friends",
+          "Food and drink",
+          "The home",
+          "Numbers",
+          "Places and directions",
+          "School",
+          "Sports and leisure",
+          "Time",
+          "Toys",
+          "Transport",
+          "Weather",
+          "Work"
+        ],
+        "wordTypes": [
+          "Nouns (concrete, countable)",
+          "Basic adjectives (size, colour, quality)",
+          "Core verbs (be, have, go, like, play, eat, drink, see, look, listen, say, tell, open, close, put, take, run, walk, sit, stand)",
+          "Possessive adjectives (my, your, his, her)",
+          "Demonstratives (this, that, these, those)",
+          "Question words (what, where, who, how many, how old)",
+          "Prepositions of place (in, on, under, next to, behind, in front of)",
+          "Numbers 1–20",
+          "Days, months (recognition)",
+          "Basic connectors (and, but)"
+        ],
+        "productiveExpectation": "Single words and memorised chunks; limited phrase-level production."
+      },
+      "grammarScope": {
+        "structures": [
+          "Subject pronouns: I, you, he, she, it, we, they",
+          "Verb be: am, is, are (affirmative, negative, questions)",
+          "Verb have got: I've got, has she got?",
+          "Present simple: like, play, eat, go (third person -s)",
+          "Imperatives: Open the door. Sit down.",
+          "Can for ability: I can swim.",
+          "There is / There are",
+          "Plural nouns: regular -s",
+          "Possessive 's: Tom's bike",
+          "Adjective + noun order: a big house",
+          "Basic question formation: What is this? Where is the cat?",
+          "Yes/No questions with be and can",
+          "Negation with be, have got, and can"
+        ],
+        "notInScope": [
+          "Past tenses",
+          "Future forms beyond simple time markers",
+          "Comparatives and superlatives",
+          "Relative clauses",
+          "Passive voice"
+        ]
+      },
+      "readingSkills": {
+        "examWeight": "50% of paper (Reading & Writing combined)",
+        "taskTypes": [
+          "Match words to pictures",
+          "Read short sentences and choose matching pictures",
+          "Read short dialogues and select answers",
+          "Read and write words and short phrases with picture support"
+        ],
+        "skills": [
+          "Decode familiar words in isolation and in short sentences",
+          "Understand meaning from pictures and text together",
+          "Recognise names, numbers, and key content words",
+          "Follow simple linear narratives (3–5 sentences)",
+          "Distinguish between similar words using visual context",
+          "Copy and complete single words and short phrases"
+        ],
+        "textLength": "Words, phrases, and sentences up to 10 words",
+        "cognitiveLevel": "Literal comprehension and recognition"
+      },
+      "listeningSkills": {
+        "examWeight": "25% of qualification",
+        "taskTypes": [
+          "Listen and draw lines between people and objects",
+          "Listen and write words or numbers",
+          "Listen to short conversations and tick a picture",
+          "Listen to colour and draw"
+        ],
+        "skills": [
+          "Identify key words in short, clear recordings",
+          "Understand familiar vocabulary in context",
+          "Follow simple instructions with visual support",
+          "Extract names, ages, numbers, and colours",
+          "Distinguish minimal pairs with picture options",
+          "Respond to slow, carefully articulated speech"
+        ],
+        "recordingFeatures": "Short utterances, repetition, pauses between items",
+        "cognitiveLevel": "Recognition and selective extraction"
+      },
+      "writingSkills": {
+        "examWeight": "Combined with reading (50% of paper)",
+        "taskTypes": [
+          "Copy words",
+          "Complete words with missing letters",
+          "Write words and short phrases to describe pictures",
+          "Answer short questions with single words or phrases"
+        ],
+        "skills": [
+          "Form legible letters and spell familiar words",
+          "Complete words using phonics and visual cues",
+          "Produce labels and short phrases with model support",
+          "Write personal information (name, age, country)",
+          "Use capital letters and full stops in simple sentences"
+        ],
+        "outputLength": "Single words to short phrases (1–5 words)",
+        "cognitiveLevel": "Controlled production with heavy scaffolding"
+      },
+      "speakingSkills": {
+        "examWeight": "25% of qualification",
+        "taskTypes": [
+          "Answer personal questions",
+          "Describe pictures in a picture story",
+          "Compare and contrast two pictures",
+          "Personalised questions linked to picture story"
+        ],
+        "skills": [
+          "Respond to formulaic questions about self and familiar topics",
+          "Name objects, people, and actions in pictures",
+          "Use memorised chunks and single words to communicate",
+          "Ask and answer very simple questions",
+          "Maintain basic interaction with examiner support",
+          "Use intelligible pronunciation of high-frequency words"
+        ],
+        "interactionLevel": "Examiner-led; candidate responds with prompts",
+        "cognitiveLevel": "Formulaic and guided production"
+      },
+      "units": [
+        {
+          "number": 1,
+          "slug": "family-and-friends",
+          "title": "Family and Friends",
+          "vocabulary": ["father", "mother", "brother", "sister", "friend", "boy", "girl", "head", "eyes", "nose", "mouth", "hair"],
+          "grammar": ["Verb be: am, is, are", "Possessive adjectives: my, your, his, her", "Question words: who"],
+          "readingSkill": "Match Words to Pictures",
+          "listeningSkill": "Identify Names and People"
+        },
+        {
+          "number": 2,
+          "slug": "numbers-and-time",
+          "title": "Numbers and Time",
+          "vocabulary": ["one", "two", "three", "ten", "twenty", "Monday", "Tuesday", "today", "birthday", "o'clock"],
+          "grammar": ["Numbers 1–20", "Question words: how many, how old", "Days and months (recognition)"],
+          "readingSkill": "Recognise Numbers and Days",
+          "listeningSkill": "Extract Ages and Numbers"
+        },
+        {
+          "number": 3,
+          "slug": "colours-and-clothes",
+          "title": "Colours and Clothes",
+          "vocabulary": ["red", "blue", "green", "yellow", "shirt", "trousers", "dress", "shoes"],
+          "grammar": ["Adjective + noun order: a red shirt", "Verb be for description"],
+          "readingSkill": "Match Colours and Objects",
+          "listeningSkill": "Listen and Colour"
+        },
+        {
+          "number": 4,
+          "slug": "animals",
+          "title": "Animals",
+          "vocabulary": ["cat", "dog", "bird", "fish", "elephant", "monkey", "bear", "tiger"],
+          "grammar": ["Demonstratives: this, that", "Plural nouns: regular -s"],
+          "readingSkill": "Decode Familiar Words",
+          "listeningSkill": "Tick the Correct Picture"
+        },
+        {
+          "number": 5,
+          "slug": "toys-and-weather",
+          "title": "Toys and Weather",
+          "vocabulary": ["doll", "kite", "teddy", "robot", "puzzle", "balloon", "sunny", "rainy", "cloud", "wind"],
+          "grammar": ["It's + weather adjective: It's sunny", "Plural nouns: two kites", "Demonstratives: these, those"],
+          "readingSkill": "Describe Pictures with Weather and Toys",
+          "listeningSkill": "Identify Weather and Toy Words"
+        },
+        {
+          "number": 6,
+          "slug": "food-and-drink",
+          "title": "Food and Drink",
+          "vocabulary": ["apple", "banana", "orange", "milk", "water", "egg", "rice", "chicken"],
+          "grammar": ["Present simple: like, eat, drink", "Negation: I don't like"],
+          "readingSkill": "Read Short Sentences with Pictures",
+          "listeningSkill": "Identify Food and Drink Items"
+        },
+        {
+          "number": 7,
+          "slug": "the-home",
+          "title": "The Home",
+          "vocabulary": ["bed", "chair", "table", "sofa", "lamp", "door", "window", "kitchen"],
+          "grammar": ["There is / There are", "Prepositions of place: in, on, under"],
+          "readingSkill": "Find Objects in a Scene",
+          "listeningSkill": "Follow Simple Instructions"
+        },
+        {
+          "number": 8,
+          "slug": "school",
+          "title": "School",
+          "vocabulary": ["book", "pen", "pencil", "bag", "desk", "classroom", "teacher", "lesson", "worker", "farmer"],
+          "grammar": ["Imperatives: Open, Close, Sit down", "Have got: I've got a pen", "Present simple: work, teach"],
+          "readingSkill": "Label Classroom Objects",
+          "listeningSkill": "Understand Classroom Commands"
+        },
+        {
+          "number": 9,
+          "slug": "sports-and-leisure",
+          "title": "Sports and Leisure",
+          "vocabulary": ["football", "tennis", "swim", "run", "play", "bike", "ball", "game"],
+          "grammar": ["Can for ability: I can swim", "Present simple: play, go"],
+          "readingSkill": "Match Activities to Pictures",
+          "listeningSkill": "Identify Sports and Actions"
+        },
+        {
+          "number": 10,
+          "slug": "transport-and-places",
+          "title": "Transport and Places",
+          "vocabulary": ["car", "bus", "bike", "plane", "park", "shop", "street", "house"],
+          "grammar": ["Question words: where, what", "Prepositions: next to, behind, in front of"],
+          "readingSkill": "Read Simple Directions",
+          "listeningSkill": "Extract Place and Transport Names"
+        }
+      ]
+    },
+    {
+      "slug": "movers",
+      "name": "Cambridge Movers",
+      "examName": "Cambridge English Qualifications – A1 Movers",
+      "cefr": "a1",
+      "targetAge": "8-11",
+      "shieldAssessment": true,
+      "unitPlan": {
+        "count": 10,
+        "approximateVocabularyPerUnit": 60,
+        "designNote": "Builds on Starters themes; each unit introduces one Movers-specific topic cluster (health, materials, jobs, technology, holidays, shopping, world around us)."
+      },
+      "learningObjectives": [
+        "Understand and use familiar everyday expressions and routine phrases.",
+        "Describe people, places, and possessions using simple language.",
+        "Handle short social exchanges with support.",
+        "Read and understand short factual texts on familiar topics.",
+        "Write simple connected text on familiar personal topics.",
+        "Understand the main point of short, clear announcements and messages."
+      ],
+      "vocabularyScope": {
+        "targetWordCount": 600,
+        "coverage": "Cambridge YLE Movers word list (A1); cumulative with Starters",
+        "themes": [
+          "All Starters themes, extended",
+          "Health",
+          "Materials",
+          "Jobs",
+          "Technology (basic)",
+          "Hobbies and free time",
+          "Holidays",
+          "Shopping",
+          "The world around us"
+        ],
+        "wordTypes": [
+          "Expanded nouns (abstract basics: idea, problem, weather conditions)",
+          "Comparative adjectives (bigger, better)",
+          "Adverbs of frequency (always, sometimes, never)",
+          "Past time markers (yesterday, last week)",
+          "Prepositions of time (at, on, in)",
+          "Conjunctions (because, when, then)",
+          "Quantifiers (some, any, a lot of)",
+          "Numbers up to 100",
+          "Ordinal numbers (first, second, third)"
+        ],
+        "productiveExpectation": "Short sentences and chained phrases; emerging paragraph awareness."
+      },
+      "grammarScope": {
+        "structures": [
+          "All Starters grammar, consolidated",
+          "Present continuous: I am playing",
+          "Past simple: regular and common irregular verbs (went, saw, had, was/were)",
+          "Future with going to: We're going to visit grandma",
+          "Wh- questions across tenses",
+          "Object pronouns: me, him, her, them",
+          "Possessive pronouns: mine, yours",
+          "Countable/uncountable nouns with some/any",
+          "Comparatives: taller than, as ... as",
+          "Superlatives (introduction): the biggest",
+          "Adverbs of manner: quickly, slowly",
+          "Conjunctions: and, but, because, when"
+        ],
+        "notInScope": [
+          "Present perfect",
+          "Conditionals beyond zero",
+          "Reported speech",
+          "Complex passive"
+        ]
+      },
+      "readingSkills": {
+        "examWeight": "50% of paper (Reading & Writing combined)",
+        "taskTypes": [
+          "Match definitions to words",
+          "Read conversations and choose correct responses",
+          "Read stories and complete sentences",
+          "Read and write short messages and notes"
+        ],
+        "skills": [
+          "Understand gist and specific detail in short texts",
+          "Infer meaning of unknown words from context",
+          "Follow chronological narrative (5–10 sentences)",
+          "Understand simple connectors (then, because)",
+          "Identify purpose of short messages (invitation, note)",
+          "Complete sentences with grammatically appropriate words"
+        ],
+        "textLength": "Sentences and short texts up to 80 words",
+        "cognitiveLevel": "Literal and simple inferential comprehension"
+      },
+      "listeningSkills": {
+        "examWeight": "25% of qualification",
+        "taskTypes": [
+          "Listen and draw lines",
+          "Listen and write words, names, numbers",
+          "Listen to conversations and fill gaps",
+          "Listen and colour/draw with multiple instructions"
+        ],
+        "skills": [
+          "Understand main idea of short dialogues",
+          "Extract specific factual information",
+          "Follow multi-step instructions",
+          "Recognise attitude (happy, sad) in simple contexts",
+          "Understand time references and sequencing",
+          "Tolerate slightly faster speech with repetition"
+        ],
+        "recordingFeatures": "Short dialogues and monologues; some background context",
+        "cognitiveLevel": "Selective listening and simple inference"
+      },
+      "writingSkills": {
+        "examWeight": "Combined with reading (50% of paper)",
+        "taskTypes": [
+          "Complete sentences with one word",
+          "Write short messages and postcards",
+          "Describe pictures with 1–2 sentences",
+          "Answer questions with full sentences"
+        ],
+        "skills": [
+          "Write simple sentences about familiar topics",
+          "Use past, present, and going-to future appropriately",
+          "Spell common irregular words correctly",
+          "Link ideas with basic connectors",
+          "Write messages with salutation and closing",
+          "Self-correct basic spelling and punctuation"
+        ],
+        "outputLength": "Sentences and short notes (20–40 words total per task)",
+        "cognitiveLevel": "Guided sentence-level production"
+      },
+      "speakingSkills": {
+        "examWeight": "25% of qualification",
+        "taskTypes": [
+          "Personal interview questions",
+          "Describe differences between two pictures",
+          "Tell a picture story (4 frames)",
+          "Personalised follow-up questions"
+        ],
+        "skills": [
+          "Sustain short turns on familiar topics",
+          "Describe actions, locations, and possessions",
+          "Use past tense to narrate simple events",
+          "Ask simple questions to the examiner",
+          "Compare two pictures using basic language",
+          "Maintain intelligibility with developing fluency"
+        ],
+        "interactionLevel": "Examiner-led with limited candidate initiative",
+        "cognitiveLevel": "Guided narrative and description"
+      },
+      "units": [
+        {
+          "number": 1,
+          "slug": "daily-routines",
+          "title": "Daily Routines",
+          "vocabulary": ["wake up", "breakfast", "lunch", "dinner", "homework", "always", "sometimes", "never"],
+          "grammar": ["Present simple: daily habits", "Adverbs of frequency: always, sometimes, never"],
+          "readingSkill": "Understand Gist in Short Texts",
+          "listeningSkill": "Extract Time References"
+        },
+        {
+          "number": 2,
+          "slug": "the-body-and-health",
+          "title": "The Body and Health",
+          "vocabulary": ["head", "stomach", "tooth", "doctor", "hospital", "ill", "headache", "medicine"],
+          "grammar": ["Have got: I've got a headache", "Should for advice: You should rest"],
+          "readingSkill": "Match Definitions to Words",
+          "listeningSkill": "Understand Simple Health Contexts"
+        },
+        {
+          "number": 3,
+          "slug": "weather-and-seasons",
+          "title": "Weather and Seasons",
+          "vocabulary": ["sunny", "rainy", "windy", "cloudy", "snow", "spring", "summer", "autumn", "winter"],
+          "grammar": ["Past simple: was, were", "Present simple: It's sunny today"],
+          "readingSkill": "Complete Sentences in Short Texts",
+          "listeningSkill": "Identify Weather and Season Words"
+        },
+        {
+          "number": 4,
+          "slug": "hobbies-and-free-time",
+          "title": "Hobbies and Free Time",
+          "vocabulary": ["hobby", "drawing", "dancing", "collect", "stamp", "comic", "cinema", "concert"],
+          "grammar": ["Present continuous: I am playing", "Like + -ing: I like swimming"],
+          "readingSkill": "Read Conversations and Choose Responses",
+          "listeningSkill": "Understand Main Idea of Short Dialogues"
+        },
+        {
+          "number": 5,
+          "slug": "holidays-and-travel",
+          "title": "Holidays and Travel",
+          "vocabulary": ["holiday", "beach", "mountain", "suitcase", "hotel", "map", "ticket", "passport"],
+          "grammar": ["Going to future: We're going to visit", "Past simple: went, saw, had"],
+          "readingSkill": "Follow Chronological Narrative",
+          "listeningSkill": "Understand Sequencing in Stories"
+        },
+        {
+          "number": 6,
+          "slug": "shopping-and-money",
+          "title": "Shopping and Money",
+          "vocabulary": ["supermarket", "market", "price", "expensive", "cheap", "buy", "sell", "money"],
+          "grammar": ["Comparatives: cheaper than, more expensive than", "Some / any with shopping items"],
+          "readingSkill": "Identify Purpose of Short Messages",
+          "listeningSkill": "Extract Prices and Quantities"
+        },
+        {
+          "number": 7,
+          "slug": "jobs-and-work",
+          "title": "Jobs and Work",
+          "vocabulary": ["farmer", "nurse", "driver", "pilot", "office", "factory", "work", "job"],
+          "grammar": ["Present simple third person: He works in a hospital", "Wh- questions: Where does she work?"],
+          "readingSkill": "Infer Meaning from Context",
+          "listeningSkill": "Extract Job and Workplace Details"
+        },
+        {
+          "number": 8,
+          "slug": "materials-and-objects",
+          "title": "Materials and Objects",
+          "vocabulary": ["wood", "metal", "plastic", "paper", "glass", "gold", "silver", "wool"],
+          "grammar": ["Made of: It's made of wood", "Superlatives (introduction): the biggest, the best"],
+          "readingSkill": "Complete Gaps with Appropriate Words",
+          "listeningSkill": "Follow Multi-Step Instructions"
+        },
+        {
+          "number": 9,
+          "slug": "technology",
+          "title": "Technology",
+          "vocabulary": ["computer", "tablet", "camera", "email", "website", "screen", "keyboard", "mouse"],
+          "grammar": ["Object pronouns: me, him, her, them", "Can for ability and permission"],
+          "readingSkill": "Read Short Messages and Notes",
+          "listeningSkill": "Understand Technology Vocabulary in Context"
+        },
+        {
+          "number": 10,
+          "slug": "the-world-around-us",
+          "title": "The World Around Us",
+          "vocabulary": ["river", "island", "forest", "desert", "country", "city", "village", "world"],
+          "grammar": ["Conjunctions: because, when, then", "Comparatives: bigger than, as ... as"],
+          "readingSkill": "Understand Connectors in Short Texts",
+          "listeningSkill": "Recognise Attitude in Simple Contexts"
+        }
+      ]
+    },
+    {
+      "slug": "flyers",
+      "name": "Cambridge Flyers",
+      "examName": "Cambridge English Qualifications – A2 Flyers",
+      "cefr": "a2",
+      "targetAge": "9-12",
+      "shieldAssessment": true,
+      "unitPlan": {
+        "count": 12,
+        "approximateVocabularyPerUnit": 83,
+        "designNote": "Covers Flyers theme scope plus skill-based units (past experiences, future plans) for A2 productive and narrative competence."
+      },
+      "learningObjectives": [
+        "Understand sentences and frequently used expressions on familiar matters.",
+        "Communicate in simple, routine tasks requiring direct exchange of information.",
+        "Describe background, environment, and immediate needs in simple terms.",
+        "Understand short, simple texts including stories and factual passages.",
+        "Write short, simple notes and messages and connected text on familiar topics.",
+        "Interact with increasing independence in familiar situations."
+      ],
+      "vocabularyScope": {
+        "targetWordCount": 1000,
+        "coverage": "Cambridge YLE Flyers word list (A2); cumulative with Movers",
+        "themes": [
+          "All Movers themes, extended",
+          "Environment and nature",
+          "Culture and festivals",
+          "Media and entertainment",
+          "Science and discovery (age-appropriate)",
+          "Feelings and opinions",
+          "Rules and responsibilities",
+          "Travel and geography"
+        ],
+        "wordTypes": [
+          "Phrasal verbs (get up, look for, turn on)",
+          "Word formation awareness (happy → unhappy)",
+          "Discourse markers (first, then, finally, however)",
+          "Collocations (make a mistake, do homework)",
+          "Prefixes and suffixes (un-, re-, -ful, -less)",
+          "Abstract nouns (experience, decision, problem)"
+        ],
+        "productiveExpectation": "Connected sentences and short paragraphs; opinion and reason emerging."
+      },
+      "grammarScope": {
+        "structures": [
+          "All Movers grammar, consolidated",
+          "Past simple: full irregular verb set (high-frequency)",
+          "Past continuous: was/were + -ing (introduction)",
+          "Present perfect: ever/never, just, already, yet (basic)",
+          "Future: will (predictions), going to (plans)",
+          "Modal verbs: must, mustn't, should, could, might",
+          "First conditional: If it rains, we will stay home",
+          "Relative clauses: who, which, that (defining)",
+          "Gerunds and infinitives: enjoy swimming, want to go",
+          "Too / enough",
+          "Question tags (introduction): isn't it?",
+          "Passive voice (introduction): is made, was built"
+        ],
+        "notInScope": [
+          "Second and third conditionals",
+          "Reported speech (full)",
+          "Advanced subjunctive"
+        ]
+      },
+      "readingSkills": {
+        "examWeight": "50% of paper (Reading & Writing combined)",
+        "taskTypes": [
+          "Match headings or sentences to paragraphs",
+          "Complete conversations with missing sentences",
+          "Read stories and complete gaps",
+          "Read and write longer messages, emails, and stories"
+        ],
+        "skills": [
+          "Understand main ideas and specific detail in longer texts",
+          "Infer character feelings and simple motives",
+          "Understand chronological and cause-effect links",
+          "Identify text type and purpose",
+          "Use contextual clues for unknown vocabulary",
+          "Complete cohesive texts with discourse awareness"
+        ],
+        "textLength": "Texts up to 150 words; stories up to 200 words",
+        "cognitiveLevel": "Literal, inferential, and simple evaluative comprehension"
+      },
+      "listeningSkills": {
+        "examWeight": "25% of qualification",
+        "taskTypes": [
+          "Listen and match speakers to statements",
+          "Listen and complete gaps in notes",
+          "Listen to longer conversations and answer questions",
+          "Listen for specific information in announcements"
+        ],
+        "skills": [
+          "Follow extended dialogues and monologues",
+          "Understand opinion and attitude in familiar contexts",
+          "Extract multiple pieces of information from one recording",
+          "Understand indirect answers and implied meaning (simple)",
+          "Track speakers in short interviews",
+          "Cope with natural pace with some redundancy"
+        ],
+        "recordingFeatures": "Longer recordings; some overlapping information",
+        "cognitiveLevel": "Inference and multi-step extraction"
+      },
+      "writingSkills": {
+        "examWeight": "Combined with reading (50% of paper)",
+        "taskTypes": [
+          "Complete stories with missing sentences",
+          "Write emails and messages (35–45 words)",
+          "Write a short story from picture prompts",
+          "Edit and improve short texts"
+        ],
+        "skills": [
+          "Write connected text on familiar topics",
+          "Use range of tenses accurately in context",
+          "Organise ideas with paragraphs and linking words",
+          "Express simple opinions and reasons",
+          "Use appropriate register for messages and stories",
+          "Revise for spelling, punctuation, and basic cohesion"
+        ],
+        "outputLength": "35–80 words per task; story up to 80 words",
+        "cognitiveLevel": "Independent short-form production"
+      },
+      "speakingSkills": {
+        "examWeight": "25% of qualification",
+        "taskTypes": [
+          "Extended personal interview",
+          "Compare and describe two pictures",
+          "Collaborative picture story with examiner",
+          "Discussion questions on preferences and experiences"
+        ],
+        "skills": [
+          "Sustain longer turns with connected ideas",
+          "Narrate past experiences with sequence markers",
+          "Express and justify simple opinions",
+          "Speculate about pictures (might, could)",
+          "Repair communication when meaning breaks down",
+          "Initiate and respond in collaborative tasks"
+        ],
+        "interactionLevel": "Examiner-led with collaborative component",
+        "cognitiveLevel": "Narrative, opinion, and simple speculation"
+      },
+      "units": [
+        {
+          "number": 1,
+          "slug": "family-and-friends-extended",
+          "title": "Family and Friends",
+          "vocabulary": ["cousin", "aunt", "uncle", "neighbour", "guest", "invite", "visit", "stay"],
+          "grammar": ["Present perfect: ever, never", "Relative clauses: who, which"],
+          "readingSkill": "Finding Details",
+          "listeningSkill": "Specific Information"
+        },
+        {
+          "number": 2,
+          "slug": "environment-and-nature",
+          "title": "Environment and Nature",
+          "vocabulary": ["environment", "pollution", "recycle", "planet", "rainforest", "ocean", "protect", "nature"],
+          "grammar": ["Passive voice (introduction): is made, is recycled", "Must / mustn't for rules"],
+          "readingSkill": "Identify Text Type and Purpose",
+          "listeningSkill": "Extract Multiple Pieces of Information"
+        },
+        {
+          "number": 3,
+          "slug": "culture-and-festivals",
+          "title": "Culture and Festivals",
+          "vocabulary": ["festival", "celebrate", "tradition", "costume", "parade", "fireworks", "national", "custom"],
+          "grammar": ["Past simple: irregular verbs (went, saw, had)", "When clauses: When we arrived, ..."],
+          "readingSkill": "Understand Chronological Links",
+          "listeningSkill": "Follow Extended Dialogues"
+        },
+        {
+          "number": 4,
+          "slug": "media-and-entertainment",
+          "title": "Media and Entertainment",
+          "vocabulary": ["television", "programme", "cartoon", "comedy", "documentary", "channel", "audience", "scene"],
+          "grammar": ["Gerunds and infinitives: enjoy watching, want to see", "Too / enough"],
+          "readingSkill": "Complete Conversations with Missing Sentences",
+          "listeningSkill": "Understand Opinion and Attitude"
+        },
+        {
+          "number": 5,
+          "slug": "science-and-discovery",
+          "title": "Science and Discovery",
+          "vocabulary": ["experiment", "discover", "invent", "microscope", "electricity", "laboratory", "scientist", "research"],
+          "grammar": ["Passive voice: was built, was invented", "Could / might for possibility"],
+          "readingSkill": "Use Contextual Clues for Unknown Vocabulary",
+          "listeningSkill": "Track Speakers in Short Interviews"
+        },
+        {
+          "number": 6,
+          "slug": "feelings-and-opinions",
+          "title": "Feelings and Opinions",
+          "vocabulary": ["worried", "excited", "proud", "disappointed", "opinion", "prefer", "agree", "surprised"],
+          "grammar": ["Modal verbs: should, could", "Question tags (introduction): isn't it?"],
+          "readingSkill": "Infer Character Feelings",
+          "listeningSkill": "Understand Indirect Answers"
+        },
+        {
+          "number": 7,
+          "slug": "rules-and-responsibilities",
+          "title": "Rules and Responsibilities",
+          "vocabulary": ["rule", "allowed", "forbidden", "duty", "responsible", "behave", "obey", "permission"],
+          "grammar": ["Must, mustn't, have to", "Gerunds after verbs: avoid running"],
+          "readingSkill": "Match Headings to Paragraphs",
+          "listeningSkill": "Listen for Specific Information in Announcements"
+        },
+        {
+          "number": 8,
+          "slug": "travel-and-geography",
+          "title": "Travel and Geography",
+          "vocabulary": ["journey", "abroad", "luggage", "guidebook", "monument", "capital", "border", "tourist"],
+          "grammar": ["Will for predictions", "Going to for plans"],
+          "readingSkill": "Understand Cause-Effect Links",
+          "listeningSkill": "Complete Gaps in Notes"
+        },
+        {
+          "number": 9,
+          "slug": "school-and-learning",
+          "title": "School and Learning",
+          "vocabulary": ["subject", "exam", "project", "competition", "prize", "revision", "certificate", "progress"],
+          "grammar": ["Present perfect: just, already, yet", "Relative clauses: that (defining)"],
+          "readingSkill": "Read Stories and Complete Gaps",
+          "listeningSkill": "Match Speakers to Statements"
+        },
+        {
+          "number": 10,
+          "slug": "health-and-lifestyle",
+          "title": "Health and Lifestyle",
+          "vocabulary": ["exercise", "diet", "healthy", "energy", "tired", "fit", "habit", "lifestyle"],
+          "grammar": ["First conditional: If it rains, we will stay home", "Should for advice"],
+          "readingSkill": "Understand Main Ideas in Longer Texts",
+          "listeningSkill": "Understand Implied Meaning"
+        },
+        {
+          "number": 11,
+          "slug": "past-experiences",
+          "title": "Past Experiences",
+          "vocabulary": ["experience", "memory", "ago", "once", "suddenly", "finally", "accident", "adventure"],
+          "grammar": ["Past continuous: was/were + -ing", "Past simple: full irregular set"],
+          "readingSkill": "Complete Cohesive Texts",
+          "listeningSkill": "Follow Longer Conversations"
+        },
+        {
+          "number": 12,
+          "slug": "future-plans-and-stories",
+          "title": "Future Plans and Stories",
+          "vocabulary": ["promise", "plan", "surprise", "decision", "problem", "solution", "success", "failure"],
+          "grammar": ["Future: will and going to", "Discourse markers: first, then, finally"],
+          "readingSkill": "Read and Write Longer Messages",
+          "listeningSkill": "Cope with Natural Pace"
+        }
+      ]
+    },
+    {
+      "slug": "ket",
+      "name": "Cambridge KET",
+      "examName": "A2 Key for Schools",
+      "cefr": "a2",
+      "targetAge": "11-14",
+      "shieldAssessment": false,
+      "scaleRange": { "min": 100, "max": 150, "pass": 120 },
+      "unitPlan": {
+        "count": 12,
+        "approximateVocabularyPerUnit": 125,
+        "designNote": "One unit per KET syllabus topic; balanced coverage of 12 A2 Key for Schools themes."
+      },
+      "learningObjectives": [
+        "Understand and use everyday expressions and basic phrases in practical contexts.",
+        "Introduce themselves and others; ask and answer questions about personal details.",
+        "Interact simply when speakers talk slowly and clearly.",
+        "Read and understand straightforward factual texts, signs, and notices.",
+        "Write short, simple messages connected to everyday situations.",
+        "Demonstrate A2-level competence across integrated skills for school and daily life."
+      ],
+      "vocabularyScope": {
+        "targetWordCount": 1500,
+        "coverage": "A2 Key vocabulary topics (Cambridge English corpus, B1 threshold preparation)",
+        "themes": [
+          "Education and study",
+          "Work and jobs",
+          "Health and lifestyle",
+          "Leisure and entertainment",
+          "Travel and transport",
+          "Food and shopping",
+          "House and home",
+          "Services (bank, post office, doctor)",
+          "Communication and media",
+          "Environment",
+          "Personal relationships",
+          "Public places and directions"
+        ],
+        "wordTypes": [
+          "Topic-specific nouns and collocations",
+          "Phrasal verbs (common set: pick up, find out, take off)",
+          "Idiomatic expressions (A2 frequency: hang out, look forward to)",
+          "Word families and affixation",
+          "Synonyms and antonyms for precision",
+          "Formal/informal register pairs (buy/purchase, kids/children)"
+        ],
+        "productiveExpectation": "Functional language for real-world tasks; short emails and notes."
+      },
+      "grammarScope": {
+        "structures": [
+          "All Flyers grammar, consolidated and extended",
+          "Present simple and continuous (distinction)",
+          "Past simple and past continuous",
+          "Present perfect with for/since and experience",
+          "Future forms: will, going to, present continuous for arrangements",
+          "Modals: can, could, must, have to, should, need to",
+          "Zero and first conditional",
+          "Relative clauses (defining and non-defining, basic)",
+          "Passive voice: present and past simple",
+          "Reported speech (statements, basic)",
+          "Gerunds and infinitives after common verbs",
+          "Comparatives and superlatives (including less/fewer)",
+          "Quantifiers: much/many, a few/a little, all, every, no"
+        ],
+        "notInScope": [
+          "Second conditional (consistent)",
+          "Mixed conditionals",
+          "Advanced inversion",
+          "Cleft sentences"
+        ]
+      },
+      "readingSkills": {
+        "examWeight": "25% of qualification (Reading & Writing paper Part 1–5)",
+        "taskTypes": [
+          "Multiple choice with short texts (signs, messages, notices)",
+          "Multiple matching (people to texts)",
+          "Multiple choice cloze (grammar/vocabulary)",
+          "Multiple choice long text (detail and opinion)",
+          "Open cloze (one word gaps)",
+          "Writing: email/message (25+ words) and picture story (35+ words)"
+        ],
+        "skills": [
+          "Skim for gist in signs, notices, and emails",
+          "Scan for specific information",
+          "Understand vocabulary in context and collocations",
+          "Identify writer purpose and audience",
+          "Follow argument and opinion in short articles",
+          "Complete texts demonstrating grammatical control"
+        ],
+        "textLength": "Texts 80–200 words; total reading load moderate",
+        "cognitiveLevel": "Literal, inferential, and pragmatic comprehension"
+      },
+      "listeningSkills": {
+        "examWeight": "25% of qualification",
+        "taskTypes": [
+          "Multiple choice pictures (short extracts)",
+          "Multiple choice questions (longer extracts)",
+          "Gap-fill notes (one word per gap)",
+          "Multiple choice interview/monologue"
+        ],
+        "skills": [
+          "Understand main idea and detail in announcements and conversations",
+          "Follow everyday social and transactional exchanges",
+          "Extract factual information from interviews",
+          "Understand attitude and opinion (basic)",
+          "Cope with natural speed with some repetition in parts",
+          "Spell names and places accurately from recordings"
+        ],
+        "recordingFeatures": "Authentic pace; range of accents (primarily standard)",
+        "cognitiveLevel": "Detail extraction and gist in real-world contexts"
+      },
+      "writingSkills": {
+        "examWeight": "25% of qualification (combined paper)",
+        "taskTypes": [
+          "Write an email or message (minimum 25 words)",
+          "Write a story from three picture prompts (minimum 35 words)"
+        ],
+        "skills": [
+          "Communicate clear information in functional writing",
+          "Use appropriate layout for emails and messages",
+          "Narrate events in sequence with basic cohesion",
+          "Control A2 grammar and vocabulary in production",
+          "Address all content points in the task rubric",
+          "Maintain intelligibility despite minor errors"
+        ],
+        "outputLength": "25–50 words per task",
+        "cognitiveLevel": "Task-oriented functional writing"
+      },
+      "speakingSkills": {
+        "examWeight": "25% of qualification",
+        "taskTypes": [
+          "Interview with personal questions",
+          "Collaborative task with visual prompt",
+          "Individual long turn describing photograph",
+          "Discussion with partner on related theme"
+        ],
+        "skills": [
+          "Sustain conversation on familiar topics",
+          "Ask and answer questions spontaneously",
+          "Negotiate and collaborate to reach decisions",
+          "Describe photographs with detail and speculation",
+          "Express preferences, opinions, and experiences",
+          "Use repair strategies and clarification requests"
+        ],
+        "interactionLevel": "Candidate-candidate and candidate-examiner",
+        "cognitiveLevel": "Interactive communication and description"
+      },
+      "units": [
+        {
+          "number": 1,
+          "slug": "education-and-study",
+          "title": "Education and Study",
+          "vocabulary": ["subject", "timetable", "revision", "assignment", "deadline", "graduate", "semester", "campus"],
+          "grammar": ["Present perfect with for / since", "Have to / need to"],
+          "readingSkill": "Skim for Gist in Signs and Notices",
+          "listeningSkill": "Understand Main Idea in Announcements"
+        },
+        {
+          "number": 2,
+          "slug": "work-and-jobs",
+          "title": "Work and Jobs",
+          "vocabulary": ["colleague", "salary", "interview", "career", "experience", "employer", "shift", "retire"],
+          "grammar": ["Present simple vs present continuous", "Wh- questions across tenses"],
+          "readingSkill": "Scan for Specific Information",
+          "listeningSkill": "Extract Factual Information from Interviews"
+        },
+        {
+          "number": 3,
+          "slug": "health-and-lifestyle",
+          "title": "Health and Lifestyle",
+          "vocabulary": ["appointment", "symptom", "recover", "prescription", "allergy", "injury", "treatment", "prevention"],
+          "grammar": ["Modals: should, must, need to", "Countable / uncountable with a few / a little"],
+          "readingSkill": "Understand Vocabulary in Context",
+          "listeningSkill": "Understand Attitude and Opinion"
+        },
+        {
+          "number": 4,
+          "slug": "leisure-and-entertainment",
+          "title": "Leisure and Entertainment",
+          "vocabulary": ["concert", "exhibition", "magazine", "download", "streaming", "performance", "review", "audience"],
+          "grammar": ["Phrasal verbs: pick up, find out, take off", "Gerunds and infinitives after common verbs"],
+          "readingSkill": "Identify Writer Purpose and Audience",
+          "listeningSkill": "Follow Everyday Social Exchanges"
+        },
+        {
+          "number": 5,
+          "slug": "travel-and-transport",
+          "title": "Travel and Transport",
+          "vocabulary": ["platform", "reservation", "delay", "destination", "departure", "fare", "route", "passenger"],
+          "grammar": ["Past simple and past continuous", "Future forms: will, going to, present continuous for arrangements"],
+          "readingSkill": "Follow Argument in Short Articles",
+          "listeningSkill": "Spell Names and Places from Recordings"
+        },
+        {
+          "number": 6,
+          "slug": "food-and-shopping",
+          "title": "Food and Shopping",
+          "vocabulary": ["receipt", "discount", "customer", "order", "ingredient", "refund", "bargain", "checkout"],
+          "grammar": ["Quantifiers: much, many, a few, a little, all, every", "Comparatives and superlatives (less / fewer)"],
+          "readingSkill": "Complete Texts with Grammatical Control",
+          "listeningSkill": "Understand Transactional Exchanges"
+        },
+        {
+          "number": 7,
+          "slug": "house-and-home",
+          "title": "House and Home",
+          "vocabulary": ["furniture", "appliance", "repair", "rent", "neighbourhood", "balcony", "garage", "mortgage"],
+          "grammar": ["Passive voice: present and past simple", "Relative clauses (defining and non-defining, basic)"],
+          "readingSkill": "Multiple Choice Cloze (Grammar/Vocabulary)",
+          "listeningSkill": "Cope with Natural Speed"
+        },
+        {
+          "number": 8,
+          "slug": "services",
+          "title": "Services",
+          "vocabulary": ["bank account", "postage", "reception", "enquiry", "appointment", "complaint", "receipt", "registration"],
+          "grammar": ["Modals: can, could, must, have to", "Formal / informal register pairs"],
+          "readingSkill": "Multiple Matching (People to Texts)",
+          "listeningSkill": "Gap-Fill Notes (One Word per Gap)"
+        },
+        {
+          "number": 9,
+          "slug": "communication-and-media",
+          "title": "Communication and Media",
+          "vocabulary": ["message", "blogger", "channel", "advertisement", "headline", "subscribe", "notification", "profile"],
+          "grammar": ["Reported speech (statements, basic)", "Zero and first conditional"],
+          "readingSkill": "Multiple Choice Long Text (Detail and Opinion)",
+          "listeningSkill": "Multiple Choice Interview/Monologue"
+        },
+        {
+          "number": 10,
+          "slug": "environment",
+          "title": "Environment",
+          "vocabulary": ["energy", "waste", "climate", "wildlife", "conservation", "renewable", "drought", "flood"],
+          "grammar": ["First conditional", "Passive voice in environmental contexts"],
+          "readingSkill": "Open Cloze (One Word Gaps)",
+          "listeningSkill": "Understand Detail in Longer Extracts"
+        },
+        {
+          "number": 11,
+          "slug": "personal-relationships",
+          "title": "Personal Relationships",
+          "vocabulary": ["neighbour", "invitation", "apologise", "congratulate", "relationship", "trust", "argue", "forgive"],
+          "grammar": ["Present perfect with experience", "Conjunctions: because, when, although (basic)"],
+          "readingSkill": "Understand Opinion in Short Texts",
+          "listeningSkill": "Multiple Choice Pictures (Short Extracts)"
+        },
+        {
+          "number": 12,
+          "slug": "public-places-and-directions",
+          "title": "Public Places and Directions",
+          "vocabulary": ["pedestrian", "crossing", "monument", "entrance", "exit", "square", "statue", "landmark"],
+          "grammar": ["Imperatives and directions", "Prepositions of movement: through, across, along"],
+          "readingSkill": "Multiple Choice with Short Texts (Signs, Messages)",
+          "listeningSkill": "Multiple Choice Questions (Longer Extracts)"
+        }
+      ]
+    },
+    {
+      "slug": "pet",
+      "name": "Cambridge PET",
+      "examName": "B1 Preliminary for Schools",
+      "cefr": "b1",
+      "targetAge": "12-16",
+      "shieldAssessment": false,
+      "scaleRange": { "min": 120, "max": 170, "pass": 140 },
+      "unitPlan": {
+        "count": 14,
+        "approximateVocabularyPerUnit": 179,
+        "designNote": "14 units to reduce vocabulary density vs KET; extends all KET themes plus B1-specific topics (global issues, formal writing, opinions)."
+      },
+      "learningObjectives": [
+        "Understand main points of clear standard input on familiar matters.",
+        "Deal with most situations likely to arise while travelling in an English-speaking area.",
+        "Produce simple connected text on familiar and personal interest topics.",
+        "Describe experiences, events, dreams, hopes, and ambitions with brief reasons.",
+        "Explain opinions and plans; narrate stories and accounts of experiences.",
+        "Demonstrate B1 threshold competence for academic and social participation."
+      ],
+      "vocabularyScope": {
+        "targetWordCount": 2500,
+        "coverage": "B1 Preliminary vocabulary topics; Cambridge English B1 lexicon",
+        "themes": [
+          "All KET themes, extended",
+          "Education systems and future plans",
+          "Careers and employment",
+          "Global issues (age-appropriate)",
+          "Science and technology in daily life",
+          "Arts, culture, and literature",
+          "Sports and competition",
+          "Social issues and community",
+          "Personal development and wellbeing",
+          "Formal correspondence and applications",
+          "Food, dining and consumer life",
+          "Housing and urban life"
+        ],
+        "wordTypes": [
+          "Extended phrasal verbs and idioms",
+          "Discourse markers (although, however, moreover, in addition)",
+          "Nominalisation (introduction): development, improvement",
+          "Register variation (formal/informal/neutral)",
+          "Precise verbs (achieve, require, suggest, recommend)",
+          "Academic vocabulary (B1 subset): analyse, compare, describe, explain"
+        ],
+        "productiveExpectation": "Paragraph-level writing and extended speaking turns with justification."
+      },
+      "grammarScope": {
+        "structures": [
+          "All KET grammar, consolidated and extended",
+          "Present perfect vs past simple (distinction)",
+          "Past perfect (introduction)",
+          "Future continuous and future perfect (recognition)",
+          "Modals: must, can't, may, might, ought to, needn't",
+          "Second conditional: If I had money, I would travel",
+          "Mixed conditionals (basic recognition)",
+          "Passive voice: all simple tenses; modal passives",
+          "Reported speech: questions and commands",
+          "Relative clauses (full range of pronouns)",
+          "Participle clauses (introduction): Having finished, ...",
+          "Wish and regret: I wish I had ...",
+          "Indirect questions: Do you know where ...?",
+          "Verb patterns: suggest doing, advise someone to"
+        ],
+        "notInScope": [
+          "Advanced subjunctive",
+          "Inversion for emphasis",
+          "Cleft and pseudo-cleft sentences",
+          "Full complex nominal clauses"
+        ]
+      },
+      "readingSkills": {
+        "examWeight": "25% of qualification (Reading paper)",
+        "taskTypes": [
+          "Multiple choice signs and short texts",
+          "Multiple matching (five people to eight texts)",
+          "Multiple choice gapped text (cohesion)",
+          "Multiple choice cloze (vocabulary)",
+          "Open cloze (grammar/structure)",
+          "Writing: email (100 words) and article/story (100 words)"
+        ],
+        "skills": [
+          "Understand detail, opinion, and attitude in longer texts",
+          "Identify organisational features and cohesive devices",
+          "Infer meaning of low-frequency vocabulary from context",
+          "Evaluate purpose, audience, and tone",
+          "Follow extended narrative and argument",
+          "Complete texts demonstrating B1 lexical and grammatical range"
+        ],
+        "textLength": "Texts 150–350 words; gapped text up to 400 words",
+        "cognitiveLevel": "Inference, evaluation, and textual cohesion"
+      },
+      "listeningSkills": {
+        "examWeight": "25% of qualification",
+        "taskTypes": [
+          "Multiple choice pictures (short monologues/dialogues)",
+          "Multiple choice questions (longer extracts)",
+          "Gap-fill sentences (one word per gap)",
+          "Multiple choice interview (opinion and attitude)"
+        ],
+        "skills": [
+          "Understand extended speech at natural pace",
+          "Identify speaker attitude, opinion, and purpose",
+          "Follow radio-style programmes and announcements",
+          "Understand implied meaning and indirect agreement",
+          "Extract paraphrased information (not exact words)",
+          "Process a range of accents in standard English"
+        ],
+        "recordingFeatures": "Authentic speed; minimal repetition; varied contexts",
+        "cognitiveLevel": "Inference, attitude, and paraphrase recognition"
+      },
+      "writingSkills": {
+        "examWeight": "25% of qualification (Writing paper)",
+        "taskTypes": [
+          "Write an email in response to input (100 words)",
+          "Write an article or story from prompt (100 words)"
+        ],
+        "skills": [
+          "Produce coherent paragraphs on familiar topics",
+          "Use range of linking devices and paragraph structure",
+          "Express and justify opinions with supporting reasons",
+          "Adapt register to audience and text type",
+          "Narrate and describe with appropriate detail",
+          "Self-edit for accuracy, range, and task fulfilment"
+        ],
+        "outputLength": "Approximately 100 words per task",
+        "cognitiveLevel": "Independent paragraph-level production"
+      },
+      "speakingSkills": {
+        "examWeight": "25% of qualification",
+        "taskTypes": [
+          "Personal interview",
+          "Collaborative decision-making task",
+          "Individual long turn describing photograph",
+          "Follow-up discussion with partner"
+        ],
+        "skills": [
+          "Maintain extended turns with clear organisation",
+          "Speculate, hypothesise, and express degrees of certainty",
+          "Negotiate, persuade, and agree/disagree politely",
+          "Describe and compare visual information in detail",
+          "Develop answers with examples and explanations",
+          "Manage turn-taking and interrupt appropriately"
+        ],
+        "interactionLevel": "Full candidate-candidate interaction; extended discourse",
+        "cognitiveLevel": "Argumentation, speculation, and collaborative problem-solving"
+      },
+      "units": [
+        {
+          "number": 1,
+          "slug": "education-and-future-plans",
+          "title": "Education and Future Plans",
+          "vocabulary": ["university", "degree", "scholarship", "career", "ambition", "qualification", "tuition", "enrol"],
+          "grammar": ["Second conditional: If I had money, I would travel", "Present perfect vs past simple"],
+          "readingSkill": "Understand Detail and Opinion in Longer Texts",
+          "listeningSkill": "Identify Speaker Attitude and Purpose"
+        },
+        {
+          "number": 2,
+          "slug": "careers-and-employment",
+          "title": "Careers and Employment",
+          "vocabulary": ["employer", "employee", "apply", "promotion", "resign", "workplace", "overtime", "benefits"],
+          "grammar": ["Present perfect vs past simple (distinction)", "Modals: must, can't, may, might"],
+          "readingSkill": "Evaluate Purpose, Audience, and Tone",
+          "listeningSkill": "Understand Extended Speech at Natural Pace"
+        },
+        {
+          "number": 3,
+          "slug": "global-issues",
+          "title": "Global Issues",
+          "vocabulary": ["poverty", "charity", "volunteer", "donate", "community", "inequality", "refugee", "sustainability"],
+          "grammar": ["Although, however, moreover", "Passive voice: modal passives"],
+          "readingSkill": "Follow Extended Narrative and Argument",
+          "listeningSkill": "Follow Radio-Style Programmes"
+        },
+        {
+          "number": 4,
+          "slug": "science-and-technology",
+          "title": "Science and Technology",
+          "vocabulary": ["device", "software", "update", "invention", "research", "innovation", "artificial", "digital"],
+          "grammar": ["Passive voice: all simple tenses", "Reported speech: questions"],
+          "readingSkill": "Infer Meaning of Low-Frequency Vocabulary",
+          "listeningSkill": "Extract Paraphrased Information"
+        },
+        {
+          "number": 5,
+          "slug": "arts-culture-and-literature",
+          "title": "Arts, Culture and Literature",
+          "vocabulary": ["novel", "author", "perform", "exhibition", "sculpture", "plot", "character", "genre"],
+          "grammar": ["Wish and regret: I wish I had ...", "Relative clauses (full range of pronouns)"],
+          "readingSkill": "Identify Organisational Features and Cohesive Devices",
+          "listeningSkill": "Understand Implied Meaning"
+        },
+        {
+          "number": 6,
+          "slug": "sports-and-competition",
+          "title": "Sports and Competition",
+          "vocabulary": ["athlete", "referee", "tournament", "defeat", "champion", "opponent", "score", "record"],
+          "grammar": ["Comparatives and superlatives (extended)", "Participle clauses (introduction): Having finished, ..."],
+          "readingSkill": "Multiple Choice Gapped Text (Cohesion)",
+          "listeningSkill": "Gap-Fill Sentences (One Word per Gap)"
+        },
+        {
+          "number": 7,
+          "slug": "social-issues-and-community",
+          "title": "Social Issues and Community",
+          "vocabulary": ["homeless", "discrimination", "equality", "campaign", "protest", "justice", "rights", "citizen"],
+          "grammar": ["Modals: ought to, needn't", "Second conditional for hypothetical situations"],
+          "readingSkill": "Multiple Choice Cloze (Vocabulary)",
+          "listeningSkill": "Multiple Choice Interview (Opinion and Attitude)"
+        },
+        {
+          "number": 8,
+          "slug": "personal-development-and-wellbeing",
+          "title": "Personal Development and Wellbeing",
+          "vocabulary": ["confidence", "stress", "achieve", "improve", "challenge", "motivation", "wellbeing", "mindset"],
+          "grammar": ["Verb patterns: suggest doing, advise someone to", "Gerunds and infinitives (extended)"],
+          "readingSkill": "Open Cloze (Grammar/Structure)",
+          "listeningSkill": "Understand Indirect Agreement"
+        },
+        {
+          "number": 9,
+          "slug": "formal-correspondence",
+          "title": "Formal Correspondence",
+          "vocabulary": ["application", "reference", "formal", "sincerely", "attach", "enquiry", "regarding", "deadline"],
+          "grammar": ["Register variation (formal/informal/neutral)", "Indirect questions: Do you know where ...?"],
+          "readingSkill": "Multiple Choice Signs and Short Texts",
+          "listeningSkill": "Multiple Choice Pictures (Short Monologues)"
+        },
+        {
+          "number": 10,
+          "slug": "travel-and-experiences",
+          "title": "Travel and Experiences",
+          "vocabulary": ["accommodation", "sightseeing", "customs", "souvenir", "itinerary", "boarding", "visa", "jet lag"],
+          "grammar": ["Past perfect (introduction)", "Reported speech: commands"],
+          "readingSkill": "Multiple Matching (Five People to Eight Texts)",
+          "listeningSkill": "Multiple Choice Questions (Longer Extracts)"
+        },
+        {
+          "number": 11,
+          "slug": "media-and-communication",
+          "title": "Media and Communication",
+          "vocabulary": ["headline", "broadcast", "subscribe", "viral", "influence", "journalist", "editorial", "platform"],
+          "grammar": ["Discourse markers: in addition, on the other hand", "Nominalisation (introduction): development, improvement"],
+          "readingSkill": "Complete Texts Demonstrating B1 Lexical Range",
+          "listeningSkill": "Process a Range of Accents"
+        },
+        {
+          "number": 12,
+          "slug": "opinions-and-discussion",
+          "title": "Opinions and Discussion",
+          "vocabulary": ["agree", "disagree", "argue", "suggest", "recommend", "persuade", "convince", "debate"],
+          "grammar": ["Mixed conditionals (basic recognition)", "Precise verbs: achieve, require, suggest, recommend"],
+          "readingSkill": "Evaluate Tone and Writer Attitude",
+          "listeningSkill": "Understand Opinion in Extended Discourse"
+        },
+        {
+          "number": 13,
+          "slug": "food-dining-and-shopping",
+          "title": "Food, Dining and Shopping",
+          "vocabulary": ["cuisine", "ingredient", "organic", "vegetarian", "receipt", "refund", "consumer", "budget"],
+          "grammar": ["Quantifiers: plenty of, several", "Comparatives for value: cheaper, better quality"],
+          "readingSkill": "Understand Consumer Information Texts",
+          "listeningSkill": "Follow Shopping and Dining Dialogues"
+        },
+        {
+          "number": 14,
+          "slug": "home-city-and-services",
+          "title": "Home, City Life and Services",
+          "vocabulary": ["landlord", "tenant", "commute", "district", "suburb", "facility", "municipal", "neighbourhood"],
+          "grammar": ["Relative clauses (extended)", "Passive voice in service contexts"],
+          "readingSkill": "Understand Housing and City Notices",
+          "listeningSkill": "Extract Practical Information from Announcements"
+        }
+      ]
+    }
+  ]
+}

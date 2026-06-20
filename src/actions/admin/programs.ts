@@ -10,6 +10,7 @@ import {
   revalidateAdmin,
 } from "./_shared";
 import {
+  optionalInt,
   optionalStr,
   parseJsonField,
   str,
@@ -53,10 +54,20 @@ export async function createProgram(formData: FormData): Promise<ActionResult<{ 
 export async function updateProgram(formData: FormData): Promise<ActionResult> {
   await requireAdmin();
   const supabase = await createClient();
-  const settings = parseJsonField<Record<string, unknown>>(
-    formData.get("settings"),
-    {}
-  );
+  const id = str(formData, "id");
+
+  const settingsRaw = formData.get("settings");
+  let settings: Json;
+  if (settingsRaw && typeof settingsRaw === "string" && settingsRaw.trim()) {
+    settings = parseJsonField<Record<string, unknown>>(settingsRaw, {}) as Json;
+  } else {
+    const { data: existing } = await supabase
+      .from("programs")
+      .select("settings")
+      .eq("id", id)
+      .single();
+    settings = (existing?.settings ?? {}) as Json;
+  }
 
   const { error } = await supabase
     .from("programs")
@@ -68,9 +79,9 @@ export async function updateProgram(formData: FormData): Promise<ActionResult> {
       cover_url: optionalStr(formData, "coverUrl"),
       sort_order: parseInt(str(formData, "sortOrder") || "0", 10),
       is_active: formData.get("isActive") === "true",
-      settings: settings as Json,
+      settings,
     })
-    .eq("id", str(formData, "id"));
+    .eq("id", id);
 
   if (error) return { success: false, error: error.message };
   await revalidateAdmin();
@@ -128,6 +139,7 @@ export async function updateLevel(formData: FormData): Promise<ActionResult> {
       name: str(formData, "name"),
       slug: str(formData, "slug").toLowerCase(),
       description: optionalStr(formData, "description"),
+      sort_order: optionalInt(formData, "sortOrder") ?? undefined,
       is_active: formData.get("isActive") === "true",
     })
     .eq("id", str(formData, "id"));

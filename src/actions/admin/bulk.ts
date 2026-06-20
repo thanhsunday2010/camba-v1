@@ -188,13 +188,14 @@ export async function importContentBundle(
   }
 
   for (const e of bundle.exercises) {
-    const { id: oldId, lesson_id, content, ...rest } = e;
+    const { id: oldId, lesson_id, content, metadata, ...rest } = e;
     const { data, error } = await supabase
       .from("exercises")
       .insert({
         ...rest,
         lesson_id: remap(lesson_id),
         content: content as Json,
+        metadata: (metadata ?? {}) as Json,
       })
       .select("id")
       .single();

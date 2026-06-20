@@ -12,7 +12,10 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "test:validation": "vitest run",
-    "seed:test-users": "node scripts/seed-test-users.mjs"
+    "seed:test-users": "node scripts/seed-test-users.mjs",
+    "bootstrap:curriculum": "node scripts/bootstrap-curriculum.mjs",
+    "seed:unit": "node scripts/seed-unit.mjs",
+    "seed:starters-unit-01": "node scripts/seed-starters-unit-01.mjs"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

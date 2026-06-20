@@ -1,13 +1,14 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useActionState, useTransition } from "react";
 import { useTranslations } from "next-intl";
-import { signIn, signInWithGoogle } from "@/actions/auth";
+import { loginAction, signInWithGoogle } from "@/actions/login";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Link } from "@/i18n/routing";
 import { Loader2 } from "lucide-react";
+import type { ActionResult } from "@/types";
 
 export function LoginForm({
   redirectPath,
@@ -17,19 +18,18 @@ export function LoginForm({
   authError?: string;
 }) {
   const t = useTranslations("auth");
-  const [error, setError] = useState<string | null>(authError ? decodeURIComponent(authError) : null);
-  const [isPending, startTransition] = useTransition();
+  const [state, formAction, isPending] = useActionState<ActionResult | null, FormData>(
+    loginAction,
+    null
+  );
   const [isGooglePending, startGoogleTransition] = useTransition();
 
-  function handleSubmit(formData: FormData) {
-    setError(null);
-    startTransition(async () => {
-      const result = await signIn(formData);
-      if (result && !result.success) {
-        setError(result.error ?? t("invalidCredentials"));
-      }
-    });
-  }
+  const errorMessage =
+    state && !state.success
+      ? (state.error ?? t("invalidCredentials"))
+      : authError
+        ? decodeURIComponent(authError)
+        : null;
 
   function handleGoogleSignIn() {
     startGoogleTransition(async () => {
@@ -39,7 +39,7 @@ export function LoginForm({
 
   return (
     <div className="space-y-6">
-      <form action={handleSubmit} className="space-y-4">
+      <form action={formAction} className="space-y-4">
         {redirectPath && <input type="hidden" name="redirect" value={redirectPath} />}
         <div className="space-y-2">
           <Label htmlFor="email">{t("email")}</Label>
@@ -72,9 +72,9 @@ export function LoginForm({
           />
         </div>
 
-        {error && (
+        {errorMessage && (
           <p className="text-sm text-error bg-red-50 border border-red-100 rounded-lg px-3 py-2">
-            {error}
+            {errorMessage}
           </p>
         )}
 

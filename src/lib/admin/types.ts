@@ -73,6 +73,7 @@ export interface AdminExercise {
   instructions: string | null;
   exercise_type: ExerciseType;
   content: Record<string, unknown>;
+  metadata: Record<string, unknown>;
   max_score: number;
   time_limit_seconds: number | null;
   sort_order: number;

@@ -1,6 +1,10 @@
 import { createClient } from "@/lib/supabase/server";
 import { sanitizeQuestionForClient } from "@/lib/learning/sanitize-questions";
 import {
+  fetchUserLessonProgress,
+  upsertLessonProgress,
+} from "@/lib/learning/lesson-progress-db";
+import {
   getEntryLessonIds,
   isLessonUnlockedFromProgress,
   type LessonUnlockNode,
@@ -50,13 +54,9 @@ export async function getLearningPath(
 
   if (!skills) return null;
 
-  const { data: allProgress } = await supabase
-    .from("lesson_progress")
-    .select("*")
-    .eq("user_id", userId)
-    .eq("program_id", programId);
+  const allProgress = await fetchUserLessonProgress(supabase, userId, programId);
 
-  const progressMap = new Map(allProgress?.map((p) => [p.lesson_id, p]) ?? []);
+  const progressMap = new Map(allProgress.map((p) => [p.lesson_id, p]));
 
   const skillsWithContent: Skill[] = [];
 
@@ -268,7 +268,7 @@ export async function getLessonProgress(userId: string, lessonId: string) {
     .select("*")
     .eq("user_id", userId)
     .eq("lesson_id", lessonId)
-    .single();
+    .maybeSingle();
 
   return data;
 }
@@ -332,24 +332,91 @@ export async function initializeLessonUnlocks(userId: string, levelId: string) {
       const entryIds = getEntryLessonIds(unitLessons);
 
       for (const lesson of unit.lessons ?? []) {
-        const shouldUnlock = entryIds.includes(lesson.id) && !lesson.progress;
+        const shouldUnlock =
+          entryIds.includes(lesson.id) &&
+          (!lesson.progress || lesson.progress.is_unlocked !== true);
 
         if (shouldUnlock) {
-          await supabase.from("lesson_progress").upsert(
-            {
-              user_id: userId,
-              lesson_id: lesson.id,
-              program_id: programId,
-              is_unlocked: true,
-              completion_percent: 0,
-              accuracy_percent: 0,
-              mastery_level: 0,
-              attempts_count: 0,
-            },
-            { onConflict: "user_id,lesson_id" }
-          );
+          await upsertLessonProgress(supabase, {
+            user_id: userId,
+            lesson_id: lesson.id,
+            program_id: programId,
+            is_unlocked: true,
+            completion_percent: lesson.progress?.completion_percent ?? 0,
+            accuracy_percent: lesson.progress?.accuracy_percent ?? 0,
+            mastery_level: lesson.progress?.mastery_level ?? 0,
+            attempts_count: lesson.progress?.attempts_count ?? 0,
+          });
         }
       }
     }
   }
+}
+
+export async function getLevelIdForLesson(lessonId: string): Promise<string | null> {
+  const supabase = await createClient();
+
+  const { data: lesson } = await supabase
+    .from("lessons")
+    .select("unit_id")
+    .eq("id", lessonId)
+    .maybeSingle();
+
+  if (!lesson) return null;
+
+  const { data: unit } = await supabase
+    .from("units")
+    .select("skill_id")
+    .eq("id", lesson.unit_id)
+    .maybeSingle();
+
+  if (!unit) return null;
+
+  const { data: skill } = await supabase
+    .from("skills")
+    .select("level_id")
+    .eq("id", unit.skill_id)
+    .maybeSingle();
+
+  return skill?.level_id ?? null;
+}
+
+/** Unlock entry lessons for the lesson's level (e.g. direct /learning/lesson/[id] links). */
+export async function ensureLessonUnlockedForUser(
+  userId: string,
+  lessonId: string
+): Promise<void> {
+  const supabase = await createClient();
+  const levelId = await getLevelIdForLesson(lessonId);
+  if (!levelId) return;
+
+  const { data: lesson } = await supabase
+    .from("lessons")
+    .select("unlock_after_lesson_id")
+    .eq("id", lessonId)
+    .maybeSingle();
+
+  if (lesson && !lesson.unlock_after_lesson_id) {
+    const existing = await getLessonProgress(userId, lessonId);
+    if (!existing || existing.is_unlocked !== true) {
+      const { data: level } = await supabase
+        .from("levels")
+        .select("program_id")
+        .eq("id", levelId)
+        .maybeSingle();
+
+      await upsertLessonProgress(supabase, {
+        user_id: userId,
+        lesson_id: lessonId,
+        program_id: level?.program_id ?? undefined,
+        is_unlocked: true,
+        completion_percent: Number(existing?.completion_percent ?? 0),
+        accuracy_percent: Number(existing?.accuracy_percent ?? 0),
+        mastery_level: existing?.mastery_level ?? 0,
+        attempts_count: existing?.attempts_count ?? 0,
+      });
+    }
+  }
+
+  await initializeLessonUnlocks(userId, levelId);
 }

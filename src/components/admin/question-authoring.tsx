@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { QUESTION_TYPE_OPTIONS } from "@/lib/admin/constants";
 import type { QuestionType } from "@/types/database";
 
 interface ChoiceRow {
@@ -33,6 +34,7 @@ interface QuestionAuthoringProps {
     questionType?: QuestionType;
     explanation?: string | null;
     points?: number;
+    mediaUrl?: string | null;
     content?: Record<string, unknown>;
     choices?: ChoiceRow[];
     pairs?: PairRow[];
@@ -135,11 +137,11 @@ export function QuestionAuthoring({
               onChange={(e) => setQuestionType(e.target.value as QuestionType)}
               className="mt-1 w-full h-10 rounded-lg border px-3 text-sm"
             >
-              <option value="multiple_choice">Trắc nghiệm</option>
-              <option value="multi_select">Chọn nhiều</option>
-              <option value="gap_fill">Điền từ</option>
-              <option value="matching">Nối cặp</option>
-              <option value="sentence_ordering">Sắp xếp câu</option>
+              {QUESTION_TYPE_OPTIONS.map((opt) => (
+                <option key={opt.value} value={opt.value}>
+                  {opt.label}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -148,6 +150,11 @@ export function QuestionAuthoring({
             placeholder="Nội dung câu hỏi"
             defaultValue={initial?.questionText ?? ""}
             required
+          />
+          <Input
+            name="mediaUrl"
+            placeholder="Media URL (ảnh/audio)"
+            defaultValue={initial?.mediaUrl ?? ""}
           />
           <Input
             name="explanation"

@@ -24,10 +24,12 @@ import {
   updateProgram,
   updateProgramStatus,
 } from "@/actions/admin/programs";
-import { deleteQuestion } from "@/actions/admin/questions";
+import { deleteQuestion, reorderQuestion } from "@/actions/admin/questions";
 import { StatusBadge } from "./shared/status-badge";
 import { QuestionAuthoring } from "./question-authoring";
+import { ExerciseTypeSelect } from "./exercise-type-select";
 import { saveQuestion } from "@/actions/admin/questions";
+import { isQuestionBankExercise } from "@/lib/admin/constants";
 import type { AdminContentTree } from "@/lib/admin/types";
 import type { TreeSelection } from "./content-tree";
 import type { ContentStatus } from "@/types/database";
@@ -71,6 +73,12 @@ export function EntityEditor({ content, selection, onMessage }: EntityEditorProp
           <Input name="iconUrl" defaultValue={program.icon_url ?? ""} placeholder="Icon URL" />
           <Input name="coverUrl" defaultValue={program.cover_url ?? ""} placeholder="Cover URL" />
           <Input name="sortOrder" type="number" defaultValue={program.sort_order} />
+          <textarea
+            name="settings"
+            defaultValue={JSON.stringify(program.settings ?? {}, null, 2)}
+            className="w-full min-h-[80px] rounded-lg border px-3 py-2 text-sm font-mono"
+            placeholder="JSON settings"
+          />
           <label className="flex items-center gap-2 text-sm">
             <input type="checkbox" name="isActive" value="true" defaultChecked={program.is_active} />
             Hoạt động
@@ -102,6 +110,7 @@ export function EntityEditor({ content, selection, onMessage }: EntityEditorProp
           <Input name="name" defaultValue={level.name} required />
           <Input name="slug" defaultValue={level.slug} required />
           <Input name="description" defaultValue={level.description ?? ""} />
+          <Input name="sortOrder" type="number" defaultValue={level.sort_order} />
           <label className="flex items-center gap-2 text-sm">
             <input type="checkbox" name="isActive" value="true" defaultChecked={level.is_active} />
             Hoạt động
@@ -123,6 +132,7 @@ export function EntityEditor({ content, selection, onMessage }: EntityEditorProp
           <Input name="slug" defaultValue={skill.slug} required />
           <Input name="description" defaultValue={skill.description ?? ""} />
           <Input name="icon" defaultValue={skill.icon ?? ""} placeholder="Icon" />
+          <Input name="sortOrder" type="number" defaultValue={skill.sort_order} />
           <label className="flex items-center gap-2 text-sm">
             <input type="checkbox" name="isActive" value="true" defaultChecked={skill.is_active} />
             Hoạt động
@@ -144,6 +154,7 @@ export function EntityEditor({ content, selection, onMessage }: EntityEditorProp
           <Input name="title" defaultValue={unit.title} required />
           <Input name="slug" defaultValue={unit.slug} required />
           <Input name="description" defaultValue={unit.description ?? ""} />
+          <Input name="sortOrder" type="number" defaultValue={unit.sort_order} />
           <div>
             <Label>Mở khóa sau unit</Label>
             <select name="unlockAfterUnitId" defaultValue={unit.unlock_after_unit_id ?? ""} className="w-full h-10 rounded-lg border px-3 text-sm mt-1">
@@ -175,6 +186,7 @@ export function EntityEditor({ content, selection, onMessage }: EntityEditorProp
           <Input name="slug" defaultValue={lesson.slug} required />
           <Input name="description" defaultValue={lesson.description ?? ""} />
           <Input name="estimatedMinutes" type="number" defaultValue={lesson.estimated_minutes} />
+          <Input name="sortOrder" type="number" defaultValue={lesson.sort_order} />
           <div>
             <Label>Mở khóa sau bài học</Label>
             <select name="unlockAfterLessonId" defaultValue={lesson.unlock_after_lesson_id ?? ""} className="w-full h-10 rounded-lg border px-3 text-sm mt-1">
@@ -197,13 +209,25 @@ export function EntityEditor({ content, selection, onMessage }: EntityEditorProp
   if (selection.type === "exercise") {
     const exercise = content.exercises.find((e) => e.id === selection.id);
     if (!exercise) return null;
-    const questions = content.questions.filter((q) => q.exercise_id === exercise.id);
+    const questions = content.questions
+      .filter((q) => q.exercise_id === exercise.id)
+      .sort((a, b) => a.sort_order - b.sort_order);
+    const isQuestionBank = isQuestionBankExercise(exercise.metadata);
 
     return (
       <div className="space-y-4">
         <EditCard
           title={`Bài tập — ${exercise.title}`}
-          badge={<StatusBadge status={exercise.status} />}
+          badge={
+            <>
+              <StatusBadge status={exercise.status} />
+              {isQuestionBank && (
+                <span className="text-xs bg-violet-100 text-violet-700 px-2 py-0.5 rounded-full">
+                  Ngân hàng câu hỏi
+                </span>
+              )}
+            </>
+          }
           onDelete={() => run(() => deleteExercise(exercise.id), "Đã xóa")}
           isPending={isPending}
         >
@@ -212,16 +236,9 @@ export function EntityEditor({ content, selection, onMessage }: EntityEditorProp
             <Input name="title" defaultValue={exercise.title} required />
             <Input name="slug" defaultValue={exercise.slug} required />
             <Input name="instructions" defaultValue={exercise.instructions ?? ""} />
-            <select name="exerciseType" defaultValue={exercise.exercise_type} className="w-full h-10 rounded-lg border px-3 text-sm">
-              <option value="multiple_choice">Trắc nghiệm</option>
-              <option value="multi_select">Chọn nhiều</option>
-              <option value="gap_fill">Điền từ</option>
-              <option value="matching">Nối cặp</option>
-              <option value="sentence_ordering">Sắp xếp câu</option>
-              <option value="writing">Bài viết</option>
-              <option value="speaking">Bài nói</option>
-            </select>
+            <ExerciseTypeSelect defaultValue={exercise.exercise_type} />
             <Input name="maxScore" type="number" defaultValue={exercise.max_score} />
+            <Input name="sortOrder" type="number" defaultValue={exercise.sort_order} />
             <Input name="timeLimitSeconds" type="number" defaultValue={exercise.time_limit_seconds ?? ""} placeholder="Giới hạn thời gian (giây)" />
             <textarea
               name="content"
@@ -251,18 +268,36 @@ export function EntityEditor({ content, selection, onMessage }: EntityEditorProp
           <Card>
             <CardHeader><CardTitle className="text-base">Câu hỏi ({questions.length})</CardTitle></CardHeader>
             <CardContent className="space-y-3">
-              {questions.map((q) => (
+              {questions.map((q, index) => (
                 <div key={q.id} className="border rounded-lg p-3 space-y-2">
                   <div className="flex justify-between items-start gap-2">
                     <p className="text-sm font-medium">{q.question_text}</p>
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      disabled={isPending}
-                      onClick={() => run(() => deleteQuestion(q.id), "Đã xóa câu hỏi")}
-                    >
-                      Xóa
-                    </Button>
+                    <div className="flex gap-1 shrink-0">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        disabled={isPending || index === 0}
+                        onClick={() => run(() => reorderQuestion(q.id, "up"), "Đã sắp xếp")}
+                      >
+                        ↑
+                      </Button>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        disabled={isPending || index === questions.length - 1}
+                        onClick={() => run(() => reorderQuestion(q.id, "down"), "Đã sắp xếp")}
+                      >
+                        ↓
+                      </Button>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        disabled={isPending}
+                        onClick={() => run(() => deleteQuestion(q.id), "Đã xóa câu hỏi")}
+                      >
+                        Xóa
+                      </Button>
+                    </div>
                   </div>
                   <p className="text-xs text-gray-500">{q.question_type} • {q.points} điểm</p>
                   <QuestionAuthoring
@@ -274,6 +309,7 @@ export function EntityEditor({ content, selection, onMessage }: EntityEditorProp
                       questionType: q.question_type,
                       explanation: q.explanation,
                       points: q.points,
+                      mediaUrl: q.media_url,
                       content: q.content,
                       choices: q.choices?.map((c) => ({ text: c.text, isCorrect: c.is_correct })),
                       pairs: q.pairs?.map((p) => ({ leftText: p.left_text, rightText: p.right_text })),

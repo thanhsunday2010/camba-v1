@@ -40,6 +40,7 @@
     "forgotPasswordTitle": "Forgot password",
     "forgotPasswordSubtitle": "Enter your email to receive a reset link",
     "loginWithGoogle": "Sign in with Google",
+    "or": "or",
     "registerWithGoogle": "Sign up with Google",
     "noAccount": "Don't have an account?",
     "hasAccount": "Already have an account?",
@@ -163,7 +164,13 @@
     "retryExercise": "Retry",
     "exercises": "exercises",
     "completed": "completed",
-    "minutes": "min"
+    "minutes": "min",
+    "unitCount": "{count} units",
+    "unitsWithContent": "{count} units with lessons",
+    "unitLessonCount": "{count} lessons",
+    "unitComingSoon": "Content in development",
+    "comingSoon": "Coming soon",
+    "skillNoContent": "No lessons for this skill yet"
   },
   "placement": {
     "title": "Placement Test",
