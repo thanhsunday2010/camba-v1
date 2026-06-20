@@ -33,29 +33,18 @@ export function pickVoiceForSpeaker(speaker) {
 }
 
 /**
- * Synthesize dialogue with short pauses; alternates voice when speaker changes.
+ * Synthesize full script in one pass (valid single MP3; concat breaks many players).
  */
 export async function synthesizeListeningScript(script, options = {}) {
   const rate = options.rate ?? "-18%";
-  const lines = script?.lines ?? [];
-  if (lines.length === 0) {
+  const text = buildListeningSpeechText(script);
+  if (!text) {
     throw new Error("Listening script has no lines");
   }
 
-  const chunks = [];
-
-  for (const line of lines) {
-    const text = line.text?.trim();
-    if (!text) continue;
-
-    const voice = pickVoiceForSpeaker(line.speaker);
-    const tts = new EdgeTTS(text, voice, { rate });
-    const result = await tts.synthesize();
-    const buf = Buffer.from(await result.audio.arrayBuffer());
-    chunks.push(buf);
-  }
-
-  return Buffer.concat(chunks);
+  const tts = new EdgeTTS(text, STARTERS_VOICE, { rate });
+  const result = await tts.synthesize();
+  return Buffer.from(await result.audio.arrayBuffer());
 }
 
 export async function writeListeningMp3(filePath, script) {

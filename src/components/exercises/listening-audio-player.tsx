@@ -17,6 +17,17 @@ interface ListeningAudioPlayerProps {
   };
 }
 
+function resolveAudioSrc(audioUrl: string): string {
+  if (audioUrl.startsWith("http://") || audioUrl.startsWith("https://")) {
+    return audioUrl;
+  }
+  if (typeof window !== "undefined") {
+    const base = process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "") ?? window.location.origin;
+    return `${base}${audioUrl.startsWith("/") ? audioUrl : `/${audioUrl}`}`;
+  }
+  return audioUrl;
+}
+
 export function ListeningAudioPlayer({
   audioUrl,
   title,
@@ -33,6 +44,7 @@ export function ListeningAudioPlayer({
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+  const src = resolveAudioSrc(audioUrl);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -42,7 +54,7 @@ export function ListeningAudioPlayer({
     setHasError(false);
     setIsPlaying(false);
 
-    const onCanPlay = () => setIsLoading(false);
+    const markReady = () => setIsLoading(false);
     const onError = () => {
       setIsLoading(false);
       setHasError(true);
@@ -51,22 +63,35 @@ export function ListeningAudioPlayer({
     const onPause = () => setIsPlaying(false);
     const onEnded = () => setIsPlaying(false);
 
-    audio.addEventListener("canplay", onCanPlay);
+    audio.addEventListener("loadeddata", markReady);
+    audio.addEventListener("canplay", markReady);
     audio.addEventListener("error", onError);
     audio.addEventListener("play", onPlay);
     audio.addEventListener("pause", onPause);
     audio.addEventListener("ended", onEnded);
 
-    audio.load();
+    if (audio.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+      markReady();
+    } else {
+      audio.load();
+    }
+
+    const timeout = window.setTimeout(() => {
+      if (audio.readyState >= HTMLMediaElement.HAVE_METADATA) {
+        markReady();
+      }
+    }, 8000);
 
     return () => {
-      audio.removeEventListener("canplay", onCanPlay);
+      window.clearTimeout(timeout);
+      audio.removeEventListener("loadeddata", markReady);
+      audio.removeEventListener("canplay", markReady);
       audio.removeEventListener("error", onError);
       audio.removeEventListener("play", onPlay);
       audio.removeEventListener("pause", onPause);
       audio.removeEventListener("ended", onEnded);
     };
-  }, [audioUrl]);
+  }, [src]);
 
   useEffect(() => {
     if (!autoPlay || isLoading || hasError) return;
@@ -74,9 +99,9 @@ export function ListeningAudioPlayer({
     if (!audio) return;
 
     void audio.play().catch(() => {
-      // Autoplay may be blocked until user interacts; ignore.
+      // Autoplay may be blocked; user can press Play.
     });
-  }, [autoPlay, isLoading, hasError, audioUrl]);
+  }, [autoPlay, isLoading, hasError, src]);
 
   function togglePlay() {
     const audio = audioRef.current;
@@ -113,7 +138,7 @@ export function ListeningAudioPlayer({
             )}
           </div>
 
-          <audio ref={audioRef} src={audioUrl} preload="auto" className="hidden" />
+          <audio ref={audioRef} src={src} preload="auto" playsInline className="hidden" />
 
           {isLoading ? (
             <p className="text-sm text-gray-500 flex items-center gap-2">
