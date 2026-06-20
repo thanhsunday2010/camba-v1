@@ -1,0 +1,140 @@
+"use client";
+
+import { useState, useTransition } from "react";
+import { submitWritingForFeedback } from "@/actions/ai/writing";
+import { AiFeedbackPanel } from "@/components/ai/ai-feedback-panel";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Loader2, PenLine } from "lucide-react";
+import type { WritingFeedback } from "@/types/ai";
+
+interface WritingExerciseProps {
+  exerciseId: string;
+  lessonId: string;
+  title: string;
+  instructions?: string | null;
+  prompt: string;
+  minWords?: number;
+  maxWords?: number;
+  targetLevel?: string;
+  labels: {
+    placeholder: string;
+    wordCount: string;
+    submit: string;
+    submitting: string;
+    minWordsError: string;
+    result: string;
+    estimatedLevel: string;
+    grammar: string;
+    vocabulary: string;
+    coherence: string;
+    improvements: string;
+    pronunciation: string;
+    fluency: string;
+    suggestions: string;
+    overallScore: string;
+  };
+  onComplete?: () => void;
+}
+
+export function WritingExercise({
+  exerciseId,
+  lessonId,
+  title,
+  instructions,
+  prompt,
+  minWords = 30,
+  maxWords = 200,
+  targetLevel,
+  labels,
+  onComplete,
+}: WritingExerciseProps) {
+  const [content, setContent] = useState("");
+  const [feedback, setFeedback] = useState<WritingFeedback | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [isPending, startTransition] = useTransition();
+
+  const wordCount = content.split(/\s+/).filter(Boolean).length;
+
+  function handleSubmit() {
+    setError(null);
+    if (wordCount < minWords) {
+      setError(labels.minWordsError.replace("{min}", String(minWords)));
+      return;
+    }
+
+    startTransition(async () => {
+      const result = await submitWritingForFeedback(
+        exerciseId,
+        lessonId,
+        prompt,
+        content,
+        targetLevel
+      );
+      if (result.success && result.data) {
+        setFeedback(result.data);
+        onComplete?.();
+      } else {
+        setError(result.error ?? "Error");
+      }
+    });
+  }
+
+  if (feedback) {
+    return (
+      <AiFeedbackPanel
+        type="writing"
+        feedback={feedback}
+        labels={labels}
+      />
+    );
+  }
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <PenLine className="h-5 w-5 text-primary" />
+          {title}
+        </CardTitle>
+        {instructions && <p className="text-sm text-gray-500">{instructions}</p>}
+      </CardHeader>
+      <CardContent className="space-y-4">
+        <div className="bg-primary/5 rounded-lg p-4">
+          <p className="text-sm font-medium text-gray-900">{prompt}</p>
+        </div>
+
+        <textarea
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
+          placeholder={labels.placeholder}
+          rows={8}
+          className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 resize-y"
+          maxLength={maxWords * 8}
+        />
+
+        <div className="flex items-center justify-between">
+          <span className="text-xs text-gray-500">
+            {labels.wordCount}: {wordCount} / {maxWords}
+          </span>
+          <Button onClick={handleSubmit} disabled={isPending || wordCount === 0}>
+            {isPending ? (
+              <>
+                <Loader2 className="animate-spin" />
+                {labels.submitting}
+              </>
+            ) : (
+              labels.submit
+            )}
+          </Button>
+        </div>
+
+        {error && (
+          <p className="text-sm text-error bg-red-50 border border-red-100 rounded-lg px-3 py-2">
+            {error}
+          </p>
+        )}
+      </CardContent>
+    </Card>
+  );
+}
