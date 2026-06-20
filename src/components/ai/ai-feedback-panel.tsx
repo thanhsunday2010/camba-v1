@@ -18,6 +18,7 @@ interface AiFeedbackPanelProps {
     fluency: string;
     suggestions: string;
     overallScore: string;
+    transcript?: string;
   };
 }
 
@@ -67,6 +68,14 @@ export function AiFeedbackPanel({ type, feedback, labels }: AiFeedbackPanelProps
 
         {speaking && (
           <>
+            {speaking.transcript && (
+              <div className="bg-gray-50 rounded-lg p-3">
+                <p className="text-sm font-medium text-gray-900 mb-1">
+                  {labels.transcript ?? "Bản ghi"}
+                </p>
+                <p className="text-sm text-gray-600 leading-relaxed">{speaking.transcript}</p>
+              </div>
+            )}
             <div className="grid grid-cols-2 gap-3">
               <ScoreChip label={labels.pronunciation} score={speaking.pronunciationScore} />
               <ScoreChip label={labels.fluency} score={speaking.fluencyScore} />

@@ -57,6 +57,9 @@ const AI_FEEDBACK_LABELS = {
   stopRecording: "Dừng ghi âm",
   noRecording: "Vui lòng ghi âm trước khi gửi",
   recording: "Đang ghi",
+  transcript: "Bản ghi",
+  transcriptPlaceholder: "Nói vào microphone để xem bản ghi...",
+  transcriptUnsupported: "Trình duyệt không hỗ trợ bản ghi thời gian thực",
 };
 
 interface LessonPlayerProps {

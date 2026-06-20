@@ -1,11 +1,14 @@
 "use client";
 
-import { useState, useRef, useTransition } from "react";
+import { useState, useRef } from "react";
 import { submitSpeakingForFeedback } from "@/actions/ai/speaking";
 import { AiFeedbackPanel } from "@/components/ai/ai-feedback-panel";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Loader2, Mic, Square } from "lucide-react";
+import { useSpeechRecognition } from "@/lib/speech/use-speech-recognition";
+import { readBlobAsBase64 } from "@/lib/speech/blob-to-base64";
+import { toast } from "sonner";
 import type { SpeakingFeedback } from "@/types/ai";
 
 interface SpeakingExerciseProps {
@@ -33,6 +36,9 @@ interface SpeakingExerciseProps {
     suggestions: string;
     overallScore: string;
     recording: string;
+    transcript: string;
+    transcriptPlaceholder: string;
+    transcriptUnsupported: string;
   };
   onComplete?: () => void;
 }
@@ -53,7 +59,17 @@ export function SpeakingExercise({
   const [isRecording, setIsRecording] = useState(false);
   const [duration, setDuration] = useState(0);
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
-  const [isPending, startTransition] = useTransition();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const {
+    transcript,
+    interimTranscript,
+    displayTranscript,
+    isSupported: isSpeechSupported,
+    start: startTranscription,
+    stop: stopTranscription,
+    reset: resetTranscription,
+  } = useSpeechRecognition("en-US");
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
@@ -61,6 +77,10 @@ export function SpeakingExercise({
 
   async function startRecording() {
     try {
+      setAudioBlob(null);
+      resetTranscription();
+      setError(null);
+
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       const recorder = new MediaRecorder(stream);
       chunksRef.current = [];
@@ -79,6 +99,7 @@ export function SpeakingExercise({
       recorder.start();
       setIsRecording(true);
       setDuration(0);
+      startTranscription();
 
       timerRef.current = setInterval(() => {
         setDuration((d) => {
@@ -95,39 +116,46 @@ export function SpeakingExercise({
 
   function stopRecording() {
     mediaRecorderRef.current?.stop();
+    stopTranscription();
     setIsRecording(false);
     if (timerRef.current) clearInterval(timerRef.current);
   }
 
-  function handleSubmit() {
+  async function handleSubmit() {
     if (!audioBlob) {
       setError(labels.noRecording);
       return;
     }
 
     setError(null);
-    startTransition(async () => {
-      const reader = new FileReader();
-      reader.readAsDataURL(audioBlob);
-      reader.onloadend = async () => {
-        const base64 = (reader.result as string).split(",")[1];
-        const result = await submitSpeakingForFeedback(
-          exerciseId,
-          lessonId,
-          prompt,
-          base64,
-          "audio/webm",
-          duration,
-          targetLevel
-        );
-        if (result.success && result.data) {
-          setFeedback(result.data);
-          onComplete?.();
-        } else {
-          setError(result.error ?? "Error");
-        }
-      };
-    });
+    setIsSubmitting(true);
+    try {
+      const base64 = await readBlobAsBase64(audioBlob);
+      const result = await submitSpeakingForFeedback(
+        exerciseId,
+        lessonId,
+        prompt,
+        base64,
+        "audio/webm",
+        duration,
+        targetLevel
+      );
+      if (result.success && result.data) {
+        setFeedback(result.data);
+        onComplete?.();
+      } else {
+        const message = result.error ?? "Không gửi được bài. Vui lòng thử lại.";
+        setError(message);
+        toast.error(message);
+      }
+    } catch (error) {
+      const message =
+        error instanceof Error ? error.message : "Lỗi kết nối. Vui lòng thử lại.";
+      setError(message);
+      toast.error(message);
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   if (feedback) {
@@ -167,6 +195,29 @@ export function SpeakingExercise({
             <p className="text-sm text-success">✓ Đã ghi âm ({duration}s)</p>
           )}
 
+          {(isRecording || audioBlob) && (
+            <div className="w-full max-w-lg rounded-lg border border-gray-200 bg-gray-50 p-3 text-left">
+              <p className="text-xs font-medium text-gray-500 mb-2">{labels.transcript}</p>
+              {displayTranscript ? (
+                <p className="text-sm text-gray-900 leading-relaxed">
+                  {transcript}
+                  {interimTranscript && (
+                    <span className="text-gray-400">
+                      {transcript ? " " : ""}
+                      {interimTranscript}
+                    </span>
+                  )}
+                </p>
+              ) : isRecording ? (
+                <p className="text-sm text-gray-400 italic">{labels.transcriptPlaceholder}</p>
+              ) : !isSpeechSupported ? (
+                <p className="text-sm text-gray-400 italic">{labels.transcriptUnsupported}</p>
+              ) : (
+                <p className="text-sm text-gray-400 italic">{labels.transcriptPlaceholder}</p>
+              )}
+            </div>
+          )}
+
           <div className="flex gap-3">
             {!isRecording ? (
               <Button onClick={startRecording} variant="outline">
@@ -181,8 +232,8 @@ export function SpeakingExercise({
             )}
 
             {audioBlob && !isRecording && (
-              <Button onClick={handleSubmit} disabled={isPending}>
-                {isPending ? (
+              <Button onClick={handleSubmit} disabled={isSubmitting}>
+                {isSubmitting ? (
                   <>
                     <Loader2 className="animate-spin" />
                     {labels.submitting}

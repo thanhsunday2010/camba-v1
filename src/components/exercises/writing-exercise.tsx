@@ -1,11 +1,12 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import { submitWritingForFeedback } from "@/actions/ai/writing";
 import { AiFeedbackPanel } from "@/components/ai/ai-feedback-panel";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Loader2, PenLine } from "lucide-react";
+import { toast } from "sonner";
 import type { WritingFeedback } from "@/types/ai";
 
 interface WritingExerciseProps {
@@ -52,18 +53,19 @@ export function WritingExercise({
   const [content, setContent] = useState("");
   const [feedback, setFeedback] = useState<WritingFeedback | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [isPending, startTransition] = useTransition();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const wordCount = content.split(/\s+/).filter(Boolean).length;
 
-  function handleSubmit() {
+  async function handleSubmit() {
     setError(null);
     if (wordCount < minWords) {
       setError(labels.minWordsError.replace("{min}", String(minWords)));
       return;
     }
 
-    startTransition(async () => {
+    setIsSubmitting(true);
+    try {
       const result = await submitWritingForFeedback(
         exerciseId,
         lessonId,
@@ -75,9 +77,18 @@ export function WritingExercise({
         setFeedback(result.data);
         onComplete?.();
       } else {
-        setError(result.error ?? "Error");
+        const message = result.error ?? "Không gửi được bài. Vui lòng thử lại.";
+        setError(message);
+        toast.error(message);
       }
-    });
+    } catch (error) {
+      const message =
+        error instanceof Error ? error.message : "Lỗi kết nối. Vui lòng thử lại.";
+      setError(message);
+      toast.error(message);
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   if (feedback) {
@@ -117,8 +128,8 @@ export function WritingExercise({
           <span className="text-xs text-gray-500">
             {labels.wordCount}: {wordCount} / {maxWords}
           </span>
-          <Button onClick={handleSubmit} disabled={isPending || wordCount === 0}>
-            {isPending ? (
+          <Button onClick={handleSubmit} disabled={isSubmitting || wordCount === 0}>
+            {isSubmitting ? (
               <>
                 <Loader2 className="animate-spin" />
                 {labels.submitting}

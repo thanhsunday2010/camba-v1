@@ -1,5 +1,6 @@
 "use server";
 
+import { after } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { generateJsonWithAudio } from "@/lib/ai/gemini-client";
 import { parseGeminiJson } from "@/lib/ai/parse-feedback";
@@ -95,14 +96,31 @@ export async function submitSpeakingForFeedback(
       shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
     });
 
-    await completeAiExercise(exerciseId, lessonId, feedback.overallScore, durationSeconds);
-    await generateRecommendationsFromFeedback(user.id, feedback.suggestions.slice(0, 2));
+    after(async () => {
+      try {
+        await completeAiExercise(exerciseId, lessonId, feedback.overallScore, durationSeconds);
+        await generateRecommendationsFromFeedback(user.id, feedback.suggestions.slice(0, 2));
+      } catch (postError) {
+        console.error("Post-speaking progress failed:", postError);
+      }
+    });
 
     return { success: true, data: feedback };
   } catch (error) {
-    const message = error instanceof Error ? error.message : "AI processing failed";
+    const message = mapAiSubmitError(error);
     return { success: false, error: message };
   }
+}
+
+function mapAiSubmitError(error: unknown): string {
+  const message = error instanceof Error ? error.message : "AI processing failed";
+  if (message.includes("GOOGLE_GEMINI_API_KEY")) {
+    return "Chưa cấu hình API Gemini. Thêm GOOGLE_GEMINI_API_KEY vào .env.local.";
+  }
+  if (message.includes("Body exceeded") || message.includes("413")) {
+    return "File ghi âm quá lớn. Hãy ghi ngắn hơn rồi thử lại.";
+  }
+  return message;
 }
 
 export async function getSpeakingFeedbackHistory(limit = 10) {
