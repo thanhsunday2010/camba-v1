@@ -1,6 +1,6 @@
 import { redirect, notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { getCurrentUser } from "@/actions/auth";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { getStudentProgressForTeacher } from "@/lib/queries/teacher";
 import { createClient } from "@/lib/supabase/server";
 import { StudentProgressOverview } from "@/components/dashboard/student-progress-overview";

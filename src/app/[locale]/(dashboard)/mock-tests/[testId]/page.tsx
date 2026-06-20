@@ -1,6 +1,6 @@
 import { redirect, notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { getCurrentUser } from "@/actions/auth";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { getMockTestData } from "@/actions/mock-tests";
 import { MockTestPlayer } from "@/components/learning/mock-test-player";
 import { Link } from "@/i18n/routing";

@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { getCurrentUser } from "@/actions/auth";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { DashboardNav } from "@/components/layout/dashboard-nav";
 
 export default async function DashboardLayout({

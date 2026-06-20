@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
-import { getCurrentUser } from "@/actions/auth";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { isAdmin } from "@/lib/auth/roles";
 
 export async function requireAdmin() {

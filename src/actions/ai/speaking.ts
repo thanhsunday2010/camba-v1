@@ -1,7 +1,7 @@
 "use server";
 
 import { createClient } from "@/lib/supabase/server";
-import { generateJsonWithAudio, GEMINI_MODEL_VERSION } from "@/lib/ai/gemini-client";
+import { generateJsonWithAudio } from "@/lib/ai/gemini-client";
 import { parseGeminiJson } from "@/lib/ai/parse-feedback";
 import {
   SPEAKING_FEEDBACK_SYSTEM,
@@ -123,5 +123,3 @@ export async function getSpeakingFeedbackHistory(limit = 10) {
 
   return data ?? [];
 }
-
-export { GEMINI_MODEL_VERSION };

@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { getCurrentUser } from "@/actions/auth";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { StatsCards } from "@/components/dashboard/stats-cards";
 import { PlacementTestCTA } from "@/components/dashboard/placement-test-cta";
 import { DailyMissions } from "@/components/gamification/daily-missions";

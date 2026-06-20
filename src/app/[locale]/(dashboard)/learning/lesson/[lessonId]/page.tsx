@@ -1,5 +1,5 @@
 import { redirect, notFound } from "next/navigation";
-import { getCurrentUser } from "@/actions/auth";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { getLessonWithExercises, getLessonProgress, ensureLessonUnlockedForUser } from "@/lib/queries/learning";
 import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
 import { LessonPlayer } from "@/components/learning/lesson-player";

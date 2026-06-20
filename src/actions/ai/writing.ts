@@ -1,7 +1,7 @@
 "use server";
 
 import { createClient } from "@/lib/supabase/server";
-import { generateJsonResponse, GEMINI_MODEL_VERSION } from "@/lib/ai/gemini-client";
+import { generateJsonResponse } from "@/lib/ai/gemini-client";
 import { parseGeminiJson } from "@/lib/ai/parse-feedback";
 import {
   WRITING_FEEDBACK_SYSTEM,
@@ -106,5 +106,3 @@ export async function getWritingFeedbackHistory(limit = 10) {
 
   return data ?? [];
 }
-
-export { GEMINI_MODEL_VERSION };

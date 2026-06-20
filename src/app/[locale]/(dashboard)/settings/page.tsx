@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { getCurrentUser } from "@/actions/auth";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { getPendingParentLinksForStudent } from "@/lib/queries/parent";
 import { getStudentAssignments, getStudentClasses } from "@/lib/queries/teacher";
 import { fetchActiveProgramContext, fetchAvailablePrograms } from "@/actions/programs";

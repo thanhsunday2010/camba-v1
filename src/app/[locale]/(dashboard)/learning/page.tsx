@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { getCurrentUser } from "@/actions/auth";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { getUserGamification } from "@/lib/queries/user";
 import { getLearningPath, initializeLessonUnlocks } from "@/lib/queries/learning";
 import { LearningUnitPath } from "@/components/learning/learning-unit-path";

@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { getCurrentUser } from "@/actions/auth";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { isParent } from "@/lib/auth/roles";
 import { ParentNav } from "@/components/layout/parent-nav";
 

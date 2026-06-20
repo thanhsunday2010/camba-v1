@@ -1,14 +1,41 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useState } from "react";
 import type { Exercise, ExerciseResult, UserAnswer } from "@/types/learning";
 import { ExercisePlayer } from "@/components/exercises/exercise-player";
-import { WritingExercise } from "@/components/exercises/writing-exercise";
-import { SpeakingExercise } from "@/components/exercises/speaking-exercise";
 import { submitExerciseAttempt } from "@/actions/learning";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Circle, PenLine, Mic } from "lucide-react";
+import { CheckCircle2, Circle, PenLine, Mic, Loader2 } from "lucide-react";
+
+const WritingExercise = dynamic(
+  () =>
+    import("@/components/exercises/writing-exercise").then((m) => ({
+      default: m.WritingExercise,
+    })),
+  {
+    loading: () => (
+      <div className="flex justify-center py-8">
+        <Loader2 className="h-6 w-6 animate-spin text-gray-400" />
+      </div>
+    ),
+  }
+);
+
+const SpeakingExercise = dynamic(
+  () =>
+    import("@/components/exercises/speaking-exercise").then((m) => ({
+      default: m.SpeakingExercise,
+    })),
+  {
+    loading: () => (
+      <div className="flex justify-center py-8">
+        <Loader2 className="h-6 w-6 animate-spin text-gray-400" />
+      </div>
+    ),
+  }
+);
 
 const AI_FEEDBACK_LABELS = {
   placeholder: "Viết câu trả lời của bạn tại đây...",

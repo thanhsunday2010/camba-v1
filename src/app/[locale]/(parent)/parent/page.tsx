@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { getCurrentUser } from "@/actions/auth";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { fetchLinkedStudents } from "@/actions/parent";
 import { ParentDashboard } from "@/components/parent/parent-dashboard";
 

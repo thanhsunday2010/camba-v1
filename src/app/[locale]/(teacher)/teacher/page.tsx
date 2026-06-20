@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { getCurrentUser } from "@/actions/auth";
+import { getCurrentUser } from "@/lib/auth/current-user";
 import { fetchTeacherClasses } from "@/actions/classes";
 import { TeacherDashboard } from "@/components/teacher/teacher-dashboard";
 import { getActivePrograms } from "@/lib/queries/user";
