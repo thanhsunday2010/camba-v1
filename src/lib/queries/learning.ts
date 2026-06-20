@@ -192,30 +192,57 @@ export async function fetchExerciseQuestionsFull(exerciseId: string): Promise<Qu
     .eq("exercise_id", exerciseId)
     .order("sort_order");
 
-  const result: Question[] = [];
+  if (!questions?.length) return [];
 
-  for (const question of questions ?? []) {
-    const { data: choices } = await supabase
+  const questionIds = questions.map((question) => question.id);
+
+  const [{ data: allChoices }, { data: allPairs }] = await Promise.all([
+    supabase
       .from("choices")
       .select("*")
-      .eq("question_id", question.id)
-      .order("sort_order");
-
-    const { data: pairs } = await supabase
+      .in("question_id", questionIds)
+      .order("sort_order"),
+    supabase
       .from("question_pairs")
       .select("*")
-      .eq("question_id", question.id)
-      .order("sort_order");
+      .in("question_id", questionIds)
+      .order("sort_order"),
+  ]);
 
-    result.push({
-      ...question,
-      content: (question.content as Record<string, unknown>) ?? {},
-      choices: choices ?? [],
-      pairs: pairs ?? [],
-    });
+  const choicesByQuestion = new Map<string, NonNullable<typeof allChoices>>();
+  for (const choice of allChoices ?? []) {
+    const bucket = choicesByQuestion.get(choice.question_id) ?? [];
+    bucket.push(choice);
+    choicesByQuestion.set(choice.question_id, bucket);
   }
 
-  return result;
+  const pairsByQuestion = new Map<string, NonNullable<typeof allPairs>>();
+  for (const pair of allPairs ?? []) {
+    const bucket = pairsByQuestion.get(pair.question_id) ?? [];
+    bucket.push(pair);
+    pairsByQuestion.set(pair.question_id, bucket);
+  }
+
+  return questions.map((question) => ({
+    ...question,
+    content: (question.content as Record<string, unknown>) ?? {},
+    choices: choicesByQuestion.get(question.id) ?? [],
+    pairs: pairsByQuestion.get(question.id) ?? [],
+  }));
+}
+
+export async function getLessonExerciseIds(lessonId: string): Promise<string[]> {
+  const supabase = await createClient();
+
+  const { data } = await supabase
+    .from("exercises")
+    .select("id")
+    .eq("lesson_id", lessonId)
+    .eq("is_active", true)
+    .eq("status", "published")
+    .order("sort_order");
+
+  return data?.map((exercise) => exercise.id) ?? [];
 }
 
 /** @deprecated Use fetchExerciseQuestionsFull for server scoring */

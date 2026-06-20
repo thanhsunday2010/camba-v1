@@ -1,5 +1,6 @@
 "use server";
 
+import { after } from "next/server";
 import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
 import { scoreExercise } from "@/lib/learning/scoring";
@@ -9,9 +10,12 @@ import {
   calculateLessonCompletion,
   calculateLessonAccuracy,
 } from "@/lib/learning/mastery";
-import { fetchExerciseQuestionsFull, getLessonWithExercises } from "@/lib/queries/learning";
+import {
+  fetchExerciseQuestionsFull,
+  getLessonExerciseIds,
+} from "@/lib/queries/learning";
 import { assertExerciseInLesson, assertLessonUnlockedForUser } from "@/lib/auth/lesson-access";
-import { getSessionUser } from "@/lib/auth/session";
+import { getAuthUser } from "@/lib/auth/session";
 import { onExerciseCompleted } from "@/lib/gamification/events";
 import { resolveProgramId } from "@/lib/programs/context";
 import { getMasteryUnlockThreshold } from "@/lib/programs/settings";
@@ -30,20 +34,18 @@ export async function submitExerciseAttempt(
   answers: Record<string, UserAnswer>,
   timeSpentSeconds: number
 ): Promise<ActionResult<ExerciseResult>> {
-  const supabase = await createClient();
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
+  const user = await getAuthUser();
   if (!user) return { success: false, error: "Unauthorized" };
 
-  const unlockCheck = await assertLessonUnlockedForUser(user.id, lessonId);
+  const [unlockCheck, exerciseCheck] = await Promise.all([
+    assertLessonUnlockedForUser(user.id, lessonId),
+    assertExerciseInLesson(exerciseId, lessonId),
+  ]);
+
   if (!unlockCheck.ok) {
     return { success: false, error: unlockCheck.error };
   }
 
-  const exerciseCheck = await assertExerciseInLesson(exerciseId, lessonId);
   if (!exerciseCheck.ok) {
     return { success: false, error: exerciseCheck.error };
   }
@@ -54,9 +56,9 @@ export async function submitExerciseAttempt(
   }
 
   const result = scoreExercise(questions, answers);
+  const wasLessonComplete = await getPreviousCompletion(user.id, lessonId);
 
-  const wasLessonComplete = (await getPreviousCompletion(user.id, lessonId)) >= 100;
-
+  const supabase = await createClient();
   const { error: attemptError } = await supabase.from("exercise_attempts").insert({
     user_id: user.id,
     exercise_id: exerciseId,
@@ -74,32 +76,38 @@ export async function submitExerciseAttempt(
     return { success: false, error: attemptError.message };
   }
 
-  await updateLessonProgress(user.id, lessonId);
+  after(async () => {
+    try {
+      await updateLessonProgress(user.id, lessonId);
 
-  const lesson = await getLessonWithExercises(lessonId);
-  const exerciseIds = lesson?.exercises?.map((e) => e.id) ?? [];
-  const { data: attemptsAfter } = await supabase
-    .from("exercise_attempts")
-    .select("exercise_id")
-    .eq("user_id", user.id)
-    .eq("lesson_id", lessonId)
-    .eq("is_completed", true);
-  const completedCount = new Set(attemptsAfter?.map((a) => a.exercise_id)).size;
-  const lessonJustCompleted =
-    !wasLessonComplete && exerciseIds.length > 0 && completedCount >= exerciseIds.length;
+      const exerciseIds = await getLessonExerciseIds(lessonId);
+      const { data: attemptsAfter } = await supabase
+        .from("exercise_attempts")
+        .select("exercise_id")
+        .eq("user_id", user.id)
+        .eq("lesson_id", lessonId)
+        .eq("is_completed", true);
 
-  await onExerciseCompleted(
-    user.id,
-    lessonId,
-    exerciseId,
-    result.accuracyPercent,
-    timeSpentSeconds,
-    lessonJustCompleted
-  );
+      const completedCount = new Set(attemptsAfter?.map((a) => a.exercise_id)).size;
+      const lessonJustCompleted =
+        !wasLessonComplete && exerciseIds.length > 0 && completedCount >= exerciseIds.length;
 
-  revalidatePath("/learning");
-  revalidatePath(`/learning/lesson/${lessonId}`);
-  revalidatePath("/dashboard");
+      await onExerciseCompleted(
+        user.id,
+        lessonId,
+        exerciseId,
+        result.accuracyPercent,
+        timeSpentSeconds,
+        lessonJustCompleted
+      );
+
+      revalidatePath("/learning");
+      revalidatePath(`/learning/lesson/${lessonId}`);
+      revalidatePath("/dashboard");
+    } catch (error) {
+      console.error("Post-submit progress/gamification failed:", error);
+    }
+  });
 
   return { success: true, data: result };
 }
@@ -117,10 +125,8 @@ async function getPreviousCompletion(userId: string, lessonId: string): Promise<
 
 async function updateLessonProgress(userId: string, lessonId: string) {
   const supabase = await createClient();
-  const lesson = await getLessonWithExercises(lessonId);
-  if (!lesson?.exercises?.length) return;
-
-  const exerciseIds = lesson.exercises.map((e) => e.id);
+  const exerciseIds = await getLessonExerciseIds(lessonId);
+  if (!exerciseIds.length) return;
 
   const { data: attempts } = await supabase
     .from("exercise_attempts")
@@ -230,7 +236,7 @@ async function unlockNextLesson(userId: string, currentLessonId: string) {
 }
 
 export async function startLesson(lessonId: string): Promise<ActionResult> {
-  const user = await getSessionUser();
+  const user = await getAuthUser();
   if (!user) return { success: false, error: "Unauthorized" };
 
   const unlockCheck = await assertLessonUnlockedForUser(user.id, lessonId);

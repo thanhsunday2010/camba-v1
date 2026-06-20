@@ -11,7 +11,8 @@ import { GapFill } from "./gap-fill";
 import { SentenceOrdering } from "./sentence-ordering";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ChevronLeft, ChevronRight, CheckCircle2, XCircle } from "lucide-react";
+import { ChevronLeft, ChevronRight, CheckCircle2, XCircle, Loader2 } from "lucide-react";
+import { toast } from "sonner";
 
 interface QuestionRendererProps {
   question: PublicQuestion;
@@ -164,12 +165,21 @@ export function ExercisePlayer({
 
   async function handleSubmit() {
     setIsSubmitting(true);
-    const exerciseResult = await onSubmit(answers);
-    setIsSubmitting(false);
-    if (exerciseResult) {
-      setResult(exerciseResult);
-      setShowResults(true);
-      onComplete?.(exerciseResult);
+    try {
+      const exerciseResult = await onSubmit(answers);
+      if (exerciseResult) {
+        setResult(exerciseResult);
+        setShowResults(true);
+        onComplete?.(exerciseResult);
+      } else {
+        toast.error("Không nộp được bài. Vui lòng thử lại.");
+      }
+    } catch (error) {
+      toast.error(
+        error instanceof Error ? error.message : "Lỗi kết nối. Vui lòng thử lại."
+      );
+    } finally {
+      setIsSubmitting(false);
     }
   }
 
@@ -278,7 +288,14 @@ export function ExercisePlayer({
 
           {isLast ? (
             <Button onClick={handleSubmit} disabled={isSubmitting}>
-              {isSubmitting ? "Đang nộp..." : "Nộp bài"}
+              {isSubmitting ? (
+                <>
+                  <Loader2 className="h-4 w-4 animate-spin" />
+                  Đang nộp...
+                </>
+              ) : (
+                "Nộp bài"
+              )}
             </Button>
           ) : (
             <Button

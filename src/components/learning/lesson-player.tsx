@@ -57,7 +57,7 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
       setCompletedExercises((prev) => new Set([...prev, exerciseId]));
       return result.data;
     }
-    return null;
+    throw new Error(result.error ?? "Không nộp được bài");
   }
 
   function handleAiComplete(exerciseId: string) {
