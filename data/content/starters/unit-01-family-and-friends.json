@@ -280,11 +280,11 @@
       "sortOrder": 0,
       "title": "Lesson 1: Meet My Family",
       "learningObjective": "Recognise and understand twelve family, friend and face words at Starters level.",
-      "estimatedMinutes": 12,
+      "estimatedMinutes": 20,
       "exercises": [
         {
           "slug": "vocab-family-words",
-          "title": "Family Word Match",
+          "title": "Learn: Family Word Match",
           "instructions": "Read each sentence. Choose the best word.",
           "exerciseType": "multiple_choice",
           "sortOrder": 0,
@@ -491,7 +491,7 @@
         },
         {
           "slug": "vocab-family-matching",
-          "title": "Match the Pairs",
+          "title": "Practice: Match the Pairs",
           "instructions": "Match each word on the left with the correct meaning on the right.",
           "exerciseType": "matching",
           "sortOrder": 1,
@@ -537,6 +537,304 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "vocab-family-check",
+          "title": "Check: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "The part of your face above your eyes is your _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Head là phần trên cơ thể bao gồm mặt. Hair chỉ là tóc trên đầu.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.28,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "hair",
+                  "isCorrect": false,
+                  "distractorNote": "On the head but not the whole top part"
+                },
+                {
+                  "text": "head",
+                  "isCorrect": true
+                },
+                {
+                  "text": "mouth",
+                  "isCorrect": false,
+                  "distractorNote": "Lower face part"
+                }
+              ]
+            },
+            {
+              "questionText": "A female child in a family is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Sister là chị/em gái trong gia đình. Girl là cô bé nói chung, không nhấn mạnh quan hệ gia đình.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "girl",
+                  "isCorrect": false,
+                  "distractorNote": "Gender/age, not family role"
+                },
+                {
+                  "text": "sister",
+                  "isCorrect": true
+                },
+                {
+                  "text": "friend",
+                  "isCorrect": false,
+                  "distractorNote": "Social relationship"
+                }
+              ]
+            },
+            {
+              "questionText": "You eat and talk with your _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Mouth (miệng) dùng để ăn và nói. Nose dùng để ngửi.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.26,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "nose",
+                  "isCorrect": false,
+                  "distractorNote": "Used for smelling"
+                },
+                {
+                  "text": "mouth",
+                  "isCorrect": true
+                },
+                {
+                  "text": "eyes",
+                  "isCorrect": false,
+                  "distractorNote": "Used for seeing"
+                }
+              ]
+            },
+            {
+              "questionText": "Long or short _____ grows on your head.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Hair (tóc) mọc trên đầu. Head là cả phần đầu, không phải riêng tóc.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.32,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "head",
+                  "isCorrect": false,
+                  "distractorNote": "Whole top part, not just hair"
+                },
+                {
+                  "text": "hair",
+                  "isCorrect": true
+                },
+                {
+                  "text": "face",
+                  "isCorrect": false,
+                  "distractorNote": "Not in unit word list; plausible trap"
+                }
+              ]
+            },
+            {
+              "questionText": "My father's son who is not me is my _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Brother là anh/em trai. Boy chỉ nói giới tính/tuổi, không nói quan hệ.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.34,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "boy",
+                  "isCorrect": false,
+                  "distractorNote": "Age/gender only"
+                },
+                {
+                  "text": "brother",
+                  "isCorrect": true
+                },
+                {
+                  "text": "friend",
+                  "isCorrect": false,
+                  "distractorNote": "Not a family member"
+                }
+              ]
+            },
+            {
+              "questionText": "She is a young _____. She is six years old.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Girl (cô bé) phù hợp với she và tuổi nhỏ. Sister cần ngữ cảnh gia đình.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.33,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "sister",
+                  "isCorrect": false,
+                  "distractorNote": "Family role; sentence does not say family"
+                },
+                {
+                  "text": "girl",
+                  "isCorrect": true
+                },
+                {
+                  "text": "mother",
+                  "isCorrect": false,
+                  "distractorNote": "Adult; six years old does not fit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-family-apply",
+          "title": "Apply: Words in Sentences",
+          "instructions": "Complete each sentence with the correct word from the unit.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.36,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: This is my [0]. | She is my [1]. | I see with my [2].",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "mother (mẹ) — she phù hợp; friend (bạn) — she phù hợp; eyes (mắt) — dùng để nhìn.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "template": "This is my [0]. She is my [1]. I see with my [2].",
+                "correctAnswers": [
+                  "mother",
+                  "friend",
+                  "eyes"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "mother",
+                    "Mother"
+                  ],
+                  [
+                    "friend",
+                    "Friend"
+                  ],
+                  [
+                    "eyes",
+                    "Eyes"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: He is a [0]. | My [1] is kind. | Tom is my [2].",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "boy (cậu bé) — he + young male; mother (mẹ) — thường được mô tả kind; friend (bạn) — Tom is my friend.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.37,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "He is a [0]. My [1] is kind. Tom is my [2].",
+                "correctAnswers": [
+                  "boy",
+                  "mother",
+                  "friend"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "boy",
+                    "Boy"
+                  ],
+                  [
+                    "mother",
+                    "Mother"
+                  ],
+                  [
+                    "friend",
+                    "Friend"
+                  ]
+                ]
+              }
+            }
+          ]
         }
       ]
     },
@@ -547,11 +845,11 @@
       "unlockAfterLessonId": "e2000001-0000-4000-8000-000000000001",
       "title": "Lesson 2: Who Is Who?",
       "learningObjective": "Use am, is, are and possessive adjectives to talk about family and friends.",
-      "estimatedMinutes": 15,
+      "estimatedMinutes": 22,
       "exercises": [
         {
           "slug": "grammar-be-verbs",
-          "title": "Choose am, is or are",
+          "title": "Learn: Choose am, is or are",
           "instructions": "Choose the correct word to complete each sentence.",
           "exerciseType": "multiple_choice",
           "sortOrder": 0,
@@ -694,7 +992,7 @@
         },
         {
           "slug": "grammar-possessives-gap-fill",
-          "title": "My, Your, His, Her",
+          "title": "Practice: My, Your, His, Her",
           "instructions": "Complete the sentences with my, your, his or her.",
           "exerciseType": "gap_fill",
           "sortOrder": 1,
@@ -742,6 +1040,295 @@
               }
             }
           ]
+        },
+        {
+          "slug": "grammar-be-check",
+          "title": "Check: Grammar Challenge",
+          "instructions": "Choose the correct word. Think carefully before you answer.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.38,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "You _____ my friend. Thank you!",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Dùng are với you. Is chỉ dùng với he/she/it.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.32,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "is",
+                  "isCorrect": false,
+                  "distractorNote": "Singular form"
+                },
+                {
+                  "text": "are",
+                  "isCorrect": true
+                },
+                {
+                  "text": "am",
+                  "isCorrect": false,
+                  "distractorNote": "Only with I"
+                }
+              ]
+            },
+            {
+              "questionText": "This is Linh. _____ brother is ten.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Linh là nữ → dùng Her (của cô ấy). His dùng cho nam.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "His",
+                  "isCorrect": false,
+                  "distractorNote": "Male possessive"
+                },
+                {
+                  "text": "Her",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Your",
+                  "isCorrect": false,
+                  "distractorNote": "Talking about listener, not Linh"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ is that man? He is my father.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Who hỏi về người. Where hỏi về địa điểm.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.34,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Where",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about place"
+                },
+                {
+                  "text": "Who",
+                  "isCorrect": true
+                },
+                {
+                  "text": "What",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about things"
+                }
+              ]
+            },
+            {
+              "questionText": "Tom and I _____ happy. We are friends.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Tom and I = we → dùng are. Is không dùng với chủ ngữ số nhiều.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "is",
+                  "isCorrect": false,
+                  "distractorNote": "Singular"
+                },
+                {
+                  "text": "am",
+                  "isCorrect": false,
+                  "distractorNote": "Only with I alone"
+                },
+                {
+                  "text": "are",
+                  "isCorrect": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-sentence-order",
+          "title": "Apply: Build the Sentence",
+          "instructions": "Put the words in the correct order to make a sentence.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.4,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: She / my / is / sister.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "Thứ tự đúng: She is my sister. Động từ is đứng sau chủ ngữ She.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "She"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "is"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "my"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "sister"
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4"
+                ]
+              }
+            },
+            {
+              "questionText": "Make a sentence: Who / your / is / friend?",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "Câu hỏi Who đứng đầu: Who is your friend?",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "Who"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "is"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "your"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "friend?"
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4"
+                ]
+              }
+            },
+            {
+              "questionText": "Make a sentence: I / am / eight / years / old.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "I am + tuổi: I am eight years old.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "am"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "eight"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "years"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "old."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5"
+                ]
+              }
+            }
+          ]
         }
       ]
     },
@@ -752,18 +1339,18 @@
       "unlockAfterLessonId": "e2000001-0000-4000-8000-000000000002",
       "title": "Lesson 3: My Family Photo",
       "learningObjective": "Read a short text about a family and answer questions about main idea, details and vocabulary.",
-      "estimatedMinutes": 15,
+      "estimatedMinutes": 22,
       "exercises": [
         {
-          "slug": "reading-family-passage",
-          "title": "Read: Mai's Family",
-          "instructions": "Read the text. Then answer the questions.",
+          "slug": "reading-family-learn",
+          "title": "Learn: Read Mai's Family",
+          "instructions": "Read the text carefully. Answer the two detail questions.",
           "exerciseType": "reading_comprehension",
           "sortOrder": 0,
           "qualityScores": {
-            "quality": 0.95,
-            "difficulty": 0.3,
-            "curriculumAlignment": 0.98,
+            "quality": 0.94,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
             "needsReview": false
           },
           "content": {
@@ -776,35 +1363,35 @@
           },
           "questions": [
             {
-              "questionText": "What is the main idea of the text?",
+              "questionText": "How old is Mai?",
               "questionType": "multiple_choice",
               "skillTag": "reading",
               "topicTag": "family-and-friends",
               "levelTag": "starters",
               "difficultyRating": 1,
-              "assessmentType": "main_idea",
+              "assessmentType": "detail",
               "points": 1,
-              "explanation": "The whole text introduces Mai's family and friend. It is not about school subjects or food.",
+              "explanation": "Đoạn văn nói: I am eight years old.",
               "qualityScores": {
-                "quality": 0.94,
-                "difficulty": 0.25,
-                "curriculumAlignment": 0.97,
+                "quality": 0.95,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.98,
                 "needsReview": false
               },
               "choices": [
                 {
-                  "text": "Mai introduces her family and friend.",
+                  "text": "Eight years old",
                   "isCorrect": true
                 },
                 {
-                  "text": "Mai describes her school.",
+                  "text": "Six years old",
                   "isCorrect": false,
-                  "distractorNote": "School is mentioned once only"
+                  "distractorNote": "Brother's age"
                 },
                 {
-                  "text": "Mai talks about her favourite food.",
+                  "text": "Seven years old",
                   "isCorrect": false,
-                  "distractorNote": "No food in the text"
+                  "distractorNote": "Not in text"
                 }
               ]
             },
@@ -817,7 +1404,7 @@
               "difficultyRating": 1,
               "assessmentType": "detail",
               "points": 1,
-              "explanation": "The text says: He is six.",
+              "explanation": "Đoạn văn nói: He is six.",
               "qualityScores": {
                 "quality": 0.96,
                 "difficulty": 0.2,
@@ -840,40 +1427,30 @@
                   "distractorNote": "Plausible number not in text"
                 }
               ]
-            },
-            {
-              "questionText": "Why is Anna in the text?",
-              "questionType": "multiple_choice",
-              "skillTag": "reading",
-              "topicTag": "family-and-friends",
-              "levelTag": "starters",
-              "difficultyRating": 2,
-              "assessmentType": "inference",
-              "points": 1,
-              "explanation": "Anna is described as a friend in their class, not a family member.",
-              "qualityScores": {
-                "quality": 0.9,
-                "difficulty": 0.35,
-                "curriculumAlignment": 0.94,
-                "needsReview": false
-              },
-              "choices": [
-                {
-                  "text": "She is Mai's friend from class.",
-                  "isCorrect": true
-                },
-                {
-                  "text": "She is Mai's sister.",
-                  "isCorrect": false,
-                  "distractorNote": "Girl but not sister"
-                },
-                {
-                  "text": "She is Mai's teacher.",
-                  "isCorrect": false,
-                  "distractorNote": "Adult role not supported"
-                }
-              ]
-            },
+            }
+          ]
+        },
+        {
+          "slug": "reading-family-practice",
+          "title": "Practice: People in the Text",
+          "instructions": "Read the text again. Answer about people and words in context.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Mai's Family",
+              "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
+              "wordCount": 58,
+              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+            }
+          },
+          "questions": [
             {
               "questionText": "In the sentence 'Her eyes are brown', what does her refer to?",
               "questionType": "multiple_choice",
@@ -883,7 +1460,7 @@
               "difficultyRating": 2,
               "assessmentType": "vocabulary_in_context",
               "points": 1,
-              "explanation": "Her refers to mother in the previous sentence.",
+              "explanation": "Her chỉ mẹ (mother) trong câu trước.",
               "qualityScores": {
                 "quality": 0.91,
                 "difficulty": 0.33,
@@ -908,6 +1485,95 @@
               ]
             },
             {
+              "questionText": "Why is Anna in the text?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "inference",
+              "points": 1,
+              "explanation": "Anna được mô tả là bạn trong lớp, không phải thành viên gia đình.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "She is Mai's friend from class.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "She is Mai's sister.",
+                  "isCorrect": false,
+                  "distractorNote": "Girl but not sister"
+                },
+                {
+                  "text": "She is Mai's teacher.",
+                  "isCorrect": false,
+                  "distractorNote": "Adult role not supported"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-family-check",
+          "title": "Check: Main Idea and Order",
+          "instructions": "Read the text one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Mai's Family",
+              "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
+              "wordCount": 58,
+              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main idea of the text?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "main_idea",
+              "points": 1,
+              "explanation": "Toàn bộ đoạn văn giới thiệu gia đình và bạn của Mai.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Mai introduces her family and friend.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Mai describes her school.",
+                  "isCorrect": false,
+                  "distractorNote": "School is mentioned once only"
+                },
+                {
+                  "text": "Mai talks about her favourite food.",
+                  "isCorrect": false,
+                  "distractorNote": "No food in the text"
+                }
+              ]
+            },
+            {
               "questionText": "Put the ideas in order: (1) Mai tells her age (2) Mai describes parents (3) Mai mentions brother and friend",
               "questionType": "multiple_choice",
               "skillTag": "reading",
@@ -916,7 +1582,7 @@
               "difficultyRating": 2,
               "assessmentType": "sequencing",
               "points": 1,
-              "explanation": "The text moves from self → parents → brother and friend.",
+              "explanation": "Đoạn văn đi từ bản thân → bố mẹ → anh trai và bạn.",
               "qualityScores": {
                 "quality": 0.88,
                 "difficulty": 0.4,
@@ -941,6 +1607,63 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "reading-family-apply",
+          "title": "Apply: Match People to Facts",
+          "instructions": "Use what you read. Match each person to the correct fact.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Mai's Family",
+              "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
+              "wordCount": 58,
+              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each person to a fact from the text.",
+              "questionType": "matching",
+              "skillTag": "reading",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 4,
+              "explanation": "Mỗi người khớp với một chi tiết trong đoạn văn.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.34,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Mai's father",
+                  "right": "His hair is black"
+                },
+                {
+                  "left": "Mai's mother",
+                  "right": "Her eyes are brown"
+                },
+                {
+                  "left": "Nam",
+                  "right": "He is six years old"
+                },
+                {
+                  "left": "Anna",
+                  "right": "She is a girl in our class"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -951,17 +1674,17 @@
       "unlockAfterLessonId": "e2000001-0000-4000-8000-000000000003",
       "title": "Lesson 4: Introducing Friends",
       "learningObjective": "Listen to short family and friend introductions and identify names and relationships.",
-      "estimatedMinutes": 12,
+      "estimatedMinutes": 20,
       "exercises": [
         {
           "slug": "listening-family-dialogue",
-          "title": "Listen: At Home",
-          "instructions": "Listen to the conversation. Choose the correct answer.",
+          "title": "Learn: Listen at Home",
+          "instructions": "Listen to the conversation. Answer the first two questions.",
           "exerciseType": "listening",
           "sortOrder": 0,
           "qualityScores": {
             "quality": 0.94,
-            "difficulty": 0.28,
+            "difficulty": 0.22,
             "curriculumAlignment": 0.97,
             "needsReview": false
           },
@@ -1009,8 +1732,7 @@
             },
             "answerKey": {
               "q1": "mother",
-              "q2": "brother",
-              "q3": "friend"
+              "q2": "Duc"
             },
             "audioUrl": "/audio/listening/starters/unit-01/listening-family-dialogue.mp3"
           },
@@ -1023,7 +1745,7 @@
               "levelTag": "starters",
               "difficultyRating": 1,
               "points": 1,
-              "explanation": "Minh says: This is my mother.",
+              "explanation": "Minh nói: This is my mother.",
               "qualityScores": {
                 "quality": 0.95,
                 "difficulty": 0.18,
@@ -1055,7 +1777,7 @@
               "levelTag": "starters",
               "difficultyRating": 1,
               "points": 1,
-              "explanation": "Minh says: His name is Duc.",
+              "explanation": "Minh nói: His name is Duc.",
               "qualityScores": {
                 "quality": 0.96,
                 "difficulty": 0.2,
@@ -1078,7 +1800,70 @@
                   "distractorNote": "Friend's name"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-family-dialogue-part2",
+          "title": "Practice: More from At Home",
+          "instructions": "Listen again to the same conversation. Answer the next questions.",
+          "exerciseType": "listening",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "At Home",
+              "setting": "A living room after school",
+              "speakers": [
+                {
+                  "name": "Examiner",
+                  "role": "adult"
+                },
+                {
+                  "name": "Minh",
+                  "role": "boy, 8"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Examiner",
+                  "text": "Hello, Minh. Who is this?"
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "This is my mother."
+                },
+                {
+                  "speaker": "Examiner",
+                  "text": "And who is the boy?"
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "He is my brother. His name is Duc."
+                },
+                {
+                  "speaker": "Examiner",
+                  "text": "Is the girl your sister?"
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "No. She is my friend. Her name is Lily."
+                }
+              ],
+              "audioNotes": "Replay same audio. Learners focus on second half."
             },
+            "answerKey": {
+              "q1": "friend",
+              "q2": "Duc"
+            },
+            "audioUrl": "/audio/listening/starters/unit-01/listening-family-dialogue-part2.mp3"
+          },
+          "questions": [
             {
               "questionText": "Who is Lily?",
               "questionType": "multiple_choice",
@@ -1087,7 +1872,7 @@
               "levelTag": "starters",
               "difficultyRating": 2,
               "points": 1,
-              "explanation": "Minh says she is my friend, not his sister.",
+              "explanation": "Minh nói she is my friend, không phải sister.",
               "qualityScores": {
                 "quality": 0.93,
                 "difficulty": 0.3,
@@ -1119,7 +1904,7 @@
               "levelTag": "starters",
               "difficultyRating": 1,
               "points": 1,
-              "explanation": "He refers to the boy — Minh's brother Duc.",
+              "explanation": "He chỉ cậu bé — anh trai Duc của Minh.",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.25,
@@ -1144,6 +1929,255 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "listening-at-school",
+          "title": "Check: Listen at School",
+          "instructions": "Listen to a new conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "At School",
+              "setting": "School playground",
+              "speakers": [
+                {
+                  "name": "Teacher",
+                  "role": "adult"
+                },
+                {
+                  "name": "Hoa",
+                  "role": "girl, 7"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Teacher",
+                  "text": "Hello, Hoa. Who is the girl with you?"
+                },
+                {
+                  "speaker": "Hoa",
+                  "text": "She is my sister. Her name is Lan."
+                },
+                {
+                  "speaker": "Teacher",
+                  "text": "And who is the man?"
+                },
+                {
+                  "speaker": "Hoa",
+                  "text": "He is my father."
+                },
+                {
+                  "speaker": "Teacher",
+                  "text": "Is the boy your brother?"
+                },
+                {
+                  "speaker": "Hoa",
+                  "text": "Yes. He is my brother. He is a boy."
+                }
+              ],
+              "audioNotes": "Clear, slow delivery. Approx. 30 seconds."
+            },
+            "answerKey": {
+              "q1": "sister",
+              "q2": "father",
+              "q3": "brother"
+            },
+            "audioUrl": "/audio/listening/starters/unit-01/listening-at-school.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "Who is Lan?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Hoa nói: She is my sister. Her name is Lan.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Hoa's sister",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Hoa's friend",
+                  "isCorrect": false,
+                  "distractorNote": "Family member stated"
+                },
+                {
+                  "text": "Hoa's mother",
+                  "isCorrect": false,
+                  "distractorNote": "Girl child, not adult"
+                }
+              ]
+            },
+            {
+              "questionText": "Who is the man?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Hoa nói: He is my father.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Hoa's father",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Hoa's brother",
+                  "isCorrect": false,
+                  "distractorNote": "Man but brother is boy"
+                },
+                {
+                  "text": "Hoa's teacher",
+                  "isCorrect": false,
+                  "distractorNote": "Teacher is speaking"
+                }
+              ]
+            },
+            {
+              "questionText": "Is the boy Hoa's brother?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Hoa trả lời Yes. He is my brother.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes",
+                  "isCorrect": true
+                },
+                {
+                  "text": "No",
+                  "isCorrect": false,
+                  "distractorNote": "Hoa says yes clearly"
+                },
+                {
+                  "text": "She is a girl",
+                  "isCorrect": false,
+                  "distractorNote": "Question is about the boy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-family-match",
+          "title": "Apply: Match What You Heard",
+          "instructions": "From the first conversation (At Home), match each person to the correct fact.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "At Home",
+              "setting": "A living room after school",
+              "speakers": [
+                {
+                  "name": "Examiner",
+                  "role": "adult"
+                },
+                {
+                  "name": "Minh",
+                  "role": "boy, 8"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Examiner",
+                  "text": "Hello, Minh. Who is this?"
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "This is my mother."
+                },
+                {
+                  "speaker": "Examiner",
+                  "text": "And who is the boy?"
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "He is my brother. His name is Duc."
+                },
+                {
+                  "speaker": "Examiner",
+                  "text": "Is the girl your sister?"
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "No. She is my friend. Her name is Lily."
+                }
+              ],
+              "audioNotes": "Optional replay before matching."
+            },
+            "audioUrl": "/audio/listening/starters/unit-01/listening-family-dialogue.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "Match each person from the At Home dialogue.",
+              "questionType": "matching",
+              "skillTag": "listening",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "Mỗi người khớp với thông tin Minh nói trong hội thoại.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.32,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "The woman",
+                  "right": "Minh's mother"
+                },
+                {
+                  "left": "Duc",
+                  "right": "Minh's brother"
+                },
+                {
+                  "left": "Lily",
+                  "right": "Minh's friend"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1154,14 +2188,212 @@
       "unlockAfterLessonId": "e2000001-0000-4000-8000-000000000004",
       "title": "Lesson 5: Write About My Family",
       "learningObjective": "Write short phrases to introduce yourself and one family member using Starters vocabulary and grammar.",
-      "estimatedMinutes": 15,
+      "estimatedMinutes": 22,
       "exercises": [
         {
+          "slug": "writing-family-gap-learn",
+          "title": "Learn: Complete the Sentences",
+          "instructions": "Fill in each gap with my, mother, father, brother, sister or friend.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.25,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: I am Linh. This is [0] mother.",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "my (của tôi) đứng trước mother khi nói về gia đình mình.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "template": "I am Linh. This is [0] mother.",
+                "correctAnswers": [
+                  "my"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "my",
+                    "My"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: He is [0] brother. His name is Nam.",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "my brother — anh/em trai của tôi.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.24,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "He is [0] brother. His name is Nam.",
+                "correctAnswers": [
+                  "my"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "my",
+                    "My"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: Anna is [0] friend from school.",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "my friend — bạn của tôi.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.23,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Anna is [0] friend from school.",
+                "correctAnswers": [
+                  "my"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "my",
+                    "My"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-family-order-practice",
+          "title": "Practice: Build Short Sentences",
+          "instructions": "Put the words in order to make correct sentences.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence about your name.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 2,
+              "explanation": "My name is Mai. — mẫu câu giới thiệu tên.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.28,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "My"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "name"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "is"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "Mai."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4"
+                ]
+              }
+            },
+            {
+              "questionText": "Make a sentence about family.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "She is my mother. — dùng She + is + my + mother.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.32,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "She"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "is"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "my"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "mother."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4"
+                ]
+              }
+            }
+          ]
+        },
+        {
           "slug": "writing-introduce-family",
-          "title": "Writing: My Family",
+          "title": "Check: Write About My Family",
           "instructions": "Write short answers. Use 1–5 words for each answer.",
           "exerciseType": "writing",
-          "sortOrder": 0,
+          "sortOrder": 2,
           "qualityScores": {
             "quality": 0.93,
             "difficulty": 0.35,
@@ -1217,7 +2449,7 @@
               "levelTag": "starters",
               "difficultyRating": 2,
               "points": 6,
-              "explanation": "Accept any response meeting success criteria. Model answer shows expected range.",
+              "explanation": "Chấp nhận câu trả lời đáp ứng tiêu chí. Model answer cho thấy phạm vi mong đợi.",
               "qualityScores": {
                 "quality": 0.91,
                 "difficulty": 0.38,
@@ -1240,6 +2472,61 @@
               }
             }
           ]
+        },
+        {
+          "slug": "writing-family-apply",
+          "title": "Apply: Write About a Friend",
+          "instructions": "Complete the short writing frames with your own words.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.34,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: [0] name is Tom. | He is my [1]. | We are [2].",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "His/Her name...; friend; happy — câu mẫu giới thiệu bạn.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
+              "content": {
+                "template": "[0] name is Tom. He is my [1]. We are [2].",
+                "correctAnswers": [
+                  "His",
+                  "friend",
+                  "happy"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "His",
+                    "her",
+                    "Her"
+                  ],
+                  [
+                    "friend",
+                    "Friend"
+                  ],
+                  [
+                    "happy",
+                    "Happy",
+                    "friends"
+                  ]
+                ]
+              }
+            }
+          ]
         }
       ]
     },
@@ -1250,14 +2537,239 @@
       "unlockAfterLessonId": "e2000001-0000-4000-8000-000000000005",
       "title": "Lesson 6: Talk About Your Family",
       "learningObjective": "Answer simple questions about yourself, family and friends with words and short phrases.",
-      "estimatedMinutes": 12,
+      "estimatedMinutes": 18,
       "exercises": [
         {
+          "slug": "speaking-response-learn",
+          "title": "Learn: Choose the Best Reply",
+          "instructions": "Imagine someone asks you a question. Choose the best short answer.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Someone asks: What is your name? What do you say?",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "My name is... là cách giới thiệu tên chuẩn ở Starters.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "My name is Linh.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I am friend.",
+                  "isCorrect": false,
+                  "distractorNote": "Does not answer the question"
+                },
+                {
+                  "text": "She is my mother.",
+                  "isCorrect": false,
+                  "distractorNote": "Answers about another person"
+                }
+              ]
+            },
+            {
+              "questionText": "Someone asks: How old are you? What do you say?",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "I am + số tuổi. Dùng am với I.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I am seven.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I is seven.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong verb with I"
+                },
+                {
+                  "text": "He is seven.",
+                  "isCorrect": false,
+                  "distractorNote": "Talks about another person"
+                }
+              ]
+            },
+            {
+              "questionText": "Someone asks: Who is he? (pointing to your father) What do you say?",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "He is my father. — trả lời câu hỏi Who về người nam.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "He is my father.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "She is my mother.",
+                  "isCorrect": false,
+                  "distractorNote": "Female answer for male"
+                },
+                {
+                  "text": "They are friends.",
+                  "isCorrect": false,
+                  "distractorNote": "Plural; one person shown"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-picture-practice",
+          "title": "Practice: Who Is in the Picture?",
+          "instructions": "Look at the family picture in your mind. Choose the correct answer.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "content": {
+            "pictureDescription": "A mother, father, boy, girl and friend in a garden."
+          },
+          "questions": [
+            {
+              "questionText": "The woman with long hair is the _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Trong ảnh gia đình, người phụ nữ thường là mother.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.24,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "mother",
+                  "isCorrect": true
+                },
+                {
+                  "text": "brother",
+                  "isCorrect": false,
+                  "distractorNote": "Male family member"
+                },
+                {
+                  "text": "friend",
+                  "isCorrect": false,
+                  "distractorNote": "Usually not the adult woman in family photo"
+                }
+              ]
+            },
+            {
+              "questionText": "You want to say the boy is your brother. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "He is my brother. — he cho nam, my brother cho quan hệ.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.28,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "He is my brother.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "She is my sister.",
+                  "isCorrect": false,
+                  "distractorNote": "Female form"
+                },
+                {
+                  "text": "I am my brother.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong subject"
+                }
+              ]
+            },
+            {
+              "questionText": "The girl from class is your _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "from class → friend, không phải sister.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "friend",
+                  "isCorrect": true
+                },
+                {
+                  "text": "father",
+                  "isCorrect": false,
+                  "distractorNote": "Adult male"
+                },
+                {
+                  "text": "mother",
+                  "isCorrect": false,
+                  "distractorNote": "Adult female parent"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "slug": "speaking-family-interview",
-          "title": "Speaking: Family Interview",
+          "title": "Check: Family Interview",
           "instructions": "Answer the examiner's questions. Say at least one word for each question.",
           "exerciseType": "speaking",
-          "sortOrder": 0,
+          "sortOrder": 2,
           "qualityScores": {
             "quality": 0.92,
             "difficulty": 0.32,
@@ -1298,7 +2810,7 @@
               "levelTag": "starters",
               "difficultyRating": 2,
               "points": 5,
-              "explanation": "Assess holistically using the four assessment areas. Partial answers earn partial credit.",
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời một phần vẫn được điểm một phần.",
               "qualityScores": {
                 "quality": 0.9,
                 "difficulty": 0.36,
@@ -1309,6 +2821,117 @@
                 "assessmentCriteriaRef": "speaking-family-interview",
                 "minimumResponses": 3
               }
+            }
+          ]
+        },
+        {
+          "slug": "speaking-family-apply",
+          "title": "Apply: Quick Answers",
+          "instructions": "Choose the best phrase you would say in each situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Point to your sister and introduce her. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "She is my sister. — she cho nữ, sister cho chị/em gái.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.28,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "She is my sister.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "He is my brother.",
+                  "isCorrect": false,
+                  "distractorNote": "Male form"
+                },
+                {
+                  "text": "She is my friend.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong relationship"
+                }
+              ]
+            },
+            {
+              "questionText": "The examiner asks: Who is your friend? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Her name is Anna. — giới thiệu bạn gái bằng Her name is...",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Her name is Anna.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "His name is Anna.",
+                  "isCorrect": false,
+                  "distractorNote": "Anna is typically a girl's name"
+                },
+                {
+                  "text": "My name is Anna.",
+                  "isCorrect": false,
+                  "distractorNote": "Talks about yourself"
+                }
+              ]
+            },
+            {
+              "questionText": "Say goodbye after talking about your family. Best phrase:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "We are happy! — kết thúc tích cực, dùng lại từ trong unit.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "We are happy!",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I am mother.",
+                  "isCorrect": false,
+                  "distractorNote": "Grammatically wrong"
+                },
+                {
+                  "text": "Who is food?",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense for context"
+                }
+              ]
             }
           ]
         }

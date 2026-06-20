@@ -27,12 +27,25 @@ Each unit must have **6 lessons** in order: `vocabulary` → `grammar` → `read
 
 | Skill | Must include |
 |-------|--------------|
-| **vocabulary** | ~12+ words in `vocabularyBank` (IPA, vietnameseMeaning, exampleSentence, difficulty, qualityScores); MCQ + matching exercises |
-| **grammar** | Items in `grammarReference` with `commonMistakes` (`× → ✓`); MCQ + gap_fill with `template`, `correctAnswers`, `acceptableAnswers` |
-| **reading** | Passage within level text length; `wordCount`, `imagePrompt`; questions with `assessmentType`: main_idea, detail, inference, vocabulary_in_context, sequencing |
-| **listening** | Script with `speakers`, `setting`, `lines`, `audioNotes`; `answerKey`; questions answerable only from audio; run `npm run generate:listening-audio` to create MP3 and set `content.audioUrl` |
-| **writing** | `successCriteria`, `modelAnswer`, weighted `rubric`, `expectedLength` for level |
-| **speaking** | `followUpQuestions`, `suggestedAnswers`, `assessmentCriteria`, `maxDurationSeconds` |
+| **vocabulary** | ~12+ words in `vocabularyBank` (IPA, vietnameseMeaning, exampleSentence, difficulty, qualityScores); **4 exercises** per lesson: Learn (MCQ) → Practice (matching) → Check (MCQ, harder) → Apply (gap_fill) |
+| **grammar** | Items in `grammarReference` with `commonMistakes` (`× → ✓`); **4 exercises**: Learn (MCQ) → Practice (gap_fill) → Check (MCQ) → Apply (sentence_ordering) |
+| **reading** | Passage within level text length; `wordCount`, `imagePrompt`; **4 exercises** sharing `content.passage`: Learn (detail) → Practice (vocab_in_context + inference) → Check (main_idea + sequencing) → Apply (matching) |
+| **listening** | Script with `speakers`, `setting`, `lines`, `audioNotes`; `answerKey`; **4 exercises**: Learn + Practice (split questions, same audio) → Check (new script) → Apply (matching + audio replay); run `npm run generate:listening-audio` |
+| **writing** | **4 exercises**: Learn (gap_fill) → Practice (sentence_ordering) → Check (AI writing task with rubric) → Apply (gap_fill frames) |
+| **speaking** | **4 exercises**: Learn + Practice (MCQ best reply) → Check (AI speaking interview) → Apply (MCQ situational); `followUpQuestions`, `suggestedAnswers`, `assessmentCriteria`, `maxDurationSeconds` on Check exercise |
+
+### Multi-Exercise Template (per lesson)
+
+Each lesson has **4 exercises** (`sortOrder` 0–3). Prefix titles: `Learn:`, `Practice:`, `Check:`, `Apply:`.
+
+| Phase | Purpose | Typical types |
+|-------|---------|---------------|
+| Learn | Introduce / recognise | MCQ, matching (easy) |
+| Practice | Guided use | matching, gap_fill |
+| Check | Harder, no scaffolding | MCQ, listening script, AI task |
+| Apply | Use in context | gap_fill, sentence_ordering, matching |
+
+Gold standard: `data/content/starters/unit-01-family-and-friends.json`.
 
 ## Question Quality (every question)
 
