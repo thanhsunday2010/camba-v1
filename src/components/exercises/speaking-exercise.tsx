@@ -17,6 +17,8 @@ interface SpeakingExerciseProps {
   title: string;
   instructions?: string | null;
   prompt: string;
+  followUpQuestions?: string[];
+  pictureDescription?: string;
   maxDurationSeconds?: number;
   targetLevel?: string;
   labels: {
@@ -51,6 +53,8 @@ export function SpeakingExercise({
   title,
   instructions,
   prompt,
+  followUpQuestions = [],
+  pictureDescription,
   maxDurationSeconds = 120,
   targetLevel,
   labels,
@@ -193,8 +197,23 @@ export function SpeakingExercise({
         {instructions && <p className="text-sm text-gray-500">{instructions}</p>}
       </CardHeader>
       <CardContent className="space-y-4">
-        <div className="bg-primary/5 rounded-lg p-4">
+        <div className="bg-primary/5 rounded-lg p-4 space-y-3">
           <p className="text-sm font-medium text-gray-900">{prompt}</p>
+          {pictureDescription && (
+            <p className="text-xs text-gray-600 italic">{pictureDescription}</p>
+          )}
+          {followUpQuestions.length > 0 && (
+            <div>
+              <p className="text-xs font-medium text-gray-500 mb-2">
+                Câu hỏi phỏng vấn — trả lời khi ghi âm:
+              </p>
+              <ol className="list-decimal list-inside space-y-1 text-sm text-gray-800">
+                {followUpQuestions.map((question) => (
+                  <li key={question}>{question}</li>
+                ))}
+              </ol>
+            </div>
+          )}
         </div>
 
         <div className="flex flex-col items-center gap-4 py-6">

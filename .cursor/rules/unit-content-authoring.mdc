@@ -34,6 +34,19 @@ Each unit must have **6 lessons** in order: `vocabulary` → `grammar` → `read
 | **writing** | **4 exercises**: Learn (gap_fill) → Practice (sentence_ordering) → Check (AI writing task with rubric) → Apply (gap_fill frames) |
 | **speaking** | **4 exercises**: Learn + Practice (MCQ best reply) → Check (AI speaking interview) → Apply (MCQ situational); `followUpQuestions`, `suggestedAnswers`, `assessmentCriteria`, `maxDurationSeconds` on Check exercise |
 
+### AI Check exercises (writing & speaking only)
+
+Only the **Check** exercise uses `exerciseType: "writing"` or `"speaking"` (AI grading / microphone). Learn, Practice, and Apply use MCQ, gap_fill, etc. — they prepare the skill but are **not** recording tasks.
+
+Required `content` fields on Check exercises:
+
+| Type | Required fields |
+|------|-----------------|
+| **writing** | `taskDescription`, `prompts[]`, `minWords`, `targetLevel`, `rubric`; optional `prompt` (combined task text for AI) |
+| **speaking** | `prompt`, `followUpQuestions[]`, `maxDurationSeconds`, `targetLevel`, `assessmentCriteria` |
+
+`targetLevel` must match `meta.level` (e.g. `"starters"`, `"ket"`). App reads `minWords` (not only `minimumWords`) for writing word count.
+
 ### Multi-Exercise Template (per lesson)
 
 Each lesson has **4 exercises** (`sortOrder` 0–3). Prefix titles: `Learn:`, `Practice:`, `Check:`, `Apply:`.

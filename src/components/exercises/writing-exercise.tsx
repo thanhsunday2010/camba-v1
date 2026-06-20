@@ -15,6 +15,8 @@ interface WritingExerciseProps {
   title: string;
   instructions?: string | null;
   prompt: string;
+  taskDescription?: string;
+  taskPrompts?: string[];
   minWords?: number;
   maxWords?: number;
   targetLevel?: string;
@@ -46,6 +48,8 @@ export function WritingExercise({
   title,
   instructions,
   prompt,
+  taskDescription,
+  taskPrompts = [],
   minWords = 30,
   maxWords = 200,
   targetLevel,
@@ -126,8 +130,19 @@ export function WritingExercise({
         {instructions && <p className="text-sm text-gray-500">{instructions}</p>}
       </CardHeader>
       <CardContent className="space-y-4">
-        <div className="bg-primary/5 rounded-lg p-4">
-          <p className="text-sm font-medium text-gray-900">{prompt}</p>
+        <div className="bg-primary/5 rounded-lg p-4 space-y-3">
+          {taskDescription && (
+            <p className="text-sm font-medium text-gray-900">{taskDescription}</p>
+          )}
+          {taskPrompts.length > 0 ? (
+            <ol className="list-decimal list-inside space-y-1 text-sm text-gray-800">
+              {taskPrompts.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ol>
+          ) : (
+            <p className="text-sm font-medium text-gray-900">{prompt}</p>
+          )}
         </div>
 
         <textarea

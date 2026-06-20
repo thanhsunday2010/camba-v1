@@ -5,6 +5,16 @@ import { useState } from "react";
 import type { Exercise, ExerciseResult, UserAnswer } from "@/types/learning";
 import { ExercisePlayer } from "@/components/exercises/exercise-player";
 import { submitExerciseAttempt } from "@/actions/learning";
+import {
+  buildSpeakingPromptText,
+  buildWritingPromptText,
+  getExerciseListSubtitle,
+  getFollowUpQuestions,
+  getWritingPrompts,
+  resolveTargetLevel,
+  resolveWritingMaxWords,
+  resolveWritingMinWords,
+} from "@/lib/learning/ai-exercise-content";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, Circle, PenLine, Mic, Loader2 } from "lucide-react";
@@ -105,10 +115,10 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
     const exercise = exercises[activeExerciseIndex];
     const nextExercise = exercises[activeExerciseIndex + 1];
     const content = exercise.content ?? {};
-    const prompt =
-      (content.prompt as string) ??
-      exercise.instructions ??
-      exercise.title;
+    const fallbackPrompt = exercise.instructions ?? exercise.title;
+    const writingPrompt = buildWritingPromptText(content, fallbackPrompt);
+    const speakingPrompt = buildSpeakingPromptText(content, fallbackPrompt);
+    const targetLevel = resolveTargetLevel(content);
 
     return (
       <div className="space-y-4">
@@ -123,10 +133,12 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
             lessonId={lessonId}
             title={exercise.title}
             instructions={exercise.instructions}
-            prompt={prompt}
-            minWords={(content.minWords as number) ?? 30}
-            maxWords={(content.maxWords as number) ?? 200}
-            targetLevel={content.targetLevel as string | undefined}
+            prompt={writingPrompt}
+            taskDescription={content.taskDescription as string | undefined}
+            taskPrompts={getWritingPrompts(content)}
+            minWords={resolveWritingMinWords(content)}
+            maxWords={resolveWritingMaxWords(content)}
+            targetLevel={targetLevel}
             labels={AI_FEEDBACK_LABELS}
             onComplete={() => handleAiComplete(exercise.id)}
             nextExerciseTitle={nextExercise?.title}
@@ -139,9 +151,11 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
             lessonId={lessonId}
             title={exercise.title}
             instructions={exercise.instructions}
-            prompt={prompt}
+            prompt={speakingPrompt}
+            followUpQuestions={getFollowUpQuestions(content)}
+            pictureDescription={content.pictureDescription as string | undefined}
             maxDurationSeconds={(content.maxDurationSeconds as number) ?? 120}
-            targetLevel={content.targetLevel as string | undefined}
+            targetLevel={targetLevel}
             labels={AI_FEEDBACK_LABELS}
             onComplete={() => handleAiComplete(exercise.id)}
             nextExerciseTitle={nextExercise?.title}
@@ -180,8 +194,6 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
         {exercises.map((exercise, index) => {
           const isCompleted = completedExercises.has(exercise.id);
           const Icon = getExerciseIcon(exercise.exercise_type);
-          const isAi = exercise.exercise_type === "writing" || exercise.exercise_type === "speaking";
-
           return (
             <Card
               key={exercise.id}
@@ -199,11 +211,7 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
                     <div>
                       <CardTitle className="text-base">{exercise.title}</CardTitle>
                       <p className="text-xs text-gray-500 mt-0.5">
-                        {isAi
-                          ? exercise.exercise_type === "writing"
-                            ? "Bài viết • AI chấm"
-                            : "Bài nói • AI chấm"
-                          : `${exercise.questions?.length ?? 0} câu hỏi`}
+                        {getExerciseListSubtitle(exercise)}
                       </p>
                     </div>
                   </div>
