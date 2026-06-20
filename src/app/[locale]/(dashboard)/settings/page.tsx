@@ -3,8 +3,9 @@ import { getTranslations } from "next-intl/server";
 import { getCurrentUser } from "@/lib/auth/current-user";
 import { getPendingParentLinksForStudent } from "@/lib/queries/parent";
 import { getStudentAssignments, getStudentClasses } from "@/lib/queries/teacher";
-import { fetchActiveProgramContext, fetchAvailablePrograms } from "@/actions/programs";
+import { fetchActiveProgramContext, fetchAvailablePrograms, fetchLevelsForProgram } from "@/actions/programs";
 import { ProgramPicker } from "@/components/programs/program-picker";
+import { LevelPicker } from "@/components/programs/level-picker";
 import { StudentSettingsPanel } from "@/components/settings/student-settings-panel";
 import { ProfileForm } from "@/components/settings/profile-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -24,6 +25,10 @@ export default async function SettingsPage() {
     fetchActiveProgramContext(),
     fetchAvailablePrograms(),
   ]);
+
+  const levels = programContext?.programId
+    ? await fetchLevelsForProgram(programContext.programId)
+    : [];
 
   return (
     <div className="space-y-6">
@@ -63,6 +68,25 @@ export default async function SettingsPage() {
           />
         </CardContent>
       </Card>
+
+      {programContext?.programId && levels.length > 0 && (
+        <Card>
+          <CardContent className="pt-6">
+            <LevelPicker
+              levels={levels}
+              currentLevelId={programContext.levelId}
+              labels={{
+                title: tp("levelTitle"),
+                subtitle: tp("levelSubtitle"),
+                select: tp("levelSelect"),
+                selecting: tp("selecting"),
+                current: tp("currentLevel"),
+                startLearning: tp("startLearning"),
+              }}
+            />
+          </CardContent>
+        </Card>
+      )}
 
       <StudentSettingsPanel
         pendingParentLinks={pendingLinks}

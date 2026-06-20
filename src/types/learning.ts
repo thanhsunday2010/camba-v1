@@ -152,6 +152,24 @@ export interface PlacementTestData {
   questions: PlacementQuestion[];
 }
 
+export interface PlacementTestSummary {
+  id: string;
+  title: string;
+  description: string | null;
+  question_count: number;
+  time_limit_minutes: number | null;
+  testKind: string | null;
+}
+
+export interface PlacementTestResult {
+  accuracyPercent: number;
+  cambridgeScaleScore: number;
+  suggestedLevelId: string | null;
+  skillBreakdown: Record<string, number>;
+  shieldEstimate: Record<string, number>;
+  overallShields: number;
+}
+
 export interface MockTestQuestion extends PublicQuestion {
   sectionId: string;
   mockPoints: number;

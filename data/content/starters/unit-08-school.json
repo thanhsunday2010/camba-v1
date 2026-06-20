@@ -1,0 +1,1348 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by YLE Pre-A1 task formats only.",
+    "program": "cambridge-english",
+    "level": "starters",
+    "cefr": "pre-a1",
+    "unitNumber": 8,
+    "unitSlug": "school",
+    "unitTitle": "School",
+    "targetAge": "7-9",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Name classroom objects and school people using Starters vocabulary.",
+      "Follow and give simple classroom commands using imperatives.",
+      "Use have got to talk about things you have at school.",
+      "Use work and teach in present simple sentences about jobs.",
+      "Read short texts to label classroom objects and listen to classroom commands."
+    ],
+    "grammarFocus": [
+      "Imperatives: Open, Close, Sit down",
+      "Have got: I've got a pen",
+      "Present simple: work, teach"
+    ],
+    "readingSkillFocus": "Label Classroom Objects",
+    "listeningSkillFocus": "Understand Classroom Commands"
+  },
+  "vocabularyBank": [
+    {
+      "word": "book",
+      "ipa": "/bʊk/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "sách",
+      "exampleSentence": "Open your book, please.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "pen",
+      "ipa": "/pen/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bút mực",
+      "exampleSentence": "I've got a blue pen.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "pencil",
+      "ipa": "/ˈpensl/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bút chì",
+      "exampleSentence": "Write with your pencil.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "bag",
+      "ipa": "/bæɡ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "cặp sách, túi",
+      "exampleSentence": "My bag is on the desk.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "desk",
+      "ipa": "/desk/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bàn học",
+      "exampleSentence": "Sit at your desk.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "classroom",
+      "ipa": "/ˈklɑːsruːm/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "lớp học",
+      "exampleSentence": "We are in the classroom.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "teacher",
+      "ipa": "/ˈtiːtʃə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "giáo viên",
+      "exampleSentence": "My teacher is kind.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "lesson",
+      "ipa": "/ˈlesn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bài học, tiết học",
+      "exampleSentence": "The English lesson is fun.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.13,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "worker",
+      "ipa": "/ˈwɜːkə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "công nhân, người lao động",
+      "exampleSentence": "My father is a worker.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "farmer",
+      "ipa": "/ˈfɑːmə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "nông dân",
+      "exampleSentence": "The farmer works on a farm.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "school",
+      "ipa": "/skuːl/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "trường học",
+      "exampleSentence": "I go to school every day.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.95,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "student",
+      "ipa": "/ˈstjuːdnt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "học sinh",
+      "exampleSentence": "I am a student.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "ruler",
+      "ipa": "/ˈruːlə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "thước kẻ",
+      "exampleSentence": "I've got a ruler in my bag.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "eraser",
+      "ipa": "/ɪˈreɪzə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "cục tẩy",
+      "exampleSentence": "Use your eraser, please.",
+      "difficulty": 1,
+      "topic": "school",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Imperatives: Open, Close, Sit down",
+      "explanation": "Use the verb alone to give a command or instruction. No subject (you) is needed.",
+      "examples": [
+        "Open your book.",
+        "Close the door.",
+        "Sit down, please."
+      ],
+      "commonMistakes": [
+        "You open the book (×) → Open your book (✓)",
+        "Sits down (×) → Sit down (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "school"
+    },
+    {
+      "structure": "Have got: I've got a pen",
+      "explanation": "Use have got to say you possess something. I've got = I have got. Has she got? asks about another person.",
+      "examples": [
+        "I've got a pen.",
+        "She's got a new bag.",
+        "Have you got a ruler?"
+      ],
+      "commonMistakes": [
+        "I have a got pen (×) → I've got a pen (✓)",
+        "She have got a book (×) → She's got a book (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "school"
+    },
+    {
+      "structure": "Present simple: work, teach",
+      "explanation": "Use work to talk about a job. Use teach for a teacher's job. Add -s with he/she: He works. She teaches.",
+      "examples": [
+        "My father works.",
+        "She teaches English.",
+        "The farmer works on a farm."
+      ],
+      "commonMistakes": [
+        "He work in a school (×) → He works in a school (✓)",
+        "She teachs English (×) → She teaches English (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "school"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-classroom-objects",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Classroom Objects",
+      "learningObjective": "Recognise and understand fourteen school and classroom words at Starters level.",
+      "estimatedMinutes": 12,
+      "unlockAfterLessonId": "e2000007-0000-4000-8000-000000000006",
+      "exercises": [
+        {
+          "slug": "vocab-school-mcq",
+          "title": "School Word Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.2,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "You read stories in a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A book is for reading. A pen is for writing; a bag carries things.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "book",
+                  "isCorrect": true
+                },
+                {
+                  "text": "pen",
+                  "isCorrect": false,
+                  "distractorNote": "Writing tool, not for reading stories"
+                },
+                {
+                  "text": "desk",
+                  "isCorrect": false,
+                  "distractorNote": "Furniture, not reading material"
+                }
+              ]
+            },
+            {
+              "questionText": "You write with ink using a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A pen uses ink. A pencil uses lead; an eraser removes marks.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.17,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "pen",
+                  "isCorrect": true
+                },
+                {
+                  "text": "pencil",
+                  "isCorrect": false,
+                  "distractorNote": "Uses lead, not ink"
+                },
+                {
+                  "text": "ruler",
+                  "isCorrect": false,
+                  "distractorNote": "For measuring lines"
+                }
+              ]
+            },
+            {
+              "questionText": "The person who teaches you is your _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A teacher teaches students. A worker and farmer have different jobs.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.16,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "teacher",
+                  "isCorrect": true
+                },
+                {
+                  "text": "student",
+                  "isCorrect": false,
+                  "distractorNote": "Learner, not teacher"
+                },
+                {
+                  "text": "farmer",
+                  "isCorrect": false,
+                  "distractorNote": "Works on a farm"
+                }
+              ]
+            },
+            {
+              "questionText": "You carry your books in your _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A bag holds books and school things. A desk is furniture; a classroom is a room.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "bag",
+                  "isCorrect": true
+                },
+                {
+                  "text": "desk",
+                  "isCorrect": false,
+                  "distractorNote": "Table you sit at, not for carrying"
+                },
+                {
+                  "text": "classroom",
+                  "isCorrect": false,
+                  "distractorNote": "Room, not a container"
+                }
+              ]
+            },
+            {
+              "questionText": "A person who grows food on a farm is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A farmer works on a farm. A worker is more general; a teacher works at school.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.19,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "farmer",
+                  "isCorrect": true
+                },
+                {
+                  "text": "worker",
+                  "isCorrect": false,
+                  "distractorNote": "General job word, not farm-specific"
+                },
+                {
+                  "text": "teacher",
+                  "isCorrect": false,
+                  "distractorNote": "Works at school"
+                }
+              ]
+            },
+            {
+              "questionText": "You use this to rub out pencil marks.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "An eraser removes pencil marks. A ruler measures; a pen writes in ink.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "eraser",
+                  "isCorrect": true
+                },
+                {
+                  "text": "ruler",
+                  "isCorrect": false,
+                  "distractorNote": "For drawing straight lines"
+                },
+                {
+                  "text": "pen",
+                  "isCorrect": false,
+                  "distractorNote": "For writing, not rubbing out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-school-matching",
+          "title": "Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the school words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Mỗi từ khớp một nghĩa rõ ràng. Học sinh thường nhầm pen và pencil.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "pencil",
+                  "right": "writing tool with lead"
+                },
+                {
+                  "left": "classroom",
+                  "right": "room where you have lessons"
+                },
+                {
+                  "left": "lesson",
+                  "right": "a period of learning at school"
+                },
+                {
+                  "left": "student",
+                  "right": "a child who goes to school"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-imperatives-have-got",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e2000008-0000-4000-8000-000000000001",
+      "title": "Lesson 2: Commands and Have Got",
+      "learningObjective": "Use imperatives, have got and work/teach in school contexts.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "grammar-school-mcq",
+          "title": "Commands and Jobs",
+          "instructions": "Choose the correct answer to complete each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "_____ your book, please. (command)",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Open is an imperative — verb alone, no subject.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Open",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Opens",
+                  "isCorrect": false,
+                  "distractorNote": "Third person form, not imperative"
+                },
+                {
+                  "text": "Opening",
+                  "isCorrect": false,
+                  "distractorNote": "-ing form not used for commands"
+                }
+              ]
+            },
+            {
+              "questionText": "I've _____ a red pen in my bag.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "I've got means I have got — to show possession.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "got",
+                  "isCorrect": true
+                },
+                {
+                  "text": "get",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong form after have"
+                },
+                {
+                  "text": "go",
+                  "isCorrect": false,
+                  "distractorNote": "Different verb"
+                }
+              ]
+            },
+            {
+              "questionText": "My mother _____ English at our school.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Use teaches with she (third person -es). Mother is a teacher.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "teaches",
+                  "isCorrect": true
+                },
+                {
+                  "text": "teach",
+                  "isCorrect": false,
+                  "distractorNote": "Base form, wrong for she"
+                },
+                {
+                  "text": "works",
+                  "isCorrect": false,
+                  "distractorNote": "General verb; teaches is more specific"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ down and listen. (command)",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Sit down is a common classroom imperative.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.21,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Sit",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Sits",
+                  "isCorrect": false,
+                  "distractorNote": "Third person, not imperative"
+                },
+                {
+                  "text": "Sitting",
+                  "isCorrect": false,
+                  "distractorNote": "Not a command form"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-school-gap-fill",
+          "title": "Complete the Sentences",
+          "instructions": "Complete the sentences with got, works or teaches.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: She's [0] a new bag. | My dad [1] in a factory. | Miss Hoa [2] our class.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "She's got (possession); My dad works (job); Miss Hoa teaches (teacher's job).",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "She's [0] a new bag. My dad [1] in a factory. Miss Hoa [2] our class.",
+                "correctAnswers": [
+                  "got",
+                  "works",
+                  "teaches"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "got"
+                  ],
+                  [
+                    "works"
+                  ],
+                  [
+                    "teaches"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-classroom-labels",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e2000008-0000-4000-8000-000000000002",
+      "title": "Lesson 3: In the Classroom",
+      "learningObjective": "Read a short text about a classroom and label objects and answer comprehension questions.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "reading-school-passage",
+          "title": "Read: Our Classroom",
+          "instructions": "Read the text. Then answer the questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.95,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Our Classroom",
+              "text": "We are in our classroom. It is a nice room.\n\nThere are twenty desks. Every student has a desk. I've got a book and a pencil on my desk. My friend Nam has got a pen and a ruler.\n\nOur teacher is Miss Lan. She teaches English. She says: 'Open your books!' We like our lessons.\n\nNam's father is a farmer. My mother is a worker.",
+              "wordCount": 58,
+              "imagePrompt": "A classroom with desks, books, pens and pencils; a teacher at the front; students sitting at desks."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main idea of the text?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "main_idea",
+              "points": 1,
+              "explanation": "The text describes the classroom, objects and people at school. It is not mainly about food or home.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The writer describes their classroom and school.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The writer talks about animals.",
+                  "isCorrect": false,
+                  "distractorNote": "No animals in text"
+                },
+                {
+                  "text": "The writer cooks in the kitchen.",
+                  "isCorrect": false,
+                  "distractorNote": "Kitchen not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "What has Nam got on his desk?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "detail",
+              "points": 1,
+              "explanation": "The text says: Nam has got a pen and a ruler.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A pen and a ruler",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A book and a pencil",
+                  "isCorrect": false,
+                  "distractorNote": "That is what the writer has"
+                },
+                {
+                  "text": "A bag and an eraser",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned on desk"
+                }
+              ]
+            },
+            {
+              "questionText": "What does Miss Lan teach?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "detail",
+              "points": 1,
+              "explanation": "The text says: She teaches English.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "English",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Maths",
+                  "isCorrect": false,
+                  "distractorNote": "Subject not in text"
+                },
+                {
+                  "text": "Music",
+                  "isCorrect": false,
+                  "distractorNote": "Subject not in text"
+                }
+              ]
+            },
+            {
+              "questionText": "In 'Open your books!', what kind of sentence is this?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "vocabulary_in_context",
+              "points": 1,
+              "explanation": "Open your books is an imperative — a command or instruction.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.33,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A command (imperative)",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A question",
+                  "isCorrect": false,
+                  "distractorNote": "No question mark or question word"
+                },
+                {
+                  "text": "A story about the past",
+                  "isCorrect": false,
+                  "distractorNote": "Present instruction"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the ideas in order: (1) Classroom and desks (2) Things on desks (3) Teacher and parents' jobs",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "sequencing",
+              "points": 1,
+              "explanation": "The text moves from room → desk objects → teacher → parents' jobs.",
+              "qualityScores": {
+                "quality": 0.88,
+                "difficulty": 0.4,
+                "curriculumAlignment": 0.93,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": true
+                },
+                {
+                  "text": "2 → 1 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Room description comes first"
+                },
+                {
+                  "text": "3 → 2 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Reversed order"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-classroom-commands",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e2000008-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Classroom Commands",
+      "learningObjective": "Listen to classroom commands and identify what the teacher says.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "listening-school-dialogue",
+          "title": "Listen: English Lesson",
+          "instructions": "Listen to the teacher. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "English Lesson",
+              "setting": "A primary school classroom",
+              "speakers": [
+                {
+                  "name": "Miss Hoa",
+                  "role": "teacher"
+                },
+                {
+                  "name": "Students",
+                  "role": "class"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Miss Hoa",
+                  "text": "Good morning, class. Sit down, please."
+                },
+                {
+                  "speaker": "Miss Hoa",
+                  "text": "Open your books. Page ten."
+                },
+                {
+                  "speaker": "Miss Hoa",
+                  "text": "Take out your pencil. Write your name."
+                },
+                {
+                  "speaker": "Miss Hoa",
+                  "text": "Have you got an eraser? Good."
+                },
+                {
+                  "speaker": "Miss Hoa",
+                  "text": "Now close your books. Stand up."
+                }
+              ],
+              "audioNotes": "Clear, slow delivery with short pauses between commands. Total duration approx. 35 seconds."
+            },
+            "answerKey": {
+              "q1": "sit down",
+              "q2": "open books",
+              "q3": "pencil",
+              "q4": "close books"
+            },
+            "audioUrl": "/audio/listening/starters/unit-08/listening-school-dialogue.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What does the teacher say first?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Miss Hoa says: Sit down, please.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Sit down",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Stand up",
+                  "isCorrect": false,
+                  "distractorNote": "Said at the end, not first"
+                },
+                {
+                  "text": "Close your books",
+                  "isCorrect": false,
+                  "distractorNote": "Said later in the lesson"
+                }
+              ]
+            },
+            {
+              "questionText": "What do the students open?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Miss Hoa says: Open your books.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Their books",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Their bags",
+                  "isCorrect": false,
+                  "distractorNote": "Bags not mentioned"
+                },
+                {
+                  "text": "The door",
+                  "isCorrect": false,
+                  "distractorNote": "Door not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "What do the students write with?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Miss Hoa says: Take out your pencil.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A pencil",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A pen",
+                  "isCorrect": false,
+                  "distractorNote": "Pen not mentioned"
+                },
+                {
+                  "text": "A ruler",
+                  "isCorrect": false,
+                  "distractorNote": "Ruler not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "Before 'Stand up', the teacher says '_____.'",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Miss Hoa says: Now close your books. Stand up.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.28,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Close your books",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Open your books",
+                  "isCorrect": false,
+                  "distractorNote": "Said earlier in the lesson"
+                },
+                {
+                  "text": "Sit down",
+                  "isCorrect": false,
+                  "distractorNote": "Said at the start"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-my-school-things",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e2000008-0000-4000-8000-000000000004",
+      "title": "Lesson 5: My School Things",
+      "learningObjective": "Write short answers about classroom objects using have got and school vocabulary.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "writing-school-bag",
+          "title": "Writing: In My Bag",
+          "instructions": "Write short answers. Use 1–6 words for each answer.",
+          "exerciseType": "writing",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Look at the picture of a school bag and desk. Write short answers to the three questions.",
+            "prompts": [
+              "1. What have you got in your bag? (Write: I've got a _____)",
+              "2. What is on your desk? (Write one or two words)",
+              "3. Write one sentence about your teacher: She/He teaches _____."
+            ],
+            "expectedLength": "3 short answers; 1–6 words each; one sentence up to 7 words",
+            "successCriteria": [
+              "All three prompts are answered",
+              "Uses at least two unit school words",
+              "Uses I've got or teaches correctly",
+              "Spelling of core words is recognisable"
+            ],
+            "modelAnswer": {
+              "answers": [
+                "I've got a pen.",
+                "A book and pencil",
+                "She teaches English."
+              ]
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.3,
+                "criteria": "Correct use of I've got and teaches/works where appropriate."
+              },
+              "vocabulary": {
+                "weight": 0.3,
+                "criteria": "Uses school and classroom words from the unit accurately."
+              },
+              "organization": {
+                "weight": 0.2,
+                "criteria": "Answers match the prompts in order; sentences are clear."
+              },
+              "taskAchievement": {
+                "weight": 0.2,
+                "criteria": "All parts completed; length appropriate for Starters."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your answers to the three prompts in the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấp nhận mọi câu trả lời đáp ứng tiêu chí. Câu trả lời mẫu cho thấy phạm vi mong đợi.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-school-bag",
+                "autoCheckKeywords": [
+                  "got",
+                  "pen",
+                  "pencil",
+                  "book",
+                  "bag",
+                  "desk",
+                  "teaches",
+                  "teacher",
+                  "school"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-talk-about-school",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e2000008-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About School",
+      "learningObjective": "Answer simple questions about school, classroom objects and jobs with words and short phrases.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "speaking-school-interview",
+          "title": "Speaking: School Interview",
+          "instructions": "Answer the examiner's questions. Say at least one word for each question.",
+          "exerciseType": "speaking",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "prompt": "The examiner will ask you about school. Look at the picture of a classroom.",
+            "pictureDescription": "A classroom with a teacher, desks, books, pens, pencils and students.",
+            "followUpQuestions": [
+              "Do you go to school?",
+              "What have you got in your bag?",
+              "Who is your teacher?",
+              "What does your father or mother do? (worker / farmer / teacher)",
+              "What does the teacher say? (Open / Sit down / Close)"
+            ],
+            "suggestedAnswers": [
+              "Yes, I go to school.",
+              "I've got a book and a pen.",
+              "Miss Lan is my teacher.",
+              "My father is a worker.",
+              "Sit down, please."
+            ],
+            "assessmentCriteria": {
+              "pronunciation": "Key school words (book, pen, teacher, classroom) are understandable.",
+              "fluency": "Responds without long silence; uses words or short phrases.",
+              "grammar": "Uses I've got or teaches/works in at least two answers.",
+              "vocabulary": "Uses at least three different unit school words correctly."
+            },
+            "maxDurationSeconds": 90
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the five follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "school",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 5,
+              "explanation": "Đánh giá tổng thể theo bốn tiêu chí. Câu trả lời một phần vẫn được điểm một phần.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-school-interview",
+                "minimumResponses": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1318 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by YLE Pre-A1 task formats only.",
+    "program": "cambridge-english",
+    "level": "starters",
+    "cefr": "pre-a1",
+    "unitNumber": 10,
+    "unitSlug": "transport-and-places",
+    "unitTitle": "Transport and Places",
+    "targetAge": "7-9",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Name common transport and places using Starters vocabulary.",
+      "Ask and answer where and what questions about places.",
+      "Use prepositions next to, behind and in front of to describe location.",
+      "Read simple directions and place descriptions.",
+      "Listen and identify transport and place names.",
+      "Talk about how you go to places and where things are."
+    ],
+    "grammarFocus": [
+      "Question words: where, what",
+      "Prepositions: next to, behind, in front of"
+    ],
+    "readingSkillFocus": "Read Simple Directions",
+    "listeningSkillFocus": "Extract Place and Transport Names"
+  },
+  "vocabularyBank": [
+    {
+      "word": "car",
+      "ipa": "/kɑː(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "xe ô tô",
+      "exampleSentence": "My father has a red car.",
+      "difficulty": 1,
+      "topic": "transport-and-places",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "bus",
+      "ipa": "/bʌs/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "xe buýt",
+      "exampleSentence": "I go to school by bus.",
+      "difficulty": 1,
+      "topic": "transport-and-places",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.09,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "bike",
+      "ipa": "/baɪk/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "xe đạp",
+      "exampleSentence": "She rides her bike to the park.",
+      "difficulty": 1,
+      "topic": "transport-and-places",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "plane",
+      "ipa": "/pleɪn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "máy bay",
+      "exampleSentence": "The plane is in the sky.",
+      "difficulty": 1,
+      "topic": "transport-and-places",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "park",
+      "ipa": "/pɑːk/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "công viên",
+      "exampleSentence": "We play in the park.",
+      "difficulty": 1,
+      "topic": "transport-and-places",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.09,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "shop",
+      "ipa": "/ʃɒp/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "cửa hàng",
+      "exampleSentence": "The shop is on the street.",
+      "difficulty": 1,
+      "topic": "transport-and-places",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "street",
+      "ipa": "/striːt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "đường phố",
+      "exampleSentence": "Our house is on this street.",
+      "difficulty": 1,
+      "topic": "transport-and-places",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "house",
+      "ipa": "/haʊs/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "ngôi nhà",
+      "exampleSentence": "This is my house.",
+      "difficulty": 1,
+      "topic": "transport-and-places",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.95,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "road",
+      "ipa": "/rəʊd/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "con đường",
+      "exampleSentence": "The bus is on the road.",
+      "difficulty": 1,
+      "topic": "transport-and-places",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.13,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "town",
+      "ipa": "/taʊn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "thị trấn, thị xã",
+      "exampleSentence": "Our town has a big park.",
+      "difficulty": 1,
+      "topic": "transport-and-places",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "school",
+      "ipa": "/skuːl/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "trường học",
+      "exampleSentence": "The school is next to the park.",
+      "difficulty": 1,
+      "topic": "transport-and-places",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "tree",
+      "ipa": "/triː/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "cây",
+      "exampleSentence": "There is a tree in front of the house.",
+      "difficulty": 1,
+      "topic": "transport-and-places",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Question words: where, what",
+      "explanation": "Use where to ask about place. Use what to ask about things or to identify something.",
+      "examples": [
+        "Where is the shop?",
+        "What is this? — It is a bus.",
+        "Where is your house?"
+      ],
+      "commonMistakes": [
+        "Where is a car? (×) when asking identity → What is this? (✓)",
+        "What is the park? (×) when asking place → Where is the park? (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "transport-and-places"
+    },
+    {
+      "structure": "Prepositions: next to, behind, in front of",
+      "explanation": "Next to means beside. Behind means at the back. In front of means before something, facing it.",
+      "examples": [
+        "The shop is next to the park.",
+        "The bus is behind the car.",
+        "The tree is in front of the house."
+      ],
+      "commonMistakes": [
+        "in front the house (×) → in front of the house (✓)",
+        "next the shop (×) → next to the shop (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "transport-and-places"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-transport-and-places",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Transport and Places",
+      "learningObjective": "Recognise and understand twelve transport and place words at Starters level.",
+      "estimatedMinutes": 12,
+      "unlockAfterLessonId": "e2000009-0000-4000-8000-000000000006",
+      "exercises": [
+        {
+          "slug": "vocab-transport-words",
+          "title": "Transport and Place Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.2,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "It has four wheels and a family rides in it. It is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A car has four wheels and carries people. Bus is bigger; bike has two wheels.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "bus",
+                  "isCorrect": false,
+                  "distractorNote": "Also has wheels but is much bigger and public"
+                },
+                {
+                  "text": "car",
+                  "isCorrect": true
+                },
+                {
+                  "text": "plane",
+                  "isCorrect": false,
+                  "distractorNote": "Flies in the sky, not on wheels on the road"
+                }
+              ]
+            },
+            {
+              "questionText": "Many people travel together on this big vehicle on the road. It is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A bus carries many passengers on the road. Car is smaller; plane is in the air.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.17,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "car",
+                  "isCorrect": false,
+                  "distractorNote": "Smaller vehicle for fewer people"
+                },
+                {
+                  "text": "bus",
+                  "isCorrect": true
+                },
+                {
+                  "text": "bike",
+                  "isCorrect": false,
+                  "distractorNote": "Two wheels, one or two riders"
+                }
+              ]
+            },
+            {
+              "questionText": "It flies in the sky and takes people to far places. It is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A plane flies in the sky. Car and bus stay on the ground.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.16,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "car",
+                  "isCorrect": false,
+                  "distractorNote": "On the road, not in the sky"
+                },
+                {
+                  "text": "plane",
+                  "isCorrect": true
+                },
+                {
+                  "text": "bus",
+                  "isCorrect": false,
+                  "distractorNote": "On the road, not in the sky"
+                }
+              ]
+            },
+            {
+              "questionText": "Children play on the grass and there are trees. This place is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A park is an outdoor place with grass and trees for play. Shop sells things; house is where you live.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.15,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "shop",
+                  "isCorrect": false,
+                  "distractorNote": "Place to buy things, not to play on grass"
+                },
+                {
+                  "text": "park",
+                  "isCorrect": true
+                },
+                {
+                  "text": "house",
+                  "isCorrect": false,
+                  "distractorNote": "Home, not a public play area"
+                }
+              ]
+            },
+            {
+              "questionText": "You buy food and toys here. This place is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A shop is where you buy things. Park is for playing; school is for learning.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.16,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "park",
+                  "isCorrect": false,
+                  "distractorNote": "For playing, not shopping"
+                },
+                {
+                  "text": "shop",
+                  "isCorrect": true
+                },
+                {
+                  "text": "street",
+                  "isCorrect": false,
+                  "distractorNote": "Road between buildings, not a store"
+                }
+              ]
+            },
+            {
+              "questionText": "Cars and buses drive on the _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A street (or road) is where vehicles drive. House is a building; tree is a plant.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.14,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "house",
+                  "isCorrect": false,
+                  "distractorNote": "Building where people live"
+                },
+                {
+                  "text": "street",
+                  "isCorrect": true
+                },
+                {
+                  "text": "tree",
+                  "isCorrect": false,
+                  "distractorNote": "Plant, not a driving surface"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-places-matching",
+          "title": "Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the transport and place words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Mỗi từ khớp với một nghĩa rõ ràng. House và shop đôi khi bị nhầm vì đều là tòa nhà.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "house",
+                  "right": "where you live"
+                },
+                {
+                  "left": "school",
+                  "right": "where children learn"
+                },
+                {
+                  "left": "bike",
+                  "right": "two wheels, you ride it"
+                },
+                {
+                  "left": "town",
+                  "right": "a place with streets and shops"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-where-and-prepositions",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e2000010-0000-4000-8000-000000000001",
+      "title": "Lesson 2: Where Is It?",
+      "learningObjective": "Use where and what questions and prepositions next to, behind and in front of.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "grammar-where-what",
+          "title": "Choose Where or What",
+          "instructions": "Choose the correct question word or preposition.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "_____ is the park? — It is on Green Street.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Where hỏi về địa điểm. Câu trả lời nói về street nên dùng Where.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Where",
+                  "isCorrect": true
+                },
+                {
+                  "text": "What",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about things, not place"
+                },
+                {
+                  "text": "Who",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about people"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ is this? — It is a bus.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "What hỏi để nhận diện vật. Câu trả lời It is a bus xác nhận điều này.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Where",
+                  "isCorrect": false,
+                  "distractorNote": "Answer gives identity, not location"
+                },
+                {
+                  "text": "What",
+                  "isCorrect": true
+                },
+                {
+                  "text": "How",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about manner, not identity"
+                }
+              ]
+            },
+            {
+              "questionText": "The shop is _____ the park. (beside it)",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Next to nghĩa là bên cạnh. Behind là phía sau; in front of là phía trước.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.24,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "behind",
+                  "isCorrect": false,
+                  "distractorNote": "At the back, not beside"
+                },
+                {
+                  "text": "next to",
+                  "isCorrect": true
+                },
+                {
+                  "text": "in front of",
+                  "isCorrect": false,
+                  "distractorNote": "Before/facing, not beside"
+                }
+              ]
+            },
+            {
+              "questionText": "The car is _____ the bus. (at the back of the bus)",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Behind nghĩa là phía sau. In front of là phía trước; next to là bên cạnh.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "in front of",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite of behind"
+                },
+                {
+                  "text": "behind",
+                  "isCorrect": true
+                },
+                {
+                  "text": "next to",
+                  "isCorrect": false,
+                  "distractorNote": "Beside, not at the back"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-prepositions-gap-fill",
+          "title": "Prepositions and Questions",
+          "instructions": "Complete the sentences with next to, behind or in front of.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: The tree is [0] the house. | The school is [1] the park. | The bus is [2] the car.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "In front of cây trước nhà; next to trường cạnh công viên; behind xe buýt sau xe hơi.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "The tree is [0] the house. The school is [1] the park. The bus is [2] the car.",
+                "correctAnswers": [
+                  "in front of",
+                  "next to",
+                  "behind"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "in front of"
+                  ],
+                  [
+                    "next to"
+                  ],
+                  [
+                    "behind"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-town-directions",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e2000010-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Around Town",
+      "learningObjective": "Read simple directions and descriptions of places in town.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "reading-directions-passage",
+          "title": "Read: My Town",
+          "instructions": "Read the text. Then answer the questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.95,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "My Town",
+              "text": "Hello! My name is Linh. I live in a small town.\n\nMy house is on Oak Street. There is a tree in front of my house. My school is next to the park. I walk to school every day.\n\nOn Main Street there is a shop. The shop is behind the bus stop. Many people go to the shop by bus.\n\nOn Sunday, my family goes to the park. We ride our bikes. I love my town!",
+              "wordCount": 68,
+              "imagePrompt": "A simple town map: a house on Oak Street with a tree in front, a school next to a park, a shop behind a bus stop on Main Street."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main idea of the text?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "main_idea",
+              "points": 1,
+              "explanation": "Linh mô tả nhà, trường, cửa hàng và công viên trong thị trấn của mình.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Linh describes places in her town.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Linh talks about sports at school.",
+                  "isCorrect": false,
+                  "distractorNote": "No sports in the text"
+                },
+                {
+                  "text": "Linh describes animals in the park.",
+                  "isCorrect": false,
+                  "distractorNote": "Park mentioned but no animals"
+                }
+              ]
+            },
+            {
+              "questionText": "Where is Linh's school?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "detail",
+              "points": 1,
+              "explanation": "Văn bản nói: My school is next to the park.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Next to the park",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Behind the shop",
+                  "isCorrect": false,
+                  "distractorNote": "Shop is behind bus stop, not school location"
+                },
+                {
+                  "text": "In front of the house",
+                  "isCorrect": false,
+                  "distractorNote": "Tree is in front of house"
+                }
+              ]
+            },
+            {
+              "questionText": "Why do many people go to the shop by bus?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "inference",
+              "points": 1,
+              "explanation": "Cửa hàng ở Main Street và có bus stop gần đó — đi bus thuận tiện.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The shop is on a street with a bus stop.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The shop is in the sky.",
+                  "isCorrect": false,
+                  "distractorNote": "Shops are on streets, not in sky"
+                },
+                {
+                  "text": "There are no roads in the town.",
+                  "isCorrect": false,
+                  "distractorNote": "Streets are mentioned twice"
+                }
+              ]
+            },
+            {
+              "questionText": "In 'There is a tree in front of my house', where is the tree?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "vocabulary_in_context",
+              "points": 1,
+              "explanation": "In front of nghĩa là phía trước — cây ở trước nhà Linh.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.33,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Before the house, facing it",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Behind the house",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite of in front of"
+                },
+                {
+                  "text": "Inside the house",
+                  "isCorrect": false,
+                  "distractorNote": "Tree is outside"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the ideas in order: (1) Linh tells where she lives (2) Linh describes school and the shop (3) Linh talks about going to the park on Sunday",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "sequencing",
+              "points": 1,
+              "explanation": "Văn bản đi theo thứ tự: nhà → trường và cửa hàng → Chủ nhật ở công viên.",
+              "qualityScores": {
+                "quality": 0.88,
+                "difficulty": 0.4,
+                "curriculumAlignment": 0.93,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": true
+                },
+                {
+                  "text": "2 → 1 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Home comes before school and shop"
+                },
+                {
+                  "text": "3 → 2 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Reversed order"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-transport-places",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e2000010-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Going Places",
+      "learningObjective": "Listen and identify transport and place names in short conversations.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "listening-street-dialogue",
+          "title": "Listen: On the Street",
+          "instructions": "Listen to the conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "On the Street",
+              "setting": "A town street on a sunny morning",
+              "speakers": [
+                {
+                  "name": "Mum",
+                  "role": "adult"
+                },
+                {
+                  "name": "Alex",
+                  "role": "boy, 7"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Mum",
+                  "text": "Look, Alex! What is that?"
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "It is a bus!"
+                },
+                {
+                  "speaker": "Mum",
+                  "text": "Where is the shop?"
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "The shop is next to the park."
+                },
+                {
+                  "speaker": "Mum",
+                  "text": "Where is our car?"
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "It is behind the bus."
+                },
+                {
+                  "speaker": "Mum",
+                  "text": "Good. Now let us go home."
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "Our house is on this street."
+                }
+              ],
+              "audioNotes": "Clear, slow delivery with short pauses. Total duration approx. 35 seconds."
+            },
+            "answerKey": {
+              "q1": "bus",
+              "q2": "next to the park",
+              "q3": "behind the bus",
+              "q4": "house"
+            },
+            "audioUrl": "/audio/listening/starters/unit-10/listening-street-dialogue.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What does Alex see first?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Alex nói: It is a bus!",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A bus",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A plane",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned in audio"
+                },
+                {
+                  "text": "A bike",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned in audio"
+                }
+              ]
+            },
+            {
+              "questionText": "Where is the shop?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Alex nói: The shop is next to the park.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Next to the park",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Behind the house",
+                  "isCorrect": false,
+                  "distractorNote": "House location different"
+                },
+                {
+                  "text": "In front of the plane",
+                  "isCorrect": false,
+                  "distractorNote": "Plane not in dialogue"
+                }
+              ]
+            },
+            {
+              "questionText": "Where is the car?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Alex nói: It is behind the bus.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Behind the bus",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Next to the shop",
+                  "isCorrect": false,
+                  "distractorNote": "Shop is next to park"
+                },
+                {
+                  "text": "In front of the tree",
+                  "isCorrect": false,
+                  "distractorNote": "Tree not in audio"
+                }
+              ]
+            },
+            {
+              "questionText": "Where do Alex and Mum go at the end?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Mum nói go home và Alex nói Our house is on this street.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Home / their house",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The shop",
+                  "isCorrect": false,
+                  "distractorNote": "They pass the shop but go home"
+                },
+                {
+                  "text": "The plane",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-my-town",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e2000010-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Write About My Town",
+      "learningObjective": "Write short phrases about transport and places using where and prepositions.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "writing-places-directions",
+          "title": "Writing: My Town",
+          "instructions": "Write short answers. Use 1–6 words for each answer.",
+          "exerciseType": "writing",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Look at the town map picture. Write short answers to the three questions.",
+            "prompts": [
+              "1. Where do you live? (Write: I live in a _____.)",
+              "2. How do you go to school? (Write: I go by _____. — use bus, car or bike)",
+              "3. Write one sentence: The _____ is next to the _____. (Use shop, park, school or house)"
+            ],
+            "expectedLength": "3 short answers; 1–6 words each",
+            "successCriteria": [
+              "All three prompts are answered",
+              "Uses at least two unit vocabulary words",
+              "Uses a preposition or transport word correctly",
+              "Spelling of core place words is recognisable"
+            ],
+            "modelAnswer": {
+              "answers": [
+                "I live in a house.",
+                "I go by bus.",
+                "The school is next to the park."
+              ]
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.3,
+                "criteria": "Correct use of prepositions (next to, behind, in front of) or by + transport."
+              },
+              "vocabulary": {
+                "weight": 0.3,
+                "criteria": "Uses transport and place words from the unit accurately."
+              },
+              "organization": {
+                "weight": 0.2,
+                "criteria": "Answers match the prompts in order; each answer is clear."
+              },
+              "taskAchievement": {
+                "weight": 0.2,
+                "criteria": "All parts completed; length appropriate for Starters."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your answers to the three prompts in the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấp nhận mọi câu trả lời đáp ứng tiêu chí. Model answer cho thấy phạm vi mong đợi.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-places-directions",
+                "autoCheckKeywords": [
+                  "I",
+                  "live",
+                  "house",
+                  "go",
+                  "by",
+                  "bus",
+                  "car",
+                  "bike",
+                  "next",
+                  "to",
+                  "park",
+                  "shop",
+                  "school",
+                  "street"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-talk-about-places",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e2000010-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Places",
+      "learningObjective": "Answer simple questions about transport, places and location.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "speaking-places-interview",
+          "title": "Speaking: Places Interview",
+          "instructions": "Answer the examiner's questions. Say at least one word for each question.",
+          "exerciseType": "speaking",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "prompt": "The examiner will ask you about transport and places. Look at the town map picture if you have one.",
+            "pictureDescription": "A simple town map showing a house, school, park, shop, bus and car on a street.",
+            "followUpQuestions": [
+              "Where do you live?",
+              "How do you go to school — by bus, car or bike?",
+              "What is this? (Point to a bus or car in the picture.)",
+              "Where is the shop?",
+              "Is the tree in front of the house or behind the house?"
+            ],
+            "suggestedAnswers": [
+              "I live in a house.",
+              "By bus.",
+              "It is a bus.",
+              "Next to the park.",
+              "In front of the house."
+            ],
+            "assessmentCriteria": {
+              "pronunciation": "Place and transport words (house, bus, park, shop) are understandable.",
+              "fluency": "Responds without long silence; uses words or short phrases.",
+              "grammar": "Uses where/what or prepositions correctly in at least two answers.",
+              "vocabulary": "Uses at least three different unit words correctly."
+            },
+            "maxDurationSeconds": 90
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the five follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "transport-and-places",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 5,
+              "explanation": "Chấm theo bốn tiêu chí assessmentCriteria. Trả lời một phần vẫn được điểm tương ứng.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-places-interview",
+                "minimumResponses": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

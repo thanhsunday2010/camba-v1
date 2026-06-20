@@ -138,6 +138,8 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
             questions={exercise.questions ?? []}
             title={exercise.title}
             instructions={exercise.instructions}
+            exerciseType={exercise.exercise_type}
+            content={exercise.content}
             onSubmit={(answers) => handleSubmit(exercise.id, answers)}
             onComplete={() => {
               handleAiComplete(exercise.id);

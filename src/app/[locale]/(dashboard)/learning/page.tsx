@@ -4,30 +4,42 @@ import { getCurrentUser } from "@/lib/auth/current-user";
 import { getUserGamification } from "@/lib/queries/user";
 import { getLearningPath, initializeLessonUnlocks } from "@/lib/queries/learning";
 import { LearningUnitPath } from "@/components/learning/learning-unit-path";
-import { Link } from "@/i18n/routing";
-import { Button } from "@/components/ui/button";
-import { ClipboardList } from "lucide-react";
+import { fetchActiveProgramContext, fetchLevelsForProgram } from "@/actions/programs";
+import { LevelPicker } from "@/components/programs/level-picker";
 
 export default async function LearningPage() {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
 
   const t = await getTranslations("learning");
+  const tp = await getTranslations("programs");
   const tm = await getTranslations("mastery");
 
   const gamification = await getUserGamification(user.id);
+  const programContext = await fetchActiveProgramContext(gamification);
+
+  if (!programContext?.programId) {
+    redirect("/settings");
+  }
 
   if (!gamification?.current_level_id) {
+    const levels = await fetchLevelsForProgram(programContext.programId);
+
     return (
-      <div className="max-w-lg mx-auto text-center space-y-6 py-12">
-        <ClipboardList className="h-16 w-16 text-primary mx-auto" />
-        <div>
-          <h1 className="text-2xl font-bold text-gray-900">{t("noLevelTitle")}</h1>
-          <p className="text-gray-500 mt-2">{t("noLevelDesc")}</p>
-        </div>
-        <Link href="/placement-test">
-          <Button size="lg">{t("takePlacementTest")}</Button>
-        </Link>
+      <div className="max-w-2xl mx-auto space-y-8 py-6">
+        <LevelPicker
+          levels={levels}
+          currentLevelId={null}
+          redirectToLearning
+          labels={{
+            title: tp("levelTitle"),
+            subtitle: tp("levelSubtitle"),
+            select: tp("levelSelect"),
+            selecting: tp("selecting"),
+            current: tp("currentLevel"),
+            startLearning: tp("startLearning"),
+          }}
+        />
       </div>
     );
   }

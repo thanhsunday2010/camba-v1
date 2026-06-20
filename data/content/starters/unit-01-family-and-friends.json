@@ -43,7 +43,12 @@
       "difficulty": 1,
       "topic": "family-and-friends",
       "programLevel": "starters",
-      "qualityScores": { "quality": 0.94, "difficulty": 0.1, "curriculumAlignment": 0.98, "needsReview": false }
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
     },
     {
       "word": "mother",
@@ -54,7 +59,12 @@
       "difficulty": 1,
       "topic": "family-and-friends",
       "programLevel": "starters",
-      "qualityScores": { "quality": 0.94, "difficulty": 0.1, "curriculumAlignment": 0.98, "needsReview": false }
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
     },
     {
       "word": "brother",
@@ -65,7 +75,12 @@
       "difficulty": 1,
       "topic": "family-and-friends",
       "programLevel": "starters",
-      "qualityScores": { "quality": 0.93, "difficulty": 0.12, "curriculumAlignment": 0.98, "needsReview": false }
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
     },
     {
       "word": "sister",
@@ -76,7 +91,12 @@
       "difficulty": 1,
       "topic": "family-and-friends",
       "programLevel": "starters",
-      "qualityScores": { "quality": 0.93, "difficulty": 0.12, "curriculumAlignment": 0.98, "needsReview": false }
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
     },
     {
       "word": "friend",
@@ -87,7 +107,12 @@
       "difficulty": 1,
       "topic": "family-and-friends",
       "programLevel": "starters",
-      "qualityScores": { "quality": 0.95, "difficulty": 0.08, "curriculumAlignment": 0.97, "needsReview": false }
+      "qualityScores": {
+        "quality": 0.95,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
     },
     {
       "word": "boy",
@@ -98,7 +123,12 @@
       "difficulty": 1,
       "topic": "family-and-friends",
       "programLevel": "starters",
-      "qualityScores": { "quality": 0.92, "difficulty": 0.1, "curriculumAlignment": 0.96, "needsReview": false }
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
     },
     {
       "word": "girl",
@@ -109,7 +139,12 @@
       "difficulty": 1,
       "topic": "family-and-friends",
       "programLevel": "starters",
-      "qualityScores": { "quality": 0.92, "difficulty": 0.1, "curriculumAlignment": 0.96, "needsReview": false }
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
     },
     {
       "word": "head",
@@ -120,7 +155,12 @@
       "difficulty": 1,
       "topic": "family-and-friends",
       "programLevel": "starters",
-      "qualityScores": { "quality": 0.91, "difficulty": 0.14, "curriculumAlignment": 0.95, "needsReview": false }
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
     },
     {
       "word": "eyes",
@@ -131,7 +171,12 @@
       "difficulty": 1,
       "topic": "family-and-friends",
       "programLevel": "starters",
-      "qualityScores": { "quality": 0.91, "difficulty": 0.14, "curriculumAlignment": 0.95, "needsReview": false }
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
     },
     {
       "word": "nose",
@@ -142,7 +187,12 @@
       "difficulty": 1,
       "topic": "family-and-friends",
       "programLevel": "starters",
-      "qualityScores": { "quality": 0.9, "difficulty": 0.15, "curriculumAlignment": 0.95, "needsReview": false }
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
     },
     {
       "word": "mouth",
@@ -153,7 +203,12 @@
       "difficulty": 1,
       "topic": "family-and-friends",
       "programLevel": "starters",
-      "qualityScores": { "quality": 0.9, "difficulty": 0.16, "curriculumAlignment": 0.94, "needsReview": false }
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.16,
+        "curriculumAlignment": 0.94,
+        "needsReview": false
+      }
     },
     {
       "word": "hair",
@@ -164,31 +219,56 @@
       "difficulty": 1,
       "topic": "family-and-friends",
       "programLevel": "starters",
-      "qualityScores": { "quality": 0.91, "difficulty": 0.13, "curriculumAlignment": 0.95, "needsReview": false }
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.13,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
     }
   ],
   "grammarReference": [
     {
       "structure": "Verb be: am, is, are",
       "explanation": "Use am with I; is with he, she, it and singular nouns; are with you, we, they and plural nouns.",
-      "examples": ["I am Mai.", "He is my brother.", "They are my friends."],
-      "commonMistakes": ["I is happy (×) → I am happy (✓)", "She are my sister (×) → She is my sister (✓)"],
+      "examples": [
+        "I am Mai.",
+        "He is my brother.",
+        "They are my friends."
+      ],
+      "commonMistakes": [
+        "I is happy (×) → I am happy (✓)",
+        "She are my sister (×) → She is my sister (✓)"
+      ],
       "programLevel": "starters",
       "topic": "family-and-friends"
     },
     {
       "structure": "Possessive adjectives: my, your, his, her",
       "explanation": "Possessive adjectives come before a noun to show who something belongs to.",
-      "examples": ["my father", "your friend", "his sister", "her mother"],
-      "commonMistakes": ["he mother (×) → his mother (✓)", "she friend (×) → her friend (✓)"],
+      "examples": [
+        "my father",
+        "your friend",
+        "his sister",
+        "her mother"
+      ],
+      "commonMistakes": [
+        "he mother (×) → his mother (✓)",
+        "she friend (×) → her friend (✓)"
+      ],
       "programLevel": "starters",
       "topic": "family-and-friends"
     },
     {
       "structure": "Question word: who",
       "explanation": "Use who to ask about a person.",
-      "examples": ["Who is he?", "Who is your friend?"],
-      "commonMistakes": ["What is he? (when asking identity) → Who is he? (✓)"],
+      "examples": [
+        "Who is he?",
+        "Who is your friend?"
+      ],
+      "commonMistakes": [
+        "What is he? (when asking identity) → Who is he? (✓)"
+      ],
       "programLevel": "starters",
       "topic": "family-and-friends"
     }
@@ -208,7 +288,12 @@
           "instructions": "Read each sentence. Choose the best word.",
           "exerciseType": "multiple_choice",
           "sortOrder": 0,
-          "qualityScores": { "quality": 0.93, "difficulty": 0.2, "curriculumAlignment": 0.97, "needsReview": false },
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.2,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
           "questions": [
             {
               "questionText": "Your mother's husband is your _____.",
@@ -219,11 +304,27 @@
               "difficultyRating": 1,
               "points": 1,
               "explanation": "A father is the male parent. Learners often confuse father with friend because both start with f.",
-              "qualityScores": { "quality": 0.92, "difficulty": 0.18, "curriculumAlignment": 0.96, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "friend", "isCorrect": false, "distractorNote": "Same initial letter; common confusion for young learners" },
-                { "text": "father", "isCorrect": true },
-                { "text": "brother", "isCorrect": false, "distractorNote": "Male family member but not a parent" }
+                {
+                  "text": "friend",
+                  "isCorrect": false,
+                  "distractorNote": "Same initial letter; common confusion for young learners"
+                },
+                {
+                  "text": "father",
+                  "isCorrect": true
+                },
+                {
+                  "text": "brother",
+                  "isCorrect": false,
+                  "distractorNote": "Male family member but not a parent"
+                }
               ]
             },
             {
@@ -235,11 +336,27 @@
               "difficultyRating": 1,
               "points": 1,
               "explanation": "A friend is a person you know and like. Sister is also a girl but means a family member.",
-              "qualityScores": { "quality": 0.91, "difficulty": 0.2, "curriculumAlignment": 0.95, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "sister", "isCorrect": false, "distractorNote": "Family vs social relationship" },
-                { "text": "friend", "isCorrect": true },
-                { "text": "mother", "isCorrect": false, "distractorNote": "Adult family member" }
+                {
+                  "text": "sister",
+                  "isCorrect": false,
+                  "distractorNote": "Family vs social relationship"
+                },
+                {
+                  "text": "friend",
+                  "isCorrect": true
+                },
+                {
+                  "text": "mother",
+                  "isCorrect": false,
+                  "distractorNote": "Adult family member"
+                }
               ]
             },
             {
@@ -251,11 +368,27 @@
               "difficultyRating": 1,
               "points": 1,
               "explanation": "Eyes are the body part used for seeing.",
-              "qualityScores": { "quality": 0.93, "difficulty": 0.15, "curriculumAlignment": 0.97, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.15,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "nose", "isCorrect": false, "distractorNote": "Another face part" },
-                { "text": "eyes", "isCorrect": true },
-                { "text": "hair", "isCorrect": false, "distractorNote": "On the head but not for seeing" }
+                {
+                  "text": "nose",
+                  "isCorrect": false,
+                  "distractorNote": "Another face part"
+                },
+                {
+                  "text": "eyes",
+                  "isCorrect": true
+                },
+                {
+                  "text": "hair",
+                  "isCorrect": false,
+                  "distractorNote": "On the head but not for seeing"
+                }
               ]
             },
             {
@@ -267,11 +400,91 @@
               "difficultyRating": 1,
               "points": 1,
               "explanation": "Mother is the female parent. The pronoun she helps identify the answer.",
-              "qualityScores": { "quality": 0.94, "difficulty": 0.17, "curriculumAlignment": 0.98, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.17,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "brother", "isCorrect": false, "distractorNote": "Male family member" },
-                { "text": "mother", "isCorrect": true },
-                { "text": "boy", "isCorrect": false, "distractorNote": "Does not fit she" }
+                {
+                  "text": "brother",
+                  "isCorrect": false,
+                  "distractorNote": "Male family member"
+                },
+                {
+                  "text": "mother",
+                  "isCorrect": true
+                },
+                {
+                  "text": "boy",
+                  "isCorrect": false,
+                  "distractorNote": "Does not fit she"
+                }
+              ]
+            },
+            {
+              "questionText": "A young male child is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Boy means a young male. Girl is the female equivalent; brother is a family role, not age.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.16,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "girl",
+                  "isCorrect": false,
+                  "distractorNote": "Female, not male"
+                },
+                {
+                  "text": "boy",
+                  "isCorrect": true
+                },
+                {
+                  "text": "friend",
+                  "isCorrect": false,
+                  "distractorNote": "Relationship, not gender/age"
+                }
+              ]
+            },
+            {
+              "questionText": "You smell with your _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "family-and-friends",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "The nose is the body part used for smelling. Mouth is for eating; hair is on the head.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "mouth",
+                  "isCorrect": false,
+                  "distractorNote": "Another face part; used for eating"
+                },
+                {
+                  "text": "nose",
+                  "isCorrect": true
+                },
+                {
+                  "text": "head",
+                  "isCorrect": false,
+                  "distractorNote": "Whole top of body, not for smelling"
+                }
               ]
             }
           ]
@@ -282,7 +495,12 @@
           "instructions": "Match each word on the left with the correct meaning on the right.",
           "exerciseType": "matching",
           "sortOrder": 1,
-          "qualityScores": { "quality": 0.9, "difficulty": 0.22, "curriculumAlignment": 0.96, "needsReview": false },
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
           "questions": [
             {
               "questionText": "Match the family words to their meanings.",
@@ -293,12 +511,29 @@
               "difficultyRating": 1,
               "points": 4,
               "explanation": "Each word matches one clear meaning. Brother and sister are often swapped by learners.",
-              "qualityScores": { "quality": 0.89, "difficulty": 0.25, "curriculumAlignment": 0.95, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
               "pairs": [
-                { "left": "brother", "right": "a boy in your family" },
-                { "left": "sister", "right": "a girl in your family" },
-                { "left": "mouth", "right": "you eat with this" },
-                { "left": "head", "right": "the top of your body" }
+                {
+                  "left": "brother",
+                  "right": "a boy in your family"
+                },
+                {
+                  "left": "sister",
+                  "right": "a girl in your family"
+                },
+                {
+                  "left": "girl",
+                  "right": "a young female child"
+                },
+                {
+                  "left": "hair",
+                  "right": "on top of your head"
+                }
               ]
             }
           ]
@@ -309,6 +544,7 @@
       "slug": "grammar-who-is-who",
       "skill": "grammar",
       "sortOrder": 1,
+      "unlockAfterLessonId": "e2000001-0000-4000-8000-000000000001",
       "title": "Lesson 2: Who Is Who?",
       "learningObjective": "Use am, is, are and possessive adjectives to talk about family and friends.",
       "estimatedMinutes": 15,
@@ -319,7 +555,12 @@
           "instructions": "Choose the correct word to complete each sentence.",
           "exerciseType": "multiple_choice",
           "sortOrder": 0,
-          "qualityScores": { "quality": 0.94, "difficulty": 0.28, "curriculumAlignment": 0.98, "needsReview": false },
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
           "questions": [
             {
               "questionText": "I _____ Mai. I am seven years old.",
@@ -330,11 +571,27 @@
               "difficultyRating": 1,
               "points": 1,
               "explanation": "Use am with the pronoun I.",
-              "qualityScores": { "quality": 0.95, "difficulty": 0.2, "curriculumAlignment": 0.99, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "am", "isCorrect": true },
-                { "text": "is", "isCorrect": false, "distractorNote": "Used with he/she/it" },
-                { "text": "are", "isCorrect": false, "distractorNote": "Used with you/we/they" }
+                {
+                  "text": "am",
+                  "isCorrect": true
+                },
+                {
+                  "text": "is",
+                  "isCorrect": false,
+                  "distractorNote": "Used with he/she/it"
+                },
+                {
+                  "text": "are",
+                  "isCorrect": false,
+                  "distractorNote": "Used with you/we/they"
+                }
               ]
             },
             {
@@ -346,11 +603,27 @@
               "difficultyRating": 1,
               "points": 1,
               "explanation": "Use is with she.",
-              "qualityScores": { "quality": 0.94, "difficulty": 0.22, "curriculumAlignment": 0.98, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "am", "isCorrect": false, "distractorNote": "Only with I" },
-                { "text": "is", "isCorrect": true },
-                { "text": "are", "isCorrect": false, "distractorNote": "Plural or you" }
+                {
+                  "text": "am",
+                  "isCorrect": false,
+                  "distractorNote": "Only with I"
+                },
+                {
+                  "text": "is",
+                  "isCorrect": true
+                },
+                {
+                  "text": "are",
+                  "isCorrect": false,
+                  "distractorNote": "Plural or you"
+                }
               ]
             },
             {
@@ -362,11 +635,27 @@
               "difficultyRating": 2,
               "points": 1,
               "explanation": "Use are with they.",
-              "qualityScores": { "quality": 0.93, "difficulty": 0.3, "curriculumAlignment": 0.97, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "is", "isCorrect": false, "distractorNote": "Singular form" },
-                { "text": "am", "isCorrect": false, "distractorNote": "Only with I" },
-                { "text": "are", "isCorrect": true }
+                {
+                  "text": "is",
+                  "isCorrect": false,
+                  "distractorNote": "Singular form"
+                },
+                {
+                  "text": "am",
+                  "isCorrect": false,
+                  "distractorNote": "Only with I"
+                },
+                {
+                  "text": "are",
+                  "isCorrect": true
+                }
               ]
             },
             {
@@ -378,11 +667,27 @@
               "difficultyRating": 2,
               "points": 1,
               "explanation": "Who asks about a person. What asks about things.",
-              "qualityScores": { "quality": 0.92, "difficulty": 0.32, "curriculumAlignment": 0.96, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.32,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "What", "isCorrect": false, "distractorNote": "Asks about things" },
-                { "text": "Who", "isCorrect": true },
-                { "text": "Where", "isCorrect": false, "distractorNote": "Asks about place" }
+                {
+                  "text": "What",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about things"
+                },
+                {
+                  "text": "Who",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Where",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about place"
+                }
               ]
             }
           ]
@@ -393,7 +698,12 @@
           "instructions": "Complete the sentences with my, your, his or her.",
           "exerciseType": "gap_fill",
           "sortOrder": 1,
-          "qualityScores": { "quality": 0.91, "difficulty": 0.35, "curriculumAlignment": 0.97, "needsReview": false },
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
           "questions": [
             {
               "questionText": "Complete: This is [0] mother. | [1] name is Hoa. | He loves [2] brother.",
@@ -404,11 +714,31 @@
               "difficultyRating": 2,
               "points": 3,
               "explanation": "my before mother (I talk about myself); Her before name (mother is she); his before brother (he loves his brother).",
-              "qualityScores": { "quality": 0.9, "difficulty": 0.38, "curriculumAlignment": 0.96, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
               "content": {
                 "template": "This is [0] mother. [1] name is Hoa. He loves [2] brother.",
-                "correctAnswers": ["my", "Her", "his"],
-                "acceptableAnswers": [["my"], ["Her", "her"], ["his"]]
+                "correctAnswers": [
+                  "my",
+                  "Her",
+                  "his"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "my"
+                  ],
+                  [
+                    "Her",
+                    "her"
+                  ],
+                  [
+                    "his"
+                  ]
+                ]
               }
             }
           ]
@@ -419,6 +749,7 @@
       "slug": "reading-my-family-photo",
       "skill": "reading",
       "sortOrder": 2,
+      "unlockAfterLessonId": "e2000001-0000-4000-8000-000000000002",
       "title": "Lesson 3: My Family Photo",
       "learningObjective": "Read a short text about a family and answer questions about main idea, details and vocabulary.",
       "estimatedMinutes": 15,
@@ -429,7 +760,12 @@
           "instructions": "Read the text. Then answer the questions.",
           "exerciseType": "reading_comprehension",
           "sortOrder": 0,
-          "qualityScores": { "quality": 0.95, "difficulty": 0.3, "curriculumAlignment": 0.98, "needsReview": false },
+          "qualityScores": {
+            "quality": 0.95,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
           "content": {
             "passage": {
               "title": "Mai's Family",
@@ -449,11 +785,27 @@
               "assessmentType": "main_idea",
               "points": 1,
               "explanation": "The whole text introduces Mai's family and friend. It is not about school subjects or food.",
-              "qualityScores": { "quality": 0.94, "difficulty": 0.25, "curriculumAlignment": 0.97, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "Mai introduces her family and friend.", "isCorrect": true },
-                { "text": "Mai describes her school.", "isCorrect": false, "distractorNote": "School is mentioned once only" },
-                { "text": "Mai talks about her favourite food.", "isCorrect": false, "distractorNote": "No food in the text" }
+                {
+                  "text": "Mai introduces her family and friend.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Mai describes her school.",
+                  "isCorrect": false,
+                  "distractorNote": "School is mentioned once only"
+                },
+                {
+                  "text": "Mai talks about her favourite food.",
+                  "isCorrect": false,
+                  "distractorNote": "No food in the text"
+                }
               ]
             },
             {
@@ -466,11 +818,27 @@
               "assessmentType": "detail",
               "points": 1,
               "explanation": "The text says: He is six.",
-              "qualityScores": { "quality": 0.96, "difficulty": 0.2, "curriculumAlignment": 0.99, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "Six years old", "isCorrect": true },
-                { "text": "Eight years old", "isCorrect": false, "distractorNote": "Mai's age, not brother's" },
-                { "text": "Seven years old", "isCorrect": false, "distractorNote": "Plausible number not in text" }
+                {
+                  "text": "Six years old",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Eight years old",
+                  "isCorrect": false,
+                  "distractorNote": "Mai's age, not brother's"
+                },
+                {
+                  "text": "Seven years old",
+                  "isCorrect": false,
+                  "distractorNote": "Plausible number not in text"
+                }
               ]
             },
             {
@@ -483,11 +851,27 @@
               "assessmentType": "inference",
               "points": 1,
               "explanation": "Anna is described as a friend in their class, not a family member.",
-              "qualityScores": { "quality": 0.9, "difficulty": 0.35, "curriculumAlignment": 0.94, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "She is Mai's friend from class.", "isCorrect": true },
-                { "text": "She is Mai's sister.", "isCorrect": false, "distractorNote": "Girl but not sister" },
-                { "text": "She is Mai's teacher.", "isCorrect": false, "distractorNote": "Adult role not supported" }
+                {
+                  "text": "She is Mai's friend from class.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "She is Mai's sister.",
+                  "isCorrect": false,
+                  "distractorNote": "Girl but not sister"
+                },
+                {
+                  "text": "She is Mai's teacher.",
+                  "isCorrect": false,
+                  "distractorNote": "Adult role not supported"
+                }
               ]
             },
             {
@@ -500,11 +884,27 @@
               "assessmentType": "vocabulary_in_context",
               "points": 1,
               "explanation": "Her refers to mother in the previous sentence.",
-              "qualityScores": { "quality": 0.91, "difficulty": 0.33, "curriculumAlignment": 0.95, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.33,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "Mai's mother", "isCorrect": true },
-                { "text": "Mai's father", "isCorrect": false, "distractorNote": "Would use his" },
-                { "text": "Anna", "isCorrect": false, "distractorNote": "Mentioned later" }
+                {
+                  "text": "Mai's mother",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Mai's father",
+                  "isCorrect": false,
+                  "distractorNote": "Would use his"
+                },
+                {
+                  "text": "Anna",
+                  "isCorrect": false,
+                  "distractorNote": "Mentioned later"
+                }
               ]
             },
             {
@@ -517,11 +917,27 @@
               "assessmentType": "sequencing",
               "points": 1,
               "explanation": "The text moves from self → parents → brother and friend.",
-              "qualityScores": { "quality": 0.88, "difficulty": 0.4, "curriculumAlignment": 0.93, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.88,
+                "difficulty": 0.4,
+                "curriculumAlignment": 0.93,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "1 → 2 → 3", "isCorrect": true },
-                { "text": "2 → 1 → 3", "isCorrect": false, "distractorNote": "Age comes before parent detail" },
-                { "text": "3 → 2 → 1", "isCorrect": false, "distractorNote": "Reversed order" }
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": true
+                },
+                {
+                  "text": "2 → 1 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Age comes before parent detail"
+                },
+                {
+                  "text": "3 → 2 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Reversed order"
+                }
               ]
             }
           ]
@@ -532,6 +948,7 @@
       "slug": "listening-introducing-friends",
       "skill": "listening",
       "sortOrder": 3,
+      "unlockAfterLessonId": "e2000001-0000-4000-8000-000000000003",
       "title": "Lesson 4: Introducing Friends",
       "learningObjective": "Listen to short family and friend introductions and identify names and relationships.",
       "estimatedMinutes": 12,
@@ -542,22 +959,51 @@
           "instructions": "Listen to the conversation. Choose the correct answer.",
           "exerciseType": "listening",
           "sortOrder": 0,
-          "qualityScores": { "quality": 0.94, "difficulty": 0.28, "curriculumAlignment": 0.97, "needsReview": false },
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
           "content": {
             "script": {
               "title": "At Home",
               "setting": "A living room after school",
               "speakers": [
-                { "name": "Examiner", "role": "adult" },
-                { "name": "Minh", "role": "boy, 8" }
+                {
+                  "name": "Examiner",
+                  "role": "adult"
+                },
+                {
+                  "name": "Minh",
+                  "role": "boy, 8"
+                }
               ],
               "lines": [
-                { "speaker": "Examiner", "text": "Hello, Minh. Who is this?" },
-                { "speaker": "Minh", "text": "This is my mother." },
-                { "speaker": "Examiner", "text": "And who is the boy?" },
-                { "speaker": "Minh", "text": "He is my brother. His name is Duc." },
-                { "speaker": "Examiner", "text": "Is the girl your sister?" },
-                { "speaker": "Minh", "text": "No. She is my friend. Her name is Lily." }
+                {
+                  "speaker": "Examiner",
+                  "text": "Hello, Minh. Who is this?"
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "This is my mother."
+                },
+                {
+                  "speaker": "Examiner",
+                  "text": "And who is the boy?"
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "He is my brother. His name is Duc."
+                },
+                {
+                  "speaker": "Examiner",
+                  "text": "Is the girl your sister?"
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "No. She is my friend. Her name is Lily."
+                }
               ],
               "audioNotes": "Clear, slow delivery with short pauses. Total duration approx. 35 seconds."
             },
@@ -565,7 +1011,8 @@
               "q1": "mother",
               "q2": "brother",
               "q3": "friend"
-            }
+            },
+            "audioUrl": "/audio/listening/starters/unit-01/listening-family-dialogue.mp3"
           },
           "questions": [
             {
@@ -577,11 +1024,27 @@
               "difficultyRating": 1,
               "points": 1,
               "explanation": "Minh says: This is my mother.",
-              "qualityScores": { "quality": 0.95, "difficulty": 0.18, "curriculumAlignment": 0.98, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "Minh's mother", "isCorrect": true },
-                { "text": "Minh's sister", "isCorrect": false, "distractorNote": "Female but not sister" },
-                { "text": "Minh's teacher", "isCorrect": false, "distractorNote": "Not mentioned" }
+                {
+                  "text": "Minh's mother",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Minh's sister",
+                  "isCorrect": false,
+                  "distractorNote": "Female but not sister"
+                },
+                {
+                  "text": "Minh's teacher",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
               ]
             },
             {
@@ -593,11 +1056,27 @@
               "difficultyRating": 1,
               "points": 1,
               "explanation": "Minh says: His name is Duc.",
-              "qualityScores": { "quality": 0.96, "difficulty": 0.2, "curriculumAlignment": 0.99, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "Duc", "isCorrect": true },
-                { "text": "Minh", "isCorrect": false, "distractorNote": "Speaker's name" },
-                { "text": "Lily", "isCorrect": false, "distractorNote": "Friend's name" }
+                {
+                  "text": "Duc",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Minh",
+                  "isCorrect": false,
+                  "distractorNote": "Speaker's name"
+                },
+                {
+                  "text": "Lily",
+                  "isCorrect": false,
+                  "distractorNote": "Friend's name"
+                }
               ]
             },
             {
@@ -609,11 +1088,27 @@
               "difficultyRating": 2,
               "points": 1,
               "explanation": "Minh says she is my friend, not his sister.",
-              "qualityScores": { "quality": 0.93, "difficulty": 0.3, "curriculumAlignment": 0.96, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "Minh's friend", "isCorrect": true },
-                { "text": "Minh's sister", "isCorrect": false, "distractorNote": "Minh says no" },
-                { "text": "Minh's mother", "isCorrect": false, "distractorNote": "Already identified" }
+                {
+                  "text": "Minh's friend",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Minh's sister",
+                  "isCorrect": false,
+                  "distractorNote": "Minh says no"
+                },
+                {
+                  "text": "Minh's mother",
+                  "isCorrect": false,
+                  "distractorNote": "Already identified"
+                }
               ]
             },
             {
@@ -625,11 +1120,27 @@
               "difficultyRating": 1,
               "points": 1,
               "explanation": "He refers to the boy — Minh's brother Duc.",
-              "qualityScores": { "quality": 0.92, "difficulty": 0.25, "curriculumAlignment": 0.95, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
               "choices": [
-                { "text": "Duc", "isCorrect": true },
-                { "text": "Minh", "isCorrect": false, "distractorNote": "Minh is speaking" },
-                { "text": "Lily", "isCorrect": false, "distractorNote": "Would use she" }
+                {
+                  "text": "Duc",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Minh",
+                  "isCorrect": false,
+                  "distractorNote": "Minh is speaking"
+                },
+                {
+                  "text": "Lily",
+                  "isCorrect": false,
+                  "distractorNote": "Would use she"
+                }
               ]
             }
           ]
@@ -640,6 +1151,7 @@
       "slug": "writing-my-family",
       "skill": "writing",
       "sortOrder": 4,
+      "unlockAfterLessonId": "e2000001-0000-4000-8000-000000000004",
       "title": "Lesson 5: Write About My Family",
       "learningObjective": "Write short phrases to introduce yourself and one family member using Starters vocabulary and grammar.",
       "estimatedMinutes": 15,
@@ -650,7 +1162,12 @@
           "instructions": "Write short answers. Use 1–5 words for each answer.",
           "exerciseType": "writing",
           "sortOrder": 0,
-          "qualityScores": { "quality": 0.93, "difficulty": 0.35, "curriculumAlignment": 0.97, "needsReview": false },
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
           "content": {
             "taskDescription": "Look at the picture of a family. Write short answers to the three questions.",
             "prompts": [
@@ -701,10 +1218,25 @@
               "difficultyRating": 2,
               "points": 6,
               "explanation": "Accept any response meeting success criteria. Model answer shows expected range.",
-              "qualityScores": { "quality": 0.91, "difficulty": 0.38, "curriculumAlignment": 0.96, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
               "content": {
                 "rubricRef": "writing-introduce-family",
-                "autoCheckKeywords": ["my", "name", "mother", "father", "brother", "sister", "friend", "is", "am"]
+                "autoCheckKeywords": [
+                  "my",
+                  "name",
+                  "mother",
+                  "father",
+                  "brother",
+                  "sister",
+                  "friend",
+                  "is",
+                  "am"
+                ]
               }
             }
           ]
@@ -715,6 +1247,7 @@
       "slug": "speaking-talk-about-family",
       "skill": "speaking",
       "sortOrder": 5,
+      "unlockAfterLessonId": "e2000001-0000-4000-8000-000000000005",
       "title": "Lesson 6: Talk About Your Family",
       "learningObjective": "Answer simple questions about yourself, family and friends with words and short phrases.",
       "estimatedMinutes": 12,
@@ -725,7 +1258,12 @@
           "instructions": "Answer the examiner's questions. Say at least one word for each question.",
           "exerciseType": "speaking",
           "sortOrder": 0,
-          "qualityScores": { "quality": 0.92, "difficulty": 0.32, "curriculumAlignment": 0.96, "needsReview": false },
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
           "content": {
             "prompt": "The examiner will ask you about you and your family. Look at your family photo if you have one.",
             "pictureDescription": "A simple picture showing a mother, father, two children and a friend in a garden.",
@@ -761,7 +1299,12 @@
               "difficultyRating": 2,
               "points": 5,
               "explanation": "Assess holistically using the four assessment areas. Partial answers earn partial credit.",
-              "qualityScores": { "quality": 0.9, "difficulty": 0.36, "curriculumAlignment": 0.95, "needsReview": false },
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
               "content": {
                 "assessmentCriteriaRef": "speaking-family-interview",
                 "minimumResponses": 3

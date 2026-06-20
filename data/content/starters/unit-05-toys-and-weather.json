@@ -1,0 +1,1236 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by YLE Pre-A1 task formats only.",
+    "program": "cambridge-english",
+    "level": "starters",
+    "cefr": "pre-a1",
+    "unitNumber": 5,
+    "unitSlug": "toys-and-weather",
+    "unitTitle": "Toys and Weather",
+    "targetAge": "7-9",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Name common toys and weather words at Starters level.",
+      "Use It's + adjective to describe weather: It's sunny.",
+      "Form plurals with -s: two kites, three balloons.",
+      "Use these and those to point to nearby and distant things.",
+      "Describe pictures with toy and weather vocabulary in reading and speaking."
+    ],
+    "grammarFocus": [
+      "It's + weather adjective: It's sunny",
+      "Plural nouns: two kites",
+      "Demonstratives: these, those"
+    ],
+    "readingSkillFocus": "Describe Pictures with Weather and Toys",
+    "listeningSkillFocus": "Identify Weather and Toy Words"
+  },
+  "vocabularyBank": [
+    {
+      "word": "doll",
+      "ipa": "/dɒl/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "búp bê",
+      "exampleSentence": "She has a doll.",
+      "difficulty": 1,
+      "topic": "toys-and-weather",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.09,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "kite",
+      "ipa": "/kaɪt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "cái diều",
+      "exampleSentence": "I fly my kite in the park.",
+      "difficulty": 1,
+      "topic": "toys-and-weather",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "teddy",
+      "ipa": "/ˈtedi/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "gấu bông",
+      "exampleSentence": "My teddy is brown.",
+      "difficulty": 1,
+      "topic": "toys-and-weather",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "robot",
+      "ipa": "/ˈrəʊbɒt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "người máy, robot",
+      "exampleSentence": "He plays with his robot.",
+      "difficulty": 1,
+      "topic": "toys-and-weather",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "puzzle",
+      "ipa": "/ˈpʌzl/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "trò xếp hình",
+      "exampleSentence": "We do a puzzle together.",
+      "difficulty": 1,
+      "topic": "toys-and-weather",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "balloon",
+      "ipa": "/bəˈluːn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bóng bay",
+      "exampleSentence": "The balloon is red.",
+      "difficulty": 1,
+      "topic": "toys-and-weather",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "sunny",
+      "ipa": "/ˈsʌni/",
+      "partOfSpeech": "adjective",
+      "vietnameseMeaning": "nắng, có nắng",
+      "exampleSentence": "It is sunny today.",
+      "difficulty": 1,
+      "topic": "toys-and-weather",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.95,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "rainy",
+      "ipa": "/ˈreɪni/",
+      "partOfSpeech": "adjective",
+      "vietnameseMeaning": "có mưa, mưa",
+      "exampleSentence": "It is rainy. Take an umbrella.",
+      "difficulty": 1,
+      "topic": "toys-and-weather",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.09,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "cloud",
+      "ipa": "/klaʊd/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "đám mây",
+      "exampleSentence": "There is a big cloud in the sky.",
+      "difficulty": 1,
+      "topic": "toys-and-weather",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "wind",
+      "ipa": "/wɪnd/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "gió",
+      "exampleSentence": "The wind is strong today.",
+      "difficulty": 1,
+      "topic": "toys-and-weather",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "windy",
+      "ipa": "/ˈwɪndi/",
+      "partOfSpeech": "adjective",
+      "vietnameseMeaning": "có gió, nhiều gió",
+      "exampleSentence": "It is windy. Fly your kite!",
+      "difficulty": 1,
+      "topic": "toys-and-weather",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "toy",
+      "ipa": "/tɔɪ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "đồ chơi",
+      "exampleSentence": "These are my toys.",
+      "difficulty": 1,
+      "topic": "toys-and-weather",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.09,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "It's + weather adjective: It's sunny",
+      "explanation": "Use It's (It is) plus a weather adjective to describe the weather.",
+      "examples": [
+        "It's sunny.",
+        "It's rainy.",
+        "It's windy today."
+      ],
+      "commonMistakes": [
+        "It sunny is (×) → It's sunny. (✓)",
+        "It's sun (×) → It's sunny. (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "toys-and-weather"
+    },
+    {
+      "structure": "Plural nouns: two kites",
+      "explanation": "Add -s to most nouns after numbers greater than one: two kites, three balloons.",
+      "examples": [
+        "one doll, two dolls",
+        "a robot, many robots",
+        "one kite, five kites"
+      ],
+      "commonMistakes": [
+        "two kite (×) → two kites (✓)",
+        "three balloon (×) → three balloons (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "toys-and-weather"
+    },
+    {
+      "structure": "Demonstratives: these, those",
+      "explanation": "Use these for things near you (plural). Use those for things far from you (plural).",
+      "examples": [
+        "These are my toys.",
+        "Those are kites in the sky.",
+        "These balloons are red."
+      ],
+      "commonMistakes": [
+        "These is my toys (×) → These are my toys. (✓)",
+        "Those are a kite (×) → Those are kites. (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "toys-and-weather"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-toys-and-weather",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Toys and Weather",
+      "learningObjective": "Recognise and understand twelve toy and weather words at Starters level.",
+      "estimatedMinutes": 12,
+      "unlockAfterLessonId": "e2000004-0000-4000-8000-000000000006",
+      "exercises": [
+        {
+          "slug": "vocab-toy-weather-words",
+          "title": "Toy and Weather Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.2,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "You fly this in the sky on a windy day.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A kite is flown in the sky, especially when it is windy. A balloon floats but is not flown like a kite.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "doll",
+                  "isCorrect": false,
+                  "distractorNote": "A toy you hold, not fly"
+                },
+                {
+                  "text": "kite",
+                  "isCorrect": true
+                },
+                {
+                  "text": "puzzle",
+                  "isCorrect": false,
+                  "distractorNote": "Played on a table"
+                }
+              ]
+            },
+            {
+              "questionText": "The sun is shining. It is _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "When the sun shines, the weather is sunny. Rainy means water falls from clouds.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.15,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "rainy",
+                  "isCorrect": false,
+                  "distractorNote": "Wet weather, not sun"
+                },
+                {
+                  "text": "sunny",
+                  "isCorrect": true
+                },
+                {
+                  "text": "windy",
+                  "isCorrect": false,
+                  "distractorNote": "Strong air, not sunshine"
+                }
+              ]
+            },
+            {
+              "questionText": "Water falls from the sky. It is _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Rainy weather means rain falls from the sky. Sunny means bright sun.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.17,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "sunny",
+                  "isCorrect": false,
+                  "distractorNote": "Dry, bright weather"
+                },
+                {
+                  "text": "rainy",
+                  "isCorrect": true
+                },
+                {
+                  "text": "windy",
+                  "isCorrect": false,
+                  "distractorNote": "Air movement, not rain"
+                }
+              ]
+            },
+            {
+              "questionText": "A soft toy bear that children hug is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A teddy (teddy bear) is a soft toy. A robot is hard and mechanical; a doll looks like a person.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "robot",
+                  "isCorrect": false,
+                  "distractorNote": "Mechanical toy"
+                },
+                {
+                  "text": "teddy",
+                  "isCorrect": true
+                },
+                {
+                  "text": "balloon",
+                  "isCorrect": false,
+                  "distractorNote": "Filled with air; not soft to hug"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-toys-weather-matching",
+          "title": "Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the toy and weather words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 6,
+              "explanation": "Each word matches one clear meaning. Sunny and rainy describe opposite weather.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "doll",
+                  "right": "a toy that looks like a person"
+                },
+                {
+                  "left": "robot",
+                  "right": "a toy that moves like a machine"
+                },
+                {
+                  "left": "balloon",
+                  "right": "a light toy filled with air"
+                },
+                {
+                  "left": "cloud",
+                  "right": "white or grey in the sky"
+                },
+                {
+                  "left": "wind",
+                  "right": "moving air outside"
+                },
+                {
+                  "left": "toy",
+                  "right": "something children play with"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-weather-and-plurals",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e2000005-0000-4000-8000-000000000001",
+      "title": "Lesson 2: Weather and Plurals",
+      "learningObjective": "Use It's + weather adjective, plurals with -s, and these/those correctly.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "grammar-weather-these-those",
+          "title": "Choose the Correct Words",
+          "instructions": "Choose the correct word or phrase to complete each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Look at the sun! _____ sunny.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Use It's (It is) before a weather adjective.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "It's",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Its",
+                  "isCorrect": false,
+                  "distractorNote": "Possessive form, not It is"
+                },
+                {
+                  "text": "Is",
+                  "isCorrect": false,
+                  "distractorNote": "Missing subject It"
+                }
+              ]
+            },
+            {
+              "questionText": "I have three _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Three is plural, so add -s: three kites.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "kite",
+                  "isCorrect": false,
+                  "distractorNote": "Singular only"
+                },
+                {
+                  "text": "kites",
+                  "isCorrect": true
+                },
+                {
+                  "text": "kiteses",
+                  "isCorrect": false,
+                  "distractorNote": "Double plural error"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ are my toys. (The toys are in your hands.)",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Use these for plural things near you.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.24,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "These",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Those",
+                  "isCorrect": false,
+                  "distractorNote": "Used for things far away"
+                },
+                {
+                  "text": "This",
+                  "isCorrect": false,
+                  "distractorNote": "Singular only"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ are balloons in the sky. (The balloons are far away.)",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Use those for plural things far from you.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "These",
+                  "isCorrect": false,
+                  "distractorNote": "Near, not far"
+                },
+                {
+                  "text": "Those",
+                  "isCorrect": true
+                },
+                {
+                  "text": "That",
+                  "isCorrect": false,
+                  "distractorNote": "Singular form"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-toys-weather-gap-fill",
+          "title": "Weather and Toys",
+          "instructions": "Complete the sentences with the correct words.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: [0] rainy today. | I have two [1]. | [2] are my dolls.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "It's + rainy; two robots (plural -s); These for near plural dolls.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "[0] rainy today. I have two [1]. [2] are my dolls.",
+                "correctAnswers": [
+                  "It's",
+                  "robots",
+                  "These"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "It's",
+                    "It is"
+                  ],
+                  [
+                    "robots"
+                  ],
+                  [
+                    "These"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-describe-pictures",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e2000005-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Toys in the Park",
+      "learningObjective": "Read a short text about toys and weather and describe what you see in pictures.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "reading-park-passage",
+          "title": "Read: A Windy Day",
+          "instructions": "Read the text. Then answer the questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.95,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "A Windy Day in the Park",
+              "text": "Today is windy but sunny. Tom and Sue go to the park.\n\nThese are Tom's toys: a robot and a teddy. Those are Sue's toys: two dolls and a puzzle.\n\nTom flies his kite. The kite is in the sky! Sue has red balloons. One balloon goes up, up, up!\n\nThere is a big cloud. It is not rainy. The children are happy.",
+              "wordCount": 58,
+              "imagePrompt": "A sunny windy park: a boy flying a kite, a girl with dolls and red balloons, a robot and teddy on the grass, one cloud in the sky."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main idea of the text?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "main_idea",
+              "points": 1,
+              "explanation": "The text describes children playing with toys in the park on a windy, sunny day.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Children play with toys in the park.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Children go to school.",
+                  "isCorrect": false,
+                  "distractorNote": "Setting is the park"
+                },
+                {
+                  "text": "Children eat lunch at home.",
+                  "isCorrect": false,
+                  "distractorNote": "No food mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "What toy does Tom fly?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "detail",
+              "points": 1,
+              "explanation": "The text says: Tom flies his kite.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A kite",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A balloon",
+                  "isCorrect": false,
+                  "distractorNote": "Sue has balloons"
+                },
+                {
+                  "text": "A robot",
+                  "isCorrect": false,
+                  "distractorNote": "Tom's toy but not flown"
+                }
+              ]
+            },
+            {
+              "questionText": "Why is it a good day to fly a kite?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "inference",
+              "points": 1,
+              "explanation": "The text says it is windy; wind helps kites fly in the sky.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Because it is windy.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Because it is rainy.",
+                  "isCorrect": false,
+                  "distractorNote": "Text says it is not rainy"
+                },
+                {
+                  "text": "Because it is night.",
+                  "isCorrect": false,
+                  "distractorNote": "It is sunny daytime"
+                }
+              ]
+            },
+            {
+              "questionText": "In 'Those are Sue's toys', what does those refer to?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "vocabulary_in_context",
+              "points": 1,
+              "explanation": "Those refers to Sue's toys: two dolls and a puzzle.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.33,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Two dolls and a puzzle",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A robot and a teddy",
+                  "isCorrect": false,
+                  "distractorNote": "Tom's toys use these"
+                },
+                {
+                  "text": "Red balloons",
+                  "isCorrect": false,
+                  "distractorNote": "Mentioned later"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the ideas in order: (1) Tom and Sue go to the park (2) Tom flies his kite (3) The weather is described (4) Sue has balloons",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "sequencing",
+              "points": 1,
+              "explanation": "The text opens with weather, then the park, then toys and activities.",
+              "qualityScores": {
+                "quality": 0.88,
+                "difficulty": 0.4,
+                "curriculumAlignment": 0.93,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "3 → 1 → 2 → 4",
+                  "isCorrect": true
+                },
+                {
+                  "text": "1 → 3 → 4 → 2",
+                  "isCorrect": false,
+                  "distractorNote": "Weather comes before the park trip"
+                },
+                {
+                  "text": "4 → 2 → 1 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Reversed order"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-weather-and-toys",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e2000005-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Weather and Toys",
+      "learningObjective": "Listen to descriptions and identify weather and toy words.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "listening-weather-toys-dialogue",
+          "title": "Listen: What's the Weather?",
+          "instructions": "Listen to the conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Toys and Weather",
+              "setting": "A bedroom looking out the window",
+              "speakers": [
+                {
+                  "name": "Mum",
+                  "role": "adult"
+                },
+                {
+                  "name": "Alex",
+                  "role": "boy, 8"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Mum",
+                  "text": "Look outside, Alex. What's the weather like?"
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "It's rainy. I can see a big cloud."
+                },
+                {
+                  "speaker": "Mum",
+                  "text": "OK. Play inside. What's your favourite toy?"
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "My robot! And I have two teddies."
+                },
+                {
+                  "speaker": "Mum",
+                  "text": "When it's sunny, you can fly your kite."
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "Yes! I love my kite."
+                }
+              ],
+              "audioNotes": "Clear, slow delivery with pauses between exchanges. Total duration approx. 35 seconds."
+            },
+            "answerKey": {
+              "q1": "rainy",
+              "q2": "robot",
+              "q3": "kite"
+            },
+            "audioUrl": "/audio/listening/starters/unit-05/listening-weather-toys-dialogue.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What is the weather like?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Alex says: It's rainy.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Rainy",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Sunny",
+                  "isCorrect": false,
+                  "distractorNote": "Mentioned for future, not now"
+                },
+                {
+                  "text": "Windy",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned in the script"
+                }
+              ]
+            },
+            {
+              "questionText": "What is Alex's favourite toy?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Alex says: My robot!",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "His robot",
+                  "isCorrect": true
+                },
+                {
+                  "text": "His kite",
+                  "isCorrect": false,
+                  "distractorNote": "He loves it but robot is favourite"
+                },
+                {
+                  "text": "His puzzle",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "What can Alex fly when it is sunny?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Mum says: When it's sunny, you can fly your kite.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "His kite",
+                  "isCorrect": true
+                },
+                {
+                  "text": "His balloon",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "His doll",
+                  "isCorrect": false,
+                  "distractorNote": "Not something you fly"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-describe-toys-weather",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e2000005-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Write About Toys and Weather",
+      "learningObjective": "Write short phrases to describe toys and weather using It's and plurals.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "writing-toys-weather",
+          "title": "Writing: Toys and Weather",
+          "instructions": "Write short answers. Use 1–5 words for each answer.",
+          "exerciseType": "writing",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Look at the picture of toys and weather. Write short answers to the three questions.",
+            "prompts": [
+              "1. What is the weather? (Write: It's _____)",
+              "2. Name two toys you see. (Use plurals if needed)",
+              "3. Write one sentence: These are _____. (Use a toy word)"
+            ],
+            "expectedLength": "3 short answers; 1–5 words each; one sentence up to 6 words",
+            "successCriteria": [
+              "All three prompts are answered",
+              "Uses at least two unit vocabulary words",
+              "Uses It's + weather word or plural -s correctly",
+              "Spelling of core words is recognisable"
+            ],
+            "modelAnswer": {
+              "answers": [
+                "It's sunny.",
+                "two kites",
+                "These are balloons."
+              ]
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.3,
+                "criteria": "Correct use of It's + adjective or plural -s and these/those."
+              },
+              "vocabulary": {
+                "weight": 0.3,
+                "criteria": "Uses toy and weather words from the unit accurately."
+              },
+              "organization": {
+                "weight": 0.2,
+                "criteria": "Answers match the prompts in order; sentence is clear."
+              },
+              "taskAchievement": {
+                "weight": 0.2,
+                "criteria": "All parts completed; length appropriate for Starters."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your answers to the three prompts in the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Accept any response meeting success criteria. Model answer shows expected range.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-toys-weather",
+                "autoCheckKeywords": [
+                  "it's",
+                  "sunny",
+                  "rainy",
+                  "windy",
+                  "doll",
+                  "kite",
+                  "teddy",
+                  "robot",
+                  "balloon",
+                  "these",
+                  "those",
+                  "toy",
+                  "toys"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-talk-about-toys-weather",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e2000005-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Toys and Weather",
+      "learningObjective": "Answer simple questions about toys and weather with words and short phrases.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "speaking-toys-weather-interview",
+          "title": "Speaking: Toys and Weather Interview",
+          "instructions": "Answer the examiner's questions. Say at least one word for each question.",
+          "exerciseType": "speaking",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "prompt": "The examiner will ask you about toys and weather. Look at the picture of a park with toys and clouds.",
+            "pictureDescription": "A sunny windy day: a child with a kite, dolls and balloons on the grass, a few clouds in the sky.",
+            "followUpQuestions": [
+              "What's the weather like today?",
+              "What is your favourite toy?",
+              "How many balloons can you see?",
+              "What are these?",
+              "What are those in the sky?"
+            ],
+            "suggestedAnswers": [
+              "It's windy.",
+              "My teddy.",
+              "Three balloons.",
+              "These are robots.",
+              "Those are clouds."
+            ],
+            "assessmentCriteria": {
+              "pronunciation": "Key toy and weather words (kite, sunny, doll, balloon) are understandable.",
+              "fluency": "Responds without long silence; uses words or short phrases.",
+              "grammar": "Uses It's + weather or these/those/plural in at least two answers.",
+              "vocabulary": "Uses at least three different unit words correctly."
+            },
+            "maxDurationSeconds": 90
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the five follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "toys-and-weather",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 5,
+              "explanation": "Assess holistically using the four assessment areas. Partial answers earn partial credit.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-toys-weather-interview",
+                "minimumResponses": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

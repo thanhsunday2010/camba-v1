@@ -30,7 +30,7 @@ Each unit must have **6 lessons** in order: `vocabulary` → `grammar` → `read
 | **vocabulary** | ~12+ words in `vocabularyBank` (IPA, vietnameseMeaning, exampleSentence, difficulty, qualityScores); MCQ + matching exercises |
 | **grammar** | Items in `grammarReference` with `commonMistakes` (`× → ✓`); MCQ + gap_fill with `template`, `correctAnswers`, `acceptableAnswers` |
 | **reading** | Passage within level text length; `wordCount`, `imagePrompt`; questions with `assessmentType`: main_idea, detail, inference, vocabulary_in_context, sequencing |
-| **listening** | Script with `speakers`, `setting`, `lines`, `audioNotes`; slow clear delivery; `answerKey`; questions answerable only from audio |
+| **listening** | Script with `speakers`, `setting`, `lines`, `audioNotes`; `answerKey`; questions answerable only from audio; run `npm run generate:listening-audio` to create MP3 and set `content.audioUrl` |
 | **writing** | `successCriteria`, `modelAnswer`, weighted `rubric`, `expectedLength` for level |
 | **speaking** | `followUpQuestions`, `suggestedAnswers`, `assessmentCriteria`, `maxDurationSeconds` |
 

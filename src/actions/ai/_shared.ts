@@ -8,10 +8,8 @@ import { onExerciseCompleted } from "@/lib/gamification/events";
 import { resolveProgramId } from "@/lib/programs/context";
 import { getMasteryUnlockThreshold } from "@/lib/programs/settings";
 import { getProgramIdForLesson } from "@/lib/programs/progress-cleanup";
-import {
-  resolveNextUnlockLessonIds,
-  type LessonUnlockNode,
-} from "@/lib/learning/unlock";
+import { getLevelIdForLesson } from "@/lib/queries/learning";
+import { unlockNextLessonsInLevel } from "@/lib/learning/unlock-lessons";
 import type { Json } from "@/types/database";
 
 export async function completeAiExercise(
@@ -122,39 +120,15 @@ export async function completeAiExercise(
   const threshold = await getMasteryUnlockThreshold(programId);
 
   if (canUnlockNextLesson(masteryLevel, threshold)) {
-    const { data: currentLesson } = await supabase
-      .from("lessons")
-      .select("id, unit_id, sort_order, unlock_after_lesson_id")
-      .eq("id", lessonId)
-      .single();
-
-    if (currentLesson) {
-      const { data: unitLessons } = await supabase
-        .from("lessons")
-        .select("id, unit_id, sort_order, unlock_after_lesson_id")
-        .eq("unit_id", currentLesson.unit_id)
-        .eq("is_active", true);
-
-      const unlockIds = resolveNextUnlockLessonIds(
-        lessonId,
-        (unitLessons ?? []) as LessonUnlockNode[]
+    const levelId = await getLevelIdForLesson(lessonId);
+    if (levelId) {
+      await unlockNextLessonsInLevel(
+        supabase,
+        userId,
+        programId,
+        levelId,
+        lessonId
       );
-
-      for (const nextId of unlockIds) {
-        await supabase.from("lesson_progress").upsert(
-          {
-            user_id: userId,
-            lesson_id: nextId,
-            program_id: programId,
-            is_unlocked: true,
-            completion_percent: 0,
-            accuracy_percent: 0,
-            mastery_level: 0,
-            attempts_count: 0,
-          },
-          { onConflict: "user_id,lesson_id" }
-        );
-      }
     }
   }
 

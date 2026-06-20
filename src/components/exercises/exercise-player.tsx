@@ -11,6 +11,7 @@ import { GapFill } from "./gap-fill";
 import { SentenceOrdering } from "./sentence-ordering";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ExerciseContextPanel } from "@/components/exercises/exercise-context-panel";
 import { ChevronLeft, ChevronRight, CheckCircle2, XCircle, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -139,6 +140,9 @@ interface ExercisePlayerProps {
   questions: PublicQuestion[];
   title: string;
   instructions?: string | null;
+  exerciseType?: string;
+  content?: Record<string, unknown>;
+  showListeningTranscript?: boolean;
   onSubmit: (answers: Record<string, UserAnswer>) => Promise<ExerciseResult | null>;
   onComplete?: (result: ExerciseResult) => void;
 }
@@ -147,6 +151,9 @@ export function ExercisePlayer({
   questions,
   title,
   instructions,
+  exerciseType,
+  content,
+  showListeningTranscript = false,
   onSubmit,
   onComplete,
 }: ExercisePlayerProps) {
@@ -197,6 +204,11 @@ export function ExercisePlayer({
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
+          <ExerciseContextPanel
+            exerciseType={exerciseType}
+            content={content}
+            showListeningTranscript
+          />
           <p className="text-sm text-gray-600">
             Điểm: {result.score}/{result.maxScore}
           </p>
@@ -253,6 +265,7 @@ export function ExercisePlayer({
         </div>
       </CardHeader>
       <CardContent className="space-y-6">
+        <ExerciseContextPanel exerciseType={exerciseType} content={content} />
         <div>
           <p className="text-xs text-gray-500 mb-2">
             Câu {currentIndex + 1}/{questions.length}

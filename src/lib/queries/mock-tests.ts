@@ -14,24 +14,12 @@ export async function getMockTestsForUser(userId: string): Promise<MockTestSumma
   const programId = await resolveProgramId(userId);
   if (!programId) return [];
 
-  const { data: gamification } = await supabase
-    .from("user_gamification")
-    .select("current_level_id")
-    .eq("user_id", userId)
-    .single();
-
-  let query = supabase
+  const { data: tests } = await supabase
     .from("mock_tests")
     .select("*")
     .eq("program_id", programId)
     .eq("is_active", true)
     .order("created_at", { ascending: false });
-
-  if (gamification?.current_level_id) {
-    query = query.eq("level_id", gamification.current_level_id);
-  }
-
-  const { data: tests } = await query;
 
   const { data: attempts } = await supabase
     .from("mock_test_attempts")

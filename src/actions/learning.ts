@@ -13,6 +13,7 @@ import {
 import {
   fetchExerciseQuestionsFull,
   getLessonExerciseIds,
+  getLevelIdForLesson,
 } from "@/lib/queries/learning";
 import { assertExerciseInLesson, assertLessonUnlockedForUser } from "@/lib/auth/lesson-access";
 import { getAuthUser } from "@/lib/auth/session";
@@ -20,10 +21,7 @@ import { onExerciseCompleted } from "@/lib/gamification/events";
 import { resolveProgramId } from "@/lib/programs/context";
 import { getMasteryUnlockThreshold } from "@/lib/programs/settings";
 import { getProgramIdForLesson } from "@/lib/programs/progress-cleanup";
-import {
-  resolveNextUnlockLessonIds,
-  type LessonUnlockNode,
-} from "@/lib/learning/unlock";
+import { unlockNextLessonsInLevel } from "@/lib/learning/unlock-lessons";
 import type { ActionResult } from "@/types";
 import type { Json } from "@/types/database";
 import type { ExerciseResult, UserAnswer } from "@/types/learning";
@@ -195,44 +193,14 @@ async function getUnlockThreshold(userId: string): Promise<number> {
 async function unlockNextLesson(userId: string, currentLessonId: string) {
   const supabase = await createClient();
 
-  const { data: currentLesson } = await supabase
-    .from("lessons")
-    .select("id, unit_id, sort_order, unlock_after_lesson_id")
-    .eq("id", currentLessonId)
-    .single();
-
-  if (!currentLesson) return;
+  const levelId = await getLevelIdForLesson(currentLessonId);
+  if (!levelId) return;
 
   const programId =
     (await getProgramIdForLesson(currentLessonId)) ?? (await resolveProgramId(userId));
   if (!programId) return;
 
-  const { data: unitLessons } = await supabase
-    .from("lessons")
-    .select("id, unit_id, sort_order, unlock_after_lesson_id")
-    .eq("unit_id", currentLesson.unit_id)
-    .eq("is_active", true);
-
-  const unlockIds = resolveNextUnlockLessonIds(
-    currentLessonId,
-    (unitLessons ?? []) as LessonUnlockNode[]
-  );
-
-  for (const lessonId of unlockIds) {
-    await supabase.from("lesson_progress").upsert(
-      {
-        user_id: userId,
-        lesson_id: lessonId,
-        program_id: programId,
-        is_unlocked: true,
-        completion_percent: 0,
-        accuracy_percent: 0,
-        mastery_level: 0,
-        attempts_count: 0,
-      },
-      { onConflict: "user_id,lesson_id" }
-    );
-  }
+  await unlockNextLessonsInLevel(supabase, userId, programId, levelId, currentLessonId);
 }
 
 export async function startLesson(lessonId: string): Promise<ActionResult> {

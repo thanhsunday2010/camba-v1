@@ -1,7 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { getCurrentUser } from "@/lib/auth/current-user";
 import { StatsCards } from "@/components/dashboard/stats-cards";
-import { PlacementTestCTA } from "@/components/dashboard/placement-test-cta";
 import { DailyMissions } from "@/components/gamification/daily-missions";
 import { StreakCalendar } from "@/components/gamification/streak-calendar";
 import { BadgeGrid } from "@/components/gamification/badge-grid";
@@ -17,8 +16,9 @@ import { StudyCoachCard } from "@/components/ai/study-coach-card";
 import { RecommendationList } from "@/components/ai/recommendation-list";
 import { getLatestStudyCoach } from "@/actions/ai/study-coach";
 import { fetchActiveRecommendations } from "@/actions/ai/recommendations";
-import { fetchActiveProgramContext, fetchAvailablePrograms } from "@/actions/programs";
+import { fetchActiveProgramContext, fetchAvailablePrograms, fetchLevelsForProgram } from "@/actions/programs";
 import { ProgramPicker } from "@/components/programs/program-picker";
+import { LevelPicker } from "@/components/programs/level-picker";
 
 export default async function DashboardPage() {
   const user = await getCurrentUser();
@@ -39,11 +39,15 @@ export default async function DashboardPage() {
       fetchAvailablePrograms(),
     ]);
 
-  const [programContext, nextLesson] = await Promise.all([
-    fetchActiveProgramContext(gamification),
+  const programContext = await fetchActiveProgramContext(gamification);
+
+  const [nextLesson, levels] = await Promise.all([
     gamification?.current_level_id
       ? getNextUnlockedLessonFast(user.id, gamification.current_level_id)
       : Promise.resolve(null),
+    programContext?.programId
+      ? fetchLevelsForProgram(programContext.programId)
+      : Promise.resolve([]),
   ]);
 
   const programName = programContext?.program.name;
@@ -104,11 +108,19 @@ export default async function DashboardPage() {
         />
       )}
 
-      {programContext?.programId && !gamification?.current_level_id && (
-        <PlacementTestCTA
-          title={t("startPlacementTest")}
-          description={t("startPlacementTestDesc")}
-          buttonText={t("startPlacementTest")}
+      {programContext?.programId && !gamification?.current_level_id && levels.length > 0 && (
+        <LevelPicker
+          levels={levels}
+          currentLevelId={null}
+          redirectToLearning
+          labels={{
+            title: tp("levelTitle"),
+            subtitle: tp("levelSubtitle"),
+            select: tp("levelSelect"),
+            selecting: tp("selecting"),
+            current: tp("currentLevel"),
+            startLearning: tp("startLearning"),
+          }}
         />
       )}
 

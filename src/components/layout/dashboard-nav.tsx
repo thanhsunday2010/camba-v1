@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/routing";
 import { signOut } from "@/actions/auth";
 import { Button } from "@/components/ui/button";
+import { PlacementPickerDialog } from "@/components/learning/placement-picker-dialog";
 import {
   GraduationCap,
   LayoutDashboard,
@@ -17,23 +18,71 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import type { AuthUser } from "@/types";
+import type { PlacementTestSummary } from "@/types/learning";
 
 interface DashboardNavProps {
   user: AuthUser;
+  placementTests?: PlacementTestSummary[];
 }
 
 const navItems = [
   { href: "/dashboard", icon: LayoutDashboard, labelKey: "dashboard" as const },
   { href: "/learning", icon: BookOpen, labelKey: "learningPath" as const },
   { href: "/mock-tests", icon: FileText, labelKey: "mockTests" as const },
-  { href: "/placement-test", icon: ClipboardList, labelKey: "placementTest" as const },
 ];
 
-export function DashboardNav({ user }: DashboardNavProps) {
+function NavLink({
+  href,
+  icon: Icon,
+  label,
+  isActive,
+  onClick,
+}: {
+  href?: string;
+  icon: typeof LayoutDashboard;
+  label: string;
+  isActive: boolean;
+  onClick?: () => void;
+}) {
+  const className = `flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+    isActive ? "bg-primary/10 text-primary" : "text-gray-600 hover:bg-gray-100"
+  }`;
+
+  if (href) {
+    return (
+      <Link href={href} className={className} onClick={onClick}>
+        <Icon className="h-4 w-4" />
+        {label}
+      </Link>
+    );
+  }
+
+  return (
+    <button type="button" className={className} onClick={onClick}>
+      <Icon className="h-4 w-4" />
+      {label}
+    </button>
+  );
+}
+
+export function DashboardNav({ user, placementTests = [] }: DashboardNavProps) {
   const t = useTranslations("nav");
+  const tp = useTranslations("placement");
   const tc = useTranslations("common");
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const placementActive =
+    pathname === "/placement-test" || pathname.startsWith("/placement-test/");
+
+  const placementTrigger = (mobile?: boolean) => (
+    <NavLink
+      icon={ClipboardList}
+      label={t("placementTest")}
+      isActive={placementActive}
+      onClick={mobile ? () => setMobileOpen(false) : undefined}
+    />
+  );
 
   return (
     <>
@@ -58,20 +107,29 @@ export function DashboardNav({ user }: DashboardNavProps) {
             {navItems.map((item) => {
               const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`);
               return (
-                <Link
+                <NavLink
                   key={item.href}
                   href={item.href}
-                  className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    isActive
-                      ? "bg-primary/10 text-primary"
-                      : "text-gray-600 hover:bg-gray-100"
-                  }`}
-                >
-                  <item.icon className="h-4 w-4" />
-                  {t(item.labelKey)}
-                </Link>
+                  icon={item.icon}
+                  label={t(item.labelKey)}
+                  isActive={isActive}
+                />
               );
             })}
+            {placementTests.length > 0 && (
+              <PlacementPickerDialog
+                tests={placementTests}
+                labels={{
+                  title: tp("pickerTitle"),
+                  subtitle: tp("pickerSubtitle"),
+                  questions: tp("questions"),
+                  minutes: tp("minutes"),
+                  empty: tp("pickerEmpty"),
+                  close: tp("close"),
+                }}
+                trigger={placementTrigger()}
+              />
+            )}
           </nav>
 
           <div className="flex items-center gap-3">
@@ -94,23 +152,32 @@ export function DashboardNav({ user }: DashboardNavProps) {
         {mobileOpen && (
           <nav className="md:hidden border-t border-gray-200 bg-white px-4 py-3 space-y-1">
             {navItems.map((item) => {
-              const isActive = pathname === item.href;
+              const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`);
               return (
-                <Link
+                <NavLink
                   key={item.href}
                   href={item.href}
+                  icon={item.icon}
+                  label={t(item.labelKey)}
+                  isActive={isActive}
                   onClick={() => setMobileOpen(false)}
-                  className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium ${
-                    isActive
-                      ? "bg-primary/10 text-primary"
-                      : "text-gray-600 hover:bg-gray-100"
-                  }`}
-                >
-                  <item.icon className="h-4 w-4" />
-                  {t(item.labelKey)}
-                </Link>
+                />
               );
             })}
+            {placementTests.length > 0 && (
+              <PlacementPickerDialog
+                tests={placementTests}
+                labels={{
+                  title: tp("pickerTitle"),
+                  subtitle: tp("pickerSubtitle"),
+                  questions: tp("questions"),
+                  minutes: tp("minutes"),
+                  empty: tp("pickerEmpty"),
+                  close: tp("close"),
+                }}
+                trigger={placementTrigger(true)}
+              />
+            )}
           </nav>
         )}
       </header>

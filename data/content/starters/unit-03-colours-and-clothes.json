@@ -1,0 +1,1231 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by YLE Pre-A1 task formats only.",
+    "program": "cambridge-english",
+    "level": "starters",
+    "cefr": "pre-a1",
+    "unitNumber": 3,
+    "unitSlug": "colours-and-clothes",
+    "unitTitle": "Colours and Clothes",
+    "targetAge": "7-9",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Name four basic colours and common clothes items at Starters level.",
+      "Use adjective + noun order to describe clothes: a red shirt.",
+      "Use verb be to describe colour: The dress is blue.",
+      "Match colours to objects in pictures and short texts.",
+      "Follow listen-and-colour instructions with colour and clothes words."
+    ],
+    "grammarFocus": [
+      "Adjective + noun order: a red shirt",
+      "Verb be for description",
+      "Question word: what colour"
+    ],
+    "readingSkillFocus": "Match Colours and Objects",
+    "listeningSkillFocus": "Listen and Colour"
+  },
+  "vocabularyBank": [
+    {
+      "word": "red",
+      "ipa": "/red/",
+      "partOfSpeech": "adjective",
+      "vietnameseMeaning": "màu đỏ",
+      "exampleSentence": "I have a red shirt.",
+      "difficulty": 1,
+      "topic": "colours-and-clothes",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.95,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "blue",
+      "ipa": "/bluː/",
+      "partOfSpeech": "adjective",
+      "vietnameseMeaning": "màu xanh dương",
+      "exampleSentence": "Her dress is blue.",
+      "difficulty": 1,
+      "topic": "colours-and-clothes",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.95,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "green",
+      "ipa": "/ɡriːn/",
+      "partOfSpeech": "adjective",
+      "vietnameseMeaning": "màu xanh lá",
+      "exampleSentence": "The shoes are green.",
+      "difficulty": 1,
+      "topic": "colours-and-clothes",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.09,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "yellow",
+      "ipa": "/ˈjeləʊ/",
+      "partOfSpeech": "adjective",
+      "vietnameseMeaning": "màu vàng",
+      "exampleSentence": "He wears a yellow hat.",
+      "difficulty": 1,
+      "topic": "colours-and-clothes",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.09,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "shirt",
+      "ipa": "/ʃɜːt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "áo sơ mi",
+      "exampleSentence": "This is my blue shirt.",
+      "difficulty": 1,
+      "topic": "colours-and-clothes",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "trousers",
+      "ipa": "/ˈtraʊzəz/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "quần dài",
+      "exampleSentence": "The trousers are black.",
+      "difficulty": 1,
+      "topic": "colours-and-clothes",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "dress",
+      "ipa": "/dres/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "váy, đầm",
+      "exampleSentence": "She has a red dress.",
+      "difficulty": 1,
+      "topic": "colours-and-clothes",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "shoes",
+      "ipa": "/ʃuːz/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "giày",
+      "exampleSentence": "My shoes are new.",
+      "difficulty": 1,
+      "topic": "colours-and-clothes",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "jacket",
+      "ipa": "/ˈdʒækɪt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "áo khoác",
+      "exampleSentence": "Put on your green jacket.",
+      "difficulty": 1,
+      "topic": "colours-and-clothes",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.13,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "hat",
+      "ipa": "/hæt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "mũ, nón",
+      "exampleSentence": "The hat is yellow.",
+      "difficulty": 1,
+      "topic": "colours-and-clothes",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "colour",
+      "ipa": "/ˈkʌlə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "màu sắc",
+      "exampleSentence": "What colour is your shirt?",
+      "difficulty": 1,
+      "topic": "colours-and-clothes",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "pink",
+      "ipa": "/pɪŋk/",
+      "partOfSpeech": "adjective",
+      "vietnameseMeaning": "màu hồng",
+      "exampleSentence": "Anna likes her pink dress.",
+      "difficulty": 1,
+      "topic": "colours-and-clothes",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Adjective + noun order: a red shirt",
+      "explanation": "In English, the colour adjective comes before the noun: a red shirt, not a shirt red.",
+      "examples": [
+        "a blue dress",
+        "green shoes",
+        "a yellow hat"
+      ],
+      "commonMistakes": [
+        "a shirt red (×) → a red shirt (✓)",
+        "dress blue a (×) → a blue dress (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "colours-and-clothes"
+    },
+    {
+      "structure": "Verb be for description",
+      "explanation": "Use is or are with a colour adjective to describe what something looks like.",
+      "examples": [
+        "The shirt is red.",
+        "The shoes are blue.",
+        "Her dress is green."
+      ],
+      "commonMistakes": [
+        "The shirt red is (×) → The shirt is red. (✓)",
+        "The shoes is blue (×) → The shoes are blue. (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "colours-and-clothes"
+    },
+    {
+      "structure": "Question word: what colour",
+      "explanation": "Use What colour is…? to ask about the colour of one thing.",
+      "examples": [
+        "What colour is your shirt?",
+        "What colour are your shoes?"
+      ],
+      "commonMistakes": [
+        "What is colour your shirt? (×) → What colour is your shirt? (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "colours-and-clothes"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-colours-and-clothes",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Colours and Clothes",
+      "learningObjective": "Recognise and understand twelve colour and clothes words at Starters level.",
+      "estimatedMinutes": 12,
+      "unlockAfterLessonId": "e2000002-0000-4000-8000-000000000006",
+      "exercises": [
+        {
+          "slug": "vocab-colour-words",
+          "title": "Colour and Clothes Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.2,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "The sky and the sea are often _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Blue is the colour of the sky and sea. Red and yellow are warm colours.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "red",
+                  "isCorrect": false,
+                  "distractorNote": "Warm colour; not typical for sky"
+                },
+                {
+                  "text": "blue",
+                  "isCorrect": true
+                },
+                {
+                  "text": "yellow",
+                  "isCorrect": false,
+                  "distractorNote": "Bright warm colour"
+                }
+              ]
+            },
+            {
+              "questionText": "You wear these on your feet.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Shoes go on your feet. A shirt goes on your body; a hat goes on your head.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.15,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "shirt",
+                  "isCorrect": false,
+                  "distractorNote": "Worn on the upper body"
+                },
+                {
+                  "text": "shoes",
+                  "isCorrect": true
+                },
+                {
+                  "text": "hat",
+                  "isCorrect": false,
+                  "distractorNote": "Worn on the head"
+                }
+              ]
+            },
+            {
+              "questionText": "Grass and leaves are usually _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Green is the colour of grass and leaves. Blue is for sky; red is for apples.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.17,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "green",
+                  "isCorrect": true
+                },
+                {
+                  "text": "blue",
+                  "isCorrect": false,
+                  "distractorNote": "Sky colour, not plants"
+                },
+                {
+                  "text": "red",
+                  "isCorrect": false,
+                  "distractorNote": "Fruit colour, not grass"
+                }
+              ]
+            },
+            {
+              "questionText": "Girls often wear a _____ to a party.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A dress is a piece of clothing often worn by girls. Trousers cover the legs; a jacket is outerwear.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "trousers",
+                  "isCorrect": false,
+                  "distractorNote": "Leg wear, not a party dress"
+                },
+                {
+                  "text": "dress",
+                  "isCorrect": true
+                },
+                {
+                  "text": "jacket",
+                  "isCorrect": false,
+                  "distractorNote": "Outer layer, not a full outfit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-colours-matching",
+          "title": "Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the colour and clothes words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 6,
+              "explanation": "Each word matches one clear meaning. Red and pink are both warm colours but different shades.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "red",
+                  "right": "the colour of apples"
+                },
+                {
+                  "left": "shirt",
+                  "right": "clothes for your upper body"
+                },
+                {
+                  "left": "trousers",
+                  "right": "clothes for your legs"
+                },
+                {
+                  "left": "yellow",
+                  "right": "the colour of the sun"
+                },
+                {
+                  "left": "shoes",
+                  "right": "what you wear on your feet"
+                },
+                {
+                  "left": "colour",
+                  "right": "red, blue, green, etc."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-describing-clothes",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e2000003-0000-4000-8000-000000000001",
+      "title": "Lesson 2: Describing Clothes",
+      "learningObjective": "Use adjective + noun order and verb be to describe colours and clothes.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "grammar-adjective-noun",
+          "title": "Choose the Correct Phrase",
+          "instructions": "Choose the correct word or phrase to complete each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "She has _____ .",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "In English, the adjective comes before the noun: a blue dress.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "a dress blue",
+                  "isCorrect": false,
+                  "distractorNote": "Adjective after noun — Vietnamese word order"
+                },
+                {
+                  "text": "a blue dress",
+                  "isCorrect": true
+                },
+                {
+                  "text": "blue a dress",
+                  "isCorrect": false,
+                  "distractorNote": "Article in wrong position"
+                }
+              ]
+            },
+            {
+              "questionText": "The _____ are green.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Shoes is plural, so use are. The colour adjective comes after the verb be.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "shirt",
+                  "isCorrect": false,
+                  "distractorNote": "Singular — needs is"
+                },
+                {
+                  "text": "shoes",
+                  "isCorrect": true
+                },
+                {
+                  "text": "hat",
+                  "isCorrect": false,
+                  "distractorNote": "Singular — needs is"
+                }
+              ]
+            },
+            {
+              "questionText": "His jacket _____ red.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Jacket is singular, so use is.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.24,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "am",
+                  "isCorrect": false,
+                  "distractorNote": "Only used with I"
+                },
+                {
+                  "text": "is",
+                  "isCorrect": true
+                },
+                {
+                  "text": "are",
+                  "isCorrect": false,
+                  "distractorNote": "Used with plural subjects"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ colour is your shirt?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "What colour is…? is the correct question form for asking about colour.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "What",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Who",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about people"
+                },
+                {
+                  "text": "Where",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about place"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-colours-gap-fill",
+          "title": "Describe the Clothes",
+          "instructions": "Complete the sentences with the correct words.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: I have [0] red [1]. | The [2] are blue.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "Adjective before noun (a red shirt); shoes is plural so use are with blue.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "I have [0] red [1]. The [2] are blue.",
+                "correctAnswers": [
+                  "a",
+                  "shirt",
+                  "shoes"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "a"
+                  ],
+                  [
+                    "shirt"
+                  ],
+                  [
+                    "shoes"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-match-colours",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e2000003-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Match Colours and Objects",
+      "learningObjective": "Read a short text about clothes and colours and answer questions about main idea, details and vocabulary.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "reading-clothes-passage",
+          "title": "Read: Getting Dressed",
+          "instructions": "Read the text. Then answer the questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.95,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Getting Dressed",
+              "text": "Hello! My name is Linh. Today is cold.\n\nI put on my green jacket. Under it, I wear a red shirt. My trousers are blue. On my feet, I have yellow shoes.\n\nMy friend Anna is here. Her dress is pink. Her hat is yellow too!\n\nWe go to school. What colour are your clothes today?",
+              "wordCount": 56,
+              "imagePrompt": "Two children getting dressed: one in a green jacket, red shirt, blue trousers and yellow shoes; another in a pink dress and yellow hat."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main idea of the text?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "main_idea",
+              "points": 1,
+              "explanation": "The text describes what Linh and Anna wear and the colours of their clothes.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Linh describes her clothes and colours.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Linh talks about her favourite food.",
+                  "isCorrect": false,
+                  "distractorNote": "No food mentioned"
+                },
+                {
+                  "text": "Linh describes her school subjects.",
+                  "isCorrect": false,
+                  "distractorNote": "School is mentioned once only"
+                }
+              ]
+            },
+            {
+              "questionText": "What colour are Linh's trousers?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "detail",
+              "points": 1,
+              "explanation": "The text says: My trousers are blue.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Blue",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Green",
+                  "isCorrect": false,
+                  "distractorNote": "Jacket colour, not trousers"
+                },
+                {
+                  "text": "Red",
+                  "isCorrect": false,
+                  "distractorNote": "Shirt colour, not trousers"
+                }
+              ]
+            },
+            {
+              "questionText": "Why does Linh wear a jacket?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "inference",
+              "points": 1,
+              "explanation": "The text says Today is cold, so Linh puts on a jacket for warmth.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Because it is cold today.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Because she goes swimming.",
+                  "isCorrect": false,
+                  "distractorNote": "No swimming in the text"
+                },
+                {
+                  "text": "Because it is her birthday.",
+                  "isCorrect": false,
+                  "distractorNote": "Birthday not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "In 'Her dress is pink', who does her refer to?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "vocabulary_in_context",
+              "points": 1,
+              "explanation": "Her refers to Anna, Linh's friend mentioned in the previous sentence.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.33,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Anna",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Linh",
+                  "isCorrect": false,
+                  "distractorNote": "Linh would use my, not her"
+                },
+                {
+                  "text": "Linh's mother",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned in the text"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the ideas in order: (1) Linh says it is cold (2) Linh describes Anna (3) Linh describes her own clothes",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "sequencing",
+              "points": 1,
+              "explanation": "The text moves from weather → Linh's clothes → Anna's clothes.",
+              "qualityScores": {
+                "quality": 0.88,
+                "difficulty": 0.4,
+                "curriculumAlignment": 0.93,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "1 → 3 → 2",
+                  "isCorrect": true
+                },
+                {
+                  "text": "3 → 1 → 2",
+                  "isCorrect": false,
+                  "distractorNote": "Weather comes first"
+                },
+                {
+                  "text": "2 → 3 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Anna comes after Linh"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-colour-instructions",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e2000003-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Listen and Colour",
+      "learningObjective": "Listen to colour and clothes instructions and identify the correct items.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "listening-colour-dialogue",
+          "title": "Listen: Colour the Picture",
+          "instructions": "Listen to the instructions. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Colour the Clothes",
+              "setting": "A classroom art activity",
+              "speakers": [
+                {
+                  "name": "Teacher",
+                  "role": "adult"
+                },
+                {
+                  "name": "Ben",
+                  "role": "boy, 8"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Teacher",
+                  "text": "Look at the picture, Ben. Colour the shirt red."
+                },
+                {
+                  "speaker": "Ben",
+                  "text": "OK. The shirt is red."
+                },
+                {
+                  "speaker": "Teacher",
+                  "text": "Good. Now colour the trousers blue."
+                },
+                {
+                  "speaker": "Ben",
+                  "text": "Blue trousers. Done!"
+                },
+                {
+                  "speaker": "Teacher",
+                  "text": "Colour the shoes green, please."
+                },
+                {
+                  "speaker": "Ben",
+                  "text": "Green shoes. Finished!"
+                }
+              ],
+              "audioNotes": "Clear, slow delivery with pauses after each instruction. Total duration approx. 30 seconds."
+            },
+            "answerKey": {
+              "q1": "red",
+              "q2": "blue",
+              "q3": "green"
+            },
+            "audioUrl": "/audio/listening/starters/unit-03/listening-colour-dialogue.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What colour is the shirt?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "The teacher says: Colour the shirt red.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Red",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Blue",
+                  "isCorrect": false,
+                  "distractorNote": "Trousers colour"
+                },
+                {
+                  "text": "Green",
+                  "isCorrect": false,
+                  "distractorNote": "Shoes colour"
+                }
+              ]
+            },
+            {
+              "questionText": "What colour are the trousers?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "The teacher says: Colour the trousers blue.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Blue",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Red",
+                  "isCorrect": false,
+                  "distractorNote": "Shirt colour"
+                },
+                {
+                  "text": "Yellow",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned in the script"
+                }
+              ]
+            },
+            {
+              "questionText": "What does Ben colour last?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "The last instruction is to colour the shoes green.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The shoes",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The shirt",
+                  "isCorrect": false,
+                  "distractorNote": "Coloured first"
+                },
+                {
+                  "text": "The hat",
+                  "isCorrect": false,
+                  "distractorNote": "Not in the script"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-describe-clothes",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e2000003-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Write About Clothes",
+      "learningObjective": "Write short phrases to describe clothes using colour words and adjective + noun order.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "writing-colour-clothes",
+          "title": "Writing: My Clothes",
+          "instructions": "Write short answers. Use 1–5 words for each answer.",
+          "exerciseType": "writing",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Look at the picture of a boy and a girl. Write short answers to the three questions.",
+            "prompts": [
+              "1. What colour is the boy's shirt?",
+              "2. What is the girl wearing? (Write: a dress / a shirt / trousers)",
+              "3. Write one sentence: My _____ is _____. (Use a clothes word and a colour)"
+            ],
+            "expectedLength": "3 short answers; 1–5 words each; one sentence up to 8 words",
+            "successCriteria": [
+              "All three prompts are answered",
+              "Uses at least two unit vocabulary words",
+              "Uses adjective + noun or is + colour correctly",
+              "Spelling of core words is recognisable"
+            ],
+            "modelAnswer": {
+              "answers": [
+                "Red",
+                "a dress",
+                "My shoes are blue."
+              ]
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.3,
+                "criteria": "Correct adjective + noun order or is/are + colour."
+              },
+              "vocabulary": {
+                "weight": 0.3,
+                "criteria": "Uses colour and clothes words from the unit accurately."
+              },
+              "organization": {
+                "weight": 0.2,
+                "criteria": "Answers match the prompts in order; sentence is clear."
+              },
+              "taskAchievement": {
+                "weight": 0.2,
+                "criteria": "All parts completed; length appropriate for Starters."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your answers to the three prompts in the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Accept any response meeting success criteria. Model answer shows expected range.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-colour-clothes",
+                "autoCheckKeywords": [
+                  "red",
+                  "blue",
+                  "green",
+                  "yellow",
+                  "shirt",
+                  "dress",
+                  "shoes",
+                  "trousers",
+                  "is",
+                  "are",
+                  "my"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-talk-about-clothes",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e2000003-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Your Clothes",
+      "learningObjective": "Answer simple questions about clothes and colours with words and short phrases.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "speaking-clothes-interview",
+          "title": "Speaking: Clothes Interview",
+          "instructions": "Answer the examiner's questions. Say at least one word for each question.",
+          "exerciseType": "speaking",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "prompt": "The examiner will ask you about your clothes and colours. Look at the picture of children in colourful clothes.",
+            "pictureDescription": "A boy in a red shirt and blue trousers, and a girl in a green dress and yellow shoes.",
+            "followUpQuestions": [
+              "What colour is your shirt?",
+              "Are your shoes red or blue?",
+              "What are you wearing today?",
+              "Is your friend's dress green or yellow?",
+              "What colour do you like?"
+            ],
+            "suggestedAnswers": [
+              "My shirt is blue.",
+              "Blue.",
+              "A red shirt and black shoes.",
+              "Green.",
+              "I like yellow."
+            ],
+            "assessmentCriteria": {
+              "pronunciation": "Key colour and clothes words (red, blue, shirt, shoes) are understandable.",
+              "fluency": "Responds without long silence; uses words or short phrases.",
+              "grammar": "Uses is/are + colour or adjective + noun in at least two answers.",
+              "vocabulary": "Uses at least three different unit words correctly."
+            },
+            "maxDurationSeconds": 90
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the five follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "colours-and-clothes",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 5,
+              "explanation": "Assess holistically using the four assessment areas. Partial answers earn partial credit.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-clothes-interview",
+                "minimumResponses": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

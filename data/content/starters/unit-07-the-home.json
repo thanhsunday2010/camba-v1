@@ -1,0 +1,1342 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by YLE Pre-A1 task formats only.",
+    "program": "cambridge-english",
+    "level": "starters",
+    "cefr": "pre-a1",
+    "unitNumber": 7,
+    "unitSlug": "the-home",
+    "unitTitle": "The Home",
+    "targetAge": "7-9",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Name furniture and rooms in a home using Starters vocabulary.",
+      "Use there is and there are to describe a room.",
+      "Use prepositions in, on and under to say where things are.",
+      "Find objects in a picture scene when reading short texts.",
+      "Follow simple instructions about objects in a room."
+    ],
+    "grammarFocus": [
+      "There is / There are",
+      "Prepositions of place: in, on, under"
+    ],
+    "readingSkillFocus": "Find Objects in a Scene",
+    "listeningSkillFocus": "Follow Simple Instructions"
+  },
+  "vocabularyBank": [
+    {
+      "word": "bed",
+      "ipa": "/bed/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "giường",
+      "exampleSentence": "There is a bed in my room.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "chair",
+      "ipa": "/tʃeə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "ghế",
+      "exampleSentence": "Sit on the chair.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "table",
+      "ipa": "/ˈteɪbl/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bàn",
+      "exampleSentence": "The lamp is on the table.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "sofa",
+      "ipa": "/ˈsəʊfə/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "ghế sofa",
+      "exampleSentence": "We sit on the sofa.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "lamp",
+      "ipa": "/læmp/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "đèn",
+      "exampleSentence": "There is a lamp next to the bed.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.13,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "door",
+      "ipa": "/dɔː(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "cửa",
+      "exampleSentence": "Open the door, please.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "window",
+      "ipa": "/ˈwɪndəʊ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "cửa sổ",
+      "exampleSentence": "Look out of the window.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "kitchen",
+      "ipa": "/ˈkɪtʃɪn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "nhà bếp",
+      "exampleSentence": "Mum is in the kitchen.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "bedroom",
+      "ipa": "/ˈbedruːm/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "phòng ngủ",
+      "exampleSentence": "My bed is in the bedroom.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "bathroom",
+      "ipa": "/ˈbɑːθruːm/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "phòng tắm",
+      "exampleSentence": "There is a bathroom upstairs.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "living room",
+      "ipa": "/ˈlɪvɪŋ ruːm/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "phòng khách",
+      "exampleSentence": "The sofa is in the living room.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "fridge",
+      "ipa": "/frɪdʒ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "tủ lạnh",
+      "exampleSentence": "The milk is in the fridge.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "cup",
+      "ipa": "/kʌp/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "cốc, tách",
+      "exampleSentence": "The cup is on the table.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "picture",
+      "ipa": "/ˈpɪktʃə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bức tranh, bức ảnh",
+      "exampleSentence": "There is a picture on the wall.",
+      "difficulty": 1,
+      "topic": "the-home",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "There is / There are",
+      "explanation": "Use there is with one thing (singular). Use there are with two or more things (plural).",
+      "examples": [
+        "There is a bed.",
+        "There are two chairs.",
+        "There is a lamp on the table."
+      ],
+      "commonMistakes": [
+        "There are a chair (×) → There is a chair (✓)",
+        "There is two windows (×) → There are two windows (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "the-home"
+    },
+    {
+      "structure": "Prepositions of place: in, on, under",
+      "explanation": "Use in for inside a room or container. Use on for on top of a surface. Use under for below something.",
+      "examples": [
+        "Mum is in the kitchen.",
+        "The cup is on the table.",
+        "The cat is under the chair."
+      ],
+      "commonMistakes": [
+        "on the kitchen (×) → in the kitchen (✓)",
+        "under the table the book (×) → The book is under the table (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "the-home"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-rooms-and-furniture",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Rooms and Furniture",
+      "learningObjective": "Recognise and understand fourteen home and furniture words at Starters level.",
+      "estimatedMinutes": 12,
+      "unlockAfterLessonId": "e2000006-0000-4000-8000-000000000006",
+      "exercises": [
+        {
+          "slug": "vocab-home-mcq",
+          "title": "Home Word Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.2,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "You sleep on this at night.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A bed is for sleeping. A chair is for sitting; a table is for putting things on.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "bed",
+                  "isCorrect": true
+                },
+                {
+                  "text": "chair",
+                  "isCorrect": false,
+                  "distractorNote": "For sitting, not sleeping"
+                },
+                {
+                  "text": "table",
+                  "isCorrect": false,
+                  "distractorNote": "Flat surface, not for sleeping"
+                }
+              ]
+            },
+            {
+              "questionText": "You cook food in the _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "The kitchen is where we cook. The bathroom is for washing; the bedroom is for sleeping.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.17,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "kitchen",
+                  "isCorrect": true
+                },
+                {
+                  "text": "bathroom",
+                  "isCorrect": false,
+                  "distractorNote": "Room for washing, not cooking"
+                },
+                {
+                  "text": "bedroom",
+                  "isCorrect": false,
+                  "distractorNote": "Room for sleeping"
+                }
+              ]
+            },
+            {
+              "questionText": "A big soft seat for two or three people is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A sofa is a big soft seat. A chair is for one person; a bed is for sleeping.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.19,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "sofa",
+                  "isCorrect": true
+                },
+                {
+                  "text": "chair",
+                  "isCorrect": false,
+                  "distractorNote": "Smaller seat for one person"
+                },
+                {
+                  "text": "lamp",
+                  "isCorrect": false,
+                  "distractorNote": "Gives light, not a seat"
+                }
+              ]
+            },
+            {
+              "questionText": "You open this to go into a room.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A door lets you enter a room. A window is for light; a fridge keeps food cold.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.16,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "door",
+                  "isCorrect": true
+                },
+                {
+                  "text": "window",
+                  "isCorrect": false,
+                  "distractorNote": "For light and air, not walking through"
+                },
+                {
+                  "text": "fridge",
+                  "isCorrect": false,
+                  "distractorNote": "Kitchen appliance"
+                }
+              ]
+            },
+            {
+              "questionText": "This gives light in a room at night.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A lamp gives light. A picture is on the wall; a cup is for drinking.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "lamp",
+                  "isCorrect": true
+                },
+                {
+                  "text": "picture",
+                  "isCorrect": false,
+                  "distractorNote": "Decoration on wall, no light"
+                },
+                {
+                  "text": "cup",
+                  "isCorrect": false,
+                  "distractorNote": "Container for drinks"
+                }
+              ]
+            },
+            {
+              "questionText": "The room where the family watches TV is the _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "The living room is where families relax. The kitchen is for cooking; the bathroom is for washing.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "living room",
+                  "isCorrect": true
+                },
+                {
+                  "text": "kitchen",
+                  "isCorrect": false,
+                  "distractorNote": "Room for cooking"
+                },
+                {
+                  "text": "bathroom",
+                  "isCorrect": false,
+                  "distractorNote": "Room for washing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-home-matching",
+          "title": "Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the home words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Mỗi từ khớp một nghĩa rõ ràng. Học sinh thường nhầm window và door.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "window",
+                  "right": "glass opening in a wall for light"
+                },
+                {
+                  "left": "table",
+                  "right": "flat furniture for eating or working"
+                },
+                {
+                  "left": "fridge",
+                  "right": "cold box for food and milk"
+                },
+                {
+                  "left": "bedroom",
+                  "right": "room where you sleep"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-there-is-are",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e2000007-0000-4000-8000-000000000001",
+      "title": "Lesson 2: There Is and There Are",
+      "learningObjective": "Use there is, there are and prepositions in, on, under to describe a home.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "grammar-there-mcq",
+          "title": "There Is or There Are",
+          "instructions": "Choose the correct words to complete each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "_____ a bed in my bedroom.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Use there is with one bed (singular).",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "There is",
+                  "isCorrect": true
+                },
+                {
+                  "text": "There are",
+                  "isCorrect": false,
+                  "distractorNote": "Used for plural nouns"
+                },
+                {
+                  "text": "They are",
+                  "isCorrect": false,
+                  "distractorNote": "Not used to introduce existence"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ two chairs in the kitchen.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Use there are with two chairs (plural).",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "There is",
+                  "isCorrect": false,
+                  "distractorNote": "Singular form"
+                },
+                {
+                  "text": "There are",
+                  "isCorrect": true
+                },
+                {
+                  "text": "It is",
+                  "isCorrect": false,
+                  "distractorNote": "Does not introduce plural things"
+                }
+              ]
+            },
+            {
+              "questionText": "The lamp is _____ the table.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Use on for something on top of a surface.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.21,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "on",
+                  "isCorrect": true
+                },
+                {
+                  "text": "in",
+                  "isCorrect": false,
+                  "distractorNote": "Inside, not on top"
+                },
+                {
+                  "text": "under",
+                  "isCorrect": false,
+                  "distractorNote": "Below, not on top"
+                }
+              ]
+            },
+            {
+              "questionText": "The cat is _____ the chair.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Use under when something is below another thing.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "under",
+                  "isCorrect": true
+                },
+                {
+                  "text": "on",
+                  "isCorrect": false,
+                  "distractorNote": "On top, not below"
+                },
+                {
+                  "text": "in",
+                  "isCorrect": false,
+                  "distractorNote": "Inside, not below"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-home-gap-fill",
+          "title": "In, On or Under",
+          "instructions": "Complete the sentences with in, on or under.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Mum is [0] the kitchen. | The cup is [1] the table. | The ball is [2] the sofa.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "in the kitchen (inside a room); on the table (on top); under the sofa (below).",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Mum is [0] the kitchen. The cup is [1] the table. The ball is [2] the sofa.",
+                "correctAnswers": [
+                  "in",
+                  "on",
+                  "under"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "in"
+                  ],
+                  [
+                    "on"
+                  ],
+                  [
+                    "under"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-my-house",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e2000007-0000-4000-8000-000000000002",
+      "title": "Lesson 3: My House",
+      "learningObjective": "Read a short text about a home and find where objects are in the scene.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "reading-home-passage",
+          "title": "Read: Our Living Room",
+          "instructions": "Read the text. Then answer the questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.95,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Our Living Room",
+              "text": "This is our living room. There is a big sofa. There are two chairs.\n\nThere is a table. A lamp is on the table. A cup is on the table too.\n\nThere is a picture on the wall. The door is next to the window.\n\nMy cat is under the chair. It likes to sleep there!",
+              "wordCount": 52,
+              "imagePrompt": "A living room with sofa, two chairs, table with lamp and cup, picture on wall, door, window, and a cat under a chair."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main idea of the text?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "main_idea",
+              "points": 1,
+              "explanation": "The text describes furniture and objects in a living room. It is not about school or food.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The writer describes the living room.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The writer talks about school.",
+                  "isCorrect": false,
+                  "distractorNote": "School not mentioned"
+                },
+                {
+                  "text": "The writer cooks in the kitchen.",
+                  "isCorrect": false,
+                  "distractorNote": "Kitchen not in text"
+                }
+              ]
+            },
+            {
+              "questionText": "Where is the lamp?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "detail",
+              "points": 1,
+              "explanation": "The text says: A lamp is on the table.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "On the table",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Under the chair",
+                  "isCorrect": false,
+                  "distractorNote": "That is where the cat is"
+                },
+                {
+                  "text": "On the wall",
+                  "isCorrect": false,
+                  "distractorNote": "The picture is on the wall"
+                }
+              ]
+            },
+            {
+              "questionText": "Where is the cat?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "detail",
+              "points": 1,
+              "explanation": "The text says: My cat is under the chair.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Under the chair",
+                  "isCorrect": true
+                },
+                {
+                  "text": "On the sofa",
+                  "isCorrect": false,
+                  "distractorNote": "Sofa mentioned but cat is not there"
+                },
+                {
+                  "text": "In the kitchen",
+                  "isCorrect": false,
+                  "distractorNote": "Kitchen not in text"
+                }
+              ]
+            },
+            {
+              "questionText": "In 'There are two chairs', what does there are mean?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "vocabulary_in_context",
+              "points": 1,
+              "explanation": "There are tells us two chairs exist in the room.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.33,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Two chairs exist in the room",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The chairs are broken",
+                  "isCorrect": false,
+                  "distractorNote": "Nothing about broken"
+                },
+                {
+                  "text": "The chairs are outside",
+                  "isCorrect": false,
+                  "distractorNote": "They are in the living room"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the ideas in order: (1) Sofa and chairs (2) Table with lamp and cup (3) Picture, door, window and cat",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "sequencing",
+              "points": 1,
+              "explanation": "The text moves from big furniture → table items → wall/door/window → cat.",
+              "qualityScores": {
+                "quality": 0.88,
+                "difficulty": 0.4,
+                "curriculumAlignment": 0.93,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": true
+                },
+                {
+                  "text": "2 → 1 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Sofa comes before table detail"
+                },
+                {
+                  "text": "3 → 2 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Reversed order"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-home-instructions",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e2000007-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Follow Instructions",
+      "learningObjective": "Listen to simple instructions about objects in a room and choose the correct answer.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "listening-home-dialogue",
+          "title": "Listen: Tidy Your Room",
+          "instructions": "Listen to the instructions. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Tidy Your Room",
+              "setting": "A child's bedroom",
+              "speakers": [
+                {
+                  "name": "Dad",
+                  "role": "adult"
+                },
+                {
+                  "name": "Ben",
+                  "role": "boy, 8"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Dad",
+                  "text": "Ben, put the book on the table."
+                },
+                {
+                  "speaker": "Ben",
+                  "text": "OK, Dad."
+                },
+                {
+                  "speaker": "Dad",
+                  "text": "Put your bag under the bed."
+                },
+                {
+                  "speaker": "Ben",
+                  "text": "Under the bed. Yes."
+                },
+                {
+                  "speaker": "Dad",
+                  "text": "Is Mum in the kitchen?"
+                },
+                {
+                  "speaker": "Ben",
+                  "text": "Yes. She is in the kitchen."
+                },
+                {
+                  "speaker": "Dad",
+                  "text": "Good. Now close the door, please."
+                }
+              ],
+              "audioNotes": "Clear, slow delivery with short pauses. Total duration approx. 38 seconds."
+            },
+            "answerKey": {
+              "q1": "on the table",
+              "q2": "under the bed",
+              "q3": "kitchen",
+              "q4": "close the door"
+            },
+            "audioUrl": "/audio/listening/starters/unit-07/listening-home-dialogue.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "Where does Ben put the book?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Dad says: Put the book on the table.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "On the table",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Under the bed",
+                  "isCorrect": false,
+                  "distractorNote": "That is where the bag goes"
+                },
+                {
+                  "text": "On the sofa",
+                  "isCorrect": false,
+                  "distractorNote": "Sofa not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "Where does Ben put his bag?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Dad says: Put your bag under the bed.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Under the bed",
+                  "isCorrect": true
+                },
+                {
+                  "text": "On the table",
+                  "isCorrect": false,
+                  "distractorNote": "Book goes on table"
+                },
+                {
+                  "text": "In the kitchen",
+                  "isCorrect": false,
+                  "distractorNote": "Kitchen is where Mum is"
+                }
+              ]
+            },
+            {
+              "questionText": "Where is Mum?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Ben says: She is in the kitchen.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "In the kitchen",
+                  "isCorrect": true
+                },
+                {
+                  "text": "In the bedroom",
+                  "isCorrect": false,
+                  "distractorNote": "Ben is in bedroom, not Mum"
+                },
+                {
+                  "text": "In the bathroom",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "What does Dad say at the end?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Dad says: Now close the door, please.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.28,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Close the door",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Open the window",
+                  "isCorrect": false,
+                  "distractorNote": "Window not mentioned"
+                },
+                {
+                  "text": "Sit on the chair",
+                  "isCorrect": false,
+                  "distractorNote": "Chair not in instructions"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-my-room",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e2000007-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Write About My Room",
+      "learningObjective": "Write short phrases about furniture in your room using there is/are and prepositions.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "writing-room-description",
+          "title": "Writing: My Room",
+          "instructions": "Write short answers. Use 1–6 words for each answer.",
+          "exerciseType": "writing",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Look at the picture of a bedroom. Write short answers to the three questions.",
+            "prompts": [
+              "1. What is in your room? (Write: There is a _____)",
+              "2. Where is your bag? (Write: on / in / under + furniture)",
+              "3. Write one sentence: There are two _____."
+            ],
+            "expectedLength": "3 short answers; 1–6 words each; one sentence up to 7 words",
+            "successCriteria": [
+              "All three prompts are answered",
+              "Uses at least two unit home words",
+              "Uses there is or there are correctly",
+              "Uses in, on or under in one answer"
+            ],
+            "modelAnswer": {
+              "answers": [
+                "There is a bed.",
+                "under the bed",
+                "There are two chairs."
+              ]
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.3,
+                "criteria": "Correct use of there is/are and prepositions in, on, under."
+              },
+              "vocabulary": {
+                "weight": 0.3,
+                "criteria": "Uses home and furniture words from the unit accurately."
+              },
+              "organization": {
+                "weight": 0.2,
+                "criteria": "Answers match the prompts in order; sentences are clear."
+              },
+              "taskAchievement": {
+                "weight": 0.2,
+                "criteria": "All parts completed; length appropriate for Starters."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your answers to the three prompts in the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấp nhận mọi câu trả lời đáp ứng tiêu chí. Câu trả lời mẫu cho thấy phạm vi mong đợi.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-room-description",
+                "autoCheckKeywords": [
+                  "there",
+                  "is",
+                  "are",
+                  "bed",
+                  "chair",
+                  "table",
+                  "on",
+                  "in",
+                  "under",
+                  "door",
+                  "window"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-describe-my-home",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e2000007-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Describe Your Home",
+      "learningObjective": "Answer simple questions about rooms and furniture with words and short phrases.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "speaking-home-interview",
+          "title": "Speaking: Home Interview",
+          "instructions": "Answer the examiner's questions. Say at least one word for each question.",
+          "exerciseType": "speaking",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "prompt": "The examiner will ask you about your home. Look at the picture of a house.",
+            "pictureDescription": "A simple house picture showing a living room with sofa and lamp, a kitchen, and a bedroom with a bed.",
+            "followUpQuestions": [
+              "Where do you sleep?",
+              "What is in your living room?",
+              "Is there a lamp in your room?",
+              "Where is your bag — on, in or under something?",
+              "What room is your mother in?"
+            ],
+            "suggestedAnswers": [
+              "In my bedroom.",
+              "A sofa and a table.",
+              "Yes, there is a lamp.",
+              "My bag is under the bed.",
+              "She is in the kitchen."
+            ],
+            "assessmentCriteria": {
+              "pronunciation": "Key home words (bed, chair, table, kitchen, door) are understandable.",
+              "fluency": "Responds without long silence; uses words or short phrases.",
+              "grammar": "Uses there is/are or in/on/under in at least two answers.",
+              "vocabulary": "Uses at least three different unit home words correctly."
+            },
+            "maxDurationSeconds": 90
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the five follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "the-home",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 5,
+              "explanation": "Đánh giá tổng thể theo bốn tiêu chí. Câu trả lời một phần vẫn được điểm một phần.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-home-interview",
+                "minimumResponses": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

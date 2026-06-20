@@ -5,10 +5,14 @@ import {
   upsertLessonProgress,
 } from "@/lib/learning/lesson-progress-db";
 import {
-  getEntryLessonIds,
   isLessonUnlockedFromProgress,
   type LessonUnlockNode,
 } from "@/lib/learning/unlock";
+import {
+  fetchLevelLessonUnlockNodes,
+  getFirstLessonIdForLevel,
+  getSequentialEntryLessonIds,
+} from "@/lib/learning/curriculum-unlock";
 import type {
   Exercise,
   LearningPath,
@@ -250,17 +254,41 @@ export async function getExerciseQuestions(exerciseId: string): Promise<Question
   return fetchExerciseQuestionsFull(exerciseId);
 }
 
-export async function fetchPlacementTestFull(
+export async function fetchPlacementTestsForProgram(
   programId: string
+): Promise<import("@/types/learning").PlacementTestSummary[]> {
+  const supabase = await createClient();
+
+  const { data: tests } = await supabase
+    .from("placement_tests")
+    .select("id, title, description, question_count, time_limit_minutes, settings")
+    .eq("program_id", programId)
+    .eq("is_active", true)
+    .order("created_at");
+
+  return (tests ?? []).map((test) => {
+    const settings = (test.settings as Record<string, unknown>) ?? {};
+    return {
+      id: test.id,
+      title: test.title,
+      description: test.description,
+      question_count: test.question_count,
+      time_limit_minutes: test.time_limit_minutes,
+      testKind: typeof settings.test_kind === "string" ? settings.test_kind : null,
+    };
+  });
+}
+
+export async function fetchPlacementTestByIdFull(
+  testId: string
 ): Promise<(PlacementTestData & { questions: Question[] }) | null> {
   const supabase = await createClient();
 
   const { data: test } = await supabase
     .from("placement_tests")
     .select("*")
-    .eq("program_id", programId)
+    .eq("id", testId)
     .eq("is_active", true)
-    .limit(1)
     .single();
 
   if (!test) return null;
@@ -291,6 +319,24 @@ export async function fetchPlacementTestFull(
     time_limit_minutes: test.time_limit_minutes,
     questions,
   };
+}
+
+export async function fetchPlacementTestFull(
+  programId: string
+): Promise<(PlacementTestData & { questions: Question[] }) | null> {
+  const supabase = await createClient();
+
+  const { data: test } = await supabase
+    .from("placement_tests")
+    .select("id")
+    .eq("program_id", programId)
+    .eq("is_active", true)
+    .order("created_at")
+    .limit(1)
+    .maybeSingle();
+
+  if (!test) return null;
+  return fetchPlacementTestByIdFull(test.id);
 }
 
 export async function getLessonProgress(userId: string, lessonId: string) {
@@ -422,37 +468,34 @@ export async function initializeLessonUnlocks(userId: string, levelId: string) {
   if (!path) return;
 
   const programId = path.program.id;
+  const levelLessons = await fetchLevelLessonUnlockNodes(supabase, levelId);
+  const entryIds = getSequentialEntryLessonIds(levelLessons);
 
-  for (const skill of path.skills) {
-    for (const unit of skill.units ?? []) {
-      const unitLessons = (unit.lessons ?? []).map((l) => ({
-        id: l.id,
-        unit_id: l.unit_id,
-        sort_order: l.sort_order,
-        unlock_after_lesson_id: l.unlock_after_lesson_id,
-      })) as LessonUnlockNode[];
+  if (entryIds.length === 0) {
+    const firstId = await getFirstLessonIdForLevel(supabase, levelId);
+    if (firstId) entryIds.push(firstId);
+  }
 
-      const entryIds = getEntryLessonIds(unitLessons);
+  for (const lessonId of entryIds) {
+    const { data: existing } = await supabase
+      .from("lesson_progress")
+      .select("is_unlocked")
+      .eq("user_id", userId)
+      .eq("lesson_id", lessonId)
+      .maybeSingle();
 
-      for (const lesson of unit.lessons ?? []) {
-        const shouldUnlock =
-          entryIds.includes(lesson.id) &&
-          (!lesson.progress || lesson.progress.is_unlocked !== true);
+    if (existing?.is_unlocked === true) continue;
 
-        if (shouldUnlock) {
-          await upsertLessonProgress(supabase, {
-            user_id: userId,
-            lesson_id: lesson.id,
-            program_id: programId,
-            is_unlocked: true,
-            completion_percent: lesson.progress?.completion_percent ?? 0,
-            accuracy_percent: lesson.progress?.accuracy_percent ?? 0,
-            mastery_level: lesson.progress?.mastery_level ?? 0,
-            attempts_count: lesson.progress?.attempts_count ?? 0,
-          });
-        }
-      }
-    }
+    await upsertLessonProgress(supabase, {
+      user_id: userId,
+      lesson_id: lessonId,
+      program_id: programId,
+      is_unlocked: true,
+      completion_percent: 0,
+      accuracy_percent: 0,
+      mastery_level: 0,
+      attempts_count: 0,
+    });
   }
 }
 

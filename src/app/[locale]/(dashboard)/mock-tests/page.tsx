@@ -3,8 +3,6 @@ import { getTranslations } from "next-intl/server";
 import { getCurrentUser } from "@/lib/auth/current-user";
 import { getMockTestsList } from "@/actions/mock-tests";
 import { MockTestList } from "@/components/learning/mock-test-list";
-import { Link } from "@/i18n/routing";
-import { Button } from "@/components/ui/button";
 
 export default async function MockTestsPage() {
   const user = await getCurrentUser();
@@ -20,44 +18,20 @@ export default async function MockTestsPage() {
         <p className="text-sm text-gray-500 mt-1">{t("subtitle")}</p>
       </div>
 
-      {tests.length === 0 ? (
-        <div className="space-y-4">
-          <MockTestList
-            tests={[]}
-            labels={{
-              start: t("start"),
-              retake: t("retake"),
-              questions: t("questions"),
-              minutes: t("minutes"),
-              bestScore: t("bestScore"),
-              attempts: t("attempts"),
-              noTests: t("noTests"),
-              noTestsDesc: t("noTestsDesc"),
-              level: t("level"),
-            }}
-          />
-          <div className="text-center">
-            <Link href="/placement-test">
-              <Button variant="outline">{t("takePlacementFirst")}</Button>
-            </Link>
-          </div>
-        </div>
-      ) : (
-        <MockTestList
-          tests={tests}
-          labels={{
-            start: t("start"),
-            retake: t("retake"),
-            questions: t("questions"),
-            minutes: t("minutes"),
-            bestScore: t("bestScore"),
-            attempts: t("attempts"),
-            noTests: t("noTests"),
-            noTestsDesc: t("noTestsDesc"),
-            level: t("level"),
-          }}
-        />
-      )}
+      <MockTestList
+        tests={tests}
+        labels={{
+          start: t("start"),
+          retake: t("retake"),
+          questions: t("questions"),
+          minutes: t("minutes"),
+          bestScore: t("bestScore"),
+          attempts: t("attempts"),
+          noTests: t("noTests"),
+          noTestsDesc: t("noTestsDesc"),
+          level: t("level"),
+        }}
+      />
     </div>
   );
 }
