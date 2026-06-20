@@ -6,6 +6,7 @@ import { getLearningPath, initializeLessonUnlocks } from "@/lib/queries/learning
 import { LearningUnitPath } from "@/components/learning/learning-unit-path";
 import { fetchActiveProgramContext, fetchLevelsForProgram } from "@/actions/programs";
 import { LevelPicker } from "@/components/programs/level-picker";
+import { isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
 
 export default async function LearningPage() {
   const user = await getCurrentUser();
@@ -67,6 +68,14 @@ export default async function LearningPage() {
 
   return (
     <div className="space-y-6">
+      {isUnlockAllLessonsEnabled() && (
+        <div className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+          Chế độ test nội dung: tất cả bài học trong level này đã mở khóa. Tắt{" "}
+          <code className="text-xs bg-amber-100 px-1 rounded">NEXT_PUBLIC_UNLOCK_ALL_LESSONS</code>{" "}
+          khi triển khai học tuần tự.
+        </div>
+      )}
+
       <div>
         <h1 className="text-2xl font-bold text-gray-900">{t("title")}</h1>
         <p className="text-sm text-gray-500 mt-1">{t("subtitle")}</p>

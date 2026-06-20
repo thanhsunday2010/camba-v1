@@ -1,3 +1,5 @@
+import { isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
+
 export type LessonUnlockNode = {
   id: string;
   unit_id: string;
@@ -52,5 +54,6 @@ export function resolveNextUnlockLessonIds(
 export function isLessonUnlockedFromProgress(
   progress: { is_unlocked: boolean } | undefined | null
 ): boolean {
+  if (isUnlockAllLessonsEnabled()) return true;
   return progress?.is_unlocked === true;
 }

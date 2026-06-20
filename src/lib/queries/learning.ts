@@ -13,6 +13,7 @@ import {
   getFirstLessonIdForLevel,
   getSequentialEntryLessonIds,
 } from "@/lib/learning/curriculum-unlock";
+import { isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
 import type {
   Exercise,
   LearningPath,
@@ -469,14 +470,19 @@ export async function initializeLessonUnlocks(userId: string, levelId: string) {
 
   const programId = path.program.id;
   const levelLessons = await fetchLevelLessonUnlockNodes(supabase, levelId);
-  const entryIds = getSequentialEntryLessonIds(levelLessons);
 
-  if (entryIds.length === 0) {
-    const firstId = await getFirstLessonIdForLevel(supabase, levelId);
-    if (firstId) entryIds.push(firstId);
+  let lessonIds: string[];
+  if (isUnlockAllLessonsEnabled()) {
+    lessonIds = levelLessons.map((l) => l.id);
+  } else {
+    lessonIds = getSequentialEntryLessonIds(levelLessons);
+    if (lessonIds.length === 0) {
+      const firstId = await getFirstLessonIdForLevel(supabase, levelId);
+      if (firstId) lessonIds.push(firstId);
+    }
   }
 
-  for (const lessonId of entryIds) {
+  for (const lessonId of lessonIds) {
     const { data: existing } = await supabase
       .from("lesson_progress")
       .select("is_unlocked")
