@@ -39,7 +39,7 @@ function findListeningExercises(content) {
   for (const lesson of content.lessons ?? []) {
     if (lesson.skill !== "listening") continue;
     for (const exercise of lesson.exercises ?? []) {
-      if (exercise.exerciseType === "listening" && exercise.content?.script) {
+      if (exercise.content?.script) {
         items.push({ lesson, exercise });
       }
     }
@@ -85,7 +85,7 @@ async function main() {
   }
 
   console.log(`Generated ${generated} listening MP3 file(s).`);
-  console.log("Re-seed units to update Supabase: npm run seed:starters");
+  console.log("Re-seed units to update Supabase exercise content: npm run seed:ket (or seed:starters)");
 }
 
 main().catch((err) => {

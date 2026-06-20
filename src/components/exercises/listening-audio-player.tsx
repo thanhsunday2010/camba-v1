@@ -21,11 +21,8 @@ function resolveAudioSrc(audioUrl: string): string {
   if (audioUrl.startsWith("http://") || audioUrl.startsWith("https://")) {
     return audioUrl;
   }
-  if (typeof window !== "undefined") {
-    const base = process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "") ?? window.location.origin;
-    return `${base}${audioUrl.startsWith("/") ? audioUrl : `/${audioUrl}`}`;
-  }
-  return audioUrl;
+  // Same-origin static files: relative path works on any deploy URL (Vercel preview, prod, local).
+  return audioUrl.startsWith("/") ? audioUrl : `/${audioUrl}`;
 }
 
 export function ListeningAudioPlayer({
