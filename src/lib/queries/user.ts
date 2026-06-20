@@ -1,4 +1,6 @@
+import { unstable_cache } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
+import { createPublicClient } from "@/lib/supabase/public";
 import type { UserGamification, UserStreak } from "@/types/database";
 
 export async function getUserGamification(
@@ -27,16 +29,22 @@ export async function getUserStreak(userId: string): Promise<UserStreak | null> 
   return data;
 }
 
+const fetchActiveProgramsCached = unstable_cache(
+  async () => {
+    const supabase = createPublicClient();
+    const { data } = await supabase
+      .from("programs")
+      .select("*")
+      .eq("is_active", true)
+      .order("sort_order");
+    return data ?? [];
+  },
+  ["active-programs"],
+  { revalidate: 3600 }
+);
+
 export async function getActivePrograms() {
-  const supabase = await createClient();
-
-  const { data } = await supabase
-    .from("programs")
-    .select("*")
-    .eq("is_active", true)
-    .order("sort_order");
-
-  return data ?? [];
+  return fetchActiveProgramsCached();
 }
 
 export async function getProgramLevels(programId: string) {

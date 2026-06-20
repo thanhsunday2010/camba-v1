@@ -1,6 +1,8 @@
+import { unstable_cache } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
+import { createPublicClient } from "@/lib/supabase/public";
 import { DEFAULT_PROGRAM_SLUG } from "@/lib/programs/constants";
-import type { Level, Program } from "@/types/database";
+import type { Level, Program, UserGamification } from "@/types/database";
 
 export interface ActiveProgramContext {
   programId: string;
@@ -9,65 +11,86 @@ export interface ActiveProgramContext {
   level: Pick<Level, "id" | "slug" | "name"> | null;
 }
 
+const getDefaultProgramIdCached = unstable_cache(
+  async () => {
+    const supabase = createPublicClient();
+    const { data } = await supabase
+      .from("programs")
+      .select("id")
+      .eq("slug", DEFAULT_PROGRAM_SLUG)
+      .eq("is_active", true)
+      .maybeSingle();
+    return data?.id ?? null;
+  },
+  ["default-program-id"],
+  { revalidate: 3600 }
+);
+
 export async function getDefaultProgramId(): Promise<string | null> {
-  const supabase = await createClient();
-
-  const { data } = await supabase
-    .from("programs")
-    .select("id")
-    .eq("slug", DEFAULT_PROGRAM_SLUG)
-    .eq("is_active", true)
-    .maybeSingle();
-
-  return data?.id ?? null;
+  return getDefaultProgramIdCached();
 }
 
 export async function resolveProgramId(
   userId: string,
-  programId?: string | null
+  programId?: string | null,
+  gamification?: Pick<UserGamification, "current_program_id"> | null
 ): Promise<string | null> {
   if (programId) return programId;
 
-  const supabase = await createClient();
+  const currentProgramId =
+    gamification?.current_program_id ??
+    (
+      await (async () => {
+        const supabase = await createClient();
+        const { data } = await supabase
+          .from("user_gamification")
+          .select("current_program_id")
+          .eq("user_id", userId)
+          .maybeSingle();
+        return data?.current_program_id ?? null;
+      })()
+    );
 
-  const { data: gamification } = await supabase
-    .from("user_gamification")
-    .select("current_program_id")
-    .eq("user_id", userId)
-    .maybeSingle();
-
-  if (gamification?.current_program_id) {
-    return gamification.current_program_id;
-  }
+  if (currentProgramId) return currentProgramId;
 
   return getDefaultProgramId();
 }
 
 export async function getActiveProgramContext(
-  userId: string
+  userId: string,
+  gamification?: Pick<UserGamification, "current_program_id" | "current_level_id"> | null
 ): Promise<ActiveProgramContext | null> {
   const supabase = await createClient();
 
-  const programId = await resolveProgramId(userId);
+  const programId = await resolveProgramId(userId, null, gamification);
   if (!programId) return null;
 
-  const { data: program } = await supabase
-    .from("programs")
-    .select("id, slug, name, description")
-    .eq("id", programId)
-    .eq("is_active", true)
-    .single();
+  let levelId = gamification?.current_level_id ?? null;
 
+  const [programResult, gamificationResult] = await Promise.all([
+    supabase
+      .from("programs")
+      .select("id, slug, name, description")
+      .eq("id", programId)
+      .eq("is_active", true)
+      .single(),
+    levelId
+      ? Promise.resolve({ data: null })
+      : supabase
+          .from("user_gamification")
+          .select("current_level_id")
+          .eq("user_id", userId)
+          .maybeSingle(),
+  ]);
+
+  const program = programResult.data;
   if (!program) return null;
 
-  const { data: gamification } = await supabase
-    .from("user_gamification")
-    .select("current_level_id")
-    .eq("user_id", userId)
-    .maybeSingle();
+  if (!levelId) {
+    levelId = gamificationResult.data?.current_level_id ?? null;
+  }
 
   let level: Pick<Level, "id" | "slug" | "name"> | null = null;
-  let levelId = gamification?.current_level_id ?? null;
 
   if (levelId) {
     const { data: levelRow } = await supabase

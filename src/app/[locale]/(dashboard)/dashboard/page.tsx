@@ -8,7 +8,7 @@ import { BadgeGrid } from "@/components/gamification/badge-grid";
 import { LeagueBoard } from "@/components/gamification/league-board";
 import { XpProgressBar } from "@/components/gamification/xp-progress-bar";
 import { getUserGamification, getUserStreak } from "@/lib/queries/user";
-import { getNextUnlockedLesson } from "@/lib/queries/learning";
+import { getNextUnlockedLessonFast } from "@/lib/queries/learning";
 import { getGamificationDashboardData } from "@/lib/queries/gamification";
 import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/button";
@@ -29,24 +29,25 @@ export default async function DashboardPage() {
   const ta = await getTranslations("ai");
   const tp = await getTranslations("programs");
 
-  const [gamification, streakData, gamificationData, coachPlan, recommendations, programContext, programs] =
+  const [gamification, streakData, gamificationData, coachPlan, recommendations, programs] =
     await Promise.all([
       getUserGamification(user.id),
       getUserStreak(user.id),
       getGamificationDashboardData(user.id),
-      getLatestStudyCoach(),
-      fetchActiveRecommendations(),
-      fetchActiveProgramContext(),
+      getLatestStudyCoach(user.id),
+      fetchActiveRecommendations(user.id),
       fetchAvailablePrograms(),
     ]);
 
+  const [programContext, nextLesson] = await Promise.all([
+    fetchActiveProgramContext(gamification),
+    gamification?.current_level_id
+      ? getNextUnlockedLessonFast(user.id, gamification.current_level_id)
+      : Promise.resolve(null),
+  ]);
+
   const programName = programContext?.program.name;
   const levelName = programContext?.level?.name;
-  let nextLesson: Awaited<ReturnType<typeof getNextUnlockedLesson>> = null;
-
-  if (gamification?.current_level_id) {
-    nextLesson = await getNextUnlockedLesson(user.id, gamification.current_level_id);
-  }
 
   return (
     <div className="space-y-6">

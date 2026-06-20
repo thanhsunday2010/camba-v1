@@ -1,9 +1,10 @@
+import { cache } from "react";
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { getPublicEnv, getServerEnv } from "@/lib/env";
 import type { Database } from "@/types/database";
 
-export async function createClient() {
+export const createClient = cache(async () => {
   const cookieStore = await cookies();
   const { NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY } = getPublicEnv();
 
@@ -27,7 +28,7 @@ export async function createClient() {
       },
     }
   );
-}
+});
 
 export async function createServiceClient() {
   const cookieStore = await cookies();

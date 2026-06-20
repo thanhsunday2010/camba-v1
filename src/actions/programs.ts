@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import type { UserGamification } from "@/types/database";
 import { getActiveProgramContext } from "@/lib/programs/context";
 import { getActivePrograms } from "@/lib/queries/user";
 import { clearStaleProgressForProgramSwitch } from "@/lib/programs/progress-cleanup";
@@ -16,10 +17,12 @@ export async function fetchAvailablePrograms(): Promise<
   return getActivePrograms();
 }
 
-export async function fetchActiveProgramContext() {
+export async function fetchActiveProgramContext(
+  gamification?: Pick<UserGamification, "current_program_id" | "current_level_id"> | null
+) {
   const user = await getSessionUser();
   if (!user) return null;
-  return getActiveProgramContext(user.id);
+  return getActiveProgramContext(user.id, gamification);
 }
 
 export async function selectProgram(programId: string): Promise<ActionResult> {

@@ -112,16 +112,18 @@ export async function getStudyCoachPlan(): Promise<ActionResult<StudyCoachRespon
   }
 }
 
-export async function getLatestStudyCoach(): Promise<StudyCoachResponse | null> {
-  const user = await getSessionUser();
-  if (!user) return null;
+export async function getLatestStudyCoach(
+  userId?: string
+): Promise<StudyCoachResponse | null> {
+  const resolvedUserId = userId ?? (await getSessionUser())?.id;
+  if (!resolvedUserId) return null;
 
   const supabase = await createClient();
 
   const { data } = await supabase
     .from("ai_feedback")
     .select("response_data, created_at")
-    .eq("user_id", user.id)
+    .eq("user_id", resolvedUserId)
     .eq("feedback_type", "study_coach")
     .order("created_at", { ascending: false })
     .limit(1)

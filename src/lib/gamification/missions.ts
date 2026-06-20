@@ -2,36 +2,35 @@ import { createClient } from "@/lib/supabase/server";
 import { todayDateString } from "@/lib/gamification/constants";
 import { awardXp } from "@/lib/gamification/award-xp";
 
-export async function ensureDailyMissions(userId: string): Promise<void> {
+async function ensureDailyMissions(userId: string): Promise<void> {
   const supabase = await createClient();
   const today = todayDateString();
 
-  const { data: missions } = await supabase
-    .from("daily_missions")
-    .select("*")
-    .eq("is_active", true);
+  const [{ data: missions }, { data: existing }] = await Promise.all([
+    supabase.from("daily_missions").select("id").eq("is_active", true),
+    supabase
+      .from("user_daily_missions")
+      .select("mission_id")
+      .eq("user_id", userId)
+      .eq("mission_date", today),
+  ]);
 
   if (!missions?.length) return;
 
-  for (const mission of missions) {
-    const { data: existing } = await supabase
-      .from("user_daily_missions")
-      .select("id")
-      .eq("user_id", userId)
-      .eq("mission_id", mission.id)
-      .eq("mission_date", today)
-      .maybeSingle();
+  const existingIds = new Set(existing?.map((row) => row.mission_id) ?? []);
+  const missing = missions.filter((mission) => !existingIds.has(mission.id));
 
-    if (!existing) {
-      await supabase.from("user_daily_missions").insert({
-        user_id: userId,
-        mission_id: mission.id,
-        mission_date: today,
-        current_value: 0,
-        is_completed: false,
-      });
-    }
-  }
+  if (!missing.length) return;
+
+  await supabase.from("user_daily_missions").insert(
+    missing.map((mission) => ({
+      user_id: userId,
+      mission_id: mission.id,
+      mission_date: today,
+      current_value: 0,
+      is_completed: false,
+    }))
+  );
 }
 
 export async function updateMissionProgress(
@@ -86,36 +85,36 @@ export async function updateMissionProgress(
 }
 
 export async function getUserDailyMissions(userId: string) {
-  await ensureDailyMissions(userId);
-
   const supabase = await createClient();
   const today = todayDateString();
 
-  const { data } = await supabase
+  const { data: missionDefs } = await supabase
+    .from("daily_missions")
+    .select("*")
+    .eq("is_active", true);
+
+  if (!missionDefs?.length) return [];
+
+  const { data: userMissions } = await supabase
     .from("user_daily_missions")
     .select("*")
     .eq("user_id", userId)
     .eq("mission_date", today);
 
-  const missionIds = data?.map((d) => d.mission_id) ?? [];
-  const { data: missionDefs } = missionIds.length
-    ? await supabase.from("daily_missions").select("*").in("id", missionIds)
-    : { data: [] };
+  const userMissionMap = new Map(userMissions?.map((row) => [row.mission_id, row]) ?? []);
 
-  const missionMap = new Map(missionDefs?.map((m) => [m.id, m]) ?? []);
-
-  return (data ?? []).map((um) => {
-    const mission = missionMap.get(um.mission_id);
+  return missionDefs.map((mission) => {
+    const um = userMissionMap.get(mission.id);
     return {
-      id: um.id,
-      currentValue: um.current_value,
-      targetValue: mission?.target_value ?? 1,
-      isCompleted: um.is_completed,
-      title: mission?.title ?? "",
-      description: mission?.description ?? null,
-      xpReward: mission?.xp_reward ?? 0,
-      coinReward: mission?.coin_reward ?? 0,
-      missionType: mission?.mission_type ?? "",
+      id: um?.id ?? mission.id,
+      currentValue: um?.current_value ?? 0,
+      targetValue: mission.target_value,
+      isCompleted: um?.is_completed ?? false,
+      title: mission.title,
+      description: mission.description,
+      xpReward: mission.xp_reward,
+      coinReward: mission.coin_reward,
+      missionType: mission.mission_type,
     };
   });
 }

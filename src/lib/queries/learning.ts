@@ -37,68 +37,74 @@ export async function getLearningPath(
 
   const programId = level.program_id;
 
-  const { data: program } = await supabase
-    .from("programs")
-    .select("id, name, slug")
-    .eq("id", level.program_id)
-    .single();
+  const [{ data: program }, { data: skills }, allProgress] = await Promise.all([
+    supabase.from("programs").select("id, name, slug").eq("id", programId).single(),
+    supabase
+      .from("skills")
+      .select("*")
+      .eq("level_id", levelId)
+      .eq("is_active", true)
+      .order("sort_order"),
+    fetchUserLessonProgress(supabase, userId, programId),
+  ]);
 
-  if (!program) return null;
+  if (!program || !skills?.length) return null;
 
-  const { data: skills } = await supabase
-    .from("skills")
+  const skillIds = skills.map((skill) => skill.id);
+
+  const { data: units } = await supabase
+    .from("units")
     .select("*")
-    .eq("level_id", levelId)
+    .in("skill_id", skillIds)
     .eq("is_active", true)
     .order("sort_order");
 
-  if (!skills) return null;
-
-  const allProgress = await fetchUserLessonProgress(supabase, userId, programId);
-
-  const progressMap = new Map(allProgress.map((p) => [p.lesson_id, p]));
-
-  const skillsWithContent: Skill[] = [];
-
-  for (const skill of skills) {
-    const { data: units } = await supabase
-      .from("units")
-      .select("*")
-      .eq("skill_id", skill.id)
-      .eq("is_active", true)
-      .order("sort_order");
-
-    const unitsWithLessons: Unit[] = [];
-
-    for (const unit of units ?? []) {
-      const { data: lessons } = await supabase
+  const unitIds = units?.map((unit) => unit.id) ?? [];
+  const { data: lessons } = unitIds.length
+    ? await supabase
         .from("lessons")
         .select("*")
-        .eq("unit_id", unit.id)
+        .in("unit_id", unitIds)
         .eq("is_active", true)
-        .order("sort_order");
+        .order("sort_order")
+    : { data: [] as Lesson[] };
 
-      const lessonsWithProgress: LessonWithProgress[] = (lessons ?? []).map((lesson) => {
-        const progress = progressMap.get(lesson.id);
-        return {
-          ...lesson,
-          progress: progress
-            ? {
-                completion_percent: Number(progress.completion_percent),
-                accuracy_percent: Number(progress.accuracy_percent),
-                mastery_level: progress.mastery_level,
-                is_unlocked: progress.is_unlocked,
-                attempts_count: progress.attempts_count,
-              }
-            : undefined,
-        };
-      });
+  const progressMap = new Map(allProgress.map((p) => [p.lesson_id, p]));
+  const unitsBySkill = new Map<string, Unit[]>();
+  const lessonsByUnit = new Map<string, LessonWithProgress[]>();
 
-      unitsWithLessons.push({ ...unit, lessons: lessonsWithProgress });
-    }
-
-    skillsWithContent.push({ ...skill, units: unitsWithLessons });
+  for (const unit of units ?? []) {
+    const bucket = unitsBySkill.get(unit.skill_id) ?? [];
+    bucket.push(unit);
+    unitsBySkill.set(unit.skill_id, bucket);
   }
+
+  for (const lesson of lessons ?? []) {
+    const progress = progressMap.get(lesson.id);
+    const lessonWithProgress: LessonWithProgress = {
+      ...lesson,
+      progress: progress
+        ? {
+            completion_percent: Number(progress.completion_percent),
+            accuracy_percent: Number(progress.accuracy_percent),
+            mastery_level: progress.mastery_level,
+            is_unlocked: progress.is_unlocked,
+            attempts_count: progress.attempts_count,
+          }
+        : undefined,
+    };
+    const bucket = lessonsByUnit.get(lesson.unit_id) ?? [];
+    bucket.push(lessonWithProgress);
+    lessonsByUnit.set(lesson.unit_id, bucket);
+  }
+
+  const skillsWithContent: Skill[] = skills.map((skill) => ({
+    ...skill,
+    units: (unitsBySkill.get(skill.id) ?? []).map((unit) => ({
+      ...unit,
+      lessons: lessonsByUnit.get(unit.id) ?? [],
+    })),
+  }));
 
   return {
     program,
@@ -277,17 +283,87 @@ export async function getNextUnlockedLesson(
   userId: string,
   levelId: string
 ): Promise<LessonWithProgress | null> {
-  const path = await getLearningPath(userId, levelId);
-  if (!path) return null;
+  return getNextUnlockedLessonFast(userId, levelId);
+}
 
-  for (const skill of path.skills) {
-    for (const unit of skill.units ?? []) {
-      for (const lesson of unit.lessons ?? []) {
-        const isUnlocked = isLessonUnlockedFromProgress(lesson.progress);
-        const notComplete = (lesson.progress?.completion_percent ?? 0) < 100;
-        if (isUnlocked && notComplete) return lesson;
-      }
-    }
+export async function getNextUnlockedLessonFast(
+  userId: string,
+  levelId: string
+): Promise<LessonWithProgress | null> {
+  const supabase = await createClient();
+
+  const { data: skills } = await supabase
+    .from("skills")
+    .select("id, sort_order")
+    .eq("level_id", levelId)
+    .eq("is_active", true)
+    .order("sort_order");
+
+  if (!skills?.length) return null;
+
+  const skillIds = skills.map((skill) => skill.id);
+
+  const { data: units } = await supabase
+    .from("units")
+    .select("id, skill_id, sort_order")
+    .in("skill_id", skillIds)
+    .eq("is_active", true)
+    .order("sort_order");
+
+  if (!units?.length) return null;
+
+  const unitIds = units.map((unit) => unit.id);
+
+  const { data: lessons } = await supabase
+    .from("lessons")
+    .select("*")
+    .in("unit_id", unitIds)
+    .eq("is_active", true)
+    .order("sort_order");
+
+  if (!lessons?.length) return null;
+
+  const lessonIds = lessons.map((lesson) => lesson.id);
+
+  const { data: progressRows } = await supabase
+    .from("lesson_progress")
+    .select("*")
+    .eq("user_id", userId)
+    .in("lesson_id", lessonIds);
+
+  const progressMap = new Map(progressRows?.map((row) => [row.lesson_id, row]) ?? []);
+  const skillOrder = new Map(skills.map((skill) => [skill.id, skill.sort_order]));
+  const unitOrder = new Map(units.map((unit) => [unit.id, unit.sort_order]));
+  const unitSkill = new Map(units.map((unit) => [unit.id, unit.skill_id]));
+
+  const sortedLessons = [...lessons].sort((a, b) => {
+    const skillA = skillOrder.get(unitSkill.get(a.unit_id) ?? "") ?? 0;
+    const skillB = skillOrder.get(unitSkill.get(b.unit_id) ?? "") ?? 0;
+    if (skillA !== skillB) return skillA - skillB;
+    const unitA = unitOrder.get(a.unit_id) ?? 0;
+    const unitB = unitOrder.get(b.unit_id) ?? 0;
+    if (unitA !== unitB) return unitA - unitB;
+    return a.sort_order - b.sort_order;
+  });
+
+  for (const lesson of sortedLessons) {
+    const progress = progressMap.get(lesson.id);
+    const lessonWithProgress: LessonWithProgress = {
+      ...lesson,
+      progress: progress
+        ? {
+            completion_percent: Number(progress.completion_percent),
+            accuracy_percent: Number(progress.accuracy_percent),
+            mastery_level: progress.mastery_level,
+            is_unlocked: progress.is_unlocked,
+            attempts_count: progress.attempts_count,
+          }
+        : undefined,
+    };
+
+    const isUnlocked = isLessonUnlockedFromProgress(lessonWithProgress.progress);
+    const notComplete = (lessonWithProgress.progress?.completion_percent ?? 0) < 100;
+    if (isUnlocked && notComplete) return lessonWithProgress;
   }
 
   return null;

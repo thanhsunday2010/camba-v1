@@ -12,8 +12,8 @@ export async function dismissRecommendationAction(recommendationId: string) {
   revalidatePath("/dashboard");
 }
 
-export async function fetchActiveRecommendations() {
-  const user = await getSessionUser();
-  if (!user) return [];
-  return getActiveRecommendations(user.id);
+export async function fetchActiveRecommendations(userId?: string) {
+  const resolvedUserId = userId ?? (await getSessionUser())?.id;
+  if (!resolvedUserId) return [];
+  return getActiveRecommendations(resolvedUserId);
 }

@@ -2,15 +2,25 @@ import { NextRequest } from "next/server";
 import createMiddleware from "next-intl/middleware";
 import { routing } from "@/i18n/routing";
 import { updateSession } from "@/lib/supabase/middleware";
+import type { SupportedLocale } from "@/lib/constants";
 
 const intlMiddleware = createMiddleware(routing);
 
 const protectedRoutes = ["/dashboard", "/learning", "/mock-tests", "/profile", "/settings", "/admin", "/placement-test", "/parent", "/teacher"];
 const authRoutes = ["/login", "/register", "/forgot-password"];
 
+function getLocaleFromPathname(pathname: string): SupportedLocale {
+  const segment = pathname.split("/")[1];
+  if (routing.locales.includes(segment as SupportedLocale)) {
+    return segment as SupportedLocale;
+  }
+  return routing.defaultLocale;
+}
+
 export async function middleware(request: NextRequest) {
   const { supabaseResponse, user } = await updateSession(request);
   const pathname = request.nextUrl.pathname;
+  const locale = getLocaleFromPathname(pathname);
 
   const pathnameWithoutLocale = pathname.replace(/^\/(vi|en|zh|ja|ko)/, "") || "/";
 
@@ -23,13 +33,13 @@ export async function middleware(request: NextRequest) {
   );
 
   if (isProtectedRoute && !user) {
-    const loginUrl = new URL("/login", request.url);
+    const loginUrl = new URL(`/${locale}/login`, request.url);
     loginUrl.searchParams.set("redirect", pathnameWithoutLocale);
     return Response.redirect(loginUrl);
   }
 
   if (isAuthRoute && user) {
-    return Response.redirect(new URL("/dashboard", request.url));
+    return Response.redirect(new URL(`/${locale}/dashboard`, request.url));
   }
 
   const intlResponse = intlMiddleware(request);
