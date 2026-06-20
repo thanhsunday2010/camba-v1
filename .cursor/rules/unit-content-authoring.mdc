@@ -1,0 +1,84 @@
+---
+description: Rules for authoring CAMBA unit content JSON (lessons, exercises, questions)
+globs: data/content/**/*.json
+alwaysApply: false
+---
+
+# Unit Content Authoring
+
+When creating or editing unit content, follow these rules. Gold standard: `data/content/starters/unit-01-family-and-friends.json`. Blueprint: `data/curriculum/cambridge-curriculum-map.json`.
+
+## Before Writing
+
+1. Read the target unit from the curriculum map (`slug`, `number`, `title`, `vocabulary`, `grammar`, `readingSkill`, `listeningSkill`).
+2. Confirm `meta.level`, `meta.unitNumber`, `meta.unitSlug`, `meta.unitTitle`, and `meta.curriculumMapVersion` match the map.
+3. Stay within level scope — do not use grammar/vocabulary listed in `grammarScope.notInScope` or above the level's CEFR.
+4. Set copyright: *"Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by YLE [level] task formats only."*
+
+## Required Package Structure
+
+```
+meta → unit → vocabularyBank → grammarReference → lessons[6]
+```
+
+Each unit must have **6 lessons** in order: `vocabulary` → `grammar` → `reading` → `listening` → `writing` → `speaking` (`sortOrder` 0–5).
+
+## Per-Skill Requirements
+
+| Skill | Must include |
+|-------|--------------|
+| **vocabulary** | ~12+ words in `vocabularyBank` (IPA, vietnameseMeaning, exampleSentence, difficulty, qualityScores); MCQ + matching exercises |
+| **grammar** | Items in `grammarReference` with `commonMistakes` (`× → ✓`); MCQ + gap_fill with `template`, `correctAnswers`, `acceptableAnswers` |
+| **reading** | Passage within level text length; `wordCount`, `imagePrompt`; questions with `assessmentType`: main_idea, detail, inference, vocabulary_in_context, sequencing |
+| **listening** | Script with `speakers`, `setting`, `lines`, `audioNotes`; slow clear delivery; `answerKey`; questions answerable only from audio |
+| **writing** | `successCriteria`, `modelAnswer`, weighted `rubric`, `expectedLength` for level |
+| **speaking** | `followUpQuestions`, `suggestedAnswers`, `assessmentCriteria`, `maxDurationSeconds` |
+
+## Question Quality (every question)
+
+Required fields on every question:
+
+```json
+{
+  "skillTag": "vocabulary",
+  "topicTag": "<unit-slug>",
+  "levelTag": "<level-slug>",
+  "difficultyRating": 1,
+  "explanation": "Vietnamese — why correct, common learner error",
+  "qualityScores": {
+    "quality": 0.90,
+    "difficulty": 0.20,
+    "curriculumAlignment": 0.95,
+    "needsReview": false
+  }
+}
+```
+
+- **MCQ**: exactly 3 choices, 1 correct; every wrong choice needs `distractorNote` explaining the pedagogical trap (same initial letter, same word class, plausible but wrong context).
+- **Explanations**: Vietnamese; explain *why*, not just state the answer.
+- **Difficulty**: ramp easy → hard within unit; Starters mostly `difficultyRating` 1–2.
+
+## Quality Thresholds
+
+From `meta.contentReview`:
+
+| Score | Minimum |
+|-------|---------|
+| `reviewThreshold` | 0.75 |
+| `quality` | ≥ 0.88 (core items ≥ 0.90) |
+| `curriculumAlignment` | ≥ 0.93 (target 0.96+) |
+| `needsReview` | `true` if any score < 0.75 |
+
+## Do Not
+
+- Copy Cambridge exam items verbatim.
+- Add grammar/vocabulary outside curriculum map or level scope.
+- Leave MCQ distractors without `distractorNote`.
+- Skip `qualityScores` on vocabulary, exercises, or questions.
+- Publish content with `needsReview: true` without explicit user approval.
+
+## After Writing
+
+1. Validate `meta` fields against `scripts/lib/curriculum-map.mjs` → `validateContentPackage()`.
+2. Compare structure and field completeness to unit-01 gold standard.
+3. Seed with `node scripts/seed-unit.mjs` (or level-specific seed script) only after validation passes.
