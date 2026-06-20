@@ -78,6 +78,13 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
   const [activeExerciseIndex, setActiveExerciseIndex] = useState<number | null>(null);
   const [completedExercises, setCompletedExercises] = useState<Set<string>>(new Set());
 
+  function openNextExercise() {
+    setActiveExerciseIndex((current) => {
+      if (current === null || current >= exercises.length - 1) return current;
+      return current + 1;
+    });
+  }
+
   async function handleSubmit(
     exerciseId: string,
     answers: Record<string, UserAnswer>
@@ -96,6 +103,7 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
 
   if (activeExerciseIndex !== null) {
     const exercise = exercises[activeExerciseIndex];
+    const nextExercise = exercises[activeExerciseIndex + 1];
     const content = exercise.content ?? {};
     const prompt =
       (content.prompt as string) ??
@@ -110,6 +118,7 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
 
         {exercise.exercise_type === "writing" ? (
           <WritingExercise
+            key={exercise.id}
             exerciseId={exercise.id}
             lessonId={lessonId}
             title={exercise.title}
@@ -120,9 +129,12 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
             targetLevel={content.targetLevel as string | undefined}
             labels={AI_FEEDBACK_LABELS}
             onComplete={() => handleAiComplete(exercise.id)}
+            nextExerciseTitle={nextExercise?.title}
+            onNextExercise={nextExercise ? openNextExercise : undefined}
           />
         ) : exercise.exercise_type === "speaking" ? (
           <SpeakingExercise
+            key={exercise.id}
             exerciseId={exercise.id}
             lessonId={lessonId}
             title={exercise.title}
@@ -132,9 +144,12 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
             targetLevel={content.targetLevel as string | undefined}
             labels={AI_FEEDBACK_LABELS}
             onComplete={() => handleAiComplete(exercise.id)}
+            nextExerciseTitle={nextExercise?.title}
+            onNextExercise={nextExercise ? openNextExercise : undefined}
           />
         ) : (
           <ExercisePlayer
+            key={exercise.id}
             questions={exercise.questions ?? []}
             title={exercise.title}
             instructions={exercise.instructions}
@@ -143,10 +158,9 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
             onSubmit={(answers) => handleSubmit(exercise.id, answers)}
             onComplete={() => {
               handleAiComplete(exercise.id);
-              if (activeExerciseIndex < exercises.length - 1) {
-                setTimeout(() => setActiveExerciseIndex(activeExerciseIndex + 1), 1500);
-              }
             }}
+            nextExerciseTitle={nextExercise?.title}
+            onNextExercise={nextExercise ? openNextExercise : undefined}
           />
         )}
       </div>

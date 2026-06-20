@@ -5,7 +5,7 @@ import { submitSpeakingForFeedback } from "@/actions/ai/speaking";
 import { AiFeedbackPanel } from "@/components/ai/ai-feedback-panel";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Loader2, Mic, Square } from "lucide-react";
+import { ChevronRight, Loader2, Mic, Square } from "lucide-react";
 import { useSpeechRecognition } from "@/lib/speech/use-speech-recognition";
 import { readBlobAsBase64 } from "@/lib/speech/blob-to-base64";
 import { toast } from "sonner";
@@ -41,6 +41,8 @@ interface SpeakingExerciseProps {
     transcriptUnsupported: string;
   };
   onComplete?: () => void;
+  nextExerciseTitle?: string;
+  onNextExercise?: () => void;
 }
 
 export function SpeakingExercise({
@@ -53,6 +55,8 @@ export function SpeakingExercise({
   targetLevel,
   labels,
   onComplete,
+  nextExerciseTitle,
+  onNextExercise,
 }: SpeakingExerciseProps) {
   const [feedback, setFeedback] = useState<SpeakingFeedback | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -159,7 +163,24 @@ export function SpeakingExercise({
   }
 
   if (feedback) {
-    return <AiFeedbackPanel type="speaking" feedback={feedback} labels={labels} />;
+    return (
+      <AiFeedbackPanel
+        type="speaking"
+        feedback={feedback}
+        labels={labels}
+        actions={
+          onNextExercise ? (
+            <div className="flex justify-end">
+              <Button onClick={onNextExercise}>
+                Bài tiếp theo
+                {nextExerciseTitle ? `: ${nextExerciseTitle}` : ""}
+                <ChevronRight className="h-4 w-4" />
+              </Button>
+            </div>
+          ) : undefined
+        }
+      />
+    );
   }
 
   return (

@@ -5,7 +5,7 @@ import { submitWritingForFeedback } from "@/actions/ai/writing";
 import { AiFeedbackPanel } from "@/components/ai/ai-feedback-panel";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Loader2, PenLine } from "lucide-react";
+import { ChevronRight, Loader2, PenLine } from "lucide-react";
 import { toast } from "sonner";
 import type { WritingFeedback } from "@/types/ai";
 
@@ -36,6 +36,8 @@ interface WritingExerciseProps {
     overallScore: string;
   };
   onComplete?: () => void;
+  nextExerciseTitle?: string;
+  onNextExercise?: () => void;
 }
 
 export function WritingExercise({
@@ -49,6 +51,8 @@ export function WritingExercise({
   targetLevel,
   labels,
   onComplete,
+  nextExerciseTitle,
+  onNextExercise,
 }: WritingExerciseProps) {
   const [content, setContent] = useState("");
   const [feedback, setFeedback] = useState<WritingFeedback | null>(null);
@@ -97,6 +101,17 @@ export function WritingExercise({
         type="writing"
         feedback={feedback}
         labels={labels}
+        actions={
+          onNextExercise ? (
+            <div className="flex justify-end">
+              <Button onClick={onNextExercise}>
+                Bài tiếp theo
+                {nextExerciseTitle ? `: ${nextExerciseTitle}` : ""}
+                <ChevronRight className="h-4 w-4" />
+              </Button>
+            </div>
+          ) : undefined
+        }
       />
     );
   }

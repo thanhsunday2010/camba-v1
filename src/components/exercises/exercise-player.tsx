@@ -145,6 +145,8 @@ interface ExercisePlayerProps {
   showListeningTranscript?: boolean;
   onSubmit: (answers: Record<string, UserAnswer>) => Promise<ExerciseResult | null>;
   onComplete?: (result: ExerciseResult) => void;
+  nextExerciseTitle?: string;
+  onNextExercise?: () => void;
 }
 
 export function ExercisePlayer({
@@ -156,6 +158,8 @@ export function ExercisePlayer({
   showListeningTranscript = false,
   onSubmit,
   onComplete,
+  nextExerciseTitle,
+  onNextExercise,
 }: ExercisePlayerProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, UserAnswer>>({});
@@ -237,6 +241,15 @@ export function ExercisePlayer({
               );
             })}
           </div>
+          {onNextExercise && (
+            <div className="flex justify-end">
+              <Button onClick={onNextExercise}>
+                Bài tiếp theo
+                {nextExerciseTitle ? `: ${nextExerciseTitle}` : ""}
+                <ChevronRight className="h-4 w-4" />
+              </Button>
+            </div>
+          )}
         </CardContent>
       </Card>
     );

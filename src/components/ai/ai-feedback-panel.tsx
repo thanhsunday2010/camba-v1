@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import type { WritingFeedback, SpeakingFeedback } from "@/types/ai";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Star, TrendingUp, BookOpen, MessageSquare } from "lucide-react";
@@ -20,9 +21,10 @@ interface AiFeedbackPanelProps {
     overallScore: string;
     transcript?: string;
   };
+  actions?: ReactNode;
 }
 
-export function AiFeedbackPanel({ type, feedback, labels }: AiFeedbackPanelProps) {
+export function AiFeedbackPanel({ type, feedback, labels, actions }: AiFeedbackPanelProps) {
   const writing = type === "writing" ? (feedback as WritingFeedback) : null;
   const speaking = type === "speaking" ? (feedback as SpeakingFeedback) : null;
 
@@ -96,6 +98,8 @@ export function AiFeedbackPanel({ type, feedback, labels }: AiFeedbackPanelProps
             )}
           </>
         )}
+
+        {actions}
       </CardContent>
     </Card>
   );
