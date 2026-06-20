@@ -77,7 +77,9 @@ export default async function SettingsPage() {
               currentLevelId={programContext.levelId}
               labels={{
                 title: tp("levelTitle"),
-                subtitle: tp("levelSubtitle"),
+                subtitle: programContext.levelId
+                  ? tp("levelChangeSubtitle")
+                  : tp("levelSubtitle"),
                 select: tp("levelSelect"),
                 selecting: tp("selecting"),
                 current: tp("currentLevel"),

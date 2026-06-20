@@ -44,6 +44,8 @@ export default async function LearningPage() {
     );
   }
 
+  const levels = await fetchLevelsForProgram(programContext.programId);
+
   await initializeLessonUnlocks(user.id, gamification.current_level_id);
   const path = await getLearningPath(user.id, gamification.current_level_id);
 
@@ -69,6 +71,21 @@ export default async function LearningPage() {
         <h1 className="text-2xl font-bold text-gray-900">{t("title")}</h1>
         <p className="text-sm text-gray-500 mt-1">{t("subtitle")}</p>
       </div>
+
+      {levels.length > 0 && (
+        <LevelPicker
+          levels={levels}
+          currentLevelId={gamification.current_level_id}
+          labels={{
+            title: tp("levelTitle"),
+            subtitle: tp("levelChangeSubtitle"),
+            select: tp("levelSelect"),
+            selecting: tp("selecting"),
+            current: tp("currentLevel"),
+            startLearning: tp("startLearning"),
+          }}
+        />
+      )}
 
       <LearningUnitPath
         levelName={path.level.name}

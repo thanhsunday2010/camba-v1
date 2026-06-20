@@ -315,6 +315,7 @@
     "switch": "Switch to",
     "levelTitle": "Choose learning level",
     "levelSubtitle": "You learn sequentially from the first lesson of your chosen level",
+    "levelChangeSubtitle": "Switch level anytime — the lesson list updates to match your selection",
     "levelSelect": "Select this level",
     "currentLevel": "Current level",
     "startLearning": "Start learning"

@@ -315,6 +315,7 @@
     "switch": "Chuyển sang",
     "levelTitle": "Chọn level học",
     "levelSubtitle": "Bạn học tuần tự từ bài đầu tiên của level đã chọn",
+    "levelChangeSubtitle": "Đổi level bất cứ lúc nào — danh sách bài học sẽ cập nhật theo level",
     "levelSelect": "Chọn level này",
     "currentLevel": "Level hiện tại",
     "startLearning": "Bắt đầu học"

@@ -40,10 +40,12 @@ export function LevelPicker({
   function handleSelect(levelId: string) {
     startTransition(async () => {
       const result = await selectLevel(levelId);
-      if (result.success && redirectToLearning) {
-        router.push("/learning");
-      } else if (result.success) {
-        router.refresh();
+      if (result.success) {
+        if (redirectToLearning) {
+          router.push("/learning");
+        } else {
+          router.refresh();
+        }
       }
     });
   }

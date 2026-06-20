@@ -108,14 +108,16 @@ export default async function DashboardPage() {
         />
       )}
 
-      {programContext?.programId && !gamification?.current_level_id && levels.length > 0 && (
+      {programContext?.programId && levels.length > 0 && (
         <LevelPicker
           levels={levels}
-          currentLevelId={null}
+          currentLevelId={gamification?.current_level_id ?? null}
           redirectToLearning
           labels={{
             title: tp("levelTitle"),
-            subtitle: tp("levelSubtitle"),
+            subtitle: gamification?.current_level_id
+              ? tp("levelChangeSubtitle")
+              : tp("levelSubtitle"),
             select: tp("levelSelect"),
             selecting: tp("selecting"),
             current: tp("currentLevel"),
