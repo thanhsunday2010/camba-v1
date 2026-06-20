@@ -1,0 +1,3026 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by A2 Key task formats only.",
+    "program": "cambridge-english",
+    "level": "ket",
+    "cefr": "a2",
+    "unitNumber": 11,
+    "unitSlug": "personal-relationships",
+    "unitTitle": "Personal Relationships",
+    "targetAge": "11-14",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Use core personal relationship vocabulary at A2 level.",
+      "Use present perfect with ever/never to talk about experiences with friends and neighbours.",
+      "Use because, when and although in sentences about relationships.",
+      "Understand opinions in short online texts.",
+      "Listen to short extracts and identify main ideas about invitations and apologies.",
+      "Write a short message to apologise or accept an invitation.",
+      "Answer interview questions about friendships and neighbours."
+    ],
+    "grammarFocus": [
+      "Present perfect with experience",
+      "Conjunctions: because, when, although (basic)"
+    ],
+    "readingSkillFocus": "Understand Opinion in Short Texts",
+    "listeningSkillFocus": "Multiple Choice Pictures (Short Extracts)"
+  },
+  "vocabularyBank": [
+    {
+      "word": "neighbour",
+      "ipa": "/ˈneɪbə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "hàng xóm",
+      "exampleSentence": "Our neighbour often brings us fruit from her garden.",
+      "difficulty": 1,
+      "topic": "personal-relationships",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "invitation",
+      "ipa": "/ˌɪnvɪˈteɪʃn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "lời mời",
+      "exampleSentence": "I got an invitation to Mai's birthday party.",
+      "difficulty": 1,
+      "topic": "personal-relationships",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "apologise",
+      "ipa": "/əˈpɒlədʒaɪz/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "xin lỗi",
+      "exampleSentence": "He called to apologise for being late.",
+      "difficulty": 2,
+      "topic": "personal-relationships",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "congratulate",
+      "ipa": "/kənˈɡrætʃuleɪt/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "chúc mừng",
+      "exampleSentence": "We congratulated her on her new job.",
+      "difficulty": 2,
+      "topic": "personal-relationships",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "relationship",
+      "ipa": "/rɪˈleɪʃnʃɪp/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "mối quan hệ",
+      "exampleSentence": "They have a good relationship with their neighbours.",
+      "difficulty": 2,
+      "topic": "personal-relationships",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "trust",
+      "ipa": "/trʌst/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "tin tưởng",
+      "exampleSentence": "I trust my best friend with my secrets.",
+      "difficulty": 1,
+      "topic": "personal-relationships",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "argue",
+      "ipa": "/ˈɑːɡjuː/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "cãi nhau",
+      "exampleSentence": "Brothers sometimes argue about small things.",
+      "difficulty": 2,
+      "topic": "personal-relationships",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "forgive",
+      "ipa": "/fəˈɡɪv/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "tha thứ",
+      "exampleSentence": "She forgave him after he apologised.",
+      "difficulty": 2,
+      "topic": "personal-relationships",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "friendship",
+      "ipa": "/ˈfrendʃɪp/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "tình bạn",
+      "exampleSentence": "Their friendship started in primary school.",
+      "difficulty": 1,
+      "topic": "personal-relationships",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "support",
+      "ipa": "/səˈpɔːt/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "hỗ trợ / ủng hộ",
+      "exampleSentence": "Good friends support each other in difficult times.",
+      "difficulty": 2,
+      "topic": "personal-relationships",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "jealous",
+      "ipa": "/ˈdʒeləs/",
+      "partOfSpeech": "adjective",
+      "vietnameseMeaning": "ghen tị",
+      "exampleSentence": "He felt jealous when his friend got a new phone.",
+      "difficulty": 2,
+      "topic": "personal-relationships",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "colleague",
+      "ipa": "/ˈkɒliːɡ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "đồng nghiệp",
+      "exampleSentence": "My mum invited a colleague to dinner.",
+      "difficulty": 2,
+      "topic": "personal-relationships",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Present perfect with experience (ever / never)",
+      "explanation": "Use present perfect (have/has + past participle) with ever or never to talk about life experiences up to now. Ever goes in questions; never replaces not.",
+      "examples": [
+        "I have never argued with my neighbour.",
+        "Have you ever congratulated a friend online?",
+        "She has always trusted her best friend."
+      ],
+      "commonMistakes": [
+        "I never have met her (×) → I have never met her (✓)",
+        "Did you ever visit them? (×) → Have you ever visited them? (✓)",
+        "She has never forgive him (×) → She has never forgiven him (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "personal-relationships"
+    },
+    {
+      "structure": "Conjunctions: because, when, although",
+      "explanation": "Use because to give a reason, when to show time, and although to show contrast. At A2, keep clauses short and clear.",
+      "examples": [
+        "I apologised because I was late.",
+        "When we argue, we usually forgive each other quickly.",
+        "Although we are neighbours, we are also close friends."
+      ],
+      "commonMistakes": [
+        "I was late because of I missed the bus (×) → I was late because I missed the bus (✓)",
+        "Although it was raining, but we went out (×) → Although it was raining, we went out (✓)",
+        "When I will arrive, call me (×) → When I arrive, call me (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "personal-relationships"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-relationship-words",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Personal Relationship Words",
+      "learningObjective": "Recognise and understand twelve personal relationship words at KET A2 level.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "vocab-relationship-learn",
+          "title": "Learn: Relationship Word Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "A person who lives next to your house is your _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Neighbour (hàng xóm) là người sống cạnh nhà bạn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "colleague",
+                  "isCorrect": false,
+                  "distractorNote": "Works with you, not next door"
+                },
+                {
+                  "text": "neighbour",
+                  "isCorrect": true
+                },
+                {
+                  "text": "invitation",
+                  "isCorrect": false,
+                  "distractorNote": "A message to come to an event"
+                }
+              ]
+            },
+            {
+              "questionText": "A card or message asking you to come to a party is an _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Invitation (lời mời) mời bạn đến sự kiện.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "relationship",
+                  "isCorrect": false,
+                  "distractorNote": "Connection between people"
+                },
+                {
+                  "text": "invitation",
+                  "isCorrect": true
+                },
+                {
+                  "text": "trust",
+                  "isCorrect": false,
+                  "distractorNote": "To believe someone"
+                }
+              ]
+            },
+            {
+              "questionText": "When you say sorry for a mistake, you _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Apologise (xin lỗi) khi bạn nhận lỗi.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "congratulate",
+                  "isCorrect": false,
+                  "distractorNote": "Say well done"
+                },
+                {
+                  "text": "apologise",
+                  "isCorrect": true
+                },
+                {
+                  "text": "argue",
+                  "isCorrect": false,
+                  "distractorNote": "Have an angry discussion"
+                }
+              ]
+            },
+            {
+              "questionText": "When your friend passes an exam, you _____ them.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Congratulate (chúc mừng) khi ai đó thành công.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "forgive",
+                  "isCorrect": false,
+                  "distractorNote": "Stop being angry"
+                },
+                {
+                  "text": "congratulate",
+                  "isCorrect": true
+                },
+                {
+                  "text": "trust",
+                  "isCorrect": false,
+                  "distractorNote": "Believe someone is honest"
+                }
+              ]
+            },
+            {
+              "questionText": "The connection between two people is their _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Relationship (mối quan hệ) mô tả cách hai người liên kết.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "friendship",
+                  "isCorrect": false,
+                  "distractorNote": "Specifically between friends"
+                },
+                {
+                  "text": "relationship",
+                  "isCorrect": true
+                },
+                {
+                  "text": "neighbour",
+                  "isCorrect": false,
+                  "distractorNote": "A person, not a connection"
+                }
+              ]
+            },
+            {
+              "questionText": "If you believe someone will not hurt you, you _____ them.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Trust (tin tưởng) nghĩa là tin người đó trung thực.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "argue",
+                  "isCorrect": false,
+                  "distractorNote": "Disagree angrily"
+                },
+                {
+                  "text": "trust",
+                  "isCorrect": true
+                },
+                {
+                  "text": "support",
+                  "isCorrect": false,
+                  "distractorNote": "Help someone"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-relationship-matching",
+          "title": "Practice: Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the relationship words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Mỗi từ khớp với một nghĩa rõ ràng. Argue và forgive thường đi cùng nhau trong mâu thuẫn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "argue",
+                  "right": "to disagree angrily with someone"
+                },
+                {
+                  "left": "forgive",
+                  "right": "to stop being angry with someone"
+                },
+                {
+                  "left": "friendship",
+                  "right": "a close bond between friends"
+                },
+                {
+                  "left": "colleague",
+                  "right": "someone you work with"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-relationship-check",
+          "title": "Check: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "She felt _____ when her best friend spent time with someone else.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Jealous (ghen tị) khi lo bạn bè quan tâm người khác hơn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "trust",
+                  "isCorrect": false,
+                  "distractorNote": "Positive feeling"
+                },
+                {
+                  "text": "jealous",
+                  "isCorrect": true
+                },
+                {
+                  "text": "support",
+                  "isCorrect": false,
+                  "distractorNote": "To help"
+                }
+              ]
+            },
+            {
+              "questionText": "Good friends always _____ each other in difficult times.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Support (hỗ trợ) nghĩa là giúp đỡ lẫn nhau.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "argue",
+                  "isCorrect": false,
+                  "distractorNote": "Negative action"
+                },
+                {
+                  "text": "support",
+                  "isCorrect": true
+                },
+                {
+                  "text": "apologise",
+                  "isCorrect": false,
+                  "distractorNote": "Say sorry"
+                }
+              ]
+            },
+            {
+              "questionText": "After they argued, he asked her to _____ him.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Forgive (tha thứ) sau khi cãi nhau và xin lỗi.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "congratulate",
+                  "isCorrect": false,
+                  "distractorNote": "Celebrate success"
+                },
+                {
+                  "text": "forgive",
+                  "isCorrect": true
+                },
+                {
+                  "text": "trust",
+                  "isCorrect": false,
+                  "distractorNote": "Believe — wrong context after argument"
+                }
+              ]
+            },
+            {
+              "questionText": "Their _____ grew stronger after they helped each other every day.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Friendship (tình bạn) phát triển khi bạn hỗ trợ nhau.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "invitation",
+                  "isCorrect": false,
+                  "distractorNote": "A party message"
+                },
+                {
+                  "text": "friendship",
+                  "isCorrect": true
+                },
+                {
+                  "text": "neighbour",
+                  "isCorrect": false,
+                  "distractorNote": "A person next door"
+                }
+              ]
+            },
+            {
+              "questionText": "My dad's _____ from work came to our barbecue last Sunday.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Colleague (đồng nghiệp) là người làm cùng nơi.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "neighbour",
+                  "isCorrect": false,
+                  "distractorNote": "Lives nearby"
+                },
+                {
+                  "text": "colleague",
+                  "isCorrect": true
+                },
+                {
+                  "text": "relationship",
+                  "isCorrect": false,
+                  "distractorNote": "Abstract connection word"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-relationship-apply",
+          "title": "Apply: Words in Sentences",
+          "instructions": "Complete each sentence with the correct word from the unit.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.36,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: I got an [0] to Hana's party. | Our [1] waters our plants when we travel. | Please [2] — I broke your cup.",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "invitation (lời mời); neighbour (hàng xóm); apologise (xin lỗi).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "I got an [0] to Hana's party. Our [1] waters our plants when we travel. Please [2] — I broke your cup.",
+                "correctAnswers": [
+                  "invitation",
+                  "neighbour",
+                  "apologise"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "invitation",
+                    "Invitation"
+                  ],
+                  [
+                    "neighbour",
+                    "neighbor",
+                    "Neighbour",
+                    "Neighbor"
+                  ],
+                  [
+                    "apologise",
+                    "apologize",
+                    "Apologise",
+                    "Apologize"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: I [0] my sister on her new job. | We should [1] each other and not [2] about small things.",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "congratulated (chúc mừng); trust (tin tưởng); argue (cãi nhau).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "I [0] my sister on her new job. We should [1] each other and not [2] about small things.",
+                "correctAnswers": [
+                  "congratulated",
+                  "trust",
+                  "argue"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "congratulated",
+                    "Congratulated"
+                  ],
+                  [
+                    "trust",
+                    "Trust"
+                  ],
+                  [
+                    "argue",
+                    "Argue"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-relationship-experience",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e5000011-0000-4000-8000-000000000001",
+      "title": "Lesson 2: Experience and Connecting Ideas",
+      "learningObjective": "Use present perfect with ever/never and conjunctions because, when and although to talk about relationships.",
+      "estimatedMinutes": 24,
+      "exercises": [
+        {
+          "slug": "grammar-experience-learn",
+          "title": "Learn: Ever, Never and Conjunctions",
+          "instructions": "Choose the correct word or phrase to complete each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "I have _____ argued with my best friend.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Never + present perfect: have never argued.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "ever",
+                  "isCorrect": false,
+                  "distractorNote": "Used in questions"
+                },
+                {
+                  "text": "never",
+                  "isCorrect": true
+                },
+                {
+                  "text": "since",
+                  "isCorrect": false,
+                  "distractorNote": "Needs a time point"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ you ever congratulated a friend online?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Have you ever...? — câu hỏi kinh nghiệm.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Did",
+                  "isCorrect": false,
+                  "distractorNote": "Past simple question"
+                },
+                {
+                  "text": "Have",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Are",
+                  "isCorrect": false,
+                  "distractorNote": "Present continuous"
+                }
+              ]
+            },
+            {
+              "questionText": "I apologised _____ I was late to the party.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Because + lý do: I was late.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "although",
+                  "isCorrect": false,
+                  "distractorNote": "Shows contrast"
+                },
+                {
+                  "text": "because",
+                  "isCorrect": true
+                },
+                {
+                  "text": "when",
+                  "isCorrect": false,
+                  "distractorNote": "Shows time, not reason"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ we are neighbours, we are also close friends.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Although + contrast: neighbours but also friends.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Because",
+                  "isCorrect": false,
+                  "distractorNote": "Gives reason, not contrast"
+                },
+                {
+                  "text": "Although",
+                  "isCorrect": true
+                },
+                {
+                  "text": "When",
+                  "isCorrect": false,
+                  "distractorNote": "Shows time"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ I saw the invitation, I called my friend immediately.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "When + thời điểm: at the moment I saw it.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Although",
+                  "isCorrect": false,
+                  "distractorNote": "Contrast"
+                },
+                {
+                  "text": "When",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Because",
+                  "isCorrect": false,
+                  "distractorNote": "Reason"
+                }
+              ]
+            },
+            {
+              "questionText": "She has _____ forgiven him after the argument.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Present perfect: has forgiven (past participle).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "forgive",
+                  "isCorrect": false,
+                  "distractorNote": "Base form after has"
+                },
+                {
+                  "text": "forgiven",
+                  "isCorrect": true
+                },
+                {
+                  "text": "forgave",
+                  "isCorrect": false,
+                  "distractorNote": "Past simple"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-experience-practice",
+          "title": "Practice: Complete the Grammar",
+          "instructions": "Fill in each gap with the correct form.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: I [0] never had a serious argument with my neighbour. | [1] you ever trusted a new friend quickly? | She apologised [2] she forgot the invitation.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 3,
+              "explanation": "have (present perfect); Have (question); because (reason).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "I [0] never had a serious argument with my neighbour. [1] you ever trusted a new friend quickly? She apologised [2] she forgot the invitation.",
+                "correctAnswers": [
+                  "have",
+                  "Have",
+                  "because"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "have",
+                    "Have"
+                  ],
+                  [
+                    "Have",
+                    "have"
+                  ],
+                  [
+                    "because",
+                    "Because"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: [0] they argue, they usually forgive each other. | [1] we live on the same street, we don't know each other well. | He has [2] congratulated a colleague online.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 3,
+              "explanation": "When (time); Although (contrast); never (experience).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "[0] they argue, they usually forgive each other. [1] we live on the same street, we don't know each other well. He has [2] congratulated a colleague online.",
+                "correctAnswers": [
+                  "When",
+                  "Although",
+                  "never"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "When",
+                    "when"
+                  ],
+                  [
+                    "Although",
+                    "although"
+                  ],
+                  [
+                    "never",
+                    "Never"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "grammar-experience-check",
+          "title": "Check: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.38,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "My neighbour and I have known each other _____ five years.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "For + khoảng thời gian với present perfect.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "since",
+                  "isCorrect": false,
+                  "distractorNote": "Since + point in time"
+                },
+                {
+                  "text": "for",
+                  "isCorrect": true
+                },
+                {
+                  "text": "when",
+                  "isCorrect": false,
+                  "distractorNote": "Conjunction for time clause"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ I was jealous, I didn't argue with my friend.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Although + contrast: felt jealous but stayed calm.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Because",
+                  "isCorrect": false,
+                  "distractorNote": "Would mean jealousy caused no argument"
+                },
+                {
+                  "text": "Although",
+                  "isCorrect": true
+                },
+                {
+                  "text": "When",
+                  "isCorrect": false,
+                  "distractorNote": "Time, not contrast"
+                }
+              ]
+            },
+            {
+              "questionText": "Have you ever _____ to a neighbour for playing loud music?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Have you ever apologised — past participle after ever.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "apologise",
+                  "isCorrect": false,
+                  "distractorNote": "Base form after have"
+                },
+                {
+                  "text": "apologised",
+                  "isCorrect": true
+                },
+                {
+                  "text": "apologising",
+                  "isCorrect": false,
+                  "distractorNote": "Gerund form"
+                }
+              ]
+            },
+            {
+              "questionText": "I called her _____ I wanted to congratulate her.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Because gives the reason for calling.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "although",
+                  "isCorrect": false,
+                  "distractorNote": "Contrast not needed"
+                },
+                {
+                  "text": "because",
+                  "isCorrect": true
+                },
+                {
+                  "text": "when",
+                  "isCorrect": false,
+                  "distractorNote": "When focuses on time of calling"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-relationship-order",
+          "title": "Apply: Build the Sentence",
+          "instructions": "Put the words in the correct order to make a sentence.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.4,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: I / have never / argued / with / my neighbour.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "I have never argued with my neighbour. — present perfect + never.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "have never"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "argued"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "with"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "my neighbour."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5"
+                ]
+              },
+              "topicTag": "personal-relationships",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: Although / we argue / sometimes, / we / always / forgive / each other.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "Although we argue sometimes, we always forgive each other. — although + contrast.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "Although"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "we argue"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "sometimes,"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "we"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "always"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "forgive"
+                  },
+                  {
+                    "id": "w7",
+                    "text": "each other."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6",
+                  "w7"
+                ]
+              },
+              "topicTag": "personal-relationships",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: I / apologised / because / I / was / late.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 3,
+              "points": 2,
+              "explanation": "I apologised because I was late. — because + reason.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "apologised"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "because"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "was"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "late."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6"
+                ]
+              },
+              "topicTag": "personal-relationships",
+              "levelTag": "ket"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-neighbour-opinion",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e5000011-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Neighbour Opinion Text",
+      "learningObjective": "Read a short online post and understand opinions, details and vocabulary in context.",
+      "estimatedMinutes": 23,
+      "exercises": [
+        {
+          "slug": "reading-opinion-learn",
+          "title": "Learn: Read the Online Post",
+          "instructions": "Read the post carefully. Answer the detail questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Online Advice: Neighbours and Noise",
+              "text": "Posted by Linh, age 13\n\nLast week my neighbour played loud music every evening. I felt angry because I couldn't do my homework. My mum said I should talk to him politely first.\n\nI knocked on his door when he came home from work. I explained the problem and he apologised immediately. He didn't know the music was so loud in my room.\n\nIn my opinion, good neighbours communicate before they argue. Although we are different ages, we now have a better relationship. I have never had a serious argument with a neighbour before, but this experience taught me to speak up calmly.\n\nWhat do you think? Should young people always tell an adult first?",
+              "wordCount": 115,
+              "imagePrompt": "A teenager and an adult neighbour talking at a front door; friendly but serious conversation about noise."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Why did Linh feel angry at first?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Loud music stopped her doing homework.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "She lost an invitation",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "Her neighbour played loud music",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Her colleague was late",
+                  "isCorrect": false,
+                  "distractorNote": "Not the problem"
+                }
+              ]
+            },
+            {
+              "questionText": "What did Linh's mum suggest?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Talk to him politely first.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "Call the police",
+                  "isCorrect": false,
+                  "distractorNote": "Not suggested"
+                },
+                {
+                  "text": "Talk to the neighbour politely",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Argue loudly",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite of politely"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-opinion-practice",
+          "title": "Practice: Words in the Post",
+          "instructions": "Read the post again. Answer about vocabulary and meaning.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Online Advice: Neighbours and Noise",
+              "text": "Posted by Linh, age 13\n\nLast week my neighbour played loud music every evening. I felt angry because I couldn't do my homework. My mum said I should talk to him politely first.\n\nI knocked on his door when he came home from work. I explained the problem and he apologised immediately. He didn't know the music was so loud in my room.\n\nIn my opinion, good neighbours communicate before they argue. Although we are different ages, we now have a better relationship. I have never had a serious argument with a neighbour before, but this experience taught me to speak up calmly.\n\nWhat do you think? Should young people always tell an adult first?",
+              "wordCount": 115,
+              "imagePrompt": "A teenager and an adult neighbour talking at a front door; friendly but serious conversation about noise."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "In the post, 'speak up calmly' means to _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Nói rõ vấn đề một cách bình tĩnh, không la lớn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "vocabulary_in_context",
+              "choices": [
+                {
+                  "text": "shout as loudly as possible",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite of calmly"
+                },
+                {
+                  "text": "say what you think in a calm way",
+                  "isCorrect": true
+                },
+                {
+                  "text": "write an invitation",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong context"
+                }
+              ]
+            },
+            {
+              "questionText": "Why does Linh think the neighbour apologised quickly?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "He didn't know the music was so loud in her room.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "inference",
+              "choices": [
+                {
+                  "text": "He was jealous of her",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "He didn't realise the music was loud for her",
+                  "isCorrect": true
+                },
+                {
+                  "text": "He wanted an invitation",
+                  "isCorrect": false,
+                  "distractorNote": "Not in the text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-opinion-check",
+          "title": "Check: Main Idea and Order",
+          "instructions": "Read the post one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Online Advice: Neighbours and Noise",
+              "text": "Posted by Linh, age 13\n\nLast week my neighbour played loud music every evening. I felt angry because I couldn't do my homework. My mum said I should talk to him politely first.\n\nI knocked on his door when he came home from work. I explained the problem and he apologised immediately. He didn't know the music was so loud in my room.\n\nIn my opinion, good neighbours communicate before they argue. Although we are different ages, we now have a better relationship. I have never had a serious argument with a neighbour before, but this experience taught me to speak up calmly.\n\nWhat do you think? Should young people always tell an adult first?",
+              "wordCount": 115,
+              "imagePrompt": "A teenager and an adult neighbour talking at a front door; friendly but serious conversation about noise."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is Linh's main opinion about neighbours?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Good neighbours communicate before they argue.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "Young people should never speak to neighbours",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite of her advice"
+                },
+                {
+                  "text": "They should talk politely before arguing",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Neighbours should always play music",
+                  "isCorrect": false,
+                  "distractorNote": "Not her view"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the events in order: (1) Neighbour apologises (2) Linh talks to neighbour (3) Loud music problem",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Problem → talk → apology.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "sequencing",
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Apology before talk"
+                },
+                {
+                  "text": "3 → 2 → 1",
+                  "isCorrect": true
+                },
+                {
+                  "text": "2 → 3 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Talk before problem"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-opinion-apply",
+          "title": "Apply: Match Facts from the Post",
+          "instructions": "Use what you read. Match each item to the correct fact.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Online Advice: Neighbours and Noise",
+              "text": "Posted by Linh, age 13\n\nLast week my neighbour played loud music every evening. I felt angry because I couldn't do my homework. My mum said I should talk to him politely first.\n\nI knocked on his door when he came home from work. I explained the problem and he apologised immediately. He didn't know the music was so loud in my room.\n\nIn my opinion, good neighbours communicate before they argue. Although we are different ages, we now have a better relationship. I have never had a serious argument with a neighbour before, but this experience taught me to speak up calmly.\n\nWhat do you think? Should young people always tell an adult first?",
+              "wordCount": 115,
+              "imagePrompt": "A teenager and an adult neighbour talking at a front door; friendly but serious conversation about noise."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each topic to a fact from the post.",
+              "questionType": "matching",
+              "skillTag": "reading",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 4,
+              "explanation": "Mỗi mục khớp với thông tin cụ thể trong bài đăng của Linh.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "The problem",
+                  "right": "Loud music every evening"
+                },
+                {
+                  "left": "Linh's action",
+                  "right": "Knocked on the neighbour's door"
+                },
+                {
+                  "left": "Neighbour's reaction",
+                  "right": "Apologised immediately"
+                },
+                {
+                  "left": "Linh's experience",
+                  "right": "Never had a serious argument before"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-relationship-extracts",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e5000011-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Invitations and Apologies",
+      "learningObjective": "Listen to short extracts about invitations and apologies and identify main ideas and details.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "listening-party-learn",
+          "title": "Learn: Birthday Party Invitation",
+          "instructions": "Listen to the phone call. Answer the first two questions.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Birthday Party Invitation",
+              "setting": "Phone call between two friends",
+              "speakers": [
+                {
+                  "name": "Hana",
+                  "role": "friend"
+                },
+                {
+                  "name": "Tom",
+                  "role": "friend"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Hana",
+                  "text": "Hi Tom! I'm calling about my birthday party on Saturday."
+                },
+                {
+                  "speaker": "Tom",
+                  "text": "Oh great! Is it at your house?"
+                },
+                {
+                  "speaker": "Hana",
+                  "text": "No, we're having it in the park near the statue. The invitation says four o'clock."
+                },
+                {
+                  "speaker": "Tom",
+                  "text": "Can I bring my neighbour, Minh? He's new in our street."
+                },
+                {
+                  "speaker": "Hana",
+                  "text": "Of course! Tell him to bring a football. We'll play before the cake."
+                },
+                {
+                  "speaker": "Tom",
+                  "text": "Perfect. I'll congratulate you again on Saturday!"
+                }
+              ],
+              "audioNotes": "Friendly teenage voices, clear pace. Approx. 35 seconds."
+            },
+            "answerKey": {
+              "q1": "birthday party Saturday",
+              "q2": "park near statue 4pm"
+            },
+            "audioUrl": "/audio/listening/ket/unit-11/listening-party-learn.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What is the call mainly about?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Hana calls about her birthday party on Saturday.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "An apology for being late",
+                  "isCorrect": false,
+                  "distractorNote": "Different script"
+                },
+                {
+                  "text": "A birthday party invitation",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A problem with a colleague",
+                  "isCorrect": false,
+                  "distractorNote": "Office topic"
+                }
+              ]
+            },
+            {
+              "questionText": "Where is the party?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "In the park near the statue.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "At Hana's house",
+                  "isCorrect": false,
+                  "distractorNote": "Tom asked but Hana said no"
+                },
+                {
+                  "text": "In the park near the statue",
+                  "isCorrect": true
+                },
+                {
+                  "text": "At Tom's neighbour's house",
+                  "isCorrect": false,
+                  "distractorNote": "Minh is invited, not host"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-party-practice",
+          "title": "Practice: More from the Invitation Call",
+          "instructions": "Listen again to the same call. Answer the next questions.",
+          "exerciseType": "listening",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Birthday Party Invitation",
+              "setting": "Phone call between two friends",
+              "speakers": [
+                {
+                  "name": "Hana",
+                  "role": "friend"
+                },
+                {
+                  "name": "Tom",
+                  "role": "friend"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Hana",
+                  "text": "Hi Tom! I'm calling about my birthday party on Saturday."
+                },
+                {
+                  "speaker": "Tom",
+                  "text": "Oh great! Is it at your house?"
+                },
+                {
+                  "speaker": "Hana",
+                  "text": "No, we're having it in the park near the statue. The invitation says four o'clock."
+                },
+                {
+                  "speaker": "Tom",
+                  "text": "Can I bring my neighbour, Minh? He's new in our street."
+                },
+                {
+                  "speaker": "Hana",
+                  "text": "Of course! Tell him to bring a football. We'll play before the cake."
+                },
+                {
+                  "speaker": "Tom",
+                  "text": "Perfect. I'll congratulate you again on Saturday!"
+                }
+              ],
+              "audioNotes": "Friendly teenage voices, clear pace. Approx. 35 seconds."
+            },
+            "answerKey": {
+              "q1": "bring neighbour Minh",
+              "q2": "bring a football"
+            },
+            "audioUrl": "/audio/listening/ket/unit-11/listening-party-practice.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "Who does Tom want to bring?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "His neighbour Minh, who is new in the street.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "His colleague David",
+                  "isCorrect": false,
+                  "distractorNote": "From apology script"
+                },
+                {
+                  "text": "His neighbour Minh",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Mrs Pham",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "What should Minh bring?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Tell him to bring a football.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "An invitation card",
+                  "isCorrect": false,
+                  "distractorNote": "Topic of call, not to bring"
+                },
+                {
+                  "text": "A football",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A cake",
+                  "isCorrect": false,
+                  "distractorNote": "They will have cake at party"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-apology-check",
+          "title": "Check: Apologising at Work",
+          "instructions": "Listen to a new conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Apologising to a Colleague",
+              "setting": "Office break room",
+              "speakers": [
+                {
+                  "name": "Mrs Pham",
+                  "role": "manager"
+                },
+                {
+                  "name": "David",
+                  "role": "colleague"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "David",
+                  "text": "Mrs Pham, can I speak to you for a minute?"
+                },
+                {
+                  "speaker": "Mrs Pham",
+                  "text": "Yes, David. What's wrong?"
+                },
+                {
+                  "speaker": "David",
+                  "text": "I want to apologise because I was late to the meeting this morning."
+                },
+                {
+                  "speaker": "Mrs Pham",
+                  "text": "Thank you for telling me. Why were you late?"
+                },
+                {
+                  "speaker": "David",
+                  "text": "My bus broke down. I have never been late before."
+                },
+                {
+                  "speaker": "Mrs Pham",
+                  "text": "I understand. Please call when that happens. I trust you will try harder."
+                },
+                {
+                  "speaker": "David",
+                  "text": "I will. Thank you for your support."
+                }
+              ],
+              "audioNotes": "Calm adult voices, polite tone. Approx. 40 seconds."
+            },
+            "answerKey": {
+              "q1": "apologise for being late",
+              "q2": "bus broke down",
+              "q3": "call when it happens"
+            },
+            "audioUrl": "/audio/listening/ket/unit-11/listening-apology-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "Why does David want to speak to Mrs Pham?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "He wants to apologise for being late.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "To invite her to a party",
+                  "isCorrect": false,
+                  "distractorNote": "Party script topic"
+                },
+                {
+                  "text": "To apologise for being late",
+                  "isCorrect": true
+                },
+                {
+                  "text": "To congratulate her",
+                  "isCorrect": false,
+                  "distractorNote": "No celebration mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "Why was David late?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "His bus broke down.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "He argued with a neighbour",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "His bus broke down",
+                  "isCorrect": true
+                },
+                {
+                  "text": "He lost an invitation",
+                  "isCorrect": false,
+                  "distractorNote": "Not the reason"
+                }
+              ]
+            },
+            {
+              "questionText": "What does Mrs Pham ask David to do next time?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Please call when that happens.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Forgive his colleague",
+                  "isCorrect": false,
+                  "distractorNote": "Not requested"
+                },
+                {
+                  "text": "Call her when he will be late",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Never trust the bus",
+                  "isCorrect": false,
+                  "distractorNote": "Not said"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-party-apply",
+          "title": "Apply: Match What You Heard",
+          "instructions": "Listen again to the party invitation call. Match each item to the correct detail.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Birthday Party Invitation",
+              "setting": "Phone call between two friends",
+              "speakers": [
+                {
+                  "name": "Hana",
+                  "role": "friend"
+                },
+                {
+                  "name": "Tom",
+                  "role": "friend"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Hana",
+                  "text": "Hi Tom! I'm calling about my birthday party on Saturday."
+                },
+                {
+                  "speaker": "Tom",
+                  "text": "Oh great! Is it at your house?"
+                },
+                {
+                  "speaker": "Hana",
+                  "text": "No, we're having it in the park near the statue. The invitation says four o'clock."
+                },
+                {
+                  "speaker": "Tom",
+                  "text": "Can I bring my neighbour, Minh? He's new in our street."
+                },
+                {
+                  "speaker": "Hana",
+                  "text": "Of course! Tell him to bring a football. We'll play before the cake."
+                },
+                {
+                  "speaker": "Tom",
+                  "text": "Perfect. I'll congratulate you again on Saturday!"
+                }
+              ],
+              "audioNotes": "Friendly teenage voices, clear pace. Approx. 35 seconds."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each item from the invitation call.",
+              "questionType": "matching",
+              "skillTag": "listening",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "Mỗi mục khớp với chi tiết Hana và Tom nói trong cuộc gọi.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Party day",
+                  "right": "Saturday"
+                },
+                {
+                  "left": "Party time",
+                  "right": "Four o'clock"
+                },
+                {
+                  "left": "Tom's extra guest",
+                  "right": "Neighbour Minh"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-relationship-message",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e5000011-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Apologise or Accept",
+      "learningObjective": "Write a short message apologising or accepting an invitation using relationship vocabulary and conjunctions.",
+      "estimatedMinutes": 25,
+      "exercises": [
+        {
+          "slug": "writing-message-learn",
+          "title": "Learn: Message Phrases",
+          "instructions": "Complete each gap with a word from the unit.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Hi Mai, | I'm sorry — I need to [0]. | I was late [1] my bus broke down. | Thank you for the [2].",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 3,
+              "explanation": "apologise (xin lỗi); because (lý do); invitation (lời mời).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Hi Mai,\n\nI'm sorry — I need to [0]. I was late [1] my bus broke down.\n\nThank you for the [2].",
+                "correctAnswers": [
+                  "apologise",
+                  "because",
+                  "invitation"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "apologise",
+                    "apologize",
+                    "Apologise",
+                    "Apologize"
+                  ],
+                  [
+                    "because",
+                    "Because"
+                  ],
+                  [
+                    "invitation",
+                    "Invitation"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-message-order-practice",
+          "title": "Practice: Build Message Sentences",
+          "instructions": "Put the words in the correct order to make correct sentences for a message.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: I / have never / missed / your / party / before.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "I have never missed your party before. — present perfect experience.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "have never"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "missed"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "your"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "party"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "before."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6"
+                ]
+              },
+              "topicTag": "personal-relationships",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: Although / I / was / busy, / I / will / come.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "Although I was busy, I will come. — although + contrast in a reply.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "Although"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "was"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "busy,"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "will"
+                  },
+                  {
+                    "id": "w7",
+                    "text": "come."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6",
+                  "w7"
+                ]
+              },
+              "topicTag": "personal-relationships",
+              "levelTag": "ket"
+            }
+          ]
+        },
+        {
+          "slug": "writing-message-check",
+          "title": "Check: Apology or Invitation Reply",
+          "instructions": "Write a short message. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Your friend Hana sent you an invitation to her birthday party in the park on Saturday. You were late to school today and want to apologise to your teacher in a message. Write ONE short message — choose either replying to Hana OR apologising to your teacher.",
+            "prompts": [
+              "Say who you are writing to and why.",
+              "Use because, when or although in at least one sentence.",
+              "Use at least two unit words (e.g. invitation, apologise, neighbour, congratulate).",
+              "End the message politely."
+            ],
+            "expectedLength": "At least 25 words",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Clear purpose (apology or invitation reply)",
+              "Uses because, when or although",
+              "Polite opening and closing",
+              "Uses at least two unit vocabulary words"
+            ],
+            "modelAnswer": {
+              "text": "Hi Hana,\n\nThank you for the invitation to your party on Saturday. Although I have a football match in the morning, I will come to the park at four o'clock. I have never been to a party near the statue before!\n\nSee you,\nLinh"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses present perfect with ever/never or conjunctions because/when/although correctly."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses relationship words (invitation, apologise, neighbour, trust) appropriately."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Message has greeting, clear purpose and polite closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Replies to invitation OR apologises clearly; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your response following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Bài mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-message-check",
+                "autoCheckKeywords": [
+                  "dear",
+                  "hi",
+                  "invitation",
+                  "apologise",
+                  "apologize",
+                  "because",
+                  "although",
+                  "when",
+                  "thank",
+                  "party",
+                  "friend"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-message-apply",
+          "title": "Apply: Complete the Message Frames",
+          "instructions": "Complete the message frames with the correct unit words.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.34,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Dear Mrs Pham, | I [0] because I was late today. | [1] the bus broke down, I couldn't call. | I hope you can [2] me.",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "apologise; Because/When (Because fits reason); forgive.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Dear Mrs Pham,\n\nI [0] because I was late today. [1] the bus broke down, I couldn't call.\n\nI hope you can [2] me.",
+                "correctAnswers": [
+                  "apologise",
+                  "Because",
+                  "forgive"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "apologise",
+                    "apologize",
+                    "Apologise",
+                    "Apologize"
+                  ],
+                  [
+                    "Because",
+                    "because",
+                    "When",
+                    "when"
+                  ],
+                  [
+                    "forgive",
+                    "Forgive",
+                    "trust",
+                    "Trust"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-relationship-interview",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e5000011-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Relationships",
+      "learningObjective": "Answer interview questions about friends, neighbours and relationships using unit vocabulary and grammar.",
+      "estimatedMinutes": 20,
+      "exercises": [
+        {
+          "slug": "speaking-relationship-learn",
+          "title": "Learn: Choose the Best Reply",
+          "instructions": "Imagine an examiner asks you a question. Choose the best answer.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: Do you know your neighbours well? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Mô tả mối quan hệ với hàng xóm — câu trả lời tự nhiên A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, I invitation them every day.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong word class"
+                },
+                {
+                  "text": "Yes, we often chat when we see each other.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes, I argue my neighbour is a door.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense sentence"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: Have you ever congratulated a friend online? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Present perfect + ever: Yes, I have...",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, I never congratulate friends online.",
+                  "isCorrect": false,
+                  "distractorNote": "Never contradicts yes"
+                },
+                {
+                  "text": "Yes, I have congratulated friends on social media.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes, I congratulate since yesterday.",
+                  "isCorrect": false,
+                  "distractorNote": "Since needs present perfect duration"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: What do you do when you argue with a friend? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Forgive + apologise — giải quyết mâu thuẫn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "We usually invitation and trust each other.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong verbs"
+                },
+                {
+                  "text": "We usually apologise and forgive each other.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "We usually jealous and colleague each other.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong word classes"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-relationship-practice",
+          "title": "Practice: Best Response",
+          "instructions": "Choose the best phrase you would say in each situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: Why is trust important in a friendship? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Because + lý do — trust helps you share secrets.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Because you can argue every day.",
+                  "isCorrect": false,
+                  "distractorNote": "Negative, not a reason for trust"
+                },
+                {
+                  "text": "Because you can tell your friend private things.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Because you need an invitation to school.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong context"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: When do you usually see your colleagues? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "When + thời gian: at work on weekdays.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Although I see colleagues at the park statue.",
+                  "isCorrect": false,
+                  "distractorNote": "Although wrong connector"
+                },
+                {
+                  "text": "When I help my mum at her shop on Saturdays.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Because I congratulate colleagues at midnight.",
+                  "isCorrect": false,
+                  "distractorNote": "Unnatural time"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: Tell me about a good friendship. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Support + friendship — mô tả tình bạn tích cực.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "We jealous each other although we trust.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong adjective as verb"
+                },
+                {
+                  "text": "We support each other although we sometimes argue.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "We neighbour each other when we forgive.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-relationship-interview",
+          "title": "Check: Relationships Interview",
+          "instructions": "Answer the examiner's questions about friends and neighbours. Speak for up to two minutes.",
+          "exerciseType": "speaking",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "prompt": "The examiner will ask you about your friends, neighbours and how you solve problems in relationships.",
+            "pictureDescription": "Two teenagers talking in a park; one holds a party invitation, the other waves to a neighbour across the street.",
+            "followUpQuestions": [
+              "Do you know your neighbours well?",
+              "Have you ever argued with a friend?",
+              "How do you usually congratulate your friends?",
+              "Who do you trust with your secrets?",
+              "When do you apologise to someone?",
+              "Although friends sometimes disagree, how do you stay friends?"
+            ],
+            "suggestedAnswers": [
+              "Yes, our neighbour often helps us and we trust her.",
+              "Yes, I have argued with my cousin about games, but we forgive each other.",
+              "I congratulate them in person or send a message online.",
+              "I trust my best friend because she never tells my secrets.",
+              "I apologise when I am late or say something unkind.",
+              "We support each other and talk calmly because friendship is important."
+            ],
+            "assessmentCriteria": {
+              "pronunciation": "Key words (neighbour, invitation, apologise, relationship, trust) are understandable.",
+              "fluency": "Responds with phrases or short sentences without long silences.",
+              "grammar": "Uses present perfect with ever/never or conjunctions because/when/although in at least two answers.",
+              "vocabulary": "Uses at least four different unit words correctly."
+            },
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-relationship-interview",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 120
+              }
+            }
+          ]
+        },
+        {
+          "slug": "speaking-relationship-apply",
+          "title": "Apply: Situational Responses",
+          "instructions": "Choose the best thing to say in each situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Your friend is jealous because you went to a party without them. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Apologise + invitation for next time — xử lý tình huống nhạy cảm.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I'm sorry. I will argue you next time because I am jealous.",
+                  "isCorrect": false,
+                  "distractorNote": "Illogical"
+                },
+                {
+                  "text": "I'm sorry. I will invite you next time because our friendship is important.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I'm sorry. I will colleague you next time at the statue.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong vocabulary"
+                }
+              ]
+            },
+            {
+              "questionText": "A new neighbour moves in. You want to be friendly. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Chào hàng xóm mới — câu đơn giản lịch sự.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Hello! Welcome to the forgive. I'm your invitation next door.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense"
+                },
+                {
+                  "text": "Hello! Welcome to the street. I'm your neighbour next door.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Hello! Welcome to the argue. I'm your trust next door.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense"
+                }
+              ]
+            },
+            {
+              "questionText": "The examiner asks: Have you ever had to forgive a friend? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "personal-relationships",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Present perfect experience + forgive.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, I have forgive a friend although we invitation.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong form"
+                },
+                {
+                  "text": "Yes, I have forgiven a friend after we argued about a game.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes, I never have forgiven although I always argue happily.",
+                  "isCorrect": false,
+                  "distractorNote": "Contradictory"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

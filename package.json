@@ -20,6 +20,8 @@
     "validate:starters": "node scripts/validate-starters-content.mjs",
     "validate:ket": "node scripts/validate-ket-content.mjs",
     "seed:ket-unit-01": "node scripts/seed-ket-unit-01.mjs",
+    "generate:ket-units": "node scripts/generate-ket-units.mjs",
+    "seed:ket": "node scripts/seed-ket-all.mjs",
     "seed:cambridge-placement": "node scripts/seed-cambridge-placement.mjs",
     "deactivate:cambridge-placement": "node scripts/deactivate-cambridge-placement.mjs",
     "generate:listening-audio": "node scripts/generate-listening-audio.mjs"

@@ -1,0 +1,2741 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by A2 Key task formats only.",
+    "program": "cambridge-english",
+    "level": "ket",
+    "cefr": "a2",
+    "unitNumber": 9,
+    "unitSlug": "communication-and-media",
+    "unitTitle": "Communication and Media",
+    "targetAge": "11-14",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Use communication and media vocabulary at A2 level.",
+      "Report simple statements about media habits.",
+      "Use zero and first conditionals to talk about messages and online habits.",
+      "Find detail and opinion in a short survey text.",
+      "Understand main ideas in a radio interview and safety announcement.",
+      "Write a short message about media use.",
+      "Answer interview questions about online communication."
+    ],
+    "grammarFocus": [
+      "Reported speech (statements, basic)",
+      "Zero and first conditional"
+    ],
+    "readingSkillFocus": "Multiple Choice Long Text (Detail and Opinion)",
+    "listeningSkillFocus": "Multiple Choice Interview/Monologue"
+  },
+  "vocabularyBank": [
+    {
+      "word": "message",
+      "ipa": "/ˈmesɪdʒ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "tin nhắn",
+      "exampleSentence": "I sent a message to my friend after school.",
+      "difficulty": 1,
+      "topic": "communication-and-media",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "blogger",
+      "ipa": "/ˈblɒɡə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "người viết blog",
+      "exampleSentence": "The food blogger posted a new recipe today.",
+      "difficulty": 1,
+      "topic": "communication-and-media",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "channel",
+      "ipa": "/ˈtʃænl/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "kênh (video/online)",
+      "exampleSentence": "She subscribed to a science channel on the internet.",
+      "difficulty": 1,
+      "topic": "communication-and-media",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "advertisement",
+      "ipa": "/ədˈvɜːtɪsmənt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "quảng cáo",
+      "exampleSentence": "An advertisement appeared before the video started.",
+      "difficulty": 2,
+      "topic": "communication-and-media",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "headline",
+      "ipa": "/ˈhedlaɪn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "tiêu đề tin",
+      "exampleSentence": "The headline said 'School Team Wins Prize'.",
+      "difficulty": 1,
+      "topic": "communication-and-media",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "subscribe",
+      "ipa": "/səbˈskraɪb/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "đăng ký theo dõi",
+      "exampleSentence": "Tom subscribed to three gaming channels.",
+      "difficulty": 2,
+      "topic": "communication-and-media",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "notification",
+      "ipa": "/ˌnəʊtɪfɪˈkeɪʃn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "thông báo (máy/ứng dụng)",
+      "exampleSentence": "I got a notification about a new message.",
+      "difficulty": 2,
+      "topic": "communication-and-media",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "profile",
+      "ipa": "/ˈprəʊfaɪl/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "hồ sơ cá nhân (online)",
+      "exampleSentence": "Keep your profile private on social media.",
+      "difficulty": 1,
+      "topic": "communication-and-media",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "podcast",
+      "ipa": "/ˈpɒdkɑːst/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "podcast / chương trình audio",
+      "exampleSentence": "We listen to a podcast about space in class.",
+      "difficulty": 1,
+      "topic": "communication-and-media",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "content",
+      "ipa": "/ˈkɒntent/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "nội dung",
+      "exampleSentence": "The channel uploads new content every Friday.",
+      "difficulty": 1,
+      "topic": "communication-and-media",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "upload",
+      "ipa": "/ˌʌpˈləʊd/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "tải lên",
+      "exampleSentence": "Do not upload photos without permission.",
+      "difficulty": 2,
+      "topic": "communication-and-media",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "viewer",
+      "ipa": "/ˈvjuːə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "người xem",
+      "exampleSentence": "The video has ten thousand viewers this week.",
+      "difficulty": 1,
+      "topic": "communication-and-media",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Reported speech (statements)",
+      "explanation": "To report what someone said, often use said/told + (that) + subject + past tense. Pronouns and time words may change.",
+      "examples": [
+        "Direct: \"I subscribe to this channel.\" → Reported: She said (that) she subscribed to that channel.",
+        "Direct: \"I read the headline.\" → Reported: He said (that) he read the headline.",
+        "Direct: \"My profile is private.\" → Reported: She told us (that) her profile was private."
+      ],
+      "commonMistakes": [
+        "She said me she likes blogs (×) → She told me she liked blogs (✓)",
+        "He said that he subscribe (×) → He said that he subscribed (✓)",
+        "They told they upload photos (×) → They said they uploaded photos (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "communication-and-media"
+    },
+    {
+      "structure": "Zero and first conditional",
+      "explanation": "Zero conditional: If + present, present — for general truths. First conditional: If + present, will + base verb — for real future possibilities.",
+      "examples": [
+        "If you subscribe, you get notifications. (zero)",
+        "If I see a strange message, I tell my parents. (zero)",
+        "If the advertisement is boring, I will skip it. (first)",
+        "If Mia writes a positive headline, more viewers will read her blog. (first)"
+      ],
+      "commonMistakes": [
+        "If I will see a message, I tell (×) → If I see a message, I will tell (✓)",
+        "If you subscribe, you will get always (×) → If you subscribe, you always get notifications (✓)",
+        "If he uploads, he will uploads (×) → If he uploads, he will get viewers (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "communication-and-media"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-media-words",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Communication and Media Words",
+      "learningObjective": "Recognise and understand twelve words about messages, blogs and online media at KET A2 level.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "vocab-media-learn",
+          "title": "Learn: Media Word Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "A short text you send on your phone is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Message (tin nhắn) gửi qua điện thoại. Headline là tiêu đề tin.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "headline",
+                  "isCorrect": false,
+                  "distractorNote": "Title of news"
+                },
+                {
+                  "text": "message",
+                  "isCorrect": true
+                },
+                {
+                  "text": "profile",
+                  "isCorrect": false,
+                  "distractorNote": "Personal online page"
+                }
+              ]
+            },
+            {
+              "questionText": "A person who writes regular posts online is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Blogger (người viết blog) đăng bài thường xuyên. Viewer là người xem.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "viewer",
+                  "isCorrect": false,
+                  "distractorNote": "Person who watches"
+                },
+                {
+                  "text": "blogger",
+                  "isCorrect": true
+                },
+                {
+                  "text": "notification",
+                  "isCorrect": false,
+                  "distractorNote": "Alert on your phone"
+                }
+              ]
+            },
+            {
+              "questionText": "When you follow a video series online, you join a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Channel (kênh) là nơi đăng video. Podcast là chương trình audio.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "podcast",
+                  "isCorrect": false,
+                  "distractorNote": "Audio show"
+                },
+                {
+                  "text": "channel",
+                  "isCorrect": true
+                },
+                {
+                  "text": "receipt",
+                  "isCorrect": false,
+                  "distractorNote": "Not a media word here"
+                }
+              ]
+            },
+            {
+              "questionText": "A paid promotion before a video is an _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Advertisement (quảng cáo) xuất hiện trước nội dung. Content là nội dung chính.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "content",
+                  "isCorrect": false,
+                  "distractorNote": "Main material"
+                },
+                {
+                  "text": "advertisement",
+                  "isCorrect": true
+                },
+                {
+                  "text": "message",
+                  "isCorrect": false,
+                  "distractorNote": "Private text"
+                }
+              ]
+            },
+            {
+              "questionText": "The big title at the top of news is the _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Headline (tiêu đề tin) ở đầu bài báo. Profile là trang cá nhân.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "profile",
+                  "isCorrect": false,
+                  "distractorNote": "Personal page"
+                },
+                {
+                  "text": "headline",
+                  "isCorrect": true
+                },
+                {
+                  "text": "upload",
+                  "isCorrect": false,
+                  "distractorNote": "Verb/action"
+                }
+              ]
+            },
+            {
+              "questionText": "When you press 'follow' on a channel, you _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Subscribe (đăng ký theo dõi) để nhận nội dung mới.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "upload",
+                  "isCorrect": false,
+                  "distractorNote": "Put content online"
+                },
+                {
+                  "text": "subscribe",
+                  "isCorrect": true
+                },
+                {
+                  "text": "complain",
+                  "isCorrect": false,
+                  "distractorNote": "Not media action here"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-media-matching",
+          "title": "Practice: Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the media words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Notification và profile thường bị nhầm — một cái là báo, một cái là trang cá nhân.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "notification",
+                  "right": "an alert on your phone or app"
+                },
+                {
+                  "left": "profile",
+                  "right": "your personal page online"
+                },
+                {
+                  "left": "upload",
+                  "right": "to put photos or videos on the internet"
+                },
+                {
+                  "left": "viewer",
+                  "right": "a person who watches online content"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-media-check",
+          "title": "Check: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "A weekly audio show you download is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Podcast là chương trình audio. Channel thường là video.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "headline",
+                  "isCorrect": false,
+                  "distractorNote": "News title"
+                },
+                {
+                  "text": "podcast",
+                  "isCorrect": true
+                },
+                {
+                  "text": "queue",
+                  "isCorrect": false,
+                  "distractorNote": "Not a media word"
+                }
+              ]
+            },
+            {
+              "questionText": "Videos, photos and posts together are called online _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Content (nội dung) gồm mọi thứ đăng tải.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "postage",
+                  "isCorrect": false,
+                  "distractorNote": "Mail cost"
+                },
+                {
+                  "text": "content",
+                  "isCorrect": true
+                },
+                {
+                  "text": "registration",
+                  "isCorrect": false,
+                  "distractorNote": "Signing up for services"
+                }
+              ]
+            },
+            {
+              "questionText": "Be careful — do not _____ personal photos without asking.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Upload (tải lên) cần cẩn thận với quyền riêng tư.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "subscribe",
+                  "isCorrect": false,
+                  "distractorNote": "Follow a channel"
+                },
+                {
+                  "text": "upload",
+                  "isCorrect": true
+                },
+                {
+                  "text": "headline",
+                  "isCorrect": false,
+                  "distractorNote": "Title text"
+                }
+              ]
+            },
+            {
+              "questionText": "The blogger has five thousand _____ this month.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Viewers (người xem) xem nội dung. Notifications là thông báo.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "notifications",
+                  "isCorrect": false,
+                  "distractorNote": "Phone alerts"
+                },
+                {
+                  "text": "viewers",
+                  "isCorrect": true
+                },
+                {
+                  "text": "appointments",
+                  "isCorrect": false,
+                  "distractorNote": "Booked times"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-media-apply",
+          "title": "Apply: Complete the Sentences",
+          "instructions": "Fill in each gap with the correct word from the unit.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: I got a [0] about a new [1] from my cousin.",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 2,
+              "explanation": "notification (thông báo) về message (tin nhắn).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "I got a [0] about a new [1] from my cousin.",
+                "correctAnswers": [
+                  "notification",
+                  "message"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "notification",
+                    "Notification"
+                  ],
+                  [
+                    "message",
+                    "Message"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: She [0] to a cooking [1] and reads every [2].",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 3,
+              "explanation": "subscribed; channel; headline — thói quen xem media.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "She [0] to a cooking [1] and reads every [2].",
+                "correctAnswers": [
+                  "subscribed",
+                  "channel",
+                  "headline"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "subscribed",
+                    "Subscribed",
+                    "subscribes",
+                    "Subscribes"
+                  ],
+                  [
+                    "channel",
+                    "Channel"
+                  ],
+                  [
+                    "headline",
+                    "Headline"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-reported-conditionals",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e5000009-0000-4000-8000-000000000001",
+      "title": "Lesson 2: Reported Speech and Conditionals",
+      "learningObjective": "Report simple statements about media and use zero and first conditionals correctly.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "grammar-reported-learn",
+          "title": "Learn: Report What They Said",
+          "instructions": "Choose the best reported sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Direct: \"I subscribe to this channel.\" → Reported:",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "She said (that) she subscribed — động từ lùi thì trong reported speech.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "She said (that) she subscribe to this channel.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong tense"
+                },
+                {
+                  "text": "She said (that) she subscribed to that channel.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "She said me she subscribed.",
+                  "isCorrect": false,
+                  "distractorNote": "said me is wrong — told me"
+                }
+              ]
+            },
+            {
+              "questionText": "Direct: \"My profile is private.\" → Reported:",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "She told us (that) her profile was private — is → was.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "She told us her profile is private.",
+                  "isCorrect": false,
+                  "distractorNote": "Present in reported clause"
+                },
+                {
+                  "text": "She told us (that) her profile was private.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "She told that profile was private.",
+                  "isCorrect": false,
+                  "distractorNote": "Missing subject"
+                }
+              ]
+            },
+            {
+              "questionText": "If you subscribe, you _____ notifications. (general truth)",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Zero conditional: If + present, present.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "will get",
+                  "isCorrect": false,
+                  "distractorNote": "First conditional form"
+                },
+                {
+                  "text": "get",
+                  "isCorrect": true
+                },
+                {
+                  "text": "got",
+                  "isCorrect": false,
+                  "distractorNote": "Past — wrong pattern"
+                }
+              ]
+            },
+            {
+              "questionText": "If the advertisement is boring, I _____ it. (future result)",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "First conditional: If + present, will + verb.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "skip",
+                  "isCorrect": false,
+                  "distractorNote": "Zero conditional"
+                },
+                {
+                  "text": "will skip",
+                  "isCorrect": true
+                },
+                {
+                  "text": "skipped",
+                  "isCorrect": false,
+                  "distractorNote": "Past form"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-reported-practice",
+          "title": "Practice: Complete the Grammar",
+          "instructions": "Fill in each gap with the correct form.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Tom said he [0] to a gaming channel. | If I [1] a strange message, I [2] my parents.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 3,
+              "explanation": "subscribed (reported); get / see; tell — zero conditional.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Tom said he [0] to a gaming channel. If I [1] a strange message, I [2] my parents.",
+                "correctAnswers": [
+                  "subscribed",
+                  "get",
+                  "tell"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "subscribed",
+                    "Subscribed"
+                  ],
+                  [
+                    "get",
+                    "Get",
+                    "see",
+                    "See",
+                    "receive",
+                    "Receive"
+                  ],
+                  [
+                    "tell",
+                    "Tell",
+                    "will tell",
+                    "will Tell"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: If she [0] a good headline, more viewers [1] her blog.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 2,
+              "explanation": "writes (first conditional if-clause); will read.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "If she [0] a good headline, more viewers [1] her blog.",
+                "correctAnswers": [
+                  "writes",
+                  "will read"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "writes",
+                    "Writes"
+                  ],
+                  [
+                    "will read",
+                    "Will read",
+                    "will visit",
+                    "Will visit"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "grammar-reported-check",
+          "title": "Check: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.38,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Mia said, \"I upload content every Friday.\" → Reported:",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Mia said (that) she uploaded content every Friday.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Mia said (that) she uploads content every Friday.",
+                  "isCorrect": false,
+                  "distractorNote": "No backshift"
+                },
+                {
+                  "text": "Mia said (that) she uploaded content every Friday.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Mia told she uploaded content every Friday.",
+                  "isCorrect": false,
+                  "distractorNote": "Missing object after told"
+                }
+              ]
+            },
+            {
+              "questionText": "If you _____ your profile public, strangers can see your photos.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Zero conditional: If + present, can + verb.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "will make",
+                  "isCorrect": false,
+                  "distractorNote": "Future in if-clause"
+                },
+                {
+                  "text": "make",
+                  "isCorrect": true
+                },
+                {
+                  "text": "made",
+                  "isCorrect": false,
+                  "distractorNote": "Past"
+                }
+              ]
+            },
+            {
+              "questionText": "If I read an interesting headline, I _____ the full message.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "First conditional for real future: I will read.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "read",
+                  "isCorrect": false,
+                  "distractorNote": "Zero — less future focus"
+                },
+                {
+                  "text": "will read",
+                  "isCorrect": true
+                },
+                {
+                  "text": "reading",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong form"
+                }
+              ]
+            },
+            {
+              "questionText": "Priya told us she _____ photos only on weekends.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Reported: upload → uploaded.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "uploads",
+                  "isCorrect": false,
+                  "distractorNote": "Direct speech tense"
+                },
+                {
+                  "text": "uploaded",
+                  "isCorrect": true
+                },
+                {
+                  "text": "upload",
+                  "isCorrect": false,
+                  "distractorNote": "Base form"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-reported-apply",
+          "title": "Apply: Build the Sentence",
+          "instructions": "Put the words in the correct order to make a sentence.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: He / said / that / he / subscribed / to the channel.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "He said that he subscribed to the channel. — reported speech.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "He"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "said"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "that"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "he"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "subscribed"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "to the channel."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6"
+                ]
+              },
+              "topicTag": "communication-and-media",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: If / I / get / a notification, / I / check / the message.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "If I get a notification, I check the message. — zero conditional.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "If"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "get"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "a notification,"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "check"
+                  },
+                  {
+                    "id": "w7",
+                    "text": "the message."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6",
+                  "w7"
+                ]
+              },
+              "topicTag": "communication-and-media",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: If / the advertisement / is boring, / I / will / skip / it.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 3,
+              "points": 2,
+              "explanation": "If the advertisement is boring, I will skip it. — first conditional.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "If"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "the advertisement"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "is boring,"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "will"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "skip"
+                  },
+                  {
+                    "id": "w7",
+                    "text": "it."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6",
+                  "w7"
+                ]
+              },
+              "topicTag": "communication-and-media",
+              "levelTag": "ket"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-media-survey",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e5000009-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Media Survey",
+      "learningObjective": "Find detail, opinion and vocabulary in a short survey about communication and media habits.",
+      "estimatedMinutes": 23,
+      "exercises": [
+        {
+          "slug": "reading-media-learn",
+          "title": "Learn: Read the Survey",
+          "instructions": "Read the survey results. Answer the detail questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Teen Media Habits Survey",
+              "text": "WEST PARK SCHOOL — MEDIA SURVEY RESULTS\n\nLast month, 120 students answered questions about communication and media. Here are three opinions from the report.\n\nStudent A — Linh, age 13\nLinh checks her phone for notifications every hour. She follows one food blogger and two video channels about science. She said, \"If I see an interesting headline, I read the full message straight away.\"\n\nStudent B — Tom, age 14\nTom prefers short messages to long emails. He subscribed to a gaming channel last year and sometimes watches live content after homework. He explained, \"If the advertisement is boring, I skip it.\"\n\nStudent C — Priya, age 13\nPriya is careful about her online profile. She uploads photos only on weekends and never shares personal details in a message to strangers. She told us, \"If someone sends a strange notification, I tell my parents.\"\n\nThe school will use these answers to plan safer media lessons next term.",
+              "wordCount": 157,
+              "imagePrompt": "School survey infographic with three student profiles, phone icons, video play buttons and notification badges; friendly teen magazine style."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "How often does Linh check notifications?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Linh checks her phone for notifications every hour.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "Once a week",
+                  "isCorrect": false,
+                  "distractorNote": "Too infrequent"
+                },
+                {
+                  "text": "Every hour",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Never",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite of text"
+                }
+              ]
+            },
+            {
+              "questionText": "What does Tom do if an advertisement is boring?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Tom: \"If the advertisement is boring, I skip it.\"",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "He uploads a photo",
+                  "isCorrect": false,
+                  "distractorNote": "Priya's habit"
+                },
+                {
+                  "text": "He skips it",
+                  "isCorrect": true
+                },
+                {
+                  "text": "He writes a headline",
+                  "isCorrect": false,
+                  "distractorNote": "Linh's habit"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-media-practice",
+          "title": "Practice: Words in the Survey",
+          "instructions": "Read the survey again. Answer about vocabulary and meaning.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Teen Media Habits Survey",
+              "text": "WEST PARK SCHOOL — MEDIA SURVEY RESULTS\n\nLast month, 120 students answered questions about communication and media. Here are three opinions from the report.\n\nStudent A — Linh, age 13\nLinh checks her phone for notifications every hour. She follows one food blogger and two video channels about science. She said, \"If I see an interesting headline, I read the full message straight away.\"\n\nStudent B — Tom, age 14\nTom prefers short messages to long emails. He subscribed to a gaming channel last year and sometimes watches live content after homework. He explained, \"If the advertisement is boring, I skip it.\"\n\nStudent C — Priya, age 13\nPriya is careful about her online profile. She uploads photos only on weekends and never shares personal details in a message to strangers. She told us, \"If someone sends a strange notification, I tell my parents.\"\n\nThe school will use these answers to plan safer media lessons next term.",
+              "wordCount": 157,
+              "imagePrompt": "School survey infographic with three student profiles, phone icons, video play buttons and notification badges; friendly teen magazine style."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What does 'subscribed' mean in Tom's answer?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "He subscribed to a gaming channel — đăng ký theo dõi kênh.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "vocabulary_in_context",
+              "choices": [
+                {
+                  "text": "He uploaded his homework",
+                  "isCorrect": false,
+                  "distractorNote": "Upload action"
+                },
+                {
+                  "text": "He followed the channel to get new videos",
+                  "isCorrect": true
+                },
+                {
+                  "text": "He wrote a complaint",
+                  "isCorrect": false,
+                  "distractorNote": "Services word"
+                }
+              ]
+            },
+            {
+              "questionText": "Why is Priya careful about her profile?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "She never shares personal details — safety and privacy.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "inference",
+              "choices": [
+                {
+                  "text": "She hates all advertisements",
+                  "isCorrect": false,
+                  "distractorNote": "Tom skips ads"
+                },
+                {
+                  "text": "She wants to stay safe online",
+                  "isCorrect": true
+                },
+                {
+                  "text": "She cannot read headlines",
+                  "isCorrect": false,
+                  "distractorNote": "All students read headlines"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-media-check",
+          "title": "Check: Main Idea and Order",
+          "instructions": "Read the survey one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Teen Media Habits Survey",
+              "text": "WEST PARK SCHOOL — MEDIA SURVEY RESULTS\n\nLast month, 120 students answered questions about communication and media. Here are three opinions from the report.\n\nStudent A — Linh, age 13\nLinh checks her phone for notifications every hour. She follows one food blogger and two video channels about science. She said, \"If I see an interesting headline, I read the full message straight away.\"\n\nStudent B — Tom, age 14\nTom prefers short messages to long emails. He subscribed to a gaming channel last year and sometimes watches live content after homework. He explained, \"If the advertisement is boring, I skip it.\"\n\nStudent C — Priya, age 13\nPriya is careful about her online profile. She uploads photos only on weekends and never shares personal details in a message to strangers. She told us, \"If someone sends a strange notification, I tell my parents.\"\n\nThe school will use these answers to plan safer media lessons next term.",
+              "wordCount": 157,
+              "imagePrompt": "School survey infographic with three student profiles, phone icons, video play buttons and notification badges; friendly teen magazine style."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main purpose of the survey report?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "The school will use these answers to plan safer media lessons.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "To sell advertisements to students",
+                  "isCorrect": false,
+                  "distractorNote": "Not commercial"
+                },
+                {
+                  "text": "To understand student media habits and plan lessons",
+                  "isCorrect": true
+                },
+                {
+                  "text": "To close all phone channels",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite intention"
+                }
+              ]
+            },
+            {
+              "questionText": "Which student is most careful about strangers online?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Priya tells parents about strange notifications and keeps profile private.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "sequencing",
+              "choices": [
+                {
+                  "text": "Linh",
+                  "isCorrect": false,
+                  "distractorNote": "Reads headlines quickly"
+                },
+                {
+                  "text": "Priya",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Tom",
+                  "isCorrect": false,
+                  "distractorNote": "Skips boring ads"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-media-apply",
+          "title": "Apply: Match Students to Habits",
+          "instructions": "Use what you read. Match each student to the correct habit.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Teen Media Habits Survey",
+              "text": "WEST PARK SCHOOL — MEDIA SURVEY RESULTS\n\nLast month, 120 students answered questions about communication and media. Here are three opinions from the report.\n\nStudent A — Linh, age 13\nLinh checks her phone for notifications every hour. She follows one food blogger and two video channels about science. She said, \"If I see an interesting headline, I read the full message straight away.\"\n\nStudent B — Tom, age 14\nTom prefers short messages to long emails. He subscribed to a gaming channel last year and sometimes watches live content after homework. He explained, \"If the advertisement is boring, I skip it.\"\n\nStudent C — Priya, age 13\nPriya is careful about her online profile. She uploads photos only on weekends and never shares personal details in a message to strangers. She told us, \"If someone sends a strange notification, I tell my parents.\"\n\nThe school will use these answers to plan safer media lessons next term.",
+              "wordCount": 157,
+              "imagePrompt": "School survey infographic with three student profiles, phone icons, video play buttons and notification badges; friendly teen magazine style."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each student to their media habit.",
+              "questionType": "matching",
+              "skillTag": "reading",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 4,
+              "explanation": "Mỗi học sinh có thói quen khác nhau trong khảo sát.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Linh",
+                  "right": "Reads full messages after interesting headlines"
+                },
+                {
+                  "left": "Tom",
+                  "right": "Subscribed to a gaming channel"
+                },
+                {
+                  "left": "Priya",
+                  "right": "Uploads photos only on weekends"
+                },
+                {
+                  "left": "All three",
+                  "right": "Use phones for communication and media"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-media-interviews",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e5000009-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Media on the Radio",
+      "learningObjective": "Understand detail in a radio interview about a blogger and an online safety announcement.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "listening-blogger-learn",
+          "title": "Learn: Blogger Interview",
+          "instructions": "Listen to the radio item. Answer the first two questions.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "School Radio Interview with a Blogger",
+              "setting": "School radio studio",
+              "speakers": [
+                {
+                  "name": "Host",
+                  "role": "student presenter"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Host",
+                  "text": "Today on West Park Radio, we talk to teen blogger Mia Chen. Mia, thanks for coming."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "Mia said she writes a short message to her readers every morning. Her channel has five thousand subscribers now."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "She told us, if a headline is negative, she tries to write something positive instead."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "Mia also said students should check notifications carefully and keep their profile private. Back to music after this advertisement."
+                }
+              ],
+              "audioNotes": "Upbeat student radio tone, one speaker, clear diction. Approx. 45 seconds."
+            },
+            "answerKey": {
+              "q1": "five thousand subscribers",
+              "q2": "positive headline"
+            },
+            "audioUrl": "/audio/listening/ket/unit-09/listening-blogger-learn.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "How many subscribers does Mia's channel have?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Her channel has five thousand subscribers now.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Five hundred",
+                  "isCorrect": false,
+                  "distractorNote": "Too small"
+                },
+                {
+                  "text": "Five thousand",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Fifty thousand",
+                  "isCorrect": false,
+                  "distractorNote": "Too large"
+                }
+              ]
+            },
+            {
+              "questionText": "What does Mia try to write if a headline is negative?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "If a headline is negative, she tries to write something positive.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A long advertisement",
+                  "isCorrect": false,
+                  "distractorNote": "Ads come after interview"
+                },
+                {
+                  "text": "Something positive",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A private profile",
+                  "isCorrect": false,
+                  "distractorNote": "Profile safety is separate point"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-blogger-practice",
+          "title": "Practice: More from the Interview",
+          "instructions": "Listen again to the same radio item. Answer the next questions.",
+          "exerciseType": "listening",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "School Radio Interview with a Blogger",
+              "setting": "School radio studio",
+              "speakers": [
+                {
+                  "name": "Host",
+                  "role": "student presenter"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Host",
+                  "text": "Today on West Park Radio, we talk to teen blogger Mia Chen. Mia, thanks for coming."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "Mia said she writes a short message to her readers every morning. Her channel has five thousand subscribers now."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "She told us, if a headline is negative, she tries to write something positive instead."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "Mia also said students should check notifications carefully and keep their profile private. Back to music after this advertisement."
+                }
+              ],
+              "audioNotes": "Upbeat student radio tone, one speaker, clear diction. Approx. 45 seconds."
+            },
+            "answerKey": {
+              "q1": "message every morning",
+              "q2": "keep profile private"
+            },
+            "audioUrl": "/audio/listening/ket/unit-09/listening-blogger-practice.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What does Mia write to her readers every morning?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "She writes a short message to her readers every morning.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A podcast episode",
+                  "isCorrect": false,
+                  "distractorNote": "Audio show"
+                },
+                {
+                  "text": "A short message",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A bank receipt",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong topic"
+                }
+              ]
+            },
+            {
+              "questionText": "What does Mia say students should do with their profile?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Keep their profile private.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Upload every hour",
+                  "isCorrect": false,
+                  "distractorNote": "Too frequent"
+                },
+                {
+                  "text": "Keep it private",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Subscribe to every channel",
+                  "isCorrect": false,
+                  "distractorNote": "Not what she said"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-safety-check",
+          "title": "Check: Online Safety Announcement",
+          "instructions": "Listen to a new announcement. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Online Safety Announcement",
+              "setting": "School assembly PA system",
+              "speakers": [
+                {
+                  "name": "Ms Ortiz",
+                  "role": "ICT teacher"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Ms Ortiz",
+                  "text": "Good afternoon. This is a reminder about online communication and media safety."
+                },
+                {
+                  "speaker": "Ms Ortiz",
+                  "text": "If you get a message from someone you do not know, do not reply. Tell a teacher or your parents."
+                },
+                {
+                  "speaker": "Ms Ortiz",
+                  "text": "Remember: if you subscribe to a channel, check the profile carefully before you upload photos."
+                },
+                {
+                  "speaker": "Ms Ortiz",
+                  "text": "If an advertisement asks for personal details, ignore it. Thank you."
+                }
+              ],
+              "audioNotes": "Clear PA voice, serious but friendly, moderate pace. Approx. 40 seconds."
+            },
+            "answerKey": {
+              "q1": "tell teacher or parents",
+              "q2": "check profile before upload"
+            },
+            "audioUrl": "/audio/listening/ket/unit-09/listening-safety-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What should you do if you get a message from someone you do not know?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Do not reply. Tell a teacher or your parents.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Reply with your profile link",
+                  "isCorrect": false,
+                  "distractorNote": "Unsafe action"
+                },
+                {
+                  "text": "Tell a teacher or your parents",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Upload a photo",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong response"
+                }
+              ]
+            },
+            {
+              "questionText": "Before you upload photos, what should you check?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Check the profile carefully before you upload photos.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The postage cost",
+                  "isCorrect": false,
+                  "distractorNote": "Services topic"
+                },
+                {
+                  "text": "The profile settings",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The bank account",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong context"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-media-apply",
+          "title": "Apply: Match Facts from the Interview",
+          "instructions": "Listen to the blogger interview again. Match each topic to the correct fact.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "School Radio Interview with a Blogger",
+              "setting": "School radio studio",
+              "speakers": [
+                {
+                  "name": "Host",
+                  "role": "student presenter"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Host",
+                  "text": "Today on West Park Radio, we talk to teen blogger Mia Chen. Mia, thanks for coming."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "Mia said she writes a short message to her readers every morning. Her channel has five thousand subscribers now."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "She told us, if a headline is negative, she tries to write something positive instead."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "Mia also said students should check notifications carefully and keep their profile private. Back to music after this advertisement."
+                }
+              ],
+              "audioNotes": "Upbeat student radio tone, one speaker, clear diction. Approx. 45 seconds."
+            },
+            "answerKey": {
+              "matching": true
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each topic to a fact from the interview.",
+              "questionType": "matching",
+              "skillTag": "listening",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "Mỗi mục khớp với thông tin trong bài phát thanh.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Mia's job",
+                  "right": "Teen blogger"
+                },
+                {
+                  "left": "Channel size",
+                  "right": "Five thousand subscribers"
+                },
+                {
+                  "left": "After interview",
+                  "right": "Music and advertisement"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-media-message",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e5000009-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Write About Media",
+      "learningObjective": "Write a short message about media habits using reported speech and conditionals.",
+      "estimatedMinutes": 25,
+      "exercises": [
+        {
+          "slug": "writing-media-learn",
+          "title": "Learn: Message Phrases",
+          "instructions": "Complete each gap with a word from the box: message, channel, subscribe, if, will.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: I sent a [0] to my friend about a new video [1]. | [2] you [3] to it, you get notifications.",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "message; channel; If; subscribe — zero conditional.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "I sent a [0] to my friend about a new video [1]. [2] you [3] to it, you get notifications.",
+                "correctAnswers": [
+                  "message",
+                  "channel",
+                  "If",
+                  "subscribe"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "message",
+                    "Message"
+                  ],
+                  [
+                    "channel",
+                    "Channel"
+                  ],
+                  [
+                    "If",
+                    "if"
+                  ],
+                  [
+                    "subscribe",
+                    "Subscribe"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-media-order-practice",
+          "title": "Practice: Build Sentences",
+          "instructions": "Put the words in order to make correct sentences.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: She / said / that / she / read / the headline.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "She said that she read the headline. — reported speech in writing.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "She"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "said"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "that"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "she"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "read"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "the headline."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6"
+                ]
+              },
+              "topicTag": "communication-and-media",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: If / I / see / a boring advertisement, / I / will / skip / it.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "If I see a boring advertisement, I will skip it. — first conditional.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "If"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "see"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "a boring advertisement,"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "will"
+                  },
+                  {
+                    "id": "w7",
+                    "text": "skip"
+                  },
+                  {
+                    "id": "w8",
+                    "text": "it."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6",
+                  "w7",
+                  "w8"
+                ]
+              },
+              "topicTag": "communication-and-media",
+              "levelTag": "ket"
+            }
+          ]
+        },
+        {
+          "slug": "writing-media-check",
+          "title": "Check: Message About Your Media Habits",
+          "instructions": "Write a message to a friend. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Write a message to your friend about your communication and media habits. Mention a channel, blog or app you use.",
+            "prompts": [
+              "Say which channel, blogger or app you use.",
+              "Explain when you check messages or notifications.",
+              "Use If ... to say what you do when you see an advertisement or headline.",
+              "End the message in a friendly way."
+            ],
+            "expectedLength": "At least 25 words",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Mentions media vocabulary",
+              "Uses if-clause or reported speech",
+              "Friendly message tone",
+              "Clear ending"
+            ],
+            "modelAnswer": {
+              "text": "Hi Lan,\n\nI subscribed to a science channel last month. I check notifications after school, but not during lessons. My friend said that she uploads photos on weekends only. If an advertisement is boring, I will skip it. Do you read the headline before you watch a video?\n\nSee you,\nTom"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses reported speech or zero/first conditional correctly."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses media words (message, channel, subscribe, notification, etc.)."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Message is clear with greeting and closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Describes media habits; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your response following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Bài mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-media-check",
+                "autoCheckKeywords": [
+                  "hi",
+                  "message",
+                  "channel",
+                  "subscribe",
+                  "notification",
+                  "if",
+                  "headline",
+                  "advertisement"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-media-apply",
+          "title": "Apply: Complete the Message Frames",
+          "instructions": "Complete the message frames with the correct unit words.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Hi Mia, | I read your [0] today. | If I like the [1], I [2] to your [3]. | Bye, | Hoa",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "headline; content; subscribe; channel.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Hi Mia,\n\nI read your [0] today. If I like the [1], I [2] to your [3].\n\nBye,\nHoa",
+                "correctAnswers": [
+                  "headline",
+                  "content",
+                  "subscribe",
+                  "channel"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "headline",
+                    "Headline"
+                  ],
+                  [
+                    "content",
+                    "Content"
+                  ],
+                  [
+                    "subscribe",
+                    "Subscribe",
+                    "will subscribe",
+                    "will Subscribe"
+                  ],
+                  [
+                    "channel",
+                    "Channel"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-media-habits",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e5000009-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Media Habits",
+      "learningObjective": "Answer interview questions about messages, channels and online safety.",
+      "estimatedMinutes": 20,
+      "exercises": [
+        {
+          "slug": "speaking-media-learn",
+          "title": "Learn: Choose the Best Reply",
+          "instructions": "Imagine an examiner asks you a question. Choose the best answer.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: Do you subscribe to any channels? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Yes, I subscribe to... — trả lời trực tiếp với từ vựng đơn vị.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, I postage to channels.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong word"
+                },
+                {
+                  "text": "Yes, I subscribe to a cooking channel and a music channel.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I registration three blogs.",
+                  "isCorrect": false,
+                  "distractorNote": "Broken grammar"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: What is a notification? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "An alert on your phone — định nghĩa ngắn A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "It is a bank receipt.",
+                  "isCorrect": false,
+                  "distractorNote": "Services word"
+                },
+                {
+                  "text": "It is an alert on my phone about a new message or video.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "It is a registration form.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong topic"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-media-practice",
+          "title": "Practice: Best Response",
+          "instructions": "Choose the most appropriate reply in each media situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Your friend said, 'I upload photos every day.' You report:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "She said (that) she uploaded... — reported speech trong nói.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "She said she upload photos every day.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong tense"
+                },
+                {
+                  "text": "She said that she uploaded photos every day.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "She told that upload photos.",
+                  "isCorrect": false,
+                  "distractorNote": "Broken structure"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: What do you do if you see a strange message? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "If I get a strange message, I tell my parents — zero conditional.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "If I will get strange message, tell.",
+                  "isCorrect": false,
+                  "distractorNote": "Will in if-clause"
+                },
+                {
+                  "text": "If I get a strange message, I tell my parents.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Message is strange I parents.",
+                  "isCorrect": false,
+                  "distractorNote": "Broken sentence"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-media-check",
+          "title": "Check: Interview About Media",
+          "instructions": "Answer the examiner's questions. Record your answers.",
+          "exerciseType": "speaking",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-media-check",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 120
+              }
+            }
+          ]
+        },
+        {
+          "slug": "speaking-media-apply",
+          "title": "Apply: Situational Response",
+          "instructions": "Choose the best thing to say in each situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "A stranger asks for your profile link in a message. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Refuse politely and tell an adult — an toàn online.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Here is my profile! Message me!",
+                  "isCorrect": false,
+                  "distractorNote": "Unsafe"
+                },
+                {
+                  "text": "Sorry, I do not share my profile with strangers. I will tell my teacher.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Profiles are for strangers only.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong advice"
+                }
+              ]
+            },
+            {
+              "questionText": "Your cousin asks why you subscribed to a channel. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "communication-and-media",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Explain reason with because/if — A2 speaking pattern.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Because subscribe is headline.",
+                  "isCorrect": false,
+                  "distractorNote": "Word salad"
+                },
+                {
+                  "text": "Because the content is interesting and I learn new words from the blogger.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Channel message notification upload.",
+                  "isCorrect": false,
+                  "distractorNote": "List without sentence"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

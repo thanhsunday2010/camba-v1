@@ -1,0 +1,2775 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by A2 Key task formats only.",
+    "program": "cambridge-english",
+    "level": "ket",
+    "cefr": "a2",
+    "unitNumber": 3,
+    "unitSlug": "health-and-lifestyle",
+    "unitTitle": "Health and Lifestyle",
+    "targetAge": "11-14",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Use core health and lifestyle vocabulary at A2 level.",
+      "Use should, must and need to to give and understand health advice.",
+      "Use a few and a little correctly with countable and uncountable nouns.",
+      "Understand vocabulary in context in a short health article.",
+      "Understand attitude and opinion in a health podcast recording.",
+      "Write a short note about symptoms and an appointment request.",
+      "Answer interview questions about health habits and lifestyle."
+    ],
+    "grammarFocus": [
+      "Modals: should, must, need to",
+      "Countable / uncountable with a few / a little"
+    ],
+    "readingSkillFocus": "Understand Vocabulary in Context",
+    "listeningSkillFocus": "Understand Attitude and Opinion"
+  },
+  "vocabularyBank": [
+    {
+      "word": "appointment",
+      "ipa": "/əˈpɔɪntmənt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "cuộc hẹn (khám bác sĩ)",
+      "exampleSentence": "I have a doctor's appointment at ten.",
+      "difficulty": 1,
+      "topic": "health-and-lifestyle",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "symptom",
+      "ipa": "/ˈsɪmptəm/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "triệu chứng",
+      "exampleSentence": "A cough is a common symptom of a cold.",
+      "difficulty": 2,
+      "topic": "health-and-lifestyle",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "recover",
+      "ipa": "/rɪˈkʌvə(r)/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "hồi phục / khỏi bệnh",
+      "exampleSentence": "She recovered after a week of rest.",
+      "difficulty": 2,
+      "topic": "health-and-lifestyle",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "prescription",
+      "ipa": "/prɪˈskrɪpʃn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "đơn thuốc",
+      "exampleSentence": "The doctor gave me a prescription for medicine.",
+      "difficulty": 2,
+      "topic": "health-and-lifestyle",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "allergy",
+      "ipa": "/ˈælədʒi/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "dị ứng",
+      "exampleSentence": "He has an allergy to milk.",
+      "difficulty": 2,
+      "topic": "health-and-lifestyle",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "injury",
+      "ipa": "/ˈɪndʒəri/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "chấn thương",
+      "exampleSentence": "She got a leg injury playing football.",
+      "difficulty": 2,
+      "topic": "health-and-lifestyle",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "treatment",
+      "ipa": "/ˈtriːtmənt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "điều trị",
+      "exampleSentence": "The treatment helped him feel better.",
+      "difficulty": 2,
+      "topic": "health-and-lifestyle",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "prevention",
+      "ipa": "/prɪˈvenʃn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "phòng ngừa",
+      "exampleSentence": "Hand washing is good prevention against illness.",
+      "difficulty": 2,
+      "topic": "health-and-lifestyle",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "doctor",
+      "ipa": "/ˈdɒktə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bác sĩ",
+      "exampleSentence": "The doctor checked my symptoms carefully.",
+      "difficulty": 1,
+      "topic": "health-and-lifestyle",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "nurse",
+      "ipa": "/nɜːs/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "y tá",
+      "exampleSentence": "The nurse cleaned the injury.",
+      "difficulty": 1,
+      "topic": "health-and-lifestyle",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "exercise",
+      "ipa": "/ˈeksəsaɪz/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "tập thể dục",
+      "exampleSentence": "A little exercise every day keeps you healthy.",
+      "difficulty": 1,
+      "topic": "health-and-lifestyle",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "healthy",
+      "ipa": "/ˈhelθi/",
+      "partOfSpeech": "adjective",
+      "vietnameseMeaning": "khỏe mạnh",
+      "exampleSentence": "Eat healthy food and sleep well.",
+      "difficulty": 1,
+      "topic": "health-and-lifestyle",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Modals: should, must, need to",
+      "explanation": "Use should for advice (You should rest), must for strong rules or necessity (You must wear a mask), and need to for something necessary (You need to take medicine). After modals, use the base verb without to (except need to).",
+      "examples": [
+        "You should drink warm water when you have a cough.",
+        "You must not share cups when you are ill.",
+        "You need to finish all your medicine.",
+        "Patients should make an appointment before visiting."
+      ],
+      "commonMistakes": [
+        "You should to rest (×) → You should rest (✓)",
+        "You must wearing a mask (×) → You must wear a mask (✓)",
+        "You need finish the treatment (×) → You need to finish the treatment (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "health-and-lifestyle"
+    },
+    {
+      "structure": "Countable / uncountable with a few / a little",
+      "explanation": "Use a few + countable plural nouns (a few nuts, a few symptoms). Use a little + uncountable nouns (a little water, a little exercise). Some/any follow the same countable/uncountable rules.",
+      "examples": [
+        "She has a few symptoms: cough and fever.",
+        "Drink a little warm water before bed.",
+        "A few minutes of exercise help prevention.",
+        "There is a little medicine left in the bottle."
+      ],
+      "commonMistakes": [
+        "A little symptoms (×) → A few symptoms (✓)",
+        "A few water (×) → A little water (✓)",
+        "Few exercise every day (×) → A little exercise every day (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "health-and-lifestyle"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-health-words",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Health and Lifestyle Words",
+      "learningObjective": "Recognise and understand twelve health and lifestyle words at KET A2 level.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "vocab-health-learn",
+          "title": "Learn: Health Word Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "A planned meeting with a doctor is an _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Appointment (cuộc hẹn) là lịch gặp bác sĩ. Treatment là điều trị.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "treatment",
+                  "isCorrect": false,
+                  "distractorNote": "Medical care, not a meeting"
+                },
+                {
+                  "text": "appointment",
+                  "isCorrect": true
+                },
+                {
+                  "text": "prescription",
+                  "isCorrect": false,
+                  "distractorNote": "Paper for medicine"
+                }
+              ]
+            },
+            {
+              "questionText": "A sign that you are ill, like a cough or fever, is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Symptom (triệu chứng) báo hiệu bệnh. Prevention là phòng ngừa.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "prevention",
+                  "isCorrect": false,
+                  "distractorNote": "Stopping illness"
+                },
+                {
+                  "text": "symptom",
+                  "isCorrect": true
+                },
+                {
+                  "text": "injury",
+                  "isCorrect": false,
+                  "distractorNote": "Physical damage from accident"
+                }
+              ]
+            },
+            {
+              "questionText": "To get healthy again after an illness means to _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Recover (hồi phục) nghĩa là khỏe lại. Allergy là dị ứng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "allergy",
+                  "isCorrect": false,
+                  "distractorNote": "Bad reaction to something"
+                },
+                {
+                  "text": "recover",
+                  "isCorrect": true
+                },
+                {
+                  "text": "exercise",
+                  "isCorrect": false,
+                  "distractorNote": "Physical activity"
+                }
+              ]
+            },
+            {
+              "questionText": "A piece of paper from a doctor for medicine is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Prescription (đơn thuốc) do bác sĩ kê. Symptom là triệu chứng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "symptom",
+                  "isCorrect": false,
+                  "distractorNote": "Sign of illness"
+                },
+                {
+                  "text": "prescription",
+                  "isCorrect": true
+                },
+                {
+                  "text": "appointment",
+                  "isCorrect": false,
+                  "distractorNote": "Meeting time"
+                }
+              ]
+            },
+            {
+              "questionText": "A bad reaction to food like nuts or milk is an _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Allergy (dị ứng) phản ứng với thực phẩm/chất. Injury là chấn thương.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "injury",
+                  "isCorrect": false,
+                  "distractorNote": "Damage from accident"
+                },
+                {
+                  "text": "allergy",
+                  "isCorrect": true
+                },
+                {
+                  "text": "treatment",
+                  "isCorrect": false,
+                  "distractorNote": "Medical care"
+                }
+              ]
+            },
+            {
+              "questionText": "Damage to your body from an accident is an _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Injury (chấn thương) do tai nạn. Symptom là biểu hiện bệnh.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "symptom",
+                  "isCorrect": false,
+                  "distractorNote": "Illness sign"
+                },
+                {
+                  "text": "injury",
+                  "isCorrect": true
+                },
+                {
+                  "text": "prevention",
+                  "isCorrect": false,
+                  "distractorNote": "Stopping problems"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-health-matching",
+          "title": "Practice: Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the health words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Mỗi từ khớp với nghĩa rõ ràng. Treatment và prevention thường bị nhầm.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "treatment",
+                  "right": "medical care to make you better"
+                },
+                {
+                  "left": "prevention",
+                  "right": "actions to stop illness before it starts"
+                },
+                {
+                  "left": "doctor",
+                  "right": "a person who diagnoses and treats patients"
+                },
+                {
+                  "left": "healthy",
+                  "right": "in good physical condition"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-health-check",
+          "title": "Check: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "The _____ gave Lan a prescription after checking her cough.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Doctor (bác sĩ) khám và kê đơn. Nurse thường hỗ trợ điều trị.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "nurse",
+                  "isCorrect": false,
+                  "distractorNote": "May assist but doctor prescribes"
+                },
+                {
+                  "text": "doctor",
+                  "isCorrect": true
+                },
+                {
+                  "text": "appointment",
+                  "isCorrect": false,
+                  "distractorNote": "A meeting, not a person"
+                }
+              ]
+            },
+            {
+              "questionText": "Dr Nguyen says _____ is better than waiting for treatment.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Prevention is better than treatment — phòng bệnh hơn chữa bệnh.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "injury",
+                  "isCorrect": false,
+                  "distractorNote": "Damage, not a strategy"
+                },
+                {
+                  "text": "prevention",
+                  "isCorrect": true
+                },
+                {
+                  "text": "symptom",
+                  "isCorrect": false,
+                  "distractorNote": "Sign of illness"
+                }
+              ]
+            },
+            {
+              "questionText": "After the football match, he had a knee _____ and went to hospital.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Injury (chấn thương) sau tai nạn thể thao. Allergy là dị ứng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "allergy",
+                  "isCorrect": false,
+                  "distractorNote": "Food reaction"
+                },
+                {
+                  "text": "injury",
+                  "isCorrect": true
+                },
+                {
+                  "text": "appointment",
+                  "isCorrect": false,
+                  "distractorNote": "Scheduled visit"
+                }
+              ]
+            },
+            {
+              "questionText": "Eat _____ food and do a little _____ every day.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Healthy food + exercise — thói quen sống khỏe.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "symptom ... prescription",
+                  "isCorrect": false,
+                  "distractorNote": "Illness words"
+                },
+                {
+                  "text": "healthy ... exercise",
+                  "isCorrect": true
+                },
+                {
+                  "text": "injury ... treatment",
+                  "isCorrect": false,
+                  "distractorNote": "Medical care context"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-health-apply",
+          "title": "Apply: Complete the Health Sentences",
+          "instructions": "Fill in each gap with the correct word.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: I made an [0] with the doctor. | My main [1] is a sore throat. | The [2] gave me medicine. | I will [3] in a few days.",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 4,
+              "explanation": "appointment; symptom; nurse/doctor — prescription context; recover.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "I made an [0] with the doctor. My main [1] is a sore throat. The nurse gave me [2] from the doctor. I will [3] in a few days.",
+                "correctAnswers": [
+                  "appointment",
+                  "symptom",
+                  "medicine",
+                  "recover"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "appointment",
+                    "Appointment"
+                  ],
+                  [
+                    "symptom",
+                    "Symptom"
+                  ],
+                  [
+                    "medicine",
+                    "Medicine",
+                    "a prescription",
+                    "prescription"
+                  ],
+                  [
+                    "recover",
+                    "Recover"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-health-modals",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e5000003-0000-4000-8000-000000000001",
+      "title": "Lesson 2: Health Advice and Quantifiers",
+      "learningObjective": "Use should, must and need to for health advice, and a few / a little with nouns.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "grammar-health-learn",
+          "title": "Learn: Choose the Correct Form",
+          "instructions": "Choose the best word or phrase for each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "You _____ rest when you have a fever.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Should = lời khuyên: You should rest.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "must to",
+                  "isCorrect": false,
+                  "distractorNote": "Must + base verb, no to"
+                },
+                {
+                  "text": "should",
+                  "isCorrect": true
+                },
+                {
+                  "text": "need",
+                  "isCorrect": false,
+                  "distractorNote": "Need to + verb"
+                }
+              ]
+            },
+            {
+              "questionText": "You _____ wear a mask in the clinic. It is a rule.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Must = quy định bắt buộc.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "should to",
+                  "isCorrect": false,
+                  "distractorNote": "No to after should"
+                },
+                {
+                  "text": "must",
+                  "isCorrect": true
+                },
+                {
+                  "text": "needs",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong person/form"
+                }
+              ]
+            },
+            {
+              "questionText": "Drink _____ warm water before bed.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Water không đếm được → a little.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "a few",
+                  "isCorrect": false,
+                  "distractorNote": "Few + countable plural"
+                },
+                {
+                  "text": "a little",
+                  "isCorrect": true
+                },
+                {
+                  "text": "few",
+                  "isCorrect": false,
+                  "distractorNote": "Few without article changes meaning"
+                }
+              ]
+            },
+            {
+              "questionText": "She has _____ symptoms: cough and headache.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Symptoms đếm được → a few.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "a little",
+                  "isCorrect": false,
+                  "distractorNote": "Little + uncountable"
+                },
+                {
+                  "text": "a few",
+                  "isCorrect": true
+                },
+                {
+                  "text": "little",
+                  "isCorrect": false,
+                  "distractorNote": "Little = not much"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-health-practice",
+          "title": "Practice: Complete the Grammar",
+          "instructions": "Fill in each gap with the correct form.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: You [0] see a doctor if symptoms continue. | You [1] to finish your medicine. | Drink [2] water.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "should (lời khuyên); need (need to); a little (nước không đếm được).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "You [0] see a doctor if symptoms continue. You [1] to finish your medicine. Drink [2] water.",
+                "correctAnswers": [
+                  "should",
+                  "need",
+                  "a little"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "should",
+                    "Should"
+                  ],
+                  [
+                    "need",
+                    "Need"
+                  ],
+                  [
+                    "a little",
+                    "A little"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: You [0] not share cups when you are ill. | I have [1] apples for a healthy snack. | Do [2] exercise every day.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "must (cấm); a few (apples đếm được); a little (exercise không đếm).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "You [0] not share cups when you are ill. I have [1] apples for a healthy snack. Do [2] exercise every day.",
+                "correctAnswers": [
+                  "must",
+                  "a few",
+                  "a little"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "must",
+                    "Must"
+                  ],
+                  [
+                    "a few",
+                    "A few"
+                  ],
+                  [
+                    "a little",
+                    "A little"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "grammar-health-check",
+          "title": "Check: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Patients _____ make an appointment before visiting the clinic.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Should = khuyên nên đặt lịch trước.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "must to",
+                  "isCorrect": false,
+                  "distractorNote": "No to after must"
+                },
+                {
+                  "text": "should",
+                  "isCorrect": true
+                },
+                {
+                  "text": "needs to",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong agreement"
+                }
+              ]
+            },
+            {
+              "questionText": "There is _____ medicine left. Take it tonight.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Medicine không đếm được → a little.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "a few",
+                  "isCorrect": false,
+                  "distractorNote": "Few + countable"
+                },
+                {
+                  "text": "a little",
+                  "isCorrect": true
+                },
+                {
+                  "text": "few medicines",
+                  "isCorrect": false,
+                  "distractorNote": "Medicine usually uncountable here"
+                }
+              ]
+            },
+            {
+              "questionText": "You _____ tell the doctor about your allergy to nuts.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Must = bắt buộc thông tin quan trọng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "should to",
+                  "isCorrect": false,
+                  "distractorNote": "No to"
+                },
+                {
+                  "text": "must",
+                  "isCorrect": true
+                },
+                {
+                  "text": "need",
+                  "isCorrect": false,
+                  "distractorNote": "Need to required"
+                }
+              ]
+            },
+            {
+              "questionText": "He felt better after _____ days of treatment.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Days đếm được → a few days.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "a little",
+                  "isCorrect": false,
+                  "distractorNote": "Little + uncountable"
+                },
+                {
+                  "text": "a few",
+                  "isCorrect": true
+                },
+                {
+                  "text": "little",
+                  "isCorrect": false,
+                  "distractorNote": "Changes meaning"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-health-order",
+          "title": "Apply: Build the Sentence",
+          "instructions": "Put the words in the correct order to make a sentence.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: You / should / drink / a little / warm water.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "You should drink a little warm water. — modal + a little + uncountable.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "words": [
+                  "You",
+                  "should",
+                  "drink",
+                  "a little",
+                  "warm water."
+                ],
+                "correctOrder": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            },
+            {
+              "questionText": "Make a sentence: You / must / not / share / cups.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "You must not share cups. — must not + base verb.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "words": [
+                  "You",
+                  "must",
+                  "not",
+                  "share",
+                  "cups."
+                ],
+                "correctOrder": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            },
+            {
+              "questionText": "Make a sentence: I / have / a few / symptoms / today.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "I have a few symptoms today. — a few + countable plural.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "words": [
+                  "I",
+                  "have",
+                  "a few",
+                  "symptoms",
+                  "today."
+                ],
+                "correctOrder": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-health-article",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e5000003-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Health Article",
+      "learningObjective": "Understand health vocabulary in context and identify advice in a short article.",
+      "estimatedMinutes": 23,
+      "exercises": [
+        {
+          "slug": "reading-health-learn",
+          "title": "Learn: Read the Health Article",
+          "instructions": "Read the article carefully. Answer the detail questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Staying Healthy This Winter",
+              "text": "HEALTH TIPS FROM DR NGUYEN\n\nWinter is a busy time at our clinic. Many patients call to make an appointment because of cold symptoms such as a cough or fever. Dr Nguyen says prevention is better than treatment.\n\n\"Wash your hands often and eat healthy food,\" she advises. \"If you have an allergy to nuts, check food labels carefully. A few nuts can cause a serious problem.\"\n\nWhen you feel unwell, note your symptoms and rest at home. You should drink a little warm water and sleep well. You must not share cups with family members if you are ill.\n\nFor a bad injury, go to hospital immediately. The nurse will clean the wound and give you a prescription for medicine. Most people recover in a week if they follow the doctor's advice.\n\nRemember: you need to finish all your medicine, even when you feel better. If symptoms continue, book another appointment. Prevention, rest and good habits help you stay healthy all year.",
+              "wordCount": 163,
+              "imagePrompt": "A friendly doctor in a clinic giving health advice on a poster about symptoms, prevention and appointments; clean medical setting."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What should people with a nut allergy do?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Check food labels carefully if you have an allergy to nuts.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "Avoid all exercise",
+                  "isCorrect": false,
+                  "distractorNote": "Exercise is recommended"
+                },
+                {
+                  "text": "Check food labels carefully",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Skip appointments",
+                  "isCorrect": false,
+                  "distractorNote": "Appointments still needed"
+                }
+              ]
+            },
+            {
+              "questionText": "What must ill people not do with family cups?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "You must not share cups with family members if you are ill.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "Wash them",
+                  "isCorrect": false,
+                  "distractorNote": "Washing not forbidden"
+                },
+                {
+                  "text": "Share them",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Buy new ones",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-health-practice",
+          "title": "Practice: Words in the Article",
+          "instructions": "Read the article again. Answer about vocabulary and meaning.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Staying Healthy This Winter",
+              "text": "HEALTH TIPS FROM DR NGUYEN\n\nWinter is a busy time at our clinic. Many patients call to make an appointment because of cold symptoms such as a cough or fever. Dr Nguyen says prevention is better than treatment.\n\n\"Wash your hands often and eat healthy food,\" she advises. \"If you have an allergy to nuts, check food labels carefully. A few nuts can cause a serious problem.\"\n\nWhen you feel unwell, note your symptoms and rest at home. You should drink a little warm water and sleep well. You must not share cups with family members if you are ill.\n\nFor a bad injury, go to hospital immediately. The nurse will clean the wound and give you a prescription for medicine. Most people recover in a week if they follow the doctor's advice.\n\nRemember: you need to finish all your medicine, even when you feel better. If symptoms continue, book another appointment. Prevention, rest and good habits help you stay healthy all year.",
+              "wordCount": 163,
+              "imagePrompt": "A friendly doctor in a clinic giving health advice on a poster about symptoms, prevention and appointments; clean medical setting."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "In the article, 'prevention' means _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Prevention is better than treatment — ngăn bệnh trước khi cần điều trị.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "vocabulary_in_context",
+              "choices": [
+                {
+                  "text": "medicine from a doctor",
+                  "isCorrect": false,
+                  "distractorNote": "That is prescription/treatment"
+                },
+                {
+                  "text": "stopping illness before it happens",
+                  "isCorrect": true
+                },
+                {
+                  "text": "recovering after surgery",
+                  "isCorrect": false,
+                  "distractorNote": "That is recovery"
+                }
+              ]
+            },
+            {
+              "questionText": "Why does Dr Nguyen mention finishing all medicine?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Even when you feel better — để điều trị hiệu quả, tránh tái phát.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "inference",
+              "choices": [
+                {
+                  "text": "To get a new prescription",
+                  "isCorrect": false,
+                  "distractorNote": "Not the reason given"
+                },
+                {
+                  "text": "To make sure treatment works completely",
+                  "isCorrect": true
+                },
+                {
+                  "text": "To avoid exercise",
+                  "isCorrect": false,
+                  "distractorNote": "Exercise is encouraged"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-health-check",
+          "title": "Check: Main Idea and Order",
+          "instructions": "Read the article one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Staying Healthy This Winter",
+              "text": "HEALTH TIPS FROM DR NGUYEN\n\nWinter is a busy time at our clinic. Many patients call to make an appointment because of cold symptoms such as a cough or fever. Dr Nguyen says prevention is better than treatment.\n\n\"Wash your hands often and eat healthy food,\" she advises. \"If you have an allergy to nuts, check food labels carefully. A few nuts can cause a serious problem.\"\n\nWhen you feel unwell, note your symptoms and rest at home. You should drink a little warm water and sleep well. You must not share cups with family members if you are ill.\n\nFor a bad injury, go to hospital immediately. The nurse will clean the wound and give you a prescription for medicine. Most people recover in a week if they follow the doctor's advice.\n\nRemember: you need to finish all your medicine, even when you feel better. If symptoms continue, book another appointment. Prevention, rest and good habits help you stay healthy all year.",
+              "wordCount": 163,
+              "imagePrompt": "A friendly doctor in a clinic giving health advice on a poster about symptoms, prevention and appointments; clean medical setting."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main message of the article?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Bài nhấn mạnh prevention, rest và thói quen tốt để khỏe cả năm.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "All injuries need surgery",
+                  "isCorrect": false,
+                  "distractorNote": "Hospital for bad injuries only"
+                },
+                {
+                  "text": "Good habits and prevention help you stay healthy",
+                  "isCorrect": true
+                },
+                {
+                  "text": "You should never see a doctor",
+                  "isCorrect": false,
+                  "distractorNote": "Appointments are recommended"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the advice in order: (1) Rest and note symptoms (2) Prevention habits (3) Finish medicine and follow-up",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Bài: prevention trước → khi ốm nghỉ/ngờ symptom → hoàn thành thuốc.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "sequencing",
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Prevention comes first in article"
+                },
+                {
+                  "text": "2 → 1 → 3",
+                  "isCorrect": true
+                },
+                {
+                  "text": "3 → 1 → 2",
+                  "isCorrect": false,
+                  "distractorNote": "Medicine at end"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-health-apply",
+          "title": "Apply: Match Facts from the Article",
+          "instructions": "Use what you read. Match each item to the correct fact.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Staying Healthy This Winter",
+              "text": "HEALTH TIPS FROM DR NGUYEN\n\nWinter is a busy time at our clinic. Many patients call to make an appointment because of cold symptoms such as a cough or fever. Dr Nguyen says prevention is better than treatment.\n\n\"Wash your hands often and eat healthy food,\" she advises. \"If you have an allergy to nuts, check food labels carefully. A few nuts can cause a serious problem.\"\n\nWhen you feel unwell, note your symptoms and rest at home. You should drink a little warm water and sleep well. You must not share cups with family members if you are ill.\n\nFor a bad injury, go to hospital immediately. The nurse will clean the wound and give you a prescription for medicine. Most people recover in a week if they follow the doctor's advice.\n\nRemember: you need to finish all your medicine, even when you feel better. If symptoms continue, book another appointment. Prevention, rest and good habits help you stay healthy all year.",
+              "wordCount": 163,
+              "imagePrompt": "A friendly doctor in a clinic giving health advice on a poster about symptoms, prevention and appointments; clean medical setting."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each topic to a fact from the health article.",
+              "questionType": "matching",
+              "skillTag": "reading",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 4,
+              "explanation": "Mỗi mục khớp với lời khuyên cụ thể của Dr Nguyen.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Bad injury",
+                  "right": "Go to hospital immediately"
+                },
+                {
+                  "left": "Allergy",
+                  "right": "Check food labels for nuts"
+                },
+                {
+                  "left": "Recovery time",
+                  "right": "About a week with doctor's advice"
+                },
+                {
+                  "left": "When ill",
+                  "right": "Drink a little warm water and rest"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-health-clinic",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e5000003-0000-4000-8000-000000000003",
+      "title": "Lesson 4: At the Clinic",
+      "learningObjective": "Listen to clinic conversations and a health podcast to understand advice and opinions.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "listening-clinic-learn",
+          "title": "Learn: Doctor's Appointment",
+          "instructions": "Listen to the conversation. Answer the first two questions.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "At the Doctor's Surgery",
+              "setting": "Doctor's waiting room and consultation",
+              "speakers": [
+                {
+                  "name": "Receptionist",
+                  "role": "clinic receptionist"
+                },
+                {
+                  "name": "Patient",
+                  "role": "student patient"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Receptionist",
+                  "text": "Good morning. Do you have an appointment today?"
+                },
+                {
+                  "speaker": "Patient",
+                  "text": "Yes. My name is Lan. I booked online yesterday."
+                },
+                {
+                  "speaker": "Receptionist",
+                  "text": "Please sit down. The doctor is busy with another patient."
+                },
+                {
+                  "speaker": "Patient",
+                  "text": "Thank you. I have had a bad cough for three days."
+                },
+                {
+                  "speaker": "Receptionist",
+                  "text": "That is a common symptom in winter. Have you taken any medicine?"
+                },
+                {
+                  "speaker": "Patient",
+                  "text": "No. I thought I should rest first. I also have a little fever."
+                },
+                {
+                  "speaker": "Receptionist",
+                  "text": "The doctor will check you soon. You must wear a mask in the clinic."
+                }
+              ],
+              "audioNotes": "Clear clinic dialogue, calm tone. Approx. 45 seconds."
+            },
+            "answerKey": {
+              "q1": "appointment booked",
+              "q2": "cough three days"
+            },
+            "audioUrl": "/audio/listening/ket/unit-03/listening-clinic-learn.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "Does the patient have an appointment?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Yes, she booked online yesterday.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "No, she is walk-in",
+                  "isCorrect": false,
+                  "distractorNote": "She confirms appointment"
+                },
+                {
+                  "text": "Yes, booked online yesterday",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes, but for next week",
+                  "isCorrect": false,
+                  "distractorNote": "Today's visit"
+                }
+              ]
+            },
+            {
+              "questionText": "What symptom does the patient mention first?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "I have had a bad cough for three days.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A broken leg",
+                  "isCorrect": false,
+                  "distractorNote": "Injury not mentioned"
+                },
+                {
+                  "text": "A bad cough",
+                  "isCorrect": true
+                },
+                {
+                  "text": "An allergy to nuts",
+                  "isCorrect": false,
+                  "distractorNote": "Allergy from article"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-clinic-practice",
+          "title": "Practice: More from the Clinic",
+          "instructions": "Listen again to the same conversation. Answer the next questions.",
+          "exerciseType": "listening",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "At the Doctor's Surgery",
+              "setting": "Doctor's waiting room and consultation",
+              "speakers": [
+                {
+                  "name": "Receptionist",
+                  "role": "clinic receptionist"
+                },
+                {
+                  "name": "Patient",
+                  "role": "student patient"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Receptionist",
+                  "text": "Good morning. Do you have an appointment today?"
+                },
+                {
+                  "speaker": "Patient",
+                  "text": "Yes. My name is Lan. I booked online yesterday."
+                },
+                {
+                  "speaker": "Receptionist",
+                  "text": "Please sit down. The doctor is busy with another patient."
+                },
+                {
+                  "speaker": "Patient",
+                  "text": "Thank you. I have had a bad cough for three days."
+                },
+                {
+                  "speaker": "Receptionist",
+                  "text": "That is a common symptom in winter. Have you taken any medicine?"
+                },
+                {
+                  "speaker": "Patient",
+                  "text": "No. I thought I should rest first. I also have a little fever."
+                },
+                {
+                  "speaker": "Receptionist",
+                  "text": "The doctor will check you soon. You must wear a mask in the clinic."
+                }
+              ],
+              "audioNotes": "Clear clinic dialogue, calm tone. Approx. 45 seconds."
+            },
+            "answerKey": {
+              "q1": "little fever",
+              "q2": "wear a mask"
+            },
+            "audioUrl": "/audio/listening/ket/unit-03/listening-clinic-practice.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What other symptom does the patient have?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "I also have a little fever.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A serious injury",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "A little fever",
+                  "isCorrect": true
+                },
+                {
+                  "text": "No other symptoms",
+                  "isCorrect": false,
+                  "distractorNote": "She mentions fever"
+                }
+              ]
+            },
+            {
+              "questionText": "What must patients do in the clinic?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "You must wear a mask in the clinic.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Pay immediately",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "Wear a mask",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Bring a prescription",
+                  "isCorrect": false,
+                  "distractorNote": "Doctor gives prescription"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-podcast-check",
+          "title": "Check: Health Podcast",
+          "instructions": "Listen to a new recording. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Health Podcast — Exercise and Prevention",
+              "setting": "Radio health segment",
+              "speakers": [
+                {
+                  "name": "Host",
+                  "role": "radio presenter"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Host",
+                  "text": "Welcome to Healthy Living. Today we talk about exercise and prevention."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "You should do a little exercise every day, even a short walk. A few minutes can help."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "For injury prevention, warm up before sport. You must wear good shoes when you run."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "If you have an allergy, tell your coach. Some people need to avoid certain foods."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "Remember, treatment is important, but healthy habits help you recover faster too."
+                },
+                {
+                  "speaker": "Host",
+                  "text": "Next week we will discuss sleep and stress. Thanks for listening."
+                }
+              ],
+              "audioNotes": "Friendly radio presenter, moderate pace. Approx. 40 seconds."
+            },
+            "answerKey": {
+              "q1": "exercise prevention",
+              "q2": "warm up",
+              "q3": "tell coach about allergy"
+            },
+            "audioUrl": "/audio/listening/ket/unit-03/listening-podcast-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What is the podcast mainly about?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Today we talk about exercise and prevention.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Prescriptions and treatment",
+                  "isCorrect": false,
+                  "distractorNote": "Mentioned briefly"
+                },
+                {
+                  "text": "Exercise and prevention",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Hospital injuries only",
+                  "isCorrect": false,
+                  "distractorNote": "Broader topic"
+                }
+              ]
+            },
+            {
+              "questionText": "What does the host say about sport?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Warm up before sport. You must wear good shoes when you run.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Never do exercise",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite of advice"
+                },
+                {
+                  "text": "Warm up and wear good shoes",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Only exercise when ill",
+                  "isCorrect": false,
+                  "distractorNote": "Rest when ill"
+                }
+              ]
+            },
+            {
+              "questionText": "What is the host's opinion about treatment and habits?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Treatment is important, but healthy habits help you recover faster too.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Treatment is not important",
+                  "isCorrect": false,
+                  "distractorNote": "Host values both"
+                },
+                {
+                  "text": "Healthy habits help recovery as well as treatment",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Only medicine helps",
+                  "isCorrect": false,
+                  "distractorNote": "Too extreme"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-clinic-match",
+          "title": "Apply: Match What You Heard",
+          "instructions": "Listen again to the clinic conversation. Match each item to the correct detail.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "At the Doctor's Surgery",
+              "setting": "Doctor's waiting room and consultation",
+              "speakers": [
+                {
+                  "name": "Receptionist",
+                  "role": "clinic receptionist"
+                },
+                {
+                  "name": "Patient",
+                  "role": "student patient"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Receptionist",
+                  "text": "Good morning. Do you have an appointment today?"
+                },
+                {
+                  "speaker": "Patient",
+                  "text": "Yes. My name is Lan. I booked online yesterday."
+                },
+                {
+                  "speaker": "Receptionist",
+                  "text": "Please sit down. The doctor is busy with another patient."
+                },
+                {
+                  "speaker": "Patient",
+                  "text": "Thank you. I have had a bad cough for three days."
+                },
+                {
+                  "speaker": "Receptionist",
+                  "text": "That is a common symptom in winter. Have you taken any medicine?"
+                },
+                {
+                  "speaker": "Patient",
+                  "text": "No. I thought I should rest first. I also have a little fever."
+                },
+                {
+                  "speaker": "Receptionist",
+                  "text": "The doctor will check you soon. You must wear a mask in the clinic."
+                }
+              ],
+              "audioNotes": "Clear clinic dialogue, calm tone. Approx. 45 seconds."
+            },
+            "audioUrl": "/audio/listening/ket/unit-03/listening-clinic-match.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "Match each item from the clinic conversation.",
+              "questionType": "matching",
+              "skillTag": "listening",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "Mỗi mục khớp với chi tiết Lan và lễ tân nói.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Booking",
+                  "right": "Online yesterday"
+                },
+                {
+                  "left": "Main symptom",
+                  "right": "Bad cough for three days"
+                },
+                {
+                  "left": "Clinic rule",
+                  "right": "Must wear a mask"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-health-note",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e5000003-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Note About Symptoms",
+      "learningObjective": "Write a short note about symptoms and request an appointment using health vocabulary.",
+      "estimatedMinutes": 25,
+      "exercises": [
+        {
+          "slug": "writing-health-learn",
+          "title": "Learn: Health Note Phrases",
+          "instructions": "Complete each gap with a word from the box: appointment, symptom, doctor, should, thank.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Dear [0], | I would like to make an [1]. | My main [2] is a sore throat. | I think I [3] rest at home.",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Doctor; appointment; symptom; should — khung ghi chú ngắn gửi phòng khám.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Dear [0],\n\nI would like to make an [1]. My main [2] is a sore throat. I think I [3] rest at home.\n\nThank you.",
+                "correctAnswers": [
+                  "Doctor",
+                  "appointment",
+                  "symptom",
+                  "should"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "Doctor",
+                    "doctor"
+                  ],
+                  [
+                    "appointment",
+                    "Appointment"
+                  ],
+                  [
+                    "symptom",
+                    "Symptom"
+                  ],
+                  [
+                    "should",
+                    "Should"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-health-order-practice",
+          "title": "Practice: Build Health Sentences",
+          "instructions": "Put the words in order to make correct sentences.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: You / should / drink / a little / water.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "You should drink a little water. — lời khuyên sức khỏe.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "words": [
+                  "You",
+                  "should",
+                  "drink",
+                  "a little",
+                  "water."
+                ],
+                "correctOrder": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            },
+            {
+              "questionText": "Make a sentence: I / need to / see / the doctor / tomorrow.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "I need to see the doctor tomorrow. — need to + động từ.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "words": [
+                  "I",
+                  "need to",
+                  "see",
+                  "the doctor",
+                  "tomorrow."
+                ],
+                "correctOrder": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-health-check",
+          "title": "Check: Symptoms and Appointment Note",
+          "instructions": "Write a short note to your doctor. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "You are not feeling well. Write a short note to Dr Nguyen to request an appointment and describe your symptoms.",
+            "prompts": [
+              "Say you want to make an appointment.",
+              "Describe two symptoms you have.",
+              "Say what you have done so far (e.g. rest, drink water).",
+              "Ask when you can visit the clinic.",
+              "End politely."
+            ],
+            "expectedLength": "At least 25 words",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Clear appointment request",
+              "Describes at least two symptoms",
+              "Uses should or need to appropriately",
+              "Polite closing"
+            ],
+            "modelAnswer": {
+              "text": "Dear Dr Nguyen,\n\nI would like to make an appointment, please. I have had a cough and a little fever for three days. I have rested at home and drunk warm water, but I do not feel better. I think I should see you soon. When can I come to the clinic?\n\nThank you,\nLan"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses should, must or need to correctly; a few/a little where appropriate."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses health words (appointment, symptom, recover, treatment) appropriately."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Note has greeting, clear body and polite closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Requests appointment with symptoms; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your response following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Bài mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-health-check",
+                "autoCheckKeywords": [
+                  "dear",
+                  "appointment",
+                  "symptom",
+                  "doctor",
+                  "should",
+                  "need",
+                  "thank",
+                  "cough",
+                  "fever",
+                  "clinic"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-health-apply",
+          "title": "Apply: Complete the Note Frames",
+          "instructions": "Complete the note frames with the correct unit words.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Dear Nurse, | I have an [0] to nuts. | I had a small [1] yesterday. | The [2] helped me. | I hope to [3] soon.",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 4,
+              "explanation": "allergy; injury; treatment; recover — tóm tắt tình huống sức khỏe.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Dear Nurse,\n\nI have an [0] to nuts. I had a small [1] yesterday. The [2] helped me. I hope to [3] soon.\n\nThank you,\nMinh",
+                "correctAnswers": [
+                  "allergy",
+                  "injury",
+                  "treatment",
+                  "recover"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "allergy",
+                    "Allergy"
+                  ],
+                  [
+                    "injury",
+                    "Injury"
+                  ],
+                  [
+                    "treatment",
+                    "Treatment"
+                  ],
+                  [
+                    "recover",
+                    "Recover"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-health-lifestyle",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e5000003-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Health",
+      "learningObjective": "Answer questions about health habits, symptoms and lifestyle choices.",
+      "estimatedMinutes": 20,
+      "exercises": [
+        {
+          "slug": "speaking-health-learn",
+          "title": "Learn: Choose the Best Reply",
+          "instructions": "Imagine an examiner asks you a question. Choose the best answer.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: How do you stay healthy? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Healthy habits ngắn gọn: eat healthy food, exercise.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I eat symptom food every day.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong word"
+                },
+                {
+                  "text": "I eat healthy food and do a little exercise.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I have injury every morning.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: What should you do when you have a cough? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Should + lời khuyên: rest and drink water.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I should to rest and drink.",
+                  "isCorrect": false,
+                  "distractorNote": "No to after should"
+                },
+                {
+                  "text": "I should rest and drink a little warm water.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I must resting at home.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong form after must"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: Have you ever been to a doctor's appointment? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Trả lời có/không + chi tiết ngắn về appointment.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, I prescription last month.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong word"
+                },
+                {
+                  "text": "Yes, I went last month because I had a fever.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes, I allergy the doctor.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-health-practice",
+          "title": "Practice: Best Response",
+          "instructions": "Choose the best phrase you would say in each situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: Do you have any allergies? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Have an allergy to + thực phẩm — cấu trúc A2 chuẩn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, I have injury to milk.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong noun"
+                },
+                {
+                  "text": "Yes, I have an allergy to milk.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes, I recover to milk.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong verb"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: What must you do in a hospital waiting room? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Must + quy tắc: be quiet, wear a mask.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "You must to be quiet.",
+                  "isCorrect": false,
+                  "distractorNote": "No to"
+                },
+                {
+                  "text": "You must be quiet and wear a mask.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "You should must be quiet.",
+                  "isCorrect": false,
+                  "distractorNote": "Double modal"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: How long did it take you to recover from your cold? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Recover + thời gian: about a week.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "It took about a week to prescription.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong word"
+                },
+                {
+                  "text": "It took about a week to recover.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "It took about a week to allergy.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong word"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-health-interview",
+          "title": "Check: Health and Lifestyle Interview",
+          "instructions": "Answer the examiner's questions about health. Speak for up to two minutes.",
+          "exerciseType": "speaking",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-health-interview",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 120
+              }
+            }
+          ]
+        },
+        {
+          "slug": "speaking-health-apply",
+          "title": "Apply: Situational Responses",
+          "instructions": "Choose the best thing to say in each situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Your friend has a bad headache. You advise them:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Should + lời khuyên thực tế: rest, see doctor if needed.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "You should run fast.",
+                  "isCorrect": false,
+                  "distractorNote": "Bad advice"
+                },
+                {
+                  "text": "You should rest. If it continues, make an appointment.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "You must share cups with everyone.",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite of health rule"
+                }
+              ]
+            },
+            {
+              "questionText": "A nurse asks about your symptoms. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Liệt kê symptom rõ ràng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I have a prescription and injury.",
+                  "isCorrect": false,
+                  "distractorNote": "Mixed wrong words"
+                },
+                {
+                  "text": "I have a cough and a little fever.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I have prevention and career.",
+                  "isCorrect": false,
+                  "distractorNote": "Unrelated words"
+                }
+              ]
+            },
+            {
+              "questionText": "The examiner asks: Is prevention important? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "health-and-lifestyle",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Đưa ra ý kiến + lý do ngắn về prevention.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, prevention is my salary.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense"
+                },
+                {
+                  "text": "Yes, prevention is important because it stops illness before treatment.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "No, you must never exercise.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong advice"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

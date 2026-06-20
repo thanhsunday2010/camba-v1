@@ -1,0 +1,3011 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by A2 Key task formats only.",
+    "program": "cambridge-english",
+    "level": "ket",
+    "cefr": "a2",
+    "unitNumber": 12,
+    "unitSlug": "public-places-and-directions",
+    "unitTitle": "Public Places and Directions",
+    "targetAge": "11-14",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Use core public places and directions vocabulary at A2 level.",
+      "Use imperatives to give and follow clear directions.",
+      "Use through, across and along to describe movement routes.",
+      "Read short signs and messages about public places.",
+      "Listen to longer extracts and identify route details.",
+      "Write short directions to meet at a landmark.",
+      "Answer interview questions about places in town."
+    ],
+    "grammarFocus": [
+      "Imperatives and directions",
+      "Prepositions of movement: through, across, along"
+    ],
+    "readingSkillFocus": "Multiple Choice with Short Texts (Signs, Messages)",
+    "listeningSkillFocus": "Multiple Choice Questions (Longer Extracts)"
+  },
+  "vocabularyBank": [
+    {
+      "word": "pedestrian",
+      "ipa": "/pəˈdestriən/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "người đi bộ",
+      "exampleSentence": "Pedestrians must use the pavement near the crossing.",
+      "difficulty": 2,
+      "topic": "public-places-and-directions",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "crossing",
+      "ipa": "/ˈkrɒsɪŋ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "lối qua đường / vạch sang đường",
+      "exampleSentence": "Wait at the crossing until the light turns green.",
+      "difficulty": 1,
+      "topic": "public-places-and-directions",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "monument",
+      "ipa": "/ˈmɒnjumənt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "đài tưởng niệm",
+      "exampleSentence": "The war monument stands in the main square.",
+      "difficulty": 2,
+      "topic": "public-places-and-directions",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "entrance",
+      "ipa": "/ˈentrəns/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "lối vào",
+      "exampleSentence": "The museum entrance is on River Street.",
+      "difficulty": 1,
+      "topic": "public-places-and-directions",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "exit",
+      "ipa": "/ˈeksɪt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "lối ra",
+      "exampleSentence": "Follow the signs to the nearest exit.",
+      "difficulty": 1,
+      "topic": "public-places-and-directions",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "square",
+      "ipa": "/skweə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "quảng trường",
+      "exampleSentence": "We meet friends in the town square every Saturday.",
+      "difficulty": 1,
+      "topic": "public-places-and-directions",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "statue",
+      "ipa": "/ˈstætʃuː/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "tượng",
+      "exampleSentence": "There is a famous statue in front of the library.",
+      "difficulty": 1,
+      "topic": "public-places-and-directions",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "landmark",
+      "ipa": "/ˈlændmɑːk/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "địa danh / cột mốc",
+      "exampleSentence": "The clock tower is a well-known landmark in our city.",
+      "difficulty": 2,
+      "topic": "public-places-and-directions",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "pavement",
+      "ipa": "/ˈpeɪvmənt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "vỉa hè",
+      "exampleSentence": "Walk on the pavement, not on the road.",
+      "difficulty": 1,
+      "topic": "public-places-and-directions",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "footbridge",
+      "ipa": "/ˈfʊtbrɪdʒ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "cầu bộ hành",
+      "exampleSentence": "Cross the river on the footbridge near the park.",
+      "difficulty": 2,
+      "topic": "public-places-and-directions",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "roundabout",
+      "ipa": "/ˈraʊndəbaʊt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bùng binh",
+      "exampleSentence": "Turn left at the roundabout after the monument.",
+      "difficulty": 2,
+      "topic": "public-places-and-directions",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "junction",
+      "ipa": "/ˈdʒʌŋkʃn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "ngã tư / nút giao",
+      "exampleSentence": "The bus stop is at the junction of Oak Road and Hill Street.",
+      "difficulty": 2,
+      "topic": "public-places-and-directions",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Imperatives and directions",
+      "explanation": "Use the base verb (without subject) to give clear instructions and directions. Add please to be polite. Use turn, go, walk, cross and follow for routes.",
+      "examples": [
+        "Turn left at the roundabout.",
+        "Walk along the pavement to the crossing.",
+        "Go through the park and cross the footbridge."
+      ],
+      "commonMistakes": [
+        "You turn left at the crossing (×) → Turn left at the crossing (✓)",
+        "Walk to along the square (×) → Walk along the square (✓)",
+        "Please crosses at the lights (×) → Please cross at the lights (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "public-places-and-directions"
+    },
+    {
+      "structure": "Prepositions of movement: through, across, along",
+      "explanation": "Use through for movement inside a space, across for from one side to another, and along for following a line or path.",
+      "examples": [
+        "Walk through the park to reach the square.",
+        "Go across the footbridge over the river.",
+        "Follow the path along the river to the monument."
+      ],
+      "commonMistakes": [
+        "Walk across the park tunnel (×) → Walk through the park tunnel (✓)",
+        "Go along the road to the other side (×) → Go across the road to the other side (✓)",
+        "Walk through the pavement line (×) → Walk along the pavement (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "public-places-and-directions"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-places-words",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Public Places and Directions Words",
+      "learningObjective": "Recognise and understand twelve public places and directions words at KET A2 level.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "vocab-places-learn",
+          "title": "Learn: Places Word Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "A person walking in the street is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Pedestrian (người đi bộ) đi bộ trên vỉa hè hoặc qua đường.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "landmark",
+                  "isCorrect": false,
+                  "distractorNote": "A famous place"
+                },
+                {
+                  "text": "pedestrian",
+                  "isCorrect": true
+                },
+                {
+                  "text": "monument",
+                  "isCorrect": false,
+                  "distractorNote": "A memorial structure"
+                }
+              ]
+            },
+            {
+              "questionText": "The safe place where people walk over a road is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Crossing (vạch sang đường) là nơi người đi bộ qua đường.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "roundabout",
+                  "isCorrect": false,
+                  "distractorNote": "Traffic circle"
+                },
+                {
+                  "text": "crossing",
+                  "isCorrect": true
+                },
+                {
+                  "text": "junction",
+                  "isCorrect": false,
+                  "distractorNote": "Road meeting point"
+                }
+              ]
+            },
+            {
+              "questionText": "A stone figure of a person or animal in a public place is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Statue (tượng) là tác phẩm điêu khắc công cộng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "exit",
+                  "isCorrect": false,
+                  "distractorNote": "Way out"
+                },
+                {
+                  "text": "statue",
+                  "isCorrect": true
+                },
+                {
+                  "text": "pavement",
+                  "isCorrect": false,
+                  "distractorNote": "Sidewalk"
+                }
+              ]
+            },
+            {
+              "questionText": "A large open area in the centre of a town is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Square (quảng trường) là không gian mở giữa thành phố.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "entrance",
+                  "isCorrect": false,
+                  "distractorNote": "Way in"
+                },
+                {
+                  "text": "square",
+                  "isCorrect": true
+                },
+                {
+                  "text": "footbridge",
+                  "isCorrect": false,
+                  "distractorNote": "Bridge for walkers"
+                }
+              ]
+            },
+            {
+              "questionText": "The door you use to go into a building is the _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Entrance (lối vào) là cửa vào.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "exit",
+                  "isCorrect": false,
+                  "distractorNote": "Way out"
+                },
+                {
+                  "text": "entrance",
+                  "isCorrect": true
+                },
+                {
+                  "text": "crossing",
+                  "isCorrect": false,
+                  "distractorNote": "Road crossing"
+                }
+              ]
+            },
+            {
+              "questionText": "A well-known building or place that helps you find your way is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Landmark (địa danh) giúp định hướng trong thành phố.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "pedestrian",
+                  "isCorrect": false,
+                  "distractorNote": "A person"
+                },
+                {
+                  "text": "landmark",
+                  "isCorrect": true
+                },
+                {
+                  "text": "pavement",
+                  "isCorrect": false,
+                  "distractorNote": "Path beside road"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-places-matching",
+          "title": "Practice: Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the places words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Mỗi từ khớp với một nghĩa rõ ràng. Monument và landmark đều liên quan địa điểm nổi bật.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "monument",
+                  "right": "a structure built to remember an important person or event"
+                },
+                {
+                  "left": "exit",
+                  "right": "the way out of a building or area"
+                },
+                {
+                  "left": "pavement",
+                  "right": "the path at the side of a road for walkers"
+                },
+                {
+                  "left": "footbridge",
+                  "right": "a bridge for people to walk across"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-places-check",
+          "title": "Check: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Drivers go around a circular island in the road at a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Roundabout (bùng binh) là nút giao hình tròn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "crossing",
+                  "isCorrect": false,
+                  "distractorNote": "Pedestrian path"
+                },
+                {
+                  "text": "roundabout",
+                  "isCorrect": true
+                },
+                {
+                  "text": "statue",
+                  "isCorrect": false,
+                  "distractorNote": "Art object"
+                }
+              ]
+            },
+            {
+              "questionText": "Two roads meet at a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Junction (ngã tư) là nơi các đường giao nhau.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "entrance",
+                  "isCorrect": false,
+                  "distractorNote": "Building door"
+                },
+                {
+                  "text": "junction",
+                  "isCorrect": true
+                },
+                {
+                  "text": "square",
+                  "isCorrect": false,
+                  "distractorNote": "Open plaza"
+                }
+              ]
+            },
+            {
+              "questionText": "Please walk on the _____ — do not walk on the road.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Pavement (vỉa hè) dành cho người đi bộ.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "exit",
+                  "isCorrect": false,
+                  "distractorNote": "Way out"
+                },
+                {
+                  "text": "pavement",
+                  "isCorrect": true
+                },
+                {
+                  "text": "monument",
+                  "isCorrect": false,
+                  "distractorNote": "Memorial"
+                }
+              ]
+            },
+            {
+              "questionText": "Tourists took photos of the war _____ in the square.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Monument (đài tưởng niệm) tưởng nhớ sự kiện lịch sử.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "crossing",
+                  "isCorrect": false,
+                  "distractorNote": "Road feature"
+                },
+                {
+                  "text": "monument",
+                  "isCorrect": true
+                },
+                {
+                  "text": "pedestrian",
+                  "isCorrect": false,
+                  "distractorNote": "A person"
+                }
+              ]
+            },
+            {
+              "questionText": "We crossed the river on a narrow _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Footbridge (cầu bộ hành) chỉ dành cho người đi bộ.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "landmark",
+                  "isCorrect": false,
+                  "distractorNote": "Famous place"
+                },
+                {
+                  "text": "footbridge",
+                  "isCorrect": true
+                },
+                {
+                  "text": "junction",
+                  "isCorrect": false,
+                  "distractorNote": "Road meeting"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-places-apply",
+          "title": "Apply: Words in Sentences",
+          "instructions": "Complete each sentence with the correct word from the unit.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.36,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Use the [0] on River Street. | Wait at the [1] for the green light. | Meet me in the town [2].",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "entrance (lối vào); crossing (vạch sang đường); square (quảng trường).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Use the [0] on River Street. Wait at the [1] for the green light. Meet me in the town [2].",
+                "correctAnswers": [
+                  "entrance",
+                  "crossing",
+                  "square"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "entrance",
+                    "Entrance"
+                  ],
+                  [
+                    "crossing",
+                    "Crossing"
+                  ],
+                  [
+                    "square",
+                    "Square"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: The clock tower is a famous [0]. | Walk on the [1], not the road. | Leave by the side [2] to the square.",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "landmark (địa danh); pavement (vỉa hè); exit (lối ra).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "The clock tower is a famous [0]. Walk on the [1], not the road. Leave by the side [2] to the square.",
+                "correctAnswers": [
+                  "landmark",
+                  "pavement",
+                  "exit"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "landmark",
+                    "Landmark"
+                  ],
+                  [
+                    "pavement",
+                    "Pavement"
+                  ],
+                  [
+                    "exit",
+                    "Exit"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-directions-movement",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e5000012-0000-4000-8000-000000000001",
+      "title": "Lesson 2: Directions and Movement",
+      "learningObjective": "Use imperatives and prepositions through, across and along to give and understand directions.",
+      "estimatedMinutes": 24,
+      "exercises": [
+        {
+          "slug": "grammar-directions-learn",
+          "title": "Learn: Imperatives and Prepositions",
+          "instructions": "Choose the correct word or phrase to complete each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "_____ left at the roundabout.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Imperative: Turn left — không cần chủ ngữ.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Turning",
+                  "isCorrect": false,
+                  "distractorNote": "Gerund form"
+                },
+                {
+                  "text": "Turn",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Turns",
+                  "isCorrect": false,
+                  "distractorNote": "Third person"
+                }
+              ]
+            },
+            {
+              "questionText": "Walk _____ the pavement to the crossing.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Along + đường đi dài: along the pavement.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "through",
+                  "isCorrect": false,
+                  "distractorNote": "Inside a space"
+                },
+                {
+                  "text": "along",
+                  "isCorrect": true
+                },
+                {
+                  "text": "across",
+                  "isCorrect": false,
+                  "distractorNote": "One side to other"
+                }
+              ]
+            },
+            {
+              "questionText": "Go _____ the park to reach the square quickly.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Through + không gian bên trong: through the park.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "along",
+                  "isCorrect": false,
+                  "distractorNote": "Follow a line"
+                },
+                {
+                  "text": "through",
+                  "isCorrect": true
+                },
+                {
+                  "text": "across",
+                  "isCorrect": false,
+                  "distractorNote": "Over to other side only"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ the footbridge to the other side of the river.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Cross / Go across — qua từ bên này sang bên kia.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Crosses",
+                  "isCorrect": false,
+                  "distractorNote": "Third person"
+                },
+                {
+                  "text": "Cross",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Crossing",
+                  "isCorrect": false,
+                  "distractorNote": "Gerund/noun form"
+                }
+              ]
+            },
+            {
+              "questionText": "Pedestrians should use the crossing to go _____ the road.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Across the road — sang phía bên kia đường.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "through",
+                  "isCorrect": false,
+                  "distractorNote": "Inside tunnel"
+                },
+                {
+                  "text": "across",
+                  "isCorrect": true
+                },
+                {
+                  "text": "along",
+                  "isCorrect": false,
+                  "distractorNote": "Follow road line"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ straight ahead until you see the statue.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Imperative: Walk straight ahead.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Walked",
+                  "isCorrect": false,
+                  "distractorNote": "Past tense"
+                },
+                {
+                  "text": "Walk",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Walking",
+                  "isCorrect": false,
+                  "distractorNote": "Gerund"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-directions-practice",
+          "title": "Practice: Complete the Grammar",
+          "instructions": "Fill in each gap with the correct word.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: [0] along the river path. | Go [1] the museum entrance. | [2] at the junction.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 3,
+              "explanation": "Walk (imperative); through (inside); Turn (imperative).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "[0] along the river path. Go [1] the museum entrance. [2] at the junction.",
+                "correctAnswers": [
+                  "Walk",
+                  "through",
+                  "Turn"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "Walk",
+                    "walk"
+                  ],
+                  [
+                    "through",
+                    "Through"
+                  ],
+                  [
+                    "Turn",
+                    "turn"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: [0] the footbridge carefully. | Follow the signs to the [1]. | Go [2] the road at the crossing.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 3,
+              "explanation": "Cross (imperative); exit (noun); across (movement).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "[0] the footbridge carefully. Follow the signs to the [1]. Go [2] the road at the crossing.",
+                "correctAnswers": [
+                  "Cross",
+                  "exit",
+                  "across"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "Cross",
+                    "cross"
+                  ],
+                  [
+                    "exit",
+                    "Exit"
+                  ],
+                  [
+                    "across",
+                    "Across"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "grammar-directions-check",
+          "title": "Check: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.38,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Which instruction is correct for pedestrians at a busy junction?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Please cross at the pedestrian crossing — mệnh lệnh lịch sự.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Please crossing at the pedestrian crossing.",
+                  "isCorrect": false,
+                  "distractorNote": "Gerund wrong"
+                },
+                {
+                  "text": "Please cross at the pedestrian crossing.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Please crosses at the pedestrian crossing.",
+                  "isCorrect": false,
+                  "distractorNote": "Third person wrong"
+                }
+              ]
+            },
+            {
+              "questionText": "The guide said: 'Walk _____ the gallery to the monument room.'",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Along the gallery — đi theo hành lang.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "through",
+                  "isCorrect": false,
+                  "distractorNote": "Inside whole building"
+                },
+                {
+                  "text": "along",
+                  "isCorrect": true
+                },
+                {
+                  "text": "across",
+                  "isCorrect": false,
+                  "distractorNote": "Side to side only"
+                }
+              ]
+            },
+            {
+              "questionText": "To leave the station, you must go _____ the ticket hall to the main exit.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Through the ticket hall — đi xuyên qua không gian bên trong.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "along",
+                  "isCorrect": false,
+                  "distractorNote": "Follow edge only"
+                },
+                {
+                  "text": "through",
+                  "isCorrect": true
+                },
+                {
+                  "text": "across",
+                  "isCorrect": false,
+                  "distractorNote": "One step over"
+                }
+              ]
+            },
+            {
+              "questionText": "Which sentence gives a clear direction?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Turn right at the landmark — cấu trúc mệnh lệnh rõ ràng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Turning right at the landmark near the square.",
+                  "isCorrect": false,
+                  "distractorNote": "Not imperative"
+                },
+                {
+                  "text": "Turn right at the landmark near the square.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "You turning right at the landmark near the square.",
+                  "isCorrect": false,
+                  "distractorNote": "Ungrammatical"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-directions-order",
+          "title": "Apply: Build the Sentence",
+          "instructions": "Put the words in the correct order to make a sentence.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.4,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: Walk / along / the pavement / to / the crossing.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "Walk along the pavement to the crossing. — imperative + along.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "Walk"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "along"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "the pavement"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "to"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "the crossing."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5"
+                ]
+              },
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: Go / through / the park / and / cross / the footbridge.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "Go through the park and cross the footbridge. — through + across route.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "Go"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "through"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "the park"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "and"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "cross"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "the footbridge."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6"
+                ]
+              },
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: Turn / left / at / the roundabout / after / the monument.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 3,
+              "points": 2,
+              "explanation": "Turn left at the roundabout after the monument. — direction sequence.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "Turn"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "left"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "at"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "the roundabout"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "after"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "the monument."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6"
+                ]
+              },
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-museum-sign",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e5000012-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Museum Visitor Sign",
+      "learningObjective": "Read a short public sign and understand directions, details and vocabulary in context.",
+      "estimatedMinutes": 23,
+      "exercises": [
+        {
+          "slug": "reading-sign-learn",
+          "title": "Learn: Read the Museum Sign",
+          "instructions": "Read the sign carefully. Answer the detail questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "City Museum — Visitor Information",
+              "text": "WELCOME TO RIVERSIDE CITY MUSEUM\n\nENTRANCE: Main door on River Street (near the statue).\nEXIT: Side door to the square — for pedestrians only.\n\nVISITOR ROUTE\n1. Enter through the main entrance.\n2. Walk along the gallery to the monument room.\n3. Cross the footbridge display area to the exit.\n\nSAFETY\n• Do not run on the pavement outside.\n• Use the marked crossing on River Street.\n• The nearest landmark for taxis is the clock tower at the junction.\n\nOPEN: Tuesday–Sunday, 9 a.m. – 5 p.m.\nClosed Mondays.\n\nQuestions? Ask at the information desk by the entrance.",
+              "wordCount": 98,
+              "imagePrompt": "A printed museum information sign with entrance and exit arrows, a small map and safety icons near a city statue."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Where is the main entrance?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Main door on River Street near the statue.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "In the square by the exit",
+                  "isCorrect": false,
+                  "distractorNote": "Exit is side door"
+                },
+                {
+                  "text": "On River Street near the statue",
+                  "isCorrect": true
+                },
+                {
+                  "text": "At the junction by the clock tower",
+                  "isCorrect": false,
+                  "distractorNote": "Landmark for taxis, not entrance"
+                }
+              ]
+            },
+            {
+              "questionText": "Who may use the side exit to the square?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Side door to the square — for pedestrians only.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "Buses and taxis",
+                  "isCorrect": false,
+                  "distractorNote": "Not stated"
+                },
+                {
+                  "text": "Pedestrians only",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Museum staff only",
+                  "isCorrect": false,
+                  "distractorNote": "Not restricted to staff"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-sign-practice",
+          "title": "Practice: Words in the Sign",
+          "instructions": "Read the sign again. Answer about vocabulary and meaning.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "City Museum — Visitor Information",
+              "text": "WELCOME TO RIVERSIDE CITY MUSEUM\n\nENTRANCE: Main door on River Street (near the statue).\nEXIT: Side door to the square — for pedestrians only.\n\nVISITOR ROUTE\n1. Enter through the main entrance.\n2. Walk along the gallery to the monument room.\n3. Cross the footbridge display area to the exit.\n\nSAFETY\n• Do not run on the pavement outside.\n• Use the marked crossing on River Street.\n• The nearest landmark for taxis is the clock tower at the junction.\n\nOPEN: Tuesday–Sunday, 9 a.m. – 5 p.m.\nClosed Mondays.\n\nQuestions? Ask at the information desk by the entrance.",
+              "wordCount": 98,
+              "imagePrompt": "A printed museum information sign with entrance and exit arrows, a small map and safety icons near a city statue."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "In step 3 of the visitor route, visitors _____ the footbridge display area.",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Cross the footbridge display area — đi qua khu trưng bày cầu.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "vocabulary_in_context",
+              "choices": [
+                {
+                  "text": "argue",
+                  "isCorrect": false,
+                  "distractorNote": "Not in text"
+                },
+                {
+                  "text": "cross",
+                  "isCorrect": true
+                },
+                {
+                  "text": "congratulate",
+                  "isCorrect": false,
+                  "distractorNote": "Not in text"
+                }
+              ]
+            },
+            {
+              "questionText": "Why does the sign mention the clock tower?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Nearest landmark for taxis at the junction.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "inference",
+              "choices": [
+                {
+                  "text": "It is the museum exit",
+                  "isCorrect": false,
+                  "distractorNote": "Exit is side door"
+                },
+                {
+                  "text": "It is a landmark for finding taxis",
+                  "isCorrect": true
+                },
+                {
+                  "text": "It is closed on Mondays",
+                  "isCorrect": false,
+                  "distractorNote": "Monday closure is museum rule"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-sign-check",
+          "title": "Check: Main Idea and Order",
+          "instructions": "Read the sign one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "City Museum — Visitor Information",
+              "text": "WELCOME TO RIVERSIDE CITY MUSEUM\n\nENTRANCE: Main door on River Street (near the statue).\nEXIT: Side door to the square — for pedestrians only.\n\nVISITOR ROUTE\n1. Enter through the main entrance.\n2. Walk along the gallery to the monument room.\n3. Cross the footbridge display area to the exit.\n\nSAFETY\n• Do not run on the pavement outside.\n• Use the marked crossing on River Street.\n• The nearest landmark for taxis is the clock tower at the junction.\n\nOPEN: Tuesday–Sunday, 9 a.m. – 5 p.m.\nClosed Mondays.\n\nQuestions? Ask at the information desk by the entrance.",
+              "wordCount": 98,
+              "imagePrompt": "A printed museum information sign with entrance and exit arrows, a small map and safety icons near a city statue."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main purpose of this sign?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Welcome + entrance/exit + route + safety for visitors.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "To sell tickets for the town square",
+                  "isCorrect": false,
+                  "distractorNote": "Not selling"
+                },
+                {
+                  "text": "To guide visitors around the museum safely",
+                  "isCorrect": true
+                },
+                {
+                  "text": "To advertise a new statue",
+                  "isCorrect": false,
+                  "distractorNote": "Statue is location marker"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the visitor route steps in order: (1) Monument room (2) Main entrance (3) Exit area",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Enter → gallery/monument → cross to exit.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "sequencing",
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Enter first"
+                },
+                {
+                  "text": "2 → 1 → 3",
+                  "isCorrect": true
+                },
+                {
+                  "text": "3 → 2 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Exit before enter"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-sign-apply",
+          "title": "Apply: Match Facts from the Sign",
+          "instructions": "Use what you read. Match each item to the correct fact.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "City Museum — Visitor Information",
+              "text": "WELCOME TO RIVERSIDE CITY MUSEUM\n\nENTRANCE: Main door on River Street (near the statue).\nEXIT: Side door to the square — for pedestrians only.\n\nVISITOR ROUTE\n1. Enter through the main entrance.\n2. Walk along the gallery to the monument room.\n3. Cross the footbridge display area to the exit.\n\nSAFETY\n• Do not run on the pavement outside.\n• Use the marked crossing on River Street.\n• The nearest landmark for taxis is the clock tower at the junction.\n\nOPEN: Tuesday–Sunday, 9 a.m. – 5 p.m.\nClosed Mondays.\n\nQuestions? Ask at the information desk by the entrance.",
+              "wordCount": 98,
+              "imagePrompt": "A printed museum information sign with entrance and exit arrows, a small map and safety icons near a city statue."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each topic to a fact from the sign.",
+              "questionType": "matching",
+              "skillTag": "reading",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 4,
+              "explanation": "Mỗi mục khớp với thông tin cụ thể trên bảng hướng dẫn bảo tàng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Entrance location",
+                  "right": "River Street near the statue"
+                },
+                {
+                  "left": "Safety outside",
+                  "right": "Use the marked crossing"
+                },
+                {
+                  "left": "Opening days",
+                  "right": "Tuesday to Sunday"
+                },
+                {
+                  "left": "Help desk",
+                  "right": "By the entrance"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-directions-tour",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e5000012-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Tours and Station Directions",
+      "learningObjective": "Listen to longer extracts about routes and identify landmarks, directions and movement details.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "listening-tour-learn",
+          "title": "Learn: Walking Tour",
+          "instructions": "Listen to the tour guide. Answer the first two questions.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Walking Tour Directions",
+              "setting": "City square with a tour guide and tourists",
+              "speakers": [
+                {
+                  "name": "Elena",
+                  "role": "tour guide"
+                },
+                {
+                  "name": "Tourist",
+                  "role": "visitor"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Elena",
+                  "text": "Welcome everyone! We're standing in the main square next to the famous statue."
+                },
+                {
+                  "speaker": "Elena",
+                  "text": "Please walk along the pavement on your left. Go through the small park."
+                },
+                {
+                  "speaker": "Elena",
+                  "text": "At the junction, turn right. Cross the footbridge over the river."
+                },
+                {
+                  "speaker": "Tourist",
+                  "text": "Is the monument on this side of the river?"
+                },
+                {
+                  "speaker": "Elena",
+                  "text": "Yes. After the bridge, the war monument is straight ahead — it's an important landmark."
+                },
+                {
+                  "speaker": "Elena",
+                  "text": "We'll use the pedestrian crossing to return. The museum entrance is near the clock tower."
+                }
+              ],
+              "audioNotes": "Clear guide voice outdoors, light background ambience. Approx. 45 seconds."
+            },
+            "answerKey": {
+              "q1": "main square by statue",
+              "q2": "walk along pavement through park"
+            },
+            "audioUrl": "/audio/listening/ket/unit-12/listening-tour-learn.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "Where does the tour start?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Standing in the main square next to the famous statue.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "At the train station exit",
+                  "isCorrect": false,
+                  "distractorNote": "Different script"
+                },
+                {
+                  "text": "In the main square by the statue",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Inside the museum entrance",
+                  "isCorrect": false,
+                  "distractorNote": "Not the tour start"
+                }
+              ]
+            },
+            {
+              "questionText": "What is the first direction Elena gives?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Walk along the pavement on your left.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Cross the footbridge immediately",
+                  "isCorrect": false,
+                  "distractorNote": "Comes later"
+                },
+                {
+                  "text": "Walk along the pavement on the left",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Turn right at the roundabout",
+                  "isCorrect": false,
+                  "distractorNote": "Not first instruction"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-tour-practice",
+          "title": "Practice: More from the Walking Tour",
+          "instructions": "Listen again to the same tour. Answer the next questions.",
+          "exerciseType": "listening",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Walking Tour Directions",
+              "setting": "City square with a tour guide and tourists",
+              "speakers": [
+                {
+                  "name": "Elena",
+                  "role": "tour guide"
+                },
+                {
+                  "name": "Tourist",
+                  "role": "visitor"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Elena",
+                  "text": "Welcome everyone! We're standing in the main square next to the famous statue."
+                },
+                {
+                  "speaker": "Elena",
+                  "text": "Please walk along the pavement on your left. Go through the small park."
+                },
+                {
+                  "speaker": "Elena",
+                  "text": "At the junction, turn right. Cross the footbridge over the river."
+                },
+                {
+                  "speaker": "Tourist",
+                  "text": "Is the monument on this side of the river?"
+                },
+                {
+                  "speaker": "Elena",
+                  "text": "Yes. After the bridge, the war monument is straight ahead — it's an important landmark."
+                },
+                {
+                  "speaker": "Elena",
+                  "text": "We'll use the pedestrian crossing to return. The museum entrance is near the clock tower."
+                }
+              ],
+              "audioNotes": "Clear guide voice outdoors, light background ambience. Approx. 45 seconds."
+            },
+            "answerKey": {
+              "q1": "turn right at junction",
+              "q2": "monument after bridge"
+            },
+            "audioUrl": "/audio/listening/ket/unit-12/listening-tour-practice.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What do tourists do at the junction?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "At the junction, turn right.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Turn left",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite direction"
+                },
+                {
+                  "text": "Turn right",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Wait at a crossing",
+                  "isCorrect": false,
+                  "distractorNote": "Not at junction"
+                }
+              ]
+            },
+            {
+              "questionText": "What landmark is straight ahead after the footbridge?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "The war monument is straight ahead.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The clock tower",
+                  "isCorrect": false,
+                  "distractorNote": "Mentioned later for museum"
+                },
+                {
+                  "text": "The war monument",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The museum entrance",
+                  "isCorrect": false,
+                  "distractorNote": "Mentioned at end, not after bridge"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-station-check",
+          "title": "Check: Station to Square Directions",
+          "instructions": "Listen to a new conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Finding the Train Station Exit",
+              "setting": "Busy train station",
+              "speakers": [
+                {
+                  "name": "Minh",
+                  "role": "traveller"
+                },
+                {
+                  "name": "Staff",
+                  "role": "station worker"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Minh",
+                  "text": "Excuse me, how do I get to the town square from here?"
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Leave through the main exit and turn left."
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Walk along Station Road until you see the roundabout."
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "Do I cross the road at the junction?"
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "No. Use the pedestrian crossing after the roundabout. Go across the road safely."
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Walk through the park gate. The square with the statue is on your right."
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "Thank you! Is the clock tower a good landmark?"
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Yes, you can see it from the square."
+                }
+              ],
+              "audioNotes": "Station announcements softly in background. Approx. 50 seconds."
+            },
+            "answerKey": {
+              "q1": "town square",
+              "q2": "use crossing after roundabout",
+              "q3": "clock tower from square"
+            },
+            "audioUrl": "/audio/listening/ket/unit-12/listening-station-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "Where does Minh want to go?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "How do I get to the town square?",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The museum monument room",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "The town square",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The nearest exit only",
+                  "isCorrect": false,
+                  "distractorNote": "Exit is step, not destination"
+                }
+              ]
+            },
+            {
+              "questionText": "How should Minh cross the road at the junction?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Use the pedestrian crossing after the roundabout.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Cross directly at the junction",
+                  "isCorrect": false,
+                  "distractorNote": "Staff says no"
+                },
+                {
+                  "text": "Use the pedestrian crossing after the roundabout",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Go through the station again",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong direction"
+                }
+              ]
+            },
+            {
+              "questionText": "Which landmark can Minh see from the square?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Yes, you can see the clock tower from the square.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The footbridge",
+                  "isCorrect": false,
+                  "distractorNote": "On the route, not visible from square"
+                },
+                {
+                  "text": "The clock tower",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The war monument",
+                  "isCorrect": false,
+                  "distractorNote": "From tour script"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-tour-apply",
+          "title": "Apply: Match What You Heard",
+          "instructions": "Listen again to the walking tour. Match each item to the correct detail.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Walking Tour Directions",
+              "setting": "City square with a tour guide and tourists",
+              "speakers": [
+                {
+                  "name": "Elena",
+                  "role": "tour guide"
+                },
+                {
+                  "name": "Tourist",
+                  "role": "visitor"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Elena",
+                  "text": "Welcome everyone! We're standing in the main square next to the famous statue."
+                },
+                {
+                  "speaker": "Elena",
+                  "text": "Please walk along the pavement on your left. Go through the small park."
+                },
+                {
+                  "speaker": "Elena",
+                  "text": "At the junction, turn right. Cross the footbridge over the river."
+                },
+                {
+                  "speaker": "Tourist",
+                  "text": "Is the monument on this side of the river?"
+                },
+                {
+                  "speaker": "Elena",
+                  "text": "Yes. After the bridge, the war monument is straight ahead — it's an important landmark."
+                },
+                {
+                  "speaker": "Elena",
+                  "text": "We'll use the pedestrian crossing to return. The museum entrance is near the clock tower."
+                }
+              ],
+              "audioNotes": "Clear guide voice outdoors, light background ambience. Approx. 45 seconds."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each item from the walking tour.",
+              "questionType": "matching",
+              "skillTag": "listening",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "Mỗi mục khớp với hướng dẫn Elena đưa ra trong tour.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "First movement",
+                  "right": "Walk along the pavement"
+                },
+                {
+                  "left": "Through the park",
+                  "right": "Go through the small park"
+                },
+                {
+                  "left": "After the bridge",
+                  "right": "War monument straight ahead"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-directions-message",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e5000012-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Write Directions",
+      "learningObjective": "Write short directions to meet at a landmark using imperatives and movement prepositions.",
+      "estimatedMinutes": 25,
+      "exercises": [
+        {
+          "slug": "writing-directions-learn",
+          "title": "Learn: Direction Phrases",
+          "instructions": "Complete each gap with a word from the unit.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: [0] left at the roundabout. | Walk [1] the pavement to the [2]. | [3] the footbridge to the square.",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Turn (imperative); along (preposition); crossing (noun); Cross (imperative).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "[0] left at the roundabout. Walk [1] the pavement to the [2]. [3] the footbridge to the square.",
+                "correctAnswers": [
+                  "Turn",
+                  "along",
+                  "crossing",
+                  "Cross"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "Turn",
+                    "turn"
+                  ],
+                  [
+                    "along",
+                    "Along"
+                  ],
+                  [
+                    "crossing",
+                    "Crossing"
+                  ],
+                  [
+                    "Cross",
+                    "cross"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-directions-order-practice",
+          "title": "Practice: Build Direction Sentences",
+          "instructions": "Put the words in the correct order to make correct direction sentences.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: Go / through / the park / to / the monument.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "Go through the park to the monument. — through + destination.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "Go"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "through"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "the park"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "to"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "the monument."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5"
+                ]
+              },
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: Walk / along / River Street / to / the museum / entrance.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "Walk along River Street to the museum entrance. — along + route.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "Walk"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "along"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "River Street"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "to"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "the museum"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "entrance."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6"
+                ]
+              },
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket"
+            }
+          ]
+        },
+        {
+          "slug": "writing-directions-check",
+          "title": "Check: Directions to a Landmark",
+          "instructions": "Write short directions. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Your friend wants to meet you at the clock tower landmark in the town square on Saturday. Write a short message with directions from the train station exit.",
+            "prompts": [
+              "Say where to start (train station exit).",
+              "Use at least two imperatives (e.g. turn, walk, cross).",
+              "Use through, across or along at least once.",
+              "Mention a landmark or public place from the unit."
+            ],
+            "expectedLength": "At least 25 words",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Clear route from station to meeting place",
+              "At least two imperatives",
+              "Uses through, across or along",
+              "Mentions a unit vocabulary place word"
+            ],
+            "modelAnswer": {
+              "text": "Hi Sam,\n\nLeave the station exit and turn left. Walk along Station Road to the roundabout. Go across the road at the pedestrian crossing. Walk through the park gate. The square with the statue is on your right. The clock tower landmark is straight ahead.\n\nSee you,\nMinh"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses imperatives and through/across/along correctly."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses places words (square, crossing, landmark, entrance) appropriately."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Directions are in a clear step-by-step order with greeting and closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Route from station to landmark is clear; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your response following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Bài mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-directions-check",
+                "autoCheckKeywords": [
+                  "turn",
+                  "walk",
+                  "cross",
+                  "along",
+                  "through",
+                  "across",
+                  "square",
+                  "station",
+                  "crossing",
+                  "landmark",
+                  "entrance",
+                  "exit"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-directions-apply",
+          "title": "Apply: Complete the Direction Frames",
+          "instructions": "Complete the direction frames with the correct unit words.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.34,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: [0] the main entrance on River Street. | Walk [1] the gallery to the monument. | Use the side [2] to reach the square.",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "Enter/Use (imperative context); along (path); exit (way out).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "[0] the main entrance on River Street. Walk [1] the gallery to the monument. Use the side [2] to reach the square.",
+                "correctAnswers": [
+                  "Use",
+                  "along",
+                  "exit"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "Use",
+                    "Enter",
+                    "use",
+                    "enter"
+                  ],
+                  [
+                    "along",
+                    "Along"
+                  ],
+                  [
+                    "exit",
+                    "Exit"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-places-interview",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e5000012-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Places in Town",
+      "learningObjective": "Answer interview questions about public places and giving directions using unit vocabulary and grammar.",
+      "estimatedMinutes": 20,
+      "exercises": [
+        {
+          "slug": "speaking-places-learn",
+          "title": "Learn: Choose the Best Reply",
+          "instructions": "Imagine an examiner asks you a question. Choose the best answer.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: Is there a famous landmark in your town? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Landmark + vị trí — câu trả lời mô tả địa danh.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, the pedestrian in the square is a famous landmark.",
+                  "isCorrect": false,
+                  "distractorNote": "Pedestrian is a person"
+                },
+                {
+                  "text": "Yes, the clock tower in the square is a famous landmark.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes, I argue at the landmark every day.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong verb"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: How do pedestrians cross busy roads safely? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Use the crossing — an toàn cho người đi bộ.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "They use the monument and wait for the statue.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense"
+                },
+                {
+                  "text": "They use the pedestrian crossing and wait for the green light.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "They use the exit and wait for the entrance.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong places"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: Tell me how to get to the museum entrance. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Imperative + along — chỉ đường đơn giản.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Walking along the pavement and turns left at the junction.",
+                  "isCorrect": false,
+                  "distractorNote": "Mixed forms"
+                },
+                {
+                  "text": "Walk along the pavement and turn left at the junction.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Walk along the pavement and turning left at the junction.",
+                  "isCorrect": false,
+                  "distractorNote": "Gerund wrong"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-places-practice",
+          "title": "Practice: Best Response",
+          "instructions": "Choose the best phrase you would say in each situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: What can you see in the main square? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Statue + monument — mô tả quảng trường.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "There is a crossing and an exit near the pavement only.",
+                  "isCorrect": false,
+                  "distractorNote": "Road features not typical square focus"
+                },
+                {
+                  "text": "There is a statue and an old monument near the fountain.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "There is a pedestrian and a roundabout inside the museum.",
+                  "isCorrect": false,
+                  "distractorNote": "Illogical location"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: How do you get to the other side of the river? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Cross the footbridge — across the river.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I through the footbridge along the river.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong verb"
+                },
+                {
+                  "text": "I cross the footbridge near the park.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I along the footbridge across the monument.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong prepositions"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: Give directions to the nearest exit. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Go through + follow signs — chỉ lối ra.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Go across the hall and follow the entrance signs on your left.",
+                  "isCorrect": false,
+                  "distractorNote": "Exit not entrance"
+                },
+                {
+                  "text": "Go through the hall and follow the exit signs on your right.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Go along the exit and follow the roundabout on your right.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense collocation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-places-interview",
+          "title": "Check: Places and Directions Interview",
+          "instructions": "Answer the examiner's questions about public places and directions. Speak for up to two minutes.",
+          "exerciseType": "speaking",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "prompt": "The examiner will ask you about landmarks, public places and how to give directions in your town.",
+            "pictureDescription": "A city map showing a square with a statue, a footbridge over a river, a pedestrian crossing and a museum entrance.",
+            "followUpQuestions": [
+              "What is a famous landmark in your area?",
+              "Where do pedestrians walk in busy streets?",
+              "How do you cross the road safely?",
+              "Is there a monument or statue near your home?",
+              "How do you get from the station to the town square?",
+              "Tell me how to find the museum entrance."
+            ],
+            "suggestedAnswers": [
+              "The clock tower near the junction is a well-known landmark.",
+              "They walk on the pavement, not on the road.",
+              "I use the pedestrian crossing and wait for the green light.",
+              "Yes, there is a war monument in the main square.",
+              "Leave the exit, walk along Station Road and go through the park.",
+              "Walk along River Street and the entrance is near the statue."
+            ],
+            "assessmentCriteria": {
+              "pronunciation": "Key words (pedestrian, crossing, landmark, entrance, footbridge) are understandable.",
+              "fluency": "Responds with phrases or short sentences without long silences.",
+              "grammar": "Uses imperatives or through/across/along in at least two answers.",
+              "vocabulary": "Uses at least four different unit words correctly."
+            },
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-places-interview",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 120
+              }
+            }
+          ]
+        },
+        {
+          "slug": "speaking-places-apply",
+          "title": "Apply: Situational Responses",
+          "instructions": "Choose the best thing to say in each situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.95,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "A tourist asks how to reach the square from the footbridge. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Walk along + turn — chỉ đường sau cầu.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Walk through the junction and turn along the monument.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong prepositions"
+                },
+                {
+                  "text": "Walk along the river path and turn right at the junction.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Walk across the statue and turn through the exit.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense"
+                }
+              ]
+            },
+            {
+              "questionText": "Your friend is lost near the roundabout. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Landmark + imperative — định hướng bằng địa danh.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Look for the pavement landmark. Cross at the entrance statue.",
+                  "isCorrect": false,
+                  "distractorNote": "Pavement not landmark"
+                },
+                {
+                  "text": "Look for the clock tower landmark. Cross at the pedestrian crossing.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Look for the exit landmark. Cross at the monument square.",
+                  "isCorrect": false,
+                  "distractorNote": "Mixed wrong words"
+                }
+              ]
+            },
+            {
+              "questionText": "The examiner asks: How do tourists leave the museum to the square? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "public-places-and-directions",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Side exit for pedestrians — khớp bài đọc.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "They use the main entrance for pedestrians to the junction.",
+                  "isCorrect": false,
+                  "distractorNote": "Entrance is way in"
+                },
+                {
+                  "text": "They use the side exit for pedestrians to the square.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "They use the roundabout for pedestrians to the statue.",
+                  "isCorrect": false,
+                  "distractorNote": "Roundabout not exit"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

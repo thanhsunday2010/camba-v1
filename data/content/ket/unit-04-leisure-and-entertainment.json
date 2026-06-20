@@ -1,0 +1,2788 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by A2 Key task formats only.",
+    "program": "cambridge-english",
+    "level": "ket",
+    "cefr": "a2",
+    "unitNumber": 4,
+    "unitSlug": "leisure-and-entertainment",
+    "unitTitle": "Leisure and Entertainment",
+    "targetAge": "11-14",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Use core leisure and entertainment vocabulary at A2 level.",
+      "Use phrasal verbs pick up, find out and take off in everyday contexts.",
+      "Use gerunds and infinitives after common verbs like enjoy, want and decide.",
+      "Identify the writer's purpose and intended audience in a short blog post.",
+      "Follow everyday social exchanges about plans for concerts and exhibitions.",
+      "Write a short message inviting a friend to a cultural event.",
+      "Answer interview questions about free time and entertainment preferences."
+    ],
+    "grammarFocus": [
+      "Phrasal verbs: pick up, find out, take off",
+      "Gerunds and infinitives after common verbs"
+    ],
+    "readingSkillFocus": "Identify Writer Purpose and Audience",
+    "listeningSkillFocus": "Follow Everyday Social Exchanges"
+  },
+  "vocabularyBank": [
+    {
+      "word": "concert",
+      "ipa": "/ˈkɒnsət/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "buổi hòa nhạc",
+      "exampleSentence": "We went to a jazz concert in the park.",
+      "difficulty": 1,
+      "topic": "leisure-and-entertainment",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "exhibition",
+      "ipa": "/ˌeksɪˈbɪʃn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "triển lãm",
+      "exampleSentence": "The photography exhibition closes next week.",
+      "difficulty": 2,
+      "topic": "leisure-and-entertainment",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "magazine",
+      "ipa": "/ˌmæɡəˈziːn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "tạp chí",
+      "exampleSentence": "I picked up a free magazine at the arts centre.",
+      "difficulty": 1,
+      "topic": "leisure-and-entertainment",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "download",
+      "ipa": "/ˌdaʊnˈləʊd/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "tải xuống",
+      "exampleSentence": "You can download the programme from the website.",
+      "difficulty": 1,
+      "topic": "leisure-and-entertainment",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "streaming",
+      "ipa": "/ˈstriːmɪŋ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "phát trực tuyến",
+      "exampleSentence": "We spent the evening streaming a film at home.",
+      "difficulty": 2,
+      "topic": "leisure-and-entertainment",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "performance",
+      "ipa": "/pəˈfɔːməns/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "buổi biểu diễn",
+      "exampleSentence": "The dance performance was wonderful.",
+      "difficulty": 2,
+      "topic": "leisure-and-entertainment",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "review",
+      "ipa": "/rɪˈvjuː/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bài đánh giá",
+      "exampleSentence": "I read a review of the concert online.",
+      "difficulty": 2,
+      "topic": "leisure-and-entertainment",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "audience",
+      "ipa": "/ˈɔːdiəns/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "khán giả",
+      "exampleSentence": "The audience clapped loudly at the end.",
+      "difficulty": 2,
+      "topic": "leisure-and-entertainment",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "ticket",
+      "ipa": "/ˈtɪkɪt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "vé",
+      "exampleSentence": "Student tickets are cheaper on Fridays.",
+      "difficulty": 1,
+      "topic": "leisure-and-entertainment",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "programme",
+      "ipa": "/ˈprəʊɡræm/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "chương trình (sự kiện)",
+      "exampleSentence": "Pick up a programme at the door.",
+      "difficulty": 2,
+      "topic": "leisure-and-entertainment",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "comedy",
+      "ipa": "/ˈkɒmədi/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "hài kịch",
+      "exampleSentence": "There is a comedy show on Friday evening.",
+      "difficulty": 1,
+      "topic": "leisure-and-entertainment",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "venue",
+      "ipa": "/ˈvenjuː/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "địa điểm tổ chức",
+      "exampleSentence": "The concert venue is in the city centre.",
+      "difficulty": 2,
+      "topic": "leisure-and-entertainment",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Phrasal verbs: pick up, find out, take off",
+      "explanation": "Pick up can mean collect (pick up a magazine) or learn casually (pick up a skill). Find out means discover information (find out the time). Take off can mean remove clothes/shoes or become successful (the show took off).",
+      "examples": [
+        "I picked up a free magazine at the entrance.",
+        "We found out that student tickets are cheaper.",
+        "The dancers took off their shoes on stage.",
+        "Did you find out when the exhibition closes?"
+      ],
+      "commonMistakes": [
+        "I found the information (×) → I found out the time (✓) [when discovering news]",
+        "I picked up my shoes (×) → I took off my shoes (✓)",
+        "I found out a magazine (×) → I picked up a magazine (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "leisure-and-entertainment"
+    },
+    {
+      "structure": "Gerunds and infinitives after common verbs",
+      "explanation": "Some verbs are followed by -ing (enjoy, finish, mind): enjoy watching. Others take to + infinitive (want, decide, hope): want to download. Like/love/start can take both with similar meaning at A2.",
+      "examples": [
+        "I enjoy going to concerts.",
+        "She decided to download the app.",
+        "We finished reading the review.",
+        "They hope to see the exhibition tomorrow."
+      ],
+      "commonMistakes": [
+        "I enjoy to go to concerts (×) → I enjoy going to concerts (✓)",
+        "She decided downloading the app (×) → She decided to download the app (✓)",
+        "We finished to read the review (×) → We finished reading the review (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "leisure-and-entertainment"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-leisure-words",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Leisure and Entertainment Words",
+      "learningObjective": "Recognise and understand twelve leisure and entertainment words at KET A2 level.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "vocab-leisure-learn",
+          "title": "Learn: Entertainment Word Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "A live music event with a band or orchestra is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Concert (buổi hòa nhạc) là sự kiện âm nhạc trực tiếp. Performance rộng hơn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "magazine",
+                  "isCorrect": false,
+                  "distractorNote": "Printed publication"
+                },
+                {
+                  "text": "concert",
+                  "isCorrect": true
+                },
+                {
+                  "text": "download",
+                  "isCorrect": false,
+                  "distractorNote": "Computer action"
+                }
+              ]
+            },
+            {
+              "questionText": "A public show of art or photos in a gallery is an _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Exhibition (triển lãm) trưng bày tác phẩm. Review là bài đánh giá.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "review",
+                  "isCorrect": false,
+                  "distractorNote": "Written opinion"
+                },
+                {
+                  "text": "exhibition",
+                  "isCorrect": true
+                },
+                {
+                  "text": "streaming",
+                  "isCorrect": false,
+                  "distractorNote": "Watching online"
+                }
+              ]
+            },
+            {
+              "questionText": "A thin book with articles and photos, sold weekly or monthly, is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Magazine (tạp chí) có bài viết định kỳ. Programme là chương trình sự kiện.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "programme",
+                  "isCorrect": false,
+                  "distractorNote": "Event schedule"
+                },
+                {
+                  "text": "magazine",
+                  "isCorrect": true
+                },
+                {
+                  "text": "ticket",
+                  "isCorrect": false,
+                  "distractorNote": "Entry pass"
+                }
+              ]
+            },
+            {
+              "questionText": "To save a file from the internet onto your phone means to _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Download (tải xuống) lưu file từ mạng. Streaming là xem trực tuyến.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "stream",
+                  "isCorrect": false,
+                  "distractorNote": "Watch online without saving"
+                },
+                {
+                  "text": "download",
+                  "isCorrect": true
+                },
+                {
+                  "text": "review",
+                  "isCorrect": false,
+                  "distractorNote": "Written opinion"
+                }
+              ]
+            },
+            {
+              "questionText": "Watching films or shows online without downloading is _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Streaming (phát trực tuyến) xem qua internet. Concert là trực tiếp.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "concert",
+                  "isCorrect": false,
+                  "distractorNote": "Live music event"
+                },
+                {
+                  "text": "streaming",
+                  "isCorrect": true
+                },
+                {
+                  "text": "exhibition",
+                  "isCorrect": false,
+                  "distractorNote": "Art display"
+                }
+              ]
+            },
+            {
+              "questionText": "The people who watch a show in a theatre or hall are the _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Audience (khán giả) người xem biểu diễn. Venue là địa điểm.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "venue",
+                  "isCorrect": false,
+                  "distractorNote": "Place of event"
+                },
+                {
+                  "text": "audience",
+                  "isCorrect": true
+                },
+                {
+                  "text": "magazine",
+                  "isCorrect": false,
+                  "distractorNote": "Publication"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-leisure-matching",
+          "title": "Practice: Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the entertainment words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Mỗi từ khớp nghĩa rõ ràng. Performance và concert có thể liên quan nhưng khác nhau.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "performance",
+                  "right": "an act of presenting music, dance or drama live"
+                },
+                {
+                  "left": "review",
+                  "right": "an article that gives an opinion about a show or film"
+                },
+                {
+                  "left": "ticket",
+                  "right": "a piece of paper or code that lets you enter an event"
+                },
+                {
+                  "left": "venue",
+                  "right": "the place where a concert or show happens"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-leisure-check",
+          "title": "Check: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Mai read an online _____ before buying tickets for the comedy show.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Review (bài đánh giá) giúp quyết định mua vé. Programme là chương trình.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "venue",
+                  "isCorrect": false,
+                  "distractorNote": "Place"
+                },
+                {
+                  "text": "review",
+                  "isCorrect": true
+                },
+                {
+                  "text": "audience",
+                  "isCorrect": false,
+                  "distractorNote": "People watching"
+                }
+              ]
+            },
+            {
+              "questionText": "You can _____ the centre's app to see the exhibition timetable.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Download (tải) app về điện thoại. Streaming là xem phim.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "stream",
+                  "isCorrect": false,
+                  "distractorNote": "Watch online"
+                },
+                {
+                  "text": "download",
+                  "isCorrect": true
+                },
+                {
+                  "text": "perform",
+                  "isCorrect": false,
+                  "distractorNote": "Not the app action"
+                }
+              ]
+            },
+            {
+              "questionText": "The jazz _____ in the park starts at seven o'clock.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Concert (hòa nhạc) ngoài trời. Magazine là tạp chí.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "magazine",
+                  "isCorrect": false,
+                  "distractorNote": "Publication"
+                },
+                {
+                  "text": "concert",
+                  "isCorrect": true
+                },
+                {
+                  "text": "comedy",
+                  "isCorrect": false,
+                  "distractorNote": "Different genre unless specified"
+                }
+              ]
+            },
+            {
+              "questionText": "Pick up a _____ at the door to see the list of acts.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Programme (chương trình) liệt kê tiết mục. Ticket là vé vào cửa.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "ticket",
+                  "isCorrect": false,
+                  "distractorNote": "Entry pass"
+                },
+                {
+                  "text": "programme",
+                  "isCorrect": true
+                },
+                {
+                  "text": "streaming",
+                  "isCorrect": false,
+                  "distractorNote": "Online viewing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-leisure-apply",
+          "title": "Apply: Complete the Leisure Sentences",
+          "instructions": "Fill in each gap with the correct word.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: We went to a jazz [0]. | The [1] clapped loudly. | I read a [2] online. | We spent the evening [3] a film at home.",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 4,
+              "explanation": "concert; audience; review; streaming — ngữ cảnh giải trí cuối tuần.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "We went to a jazz [0]. The [1] clapped loudly. I read a [2] online. We spent the evening [3] a film at home.",
+                "correctAnswers": [
+                  "concert",
+                  "audience",
+                  "review",
+                  "streaming"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "concert",
+                    "Concert"
+                  ],
+                  [
+                    "audience",
+                    "Audience"
+                  ],
+                  [
+                    "review",
+                    "Review"
+                  ],
+                  [
+                    "streaming",
+                    "Streaming"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-leisure-phrasal",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e5000004-0000-4000-8000-000000000001",
+      "title": "Lesson 2: Phrasal Verbs and Gerunds",
+      "learningObjective": "Use phrasal verbs pick up, find out and take off, and gerunds/infinitives after common verbs.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "grammar-leisure-learn",
+          "title": "Learn: Choose the Correct Form",
+          "instructions": "Choose the best word or phrase for each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "I _____ a free magazine at the arts centre.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Pick up = nhận/lấy tạp chí miễn phí.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "found out",
+                  "isCorrect": false,
+                  "distractorNote": "Discover information"
+                },
+                {
+                  "text": "picked up",
+                  "isCorrect": true
+                },
+                {
+                  "text": "took off",
+                  "isCorrect": false,
+                  "distractorNote": "Remove or become successful"
+                }
+              ]
+            },
+            {
+              "questionText": "We need to _____ what time the exhibition closes.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Find out = tìm hiểu thông tin.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "pick up",
+                  "isCorrect": false,
+                  "distractorNote": "Collect physically"
+                },
+                {
+                  "text": "find out",
+                  "isCorrect": true
+                },
+                {
+                  "text": "take off",
+                  "isCorrect": false,
+                  "distractorNote": "Remove shoes"
+                }
+              ]
+            },
+            {
+              "questionText": "I enjoy _____ to live concerts.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Enjoy + -ing: enjoy going.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "go",
+                  "isCorrect": false,
+                  "distractorNote": "Base verb after enjoy"
+                },
+                {
+                  "text": "going",
+                  "isCorrect": true
+                },
+                {
+                  "text": "to go",
+                  "isCorrect": false,
+                  "distractorNote": "Infinitive after enjoy"
+                }
+              ]
+            },
+            {
+              "questionText": "She decided _____ the tickets tonight.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Decide + to-infinitive: decided to download.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "download",
+                  "isCorrect": false,
+                  "distractorNote": "Missing to"
+                },
+                {
+                  "text": "to download",
+                  "isCorrect": true
+                },
+                {
+                  "text": "downloading",
+                  "isCorrect": false,
+                  "distractorNote": "Gerund after decide"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-leisure-practice",
+          "title": "Practice: Complete the Grammar",
+          "instructions": "Fill in each gap with the correct form.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: I [0] out that student tickets are cheaper. | We [1] up programmes at the door. | They enjoy [2] comedy shows.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "found (find out); pick (pick up); watching (enjoy + -ing).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "I [0] out that student tickets are cheaper. We [1] up programmes at the door. They enjoy [2] comedy shows.",
+                "correctAnswers": [
+                  "found",
+                  "pick",
+                  "watching"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "found",
+                    "Found"
+                  ],
+                  [
+                    "pick",
+                    "Pick",
+                    "picked",
+                    "Picked"
+                  ],
+                  [
+                    "watching",
+                    "Watching"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: The dancers [0] off their shoes. | I want [1] the new app. | We finished [2] the review.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "took (take off); to download (want to); reading (finish + -ing).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "The dancers [0] off their shoes. I want [1] the new app. We finished [2] the review.",
+                "correctAnswers": [
+                  "took",
+                  "to download",
+                  "reading"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "took",
+                    "Took"
+                  ],
+                  [
+                    "to download",
+                    "to download"
+                  ],
+                  [
+                    "reading",
+                    "Reading"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "grammar-leisure-check",
+          "title": "Check: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Did you _____ when the performance starts?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Find out + thông tin thời gian.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "pick up",
+                  "isCorrect": false,
+                  "distractorNote": "Collect something"
+                },
+                {
+                  "text": "find out",
+                  "isCorrect": true
+                },
+                {
+                  "text": "take off",
+                  "isCorrect": false,
+                  "distractorNote": "Remove"
+                }
+              ]
+            },
+            {
+              "questionText": "He hopes _____ the exhibition tomorrow.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Hope + to-infinitive.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "seeing",
+                  "isCorrect": false,
+                  "distractorNote": "Gerund less common after hope"
+                },
+                {
+                  "text": "to see",
+                  "isCorrect": true
+                },
+                {
+                  "text": "see",
+                  "isCorrect": false,
+                  "distractorNote": "Missing to"
+                }
+              ]
+            },
+            {
+              "questionText": "The show really _____ after the famous singer arrived.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Took off = trở nên thành công/nổi tiếng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "picked up",
+                  "isCorrect": false,
+                  "distractorNote": "Collected"
+                },
+                {
+                  "text": "took off",
+                  "isCorrect": true
+                },
+                {
+                  "text": "found out",
+                  "isCorrect": false,
+                  "distractorNote": "Discovered"
+                }
+              ]
+            },
+            {
+              "questionText": "We don't mind _____ at home and streaming films.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Mind + -ing: mind staying.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "stay",
+                  "isCorrect": false,
+                  "distractorNote": "Base verb"
+                },
+                {
+                  "text": "staying",
+                  "isCorrect": true
+                },
+                {
+                  "text": "to stay",
+                  "isCorrect": false,
+                  "distractorNote": "Infinitive after mind"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-leisure-order",
+          "title": "Apply: Build the Sentence",
+          "instructions": "Put the words in the correct order to make a sentence.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: I / found out / the concert / starts / at seven.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "I found out the concert starts at seven. — phrasal verb + clause.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "words": [
+                  "I",
+                  "found out",
+                  "the concert",
+                  "starts",
+                  "at seven."
+                ],
+                "correctOrder": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            },
+            {
+              "questionText": "Make a sentence: We / enjoy / going / to / exhibitions.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "We enjoy going to exhibitions. — enjoy + gerund.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "words": [
+                  "We",
+                  "enjoy",
+                  "going",
+                  "to",
+                  "exhibitions."
+                ],
+                "correctOrder": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            },
+            {
+              "questionText": "Make a sentence: She / decided / to / download / the programme.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "She decided to download the programme. — decide + infinitive.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "words": [
+                  "She",
+                  "decided",
+                  "to",
+                  "download",
+                  "the programme."
+                ],
+                "correctOrder": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-culture-blog",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e5000004-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Culture Blog",
+      "learningObjective": "Identify the writer's purpose and audience in a short blog about weekend entertainment.",
+      "estimatedMinutes": 23,
+      "exercises": [
+        {
+          "slug": "reading-blog-learn",
+          "title": "Learn: Read the Blog Post",
+          "instructions": "Read the blog post carefully. Answer the detail questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Weekend Culture Blog — City Arts Centre",
+              "text": "POSTED BY MAI — 12 JUNE\n\nLast Saturday my friends and I visited the City Arts Centre. We wanted to see the new photography exhibition before it closes. The audience was small but friendly, and the performance space looked amazing.\n\nFirst we picked up a free magazine at the entrance. It had a review of last month's concert and tips for downloading the centre's app. I found out that students get cheaper tickets for comedy shows on Fridays.\n\nIn the afternoon we watched a short dance performance. The dancers took off their shoes for one piece — it was surprising! After that we read online reviews on our phones. Most people loved the exhibition, but a few wanted more seats.\n\nWe spent the evening at home streaming a film. My brother prefers streaming to going out, but I still enjoy live events. Next week there is a jazz concert in the park. I will download the programme tonight and invite my classmates.\n\nIf you like art and music, check the centre website. You can find out about every exhibition and performance there.",
+              "wordCount": 182,
+              "imagePrompt": "A blog-style illustration of teenagers at an arts centre with exhibition posters, a concert flyer and phones showing streaming apps; bright cultural venue."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What did Mai and her friends see on Saturday afternoon?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "They watched a short dance performance in the afternoon.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "A jazz concert",
+                  "isCorrect": false,
+                  "distractorNote": "Planned for next week"
+                },
+                {
+                  "text": "A dance performance",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A comedy show",
+                  "isCorrect": false,
+                  "distractorNote": "Mentioned as future option"
+                }
+              ]
+            },
+            {
+              "questionText": "How did Mai spend the evening?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "We spent the evening at home streaming a film.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "At a live concert",
+                  "isCorrect": false,
+                  "distractorNote": "Concert is next week"
+                },
+                {
+                  "text": "Streaming a film at home",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Writing a magazine review",
+                  "isCorrect": false,
+                  "distractorNote": "She read reviews, not wrote"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-blog-practice",
+          "title": "Practice: Words in the Blog",
+          "instructions": "Read the blog post again. Answer about vocabulary and meaning.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Weekend Culture Blog — City Arts Centre",
+              "text": "POSTED BY MAI — 12 JUNE\n\nLast Saturday my friends and I visited the City Arts Centre. We wanted to see the new photography exhibition before it closes. The audience was small but friendly, and the performance space looked amazing.\n\nFirst we picked up a free magazine at the entrance. It had a review of last month's concert and tips for downloading the centre's app. I found out that students get cheaper tickets for comedy shows on Fridays.\n\nIn the afternoon we watched a short dance performance. The dancers took off their shoes for one piece — it was surprising! After that we read online reviews on our phones. Most people loved the exhibition, but a few wanted more seats.\n\nWe spent the evening at home streaming a film. My brother prefers streaming to going out, but I still enjoy live events. Next week there is a jazz concert in the park. I will download the programme tonight and invite my classmates.\n\nIf you like art and music, check the centre website. You can find out about every exhibition and performance there.",
+              "wordCount": 182,
+              "imagePrompt": "A blog-style illustration of teenagers at an arts centre with exhibition posters, a concert flyer and phones showing streaming apps; bright cultural venue."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "In the blog, when Mai says they 'picked up' a magazine, she means they _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Picked up a free magazine at the entrance = lấy/nhận tạp chí.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "vocabulary_in_context",
+              "choices": [
+                {
+                  "text": "wrote an article for it",
+                  "isCorrect": false,
+                  "distractorNote": "She is a reader"
+                },
+                {
+                  "text": "collected a free copy at the entrance",
+                  "isCorrect": true
+                },
+                {
+                  "text": "downloaded it illegally",
+                  "isCorrect": false,
+                  "distractorNote": "Free at entrance"
+                }
+              ]
+            },
+            {
+              "questionText": "Why does Mai mention her brother?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "He prefers streaming to going out — contrast với Mai thích live events.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "inference",
+              "choices": [
+                {
+                  "text": "To complain about ticket prices",
+                  "isCorrect": false,
+                  "distractorNote": "Prices mentioned elsewhere"
+                },
+                {
+                  "text": "To contrast staying home with going to live events",
+                  "isCorrect": true
+                },
+                {
+                  "text": "To advertise the arts centre",
+                  "isCorrect": false,
+                  "distractorNote": "Personal blog not official ad"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-blog-check",
+          "title": "Check: Purpose and Audience",
+          "instructions": "Read the blog post one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Weekend Culture Blog — City Arts Centre",
+              "text": "POSTED BY MAI — 12 JUNE\n\nLast Saturday my friends and I visited the City Arts Centre. We wanted to see the new photography exhibition before it closes. The audience was small but friendly, and the performance space looked amazing.\n\nFirst we picked up a free magazine at the entrance. It had a review of last month's concert and tips for downloading the centre's app. I found out that students get cheaper tickets for comedy shows on Fridays.\n\nIn the afternoon we watched a short dance performance. The dancers took off their shoes for one piece — it was surprising! After that we read online reviews on our phones. Most people loved the exhibition, but a few wanted more seats.\n\nWe spent the evening at home streaming a film. My brother prefers streaming to going out, but I still enjoy live events. Next week there is a jazz concert in the park. I will download the programme tonight and invite my classmates.\n\nIf you like art and music, check the centre website. You can find out about every exhibition and performance there.",
+              "wordCount": 182,
+              "imagePrompt": "A blog-style illustration of teenagers at an arts centre with exhibition posters, a concert flyer and phones showing streaming apps; bright cultural venue."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Who is the most likely audience for this blog post?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Mai writes for friends/classmates interested in arts — teenagers/students.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "Hospital doctors",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong context"
+                },
+                {
+                  "text": "Young people who enjoy culture and free-time activities",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Ticket office staff only",
+                  "isCorrect": false,
+                  "distractorNote": "Too narrow"
+                }
+              ]
+            },
+            {
+              "questionText": "What is Mai's main purpose in writing this post?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Chia sẻ trải nghiệm và khuyên đọc website — recommend arts centre.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "To sell tickets officially",
+                  "isCorrect": false,
+                  "distractorNote": "Personal blog not sales"
+                },
+                {
+                  "text": "To share her weekend experience and encourage others to visit",
+                  "isCorrect": true
+                },
+                {
+                  "text": "To criticise all performances",
+                  "isCorrect": false,
+                  "distractorNote": "Mostly positive"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-blog-apply",
+          "title": "Apply: Match Facts from the Blog",
+          "instructions": "Use what you read. Match each item to the correct fact.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Weekend Culture Blog — City Arts Centre",
+              "text": "POSTED BY MAI — 12 JUNE\n\nLast Saturday my friends and I visited the City Arts Centre. We wanted to see the new photography exhibition before it closes. The audience was small but friendly, and the performance space looked amazing.\n\nFirst we picked up a free magazine at the entrance. It had a review of last month's concert and tips for downloading the centre's app. I found out that students get cheaper tickets for comedy shows on Fridays.\n\nIn the afternoon we watched a short dance performance. The dancers took off their shoes for one piece — it was surprising! After that we read online reviews on our phones. Most people loved the exhibition, but a few wanted more seats.\n\nWe spent the evening at home streaming a film. My brother prefers streaming to going out, but I still enjoy live events. Next week there is a jazz concert in the park. I will download the programme tonight and invite my classmates.\n\nIf you like art and music, check the centre website. You can find out about every exhibition and performance there.",
+              "wordCount": 182,
+              "imagePrompt": "A blog-style illustration of teenagers at an arts centre with exhibition posters, a concert flyer and phones showing streaming apps; bright cultural venue."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each topic to a fact from the blog post.",
+              "questionType": "matching",
+              "skillTag": "reading",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 4,
+              "explanation": "Mỗi mục khớp với chi tiết Mai viết trong blog.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Student discount",
+                  "right": "Found on the website"
+                },
+                {
+                  "left": "Next plan",
+                  "right": "Jazz concert in the park"
+                },
+                {
+                  "left": "Saturday morning",
+                  "right": "Photography exhibition"
+                },
+                {
+                  "left": "Brother's preference",
+                  "right": "Streaming at home"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-ticket-plans",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e5000004-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Tickets and Weekend Plans",
+      "learningObjective": "Follow social exchanges about buying tickets and planning cultural activities.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "listening-tickets-learn",
+          "title": "Learn: At the Ticket Office",
+          "instructions": "Listen to the conversation. Answer the first two questions.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Buying Concert Tickets",
+              "setting": "City Arts Centre ticket office",
+              "speakers": [
+                {
+                  "name": "Staff",
+                  "role": "ticket seller"
+                },
+                {
+                  "name": "Alex",
+                  "role": "student customer"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Alex",
+                  "text": "Hello. I would like two tickets for the jazz concert on Saturday, please."
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Certainly. The performance starts at seven o'clock in the main hall."
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "Great. I read a review in your magazine. The audience loved the last concert."
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Yes! You can pick up a programme at the door. Student tickets are twelve pounds each."
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "Perfect. Can I pay by card? I found out about the discount on your website."
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Of course. Here are your tickets. Enjoy the show!"
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "Thank you. We are really looking forward to it."
+                }
+              ],
+              "audioNotes": "Friendly ticket office exchange, clear speech. Approx. 45 seconds."
+            },
+            "answerKey": {
+              "q1": "jazz concert Saturday",
+              "q2": "seven o clock"
+            },
+            "audioUrl": "/audio/listening/ket/unit-04/listening-tickets-learn.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What tickets does Alex want?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Two tickets for the jazz concert on Saturday.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Comedy show on Friday",
+                  "isCorrect": false,
+                  "distractorNote": "Different event"
+                },
+                {
+                  "text": "Jazz concert on Saturday",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Dance exhibition",
+                  "isCorrect": false,
+                  "distractorNote": "Not what Alex buys"
+                }
+              ]
+            },
+            {
+              "questionText": "What time does the performance start?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "The performance starts at seven o'clock.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Six o'clock",
+                  "isCorrect": false,
+                  "distractorNote": "Museum closing time"
+                },
+                {
+                  "text": "Seven o'clock",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Twelve o'clock",
+                  "isCorrect": false,
+                  "distractorNote": "Ticket price"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-tickets-practice",
+          "title": "Practice: More from the Ticket Office",
+          "instructions": "Listen again to the same conversation. Answer the next questions.",
+          "exerciseType": "listening",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Buying Concert Tickets",
+              "setting": "City Arts Centre ticket office",
+              "speakers": [
+                {
+                  "name": "Staff",
+                  "role": "ticket seller"
+                },
+                {
+                  "name": "Alex",
+                  "role": "student customer"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Alex",
+                  "text": "Hello. I would like two tickets for the jazz concert on Saturday, please."
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Certainly. The performance starts at seven o'clock in the main hall."
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "Great. I read a review in your magazine. The audience loved the last concert."
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Yes! You can pick up a programme at the door. Student tickets are twelve pounds each."
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "Perfect. Can I pay by card? I found out about the discount on your website."
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Of course. Here are your tickets. Enjoy the show!"
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "Thank you. We are really looking forward to it."
+                }
+              ],
+              "audioNotes": "Friendly ticket office exchange, clear speech. Approx. 45 seconds."
+            },
+            "answerKey": {
+              "q1": "twelve pounds",
+              "q2": "pick up programme"
+            },
+            "audioUrl": "/audio/listening/ket/unit-04/listening-tickets-practice.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "How much is each student ticket?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Student tickets are twelve pounds each.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Ten pounds",
+                  "isCorrect": false,
+                  "distractorNote": "Not stated"
+                },
+                {
+                  "text": "Twelve pounds",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Free",
+                  "isCorrect": false,
+                  "distractorNote": "Tickets cost money"
+                }
+              ]
+            },
+            {
+              "questionText": "What can Alex pick up at the door?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "You can pick up a programme at the door.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A magazine review",
+                  "isCorrect": false,
+                  "distractorNote": "Read about, not pick up there"
+                },
+                {
+                  "text": "A programme",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A streaming app",
+                  "isCorrect": false,
+                  "distractorNote": "Download separately"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-weekend-check",
+          "title": "Check: Friends Planning Sunday",
+          "instructions": "Listen to a new conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Friends Planning the Weekend",
+              "setting": "Café conversation",
+              "speakers": [
+                {
+                  "name": "Sofia",
+                  "role": "student"
+                },
+                {
+                  "name": "Ben",
+                  "role": "friend"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Sofia",
+                  "text": "What shall we do on Sunday? There is a new exhibition at the museum."
+                },
+                {
+                  "speaker": "Ben",
+                  "text": "I prefer staying home and streaming a series. I am tired this week."
+                },
+                {
+                  "speaker": "Sofia",
+                  "text": "Come on! The magazine said the photography exhibition is excellent. The audience gave it five stars."
+                },
+                {
+                  "speaker": "Ben",
+                  "text": "OK, but only if we pick up food on the way. I want to find out what time it closes."
+                },
+                {
+                  "speaker": "Sofia",
+                  "text": "It closes at six. After that we could watch a comedy performance nearby."
+                },
+                {
+                  "speaker": "Ben",
+                  "text": "Sounds good. I will download the tickets tonight."
+                },
+                {
+                  "speaker": "Sofia",
+                  "text": "Great. I will read the online review again before we go."
+                }
+              ],
+              "audioNotes": "Casual café chat, natural pace. Approx. 45 seconds."
+            },
+            "answerKey": {
+              "q1": "exhibition museum",
+              "q2": "closes six",
+              "q3": "download tickets"
+            },
+            "audioUrl": "/audio/listening/ket/unit-04/listening-weekend-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What does Sofia want to do on Sunday?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "There is a new exhibition at the museum.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Stay home streaming",
+                  "isCorrect": false,
+                  "distractorNote": "Ben's preference"
+                },
+                {
+                  "text": "Visit the museum exhibition",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Go to a jazz concert",
+                  "isCorrect": false,
+                  "distractorNote": "Different event"
+                }
+              ]
+            },
+            {
+              "questionText": "What time does the exhibition close?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "It closes at six.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Seven o'clock",
+                  "isCorrect": false,
+                  "distractorNote": "Concert time"
+                },
+                {
+                  "text": "Six o'clock",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Friday evening",
+                  "isCorrect": false,
+                  "distractorNote": "Comedy timing"
+                }
+              ]
+            },
+            {
+              "questionText": "What will Ben do tonight?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "I will download the tickets tonight.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Write a review",
+                  "isCorrect": false,
+                  "distractorNote": "Sofia reads review"
+                },
+                {
+                  "text": "Download the tickets",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Take off his shoes",
+                  "isCorrect": false,
+                  "distractorNote": "From dance blog"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-tickets-match",
+          "title": "Apply: Match What You Heard",
+          "instructions": "Listen again to the ticket office conversation. Match each item to the correct detail.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Buying Concert Tickets",
+              "setting": "City Arts Centre ticket office",
+              "speakers": [
+                {
+                  "name": "Staff",
+                  "role": "ticket seller"
+                },
+                {
+                  "name": "Alex",
+                  "role": "student customer"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Alex",
+                  "text": "Hello. I would like two tickets for the jazz concert on Saturday, please."
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Certainly. The performance starts at seven o'clock in the main hall."
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "Great. I read a review in your magazine. The audience loved the last concert."
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Yes! You can pick up a programme at the door. Student tickets are twelve pounds each."
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "Perfect. Can I pay by card? I found out about the discount on your website."
+                },
+                {
+                  "speaker": "Staff",
+                  "text": "Of course. Here are your tickets. Enjoy the show!"
+                },
+                {
+                  "speaker": "Alex",
+                  "text": "Thank you. We are really looking forward to it."
+                }
+              ],
+              "audioNotes": "Friendly ticket office exchange, clear speech. Approx. 45 seconds."
+            },
+            "audioUrl": "/audio/listening/ket/unit-04/listening-tickets-match.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "Match each item from the ticket office conversation.",
+              "questionType": "matching",
+              "skillTag": "listening",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "Mỗi mục khớp với chi tiết Alex và nhân viên nói.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Event",
+                  "right": "Jazz concert Saturday"
+                },
+                {
+                  "left": "Student price",
+                  "right": "Twelve pounds each"
+                },
+                {
+                  "left": "At the door",
+                  "right": "Pick up a programme"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-event-invite",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e5000004-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Invite a Friend",
+      "learningObjective": "Write a short message inviting a friend to a concert or exhibition.",
+      "estimatedMinutes": 25,
+      "exercises": [
+        {
+          "slug": "writing-invite-learn",
+          "title": "Learn: Invitation Phrases",
+          "instructions": "Complete each gap with a word from the box: concert, exhibition, download, ticket, hope.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Hi Ben, | Would you like to come to a jazz [0] on Saturday? | There is also a photo [1] at the arts centre. | We can [2] the programme tonight. | I [3] you can come!",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "concert; exhibition; download; hope — khung tin nhắn mời bạn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Hi Ben,\n\nWould you like to come to a jazz [0] on Saturday? There is also a photo [1] at the arts centre. We can [2] the programme tonight.\n\nI [3] you can come!\n\nMai",
+                "correctAnswers": [
+                  "concert",
+                  "exhibition",
+                  "download",
+                  "hope"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "concert",
+                    "Concert"
+                  ],
+                  [
+                    "exhibition",
+                    "Exhibition"
+                  ],
+                  [
+                    "download",
+                    "Download"
+                  ],
+                  [
+                    "hope",
+                    "Hope"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-invite-order-practice",
+          "title": "Practice: Build Invitation Sentences",
+          "instructions": "Put the words in order to make correct sentences.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: I / enjoy / going / to / concerts.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "I enjoy going to concerts. — enjoy + gerund.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "words": [
+                  "I",
+                  "enjoy",
+                  "going",
+                  "to",
+                  "concerts."
+                ],
+                "correctOrder": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            },
+            {
+              "questionText": "Make a sentence: We / found out / the / tickets / are / cheaper / online.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "We found out the tickets are cheaper online. — find out + clause.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "words": [
+                  "We",
+                  "found out",
+                  "the",
+                  "tickets",
+                  "are",
+                  "cheaper",
+                  "online."
+                ],
+                "correctOrder": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-invite-check",
+          "title": "Check: Invite a Friend to an Event",
+          "instructions": "Write a short message to a friend. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Write a message to your friend Ben. Invite him to go with you to a concert or exhibition at the City Arts Centre next weekend.",
+            "prompts": [
+              "Say which event you want to see (concert or exhibition).",
+              "Say when and where it is.",
+              "Tell him how to get tickets or download information.",
+              "Say why you think he will enjoy it.",
+              "End in a friendly way."
+            ],
+            "expectedLength": "At least 25 words",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Clear invitation to a specific event",
+              "Includes time or place details",
+              "Mentions tickets, programme or download",
+              "Friendly tone and closing"
+            ],
+            "modelAnswer": {
+              "text": "Hi Ben,\n\nWould you like to come to the jazz concert in the park next Saturday? It starts at seven o'clock. I found out that student tickets are only twelve pounds. We can download the programme tonight and read the review online. I think you will enjoy it because the audience loved the last concert.\n\nHope you can come!\nMai"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses phrasal verbs or gerunds/infinitives correctly (e.g. want to go, enjoy watching)."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses leisure words (concert, exhibition, ticket, review, audience) appropriately."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Message has greeting, clear details and friendly closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Invites friend with event details; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your response following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Bài mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-invite-check",
+                "autoCheckKeywords": [
+                  "concert",
+                  "exhibition",
+                  "ticket",
+                  "download",
+                  "hope",
+                  "ben",
+                  "saturday",
+                  "review",
+                  "programme",
+                  "come"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-invite-apply",
+          "title": "Apply: Complete the Message Frames",
+          "instructions": "Complete the message frames with the correct unit words.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Hi Sofia, | The dance [0] was amazing! | The [1] clapped for ten minutes. | I read your [2] online. | Let's go to the comedy [3] on Friday.",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 4,
+              "explanation": "performance; audience; review; show/comedy — hoàn thiện tin nhắn về sự kiện.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Hi Sofia,\n\nThe dance [0] was amazing! The [1] clapped for ten minutes. I read your [2] online. Let's go to the comedy [3] on Friday.\n\nAlex",
+                "correctAnswers": [
+                  "performance",
+                  "audience",
+                  "review",
+                  "show"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "performance",
+                    "Performance"
+                  ],
+                  [
+                    "audience",
+                    "Audience"
+                  ],
+                  [
+                    "review",
+                    "Review"
+                  ],
+                  [
+                    "show",
+                    "Show",
+                    "comedy"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-leisure-time",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e5000004-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Free Time",
+      "learningObjective": "Answer questions about entertainment preferences, concerts and streaming.",
+      "estimatedMinutes": 20,
+      "exercises": [
+        {
+          "slug": "speaking-leisure-learn",
+          "title": "Learn: Choose the Best Reply",
+          "instructions": "Imagine an examiner asks you a question. Choose the best answer.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: What do you like doing in your free time? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Enjoy + -ing: enjoy going to concerts.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I enjoy go to concerts.",
+                  "isCorrect": false,
+                  "distractorNote": "Missing gerund"
+                },
+                {
+                  "text": "I enjoy going to concerts and exhibitions.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I enjoy to going concerts.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong form"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: How do you usually get tickets? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Found out + thông tin mua vé online.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I usually pick up the prices online.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong phrasal verb"
+                },
+                {
+                  "text": "I usually find out the prices online and download tickets.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I usually take off tickets online.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong phrasal verb"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: Do you prefer live events or streaming? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "So sánh tự nhiên live events vs streaming.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I like live magazines at home.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong collocation"
+                },
+                {
+                  "text": "I like live concerts, but I sometimes enjoy streaming films at home.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I enjoy audience films at concerts.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-leisure-practice",
+          "title": "Practice: Best Response",
+          "instructions": "Choose the best phrase you would say in each situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: Tell me about a concert you went to. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Mô tả ngắn concert + audience reaction.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I went to a jazz download.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong word"
+                },
+                {
+                  "text": "I went to a jazz concert. The audience was fantastic.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I went to a streaming audience.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: What did you decide to do last weekend? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Decide + to-infinitive.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I decided visiting the photography exhibition.",
+                  "isCorrect": false,
+                  "distractorNote": "Gerund after decide"
+                },
+                {
+                  "text": "I decided to visit the photography exhibition.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I decided visit the photography exhibition.",
+                  "isCorrect": false,
+                  "distractorNote": "Missing to"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: Would you like to review a film for the school magazine? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Would like + to-infinitive — lời đồng ý lịch sự.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, I would like writing a review.",
+                  "isCorrect": false,
+                  "distractorNote": "Would like + to"
+                },
+                {
+                  "text": "Yes, I would like to write a review.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes, I like to writing a review.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong pattern"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-leisure-interview",
+          "title": "Check: Free Time Interview",
+          "instructions": "Answer the examiner's questions about entertainment. Speak for up to two minutes.",
+          "exerciseType": "speaking",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-leisure-interview",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 120
+              }
+            }
+          ]
+        },
+        {
+          "slug": "speaking-leisure-apply",
+          "title": "Apply: Situational Responses",
+          "instructions": "Choose the best thing to say in each situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Your friend asks if the concert was good. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Mô tả performance + audience — phản hồi tự nhiên.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes! The magazine was great and the ticket loved it.",
+                  "isCorrect": false,
+                  "distractorNote": "Mixed wrong words"
+                },
+                {
+                  "text": "Yes! The performance was great and the audience loved it.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes! The download was great and streaming loved it.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense"
+                }
+              ]
+            },
+            {
+              "questionText": "You arrive at the venue early. You tell your friend:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Pick up programme — phrasal verb trong tình huống thực.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Let's find out a programme at the door.",
+                  "isCorrect": false,
+                  "distractorNote": "Find out = discover info"
+                },
+                {
+                  "text": "Let's pick up a programme at the door.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Let's take off a programme at the door.",
+                  "isCorrect": false,
+                  "distractorNote": "Take off = remove"
+                }
+              ]
+            },
+            {
+              "questionText": "The examiner asks: Is streaming popular with teenagers? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "leisure-and-entertainment",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Đưa ý kiến + ví dụ ngắn về streaming.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, many teenagers enjoy to stream at the concert venue only.",
+                  "isCorrect": false,
+                  "distractorNote": "Awkward/untrue"
+                },
+                {
+                  "text": "Yes, many teenagers enjoy streaming films and series at home.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "No, teenagers never download or stream anything.",
+                  "isCorrect": false,
+                  "distractorNote": "Too extreme"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

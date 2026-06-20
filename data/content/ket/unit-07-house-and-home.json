@@ -1,0 +1,2861 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by A2 Key task formats only.",
+    "program": "cambridge-english",
+    "level": "ket",
+    "cefr": "a2",
+    "unitNumber": 7,
+    "unitSlug": "house-and-home",
+    "unitTitle": "House and Home",
+    "targetAge": "11-14",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Use core house and home vocabulary at A2 level.",
+      "Use present and past passive to describe homes and repairs.",
+      "Use basic relative clauses with who, which and where.",
+      "Understand grammar and vocabulary in a short text about moving home.",
+      "Understand conversations about flats and repairs at natural speed.",
+      "Write a short message describing your home.",
+      "Answer interview questions about where you live."
+    ],
+    "grammarFocus": [
+      "Passive voice: present and past simple",
+      "Relative clauses (defining and non-defining, basic)"
+    ],
+    "readingSkillFocus": "Multiple Choice Cloze (Grammar/Vocabulary)",
+    "listeningSkillFocus": "Cope with Natural Speed"
+  },
+  "vocabularyBank": [
+    {
+      "word": "furniture",
+      "ipa": "/ˈfɜːnɪtʃə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "đồ nội thất",
+      "exampleSentence": "We bought new furniture for the living room.",
+      "difficulty": 1,
+      "topic": "house-and-home",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "appliance",
+      "ipa": "/əˈplaɪəns/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "thiết bị gia dụng",
+      "exampleSentence": "The kitchen has modern appliances.",
+      "difficulty": 2,
+      "topic": "house-and-home",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "repair",
+      "ipa": "/rɪˈpeə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "sửa chữa",
+      "exampleSentence": "We called a worker for a repair in the bathroom.",
+      "difficulty": 1,
+      "topic": "house-and-home",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "rent",
+      "ipa": "/rent/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "tiền thuê nhà",
+      "exampleSentence": "The rent is due on the first day of the month.",
+      "difficulty": 1,
+      "topic": "house-and-home",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "neighbourhood",
+      "ipa": "/ˈneɪbəhʊd/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "khu phố / vùng lân cận",
+      "exampleSentence": "It is a friendly neighbourhood with a park.",
+      "difficulty": 2,
+      "topic": "house-and-home",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "balcony",
+      "ipa": "/ˈbælkəni/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "ban công",
+      "exampleSentence": "We have breakfast on the balcony in summer.",
+      "difficulty": 1,
+      "topic": "house-and-home",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "garage",
+      "ipa": "/ˈɡærɑːʒ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "nhà để xe / gara",
+      "exampleSentence": "Our car is kept in the garage.",
+      "difficulty": 1,
+      "topic": "house-and-home",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "mortgage",
+      "ipa": "/ˈmɔːɡɪdʒ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "thế chấp / vay mua nhà",
+      "exampleSentence": "They are paying a mortgage on their house.",
+      "difficulty": 2,
+      "topic": "house-and-home",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "landlord",
+      "ipa": "/ˈlændlɔːd/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "chủ nhà cho thuê",
+      "exampleSentence": "The landlord collects the rent every month.",
+      "difficulty": 2,
+      "topic": "house-and-home",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "tenant",
+      "ipa": "/ˈtenənt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "người thuê nhà",
+      "exampleSentence": "The new tenant moved in last week.",
+      "difficulty": 2,
+      "topic": "house-and-home",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "utility",
+      "ipa": "/juːˈtɪləti/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "dịch vụ tiện ích (điện, nước...)",
+      "exampleSentence": "Electricity is the most expensive utility.",
+      "difficulty": 2,
+      "topic": "house-and-home",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "upstairs",
+      "ipa": "/ˌʌpˈsteəz/",
+      "partOfSpeech": "adverb",
+      "vietnameseMeaning": "ở tầng trên",
+      "exampleSentence": "The bedrooms are upstairs.",
+      "difficulty": 1,
+      "topic": "house-and-home",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Passive voice: present and past simple",
+      "explanation": "Use passive (be + past participle) when the action is more important than who does it, or when the doer is unknown. Present passive: is/are + past participle. Past passive: was/were + past participle.",
+      "examples": [
+        "The flat is rented by a young family.",
+        "The tap was repaired yesterday.",
+        "Modern appliances are included in the kitchen.",
+        "Many houses were built in this neighbourhood in 2010."
+      ],
+      "commonMistakes": [
+        "The tap was repair (×) → The tap was repaired (✓)",
+        "The rent is pay every month (×) → The rent is paid every month (✓)",
+        "The furniture were made (×) → The furniture was made (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "house-and-home"
+    },
+    {
+      "structure": "Relative clauses (defining and non-defining, basic)",
+      "explanation": "Use who for people, which for things, and where for places. Defining clauses give essential information (no commas). Non-defining clauses add extra information (with commas).",
+      "examples": [
+        "The tenant who lives upstairs is very friendly.",
+        "The flat which we visited has a balcony.",
+        "Our neighbourhood, which is near the park, is very quiet.",
+        "This is the house where I grew up."
+      ],
+      "commonMistakes": [
+        "The man which lives here (×) → The man who lives here (✓)",
+        "The flat, we visited (×) → The flat which we visited (✓)",
+        "The house who is old (×) → The house which is old (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "house-and-home"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-home-words",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: House and Home Words",
+      "learningObjective": "Recognise and understand twelve house and home words at KET A2 level.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "vocab-home-learn",
+          "title": "Learn: Home Word Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Tables, chairs and sofas are types of _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Furniture (đồ nội thất) gồm bàn ghế, sofa.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "appliance",
+                  "isCorrect": false,
+                  "distractorNote": "Machines like fridges"
+                },
+                {
+                  "text": "furniture",
+                  "isCorrect": true
+                },
+                {
+                  "text": "utility",
+                  "isCorrect": false,
+                  "distractorNote": "Services like electricity"
+                }
+              ]
+            },
+            {
+              "questionText": "A fridge and a washing machine are kitchen _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Appliance (thiết bị) là máy gia dụng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "furniture",
+                  "isCorrect": false,
+                  "distractorNote": "Tables and chairs"
+                },
+                {
+                  "text": "appliances",
+                  "isCorrect": true
+                },
+                {
+                  "text": "mortgages",
+                  "isCorrect": false,
+                  "distractorNote": "Home loans"
+                }
+              ]
+            },
+            {
+              "questionText": "When something is broken and fixed, it needs a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Repair (sửa chữa) khi đồ hỏng được sửa.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "rent",
+                  "isCorrect": false,
+                  "distractorNote": "Monthly payment"
+                },
+                {
+                  "text": "repair",
+                  "isCorrect": true
+                },
+                {
+                  "text": "balcony",
+                  "isCorrect": false,
+                  "distractorNote": "Outdoor platform"
+                }
+              ]
+            },
+            {
+              "questionText": "Money you pay to live in a flat each month is the _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Rent (tiền thuê) trả hàng tháng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "garage",
+                  "isCorrect": false,
+                  "distractorNote": "Car storage"
+                },
+                {
+                  "text": "rent",
+                  "isCorrect": true
+                },
+                {
+                  "text": "neighbourhood",
+                  "isCorrect": false,
+                  "distractorNote": "Area around home"
+                }
+              ]
+            },
+            {
+              "questionText": "The area around your home is your _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Neighbourhood (khu phố) là vùng quanh nhà.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "mortgage",
+                  "isCorrect": false,
+                  "distractorNote": "Bank loan"
+                },
+                {
+                  "text": "neighbourhood",
+                  "isCorrect": true
+                },
+                {
+                  "text": "tenant",
+                  "isCorrect": false,
+                  "distractorNote": "Person who rents"
+                }
+              ]
+            },
+            {
+              "questionText": "We drink coffee on the _____ in the morning sun.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Balcony (ban công) là nơi ngồi ngoài tầng cao.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "garage",
+                  "isCorrect": false,
+                  "distractorNote": "Car park area"
+                },
+                {
+                  "text": "balcony",
+                  "isCorrect": true
+                },
+                {
+                  "text": "upstairs",
+                  "isCorrect": false,
+                  "distractorNote": "Direction not place name"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-home-matching",
+          "title": "Practice: Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the home words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Mỗi từ khớp với nghĩa rõ ràng. Garage và mortgage thường bị nhầm.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "garage",
+                  "right": "a building where you keep a car"
+                },
+                {
+                  "left": "mortgage",
+                  "right": "money borrowed to buy a house"
+                },
+                {
+                  "left": "landlord",
+                  "right": "a person who owns a rented flat"
+                },
+                {
+                  "left": "tenant",
+                  "right": "a person who pays rent to live somewhere"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-home-check",
+          "title": "Check: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Electricity and water are examples of a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Utility (dịch vụ tiện ích) như điện, nước.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "furniture",
+                  "isCorrect": false,
+                  "distractorNote": "Household objects"
+                },
+                {
+                  "text": "utility",
+                  "isCorrect": true
+                },
+                {
+                  "text": "balcony",
+                  "isCorrect": false,
+                  "distractorNote": "Outdoor area"
+                }
+              ]
+            },
+            {
+              "questionText": "The bedrooms are _____, on the second floor.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Upstairs (tầng trên) chỉ vị trí phòng ngủ.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "rent",
+                  "isCorrect": false,
+                  "distractorNote": "Payment"
+                },
+                {
+                  "text": "upstairs",
+                  "isCorrect": true
+                },
+                {
+                  "text": "repair",
+                  "isCorrect": false,
+                  "distractorNote": "Fixing something"
+                }
+              ]
+            },
+            {
+              "questionText": "The _____ collects the _____ from the _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Landlord thu rent từ tenant.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "tenant ... garage ... balcony",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong roles"
+                },
+                {
+                  "text": "landlord ... rent ... tenant",
+                  "isCorrect": true
+                },
+                {
+                  "text": "appliance ... mortgage ... utility",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong words"
+                }
+              ]
+            },
+            {
+              "questionText": "They keep their car in the _____ below the flat.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Garage (nhà để xe) thường ở tầng dưới.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "balcony",
+                  "isCorrect": false,
+                  "distractorNote": "Outdoor platform"
+                },
+                {
+                  "text": "garage",
+                  "isCorrect": true
+                },
+                {
+                  "text": "neighbourhood",
+                  "isCorrect": false,
+                  "distractorNote": "Whole area"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-home-apply",
+          "title": "Apply: Words in Sentences",
+          "instructions": "Complete each sentence with the correct word from the unit.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: The [0] is five hundred a month. | We need a [1] for the tap. | Our [2] is very quiet.",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "rent (tiền thuê); repair (sửa chữa); neighbourhood (khu phố).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "The [0] is five hundred a month. We need a [1] for the tap. Our [2] is very quiet.",
+                "correctAnswers": [
+                  "rent",
+                  "repair",
+                  "neighbourhood"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "rent",
+                    "Rent"
+                  ],
+                  [
+                    "repair",
+                    "Repair"
+                  ],
+                  [
+                    "neighbourhood",
+                    "Neighbourhood"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: The kitchen [0] are new. | The old [1] was left by the [2].",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "appliances (thiết bị); furniture (nội thất); tenant (người thuê).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "The kitchen [0] are new. The old [1] was left by the [2].",
+                "correctAnswers": [
+                  "appliances",
+                  "furniture",
+                  "tenant"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "appliances",
+                    "Appliances"
+                  ],
+                  [
+                    "furniture",
+                    "Furniture"
+                  ],
+                  [
+                    "tenant",
+                    "Tenant"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-home-passive",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e5000007-0000-4000-8000-000000000001",
+      "title": "Lesson 2: Passive and Relative Clauses",
+      "learningObjective": "Use passive voice and basic relative clauses to describe homes.",
+      "estimatedMinutes": 24,
+      "exercises": [
+        {
+          "slug": "grammar-home-learn",
+          "title": "Learn: Passive and Who/Which",
+          "instructions": "Choose the correct word or phrase to complete each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "The bathroom tap _____ yesterday.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Past passive: was + repaired.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "repaired",
+                  "isCorrect": false,
+                  "distractorNote": "Missing be verb"
+                },
+                {
+                  "text": "was repaired",
+                  "isCorrect": true
+                },
+                {
+                  "text": "is repaired",
+                  "isCorrect": false,
+                  "distractorNote": "Present passive wrong tense"
+                }
+              ]
+            },
+            {
+              "questionText": "Modern appliances _____ in the kitchen.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Present passive plural: are included.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "is included",
+                  "isCorrect": false,
+                  "distractorNote": "Singular be"
+                },
+                {
+                  "text": "are included",
+                  "isCorrect": true
+                },
+                {
+                  "text": "include",
+                  "isCorrect": false,
+                  "distractorNote": "Active voice"
+                }
+              ]
+            },
+            {
+              "questionText": "The tenant _____ lives upstairs is very friendly.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Person → who in relative clause.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "which",
+                  "isCorrect": false,
+                  "distractorNote": "For things"
+                },
+                {
+                  "text": "who",
+                  "isCorrect": true
+                },
+                {
+                  "text": "where",
+                  "isCorrect": false,
+                  "distractorNote": "For places"
+                }
+              ]
+            },
+            {
+              "questionText": "The flat _____ we visited has a large balcony.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Thing → which in relative clause.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "who",
+                  "isCorrect": false,
+                  "distractorNote": "For people"
+                },
+                {
+                  "text": "which",
+                  "isCorrect": true
+                },
+                {
+                  "text": "where",
+                  "isCorrect": false,
+                  "distractorNote": "For places"
+                }
+              ]
+            },
+            {
+              "questionText": "Many houses in this area _____ in 2010.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Past passive plural: were built.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "was built",
+                  "isCorrect": false,
+                  "distractorNote": "Singular was"
+                },
+                {
+                  "text": "were built",
+                  "isCorrect": true
+                },
+                {
+                  "text": "built",
+                  "isCorrect": false,
+                  "distractorNote": "Active missing be"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-home-practice",
+          "title": "Practice: Complete the Grammar",
+          "instructions": "Fill in each gap with the correct form.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: The rent [0] paid on the first day. | The sofa [1] left by the old tenant. | The flats [2] built in 2010.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "is (rent); was (sofa); were (flats) — passive forms.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "The rent [0] paid on the first day. The sofa [1] left by the old tenant. The flats [2] built in 2010.",
+                "correctAnswers": [
+                  "is",
+                  "was",
+                  "were"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "is",
+                    "Is"
+                  ],
+                  [
+                    "was",
+                    "Was"
+                  ],
+                  [
+                    "were",
+                    "Were"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: The man [0] is our landlord works nearby. | The house [1] we like has a garage. | This is the street [2] I grew up.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "who (man); which (house); where (street).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "The man [0] is our landlord works nearby. The house [1] we like has a garage. This is the street [2] I grew up.",
+                "correctAnswers": [
+                  "who",
+                  "which",
+                  "where"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "who",
+                    "Who"
+                  ],
+                  [
+                    "which",
+                    "which",
+                    "Which",
+                    "that",
+                    "That"
+                  ],
+                  [
+                    "where",
+                    "Where"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "grammar-home-check",
+          "title": "Check: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Our neighbourhood, _____ is near the park, is very safe.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Non-defining clause for thing/place → which.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "who",
+                  "isCorrect": false,
+                  "distractorNote": "For people"
+                },
+                {
+                  "text": "which",
+                  "isCorrect": true
+                },
+                {
+                  "text": "where",
+                  "isCorrect": false,
+                  "distractorNote": "Needs place as antecedent"
+                }
+              ]
+            },
+            {
+              "questionText": "The mortgage _____ every month by my parents.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Present passive: is paid.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "pays",
+                  "isCorrect": false,
+                  "distractorNote": "Active voice"
+                },
+                {
+                  "text": "is paid",
+                  "isCorrect": true
+                },
+                {
+                  "text": "is pay",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong past participle"
+                }
+              ]
+            },
+            {
+              "questionText": "The repair _____ finished when we arrived home.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Past passive singular: was finished.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "were finished",
+                  "isCorrect": false,
+                  "distractorNote": "Plural were"
+                },
+                {
+                  "text": "was finished",
+                  "isCorrect": true
+                },
+                {
+                  "text": "finished",
+                  "isCorrect": false,
+                  "distractorNote": "Missing auxiliary"
+                }
+              ]
+            },
+            {
+              "questionText": "The landlord _____ rented us the flat is helpful.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Person → who.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "which",
+                  "isCorrect": false,
+                  "distractorNote": "For things"
+                },
+                {
+                  "text": "who",
+                  "isCorrect": true
+                },
+                {
+                  "text": "where",
+                  "isCorrect": false,
+                  "distractorNote": "For places"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-home-order",
+          "title": "Apply: Build the Sentence",
+          "instructions": "Put the words in the correct order to make a sentence.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: The tap / was / repaired / yesterday.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "The tap was repaired yesterday. — past passive.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "The tap"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "was"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "repaired"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "yesterday."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4"
+                ]
+              },
+              "topicTag": "house-and-home",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: The flat / which / we visited / has / a balcony.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "The flat which we visited has a balcony. — relative clause with which.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "The flat"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "which"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "we visited"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "has"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "a balcony."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5"
+                ]
+              },
+              "topicTag": "house-and-home",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: The appliances / are / made / in / Europe.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 3,
+              "points": 2,
+              "explanation": "The appliances are made in Europe. — present passive.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "The appliances"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "are"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "made"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "in"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "Europe."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5"
+                ]
+              },
+              "topicTag": "house-and-home",
+              "levelTag": "ket"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-moving-article",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e5000007-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Moving Home Article",
+      "learningObjective": "Read a short text about moving home and understand grammar and vocabulary in context.",
+      "estimatedMinutes": 23,
+      "exercises": [
+        {
+          "slug": "reading-home-learn",
+          "title": "Learn: Read the Article",
+          "instructions": "Read the article carefully. Answer the detail questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Moving to a New Flat",
+              "text": "Last month, Lan and her brother moved into a flat in a quiet neighbourhood. The building is old but the rooms are bright. Their balcony looks over a small park, and the garage downstairs is useful for their father's motorbike.\n\nThe landlord explained that the rent includes water, but electricity is extra. The kitchen has modern appliances, including a fridge and a washing machine. However, the sofa in the living room is old furniture that the previous tenant left behind.\n\nOn the first weekend, they needed a repair because the bathroom tap was broken. A plumber came quickly and fixed it. Their mother was worried about the mortgage because the family had saved for years to buy this home.\n\nLan likes the area. She says, \"The house which we visited last year was smaller. Our new home, which has a large balcony, is perfect for studying.\" Her neighbour, who works at the bank, gave useful advice about home insurance. Lan feels happy that the flat was built in 2010 and is well looked after.",
+              "wordCount": 174,
+              "imagePrompt": "A modern flat interior with balcony view, kitchen appliances, and a quiet residential neighbourhood street with garages."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is included in the rent?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "The rent includes water, but electricity is extra.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "Electricity",
+                  "isCorrect": false,
+                  "distractorNote": "Extra utility"
+                },
+                {
+                  "text": "Water",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The mortgage",
+                  "isCorrect": false,
+                  "distractorNote": "Separate from rent"
+                }
+              ]
+            },
+            {
+              "questionText": "Why did they call a plumber?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Needed a repair because the bathroom tap was broken.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "The garage was too small",
+                  "isCorrect": false,
+                  "distractorNote": "Garage useful not broken"
+                },
+                {
+                  "text": "The bathroom tap was broken",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The balcony was dirty",
+                  "isCorrect": false,
+                  "distractorNote": "Balcony liked"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-home-practice",
+          "title": "Practice: Words in the Article",
+          "instructions": "Read the article again. Answer about vocabulary and meaning.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Moving to a New Flat",
+              "text": "Last month, Lan and her brother moved into a flat in a quiet neighbourhood. The building is old but the rooms are bright. Their balcony looks over a small park, and the garage downstairs is useful for their father's motorbike.\n\nThe landlord explained that the rent includes water, but electricity is extra. The kitchen has modern appliances, including a fridge and a washing machine. However, the sofa in the living room is old furniture that the previous tenant left behind.\n\nOn the first weekend, they needed a repair because the bathroom tap was broken. A plumber came quickly and fixed it. Their mother was worried about the mortgage because the family had saved for years to buy this home.\n\nLan likes the area. She says, \"The house which we visited last year was smaller. Our new home, which has a large balcony, is perfect for studying.\" Her neighbour, who works at the bank, gave useful advice about home insurance. Lan feels happy that the flat was built in 2010 and is well looked after.",
+              "wordCount": 174,
+              "imagePrompt": "A modern flat interior with balcony view, kitchen appliances, and a quiet residential neighbourhood street with garages."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "In the article, 'appliances' refers to _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Fridge and washing machine — thiết bị gia dụng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "vocabulary_in_context",
+              "choices": [
+                {
+                  "text": "tables and sofas",
+                  "isCorrect": false,
+                  "distractorNote": "Furniture"
+                },
+                {
+                  "text": "machines like a fridge and washing machine",
+                  "isCorrect": true
+                },
+                {
+                  "text": "money paid to the bank",
+                  "isCorrect": false,
+                  "distractorNote": "Mortgage"
+                }
+              ]
+            },
+            {
+              "questionText": "Why was Lan's mother worried?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Worried about the mortgage — vay mua nhà.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "inference",
+              "choices": [
+                {
+                  "text": "Because the rent was too high",
+                  "isCorrect": false,
+                  "distractorNote": "Rent mentioned but not worry"
+                },
+                {
+                  "text": "Because of the mortgage",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Because the tenant left",
+                  "isCorrect": false,
+                  "distractorNote": "Previous tenant left furniture"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-home-check",
+          "title": "Check: Main Idea and Order",
+          "instructions": "Read the article one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Moving to a New Flat",
+              "text": "Last month, Lan and her brother moved into a flat in a quiet neighbourhood. The building is old but the rooms are bright. Their balcony looks over a small park, and the garage downstairs is useful for their father's motorbike.\n\nThe landlord explained that the rent includes water, but electricity is extra. The kitchen has modern appliances, including a fridge and a washing machine. However, the sofa in the living room is old furniture that the previous tenant left behind.\n\nOn the first weekend, they needed a repair because the bathroom tap was broken. A plumber came quickly and fixed it. Their mother was worried about the mortgage because the family had saved for years to buy this home.\n\nLan likes the area. She says, \"The house which we visited last year was smaller. Our new home, which has a large balcony, is perfect for studying.\" Her neighbour, who works at the bank, gave useful advice about home insurance. Lan feels happy that the flat was built in 2010 and is well looked after.",
+              "wordCount": 174,
+              "imagePrompt": "A modern flat interior with balcony view, kitchen appliances, and a quiet residential neighbourhood street with garages."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the article mainly about?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Bài kể Lan chuyển đến căn hộ mới và trải nghiệm đầu tiên.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "How to get a mortgage from a bank",
+                  "isCorrect": false,
+                  "distractorNote": "Mortgage is one detail"
+                },
+                {
+                  "text": "Lan's family moving into a new flat",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Rules for all landlords",
+                  "isCorrect": false,
+                  "distractorNote": "Too general"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the events in order: (1) Repair in bathroom (2) Landlord explains rent (3) Family moves in",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Chuyển vào → landlord giải thích → sửa tap cuối tuần.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "sequencing",
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Repair after moving"
+                },
+                {
+                  "text": "3 → 2 → 1",
+                  "isCorrect": true
+                },
+                {
+                  "text": "2 → 3 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Move before explanation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-home-apply",
+          "title": "Apply: Match Facts from the Article",
+          "instructions": "Use what you read. Match each item to the correct fact.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Moving to a New Flat",
+              "text": "Last month, Lan and her brother moved into a flat in a quiet neighbourhood. The building is old but the rooms are bright. Their balcony looks over a small park, and the garage downstairs is useful for their father's motorbike.\n\nThe landlord explained that the rent includes water, but electricity is extra. The kitchen has modern appliances, including a fridge and a washing machine. However, the sofa in the living room is old furniture that the previous tenant left behind.\n\nOn the first weekend, they needed a repair because the bathroom tap was broken. A plumber came quickly and fixed it. Their mother was worried about the mortgage because the family had saved for years to buy this home.\n\nLan likes the area. She says, \"The house which we visited last year was smaller. Our new home, which has a large balcony, is perfect for studying.\" Her neighbour, who works at the bank, gave useful advice about home insurance. Lan feels happy that the flat was built in 2010 and is well looked after.",
+              "wordCount": 174,
+              "imagePrompt": "A modern flat interior with balcony view, kitchen appliances, and a quiet residential neighbourhood street with garages."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each item from the article to the correct fact.",
+              "questionType": "matching",
+              "skillTag": "reading",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 3,
+              "explanation": "Mỗi mục khớp với chi tiết trong bài.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Balcony",
+                  "right": "Looks over a small park"
+                },
+                {
+                  "left": "Furniture",
+                  "right": "Old sofa left by previous tenant"
+                },
+                {
+                  "left": "Building",
+                  "right": "Flats were built in 2010"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-home-conversations",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e5000007-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Home Conversations",
+      "learningObjective": "Understand details in conversations about flats and repairs at natural speed.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "listening-viewing-learn",
+          "title": "Learn: Flat Viewing Call",
+          "instructions": "Listen to the phone call. Answer the questions.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Flat Viewing Phone Call",
+              "setting": "Phone call between tenant and landlord",
+              "speakers": [
+                {
+                  "name": "Landlord",
+                  "role": "property owner"
+                },
+                {
+                  "name": "Lan",
+                  "role": "prospective tenant"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Lan",
+                  "text": "Hello. I'm calling about the flat on Oak Street. Is it still available?"
+                },
+                {
+                  "speaker": "Landlord",
+                  "text": "Yes. It has two bedrooms, a balcony and a garage. The rent is five hundred pounds a month."
+                },
+                {
+                  "speaker": "Lan",
+                  "text": "Are the appliances included? We need a washing machine."
+                },
+                {
+                  "speaker": "Landlord",
+                  "text": "Yes, the washing machine and fridge are included. The neighbourhood is very quiet."
+                },
+                {
+                  "speaker": "Lan",
+                  "text": "Great. Can we visit on Saturday? My email is lan.nguyen@email.com."
+                }
+              ],
+              "audioNotes": "Clear phone call, numbers and email spelled slowly. Natural pace. Approx. 40 seconds."
+            },
+            "answerKey": {
+              "q1": "Oak Street flat",
+              "q2": "500 rent"
+            },
+            "audioUrl": "/audio/listening/ket/unit-07/listening-viewing-learn.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What is Lan calling about?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Calling about the flat on Oak Street.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A garage for sale",
+                  "isCorrect": false,
+                  "distractorNote": "Garage mentioned as feature"
+                },
+                {
+                  "text": "A flat on Oak Street",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A mortgage at the bank",
+                  "isCorrect": false,
+                  "distractorNote": "Mortgage not discussed"
+                }
+              ]
+            },
+            {
+              "questionText": "How much is the rent per month?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "The rent is five hundred pounds a month.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Two hundred pounds",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "Five hundred pounds",
+                  "isCorrect": true
+                },
+                {
+                  "text": "One thousand pounds",
+                  "isCorrect": false,
+                  "distractorNote": "Too high"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-viewing-practice",
+          "title": "Practice: More from the Viewing Call",
+          "instructions": "Listen again to the same phone call. Answer the next questions.",
+          "exerciseType": "listening",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Flat Viewing Phone Call",
+              "setting": "Phone call between tenant and landlord",
+              "speakers": [
+                {
+                  "name": "Landlord",
+                  "role": "property owner"
+                },
+                {
+                  "name": "Lan",
+                  "role": "prospective tenant"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Lan",
+                  "text": "Hello. I'm calling about the flat on Oak Street. Is it still available?"
+                },
+                {
+                  "speaker": "Landlord",
+                  "text": "Yes. It has two bedrooms, a balcony and a garage. The rent is five hundred pounds a month."
+                },
+                {
+                  "speaker": "Lan",
+                  "text": "Are the appliances included? We need a washing machine."
+                },
+                {
+                  "speaker": "Landlord",
+                  "text": "Yes, the washing machine and fridge are included. The neighbourhood is very quiet."
+                },
+                {
+                  "speaker": "Lan",
+                  "text": "Great. Can we visit on Saturday? My email is lan.nguyen@email.com."
+                }
+              ],
+              "audioNotes": "Clear phone call, numbers and email spelled slowly. Natural pace. Approx. 40 seconds."
+            },
+            "answerKey": {
+              "q1": "washing machine fridge",
+              "q2": "Saturday visit"
+            },
+            "audioUrl": "/audio/listening/ket/unit-07/listening-viewing-practice.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "Which appliances are included?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Washing machine and fridge are included.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Sofa and tables",
+                  "isCorrect": false,
+                  "distractorNote": "Furniture not discussed"
+                },
+                {
+                  "text": "Washing machine and fridge",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Mortgage and rent",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong items"
+                }
+              ]
+            },
+            {
+              "questionText": "When does Lan want to visit the flat?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Can we visit on Saturday?",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "On Monday",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "On Saturday",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yesterday",
+                  "isCorrect": false,
+                  "distractorNote": "Past"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-repair-check",
+          "title": "Check: Repair Visit",
+          "instructions": "Listen to a new conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Repair Visit Conversation",
+              "setting": "Inside a flat living room",
+              "speakers": [
+                {
+                  "name": "Plumber",
+                  "role": "repair worker"
+                },
+                {
+                  "name": "Minh",
+                  "role": "tenant"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Minh",
+                  "text": "Thank you for coming. The tap in the bathroom was broken yesterday."
+                },
+                {
+                  "speaker": "Plumber",
+                  "text": "No problem. It will be repaired in about thirty minutes."
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "The furniture in here is old, but the appliances in the kitchen are new."
+                },
+                {
+                  "speaker": "Plumber",
+                  "text": "I see. Many flats in this building were built in 2010. The garage is downstairs."
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "Perfect. Should I pay now or later?"
+                }
+              ],
+              "audioNotes": "Indoor conversation, moderate natural speed with brief pauses. Approx. 38 seconds."
+            },
+            "answerKey": {
+              "q1": "broken tap bathroom",
+              "q2": "30 minutes",
+              "q3": "built 2010"
+            },
+            "audioUrl": "/audio/listening/ket/unit-07/listening-repair-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What needs to be repaired?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "The tap in the bathroom was broken.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The garage door",
+                  "isCorrect": false,
+                  "distractorNote": "Mentioned but not broken"
+                },
+                {
+                  "text": "The bathroom tap",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The balcony railing",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "How long will the repair take?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Repaired in about thirty minutes.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "About three hours",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "About thirty minutes",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Two days",
+                  "isCorrect": false,
+                  "distractorNote": "Too long"
+                }
+              ]
+            },
+            {
+              "questionText": "When were many flats in the building built?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Many flats were built in 2010.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "In 2000",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong year"
+                },
+                {
+                  "text": "In 2010",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Last year",
+                  "isCorrect": false,
+                  "distractorNote": "Too recent for many flats"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-viewing-apply",
+          "title": "Apply: Match What You Heard",
+          "instructions": "Listen again to the flat viewing call. Match each item to the correct detail.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Flat Viewing Phone Call",
+              "setting": "Phone call between tenant and landlord",
+              "speakers": [
+                {
+                  "name": "Landlord",
+                  "role": "property owner"
+                },
+                {
+                  "name": "Lan",
+                  "role": "prospective tenant"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Lan",
+                  "text": "Hello. I'm calling about the flat on Oak Street. Is it still available?"
+                },
+                {
+                  "speaker": "Landlord",
+                  "text": "Yes. It has two bedrooms, a balcony and a garage. The rent is five hundred pounds a month."
+                },
+                {
+                  "speaker": "Lan",
+                  "text": "Are the appliances included? We need a washing machine."
+                },
+                {
+                  "speaker": "Landlord",
+                  "text": "Yes, the washing machine and fridge are included. The neighbourhood is very quiet."
+                },
+                {
+                  "speaker": "Lan",
+                  "text": "Great. Can we visit on Saturday? My email is lan.nguyen@email.com."
+                }
+              ],
+              "audioNotes": "Clear phone call, numbers and email spelled slowly. Natural pace. Approx. 40 seconds."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each item from the flat viewing call.",
+              "questionType": "matching",
+              "skillTag": "listening",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "Mỗi mục khớp với chi tiết trong cuộc gọi.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Number of bedrooms",
+                  "right": "Two"
+                },
+                {
+                  "left": "Extra features",
+                  "right": "Balcony and garage"
+                },
+                {
+                  "left": "Neighbourhood",
+                  "right": "Very quiet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-home-message",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e5000007-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Message About Your Home",
+      "learningObjective": "Write a short message describing your home using unit vocabulary and passive forms.",
+      "estimatedMinutes": 25,
+      "exercises": [
+        {
+          "slug": "writing-home-learn",
+          "title": "Learn: Home Description Phrases",
+          "instructions": "Complete each gap with a word from the box: balcony, rent, furniture, appliance, neighbourhood.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Hi Sam, | Our [0] is quiet and friendly. | The [1] is four hundred a month. | We have a small [2].",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 3,
+              "explanation": "neighbourhood (khu phố); rent (tiền thuê); balcony (ban công).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Hi Sam,\n\nOur [0] is quiet and friendly. The [1] is four hundred a month. We have a small [2].",
+                "correctAnswers": [
+                  "neighbourhood",
+                  "rent",
+                  "balcony"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "neighbourhood",
+                    "Neighbourhood"
+                  ],
+                  [
+                    "rent",
+                    "Rent"
+                  ],
+                  [
+                    "balcony",
+                    "Balcony"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-home-order-practice",
+          "title": "Practice: Build Home Sentences",
+          "instructions": "Put the words in order to make correct sentences.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: The kitchen / was / painted / last year.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "The kitchen was painted last year. — past passive.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "The kitchen"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "was"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "painted"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "last year."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4"
+                ]
+              },
+              "topicTag": "house-and-home",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: The flat / which / we rent / has / a garage.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "The flat which we rent has a garage. — relative clause.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "The flat"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "which"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "we rent"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "has"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "a garage."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5"
+                ]
+              },
+              "topicTag": "house-and-home",
+              "levelTag": "ket"
+            }
+          ]
+        },
+        {
+          "slug": "writing-home-check",
+          "title": "Check: Message About Your Home",
+          "instructions": "Write a message to a friend. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Write a short message to your friend Sam describing where you live now.",
+            "prompts": [
+              "Say what type of home you live in (flat or house).",
+              "Describe one or two features (balcony, garage, appliances, furniture).",
+              "Say something about your neighbourhood.",
+              "End the message in a friendly way."
+            ],
+            "expectedLength": "At least 25 words",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Clear description of home",
+              "Uses passive or relative clause if possible",
+              "Uses at least two unit vocabulary words",
+              "Friendly opening and closing"
+            ],
+            "modelAnswer": {
+              "text": "Hi Sam,\n\nI live in a flat which has a small balcony and a garage downstairs. The kitchen appliances are new, but the furniture is quite old. Our neighbourhood is quiet and friendly. The rent is paid on the first day every month.\n\nSee you soon,\nLan"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses passive or relative clauses (who/which/where) correctly if attempted."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses home words (furniture, appliance, rent, balcony, neighbourhood) appropriately."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Message has greeting, description and a friendly closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Describes home and neighbourhood clearly; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your response following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Bài mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-home-check",
+                "autoCheckKeywords": [
+                  "flat",
+                  "house",
+                  "home",
+                  "balcony",
+                  "garage",
+                  "rent",
+                  "furniture",
+                  "appliance",
+                  "neighbourhood",
+                  "sam"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-home-apply",
+          "title": "Apply: Complete the Message Frames",
+          "instructions": "Complete the message frames with the correct unit words.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Dear Ana, | The tap [0] repaired yesterday. | The man [1] is our landlord is kind. | Best, | Minh",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "was (past passive); who (relative clause for person).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Dear Ana,\n\nThe tap [0] repaired yesterday. The man [1] is our landlord is kind.\n\nBest,\nMinh",
+                "correctAnswers": [
+                  "was",
+                  "who"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "was",
+                    "Was"
+                  ],
+                  [
+                    "who",
+                    "Who"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-home-habits",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e5000007-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Your Home",
+      "learningObjective": "Answer interview questions about your home using unit vocabulary and grammar.",
+      "estimatedMinutes": 20,
+      "exercises": [
+        {
+          "slug": "speaking-home-learn",
+          "title": "Learn: Choose the Best Reply",
+          "instructions": "Imagine an examiner asks you a question. Choose the best answer.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: Do you live in a house or a flat? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Trả lời trực tiếp loại nhà ở.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I live in a rent with my family.",
+                  "isCorrect": false,
+                  "distractorNote": "Rent is payment not home type"
+                },
+                {
+                  "text": "I live in a flat with my family.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I live in a mortgage.",
+                  "isCorrect": false,
+                  "distractorNote": "Mortgage is a loan"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: What is your favourite room? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Mô tả phòng yêu thích với balcony hoặc view.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "My favourite room is the garage because it has a balcony.",
+                  "isCorrect": false,
+                  "distractorNote": "Garage not typical favourite room"
+                },
+                {
+                  "text": "My favourite room is the living room because it has a balcony.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "My favourite repair is the living room.",
+                  "isCorrect": false,
+                  "distractorNote": "Repair is not a room"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: Is your home old or new? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Passive: was built — mô tả năm xây.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "It is quite new. It built in 2015.",
+                  "isCorrect": false,
+                  "distractorNote": "Missing passive be"
+                },
+                {
+                  "text": "It is quite new. It was built in 2015.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "It is quite new. It was build in 2015.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong past participle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-home-practice",
+          "title": "Practice: Best Response",
+          "instructions": "Choose the best phrase you would say in each situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: Tell me about your neighbourhood. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Neighbourhood + đặc điểm — cấu trúc phỏng vấn A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "My mortgage is quiet and there is a park nearby.",
+                  "isCorrect": false,
+                  "distractorNote": "Mortgage is loan"
+                },
+                {
+                  "text": "My neighbourhood is quiet and there is a park nearby.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "My appliance is quiet and there is a park nearby.",
+                  "isCorrect": false,
+                  "distractorNote": "Appliance is a machine"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: Who do you pay rent to? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Landlord là chủ nhà nhận rent.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "We pay rent to our tenant every month.",
+                  "isCorrect": false,
+                  "distractorNote": "Tenant pays not receives"
+                },
+                {
+                  "text": "We pay rent to our landlord every month.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "We pay rent to our garage every month.",
+                  "isCorrect": false,
+                  "distractorNote": "Garage is not a person"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: Describe a person who lives near you. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Relative clause with who for neighbour.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I have a neighbour which works at the local shop.",
+                  "isCorrect": false,
+                  "distractorNote": "Which for things"
+                },
+                {
+                  "text": "I have a neighbour who works at the local shop.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I have a neighbour where works at the local shop.",
+                  "isCorrect": false,
+                  "distractorNote": "Where for places"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-home-interview",
+          "title": "Check: Home Interview",
+          "instructions": "Answer the examiner's questions about where you live. Speak for up to two minutes.",
+          "exerciseType": "speaking",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-home-interview",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 120
+              }
+            }
+          ]
+        },
+        {
+          "slug": "speaking-home-apply",
+          "title": "Apply: Situational Response",
+          "instructions": "Choose the best thing to say in each home situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Your landlord asks if the appliances work. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Mô tả appliances hoạt động tốt.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, the mortgage and rent work well.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong nouns"
+                },
+                {
+                  "text": "Yes, the fridge and washing machine work well.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes, the neighbourhood and garage work well.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong collocation"
+                }
+              ]
+            },
+            {
+              "questionText": "A friend asks where you park your car. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Garage downstairs — trả lời tự nhiên.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "We park it on the balcony.",
+                  "isCorrect": false,
+                  "distractorNote": "Balcony wrong place"
+                },
+                {
+                  "text": "We park it in the garage downstairs.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "We park it in the mortgage.",
+                  "isCorrect": false,
+                  "distractorNote": "Mortgage is not a place"
+                }
+              ]
+            },
+            {
+              "questionText": "You are describing the flat you want to rent. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Relative clause: flat which has...",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I want a flat who has a balcony and a quiet neighbourhood.",
+                  "isCorrect": false,
+                  "distractorNote": "Who for people"
+                },
+                {
+                  "text": "I want a flat which has a balcony and a quiet neighbourhood.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I want a flat where has a balcony and a quiet neighbourhood.",
+                  "isCorrect": false,
+                  "distractorNote": "Where needs place antecedent"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2897 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by A2 Key task formats only.",
+    "program": "cambridge-english",
+    "level": "ket",
+    "cefr": "a2",
+    "unitNumber": 6,
+    "unitSlug": "food-and-shopping",
+    "unitTitle": "Food and Shopping",
+    "targetAge": "11-14",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Use core food and shopping vocabulary at A2 level.",
+      "Use quantifiers much, many, a few and a little correctly.",
+      "Use comparatives, superlatives, less and fewer when shopping.",
+      "Complete a short text about shopping with grammatical control.",
+      "Understand transactional exchanges at shops and markets.",
+      "Write a short message about a shopping experience.",
+      "Answer interview questions about food and shopping habits."
+    ],
+    "grammarFocus": [
+      "Quantifiers: much, many, a few, a little, all, every",
+      "Comparatives and superlatives (less / fewer)"
+    ],
+    "readingSkillFocus": "Complete Texts with Grammatical Control",
+    "listeningSkillFocus": "Understand Transactional Exchanges"
+  },
+  "vocabularyBank": [
+    {
+      "word": "receipt",
+      "ipa": "/rɪˈsiːt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "hóa đơn / biên lai",
+      "exampleSentence": "Keep your receipt if you want a refund.",
+      "difficulty": 1,
+      "topic": "food-and-shopping",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "discount",
+      "ipa": "/ˈdɪskaʊnt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "giảm giá",
+      "exampleSentence": "There is a ten-percent discount on fruit today.",
+      "difficulty": 1,
+      "topic": "food-and-shopping",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "customer",
+      "ipa": "/ˈkʌstəmə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "khách hàng",
+      "exampleSentence": "The shop assistant helped the customer.",
+      "difficulty": 1,
+      "topic": "food-and-shopping",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "order",
+      "ipa": "/ˈɔːdə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "đơn hàng / gọi món",
+      "exampleSentence": "I placed an order for two pizzas.",
+      "difficulty": 2,
+      "topic": "food-and-shopping",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "ingredient",
+      "ipa": "/ɪnˈɡriːdiənt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "nguyên liệu",
+      "exampleSentence": "Salt is an important ingredient in this soup.",
+      "difficulty": 2,
+      "topic": "food-and-shopping",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "refund",
+      "ipa": "/ˈriːfʌnd/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "hoàn tiền",
+      "exampleSentence": "She asked for a refund because the bread was old.",
+      "difficulty": 2,
+      "topic": "food-and-shopping",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.25,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "bargain",
+      "ipa": "/ˈbɑːɡən/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "món hời / giá rẻ",
+      "exampleSentence": "These shoes were a real bargain.",
+      "difficulty": 1,
+      "topic": "food-and-shopping",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "checkout",
+      "ipa": "/ˈtʃekaʊt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "quầy thanh toán",
+      "exampleSentence": "We paid at the checkout near the exit.",
+      "difficulty": 1,
+      "topic": "food-and-shopping",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "supermarket",
+      "ipa": "/ˈsuːpəmɑːkɪt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "siêu thị",
+      "exampleSentence": "We buy most food at the supermarket.",
+      "difficulty": 1,
+      "topic": "food-and-shopping",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "queue",
+      "ipa": "/kjuː/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "hàng đợi",
+      "exampleSentence": "There was a long queue at the checkout.",
+      "difficulty": 1,
+      "topic": "food-and-shopping",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "wallet",
+      "ipa": "/ˈwɒlɪt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "ví tiền",
+      "exampleSentence": "He paid from his wallet at the counter.",
+      "difficulty": 1,
+      "topic": "food-and-shopping",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "menu",
+      "ipa": "/ˈmenjuː/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "thực đơn",
+      "exampleSentence": "Look at the menu before you order.",
+      "difficulty": 1,
+      "topic": "food-and-shopping",
+      "programLevel": "ket",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Quantifiers: much, many, a few, a little, all, every",
+      "explanation": "Use many with countable nouns and much with uncountable nouns, usually in questions and negatives. Use a few (countable) and a little (uncountable) for small positive amounts. Use all and every to talk about complete groups.",
+      "examples": [
+        "How many apples do we need?",
+        "There isn't much sugar left.",
+        "I bought a few eggs and a little milk.",
+        "Every customer gets a discount today."
+      ],
+      "commonMistakes": [
+        "How much apples? (×) → How many apples? (✓)",
+        "I have a few milk (×) → I have a little milk (✓)",
+        "Every customers (×) → Every customer (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "food-and-shopping"
+    },
+    {
+      "structure": "Comparatives and superlatives (less / fewer)",
+      "explanation": "Use comparatives (-er or more) to compare two things. Use superlatives (-est or most) for the extreme in a group. Use fewer with countable nouns and less with uncountable nouns.",
+      "examples": [
+        "This shop is cheaper than the market.",
+        "It is the best bargain in the store.",
+        "I eat fewer sweets now.",
+        "We need less salt in this recipe."
+      ],
+      "commonMistakes": [
+        "less customers (×) → fewer customers (✓)",
+        "more cheap (×) → cheaper (✓)",
+        "the most cheap (×) → the cheapest (✓)"
+      ],
+      "programLevel": "ket",
+      "topic": "food-and-shopping"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-shopping-words",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Food and Shopping Words",
+      "learningObjective": "Recognise and understand twelve food and shopping words at KET A2 level.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "vocab-shopping-learn",
+          "title": "Learn: Shopping Word Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "The paper that shows what you paid is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Receipt (hóa đơn) chứng minh thanh toán. Refund là hoàn tiền.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "refund",
+                  "isCorrect": false,
+                  "distractorNote": "Money returned"
+                },
+                {
+                  "text": "receipt",
+                  "isCorrect": true
+                },
+                {
+                  "text": "bargain",
+                  "isCorrect": false,
+                  "distractorNote": "Good cheap buy"
+                }
+              ]
+            },
+            {
+              "questionText": "When the price is lower than usual, there is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Discount (giảm giá) làm giá rẻ hơn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "queue",
+                  "isCorrect": false,
+                  "distractorNote": "Line of people"
+                },
+                {
+                  "text": "discount",
+                  "isCorrect": true
+                },
+                {
+                  "text": "menu",
+                  "isCorrect": false,
+                  "distractorNote": "List of food"
+                }
+              ]
+            },
+            {
+              "questionText": "A person who buys things in a shop is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Customer (khách hàng) là người mua hàng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "ingredient",
+                  "isCorrect": false,
+                  "distractorNote": "Part of a recipe"
+                },
+                {
+                  "text": "customer",
+                  "isCorrect": true
+                },
+                {
+                  "text": "checkout",
+                  "isCorrect": false,
+                  "distractorNote": "Place to pay"
+                }
+              ]
+            },
+            {
+              "questionText": "Flour, eggs and milk are _____ in a cake recipe.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Ingredient (nguyên liệu) là thành phần nấu ăn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "receipts",
+                  "isCorrect": false,
+                  "distractorNote": "Payment papers"
+                },
+                {
+                  "text": "ingredients",
+                  "isCorrect": true
+                },
+                {
+                  "text": "queues",
+                  "isCorrect": false,
+                  "distractorNote": "Lines of people"
+                }
+              ]
+            },
+            {
+              "questionText": "If the shop gives your money back, you get a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Refund (hoàn tiền) khi trả hàng hoặc hàng lỗi.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "discount",
+                  "isCorrect": false,
+                  "distractorNote": "Lower price"
+                },
+                {
+                  "text": "refund",
+                  "isCorrect": true
+                },
+                {
+                  "text": "order",
+                  "isCorrect": false,
+                  "distractorNote": "Request for goods"
+                }
+              ]
+            },
+            {
+              "questionText": "Something very cheap and good value is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Bargain (món hời) là mua được giá tốt.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "wallet",
+                  "isCorrect": false,
+                  "distractorNote": "Money holder"
+                },
+                {
+                  "text": "bargain",
+                  "isCorrect": true
+                },
+                {
+                  "text": "supermarket",
+                  "isCorrect": false,
+                  "distractorNote": "Type of shop"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-shopping-matching",
+          "title": "Practice: Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the shopping words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Mỗi từ khớp với nghĩa rõ ràng. Order và checkout thường bị nhầm.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "order",
+                  "right": "a request to buy food or goods"
+                },
+                {
+                  "left": "checkout",
+                  "right": "the place where you pay in a shop"
+                },
+                {
+                  "left": "menu",
+                  "right": "a list of food you can choose in a café"
+                },
+                {
+                  "left": "queue",
+                  "right": "a line of people waiting"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-shopping-check",
+          "title": "Check: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "We paid at the _____ near the supermarket exit.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Checkout (quầy thanh toán) là nơi trả tiền.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "ingredient",
+                  "isCorrect": false,
+                  "distractorNote": "Recipe item"
+                },
+                {
+                  "text": "checkout",
+                  "isCorrect": true
+                },
+                {
+                  "text": "bargain",
+                  "isCorrect": false,
+                  "distractorNote": "Cheap product"
+                }
+              ]
+            },
+            {
+              "questionText": "She kept the _____ in her _____ after paying.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Receipt (hóa đơn) thường cất trong wallet (ví).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "menu ... queue",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong pair"
+                },
+                {
+                  "text": "receipt ... wallet",
+                  "isCorrect": true
+                },
+                {
+                  "text": "discount ... ingredient",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong pair"
+                }
+              ]
+            },
+            {
+              "questionText": "Many _____ were waiting because the _____ was very long.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Customers (khách hàng) xếp queue (hàng đợi).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "ingredients ... menu",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong pair"
+                },
+                {
+                  "text": "customers ... queue",
+                  "isCorrect": true
+                },
+                {
+                  "text": "refunds ... bargain",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong pair"
+                }
+              ]
+            },
+            {
+              "questionText": "He found a great _____ on shoes at the _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Bargain (món hời) tại supermarket (siêu thị).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "receipt ... checkout",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong collocation"
+                },
+                {
+                  "text": "bargain ... supermarket",
+                  "isCorrect": true
+                },
+                {
+                  "text": "order ... wallet",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong collocation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-shopping-apply",
+          "title": "Apply: Words in Sentences",
+          "instructions": "Complete each sentence with the correct word from the unit.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Keep your [0] for a [1]. | There is a [2] on rice today.",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "receipt (hóa đơn); refund (hoàn tiền); discount (giảm giá).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Keep your [0] for a [1]. There is a [2] on rice today.",
+                "correctAnswers": [
+                  "receipt",
+                  "refund",
+                  "discount"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "receipt",
+                    "Receipt"
+                  ],
+                  [
+                    "refund",
+                    "Refund"
+                  ],
+                  [
+                    "discount",
+                    "Discount"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: Check the [0] before you [1]. | We joined the [2] at the checkout.",
+              "questionType": "gap_fill",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "menu (thực đơn); order (gọi món); queue (hàng đợi).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Check the [0] before you [1]. We joined the [2] at the checkout.",
+                "correctAnswers": [
+                  "menu",
+                  "order",
+                  "queue"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "menu",
+                    "Menu"
+                  ],
+                  [
+                    "order",
+                    "Order"
+                  ],
+                  [
+                    "queue",
+                    "Queue"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-shopping-quantifiers",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e5000006-0000-4000-8000-000000000001",
+      "title": "Lesson 2: Quantifiers and Comparisons",
+      "learningObjective": "Use quantifiers and comparatives/superlatives when talking about shopping.",
+      "estimatedMinutes": 24,
+      "exercises": [
+        {
+          "slug": "grammar-shopping-learn",
+          "title": "Learn: Much, Many, Fewer",
+          "instructions": "Choose the correct word or phrase to complete each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "How _____ apples do we need for the recipe?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Apples đếm được → many.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "much",
+                  "isCorrect": false,
+                  "distractorNote": "Uncountable quantifier"
+                },
+                {
+                  "text": "many",
+                  "isCorrect": true
+                },
+                {
+                  "text": "little",
+                  "isCorrect": false,
+                  "distractorNote": "Small uncountable amount"
+                }
+              ]
+            },
+            {
+              "questionText": "There isn't _____ sugar in the bowl.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Sugar không đếm được → much.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "many",
+                  "isCorrect": false,
+                  "distractorNote": "Countable quantifier"
+                },
+                {
+                  "text": "much",
+                  "isCorrect": true
+                },
+                {
+                  "text": "few",
+                  "isCorrect": false,
+                  "distractorNote": "Countable small amount"
+                }
+              ]
+            },
+            {
+              "questionText": "I bought _____ eggs and _____ milk.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "a few + countable; a little + uncountable.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "a little ... a few",
+                  "isCorrect": false,
+                  "distractorNote": "Swapped quantifiers"
+                },
+                {
+                  "text": "a few ... a little",
+                  "isCorrect": true
+                },
+                {
+                  "text": "much ... many",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong for small amounts"
+                }
+              ]
+            },
+            {
+              "questionText": "This market is _____ than the supermarket near my house.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "So sánh hơn với cheap → cheaper.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "more cheap",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong comparative form"
+                },
+                {
+                  "text": "cheaper",
+                  "isCorrect": true
+                },
+                {
+                  "text": "cheapest",
+                  "isCorrect": false,
+                  "distractorNote": "Superlative not comparative"
+                }
+              ]
+            },
+            {
+              "questionText": "I eat _____ snacks now because I want to be healthier.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Snacks đếm được → fewer.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "less",
+                  "isCorrect": false,
+                  "distractorNote": "Uncountable form"
+                },
+                {
+                  "text": "fewer",
+                  "isCorrect": true
+                },
+                {
+                  "text": "little",
+                  "isCorrect": false,
+                  "distractorNote": "Not comparative"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-shopping-practice",
+          "title": "Practice: Complete the Grammar",
+          "instructions": "Fill in each gap with the correct form.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: How [0] customers are in the queue? | We need [1] salt. | [2] item is on discount today.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "many (customers); little (salt); Every (item).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "How [0] customers are in the queue? We need [1] salt. [2] item is on discount today.",
+                "correctAnswers": [
+                  "many",
+                  "little",
+                  "Every"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "many",
+                    "Many"
+                  ],
+                  [
+                    "little",
+                    "Little"
+                  ],
+                  [
+                    "Every",
+                    "every"
+                  ]
+                ]
+              }
+            },
+            {
+              "questionText": "Complete: This is the [0] bargain in the shop. | I spend [1] money on sweets. | There are [2] ingredients in the basket.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "best (superlative); less (money); a few (ingredients).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "This is the [0] bargain in the shop. I spend [1] money on sweets. There are [2] ingredients in the basket.",
+                "correctAnswers": [
+                  "best",
+                  "less",
+                  "a few"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "best",
+                    "Best"
+                  ],
+                  [
+                    "less",
+                    "Less"
+                  ],
+                  [
+                    "a few",
+                    "A few"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "grammar-shopping-check",
+          "title": "Check: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "_____ customer must show a receipt for a refund.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Every + singular noun: Every customer.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "All",
+                  "isCorrect": false,
+                  "distractorNote": "All customers needs plural verb pattern"
+                },
+                {
+                  "text": "Every",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Much",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong quantifier"
+                }
+              ]
+            },
+            {
+              "questionText": "GreenMart has _____ vegetables than the small shop on our street.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Comparative of many → more.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "much",
+                  "isCorrect": false,
+                  "distractorNote": "Not comparative"
+                },
+                {
+                  "text": "more",
+                  "isCorrect": true
+                },
+                {
+                  "text": "most",
+                  "isCorrect": false,
+                  "distractorNote": "Superlative"
+                }
+              ]
+            },
+            {
+              "questionText": "We bought only _____ rice because we don't need _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "a little + uncountable rice; much in negative.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "a few ... many",
+                  "isCorrect": false,
+                  "distractorNote": "Rice uncountable"
+                },
+                {
+                  "text": "a little ... much",
+                  "isCorrect": true
+                },
+                {
+                  "text": "many ... few",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong quantifiers"
+                }
+              ]
+            },
+            {
+              "questionText": "The checkout queue today is _____ than yesterday.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Long → comparative longer.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "more long",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong form"
+                },
+                {
+                  "text": "longer",
+                  "isCorrect": true
+                },
+                {
+                  "text": "longest",
+                  "isCorrect": false,
+                  "distractorNote": "Superlative"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-shopping-order",
+          "title": "Apply: Build the Sentence",
+          "instructions": "Put the words in the correct order to make a sentence.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: There / are / a few / customers / at / the checkout.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "There are a few customers at the checkout. — a few + countable.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "There"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "are"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "a few"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "customers"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "at"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "the checkout."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6"
+                ]
+              },
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: This / supermarket / is / cheaper / than / the market.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "This supermarket is cheaper than the market. — comparative.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "This"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "supermarket"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "is"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "cheaper"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "than"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "the market."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6"
+                ]
+              },
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: I / need / a little / sugar / for / the recipe.",
+              "questionType": "sentence_ordering",
+              "skillTag": "grammar",
+              "difficultyRating": 3,
+              "points": 2,
+              "explanation": "I need a little sugar for the recipe. — a little + uncountable.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "I"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "need"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "a little"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "sugar"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "for"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "the recipe."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6"
+                ]
+              },
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-supermarket-article",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e5000006-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Shopping Article",
+      "learningObjective": "Read a short shopping text and complete meaning with grammatical control.",
+      "estimatedMinutes": 23,
+      "exercises": [
+        {
+          "slug": "reading-shopping-learn",
+          "title": "Learn: Read the Article",
+          "instructions": "Read the article carefully. Answer the detail questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Smart Shopping at GreenMart",
+              "text": "Last Saturday, Linh went to GreenMart supermarket with her mother. They wanted to buy ingredients for a family dinner, but they also hoped to find a bargain.\n\nFirst, they checked the discount labels near the checkout. Many customers were pushing trolleys and reading price tags carefully. Linh's mother compared two brands of rice and chose the cheaper one. \"We don't need much sugar,\" she said, \"just a little for the recipe.\"\n\nAt the meat counter, Linh asked the assistant about a refund policy. The assistant explained that customers could return items with a receipt within seven days. Linh felt happier because she had forgotten an ingredient last week and lost money.\n\nBefore they paid, they joined a short queue at the checkout. The total was lower than Linh expected because of a ten-percent discount on vegetables. On the way home, Linh decided she would shop more carefully every week. \"Fewer impulse buys mean more savings,\" her mother smiled.",
+              "wordCount": 158,
+              "imagePrompt": "A bright supermarket with discount signs, customers at checkout queues, and a shopping trolley full of groceries."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Why did Linh and her mother go to GreenMart?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Buy ingredients for a family dinner.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "To get a refund only",
+                  "isCorrect": false,
+                  "distractorNote": "Refund was a question later"
+                },
+                {
+                  "text": "To buy ingredients for dinner",
+                  "isCorrect": true
+                },
+                {
+                  "text": "To eat at the café menu",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "How long can customers return items with a receipt?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Return items with a receipt within seven days.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "detail",
+              "choices": [
+                {
+                  "text": "On the same day only",
+                  "isCorrect": false,
+                  "distractorNote": "Too short"
+                },
+                {
+                  "text": "Within seven days",
+                  "isCorrect": true
+                },
+                {
+                  "text": "After one month",
+                  "isCorrect": false,
+                  "distractorNote": "Too long"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-shopping-practice",
+          "title": "Practice: Words in the Article",
+          "instructions": "Read the article again. Answer about vocabulary and meaning.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Smart Shopping at GreenMart",
+              "text": "Last Saturday, Linh went to GreenMart supermarket with her mother. They wanted to buy ingredients for a family dinner, but they also hoped to find a bargain.\n\nFirst, they checked the discount labels near the checkout. Many customers were pushing trolleys and reading price tags carefully. Linh's mother compared two brands of rice and chose the cheaper one. \"We don't need much sugar,\" she said, \"just a little for the recipe.\"\n\nAt the meat counter, Linh asked the assistant about a refund policy. The assistant explained that customers could return items with a receipt within seven days. Linh felt happier because she had forgotten an ingredient last week and lost money.\n\nBefore they paid, they joined a short queue at the checkout. The total was lower than Linh expected because of a ten-percent discount on vegetables. On the way home, Linh decided she would shop more carefully every week. \"Fewer impulse buys mean more savings,\" her mother smiled.",
+              "wordCount": 158,
+              "imagePrompt": "A bright supermarket with discount signs, customers at checkout queues, and a shopping trolley full of groceries."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "In the article, 'a bargain' means _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Hoped to find a bargain — món hời, giá tốt.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "vocabulary_in_context",
+              "choices": [
+                {
+                  "text": "a long queue at checkout",
+                  "isCorrect": false,
+                  "distractorNote": "Different word: queue"
+                },
+                {
+                  "text": "something bought at a good price",
+                  "isCorrect": true
+                },
+                {
+                  "text": "a list of ingredients",
+                  "isCorrect": false,
+                  "distractorNote": "Different word: menu/ingredients"
+                }
+              ]
+            },
+            {
+              "questionText": "Why was the total lower than Linh expected?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Ten-percent discount on vegetables.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "inference",
+              "choices": [
+                {
+                  "text": "Because she got a refund",
+                  "isCorrect": false,
+                  "distractorNote": "Refund not received"
+                },
+                {
+                  "text": "Because of a discount on vegetables",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Because she lost her wallet",
+                  "isCorrect": false,
+                  "distractorNote": "Wallet not mentioned"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-shopping-check",
+          "title": "Check: Main Idea and Order",
+          "instructions": "Read the article one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Smart Shopping at GreenMart",
+              "text": "Last Saturday, Linh went to GreenMart supermarket with her mother. They wanted to buy ingredients for a family dinner, but they also hoped to find a bargain.\n\nFirst, they checked the discount labels near the checkout. Many customers were pushing trolleys and reading price tags carefully. Linh's mother compared two brands of rice and chose the cheaper one. \"We don't need much sugar,\" she said, \"just a little for the recipe.\"\n\nAt the meat counter, Linh asked the assistant about a refund policy. The assistant explained that customers could return items with a receipt within seven days. Linh felt happier because she had forgotten an ingredient last week and lost money.\n\nBefore they paid, they joined a short queue at the checkout. The total was lower than Linh expected because of a ten-percent discount on vegetables. On the way home, Linh decided she would shop more carefully every week. \"Fewer impulse buys mean more savings,\" her mother smiled.",
+              "wordCount": 158,
+              "imagePrompt": "A bright supermarket with discount signs, customers at checkout queues, and a shopping trolley full of groceries."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main message of the article?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Bài kể chuyến mua sắm thông minh và tiết kiệm.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "Supermarkets never give discounts",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite of text"
+                },
+                {
+                  "text": "Careful shopping can help you save money",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Customers cannot get refunds",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite of text"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the events in order: (1) Paid at checkout (2) Compared prices (3) Asked about refund policy",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "So sánh giá → hỏi refund → thanh toán.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "sequencing",
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Payment is last"
+                },
+                {
+                  "text": "2 → 3 → 1",
+                  "isCorrect": true
+                },
+                {
+                  "text": "3 → 1 → 2",
+                  "isCorrect": false,
+                  "distractorNote": "Payment before comparing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-shopping-apply",
+          "title": "Apply: Match Facts from the Article",
+          "instructions": "Use what you read. Match each item to the correct fact.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Smart Shopping at GreenMart",
+              "text": "Last Saturday, Linh went to GreenMart supermarket with her mother. They wanted to buy ingredients for a family dinner, but they also hoped to find a bargain.\n\nFirst, they checked the discount labels near the checkout. Many customers were pushing trolleys and reading price tags carefully. Linh's mother compared two brands of rice and chose the cheaper one. \"We don't need much sugar,\" she said, \"just a little for the recipe.\"\n\nAt the meat counter, Linh asked the assistant about a refund policy. The assistant explained that customers could return items with a receipt within seven days. Linh felt happier because she had forgotten an ingredient last week and lost money.\n\nBefore they paid, they joined a short queue at the checkout. The total was lower than Linh expected because of a ten-percent discount on vegetables. On the way home, Linh decided she would shop more carefully every week. \"Fewer impulse buys mean more savings,\" her mother smiled.",
+              "wordCount": 158,
+              "imagePrompt": "A bright supermarket with discount signs, customers at checkout queues, and a shopping trolley full of groceries."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each item from the article to the correct fact.",
+              "questionType": "matching",
+              "skillTag": "reading",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 3,
+              "explanation": "Mỗi mục khớp với chi tiết trong bài.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Sugar",
+                  "right": "They needed just a little"
+                },
+                {
+                  "left": "Vegetables",
+                  "right": "Had a ten-percent discount"
+                },
+                {
+                  "left": "Receipt",
+                  "right": "Needed for a refund within seven days"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-shopping-exchanges",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e5000006-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Shopping Conversations",
+      "learningObjective": "Understand main ideas and details in transactional shopping exchanges.",
+      "estimatedMinutes": 22,
+      "exercises": [
+        {
+          "slug": "listening-checkout-learn",
+          "title": "Learn: At the Checkout",
+          "instructions": "Listen to the conversation. Answer the questions.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "At the Supermarket Checkout",
+              "setting": "GreenMart supermarket checkout",
+              "speakers": [
+                {
+                  "name": "Assistant",
+                  "role": "checkout staff"
+                },
+                {
+                  "name": "Linh",
+                  "role": "customer"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Assistant",
+                  "text": "Hello. Did you find everything today?"
+                },
+                {
+                  "speaker": "Linh",
+                  "text": "Yes, thanks. I'd like to order these ingredients for soup, please."
+                },
+                {
+                  "speaker": "Assistant",
+                  "text": "That's twelve pounds forty. There's a discount on tomatoes today."
+                },
+                {
+                  "speaker": "Linh",
+                  "text": "Great. Can I have a receipt, please? I might need a refund if the milk is bad."
+                },
+                {
+                  "speaker": "Assistant",
+                  "text": "Of course. Keep the receipt. Next customer, please!"
+                }
+              ],
+              "audioNotes": "Busy supermarket sounds in background, clear friendly voices. Approx. 35 seconds."
+            },
+            "answerKey": {
+              "q1": "ingredients soup",
+              "q2": "12.40"
+            },
+            "audioUrl": "/audio/listening/ket/unit-06/listening-checkout-learn.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What is Linh buying?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Order these ingredients for soup.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A discount card",
+                  "isCorrect": false,
+                  "distractorNote": "Mentioned but not buying"
+                },
+                {
+                  "text": "Ingredients for soup",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A new wallet",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "How much does Linh pay?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "That's twelve pounds forty.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Ten pounds",
+                  "isCorrect": false,
+                  "distractorNote": "Discount percent not total"
+                },
+                {
+                  "text": "Twelve pounds forty",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Four pounds",
+                  "isCorrect": false,
+                  "distractorNote": "From market script"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-checkout-practice",
+          "title": "Practice: More from the Checkout",
+          "instructions": "Listen again to the same conversation. Answer the next questions.",
+          "exerciseType": "listening",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "At the Supermarket Checkout",
+              "setting": "GreenMart supermarket checkout",
+              "speakers": [
+                {
+                  "name": "Assistant",
+                  "role": "checkout staff"
+                },
+                {
+                  "name": "Linh",
+                  "role": "customer"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Assistant",
+                  "text": "Hello. Did you find everything today?"
+                },
+                {
+                  "speaker": "Linh",
+                  "text": "Yes, thanks. I'd like to order these ingredients for soup, please."
+                },
+                {
+                  "speaker": "Assistant",
+                  "text": "That's twelve pounds forty. There's a discount on tomatoes today."
+                },
+                {
+                  "speaker": "Linh",
+                  "text": "Great. Can I have a receipt, please? I might need a refund if the milk is bad."
+                },
+                {
+                  "speaker": "Assistant",
+                  "text": "Of course. Keep the receipt. Next customer, please!"
+                }
+              ],
+              "audioNotes": "Busy supermarket sounds in background, clear friendly voices. Approx. 35 seconds."
+            },
+            "answerKey": {
+              "q1": "tomatoes discount",
+              "q2": "receipt refund"
+            },
+            "audioUrl": "/audio/listening/ket/unit-06/listening-checkout-practice.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "Which item has a discount today?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "There's a discount on tomatoes today.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Milk",
+                  "isCorrect": false,
+                  "distractorNote": "Mentioned for possible refund"
+                },
+                {
+                  "text": "Tomatoes",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Rice",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "Why does Linh want a receipt?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Might need a refund if the milk is bad.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "To get a bigger discount",
+                  "isCorrect": false,
+                  "distractorNote": "Discount already applied"
+                },
+                {
+                  "text": "In case she needs a refund",
+                  "isCorrect": true
+                },
+                {
+                  "text": "To order from the menu",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong context"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-market-check",
+          "title": "Check: Market Bargain",
+          "instructions": "Listen to a new conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Weekend Market Bargain",
+              "setting": "Outdoor food market",
+              "speakers": [
+                {
+                  "name": "Vendor",
+                  "role": "market seller"
+                },
+                {
+                  "name": "Minh",
+                  "role": "customer"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Vendor",
+                  "text": "Good morning! Fresh fruit today. Three mangoes for two pounds — a real bargain!"
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "That's cheaper than the supermarket. I'll take six, please."
+                },
+                {
+                  "speaker": "Vendor",
+                  "text": "Many customers buy extra for smoothies. Do you need a bag?"
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "Yes, please. Here's four pounds. Keep the change."
+                },
+                {
+                  "speaker": "Vendor",
+                  "text": "Thank you! Enjoy your shopping."
+                }
+              ],
+              "audioNotes": "Outdoor market ambience, clear prices and numbers. Approx. 38 seconds."
+            },
+            "answerKey": {
+              "q1": "3 mangoes 2 pounds",
+              "q2": "6 mangoes 4 pounds",
+              "q3": "cheaper than supermarket"
+            },
+            "audioUrl": "/audio/listening/ket/unit-06/listening-market-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What bargain does the vendor offer first?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Three mangoes for two pounds.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Six mangoes for four pounds",
+                  "isCorrect": false,
+                  "distractorNote": "Minh's order"
+                },
+                {
+                  "text": "Three mangoes for two pounds",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Ten mangoes for one pound",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "How many mangoes does Minh buy and how much does he pay?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "I'll take six... Here's four pounds.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Three mangoes for two pounds",
+                  "isCorrect": false,
+                  "distractorNote": "Vendor's first offer"
+                },
+                {
+                  "text": "Six mangoes for four pounds",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Six mangoes for two pounds",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong price"
+                }
+              ]
+            },
+            {
+              "questionText": "Why does Minh buy at the market?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "That's cheaper than the supermarket.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Because he needs a receipt",
+                  "isCorrect": false,
+                  "distractorNote": "Receipt not discussed"
+                },
+                {
+                  "text": "Because it is cheaper than the supermarket",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Because the queue is longer",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite of reason"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "listening-checkout-apply",
+          "title": "Apply: Match What You Heard",
+          "instructions": "Listen again to the checkout conversation. Match each item to the correct detail.",
+          "exerciseType": "matching",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "At the Supermarket Checkout",
+              "setting": "GreenMart supermarket checkout",
+              "speakers": [
+                {
+                  "name": "Assistant",
+                  "role": "checkout staff"
+                },
+                {
+                  "name": "Linh",
+                  "role": "customer"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Assistant",
+                  "text": "Hello. Did you find everything today?"
+                },
+                {
+                  "speaker": "Linh",
+                  "text": "Yes, thanks. I'd like to order these ingredients for soup, please."
+                },
+                {
+                  "speaker": "Assistant",
+                  "text": "That's twelve pounds forty. There's a discount on tomatoes today."
+                },
+                {
+                  "speaker": "Linh",
+                  "text": "Great. Can I have a receipt, please? I might need a refund if the milk is bad."
+                },
+                {
+                  "speaker": "Assistant",
+                  "text": "Of course. Keep the receipt. Next customer, please!"
+                }
+              ],
+              "audioNotes": "Busy supermarket sounds in background, clear friendly voices. Approx. 35 seconds."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Match each item from the checkout conversation.",
+              "questionType": "matching",
+              "skillTag": "listening",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "Mỗi mục khớp với chi tiết trong hội thoại.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "Linh's order",
+                  "right": "Ingredients for soup"
+                },
+                {
+                  "left": "Discount item",
+                  "right": "Tomatoes"
+                },
+                {
+                  "left": "Receipt",
+                  "right": "Needed for a possible refund"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-shopping-message",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e5000006-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Message About Shopping",
+      "learningObjective": "Write a short message about a shopping trip using unit vocabulary and quantifiers.",
+      "estimatedMinutes": 25,
+      "exercises": [
+        {
+          "slug": "writing-shopping-learn",
+          "title": "Learn: Shopping Message Phrases",
+          "instructions": "Complete each gap with a word from the box: receipt, discount, bargain, checkout, ingredients.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Hi Mum, | I found a [0] on fruit. | I paid at the [1]. | Here is the [2].",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 3,
+              "explanation": "bargain (món hời); checkout (quầy thanh toán); receipt (hóa đơn).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Hi Mum,\n\nI found a [0] on fruit. I paid at the [1]. Here is the [2].",
+                "correctAnswers": [
+                  "bargain",
+                  "checkout",
+                  "receipt"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "bargain",
+                    "Bargain"
+                  ],
+                  [
+                    "checkout",
+                    "Checkout"
+                  ],
+                  [
+                    "receipt",
+                    "Receipt"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-shopping-order-practice",
+          "title": "Practice: Build Shopping Sentences",
+          "instructions": "Put the words in order to make correct sentences.",
+          "exerciseType": "sentence_ordering",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Make a sentence: There / are / many / customers / in / the queue.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "There are many customers in the queue. — many + countable.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "There"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "are"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "many"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "customers"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "in"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "the queue."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6"
+                ]
+              },
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket"
+            },
+            {
+              "questionText": "Make a sentence: This / shop / is / cheaper / than / the supermarket.",
+              "questionType": "sentence_ordering",
+              "skillTag": "writing",
+              "difficultyRating": 2,
+              "points": 2,
+              "explanation": "This shop is cheaper than the supermarket. — comparative.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "items": [
+                  {
+                    "id": "w1",
+                    "text": "This"
+                  },
+                  {
+                    "id": "w2",
+                    "text": "shop"
+                  },
+                  {
+                    "id": "w3",
+                    "text": "is"
+                  },
+                  {
+                    "id": "w4",
+                    "text": "cheaper"
+                  },
+                  {
+                    "id": "w5",
+                    "text": "than"
+                  },
+                  {
+                    "id": "w6",
+                    "text": "the supermarket."
+                  }
+                ],
+                "correctOrder": [
+                  "w1",
+                  "w2",
+                  "w3",
+                  "w4",
+                  "w5",
+                  "w6"
+                ]
+              },
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket"
+            }
+          ]
+        },
+        {
+          "slug": "writing-shopping-check",
+          "title": "Check: Message About Your Shopping",
+          "instructions": "Write a message to a friend. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "You went shopping at the supermarket yesterday. Write a short message to your friend Anna about your experience.",
+            "prompts": [
+              "Say where you went and what you bought (ingredients or food).",
+              "Mention if there was a discount or a bargain.",
+              "Say something about the queue or checkout.",
+              "End the message in a friendly way."
+            ],
+            "expectedLength": "At least 25 words",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Clear description of shopping trip",
+              "Uses a quantifier or comparative",
+              "Uses at least two unit vocabulary words",
+              "Friendly opening and closing"
+            ],
+            "modelAnswer": {
+              "text": "Hi Anna,\n\nI went to GreenMart yesterday and bought ingredients for dinner. There was a discount on vegetables, so it was a real bargain! Many customers were in the queue, but the checkout was fast. I kept my receipt in case I need a refund.\n\nSee you,\nLinh"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses quantifiers or comparatives (many, a few, cheaper) correctly."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses shopping words (discount, receipt, checkout, bargain, ingredient) appropriately."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Message has greeting, details and a friendly closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Describes a shopping trip with discount or bargain; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your response following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Bài mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-shopping-check",
+                "autoCheckKeywords": [
+                  "shopping",
+                  "supermarket",
+                  "discount",
+                  "bargain",
+                  "receipt",
+                  "checkout",
+                  "queue",
+                  "ingredient",
+                  "anna"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
+        },
+        {
+          "slug": "writing-shopping-apply",
+          "title": "Apply: Complete the Message Frames",
+          "instructions": "Complete the message frames with the correct unit words.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: Dear Tom, | I bought [0] eggs and [1] milk. | The shop was [2] than last week. | Bye, | Mai",
+              "questionType": "gap_fill",
+              "skillTag": "writing",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "a few (eggs); a little (milk); cheaper (comparative).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "Dear Tom,\n\nI bought [0] eggs and [1] milk. The shop was [2] than last week.\n\nBye,\nMai",
+                "correctAnswers": [
+                  "a few",
+                  "a little",
+                  "cheaper"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "a few",
+                    "A few"
+                  ],
+                  [
+                    "a little",
+                    "A little"
+                  ],
+                  [
+                    "cheaper",
+                    "Cheaper"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-shopping-habits",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e5000006-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Shopping",
+      "learningObjective": "Answer interview questions about food and shopping using unit vocabulary and grammar.",
+      "estimatedMinutes": 20,
+      "exercises": [
+        {
+          "slug": "speaking-shopping-learn",
+          "title": "Learn: Choose the Best Reply",
+          "instructions": "Imagine an examiner asks you a question. Choose the best answer.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: Where do you usually buy food? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Trả lời tự nhiên về nơi mua sắm.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I usually receipt food at home.",
+                  "isCorrect": false,
+                  "distractorNote": "Receipt is not a verb here"
+                },
+                {
+                  "text": "I usually buy food at the supermarket near my home.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I usually queue food.",
+                  "isCorrect": false,
+                  "distractorNote": "Queue is not a verb here"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: Do you look for discounts? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Yes + discount — thói quen mua sắm.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, I always check refund labels before I buy.",
+                  "isCorrect": false,
+                  "distractorNote": "Refund is different"
+                },
+                {
+                  "text": "Yes, I always check discount labels before I buy.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes, I discount always check.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong word order"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: How much fruit do you eat? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Much không dùng khẳng định → a lot of / quite a lot.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I eat much fruit every week.",
+                  "isCorrect": false,
+                  "distractorNote": "Much rare in affirmative"
+                },
+                {
+                  "text": "I eat quite a lot of fruit every week.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I eat many fruit every week.",
+                  "isCorrect": false,
+                  "distractorNote": "Fruit often uncountable"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-shopping-practice",
+          "title": "Practice: Best Response",
+          "instructions": "Choose the best phrase you would say in each situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Examiner: Tell me about a bargain you found. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Bargain + giá rẻ — cấu trúc kể chuyện A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Last month I found a receipt — shoes were half price.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong noun"
+                },
+                {
+                  "text": "Last month I found a bargain — shoes were half price with a discount.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Last month I found a queue — shoes were half price.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong noun"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: Is the market cheaper than the supermarket? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Comparative: cheaper than.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, the market is cheap than the supermarket.",
+                  "isCorrect": false,
+                  "distractorNote": "Missing -er"
+                },
+                {
+                  "text": "Yes, the market is usually cheaper than the supermarket.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes, the market is more cheaper than the supermarket.",
+                  "isCorrect": false,
+                  "distractorNote": "Double comparative"
+                }
+              ]
+            },
+            {
+              "questionText": "Examiner: What do you do at the checkout? You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Mô tả hành động tại quầy thanh toán.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "I pay and ask for a menu.",
+                  "isCorrect": false,
+                  "distractorNote": "Menu is for ordering food"
+                },
+                {
+                  "text": "I pay and ask for a receipt.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "I pay and ask for an ingredient.",
+                  "isCorrect": false,
+                  "distractorNote": "Ingredient is recipe item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-shopping-interview",
+          "title": "Check: Shopping Interview",
+          "instructions": "Answer the examiner's questions about food and shopping. Speak for up to two minutes.",
+          "exerciseType": "speaking",
+          "sortOrder": 2,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-shopping-interview",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 120
+              }
+            }
+          ]
+        },
+        {
+          "slug": "speaking-shopping-apply",
+          "title": "Apply: Situational Response",
+          "instructions": "Choose the best thing to say in each shopping situation.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 3,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "The milk you bought is bad. At the shop you say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Yêu cầu refund với receipt — tình huống thực tế.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Excuse me, can I have a discount? Here is my menu.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong request"
+                },
+                {
+                  "text": "Excuse me, can I have a refund? Here is my receipt.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Excuse me, can I have a queue? Here is my bargain.",
+                  "isCorrect": false,
+                  "distractorNote": "Nonsense collocation"
+                }
+              ]
+            },
+            {
+              "questionText": "A friend asks if the queue is long. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Mô tả queue với many customers.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Yes, there is much customers waiting at the checkout.",
+                  "isCorrect": false,
+                  "distractorNote": "Much with countable"
+                },
+                {
+                  "text": "Yes, there are many customers waiting at the checkout.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yes, there are much customer waiting at the checkout.",
+                  "isCorrect": false,
+                  "distractorNote": "Much + singular wrong"
+                }
+              ]
+            },
+            {
+              "questionText": "You are ordering in a café. You say:",
+              "questionType": "multiple_choice",
+              "skillTag": "speaking",
+              "topicTag": "food-and-shopping",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Look at menu before order — cụm tự nhiên.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Can I see the receipt, please? I'd like to order soup.",
+                  "isCorrect": false,
+                  "distractorNote": "Receipt after paying"
+                },
+                {
+                  "text": "Can I see the menu, please? I'd like to order soup.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Can I see the refund, please? I'd like to order soup.",
+                  "isCorrect": false,
+                  "distractorNote": "Refund wrong context"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
