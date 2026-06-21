@@ -40,6 +40,18 @@ export type LessonPageProgress = {
   masteryLevel: number;
 };
 
+/** UI/session overlay — derived from server snapshot + in-session completions (not mastery) */
+export type ResolvedLessonProgress = {
+  totalExercises: number;
+  resolvedCompletedExerciseIds: string[];
+  completedCount: number;
+  remainingCount: number;
+  completionPercentResolved: number;
+  isLessonCompleteResolved: boolean;
+  nextIncompleteExerciseId: string | null;
+  nextSuggestedExerciseId: string | null;
+};
+
 export type LessonPageViewModel = {
   lesson: {
     id: string;

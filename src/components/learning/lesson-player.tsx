@@ -17,7 +17,7 @@ import {
 import type {
   LessonExerciseListLabels,
   LessonExerciseSummary,
-  LessonPageProgress,
+  ResolvedLessonProgress,
 } from "@/lib/learning/lesson-page-types";
 import { LessonExerciseList } from "@/components/learning/lesson/lesson-exercise-list";
 import { Button } from "@/components/ui/button";
@@ -81,9 +81,9 @@ interface LessonPlayerProps {
   lessonId: string;
   exercises: Exercise[];
   exerciseSummaries: LessonExerciseSummary[];
-  initialCompletedExerciseIds: string[];
-  nextSuggestedExerciseId?: string | null;
-  lessonProgress?: LessonPageProgress;
+  sessionCompletedExerciseIds: Set<string>;
+  onExerciseCompleted: (exerciseId: string) => void;
+  resolvedProgress: ResolvedLessonProgress;
   listLabels: LessonExerciseListLabels & {
     exercisesTitle: string;
     exercisesSubtitle: string;
@@ -96,14 +96,12 @@ export function LessonPlayer({
   lessonId,
   exercises,
   exerciseSummaries,
-  initialCompletedExerciseIds,
-  nextSuggestedExerciseId,
+  sessionCompletedExerciseIds,
+  onExerciseCompleted,
+  resolvedProgress,
   listLabels,
 }: LessonPlayerProps) {
   const [activeExerciseId, setActiveExerciseId] = useState<string | null>(null);
-  const [sessionCompletedIds, setSessionCompletedIds] = useState<Set<string>>(
-    () => new Set(initialCompletedExerciseIds)
-  );
 
   const exerciseIndexById = useMemo(() => {
     const map = new Map<string, number>();
@@ -117,8 +115,6 @@ export function LessonPlayer({
 
   function openNextExercise() {
     if (!activeExerciseId) return;
-    const currentIndex = exerciseIndexById.get(activeExerciseId);
-    if (currentIndex === undefined) return;
 
     const sortedIds = [...exerciseSummaries]
       .sort((a, b) => a.sortOrder - b.sortOrder)
@@ -132,7 +128,7 @@ export function LessonPlayer({
   }
 
   function markExerciseCompleted(exerciseId: string) {
-    setSessionCompletedIds((prev) => new Set([...prev, exerciseId]));
+    onExerciseCompleted(exerciseId);
   }
 
   async function handleSubmit(
@@ -223,8 +219,8 @@ export function LessonPlayer({
   return (
     <LessonExerciseList
       summaries={exerciseSummaries}
-      sessionCompletedIds={sessionCompletedIds}
-      nextSuggestedExerciseId={nextSuggestedExerciseId}
+      sessionCompletedIds={sessionCompletedExerciseIds}
+      nextSuggestedExerciseId={resolvedProgress.nextSuggestedExerciseId}
       labels={listLabels}
       onSelectExercise={openExercise}
     />

@@ -4,10 +4,9 @@ import { getCurrentUser } from "@/lib/auth/current-user";
 import { ensureLessonUnlockedForUser } from "@/lib/queries/learning";
 import { getLessonPageViewModel } from "@/lib/learning/lesson-page";
 import { StudentPageShell } from "@/components/camba";
-import { LessonPageShell } from "@/components/learning/lesson/lesson-page-shell";
+import { LessonPageContent } from "@/components/learning/lesson/lesson-page-content";
 import { LessonLockedState } from "@/components/learning/lesson/lesson-locked-state";
 import { LessonEmptyState } from "@/components/learning/lesson/lesson-empty-state";
-import { LessonPlayer } from "@/components/learning/lesson-player";
 
 interface LessonPageProps {
   params: Promise<{ lessonId: string }>;
@@ -61,6 +60,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
     writingAi: t("writingAi"),
     speakingAi: t("speakingAi"),
     latestScore: t("latestScore"),
+    remainingExercises: t("remainingExercises"),
     exercisesTitle: t("exercisesTitle"),
     exercisesSubtitle: t("exercisesSubtitle"),
     nextSuggested: t("nextSuggested"),
@@ -98,21 +98,12 @@ export default async function LessonPage({ params }: LessonPageProps) {
 
   return (
     <StudentPageShell narrow>
-      <LessonPageShell
+      <LessonPageContent
         viewModel={viewModel}
         labels={pageLabels}
         masteryLabel={masteryLabel}
-      >
-        <LessonPlayer
-          lessonId={viewModel.lesson.id}
-          exercises={viewModel.exercises}
-          exerciseSummaries={viewModel.exerciseSummaries}
-          initialCompletedExerciseIds={viewModel.completedExerciseIds}
-          nextSuggestedExerciseId={viewModel.nextSuggestedExerciseId}
-          lessonProgress={viewModel.progress}
-          listLabels={listLabels}
-        />
-      </LessonPageShell>
+        listLabels={listLabels}
+      />
     </StudentPageShell>
   );
 }

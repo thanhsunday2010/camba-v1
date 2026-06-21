@@ -4,16 +4,18 @@ import { LessonBreadcrumb } from "@/components/learning/lesson/lesson-breadcrumb
 import { LessonHero } from "@/components/learning/lesson/lesson-hero";
 import { LessonProgressSummary } from "@/components/learning/lesson/lesson-progress-summary";
 import { LessonCompleteState } from "@/components/learning/lesson/lesson-complete-state";
-import { isLessonFullyCompleted, countCompletedExercises } from "@/lib/learning/lesson-ui-utils";
 import type {
   LessonPageLabels,
   LessonPageViewModel,
+  ResolvedLessonProgress,
 } from "@/lib/learning/lesson-page-types";
 
 interface LessonPageShellProps {
   viewModel: LessonPageViewModel;
   labels: LessonPageLabels;
   masteryLabel: string;
+  resolvedProgress: ResolvedLessonProgress;
+  remainingExercisesLabel?: string;
   children: ReactNode;
   className?: string;
 }
@@ -22,13 +24,24 @@ export function LessonPageShell({
   viewModel,
   labels,
   masteryLabel,
+  resolvedProgress,
+  remainingExercisesLabel,
   children,
   className,
 }: LessonPageShellProps) {
-  const { lesson, context, progress, exerciseSummaries } = viewModel;
-  const totalCount = exerciseSummaries.length;
-  const completedCount = countCompletedExercises(exerciseSummaries);
-  const showComplete = isLessonFullyCompleted(exerciseSummaries, progress.completionPercent);
+  const { lesson, context, progress } = viewModel;
+  const {
+    completedCount,
+    totalExercises,
+    completionPercentResolved,
+    isLessonCompleteResolved,
+    remainingCount,
+  } = resolvedProgress;
+
+  const remainingLabel =
+    remainingExercisesLabel && remainingCount > 0 && !isLessonCompleteResolved
+      ? remainingExercisesLabel.replace("{count}", String(remainingCount))
+      : undefined;
 
   return (
     <div className={cn("camba-section-stack", className)}>
@@ -55,9 +68,11 @@ export function LessonPageShell({
       />
 
       <LessonProgressSummary
-        progress={progress}
+        serverProgress={progress}
+        completionPercentResolved={completionPercentResolved}
         completedCount={completedCount}
-        totalCount={totalCount}
+        totalCount={totalExercises}
+        remainingLabel={remainingLabel}
         labels={{
           completionSummary: labels.completionSummary,
           accuracy: labels.accuracy,
@@ -66,11 +81,12 @@ export function LessonPageShell({
         }}
       />
 
-      {showComplete && (
+      {isLessonCompleteResolved && (
         <LessonCompleteState
-          progress={progress}
+          completionPercentResolved={completionPercentResolved}
+          serverProgress={progress}
           completedCount={completedCount}
-          totalCount={totalCount}
+          totalCount={totalExercises}
           masteryLabel={masteryLabel}
           labels={{
             lessonCompleteTitle: labels.lessonCompleteTitle,

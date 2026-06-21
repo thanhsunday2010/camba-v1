@@ -7,7 +7,7 @@ import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
 import {
   getExerciseUiState,
   getPersistedCompletedExerciseIds,
-  resolveNextSuggestedExerciseId,
+  deriveResolvedLessonProgress,
 } from "@/lib/learning/lesson-ui-utils";
 import type {
   LessonExerciseSummary,
@@ -185,7 +185,6 @@ export async function getLessonPageViewModel(
   const attemptsByExercise = groupAttemptsByExercise(attempts);
   const exerciseSummaries = buildExerciseSummaries(exercises, attemptsByExercise);
   const completedExerciseIds = getPersistedCompletedExerciseIds(exerciseSummaries);
-  const nextSuggestedExerciseId = resolveNextSuggestedExerciseId(exerciseSummaries);
 
   const progress = {
     isUnlocked: isLessonUnlockedFromProgress(progressRow),
@@ -193,6 +192,12 @@ export async function getLessonPageViewModel(
     accuracyPercent: Number(progressRow?.accuracy_percent ?? 0),
     masteryLevel: progressRow?.mastery_level ?? 0,
   };
+
+  const initialResolved = deriveResolvedLessonProgress(
+    exerciseSummaries,
+    new Set(completedExerciseIds),
+    progress.completionPercent
+  );
 
   return {
     lesson: {
@@ -207,6 +212,6 @@ export async function getLessonPageViewModel(
     exercises,
     exerciseSummaries,
     completedExerciseIds,
-    nextSuggestedExerciseId,
+    nextSuggestedExerciseId: initialResolved.nextSuggestedExerciseId,
   };
 }

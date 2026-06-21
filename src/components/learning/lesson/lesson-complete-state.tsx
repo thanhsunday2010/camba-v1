@@ -6,7 +6,8 @@ import type { LessonPageProgress } from "@/lib/learning/lesson-page-types";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 interface LessonCompleteStateProps {
-  progress: LessonPageProgress;
+  completionPercentResolved: number;
+  serverProgress: LessonPageProgress;
   completedCount: number;
   totalCount: number;
   masteryLabel: string;
@@ -21,7 +22,8 @@ interface LessonCompleteStateProps {
 }
 
 export function LessonCompleteState({
-  progress,
+  completionPercentResolved,
+  serverProgress,
   completedCount,
   totalCount,
   masteryLabel,
@@ -45,15 +47,15 @@ export function LessonCompleteState({
               {labels.completedExercises}: {completedCount}/{totalCount}
             </span>
             <span className="camba-caption text-muted">
-              {labels.completionSummary}: {progress.completionPercent}%
+              {labels.completionSummary}: {completionPercentResolved}%
             </span>
-            {progress.accuracyPercent > 0 && (
+            {serverProgress.accuracyPercent > 0 && (
               <span className="camba-caption text-muted">
-                {labels.accuracy}: {progress.accuracyPercent}%
+                {labels.accuracy}: {serverProgress.accuracyPercent}%
               </span>
             )}
             <MasteryBadge
-              level={Math.min(4, Math.max(0, progress.masteryLevel)) as 0 | 1 | 2 | 3 | 4}
+              level={Math.min(4, Math.max(0, serverProgress.masteryLevel)) as 0 | 1 | 2 | 3 | 4}
               label={masteryLabel}
             />
           </div>

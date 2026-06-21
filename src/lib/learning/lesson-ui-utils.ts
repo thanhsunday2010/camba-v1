@@ -1,6 +1,7 @@
 import type {
   ExerciseUiState,
   LessonExerciseSummary,
+  ResolvedLessonProgress,
 } from "@/lib/learning/lesson-page-types";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
 
@@ -41,16 +42,24 @@ export function exerciseUiStateToVisualState(state: ExerciseUiState): LessonVisu
 
 export function resolveExerciseDisplayState(
   summary: LessonExerciseSummary,
-  sessionCompletedIds: Set<string>
+  sessionCompletedExerciseIds: Set<string>
 ): ExerciseUiState {
-  if (sessionCompletedIds.has(summary.id)) {
+  if (sessionCompletedExerciseIds.has(summary.id)) {
     if (summary.uiState === "needs_review") return "needs_review";
     return "completed";
   }
   return summary.uiState;
 }
 
-/** Exercises with a persisted completed attempt */
+function isExerciseDoneForProgress(
+  summary: LessonExerciseSummary,
+  sessionCompletedExerciseIds: Set<string>
+): boolean {
+  const state = resolveExerciseDisplayState(summary, sessionCompletedExerciseIds);
+  return state === "completed" || state === "needs_review";
+}
+
+/** Exercises with a persisted completed attempt (server snapshot only) */
 export function getPersistedCompletedExerciseIds(
   summaries: LessonExerciseSummary[]
 ): string[] {
@@ -59,43 +68,99 @@ export function getPersistedCompletedExerciseIds(
     .map((s) => s.id);
 }
 
-export function resolveNextSuggestedExerciseId(
-  summaries: LessonExerciseSummary[]
-): string | null {
-  const sorted = [...summaries].sort((a, b) => a.sortOrder - b.sortOrder);
+/**
+ * Single source for session-aware lesson completion UI.
+ * Does not compute mastery or write to the database.
+ */
+export function deriveResolvedLessonProgress(
+  exerciseSummaries: LessonExerciseSummary[],
+  sessionCompletedExerciseIds: Set<string>,
+  serverCompletionPercent: number
+): ResolvedLessonProgress {
+  const sorted = [...exerciseSummaries].sort((a, b) => a.sortOrder - b.sortOrder);
+  const totalExercises = sorted.length;
 
-  const nextActive = sorted.find(
-    (s) => s.uiState === "available" || s.uiState === "in_progress"
+  const resolvedCompletedExerciseIds = sorted
+    .filter((s) => isExerciseDoneForProgress(s, sessionCompletedExerciseIds))
+    .map((s) => s.id);
+
+  const completedCount = resolvedCompletedExerciseIds.length;
+  const remainingCount = Math.max(0, totalExercises - completedCount);
+  const completionPercentResolved =
+    totalExercises > 0 ? Math.round((completedCount / totalExercises) * 100) : 0;
+
+  const isLessonCompleteResolved =
+    totalExercises > 0 &&
+    (completedCount >= totalExercises || serverCompletionPercent >= 100);
+
+  const nextIncompleteExercise = sorted.find(
+    (s) => !isExerciseDoneForProgress(s, sessionCompletedExerciseIds)
   );
-  if (nextActive) return nextActive.id;
+  const nextIncompleteExerciseId = nextIncompleteExercise?.id ?? null;
 
-  const review = sorted.find((s) => s.uiState === "needs_review");
-  if (review) return review.id;
-
-  return sorted[0]?.id ?? null;
-}
-
-export function isLessonFullyCompleted(
-  summaries: LessonExerciseSummary[],
-  completionPercent: number
-): boolean {
-  if (summaries.length === 0) return false;
-  if (completionPercent >= 100) return true;
-  return summaries.every(
-    (s) => s.uiState === "completed" || s.uiState === "needs_review"
-  );
-}
-
-export function countCompletedExercises(
-  summaries: LessonExerciseSummary[],
-  sessionCompletedIds?: Set<string>
-): number {
-  if (!sessionCompletedIds?.size) {
-    return getPersistedCompletedExerciseIds(summaries).length;
+  let nextSuggestedExerciseId: string | null = null;
+  if (!isLessonCompleteResolved) {
+    const nextActive = sorted.find((s) => {
+      const state = resolveExerciseDisplayState(s, sessionCompletedExerciseIds);
+      return state === "available" || state === "in_progress";
+    });
+    if (nextActive) {
+      nextSuggestedExerciseId = nextActive.id;
+    } else {
+      const review = sorted.find(
+        (s) =>
+          resolveExerciseDisplayState(s, sessionCompletedExerciseIds) === "needs_review"
+      );
+      nextSuggestedExerciseId = review?.id ?? null;
+    }
   }
 
-  return summaries.filter((s) => {
-    const state = resolveExerciseDisplayState(s, sessionCompletedIds);
-    return state === "completed" || state === "needs_review";
-  }).length;
+  return {
+    totalExercises,
+    resolvedCompletedExerciseIds,
+    completedCount,
+    remainingCount,
+    completionPercentResolved,
+    isLessonCompleteResolved,
+    nextIncompleteExerciseId,
+    nextSuggestedExerciseId,
+  };
+}
+
+/** @deprecated Prefer deriveResolvedLessonProgress */
+export function resolveNextSuggestedExerciseId(
+  summaries: LessonExerciseSummary[],
+  sessionCompletedExerciseIds: Set<string> = new Set()
+): string | null {
+  return deriveResolvedLessonProgress(
+    summaries,
+    sessionCompletedExerciseIds,
+    0
+  ).nextSuggestedExerciseId;
+}
+
+/** @deprecated Prefer deriveResolvedLessonProgress */
+export function isLessonFullyCompleted(
+  summaries: LessonExerciseSummary[],
+  completionPercent: number,
+  sessionCompletedExerciseIds?: Set<string>
+): boolean {
+  return deriveResolvedLessonProgress(
+    summaries,
+    sessionCompletedExerciseIds ?? new Set(getPersistedCompletedExerciseIds(summaries)),
+    completionPercent
+  ).isLessonCompleteResolved;
+}
+
+/** @deprecated Prefer deriveResolvedLessonProgress */
+export function countCompletedExercises(
+  summaries: LessonExerciseSummary[],
+  sessionCompletedExerciseIds?: Set<string>
+): number {
+  return deriveResolvedLessonProgress(
+    summaries,
+    sessionCompletedExerciseIds ??
+      new Set(getPersistedCompletedExerciseIds(summaries)),
+    0
+  ).completedCount;
 }

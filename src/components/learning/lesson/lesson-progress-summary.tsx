@@ -4,9 +4,11 @@ import { MasteryMeter } from "@/components/camba/cambridge/shield-progress";
 import type { LessonPageProgress } from "@/lib/learning/lesson-page-types";
 
 interface LessonProgressSummaryProps {
-  progress: LessonPageProgress;
+  serverProgress: LessonPageProgress;
+  completionPercentResolved: number;
   completedCount: number;
   totalCount: number;
+  remainingLabel?: string;
   labels: {
     completionSummary: string;
     accuracy: string;
@@ -17,13 +19,15 @@ interface LessonProgressSummaryProps {
 }
 
 export function LessonProgressSummary({
-  progress,
+  serverProgress,
+  completionPercentResolved,
   completedCount,
   totalCount,
+  remainingLabel,
   labels,
   className,
 }: LessonProgressSummaryProps) {
-  const showAccuracy = progress.accuracyPercent > 0;
+  const showAccuracy = serverProgress.accuracyPercent > 0;
 
   return (
     <div
@@ -35,14 +39,14 @@ export function LessonProgressSummary({
       <div className="flex flex-wrap items-center gap-4 sm:gap-6">
         <div className="flex items-center gap-3">
           <ProgressRing
-            value={progress.completionPercent}
+            value={completionPercentResolved}
             size={56}
             strokeWidth={5}
-            label={`${progress.completionPercent}%`}
+            label={`${completionPercentResolved}%`}
           />
           <div>
             <p className="camba-caption text-muted">{labels.completionSummary}</p>
-            <p className="camba-stat text-xl text-program">{progress.completionPercent}%</p>
+            <p className="camba-stat text-xl text-program">{completionPercentResolved}%</p>
           </div>
         </div>
 
@@ -54,11 +58,14 @@ export function LessonProgressSummary({
             <p className="camba-h3 text-foreground">
               {completedCount}/{totalCount}
             </p>
+            {remainingLabel && (
+              <p className="camba-caption text-muted mt-0.5">{remainingLabel}</p>
+            )}
           </div>
           {showAccuracy && (
             <div>
               <p className="camba-caption text-muted">{labels.accuracy}</p>
-              <p className="camba-h3 text-foreground">{progress.accuracyPercent}%</p>
+              <p className="camba-h3 text-foreground">{serverProgress.accuracyPercent}%</p>
             </div>
           )}
         </div>
@@ -66,7 +73,7 @@ export function LessonProgressSummary({
 
       <MasteryMeter
         className="mt-4"
-        level={progress.masteryLevel}
+        level={serverProgress.masteryLevel}
         label={labels.mastery}
       />
     </div>
