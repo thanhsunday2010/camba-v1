@@ -281,8 +281,65 @@ export function collectReviewLessons(
 export function getWeakestSkillSlug(
   skills: { slug: string; progressPercent: number }[]
 ): string | null {
-  const active = skills.filter((s) => s.progressPercent >= 0);
-  if (active.length === 0) return null;
-  const sorted = [...active].sort((a, b) => a.progressPercent - b.progressPercent);
+  if (skills.length === 0) return null;
+  const started = skills.filter((s) => s.progressPercent > 0);
+  const pool = started.length > 0 ? started : skills;
+  const sorted = [...pool].sort((a, b) => a.progressPercent - b.progressPercent);
   return sorted[0]?.slug ?? null;
+}
+
+export type FocusLessonSource = "in-progress" | "unlocked" | "review";
+
+export interface FocusLessonResult {
+  lesson: LessonWithProgress;
+  skillSlug: string;
+  skillName: string;
+  unitTitle: string;
+  source: FocusLessonSource;
+}
+
+function collectLessonsInPathOrder(units: CurriculumUnitGroup[]) {
+  const items: Omit<FocusLessonResult, "source">[] = [];
+  for (const unit of units) {
+    for (const entry of unit.entries) {
+      for (const lesson of entry.lessons) {
+        items.push({
+          lesson,
+          skillSlug: entry.skillSlug,
+          skillName: entry.skillName,
+          unitTitle: unit.title,
+        });
+      }
+    }
+  }
+  return items;
+}
+
+/** UI-only focus when server nextLesson is null: in-progress → unlocked incomplete → review */
+export function resolveFocusLesson(units: CurriculumUnitGroup[]): FocusLessonResult | null {
+  const ordered = collectLessonsInPathOrder(units);
+
+  for (const item of ordered) {
+    if (!isLessonUnlockedFromProgress(item.lesson.progress)) continue;
+    const completion = item.lesson.progress?.completion_percent ?? 0;
+    if (completion > 0 && completion < 100) {
+      return { ...item, source: "in-progress" };
+    }
+  }
+
+  for (const item of ordered) {
+    if (!isLessonUnlockedFromProgress(item.lesson.progress)) continue;
+    const completion = item.lesson.progress?.completion_percent ?? 0;
+    if (completion < 100) {
+      return { ...item, source: "unlocked" };
+    }
+  }
+
+  for (const item of ordered) {
+    if (needsReviewFromServer(item.lesson)) {
+      return { ...item, source: "review" };
+    }
+  }
+
+  return null;
 }

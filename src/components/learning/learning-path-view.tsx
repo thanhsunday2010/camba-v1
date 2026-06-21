@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import { ContentSection, StudentPageShell } from "@/components/camba";
 import { SectionHeader } from "@/components/camba/section-header";
 import { LessonCard } from "@/components/camba/cards/learning-cards";
@@ -20,6 +21,8 @@ import {
   getLessonPresentation,
   getWeakestSkillSlug,
   isLessonVisibleInSkillFilter,
+  resolveFocusLesson,
+  type FocusLessonResult,
 } from "@/lib/learning/path-ui-utils";
 import { pivotSkillsToCurriculumUnits } from "@/lib/learning/pivot-units";
 import type { SkillProgressRow, NextLessonContext } from "@/lib/queries/dashboard";
@@ -103,17 +106,30 @@ interface LearningPathViewProps {
 }
 
 function buildRecommendedSubtitle(
-  nextLesson: NextLessonContext,
+  lesson: NextLessonContext,
   labels: LearningPathViewLabels["recommended"]
 ): string {
   return [
-    nextLesson.unitTitle && `${labels.unitPrefix}: ${nextLesson.unitTitle}`,
-    nextLesson.skillName && `${labels.skillPrefix}: ${nextLesson.skillName}`,
-    `${nextLesson.estimated_minutes} ${labels.minutes}`,
-    nextLesson.completionPercent > 0 ? `${nextLesson.completionPercent}%` : null,
+    lesson.unitTitle && `${labels.unitPrefix}: ${lesson.unitTitle}`,
+    lesson.skillName && `${labels.skillPrefix}: ${lesson.skillName}`,
+    `${lesson.estimated_minutes} ${labels.minutes}`,
+    lesson.completionPercent > 0 ? `${lesson.completionPercent}%` : null,
   ]
     .filter(Boolean)
     .join(" · ");
+}
+
+function focusToNextContext(focus: FocusLessonResult): NextLessonContext {
+  return {
+    id: focus.lesson.id,
+    title: focus.lesson.title,
+    estimated_minutes: focus.lesson.estimated_minutes,
+    unitTitle: focus.unitTitle,
+    skillSlug: focus.skillSlug,
+    skillName: focus.skillName,
+    completionPercent: focus.lesson.progress?.completion_percent ?? 0,
+    masteryLevel: focus.lesson.progress?.mastery_level ?? 0,
+  };
 }
 
 export function LearningPathView({
@@ -130,6 +146,7 @@ export function LearningPathView({
   labels,
   showUnlockAllBanner,
 }: LearningPathViewProps) {
+  const t = useTranslations("learning");
   const units = useMemo(() => pivotSkillsToCurriculumUnits(skills), [skills]);
   const levelProgressPercent = useMemo(() => computeLevelProgressPercent(units), [units]);
   const lessonCount = useMemo(
@@ -138,98 +155,98 @@ export function LearningPathView({
   );
   const unitsWithContent = units.filter((unit) => unit.hasContent).length;
 
-  const recommendedLessonId = nextLesson?.id ?? null;
-  const recommendedUnitSlug = recommendedLessonId
-    ? findUnitSlugForLesson(units, recommendedLessonId)
+  const focusFromPath = useMemo(
+    () => (nextLesson ? null : resolveFocusLesson(units)),
+    [nextLesson, units]
+  );
+
+  const displayLesson: NextLessonContext | null = nextLesson
+    ? nextLesson
+    : focusFromPath
+      ? focusToNextContext(focusFromPath)
+      : null;
+
+  const focusLessonId = displayLesson?.id ?? null;
+  const focusUnitSlug = focusLessonId
+    ? findUnitSlugForLesson(units, focusLessonId)
     : null;
-  const recommendedSkillSlug = recommendedLessonId
-    ? findSkillSlugForLesson(units, recommendedLessonId) ?? nextLesson?.skillSlug ?? null
+  const focusSkillSlug = focusLessonId
+    ? findSkillSlugForLesson(units, focusLessonId) ?? displayLesson?.skillSlug ?? null
     : null;
 
   const firstActiveUnit =
-    recommendedUnitSlug ??
+    focusUnitSlug ??
     units.find((unit) => unit.hasContent)?.slug ??
     units[0]?.slug ??
     null;
 
   const [activeSkill, setActiveSkill] = useState("all");
   const [expandedUnit, setExpandedUnit] = useState<string | null>(firstActiveUnit);
-  const recommendedUnitRef = useRef<HTMLDivElement>(null);
+  const focusUnitRef = useRef<HTMLDivElement>(null);
   const hasScrolledRef = useRef(false);
 
   const reviewItems = useMemo(
-    () => collectReviewLessons(units, recommendedLessonId),
-    [units, recommendedLessonId]
+    () => collectReviewLessons(units, focusLessonId),
+    [units, focusLessonId]
   );
+  const reviewLessonIds = useMemo(
+    () => new Set(reviewItems.map((item) => item.lesson.id)),
+    [reviewItems]
+  );
+
   const weakestSkillSlug = useMemo(() => getWeakestSkillSlug(skillProgress), [skillProgress]);
   const weakSkillLabel = weakestSkillSlug
     ? labels.skillLabels[weakestSkillSlug] ?? weakestSkillSlug
     : null;
 
-  const continueLessonHref = recommendedLessonId
-    ? `/learning/lesson/${recommendedLessonId}`
+  const continueLessonHref = focusLessonId
+    ? `/learning/lesson/${focusLessonId}`
     : null;
 
-  const recommendedPathLesson = recommendedLessonId
-    ? findLessonInUnits(units, recommendedLessonId)?.lesson ?? null
+  const focusPathLesson = focusLessonId
+    ? findLessonInUnits(units, focusLessonId)?.lesson ?? null
     : null;
 
   const presentationOptions = {
-    recommendedLessonId,
+    recommendedLessonId: focusLessonId,
     stateLabels: labels.units.lessonStateLabels,
     ctaStart: labels.units.ctaStart,
     ctaContinue: labels.units.ctaContinue,
     ctaReview: labels.units.ctaReview,
   };
 
-  const recommendedPresentation = recommendedPathLesson
-    ? getLessonPresentation(recommendedPathLesson, presentationOptions)
-    : nextLesson
-      ? getLessonPresentation(
-          {
-            id: nextLesson.id,
-            unit_id: "",
-            slug: "",
-            title: nextLesson.title,
-            description: null,
-            sort_order: 0,
-            estimated_minutes: nextLesson.estimated_minutes,
-            unlock_after_lesson_id: null,
-            progress: {
-              completion_percent: nextLesson.completionPercent,
-              mastery_level: nextLesson.masteryLevel,
-              is_unlocked: true,
-              accuracy_percent: 0,
-              attempts_count: 0,
-            },
-          },
-          presentationOptions
-        )
-      : null;
+  const focusPresentation = focusPathLesson
+    ? getLessonPresentation(focusPathLesson, presentationOptions)
+    : null;
 
-  const recommendedSubtitle = nextLesson
-    ? buildRecommendedSubtitle(nextLesson, labels.recommended)
+  const recommendedSubtitle = displayLesson
+    ? buildRecommendedSubtitle(displayLesson, labels.recommended)
     : labels.recommended.subtitle;
 
-  const recommendedHiddenByFilter =
-    !!recommendedLessonId &&
-    activeSkill !== "all" &&
-    !isLessonVisibleInSkillFilter(recommendedLessonId, units, activeSkill);
+  const displayObjective =
+    nextLesson || !focusFromPath
+      ? objectiveText
+      : t("objectiveNextLesson", { lesson: focusFromPath.lesson.title });
 
-  const recommendedSkillLabel =
-    (recommendedSkillSlug && labels.skillLabels[recommendedSkillSlug]) ||
-    nextLesson?.skillName ||
-    recommendedSkillSlug ||
+  const focusHiddenByFilter =
+    !!focusLessonId &&
+    activeSkill !== "all" &&
+    !isLessonVisibleInSkillFilter(focusLessonId, units, activeSkill);
+
+  const focusSkillLabel =
+    (focusSkillSlug && labels.skillLabels[focusSkillSlug]) ||
+    displayLesson?.skillName ||
+    focusSkillSlug ||
     "";
 
   useEffect(() => {
-    if (hasScrolledRef.current || !recommendedUnitSlug || !recommendedUnitRef.current) return;
+    if (hasScrolledRef.current || !focusUnitSlug || !focusUnitRef.current) return;
     hasScrolledRef.current = true;
     const timer = window.setTimeout(() => {
-      recommendedUnitRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      focusUnitRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }, 400);
     return () => window.clearTimeout(timer);
-  }, [recommendedUnitSlug]);
+  }, [focusUnitSlug]);
 
   if (units.length === 0) {
     return (
@@ -259,12 +276,12 @@ export function LearningPathView({
         unitCount={units.length}
         unitsWithContent={unitsWithContent}
         lessonCount={lessonCount}
-        nextLesson={nextLesson}
-        objectiveText={objectiveText}
+        nextLesson={displayLesson}
+        objectiveText={displayObjective}
         labels={labels.hero}
       />
 
-      {nextLesson && recommendedPresentation && (
+      {displayLesson && focusPresentation && focusPathLesson && (
         <ContentSection className="hidden md:block">
           <SectionHeader
             title={labels.recommended.title}
@@ -272,13 +289,13 @@ export function LearningPathView({
             icon={Sparkles}
           />
           <LessonCard
-            title={nextLesson.title}
+            title={displayLesson.title}
             subtitle={recommendedSubtitle}
-            href={`/learning/lesson/${nextLesson.id}`}
-            state={recommendedPresentation.state}
-            stateLabel={recommendedPresentation.stateLabel}
-            masteryLevel={nextLesson.masteryLevel}
-            masteryLabel={masteryLabels[nextLesson.masteryLevel]}
+            href={`/learning/lesson/${displayLesson.id}`}
+            state={focusPresentation.state}
+            stateLabel={focusPresentation.stateLabel}
+            masteryLevel={displayLesson.masteryLevel}
+            masteryLabel={masteryLabels[displayLesson.masteryLevel]}
             recommended
           />
         </ContentSection>
@@ -304,22 +321,19 @@ export function LearningPathView({
         </ContentSection>
       )}
 
-      {recommendedHiddenByFilter && (
+      {focusHiddenByFilter && (
         <LearningSkillFilterNotice
-          message={labels.skillFilter.hiddenMessage.replace(
-            "{skill}",
-            recommendedSkillLabel
-          )}
-          skillLabel={recommendedSkillLabel}
+          message={labels.skillFilter.hiddenMessage.replace("{skill}", focusSkillLabel)}
+          skillLabel={focusSkillLabel}
           showAllLabel={labels.skillFilter.showAll}
           switchSkillLabel={labels.skillFilter.switchSkill}
           onShowAll={() => {
             setActiveSkill("all");
-            if (recommendedUnitSlug) setExpandedUnit(recommendedUnitSlug);
+            if (focusUnitSlug) setExpandedUnit(focusUnitSlug);
           }}
           onSwitchSkill={() => {
-            if (recommendedSkillSlug) setActiveSkill(recommendedSkillSlug);
-            if (recommendedUnitSlug) setExpandedUnit(recommendedUnitSlug);
+            if (focusSkillSlug) setActiveSkill(focusSkillSlug);
+            if (focusUnitSlug) setExpandedUnit(focusUnitSlug);
           }}
         />
       )}
@@ -335,10 +349,11 @@ export function LearningPathView({
           activeSkill={activeSkill}
           expandedUnit={expandedUnit}
           onToggleUnit={setExpandedUnit}
-          recommendedLessonId={recommendedLessonId}
-          recommendedUnitSlug={recommendedUnitSlug}
+          recommendedLessonId={focusLessonId}
+          recommendedUnitSlug={focusUnitSlug}
           continueLessonHref={continueLessonHref}
-          recommendedUnitRef={recommendedUnitRef}
+          recommendedUnitRef={focusUnitRef}
+          reviewLessonIds={reviewLessonIds}
           masteryLabels={masteryLabels}
           labels={labels.units}
         />

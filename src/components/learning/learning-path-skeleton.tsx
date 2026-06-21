@@ -5,9 +5,11 @@ export function LearningPathSkeleton() {
   return (
     <div className="camba-section-stack">
       <Skeleton className="h-44 w-full rounded-3xl" />
-      <Skeleton className="h-28 w-full rounded-2xl" />
+      <div className="hidden md:block">
+        <Skeleton className="h-28 w-full rounded-2xl" />
+      </div>
       <div className="flex gap-2 overflow-hidden">
-        {Array.from({ length: 5 }).map((_, i) => (
+        {Array.from({ length: 4 }).map((_, i) => (
           <Skeleton key={i} className="h-10 w-24 shrink-0 rounded-full" />
         ))}
       </div>
@@ -17,6 +19,11 @@ export function LearningPathSkeleton() {
         ))}
       </div>
       <SkeletonList count={4} />
+      <div className="space-y-2 pt-2">
+        <Skeleton className="h-5 w-40 rounded" />
+        <SkeletonCard />
+        <SkeletonCard />
+      </div>
     </div>
   );
 }

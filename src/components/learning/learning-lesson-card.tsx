@@ -32,6 +32,7 @@ interface LearningLessonCardProps {
   masteryLabels: Record<number, string>;
   recommendedLessonId?: string | null;
   continueLessonHref?: string | null;
+  suppressReviewBadge?: boolean;
   labels: LearningLessonCardLabels;
   skillName?: string;
   className?: string;
@@ -42,6 +43,7 @@ export function LearningLessonCard({
   masteryLabels,
   recommendedLessonId,
   continueLessonHref,
+  suppressReviewBadge,
   labels,
   skillName,
   className,
@@ -110,7 +112,7 @@ export function LearningLessonCard({
                 {labels.recommended}
               </span>
             )}
-            {needsReview && (
+            {needsReview && !suppressReviewBadge && (
               <span className="inline-flex items-center gap-1 rounded-full bg-orange-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[var(--status-needs-review)]">
                 {labels.needsReview}
               </span>

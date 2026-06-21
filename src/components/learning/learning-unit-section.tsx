@@ -35,6 +35,7 @@ interface LearningUnitSectionProps {
   recommendedUnitSlug?: string | null;
   continueLessonHref?: string | null;
   recommendedUnitRef?: RefObject<HTMLDivElement | null>;
+  reviewLessonIds?: Set<string>;
   masteryLabels: Record<number, string>;
   labels: LearningUnitSectionLabels;
 }
@@ -48,6 +49,7 @@ export function LearningUnitSection({
   recommendedUnitSlug,
   continueLessonHref,
   recommendedUnitRef,
+  reviewLessonIds,
   masteryLabels,
   labels,
 }: LearningUnitSectionProps) {
@@ -134,6 +136,7 @@ export function LearningUnitSection({
                             masteryLabels={masteryLabels}
                             recommendedLessonId={recommendedLessonId}
                             continueLessonHref={continueLessonHref}
+                            suppressReviewBadge={reviewLessonIds?.has(lesson.id)}
                             skillName={activeSkill === "all" ? undefined : entry.skillName}
                             labels={lessonCardLabels}
                           />

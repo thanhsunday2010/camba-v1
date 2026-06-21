@@ -36,7 +36,12 @@ export function LearningReviewSection({
 
   return (
     <section aria-labelledby="review-section-heading">
-      <SectionHeader title={labels.title} description={subtitle} icon={RefreshCw} />
+      <SectionHeader
+        titleId="review-section-heading"
+        title={labels.title}
+        description={subtitle}
+        icon={RefreshCw}
+      />
       <div className="space-y-2">
         {items.map((item) => (
           <LearningReviewCard

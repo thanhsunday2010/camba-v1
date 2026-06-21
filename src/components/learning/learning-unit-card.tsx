@@ -71,7 +71,7 @@ export function LearningUnitCard({
         <button
           type="button"
           onClick={onToggle}
-          className="w-full text-left p-4 sm:p-5 camba-focus-ring rounded-2xl"
+          className="w-full text-left p-4 sm:p-5 camba-focus-ring rounded-t-2xl"
           aria-expanded={expanded}
         >
           <div className="flex items-start gap-3">
@@ -148,16 +148,17 @@ export function LearningUnitCard({
               {labels.comingSoon}
             </p>
           )}
-          {isLocked && (
+        </button>
+        {isLocked && (
+          <div className="px-4 pb-4 sm:px-5 sm:pb-5">
             <LearningLockHint
               compact
               message={labels.lockedHint}
               continueHref={continueLessonHref ?? undefined}
               continueLabel={continueLessonHref ? labels.lockContinueLabel : undefined}
-              className="mt-3"
             />
-          )}
-        </button>
+          </div>
+        )}
       </CambaCard>
     </div>
   );

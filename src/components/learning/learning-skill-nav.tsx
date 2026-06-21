@@ -1,26 +1,9 @@
 "use client";
 
-import {
-  BookOpen,
-  BookText,
-  Ear,
-  FileText,
-  LayoutGrid,
-  Mic,
-  PenLine,
-  type LucideIcon,
-} from "lucide-react";
+import { LayoutGrid, BookOpen } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { SKILL_ICONS } from "@/lib/design/skill-icons";
 import type { SkillProgressRow } from "@/lib/queries/dashboard";
-
-const SKILL_ICONS: Record<string, LucideIcon> = {
-  vocabulary: BookOpen,
-  grammar: BookText,
-  reading: FileText,
-  listening: Ear,
-  writing: PenLine,
-  speaking: Mic,
-};
 
 interface LearningSkillNavProps {
   skills: SkillProgressRow[];

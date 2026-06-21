@@ -3,6 +3,7 @@ import type { LucideIcon } from "lucide-react";
 
 interface SectionHeaderProps {
   title: string;
+  titleId?: string;
   description?: string;
   icon?: LucideIcon;
   action?: React.ReactNode;
@@ -11,6 +12,7 @@ interface SectionHeaderProps {
 
 export function SectionHeader({
   title,
+  titleId,
   description,
   icon: Icon,
   action,
@@ -25,7 +27,9 @@ export function SectionHeader({
           </div>
         )}
         <div>
-          <h2 className="camba-h3 text-foreground">{title}</h2>
+          <h2 id={titleId} className="camba-h3 text-foreground">
+            {title}
+          </h2>
           {description && <p className="camba-caption text-muted mt-0.5">{description}</p>}
         </div>
       </div>
