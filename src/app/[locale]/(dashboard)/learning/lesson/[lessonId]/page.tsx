@@ -1,11 +1,13 @@
 import { redirect, notFound } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import { getCurrentUser } from "@/lib/auth/current-user";
-import { getLessonWithExercises, getLessonProgress, ensureLessonUnlockedForUser } from "@/lib/queries/learning";
-import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
+import { ensureLessonUnlockedForUser } from "@/lib/queries/learning";
+import { getLessonPageViewModel } from "@/lib/learning/lesson-page";
+import { StudentPageShell } from "@/components/camba";
+import { LessonPageShell } from "@/components/learning/lesson/lesson-page-shell";
+import { LessonLockedState } from "@/components/learning/lesson/lesson-locked-state";
+import { LessonEmptyState } from "@/components/learning/lesson/lesson-empty-state";
 import { LessonPlayer } from "@/components/learning/lesson-player";
-import { Link } from "@/i18n/routing";
-import { Button } from "@/components/ui/button";
-import { Lock } from "lucide-react";
 
 interface LessonPageProps {
   params: Promise<{ lessonId: string }>;
@@ -16,40 +18,101 @@ export default async function LessonPage({ params }: LessonPageProps) {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
 
-  const lesson = await getLessonWithExercises(lessonId);
-
-  if (!lesson) notFound();
-
   await ensureLessonUnlockedForUser(user.id, lessonId);
-  const progress = await getLessonProgress(user.id, lessonId);
 
-  const isUnlocked = isLessonUnlockedFromProgress(progress);
+  const viewModel = await getLessonPageViewModel(user.id, lessonId);
+  if (!viewModel) notFound();
 
-  if (!isUnlocked) {
+  const t = await getTranslations("learning.lesson");
+  const tl = await getTranslations("learning");
+  const tm = await getTranslations("mastery");
+
+  const masteryKeys = ["notStarted", "beginner", "developing", "proficient", "mastered"] as const;
+  const masteryLevel = Math.min(4, Math.max(0, viewModel.progress.masteryLevel));
+  const masteryLabel = tm(masteryKeys[masteryLevel]);
+
+  const pageLabels = {
+    backToPath: t("backToPath"),
+    breadcrumbPath: t("breadcrumbPath"),
+    exercisesTitle: t("exercisesTitle"),
+    exercisesSubtitle: t("exercisesSubtitle"),
+    estimatedMinutes: t("estimatedMinutes"),
+    completionSummary: t("completionSummary"),
+    accuracy: t("accuracy"),
+    mastery: t("mastery"),
+    completedExercises: t("completedExercises"),
+    lessonCompleteTitle: t("lessonCompleteTitle"),
+    lessonCompleteDescription: t("lessonCompleteDescription"),
+    nextSuggested: t("nextSuggested"),
+    unitLabel: t("unitLabel"),
+    skillLabel: t("skillLabel"),
+  };
+
+  const listLabels = {
+    startExercise: t("startExercise"),
+    continueExercise: t("continueExercise"),
+    retryExercise: t("retryExercise"),
+    reviewExercise: t("reviewExercise"),
+    completed: t("completed"),
+    inProgress: t("inProgress"),
+    needsReview: t("needsReview"),
+    available: t("available"),
+    questionCount: t("questionCount"),
+    writingAi: t("writingAi"),
+    speakingAi: t("speakingAi"),
+    latestScore: t("latestScore"),
+    exercisesTitle: t("exercisesTitle"),
+    exercisesSubtitle: t("exercisesSubtitle"),
+    nextSuggested: t("nextSuggested"),
+    backToList: t("backToList"),
+  };
+
+  if (!viewModel.progress.isUnlocked) {
     return (
-      <div className="max-w-lg mx-auto text-center space-y-4 py-12">
-        <Lock className="h-12 w-12 text-gray-400 mx-auto" />
-        <h1 className="text-xl font-bold text-gray-900">Bài học chưa mở khóa</h1>
-        <p className="text-gray-500">
-          Hoàn thành bài học trước với mức thành thạo ≥ 3 để mở khóa bài này.
-        </p>
-        <Link href="/learning">
-          <Button variant="outline">Quay lại lộ trình</Button>
-        </Link>
-      </div>
+      <StudentPageShell narrow>
+        <LessonLockedState
+          labels={{
+            lockedTitle: t("lockedTitle"),
+            lockedDescription: t("lockedDescription"),
+            backToPath: t("backToPath"),
+            lockedHint: tl("lockedHint"),
+          }}
+        />
+      </StudentPageShell>
+    );
+  }
+
+  if (viewModel.exerciseSummaries.length === 0) {
+    return (
+      <StudentPageShell narrow>
+        <LessonEmptyState
+          labels={{
+            emptyTitle: t("emptyTitle"),
+            emptyDescription: t("emptyDescription"),
+            backToPath: t("backToPath"),
+          }}
+        />
+      </StudentPageShell>
     );
   }
 
   return (
-    <div className="space-y-4">
-      <Link href="/learning">
-        <Button variant="ghost" size="sm">← Lộ trình học</Button>
-      </Link>
-      <LessonPlayer
-        lessonId={lessonId}
-        lessonTitle={lesson.title}
-        exercises={lesson.exercises ?? []}
-      />
-    </div>
+    <StudentPageShell narrow>
+      <LessonPageShell
+        viewModel={viewModel}
+        labels={pageLabels}
+        masteryLabel={masteryLabel}
+      >
+        <LessonPlayer
+          lessonId={viewModel.lesson.id}
+          exercises={viewModel.exercises}
+          exerciseSummaries={viewModel.exerciseSummaries}
+          initialCompletedExerciseIds={viewModel.completedExerciseIds}
+          nextSuggestedExerciseId={viewModel.nextSuggestedExerciseId}
+          lessonProgress={viewModel.progress}
+          listLabels={listLabels}
+        />
+      </LessonPageShell>
+    </StudentPageShell>
   );
 }

@@ -1,23 +1,27 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { Exercise, ExerciseResult, UserAnswer } from "@/types/learning";
 import { ExercisePlayer } from "@/components/exercises/exercise-player";
 import { submitExerciseAttempt } from "@/actions/learning";
 import {
   buildSpeakingPromptText,
   buildWritingPromptText,
-  getExerciseListSubtitle,
   getFollowUpQuestions,
   getWritingPrompts,
   resolveTargetLevel,
   resolveWritingMaxWords,
   resolveWritingMinWords,
 } from "@/lib/learning/ai-exercise-content";
+import type {
+  LessonExerciseListLabels,
+  LessonExerciseSummary,
+  LessonPageProgress,
+} from "@/lib/learning/lesson-page-types";
+import { LessonExerciseList } from "@/components/learning/lesson/lesson-exercise-list";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Circle, PenLine, Mic, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 
 const WritingExercise = dynamic(
   () =>
@@ -27,7 +31,7 @@ const WritingExercise = dynamic(
   {
     loading: () => (
       <div className="flex justify-center py-8">
-        <Loader2 className="h-6 w-6 animate-spin text-gray-400" />
+        <Loader2 className="h-6 w-6 animate-spin text-muted" />
       </div>
     ),
   }
@@ -41,12 +45,13 @@ const SpeakingExercise = dynamic(
   {
     loading: () => (
       <div className="flex justify-center py-8">
-        <Loader2 className="h-6 w-6 animate-spin text-gray-400" />
+        <Loader2 className="h-6 w-6 animate-spin text-muted" />
       </div>
     ),
   }
 );
 
+/** AI exercise labels — deep component i18n deferred to U5B */
 const AI_FEEDBACK_LABELS = {
   placeholder: "Viết câu trả lời của bạn tại đây...",
   wordCount: "Số từ",
@@ -74,25 +79,60 @@ const AI_FEEDBACK_LABELS = {
 
 interface LessonPlayerProps {
   lessonId: string;
-  lessonTitle: string;
   exercises: Exercise[];
+  exerciseSummaries: LessonExerciseSummary[];
+  initialCompletedExerciseIds: string[];
+  nextSuggestedExerciseId?: string | null;
+  lessonProgress?: LessonPageProgress;
+  listLabels: LessonExerciseListLabels & {
+    exercisesTitle: string;
+    exercisesSubtitle: string;
+    nextSuggested: string;
+    backToList: string;
+  };
 }
 
-function getExerciseIcon(type: string) {
-  if (type === "writing") return PenLine;
-  if (type === "speaking") return Mic;
-  return Circle;
-}
+export function LessonPlayer({
+  lessonId,
+  exercises,
+  exerciseSummaries,
+  initialCompletedExerciseIds,
+  nextSuggestedExerciseId,
+  listLabels,
+}: LessonPlayerProps) {
+  const [activeExerciseId, setActiveExerciseId] = useState<string | null>(null);
+  const [sessionCompletedIds, setSessionCompletedIds] = useState<Set<string>>(
+    () => new Set(initialCompletedExerciseIds)
+  );
 
-export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerProps) {
-  const [activeExerciseIndex, setActiveExerciseIndex] = useState<number | null>(null);
-  const [completedExercises, setCompletedExercises] = useState<Set<string>>(new Set());
+  const exerciseIndexById = useMemo(() => {
+    const map = new Map<string, number>();
+    exercises.forEach((exercise, index) => map.set(exercise.id, index));
+    return map;
+  }, [exercises]);
+
+  function openExercise(exerciseId: string) {
+    setActiveExerciseId(exerciseId);
+  }
 
   function openNextExercise() {
-    setActiveExerciseIndex((current) => {
-      if (current === null || current >= exercises.length - 1) return current;
-      return current + 1;
-    });
+    if (!activeExerciseId) return;
+    const currentIndex = exerciseIndexById.get(activeExerciseId);
+    if (currentIndex === undefined) return;
+
+    const sortedIds = [...exerciseSummaries]
+      .sort((a, b) => a.sortOrder - b.sortOrder)
+      .map((s) => s.id);
+
+    const sortedIndex = sortedIds.indexOf(activeExerciseId);
+    const nextId = sortedIndex >= 0 ? sortedIds[sortedIndex + 1] : undefined;
+    if (nextId) {
+      setActiveExerciseId(nextId);
+    }
+  }
+
+  function markExerciseCompleted(exerciseId: string) {
+    setSessionCompletedIds((prev) => new Set([...prev, exerciseId]));
   }
 
   async function handleSubmit(
@@ -101,137 +141,92 @@ export function LessonPlayer({ lessonId, lessonTitle, exercises }: LessonPlayerP
   ): Promise<ExerciseResult | null> {
     const result = await submitExerciseAttempt(exerciseId, lessonId, answers, 0);
     if (result.success && result.data) {
-      setCompletedExercises((prev) => new Set([...prev, exerciseId]));
+      markExerciseCompleted(exerciseId);
       return result.data;
     }
-    throw new Error(result.error ?? "Không nộp được bài");
+    throw new Error(result.error ?? "Submit failed");
   }
 
-  function handleAiComplete(exerciseId: string) {
-    setCompletedExercises((prev) => new Set([...prev, exerciseId]));
-  }
+  if (activeExerciseId) {
+    const activeIndex = exerciseIndexById.get(activeExerciseId);
 
-  if (activeExerciseIndex !== null) {
-    const exercise = exercises[activeExerciseIndex];
-    const nextExercise = exercises[activeExerciseIndex + 1];
-    const content = exercise.content ?? {};
-    const fallbackPrompt = exercise.instructions ?? exercise.title;
-    const writingPrompt = buildWritingPromptText(content, fallbackPrompt);
-    const speakingPrompt = buildSpeakingPromptText(content, fallbackPrompt);
-    const targetLevel = resolveTargetLevel(content);
+    if (activeIndex !== undefined) {
+      const exercise = exercises[activeIndex];
+      const nextIndex = activeIndex + 1;
+      const nextExercise = exercises[nextIndex];
+      const content = exercise.content ?? {};
+      const fallbackPrompt = exercise.instructions ?? exercise.title;
+      const writingPrompt = buildWritingPromptText(content, fallbackPrompt);
+      const speakingPrompt = buildSpeakingPromptText(content, fallbackPrompt);
+      const targetLevel = resolveTargetLevel(content);
 
-    return (
-      <div className="space-y-4">
-        <Button variant="ghost" onClick={() => setActiveExerciseIndex(null)}>
-          ← Quay lại danh sách bài tập
-        </Button>
+      return (
+        <div className="space-y-4">
+          <Button variant="ghost" size="sm" onClick={() => setActiveExerciseId(null)}>
+            ← {listLabels.backToList}
+          </Button>
 
-        {exercise.exercise_type === "writing" ? (
-          <WritingExercise
-            key={exercise.id}
-            exerciseId={exercise.id}
-            lessonId={lessonId}
-            title={exercise.title}
-            instructions={exercise.instructions}
-            prompt={writingPrompt}
-            taskDescription={content.taskDescription as string | undefined}
-            taskPrompts={getWritingPrompts(content)}
-            minWords={resolveWritingMinWords(content)}
-            maxWords={resolveWritingMaxWords(content)}
-            targetLevel={targetLevel}
-            labels={AI_FEEDBACK_LABELS}
-            onComplete={() => handleAiComplete(exercise.id)}
-            nextExerciseTitle={nextExercise?.title}
-            onNextExercise={nextExercise ? openNextExercise : undefined}
-          />
-        ) : exercise.exercise_type === "speaking" ? (
-          <SpeakingExercise
-            key={exercise.id}
-            exerciseId={exercise.id}
-            lessonId={lessonId}
-            title={exercise.title}
-            instructions={exercise.instructions}
-            prompt={speakingPrompt}
-            followUpQuestions={getFollowUpQuestions(content)}
-            pictureDescription={content.pictureDescription as string | undefined}
-            maxDurationSeconds={(content.maxDurationSeconds as number) ?? 120}
-            targetLevel={targetLevel}
-            labels={AI_FEEDBACK_LABELS}
-            onComplete={() => handleAiComplete(exercise.id)}
-            nextExerciseTitle={nextExercise?.title}
-            onNextExercise={nextExercise ? openNextExercise : undefined}
-          />
-        ) : (
-          <ExercisePlayer
-            key={exercise.id}
-            questions={exercise.questions ?? []}
-            title={exercise.title}
-            instructions={exercise.instructions}
-            exerciseType={exercise.exercise_type}
-            content={exercise.content}
-            onSubmit={(answers) => handleSubmit(exercise.id, answers)}
-            onComplete={() => {
-              handleAiComplete(exercise.id);
-            }}
-            nextExerciseTitle={nextExercise?.title}
-            onNextExercise={nextExercise ? openNextExercise : undefined}
-          />
-        )}
-      </div>
-    );
+          {exercise.exercise_type === "writing" ? (
+            <WritingExercise
+              key={exercise.id}
+              exerciseId={exercise.id}
+              lessonId={lessonId}
+              title={exercise.title}
+              instructions={exercise.instructions}
+              prompt={writingPrompt}
+              taskDescription={content.taskDescription as string | undefined}
+              taskPrompts={getWritingPrompts(content)}
+              minWords={resolveWritingMinWords(content)}
+              maxWords={resolveWritingMaxWords(content)}
+              targetLevel={targetLevel}
+              labels={AI_FEEDBACK_LABELS}
+              onComplete={() => markExerciseCompleted(exercise.id)}
+              nextExerciseTitle={nextExercise?.title}
+              onNextExercise={nextExercise ? openNextExercise : undefined}
+            />
+          ) : exercise.exercise_type === "speaking" ? (
+            <SpeakingExercise
+              key={exercise.id}
+              exerciseId={exercise.id}
+              lessonId={lessonId}
+              title={exercise.title}
+              instructions={exercise.instructions}
+              prompt={speakingPrompt}
+              followUpQuestions={getFollowUpQuestions(content)}
+              pictureDescription={content.pictureDescription as string | undefined}
+              maxDurationSeconds={(content.maxDurationSeconds as number) ?? 120}
+              targetLevel={targetLevel}
+              labels={AI_FEEDBACK_LABELS}
+              onComplete={() => markExerciseCompleted(exercise.id)}
+              nextExerciseTitle={nextExercise?.title}
+              onNextExercise={nextExercise ? openNextExercise : undefined}
+            />
+          ) : (
+            <ExercisePlayer
+              key={exercise.id}
+              questions={exercise.questions ?? []}
+              title={exercise.title}
+              instructions={exercise.instructions}
+              exerciseType={exercise.exercise_type}
+              content={exercise.content}
+              onSubmit={(answers) => handleSubmit(exercise.id, answers)}
+              onComplete={() => markExerciseCompleted(exercise.id)}
+              nextExerciseTitle={nextExercise?.title}
+              onNextExercise={nextExercise ? openNextExercise : undefined}
+            />
+          )}
+        </div>
+      );
+    }
   }
 
   return (
-    <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">{lessonTitle}</h1>
-        <p className="text-sm text-gray-500 mt-1">
-          {exercises.length} bài tập • {completedExercises.size} hoàn thành
-        </p>
-      </div>
-
-      <div className="space-y-3">
-        {exercises.map((exercise, index) => {
-          const isCompleted = completedExercises.has(exercise.id);
-          const Icon = getExerciseIcon(exercise.exercise_type);
-          return (
-            <Card
-              key={exercise.id}
-              className="cursor-pointer hover:border-primary/50 transition-colors"
-              onClick={() => setActiveExerciseIndex(index)}
-            >
-              <CardHeader className="py-4">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    {isCompleted ? (
-                      <CheckCircle2 className="h-5 w-5 text-success" />
-                    ) : (
-                      <Icon className="h-5 w-5 text-gray-300" />
-                    )}
-                    <div>
-                      <CardTitle className="text-base">{exercise.title}</CardTitle>
-                      <p className="text-xs text-gray-500 mt-0.5">
-                        {getExerciseListSubtitle(exercise)}
-                      </p>
-                    </div>
-                  </div>
-                  <Button size="sm" variant={isCompleted ? "outline" : "default"}>
-                    {isCompleted ? "Làm lại" : "Bắt đầu"}
-                  </Button>
-                </div>
-              </CardHeader>
-            </Card>
-          );
-        })}
-      </div>
-
-      {exercises.length === 0 && (
-        <Card>
-          <CardContent className="py-8 text-center text-gray-500">
-            Chưa có bài tập cho bài học này.
-          </CardContent>
-        </Card>
-      )}
-    </div>
+    <LessonExerciseList
+      summaries={exerciseSummaries}
+      sessionCompletedIds={sessionCompletedIds}
+      nextSuggestedExerciseId={nextSuggestedExerciseId}
+      labels={listLabels}
+      onSelectExercise={openExercise}
+    />
   );
 }
