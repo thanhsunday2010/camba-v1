@@ -131,6 +131,7 @@ export default async function LearningPage() {
       programSlug={path.program.slug}
       levelName={path.level.name}
       levelSlug={path.level.slug}
+      currentLevelId={levelId}
       skills={path.skills}
       levels={levels}
       skillProgress={skillProgress}
@@ -163,22 +164,40 @@ export default async function LearningPage() {
           skillPrefix: td("skillPrefix"),
           unitPrefix: td("unitPrefix"),
           minutes: t("minutes"),
-          recommended: t("stateRecommended"),
-          inProgress: t("stateInProgress"),
-          notStarted: t("stateUnlocked"),
+        },
+        skillFilter: {
+          hiddenMessage: t("skillFilterHidden"),
+          showAll: t("skillFilterShowAll"),
+          switchSkill: t("skillFilterSwitch"),
         },
         skillNav: {
           all: t("skillAll"),
         },
         skillLabels,
+        review: {
+          title: t("reviewTitle"),
+          subtitle: t("reviewSubtitle"),
+          weakSkillHint: t("reviewWeakSkillHint"),
+          stateNeedsReview: t("stateNeedsReview"),
+          ctaReview: t("ctaReview"),
+          minutes: t("minutes"),
+          reasons: {
+            lowMastery: t("reviewReasonLowMastery"),
+            completedNotMastered: t("reviewReasonCompletedNotMastered"),
+            weakAccuracy: t("reviewReasonWeakAccuracy"),
+            needsPractice: t("reviewReasonNeedsPractice"),
+          },
+        },
         units: {
           skillNoContent: t("skillNoContent"),
           minutes: t("minutes"),
-          lockedDesc: t("lockedDesc"),
+          lockedHint: t("lockedHint"),
+          lockContinueLabel: t("lockContinueLabel"),
           unitComingSoon: t("unitComingSoon"),
           comingSoon: t("comingSoon"),
           recommended: t("stateRecommended"),
-          recommendedUnit: t("recommendedUnit"),
+          needsReview: t("needsReviewMarker"),
+          continueHere: t("continueHere"),
           lessonStateLabels,
           unitStateLabels,
           ctaStart: t("ctaStart"),

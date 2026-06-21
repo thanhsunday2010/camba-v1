@@ -7,15 +7,18 @@ import type { CurriculumUnitGroup } from "@/lib/learning/pivot-units";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
 import type { UnitVisualState } from "@/lib/learning/path-ui-utils";
 import type { LessonWithProgress } from "@/types/learning";
+import type { RefObject } from "react";
 
 interface LearningUnitSectionLabels {
   skillNoContent: string;
   minutes: string;
-  lockedDesc: string;
+  lockedHint: string;
+  lockContinueLabel: string;
   unitComingSoon: string;
   comingSoon: string;
   recommended: string;
-  recommendedUnit: string;
+  needsReview: string;
+  continueHere: string;
   lessonStateLabels: Record<LessonVisualState, string>;
   unitStateLabels: Record<UnitVisualState, string>;
   ctaStart: string;
@@ -30,6 +33,8 @@ interface LearningUnitSectionProps {
   onToggleUnit: (slug: string | null) => void;
   recommendedLessonId?: string | null;
   recommendedUnitSlug?: string | null;
+  continueLessonHref?: string | null;
+  recommendedUnitRef?: RefObject<HTMLDivElement | null>;
   masteryLabels: Record<number, string>;
   labels: LearningUnitSectionLabels;
 }
@@ -41,6 +46,8 @@ export function LearningUnitSection({
   onToggleUnit,
   recommendedLessonId,
   recommendedUnitSlug,
+  continueLessonHref,
+  recommendedUnitRef,
   masteryLabels,
   labels,
 }: LearningUnitSectionProps) {
@@ -57,21 +64,33 @@ export function LearningUnitSection({
     );
   }
 
+  const lessonCardLabels = {
+    minutes: labels.minutes,
+    lockedHint: labels.lockedHint,
+    lockContinueLabel: labels.lockContinueLabel,
+    stateLabels: labels.lessonStateLabels,
+    ctaStart: labels.ctaStart,
+    ctaContinue: labels.ctaContinue,
+    ctaReview: labels.ctaReview,
+    recommended: labels.recommended,
+    needsReview: labels.needsReview,
+  };
+
+  const unitCardLabels = {
+    unitComingSoon: labels.unitComingSoon,
+    comingSoon: labels.comingSoon,
+    lockedHint: labels.lockedHint,
+    lockContinueLabel: labels.lockContinueLabel,
+    stateLabels: labels.unitStateLabels,
+    continueHere: labels.continueHere,
+  };
+
   return (
     <div className="space-y-3">
       {visibleUnits.map((unit) => {
         const isExpanded = expandedUnit === unit.slug;
         const recommended = unit.slug === recommendedUnitSlug;
-
-        const lessonCardLabels = {
-          minutes: labels.minutes,
-          lockedDesc: labels.lockedDesc,
-          stateLabels: labels.lessonStateLabels,
-          ctaStart: labels.ctaStart,
-          ctaContinue: labels.ctaContinue,
-          ctaReview: labels.ctaReview,
-          recommended: labels.recommended,
-        };
+        const isRecommendedUnit = unit.slug === recommendedUnitSlug;
 
         return (
           <div key={unit.slug} className="space-y-2">
@@ -80,12 +99,9 @@ export function LearningUnitSection({
               expanded={isExpanded}
               onToggle={() => onToggleUnit(isExpanded ? null : unit.slug)}
               recommended={recommended}
-              labels={{
-                unitComingSoon: labels.unitComingSoon,
-                comingSoon: labels.comingSoon,
-                stateLabels: labels.unitStateLabels,
-                recommendedUnit: labels.recommendedUnit,
-              }}
+              continueLessonHref={continueLessonHref}
+              unitRef={isRecommendedUnit ? recommendedUnitRef : undefined}
+              labels={unitCardLabels}
             />
             {isExpanded && (
               <div className="ml-1 sm:ml-3 space-y-3 border-l-2 border-program/15 pl-3 sm:pl-4">
@@ -117,6 +133,7 @@ export function LearningUnitSection({
                             lesson={lesson}
                             masteryLabels={masteryLabels}
                             recommendedLessonId={recommendedLessonId}
+                            continueLessonHref={continueLessonHref}
                             skillName={activeSkill === "all" ? undefined : entry.skillName}
                             labels={lessonCardLabels}
                           />

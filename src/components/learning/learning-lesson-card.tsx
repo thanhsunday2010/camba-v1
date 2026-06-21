@@ -8,67 +8,59 @@ import {
   LessonStatusPill,
   MasteryBadge,
 } from "@/components/camba/primitives/lesson-status-pill";
-import { getLessonVisualState } from "@/lib/learning/path-ui-utils";
+import { LearningLockHint } from "@/components/learning/learning-lock-hint";
+import { getLessonPresentation } from "@/lib/learning/path-ui-utils";
 import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
 import type { LessonWithProgress } from "@/types/learning";
-import { ChevronRight, Lock, Sparkles } from "lucide-react";
+import { ChevronRight, Lock, RefreshCw, Sparkles } from "lucide-react";
 
 interface LearningLessonCardLabels {
   minutes: string;
-  lockedDesc: string;
+  lockedHint: string;
+  lockContinueLabel: string;
   stateLabels: Record<LessonVisualState, string>;
   ctaStart: string;
   ctaContinue: string;
   ctaReview: string;
   recommended: string;
+  needsReview: string;
 }
 
 interface LearningLessonCardProps {
   lesson: LessonWithProgress;
   masteryLabels: Record<number, string>;
   recommendedLessonId?: string | null;
+  continueLessonHref?: string | null;
   labels: LearningLessonCardLabels;
   skillName?: string;
   className?: string;
-}
-
-function ctaForState(
-  state: LessonVisualState,
-  completion: number,
-  labels: LearningLessonCardLabels
-): string | null {
-  switch (state) {
-    case "locked":
-      return null;
-    case "in-progress":
-      return labels.ctaContinue;
-    case "recommended":
-      return completion > 0 ? labels.ctaContinue : labels.ctaStart;
-    case "completed":
-    case "mastered":
-      return labels.ctaReview;
-    default:
-      return labels.ctaStart;
-  }
 }
 
 export function LearningLessonCard({
   lesson,
   masteryLabels,
   recommendedLessonId,
+  continueLessonHref,
   labels,
   skillName,
   className,
 }: LearningLessonCardProps) {
   const t = useTranslations("learning");
-  const state = getLessonVisualState(lesson, recommendedLessonId);
+  const presentation = getLessonPresentation(lesson, {
+    recommendedLessonId,
+    stateLabels: labels.stateLabels,
+    ctaStart: labels.ctaStart,
+    ctaContinue: labels.ctaContinue,
+    ctaReview: labels.ctaReview,
+  });
+  const { state, stateLabel, cta } = presentation;
   const unlocked = isLessonUnlockedFromProgress(lesson.progress);
   const mastery = lesson.progress?.mastery_level ?? 0;
   const completion = lesson.progress?.completion_percent ?? 0;
   const exerciseCount = lesson.exercise_count ?? 0;
-  const cta = ctaForState(state, completion, labels);
   const recommended = state === "recommended";
+  const needsReview = state === "needs-review";
 
   const metaParts: string[] = [];
   if (skillName) metaParts.push(skillName);
@@ -85,7 +77,8 @@ export function LearningLessonCard({
       interactive={unlocked}
       className={cn(
         recommended && "ring-2 ring-[var(--status-recommended)]/40 shadow-md",
-        state === "locked" && "opacity-75",
+        needsReview && "ring-1 ring-[var(--status-needs-review)]/25",
+        state === "locked" && "opacity-90",
         className
       )}
     >
@@ -93,13 +86,19 @@ export function LearningLessonCard({
         <div
           className={cn(
             "camba-icon-box-md shrink-0",
-            unlocked ? "bg-program-muted text-program" : "bg-[var(--surface-sunken)] text-[var(--status-locked)]"
+            unlocked
+              ? needsReview
+                ? "bg-orange-100 text-[var(--status-needs-review)]"
+                : "bg-program-muted text-program"
+              : "bg-[var(--surface-sunken)] text-[var(--status-locked)]"
           )}
         >
-          {unlocked ? (
-            <ChevronRight className="h-5 w-5" />
-          ) : (
+          {!unlocked ? (
             <Lock className="h-5 w-5" />
+          ) : needsReview ? (
+            <RefreshCw className="h-5 w-5" />
+          ) : (
+            <ChevronRight className="h-5 w-5" />
           )}
         </div>
         <div className="flex-1 min-w-0">
@@ -111,10 +110,15 @@ export function LearningLessonCard({
                 {labels.recommended}
               </span>
             )}
+            {needsReview && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-orange-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[var(--status-needs-review)]">
+                {labels.needsReview}
+              </span>
+            )}
           </div>
           <p className="camba-caption text-muted mt-0.5 truncate">{metaParts.join(" · ")}</p>
           <div className="flex flex-wrap gap-1.5 mt-2">
-            <LessonStatusPill state={state} label={labels.stateLabels[state]} />
+            <LessonStatusPill state={state} label={stateLabel} />
             {lesson.progress && (
               <MasteryBadge
                 level={mastery as 0 | 1 | 2 | 3 | 4}
@@ -123,11 +127,24 @@ export function LearningLessonCard({
             )}
           </div>
           {!unlocked && (
-            <p className="camba-caption text-muted mt-2 leading-snug">{labels.lockedDesc}</p>
+            <LearningLockHint
+              compact
+              message={labels.lockedHint}
+              continueHref={continueLessonHref ?? undefined}
+              continueLabel={continueLessonHref ? labels.lockContinueLabel : undefined}
+              className="mt-2"
+            />
           )}
         </div>
         {unlocked && cta && (
-          <span className="shrink-0 self-center text-xs font-bold text-program">{cta} →</span>
+          <span
+            className={cn(
+              "shrink-0 self-center text-xs font-bold hidden sm:inline",
+              needsReview ? "text-[var(--status-needs-review)]" : "text-program"
+            )}
+          >
+            {cta} →
+          </span>
         )}
       </div>
     </CambaCard>

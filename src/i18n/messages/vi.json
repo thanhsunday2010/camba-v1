@@ -279,7 +279,22 @@
     "ctaStart": "Bắt đầu",
     "ctaContinue": "Tiếp tục",
     "ctaReview": "Ôn lại",
-    "unlockAllBanner": "Chế độ test nội dung: tất cả bài học trong level này đã mở khóa. Tắt NEXT_PUBLIC_UNLOCK_ALL_LESSONS khi triển khai học tuần tự."
+    "unlockAllBanner": "Chế độ test nội dung: tất cả bài học trong level này đã mở khóa. Tắt NEXT_PUBLIC_UNLOCK_ALL_LESSONS khi triển khai học tuần tự.",
+    "lockedHint": "Hoàn thành bài trước với mức thành thạo ≥ 3 để mở khóa phần này",
+    "lockContinueLabel": "Tiếp tục bài đang học",
+    "continueHere": "Tiếp tục từ đây",
+    "needsReviewMarker": "Nên ôn lại",
+    "unitProgressSummary": "{completed}/{total} bài hoàn thành",
+    "skillFilterHidden": "Bài gợi ý tiếp theo thuộc kỹ năng {skill} — không hiển thị trong bộ lọc hiện tại",
+    "skillFilterShowAll": "Xem tất cả",
+    "skillFilterSwitch": "Xem {skill}",
+    "reviewTitle": "Nên ôn lại",
+    "reviewSubtitle": "Luyện thêm để vững hơn trước khi đi tiếp",
+    "reviewWeakSkillHint": "Kỹ năng {skill} đang cần củng cố thêm",
+    "reviewReasonLowMastery": "Mức làm chủ còn thấp — con nên ôn lại để vững hơn",
+    "reviewReasonCompletedNotMastered": "Con đã hoàn thành bài này nhưng cần luyện thêm để thành thạo",
+    "reviewReasonWeakAccuracy": "Con đã làm bài này — hãy xem lại để cải thiện điểm chính xác",
+    "reviewReasonNeedsPractice": "Con đã thử nhiều lần — ôn lại sẽ giúp tự tin hơn"
   },
   "placement": {
     "title": "Kiểm tra trình độ",

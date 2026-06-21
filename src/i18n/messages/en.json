@@ -279,7 +279,22 @@
     "ctaStart": "Start",
     "ctaContinue": "Continue",
     "ctaReview": "Review",
-    "unlockAllBanner": "Content test mode: all lessons in this level are unlocked. Disable NEXT_PUBLIC_UNLOCK_ALL_LESSONS for sequential learning in production."
+    "unlockAllBanner": "Content test mode: all lessons in this level are unlocked. Disable NEXT_PUBLIC_UNLOCK_ALL_LESSONS for sequential learning in production.",
+    "lockedHint": "Complete the previous lesson with mastery ≥ 3 to unlock this section",
+    "lockContinueLabel": "Continue current lesson",
+    "continueHere": "Continue here",
+    "needsReviewMarker": "Review",
+    "unitProgressSummary": "{completed}/{total} lessons completed",
+    "skillFilterHidden": "The recommended next lesson is in {skill} — hidden by the current filter",
+    "skillFilterShowAll": "Show all",
+    "skillFilterSwitch": "View {skill}",
+    "reviewTitle": "Worth reviewing",
+    "reviewSubtitle": "Extra practice to build confidence before moving on",
+    "reviewWeakSkillHint": "{skill} could use a bit more practice",
+    "reviewReasonLowMastery": "Mastery is still developing — a quick review will help",
+    "reviewReasonCompletedNotMastered": "Completed but not yet proficient — worth another pass",
+    "reviewReasonWeakAccuracy": "Accuracy could improve — review this lesson",
+    "reviewReasonNeedsPractice": "Multiple attempts — reviewing will build confidence"
   },
   "placement": {
     "title": "Placement Tests",

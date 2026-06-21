@@ -48,7 +48,11 @@ export function LearningPathHero({
   className,
 }: LearningPathHeroProps) {
   const lessonHref = nextLesson ? `/learning/lesson/${nextLesson.id}` : undefined;
-  const ctaLabel = nextLesson ? labels.continueLesson : labels.startLearning;
+  const ctaLabel = nextLesson
+    ? nextLesson.completionPercent > 0
+      ? labels.continueLesson
+      : labels.startLearning
+    : labels.startLearning;
 
   return (
     <section
