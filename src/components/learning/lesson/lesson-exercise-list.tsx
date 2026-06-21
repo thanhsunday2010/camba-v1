@@ -1,17 +1,21 @@
 "use client";
 
 import { SectionHeader } from "@/components/camba";
+import { Button } from "@/components/ui/button";
 import type {
   LessonExerciseListLabels,
   LessonExerciseSummary,
 } from "@/lib/learning/lesson-page-types";
 import { LessonExerciseCard } from "@/components/learning/lesson/lesson-exercise-card";
-import { ListChecks } from "lucide-react";
+import { ArrowLeft, ListChecks } from "lucide-react";
 
 interface LessonExerciseListProps {
   summaries: LessonExerciseSummary[];
   sessionCompletedIds: Set<string>;
   nextSuggestedExerciseId?: string | null;
+  isReviewMode?: boolean;
+  onExitReviewMode?: () => void;
+  exitReviewLabel?: string;
   labels: LessonExerciseListLabels & {
     exercisesTitle: string;
     exercisesSubtitle: string;
@@ -24,6 +28,9 @@ export function LessonExerciseList({
   summaries,
   sessionCompletedIds,
   nextSuggestedExerciseId,
+  isReviewMode,
+  onExitReviewMode,
+  exitReviewLabel,
   labels,
   onSelectExercise,
 }: LessonExerciseListProps) {
@@ -31,12 +38,27 @@ export function LessonExerciseList({
 
   return (
     <section aria-labelledby="lesson-exercises-heading">
-      <SectionHeader
-        titleId="lesson-exercises-heading"
-        title={labels.exercisesTitle}
-        description={labels.exercisesSubtitle}
-        icon={ListChecks}
-      />
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+        <SectionHeader
+          titleId="lesson-exercises-heading"
+          title={labels.exercisesTitle}
+          description={labels.exercisesSubtitle}
+          icon={ListChecks}
+          className="flex-1 min-w-0"
+        />
+        {isReviewMode && onExitReviewMode && exitReviewLabel && (
+          <Button
+            type="button"
+            variant="ghost"
+            size="sm"
+            className="gap-1.5 shrink-0 text-program font-semibold self-start"
+            onClick={onExitReviewMode}
+          >
+            <ArrowLeft className="h-4 w-4" />
+            {exitReviewLabel}
+          </Button>
+        )}
+      </div>
       <div className="space-y-3">
         {sorted.map((summary) => (
           <LessonExerciseCard

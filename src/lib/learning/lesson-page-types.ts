@@ -142,6 +142,7 @@ export type LessonChromeLabels = {
   backToList: string;
   exercisePosition: string;
   lessonProgressShort: string;
+  submitFailed: string;
 };
 
 export type LessonExerciseListLabels = {

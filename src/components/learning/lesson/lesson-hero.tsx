@@ -40,6 +40,7 @@ interface LessonHeroProps {
     | "stateLabels"
   >;
   isActiveExercise?: boolean;
+  isReviewingLesson?: boolean;
   onPrimaryAction?: () => void;
   className?: string;
 }
@@ -74,6 +75,7 @@ export function LessonHero({
   masteryLabel,
   labels,
   isActiveExercise,
+  isReviewingLesson,
   onPrimaryAction,
   className,
 }: LessonHeroProps) {
@@ -181,7 +183,10 @@ export function LessonHero({
               </div>
             </div>
 
-            {primaryCta.show && onPrimaryAction && !isActiveExercise && (
+            {primaryCta.show &&
+              onPrimaryAction &&
+              !isActiveExercise &&
+              !isReviewingLesson && (
               <Button
                 variant="quest"
                 size="lg"

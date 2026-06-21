@@ -105,6 +105,8 @@ export default async function LessonPage({ params }: LessonPageProps) {
     exercisesProgress: t("exercisesProgress"),
     nextSuggested: t("nextSuggested"),
     backToList: t("backToList"),
+    reviewExercisesSubtitle: t("reviewExercisesSubtitle"),
+    backToComplete: t("backToComplete"),
     exerciseTypeLabels,
   };
 
@@ -137,6 +139,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
     backToList: t("backToList"),
     exercisePosition: t("exercisePosition"),
     lessonProgressShort: t("lessonProgressShort"),
+    submitFailed: t("submitFailed"),
   };
 
   if (!viewModel.progress.isUnlocked) {

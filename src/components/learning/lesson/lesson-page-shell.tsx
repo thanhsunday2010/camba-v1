@@ -19,6 +19,7 @@ interface LessonPageShellProps {
   resolvedProgress: ResolvedLessonProgress;
   remainingExercisesLabel?: string;
   activeExerciseId?: string | null;
+  isReviewingLesson?: boolean;
   onPrimaryHeroAction?: () => void;
   onReviewLesson?: () => void;
   children: ReactNode;
@@ -32,6 +33,7 @@ export function LessonPageShell({
   resolvedProgress,
   remainingExercisesLabel,
   activeExerciseId,
+  isReviewingLesson = false,
   onPrimaryHeroAction,
   onReviewLesson,
   children,
@@ -75,6 +77,7 @@ export function LessonPageShell({
         resolvedProgress={resolvedProgress}
         masteryLabel={masteryLabel}
         isActiveExercise={isActiveExercise}
+        isReviewingLesson={isReviewingLesson}
         onPrimaryAction={onPrimaryHeroAction}
         labels={{
           estimatedMinutes: labels.estimatedMinutes,
@@ -104,7 +107,7 @@ export function LessonPageShell({
         />
       )}
 
-      {isLessonCompleteResolved && !isActiveExercise && (
+      {isLessonCompleteResolved && !isActiveExercise && !isReviewingLesson && (
         <LessonCompleteState
           completionPercentResolved={completionPercentResolved}
           serverProgress={progress}

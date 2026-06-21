@@ -63,7 +63,9 @@ interface LessonPlayerProps {
   onExerciseCompleted: (exerciseId: string) => void;
   resolvedProgress: ResolvedLessonProgress;
   activeExerciseId: string | null;
+  isReviewingLesson?: boolean;
   onActiveExerciseChange: (exerciseId: string | null) => void;
+  onExitReviewMode?: () => void;
   aiLabels: AiExerciseLabels;
   chromeLabels: LessonChromeLabels;
   listLabels: LessonExerciseListLabels & {
@@ -71,6 +73,7 @@ interface LessonPlayerProps {
     exercisesSubtitle: string;
     nextSuggested: string;
     backToList: string;
+    backToComplete?: string;
   };
 }
 
@@ -83,7 +86,9 @@ export function LessonPlayer({
   onExerciseCompleted,
   resolvedProgress,
   activeExerciseId,
+  isReviewingLesson = false,
   onActiveExerciseChange,
+  onExitReviewMode,
   aiLabels,
   chromeLabels,
   listLabels,
@@ -127,8 +132,11 @@ export function LessonPlayer({
       markExerciseCompleted(exerciseId);
       return result.data;
     }
-    throw new Error(result.error ?? "Submit failed");
+    throw new Error(result.error ?? chromeLabels.submitFailed);
   }
+
+  const showExerciseList =
+    !resolvedProgress.isLessonCompleteResolved || isReviewingLesson;
 
   if (activeExerciseId) {
     const activeIndex = exerciseIndexById.get(activeExerciseId);
@@ -213,7 +221,7 @@ export function LessonPlayer({
     }
   }
 
-  if (resolvedProgress.isLessonCompleteResolved) {
+  if (!showExerciseList) {
     return null;
   }
 
@@ -221,7 +229,16 @@ export function LessonPlayer({
     <LessonExerciseList
       summaries={exerciseSummaries}
       sessionCompletedIds={sessionCompletedExerciseIds}
-      nextSuggestedExerciseId={resolvedProgress.nextSuggestedExerciseId}
+      nextSuggestedExerciseId={
+        isReviewingLesson ? null : resolvedProgress.nextSuggestedExerciseId
+      }
+      isReviewMode={isReviewingLesson}
+      onExitReviewMode={onExitReviewMode}
+      exitReviewLabel={
+        isReviewingLesson && listLabels.backToComplete
+          ? listLabels.backToComplete
+          : undefined
+      }
       labels={listLabels}
       onSelectExercise={openExercise}
     />

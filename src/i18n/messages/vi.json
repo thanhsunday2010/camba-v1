@@ -337,6 +337,9 @@
       "lessonCompletePerformance": "Điểm chính xác và mức làm chủ phản ánh kết quả gần nhất trên hệ thống.",
       "exercisePosition": "Bài tập {current}/{total}",
       "lessonProgressShort": "{percent}% bài học",
+      "submitFailed": "Không nộp được bài. Vui lòng thử lại.",
+      "reviewExercisesSubtitle": "Chọn bài tập để ôn lại hoặc làm lại",
+      "backToComplete": "Quay lại kết quả bài học",
       "exerciseTypes": {
         "default": "Bài tập",
         "writing": "Viết",

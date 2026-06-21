@@ -337,6 +337,9 @@
       "lessonCompletePerformance": "Accuracy and mastery reflect your latest saved results.",
       "exercisePosition": "Exercise {current}/{total}",
       "lessonProgressShort": "{percent}% of lesson",
+      "submitFailed": "Could not submit. Please try again.",
+      "reviewExercisesSubtitle": "Choose an exercise to review or retry",
+      "backToComplete": "Back to lesson results",
       "exerciseTypes": {
         "default": "Exercise",
         "writing": "Writing",

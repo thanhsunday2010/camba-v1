@@ -79,14 +79,21 @@ export function LessonCompleteState({
         </div>
 
         <div className="flex flex-col sm:flex-row flex-wrap gap-2 pt-1">
-          {nextPathLesson && (
-            <Link href={`/learning/lesson/${nextPathLesson.id}`} className="w-full sm:w-auto">
-              <Button variant="quest" className="gap-2 w-full sm:w-auto">
+          {nextPathLesson ? (
+            <Button variant="quest" className="gap-2 w-full sm:w-auto" asChild>
+              <Link href={`/learning/lesson/${nextPathLesson.id}`}>
                 <Sparkles className="h-4 w-4" />
                 {labels.nextPathLesson.replace("{lesson}", nextPathLesson.title)}
                 <ArrowRight className="h-4 w-4" />
-              </Button>
-            </Link>
+              </Link>
+            </Button>
+          ) : (
+            <Button variant="quest" className="gap-2 w-full sm:w-auto" asChild>
+              <Link href="/learning">
+                {labels.backToPath}
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
           )}
           {onReviewLesson && (
             <Button
@@ -99,12 +106,14 @@ export function LessonCompleteState({
               {labels.retryLesson}
             </Button>
           )}
-          <Link href="/learning" className="w-full sm:w-auto">
-            <Button variant="ghost" className="gap-2 w-full sm:w-auto">
-              {labels.backToPath}
-              <ArrowRight className="h-4 w-4" />
+          {nextPathLesson && (
+            <Button variant="ghost" className="gap-2 w-full sm:w-auto" asChild>
+              <Link href="/learning">
+                {labels.backToPath}
+                <ArrowRight className="h-4 w-4" />
+              </Link>
             </Button>
-          </Link>
+          )}
         </div>
       </div>
     </CambaCard>

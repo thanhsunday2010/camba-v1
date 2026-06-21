@@ -24,6 +24,8 @@ interface LessonPageContentProps {
     nextSuggested: string;
     backToList: string;
     remainingExercises?: string;
+    reviewExercisesSubtitle?: string;
+    backToComplete?: string;
   };
   aiLabels: AiExerciseLabels;
   chromeLabels: LessonChromeLabels;
@@ -41,8 +43,10 @@ export function LessonPageContent({
     () => new Set(viewModel.completedExerciseIds)
   );
   const [activeExerciseId, setActiveExerciseId] = useState<string | null>(null);
+  const [isReviewingLesson, setIsReviewingLesson] = useState(false);
   const celebrate = useCelebrationOptional();
   const wasCompleteRef = useRef(false);
+  const prevLessonCompleteRef = useRef(false);
 
   const resolvedProgress = useMemo(
     () =>
@@ -65,28 +69,56 @@ export function LessonPageContent({
     wasCompleteRef.current = resolvedProgress.isLessonCompleteResolved;
   }, [resolvedProgress.isLessonCompleteResolved, celebrate]);
 
+  useEffect(() => {
+    const justCompleted =
+      resolvedProgress.isLessonCompleteResolved && !prevLessonCompleteRef.current;
+    if (justCompleted) {
+      setActiveExerciseId(null);
+      setIsReviewingLesson(false);
+    }
+    prevLessonCompleteRef.current = resolvedProgress.isLessonCompleteResolved;
+  }, [resolvedProgress.isLessonCompleteResolved]);
+
+  const enterReviewMode = useCallback(() => {
+    setIsReviewingLesson(true);
+    setActiveExerciseId(null);
+  }, []);
+
+  const exitReviewMode = useCallback(() => {
+    setIsReviewingLesson(false);
+    setActiveExerciseId(null);
+  }, []);
+
   const onExerciseCompleted = useCallback((exerciseId: string) => {
     setSessionCompletedExerciseIds((prev) => new Set([...prev, exerciseId]));
   }, []);
 
   const onPrimaryHeroAction = useCallback(() => {
+    if (resolvedProgress.isLessonCompleteResolved) {
+      enterReviewMode();
+      return;
+    }
+
     const targetId =
       resolvedProgress.nextSuggestedExerciseId ??
       resolvedProgress.nextIncompleteExerciseId;
     if (targetId) {
       setActiveExerciseId(targetId);
     } else {
-      setActiveExerciseId(null);
+      enterReviewMode();
     }
-  }, [resolvedProgress.nextSuggestedExerciseId, resolvedProgress.nextIncompleteExerciseId]);
+  }, [
+    enterReviewMode,
+    resolvedProgress.isLessonCompleteResolved,
+    resolvedProgress.nextSuggestedExerciseId,
+    resolvedProgress.nextIncompleteExerciseId,
+  ]);
 
-  const onReviewLesson = useCallback(() => {
-    setActiveExerciseId(null);
-  }, []);
-
-  const listSubtitle = listLabels.exercisesProgress
-    .replace("{completed}", String(resolvedProgress.completedCount))
-    .replace("{total}", String(resolvedProgress.totalExercises));
+  const listSubtitle = isReviewingLesson && listLabels.reviewExercisesSubtitle
+    ? listLabels.reviewExercisesSubtitle
+    : listLabels.exercisesProgress
+        .replace("{completed}", String(resolvedProgress.completedCount))
+        .replace("{total}", String(resolvedProgress.totalExercises));
 
   return (
     <LessonPageShell
@@ -96,8 +128,9 @@ export function LessonPageContent({
       resolvedProgress={resolvedProgress}
       remainingExercisesLabel={listLabels.remainingExercises}
       activeExerciseId={activeExerciseId}
+      isReviewingLesson={isReviewingLesson}
       onPrimaryHeroAction={onPrimaryHeroAction}
-      onReviewLesson={onReviewLesson}
+      onReviewLesson={enterReviewMode}
     >
       <LessonPlayer
         lessonId={viewModel.lesson.id}
@@ -108,7 +141,9 @@ export function LessonPageContent({
         onExerciseCompleted={onExerciseCompleted}
         resolvedProgress={resolvedProgress}
         activeExerciseId={activeExerciseId}
+        isReviewingLesson={isReviewingLesson}
         onActiveExerciseChange={setActiveExerciseId}
+        onExitReviewMode={exitReviewMode}
         aiLabels={aiLabels}
         chromeLabels={chromeLabels}
         listLabels={{

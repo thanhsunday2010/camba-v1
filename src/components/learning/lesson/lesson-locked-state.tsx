@@ -42,11 +42,9 @@ export function LessonLockedState({ labels, continueLessonHref }: LessonLockedSt
           }
           className="mt-4 text-left"
         />
-        <Link href="/learning" className="inline-block mt-6">
-          <Button variant="outline" className="w-full sm:w-auto">
-            {labels.backToPath}
-          </Button>
-        </Link>
+        <Button variant="outline" className="w-full sm:w-auto mt-6" asChild>
+          <Link href="/learning">{labels.backToPath}</Link>
+        </Button>
       </CambaCard>
     </div>
   );
