@@ -96,6 +96,7 @@ export interface Skill {
 }
 
 export interface LessonWithProgress extends Lesson {
+  exercise_count?: number;
   progress?: {
     completion_percent: number;
     accuracy_percent: number;

@@ -1,0 +1,1272 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by YLE Pre-A1 task formats only.",
+    "program": "cambridge-english",
+    "level": "starters",
+    "cefr": "pre-a1",
+    "unitNumber": 2,
+    "unitSlug": "numbers-and-time",
+    "unitTitle": "Numbers and Time",
+    "targetAge": "7-9",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Recognise and use numbers 1–20 in familiar contexts.",
+      "Ask and answer how old and how many questions.",
+      "Name days of the week and use today correctly.",
+      "Tell time using o'clock at Starters level.",
+      "Talk about birthdays with numbers and days."
+    ],
+    "grammarFocus": [
+      "Numbers 1–20",
+      "Question words: how many, how old",
+      "Days and months (recognition)"
+    ],
+    "readingSkillFocus": "Recognise Numbers and Days",
+    "listeningSkillFocus": "Extract Ages and Numbers"
+  },
+  "vocabularyBank": [
+    {
+      "word": "one",
+      "ipa": "/wʌn/",
+      "partOfSpeech": "number",
+      "vietnameseMeaning": "một",
+      "exampleSentence": "I have one cat.",
+      "difficulty": 1,
+      "topic": "numbers-and-time",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "two",
+      "ipa": "/tuː/",
+      "partOfSpeech": "number",
+      "vietnameseMeaning": "hai",
+      "exampleSentence": "She has two books.",
+      "difficulty": 1,
+      "topic": "numbers-and-time",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "three",
+      "ipa": "/θriː/",
+      "partOfSpeech": "number",
+      "vietnameseMeaning": "ba",
+      "exampleSentence": "There are three boys.",
+      "difficulty": 1,
+      "topic": "numbers-and-time",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "four",
+      "ipa": "/fɔː(r)/",
+      "partOfSpeech": "number",
+      "vietnameseMeaning": "bốn",
+      "exampleSentence": "I see four birds.",
+      "difficulty": 1,
+      "topic": "numbers-and-time",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "five",
+      "ipa": "/faɪv/",
+      "partOfSpeech": "number",
+      "vietnameseMeaning": "năm",
+      "exampleSentence": "He is five years old.",
+      "difficulty": 1,
+      "topic": "numbers-and-time",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "ten",
+      "ipa": "/ten/",
+      "partOfSpeech": "number",
+      "vietnameseMeaning": "mười",
+      "exampleSentence": "Ten children are here.",
+      "difficulty": 1,
+      "topic": "numbers-and-time",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.09,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "twenty",
+      "ipa": "/ˈtwenti/",
+      "partOfSpeech": "number",
+      "vietnameseMeaning": "hai mươi",
+      "exampleSentence": "Twenty students are in the class.",
+      "difficulty": 1,
+      "topic": "numbers-and-time",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "Monday",
+      "ipa": "/ˈmʌndeɪ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "thứ Hai",
+      "exampleSentence": "School starts on Monday.",
+      "difficulty": 1,
+      "topic": "numbers-and-time",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "Tuesday",
+      "ipa": "/ˈtjuːzdeɪ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "thứ Ba",
+      "exampleSentence": "Today is Tuesday.",
+      "difficulty": 1,
+      "topic": "numbers-and-time",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "today",
+      "ipa": "/təˈdeɪ/",
+      "partOfSpeech": "adverb",
+      "vietnameseMeaning": "hôm nay",
+      "exampleSentence": "Today is my birthday.",
+      "difficulty": 1,
+      "topic": "numbers-and-time",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "birthday",
+      "ipa": "/ˈbɜːθdeɪ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "sinh nhật",
+      "exampleSentence": "My birthday is in May.",
+      "difficulty": 1,
+      "topic": "numbers-and-time",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "o'clock",
+      "ipa": "/əˈklɒk/",
+      "partOfSpeech": "adverb",
+      "vietnameseMeaning": "giờ đúng (… giờ)",
+      "exampleSentence": "We eat at six o'clock.",
+      "difficulty": 1,
+      "topic": "numbers-and-time",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Numbers 1–20",
+      "explanation": "Use numbers to count people, things and to say age. Numbers one to twenty are core at Starters level.",
+      "examples": [
+        "I am seven.",
+        "There are three cats.",
+        "She is ten years old."
+      ],
+      "commonMistakes": [
+        "I have seven year (×) → I am seven years old (✓)",
+        "three cat (×) → three cats (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "numbers-and-time"
+    },
+    {
+      "structure": "Question words: how many, how old",
+      "explanation": "Use how many to ask about quantity (countable things). Use how old to ask about age.",
+      "examples": [
+        "How many books? — Three books.",
+        "How old are you? — I am eight."
+      ],
+      "commonMistakes": [
+        "How many years you? (×) → How old are you? (✓)",
+        "How old books? (×) → How many books? (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "numbers-and-time"
+    },
+    {
+      "structure": "Days and months (recognition)",
+      "explanation": "Recognise days of the week and months. Use today for the current day. Birthday often includes a day or month.",
+      "examples": [
+        "Today is Monday.",
+        "My birthday is on Tuesday.",
+        "January is a month."
+      ],
+      "commonMistakes": [
+        "Today is Monday? (statement) → Today is Monday. (✓)",
+        "on Tuesday birthday (×) → My birthday is on Tuesday. (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "numbers-and-time"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-numbers-and-days",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Numbers and Days",
+      "learningObjective": "Recognise and understand twelve number and time words at Starters level.",
+      "estimatedMinutes": 12,
+      "unlockAfterLessonId": "e2000001-0000-4000-8000-000000000006",
+      "exercises": [
+        {
+          "slug": "vocab-number-words",
+          "title": "Number Word Match",
+          "instructions": "Read each sentence. Choose the best word or number.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.2,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Monday, Tuesday, Wednesday — these are _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Monday and Tuesday are days of the week. Numbers count things; birthday is one special day.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "numbers",
+                  "isCorrect": false,
+                  "distractorNote": "Days are not numbers"
+                },
+                {
+                  "text": "days",
+                  "isCorrect": true
+                },
+                {
+                  "text": "birthdays",
+                  "isCorrect": false,
+                  "distractorNote": "One event, not a list of weekdays"
+                }
+              ]
+            },
+            {
+              "questionText": "You eat cake and get presents on your _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Birthday is the day you were born; people celebrate with cake and gifts.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.15,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "today",
+                  "isCorrect": false,
+                  "distractorNote": "Today means this day, not the celebration"
+                },
+                {
+                  "text": "birthday",
+                  "isCorrect": true
+                },
+                {
+                  "text": "o'clock",
+                  "isCorrect": false,
+                  "distractorNote": "Tells time, not a celebration"
+                }
+              ]
+            },
+            {
+              "questionText": "School starts at eight _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "O'clock comes after a number to tell the hour: eight o'clock.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.16,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Monday",
+                  "isCorrect": false,
+                  "distractorNote": "Day name, not time"
+                },
+                {
+                  "text": "o'clock",
+                  "isCorrect": true
+                },
+                {
+                  "text": "twenty",
+                  "isCorrect": false,
+                  "distractorNote": "Number without time marker"
+                }
+              ]
+            },
+            {
+              "questionText": "2 + 1 = _____",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Two plus one equals three. Learners sometimes confuse three and ten because both start with t.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "ten",
+                  "isCorrect": false,
+                  "distractorNote": "Same initial letter; wrong sum"
+                },
+                {
+                  "text": "three",
+                  "isCorrect": true
+                },
+                {
+                  "text": "two",
+                  "isCorrect": false,
+                  "distractorNote": "One of the numbers in the sum, not the answer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-numbers-matching",
+          "title": "Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the number and time words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Each word has one clear meaning. Ten and twenty are often confused by young learners.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "five",
+                  "right": "the number after four"
+                },
+                {
+                  "left": "ten",
+                  "right": "one more than nine"
+                },
+                {
+                  "left": "today",
+                  "right": "this day, now"
+                },
+                {
+                  "left": "Tuesday",
+                  "right": "the day after Monday"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-how-many-how-old",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e2000002-0000-4000-8000-000000000001",
+      "title": "Lesson 2: How Many? How Old?",
+      "learningObjective": "Use how many and how old to ask about quantity and age with numbers 1–20.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "grammar-question-words",
+          "title": "Choose How Many or How Old",
+          "instructions": "Choose the correct question word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "_____ are you? — I am nine.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "How old asks about age. The answer I am nine confirms this.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "How many",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about count of things, not age"
+                },
+                {
+                  "text": "How old",
+                  "isCorrect": true
+                },
+                {
+                  "text": "What",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about identity or things"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ cats do you have? — I have two cats.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "How many asks about the number of countable nouns (cats).",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "How old",
+                  "isCorrect": false,
+                  "distractorNote": "Age question, not quantity"
+                },
+                {
+                  "text": "How many",
+                  "isCorrect": true
+                },
+                {
+                  "text": "How",
+                  "isCorrect": false,
+                  "distractorNote": "Incomplete question word for counting"
+                }
+              ]
+            },
+            {
+              "questionText": "She is _____ years old.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Ten is a common Starters age number. Use a number before years old.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Monday",
+                  "isCorrect": false,
+                  "distractorNote": "Day, not a number"
+                },
+                {
+                  "text": "ten",
+                  "isCorrect": true
+                },
+                {
+                  "text": "today",
+                  "isCorrect": false,
+                  "distractorNote": "Time adverb, not age"
+                }
+              ]
+            },
+            {
+              "questionText": "There are _____ books on the desk.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Three is the number for counting books. Twenty is too many for a small desk picture at Starters.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "twenty",
+                  "isCorrect": false,
+                  "distractorNote": "Plausible but unlikely in simple Starters context"
+                },
+                {
+                  "text": "three",
+                  "isCorrect": true
+                },
+                {
+                  "text": "o'clock",
+                  "isCorrect": false,
+                  "distractorNote": "Time word, not quantity"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-numbers-gap-fill",
+          "title": "Complete with Numbers",
+          "instructions": "Complete the sentences with the correct numbers.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: I am [0] years old. | I have [1] brothers. | School is at [2] o'clock.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "Seven for age, two brothers (small family), eight o'clock for school time — all typical Starters contexts.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "I am [0] years old. I have [1] brothers. School is at [2] o'clock.",
+                "correctAnswers": [
+                  "seven",
+                  "two",
+                  "eight"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "seven",
+                    "7"
+                  ],
+                  [
+                    "two",
+                    "2"
+                  ],
+                  [
+                    "eight",
+                    "8"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-toms-birthday",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e2000002-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Tom's Birthday",
+      "learningObjective": "Read a short text with numbers and days and answer questions about main idea, details and vocabulary.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "reading-birthday-passage",
+          "title": "Read: Tom's Birthday",
+          "instructions": "Read the text. Then answer the questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.95,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Tom's Birthday",
+              "text": "Hello! My name is Tom. I am seven years old. My birthday is on Monday.\n\nToday is Tuesday. I am at school. I have two friends. Their names are Ben and Kim. Ben is ten. Kim is five.\n\nWe go home at four o'clock. On Monday I had five candles on my cake. I was very happy!",
+              "wordCount": 56,
+              "imagePrompt": "A boy with a birthday cake showing five candles; a calendar with Monday circled; a clock showing four o'clock."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main idea of the text?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "main_idea",
+              "points": 1,
+              "explanation": "Tom talks about his age, birthday on Monday, friends' ages, and time — all about numbers and days.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Tom tells us about his birthday, friends and times.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Tom describes his favourite animal.",
+                  "isCorrect": false,
+                  "distractorNote": "No animals in the text"
+                },
+                {
+                  "text": "Tom talks about sports at school.",
+                  "isCorrect": false,
+                  "distractorNote": "School is mentioned but not sports"
+                }
+              ]
+            },
+            {
+              "questionText": "How old is Tom?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "detail",
+              "points": 1,
+              "explanation": "The text says: I am seven years old.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Seven years old",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Ten years old",
+                  "isCorrect": false,
+                  "distractorNote": "Ben's age, not Tom's"
+                },
+                {
+                  "text": "Five years old",
+                  "isCorrect": false,
+                  "distractorNote": "Kim's age, not Tom's"
+                }
+              ]
+            },
+            {
+              "questionText": "Why does Tom say 'Today is Tuesday'?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "inference",
+              "points": 1,
+              "explanation": "His birthday was Monday (yesterday); today he is at school on Tuesday.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "His birthday was yesterday; now it is the next day.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Tuesday is his birthday.",
+                  "isCorrect": false,
+                  "distractorNote": "Birthday is Monday, not Tuesday"
+                },
+                {
+                  "text": "He does not know the day.",
+                  "isCorrect": false,
+                  "distractorNote": "He states the day clearly"
+                }
+              ]
+            },
+            {
+              "questionText": "In 'We go home at four o'clock', what does o'clock mean?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "vocabulary_in_context",
+              "points": 1,
+              "explanation": "O'clock tells the hour — they go home at four on the clock.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.33,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "It tells the time on the clock.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "It means four days.",
+                  "isCorrect": false,
+                  "distractorNote": "Confuses number with duration"
+                },
+                {
+                  "text": "It is a day of the week.",
+                  "isCorrect": false,
+                  "distractorNote": "Days are Monday, Tuesday, etc."
+                }
+              ]
+            },
+            {
+              "questionText": "Put the ideas in order: (1) Tom tells his age and birthday day (2) Tom describes today and his friends at school (3) Tom talks about going home and his birthday cake",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "sequencing",
+              "points": 1,
+              "explanation": "Văn bản đi theo thứ tự: tuổi và sinh nhật → hôm nay ở trường với bạn → giờ về nhà và bánh sinh nhật.",
+              "qualityScores": {
+                "quality": 0.88,
+                "difficulty": 0.4,
+                "curriculumAlignment": 0.93,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": true
+                },
+                {
+                  "text": "2 → 1 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Tuổi và sinh nhật xuất hiện trước phần hôm nay ở trường"
+                },
+                {
+                  "text": "3 → 2 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Thứ tự đảo ngược"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-ages-at-school",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e2000002-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Ages at School",
+      "learningObjective": "Listen to short conversations and identify ages, numbers and times.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "listening-classroom-dialogue",
+          "title": "Listen: In the Classroom",
+          "instructions": "Listen to the conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "In the Classroom",
+              "setting": "A classroom on Tuesday morning",
+              "speakers": [
+                {
+                  "name": "Teacher",
+                  "role": "adult"
+                },
+                {
+                  "name": "Lily",
+                  "role": "girl, 8"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Teacher",
+                  "text": "Hello, Lily. How old are you?"
+                },
+                {
+                  "speaker": "Lily",
+                  "text": "I am eight years old."
+                },
+                {
+                  "speaker": "Teacher",
+                  "text": "How many pencils do you have?"
+                },
+                {
+                  "speaker": "Lily",
+                  "text": "I have three pencils."
+                },
+                {
+                  "speaker": "Teacher",
+                  "text": "Good. What day is it today?"
+                },
+                {
+                  "speaker": "Lily",
+                  "text": "Today is Tuesday."
+                },
+                {
+                  "speaker": "Teacher",
+                  "text": "When does school finish?"
+                },
+                {
+                  "speaker": "Lily",
+                  "text": "At three o'clock."
+                }
+              ],
+              "audioNotes": "Clear, slow delivery with short pauses. Total duration approx. 40 seconds."
+            },
+            "answerKey": {
+              "q1": "eight",
+              "q2": "three",
+              "q3": "Tuesday",
+              "q4": "three o'clock"
+            },
+            "audioUrl": "/audio/listening/starters/unit-02/listening-classroom-dialogue.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "How old is Lily?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Lily says: I am eight years old.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Eight years old",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Three years old",
+                  "isCorrect": false,
+                  "distractorNote": "Number of pencils, not age"
+                },
+                {
+                  "text": "Ten years old",
+                  "isCorrect": false,
+                  "distractorNote": "Plausible age not in audio"
+                }
+              ]
+            },
+            {
+              "questionText": "How many pencils does Lily have?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Lily says: I have three pencils.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Three",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Eight",
+                  "isCorrect": false,
+                  "distractorNote": "Her age, not pencil count"
+                },
+                {
+                  "text": "Two",
+                  "isCorrect": false,
+                  "distractorNote": "Plausible small number not stated"
+                }
+              ]
+            },
+            {
+              "questionText": "What day is it today?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Lily says: Today is Tuesday.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Tuesday",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Monday",
+                  "isCorrect": false,
+                  "distractorNote": "Adjacent day; common confusion"
+                },
+                {
+                  "text": "Today",
+                  "isCorrect": false,
+                  "distractorNote": "Word from question, not the day name"
+                }
+              ]
+            },
+            {
+              "questionText": "When does school finish?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Lily says: At three o'clock.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "At three o'clock",
+                  "isCorrect": true
+                },
+                {
+                  "text": "At eight o'clock",
+                  "isCorrect": false,
+                  "distractorNote": "Common school start time, not finish"
+                },
+                {
+                  "text": "On Tuesday",
+                  "isCorrect": false,
+                  "distractorNote": "Day, not time"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-my-age-and-day",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e2000002-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Write About Age and Time",
+      "learningObjective": "Write short phrases about age, day and time using Starters numbers and time words.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "writing-numbers-time",
+          "title": "Writing: My Age and Day",
+          "instructions": "Write short answers. Use 1–6 words for each answer.",
+          "exerciseType": "writing",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Look at the picture of a child with a clock and calendar. Write short answers to the three questions.",
+            "prompts": [
+              "1. How old are you? (Write: I am _____ years old.)",
+              "2. What day is today? (Write: Today is _____.)",
+              "3. What time is it? (Write: It is _____ o'clock.)"
+            ],
+            "expectedLength": "3 short answers; 1–6 words each",
+            "successCriteria": [
+              "All three prompts are answered",
+              "Uses at least one number and one day or time word from the unit",
+              "Uses I am or It is correctly",
+              "Spelling of numbers and days is recognisable"
+            ],
+            "modelAnswer": {
+              "answers": [
+                "I am eight years old.",
+                "Today is Monday.",
+                "It is four o'clock."
+              ]
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.3,
+                "criteria": "Correct use of I am / It is and years old / o'clock patterns."
+              },
+              "vocabulary": {
+                "weight": 0.3,
+                "criteria": "Uses numbers, days or time words from the unit accurately."
+              },
+              "organization": {
+                "weight": 0.2,
+                "criteria": "Answers match the prompts in order; each answer is clear."
+              },
+              "taskAchievement": {
+                "weight": 0.2,
+                "criteria": "All parts completed; length appropriate for Starters."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your answers to the three prompts in the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Accept any response meeting success criteria. Model answer shows expected range.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-numbers-time",
+                "autoCheckKeywords": [
+                  "I",
+                  "am",
+                  "years",
+                  "old",
+                  "Today",
+                  "is",
+                  "Monday",
+                  "Tuesday",
+                  "o'clock",
+                  "one",
+                  "two",
+                  "three",
+                  "four",
+                  "five",
+                  "ten"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-talk-about-age",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e2000002-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Age and Time",
+      "learningObjective": "Answer simple questions about age, numbers, days and time with words and short phrases.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "speaking-numbers-interview",
+          "title": "Speaking: Numbers Interview",
+          "instructions": "Answer the examiner's questions. Say at least one word for each question.",
+          "exerciseType": "speaking",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "prompt": "The examiner will ask you about your age, numbers and time. Look at the clock and calendar picture if you have one.",
+            "pictureDescription": "A simple picture showing a clock at three o'clock and a calendar with Tuesday circled.",
+            "followUpQuestions": [
+              "How old are you?",
+              "How many fingers can you show on one hand?",
+              "What day is today?",
+              "Is your birthday in January or in summer? (Say a month or season you know.)",
+              "What time do you go to school? (Use o'clock.)"
+            ],
+            "suggestedAnswers": [
+              "I am seven.",
+              "Five.",
+              "Today is Tuesday.",
+              "January.",
+              "At seven o'clock."
+            ],
+            "assessmentCriteria": {
+              "pronunciation": "Numbers (one–ten) and days (Monday, Tuesday) are understandable.",
+              "fluency": "Responds without long silence; uses words or short phrases.",
+              "grammar": "Uses I am and numbers correctly in at least two answers.",
+              "vocabulary": "Uses at least three different unit words (numbers, days, time) correctly."
+            },
+            "maxDurationSeconds": 90
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the five follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "numbers-and-time",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 5,
+              "explanation": "Chấm theo bốn tiêu chí assessmentCriteria. Trả lời một phần vẫn được điểm tương ứng.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-numbers-interview",
+                "minimumResponses": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

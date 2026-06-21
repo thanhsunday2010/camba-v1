@@ -10,7 +10,7 @@
     "unitSlug": "services",
     "unitTitle": "Services",
     "targetAge": "11-14",
-    "curriculumMapVersion": "1.1.0",
+    "curriculumMapVersion": "1.2.0",
     "contentReview": {
       "reviewThreshold": 0.75,
       "defaultFlagBelowThreshold": true,
@@ -268,6 +268,7 @@
     {
       "slug": "vocab-services-words",
       "skill": "vocabulary",
+      "lessonIndex": 0,
       "sortOrder": 0,
       "title": "Lesson 1: Services Words",
       "learningObjective": "Recognise and understand twelve words for banks, post offices and other everyday services at KET A2 level.",
@@ -752,12 +753,156 @@
               }
             }
           ]
+        },
+        {
+          "slug": "vocab-services-review",
+          "title": "Review: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "You pay for stamps and letters at the post office _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Counter (quầy giao dịch) là nơi trả tiền. Appointment là cuộc hẹn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "appointment",
+                  "isCorrect": false,
+                  "distractorNote": "A booked time"
+                },
+                {
+                  "text": "counter",
+                  "isCorrect": true
+                },
+                {
+                  "text": "registration",
+                  "isCorrect": false,
+                  "distractorNote": "Signing up"
+                }
+              ]
+            },
+            {
+              "questionText": "If the service was bad, you might make a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Complaint (khiếu nại) khi dịch vụ không tốt. Postage là phí gửi thư.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "postage",
+                  "isCorrect": false,
+                  "distractorNote": "Mail cost"
+                },
+                {
+                  "text": "complaint",
+                  "isCorrect": true
+                },
+                {
+                  "text": "bank account",
+                  "isCorrect": false,
+                  "distractorNote": "Where money is kept"
+                }
+              ]
+            },
+            {
+              "questionText": "Before you open a bank account, you often fill in a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Form (mẫu đơn) cần điền khi mở tài khoản. Queue là hàng đợi.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "queue",
+                  "isCorrect": false,
+                  "distractorNote": "People waiting in line"
+                },
+                {
+                  "text": "form",
+                  "isCorrect": true
+                },
+                {
+                  "text": "receipt",
+                  "isCorrect": false,
+                  "distractorNote": "Proof you already paid"
+                }
+              ]
+            },
+            {
+              "questionText": "Wait at _____ until the clerk calls your name.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Reception (lễ tân) là nơi chờ và hỏi thông tin. Refund là hoàn tiền.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "refund",
+                  "isCorrect": false,
+                  "distractorNote": "Money back"
+                },
+                {
+                  "text": "reception",
+                  "isCorrect": true
+                },
+                {
+                  "text": "postage",
+                  "isCorrect": false,
+                  "distractorNote": "Letter cost"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "grammar-modals-register",
       "skill": "grammar",
+      "lessonIndex": 0,
       "sortOrder": 1,
       "unlockAfterLessonId": "e5000008-0000-4000-8000-000000000001",
       "title": "Lesson 2: Modals and Register",
@@ -1286,12 +1431,156 @@
               "levelTag": "ket"
             }
           ]
+        },
+        {
+          "slug": "grammar-modals-review",
+          "title": "Review: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.38,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Dear Sir, I am writing to _____ about the long queue yesterday.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "complain — động từ trang trọng trong thư khiếu nại.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "complaint",
+                  "isCorrect": false,
+                  "distractorNote": "Noun, not verb after to"
+                },
+                {
+                  "text": "complain",
+                  "isCorrect": true
+                },
+                {
+                  "text": "complaining",
+                  "isCorrect": false,
+                  "distractorNote": "Gerund less natural after to here"
+                }
+              ]
+            },
+            {
+              "questionText": "You _____ smoke in the medical centre reception area.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "must not / can't — cấm. Must alone means obligation.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "must",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite meaning"
+                },
+                {
+                  "text": "must not",
+                  "isCorrect": true
+                },
+                {
+                  "text": "have",
+                  "isCorrect": false,
+                  "distractorNote": "Incomplete"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ you help me with this registration form?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Could — lịch sự hơn Can trong tình huống trang trọng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Must",
+                  "isCorrect": false,
+                  "distractorNote": "Obligation, not request"
+                },
+                {
+                  "text": "Could",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Have to",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong structure for request"
+                }
+              ]
+            },
+            {
+              "questionText": "Which reply is appropriate at a bank counter?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "I would like to open a bank account, please — formal và lịch sự.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Open me account now.",
+                  "isCorrect": false,
+                  "distractorNote": "Grammatically wrong and rude"
+                },
+                {
+                  "text": "I would like to open a bank account, please.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Yo, bank stuff.",
+                  "isCorrect": false,
+                  "distractorNote": "Very informal"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "reading-service-messages",
       "skill": "reading",
+      "lessonIndex": 0,
       "sortOrder": 2,
       "unlockAfterLessonId": "e5000008-0000-4000-8000-000000000002",
       "title": "Lesson 3: Service Messages",
@@ -1621,12 +1910,102 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "reading-services-review",
+          "title": "Review: Main Idea and Order",
+          "instructions": "Read the messages one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Which Service Do You Need?",
+              "text": "CITY HELP DESK — FOUR SHORT MESSAGES\n\nMessage A — Bank\nNeed a new bank account? Visit the counter on Floor 2 with your ID and proof of address. You must complete a registration form before the bank can open your account. Appointments are available on weekdays.\n\nMessage B — Post Office\nStandard postage for a small letter is £1.20. Keep your receipt if you send something valuable. You can buy stamps at the counter or use the self-service machine near reception.\n\nMessage C — Medical Centre\nFor a routine appointment, call reception before 4 p.m. If you have a complaint about waiting times, speak to the manager at the enquiry desk. You must bring your registration card to every visit.\n\nMessage D — Council Office\nLost your parking permit? Make an enquiry online or at the help desk. You have to pay a small fee and show your receipt from the last payment. Registration for new residents opens every Monday morning.",
+              "wordCount": 162,
+              "imagePrompt": "Four short official notices on a help desk board about bank, post office, medical centre and council services; clean A2 infographic style."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main purpose of all four messages?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Mỗi tin nhắn hướng dẫn người dùng dịch vụ công cộng phải làm gì.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "To advertise a concert",
+                  "isCorrect": false,
+                  "distractorNote": "Not entertainment"
+                },
+                {
+                  "text": "To tell people what to do at different services",
+                  "isCorrect": true
+                },
+                {
+                  "text": "To sell bank accounts online",
+                  "isCorrect": false,
+                  "distractorNote": "Not sales advertising"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the steps for opening a bank account in order: (1) Complete form (2) Visit counter (3) Bring ID",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Message A: visit with ID → complete registration form → account opened.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "sequencing",
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Form before visit in text"
+                },
+                {
+                  "text": "2 → 1 → (account opened)",
+                  "isCorrect": true
+                },
+                {
+                  "text": "3 → 1 → 2",
+                  "isCorrect": false,
+                  "distractorNote": "ID is needed when you visit"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "listening-service-calls",
       "skill": "listening",
+      "lessonIndex": 0,
       "sortOrder": 3,
       "unlockAfterLessonId": "e5000008-0000-4000-8000-000000000003",
       "title": "Lesson 4: Service Calls",
@@ -2022,8 +2401,7 @@
             },
             "answerKey": {
               "matching": true
-            },
-            "audioUrl": "/audio/listening/ket/unit-08/listening-services-apply.mp3"
+            }
           },
           "questions": [
             {
@@ -2057,12 +2435,128 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "listening-bank-review",
+          "title": "Review: Bank Enquiry Call",
+          "instructions": "Listen to a new call. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Bank Enquiry Call",
+              "setting": "Phone call to a high street bank",
+              "speakers": [
+                {
+                  "name": "Bank clerk",
+                  "role": "customer service"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Bank clerk",
+                  "text": "Hello, Riverside Bank. This is customer services. How may I help you today?"
+                },
+                {
+                  "speaker": "Bank clerk",
+                  "text": "To open a bank account, you have to visit a branch with your ID. You could also start registration online first."
+                },
+                {
+                  "speaker": "Bank clerk",
+                  "text": "If you have a complaint about a charge, please keep your receipt and we will check it."
+                },
+                {
+                  "speaker": "Bank clerk",
+                  "text": "You can speak to someone at the enquiry desk on Monday from nine to five. Thank you for calling."
+                }
+              ],
+              "audioNotes": "Formal telephone voice, steady pace, light office background. Approx. 45 seconds."
+            },
+            "answerKey": {
+              "q1": "visit branch with ID",
+              "q2": "keep receipt"
+            },
+            "audioUrl": "/audio/listening/ket/unit-08/listening-bank-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What do you have to do to open a bank account?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "You have to visit a branch with your ID.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Only register online",
+                  "isCorrect": false,
+                  "distractorNote": "Online is optional first step"
+                },
+                {
+                  "text": "Visit a branch with your ID",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Send a letter with postage",
+                  "isCorrect": false,
+                  "distractorNote": "Post office action"
+                }
+              ]
+            },
+            {
+              "questionText": "What should you keep if you have a complaint about a charge?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Please keep your receipt and we will check it.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Your registration card",
+                  "isCorrect": false,
+                  "distractorNote": "Medical card"
+                },
+                {
+                  "text": "Your receipt",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The enquiry form only",
+                  "isCorrect": false,
+                  "distractorNote": "Not enough alone"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "writing-service-complaint",
       "skill": "writing",
+      "lessonIndex": 0,
       "sortOrder": 4,
       "unlockAfterLessonId": "e5000008-0000-4000-8000-000000000004",
       "title": "Lesson 5: Write About a Service Problem",
@@ -2379,12 +2873,100 @@
               }
             }
           ]
+        },
+        {
+          "slug": "writing-services-review",
+          "title": "Review: Message About a Service Problem",
+          "instructions": "Write a message to a service manager. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "You visited the post office yesterday. You paid the wrong postage and waited in a long queue. Write a formal message to the manager.",
+            "prompts": [
+              "Say why you are writing.",
+              "Explain the problem with the postage or queue.",
+              "Say what you would like (for example a refund or help).",
+              "End the message politely."
+            ],
+            "expectedLength": "At least 25 words",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Clear reason for writing",
+              "Polite formal tone",
+              "Appropriate opening and closing",
+              "Uses at least two unit vocabulary words"
+            ],
+            "modelAnswer": {
+              "text": "Dear Manager,\n\nI am writing to make a complaint about my visit yesterday. I paid the wrong postage at the counter and I had to wait in a long queue. I have my receipt and I would like a refund, please. Could you help me with this enquiry?\n\nThank you,\nMinh"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses can/could/must/have to or formal phrases correctly."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses services words (complaint, receipt, queue, postage) appropriately."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Message has greeting, body and polite closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Explains the problem and says what you want; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your response following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Bài mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-services-check",
+                "autoCheckKeywords": [
+                  "dear",
+                  "complaint",
+                  "receipt",
+                  "postage",
+                  "queue",
+                  "refund",
+                  "thank",
+                  "enquiry"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
         }
       ]
     },
     {
       "slug": "speaking-using-services",
       "skill": "speaking",
+      "lessonIndex": 0,
       "sortOrder": 5,
       "unlockAfterLessonId": "e5000008-0000-4000-8000-000000000005",
       "title": "Lesson 6: Talk About Using Services",
@@ -2585,7 +3167,7 @@
               "content": {
                 "assessmentCriteriaRef": "speaking-services-check",
                 "minimumResponses": 4,
-                "maxDurationSeconds": 120
+                "maxDurationSeconds": 60
               }
             }
           ]
@@ -2666,6 +3248,47 @@
                   "distractorNote": "Wrong vocabulary"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-services-review",
+          "title": "Review: Interview About Services",
+          "instructions": "Answer the examiner's questions. Record your answers.",
+          "exerciseType": "speaking",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "services",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-services-check",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 60
+              }
             }
           ]
         }

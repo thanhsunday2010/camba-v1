@@ -5,6 +5,8 @@ export interface CurriculumUnitEntry {
   skillName: string;
   skillSortOrder: number;
   lessons: LessonWithProgress[];
+  lessonCount: number;
+  exerciseCount: number;
 }
 
 export interface CurriculumUnitGroup {
@@ -14,6 +16,7 @@ export interface CurriculumUnitGroup {
   unitNumber: number;
   entries: CurriculumUnitEntry[];
   lessonCount: number;
+  exerciseCount: number;
   hasContent: boolean;
 }
 
@@ -45,21 +48,29 @@ export function pivotSkillsToCurriculumUnits(skills: Skill[]): CurriculumUnitGro
           unitNumber,
           entries: [],
           lessonCount: 0,
+          exerciseCount: 0,
           hasContent: false,
         });
       }
 
       const group = groupMap.get(key)!;
       const lessons = unit.lessons ?? [];
+      const entryExerciseCount = lessons.reduce(
+        (sum, lesson) => sum + (lesson.exercise_count ?? 0),
+        0
+      );
 
       group.entries.push({
         skillSlug: skill.slug,
         skillName: skill.name,
         skillSortOrder: skill.sort_order,
         lessons,
+        lessonCount: lessons.length,
+        exerciseCount: entryExerciseCount,
       });
 
       group.lessonCount += lessons.length;
+      group.exerciseCount += entryExerciseCount;
       if (lessons.length > 0) group.hasContent = true;
     }
   }

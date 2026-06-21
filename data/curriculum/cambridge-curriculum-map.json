@@ -1,11 +1,22 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
+  "contentStructure": {
+    "version": "2.0.0",
+    "lessonsPerSkill": 3,
+    "exercisesPerLesson": 5,
+    "skillsPerUnit": 6,
+    "exercisePhases": ["Learn", "Practice", "Check", "Apply", "Review"],
+    "minimumLessonsPerUnit": 18,
+    "minimumExercisesPerUnit": 90,
+    "migrationNote": "Legacy units (6 lessons × 2–4 exercises) expand via generate-starters-units.mjs or generate-ket-units.mjs. Gold standard: starters unit-01."
+  },
   "program": {
     "slug": "cambridge-english",
     "name": "Cambridge English Exam Preparation"
   },
   "notes": [
-    "Unit-level breakdown (vocabulary, grammar, skills per unit) is included for all levels. Lessons and exercises are not included.",
+    "Unit-level breakdown (vocabulary, grammar, skills per unit) is included for all levels.",
+    "Content structure (3 lessons × 6 skills × 5 exercises) is defined in contentStructure — see unit-content-authoring rules.",
     "Recommended unit counts: Starters 10, Movers 10, Flyers 12, KET 12, PET 14 — aligned to theme coverage and vocabulary density per level.",
     "Per-unit vocabulary arrays are sample anchors; full word lists should expand toward unitPlan.approximateVocabularyPerUnit during content authoring.",
     "YLE levels (Starters, Movers, Flyers) align with Cambridge Young Learners exams.",

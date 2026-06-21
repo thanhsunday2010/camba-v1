@@ -43,6 +43,7 @@ function LessonRow({
   const isUnlocked = isLessonUnlockedFromProgress(lesson.progress);
   const mastery = lesson.progress?.mastery_level ?? 0;
   const isComplete = (lesson.progress?.completion_percent ?? 0) >= 100;
+  const exerciseCount = lesson.exercise_count ?? 0;
 
   return (
     <Link
@@ -63,6 +64,12 @@ function LessonRow({
       <div className="flex-1 min-w-0">
         <p className="text-sm font-medium text-gray-900 truncate">{lesson.title}</p>
         <p className="text-xs text-gray-500">
+          {exerciseCount > 0 && (
+            <>
+              {t("lessonExerciseCount", { count: exerciseCount })}
+              {" • "}
+            </>
+          )}
           {lesson.estimated_minutes} {t("minutes")}
           {lesson.progress && (
             <span className={cn("ml-2", masteryColors[mastery])}>
@@ -147,9 +154,19 @@ export function LearningUnitPath({
                 <div className="flex-1 min-w-0">
                   <p className="font-semibold text-gray-900 truncate">{unit.title}</p>
                   <p className="text-xs text-gray-500 mt-0.5">
-                    {unit.hasContent
-                      ? t("unitLessonCount", { count: unit.lessonCount })
-                      : t("unitComingSoon")}
+                    {unit.hasContent ? (
+                      <>
+                        {t("unitLessonCount", { count: unit.lessonCount })}
+                        {unit.exerciseCount > 0 && (
+                          <>
+                            {" • "}
+                            {t("unitExerciseCount", { count: unit.exerciseCount })}
+                          </>
+                        )}
+                      </>
+                    ) : (
+                      t("unitComingSoon")
+                    )}
                   </p>
                 </div>
                 {!unit.hasContent && (
@@ -172,6 +189,15 @@ export function LearningUnitPath({
                     <div key={entry.skillSlug}>
                       <h4 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-1.5">
                         {entry.skillName}
+                        {entry.lessonCount > 0 && (
+                          <span className="font-normal normal-case text-gray-400 ml-2">
+                            ({t("unitLessonCount", { count: entry.lessonCount })}
+                            {entry.exerciseCount > 0 && (
+                              <> • {t("unitExerciseCount", { count: entry.exerciseCount })}</>
+                            )}
+                            )
+                          </span>
+                        )}
                       </h4>
                       {entry.lessons.length > 0 ? (
                         <div className="space-y-1">

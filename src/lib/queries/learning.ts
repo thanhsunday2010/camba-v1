@@ -74,6 +74,25 @@ export async function getLearningPath(
         .order("sort_order")
     : { data: [] as Lesson[] };
 
+  const lessonIds = lessons?.map((lesson) => lesson.id) ?? [];
+  const exerciseCountMap = new Map<string, number>();
+
+  if (lessonIds.length > 0) {
+    const { data: exerciseRows } = await supabase
+      .from("exercises")
+      .select("lesson_id")
+      .in("lesson_id", lessonIds)
+      .eq("is_active", true)
+      .eq("status", "published");
+
+    for (const row of exerciseRows ?? []) {
+      exerciseCountMap.set(
+        row.lesson_id,
+        (exerciseCountMap.get(row.lesson_id) ?? 0) + 1
+      );
+    }
+  }
+
   const progressMap = new Map(allProgress.map((p) => [p.lesson_id, p]));
   const unitsBySkill = new Map<string, Unit[]>();
   const lessonsByUnit = new Map<string, LessonWithProgress[]>();
@@ -88,6 +107,7 @@ export async function getLearningPath(
     const progress = progressMap.get(lesson.id);
     const lessonWithProgress: LessonWithProgress = {
       ...lesson,
+      exercise_count: exerciseCountMap.get(lesson.id) ?? 0,
       progress: progress
         ? {
             completion_percent: Number(progress.completion_percent),

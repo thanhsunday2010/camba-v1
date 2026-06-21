@@ -10,7 +10,7 @@
     "unitSlug": "environment",
     "unitTitle": "Environment",
     "targetAge": "11-14",
-    "curriculumMapVersion": "1.1.0",
+    "curriculumMapVersion": "1.2.0",
     "contentReview": {
       "reviewThreshold": 0.75,
       "defaultFlagBelowThreshold": true,
@@ -268,6 +268,7 @@
     {
       "slug": "vocab-environment-words",
       "skill": "vocabulary",
+      "lessonIndex": 0,
       "sortOrder": 0,
       "title": "Lesson 1: Environment Words",
       "learningObjective": "Recognise and understand twelve words about energy, climate and nature at KET A2 level.",
@@ -757,12 +758,156 @@
               }
             }
           ]
+        },
+        {
+          "slug": "vocab-environment-review",
+          "title": "Review: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Dirty air and water in rivers cause _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Pollution (ô nhiễm) từ rác và hóa chất.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "conservation",
+                  "isCorrect": false,
+                  "distractorNote": "Protecting nature"
+                },
+                {
+                  "text": "pollution",
+                  "isCorrect": true
+                },
+                {
+                  "text": "registration",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong topic"
+                }
+              ]
+            },
+            {
+              "questionText": "We put old paper in bins so it can be _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Recycle (tái chế) giấy và nhựa.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "flooded",
+                  "isCorrect": false,
+                  "distractorNote": "Water disaster"
+                },
+                {
+                  "text": "recycled",
+                  "isCorrect": true
+                },
+                {
+                  "text": "subscribed",
+                  "isCorrect": false,
+                  "distractorNote": "Media word"
+                }
+              ]
+            },
+            {
+              "questionText": "Burning less fuel can reduce _____ emissions.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Carbon emissions — khí thải carbon.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "headline",
+                  "isCorrect": false,
+                  "distractorNote": "News word"
+                },
+                {
+                  "text": "carbon",
+                  "isCorrect": true
+                },
+                {
+                  "text": "receipt",
+                  "isCorrect": false,
+                  "distractorNote": "Services word"
+                }
+              ]
+            },
+            {
+              "questionText": "After the _____, many fields were underwater.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Flood (lũ lụt) làm ngập đồng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "drought",
+                  "isCorrect": false,
+                  "distractorNote": "Dry period"
+                },
+                {
+                  "text": "flood",
+                  "isCorrect": true
+                },
+                {
+                  "text": "profile",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong topic"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "grammar-conditional-passive",
       "skill": "grammar",
+      "lessonIndex": 0,
       "sortOrder": 1,
       "unlockAfterLessonId": "e5000010-0000-4000-8000-000000000001",
       "title": "Lesson 2: First Conditional and Passive",
@@ -1326,12 +1471,156 @@
               "levelTag": "ket"
             }
           ]
+        },
+        {
+          "slug": "grammar-env-review",
+          "title": "Review: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.38,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "If it _____ heavily tonight, the north village may flood.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "If + present: rains (not will rain).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "will rain",
+                  "isCorrect": false,
+                  "distractorNote": "Future in if-clause"
+                },
+                {
+                  "text": "rains",
+                  "isCorrect": true
+                },
+                {
+                  "text": "rained",
+                  "isCorrect": false,
+                  "distractorNote": "Past"
+                }
+              ]
+            },
+            {
+              "questionText": "Plastic bottles _____ in the blue bins every day.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Passive present plural: are recycled.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "is recycled",
+                  "isCorrect": false,
+                  "distractorNote": "Singular be"
+                },
+                {
+                  "text": "are recycled",
+                  "isCorrect": true
+                },
+                {
+                  "text": "are recycle",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong participle"
+                }
+              ]
+            },
+            {
+              "questionText": "If each class saves energy, more money _____ for conservation.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "will be saved — future passive.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "is saved",
+                  "isCorrect": false,
+                  "distractorNote": "Present result"
+                },
+                {
+                  "text": "will be saved",
+                  "isCorrect": true
+                },
+                {
+                  "text": "will save",
+                  "isCorrect": false,
+                  "distractorNote": "Active missing object"
+                }
+              ]
+            },
+            {
+              "questionText": "Which sentence is correct?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "A talk will be given — passive future in notice style.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A talk about climate change will gave on Wednesday.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong verb form"
+                },
+                {
+                  "text": "A talk about climate change will be given on Wednesday.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A talk about climate change given will on Wednesday.",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong word order"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "reading-eco-week",
       "skill": "reading",
+      "lessonIndex": 0,
       "sortOrder": 2,
       "unlockAfterLessonId": "e5000010-0000-4000-8000-000000000002",
       "title": "Lesson 3: Eco Week Plan",
@@ -1661,12 +1950,102 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "reading-eco-review",
+          "title": "Review: Main Idea and Order",
+          "instructions": "Read the plan one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Green Valley Eco Week",
+              "text": "GREEN VALLEY SECONDARY SCHOOL — ECO WEEK PLAN\n\nOur town had a dry summer and a small flood in the north village last year. Eco Week starts on 12 May to help students learn about energy, waste and wildlife.\n\nMonday — Energy Day\nSolar panels were installed on the sports hall roof last month. If the weather is sunny, the school will use less electricity from the grid. Students are asked to turn off lights in empty classrooms.\n\nTuesday — Waste and Recycling\nFood waste is collected every morning. Paper and plastic are recycled in the blue bins near the gate. If each class produces less waste, more money will be saved for conservation projects.\n\nWednesday — Climate and Water\nA talk about climate change and drought will be given by Ms Ngo at 2 p.m. She will explain how floods and long dry periods affect local farms and wildlife habitats.\n\nThursday — Wildlife Walk\nYear 8 students will visit the river habitat with a park ranger. Rare birds are protected in this area. Photos may be taken, but litter must not be left behind.\n\nFriday — Community Action\nFamilies are invited to plant trees and learn about renewable energy at the town square. Registration is free at reception.",
+              "wordCount": 209,
+              "imagePrompt": "School eco week poster with icons for solar energy, recycling bins, river wildlife, trees and climate; green educational infographic."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main purpose of Eco Week?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Help students learn about energy, waste and wildlife after local drought/flood.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "To cancel all school lessons",
+                  "isCorrect": false,
+                  "distractorNote": "School continues with themed days"
+                },
+                {
+                  "text": "To teach students about environmental issues and actions",
+                  "isCorrect": true
+                },
+                {
+                  "text": "To build a new shopping centre",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "Which day focuses on visiting a river habitat?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Thursday — Wildlife Walk with park ranger at river habitat.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "sequencing",
+              "choices": [
+                {
+                  "text": "Monday",
+                  "isCorrect": false,
+                  "distractorNote": "Energy Day"
+                },
+                {
+                  "text": "Thursday",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Tuesday",
+                  "isCorrect": false,
+                  "distractorNote": "Waste and Recycling"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "listening-environment-talks",
       "skill": "listening",
+      "lessonIndex": 0,
       "sortOrder": 3,
       "unlockAfterLessonId": "e5000010-0000-4000-8000-000000000003",
       "title": "Lesson 4: Environment Talks",
@@ -2062,8 +2441,7 @@
             },
             "answerKey": {
               "matching": true
-            },
-            "audioUrl": "/audio/listening/ket/unit-10/listening-environment-apply.mp3"
+            }
           },
           "questions": [
             {
@@ -2097,12 +2475,128 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "listening-weather-review",
+          "title": "Review: Weather and Flood Report",
+          "instructions": "Listen to a new report. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Weather and Flood Report",
+              "setting": "Local radio news bulletin",
+              "speakers": [
+                {
+                  "name": "News reader",
+                  "role": "radio presenter"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "News reader",
+                  "text": "Good evening. This is the Green Valley weather and environment report."
+                },
+                {
+                  "speaker": "News reader",
+                  "text": "Heavy rain is expected tonight. If the river rises, low roads near the habitat may be closed."
+                },
+                {
+                  "speaker": "News reader",
+                  "text": "Farmers say the long drought in spring damaged crops, but recent conservation work has helped wildlife return."
+                },
+                {
+                  "speaker": "News reader",
+                  "text": "Residents are asked to recycle waste and save energy where possible. More news after this."
+                }
+              ],
+              "audioNotes": "Neutral news tone, steady pace, light background music fade. Approx. 40 seconds."
+            },
+            "answerKey": {
+              "q1": "river may close roads",
+              "q2": "spring drought damaged crops"
+            },
+            "audioUrl": "/audio/listening/ket/unit-10/listening-weather-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What may happen if the river rises?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Low roads near the habitat may be closed.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Solar panels will be removed",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "Low roads near the habitat may be closed",
+                  "isCorrect": true
+                },
+                {
+                  "text": "School waste will increase",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite trend"
+                }
+              ]
+            },
+            {
+              "questionText": "What problem did farmers report about spring?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "The long drought in spring damaged crops.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A flood destroyed all wildlife",
+                  "isCorrect": false,
+                  "distractorNote": "Wildlife returned later"
+                },
+                {
+                  "text": "A long drought damaged crops",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Too much recycling",
+                  "isCorrect": false,
+                  "distractorNote": "Recycling is positive"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "writing-environment-message",
       "skill": "writing",
+      "lessonIndex": 0,
       "sortOrder": 4,
       "unlockAfterLessonId": "e5000010-0000-4000-8000-000000000004",
       "title": "Lesson 5: Write About the Environment",
@@ -2432,12 +2926,102 @@
               }
             }
           ]
+        },
+        {
+          "slug": "writing-environment-review",
+          "title": "Review: Message About Eco Week",
+          "instructions": "Write a message to your teacher. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Your school is planning Eco Week. Write a message to your science teacher with ideas about saving energy and reducing waste.",
+            "prompts": [
+              "Say why you are writing.",
+              "Give one idea to save energy at school.",
+              "Use If ... to say what will happen if students recycle more.",
+              "Mention wildlife or conservation.",
+              "End politely."
+            ],
+            "expectedLength": "At least 25 words",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Ideas about energy or waste",
+              "Uses if-clause or passive form",
+              "Mentions environment vocabulary",
+              "Polite closing"
+            ],
+            "modelAnswer": {
+              "text": "Dear Mr Phan,\n\nI am writing about Eco Week. If we turn off lights in empty classrooms, the school will use less energy. Paper and plastic are recycled in the blue bins, but I think food waste must be separated more carefully. If each class produces less waste, more money will be saved for wildlife conservation.\n\nThank you,\nLan"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses first conditional or passive forms correctly."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses environment words (energy, waste, recycle, wildlife, etc.)."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Message has greeting, ideas and polite closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Gives eco ideas; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your response following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Bài mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-environment-check",
+                "autoCheckKeywords": [
+                  "dear",
+                  "energy",
+                  "waste",
+                  "recycle",
+                  "if",
+                  "wildlife",
+                  "conservation",
+                  "pollution",
+                  "thank"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
         }
       ]
     },
     {
       "slug": "speaking-environment",
       "skill": "speaking",
+      "lessonIndex": 0,
       "sortOrder": 5,
       "unlockAfterLessonId": "e5000010-0000-4000-8000-000000000005",
       "title": "Lesson 6: Talk About the Environment",
@@ -2638,7 +3222,7 @@
               "content": {
                 "assessmentCriteriaRef": "speaking-environment-check",
                 "minimumResponses": 4,
-                "maxDurationSeconds": 120
+                "maxDurationSeconds": 60
               }
             }
           ]
@@ -2719,6 +3303,47 @@
                   "distractorNote": "Nonsense"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-environment-review",
+          "title": "Review: Interview About the Environment",
+          "instructions": "Answer the examiner's questions. Record your answers.",
+          "exerciseType": "speaking",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "environment",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-environment-check",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 60
+              }
             }
           ]
         }

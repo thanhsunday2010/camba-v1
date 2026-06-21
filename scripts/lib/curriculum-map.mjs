@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { CONTENT_STRUCTURE } from "./content-structure.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 export const CURRICULUM_MAP_PATH = resolve(__dirname, "../../data/curriculum/cambridge-curriculum-map.json");
@@ -58,6 +59,12 @@ export function getCurriculumUnitBySlug(levelSlug, unitSlug) {
     throw new Error(`Unit slug "${unitSlug}" không có trong curriculum map cho level "${levelSlug}"`);
   }
   return unit;
+}
+
+/** Canonical lesson/exercise counts — from curriculum map or content-structure fallback */
+export function getContentStructure() {
+  const map = loadCurriculumMap();
+  return { ...CONTENT_STRUCTURE, ...(map.contentStructure ?? {}) };
 }
 
 /**

@@ -10,7 +10,7 @@
     "unitSlug": "house-and-home",
     "unitTitle": "House and Home",
     "targetAge": "11-14",
-    "curriculumMapVersion": "1.1.0",
+    "curriculumMapVersion": "1.2.0",
     "contentReview": {
       "reviewThreshold": 0.75,
       "defaultFlagBelowThreshold": true,
@@ -268,6 +268,7 @@
     {
       "slug": "vocab-home-words",
       "skill": "vocabulary",
+      "lessonIndex": 0,
       "sortOrder": 0,
       "title": "Lesson 1: House and Home Words",
       "learningObjective": "Recognise and understand twelve house and home words at KET A2 level.",
@@ -762,12 +763,156 @@
               }
             }
           ]
+        },
+        {
+          "slug": "vocab-home-review",
+          "title": "Review: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Electricity and water are examples of a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Utility (dịch vụ tiện ích) như điện, nước.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "furniture",
+                  "isCorrect": false,
+                  "distractorNote": "Household objects"
+                },
+                {
+                  "text": "utility",
+                  "isCorrect": true
+                },
+                {
+                  "text": "balcony",
+                  "isCorrect": false,
+                  "distractorNote": "Outdoor area"
+                }
+              ]
+            },
+            {
+              "questionText": "The bedrooms are _____, on the second floor.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Upstairs (tầng trên) chỉ vị trí phòng ngủ.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "rent",
+                  "isCorrect": false,
+                  "distractorNote": "Payment"
+                },
+                {
+                  "text": "upstairs",
+                  "isCorrect": true
+                },
+                {
+                  "text": "repair",
+                  "isCorrect": false,
+                  "distractorNote": "Fixing something"
+                }
+              ]
+            },
+            {
+              "questionText": "The _____ collects the _____ from the _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Landlord thu rent từ tenant.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "tenant ... garage ... balcony",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong roles"
+                },
+                {
+                  "text": "landlord ... rent ... tenant",
+                  "isCorrect": true
+                },
+                {
+                  "text": "appliance ... mortgage ... utility",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong words"
+                }
+              ]
+            },
+            {
+              "questionText": "They keep their car in the _____ below the flat.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Garage (nhà để xe) thường ở tầng dưới.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "balcony",
+                  "isCorrect": false,
+                  "distractorNote": "Outdoor platform"
+                },
+                {
+                  "text": "garage",
+                  "isCorrect": true
+                },
+                {
+                  "text": "neighbourhood",
+                  "isCorrect": false,
+                  "distractorNote": "Whole area"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "grammar-home-passive",
       "skill": "grammar",
+      "lessonIndex": 0,
       "sortOrder": 1,
       "unlockAfterLessonId": "e5000007-0000-4000-8000-000000000001",
       "title": "Lesson 2: Passive and Relative Clauses",
@@ -1336,12 +1481,156 @@
               "levelTag": "ket"
             }
           ]
+        },
+        {
+          "slug": "grammar-home-review",
+          "title": "Review: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Our neighbourhood, _____ is near the park, is very safe.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Non-defining clause for thing/place → which.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "who",
+                  "isCorrect": false,
+                  "distractorNote": "For people"
+                },
+                {
+                  "text": "which",
+                  "isCorrect": true
+                },
+                {
+                  "text": "where",
+                  "isCorrect": false,
+                  "distractorNote": "Needs place as antecedent"
+                }
+              ]
+            },
+            {
+              "questionText": "The mortgage _____ every month by my parents.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Present passive: is paid.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "pays",
+                  "isCorrect": false,
+                  "distractorNote": "Active voice"
+                },
+                {
+                  "text": "is paid",
+                  "isCorrect": true
+                },
+                {
+                  "text": "is pay",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong past participle"
+                }
+              ]
+            },
+            {
+              "questionText": "The repair _____ finished when we arrived home.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Past passive singular: was finished.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "were finished",
+                  "isCorrect": false,
+                  "distractorNote": "Plural were"
+                },
+                {
+                  "text": "was finished",
+                  "isCorrect": true
+                },
+                {
+                  "text": "finished",
+                  "isCorrect": false,
+                  "distractorNote": "Missing auxiliary"
+                }
+              ]
+            },
+            {
+              "questionText": "The landlord _____ rented us the flat is helpful.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Person → who.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "which",
+                  "isCorrect": false,
+                  "distractorNote": "For things"
+                },
+                {
+                  "text": "who",
+                  "isCorrect": true
+                },
+                {
+                  "text": "where",
+                  "isCorrect": false,
+                  "distractorNote": "For places"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "reading-moving-article",
       "skill": "reading",
+      "lessonIndex": 0,
       "sortOrder": 2,
       "unlockAfterLessonId": "e5000007-0000-4000-8000-000000000002",
       "title": "Lesson 3: Moving Home Article",
@@ -1667,12 +1956,102 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "reading-home-review",
+          "title": "Review: Main Idea and Order",
+          "instructions": "Read the article one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Moving to a New Flat",
+              "text": "Last month, Lan and her brother moved into a flat in a quiet neighbourhood. The building is old but the rooms are bright. Their balcony looks over a small park, and the garage downstairs is useful for their father's motorbike.\n\nThe landlord explained that the rent includes water, but electricity is extra. The kitchen has modern appliances, including a fridge and a washing machine. However, the sofa in the living room is old furniture that the previous tenant left behind.\n\nOn the first weekend, they needed a repair because the bathroom tap was broken. A plumber came quickly and fixed it. Their mother was worried about the mortgage because the family had saved for years to buy this home.\n\nLan likes the area. She says, \"The house which we visited last year was smaller. Our new home, which has a large balcony, is perfect for studying.\" Her neighbour, who works at the bank, gave useful advice about home insurance. Lan feels happy that the flat was built in 2010 and is well looked after.",
+              "wordCount": 174,
+              "imagePrompt": "A modern flat interior with balcony view, kitchen appliances, and a quiet residential neighbourhood street with garages."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the article mainly about?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Bài kể Lan chuyển đến căn hộ mới và trải nghiệm đầu tiên.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "How to get a mortgage from a bank",
+                  "isCorrect": false,
+                  "distractorNote": "Mortgage is one detail"
+                },
+                {
+                  "text": "Lan's family moving into a new flat",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Rules for all landlords",
+                  "isCorrect": false,
+                  "distractorNote": "Too general"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the events in order: (1) Repair in bathroom (2) Landlord explains rent (3) Family moves in",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Chuyển vào → landlord giải thích → sửa tap cuối tuần.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "sequencing",
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Repair after moving"
+                },
+                {
+                  "text": "3 → 2 → 1",
+                  "isCorrect": true
+                },
+                {
+                  "text": "2 → 3 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Move before explanation"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "listening-home-conversations",
       "skill": "listening",
+      "lessonIndex": 0,
       "sortOrder": 3,
       "unlockAfterLessonId": "e5000007-0000-4000-8000-000000000003",
       "title": "Lesson 4: Home Conversations",
@@ -2130,8 +2509,7 @@
                 }
               ],
               "audioNotes": "Clear phone call, numbers and email spelled slowly. Natural pace. Approx. 40 seconds."
-            },
-            "audioUrl": "/audio/listening/ket/unit-07/listening-viewing-apply.mp3"
+            }
           },
           "questions": [
             {
@@ -2165,12 +2543,169 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "listening-repair-review",
+          "title": "Review: Repair Visit",
+          "instructions": "Listen to a new conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Repair Visit Conversation",
+              "setting": "Inside a flat living room",
+              "speakers": [
+                {
+                  "name": "Plumber",
+                  "role": "repair worker"
+                },
+                {
+                  "name": "Minh",
+                  "role": "tenant"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Minh",
+                  "text": "Thank you for coming. The tap in the bathroom was broken yesterday."
+                },
+                {
+                  "speaker": "Plumber",
+                  "text": "No problem. It will be repaired in about thirty minutes."
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "The furniture in here is old, but the appliances in the kitchen are new."
+                },
+                {
+                  "speaker": "Plumber",
+                  "text": "I see. Many flats in this building were built in 2010. The garage is downstairs."
+                },
+                {
+                  "speaker": "Minh",
+                  "text": "Perfect. Should I pay now or later?"
+                }
+              ],
+              "audioNotes": "Indoor conversation, moderate natural speed with brief pauses. Approx. 38 seconds."
+            },
+            "answerKey": {
+              "q1": "broken tap bathroom",
+              "q2": "30 minutes",
+              "q3": "built 2010"
+            },
+            "audioUrl": "/audio/listening/ket/unit-07/listening-repair-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What needs to be repaired?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "The tap in the bathroom was broken.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The garage door",
+                  "isCorrect": false,
+                  "distractorNote": "Mentioned but not broken"
+                },
+                {
+                  "text": "The bathroom tap",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The balcony railing",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                }
+              ]
+            },
+            {
+              "questionText": "How long will the repair take?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Repaired in about thirty minutes.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "About three hours",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "About thirty minutes",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Two days",
+                  "isCorrect": false,
+                  "distractorNote": "Too long"
+                }
+              ]
+            },
+            {
+              "questionText": "When were many flats in the building built?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Many flats were built in 2010.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "In 2000",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong year"
+                },
+                {
+                  "text": "In 2010",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Last year",
+                  "isCorrect": false,
+                  "distractorNote": "Too recent for many flats"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "writing-home-message",
       "skill": "writing",
+      "lessonIndex": 0,
       "sortOrder": 4,
       "unlockAfterLessonId": "e5000007-0000-4000-8000-000000000004",
       "title": "Lesson 5: Message About Your Home",
@@ -2470,12 +3005,102 @@
               }
             }
           ]
+        },
+        {
+          "slug": "writing-home-review",
+          "title": "Review: Message About Your Home",
+          "instructions": "Write a message to a friend. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Write a short message to your friend Sam describing where you live now.",
+            "prompts": [
+              "Say what type of home you live in (flat or house).",
+              "Describe one or two features (balcony, garage, appliances, furniture).",
+              "Say something about your neighbourhood.",
+              "End the message in a friendly way."
+            ],
+            "expectedLength": "At least 25 words",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Clear description of home",
+              "Uses passive or relative clause if possible",
+              "Uses at least two unit vocabulary words",
+              "Friendly opening and closing"
+            ],
+            "modelAnswer": {
+              "text": "Hi Sam,\n\nI live in a flat which has a small balcony and a garage downstairs. The kitchen appliances are new, but the furniture is quite old. Our neighbourhood is quiet and friendly. The rent is paid on the first day every month.\n\nSee you soon,\nLan"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses passive or relative clauses (who/which/where) correctly if attempted."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses home words (furniture, appliance, rent, balcony, neighbourhood) appropriately."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Message has greeting, description and a friendly closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Describes home and neighbourhood clearly; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your response following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Bài mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-home-check",
+                "autoCheckKeywords": [
+                  "flat",
+                  "house",
+                  "home",
+                  "balcony",
+                  "garage",
+                  "rent",
+                  "furniture",
+                  "appliance",
+                  "neighbourhood",
+                  "sam"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
         }
       ]
     },
     {
       "slug": "speaking-home-habits",
       "skill": "speaking",
+      "lessonIndex": 0,
       "sortOrder": 5,
       "unlockAfterLessonId": "e5000007-0000-4000-8000-000000000005",
       "title": "Lesson 6: Talk About Your Home",
@@ -2740,7 +3365,7 @@
               "content": {
                 "assessmentCriteriaRef": "speaking-home-interview",
                 "minimumResponses": 4,
-                "maxDurationSeconds": 120
+                "maxDurationSeconds": 60
               }
             }
           ]
@@ -2853,6 +3478,47 @@
                   "distractorNote": "Where needs place antecedent"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-home-interview-review",
+          "title": "Review: Home Interview",
+          "instructions": "Answer the examiner's questions about where you live. Speak for up to two minutes.",
+          "exerciseType": "speaking",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "house-and-home",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-home-interview",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 60
+              }
             }
           ]
         }

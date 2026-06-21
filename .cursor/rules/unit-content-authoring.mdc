@@ -6,7 +6,21 @@ alwaysApply: false
 
 # Unit Content Authoring
 
-When creating or editing unit content, follow these rules. Gold standard: `data/content/starters/unit-01-family-and-friends.json`. Blueprint: `data/curriculum/cambridge-curriculum-map.json`.
+When creating or editing unit content, follow these rules. Gold standard: `data/content/starters/unit-01-family-and-friends.json`. Blueprint: `data/curriculum/cambridge-curriculum-map.json` (`contentStructure`).
+
+## Pipeline (all levels)
+
+| Step | Starters | KET |
+|------|----------|-----|
+| Curriculum | `data/curriculum/cambridge-curriculum-map.json` | same |
+| Blueprint | `scripts/lib/starters-blueprints/unit-XX.mjs` + `scripts/lib/starters-gold/hand/unit-XX.mjs` | `scripts/lib/ket-blueprints/unit-XX.mjs` |
+| Generate | `npm run generate:starters-gold` (or `generate:starters-units`) | `npm run generate:ket-units` |
+| Validate | `npm run validate:starters` | `npm run validate:ket` |
+| Seed | `npm run seed:starters` / `seed:unit` | `npm run seed:ket` |
+
+Shared libraries: `scripts/lib/content-structure.mjs`, `exercise-factory.mjs`, `unit-assembler.mjs`, `content-ids.mjs`, `starters-gold/assemble-hand-content.mjs`.
+
+All Starters units (1–10) use **hand-crafted gold blueprints**. Rich/legacy template generators are **banned** — never use `starters-rich-unit-generator` or `generate:starters-full`.
 
 ## Before Writing
 
@@ -21,18 +35,26 @@ When creating or editing unit content, follow these rules. Gold standard: `data/
 meta → unit → vocabularyBank → grammarReference → lessons[6]
 ```
 
-Each unit must have **6 lessons** in order: `vocabulary` → `grammar` → `reading` → `listening` → `writing` → `speaking` (`sortOrder` 0–5).
+Each unit must have **at least 3 lessons per skill** (18+ lessons total for 6 skills) and **at least 5 exercises per lesson**.
+
+Legacy units (6 lessons × 4 exercises) are being migrated; gold standard after expansion: `data/content/starters/unit-01-family-and-friends.json`.
+
+Skill order: `vocabulary` → `grammar` → `reading` → `listening` → `writing` → `speaking`. Within each skill, use `lessonIndex` 0–2 and chain `unlockAfterLessonId` sequentially across the unit.
 
 ## Per-Skill Requirements
 
 | Skill | Must include |
 |-------|--------------|
-| **vocabulary** | ~12+ words in `vocabularyBank` (IPA, vietnameseMeaning, exampleSentence, difficulty, qualityScores); **4 exercises** per lesson: Learn (MCQ) → Practice (matching) → Check (MCQ, harder) → Apply (gap_fill) |
-| **grammar** | Items in `grammarReference` with `commonMistakes` (`× → ✓`); **4 exercises**: Learn (MCQ) → Practice (gap_fill) → Check (MCQ) → Apply (sentence_ordering) |
-| **reading** | Passage within level text length; `wordCount`, `imagePrompt`; **4 exercises** sharing `content.passage`: Learn (detail) → Practice (vocab_in_context + inference) → Check (main_idea + sequencing) → Apply (matching) |
-| **listening** | Script with `speakers`, `setting`, `lines`, `audioNotes`; `answerKey`; **4 exercises**: Learn + Practice (split questions, same audio) → Check (new script) → Apply (matching + audio replay); run `npm run generate:listening-audio` |
-| **writing** | **4 exercises**: Learn (gap_fill) → Practice (sentence_ordering) → Check (AI writing task with rubric) → Apply (gap_fill frames) |
-| **speaking** | **4 exercises**: Learn + Practice (MCQ best reply) → Check (AI speaking interview) → Apply (MCQ situational); `followUpQuestions`, `suggestedAnswers`, `assessmentCriteria`, `maxDurationSeconds` on Check exercise |
+| **vocabulary** | ~12+ words in `vocabularyBank`; **3 lessons × 5 exercises** each |
+| **grammar** | Items in `grammarReference` with `commonMistakes`; **3 lessons × 5 exercises** |
+| **reading** | Passage(s) with `wordCount`, `imagePrompt`; **3 lessons × 5 exercises** |
+| **listening** | Script(s) with `speakers`, `lines`; **3 lessons × 5 exercises**; run `npm run generate:listening-audio` |
+| **writing** | **3 lessons × 5 exercises**; only Check uses AI `exerciseType: writing` |
+| **speaking** | **3 lessons × 5 exercises**; only Check uses AI `exerciseType: speaking` |
+
+### Multi-Exercise Template (per lesson)
+
+Each lesson has **5 exercises** (`sortOrder` 0–4). Prefix titles: `Learn:`, `Practice:`, `Check:`, `Apply:`, `Review:`.
 
 ### AI Check exercises (writing & speaking only)
 
@@ -49,7 +71,7 @@ Required `content` fields on Check exercises:
 
 ### Multi-Exercise Template (per lesson)
 
-Each lesson has **4 exercises** (`sortOrder` 0–3). Prefix titles: `Learn:`, `Practice:`, `Check:`, `Apply:`.
+Each lesson has **5 exercises** (`sortOrder` 0–4). Prefix titles: `Learn:`, `Practice:`, `Check:`, `Apply:`, `Review:`.
 
 | Phase | Purpose | Typical types |
 |-------|---------|---------------|
@@ -57,8 +79,11 @@ Each lesson has **4 exercises** (`sortOrder` 0–3). Prefix titles: `Learn:`, `P
 | Practice | Guided use | matching, gap_fill |
 | Check | Harder, no scaffolding | MCQ, listening script, AI task |
 | Apply | Use in context | gap_fill, sentence_ordering, matching |
+| Review | Mixed recall | MCQ, gap_fill (similar to Check) |
 
-Gold standard: `data/content/starters/unit-01-family-and-friends.json`.
+Set `lessonIndex` (0–2) on each lesson JSON entry. Seed uses `lessonId(level, unitNumber, skill, lessonIndex)`.
+
+Gold standard: expanded `data/content/starters/unit-01-family-and-friends.json` (18 lessons, 90 exercises).
 
 ## Question Quality (every question)
 

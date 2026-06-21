@@ -1,0 +1,1233 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by YLE Pre-A1 task formats only.",
+    "program": "cambridge-english",
+    "level": "starters",
+    "cefr": "pre-a1",
+    "unitNumber": 4,
+    "unitSlug": "animals",
+    "unitTitle": "Animals",
+    "targetAge": "7-9",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Name eight common animals at Starters level.",
+      "Use this and that to point to animals near and far.",
+      "Form regular plural nouns with -s: one cat, two cats.",
+      "Decode familiar animal words in short texts.",
+      "Identify animals from short listening recordings with picture support."
+    ],
+    "grammarFocus": [
+      "Demonstratives: this, that",
+      "Plural nouns: regular -s"
+    ],
+    "readingSkillFocus": "Decode Familiar Words",
+    "listeningSkillFocus": "Tick the Correct Picture"
+  },
+  "vocabularyBank": [
+    {
+      "word": "cat",
+      "ipa": "/kæt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "con mèo",
+      "exampleSentence": "This is a cat.",
+      "difficulty": 1,
+      "topic": "animals",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.95,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "dog",
+      "ipa": "/dɒɡ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "con chó",
+      "exampleSentence": "I have a dog.",
+      "difficulty": 1,
+      "topic": "animals",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.95,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "bird",
+      "ipa": "/bɜːd/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "con chim",
+      "exampleSentence": "The bird can fly.",
+      "difficulty": 1,
+      "topic": "animals",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.09,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "fish",
+      "ipa": "/fɪʃ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "con cá",
+      "exampleSentence": "There is a fish in the water.",
+      "difficulty": 1,
+      "topic": "animals",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "elephant",
+      "ipa": "/ˈelɪfənt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "con voi",
+      "exampleSentence": "The elephant is big.",
+      "difficulty": 1,
+      "topic": "animals",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "monkey",
+      "ipa": "/ˈmʌŋki/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "con khỉ",
+      "exampleSentence": "The monkey is funny.",
+      "difficulty": 1,
+      "topic": "animals",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "bear",
+      "ipa": "/beə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "con gấu",
+      "exampleSentence": "That is a brown bear.",
+      "difficulty": 1,
+      "topic": "animals",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "tiger",
+      "ipa": "/ˈtaɪɡə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "con hổ",
+      "exampleSentence": "The tiger has stripes.",
+      "difficulty": 1,
+      "topic": "animals",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "rabbit",
+      "ipa": "/ˈræbɪt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "con thỏ",
+      "exampleSentence": "The rabbit has long ears.",
+      "difficulty": 1,
+      "topic": "animals",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "animal",
+      "ipa": "/ˈænɪml/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "động vật",
+      "exampleSentence": "A cat is an animal.",
+      "difficulty": 1,
+      "topic": "animals",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.13,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "pet",
+      "ipa": "/pet/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "thú cưng",
+      "exampleSentence": "My pet is a dog.",
+      "difficulty": 1,
+      "topic": "animals",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "zoo",
+      "ipa": "/zuː/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "sở thú",
+      "exampleSentence": "We see elephants at the zoo.",
+      "difficulty": 1,
+      "topic": "animals",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Demonstratives: this, that",
+      "explanation": "Use this for one thing near you. Use that for one thing far from you.",
+      "examples": [
+        "This is a cat.",
+        "That is a tiger.",
+        "This is my dog."
+      ],
+      "commonMistakes": [
+        "This is a cat (far away) (×) → That is a cat. (✓)",
+        "That is my dog (in your hand) (×) → This is my dog. (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "animals"
+    },
+    {
+      "structure": "Plural nouns: regular -s",
+      "explanation": "Add -s to most nouns to make the plural: one cat → two cats.",
+      "examples": [
+        "one dog, three dogs",
+        "a bird, many birds",
+        "one fish, two fish"
+      ],
+      "commonMistakes": [
+        "two cat (×) → two cats (✓)",
+        "three dog (×) → three dogs (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "animals"
+    },
+    {
+      "structure": "This is / That is + noun",
+      "explanation": "Use This is or That is before a singular animal name to identify it.",
+      "examples": [
+        "This is a monkey.",
+        "That is an elephant."
+      ],
+      "commonMistakes": [
+        "This a monkey (×) → This is a monkey. (✓)",
+        "That are a bear (×) → That is a bear. (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "animals"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-animals",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Animals",
+      "learningObjective": "Recognise and understand twelve animal words at Starters level.",
+      "estimatedMinutes": 12,
+      "unlockAfterLessonId": "e2000003-0000-4000-8000-000000000006",
+      "exercises": [
+        {
+          "slug": "vocab-animal-words",
+          "title": "Animal Word Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.2,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "It says 'meow' and likes milk. It is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Cats say meow and often drink milk. Dogs bark; birds sing.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "dog",
+                  "isCorrect": false,
+                  "distractorNote": "Pet but barks, not meows"
+                },
+                {
+                  "text": "cat",
+                  "isCorrect": true
+                },
+                {
+                  "text": "bird",
+                  "isCorrect": false,
+                  "distractorNote": "Flies; does not meow"
+                }
+              ]
+            },
+            {
+              "questionText": "It is very big and has a long nose. It is an _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Elephants are large animals with a long trunk (nose). Bears and tigers are big but have no long trunk.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.15,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "bear",
+                  "isCorrect": false,
+                  "distractorNote": "Big but no long trunk"
+                },
+                {
+                  "text": "elephant",
+                  "isCorrect": true
+                },
+                {
+                  "text": "monkey",
+                  "isCorrect": false,
+                  "distractorNote": "Small; climbs trees"
+                }
+              ]
+            },
+            {
+              "questionText": "It lives in water and swims. It is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Fish live and swim in water. Birds fly; dogs run on land.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.17,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "fish",
+                  "isCorrect": true
+                },
+                {
+                  "text": "bird",
+                  "isCorrect": false,
+                  "distractorNote": "Flies in the air"
+                },
+                {
+                  "text": "tiger",
+                  "isCorrect": false,
+                  "distractorNote": "Lives on land"
+                }
+              ]
+            },
+            {
+              "questionText": "It has orange and black stripes. It is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Tigers have distinctive orange and black stripes. Bears are usually one colour; monkeys are not striped.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "bear",
+                  "isCorrect": false,
+                  "distractorNote": "No stripes"
+                },
+                {
+                  "text": "tiger",
+                  "isCorrect": true
+                },
+                {
+                  "text": "rabbit",
+                  "isCorrect": false,
+                  "distractorNote": "Small; no stripes"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-animals-matching",
+          "title": "Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the animal words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 6,
+              "explanation": "Each animal has one clear description. Cat and dog are both pets but make different sounds.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "dog",
+                  "right": "a pet that barks"
+                },
+                {
+                  "left": "bird",
+                  "right": "an animal that can fly"
+                },
+                {
+                  "left": "monkey",
+                  "right": "an animal that climbs trees"
+                },
+                {
+                  "left": "bear",
+                  "right": "a big, furry animal"
+                },
+                {
+                  "left": "pet",
+                  "right": "an animal you keep at home"
+                },
+                {
+                  "left": "zoo",
+                  "right": "a place to see wild animals"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-this-that-plurals",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e2000004-0000-4000-8000-000000000001",
+      "title": "Lesson 2: This, That and Plurals",
+      "learningObjective": "Use this and that to point to animals and form regular plurals with -s.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "grammar-demonstratives",
+          "title": "Choose This or That",
+          "instructions": "Choose the correct word to complete each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "_____ is my cat. (The cat is in your arms.)",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Use this for something near you.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "This",
+                  "isCorrect": true
+                },
+                {
+                  "text": "That",
+                  "isCorrect": false,
+                  "distractorNote": "Used for things far away"
+                },
+                {
+                  "text": "These",
+                  "isCorrect": false,
+                  "distractorNote": "Plural; one cat only"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ is a tiger. (The tiger is far away in the picture.)",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Use that for something far from you.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "This",
+                  "isCorrect": false,
+                  "distractorNote": "Near, not far"
+                },
+                {
+                  "text": "That",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Those",
+                  "isCorrect": false,
+                  "distractorNote": "Plural form"
+                }
+              ]
+            },
+            {
+              "questionText": "I have two _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Two is plural, so add -s: two dogs.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.24,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "dog",
+                  "isCorrect": false,
+                  "distractorNote": "Singular; needs -s"
+                },
+                {
+                  "text": "dogs",
+                  "isCorrect": true
+                },
+                {
+                  "text": "doges",
+                  "isCorrect": false,
+                  "distractorNote": "Incorrect plural form"
+                }
+              ]
+            },
+            {
+              "questionText": "There are three _____ in the tree.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Three is plural, so use monkeys with -s.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "monkey",
+                  "isCorrect": false,
+                  "distractorNote": "Singular only"
+                },
+                {
+                  "text": "monkeys",
+                  "isCorrect": true
+                },
+                {
+                  "text": "monkies",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong spelling of plural"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-animals-gap-fill",
+          "title": "This, That and Plurals",
+          "instructions": "Complete the sentences with the correct words.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: [0] is my pet cat. | [1] is a big elephant. | I see two [2].",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "This for near (my pet); That for far (elephant); birds needs -s after two.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "[0] is my pet cat. [1] is a big elephant. I see two [2].",
+                "correctAnswers": [
+                  "This",
+                  "That",
+                  "birds"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "This"
+                  ],
+                  [
+                    "That"
+                  ],
+                  [
+                    "birds",
+                    "Birds"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-decode-animals",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e2000004-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Animals at the Zoo",
+      "learningObjective": "Read a short text about animals and decode familiar words in context.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "reading-zoo-passage",
+          "title": "Read: A Day at the Zoo",
+          "instructions": "Read the text. Then answer the questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.95,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "A Day at the Zoo",
+              "text": "Hello! We are at the zoo today.\n\nThis is a small monkey. It is funny! That is a big elephant. It is grey.\n\nLook! Two tigers are there. They have stripes. We see birds too. The birds can fly.\n\nI like the zoo. My favourite animal is the bear.",
+              "wordCount": 52,
+              "imagePrompt": "A zoo scene with a monkey, elephant, tigers behind a fence, flying birds, and a brown bear."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main idea of the text?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "main_idea",
+              "points": 1,
+              "explanation": "The text describes animals the children see at the zoo.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Children describe animals at the zoo.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Children talk about their school.",
+                  "isCorrect": false,
+                  "distractorNote": "No school in the text"
+                },
+                {
+                  "text": "Children describe their home.",
+                  "isCorrect": false,
+                  "distractorNote": "Setting is the zoo"
+                }
+              ]
+            },
+            {
+              "questionText": "How many tigers are there?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "detail",
+              "points": 1,
+              "explanation": "The text says: Two tigers are there.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Two",
+                  "isCorrect": true
+                },
+                {
+                  "text": "One",
+                  "isCorrect": false,
+                  "distractorNote": "Text says two"
+                },
+                {
+                  "text": "Three",
+                  "isCorrect": false,
+                  "distractorNote": "Number not in text"
+                }
+              ]
+            },
+            {
+              "questionText": "Why does the writer use 'That' for the elephant?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "inference",
+              "points": 1,
+              "explanation": "That is used for the elephant because it is far away; This is used for the nearby monkey.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Because the elephant is far away.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Because there are two elephants.",
+                  "isCorrect": false,
+                  "distractorNote": "Only one elephant mentioned"
+                },
+                {
+                  "text": "Because elephants cannot fly.",
+                  "isCorrect": false,
+                  "distractorNote": "Not related to this/that"
+                }
+              ]
+            },
+            {
+              "questionText": "In 'They have stripes', who does they refer to?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "vocabulary_in_context",
+              "points": 1,
+              "explanation": "They refers to the two tigers mentioned in the previous sentence.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.33,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The tigers",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The birds",
+                  "isCorrect": false,
+                  "distractorNote": "Birds fly; no stripes"
+                },
+                {
+                  "text": "The monkeys",
+                  "isCorrect": false,
+                  "distractorNote": "Mentioned earlier as one monkey"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the ideas in order: (1) They see monkeys and elephants (2) They arrive at the zoo (3) They see tigers and birds (4) They say their favourite animal",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "sequencing",
+              "points": 1,
+              "explanation": "The text moves from arrival → near animals → far animals → favourite at the end.",
+              "qualityScores": {
+                "quality": 0.88,
+                "difficulty": 0.4,
+                "curriculumAlignment": 0.93,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "2 → 1 → 3 → 4",
+                  "isCorrect": true
+                },
+                {
+                  "text": "1 → 2 → 4 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Arrival comes first"
+                },
+                {
+                  "text": "4 → 3 → 2 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Reversed order"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-tick-animal-picture",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e2000004-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Tick the Correct Picture",
+      "learningObjective": "Listen to short descriptions and identify the correct animal.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "listening-animal-dialogue",
+          "title": "Listen: Which Animal?",
+          "instructions": "Listen to the conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "At the Pet Shop",
+              "setting": "A pet shop with pictures of animals",
+              "speakers": [
+                {
+                  "name": "Examiner",
+                  "role": "adult"
+                },
+                {
+                  "name": "Kim",
+                  "role": "girl, 8"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Examiner",
+                  "text": "Look at the pictures, Kim. Which is your pet?"
+                },
+                {
+                  "speaker": "Kim",
+                  "text": "This is my pet. It is a dog."
+                },
+                {
+                  "speaker": "Examiner",
+                  "text": "Good. And which animal is big and grey?"
+                },
+                {
+                  "speaker": "Kim",
+                  "text": "That is the elephant."
+                },
+                {
+                  "speaker": "Examiner",
+                  "text": "Which animal has stripes?"
+                },
+                {
+                  "speaker": "Kim",
+                  "text": "The tiger has stripes."
+                }
+              ],
+              "audioNotes": "Clear, slow delivery. Pause after each question. Total duration approx. 35 seconds."
+            },
+            "answerKey": {
+              "q1": "dog",
+              "q2": "elephant",
+              "q3": "tiger"
+            },
+            "audioUrl": "/audio/listening/starters/unit-04/listening-animal-dialogue.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What is Kim's pet?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Kim says: It is a dog.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A dog",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A cat",
+                  "isCorrect": false,
+                  "distractorNote": "Another common pet"
+                },
+                {
+                  "text": "A bird",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned as her pet"
+                }
+              ]
+            },
+            {
+              "questionText": "Which animal is big and grey?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Kim says: That is the elephant.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The elephant",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The bear",
+                  "isCorrect": false,
+                  "distractorNote": "Big but not mentioned as grey here"
+                },
+                {
+                  "text": "The monkey",
+                  "isCorrect": false,
+                  "distractorNote": "Small animal"
+                }
+              ]
+            },
+            {
+              "questionText": "Which animal has stripes?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Kim says: The tiger has stripes.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "The tiger",
+                  "isCorrect": true
+                },
+                {
+                  "text": "The fish",
+                  "isCorrect": false,
+                  "distractorNote": "No stripes"
+                },
+                {
+                  "text": "The rabbit",
+                  "isCorrect": false,
+                  "distractorNote": "No stripes"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-describe-animals",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e2000004-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Write About Animals",
+      "learningObjective": "Write short phrases to name and describe animals using this/that and plurals.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "writing-animal-labels",
+          "title": "Writing: My Animals",
+          "instructions": "Write short answers. Use 1–5 words for each answer.",
+          "exerciseType": "writing",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Look at the picture of animals. Write short answers to the three questions.",
+            "prompts": [
+              "1. What is this? (Write: This is a _____)",
+              "2. Name two animals you see. (Use plurals: two _____)",
+              "3. Write one sentence: That is a _____. (Choose any animal from the picture)"
+            ],
+            "expectedLength": "3 short answers; 1–5 words each; one sentence up to 6 words",
+            "successCriteria": [
+              "All three prompts are answered",
+              "Uses at least two unit animal words",
+              "Uses this/that or plural -s correctly",
+              "Spelling of core words is recognisable"
+            ],
+            "modelAnswer": {
+              "answers": [
+                "This is a cat.",
+                "two dogs",
+                "That is a bear."
+              ]
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.3,
+                "criteria": "Correct use of this/that or plural -s."
+              },
+              "vocabulary": {
+                "weight": 0.3,
+                "criteria": "Uses animal words from the unit accurately."
+              },
+              "organization": {
+                "weight": 0.2,
+                "criteria": "Answers match the prompts in order; sentence is clear."
+              },
+              "taskAchievement": {
+                "weight": 0.2,
+                "criteria": "All parts completed; length appropriate for Starters."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your answers to the three prompts in the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Accept any response meeting success criteria. Model answer shows expected range.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-animal-labels",
+                "autoCheckKeywords": [
+                  "this",
+                  "that",
+                  "cat",
+                  "dog",
+                  "bird",
+                  "fish",
+                  "elephant",
+                  "monkey",
+                  "bear",
+                  "tiger",
+                  "is",
+                  "are"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-talk-about-animals",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e2000004-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Animals",
+      "learningObjective": "Answer simple questions about animals using this, that and animal vocabulary.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "speaking-animal-interview",
+          "title": "Speaking: Animal Interview",
+          "instructions": "Answer the examiner's questions. Say at least one word for each question.",
+          "exerciseType": "speaking",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "prompt": "The examiner will ask you about animals. Look at the picture of pets and zoo animals.",
+            "pictureDescription": "A cat and dog near the child; an elephant and tiger far away in a zoo scene.",
+            "followUpQuestions": [
+              "What is this?",
+              "What is that?",
+              "Do you have a pet?",
+              "How many cats can you see?",
+              "What is your favourite animal?"
+            ],
+            "suggestedAnswers": [
+              "This is a dog.",
+              "That is an elephant.",
+              "Yes. A cat.",
+              "Two cats.",
+              "I like tigers."
+            ],
+            "assessmentCriteria": {
+              "pronunciation": "Key animal words (cat, dog, bird, elephant) are understandable.",
+              "fluency": "Responds without long silence; uses words or short phrases.",
+              "grammar": "Uses this/that or plural -s in at least two answers.",
+              "vocabulary": "Uses at least three different unit animal words correctly."
+            },
+            "maxDurationSeconds": 90
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the five follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "animals",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 5,
+              "explanation": "Assess holistically using the four assessment areas. Partial answers earn partial credit.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-animal-interview",
+                "minimumResponses": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

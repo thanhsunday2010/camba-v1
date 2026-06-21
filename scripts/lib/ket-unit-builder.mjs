@@ -3,26 +3,14 @@
  */
 
 import { lessonId } from "./content-ids.mjs";
+import {
+  normalizeLessonExercises,
+  buildLessonsFromBlueprint,
+  SKILL_ORDER,
+} from "./unit-assembler.mjs";
+import { loadCurriculumMap } from "./curriculum-map.mjs";
 
 const LEVEL = "ket";
-
-const SKILL_ORDER = [
-  "vocabulary",
-  "grammar",
-  "reading",
-  "listening",
-  "writing",
-  "speaking",
-];
-
-const SKILL_SUFFIX = {
-  vocabulary: "000000000001",
-  grammar: "000000000002",
-  reading: "000000000003",
-  listening: "000000000004",
-  writing: "000000000005",
-  speaking: "000000000006",
-};
 
 function qScores(difficulty = 0.2) {
   return {
@@ -397,94 +385,112 @@ export function buildKetUnit(blueprint) {
   } = blueprint;
 
   const topicTag = unitSlug;
+  const padded = String(unitNumber).padStart(2, "0");
 
-  const builtLessons = SKILL_ORDER.map((skill, sortOrder) => {
-    const lessonBlueprint = lessons[skill];
-    const prevSkill = sortOrder > 0 ? SKILL_ORDER[sortOrder - 1] : null;
-
-    const builtExercises = lessonBlueprint.exercises.map((ex) => {
-      const padded = String(unitNumber).padStart(2, "0");
-
-      if (ex.exerciseType === "writing" && ex.content?.taskDescription) {
-        if (ex.questions?.length && ex.content?.targetLevel) {
-          return ex;
-        }
-        return buildWritingCheck({
-          slug: ex.slug,
-          topicTag,
-          title: ex.title,
-          instructions: ex.instructions,
-          sortOrder: ex.sortOrder,
-          taskDescription: ex.content.taskDescription,
-          prompts: ex.content.prompts,
-          minWords: ex.content.minWords ?? ex.content.minimumWords ?? 25,
-          modelAnswerText: ex.content.modelAnswer?.text ?? ex.content.modelAnswerText,
-          rubric: ex.content.rubric,
-          successCriteria: ex.content.successCriteria,
-          autoCheckKeywords: ex.content.autoCheckKeywords,
-        });
+  function buildExerciseFromBlueprint(ex, { skill }) {
+    if (ex.exerciseType === "writing" && ex.content?.taskDescription) {
+      if (ex.questions?.length && ex.content?.targetLevel) {
+        return ex;
       }
-      if (ex.exerciseType === "speaking" && ex.content?.followUpQuestions) {
-        if (ex.questions?.length && ex.content?.targetLevel) {
-          return ex;
-        }
-        return buildSpeakingCheck({
-          ...ex,
-          topicTag,
-        });
-      }
-      if (ex.exerciseType === "reading_comprehension") {
-        if (ex.content?.passage) {
-          return ex;
-        }
-        return buildReadingExercise(ex);
-      }
-      if (ex.exerciseType === "listening") {
-        const audioUrl = `/audio/listening/ket/unit-${padded}/${ex.slug}.mp3`;
-        if (ex.content?.script) {
-          return { ...ex, content: { ...ex.content, audioUrl } };
-        }
-        return buildListeningExercise({
-          slug: ex.slug,
-          title: ex.title,
-          instructions: ex.instructions,
-          sortOrder: ex.sortOrder,
-          script: ex.script,
-          answerKey: ex.answerKey,
-          audioUrl,
-          questions: ex.questions,
-        });
-      }
-      return buildExercise({
-        ...ex,
-        questions: (ex.questions ?? []).map((q) => ({
-          ...q,
-          topicTag: q.topicTag ?? topicTag,
-          levelTag: LEVEL,
-        })),
+      return buildWritingCheck({
+        slug: ex.slug,
+        topicTag,
+        title: ex.title,
+        instructions: ex.instructions,
+        sortOrder: ex.sortOrder,
+        taskDescription: ex.content.taskDescription,
+        prompts: ex.content.prompts,
+        minWords: ex.content.minWords ?? ex.content.minimumWords ?? 25,
+        modelAnswerText:
+          ex.content.modelAnswer?.text ?? ex.content.modelAnswerText,
+        rubric: ex.content.rubric,
+        successCriteria: ex.content.successCriteria,
+        autoCheckKeywords: ex.content.autoCheckKeywords,
       });
-    });
-
-    // Fix writing question topicTag
-    for (const ex of builtExercises) {
-      for (const q of ex.questions ?? []) {
-        if (!q.topicTag) q.topicTag = topicTag;
-      }
     }
+    if (ex.exerciseType === "speaking" && ex.content?.followUpQuestions) {
+      if (ex.questions?.length && ex.content?.targetLevel) {
+        return ex;
+      }
+      return buildSpeakingCheck({
+        ...ex,
+        topicTag,
+      });
+    }
+    if (ex.exerciseType === "reading_comprehension") {
+      if (ex.content?.passage) {
+        return ex;
+      }
+      return buildReadingExercise(ex);
+    }
+    if (ex.exerciseType === "listening") {
+      const audioUrl = `/audio/listening/ket/unit-${padded}/${ex.slug}.mp3`;
+      if (ex.content?.script) {
+        return { ...ex, content: { ...ex.content, audioUrl } };
+      }
+      return buildListeningExercise({
+        slug: ex.slug,
+        title: ex.title,
+        instructions: ex.instructions,
+        sortOrder: ex.sortOrder,
+        script: ex.script,
+        answerKey: ex.answerKey,
+        audioUrl,
+        questions: ex.questions,
+      });
+    }
+    return buildExercise({
+      ...ex,
+      questions: (ex.questions ?? []).map((q) => ({
+        ...q,
+        topicTag: q.topicTag ?? topicTag,
+        levelTag: LEVEL,
+        skillTag: q.skillTag ?? skill,
+      })),
+    });
+  }
 
-    return {
-      slug: lessonBlueprint.slug,
-      skill,
-      sortOrder,
-      ...(prevSkill
-        ? { unlockAfterLessonId: unlockAfter(unitNumber, prevSkill) }
-        : {}),
-      title: lessonBlueprint.title,
-      learningObjective: lessonBlueprint.learningObjective,
-      estimatedMinutes: lessonBlueprint.estimatedMinutes ?? 22,
-      exercises: builtExercises,
-    };
-  });
+  const hasMultiLesson = SKILL_ORDER.some((s) => Array.isArray(lessons[s]));
+
+  let builtLessons;
+
+  if (hasMultiLesson) {
+    builtLessons = buildLessonsFromBlueprint({
+      level: LEVEL,
+      unitNumber,
+      lessonsBySkill: lessons,
+      buildExerciseFn: buildExerciseFromBlueprint,
+    });
+  } else {
+    builtLessons = SKILL_ORDER.map((skill, sortOrder) => {
+      const lessonBlueprint = lessons[skill];
+      const prevSkill = sortOrder > 0 ? SKILL_ORDER[sortOrder - 1] : null;
+
+      const builtExercises = lessonBlueprint.exercises.map((ex) =>
+        buildExerciseFromBlueprint(ex, { skill })
+      );
+
+      for (const ex of builtExercises) {
+        for (const q of ex.questions ?? []) {
+          if (!q.topicTag) q.topicTag = topicTag;
+        }
+      }
+
+      return {
+        slug: lessonBlueprint.slug,
+        skill,
+        lessonIndex: lessonBlueprint.lessonIndex ?? 0,
+        sortOrder,
+        ...(prevSkill
+          ? { unlockAfterLessonId: unlockAfter(unitNumber, prevSkill) }
+          : {}),
+        title: lessonBlueprint.title,
+        learningObjective: lessonBlueprint.learningObjective,
+        estimatedMinutes: lessonBlueprint.estimatedMinutes ?? 22,
+        exercises: normalizeLessonExercises(builtExercises, LEVEL),
+      };
+    });
+  }
 
   // Fix writing check builder topicTag on questions
   for (const lesson of builtLessons) {
@@ -511,7 +517,7 @@ export function buildKetUnit(blueprint) {
       unitSlug,
       unitTitle,
       targetAge: "11-14",
-      curriculumMapVersion: "1.1.0",
+      curriculumMapVersion: loadCurriculumMap().version,
       contentReview: {
         reviewThreshold: 0.75,
         defaultFlagBelowThreshold: true,

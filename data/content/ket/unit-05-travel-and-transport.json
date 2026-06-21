@@ -10,7 +10,7 @@
     "unitSlug": "travel-and-transport",
     "unitTitle": "Travel and Transport",
     "targetAge": "11-14",
-    "curriculumMapVersion": "1.1.0",
+    "curriculumMapVersion": "1.2.0",
     "contentReview": {
       "reviewThreshold": 0.75,
       "defaultFlagBelowThreshold": true,
@@ -266,6 +266,7 @@
     {
       "slug": "vocab-travel-words",
       "skill": "vocabulary",
+      "lessonIndex": 0,
       "sortOrder": 0,
       "title": "Lesson 1: Travel and Transport Words",
       "learningObjective": "Recognise and understand twelve travel and transport words at KET A2 level.",
@@ -760,12 +761,156 @@
               }
             }
           ]
+        },
+        {
+          "slug": "vocab-travel-review",
+          "title": "Review: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Getting on a plane or train is called _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Boarding (lên tàu/máy bay) là bước lên phương tiện.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "reservation",
+                  "isCorrect": false,
+                  "distractorNote": "Booking in advance"
+                },
+                {
+                  "text": "boarding",
+                  "isCorrect": true
+                },
+                {
+                  "text": "fare",
+                  "isCorrect": false,
+                  "distractorNote": "Ticket price"
+                }
+              ]
+            },
+            {
+              "questionText": "You must show your _____ before you travel.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Ticket (vé) cần xuất trình khi đi. Delay là sự trễ.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "delay",
+                  "isCorrect": false,
+                  "distractorNote": "Late running"
+                },
+                {
+                  "text": "ticket",
+                  "isCorrect": true
+                },
+                {
+                  "text": "destination",
+                  "isCorrect": false,
+                  "distractorNote": "End point of journey"
+                }
+              ]
+            },
+            {
+              "questionText": "The bus takes a different _____ because of road works.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Route (tuyến đường) thay đổi khi có công trình.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "platform",
+                  "isCorrect": false,
+                  "distractorNote": "Train waiting area"
+                },
+                {
+                  "text": "route",
+                  "isCorrect": true
+                },
+                {
+                  "text": "boarding",
+                  "isCorrect": false,
+                  "distractorNote": "Getting on vehicle"
+                }
+              ]
+            },
+            {
+              "questionText": "Every _____ must keep their luggage with them.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Passenger (hành khách) phải giữ hành lý. Fare là giá vé.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "fare",
+                  "isCorrect": false,
+                  "distractorNote": "Cost of travel"
+                },
+                {
+                  "text": "passenger",
+                  "isCorrect": true
+                },
+                {
+                  "text": "departure",
+                  "isCorrect": false,
+                  "distractorNote": "Leaving time"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "grammar-travel-tenses",
       "skill": "grammar",
+      "lessonIndex": 0,
       "sortOrder": 1,
       "unlockAfterLessonId": "e5000005-0000-4000-8000-000000000001",
       "title": "Lesson 2: Past and Future for Travel",
@@ -1343,12 +1488,156 @@
               "levelTag": "ket"
             }
           ]
+        },
+        {
+          "slug": "grammar-travel-review",
+          "title": "Review: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "While passengers _____ for the train, an announcement started.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Hành động nền đang diễn ra → were waiting.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "waited",
+                  "isCorrect": false,
+                  "distractorNote": "Completed action"
+                },
+                {
+                  "text": "were waiting",
+                  "isCorrect": true
+                },
+                {
+                  "text": "are waiting",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong tense for past context"
+                }
+              ]
+            },
+            {
+              "questionText": "The fare is expensive, so we _____ the cheaper route.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Quyết định tại thời điểm nói → will take.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "take",
+                  "isCorrect": false,
+                  "distractorNote": "Present habit"
+                },
+                {
+                  "text": "will take",
+                  "isCorrect": true
+                },
+                {
+                  "text": "are taking",
+                  "isCorrect": false,
+                  "distractorNote": "Fixed arrangement"
+                }
+              ]
+            },
+            {
+              "questionText": "What time _____ your departure tomorrow?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Sắp xếp cố định → present continuous: is your train leaving.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "does your train leave",
+                  "isCorrect": false,
+                  "distractorNote": "Timetable habit"
+                },
+                {
+                  "text": "is your train leaving",
+                  "isCorrect": true
+                },
+                {
+                  "text": "will your train leaving",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong verb form"
+                }
+              ]
+            },
+            {
+              "questionText": "They _____ a reservation because they were going to travel at the weekend.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Hành động hoàn thành trong quá khứ → made.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "were making",
+                  "isCorrect": false,
+                  "distractorNote": "Action in progress"
+                },
+                {
+                  "text": "made",
+                  "isCorrect": true
+                },
+                {
+                  "text": "make",
+                  "isCorrect": false,
+                  "distractorNote": "Present tense"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "reading-train-article",
       "skill": "reading",
+      "lessonIndex": 0,
       "sortOrder": 2,
       "unlockAfterLessonId": "e5000005-0000-4000-8000-000000000002",
       "title": "Lesson 3: Train Travel Article",
@@ -1674,12 +1963,102 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "reading-train-review",
+          "title": "Review: Main Idea and Order",
+          "instructions": "Read the article one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Why More Students Take the Train",
+              "text": "Last year, many students at Riverside School started taking the train to the city centre instead of the bus. They said the bus route was often slow because of traffic delays.\n\nTrain travel has some clear advantages. You can book a reservation online and check the departure time on your phone. The fare is sometimes cheaper than a taxi, especially if you buy a weekly ticket. Passengers also know the exact platform before they arrive at the station.\n\nHowever, not everyone agrees. Some parents worry when there is a long delay in winter. Others think the destination station is too far from the sports centre. The school newspaper asked readers: \"Is the train really the best choice?\"\n\nMost students answered yes. They explained that they were reading or doing homework while they were travelling. One student wrote, \"I will keep using the train next term because it saves time on busy days.\"",
+              "wordCount": 152,
+              "imagePrompt": "A modern train station platform with students carrying backpacks, a departure board showing times, and a train arriving."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main topic of the article?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Bài so sánh lý do học sinh chọn tàu và ý kiến trái chiều.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "How to buy a cheaper bus ticket",
+                  "isCorrect": false,
+                  "distractorNote": "Bus is background only"
+                },
+                {
+                  "text": "Whether the train is a good choice for students",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Rules for carrying luggage",
+                  "isCorrect": false,
+                  "distractorNote": "Not the focus"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the sections in order: (1) Advantages of the train (2) Students switching from bus (3) Different opinions",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Bài: chuyển sang tàu → ưu điểm → ý kiến khác nhau.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "sequencing",
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Students' change comes first"
+                },
+                {
+                  "text": "2 → 1 → 3",
+                  "isCorrect": true
+                },
+                {
+                  "text": "3 → 1 → 2",
+                  "isCorrect": false,
+                  "distractorNote": "Opinions come last"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "listening-station-announcements",
       "skill": "listening",
+      "lessonIndex": 0,
       "sortOrder": 3,
       "unlockAfterLessonId": "e5000005-0000-4000-8000-000000000003",
       "title": "Lesson 4: Station Announcements",
@@ -2113,8 +2492,7 @@
                 }
               ],
               "audioNotes": "Clear station announcement, moderate pace. Destination names spelled clearly. Approx. 35 seconds."
-            },
-            "audioUrl": "/audio/listening/ket/unit-05/listening-platform-apply.mp3"
+            }
           },
           "questions": [
             {
@@ -2148,12 +2526,169 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "listening-booking-review",
+          "title": "Review: Train Reservation Call",
+          "instructions": "Listen to a new conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Train Reservation Call",
+              "setting": "Travel agency phone call",
+              "speakers": [
+                {
+                  "name": "Clerk",
+                  "role": "travel agent"
+                },
+                {
+                  "name": "Mai",
+                  "role": "customer"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Clerk",
+                  "text": "Good morning, City Travel. How can I help you?"
+                },
+                {
+                  "speaker": "Mai",
+                  "text": "Hello. I'd like to make a reservation for two passengers to Manchester on Saturday."
+                },
+                {
+                  "speaker": "Clerk",
+                  "text": "The morning fare is eighteen pounds each. Departure is at 9:20 from platform 3."
+                },
+                {
+                  "speaker": "Mai",
+                  "text": "Perfect. My destination is Manchester Piccadilly. Can I pay by card?"
+                },
+                {
+                  "speaker": "Clerk",
+                  "text": "Yes. I'll email your ticket. The route takes about two hours with one stop."
+                }
+              ],
+              "audioNotes": "Friendly phone conversation, clear numbers and place names. Approx. 40 seconds."
+            },
+            "answerKey": {
+              "q1": "two passengers Manchester Saturday",
+              "q2": "18 pounds 9:20 platform 3",
+              "q3": "card email"
+            },
+            "audioUrl": "/audio/listening/ket/unit-05/listening-booking-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What does Mai want to book?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Reservation for two passengers to Manchester on Saturday.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "One ticket to Brighton today",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong number and place"
+                },
+                {
+                  "text": "Two tickets to Manchester on Saturday",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A bus to Oxford",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong transport"
+                }
+              ]
+            },
+            {
+              "questionText": "What is the departure time and platform?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Departure is at 9:20 from platform 3.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "4:30 from platform 6",
+                  "isCorrect": false,
+                  "distractorNote": "From announcement"
+                },
+                {
+                  "text": "9:20 from platform 3",
+                  "isCorrect": true
+                },
+                {
+                  "text": "9:20 from platform 6",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong platform"
+                }
+              ]
+            },
+            {
+              "questionText": "How will Mai pay and receive the ticket?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Can I pay by card? — Yes. I'll email your ticket.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Pay cash at the platform",
+                  "isCorrect": false,
+                  "distractorNote": "Cash not offered"
+                },
+                {
+                  "text": "Pay by card; ticket by email",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Pay online only at the station",
+                  "isCorrect": false,
+                  "distractorNote": "Online at station not said"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "writing-travel-message",
       "skill": "writing",
+      "lessonIndex": 0,
       "sortOrder": 4,
       "unlockAfterLessonId": "e5000005-0000-4000-8000-000000000004",
       "title": "Lesson 5: Message About a Trip",
@@ -2462,12 +2997,101 @@
               }
             }
           ]
+        },
+        {
+          "slug": "writing-travel-review",
+          "title": "Review: Message About Your Trip",
+          "instructions": "Write a message to a friend. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "You are going to visit another city at the weekend. Write a short message to your friend Tom. Tell him about your travel plans.",
+            "prompts": [
+              "Say where you are going (destination).",
+              "Say how you will travel and when you are leaving (departure).",
+              "Mention one thing you have arranged (reservation, ticket, or meeting).",
+              "End the message in a friendly way."
+            ],
+            "expectedLength": "At least 25 words",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Clear destination and travel plan",
+              "Uses a future form (will, going to, or present continuous)",
+              "Uses at least two unit vocabulary words",
+              "Friendly opening and closing"
+            ],
+            "modelAnswer": {
+              "text": "Hi Tom,\n\nI am going to visit Manchester this Saturday. My train departure is at 9:20 and I made a reservation online. The fare was eighteen pounds. I will meet my cousin at the station. Are you free on Sunday?\n\nSee you,\nMai"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses future forms (will, going to, present continuous) correctly."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses travel words (destination, departure, fare, reservation, platform) appropriately."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Message has greeting, clear details and a friendly closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Explains travel plans with destination and departure; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your response following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Bài mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-travel-check",
+                "autoCheckKeywords": [
+                  "destination",
+                  "departure",
+                  "train",
+                  "reservation",
+                  "fare",
+                  "platform",
+                  "going",
+                  "will",
+                  "tom"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
         }
       ]
     },
     {
       "slug": "speaking-travel-habits",
       "skill": "speaking",
+      "lessonIndex": 0,
       "sortOrder": 5,
       "unlockAfterLessonId": "e5000005-0000-4000-8000-000000000005",
       "title": "Lesson 6: Talk About Travel",
@@ -2732,7 +3356,7 @@
               "content": {
                 "assessmentCriteriaRef": "speaking-travel-interview",
                 "minimumResponses": 4,
-                "maxDurationSeconds": 120
+                "maxDurationSeconds": 60
               }
             }
           ]
@@ -2845,6 +3469,47 @@
                   "distractorNote": "Wrong verb form"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-travel-interview-review",
+          "title": "Review: Travel Interview",
+          "instructions": "Answer the examiner's questions about how you travel. Speak for up to two minutes.",
+          "exerciseType": "speaking",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "travel-and-transport",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-travel-interview",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 60
+              }
             }
           ]
         }

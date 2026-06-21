@@ -10,7 +10,7 @@
     "unitSlug": "work-and-jobs",
     "unitTitle": "Work and Jobs",
     "targetAge": "11-14",
-    "curriculumMapVersion": "1.1.0",
+    "curriculumMapVersion": "1.2.0",
     "contentReview": {
       "reviewThreshold": 0.75,
       "defaultFlagBelowThreshold": true,
@@ -268,6 +268,7 @@
     {
       "slug": "vocab-work-words",
       "skill": "vocabulary",
+      "lessonIndex": 0,
       "sortOrder": 0,
       "title": "Lesson 1: Work and Jobs Words",
       "learningObjective": "Recognise and understand twelve work and jobs words at KET A2 level.",
@@ -729,12 +730,156 @@
               }
             }
           ]
+        },
+        {
+          "slug": "vocab-work-review",
+          "title": "Review: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Ms Pham is the shop _____. She interviews new staff.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Manager (quản lý) phỏng vấn nhân viên mới. Colleague là đồng cấp.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "colleague",
+                  "isCorrect": false,
+                  "distractorNote": "A co-worker, not the boss"
+                },
+                {
+                  "text": "manager",
+                  "isCorrect": true
+                },
+                {
+                  "text": "salary",
+                  "isCorrect": false,
+                  "distractorNote": "Payment, not a person"
+                }
+              ]
+            },
+            {
+              "questionText": "Tom works three evenings a week. He has a _____ job.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Part-time (bán thời gian) khi làm vài buổi/tuần. Career là sự nghiệp.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "career",
+                  "isCorrect": false,
+                  "distractorNote": "Long-term professional path"
+                },
+                {
+                  "text": "part-time",
+                  "isCorrect": true
+                },
+                {
+                  "text": "retire",
+                  "isCorrect": false,
+                  "distractorNote": "To stop working"
+                }
+              ]
+            },
+            {
+              "questionText": "Before the interview, you should _____ online with your CV.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Apply (nộp đơn) là gửi đơn xin việc. Experience là kinh nghiệm.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "experience",
+                  "isCorrect": false,
+                  "distractorNote": "Skills you already have"
+                },
+                {
+                  "text": "apply",
+                  "isCorrect": true
+                },
+                {
+                  "text": "shift",
+                  "isCorrect": false,
+                  "distractorNote": "A work period"
+                }
+              ]
+            },
+            {
+              "questionText": "Many people work in an _____ in the city centre.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Office (văn phòng) là nơi làm việc trong nhà. Interview là buổi phỏng vấn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "interview",
+                  "isCorrect": false,
+                  "distractorNote": "A meeting, not a place"
+                },
+                {
+                  "text": "office",
+                  "isCorrect": true
+                },
+                {
+                  "text": "employer",
+                  "isCorrect": false,
+                  "distractorNote": "A person, not a building"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "grammar-work-tenses",
       "skill": "grammar",
+      "lessonIndex": 0,
       "sortOrder": 1,
       "unlockAfterLessonId": "e5000002-0000-4000-8000-000000000001",
       "title": "Lesson 2: Present Simple and Continuous at Work",
@@ -1228,12 +1373,156 @@
               }
             }
           ]
+        },
+        {
+          "slug": "grammar-work-review",
+          "title": "Review: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "My employer usually _____ me on the last Friday of the month.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Usually = thói quen → pays (present simple).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "is paying",
+                  "isCorrect": false,
+                  "distractorNote": "Action happening now"
+                },
+                {
+                  "text": "pays",
+                  "isCorrect": true
+                },
+                {
+                  "text": "pay",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong form with my employer"
+                }
+              ]
+            },
+            {
+              "questionText": "_____ are you working extra shifts this week?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Hỏi lý do → Why + are you working (continuous).",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "When",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about time"
+                },
+                {
+                  "text": "Why",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Who",
+                  "isCorrect": false,
+                  "distractorNote": "Asks about person"
+                }
+              ]
+            },
+            {
+              "questionText": "Tom _____ as a waiter, but this month he is training to be a manager.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Việc thường xuyên → works; tháng này tạm thời → is training.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "is working",
+                  "isCorrect": false,
+                  "distractorNote": "Sounds like only now"
+                },
+                {
+                  "text": "works",
+                  "isCorrect": true
+                },
+                {
+                  "text": "worked",
+                  "isCorrect": false,
+                  "distractorNote": "Past, not general fact"
+                }
+              ]
+            },
+            {
+              "questionText": "How many hours _____ you work each week?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Wh- question present simple với you → do you work.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "are",
+                  "isCorrect": false,
+                  "distractorNote": "Needs -ing verb"
+                },
+                {
+                  "text": "do",
+                  "isCorrect": true
+                },
+                {
+                  "text": "does",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong person"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "reading-job-advert",
       "skill": "reading",
+      "lessonIndex": 0,
       "sortOrder": 2,
       "unlockAfterLessonId": "e5000002-0000-4000-8000-000000000002",
       "title": "Lesson 3: Job Advertisement",
@@ -1563,12 +1852,102 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "reading-job-review",
+          "title": "Review: Main Idea and Order",
+          "instructions": "Read the advertisement one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Part-Time Shop Assistant — Job Advertisement",
+              "text": "GREENWAY BOOKSHOP — NOW HIRING\n\nWe are looking for a friendly part-time shop assistant to join our team on weekends. The employer offers a good salary and training for the right person.\n\nYou will work with colleagues in a busy city centre shop. Duties include helping customers, organising books and working a Saturday shift from 9 a.m. to 5 p.m.\n\nREQUIREMENTS\n• At least one year of customer service experience\n• Good communication skills for interviews with our manager\n• Able to work on Saturday and Sunday\n\nBENEFITS\n• Hourly salary above the minimum wage\n• Free books after three months\n• Career advice for students who want to work in publishing\n\nHOW TO APPLY\nSend a short email with your name and work experience to jobs@greenwaybooks.co.uk before 30 April. We will contact successful candidates for an interview.\n\nOur shop manager, Ms Pham, started here as a student. She says: \"This job helped me build skills for my career.\"",
+              "wordCount": 159,
+              "imagePrompt": "A bookshop window display with a hiring poster showing salary, shift hours and apply-by email details; friendly urban shop front."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main purpose of this advertisement?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Toàn bộ quảng cáo tuyển part-time shop assistant và hướng dẫn apply.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "To announce a book sale",
+                  "isCorrect": false,
+                  "distractorNote": "Sale not mentioned"
+                },
+                {
+                  "text": "To recruit a part-time shop assistant",
+                  "isCorrect": true
+                },
+                {
+                  "text": "To describe Ms Pham retiring",
+                  "isCorrect": false,
+                  "distractorNote": "Ms Pham started as student"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the sections in order: (1) Requirements (2) How to apply (3) Job description and benefits",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Thứ tự: mô tả công việc + benefits → requirements → how to apply.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "sequencing",
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Requirements come after description"
+                },
+                {
+                  "text": "3 → 1 → 2",
+                  "isCorrect": true
+                },
+                {
+                  "text": "2 → 3 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Apply section is last"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "listening-job-interview",
       "skill": "listening",
+      "lessonIndex": 0,
       "sortOrder": 3,
       "unlockAfterLessonId": "e5000002-0000-4000-8000-000000000003",
       "title": "Lesson 4: Job Interview",
@@ -2093,12 +2472,177 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "listening-career-review",
+          "title": "Review: Career Advice Call",
+          "instructions": "Listen to a new conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Career Advice Phone Call",
+              "setting": "Career advice centre",
+              "speakers": [
+                {
+                  "name": "Advisor",
+                  "role": "career advisor"
+                },
+                {
+                  "name": "Linh",
+                  "role": "student caller"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Linh",
+                  "text": "Hello. I want some advice about my career after school."
+                },
+                {
+                  "speaker": "Advisor",
+                  "text": "Of course. What kind of work interests you?"
+                },
+                {
+                  "speaker": "Linh",
+                  "text": "I like helping people. I had an interview for a nurse assistant course yesterday."
+                },
+                {
+                  "speaker": "Advisor",
+                  "text": "That is a good choice. You need more experience in a hospital. Have you thought about volunteering?"
+                },
+                {
+                  "speaker": "Linh",
+                  "text": "Not yet. When should I apply for training programmes?"
+                },
+                {
+                  "speaker": "Advisor",
+                  "text": "You should apply before September. Many students retire from study and start work at twenty."
+                },
+                {
+                  "speaker": "Linh",
+                  "text": "Thank you. That helps a lot."
+                }
+              ],
+              "audioNotes": "Friendly phone conversation, clear voices. Approx. 45 seconds."
+            },
+            "answerKey": {
+              "q1": "nurse assistant course",
+              "q2": "before September",
+              "q3": "volunteering"
+            },
+            "audioUrl": "/audio/listening/ket/unit-02/listening-career-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What did Linh have yesterday?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "She had an interview for a nurse assistant course.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A job at a hospital",
+                  "isCorrect": false,
+                  "distractorNote": "Not yet employed"
+                },
+                {
+                  "text": "An interview for a nurse assistant course",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A meeting with her employer",
+                  "isCorrect": false,
+                  "distractorNote": "Advisor call is today"
+                }
+              ]
+            },
+            {
+              "questionText": "When should Linh apply for training programmes?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "You should apply before September.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "After she retires",
+                  "isCorrect": false,
+                  "distractorNote": "Retire mentioned differently"
+                },
+                {
+                  "text": "Before September",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Next Monday",
+                  "isCorrect": false,
+                  "distractorNote": "Monday is for Tom"
+                }
+              ]
+            },
+            {
+              "questionText": "What does the advisor suggest for more experience?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Have you thought about volunteering?",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Working a night shift",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "Volunteering in a hospital",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Getting a higher salary",
+                  "isCorrect": false,
+                  "distractorNote": "Not the advice"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "slug": "writing-job-application",
       "skill": "writing",
+      "lessonIndex": 0,
       "sortOrder": 4,
       "unlockAfterLessonId": "e5000002-0000-4000-8000-000000000004",
       "title": "Lesson 5: Apply for a Job",
@@ -2389,12 +2933,103 @@
               }
             }
           ]
+        },
+        {
+          "slug": "writing-job-review",
+          "title": "Review: Job Application Email",
+          "instructions": "Write an email to apply for a part-time job. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "You saw the Greenway Bookshop job advertisement. Write an email to Ms Pham to apply for the part-time shop assistant job.",
+            "prompts": [
+              "Say which job you are applying for.",
+              "Describe your work experience.",
+              "Say when you can work (mention a shift).",
+              "Ask a polite question about the salary or interview.",
+              "End the email politely."
+            ],
+            "expectedLength": "At least 25 words",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Clear application for the shop assistant job",
+              "Mentions experience and availability",
+              "Polite question about salary or interview",
+              "Appropriate email opening and closing"
+            ],
+            "modelAnswer": {
+              "text": "Dear Ms Pham,\n\nI am writing to apply for the part-time shop assistant job. I worked in a café for six months and my colleagues said I am friendly with customers. I can work the Saturday shift and Sunday shift. Could you tell me when the interview is? I would like to know more about the salary too.\n\nThank you,\nMinh"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses present simple and/or present continuous correctly."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses work words (apply, experience, shift, salary, interview) appropriately."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Email has greeting, body and polite closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Applies for the job with experience and availability; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your response following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Bài mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-job-check",
+                "autoCheckKeywords": [
+                  "dear",
+                  "apply",
+                  "experience",
+                  "shift",
+                  "salary",
+                  "interview",
+                  "thank",
+                  "ms",
+                  "pham",
+                  "job"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
         }
       ]
     },
     {
       "slug": "speaking-work-career",
       "skill": "speaking",
+      "lessonIndex": 0,
       "sortOrder": 5,
       "unlockAfterLessonId": "e5000002-0000-4000-8000-000000000005",
       "title": "Lesson 6: Talk About Work",
@@ -2659,7 +3294,7 @@
               "content": {
                 "assessmentCriteriaRef": "speaking-work-interview",
                 "minimumResponses": 4,
-                "maxDurationSeconds": 120
+                "maxDurationSeconds": 60
               }
             }
           ]
@@ -2772,6 +3407,47 @@
                   "distractorNote": "Awkward meaning"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-work-interview-review",
+          "title": "Review: Work and Career Interview",
+          "instructions": "Answer the examiner's questions about work. Speak for up to two minutes.",
+          "exerciseType": "speaking",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "work-and-jobs",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-work-interview",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 60
+              }
             }
           ]
         }

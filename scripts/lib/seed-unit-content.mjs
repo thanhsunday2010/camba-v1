@@ -191,7 +191,12 @@ export async function seedUnitContent(supabase, { levelSlug, content, unlockForT
   const importedLessonIds = [];
 
   for (const lesson of content.lessons) {
-    const currentLessonId = lessonId(levelSlug, unitNumber, lesson.skill);
+    const currentLessonId = lessonId(
+      levelSlug,
+      unitNumber,
+      lesson.skill,
+      lesson.lessonIndex ?? 0
+    );
     const currentUnitId = unitId(levelSlug, unitNumber, lesson.skill);
     importedLessonIds.push(currentLessonId);
 
@@ -208,6 +213,7 @@ export async function seedUnitContent(supabase, { levelSlug, content, unlockForT
         unlock_after_lesson_id: lesson.unlockAfterLessonId ?? null,
         metadata: {
           skill: lesson.skill,
+          lessonIndex: lesson.lessonIndex ?? 0,
           learningObjective: lesson.learningObjective,
           level: levelSlug,
           unitSlug: curriculumUnit.slug,

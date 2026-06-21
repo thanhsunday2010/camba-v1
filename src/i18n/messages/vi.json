@@ -169,6 +169,8 @@
     "unitCount": "{count} unit",
     "unitsWithContent": "{count} unit đã có bài học",
     "unitLessonCount": "{count} bài học",
+    "unitExerciseCount": "{count} bài tập",
+    "lessonExerciseCount": "{count} bài tập",
     "unitComingSoon": "Nội dung đang được biên soạn",
     "comingSoon": "Sắp ra mắt",
     "skillNoContent": "Chưa có bài học cho kỹ năng này"

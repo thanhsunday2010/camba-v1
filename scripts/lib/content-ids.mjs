@@ -7,7 +7,10 @@
  * One curriculum unit (e.g. "Family and Friends") maps to 6 DB units — one per skill track.
  * Unit N on skill S at level L:
  *   unit:   d{levelSeries}{unitNumber padded 6} → skill suffix
- *   lesson: e{levelSeries}{unitNumber padded 6} → lesson suffix (1 per skill lesson)
+ *   lesson: e{levelSeries}{unitNumber padded 6} → skill suffix + lessonIndex offset
+ *
+ * lessonIndex 0–2 within each skill (suffix + lessonIndex * 100):
+ *   vocabulary L1: ...000001, L2: ...000101, L3: ...000201
  *
  * levelSeries: starters=2, movers=3, flyers=4, ket=5, pet=6
  */
@@ -53,10 +56,12 @@ export function unitId(levelSlug, unitNumber, skillSlug) {
   return `d${unitSegment(levelSlug, unitNumber)}-0000-4000-8000-${suffix}`;
 }
 
-export function lessonId(levelSlug, unitNumber, skillSlug) {
+export function lessonId(levelSlug, unitNumber, skillSlug, lessonIndex = 0) {
   const suffix = SKILL_SUFFIX[skillSlug];
   if (!suffix) throw new Error(`Skill "${skillSlug}" không hợp lệ`);
-  return `e${unitSegment(levelSlug, unitNumber)}-0000-4000-8000-${suffix}`;
+  const base = parseInt(suffix, 10);
+  const lessonSuffix = String(base + lessonIndex * 100).padStart(12, "0");
+  return `e${unitSegment(levelSlug, unitNumber)}-0000-4000-8000-${lessonSuffix}`;
 }
 
 export function exerciseIdBase(levelSlug, unitNumber) {

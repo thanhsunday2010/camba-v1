@@ -1,0 +1,1316 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by YLE Pre-A1 task formats only.",
+    "program": "cambridge-english",
+    "level": "starters",
+    "cefr": "pre-a1",
+    "unitNumber": 9,
+    "unitSlug": "sports-and-leisure",
+    "unitTitle": "Sports and Leisure",
+    "targetAge": "7-9",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Name common sports and leisure activities using Starters vocabulary.",
+      "Use can to talk about what you are able to do.",
+      "Use play and go with sports and activities correctly.",
+      "Match activities to pictures in short texts.",
+      "Listen and identify sports, games and actions.",
+      "Talk about what you can do and what games you play."
+    ],
+    "grammarFocus": [
+      "Can for ability: I can swim",
+      "Present simple: play, go"
+    ],
+    "readingSkillFocus": "Match Activities to Pictures",
+    "listeningSkillFocus": "Identify Sports and Actions"
+  },
+  "vocabularyBank": [
+    {
+      "word": "football",
+      "ipa": "/ˈfʊtbɔːl/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bóng đá",
+      "exampleSentence": "I play football after school.",
+      "difficulty": 1,
+      "topic": "sports-and-leisure",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "tennis",
+      "ipa": "/ˈtenɪs/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "quần vợt",
+      "exampleSentence": "She can play tennis.",
+      "difficulty": 1,
+      "topic": "sports-and-leisure",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "swim",
+      "ipa": "/swɪm/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "bơi",
+      "exampleSentence": "I can swim in the pool.",
+      "difficulty": 1,
+      "topic": "sports-and-leisure",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "run",
+      "ipa": "/rʌn/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "chạy",
+      "exampleSentence": "He can run very fast.",
+      "difficulty": 1,
+      "topic": "sports-and-leisure",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "play",
+      "ipa": "/pleɪ/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "chơi",
+      "exampleSentence": "We play a game in the park.",
+      "difficulty": 1,
+      "topic": "sports-and-leisure",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.95,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "bike",
+      "ipa": "/baɪk/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "xe đạp",
+      "exampleSentence": "My bike is red.",
+      "difficulty": 1,
+      "topic": "sports-and-leisure",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "ball",
+      "ipa": "/bɔːl/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "quả bóng",
+      "exampleSentence": "Kick the ball!",
+      "difficulty": 1,
+      "topic": "sports-and-leisure",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.09,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "game",
+      "ipa": "/ɡeɪm/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "trò chơi",
+      "exampleSentence": "This is a fun game.",
+      "difficulty": 1,
+      "topic": "sports-and-leisure",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "kick",
+      "ipa": "/kɪk/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "đá (bóng)",
+      "exampleSentence": "He can kick the ball.",
+      "difficulty": 1,
+      "topic": "sports-and-leisure",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "sport",
+      "ipa": "/spɔːt/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "môn thể thao",
+      "exampleSentence": "Football is my favourite sport.",
+      "difficulty": 1,
+      "topic": "sports-and-leisure",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.13,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "jump",
+      "ipa": "/dʒʌmp/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "nhảy",
+      "exampleSentence": "The girl can jump high.",
+      "difficulty": 1,
+      "topic": "sports-and-leisure",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "catch",
+      "ipa": "/kætʃ/",
+      "partOfSpeech": "verb",
+      "vietnameseMeaning": "bắt (bóng)",
+      "exampleSentence": "Can you catch the ball?",
+      "difficulty": 1,
+      "topic": "sports-and-leisure",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Can for ability: I can swim",
+      "explanation": "Use can + verb to say what you are able to do. Can does not change with he, she, it.",
+      "examples": [
+        "I can swim.",
+        "She can run.",
+        "We can play football."
+      ],
+      "commonMistakes": [
+        "I can swims (×) → I can swim (✓)",
+        "He cans run (×) → He can run (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "sports-and-leisure"
+    },
+    {
+      "structure": "Present simple: play, go",
+      "explanation": "Use play with ball games and games (play football, play tennis). Use go with -ing activities (go swimming). At Starters, play is most common.",
+      "examples": [
+        "I play football.",
+        "They play a game.",
+        "We play tennis."
+      ],
+      "commonMistakes": [
+        "I go football (×) → I play football (✓)",
+        "play swim (×) → go swimming / can swim (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "sports-and-leisure"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-sports-and-games",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Sports and Games",
+      "learningObjective": "Recognise and understand twelve sports and leisure words at Starters level.",
+      "estimatedMinutes": 12,
+      "unlockAfterLessonId": "e2000008-0000-4000-8000-000000000006",
+      "exercises": [
+        {
+          "slug": "vocab-sports-words",
+          "title": "Sports Word Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.2,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Eleven players kick a _____ on a field.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Football is played with a ball on a field. Tennis uses a racket; swim is an action in water.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "tennis",
+                  "isCorrect": false,
+                  "distractorNote": "Another sport but not played with kicking on a field"
+                },
+                {
+                  "text": "football",
+                  "isCorrect": true
+                },
+                {
+                  "text": "swim",
+                  "isCorrect": false,
+                  "distractorNote": "Action in water, not a field sport"
+                }
+              ]
+            },
+            {
+              "questionText": "You hit a small green object over a net with a racket. This sport is _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Tennis is played with a racket and net. Football uses feet; bike is transport.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.17,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "football",
+                  "isCorrect": false,
+                  "distractorNote": "No racket in football"
+                },
+                {
+                  "text": "tennis",
+                  "isCorrect": true
+                },
+                {
+                  "text": "bike",
+                  "isCorrect": false,
+                  "distractorNote": "Vehicle, not a racket sport"
+                }
+              ]
+            },
+            {
+              "questionText": "In the pool, you move your arms and legs in the water. You _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Swim means to move through water. Run is on land; play is general.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.16,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "run",
+                  "isCorrect": false,
+                  "distractorNote": "On land, not in water"
+                },
+                {
+                  "text": "swim",
+                  "isCorrect": true
+                },
+                {
+                  "text": "play",
+                  "isCorrect": false,
+                  "distractorNote": "Too general; does not name the water action"
+                }
+              ]
+            },
+            {
+              "questionText": "You move fast on your feet. You _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Run means to move quickly on foot. Jump goes up; kick hits with the foot.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.15,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "jump",
+                  "isCorrect": false,
+                  "distractorNote": "Up in the air, not forward fast"
+                },
+                {
+                  "text": "run",
+                  "isCorrect": true
+                },
+                {
+                  "text": "kick",
+                  "isCorrect": false,
+                  "distractorNote": "One foot action, not moving forward"
+                }
+              ]
+            },
+            {
+              "questionText": "Children have fun with rules and take turns. They play a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A game is an activity with rules for fun. Ball is an object; sport is a category.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "ball",
+                  "isCorrect": false,
+                  "distractorNote": "Object used in games, not the activity itself"
+                },
+                {
+                  "text": "game",
+                  "isCorrect": true
+                },
+                {
+                  "text": "sport",
+                  "isCorrect": false,
+                  "distractorNote": "Broader category; game is more specific here"
+                }
+              ]
+            },
+            {
+              "questionText": "You ride this with two wheels. It is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "A bike has two wheels and you ride it. Ball is round; game is an activity.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.16,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "ball",
+                  "isCorrect": false,
+                  "distractorNote": "Round object, not a vehicle"
+                },
+                {
+                  "text": "bike",
+                  "isCorrect": true
+                },
+                {
+                  "text": "game",
+                  "isCorrect": false,
+                  "distractorNote": "Activity, not a thing with wheels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-sports-matching",
+          "title": "Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the sports and action words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Mỗi từ khớp với một nghĩa rõ ràng. Kick và catch thường bị nhầm vì đều liên quan đến bóng.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "kick",
+                  "right": "hit the ball with your foot"
+                },
+                {
+                  "left": "catch",
+                  "right": "stop the ball with your hands"
+                },
+                {
+                  "left": "ball",
+                  "right": "round thing you play with"
+                },
+                {
+                  "left": "sport",
+                  "right": "a game like football or tennis"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-can-and-play",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e2000009-0000-4000-8000-000000000001",
+      "title": "Lesson 2: I Can Play!",
+      "learningObjective": "Use can for ability and play with sports and games correctly.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "grammar-can-ability",
+          "title": "Choose Can or Play",
+          "instructions": "Choose the correct word to complete each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "I _____ swim. I go to the pool every week.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Can + swim nói về khả năng bơi. Play không đi với swim ở Starters.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "can",
+                  "isCorrect": true
+                },
+                {
+                  "text": "play",
+                  "isCorrect": false,
+                  "distractorNote": "Play goes with games/sports, not swim"
+                },
+                {
+                  "text": "go",
+                  "isCorrect": false,
+                  "distractorNote": "Would need swimming: go swimming"
+                }
+              ]
+            },
+            {
+              "questionText": "She _____ tennis on Saturday.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Play tennis là cụm đúng. Can tennis không đúng ngữ pháp.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "can",
+                  "isCorrect": false,
+                  "distractorNote": "Can needs a verb: can play tennis"
+                },
+                {
+                  "text": "plays",
+                  "isCorrect": true
+                },
+                {
+                  "text": "go",
+                  "isCorrect": false,
+                  "distractorNote": "Go tennis is incorrect; go swimming is the pattern"
+                }
+              ]
+            },
+            {
+              "questionText": "Can you _____ the ball?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Can + catch hỏi khả năng bắt bóng. Can ball thiếu động từ.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.24,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "ball",
+                  "isCorrect": false,
+                  "distractorNote": "Noun after can — missing verb"
+                },
+                {
+                  "text": "catch",
+                  "isCorrect": true
+                },
+                {
+                  "text": "game",
+                  "isCorrect": false,
+                  "distractorNote": "Noun, not a verb after can"
+                }
+              ]
+            },
+            {
+              "questionText": "They _____ football in the park.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Play football là cụm chuẩn. Go football sai; can football thiếu động từ.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "go",
+                  "isCorrect": false,
+                  "distractorNote": "Go football incorrect at Starters"
+                },
+                {
+                  "text": "play",
+                  "isCorrect": true
+                },
+                {
+                  "text": "can",
+                  "isCorrect": false,
+                  "distractorNote": "Needs verb: can play football"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-can-gap-fill",
+          "title": "Can and Play",
+          "instructions": "Complete the sentences with can, play or run.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: I [0] swim. | We [1] football. | He can [2] fast.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "Can swim (khả năng); play football (môn thể thao); run fast (can + động từ).",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "I [0] swim. We [1] football. He can [2] fast.",
+                "correctAnswers": [
+                  "can",
+                  "play",
+                  "run"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "can"
+                  ],
+                  [
+                    "play"
+                  ],
+                  [
+                    "run"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-sports-day",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e2000009-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Sports Day",
+      "learningObjective": "Read a short text about sports and match activities to descriptions.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "reading-sports-passage",
+          "title": "Read: Sports Day at School",
+          "instructions": "Read the text. Then answer the questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.95,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Sports Day at School",
+              "text": "Hello! My name is Ben. Today is Sports Day at school.\n\nI can run fast. My friend Kim can jump high. Tom plays football. He can kick the ball very well.\n\nAfter lunch, we play a game. Anna can catch the ball. Lily plays tennis. She has a racket and a ball.\n\nIn the afternoon, we ride our bikes. Sports Day is fun!",
+              "wordCount": 58,
+              "imagePrompt": "A school sports day: children running, kicking a football, playing tennis, and riding bikes on a field."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main idea of the text?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "main_idea",
+              "points": 1,
+              "explanation": "Toàn bộ văn bản mô tả các hoạt động thể thao trong ngày hội thể thao ở trường.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Ben and friends do sports and games at school.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Ben talks about his favourite food.",
+                  "isCorrect": false,
+                  "distractorNote": "No food in the text"
+                },
+                {
+                  "text": "Ben describes his house and street.",
+                  "isCorrect": false,
+                  "distractorNote": "Places not the topic"
+                }
+              ]
+            },
+            {
+              "questionText": "What can Kim do?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "detail",
+              "points": 1,
+              "explanation": "Văn bản nói: My friend Kim can jump high.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Jump high",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Run fast",
+                  "isCorrect": false,
+                  "distractorNote": "Ben can run, not Kim"
+                },
+                {
+                  "text": "Play tennis",
+                  "isCorrect": false,
+                  "distractorNote": "Lily plays tennis"
+                }
+              ]
+            },
+            {
+              "questionText": "Why does Tom kick the ball?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "inference",
+              "points": 1,
+              "explanation": "Tom plays football — trong bóng đá người ta đá bóng.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Because he is playing football.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Because he is swimming.",
+                  "isCorrect": false,
+                  "distractorNote": "No swimming in text"
+                },
+                {
+                  "text": "Because he is riding a bike.",
+                  "isCorrect": false,
+                  "distractorNote": "Bikes come later in the text"
+                }
+              ]
+            },
+            {
+              "questionText": "In 'She has a racket and a ball', what sport does Lily play?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "vocabulary_in_context",
+              "points": 1,
+              "explanation": "Racket và ball gợi ý tennis — câu trước cũng nói Lily plays tennis.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.33,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Tennis",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Football",
+                  "isCorrect": false,
+                  "distractorNote": "Football uses feet, not a racket"
+                },
+                {
+                  "text": "Swimming",
+                  "isCorrect": false,
+                  "distractorNote": "No racket in swimming"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the ideas in order: (1) Ben tells what he and friends can do (2) They play a game at lunch (3) They ride bikes in the afternoon",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "sequencing",
+              "points": 1,
+              "explanation": "Văn bản đi theo thứ tự: sáng (run, jump, football) → trưa (game) → chiều (bikes).",
+              "qualityScores": {
+                "quality": 0.88,
+                "difficulty": 0.4,
+                "curriculumAlignment": 0.93,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": true
+                },
+                {
+                  "text": "2 → 1 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Morning activities come before lunch game"
+                },
+                {
+                  "text": "3 → 2 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Reversed order"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-sports-actions",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e2000009-0000-4000-8000-000000000003",
+      "title": "Lesson 4: Sports Actions",
+      "learningObjective": "Listen to short conversations and identify sports, games and actions.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "listening-playground-dialogue",
+          "title": "Listen: At the Playground",
+          "instructions": "Listen to the conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "At the Playground",
+              "setting": "A school playground after class",
+              "speakers": [
+                {
+                  "name": "Teacher",
+                  "role": "adult"
+                },
+                {
+                  "name": "Sam",
+                  "role": "boy, 8"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Teacher",
+                  "text": "Hello, Sam. What can you do?"
+                },
+                {
+                  "speaker": "Sam",
+                  "text": "I can run fast!"
+                },
+                {
+                  "speaker": "Teacher",
+                  "text": "Great! What sport do you play?"
+                },
+                {
+                  "speaker": "Sam",
+                  "text": "I play football. I can kick the ball."
+                },
+                {
+                  "speaker": "Teacher",
+                  "text": "Can your sister swim?"
+                },
+                {
+                  "speaker": "Sam",
+                  "text": "Yes. She can swim and jump."
+                },
+                {
+                  "speaker": "Teacher",
+                  "text": "Do you play a game now?"
+                },
+                {
+                  "speaker": "Sam",
+                  "text": "Yes. We play a ball game."
+                }
+              ],
+              "audioNotes": "Clear, slow delivery with short pauses. Total duration approx. 38 seconds."
+            },
+            "answerKey": {
+              "q1": "run",
+              "q2": "football",
+              "q3": "swim",
+              "q4": "game"
+            },
+            "audioUrl": "/audio/listening/starters/unit-09/listening-playground-dialogue.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What can Sam do?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Sam nói: I can run fast!",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Run fast",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Swim",
+                  "isCorrect": false,
+                  "distractorNote": "His sister swims, not Sam"
+                },
+                {
+                  "text": "Play tennis",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned in audio"
+                }
+              ]
+            },
+            {
+              "questionText": "What sport does Sam play?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Sam nói: I play football.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Football",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Tennis",
+                  "isCorrect": false,
+                  "distractorNote": "Not in the dialogue"
+                },
+                {
+                  "text": "Swimming",
+                  "isCorrect": false,
+                  "distractorNote": "Sister's activity, not Sam's sport"
+                }
+              ]
+            },
+            {
+              "questionText": "What can Sam's sister do?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Sam nói chị/em gái can swim and jump.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Swim and jump",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Run and kick",
+                  "isCorrect": false,
+                  "distractorNote": "Sam's actions, not sister's"
+                },
+                {
+                  "text": "Play football",
+                  "isCorrect": false,
+                  "distractorNote": "Sam plays football"
+                }
+              ]
+            },
+            {
+              "questionText": "What are the children playing now?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Sam nói: We play a ball game.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A ball game",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Tennis",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "A bike ride",
+                  "isCorrect": false,
+                  "distractorNote": "No bikes in audio"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-my-sport",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e2000009-0000-4000-8000-000000000004",
+      "title": "Lesson 5: Write About Sports",
+      "learningObjective": "Write short phrases about sports and abilities using can and play.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "writing-sports-ability",
+          "title": "Writing: My Sport",
+          "instructions": "Write short answers. Use 1–6 words for each answer.",
+          "exerciseType": "writing",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Look at the picture of children playing sports. Write short answers to the three questions.",
+            "prompts": [
+              "1. What sport do you play? (Write: I play _____.)",
+              "2. What can you do? (Write: I can _____.)",
+              "3. Write one sentence: My friend can _____. (Use run, swim, jump or kick)"
+            ],
+            "expectedLength": "3 short answers; 1–6 words each",
+            "successCriteria": [
+              "All three prompts are answered",
+              "Uses at least two unit vocabulary words",
+              "Uses can or play correctly",
+              "Spelling of core sports words is recognisable"
+            ],
+            "modelAnswer": {
+              "answers": [
+                "I play football.",
+                "I can swim.",
+                "My friend can run."
+              ]
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.3,
+                "criteria": "Correct use of can + verb and play + sport patterns."
+              },
+              "vocabulary": {
+                "weight": 0.3,
+                "criteria": "Uses sports and action words from the unit accurately."
+              },
+              "organization": {
+                "weight": 0.2,
+                "criteria": "Answers match the prompts in order; each answer is clear."
+              },
+              "taskAchievement": {
+                "weight": 0.2,
+                "criteria": "All parts completed; length appropriate for Starters."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your answers to the three prompts in the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấp nhận mọi câu trả lời đáp ứng tiêu chí. Model answer cho thấy phạm vi mong đợi.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-sports-ability",
+                "autoCheckKeywords": [
+                  "I",
+                  "play",
+                  "can",
+                  "football",
+                  "tennis",
+                  "swim",
+                  "run",
+                  "jump",
+                  "kick",
+                  "ball",
+                  "game",
+                  "friend"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-talk-about-sports",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e2000009-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Sports",
+      "learningObjective": "Answer simple questions about sports, games and what you can do.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "speaking-sports-interview",
+          "title": "Speaking: Sports Interview",
+          "instructions": "Answer the examiner's questions. Say at least one word for each question.",
+          "exerciseType": "speaking",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "prompt": "The examiner will ask you about sports and games. Look at the sports picture if you have one.",
+            "pictureDescription": "A simple picture showing children playing football, tennis, swimming, and riding bikes.",
+            "followUpQuestions": [
+              "What sport do you play?",
+              "Can you swim?",
+              "Can you run fast?",
+              "Do you play football or tennis?",
+              "What game do you like?"
+            ],
+            "suggestedAnswers": [
+              "I play football.",
+              "Yes, I can swim.",
+              "Yes, I can run fast.",
+              "Football.",
+              "I like ball games."
+            ],
+            "assessmentCriteria": {
+              "pronunciation": "Sports words (football, tennis, swim, run) are understandable.",
+              "fluency": "Responds without long silence; uses words or short phrases.",
+              "grammar": "Uses can or play correctly in at least two answers.",
+              "vocabulary": "Uses at least three different unit words correctly."
+            },
+            "maxDurationSeconds": 90
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the five follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "sports-and-leisure",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 5,
+              "explanation": "Chấm theo bốn tiêu chí assessmentCriteria. Trả lời một phần vẫn được điểm tương ứng.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-sports-interview",
+                "minimumResponses": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

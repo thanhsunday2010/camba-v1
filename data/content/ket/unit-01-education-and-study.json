@@ -10,7 +10,7 @@
     "unitSlug": "education-and-study",
     "unitTitle": "Education and Study",
     "targetAge": "11-14",
-    "curriculumMapVersion": "1.1.0",
+    "curriculumMapVersion": "1.2.0",
     "contentReview": {
       "reviewThreshold": 0.75,
       "defaultFlagBelowThreshold": true,
@@ -760,6 +760,149 @@
               }
             }
           ]
+        },
+        {
+          "slug": "vocab-education-review",
+          "title": "Review: Vocab Quiz",
+          "instructions": "No hints — choose the best answer for each question.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "A long talk given to many students in a hall is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Lecture (bài giảng) là bài nói trước nhiều học sinh. Homework là bài về nhà.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "homework",
+                  "isCorrect": false,
+                  "distractorNote": "Work done outside class"
+                },
+                {
+                  "text": "lecture",
+                  "isCorrect": true
+                },
+                {
+                  "text": "timetable",
+                  "isCorrect": false,
+                  "distractorNote": "A schedule of classes"
+                }
+              ]
+            },
+            {
+              "questionText": "You must return library books before the _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Deadline là hạn chót phải trả sách. Subject không liên quan đến thời hạn.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.28,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "subject",
+                  "isCorrect": false,
+                  "distractorNote": "A course area"
+                },
+                {
+                  "text": "deadline",
+                  "isCorrect": true
+                },
+                {
+                  "text": "revision",
+                  "isCorrect": false,
+                  "distractorNote": "Study activity"
+                }
+              ]
+            },
+            {
+              "questionText": "Tasks you do at home after school are called _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Homework (bài tập về nhà) là việc làm ở nhà sau giờ học.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "assignments",
+                  "isCorrect": false,
+                  "distractorNote": "Broader term; context says daily home tasks"
+                },
+                {
+                  "text": "homework",
+                  "isCorrect": true
+                },
+                {
+                  "text": "exams",
+                  "isCorrect": false,
+                  "distractorNote": "Tests in school"
+                }
+              ]
+            },
+            {
+              "questionText": "Our school has two _____ each year — one in spring and one in autumn.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Semester (học kỳ) chia năm học thành các phần. Timetable là lịch hàng tuần.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "timetables",
+                  "isCorrect": false,
+                  "distractorNote": "Weekly schedules, not year halves"
+                },
+                {
+                  "text": "semesters",
+                  "isCorrect": true
+                },
+                {
+                  "text": "libraries",
+                  "isCorrect": false,
+                  "distractorNote": "Study places"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1304,6 +1447,149 @@
               }
             }
           ]
+        },
+        {
+          "slug": "grammar-perfect-review",
+          "title": "Review: Grammar Challenge",
+          "instructions": "Choose the correct answer. Think carefully.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.38,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "How long _____ you had this timetable?",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "How long have you had...? — câu hỏi present perfect với you.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "has",
+                  "isCorrect": false,
+                  "distractorNote": "You needs have"
+                },
+                {
+                  "text": "have",
+                  "isCorrect": true
+                },
+                {
+                  "text": "did",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong auxiliary with had as past participle"
+                }
+              ]
+            },
+            {
+              "questionText": "We have done homework _____ two hours.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "For + khoảng thời gian (two hours). Since dùng với mốc thời gian.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "since",
+                  "isCorrect": false,
+                  "distractorNote": "Since + point in time, not duration"
+                },
+                {
+                  "text": "for",
+                  "isCorrect": true
+                },
+                {
+                  "text": "during",
+                  "isCorrect": false,
+                  "distractorNote": "Less natural with present perfect here"
+                }
+              ]
+            },
+            {
+              "questionText": "The teacher says we _____ to hand in the exam papers at three o'clock.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "We have to hand in... — quy định bắt buộc với have to.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "has",
+                  "isCorrect": false,
+                  "distractorNote": "We needs have"
+                },
+                {
+                  "text": "have",
+                  "isCorrect": true
+                },
+                {
+                  "text": "having",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong form"
+                }
+              ]
+            },
+            {
+              "questionText": "I _____ need to go to the lecture today.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 3,
+              "points": 1,
+              "explanation": "Phủ định với I: don't need to. Doesn't dùng với he/she/it.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "doesn't",
+                  "isCorrect": false,
+                  "distractorNote": "I needs don't"
+                },
+                {
+                  "text": "don't",
+                  "isCorrect": true
+                },
+                {
+                  "text": "not",
+                  "isCorrect": false,
+                  "distractorNote": "Missing auxiliary"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1635,6 +1921,95 @@
                 {
                   "left": "More information",
                   "right": "Campus website or notice board"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "reading-notice-review",
+          "title": "Review: Main Idea and Order",
+          "instructions": "Read the notice one more time. These questions need careful thinking.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Library Revision Week Notice",
+              "text": "WEST HILL SECONDARY SCHOOL\nLIBRARY NOTICE — REVISION WEEK\n10–14 March\n\nThe school library will stay open for extra study hours during revision week. Students can use the library for homework, exam preparation and quiet revision after school.\n\nNEW OPENING HOURS\nMonday–Thursday: 3:30 p.m. – 6:00 p.m.\nFriday: CLOSED (staff meeting)\n\nIMPORTANT\n• Bring your student ID every day.\n• All books must be returned before the deadline: Friday 7 March.\n• Mobile phones must be silent in the library.\n\nNeed help finding resources for your assignment? Speak to Ms Tran at the information desk.\n\nFor full details, visit the campus website or read the notice board outside the lecture hall.\n\nThank you.\nLibrary Team",
+              "wordCount": 118,
+              "imagePrompt": "A school notice board with a printed library announcement, opening hours and bullet points; secondary school corridor setting."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main purpose of this notice?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Toàn bộ thông báo tập trung vào giờ mở cửa thư viện trong tuần ôn tập.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "main_idea",
+              "choices": [
+                {
+                  "text": "To announce exam results",
+                  "isCorrect": false,
+                  "distractorNote": "Results not mentioned"
+                },
+                {
+                  "text": "To tell students about extra library hours during revision week",
+                  "isCorrect": true
+                },
+                {
+                  "text": "To invite students to a lecture",
+                  "isCorrect": false,
+                  "distractorNote": "Lecture hall only as location reference"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the sections in order: (1) Opening hours (2) Purpose of revision week (3) Rules and deadline",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Thông báo: mục đích revision week → giờ mở cửa → quy định và deadline.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "assessmentType": "sequencing",
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Purpose comes before hours in the notice"
+                },
+                {
+                  "text": "2 → 1 → 3",
+                  "isCorrect": true
+                },
+                {
+                  "text": "3 → 1 → 2",
+                  "isCorrect": false,
+                  "distractorNote": "Rules come after hours"
                 }
               ]
             }
@@ -2117,6 +2492,166 @@
               ]
             }
           ]
+        },
+        {
+          "slug": "listening-deadline-review",
+          "title": "Review: Assignment Deadline Announcement",
+          "instructions": "Listen to a new announcement. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "Assignment Deadline Reminder",
+              "setting": "End of a morning lesson",
+              "speakers": [
+                {
+                  "name": "Ms Tran",
+                  "role": "English teacher"
+                },
+                {
+                  "name": "Students",
+                  "role": "class"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Ms Tran",
+                  "text": "Before you leave, a quick reminder about your history assignment."
+                },
+                {
+                  "speaker": "Ms Tran",
+                  "text": "You need to write about life on campus one hundred years ago. The deadline is next Friday at three o'clock."
+                },
+                {
+                  "speaker": "Ms Tran",
+                  "text": "Email your work to me or bring a printed copy. Late work will lose marks."
+                },
+                {
+                  "speaker": "Ms Tran",
+                  "text": "If you need help, come to revision club in the library on Wednesday. Any questions?"
+                },
+                {
+                  "speaker": "Students",
+                  "text": "No, thank you."
+                },
+                {
+                  "speaker": "Ms Tran",
+                  "text": "Good. Don't forget the deadline."
+                }
+              ],
+              "audioNotes": "Classroom tone, teacher speaks clearly. Approx. 40 seconds."
+            },
+            "answerKey": {
+              "q1": "history assignment",
+              "q2": "next Friday 3pm",
+              "q3": "revision club Wednesday"
+            },
+            "audioUrl": "/audio/listening/ket/unit-01/listening-deadline-check.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What is the announcement mainly about?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Ms Tran reminds students about the history assignment deadline.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A timetable change",
+                  "isCorrect": false,
+                  "distractorNote": "That was the first script"
+                },
+                {
+                  "text": "An assignment deadline",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A science lecture",
+                  "isCorrect": false,
+                  "distractorNote": "Not the main topic"
+                }
+              ]
+            },
+            {
+              "questionText": "When is the deadline?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "The deadline is next Friday at three o'clock.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "This Wednesday in the library",
+                  "isCorrect": false,
+                  "distractorNote": "Wednesday is revision club, not deadline"
+                },
+                {
+                  "text": "Next Friday at three o'clock",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Monday period four",
+                  "isCorrect": false,
+                  "distractorNote": "From timetable script"
+                }
+              ]
+            },
+            {
+              "questionText": "Where can students get extra help?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Come to revision club in the library on Wednesday.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "At the lecture hall after assembly",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned"
+                },
+                {
+                  "text": "Revision club in the library on Wednesday",
+                  "isCorrect": true
+                },
+                {
+                  "text": "On the campus website only",
+                  "isCorrect": false,
+                  "distractorNote": "Website not offered for help here"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2433,6 +2968,94 @@
               }
             }
           ]
+        },
+        {
+          "slug": "writing-email-review",
+          "title": "Review: Email About an Assignment",
+          "instructions": "Write an email to your teacher. Write at least 25 words.",
+          "exerciseType": "writing",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "You need to write an email to your English teacher, Ms Tran. You have a problem with your history assignment and you want to ask about the deadline.",
+            "prompts": [
+              "Say why you are writing.",
+              "Explain your problem with the assignment (e.g. you need more time or help).",
+              "Ask a polite question about the deadline.",
+              "End the email politely."
+            ],
+            "expectedLength": "At least 25 words; email format with greeting and closing",
+            "minimumWords": 25,
+            "minWords": 25,
+            "targetLevel": "ket",
+            "levelTag": "ket",
+            "successCriteria": [
+              "At least 25 words",
+              "Clear reason for writing about the assignment",
+              "Polite question about the deadline",
+              "Appropriate email opening and closing",
+              "Uses at least two unit vocabulary words"
+            ],
+            "modelAnswer": {
+              "text": "Dear Ms Tran,\n\nI am writing about my history assignment. I have studied the notes since Monday, but I need more time to finish the work. Could you tell me if the deadline is next Friday? I can come to revision club on Wednesday.\n\nThank you,\nLinh"
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.25,
+                "criteria": "Uses present perfect, have to/need to or polite request forms correctly."
+              },
+              "vocabulary": {
+                "weight": 0.25,
+                "criteria": "Uses education words (assignment, deadline, revision, homework) appropriately."
+              },
+              "organization": {
+                "weight": 0.25,
+                "criteria": "Email has greeting, body paragraphs and a polite closing."
+              },
+              "taskAchievement": {
+                "weight": 0.25,
+                "criteria": "Explains the problem and asks about the deadline; at least 25 words."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your email to Ms Tran following the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 8,
+              "explanation": "Chấm theo rubric. Email mẫu cho thấy độ dài và nội dung mong đợi ở A2.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-email-check",
+                "autoCheckKeywords": [
+                  "dear",
+                  "assignment",
+                  "deadline",
+                  "need",
+                  "thank",
+                  "revision",
+                  "homework",
+                  "ms",
+                  "tran"
+                ],
+                "minimumWords": 25
+              }
+            }
+          ]
         }
       ]
     },
@@ -2727,7 +3350,7 @@
               "content": {
                 "assessmentCriteriaRef": "speaking-study-interview",
                 "minimumResponses": 4,
-                "maxDurationSeconds": 120
+                "maxDurationSeconds": 60
               }
             }
           ]
@@ -2840,6 +3463,71 @@
                   "distractorNote": "Illogical"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "slug": "speaking-study-interview-review",
+          "title": "Review: Study Habits Interview",
+          "instructions": "Answer the examiner's questions about how you study. Speak for up to two minutes.",
+          "exerciseType": "speaking",
+          "sortOrder": 4,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "prompt": "The examiner will ask you about your study habits, school routine and how you prepare for exams.",
+            "pictureDescription": "A student at a desk with books, a timetable on the wall and a library card.",
+            "followUpQuestions": [
+              "What is your favourite subject and why?",
+              "Where do you usually study on campus?",
+              "How often do you do homework?",
+              "When do you start revision before an exam?",
+              "Do you have to follow any rules in the library?",
+              "How long have you used this timetable?"
+            ],
+            "suggestedAnswers": [
+              "My favourite subject is Maths because it is useful.",
+              "I usually study in the library after school.",
+              "I do homework every day.",
+              "I start revision two weeks before the exam.",
+              "Yes, we have to be quiet and bring our student ID.",
+              "I have used this timetable since September."
+            ],
+            "assessmentCriteria": {
+              "pronunciation": "Key words (subject, timetable, revision, assignment, library) are understandable.",
+              "fluency": "Responds with phrases or short sentences without long silences.",
+              "grammar": "Uses present perfect with for/since or have to/need to in at least two answers.",
+              "vocabulary": "Uses at least four different unit words correctly."
+            },
+            "maxDurationSeconds": 120,
+            "targetLevel": "ket",
+            "levelTag": "ket"
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "education-and-study",
+              "levelTag": "ket",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấm tổng thể theo bốn tiêu chí. Trả lời ngắn vẫn được điểm một phần nếu dùng đúng từ vựng.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-study-interview",
+                "minimumResponses": 4,
+                "maxDurationSeconds": 60
+              }
             }
           ]
         }

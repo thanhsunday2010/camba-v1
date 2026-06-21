@@ -169,6 +169,8 @@
     "unitCount": "{count} units",
     "unitsWithContent": "{count} units with lessons",
     "unitLessonCount": "{count} lessons",
+    "unitExerciseCount": "{count} exercises",
+    "lessonExerciseCount": "{count} exercises",
     "unitComingSoon": "Content in development",
     "comingSoon": "Coming soon",
     "skillNoContent": "No lessons for this skill yet"

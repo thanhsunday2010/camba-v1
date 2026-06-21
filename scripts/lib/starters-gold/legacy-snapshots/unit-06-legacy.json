@@ -1,0 +1,1337 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "contentType": "unit-seed",
+    "copyright": "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by YLE Pre-A1 task formats only.",
+    "program": "cambridge-english",
+    "level": "starters",
+    "cefr": "pre-a1",
+    "unitNumber": 6,
+    "unitSlug": "food-and-drink",
+    "unitTitle": "Food and Drink",
+    "targetAge": "7-9",
+    "curriculumMapVersion": "1.1.0",
+    "contentReview": {
+      "reviewThreshold": 0.75,
+      "defaultFlagBelowThreshold": true,
+      "scoreScale": "0-1"
+    }
+  },
+  "unit": {
+    "learningObjectives": [
+      "Name common food and drink items using Starters vocabulary.",
+      "Use like, eat and drink in present simple sentences.",
+      "Say what you do not like using don't like.",
+      "Read short sentences about food and choose matching pictures.",
+      "Listen and identify food and drink items in short dialogues."
+    ],
+    "grammarFocus": [
+      "Present simple: like, eat, drink",
+      "Negation: I don't like"
+    ],
+    "readingSkillFocus": "Read Short Sentences with Pictures",
+    "listeningSkillFocus": "Identify Food and Drink Items"
+  },
+  "vocabularyBank": [
+    {
+      "word": "apple",
+      "ipa": "/ˈæpl/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "quả táo",
+      "exampleSentence": "I like apples.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "banana",
+      "ipa": "/bəˈnɑːnə/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "quả chuối",
+      "exampleSentence": "The banana is yellow.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.11,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "orange",
+      "ipa": "/ˈɒrɪndʒ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "quả cam",
+      "exampleSentence": "She eats an orange.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "milk",
+      "ipa": "/mɪlk/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "sữa",
+      "exampleSentence": "I drink milk every day.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.94,
+        "difficulty": 0.09,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "water",
+      "ipa": "/ˈwɔːtə(r)/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "nước",
+      "exampleSentence": "Please drink some water.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.95,
+        "difficulty": 0.08,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "egg",
+      "ipa": "/eɡ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "trứng",
+      "exampleSentence": "I eat an egg for breakfast.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "rice",
+      "ipa": "/raɪs/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "cơm, gạo",
+      "exampleSentence": "We eat rice for lunch.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.93,
+        "difficulty": 0.1,
+        "curriculumAlignment": 0.98,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "chicken",
+      "ipa": "/ˈtʃɪkɪn/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "thịt gà",
+      "exampleSentence": "He likes chicken.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.13,
+        "curriculumAlignment": 0.97,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "bread",
+      "ipa": "/bred/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bánh mì",
+      "exampleSentence": "I like bread with milk.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "juice",
+      "ipa": "/dʒuːs/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "nước ép",
+      "exampleSentence": "She drinks orange juice.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.13,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "fish",
+      "ipa": "/fɪʃ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "cá",
+      "exampleSentence": "My mother cooks fish.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "cake",
+      "ipa": "/keɪk/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bánh ngọt",
+      "exampleSentence": "We eat cake on my birthday.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.92,
+        "difficulty": 0.12,
+        "curriculumAlignment": 0.96,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "hungry",
+      "ipa": "/ˈhʌŋɡri/",
+      "partOfSpeech": "adjective",
+      "vietnameseMeaning": "đói",
+      "exampleSentence": "I am hungry. I want rice.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.9,
+        "difficulty": 0.15,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    },
+    {
+      "word": "lunch",
+      "ipa": "/lʌntʃ/",
+      "partOfSpeech": "noun",
+      "vietnameseMeaning": "bữa trưa",
+      "exampleSentence": "We have chicken for lunch.",
+      "difficulty": 1,
+      "topic": "food-and-drink",
+      "programLevel": "starters",
+      "qualityScores": {
+        "quality": 0.91,
+        "difficulty": 0.14,
+        "curriculumAlignment": 0.95,
+        "needsReview": false
+      }
+    }
+  ],
+  "grammarReference": [
+    {
+      "structure": "Present simple: like, eat, drink",
+      "explanation": "Use like for food you enjoy. Use eat for food and drink for liquids. Add -s with he, she, it: He likes rice.",
+      "examples": [
+        "I like apples.",
+        "She eats an egg.",
+        "He drinks milk."
+      ],
+      "commonMistakes": [
+        "He like rice (×) → He likes rice (✓)",
+        "I drink chicken (×) → I eat chicken (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "food-and-drink"
+    },
+    {
+      "structure": "Negation: I don't like",
+      "explanation": "Use don't like to say you do not enjoy something. Don't = do not.",
+      "examples": [
+        "I don't like fish.",
+        "She doesn't like milk.",
+        "We don't like eggs."
+      ],
+      "commonMistakes": [
+        "I not like fish (×) → I don't like fish (✓)",
+        "I don't likes rice (×) → I don't like rice (✓)"
+      ],
+      "programLevel": "starters",
+      "topic": "food-and-drink"
+    }
+  ],
+  "lessons": [
+    {
+      "slug": "vocab-food-and-drink-words",
+      "skill": "vocabulary",
+      "sortOrder": 0,
+      "title": "Lesson 1: Food and Drink Words",
+      "learningObjective": "Recognise and understand fourteen food and drink words at Starters level.",
+      "estimatedMinutes": 12,
+      "unlockAfterLessonId": "e2000005-0000-4000-8000-000000000006",
+      "exercises": [
+        {
+          "slug": "vocab-food-mcq",
+          "title": "Food Word Match",
+          "instructions": "Read each sentence. Choose the best word.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.2,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "A yellow fruit that monkeys like is a _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Banana is a yellow fruit. Orange is also a fruit but it is orange, not yellow.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "banana",
+                  "isCorrect": true
+                },
+                {
+                  "text": "orange",
+                  "isCorrect": false,
+                  "distractorNote": "Fruit but orange colour, not yellow"
+                },
+                {
+                  "text": "rice",
+                  "isCorrect": false,
+                  "distractorNote": "Not a fruit"
+                }
+              ]
+            },
+            {
+              "questionText": "White drink from cows is _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Milk is a white drink. Water is clear; juice is from fruit.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.17,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "water",
+                  "isCorrect": false,
+                  "distractorNote": "Clear drink, not white from cows"
+                },
+                {
+                  "text": "milk",
+                  "isCorrect": true
+                },
+                {
+                  "text": "juice",
+                  "isCorrect": false,
+                  "distractorNote": "Fruit drink, not from cows"
+                }
+              ]
+            },
+            {
+              "questionText": "Birds lay this. We fry it for breakfast.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "An egg comes from birds. Chicken is meat; rice is a grain.",
+              "qualityScores": {
+                "quality": 0.92,
+                "difficulty": 0.19,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "chicken",
+                  "isCorrect": false,
+                  "distractorNote": "Meat from birds, not what birds lay"
+                },
+                {
+                  "text": "egg",
+                  "isCorrect": true
+                },
+                {
+                  "text": "bread",
+                  "isCorrect": false,
+                  "distractorNote": "Baked food, not from birds"
+                }
+              ]
+            },
+            {
+              "questionText": "A red or green round fruit is an _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "An apple is a round fruit. Cake is sweet food; fish lives in water.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.16,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "apple",
+                  "isCorrect": true
+                },
+                {
+                  "text": "cake",
+                  "isCorrect": false,
+                  "distractorNote": "Sweet baked food, not a fruit"
+                },
+                {
+                  "text": "fish",
+                  "isCorrect": false,
+                  "distractorNote": "Animal in water, not a fruit"
+                }
+              ]
+            },
+            {
+              "questionText": "We eat this with meals in Vietnam. It is white.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Rice is a common white food. Bread is also eaten but is not always white grains.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "rice",
+                  "isCorrect": true
+                },
+                {
+                  "text": "bread",
+                  "isCorrect": false,
+                  "distractorNote": "Baked food, not white grains"
+                },
+                {
+                  "text": "water",
+                  "isCorrect": false,
+                  "distractorNote": "Drink, not food you eat with a spoon"
+                }
+              ]
+            },
+            {
+              "questionText": "When you want food, you feel _____.",
+              "questionType": "multiple_choice",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Hungry means you want to eat. Lunch is a meal time, not a feeling.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "hungry",
+                  "isCorrect": true
+                },
+                {
+                  "text": "lunch",
+                  "isCorrect": false,
+                  "distractorNote": "Meal name, not a feeling"
+                },
+                {
+                  "text": "juice",
+                  "isCorrect": false,
+                  "distractorNote": "Drink, not a feeling"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "vocab-food-matching",
+          "title": "Match the Pairs",
+          "instructions": "Match each word on the left with the correct meaning on the right.",
+          "exerciseType": "matching",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.9,
+            "difficulty": 0.22,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Match the food and drink words to their meanings.",
+              "questionType": "matching",
+              "skillTag": "vocabulary",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 4,
+              "explanation": "Each word matches one clear meaning. Learners often confuse drink words milk and water.",
+              "qualityScores": {
+                "quality": 0.89,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "pairs": [
+                {
+                  "left": "water",
+                  "right": "clear drink you need every day"
+                },
+                {
+                  "left": "chicken",
+                  "right": "meat from a bird"
+                },
+                {
+                  "left": "orange",
+                  "right": "round orange-coloured fruit"
+                },
+                {
+                  "left": "cake",
+                  "right": "sweet food for birthdays"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "grammar-like-eat-drink",
+      "skill": "grammar",
+      "sortOrder": 1,
+      "unlockAfterLessonId": "e2000006-0000-4000-8000-000000000001",
+      "title": "Lesson 2: Like, Eat and Drink",
+      "learningObjective": "Use like, eat, drink and don't like in sentences about food.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "grammar-like-mcq",
+          "title": "Like, Eat or Drink",
+          "instructions": "Choose the correct word to complete each sentence.",
+          "exerciseType": "multiple_choice",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "I _____ apples. They are yummy!",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Use like to say you enjoy food. Eat means you put food in your mouth.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "like",
+                  "isCorrect": true
+                },
+                {
+                  "text": "eat",
+                  "isCorrect": false,
+                  "distractorNote": "Possible but like fits enjoyment better here"
+                },
+                {
+                  "text": "drink",
+                  "isCorrect": false,
+                  "distractorNote": "Apples are food, not a drink"
+                }
+              ]
+            },
+            {
+              "questionText": "She _____ milk every morning.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Use drinks with she (third person -s). Milk is a liquid.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "eat",
+                  "isCorrect": false,
+                  "distractorNote": "Milk is a drink"
+                },
+                {
+                  "text": "drinks",
+                  "isCorrect": true
+                },
+                {
+                  "text": "likes",
+                  "isCorrect": false,
+                  "distractorNote": "Grammatically possible but drinks fits the action"
+                }
+              ]
+            },
+            {
+              "questionText": "I _____ fish. It smells bad to me.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Don't like shows you do not enjoy something. The clue 'smells bad' tells us it is negative.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.3,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "like",
+                  "isCorrect": false,
+                  "distractorNote": "Opposite meaning to the clue"
+                },
+                {
+                  "text": "don't like",
+                  "isCorrect": true
+                },
+                {
+                  "text": "eat",
+                  "isCorrect": false,
+                  "distractorNote": "No negative meaning"
+                }
+              ]
+            },
+            {
+              "questionText": "We _____ rice and chicken for lunch.",
+              "questionType": "multiple_choice",
+              "skillTag": "grammar",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Use eat for solid food like rice and chicken.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.21,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "drink",
+                  "isCorrect": false,
+                  "distractorNote": "Rice and chicken are not drinks"
+                },
+                {
+                  "text": "eat",
+                  "isCorrect": true
+                },
+                {
+                  "text": "likes",
+                  "isCorrect": false,
+                  "distractorNote": "Wrong verb form for we"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "grammar-food-gap-fill",
+          "title": "Complete the Sentences",
+          "instructions": "Complete the sentences with like, likes, eat, eats, drink or drinks.",
+          "exerciseType": "gap_fill",
+          "sortOrder": 1,
+          "qualityScores": {
+            "quality": 0.91,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "questions": [
+            {
+              "questionText": "Complete: I [0] bananas. | He [1] water. | They [2] chicken.",
+              "questionType": "gap_fill",
+              "skillTag": "grammar",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 3,
+              "explanation": "I like (no -s); He drinks (third person -s, liquid); They eat (plural, solid food).",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "template": "I [0] bananas. He [1] water. They [2] chicken.",
+                "correctAnswers": [
+                  "like",
+                  "drinks",
+                  "eat"
+                ],
+                "acceptableAnswers": [
+                  [
+                    "like"
+                  ],
+                  [
+                    "drinks"
+                  ],
+                  [
+                    "eat"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reading-lunch-time",
+      "skill": "reading",
+      "sortOrder": 2,
+      "unlockAfterLessonId": "e2000006-0000-4000-8000-000000000002",
+      "title": "Lesson 3: Lunch Time",
+      "learningObjective": "Read short sentences about food and answer questions about main idea, details and vocabulary.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "reading-food-passage",
+          "title": "Read: Tom's Lunch",
+          "instructions": "Read the text. Then answer the questions.",
+          "exerciseType": "reading_comprehension",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.95,
+            "difficulty": 0.3,
+            "curriculumAlignment": 0.98,
+            "needsReview": false
+          },
+          "content": {
+            "passage": {
+              "title": "Tom's Lunch",
+              "text": "Tom is hungry. It is lunch time.\n\nTom likes rice. He eats rice every day. He likes chicken too. He drinks water with his lunch.\n\nTom does not like fish. He does not like eggs.\n\nHis friend Anna likes apples and juice. She eats an apple after lunch. Tom likes cake on his birthday.",
+              "wordCount": 52,
+              "imagePrompt": "A boy at a table with rice, chicken, water and an apple; a girl with juice nearby."
+            }
+          },
+          "questions": [
+            {
+              "questionText": "What is the main idea of the text?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "main_idea",
+              "points": 1,
+              "explanation": "The text is about what Tom and Anna like and eat for lunch. It is not about school or toys.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.25,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Tom and Anna talk about food they like.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Tom goes to school.",
+                  "isCorrect": false,
+                  "distractorNote": "School is not mentioned"
+                },
+                {
+                  "text": "Tom plays football.",
+                  "isCorrect": false,
+                  "distractorNote": "No sports in the text"
+                }
+              ]
+            },
+            {
+              "questionText": "What does Tom drink with lunch?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "assessmentType": "detail",
+              "points": 1,
+              "explanation": "The text says: He drinks water with his lunch.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Water",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Milk",
+                  "isCorrect": false,
+                  "distractorNote": "Common drink but not in text"
+                },
+                {
+                  "text": "Juice",
+                  "isCorrect": false,
+                  "distractorNote": "Anna drinks juice, not Tom at lunch"
+                }
+              ]
+            },
+            {
+              "questionText": "Why does Tom not eat fish?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "inference",
+              "points": 1,
+              "explanation": "The text says Tom does not like fish — so he does not enjoy it.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.35,
+                "curriculumAlignment": 0.94,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "He does not like fish.",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Fish is too expensive.",
+                  "isCorrect": false,
+                  "distractorNote": "Price not mentioned"
+                },
+                {
+                  "text": "Anna eats all the fish.",
+                  "isCorrect": false,
+                  "distractorNote": "Anna is not eating fish"
+                }
+              ]
+            },
+            {
+              "questionText": "In 'She eats an apple after lunch', what does an apple mean?",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "vocabulary_in_context",
+              "points": 1,
+              "explanation": "An apple is a fruit. Anna eats it as food after lunch.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.33,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "A round fruit",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A drink",
+                  "isCorrect": false,
+                  "distractorNote": "Apple is solid food"
+                },
+                {
+                  "text": "A type of meat",
+                  "isCorrect": false,
+                  "distractorNote": "Apple is not meat"
+                }
+              ]
+            },
+            {
+              "questionText": "Put the ideas in order: (1) Tom is hungry (2) Tom says what he likes and does not like (3) Anna's food",
+              "questionType": "multiple_choice",
+              "skillTag": "reading",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "assessmentType": "sequencing",
+              "points": 1,
+              "explanation": "The text starts with Tom hungry, then his likes/dislikes, then Anna.",
+              "qualityScores": {
+                "quality": 0.88,
+                "difficulty": 0.4,
+                "curriculumAlignment": 0.93,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "1 → 2 → 3",
+                  "isCorrect": true
+                },
+                {
+                  "text": "2 → 1 → 3",
+                  "isCorrect": false,
+                  "distractorNote": "Hungry comes first"
+                },
+                {
+                  "text": "3 → 2 → 1",
+                  "isCorrect": false,
+                  "distractorNote": "Reversed order"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "listening-food-items",
+      "skill": "listening",
+      "sortOrder": 3,
+      "unlockAfterLessonId": "e2000006-0000-4000-8000-000000000003",
+      "title": "Lesson 4: What's for Lunch?",
+      "learningObjective": "Listen to short dialogues and identify food and drink items.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "listening-food-dialogue",
+          "title": "Listen: In the Kitchen",
+          "instructions": "Listen to the conversation. Choose the correct answer.",
+          "exerciseType": "listening",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.94,
+            "difficulty": 0.28,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "script": {
+              "title": "In the Kitchen",
+              "setting": "A kitchen before lunch",
+              "speakers": [
+                {
+                  "name": "Mum",
+                  "role": "adult"
+                },
+                {
+                  "name": "Linh",
+                  "role": "girl, 8"
+                }
+              ],
+              "lines": [
+                {
+                  "speaker": "Mum",
+                  "text": "Linh, are you hungry?"
+                },
+                {
+                  "speaker": "Linh",
+                  "text": "Yes! I want rice and chicken."
+                },
+                {
+                  "speaker": "Mum",
+                  "text": "OK. Do you want milk or water?"
+                },
+                {
+                  "speaker": "Linh",
+                  "text": "Water, please. I don't like milk."
+                },
+                {
+                  "speaker": "Mum",
+                  "text": "Here is an orange for you after lunch."
+                },
+                {
+                  "speaker": "Linh",
+                  "text": "Thank you! I like oranges."
+                }
+              ],
+              "audioNotes": "Clear, slow delivery with short pauses. Total duration approx. 40 seconds."
+            },
+            "answerKey": {
+              "q1": "rice and chicken",
+              "q2": "water",
+              "q3": "orange",
+              "q4": "milk"
+            },
+            "audioUrl": "/audio/listening/starters/unit-06/listening-food-dialogue.mp3"
+          },
+          "questions": [
+            {
+              "questionText": "What does Linh want to eat?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Linh says: I want rice and chicken.",
+              "qualityScores": {
+                "quality": 0.95,
+                "difficulty": 0.18,
+                "curriculumAlignment": 0.98,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Rice and chicken",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Fish and eggs",
+                  "isCorrect": false,
+                  "distractorNote": "Other foods not requested"
+                },
+                {
+                  "text": "Bread and cake",
+                  "isCorrect": false,
+                  "distractorNote": "Not mentioned in dialogue"
+                }
+              ]
+            },
+            {
+              "questionText": "What does Linh drink?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Linh says: Water, please.",
+              "qualityScores": {
+                "quality": 0.96,
+                "difficulty": 0.2,
+                "curriculumAlignment": 0.99,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "Water",
+                  "isCorrect": true
+                },
+                {
+                  "text": "Milk",
+                  "isCorrect": false,
+                  "distractorNote": "Linh says she doesn't like milk"
+                },
+                {
+                  "text": "Juice",
+                  "isCorrect": false,
+                  "distractorNote": "Not offered or chosen"
+                }
+              ]
+            },
+            {
+              "questionText": "What fruit does Mum give Linh?",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 1,
+              "points": 1,
+              "explanation": "Mum says: Here is an orange for you after lunch.",
+              "qualityScores": {
+                "quality": 0.94,
+                "difficulty": 0.22,
+                "curriculumAlignment": 0.97,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "An orange",
+                  "isCorrect": true
+                },
+                {
+                  "text": "A banana",
+                  "isCorrect": false,
+                  "distractorNote": "Another fruit but not in audio"
+                },
+                {
+                  "text": "An apple",
+                  "isCorrect": false,
+                  "distractorNote": "Common fruit distractor"
+                }
+              ]
+            },
+            {
+              "questionText": "Linh says 'I don't like _____.'",
+              "questionType": "multiple_choice",
+              "skillTag": "listening",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 1,
+              "explanation": "Linh says: I don't like milk.",
+              "qualityScores": {
+                "quality": 0.93,
+                "difficulty": 0.28,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "choices": [
+                {
+                  "text": "milk",
+                  "isCorrect": true
+                },
+                {
+                  "text": "water",
+                  "isCorrect": false,
+                  "distractorNote": "She chooses water to drink"
+                },
+                {
+                  "text": "rice",
+                  "isCorrect": false,
+                  "distractorNote": "She wants rice to eat"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "writing-my-favourite-food",
+      "skill": "writing",
+      "sortOrder": 4,
+      "unlockAfterLessonId": "e2000006-0000-4000-8000-000000000004",
+      "title": "Lesson 5: My Favourite Food",
+      "learningObjective": "Write short answers about food you like and do not like using unit vocabulary and grammar.",
+      "estimatedMinutes": 15,
+      "exercises": [
+        {
+          "slug": "writing-food-likes",
+          "title": "Writing: Food I Like",
+          "instructions": "Write short answers. Use 1–5 words for each answer.",
+          "exerciseType": "writing",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.93,
+            "difficulty": 0.35,
+            "curriculumAlignment": 0.97,
+            "needsReview": false
+          },
+          "content": {
+            "taskDescription": "Look at the picture of food on a table. Write short answers to the three questions.",
+            "prompts": [
+              "1. What food do you like? (Write: I like _____)",
+              "2. What do you drink? (Write one word: milk / water / juice)",
+              "3. Write one sentence: I don't like _____."
+            ],
+            "expectedLength": "3 short answers; 1–5 words each; one sentence up to 6 words",
+            "successCriteria": [
+              "All three prompts are answered",
+              "Uses at least two unit food or drink words",
+              "Uses like or don't like correctly",
+              "Spelling of core words is recognisable"
+            ],
+            "modelAnswer": {
+              "answers": [
+                "I like rice.",
+                "water",
+                "I don't like fish."
+              ]
+            },
+            "rubric": {
+              "grammar": {
+                "weight": 0.3,
+                "criteria": "Correct use of like / don't like and eat / drink where appropriate."
+              },
+              "vocabulary": {
+                "weight": 0.3,
+                "criteria": "Uses food and drink words from the unit accurately."
+              },
+              "organization": {
+                "weight": 0.2,
+                "criteria": "Answers match the prompts in order; sentences are clear."
+              },
+              "taskAchievement": {
+                "weight": 0.2,
+                "criteria": "All parts completed; length appropriate for Starters."
+              }
+            }
+          },
+          "questions": [
+            {
+              "questionText": "Write your answers to the three prompts in the task.",
+              "questionType": "writing",
+              "skillTag": "writing",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 6,
+              "explanation": "Chấp nhận mọi câu trả lời đáp ứng tiêu chí. Câu trả lời mẫu cho thấy phạm vi mong đợi.",
+              "qualityScores": {
+                "quality": 0.91,
+                "difficulty": 0.38,
+                "curriculumAlignment": 0.96,
+                "needsReview": false
+              },
+              "content": {
+                "rubricRef": "writing-food-likes",
+                "autoCheckKeywords": [
+                  "like",
+                  "don't",
+                  "eat",
+                  "drink",
+                  "rice",
+                  "milk",
+                  "water",
+                  "apple",
+                  "chicken",
+                  "fish"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "speaking-food-preferences",
+      "skill": "speaking",
+      "sortOrder": 5,
+      "unlockAfterLessonId": "e2000006-0000-4000-8000-000000000005",
+      "title": "Lesson 6: Talk About Food",
+      "learningObjective": "Answer simple questions about food and drink you like with words and short phrases.",
+      "estimatedMinutes": 12,
+      "exercises": [
+        {
+          "slug": "speaking-food-interview",
+          "title": "Speaking: Food Interview",
+          "instructions": "Answer the examiner's questions. Say at least one word for each question.",
+          "exerciseType": "speaking",
+          "sortOrder": 0,
+          "qualityScores": {
+            "quality": 0.92,
+            "difficulty": 0.32,
+            "curriculumAlignment": 0.96,
+            "needsReview": false
+          },
+          "content": {
+            "prompt": "The examiner will ask you about food and drink. Look at the picture of food on the table.",
+            "pictureDescription": "A table with rice, chicken, an apple, a glass of water and a banana.",
+            "followUpQuestions": [
+              "Are you hungry?",
+              "What do you like to eat?",
+              "What do you drink?",
+              "Do you like fish?",
+              "What food don't you like?"
+            ],
+            "suggestedAnswers": [
+              "Yes, I am hungry.",
+              "I like rice and chicken.",
+              "I drink water.",
+              "No, I don't like fish.",
+              "I don't like eggs."
+            ],
+            "assessmentCriteria": {
+              "pronunciation": "Key food words (rice, milk, apple, chicken) are understandable.",
+              "fluency": "Responds without long silence; uses words or short phrases.",
+              "grammar": "Uses like / don't like and eat / drink in at least two answers.",
+              "vocabulary": "Uses at least three different unit food or drink words correctly."
+            },
+            "maxDurationSeconds": 90
+          },
+          "questions": [
+            {
+              "questionText": "Record your answers to the five follow-up questions.",
+              "questionType": "speaking",
+              "skillTag": "speaking",
+              "topicTag": "food-and-drink",
+              "levelTag": "starters",
+              "difficultyRating": 2,
+              "points": 5,
+              "explanation": "Đánh giá tổng thể theo bốn tiêu chí. Câu trả lời một phần vẫn được điểm một phần.",
+              "qualityScores": {
+                "quality": 0.9,
+                "difficulty": 0.36,
+                "curriculumAlignment": 0.95,
+                "needsReview": false
+              },
+              "content": {
+                "assessmentCriteriaRef": "speaking-food-interview",
+                "minimumResponses": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
