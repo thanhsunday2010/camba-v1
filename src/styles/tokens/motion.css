@@ -57,3 +57,42 @@
 .camba-scale-in {
   animation: camba-scale-in var(--duration-normal) var(--ease-spring);
 }
+
+@keyframes camba-streak-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--color-streak-rgb, 249 115 22), 0.35);
+  }
+  50% {
+    box-shadow: 0 0 16px 4px rgba(var(--color-streak-rgb, 249 115 22), 0.2);
+  }
+}
+
+.camba-streak-glow {
+  animation: camba-streak-glow 2.5s var(--ease-out) infinite;
+}
+
+@keyframes camba-badge-shine {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.camba-badge-shine {
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.55) 50%,
+    transparent 60%
+  );
+  background-size: 200% 100%;
+  animation: camba-badge-shine 3s ease-in-out infinite;
+}
+
+.camba-hero-pattern {
+  background-image: radial-gradient(circle at 1px 1px, rgb(var(--program-rgb) / 0.07) 1px, transparent 0);
+  background-size: 20px 20px;
+}

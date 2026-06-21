@@ -54,9 +54,12 @@ export interface StudentDashboardLabels {
     subtitle: string;
     emptyTitle: string;
     emptyDescription: string;
+    emptyAction: string;
     allCompleteTitle: string;
     allCompleteDesc: string;
     progressLabel: string;
+    progressRingLabel: string;
+    pendingXpLabel: string;
     xpLabel: string;
     coinsLabel: string;
   };
@@ -83,12 +86,14 @@ export interface StudentDashboardLabels {
     focusLabel: string;
     strongLabel: string;
     shieldBySkill: string;
+    emptyAction: string;
   };
   achievements: {
     title: string;
     subtitle: string;
     emptyTitle: string;
     emptyDescription: string;
+    emptyAction: string;
     nextBadgeTitle: string;
     recentEarnedTitle: string;
     earnedSummary: string;
@@ -101,6 +106,8 @@ export interface StudentDashboardLabels {
     days: string;
     encouragement: string;
     calendarLabel: string;
+    todayLabel: string;
+    noStreakYet: string;
   };
   mockTests: {
     title: string;
@@ -217,7 +224,7 @@ export function StudentDashboardView({
       )}
 
       {hasProgram && gamification && (
-        <div className="camba-section-stack">
+        <div className="camba-section-stack gap-8 sm:gap-10">
           <DashboardHero
             studentName={userName}
             encouragement={encouragement}
@@ -239,6 +246,13 @@ export function StudentDashboardView({
 
           <TodayMissionSection missions={missions} labels={labels.missions} />
 
+          <LearningStreakSection
+            days={streakCalendar}
+            currentStreak={currentStreak}
+            bestStreak={bestStreak}
+            labels={labels.streak}
+          />
+
           <ContinueLearningPanel
             nextLesson={nextLesson}
             secondaryRecommendations={recommendations}
@@ -246,7 +260,7 @@ export function StudentDashboardView({
             skillLabel={skillLabel}
           />
 
-          <div className="grid gap-6 xl:grid-cols-2">
+          <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
             <SkillProgressSection
               skills={skillSnapshot}
               labels={labels.skills}
@@ -265,22 +279,17 @@ export function StudentDashboardView({
             />
           </div>
 
-          <LearningStreakSection
-            days={streakCalendar}
-            currentStreak={currentStreak}
-            bestStreak={bestStreak}
-            labels={labels.streak}
-          />
-
-          <div className="grid gap-6 xl:grid-cols-2">
+          <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
             <MockTestPanel tests={mockTests} labels={labels.mockTests} />
-            <CambridgeShieldCard
-              programSlug={programSlug}
-              programLabel={levelName ?? programName}
-              filledSegments={shieldFilledSegments}
-              title={labels.shield.title}
-              description={labels.shield.description}
-            />
+            <div className="hidden lg:block">
+              <CambridgeShieldCard
+                programSlug={programSlug}
+                programLabel={levelName ?? programName}
+                filledSegments={shieldFilledSegments}
+                title={labels.shield.title}
+                description={labels.shield.description}
+              />
+            </div>
           </div>
 
           <div className="grid gap-6 xl:grid-cols-2">

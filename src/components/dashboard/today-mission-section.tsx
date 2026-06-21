@@ -1,10 +1,11 @@
 import { SectionHeader } from "@/components/camba/section-header";
-import { MissionCard } from "@/components/camba/cards/mission-reward-cards";
 import { RewardSummaryCard } from "@/components/camba/cards/mission-reward-cards";
-import { MissionCompletedBanner } from "@/components/camba/feedback/banners";
-import { EmptyStateIllustrated } from "@/components/camba/empty-state-illustrated";
+import { CelebrationBanner } from "@/components/camba/feedback/banners";
+import { DashboardEmptyState } from "@/components/dashboard/dashboard-empty-state";
+import { DashboardMissionCard } from "@/components/dashboard/dashboard-mission-card";
+import { MissionProgressRing } from "@/components/dashboard/mission-progress-ring";
 import type { DailyMissionItem } from "@/components/gamification/daily-missions";
-import { Target, Trophy } from "lucide-react";
+import { Target } from "lucide-react";
 
 interface TodayMissionSectionProps {
   missions: DailyMissionItem[];
@@ -13,9 +14,12 @@ interface TodayMissionSectionProps {
     subtitle: string;
     emptyTitle: string;
     emptyDescription: string;
+    emptyAction: string;
     allCompleteTitle: string;
     allCompleteDesc: string;
     progressLabel: string;
+    progressRingLabel: string;
+    pendingXpLabel: string;
     xpLabel: string;
     coinsLabel: string;
   };
@@ -27,24 +31,47 @@ export function TodayMissionSection({ missions, labels }: TodayMissionSectionPro
   const allComplete = total > 0 && completed === total;
   const totalXp = missions.reduce((sum, m) => sum + (m.isCompleted ? m.xpReward : 0), 0);
   const totalCoins = missions.reduce((sum, m) => sum + (m.isCompleted ? m.coinReward : 0), 0);
+  const pendingXp = missions.reduce(
+    (sum, m) => sum + (!m.isCompleted ? m.xpReward : 0),
+    0
+  );
 
   return (
-    <section aria-labelledby="today-missions-heading">
-      <SectionHeader title={labels.title} description={labels.subtitle} icon={Target} />
+    <section aria-labelledby="today-missions-heading" className="camba-scale-in">
+      <SectionHeader
+        title={labels.title}
+        description={labels.subtitle}
+        icon={Target}
+        action={
+          total > 0 ? (
+            <MissionProgressRing
+              completed={completed}
+              total={total}
+              label={labels.progressRingLabel}
+            />
+          ) : undefined
+        }
+      />
 
       {allComplete && (
-        <MissionCompletedBanner title={labels.allCompleteTitle} description={labels.allCompleteDesc} className="mb-4" />
+        <CelebrationBanner
+          title={labels.allCompleteTitle}
+          description={labels.allCompleteDesc}
+          className="mb-4"
+        />
       )}
 
       {missions.length === 0 ? (
-        <EmptyStateIllustrated
+        <DashboardEmptyState
           icon={Target}
           title={labels.emptyTitle}
           description={labels.emptyDescription}
+          actionLabel={labels.emptyAction}
+          actionHref="/learning"
         />
       ) : (
         <div className="space-y-4">
-          {allComplete && (
+          {allComplete && (totalXp > 0 || totalCoins > 0) && (
             <RewardSummaryCard
               title={labels.allCompleteDesc}
               xp={totalXp}
@@ -53,32 +80,41 @@ export function TodayMissionSection({ missions, labels }: TodayMissionSectionPro
               coinsLabel={labels.coinsLabel}
             />
           )}
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+
+          {!allComplete && pendingXp > 0 && (
+            <p className="camba-caption text-muted px-1">
+              {labels.pendingXpLabel.replace("{xp}", String(pendingXp)).replace("{label}", labels.xpLabel)}
+            </p>
+          )}
+
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {missions.map((mission) => {
               const progress = Math.min(
                 100,
                 Math.round((mission.currentValue / mission.targetValue) * 100)
               );
               return (
-                <MissionCard
+                <DashboardMissionCard
                   key={mission.id}
                   title={mission.title}
-                  description={
-                    mission.description ??
-                    `+${mission.xpReward} ${labels.xpLabel}${mission.coinReward ? ` · +${mission.coinReward} ${labels.coinsLabel}` : ""}`
-                  }
+                  description={mission.description ?? undefined}
                   progress={progress}
                   progressLabel={`${mission.currentValue}/${mission.targetValue}`}
                   completed={mission.isCompleted}
-                  className={mission.isCompleted ? "ring-1 ring-success/30" : undefined}
+                  xpReward={mission.xpReward}
+                  coinReward={mission.coinReward}
+                  xpLabel={labels.xpLabel}
+                  coinsLabel={labels.coinsLabel}
                 />
               );
             })}
           </div>
+
           {completed > 0 && !allComplete && (
-            <p className="camba-caption text-muted flex items-center gap-1.5">
-              <Trophy className="h-4 w-4 text-[var(--color-badge)]" />
-              {labels.progressLabel.replace("{done}", String(completed)).replace("{total}", String(total))}
+            <p className="camba-caption text-muted text-center sm:text-left">
+              {labels.progressLabel
+                .replace("{done}", String(completed))
+                .replace("{total}", String(total))}
             </p>
           )}
         </div>

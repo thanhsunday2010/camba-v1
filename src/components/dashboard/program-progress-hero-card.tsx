@@ -29,23 +29,29 @@ export function ProgramProgressHeroCard({
   return (
     <div
       className={cn(
-        "flex flex-col items-center gap-4 rounded-2xl border border-white/50 bg-white/80 p-4 sm:p-5 shadow-md backdrop-blur-sm",
+        "relative flex flex-col items-center gap-3 rounded-2xl border-2 border-program/15 bg-white/90 p-4 sm:p-5 shadow-md backdrop-blur-sm overflow-hidden",
         className
       )}
     >
-      <ProgramBadge programSlug={programSlug} />
-      {(programName || levelName) && (
-        <p className="camba-caption text-center text-muted font-medium">
-          {programName}
-          {levelName ? ` · ${levelName}` : ""}
-        </p>
-      )}
-      <div className="flex items-center gap-4">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.04] camba-gradient-program"
+        aria-hidden
+      />
+      <div className="relative hidden lg:flex flex-col items-center gap-2 w-full">
+        <ProgramBadge programSlug={programSlug} />
+        {(programName || levelName) && (
+          <p className="camba-caption text-center text-muted font-medium">
+            {programName}
+            {levelName ? ` · ${levelName}` : ""}
+          </p>
+        )}
+      </div>
+      <div className="relative flex items-center justify-center gap-3 sm:gap-4 w-full">
         <ProgressRing
           value={levelProgressPercent}
           label={`${levelProgressPercent}%`}
           sublabel={levelLabel}
-          size={88}
+          size={80}
         />
         <CambridgeShield
           programSlug={programSlug}
@@ -54,9 +60,9 @@ export function ProgramProgressHeroCard({
           showLabel
         />
       </div>
-      <div className="w-full space-y-1.5">
+      <div className="relative w-full space-y-1.5 pt-1 border-t border-border/50">
         <div className="flex justify-between camba-caption text-muted">
-          <span>{shieldLabel}</span>
+          <span className="font-semibold text-foreground/80">{shieldLabel}</span>
           <span>
             {shieldFilledSegments}/{SHIELD_SEGMENTS}
           </span>

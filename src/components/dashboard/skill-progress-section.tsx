@@ -13,7 +13,7 @@ import { SectionHeader } from "@/components/camba/section-header";
 import { SkillCard } from "@/components/camba/cards/learning-cards";
 import { SkillShieldProgress } from "@/components/camba/cambridge/shield-progress";
 import { ProgressRing } from "@/components/camba/progress-ring";
-import { EmptyStateIllustrated } from "@/components/camba/empty-state-illustrated";
+import { DashboardEmptyState } from "@/components/dashboard/dashboard-empty-state";
 import { cn } from "@/lib/utils";
 
 const SKILL_ICONS: Record<string, LucideIcon> = {
@@ -35,6 +35,7 @@ interface SkillProgressSectionProps {
     focusLabel: string;
     strongLabel: string;
     shieldBySkill: string;
+    emptyAction: string;
   };
   skillLabels: Record<string, string>;
   shieldProgress?: Record<string, number> | null;
@@ -50,10 +51,12 @@ export function SkillProgressSection({
     return (
       <section>
         <SectionHeader title={labels.title} description={labels.subtitle} icon={Sparkles} />
-        <EmptyStateIllustrated
+        <DashboardEmptyState
           icon={Sparkles}
           title={labels.emptyTitle}
           description={labels.emptyDescription}
+          actionLabel={labels.emptyAction}
+          actionHref="/learning"
         />
       </section>
     );

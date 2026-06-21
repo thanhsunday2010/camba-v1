@@ -2,7 +2,7 @@ import { Link } from "@/i18n/routing";
 import { SectionHeader } from "@/components/camba/section-header";
 import { MockTestCard } from "@/components/camba/cards/learning-cards";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
-import { EmptyStateIllustrated } from "@/components/camba/empty-state-illustrated";
+import { DashboardEmptyState } from "@/components/dashboard/dashboard-empty-state";
 import { Button } from "@/components/ui/button";
 import type { MockTestSummary } from "@/types/learning";
 import { ClipboardList, FileQuestion } from "lucide-react";
@@ -78,7 +78,7 @@ export function MockTestPanel({ tests, labels }: MockTestPanelProps) {
           )}
         </div>
       ) : (
-        <EmptyStateIllustrated
+        <DashboardEmptyState
           icon={ClipboardList}
           title={labels.emptyTitle}
           description={labels.emptyDescription}

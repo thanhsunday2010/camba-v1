@@ -2,7 +2,7 @@ import { Link } from "@/i18n/routing";
 import { SectionHeader } from "@/components/camba/section-header";
 import { LessonCard } from "@/components/camba/cards/learning-cards";
 import { RecommendationCard } from "@/components/camba/cards/mission-reward-cards";
-import { EmptyStateIllustrated } from "@/components/camba/empty-state-illustrated";
+import { DashboardEmptyState } from "@/components/dashboard/dashboard-empty-state";
 import { Button } from "@/components/ui/button";
 import type { NextLessonContext } from "@/lib/queries/dashboard";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
@@ -90,7 +90,7 @@ export function ContinueLearningPanel({
           )}
         </div>
       ) : (
-        <EmptyStateIllustrated
+        <DashboardEmptyState
           icon={BookOpen}
           title={labels.emptyTitle}
           description={labels.emptyDescription}

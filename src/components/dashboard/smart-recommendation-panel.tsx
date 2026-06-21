@@ -4,7 +4,7 @@ import { useTransition } from "react";
 import { dismissRecommendationAction } from "@/actions/ai/recommendations";
 import { SectionHeader } from "@/components/camba/section-header";
 import { RecommendationCard } from "@/components/camba/cards/mission-reward-cards";
-import { EmptyStateIllustrated } from "@/components/camba/empty-state-illustrated";
+import { DashboardEmptyState } from "@/components/dashboard/dashboard-empty-state";
 import { Button } from "@/components/ui/button";
 import { Lightbulb, Sparkles, X } from "lucide-react";
 
@@ -55,7 +55,7 @@ export function SmartRecommendationPanel({
       )}
 
       {recommendations.length === 0 ? (
-        <EmptyStateIllustrated
+        <DashboardEmptyState
           icon={Lightbulb}
           title={labels.emptyTitle}
           description={labels.emptyDescription}
