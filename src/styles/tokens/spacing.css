@@ -1,0 +1,49 @@
+/**
+ * CAMBA spacing & layout tokens
+ */
+:root {
+  --space-page-x: 1rem;
+  --space-page-y: 1.5rem;
+  --space-section: 1.5rem;
+  --space-card: 1.25rem;
+  --space-card-lg: 1.5rem;
+  --space-gap-sm: 0.5rem;
+  --space-gap-md: 0.75rem;
+  --space-gap-lg: 1rem;
+  --space-gap-xl: 1.5rem;
+  --content-max-width: 80rem;
+  --content-narrow: 42rem;
+  --touch-target-min: 44px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --space-page-x: 1.25rem;
+    --space-section: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --space-page-x: 1.5rem;
+    --space-section: 2rem;
+    --space-card: 1.5rem;
+  }
+}
+
+.camba-page {
+  padding-inline: var(--space-page-x);
+  padding-block: var(--space-page-y);
+}
+
+.camba-section-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-section);
+}
+
+.camba-content-max {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin-inline: auto;
+}

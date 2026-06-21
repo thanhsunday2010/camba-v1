@@ -1,6 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
+import { CambaCard } from "@/components/camba/primitives/camba-card";
+import { Button } from "@/components/ui/button";
 import { ClipboardList, ArrowRight } from "lucide-react";
 
 interface PlacementTestCTAProps {
@@ -15,26 +15,22 @@ export function PlacementTestCTA({
   buttonText,
 }: PlacementTestCTAProps) {
   return (
-    <Card className="border-primary/20 bg-gradient-to-br from-primary/5 to-accent/5">
-      <CardHeader>
-        <div className="flex items-start gap-4">
-          <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-            <ClipboardList className="h-6 w-6 text-primary" />
-          </div>
-          <div>
-            <CardTitle>{title}</CardTitle>
-            <CardDescription className="mt-1">{description}</CardDescription>
-          </div>
+    <CambaCard variant="hero" padding="md" className="border-program/25">
+      <div className="flex items-start gap-4">
+        <div className="camba-icon-box-lg camba-gradient-program text-white shrink-0">
+          <ClipboardList className="h-6 w-6" />
         </div>
-      </CardHeader>
-      <CardContent>
-        <Link href="/placement-test">
-          <Button>
-            {buttonText}
-            <ArrowRight className="h-4 w-4" />
-          </Button>
-        </Link>
-      </CardContent>
-    </Card>
+        <div className="flex-1 min-w-0">
+          <h3 className="camba-h3 text-foreground">{title}</h3>
+          <p className="camba-body text-muted mt-1">{description}</p>
+          <Link href="/placement-test" className="inline-block mt-4">
+            <Button variant="quest">
+              {buttonText}
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          </Link>
+        </div>
+      </div>
+    </CambaCard>
   );
 }

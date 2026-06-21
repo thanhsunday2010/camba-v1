@@ -1,0 +1,77 @@
+/**
+ * CAMBA typography scale
+ */
+:root {
+  --text-display: 2rem;
+  --text-display-line: 1.15;
+  --text-display-weight: 800;
+
+  --text-h1: 1.5rem;
+  --text-h1-line: 1.25;
+  --text-h1-weight: 700;
+
+  --text-h2: 1.25rem;
+  --text-h2-line: 1.3;
+  --text-h2-weight: 700;
+
+  --text-h3: 1.125rem;
+  --text-h3-line: 1.35;
+  --text-h3-weight: 600;
+
+  --text-body: 0.9375rem;
+  --text-body-line: 1.5;
+  --text-body-weight: 400;
+
+  --text-caption: 0.8125rem;
+  --text-caption-line: 1.4;
+  --text-caption-weight: 500;
+
+  --text-stat: 1.75rem;
+  --text-stat-line: 1.1;
+  --text-stat-weight: 800;
+}
+
+.camba-display {
+  font-size: var(--text-display);
+  line-height: var(--text-display-line);
+  font-weight: var(--text-display-weight);
+  letter-spacing: -0.02em;
+}
+
+.camba-h1 {
+  font-size: var(--text-h1);
+  line-height: var(--text-h1-line);
+  font-weight: var(--text-h1-weight);
+  letter-spacing: -0.015em;
+}
+
+.camba-h2 {
+  font-size: var(--text-h2);
+  line-height: var(--text-h2-line);
+  font-weight: var(--text-h2-weight);
+}
+
+.camba-h3 {
+  font-size: var(--text-h3);
+  line-height: var(--text-h3-line);
+  font-weight: var(--text-h3-weight);
+}
+
+.camba-body {
+  font-size: var(--text-body);
+  line-height: var(--text-body-line);
+  font-weight: var(--text-body-weight);
+}
+
+.camba-caption {
+  font-size: var(--text-caption);
+  line-height: var(--text-caption-line);
+  font-weight: var(--text-caption-weight);
+}
+
+.camba-stat {
+  font-size: var(--text-stat);
+  line-height: var(--text-stat-line);
+  font-weight: var(--text-stat-weight);
+  letter-spacing: -0.02em;
+}

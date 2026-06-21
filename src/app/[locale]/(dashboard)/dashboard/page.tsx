@@ -1,24 +1,20 @@
 import { getTranslations } from "next-intl/server";
 import { getCurrentUser } from "@/lib/auth/current-user";
-import { StatsCards } from "@/components/dashboard/stats-cards";
-import { DailyMissions } from "@/components/gamification/daily-missions";
-import { StreakCalendar } from "@/components/gamification/streak-calendar";
-import { BadgeGrid } from "@/components/gamification/badge-grid";
-import { LeagueBoard } from "@/components/gamification/league-board";
-import { XpProgressBar } from "@/components/gamification/xp-progress-bar";
+import { StudentDashboardView } from "@/components/dashboard/student-dashboard-view";
 import { getUserGamification, getUserStreak } from "@/lib/queries/user";
-import { getNextUnlockedLessonFast } from "@/lib/queries/learning";
 import { getGamificationDashboardData } from "@/lib/queries/gamification";
-import { Link } from "@/i18n/routing";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-import { StudyCoachCard } from "@/components/ai/study-coach-card";
-import { RecommendationList } from "@/components/ai/recommendation-list";
+import {
+  getSkillProgressSnapshot,
+  computeShieldFilledSegments,
+  getNextLessonContext,
+} from "@/lib/queries/dashboard";
+import { getMockTestsForUser } from "@/lib/queries/mock-tests";
 import { getLatestStudyCoach } from "@/actions/ai/study-coach";
 import { fetchActiveRecommendations } from "@/actions/ai/recommendations";
-import { fetchActiveProgramContext, fetchAvailablePrograms, fetchLevelsForProgram } from "@/actions/programs";
-import { ProgramPicker } from "@/components/programs/program-picker";
-import { LevelPicker } from "@/components/programs/level-picker";
+import { fetchActiveProgramContext, fetchAvailablePrograms } from "@/actions/programs";
+import { xpProgressInLevel } from "@/lib/gamification/constants";
+import { todayDateString } from "@/lib/gamification/constants";
+import { pickHeroEncouragement, getTodayActivity } from "@/lib/dashboard/encouragement";
 
 export default async function DashboardPage() {
   const user = await getCurrentUser();
@@ -40,167 +36,201 @@ export default async function DashboardPage() {
     ]);
 
   const programContext = await fetchActiveProgramContext(gamification);
+  const levelId = gamification?.current_level_id;
 
-  const [nextLesson, levels] = await Promise.all([
-    gamification?.current_level_id
-      ? getNextUnlockedLessonFast(user.id, gamification.current_level_id)
-      : Promise.resolve(null),
-    programContext?.programId
-      ? fetchLevelsForProgram(programContext.programId)
-      : Promise.resolve([]),
+  const [nextLesson, skillSnapshot, mockTests] = await Promise.all([
+    levelId ? getNextLessonContext(user.id, levelId) : Promise.resolve(null),
+    levelId ? getSkillProgressSnapshot(user.id, levelId) : Promise.resolve([]),
+    getMockTestsForUser(user.id),
   ]);
 
-  const programName = programContext?.program.name;
-  const levelName = programContext?.level?.name;
+  const shieldProgress =
+    (gamification?.shield_progress as Record<string, number> | null) ?? null;
+  const shieldFilledSegments = computeShieldFilledSegments(shieldProgress);
+
+  const userName = user.fullName || user.email.split("@")[0];
+  const today = todayDateString();
+  const { xpToday, lessonsToday } = getTodayActivity(gamificationData.streakCalendar, today);
+  const levelProgressPercent = gamification
+    ? xpProgressInLevel(gamification.total_xp, gamification.level)
+    : 0;
+
+  const skillLabels = {
+    vocabulary: ta("vocabulary"),
+    grammar: ta("grammar"),
+    reading: t("skillReading"),
+    listening: t("skillListening"),
+    writing: t("skillWriting"),
+    speaking: t("skillSpeaking"),
+  };
+
+  const encouragementMessages = {
+    program: t("encourageProgram"),
+    topSkill: t("encourageTopSkill"),
+    weakSkill: t("encourageWeakSkill"),
+    streak: t("encourageStreak"),
+    missions: t("encourageMissions"),
+    default: t("encourageDefault"),
+    start: t("encourageStart"),
+  };
+
+  const missionsCompleted = gamificationData.missions.filter((m) => m.isCompleted).length;
+  const encouragement = pickHeroEncouragement(
+    {
+      programName: programContext?.program.name,
+      skills: skillSnapshot,
+      streak: streakData?.current_streak ?? 0,
+      missionsCompleted,
+      missionsTotal: gamificationData.missions.length,
+      hasNextLesson: !!nextLesson,
+    },
+    encouragementMessages,
+    skillLabels
+  );
 
   return (
-    <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">
-          {t("welcome", { name: user.fullName || user.email })}
-        </h1>
-        {programName && (
-          <p className="text-sm text-primary font-medium mt-1">
-            {t("currentProgram")}: {programName}
-            {levelName ? ` • ${levelName}` : ""}
-          </p>
-        )}
-      </div>
-
-      {!programContext?.programId && (
-        <ProgramPicker
-          programs={programs}
-          labels={{
-            title: tp("selectTitle"),
-            subtitle: tp("selectSubtitle"),
-            select: tp("select"),
-            selecting: tp("selecting"),
-            current: tp("current"),
-          }}
-        />
-      )}
-
-      {programContext?.programId && (
-        <StatsCards
-          gamification={gamification}
-          streak={streakData?.current_streak ?? 0}
-          levelName={levelName}
-          labels={{
+    <StudentDashboardView
+      userName={userName}
+      encouragement={encouragement}
+      programs={programs}
+      programContext={programContext}
+      gamification={gamification}
+      currentStreak={streakData?.current_streak ?? 0}
+      bestStreak={streakData?.best_streak ?? 0}
+      xpToday={xpToday}
+      lessonsToday={lessonsToday}
+      levelProgressPercent={levelProgressPercent}
+      missions={gamificationData.missions}
+      streakCalendar={gamificationData.streakCalendar}
+      badges={gamificationData.badges}
+      nextLesson={nextLesson}
+      skillSnapshot={skillSnapshot}
+      mockTests={mockTests}
+      shieldFilledSegments={shieldFilledSegments}
+      shieldProgress={shieldProgress}
+      coachPlan={coachPlan}
+      recommendations={recommendations}
+      labels={{
+        encouragement: encouragementMessages,
+        hero: {
+          greeting: t("heroGreeting"),
+          continueLesson: t("continueLesson"),
+          startLearning: t("startLearning"),
+          minutes: t("minutes"),
+          recommendedReason: t("recommendedReason"),
+          shieldLabel: t("shieldProgress"),
+          levelLabel: tg("levelProgress"),
+          stats: {
             xp: t("xp"),
             level: t("level"),
-            streak: t("streak"),
             coins: tg("coins"),
-            currentLevel: t("currentLevel"),
+            streak: t("streak"),
+            xpToday: t("xpToday"),
+            lessonsToday: t("lessonsToday"),
             days: t("days"),
-            notStarted: t("notStarted"),
-          }}
-        />
-      )}
-
-      {gamification && programContext?.programId && (
-        <XpProgressBar
-          totalXp={gamification.total_xp}
-          level={gamification.level}
-          coins={gamification.coins}
-          xpLabel={t("xp")}
-          coinsLabel={tg("coins")}
-          levelProgressLabel={tg("levelProgress")}
-        />
-      )}
-
-      {programContext?.programId && levels.length > 0 && (
-        <LevelPicker
-          levels={levels}
-          currentLevelId={gamification?.current_level_id ?? null}
-          redirectToLearning
-          labels={{
-            title: tp("levelTitle"),
-            subtitle: gamification?.current_level_id
-              ? tp("levelChangeSubtitle")
-              : tp("levelSubtitle"),
-            select: tp("levelSelect"),
-            selecting: tp("selecting"),
-            current: tp("currentLevel"),
-            startLearning: tp("startLearning"),
-          }}
-        />
-      )}
-
-      <div className="grid md:grid-cols-2 gap-6">
-        <StudyCoachCard
-          initialPlan={coachPlan}
-          labels={{
-            title: ta("coachTitle"),
-            subtitle: ta("coachSubtitle"),
-            generate: ta("generatePlan"),
-            generating: ta("generating"),
-            dailyRecommendations: ta("dailyRecommendations"),
-            motivation: ta("motivation"),
-            strengths: ta("strengths"),
-            weaknesses: ta("weaknesses"),
-            weeklyPlan: ta("weeklyPlan"),
-          }}
-        />
-        <RecommendationList
-          recommendations={recommendations}
-          title={ta("recommendationsTitle")}
-          emptyText={ta("noRecommendations")}
-        />
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-6">
-        <DailyMissions
-          missions={gamificationData.missions}
-          title={t("dailyMissions")}
-          emptyText={t("notStarted")}
-        />
-        <section className="rounded-xl border border-gray-200 bg-white p-6">
-          <h2 className="font-semibold text-gray-900 mb-4">{t("recommendedLessons")}</h2>
-          {nextLesson ? (
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="font-medium text-gray-900">{nextLesson.title}</p>
-                <p className="text-sm text-gray-500">{nextLesson.estimated_minutes} phút</p>
-              </div>
-              <Link href={`/learning/lesson/${nextLesson.id}`}>
-                <Button size="sm">
-                  {t("continueLearning")}
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
-              </Link>
-            </div>
-          ) : (
-            <p className="text-sm text-gray-500">{t("notStarted")}</p>
-          )}
-        </section>
-      </div>
-
-      <StreakCalendar
-        days={gamificationData.streakCalendar}
-        currentStreak={streakData?.current_streak ?? 0}
-        bestStreak={streakData?.best_streak ?? 0}
-        title={tg("streakCalendar")}
-        currentLabel={tg("currentStreak")}
-        bestLabel={tg("bestStreak")}
-        daysLabel={t("days")}
-      />
-
-      <div className="grid md:grid-cols-2 gap-6">
-        <LeagueBoard
-          rankings={gamificationData.league.rankings}
-          userRank={gamificationData.league.userRank}
-          tier={gamificationData.league.tier}
-          title={t("weeklyLeague")}
-          yourRankLabel={tg("yourRank")}
-          xpLabel={t("xp")}
-          emptyText={tg("noLeagueData")}
-        />
-        <BadgeGrid
-          badges={gamificationData.badges}
-          title={tg("badges")}
-          emptyText={tg("noBadges")}
-        />
-      </div>
-    </div>
+          },
+        },
+        missions: {
+          title: t("dailyMissions"),
+          subtitle: t("missionsSubtitle"),
+          emptyTitle: t("missionsEmpty"),
+          emptyDescription: t("missionsEmptyDesc"),
+          allCompleteTitle: t("missionsAllComplete"),
+          allCompleteDesc: t("missionsAllCompleteDesc"),
+          progressLabel: t("missionsProgress"),
+          xpLabel: t("xp"),
+          coinsLabel: tg("coins"),
+        },
+        continueLearning: {
+          title: t("continueSectionTitle"),
+          subtitle: t("continueSectionSubtitle"),
+          continueLesson: t("continueLesson"),
+          startLearning: t("startLearning"),
+          viewPath: t("viewLearningPath"),
+          minutes: t("minutes"),
+          emptyTitle: t("continueEmptyTitle"),
+          emptyDescription: t("continueEmptyDesc"),
+          inProgress: t("lessonInProgress"),
+          recommended: t("lessonRecommended"),
+          notStarted: t("notStarted"),
+          skillPrefix: t("skillPrefix"),
+          unitPrefix: t("unitPrefix"),
+        },
+        skills: {
+          title: t("skillProgress"),
+          subtitle: t("skillProgressSubtitle"),
+          emptyTitle: t("skillProgressEmpty"),
+          emptyDescription: t("skillProgressEmptyDesc"),
+          focusLabel: t("skillFocus"),
+          strongLabel: t("skillStrong"),
+          shieldBySkill: t("shieldBySkill"),
+        },
+        achievements: {
+          title: t("recentAchievements"),
+          subtitle: t("achievementsSubtitle"),
+          emptyTitle: t("recentAchievementsEmpty"),
+          emptyDescription: t("recentAchievementsEmptyDesc"),
+          nextBadgeTitle: t("nextBadgeTitle"),
+          recentEarnedTitle: t("recentEarnedTitle"),
+          earnedSummary: t("earnedBadgesSummary"),
+        },
+        streak: {
+          title: t("streakSectionTitle"),
+          subtitle: t("streakSectionSubtitle"),
+          currentStreak: tg("currentStreak"),
+          bestStreak: tg("bestStreak"),
+          days: t("days"),
+          encouragement: t("streakEncouragement"),
+          calendarLabel: tg("streakCalendar"),
+        },
+        mockTests: {
+          title: t("mockTests"),
+          subtitle: t("mockTestsSubtitle"),
+          viewAll: t("viewAll"),
+          emptyTitle: t("mockTestsEmpty"),
+          emptyDescription: t("mockTestsEmptyDesc"),
+          ctaLabel: t("startMockTest"),
+          retakeLabel: t("retakeMockTest"),
+          bestScore: t("mockBestScore"),
+          attempts: t("mockAttempts"),
+          moreTests: t("moreMockTests"),
+        },
+        recommendations: {
+          title: t("smartRecommendations"),
+          subtitle: t("smartRecommendationsSubtitle"),
+          emptyTitle: t("recommendationsEmpty"),
+          emptyDescription: t("recommendationsEmptyDesc"),
+          motivationLabel: ta("motivation"),
+        },
+        shield: {
+          title: t("shieldProgress"),
+          description: t("shieldDescription"),
+        },
+        placement: {
+          title: t("startPlacementTest"),
+          description: t("startPlacementTestDesc"),
+          button: t("startPlacementTest"),
+        },
+        programPicker: {
+          title: tp("selectTitle"),
+          subtitle: tp("selectSubtitle"),
+          select: tp("select"),
+          selecting: tp("selecting"),
+          current: tp("current"),
+        },
+        ai: {
+          coachTitle: ta("coachTitle"),
+          coachSubtitle: ta("coachSubtitle"),
+          generate: ta("generatePlan"),
+          generating: ta("generating"),
+          dailyRecommendations: ta("dailyRecommendations"),
+          motivation: ta("motivation"),
+          strengths: ta("strengths"),
+          weaknesses: ta("weaknesses"),
+          weeklyPlan: ta("weeklyPlan"),
+        },
+        skillLabels,
+      }}
+    />
   );
 }

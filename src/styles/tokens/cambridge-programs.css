@@ -1,0 +1,66 @@
+/**
+ * Cambridge program theme overrides — applied via data-program on ancestor
+ */
+[data-program="starters"] {
+  --program-primary: #f97316;
+  --program-secondary: #38bdf8;
+  --program-gradient-from: #fb923c;
+  --program-gradient-to: #38bdf8;
+  --program-glow: rgba(249, 115, 22, 0.2);
+  --program-muted: rgba(249, 115, 22, 0.1);
+}
+
+[data-program="movers"] {
+  --program-primary: #14b8a6;
+  --program-secondary: #fbbf24;
+  --program-gradient-from: #14b8a6;
+  --program-gradient-to: #fbbf24;
+  --program-glow: rgba(20, 184, 166, 0.2);
+  --program-muted: rgba(20, 184, 166, 0.1);
+}
+
+[data-program="flyers"] {
+  --program-primary: #8b5cf6;
+  --program-secondary: #34d399;
+  --program-gradient-from: #8b5cf6;
+  --program-gradient-to: #34d399;
+  --program-glow: rgba(139, 92, 246, 0.2);
+  --program-muted: rgba(139, 92, 246, 0.1);
+}
+
+[data-program="ket"] {
+  --program-primary: #1e3a8a;
+  --program-secondary: #f59e0b;
+  --program-gradient-from: #1e40af;
+  --program-gradient-to: #f59e0b;
+  --program-glow: rgba(30, 58, 138, 0.22);
+  --program-muted: rgba(30, 58, 138, 0.08);
+}
+
+[data-program="pet"] {
+  --program-primary: #475569;
+  --program-secondary: #d97706;
+  --program-gradient-from: #334155;
+  --program-gradient-to: #d97706;
+  --program-glow: rgba(71, 85, 105, 0.2);
+  --program-muted: rgba(71, 85, 105, 0.08);
+}
+
+/* UI density — age segmentation */
+[data-density="explorer"] {
+  --camba-touch-min: 48px;
+  --camba-card-padding: 1.25rem;
+  --camba-gap-section: 1.5rem;
+}
+
+[data-density="achiever"] {
+  --camba-touch-min: 44px;
+  --camba-card-padding: 1rem;
+  --camba-gap-section: 1.25rem;
+}
+
+[data-density="scholar"] {
+  --camba-touch-min: 40px;
+  --camba-card-padding: 0.875rem;
+  --camba-gap-section: 1rem;
+}

@@ -15,6 +15,10 @@ const buttonVariants = cva(
         ghost: "hover:bg-gray-100 text-gray-700",
         link: "text-primary underline-offset-4 hover:underline",
         accent: "bg-accent text-white hover:bg-accent/90 shadow-sm",
+        quest:
+          "bg-program text-white hover:opacity-90 shadow-md camba-gradient-program border-0",
+        celebration:
+          "camba-gradient-program text-white hover:opacity-95 shadow-md font-bold",
       },
       size: {
         default: "h-10 px-4 py-2",

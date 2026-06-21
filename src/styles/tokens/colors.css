@@ -1,0 +1,70 @@
+/**
+ * CAMBA base color tokens
+ */
+:root {
+  --background: #f4f6fb;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --border: #e2e8f0;
+  --muted: #64748b;
+  --muted-foreground: #64748b;
+
+  /* Brand core */
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --accent: #10b981;
+  --accent-foreground: #ffffff;
+
+  /* Semantic */
+  --success: #22c55e;
+  --success-foreground: #ffffff;
+  --warning: #f59e0b;
+  --warning-foreground: #0f172a;
+  --error: #ef4444;
+  --error-foreground: #ffffff;
+
+  /* Surfaces */
+  --surface-elevated: #ffffff;
+  --surface-sunken: #eef2f7;
+  --surface-overlay: rgba(15, 23, 42, 0.55);
+
+  /* Program theme (overridden by CambridgeProgramTheme) */
+  --program-primary: var(--primary);
+  --program-secondary: var(--accent);
+  --program-gradient-from: #2563eb;
+  --program-gradient-to: #10b981;
+  --program-glow: rgba(37, 99, 235, 0.18);
+  --program-muted: rgba(37, 99, 235, 0.08);
+
+  /* Status — learning progression */
+  --status-locked: #94a3b8;
+  --status-unlocked: var(--program-primary);
+  --status-in-progress: #3b82f6;
+  --status-completed: var(--success);
+  --status-mastery-1: #ef4444;
+  --status-mastery-2: #f59e0b;
+  --status-mastery-3: #2563eb;
+  --status-mastery-4: #22c55e;
+  --status-recommended: #8b5cf6;
+  --status-needs-review: #f97316;
+  --status-mock-test: #1e40af;
+  --status-ai: #0d9488;
+
+  /* Gamification accents */
+  --color-xp: #2563eb;
+  --color-streak: #ef4444;
+  --color-coins: #f59e0b;
+  --color-badge: #d97706;
+  --color-shield: #4f46e5;
+  --color-level-up: #eab308;
+
+  /* Text hierarchy */
+  --text-primary: var(--foreground);
+  --text-secondary: #475569;
+  --text-tertiary: #94a3b8;
+
+  /* Info */
+  --info: #0ea5e9;
+  --info-foreground: #ffffff;
+}
