@@ -1,6 +1,8 @@
 import type {
   ExerciseUiState,
+  LessonDisplayState,
   LessonExerciseSummary,
+  LessonPageProgress,
   ResolvedLessonProgress,
 } from "@/lib/learning/lesson-page-types";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
@@ -163,4 +165,64 @@ export function countCompletedExercises(
       new Set(getPersistedCompletedExerciseIds(summaries)),
     0
   ).completedCount;
+}
+
+/** UI-only — mirrors path review rules using server snapshot fields */
+export function needsReviewFromLessonProgress(
+  progress: LessonPageProgress,
+  isLessonCompleteResolved: boolean
+): boolean {
+  const completion = Math.max(
+    progress.completionPercent,
+    isLessonCompleteResolved ? 100 : 0
+  );
+  const mastery = progress.masteryLevel ?? 0;
+  const accuracy = progress.accuracyPercent ?? 0;
+  const attempts = progress.attemptsCount ?? 0;
+
+  if (completion >= 100 && mastery < 3) return true;
+  if (attempts >= 2 && mastery <= 2 && completion > 0) return true;
+  if (completion >= 100 && accuracy > 0 && accuracy < 70 && mastery < 4) return true;
+  return false;
+}
+
+export function getLessonDisplayState(
+  progress: LessonPageProgress,
+  resolved: ResolvedLessonProgress,
+  isUnlocked: boolean
+): LessonDisplayState {
+  if (!isUnlocked) return "locked";
+
+  const isComplete = resolved.isLessonCompleteResolved;
+
+  if (isComplete || progress.completionPercent >= 100) {
+    if (needsReviewFromLessonProgress(progress, isComplete)) return "needs-review";
+    if (progress.masteryLevel >= 4) return "mastered";
+    return "completed";
+  }
+
+  if (resolved.completedCount > 0 || progress.completionPercent > 0) {
+    return "in-progress";
+  }
+
+  return "not-started";
+}
+
+export function lessonDisplayStateToVisualState(
+  state: LessonDisplayState
+): LessonVisualState {
+  switch (state) {
+    case "locked":
+      return "locked";
+    case "not-started":
+      return "unlocked";
+    case "in-progress":
+      return "in-progress";
+    case "completed":
+      return "completed";
+    case "mastered":
+      return "mastered";
+    case "needs-review":
+      return "needs-review";
+  }
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { LessonBreadcrumb } from "@/components/learning/lesson/lesson-breadcrumb";
@@ -16,6 +18,9 @@ interface LessonPageShellProps {
   masteryLabel: string;
   resolvedProgress: ResolvedLessonProgress;
   remainingExercisesLabel?: string;
+  activeExerciseId?: string | null;
+  onPrimaryHeroAction?: () => void;
+  onReviewLesson?: () => void;
   children: ReactNode;
   className?: string;
 }
@@ -26,6 +31,9 @@ export function LessonPageShell({
   masteryLabel,
   resolvedProgress,
   remainingExercisesLabel,
+  activeExerciseId,
+  onPrimaryHeroAction,
+  onReviewLesson,
   children,
   className,
 }: LessonPageShellProps) {
@@ -37,6 +45,8 @@ export function LessonPageShell({
     isLessonCompleteResolved,
     remainingCount,
   } = resolvedProgress;
+
+  const isActiveExercise = Boolean(activeExerciseId);
 
   const remainingLabel =
     remainingExercisesLabel && remainingCount > 0 && !isLessonCompleteResolved
@@ -50,6 +60,9 @@ export function LessonPageShell({
         labels={{
           backToPath: labels.backToPath,
           breadcrumbPath: labels.breadcrumbPath,
+          breadcrumbLesson: labels.breadcrumbLesson,
+          skillLabel: labels.skillLabel,
+          unitLabel: labels.unitLabel,
         }}
       />
 
@@ -58,40 +71,55 @@ export function LessonPageShell({
         description={lesson.description}
         estimatedMinutes={lesson.estimatedMinutes}
         context={context}
-        progress={progress}
+        serverProgress={progress}
+        resolvedProgress={resolvedProgress}
         masteryLabel={masteryLabel}
+        isActiveExercise={isActiveExercise}
+        onPrimaryAction={onPrimaryHeroAction}
         labels={{
           estimatedMinutes: labels.estimatedMinutes,
-          skillLabel: labels.skillLabel,
           unitLabel: labels.unitLabel,
+          exerciseCount: labels.exerciseCount,
+          continueLesson: labels.continueLesson,
+          retryLesson: labels.retryLesson,
+          reviewLesson: labels.reviewLesson,
+          heroContinueHint: labels.heroContinueHint,
+          stateLabels: labels.stateLabels,
         }}
       />
 
-      <LessonProgressSummary
-        serverProgress={progress}
-        completionPercentResolved={completionPercentResolved}
-        completedCount={completedCount}
-        totalCount={totalExercises}
-        remainingLabel={remainingLabel}
-        labels={{
-          completionSummary: labels.completionSummary,
-          accuracy: labels.accuracy,
-          mastery: labels.mastery,
-          completedExercises: labels.completedExercises,
-        }}
-      />
+      {!isActiveExercise && (
+        <LessonProgressSummary
+          serverProgress={progress}
+          completionPercentResolved={completionPercentResolved}
+          completedCount={completedCount}
+          totalCount={totalExercises}
+          remainingLabel={remainingLabel}
+          labels={{
+            completionSummary: labels.completionSummary,
+            accuracy: labels.accuracy,
+            mastery: labels.mastery,
+            completedExercises: labels.completedExercises,
+          }}
+        />
+      )}
 
-      {isLessonCompleteResolved && (
+      {isLessonCompleteResolved && !isActiveExercise && (
         <LessonCompleteState
           completionPercentResolved={completionPercentResolved}
           serverProgress={progress}
           completedCount={completedCount}
           totalCount={totalExercises}
           masteryLabel={masteryLabel}
+          nextPathLesson={viewModel.nextPathLesson}
+          onReviewLesson={onReviewLesson}
           labels={{
             lessonCompleteTitle: labels.lessonCompleteTitle,
             lessonCompleteDescription: labels.lessonCompleteDescription,
+            lessonCompletePerformance: labels.lessonCompletePerformance,
             backToPath: labels.backToPath,
+            retryLesson: labels.retryLesson,
+            nextPathLesson: labels.nextPathLesson,
             completedExercises: labels.completedExercises,
             completionSummary: labels.completionSummary,
             accuracy: labels.accuracy,

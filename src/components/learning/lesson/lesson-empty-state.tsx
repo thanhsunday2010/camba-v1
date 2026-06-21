@@ -11,13 +11,14 @@ interface LessonEmptyStateProps {
 
 export function LessonEmptyState({ labels }: LessonEmptyStateProps) {
   return (
-    <LearningPathEmpty
-      icon={BookOpen}
-      title={labels.emptyTitle}
-      description={labels.emptyDescription}
-      actionLabel={labels.backToPath}
-      actionHref="/learning"
-      className="py-8"
-    />
+    <div className="camba-section-stack py-6 sm:py-10">
+      <LearningPathEmpty
+        icon={BookOpen}
+        title={labels.emptyTitle}
+        description={labels.emptyDescription}
+        actionLabel={labels.backToPath}
+        actionHref="/learning"
+      />
+    </div>
   );
 }

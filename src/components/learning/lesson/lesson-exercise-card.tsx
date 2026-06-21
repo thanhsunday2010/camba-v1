@@ -7,6 +7,7 @@ import {
   exerciseUiStateToVisualState,
   resolveExerciseDisplayState,
 } from "@/lib/learning/lesson-ui-utils";
+import { getExerciseTypeMessageKey } from "@/lib/learning/lesson-exercise-labels";
 import type {
   LessonExerciseListLabels,
   LessonExerciseSummary,
@@ -14,7 +15,6 @@ import type {
 import { SKILL_ICONS } from "@/lib/design/skill-icons";
 import {
   CheckCircle2,
-  Circle,
   Mic,
   PenLine,
   PlayCircle,
@@ -36,25 +36,36 @@ interface LessonExerciseCardProps {
 function getExerciseIcon(type: string) {
   if (type === "writing") return PenLine;
   if (type === "speaking") return Mic;
-  return Circle;
+  return PlayCircle;
+}
+
+function getExerciseTypeLabel(
+  summary: LessonExerciseSummary,
+  labels: LessonExerciseListLabels
+): string {
+  const key = getExerciseTypeMessageKey(summary.exerciseType);
+  return labels.exerciseTypeLabels[key] ?? labels.exerciseTypeLabels.default ?? summary.exerciseType;
 }
 
 function getExerciseSubtitle(
   summary: LessonExerciseSummary,
   labels: LessonExerciseListLabels
 ): string {
+  const typeLabel = getExerciseTypeLabel(summary, labels);
   if (summary.exerciseType === "writing") return labels.writingAi;
   if (summary.exerciseType === "speaking") return labels.speakingAi;
   if (summary.questionCount > 0) {
-    return labels.questionCount.replace("{count}", String(summary.questionCount));
+    return `${typeLabel} · ${labels.questionCount.replace("{count}", String(summary.questionCount))}`;
   }
-  return summary.exerciseType;
+  return typeLabel;
 }
 
 function getCtaLabel(
   state: ReturnType<typeof resolveExerciseDisplayState>,
-  labels: LessonExerciseListLabels
+  labels: LessonExerciseListLabels,
+  isSuggested: boolean
 ): string {
+  if (isSuggested && state === "available") return labels.continueExercise;
   switch (state) {
     case "in_progress":
       return labels.continueExercise;
@@ -94,24 +105,23 @@ export function LessonExerciseCard({
 }: LessonExerciseCardProps) {
   const displayState = resolveExerciseDisplayState(summary, sessionCompletedIds);
   const visualState = exerciseUiStateToVisualState(displayState);
-  const Icon = getExerciseIcon(summary.exerciseType);
-  const SkillTypeIcon = SKILL_ICONS[summary.exerciseType] ?? Icon;
-  const cta = getCtaLabel(displayState, labels);
+  const SkillTypeIcon = SKILL_ICONS[summary.exerciseType] ?? getExerciseIcon(summary.exerciseType);
+  const cta = getCtaLabel(displayState, labels, Boolean(isSuggested));
   const stateLabel = getStateLabel(displayState, labels);
   const isDone = displayState === "completed" || displayState === "needs_review";
   const needsReview = displayState === "needs_review";
+  const typeBadge = getExerciseTypeLabel(summary, labels);
 
   return (
     <CambaCard
       variant="lesson"
       padding="md"
-      interactive
       className={cn(
         isSuggested && "ring-2 ring-[var(--status-recommended)]/35 shadow-md",
         needsReview && "ring-1 ring-[var(--status-needs-review)]/25",
+        isDone && !needsReview && "bg-success/[0.02]",
         className
       )}
-      onClick={onSelect}
     >
       <div className="flex items-start gap-3">
         <div
@@ -125,6 +135,7 @@ export function LessonExerciseCard({
                   ? "bg-blue-50 text-[var(--status-in-progress)]"
                   : "bg-program-muted text-program"
           )}
+          aria-hidden
         >
           {isDone ? (
             needsReview ? (
@@ -132,8 +143,6 @@ export function LessonExerciseCard({
             ) : (
               <CheckCircle2 className="h-5 w-5" />
             )
-          ) : displayState === "in_progress" ? (
-            <PlayCircle className="h-5 w-5" />
           ) : (
             <SkillTypeIcon className="h-5 w-5" />
           )}
@@ -141,27 +150,32 @@ export function LessonExerciseCard({
 
         <div className="flex-1 min-w-0">
           <div className="flex flex-wrap items-center gap-2">
-            <p className="camba-h3 text-foreground truncate">{summary.title}</p>
+            <p className="camba-h3 text-foreground">{summary.title}</p>
             {isSuggested && suggestedLabel && (
               <span className="inline-flex items-center gap-1 rounded-full bg-violet-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[var(--status-recommended)]">
-                <Sparkles className="h-3 w-3" />
+                <Sparkles className="h-3 w-3" aria-hidden />
                 {suggestedLabel}
               </span>
             )}
           </div>
-          <p className="camba-caption text-muted mt-0.5 truncate">
-            {getExerciseSubtitle(summary, labels)}
-            {summary.latestAttempt?.accuracyPercent != null &&
-              summary.latestAttempt.accuracyPercent > 0 && (
-                <>
-                  {" · "}
-                  {labels.latestScore.replace(
-                    "{score}",
-                    String(Math.round(summary.latestAttempt.accuracyPercent))
-                  )}
-                </>
-              )}
-          </p>
+          <div className="flex flex-wrap items-center gap-2 mt-1">
+            <span className="inline-flex rounded-full bg-[var(--surface-sunken)] px-2 py-0.5 camba-caption text-muted font-medium">
+              {typeBadge}
+            </span>
+            <p className="camba-caption text-muted truncate">
+              {getExerciseSubtitle(summary, labels)}
+              {summary.latestAttempt?.accuracyPercent != null &&
+                summary.latestAttempt.accuracyPercent > 0 && (
+                  <>
+                    {" · "}
+                    {labels.latestScore.replace(
+                      "{score}",
+                      String(Math.round(summary.latestAttempt.accuracyPercent))
+                    )}
+                  </>
+                )}
+            </p>
+          </div>
           <div className="mt-2">
             <LessonStatusPill state={visualState} label={stateLabel} />
           </div>
@@ -170,12 +184,10 @@ export function LessonExerciseCard({
         <Button
           type="button"
           size="sm"
-          variant={isDone ? "outline" : "default"}
+          variant={isDone ? "outline" : isSuggested ? "quest" : "default"}
           className="shrink-0 self-center"
-          onClick={(e) => {
-            e.stopPropagation();
-            onSelect();
-          }}
+          onClick={onSelect}
+          aria-label={`${cta}: ${summary.title}`}
         >
           {cta}
         </Button>

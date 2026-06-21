@@ -2,6 +2,7 @@ import { createClient } from "@/lib/supabase/server";
 import {
   getLessonWithExercises,
   getLessonProgress,
+  getNextUnlockedLessonFast,
 } from "@/lib/queries/learning";
 import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
 import {
@@ -39,7 +40,7 @@ async function fetchLessonContext(lessonId: string): Promise<LessonPageContext> 
 
   const { data: unit } = await supabase
     .from("units")
-    .select("id, slug, title, skill_id")
+    .select("id, slug, title, skill_id, sort_order")
     .eq("id", lesson.unit_id)
     .maybeSingle();
 
@@ -56,6 +57,7 @@ async function fetchLessonContext(lessonId: string): Promise<LessonPageContext> 
       unitId: unit.id,
       unitSlug: unit.slug,
       unitTitle: unit.title,
+      unitSortOrder: unit.sort_order,
     };
   }
 
@@ -70,6 +72,7 @@ async function fetchLessonContext(lessonId: string): Promise<LessonPageContext> 
       unitId: unit.id,
       unitSlug: unit.slug,
       unitTitle: unit.title,
+      unitSortOrder: unit.sort_order,
       skillId: skill.id,
       skillSlug: skill.slug,
       skillName: skill.name,
@@ -78,13 +81,14 @@ async function fetchLessonContext(lessonId: string): Promise<LessonPageContext> 
 
   const { data: program } = await supabase
     .from("programs")
-    .select("id, slug")
+    .select("id, slug, name")
     .eq("id", level.program_id)
     .maybeSingle();
 
   return {
     programId: program?.id ?? level.program_id,
     programSlug: program?.slug ?? null,
+    programName: program?.name ?? null,
     levelId: level.id,
     levelSlug: level.slug,
     levelName: level.name,
@@ -94,6 +98,7 @@ async function fetchLessonContext(lessonId: string): Promise<LessonPageContext> 
     unitId: unit.id,
     unitSlug: unit.slug,
     unitTitle: unit.title,
+    unitSortOrder: unit.sort_order,
   };
 }
 
@@ -191,6 +196,7 @@ export async function getLessonPageViewModel(
     completionPercent: Number(progressRow?.completion_percent ?? 0),
     accuracyPercent: Number(progressRow?.accuracy_percent ?? 0),
     masteryLevel: progressRow?.mastery_level ?? 0,
+    attemptsCount: progressRow?.attempts_count ?? 0,
   };
 
   const initialResolved = deriveResolvedLessonProgress(
@@ -198,6 +204,14 @@ export async function getLessonPageViewModel(
     new Set(completedExerciseIds),
     progress.completionPercent
   );
+
+  let nextPathLesson: { id: string; title: string } | null = null;
+  if (context.levelId) {
+    const next = await getNextUnlockedLessonFast(userId, context.levelId);
+    if (next && next.id !== lessonId) {
+      nextPathLesson = { id: next.id, title: next.title };
+    }
+  }
 
   return {
     lesson: {
@@ -213,5 +227,6 @@ export async function getLessonPageViewModel(
     exerciseSummaries,
     completedExerciseIds,
     nextSuggestedExerciseId: initialResolved.nextSuggestedExerciseId,
+    nextPathLesson,
   };
 }

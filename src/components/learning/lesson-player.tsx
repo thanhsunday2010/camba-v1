@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import type { Exercise, ExerciseResult, UserAnswer } from "@/types/learning";
 import { ExercisePlayer } from "@/components/exercises/exercise-player";
 import { submitExerciseAttempt } from "@/actions/learning";
@@ -15,12 +15,15 @@ import {
   resolveWritingMinWords,
 } from "@/lib/learning/ai-exercise-content";
 import type {
+  AiExerciseLabels,
+  LessonChromeLabels,
   LessonExerciseListLabels,
   LessonExerciseSummary,
   ResolvedLessonProgress,
 } from "@/lib/learning/lesson-page-types";
 import { LessonExerciseList } from "@/components/learning/lesson/lesson-exercise-list";
-import { Button } from "@/components/ui/button";
+import { LessonActiveExerciseHeader } from "@/components/learning/lesson/lesson-active-exercise-header";
+import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { Loader2 } from "lucide-react";
 
 const WritingExercise = dynamic(
@@ -51,39 +54,18 @@ const SpeakingExercise = dynamic(
   }
 );
 
-/** AI exercise labels — deep component i18n deferred to U5B */
-const AI_FEEDBACK_LABELS = {
-  placeholder: "Viết câu trả lời của bạn tại đây...",
-  wordCount: "Số từ",
-  submit: "Gửi cho AI chấm",
-  submitting: "AI đang phân tích...",
-  minWordsError: "Cần ít nhất {min} từ",
-  result: "Kết quả phản hồi AI",
-  estimatedLevel: "Trình độ ước tính",
-  grammar: "Ngữ pháp",
-  vocabulary: "Từ vựng",
-  coherence: "Mạch lạc",
-  improvements: "Gợi ý cải thiện",
-  pronunciation: "Phát âm",
-  fluency: "Độ trôi chảy",
-  suggestions: "Gợi ý",
-  overallScore: "Điểm tổng",
-  startRecording: "Bắt đầu ghi âm",
-  stopRecording: "Dừng ghi âm",
-  noRecording: "Vui lòng ghi âm trước khi gửi",
-  recording: "Đang ghi",
-  transcript: "Bản ghi",
-  transcriptPlaceholder: "Nói vào microphone để xem bản ghi...",
-  transcriptUnsupported: "Trình duyệt không hỗ trợ bản ghi thời gian thực",
-};
-
 interface LessonPlayerProps {
   lessonId: string;
+  lessonTitle: string;
   exercises: Exercise[];
   exerciseSummaries: LessonExerciseSummary[];
   sessionCompletedExerciseIds: Set<string>;
   onExerciseCompleted: (exerciseId: string) => void;
   resolvedProgress: ResolvedLessonProgress;
+  activeExerciseId: string | null;
+  onActiveExerciseChange: (exerciseId: string | null) => void;
+  aiLabels: AiExerciseLabels;
+  chromeLabels: LessonChromeLabels;
   listLabels: LessonExerciseListLabels & {
     exercisesTitle: string;
     exercisesSubtitle: string;
@@ -94,14 +76,22 @@ interface LessonPlayerProps {
 
 export function LessonPlayer({
   lessonId,
+  lessonTitle,
   exercises,
   exerciseSummaries,
   sessionCompletedExerciseIds,
   onExerciseCompleted,
   resolvedProgress,
+  activeExerciseId,
+  onActiveExerciseChange,
+  aiLabels,
+  chromeLabels,
   listLabels,
 }: LessonPlayerProps) {
-  const [activeExerciseId, setActiveExerciseId] = useState<string | null>(null);
+  const sortedSummaries = useMemo(
+    () => [...exerciseSummaries].sort((a, b) => a.sortOrder - b.sortOrder),
+    [exerciseSummaries]
+  );
 
   const exerciseIndexById = useMemo(() => {
     const map = new Map<string, number>();
@@ -110,20 +100,17 @@ export function LessonPlayer({
   }, [exercises]);
 
   function openExercise(exerciseId: string) {
-    setActiveExerciseId(exerciseId);
+    onActiveExerciseChange(exerciseId);
   }
 
   function openNextExercise() {
     if (!activeExerciseId) return;
 
-    const sortedIds = [...exerciseSummaries]
-      .sort((a, b) => a.sortOrder - b.sortOrder)
-      .map((s) => s.id);
-
+    const sortedIds = sortedSummaries.map((s) => s.id);
     const sortedIndex = sortedIds.indexOf(activeExerciseId);
     const nextId = sortedIndex >= 0 ? sortedIds[sortedIndex + 1] : undefined;
     if (nextId) {
-      setActiveExerciseId(nextId);
+      onActiveExerciseChange(nextId);
     }
   }
 
@@ -145,8 +132,10 @@ export function LessonPlayer({
 
   if (activeExerciseId) {
     const activeIndex = exerciseIndexById.get(activeExerciseId);
+    const sortedPosition =
+      sortedSummaries.findIndex((s) => s.id === activeExerciseId) + 1;
 
-    if (activeIndex !== undefined) {
+    if (activeIndex !== undefined && sortedPosition > 0) {
       const exercise = exercises[activeIndex];
       const nextIndex = activeIndex + 1;
       const nextExercise = exercises[nextIndex];
@@ -158,62 +147,74 @@ export function LessonPlayer({
 
       return (
         <div className="space-y-4">
-          <Button variant="ghost" size="sm" onClick={() => setActiveExerciseId(null)}>
-            ← {listLabels.backToList}
-          </Button>
+          <LessonActiveExerciseHeader
+            lessonTitle={lessonTitle}
+            exerciseTitle={exercise.title}
+            position={sortedPosition}
+            total={sortedSummaries.length}
+            completionPercent={resolvedProgress.completionPercentResolved}
+            labels={chromeLabels}
+            onBackToList={() => onActiveExerciseChange(null)}
+          />
 
-          {exercise.exercise_type === "writing" ? (
-            <WritingExercise
-              key={exercise.id}
-              exerciseId={exercise.id}
-              lessonId={lessonId}
-              title={exercise.title}
-              instructions={exercise.instructions}
-              prompt={writingPrompt}
-              taskDescription={content.taskDescription as string | undefined}
-              taskPrompts={getWritingPrompts(content)}
-              minWords={resolveWritingMinWords(content)}
-              maxWords={resolveWritingMaxWords(content)}
-              targetLevel={targetLevel}
-              labels={AI_FEEDBACK_LABELS}
-              onComplete={() => markExerciseCompleted(exercise.id)}
-              nextExerciseTitle={nextExercise?.title}
-              onNextExercise={nextExercise ? openNextExercise : undefined}
-            />
-          ) : exercise.exercise_type === "speaking" ? (
-            <SpeakingExercise
-              key={exercise.id}
-              exerciseId={exercise.id}
-              lessonId={lessonId}
-              title={exercise.title}
-              instructions={exercise.instructions}
-              prompt={speakingPrompt}
-              followUpQuestions={getFollowUpQuestions(content)}
-              pictureDescription={content.pictureDescription as string | undefined}
-              maxDurationSeconds={(content.maxDurationSeconds as number) ?? 120}
-              targetLevel={targetLevel}
-              labels={AI_FEEDBACK_LABELS}
-              onComplete={() => markExerciseCompleted(exercise.id)}
-              nextExerciseTitle={nextExercise?.title}
-              onNextExercise={nextExercise ? openNextExercise : undefined}
-            />
-          ) : (
-            <ExercisePlayer
-              key={exercise.id}
-              questions={exercise.questions ?? []}
-              title={exercise.title}
-              instructions={exercise.instructions}
-              exerciseType={exercise.exercise_type}
-              content={exercise.content}
-              onSubmit={(answers) => handleSubmit(exercise.id, answers)}
-              onComplete={() => markExerciseCompleted(exercise.id)}
-              nextExerciseTitle={nextExercise?.title}
-              onNextExercise={nextExercise ? openNextExercise : undefined}
-            />
-          )}
+          <CambaCard variant="elevated" padding="md" className="overflow-hidden">
+            {exercise.exercise_type === "writing" ? (
+              <WritingExercise
+                key={exercise.id}
+                exerciseId={exercise.id}
+                lessonId={lessonId}
+                title={exercise.title}
+                instructions={exercise.instructions}
+                prompt={writingPrompt}
+                taskDescription={content.taskDescription as string | undefined}
+                taskPrompts={getWritingPrompts(content)}
+                minWords={resolveWritingMinWords(content)}
+                maxWords={resolveWritingMaxWords(content)}
+                targetLevel={targetLevel}
+                labels={aiLabels}
+                onComplete={() => markExerciseCompleted(exercise.id)}
+                nextExerciseTitle={nextExercise?.title}
+                onNextExercise={nextExercise ? openNextExercise : undefined}
+              />
+            ) : exercise.exercise_type === "speaking" ? (
+              <SpeakingExercise
+                key={exercise.id}
+                exerciseId={exercise.id}
+                lessonId={lessonId}
+                title={exercise.title}
+                instructions={exercise.instructions}
+                prompt={speakingPrompt}
+                followUpQuestions={getFollowUpQuestions(content)}
+                pictureDescription={content.pictureDescription as string | undefined}
+                maxDurationSeconds={(content.maxDurationSeconds as number) ?? 120}
+                targetLevel={targetLevel}
+                labels={aiLabels}
+                onComplete={() => markExerciseCompleted(exercise.id)}
+                nextExerciseTitle={nextExercise?.title}
+                onNextExercise={nextExercise ? openNextExercise : undefined}
+              />
+            ) : (
+              <ExercisePlayer
+                key={exercise.id}
+                questions={exercise.questions ?? []}
+                title={exercise.title}
+                instructions={exercise.instructions}
+                exerciseType={exercise.exercise_type}
+                content={exercise.content}
+                onSubmit={(answers) => handleSubmit(exercise.id, answers)}
+                onComplete={() => markExerciseCompleted(exercise.id)}
+                nextExerciseTitle={nextExercise?.title}
+                onNextExercise={nextExercise ? openNextExercise : undefined}
+              />
+            )}
+          </CambaCard>
         </div>
       );
     }
+  }
+
+  if (resolvedProgress.isLessonCompleteResolved) {
+    return null;
   }
 
   return (
