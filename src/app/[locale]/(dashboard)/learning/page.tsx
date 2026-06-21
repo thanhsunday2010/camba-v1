@@ -2,11 +2,23 @@ import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { getCurrentUser } from "@/lib/auth/current-user";
 import { getUserGamification } from "@/lib/queries/user";
-import { getLearningPath, initializeLessonUnlocks } from "@/lib/queries/learning";
-import { LearningUnitPath } from "@/components/learning/learning-unit-path";
+import {
+  getLearningPath,
+  initializeLessonUnlocks,
+} from "@/lib/queries/learning";
+import {
+  getNextLessonContext,
+  getSkillProgressSnapshot,
+} from "@/lib/queries/dashboard";
+import { LearningPathView } from "@/components/learning/learning-path-view";
+import { LearningPathEmpty } from "@/components/learning/learning-path-empty";
+import { LearningLevelSwitcher } from "@/components/learning/learning-level-switcher";
+import { StudentPageShell } from "@/components/camba";
 import { fetchActiveProgramContext, fetchLevelsForProgram } from "@/actions/programs";
-import { LevelPicker } from "@/components/programs/level-picker";
 import { isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
+import type { LessonVisualState } from "@/lib/design/status-tokens";
+import type { UnitVisualState } from "@/lib/learning/path-ui-utils";
+import { BookOpen, Map } from "lucide-react";
 
 export default async function LearningPage() {
   const user = await getCurrentUser();
@@ -15,6 +27,8 @@ export default async function LearningPage() {
   const t = await getTranslations("learning");
   const tp = await getTranslations("programs");
   const tm = await getTranslations("mastery");
+  const td = await getTranslations("dashboard");
+  const ta = await getTranslations("ai");
 
   const gamification = await getUserGamification(user.id);
   const programContext = await fetchActiveProgramContext(gamification);
@@ -23,40 +37,16 @@ export default async function LearningPage() {
     redirect("/settings");
   }
 
-  if (!gamification?.current_level_id) {
-    const levels = await fetchLevelsForProgram(programContext.programId);
-
-    return (
-      <div className="max-w-2xl mx-auto space-y-8 py-6">
-        <LevelPicker
-          levels={levels}
-          currentLevelId={null}
-          redirectToLearning
-          labels={{
-            title: tp("levelTitle"),
-            subtitle: tp("levelSubtitle"),
-            select: tp("levelSelect"),
-            selecting: tp("selecting"),
-            current: tp("currentLevel"),
-            startLearning: tp("startLearning"),
-          }}
-        />
-      </div>
-    );
-  }
-
   const levels = await fetchLevelsForProgram(programContext.programId);
 
-  await initializeLessonUnlocks(user.id, gamification.current_level_id);
-  const path = await getLearningPath(user.id, gamification.current_level_id);
-
-  if (!path) {
-    return (
-      <div className="text-center py-12">
-        <p className="text-gray-500">{t("noContent")}</p>
-      </div>
-    );
-  }
+  const skillLabels = {
+    vocabulary: ta("vocabulary"),
+    grammar: ta("grammar"),
+    reading: td("skillReading"),
+    listening: td("skillListening"),
+    writing: td("skillWriting"),
+    speaking: td("skillSpeaking"),
+  };
 
   const masteryLabels: Record<number, string> = {
     0: tm("notStarted"),
@@ -66,43 +56,139 @@ export default async function LearningPage() {
     4: tm("mastered"),
   };
 
-  return (
-    <div className="space-y-6">
-      {isUnlockAllLessonsEnabled() && (
-        <div className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
-          Chế độ test nội dung: tất cả bài học trong level này đã mở khóa. Tắt{" "}
-          <code className="text-xs bg-amber-100 px-1 rounded">NEXT_PUBLIC_UNLOCK_ALL_LESSONS</code>{" "}
-          khi triển khai học tuần tự.
-        </div>
-      )}
+  const lessonStateLabels: Record<LessonVisualState, string> = {
+    locked: t("stateLocked"),
+    unlocked: t("stateUnlocked"),
+    "in-progress": t("stateInProgress"),
+    completed: t("stateCompleted"),
+    mastered: t("stateMastered"),
+    recommended: t("stateRecommended"),
+    "needs-review": t("stateNeedsReview"),
+  };
 
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">{t("title")}</h1>
-        <p className="text-sm text-gray-500 mt-1">{t("subtitle")}</p>
-      </div>
+  const unitStateLabels: Record<UnitVisualState, string> = {
+    "coming-soon": t("unitStateComingSoon"),
+    locked: t("unitStateLocked"),
+    "not-started": t("unitStateNotStarted"),
+    "in-progress": t("unitStateInProgress"),
+    completed: t("unitStateCompleted"),
+    mastered: t("unitStateMastered"),
+  };
 
-      {levels.length > 0 && (
-        <LevelPicker
-          levels={levels}
-          currentLevelId={gamification.current_level_id}
-          labels={{
-            title: tp("levelTitle"),
-            subtitle: tp("levelChangeSubtitle"),
-            select: tp("levelSelect"),
-            selecting: tp("selecting"),
-            current: tp("currentLevel"),
-            startLearning: tp("startLearning"),
-          }}
+  if (!gamification?.current_level_id) {
+    return (
+      <StudentPageShell narrow>
+        <LearningPathEmpty
+          icon={Map}
+          title={t("noLevelTitle")}
+          description={t("noLevelDesc")}
+        >
+          {levels.length > 0 && (
+            <LearningLevelSwitcher
+              levels={levels}
+              currentLevelId={null}
+              pickMode
+              labels={{
+                title: tp("levelTitle"),
+                selecting: tp("selecting"),
+                current: tp("currentLevel"),
+              }}
+            />
+          )}
+        </LearningPathEmpty>
+      </StudentPageShell>
+    );
+  }
+
+  const levelId = gamification.current_level_id;
+
+  await initializeLessonUnlocks(user.id, levelId);
+
+  const [path, nextLesson, skillProgress] = await Promise.all([
+    getLearningPath(user.id, levelId),
+    getNextLessonContext(user.id, levelId),
+    getSkillProgressSnapshot(user.id, levelId),
+  ]);
+
+  if (!path) {
+    return (
+      <StudentPageShell narrow>
+        <LearningPathEmpty
+          icon={BookOpen}
+          title={t("noContentTitle")}
+          description={t("noContent")}
         />
-      )}
+      </StudentPageShell>
+    );
+  }
 
-      <LearningUnitPath
-        levelName={path.level.name}
-        levelSlug={path.level.slug}
-        programName={path.program.name}
-        skills={path.skills}
-        masteryLabels={masteryLabels}
-      />
-    </div>
+  const objectiveText = nextLesson
+    ? t("objectiveNextLesson", { lesson: nextLesson.title })
+    : t("objectiveExplore");
+
+  return (
+    <LearningPathView
+      programSlug={path.program.slug}
+      levelName={path.level.name}
+      levelSlug={path.level.slug}
+      skills={path.skills}
+      levels={levels}
+      skillProgress={skillProgress}
+      nextLesson={nextLesson}
+      masteryLabels={masteryLabels}
+      objectiveText={objectiveText}
+      showUnlockAllBanner={isUnlockAllLessonsEnabled()}
+      labels={{
+        hero: {
+          title: t("title"),
+          subtitle: t("subtitle"),
+          currentObjective: t("currentObjective"),
+          continueLesson: td("continueLesson"),
+          startLearning: td("startLearning"),
+          viewAllUnits: t("viewAllUnits"),
+          minutes: t("minutes"),
+          levelProgress: t("levelProgress"),
+          units: t("progressUnits"),
+          lessons: t("progressLessons"),
+          recommendedReason: td("recommendedReason"),
+        },
+        levelSwitcher: {
+          title: tp("levelChangeSubtitle"),
+          selecting: tp("selecting"),
+          current: tp("currentLevel"),
+        },
+        recommended: {
+          title: t("recommendedTitle"),
+          subtitle: t("recommendedSubtitle"),
+          skillPrefix: td("skillPrefix"),
+          unitPrefix: td("unitPrefix"),
+          minutes: t("minutes"),
+          recommended: t("stateRecommended"),
+          inProgress: t("stateInProgress"),
+          notStarted: t("stateUnlocked"),
+        },
+        skillNav: {
+          all: t("skillAll"),
+        },
+        skillLabels,
+        units: {
+          skillNoContent: t("skillNoContent"),
+          minutes: t("minutes"),
+          lockedDesc: t("lockedDesc"),
+          unitComingSoon: t("unitComingSoon"),
+          comingSoon: t("comingSoon"),
+          recommended: t("stateRecommended"),
+          recommendedUnit: t("recommendedUnit"),
+          lessonStateLabels,
+          unitStateLabels,
+          ctaStart: t("ctaStart"),
+          ctaContinue: t("ctaContinue"),
+          ctaReview: t("ctaReview"),
+          sectionTitle: t("journeyTitle"),
+          sectionSubtitle: t("journeySubtitle"),
+        },
+        unlockAllBanner: t("unlockAllBanner"),
+      }}
+    />
   );
 }
