@@ -216,3 +216,147 @@ export async function getUserMockTestAttempts(userId: string, testId: string) {
     timeSpentSeconds: a.time_spent_seconds,
   }));
 }
+
+export type MockTestAttemptAggregate = {
+  count: number;
+  bestPercent: number;
+  latestPercent: number;
+  latestCompletedAt: string | null;
+  latestSkillBreakdown: Record<string, number>;
+};
+
+/** Read-only batch aggregates for hub / detail display */
+export async function getUserMockTestAttemptAggregates(
+  userId: string
+): Promise<Map<string, MockTestAttemptAggregate>> {
+  const supabase = await createClient();
+
+  const { data: attempts } = await supabase
+    .from("mock_test_attempts")
+    .select(
+      "mock_test_id, score, max_score, completed_at, skill_breakdown, is_completed"
+    )
+    .eq("user_id", userId)
+    .eq("is_completed", true)
+    .order("completed_at", { ascending: false });
+
+  const map = new Map<string, MockTestAttemptAggregate>();
+
+  for (const attempt of attempts ?? []) {
+    const percent =
+      Number(attempt.max_score) > 0
+        ? Math.round((Number(attempt.score) / Number(attempt.max_score)) * 100)
+        : 0;
+    const breakdown =
+      (attempt.skill_breakdown as Record<string, number> | null) ?? {};
+    const existing = map.get(attempt.mock_test_id);
+
+    if (existing) {
+      existing.count += 1;
+      existing.bestPercent = Math.max(existing.bestPercent, percent);
+    } else {
+      map.set(attempt.mock_test_id, {
+        count: 1,
+        bestPercent: percent,
+        latestPercent: percent,
+        latestCompletedAt: attempt.completed_at,
+        latestSkillBreakdown: breakdown,
+      });
+    }
+  }
+
+  return map;
+}
+
+export async function getMockTestSectionCounts(
+  testIds: string[]
+): Promise<Map<string, number>> {
+  const counts = new Map<string, number>();
+  if (testIds.length === 0) return counts;
+
+  const supabase = await createClient();
+
+  const { data: sections } = await supabase
+    .from("mock_test_sections")
+    .select("mock_test_id")
+    .in("mock_test_id", testIds);
+
+  for (const section of sections ?? []) {
+    counts.set(section.mock_test_id, (counts.get(section.mock_test_id) ?? 0) + 1);
+  }
+
+  return counts;
+}
+
+export async function getMockTestQuestionCounts(
+  testIds: string[]
+): Promise<Map<string, number>> {
+  const counts = new Map<string, number>();
+  if (testIds.length === 0) return counts;
+
+  const supabase = await createClient();
+
+  const { data: sections } = await supabase
+    .from("mock_test_sections")
+    .select("id, mock_test_id")
+    .in("mock_test_id", testIds);
+
+  if (!sections?.length) return counts;
+
+  const sectionToTest = new Map(
+    sections.map((s) => [s.id, s.mock_test_id] as const)
+  );
+
+  const { data: questions } = await supabase
+    .from("mock_test_questions")
+    .select("mock_test_section_id")
+    .in("mock_test_section_id", sections.map((s) => s.id));
+
+  for (const q of questions ?? []) {
+    const testId = sectionToTest.get(q.mock_test_section_id);
+    if (testId) {
+      counts.set(testId, (counts.get(testId) ?? 0) + 1);
+    }
+  }
+
+  return counts;
+}
+
+export async function getLatestMockTestAttemptDetail(
+  userId: string,
+  testId: string
+): Promise<{
+  id: string;
+  score: number;
+  maxScore: number;
+  completedAt: string | null;
+  timeSpentSeconds: number | null;
+  skillBreakdown: Record<string, number>;
+  shieldEstimate: Record<string, number>;
+} | null> {
+  const supabase = await createClient();
+
+  const { data } = await supabase
+    .from("mock_test_attempts")
+    .select(
+      "id, score, max_score, completed_at, time_spent_seconds, skill_breakdown, shield_estimate"
+    )
+    .eq("user_id", userId)
+    .eq("mock_test_id", testId)
+    .eq("is_completed", true)
+    .order("completed_at", { ascending: false })
+    .limit(1)
+    .maybeSingle();
+
+  if (!data) return null;
+
+  return {
+    id: data.id,
+    score: Number(data.score),
+    maxScore: Number(data.max_score),
+    completedAt: data.completed_at,
+    timeSpentSeconds: data.time_spent_seconds,
+    skillBreakdown: (data.skill_breakdown as Record<string, number> | null) ?? {},
+    shieldEstimate: (data.shield_estimate as Record<string, number> | null) ?? {},
+  };
+}

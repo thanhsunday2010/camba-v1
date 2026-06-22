@@ -1,0 +1,123 @@
+import { getTranslations } from "next-intl/server";
+import type { MockTestDisplayState, MockTestPageLabels } from "@/lib/mock-tests/mock-test-types";
+
+export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
+  const t = await getTranslations("mockTests");
+  const th = await getTranslations("mockTests.hub");
+  const td = await getTranslations("mockTests.detail");
+  const tc = await getTranslations("mockTests.complete");
+  const tr = await getTranslations("mockTests.review");
+  const tt = await getTranslations("mockTests.take");
+  const ts = await getTranslations("mockTests.status");
+
+  const statusLabels: Record<MockTestDisplayState, string> = {
+    "not-started": ts("notStarted"),
+    "in-progress": ts("inProgress"),
+    completed: ts("completed"),
+    "needs-review": ts("needsReview"),
+  };
+
+  return {
+    hub: {
+      title: th("title"),
+      subtitle: th("subtitle"),
+      availableCount: th("availableCount"),
+      filterAll: th("filterAll"),
+      filterNotStarted: th("filterNotStarted"),
+      filterCompleted: th("filterCompleted"),
+      filterNeedsReview: th("filterNeedsReview"),
+      level: t("level"),
+      minutes: t("minutes"),
+      questions: t("questions"),
+      sections: th("sections"),
+      bestScore: t("bestScore"),
+      latestScore: th("latestScore"),
+      attempts: t("attempts"),
+      viewDetail: th("viewDetail"),
+      emptyTitle: th("emptyTitle"),
+      emptyDescription: th("emptyDescription"),
+      statusLabels,
+    },
+    detail: {
+      backToHub: td("backToHub"),
+      breadcrumbHub: td("breadcrumbHub"),
+      level: t("level"),
+      minutes: t("minutes"),
+      questions: t("questions"),
+      sections: th("sections"),
+      structureTitle: td("structureTitle"),
+      structureSubtitle: td("structureSubtitle"),
+      sectionLabel: td("sectionLabel"),
+      sectionQuestions: td("sectionQuestions"),
+      sectionMinutes: td("sectionMinutes"),
+      latestResultTitle: td("latestResultTitle"),
+      startTest: td("startTest"),
+      retakeTest: td("retakeTest"),
+      viewLatestResult: td("viewLatestResult"),
+      seeStructure: td("seeStructure"),
+      backToHubCta: td("backToHubCta"),
+      attemptsSummary: td("attemptsSummary"),
+      notAvailable: t("notAvailable"),
+      statusLabels,
+    },
+    complete: {
+      title: tc("title"),
+      victorySubtitle: tc("victorySubtitle"),
+      overallScore: tc("overallScore"),
+      rawScore: tc("rawScore"),
+      scoreLine: tc("scoreLine"),
+      skillBreakdownTitle: tc("skillBreakdownTitle"),
+      shieldsTitle: tc("shieldsTitle"),
+      shieldsNote: tc("shieldsNote"),
+      performanceNote: tc("performanceNote"),
+      retakeTest: td("retakeTest"),
+      backToHub: td("backToHub"),
+      backToDetail: tc("backToDetail"),
+      reviewTest: tc("reviewTest"),
+      recommendationGreatJob: tc("recommendationGreatJob"),
+      recommendationSolid: tc("recommendationSolid"),
+      recommendationNeedsReview: tc("recommendationNeedsReview"),
+      supportGreatJob: tc("supportGreatJob"),
+      supportSolid: tc("supportSolid"),
+      supportNeedsReview: tc("supportNeedsReview"),
+    },
+    review: {
+      title: tr("title"),
+      subtitle: tr("subtitle"),
+      weakSkill: tr("weakSkill"),
+      retakeHint: tr("retakeHint"),
+      reviewSkillAction: tr("reviewSkillAction"),
+    },
+    take: {
+      backToDetail: tt("backToDetail"),
+      breadcrumbDetail: tt("breadcrumbDetail"),
+      section: t("section"),
+      question: t("question"),
+      of: t("of"),
+      previous: t("previous"),
+      next: t("next"),
+      submit: t("submit"),
+      submitting: t("submitting"),
+      submitFailed: tt("submitFailed"),
+      progressSummary: tt("progressSummary"),
+      questionsAnswered: tt("questionsAnswered"),
+      reviewTest: tt("reviewTest"),
+      reviewQuestion: tt("reviewQuestion"),
+      backToResults: tt("backToResults"),
+      backToReviewList: tt("backToReviewList"),
+      exitReviewMode: tt("exitReviewMode"),
+      framedHeading: tt("framedHeading"),
+      framedSubtitle: tt("framedSubtitle"),
+      framedDetailsLabel: tt("framedDetailsLabel"),
+      framedScoreNote: tt("framedScoreNote"),
+      reviewListTitle: tt("reviewListTitle"),
+      reviewListSubtitle: tt("reviewListSubtitle"),
+      questionPosition: tt("questionPosition"),
+      backToHub: td("backToHub"),
+      retakeTest: td("retakeTest"),
+      viewDetail: tt("viewDetail"),
+      reviewWeakSkill: tt("reviewWeakSkill"),
+      completeModeSubtitle: tt("completeModeSubtitle"),
+    },
+  };
+}

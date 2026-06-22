@@ -1,0 +1,213 @@
+"use client";
+
+import { useMemo } from "react";
+import type { MockTestData, UserAnswer } from "@/types/learning";
+import { QuestionRenderer } from "@/components/exercises/exercise-player";
+import { CambaCard } from "@/components/camba/primitives/camba-card";
+import { MockTestFramedQuestionFrame } from "@/components/mock-tests/mock-test-framed-question-frame";
+import { MockTestQuestionList } from "@/components/mock-tests/mock-test-question-list";
+import { Button } from "@/components/ui/button";
+import type {
+  MockTestTakeLabels,
+  MockTestTakeViewModel,
+  ResolvedMockTestProgress,
+} from "@/lib/mock-tests/mock-test-types";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+interface MockTestPlayerProps {
+  viewModel: MockTestTakeViewModel;
+  test: MockTestData;
+  labels: MockTestTakeLabels;
+  resolvedProgress: ResolvedMockTestProgress;
+  currentQuestionIndex: number;
+  answers: Record<string, UserAnswer>;
+  isSubmitting: boolean;
+  isReviewingTest: boolean;
+  activeReviewQuestionId: string | null;
+  showFramedReview: boolean;
+  onIndexChange: (index: number) => void;
+  onAnswerChange: (questionId: string, answer: UserAnswer) => void;
+  onSubmit: () => void;
+  onSelectReviewQuestion: (questionId: string) => void;
+  onCloseFramedReview: () => void;
+  onBackToReviewList: () => void;
+  onExitReviewMode?: () => void;
+}
+
+export function MockTestPlayer({
+  viewModel,
+  test,
+  labels,
+  resolvedProgress,
+  currentQuestionIndex,
+  answers,
+  isSubmitting,
+  isReviewingTest,
+  activeReviewQuestionId,
+  showFramedReview,
+  onIndexChange,
+  onAnswerChange,
+  onSubmit,
+  onSelectReviewQuestion,
+  onCloseFramedReview,
+  onBackToReviewList,
+  onExitReviewMode,
+}: MockTestPlayerProps) {
+  const flatQuestions = useMemo(
+    () => test.sections.flatMap((s) => s.questions),
+    [test.sections]
+  );
+
+  const sectionForIndex = useMemo(() => {
+    return flatQuestions.map((q) =>
+      test.sections.find((s) => s.id === q.sectionId)
+    );
+  }, [flatQuestions, test.sections]);
+
+  if (resolvedProgress.isTestCompleteResolved && !isReviewingTest && !showFramedReview) {
+    return null;
+  }
+
+  if (isReviewingTest && !activeReviewQuestionId) {
+    return (
+      <MockTestQuestionList
+        questions={viewModel.questions}
+        sections={viewModel.sections}
+        labels={labels}
+        onSelectQuestion={onSelectReviewQuestion}
+        onExitReviewMode={onExitReviewMode}
+      />
+    );
+  }
+
+  const reviewQuestionId = activeReviewQuestionId;
+  const reviewIndex = reviewQuestionId
+    ? flatQuestions.findIndex((q) => q.id === reviewQuestionId)
+    : -1;
+  const displayIndex =
+    reviewQuestionId && reviewIndex >= 0 ? reviewIndex : currentQuestionIndex;
+  const currentQuestion = flatQuestions[displayIndex];
+  const currentSection = sectionForIndex[displayIndex];
+
+  if (!currentQuestion) return null;
+
+  const isReviewView = Boolean(reviewQuestionId);
+  const isLast = displayIndex === flatQuestions.length - 1;
+
+  const questionBody = (
+    <div className="space-y-4">
+      <p className="camba-body font-medium text-foreground">
+        {currentQuestion.question_text}
+      </p>
+      <QuestionRenderer
+        question={currentQuestion}
+        answer={answers[currentQuestion.id]}
+        onAnswer={
+          isReviewView
+            ? () => {}
+            : (answer) => onAnswerChange(currentQuestion.id, answer)
+        }
+        disabled={isReviewView}
+      />
+    </div>
+  );
+
+  if (showFramedReview && reviewQuestionId) {
+    const summary = viewModel.questions.find((q) => q.id === reviewQuestionId);
+    return (
+      <MockTestFramedQuestionFrame
+        questionTitle={summary?.sectionTitle ?? test.title}
+        labels={labels}
+        onClose={onCloseFramedReview}
+      >
+        {questionBody}
+      </MockTestFramedQuestionFrame>
+    );
+  }
+
+  if (isReviewingTest && reviewQuestionId) {
+    return (
+      <CambaCard variant="lesson" padding="md" className="space-y-4">
+        <div className="flex items-center justify-between gap-2">
+          <p className="camba-caption text-muted">
+            {labels.questionPosition
+              .replace("{current}", String(displayIndex + 1))
+              .replace("{total}", String(flatQuestions.length))}
+            {currentSection?.title ? ` · ${currentSection.title}` : ""}
+          </p>
+          <Button type="button" variant="ghost" size="sm" onClick={onBackToReviewList}>
+            {labels.backToReviewList}
+          </Button>
+        </div>
+        {questionBody}
+      </CambaCard>
+    );
+  }
+
+  return (
+    <CambaCard variant="elevated" padding="md" className="space-y-4">
+      <div className="flex gap-1 flex-wrap">
+        {test.sections.map((section) => {
+          const sectionQuestionIds = new Set(section.questions.map((q) => q.id));
+          const reachedInSection = flatQuestions.some(
+            (q, i) => sectionQuestionIds.has(q.id) && i <= currentQuestionIndex
+          );
+          const isActive = currentSection?.id === section.id;
+
+          return (
+            <span
+              key={section.id}
+              className={`text-xs px-2 py-1 rounded-full ${
+                isActive
+                  ? "bg-[var(--status-mock-test)] text-white"
+                  : reachedInSection
+                    ? "bg-[var(--status-mock-test)]/20 text-[var(--status-mock-test)]"
+                    : "bg-[var(--surface-sunken)] text-muted"
+              }`}
+            >
+              {section.title}
+            </span>
+          );
+        })}
+      </div>
+
+      <div className="flex gap-1">
+        {flatQuestions.map((_, i) => (
+          <div
+            key={i}
+            className={`h-1.5 flex-1 rounded-full ${
+              i <= currentQuestionIndex
+                ? "bg-[var(--status-mock-test)]"
+                : "bg-[var(--surface-sunken)]"
+            }`}
+          />
+        ))}
+      </div>
+
+      {questionBody}
+
+      <div className="flex justify-between gap-2 pt-2">
+        <Button
+          type="button"
+          variant="outline"
+          onClick={() => onIndexChange(Math.max(0, currentQuestionIndex - 1))}
+          disabled={currentQuestionIndex === 0}
+        >
+          <ChevronLeft className="h-4 w-4" />
+          {labels.previous}
+        </Button>
+
+        {isLast ? (
+          <Button type="button" onClick={onSubmit} disabled={isSubmitting}>
+            {isSubmitting ? labels.submitting : labels.submit}
+          </Button>
+        ) : (
+          <Button type="button" onClick={() => onIndexChange(currentQuestionIndex + 1)}>
+            {labels.next}
+            <ChevronRight className="h-4 w-4" />
+          </Button>
+        )}
+      </div>
+    </CambaCard>
+  );
+}

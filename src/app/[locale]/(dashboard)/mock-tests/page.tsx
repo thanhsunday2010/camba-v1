@@ -1,37 +1,32 @@
 import { redirect } from "next/navigation";
-import { getTranslations } from "next-intl/server";
 import { getCurrentUser } from "@/lib/auth/current-user";
-import { getMockTestsList } from "@/actions/mock-tests";
-import { MockTestList } from "@/components/learning/mock-test-list";
+import { StudentPageShell } from "@/components/camba";
+import { getMockTestHubViewModel } from "@/lib/mock-tests/mock-test-hub";
+import { buildMockTestPageLabels } from "@/lib/mock-tests/mock-test-labels";
+import { MockTestHubFilters, MockTestHubHero } from "@/components/mock-tests/mock-test-hub-filters";
 
 export default async function MockTestsPage() {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
 
-  const t = await getTranslations("mockTests");
-  const tests = await getMockTestsList();
+  const labels = await buildMockTestPageLabels();
+  const hub = await getMockTestHubViewModel(user.id);
+
+  const availableCount = labels.hub.availableCount.replace(
+    "{count}",
+    String(hub.totalCount)
+  );
 
   return (
-    <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">{t("title")}</h1>
-        <p className="text-sm text-gray-500 mt-1">{t("subtitle")}</p>
+    <StudentPageShell narrow>
+      <div className="camba-section-stack">
+        <MockTestHubHero
+          title={labels.hub.title}
+          subtitle={labels.hub.subtitle}
+          availableCount={availableCount}
+        />
+        <MockTestHubFilters tests={hub.tests} labels={labels.hub} />
       </div>
-
-      <MockTestList
-        tests={tests}
-        labels={{
-          start: t("start"),
-          retake: t("retake"),
-          questions: t("questions"),
-          minutes: t("minutes"),
-          bestScore: t("bestScore"),
-          attempts: t("attempts"),
-          noTests: t("noTests"),
-          noTestsDesc: t("noTestsDesc"),
-          level: t("level"),
-        }}
-      />
-    </div>
+    </StudentPageShell>
   );
 }

@@ -95,6 +95,7 @@ export async function submitMockTest(
   revalidatePath("/mock-tests");
   revalidatePath("/dashboard");
   revalidatePath(`/mock-tests/${testId}`);
+  revalidatePath(`/mock-tests/${testId}/take`);
 
   return {
     success: true,

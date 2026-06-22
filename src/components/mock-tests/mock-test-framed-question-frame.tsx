@@ -1,0 +1,78 @@
+import { cn } from "@/lib/utils";
+import type { MockTestTakeLabels } from "@/lib/mock-tests/mock-test-types";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, ChevronDown } from "lucide-react";
+import type { ReactNode } from "react";
+
+interface MockTestFramedQuestionFrameProps {
+  questionTitle: string;
+  labels: Pick<
+    MockTestTakeLabels,
+    | "framedHeading"
+    | "framedSubtitle"
+    | "framedDetailsLabel"
+    | "framedScoreNote"
+    | "backToResults"
+  >;
+  onClose?: () => void;
+  children: ReactNode;
+  className?: string;
+}
+
+export function MockTestFramedQuestionFrame({
+  questionTitle,
+  labels,
+  onClose,
+  children,
+  className,
+}: MockTestFramedQuestionFrameProps) {
+  const subtitle = labels.framedSubtitle.replace("{title}", questionTitle);
+
+  return (
+    <section
+      aria-labelledby="mock-test-framed-question-heading"
+      className={cn("pt-5 mt-3 border-t border-dashed border-border/70", className)}
+    >
+      {onClose && (
+        <div className="mb-3">
+          <Button
+            type="button"
+            variant="ghost"
+            size="sm"
+            className="gap-1.5 h-8 px-2.5 text-muted font-semibold -ml-1"
+            onClick={onClose}
+          >
+            <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden />
+            {labels.backToResults}
+          </Button>
+        </div>
+      )}
+
+      <div className="rounded-xl border border-border/50 bg-muted/25 px-3 py-2 sm:px-3.5 mb-2.5">
+        <div className="flex items-center gap-2 text-muted">
+          <ChevronDown className="h-3.5 w-3.5 shrink-0 opacity-50" aria-hidden />
+          <p className="camba-caption font-medium text-[11px] sm:text-xs">
+            {labels.framedDetailsLabel}
+          </p>
+        </div>
+      </div>
+
+      <div className="rounded-xl border border-border/40 bg-muted/10 px-3 py-2.5 sm:px-3.5 space-y-1 mb-2">
+        <h3
+          id="mock-test-framed-question-heading"
+          className="camba-caption font-semibold text-muted uppercase tracking-wide text-[11px]"
+        >
+          {labels.framedHeading}
+        </h3>
+        <p className="camba-caption text-muted mt-0.5 text-xs">{subtitle}</p>
+        <p className="camba-caption text-muted/70 mt-1 text-[10px] leading-snug">
+          {labels.framedScoreNote}
+        </p>
+      </div>
+
+      <div className="rounded-lg border border-border/30 bg-muted/10 p-2 sm:p-3">
+        {children}
+      </div>
+    </section>
+  );
+}
