@@ -1,12 +1,19 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { useMemo } from "react";
 import { cn } from "@/lib/utils";
 import { LessonBreadcrumb } from "@/components/learning/lesson/lesson-breadcrumb";
 import { LessonHero } from "@/components/learning/lesson/lesson-hero";
 import { LessonProgressSummary } from "@/components/learning/lesson/lesson-progress-summary";
-import { LessonCompleteState } from "@/components/learning/lesson/lesson-complete-state";
+import { LessonCompleteSummaryCard } from "@/components/learning/lesson/lesson-complete-summary-card";
+import { LessonReviewRecommendation } from "@/components/learning/lesson/lesson-review-recommendation";
+import {
+  getReviewableExerciseSummaries,
+} from "@/lib/learning/lesson-ui-utils";
 import type {
+  LessonCompleteSummaryLabels,
+  LessonExerciseCompletionMeta,
   LessonPageLabels,
   LessonPageViewModel,
   ResolvedLessonProgress,
@@ -15,13 +22,18 @@ import type {
 interface LessonPageShellProps {
   viewModel: LessonPageViewModel;
   labels: LessonPageLabels;
+  completeSummaryLabels: LessonCompleteSummaryLabels;
   masteryLabel: string;
   resolvedProgress: ResolvedLessonProgress;
+  sessionCompletedExerciseIds: Set<string>;
+  sessionAccuracyByExerciseId: ReadonlyMap<string, number>;
+  lastCompletedMeta: LessonExerciseCompletionMeta | null;
   remainingExercisesLabel?: string;
   activeExerciseId?: string | null;
   isReviewingLesson?: boolean;
   onPrimaryHeroAction?: () => void;
   onReviewLesson?: () => void;
+  onOpenReviewExercise?: (exerciseId: string) => void;
   children: ReactNode;
   className?: string;
 }
@@ -29,17 +41,22 @@ interface LessonPageShellProps {
 export function LessonPageShell({
   viewModel,
   labels,
+  completeSummaryLabels,
   masteryLabel,
   resolvedProgress,
+  sessionCompletedExerciseIds,
+  sessionAccuracyByExerciseId,
+  lastCompletedMeta,
   remainingExercisesLabel,
   activeExerciseId,
   isReviewingLesson = false,
   onPrimaryHeroAction,
   onReviewLesson,
+  onOpenReviewExercise,
   children,
   className,
 }: LessonPageShellProps) {
-  const { lesson, context, progress } = viewModel;
+  const { lesson, context, progress, exerciseSummaries } = viewModel;
   const {
     completedCount,
     totalExercises,
@@ -49,6 +66,25 @@ export function LessonPageShell({
   } = resolvedProgress;
 
   const isActiveExercise = Boolean(activeExerciseId);
+  const showCompleteLayer = isLessonCompleteResolved && !isReviewingLesson;
+
+  const reviewableExercises = useMemo(
+    () =>
+      getReviewableExerciseSummaries(
+        exerciseSummaries,
+        sessionCompletedExerciseIds,
+        sessionAccuracyByExerciseId
+      ),
+    [exerciseSummaries, sessionCompletedExerciseIds, sessionAccuracyByExerciseId]
+  );
+
+  const finalExerciseAccuracy = useMemo(() => {
+    if (lastCompletedMeta?.accuracyPercent != null) {
+      return lastCompletedMeta.accuracyPercent;
+    }
+    if (!activeExerciseId) return null;
+    return sessionAccuracyByExerciseId.get(activeExerciseId) ?? null;
+  }, [activeExerciseId, lastCompletedMeta, sessionAccuracyByExerciseId]);
 
   const remainingLabel =
     remainingExercisesLabel && remainingCount > 0 && !isLessonCompleteResolved
@@ -78,6 +114,7 @@ export function LessonPageShell({
         masteryLabel={masteryLabel}
         isActiveExercise={isActiveExercise}
         isReviewingLesson={isReviewingLesson}
+        isCompleteMode={showCompleteLayer}
         onPrimaryAction={onPrimaryHeroAction}
         labels={{
           estimatedMinutes: labels.estimatedMinutes,
@@ -91,7 +128,7 @@ export function LessonPageShell({
         }}
       />
 
-      {!isActiveExercise && (
+      {!isActiveExercise && !showCompleteLayer && (
         <LessonProgressSummary
           serverProgress={progress}
           completionPercentResolved={completionPercentResolved}
@@ -107,30 +144,32 @@ export function LessonPageShell({
         />
       )}
 
-      {isLessonCompleteResolved && !isActiveExercise && !isReviewingLesson && (
-        <LessonCompleteState
-          completionPercentResolved={completionPercentResolved}
-          serverProgress={progress}
-          completedCount={completedCount}
-          totalCount={totalExercises}
-          masteryLabel={masteryLabel}
-          nextPathLesson={viewModel.nextPathLesson}
-          onReviewLesson={onReviewLesson}
-          labels={{
-            lessonCompleteTitle: labels.lessonCompleteTitle,
-            lessonCompleteDescription: labels.lessonCompleteDescription,
-            lessonCompletePerformance: labels.lessonCompletePerformance,
-            backToPath: labels.backToPath,
-            retryLesson: labels.retryLesson,
-            nextPathLesson: labels.nextPathLesson,
-            completedExercises: labels.completedExercises,
-            completionSummary: labels.completionSummary,
-            accuracy: labels.accuracy,
-          }}
-        />
+      {showCompleteLayer && (
+        <div className="space-y-4 -mt-1">
+          <LessonCompleteSummaryCard
+            context={context}
+            serverProgress={progress}
+            resolvedProgress={resolvedProgress}
+            masteryLabel={masteryLabel}
+            nextPathLesson={viewModel.nextPathLesson}
+            reviewableExerciseCount={reviewableExercises.length}
+            finalExerciseAccuracy={finalExerciseAccuracy}
+            onReviewLesson={onReviewLesson}
+            labels={completeSummaryLabels}
+          />
+
+          {reviewableExercises.length > 0 && onOpenReviewExercise && (
+            <LessonReviewRecommendation
+              exercises={reviewableExercises}
+              sessionAccuracyByExerciseId={sessionAccuracyByExerciseId}
+              labels={completeSummaryLabels}
+              onOpenExercise={onOpenReviewExercise}
+            />
+          )}
+        </div>
       )}
 
-      {children}
+      <div className={cn(showCompleteLayer && activeExerciseId && "mt-0")}>{children}</div>
     </div>
   );
 }

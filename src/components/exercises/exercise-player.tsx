@@ -147,6 +147,11 @@ interface ExercisePlayerProps {
   onComplete?: (result: ExerciseResult) => void;
   nextExerciseTitle?: string;
   onNextExercise?: () => void;
+  embeddedResult?: boolean;
+  resultLabels?: {
+    resultHeading: string;
+    scoreLine: string;
+  };
 }
 
 export function ExercisePlayer({
@@ -160,6 +165,8 @@ export function ExercisePlayer({
   onComplete,
   nextExerciseTitle,
   onNextExercise,
+  embeddedResult = false,
+  resultLabels,
 }: ExercisePlayerProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, UserAnswer>>({});
@@ -195,6 +202,61 @@ export function ExercisePlayer({
   }
 
   if (showResults && result) {
+    const resultHeading = resultLabels?.resultHeading
+      ? resultLabels.resultHeading.replace("{percent}", String(result.accuracyPercent))
+      : `Kết quả: ${result.accuracyPercent}%`;
+    const scoreLine = resultLabels?.scoreLine
+      ? resultLabels.scoreLine
+          .replace("{score}", String(result.score))
+          .replace("{maxScore}", String(result.maxScore))
+      : `Điểm: ${result.score}/${result.maxScore}`;
+
+    if (embeddedResult) {
+      return (
+        <div className="space-y-3 px-1 py-1">
+          <div className="flex items-center gap-2 border-b border-border/40 pb-2">
+            {result.accuracyPercent >= 80 ? (
+              <CheckCircle2 className="h-4 w-4 text-success shrink-0" />
+            ) : (
+              <XCircle className="h-4 w-4 text-muted shrink-0" />
+            )}
+            <p className="camba-caption font-medium text-muted-foreground">{resultHeading}</p>
+          </div>
+          <ExerciseContextPanel
+            exerciseType={exerciseType}
+            content={content}
+            showListeningTranscript
+          />
+          <p className="camba-caption text-muted">{scoreLine}</p>
+          <div className="space-y-4">
+            {questions.map((q, i) => {
+              const qr = result.questionResults.find((r) => r.questionId === q.id);
+              return (
+                <div key={q.id} className="space-y-1.5">
+                  <p className="camba-caption font-medium text-foreground/90">
+                    {i + 1}. {q.question_text}
+                  </p>
+                  <QuestionRenderer
+                    question={q}
+                    answer={answers[q.id]}
+                    onAnswer={() => {}}
+                    showResult
+                    disabled
+                    questionResult={qr}
+                  />
+                  {qr?.explanation && (
+                    <p className="text-xs text-muted bg-muted/40 p-2 rounded">
+                      {qr.explanation}
+                    </p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      );
+    }
+
     return (
       <Card>
         <CardHeader>

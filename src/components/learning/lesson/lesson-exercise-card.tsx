@@ -26,6 +26,7 @@ import { Button } from "@/components/ui/button";
 interface LessonExerciseCardProps {
   summary: LessonExerciseSummary;
   sessionCompletedIds: Set<string>;
+  sessionAccuracyByExerciseId?: ReadonlyMap<string, number>;
   isSuggested?: boolean;
   suggestedLabel?: string;
   labels: LessonExerciseListLabels;
@@ -97,13 +98,18 @@ function getStateLabel(
 export function LessonExerciseCard({
   summary,
   sessionCompletedIds,
+  sessionAccuracyByExerciseId,
   isSuggested,
   suggestedLabel,
   labels,
   onSelect,
   className,
 }: LessonExerciseCardProps) {
-  const displayState = resolveExerciseDisplayState(summary, sessionCompletedIds);
+  const displayState = resolveExerciseDisplayState(
+    summary,
+    sessionCompletedIds,
+    sessionAccuracyByExerciseId
+  );
   const visualState = exerciseUiStateToVisualState(displayState);
   const SkillTypeIcon = SKILL_ICONS[summary.exerciseType] ?? getExerciseIcon(summary.exerciseType);
   const cta = getCtaLabel(displayState, labels, Boolean(isSuggested));

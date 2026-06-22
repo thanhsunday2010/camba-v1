@@ -1,5 +1,6 @@
 import type {
   ExerciseUiState,
+  LessonCompleteRecommendationVariant,
   LessonDisplayState,
   LessonExerciseSummary,
   LessonPageProgress,
@@ -44,10 +45,19 @@ export function exerciseUiStateToVisualState(state: ExerciseUiState): LessonVisu
 
 export function resolveExerciseDisplayState(
   summary: LessonExerciseSummary,
-  sessionCompletedExerciseIds: Set<string>
+  sessionCompletedExerciseIds: Set<string>,
+  sessionAccuracyByExerciseId?: ReadonlyMap<string, number>
 ): ExerciseUiState {
   if (sessionCompletedExerciseIds.has(summary.id)) {
     if (summary.uiState === "needs_review") return "needs_review";
+    const sessionAccuracy = sessionAccuracyByExerciseId?.get(summary.id);
+    if (
+      sessionAccuracy != null &&
+      sessionAccuracy > 0 &&
+      sessionAccuracy < EXERCISE_REVIEW_ACCURACY_THRESHOLD
+    ) {
+      return "needs_review";
+    }
     return "completed";
   }
   return summary.uiState;
@@ -225,4 +235,54 @@ export function lessonDisplayStateToVisualState(
     case "needs-review":
       return "needs-review";
   }
+}
+
+/** Exercises flagged for review from server snapshot or in-session low accuracy */
+export function getReviewableExerciseSummaries(
+  summaries: LessonExerciseSummary[],
+  sessionCompletedExerciseIds: Set<string>,
+  sessionAccuracyByExerciseId?: ReadonlyMap<string, number>
+): LessonExerciseSummary[] {
+  return summaries.filter((summary) => {
+    if (
+      resolveExerciseDisplayState(summary, sessionCompletedExerciseIds) ===
+      "needs_review"
+    ) {
+      return true;
+    }
+    const sessionAccuracy = sessionAccuracyByExerciseId?.get(summary.id);
+    return (
+      sessionCompletedExerciseIds.has(summary.id) &&
+      sessionAccuracy != null &&
+      sessionAccuracy > 0 &&
+      sessionAccuracy < EXERCISE_REVIEW_ACCURACY_THRESHOLD
+    );
+  });
+}
+
+export function getLessonCompleteRecommendationVariant(
+  progress: LessonPageProgress,
+  isLessonCompleteResolved: boolean,
+  reviewableExerciseCount: number,
+  finalExerciseAccuracy?: number | null
+): LessonCompleteRecommendationVariant {
+  if (reviewableExerciseCount > 0) return "exercisesNeedReview";
+  if (needsReviewFromLessonProgress(progress, isLessonCompleteResolved)) {
+    return "lessonNeedsReview";
+  }
+  if (
+    finalExerciseAccuracy != null &&
+    finalExerciseAccuracy > 0 &&
+    finalExerciseAccuracy < EXERCISE_REVIEW_ACCURACY_THRESHOLD
+  ) {
+    return "finalQuizLow";
+  }
+  return "greatJobContinue";
+}
+
+export function getLastExerciseSummary(
+  summaries: LessonExerciseSummary[]
+): LessonExerciseSummary | null {
+  if (summaries.length === 0) return null;
+  return [...summaries].sort((a, b) => a.sortOrder - b.sortOrder).at(-1) ?? null;
 }

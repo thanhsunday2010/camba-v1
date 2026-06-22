@@ -41,6 +41,7 @@ interface LessonHeroProps {
   >;
   isActiveExercise?: boolean;
   isReviewingLesson?: boolean;
+  isCompleteMode?: boolean;
   onPrimaryAction?: () => void;
   className?: string;
 }
@@ -76,6 +77,7 @@ export function LessonHero({
   labels,
   isActiveExercise,
   isReviewingLesson,
+  isCompleteMode,
   onPrimaryAction,
   className,
 }: LessonHeroProps) {
@@ -93,9 +95,41 @@ export function LessonHero({
   const metaParts: string[] = [];
   if (context.skillName) metaParts.push(context.skillName);
   if (context.unitTitle) metaParts.push(`${labels.unitLabel}: ${context.unitTitle}`);
-  if (resolvedProgress.totalExercises > 0) {
+  if (resolvedProgress.totalExercises > 0 && !isCompleteMode) {
     metaParts.push(
       labels.exerciseCount.replace("{count}", String(resolvedProgress.totalExercises))
+    );
+  }
+
+  if (isCompleteMode) {
+    return (
+      <section
+        className={cn(
+          "rounded-2xl border border-border/80 bg-white/70 shadow-sm px-4 py-3 sm:px-5 sm:py-3.5",
+          className
+        )}
+      >
+        <div className="flex flex-wrap items-center gap-2 min-w-0">
+          {context.programSlug && <ProgramBadge programSlug={context.programSlug} size="sm" />}
+          {context.levelSlug && (
+            <span className="rounded-full bg-program-muted border border-program/15 px-2 py-0.5 text-[10px] font-bold text-program uppercase">
+              {context.levelSlug}
+            </span>
+          )}
+          <LessonStatusPill state={visualState} label={stateLabel} />
+        </div>
+        <div className="mt-2 min-w-0">
+          <h1 className="camba-h2 text-foreground truncate">{title}</h1>
+          {metaParts.length > 0 && (
+            <p className="camba-caption text-muted mt-0.5 flex items-center gap-1.5 truncate">
+              {context.skillSlug && (
+                <SkillIcon className="h-3.5 w-3.5 text-program shrink-0" />
+              )}
+              {metaParts.join(" · ")}
+            </p>
+          )}
+        </div>
+      </section>
     );
   }
 

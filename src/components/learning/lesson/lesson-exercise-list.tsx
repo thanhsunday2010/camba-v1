@@ -12,6 +12,7 @@ import { ArrowLeft, ListChecks } from "lucide-react";
 interface LessonExerciseListProps {
   summaries: LessonExerciseSummary[];
   sessionCompletedIds: Set<string>;
+  sessionAccuracyByExerciseId?: ReadonlyMap<string, number>;
   nextSuggestedExerciseId?: string | null;
   isReviewMode?: boolean;
   onExitReviewMode?: () => void;
@@ -27,6 +28,7 @@ interface LessonExerciseListProps {
 export function LessonExerciseList({
   summaries,
   sessionCompletedIds,
+  sessionAccuracyByExerciseId,
   nextSuggestedExerciseId,
   isReviewMode,
   onExitReviewMode,
@@ -65,6 +67,7 @@ export function LessonExerciseList({
             key={summary.id}
             summary={summary}
             sessionCompletedIds={sessionCompletedIds}
+            sessionAccuracyByExerciseId={sessionAccuracyByExerciseId}
             isSuggested={summary.id === nextSuggestedExerciseId}
             suggestedLabel={labels.nextSuggested}
             labels={labels}

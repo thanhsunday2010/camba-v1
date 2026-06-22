@@ -14,16 +14,23 @@ import {
   resolveWritingMaxWords,
   resolveWritingMinWords,
 } from "@/lib/learning/ai-exercise-content";
+import {
+  EXERCISE_REVIEW_ACCURACY_THRESHOLD,
+} from "@/lib/learning/lesson-ui-utils";
 import type {
   AiExerciseLabels,
   LessonChromeLabels,
+  LessonCompleteSummaryLabels,
+  LessonExerciseCompletionMeta,
   LessonExerciseListLabels,
   LessonExerciseSummary,
   ResolvedLessonProgress,
 } from "@/lib/learning/lesson-page-types";
 import { LessonExerciseList } from "@/components/learning/lesson/lesson-exercise-list";
 import { LessonActiveExerciseHeader } from "@/components/learning/lesson/lesson-active-exercise-header";
+import { LessonFinalExerciseResultFrame } from "@/components/learning/lesson/lesson-final-exercise-result-frame";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
+import { cn } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
 
 const WritingExercise = dynamic(
@@ -60,12 +67,18 @@ interface LessonPlayerProps {
   exercises: Exercise[];
   exerciseSummaries: LessonExerciseSummary[];
   sessionCompletedExerciseIds: Set<string>;
-  onExerciseCompleted: (exerciseId: string) => void;
+  sessionAccuracyByExerciseId: ReadonlyMap<string, number>;
+  onExerciseCompleted: (
+    exerciseId: string,
+    meta?: LessonExerciseCompletionMeta
+  ) => void;
   resolvedProgress: ResolvedLessonProgress;
   activeExerciseId: string | null;
   isReviewingLesson?: boolean;
   onActiveExerciseChange: (exerciseId: string | null) => void;
+  onCloseFramedExercise?: () => void;
   onExitReviewMode?: () => void;
+  completeSummaryLabels: LessonCompleteSummaryLabels;
   aiLabels: AiExerciseLabels;
   chromeLabels: LessonChromeLabels;
   listLabels: LessonExerciseListLabels & {
@@ -83,12 +96,15 @@ export function LessonPlayer({
   exercises,
   exerciseSummaries,
   sessionCompletedExerciseIds,
+  sessionAccuracyByExerciseId,
   onExerciseCompleted,
   resolvedProgress,
   activeExerciseId,
   isReviewingLesson = false,
   onActiveExerciseChange,
+  onCloseFramedExercise,
   onExitReviewMode,
+  completeSummaryLabels,
   aiLabels,
   chromeLabels,
   listLabels,
@@ -103,6 +119,14 @@ export function LessonPlayer({
     exercises.forEach((exercise, index) => map.set(exercise.id, index));
     return map;
   }, [exercises]);
+
+  const showExerciseList =
+    !resolvedProgress.isLessonCompleteResolved || isReviewingLesson;
+
+  const showFinalExerciseFrame =
+    resolvedProgress.isLessonCompleteResolved &&
+    !isReviewingLesson &&
+    Boolean(activeExerciseId);
 
   function openExercise(exerciseId: string) {
     onActiveExerciseChange(exerciseId);
@@ -119,8 +143,11 @@ export function LessonPlayer({
     }
   }
 
-  function markExerciseCompleted(exerciseId: string) {
-    onExerciseCompleted(exerciseId);
+  function markExerciseCompleted(
+    exerciseId: string,
+    meta?: LessonExerciseCompletionMeta
+  ) {
+    onExerciseCompleted(exerciseId, meta);
   }
 
   async function handleSubmit(
@@ -129,14 +156,14 @@ export function LessonPlayer({
   ): Promise<ExerciseResult | null> {
     const result = await submitExerciseAttempt(exerciseId, lessonId, answers, 0);
     if (result.success && result.data) {
-      markExerciseCompleted(exerciseId);
+      markExerciseCompleted(exerciseId, {
+        exerciseId,
+        accuracyPercent: result.data.accuracyPercent,
+      });
       return result.data;
     }
     throw new Error(result.error ?? chromeLabels.submitFailed);
   }
-
-  const showExerciseList =
-    !resolvedProgress.isLessonCompleteResolved || isReviewingLesson;
 
   if (activeExerciseId) {
     const activeIndex = exerciseIndexById.get(activeExerciseId);
@@ -153,69 +180,120 @@ export function LessonPlayer({
       const speakingPrompt = buildSpeakingPromptText(content, fallbackPrompt);
       const targetLevel = resolveTargetLevel(content);
 
-      return (
-        <div className="space-y-4">
-          <LessonActiveExerciseHeader
-            lessonTitle={lessonTitle}
-            exerciseTitle={exercise.title}
-            position={sortedPosition}
-            total={sortedSummaries.length}
-            completionPercent={resolvedProgress.completionPercentResolved}
-            labels={chromeLabels}
-            onBackToList={() => onActiveExerciseChange(null)}
-          />
+      const sessionAccuracy = sessionAccuracyByExerciseId.get(exercise.id);
+      const showReviewTag =
+        sessionAccuracy != null &&
+        sessionAccuracy > 0 &&
+        sessionAccuracy < EXERCISE_REVIEW_ACCURACY_THRESHOLD;
 
-          <CambaCard variant="elevated" padding="md" className="overflow-hidden">
-            {exercise.exercise_type === "writing" ? (
-              <WritingExercise
-                key={exercise.id}
-                exerciseId={exercise.id}
-                lessonId={lessonId}
-                title={exercise.title}
-                instructions={exercise.instructions}
-                prompt={writingPrompt}
-                taskDescription={content.taskDescription as string | undefined}
-                taskPrompts={getWritingPrompts(content)}
-                minWords={resolveWritingMinWords(content)}
-                maxWords={resolveWritingMaxWords(content)}
-                targetLevel={targetLevel}
-                labels={aiLabels}
-                onComplete={() => markExerciseCompleted(exercise.id)}
-                nextExerciseTitle={nextExercise?.title}
-                onNextExercise={nextExercise ? openNextExercise : undefined}
-              />
-            ) : exercise.exercise_type === "speaking" ? (
-              <SpeakingExercise
-                key={exercise.id}
-                exerciseId={exercise.id}
-                lessonId={lessonId}
-                title={exercise.title}
-                instructions={exercise.instructions}
-                prompt={speakingPrompt}
-                followUpQuestions={getFollowUpQuestions(content)}
-                pictureDescription={content.pictureDescription as string | undefined}
-                maxDurationSeconds={(content.maxDurationSeconds as number) ?? 120}
-                targetLevel={targetLevel}
-                labels={aiLabels}
-                onComplete={() => markExerciseCompleted(exercise.id)}
-                nextExerciseTitle={nextExercise?.title}
-                onNextExercise={nextExercise ? openNextExercise : undefined}
-              />
-            ) : (
-              <ExercisePlayer
-                key={exercise.id}
-                questions={exercise.questions ?? []}
-                title={exercise.title}
-                instructions={exercise.instructions}
-                exerciseType={exercise.exercise_type}
-                content={exercise.content}
-                onSubmit={(answers) => handleSubmit(exercise.id, answers)}
-                onComplete={() => markExerciseCompleted(exercise.id)}
-                nextExerciseTitle={nextExercise?.title}
-                onNextExercise={nextExercise ? openNextExercise : undefined}
-              />
-            )}
-          </CambaCard>
+      const exerciseBody = (
+        <CambaCard
+          variant={showFinalExerciseFrame ? "lesson" : "elevated"}
+          padding="md"
+          className={cn(
+            "overflow-hidden",
+            showFinalExerciseFrame && "shadow-none border-border/50 bg-white/80"
+          )}
+        >
+          {exercise.exercise_type === "writing" ? (
+            <WritingExercise
+              key={exercise.id}
+              exerciseId={exercise.id}
+              lessonId={lessonId}
+              title={exercise.title}
+              instructions={exercise.instructions}
+              prompt={writingPrompt}
+              taskDescription={content.taskDescription as string | undefined}
+              taskPrompts={getWritingPrompts(content)}
+              minWords={resolveWritingMinWords(content)}
+              maxWords={resolveWritingMaxWords(content)}
+              targetLevel={targetLevel}
+              labels={aiLabels}
+              onComplete={() => markExerciseCompleted(exercise.id, { exerciseId: exercise.id })}
+              nextExerciseTitle={nextExercise?.title}
+              onNextExercise={
+                nextExercise && !showFinalExerciseFrame ? openNextExercise : undefined
+              }
+            />
+          ) : exercise.exercise_type === "speaking" ? (
+            <SpeakingExercise
+              key={exercise.id}
+              exerciseId={exercise.id}
+              lessonId={lessonId}
+              title={exercise.title}
+              instructions={exercise.instructions}
+              prompt={speakingPrompt}
+              followUpQuestions={getFollowUpQuestions(content)}
+              pictureDescription={content.pictureDescription as string | undefined}
+              maxDurationSeconds={(content.maxDurationSeconds as number) ?? 120}
+              targetLevel={targetLevel}
+              labels={aiLabels}
+              onComplete={() => markExerciseCompleted(exercise.id, { exerciseId: exercise.id })}
+              nextExerciseTitle={nextExercise?.title}
+              onNextExercise={
+                nextExercise && !showFinalExerciseFrame ? openNextExercise : undefined
+              }
+            />
+          ) : (
+            <ExercisePlayer
+              key={exercise.id}
+              questions={exercise.questions ?? []}
+              title={exercise.title}
+              instructions={exercise.instructions}
+              exerciseType={exercise.exercise_type}
+              content={exercise.content}
+              onSubmit={(answers) => handleSubmit(exercise.id, answers)}
+              onComplete={(result) =>
+                markExerciseCompleted(exercise.id, {
+                  exerciseId: exercise.id,
+                  accuracyPercent: result.accuracyPercent,
+                })
+              }
+              nextExerciseTitle={nextExercise?.title}
+              onNextExercise={
+                nextExercise && !showFinalExerciseFrame ? openNextExercise : undefined
+              }
+              embeddedResult={showFinalExerciseFrame}
+              resultLabels={
+                showFinalExerciseFrame
+                  ? {
+                      resultHeading: chromeLabels.embeddedResultHeading,
+                      scoreLine: chromeLabels.embeddedResultScore,
+                    }
+                  : undefined
+              }
+            />
+          )}
+        </CambaCard>
+      );
+
+      return (
+        <div className={cn("space-y-4", showFinalExerciseFrame && "space-y-2")}>
+          {!showFinalExerciseFrame && (
+            <LessonActiveExerciseHeader
+              lessonTitle={lessonTitle}
+              exerciseTitle={exercise.title}
+              position={sortedPosition}
+              total={sortedSummaries.length}
+              completionPercent={resolvedProgress.completionPercentResolved}
+              labels={chromeLabels}
+              onBackToList={() => onActiveExerciseChange(null)}
+            />
+          )}
+
+          {showFinalExerciseFrame ? (
+            <LessonFinalExerciseResultFrame
+              exerciseTitle={exercise.title}
+              accuracyPercent={sessionAccuracy}
+              showReviewTag={showReviewTag}
+              labels={completeSummaryLabels}
+              onClose={onCloseFramedExercise}
+            >
+              {exerciseBody}
+            </LessonFinalExerciseResultFrame>
+          ) : (
+            exerciseBody
+          )}
         </div>
       );
     }
@@ -229,6 +307,7 @@ export function LessonPlayer({
     <LessonExerciseList
       summaries={exerciseSummaries}
       sessionCompletedIds={sessionCompletedExerciseIds}
+      sessionAccuracyByExerciseId={sessionAccuracyByExerciseId}
       nextSuggestedExerciseId={
         isReviewingLesson ? null : resolvedProgress.nextSuggestedExerciseId
       }

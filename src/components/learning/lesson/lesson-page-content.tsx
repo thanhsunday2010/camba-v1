@@ -6,6 +6,8 @@ import { useCelebrationOptional } from "@/components/camba/celebration/celebrati
 import type {
   AiExerciseLabels,
   LessonChromeLabels,
+  LessonCompleteSummaryLabels,
+  LessonExerciseCompletionMeta,
   LessonExerciseListLabels,
   LessonPageLabels,
   LessonPageViewModel,
@@ -16,6 +18,7 @@ import { LessonPlayer } from "@/components/learning/lesson-player";
 interface LessonPageContentProps {
   viewModel: LessonPageViewModel;
   labels: LessonPageLabels;
+  completeSummaryLabels: LessonCompleteSummaryLabels;
   masteryLabel: string;
   listLabels: LessonExerciseListLabels & {
     exercisesTitle: string;
@@ -34,6 +37,7 @@ interface LessonPageContentProps {
 export function LessonPageContent({
   viewModel,
   labels,
+  completeSummaryLabels,
   masteryLabel,
   listLabels,
   aiLabels,
@@ -42,6 +46,11 @@ export function LessonPageContent({
   const [sessionCompletedExerciseIds, setSessionCompletedExerciseIds] = useState(
     () => new Set(viewModel.completedExerciseIds)
   );
+  const [sessionAccuracyByExerciseId, setSessionAccuracyByExerciseId] = useState(
+    () => new Map<string, number>()
+  );
+  const [lastCompletedMeta, setLastCompletedMeta] =
+    useState<LessonExerciseCompletionMeta | null>(null);
   const [activeExerciseId, setActiveExerciseId] = useState<string | null>(null);
   const [isReviewingLesson, setIsReviewingLesson] = useState(false);
   const celebrate = useCelebrationOptional();
@@ -73,7 +82,6 @@ export function LessonPageContent({
     const justCompleted =
       resolvedProgress.isLessonCompleteResolved && !prevLessonCompleteRef.current;
     if (justCompleted) {
-      setActiveExerciseId(null);
       setIsReviewingLesson(false);
     }
     prevLessonCompleteRef.current = resolvedProgress.isLessonCompleteResolved;
@@ -89,9 +97,23 @@ export function LessonPageContent({
     setActiveExerciseId(null);
   }, []);
 
-  const onExerciseCompleted = useCallback((exerciseId: string) => {
-    setSessionCompletedExerciseIds((prev) => new Set([...prev, exerciseId]));
-  }, []);
+  const onExerciseCompleted = useCallback(
+    (exerciseId: string, meta?: LessonExerciseCompletionMeta) => {
+      setSessionCompletedExerciseIds((prev) => new Set([...prev, exerciseId]));
+      if (meta?.accuracyPercent != null) {
+        setSessionAccuracyByExerciseId((prev) => {
+          const next = new Map(prev);
+          next.set(exerciseId, meta.accuracyPercent!);
+          return next;
+        });
+      }
+      setLastCompletedMeta({
+        exerciseId,
+        accuracyPercent: meta?.accuracyPercent,
+      });
+    },
+    []
+  );
 
   const onPrimaryHeroAction = useCallback(() => {
     if (resolvedProgress.isLessonCompleteResolved) {
@@ -114,6 +136,14 @@ export function LessonPageContent({
     resolvedProgress.nextIncompleteExerciseId,
   ]);
 
+  const onOpenReviewExercise = useCallback((exerciseId: string) => {
+    setActiveExerciseId(exerciseId);
+  }, []);
+
+  const closeFramedExercise = useCallback(() => {
+    setActiveExerciseId(null);
+  }, []);
+
   const listSubtitle = isReviewingLesson && listLabels.reviewExercisesSubtitle
     ? listLabels.reviewExercisesSubtitle
     : listLabels.exercisesProgress
@@ -124,13 +154,18 @@ export function LessonPageContent({
     <LessonPageShell
       viewModel={viewModel}
       labels={labels}
+      completeSummaryLabels={completeSummaryLabels}
       masteryLabel={masteryLabel}
       resolvedProgress={resolvedProgress}
+      sessionCompletedExerciseIds={sessionCompletedExerciseIds}
+      sessionAccuracyByExerciseId={sessionAccuracyByExerciseId}
+      lastCompletedMeta={lastCompletedMeta}
       remainingExercisesLabel={listLabels.remainingExercises}
       activeExerciseId={activeExerciseId}
       isReviewingLesson={isReviewingLesson}
       onPrimaryHeroAction={onPrimaryHeroAction}
       onReviewLesson={enterReviewMode}
+      onOpenReviewExercise={onOpenReviewExercise}
     >
       <LessonPlayer
         lessonId={viewModel.lesson.id}
@@ -138,12 +173,15 @@ export function LessonPageContent({
         exercises={viewModel.exercises}
         exerciseSummaries={viewModel.exerciseSummaries}
         sessionCompletedExerciseIds={sessionCompletedExerciseIds}
+        sessionAccuracyByExerciseId={sessionAccuracyByExerciseId}
         onExerciseCompleted={onExerciseCompleted}
         resolvedProgress={resolvedProgress}
         activeExerciseId={activeExerciseId}
         isReviewingLesson={isReviewingLesson}
         onActiveExerciseChange={setActiveExerciseId}
+        onCloseFramedExercise={closeFramedExercise}
         onExitReviewMode={exitReviewMode}
+        completeSummaryLabels={completeSummaryLabels}
         aiLabels={aiLabels}
         chromeLabels={chromeLabels}
         listLabels={{

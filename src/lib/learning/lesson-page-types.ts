@@ -99,9 +99,6 @@ export type LessonPageLabels = {
   accuracy: string;
   mastery: string;
   completedExercises: string;
-  lessonCompleteTitle: string;
-  lessonCompleteDescription: string;
-  lessonCompletePerformance: string;
   nextSuggested: string;
   unitLabel: string;
   skillLabel: string;
@@ -111,6 +108,48 @@ export type LessonPageLabels = {
   nextPathLesson: string;
   stateLabels: Record<LessonDisplayState, string>;
   heroContinueHint: string;
+};
+
+export type LessonCompleteRecommendationVariant =
+  | "exercisesNeedReview"
+  | "lessonNeedsReview"
+  | "finalQuizLow"
+  | "greatJobContinue";
+
+export type LessonCompleteSummaryLabels = {
+  title: string;
+  performanceNote: string;
+  recommendationExercisesNeedReview: string;
+  recommendationLessonNeedsReview: string;
+  recommendationFinalQuizLow: string;
+  recommendationGreatJob: string;
+  backToPath: string;
+  retryLesson: string;
+  nextPathLesson: string;
+  reviewSectionTitle: string;
+  reviewSectionSubtitle: string;
+  reviewExerciseAction: string;
+  finalExerciseHeading: string;
+  finalExerciseSubtitle: string;
+  finalExerciseReviewTag: string;
+  lessonLevelScoreNote: string;
+  victorySubtitle: string;
+  metricLabelExercises: string;
+  metricLabelLesson: string;
+  metricLabelAccuracy: string;
+  recommendationSupportGreatJob: string;
+  recommendationSupportReview: string;
+  recommendationSupportFinalQuiz: string;
+  recommendationSupportLessonReview: string;
+  reviewReasonLowScore: string;
+  finalExerciseDetailsLabel: string;
+  ctaZoneTitle: string;
+  backToCompleteSummary: string;
+};
+
+export type LessonExerciseCompletionMeta = {
+  exerciseId: string;
+  accuracyPercent?: number;
 };
 
 export type AiExerciseLabels = {
@@ -143,6 +182,8 @@ export type LessonChromeLabels = {
   exercisePosition: string;
   lessonProgressShort: string;
   submitFailed: string;
+  embeddedResultHeading: string;
+  embeddedResultScore: string;
 };
 
 export type LessonExerciseListLabels = {

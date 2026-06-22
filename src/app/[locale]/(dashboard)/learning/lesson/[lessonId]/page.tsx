@@ -7,7 +7,7 @@ import { StudentPageShell } from "@/components/camba";
 import { LessonPageContent } from "@/components/learning/lesson/lesson-page-content";
 import { LessonLockedState } from "@/components/learning/lesson/lesson-locked-state";
 import { LessonEmptyState } from "@/components/learning/lesson/lesson-empty-state";
-import type { LessonDisplayState } from "@/lib/learning/lesson-page-types";
+import type { LessonDisplayState, LessonCompleteSummaryLabels } from "@/lib/learning/lesson-page-types";
 
 interface LessonPageProps {
   params: Promise<{ lessonId: string }>;
@@ -39,6 +39,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
   if (!viewModel) notFound();
 
   const t = await getTranslations("learning.lesson");
+  const tcs = await getTranslations("learning.lesson.completeSummary");
   const tl = await getTranslations("learning");
   const tm = await getTranslations("mastery");
 
@@ -72,9 +73,6 @@ export default async function LessonPage({ params }: LessonPageProps) {
     accuracy: t("accuracy"),
     mastery: t("mastery"),
     completedExercises: t("completedExercises"),
-    lessonCompleteTitle: t("lessonCompleteTitle"),
-    lessonCompleteDescription: t("lessonCompleteDescription"),
-    lessonCompletePerformance: t("lessonCompletePerformance"),
     nextSuggested: t("nextSuggested"),
     unitLabel: t("unitLabel"),
     skillLabel: t("skillLabel"),
@@ -84,6 +82,37 @@ export default async function LessonPage({ params }: LessonPageProps) {
     nextPathLesson: t("nextPathLesson"),
     heroContinueHint: t("heroContinueHint"),
     stateLabels,
+  };
+
+  const completeSummaryLabels: LessonCompleteSummaryLabels = {
+    title: tcs("title"),
+    performanceNote: tcs("performanceNote"),
+    recommendationExercisesNeedReview: tcs("recommendationExercisesNeedReview"),
+    recommendationLessonNeedsReview: tcs("recommendationLessonNeedsReview"),
+    recommendationFinalQuizLow: tcs("recommendationFinalQuizLow"),
+    recommendationGreatJob: tcs("recommendationGreatJob"),
+    backToPath: t("backToPath"),
+    retryLesson: t("retryLesson"),
+    nextPathLesson: t("nextPathLesson"),
+    reviewSectionTitle: tcs("reviewSectionTitle"),
+    reviewSectionSubtitle: tcs("reviewSectionSubtitle"),
+    reviewExerciseAction: tcs("reviewExerciseAction"),
+    finalExerciseHeading: tcs("finalExerciseHeading"),
+    finalExerciseSubtitle: tcs("finalExerciseSubtitle"),
+    finalExerciseReviewTag: tcs("finalExerciseReviewTag"),
+    lessonLevelScoreNote: tcs("lessonLevelScoreNote"),
+    victorySubtitle: tcs("victorySubtitle"),
+    metricLabelExercises: tcs("metricLabelExercises"),
+    metricLabelLesson: tcs("metricLabelLesson"),
+    metricLabelAccuracy: tcs("metricLabelAccuracy"),
+    recommendationSupportGreatJob: tcs("recommendationSupportGreatJob"),
+    recommendationSupportReview: tcs("recommendationSupportReview"),
+    recommendationSupportFinalQuiz: tcs("recommendationSupportFinalQuiz"),
+    recommendationSupportLessonReview: tcs("recommendationSupportLessonReview"),
+    reviewReasonLowScore: tcs("reviewReasonLowScore"),
+    finalExerciseDetailsLabel: tcs("finalExerciseDetailsLabel"),
+    backToCompleteSummary: tcs("backToCompleteSummary"),
+    ctaZoneTitle: tcs("ctaZoneTitle"),
   };
 
   const listLabels = {
@@ -140,6 +169,8 @@ export default async function LessonPage({ params }: LessonPageProps) {
     exercisePosition: t("exercisePosition"),
     lessonProgressShort: t("lessonProgressShort"),
     submitFailed: t("submitFailed"),
+    embeddedResultHeading: t("embeddedResultHeading"),
+    embeddedResultScore: t("embeddedResultScore"),
   };
 
   if (!viewModel.progress.isUnlocked) {
@@ -182,6 +213,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
       <LessonPageContent
         viewModel={viewModel}
         labels={pageLabels}
+        completeSummaryLabels={completeSummaryLabels}
         masteryLabel={masteryLabel}
         listLabels={listLabels}
         aiLabels={aiLabels}
