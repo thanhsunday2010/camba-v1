@@ -9,13 +9,20 @@ import {
   computeSkillBreakdown,
 } from "@/lib/learning/mock-test-scoring";
 import { fetchMockTestByIdFull, getMockTestById, getMockTestsForUser } from "@/lib/queries/mock-tests";
-import { mergeSkillShields } from "@/lib/learning/shields";
+import { mergeSkillShields, DEFAULT_SHIELD_SCALE_MAX } from "@/lib/learning/shields";
 import { getShieldScaleMax } from "@/lib/programs/settings";
 import { resolveProgramId } from "@/lib/programs/context";
 import { onMockTestCompleted } from "@/lib/gamification/events";
+import { getAuthUser } from "@/lib/auth/session";
 import type { ActionResult } from "@/types";
 import type { Json } from "@/types/database";
-import type { MockTestData, MockTestResult, MockTestSummary, UserAnswer } from "@/types/learning";
+import type {
+  MockTestData,
+  MockTestResult,
+  MockTestSummary,
+  QuestionResult,
+  UserAnswer,
+} from "@/types/learning";
 
 export async function getMockTestsList(): Promise<MockTestSummary[]> {
   const supabase = await createClient();
@@ -30,89 +37,155 @@ export async function getMockTestData(testId: string): Promise<MockTestData | nu
   return getMockTestById(testId);
 }
 
+function serializeMockTestResult(result: {
+  score: number;
+  maxScore: number;
+  accuracyPercent: number;
+  skillBreakdown: Record<string, number>;
+  shieldEstimate: Record<string, number>;
+  questionResults: QuestionResult[];
+}): MockTestResult {
+  return JSON.parse(
+    JSON.stringify({
+      score: result.score,
+      maxScore: result.maxScore,
+      accuracyPercent: result.accuracyPercent,
+      skillBreakdown: result.skillBreakdown,
+      shieldEstimate: result.shieldEstimate,
+      questionResults: result.questionResults.map((r) => ({
+        questionId: r.questionId,
+        isCorrect: r.isCorrect,
+        pointsEarned: r.pointsEarned,
+        maxPoints: r.maxPoints,
+        explanation: r.explanation ?? null,
+        ...(r.correctChoiceId != null ? { correctChoiceId: r.correctChoiceId } : {}),
+        ...(r.correctChoiceIds != null ? { correctChoiceIds: r.correctChoiceIds } : {}),
+        ...(r.correctPairs != null ? { correctPairs: r.correctPairs } : {}),
+        ...(r.correctAnswers != null ? { correctAnswers: r.correctAnswers } : {}),
+        ...(r.correctOrder != null ? { correctOrder: r.correctOrder } : {}),
+      })),
+    })
+  ) as MockTestResult;
+}
+
+async function runPostMockTestSubmitWork(input: {
+  userId: string;
+  testId: string;
+  levelId: string | null;
+  shieldEstimate: Record<string, number>;
+  maxShields: number;
+}): Promise<void> {
+  const supabase = await createClient();
+
+  if (input.levelId && Object.keys(input.shieldEstimate).length > 0) {
+    const { data: gamification } = await supabase
+      .from("user_gamification")
+      .select("shield_progress")
+      .eq("user_id", input.userId)
+      .single();
+
+    const existing = (gamification?.shield_progress as Record<string, number>) ?? {};
+    const merged = mergeSkillShields(existing, input.shieldEstimate, input.maxShields);
+
+    await supabase
+      .from("user_gamification")
+      .update({ shield_progress: merged as Json })
+      .eq("user_id", input.userId);
+  }
+
+  await onMockTestCompleted(input.userId, input.testId);
+
+  revalidatePath("/mock-tests");
+  revalidatePath("/dashboard");
+  revalidatePath(`/mock-tests/${input.testId}`);
+  revalidatePath(`/mock-tests/${input.testId}/take`);
+}
+
 export async function submitMockTest(
   testId: string,
   answers: Record<string, UserAnswer>,
   timeSpentSeconds: number
 ): Promise<ActionResult<MockTestResult>> {
-  const supabase = await createClient();
+  try {
+    const user = await getAuthUser();
+    if (!user) return { success: false, error: "Unauthorized" };
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+    const supabase = await createClient();
+    const test = await fetchMockTestByIdFull(testId);
+    if (!test) return { success: false, error: "Mock test not found" };
 
-  if (!user) return { success: false, error: "Unauthorized" };
-
-  const test = await fetchMockTestByIdFull(testId);
-  if (!test) return { success: false, error: "Mock test not found" };
-
-  const allQuestions = test.sections.flatMap((s) => s.questions);
-  if (allQuestions.length === 0) {
-    return { success: false, error: "No questions in this test" };
-  }
-
-  const result = scoreExercise(allQuestions, answers);
-  const programId = await resolveProgramId(user.id);
-  const maxShields = programId ? await getShieldScaleMax(programId) : 15;
-  const skillBreakdown = computeSkillBreakdown(test.sections, result.questionResults);
-  const shieldEstimate = computeShieldEstimate(skillBreakdown, maxShields);
-
-  const { error: attemptError } = await supabase.from("mock_test_attempts").insert({
-    user_id: user.id,
-    mock_test_id: testId,
-    score: result.score,
-    max_score: result.maxScore,
-    estimated_level_id: test.levelId,
-    shield_estimate: shieldEstimate as Json,
-    skill_breakdown: skillBreakdown as Json,
-    answers: answers as unknown as Json,
-    time_spent_seconds: timeSpentSeconds,
-    is_completed: true,
-    completed_at: new Date().toISOString(),
-  });
-
-  if (attemptError) {
-    return { success: false, error: attemptError.message };
-  }
-
-  after(async () => {
-    try {
-      if (test.levelId && Object.keys(shieldEstimate).length > 0) {
-        const { data: gamification } = await supabase
-          .from("user_gamification")
-          .select("shield_progress")
-          .eq("user_id", user.id)
-          .single();
-
-        const existing = (gamification?.shield_progress as Record<string, number>) ?? {};
-        const merged = mergeSkillShields(existing, shieldEstimate, maxShields);
-
-        await supabase
-          .from("user_gamification")
-          .update({ shield_progress: merged as Json })
-          .eq("user_id", user.id);
-      }
-
-      await onMockTestCompleted(user.id, testId);
-
-      revalidatePath("/mock-tests");
-      revalidatePath("/dashboard");
-      revalidatePath(`/mock-tests/${testId}`);
-      revalidatePath(`/mock-tests/${testId}/take`);
-    } catch (error) {
-      console.error("Post-mock-test submit gamification failed:", error);
+    const allQuestions = test.sections.flatMap((s) => s.questions);
+    if (allQuestions.length === 0) {
+      return { success: false, error: "No questions in this test" };
     }
-  });
 
-  return {
-    success: true,
-    data: {
+    const result = scoreExercise(allQuestions, answers);
+
+    let maxShields = DEFAULT_SHIELD_SCALE_MAX;
+    try {
+      const programId = await resolveProgramId(user.id);
+      if (programId) {
+        maxShields = await getShieldScaleMax(programId);
+      }
+    } catch (error) {
+      console.error("Mock test shield scale lookup failed, using default:", error);
+    }
+
+    const skillBreakdown = computeSkillBreakdown(test.sections, result.questionResults);
+    const shieldEstimate = computeShieldEstimate(skillBreakdown, maxShields);
+    const levelId = test.levelId;
+    const userId = user.id;
+
+    const { error: attemptError } = await supabase.from("mock_test_attempts").insert({
+      user_id: userId,
+      mock_test_id: testId,
       score: result.score,
-      maxScore: result.maxScore,
-      accuracyPercent: result.accuracyPercent,
-      skillBreakdown,
-      shieldEstimate,
-      questionResults: result.questionResults,
-    },
-  };
+      max_score: result.maxScore,
+      estimated_level_id: levelId,
+      shield_estimate: shieldEstimate as Json,
+      skill_breakdown: skillBreakdown as Json,
+      answers: answers as unknown as Json,
+      time_spent_seconds: timeSpentSeconds,
+      is_completed: true,
+      completed_at: new Date().toISOString(),
+    });
+
+    if (attemptError) {
+      return { success: false, error: attemptError.message };
+    }
+
+    const postSubmitInput = {
+      userId,
+      testId,
+      levelId,
+      shieldEstimate: { ...shieldEstimate },
+      maxShields,
+    };
+
+    after(async () => {
+      try {
+        await runPostMockTestSubmitWork(postSubmitInput);
+      } catch (error) {
+        console.error("Post-mock-test submit gamification failed:", error);
+      }
+    });
+
+    return {
+      success: true,
+      data: serializeMockTestResult({
+        score: result.score,
+        maxScore: result.maxScore,
+        accuracyPercent: result.accuracyPercent,
+        skillBreakdown,
+        shieldEstimate,
+        questionResults: result.questionResults,
+      }),
+    };
+  } catch (error) {
+    console.error("submitMockTest failed:", error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : "Submit failed",
+    };
+  }
 }
