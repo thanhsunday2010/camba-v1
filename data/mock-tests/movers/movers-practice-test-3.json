@@ -1,0 +1,1007 @@
+{
+  "metadata": {
+    "manifestId": "movers-practice-test-3",
+    "manifestVersion": "1.0.0",
+    "stableSlug": "movers-practice-test-3",
+    "blueprintId": "yle-movers-practice-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "movers",
+    "title": "Movers Practice Test 3",
+    "description": "Cambridge YLE Movers practice mock — science club, environment, and inventions themes.",
+    "formKind": "practice",
+    "levelId": "b0000000-0000-4000-8000-000000000003",
+    "timeLimitMinutes": 40,
+    "totalScore": 26,
+    "status": "published",
+    "authoringNotes": "M1.3 mock bank — movers-practice-test-3",
+    "grammarPatterns": [
+      "present perfect (intro)",
+      "adverbs of manner",
+      "because/so",
+      "countable/uncountable",
+      "imperatives"
+    ],
+    "subskills": [
+      "science vocabulary",
+      "reading dialogues",
+      "story inference",
+      "message field completion",
+      "listening gap fill"
+    ],
+    "coverageNotes": "M1.3 Movers T3 — science and environment; mixed difficulty.",
+    "seedIds": {
+      "mockTestId": "03000003-0000-4000-8000-000000000001",
+      "containerUnitId": "d3000099-0000-4000-8000-000000000003",
+      "containerLessonId": "e3000099-0000-4000-8000-000000000303",
+      "containerExerciseId": "03000003-0000-4000-8000-000000000099",
+      "sectionIds": {
+        "listening": "03000003-0000-4000-8000-000000000002",
+        "reading-writing": "03000003-0000-4000-8000-000000000003"
+      },
+      "questionIds": {
+        "listen-01": "03000003-0000-4000-8000-000000000010",
+        "listen-02": "03000003-0000-4000-8000-000000000011",
+        "listen-03": "03000003-0000-4000-8000-000000000012",
+        "listen-04": "03000003-0000-4000-8000-000000000013",
+        "listen-05": "03000003-0000-4000-8000-000000000014",
+        "listen-06": "03000003-0000-4000-8000-000000000015",
+        "listen-07": "03000003-0000-4000-8000-000000000016",
+        "listen-08": "03000003-0000-4000-8000-000000000017",
+        "listen-09": "03000003-0000-4000-8000-000000000018",
+        "listen-10": "03000003-0000-4000-8000-000000000019",
+        "rw-01": "03000003-0000-4000-8000-00000000001a",
+        "rw-02": "03000003-0000-4000-8000-00000000001b",
+        "rw-03": "03000003-0000-4000-8000-00000000001c",
+        "rw-04": "03000003-0000-4000-8000-00000000001d",
+        "rw-05": "03000003-0000-4000-8000-00000000001e",
+        "rw-06": "03000003-0000-4000-8000-00000000001f",
+        "rw-07": "03000003-0000-4000-8000-000000000020",
+        "rw-08": "03000003-0000-4000-8000-000000000021",
+        "rw-09": "03000003-0000-4000-8000-000000000022",
+        "rw-10": "03000003-0000-4000-8000-000000000023",
+        "rw-11": "03000003-0000-4000-8000-000000000024",
+        "rw-12": "03000003-0000-4000-8000-000000000025",
+        "rw-13": "03000003-0000-4000-8000-000000000026",
+        "rw-14": "03000003-0000-4000-8000-000000000027",
+        "rw-15": "03000003-0000-4000-8000-000000000028",
+        "rw-16": "03000003-0000-4000-8000-000000000029"
+      }
+    }
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening Practice",
+      "sortOrder": 0,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-2-fill"
+      ],
+      "questionRefs": [
+        "listen-01",
+        "listen-02",
+        "listen-03",
+        "listen-04",
+        "listen-05",
+        "listen-06",
+        "listen-07",
+        "listen-08",
+        "listen-09",
+        "listen-10"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing Practice",
+      "sortOrder": 1,
+      "skillSlug": "reading",
+      "timeLimitMinutes": 25,
+      "partSlugs": [
+        "rw-part-1-definitions",
+        "rw-part-2-conversations",
+        "rw-part-3-story",
+        "rw-part-4-messages"
+      ],
+      "questionRefs": [
+        "rw-01",
+        "rw-02",
+        "rw-03",
+        "rw-04",
+        "rw-05",
+        "rw-06",
+        "rw-07",
+        "rw-08",
+        "rw-09",
+        "rw-10",
+        "rw-11",
+        "rw-12",
+        "rw-13",
+        "rw-14",
+        "rw-15",
+        "rw-16"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Listening Part 2 — Fill in blanks",
+      "instructions": "Read the listening script. Write the missing words.",
+      "contextType": "listening",
+      "groupKey": "listening-part-2",
+      "passage": {
+        "title": "After-school science club",
+        "text": "Every Thursday, the science club meets in Room 12. This week they built volcanoes with baking soda and vinegar. The mixture bubbled over the cups. Ms Patel showed them how to grow crystals in jars. The students wrote their results in notebooks."
+      },
+      "note": "Text-simulated listening — no audio."
+    },
+    {
+      "partSlug": "rw-part-1-definitions",
+      "sectionSlug": "reading-writing",
+      "partNumber": 1,
+      "title": "Reading Part 1 — Definitions",
+      "instructions": "Match each definition to the correct word.",
+      "contextType": "reading",
+      "groupKey": "rw-part-1"
+    },
+    {
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Conversations",
+      "instructions": "Read the conversation and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-05"
+      ],
+      "groupKey": "rw-conv-1",
+      "passage": {
+        "title": "Recycling bin",
+        "text": "Boy: Where does this plastic bottle go?\nGirl: In the blue recycling bin.\nBoy: And the banana skin?\nGirl: That goes in the green compost bin."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Conversations",
+      "instructions": "Read the conversation and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-06"
+      ],
+      "groupKey": "rw-conv-2",
+      "passage": {
+        "title": "Robot project",
+        "text": "Teacher: Did your robot move?\nStudent: Yes! It rolled across the table.\nTeacher: Excellent. What powered it?\nStudent: Two small batteries."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Conversations",
+      "instructions": "Read the conversation and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-07"
+      ],
+      "groupKey": "rw-conv-3",
+      "passage": {
+        "title": "Planetarium visit",
+        "text": "Guide: This star is called Polaris.\nChild: Is it very far away?\nGuide: Yes — much farther than the Sun.\nChild: Wow!"
+      }
+    },
+    {
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Conversations",
+      "instructions": "Read the conversation and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-08"
+      ],
+      "groupKey": "rw-conv-4",
+      "passage": {
+        "title": "Garden club",
+        "text": "Leader: We need to water the tomatoes.\nVolunteer: I'll get the watering can.\nLeader: Thanks. Don't forget the sunflowers too.\nVolunteer: OK!"
+      }
+    },
+    {
+      "partSlug": "rw-part-3-story",
+      "sectionSlug": "reading-writing",
+      "partNumber": 3,
+      "title": "Reading Part 3 — Story",
+      "instructions": "Read the story and complete the sentences.",
+      "contextType": "reading",
+      "groupKey": "rw-story",
+      "passage": {
+        "title": "The windy day experiment",
+        "text": "The class wanted to test paper planes. They made three different shapes. On a windy day they flew them in the playground. The wide wings flew the farthest. The students measured the distance with a tape measure. They drew a chart of the results."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete the gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-13"
+      ],
+      "groupKey": "rw-msg-1",
+      "passage": {
+        "title": "Club timetable",
+        "text": "Science Club — Thursdays 3:30 pm\nBring: apron, notebook, pencil\nNext topic: magnets and springs"
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete the gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-14"
+      ],
+      "groupKey": "rw-msg-2",
+      "passage": {
+        "title": "Eco pledge",
+        "text": "Our class pledge:\nWe will turn off lights.\nWe will walk to school on Fridays.\nWe will use both sides of paper."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete the gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-15"
+      ],
+      "groupKey": "rw-msg-3",
+      "passage": {
+        "title": "Competition flyer",
+        "text": "Young Inventors Contest!\nDesign a helpful gadget.\nDeadline: 20 November\nPrizes for the top three ideas."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete the gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-16"
+      ],
+      "groupKey": "rw-msg-4",
+      "passage": {
+        "title": "Lab safety",
+        "text": "Safety rules:\nAlways wear goggles in the lab.\nNever taste chemicals.\nTell the teacher if something spills."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "sortOrder": 0,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The science club meets in Room [0].",
+        "correctAnswers": [
+          "12"
+        ],
+        "levelTag": "movers",
+        "acceptedAnswers": {
+          "0": [
+            "12",
+            "twelve"
+          ]
+        }
+      },
+      "questionRef": "listen-01",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "school",
+      "skillTag": "listening",
+      "explanation": "Room 12."
+    },
+    {
+      "sortOrder": 1,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They built volcanoes with baking soda and [0].",
+        "correctAnswers": [
+          "vinegar"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-02",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "science",
+      "skillTag": "listening",
+      "explanation": "Baking soda and vinegar."
+    },
+    {
+      "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The mixture [0] over the cups.",
+        "correctAnswers": [
+          "bubbled"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-03",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "science",
+      "skillTag": "listening",
+      "explanation": "It bubbled over."
+    },
+    {
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They learned to grow [0] in jars.",
+        "correctAnswers": [
+          "crystals"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-04",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "science",
+      "skillTag": "listening",
+      "explanation": "Grow crystals."
+    },
+    {
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Plastic bottles go in the blue [0] bin.",
+        "correctAnswers": [
+          "recycling"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-05",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "skillTag": "listening",
+      "explanation": "Blue recycling bin."
+    },
+    {
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Banana skins go in the green [0] bin.",
+        "correctAnswers": [
+          "compost"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-06",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "skillTag": "listening",
+      "explanation": "Green compost bin."
+    },
+    {
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The robot was powered by two small [0].",
+        "correctAnswers": [
+          "batteries"
+        ],
+        "levelTag": "movers",
+        "acceptedAnswers": {
+          "0": [
+            "batteries",
+            "battery"
+          ]
+        }
+      },
+      "questionRef": "listen-07",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "technology",
+      "skillTag": "listening",
+      "explanation": "Two batteries."
+    },
+    {
+      "sortOrder": 7,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Polaris is much farther than the [0].",
+        "correctAnswers": [
+          "Sun"
+        ],
+        "levelTag": "movers",
+        "acceptedAnswers": {
+          "0": [
+            "Sun",
+            "sun"
+          ]
+        }
+      },
+      "questionRef": "listen-08",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "space",
+      "skillTag": "listening",
+      "explanation": "Farther than the Sun."
+    },
+    {
+      "sortOrder": 8,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Don't forget the [0] too.",
+        "correctAnswers": [
+          "sunflowers"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-09",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "garden",
+      "skillTag": "listening",
+      "explanation": "Water the sunflowers."
+    },
+    {
+      "sortOrder": 9,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They measured the distance with a tape [0].",
+        "correctAnswers": [
+          "measure"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-10",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "science",
+      "skillTag": "listening",
+      "explanation": "Tape measure."
+    },
+    {
+      "sortOrder": 10,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Match each definition to the correct word.",
+      "pairs": [
+        {
+          "leftText": "A room where scientists work",
+          "rightText": "laboratory",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "To make something new from parts",
+          "rightText": "build",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Liquid that reacts with baking soda",
+          "rightText": "vinegar",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-01",
+      "partSlug": "rw-part-1-definitions",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "science",
+      "skillTag": "reading",
+      "explanation": "Laboratory, build, vinegar."
+    },
+    {
+      "sortOrder": 11,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Match each definition to the correct word.",
+      "pairs": [
+        {
+          "leftText": "To put used materials in a special bin",
+          "rightText": "recycle",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Power for a small robot",
+          "rightText": "battery",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Yellow flowers that grow tall",
+          "rightText": "sunflower",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-02",
+      "partSlug": "rw-part-1-definitions",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "skillTag": "reading",
+      "explanation": "Recycle, battery, sunflower."
+    },
+    {
+      "sortOrder": 12,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Match each definition to the correct word.",
+      "pairs": [
+        {
+          "leftText": "A bright star used for navigation",
+          "rightText": "Polaris",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "A tool for measuring length",
+          "rightText": "tape measure",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "A paper aircraft you throw",
+          "rightText": "paper plane",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-03",
+      "partSlug": "rw-part-1-definitions",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "science",
+      "skillTag": "reading",
+      "explanation": "Polaris, tape measure, paper plane."
+    },
+    {
+      "sortOrder": 13,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Match each definition to the correct word.",
+      "pairs": [
+        {
+          "leftText": "To protect your eyes in the lab",
+          "rightText": "goggles",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "A promise to help the planet",
+          "rightText": "pledge",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "The last day to enter a contest",
+          "rightText": "deadline",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-04",
+      "partSlug": "rw-part-1-definitions",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "school",
+      "skillTag": "reading",
+      "explanation": "Goggles, pledge, deadline."
+    },
+    {
+      "sortOrder": 14,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "Where does the plastic bottle go?",
+      "choices": [
+        {
+          "text": "the blue recycling bin",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "the green compost bin",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "the rubbish bin",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-05",
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "skillTag": "reading",
+      "explanation": "Blue recycling bin."
+    },
+    {
+      "sortOrder": 15,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What powered the robot?",
+      "choices": [
+        {
+          "text": "two small batteries",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "solar panels",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "a windmill",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-06",
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "skillTag": "reading",
+      "explanation": "Two batteries."
+    },
+    {
+      "sortOrder": 16,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What did the guide name?",
+      "choices": [
+        {
+          "text": "Polaris",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "the Moon",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "Mars",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-07",
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "space",
+      "skillTag": "reading",
+      "explanation": "The star Polaris."
+    },
+    {
+      "sortOrder": 17,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What must they water?",
+      "choices": [
+        {
+          "text": "tomatoes and sunflowers",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "roses only",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "the grass",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-08",
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "garden",
+      "skillTag": "reading",
+      "explanation": "Tomatoes and sunflowers."
+    },
+    {
+      "sortOrder": 18,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The wide wings flew the [0].",
+        "correctAnswers": [
+          "farthest"
+        ],
+        "levelTag": "movers",
+        "acceptedAnswers": {
+          "0": [
+            "farthest",
+            "furthest"
+          ]
+        }
+      },
+      "questionRef": "rw-09",
+      "partSlug": "rw-part-3-story",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "science",
+      "skillTag": "reading",
+      "explanation": "Flew the farthest."
+    },
+    {
+      "sortOrder": 19,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They flew the planes on a [0] day.",
+        "correctAnswers": [
+          "windy"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-10",
+      "partSlug": "rw-part-3-story",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "weather",
+      "skillTag": "reading",
+      "explanation": "A windy day."
+    },
+    {
+      "sortOrder": 20,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They made three different [0].",
+        "correctAnswers": [
+          "shapes"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-11",
+      "partSlug": "rw-part-3-story",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "science",
+      "skillTag": "reading",
+      "explanation": "Three shapes."
+    },
+    {
+      "sortOrder": 21,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They drew a [0] of the results.",
+        "correctAnswers": [
+          "chart"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-12",
+      "partSlug": "rw-part-3-story",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "science",
+      "skillTag": "reading",
+      "explanation": "Drew a chart."
+    },
+    {
+      "sortOrder": 22,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Next topic: magnets and [0].",
+        "correctAnswers": [
+          "springs"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-13",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "science",
+      "skillTag": "reading",
+      "explanation": "Magnets and springs."
+    },
+    {
+      "sortOrder": 23,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "We will walk to school on [0].",
+        "correctAnswers": [
+          "Fridays"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-14",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "skillTag": "reading",
+      "explanation": "Walk on Fridays."
+    },
+    {
+      "sortOrder": 24,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Deadline: 20 [0]",
+        "correctAnswers": [
+          "November"
+        ],
+        "levelTag": "movers",
+        "acceptedAnswers": {
+          "0": [
+            "November",
+            "november"
+          ]
+        }
+      },
+      "questionRef": "rw-15",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "competition",
+      "skillTag": "reading",
+      "explanation": "20 November."
+    },
+    {
+      "sortOrder": 25,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Never taste [0].",
+        "correctAnswers": [
+          "chemicals"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-16",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "safety",
+      "skillTag": "reading",
+      "explanation": "Never taste chemicals."
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "school",
+      "science",
+      "environment",
+      "technology",
+      "space",
+      "garden",
+      "weather",
+      "competition",
+      "safety"
+    ],
+    "distinctGrammarPatterns": [
+      "present perfect (intro)",
+      "adverbs of manner",
+      "because/so",
+      "countable/uncountable",
+      "imperatives"
+    ],
+    "subskillsRepresented": [
+      "science vocabulary",
+      "reading dialogues",
+      "story inference",
+      "message field completion",
+      "listening gap fill"
+    ],
+    "difficultyCounts": {
+      "easy": 9,
+      "medium": 11,
+      "hard": 6
+    },
+    "notes": "M1.3 Movers T3 — science and environment; mixed difficulty."
+  }
+}

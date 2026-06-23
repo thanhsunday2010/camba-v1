@@ -1,4 +1,5 @@
 import type { MockTestData } from "@/types/learning";
+import type { MockTestQuestionContextView } from "@/lib/mock-tests/mock-test-context";
 
 export type MockTestDisplayState =
   | "not-started"
@@ -154,6 +155,23 @@ export type MockTestPageLabels = {
   take: MockTestTakeLabels;
 };
 
+export type MockTestContextPanelLabels = {
+  listeningPart: string;
+  readingPart: string;
+  dialoguePart: string;
+  generalPart: string;
+  instructions: string;
+  passage: string;
+  transcript: string;
+  listeningHint: string;
+  partContinues: string;
+  audioPlay: string;
+  audioPause: string;
+  audioReplay: string;
+  audioLoading: string;
+  audioError: string;
+};
+
 export type MockTestTakeQuestionSummary = {
   id: string;
   sectionId: string;
@@ -162,6 +180,7 @@ export type MockTestTakeQuestionSummary = {
   skillSlug: string | null;
   position: number;
   questionText: string;
+  context: MockTestQuestionContextView | null;
 };
 
 export type MockTestTakeViewModel = {
@@ -220,4 +239,5 @@ export type MockTestTakeLabels = {
   viewDetail: string;
   reviewWeakSkill: string;
   completeModeSubtitle: string;
+  contextPanel: MockTestContextPanelLabels;
 };

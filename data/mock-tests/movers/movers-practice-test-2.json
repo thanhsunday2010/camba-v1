@@ -1,0 +1,1000 @@
+{
+  "metadata": {
+    "manifestId": "movers-practice-test-2",
+    "manifestVersion": "1.0.0",
+    "stableSlug": "movers-practice-test-2",
+    "blueprintId": "yle-movers-practice-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "movers",
+    "title": "Movers Practice Test 2",
+    "description": "Cambridge YLE Movers practice mock — holiday camp, travel, and beach themes.",
+    "formKind": "practice",
+    "levelId": "b0000000-0000-4000-8000-000000000003",
+    "timeLimitMinutes": 40,
+    "totalScore": 26,
+    "status": "published",
+    "authoringNotes": "M1.3 mock bank — movers-practice-test-2",
+    "grammarPatterns": [
+      "past simple irregular",
+      "going to future",
+      "adjectives",
+      "prepositions of movement",
+      "some/any"
+    ],
+    "subskills": [
+      "listening for detail",
+      "definition matching",
+      "understanding conversations",
+      "sequencing story events",
+      "note completion"
+    ],
+    "coverageNotes": "M1.3 Movers T2 — holiday camp theme; balanced easy/medium/hard.",
+    "seedIds": {
+      "mockTestId": "03000002-0000-4000-8000-000000000001",
+      "containerUnitId": "d3000099-0000-4000-8000-000000000003",
+      "containerLessonId": "e3000099-0000-4000-8000-000000000303",
+      "containerExerciseId": "03000002-0000-4000-8000-000000000099",
+      "sectionIds": {
+        "listening": "03000002-0000-4000-8000-000000000002",
+        "reading-writing": "03000002-0000-4000-8000-000000000003"
+      },
+      "questionIds": {
+        "listen-01": "03000002-0000-4000-8000-000000000010",
+        "listen-02": "03000002-0000-4000-8000-000000000011",
+        "listen-03": "03000002-0000-4000-8000-000000000012",
+        "listen-04": "03000002-0000-4000-8000-000000000013",
+        "listen-05": "03000002-0000-4000-8000-000000000014",
+        "listen-06": "03000002-0000-4000-8000-000000000015",
+        "listen-07": "03000002-0000-4000-8000-000000000016",
+        "listen-08": "03000002-0000-4000-8000-000000000017",
+        "listen-09": "03000002-0000-4000-8000-000000000018",
+        "listen-10": "03000002-0000-4000-8000-000000000019",
+        "rw-01": "03000002-0000-4000-8000-00000000001a",
+        "rw-02": "03000002-0000-4000-8000-00000000001b",
+        "rw-03": "03000002-0000-4000-8000-00000000001c",
+        "rw-04": "03000002-0000-4000-8000-00000000001d",
+        "rw-05": "03000002-0000-4000-8000-00000000001e",
+        "rw-06": "03000002-0000-4000-8000-00000000001f",
+        "rw-07": "03000002-0000-4000-8000-000000000020",
+        "rw-08": "03000002-0000-4000-8000-000000000021",
+        "rw-09": "03000002-0000-4000-8000-000000000022",
+        "rw-10": "03000002-0000-4000-8000-000000000023",
+        "rw-11": "03000002-0000-4000-8000-000000000024",
+        "rw-12": "03000002-0000-4000-8000-000000000025",
+        "rw-13": "03000002-0000-4000-8000-000000000026",
+        "rw-14": "03000002-0000-4000-8000-000000000027",
+        "rw-15": "03000002-0000-4000-8000-000000000028",
+        "rw-16": "03000002-0000-4000-8000-000000000029"
+      }
+    }
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening Practice",
+      "sortOrder": 0,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-2-fill"
+      ],
+      "questionRefs": [
+        "listen-01",
+        "listen-02",
+        "listen-03",
+        "listen-04",
+        "listen-05",
+        "listen-06",
+        "listen-07",
+        "listen-08",
+        "listen-09",
+        "listen-10"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing Practice",
+      "sortOrder": 1,
+      "skillSlug": "reading",
+      "timeLimitMinutes": 25,
+      "partSlugs": [
+        "rw-part-1-definitions",
+        "rw-part-2-conversations",
+        "rw-part-3-story",
+        "rw-part-4-messages"
+      ],
+      "questionRefs": [
+        "rw-01",
+        "rw-02",
+        "rw-03",
+        "rw-04",
+        "rw-05",
+        "rw-06",
+        "rw-07",
+        "rw-08",
+        "rw-09",
+        "rw-10",
+        "rw-11",
+        "rw-12",
+        "rw-13",
+        "rw-14",
+        "rw-15",
+        "rw-16"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Listening Part 2 — Fill in blanks",
+      "instructions": "Read the listening script. Write the missing words.",
+      "contextType": "listening",
+      "groupKey": "listening-part-2",
+      "passage": {
+        "title": "Summer holiday camp",
+        "text": "The children arrived at Pine Lake Camp on Monday. They put their bags in wooden cabins. In the afternoon they sailed small boats on the lake. On Wednesday they hiked through the forest and saw a deer."
+      },
+      "note": "Text-simulated listening — no audio."
+    },
+    {
+      "partSlug": "rw-part-1-definitions",
+      "sectionSlug": "reading-writing",
+      "partNumber": 1,
+      "title": "Reading Part 1 — Definitions",
+      "instructions": "Match each definition to the correct word.",
+      "contextType": "reading",
+      "groupKey": "rw-part-1"
+    },
+    {
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Conversations",
+      "instructions": "Read the conversation and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-05"
+      ],
+      "groupKey": "rw-conv-1",
+      "passage": {
+        "title": "At the beach shop",
+        "text": "Shopkeeper: Can I help you?\nGirl: How much are these sunglasses?\nShopkeeper: Five pounds.\nGirl: OK. I'll take them."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Conversations",
+      "instructions": "Read the conversation and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-06"
+      ],
+      "groupKey": "rw-conv-2",
+      "passage": {
+        "title": "Camp fire",
+        "text": "Leader: Sit in a circle, everyone.\nBoy: Can we sing a song?\nLeader: Yes! Then we'll toast marshmallows.\nChildren: Yay!"
+      }
+    },
+    {
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Conversations",
+      "instructions": "Read the conversation and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-07"
+      ],
+      "groupKey": "rw-conv-3",
+      "passage": {
+        "title": "Train station",
+        "text": "Dad: Our train leaves at ten fifteen.\nSon: Is that platform four?\nDad: Yes. Let's buy a sandwich first.\nSon: Good idea!"
+      }
+    },
+    {
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Conversations",
+      "instructions": "Read the conversation and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-08"
+      ],
+      "groupKey": "rw-conv-4",
+      "passage": {
+        "title": "Rainy afternoon",
+        "text": "Mum: It's raining. We can't swim now.\nGirl: Can we play board games inside?\nMum: Of course. I'll make hot chocolate.\nGirl: Thanks, Mum!"
+      }
+    },
+    {
+      "partSlug": "rw-part-3-story",
+      "sectionSlug": "reading-writing",
+      "partNumber": 3,
+      "title": "Reading Part 3 — Story",
+      "instructions": "Read the story and complete the sentences.",
+      "contextType": "reading",
+      "groupKey": "rw-story",
+      "passage": {
+        "title": "The mountain hike",
+        "text": "On Tuesday morning, the camp group climbed a small mountain. The path was rocky but safe. They stopped halfway for a snack. From the top they could see the whole lake. Everyone took photos before walking down."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete the gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-13"
+      ],
+      "groupKey": "rw-msg-1",
+      "passage": {
+        "title": "Camp rules",
+        "text": "Camp rules:\n1. Be kind to others.\n2. Wear a helmet when cycling.\n3. Lights out at 9 pm.\nHave fun!"
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete the gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-14"
+      ],
+      "groupKey": "rw-msg-2",
+      "passage": {
+        "title": "Postcard",
+        "text": "Dear Grandma,\nI am having a great time at camp.\nYesterday I caught a fish!\nLove, Jake"
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete the gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-15"
+      ],
+      "groupKey": "rw-msg-3",
+      "passage": {
+        "title": "Travel leaflet",
+        "text": "Boat trips every hour.\nAdults: £8\nChildren: £5\nLife jackets provided.\nBook at the pier office."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete the gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-16"
+      ],
+      "groupKey": "rw-msg-4",
+      "passage": {
+        "title": "Weather note",
+        "text": "Thursday forecast:\nMorning — sunny\nAfternoon — cloudy\nEvening — light rain\nPack a raincoat!"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "sortOrder": 0,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They put their bags in wooden [0].",
+        "correctAnswers": [
+          "cabins"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-01",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "holiday",
+      "skillTag": "listening",
+      "explanation": "Bags went in cabins."
+    },
+    {
+      "sortOrder": 1,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They sailed small boats on the [0].",
+        "correctAnswers": [
+          "lake"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-02",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "holiday",
+      "skillTag": "listening",
+      "explanation": "Boats on the lake."
+    },
+    {
+      "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "On Wednesday they hiked through the [0].",
+        "correctAnswers": [
+          "forest"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-03",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "nature",
+      "skillTag": "listening",
+      "explanation": "Hiked through the forest."
+    },
+    {
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They saw a [0] in the forest.",
+        "correctAnswers": [
+          "deer"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-04",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "animals",
+      "skillTag": "listening",
+      "explanation": "They saw a deer."
+    },
+    {
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The sunglasses cost five [0].",
+        "correctAnswers": [
+          "pounds"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-05",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "shopping",
+      "skillTag": "listening",
+      "explanation": "Five pounds."
+    },
+    {
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They will toast [0] at the camp fire.",
+        "correctAnswers": [
+          "marshmallows"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-06",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "food",
+      "skillTag": "listening",
+      "explanation": "Toast marshmallows."
+    },
+    {
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The train leaves at ten [0].",
+        "correctAnswers": [
+          "fifteen"
+        ],
+        "levelTag": "movers",
+        "acceptedAnswers": {
+          "0": [
+            "fifteen",
+            "15"
+          ]
+        }
+      },
+      "questionRef": "listen-07",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "travel",
+      "skillTag": "listening",
+      "explanation": "Ten fifteen."
+    },
+    {
+      "sortOrder": 7,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Platform [0] is their train.",
+        "correctAnswers": [
+          "four"
+        ],
+        "levelTag": "movers",
+        "acceptedAnswers": {
+          "0": [
+            "four",
+            "4"
+          ]
+        }
+      },
+      "questionRef": "listen-08",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "travel",
+      "skillTag": "listening",
+      "explanation": "Platform four."
+    },
+    {
+      "sortOrder": 8,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They will play board games [0].",
+        "correctAnswers": [
+          "inside"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-09",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "weather",
+      "skillTag": "listening",
+      "explanation": "Play inside when it rains."
+    },
+    {
+      "sortOrder": 9,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Mum will make hot [0].",
+        "correctAnswers": [
+          "chocolate"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "listen-10",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "food",
+      "skillTag": "listening",
+      "explanation": "Hot chocolate."
+    },
+    {
+      "sortOrder": 10,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Match each definition to the correct word.",
+      "pairs": [
+        {
+          "leftText": "A small house at a camp",
+          "rightText": "cabin",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "To travel on water in a boat",
+          "rightText": "sail",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "A large area with many trees",
+          "rightText": "forest",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-01",
+      "partSlug": "rw-part-1-definitions",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "holiday",
+      "skillTag": "reading",
+      "explanation": "Cabin, sail, forest."
+    },
+    {
+      "sortOrder": 11,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Match each definition to the correct word.",
+      "pairs": [
+        {
+          "leftText": "Glasses that protect your eyes from the sun",
+          "rightText": "sunglasses",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Sweet soft food you roast on a fire",
+          "rightText": "marshmallow",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "A game you play on a board with pieces",
+          "rightText": "board game",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-02",
+      "partSlug": "rw-part-1-definitions",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "holiday",
+      "skillTag": "reading",
+      "explanation": "Sunglasses, marshmallow, board game."
+    },
+    {
+      "sortOrder": 12,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Match each definition to the correct word.",
+      "pairs": [
+        {
+          "leftText": "Where trains stop for passengers",
+          "rightText": "platform",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Hard stones on a path",
+          "rightText": "rocks",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "An animal with antlers",
+          "rightText": "deer",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-03",
+      "partSlug": "rw-part-1-definitions",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "travel",
+      "skillTag": "reading",
+      "explanation": "Platform, rocks, deer."
+    },
+    {
+      "sortOrder": 13,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Match each definition to the correct word.",
+      "pairs": [
+        {
+          "leftText": "A jacket for wet weather",
+          "rightText": "raincoat",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "To go up a mountain",
+          "rightText": "climb",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Not heavy; easy to carry",
+          "rightText": "light",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-04",
+      "partSlug": "rw-part-1-definitions",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "weather",
+      "skillTag": "reading",
+      "explanation": "Raincoat, climb, light."
+    },
+    {
+      "sortOrder": 14,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "How much are the sunglasses?",
+      "choices": [
+        {
+          "text": "five pounds",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "three pounds",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "eight pounds",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-05",
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "shopping",
+      "skillTag": "reading",
+      "explanation": "Five pounds."
+    },
+    {
+      "sortOrder": 15,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What will they do after singing?",
+      "choices": [
+        {
+          "text": "toast marshmallows",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "go swimming",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "catch a train",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-06",
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "holiday",
+      "skillTag": "reading",
+      "explanation": "Then toast marshmallows."
+    },
+    {
+      "sortOrder": 16,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "Which platform is their train?",
+      "choices": [
+        {
+          "text": "platform four",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "platform two",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "platform six",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-07",
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "travel",
+      "skillTag": "reading",
+      "explanation": "Platform four."
+    },
+    {
+      "sortOrder": 17,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What will they do because of the rain?",
+      "choices": [
+        {
+          "text": "play board games inside",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "swim in the lake",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "hike the mountain",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-08",
+      "partSlug": "rw-part-2-conversations",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "weather",
+      "skillTag": "reading",
+      "explanation": "Play board games inside."
+    },
+    {
+      "sortOrder": 18,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The path was rocky but [0].",
+        "correctAnswers": [
+          "safe"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-09",
+      "partSlug": "rw-part-3-story",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "nature",
+      "skillTag": "reading",
+      "explanation": "Rocky but safe."
+    },
+    {
+      "sortOrder": 19,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They stopped halfway for a [0].",
+        "correctAnswers": [
+          "snack"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-10",
+      "partSlug": "rw-part-3-story",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "food",
+      "skillTag": "reading",
+      "explanation": "Stopped for a snack."
+    },
+    {
+      "sortOrder": 20,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "From the top they could see the whole [0].",
+        "correctAnswers": [
+          "lake"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-11",
+      "partSlug": "rw-part-3-story",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "nature",
+      "skillTag": "reading",
+      "explanation": "They saw the lake."
+    },
+    {
+      "sortOrder": 21,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Everyone took [0] before walking down.",
+        "correctAnswers": [
+          "photos"
+        ],
+        "levelTag": "movers",
+        "acceptedAnswers": {
+          "0": [
+            "photos",
+            "pictures"
+          ]
+        }
+      },
+      "questionRef": "rw-12",
+      "partSlug": "rw-part-3-story",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "holiday",
+      "skillTag": "reading",
+      "explanation": "Took photos at the top."
+    },
+    {
+      "sortOrder": 22,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Wear a helmet when [0].",
+        "correctAnswers": [
+          "cycling"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-13",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "safety",
+      "skillTag": "reading",
+      "explanation": "Helmet when cycling."
+    },
+    {
+      "sortOrder": 23,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Yesterday I caught a [0]!",
+        "correctAnswers": [
+          "fish"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-14",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "holiday",
+      "skillTag": "reading",
+      "explanation": "Caught a fish."
+    },
+    {
+      "sortOrder": 24,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Children: £[0]",
+        "correctAnswers": [
+          "5"
+        ],
+        "levelTag": "movers",
+        "acceptedAnswers": {
+          "0": [
+            "5",
+            "five"
+          ]
+        }
+      },
+      "questionRef": "rw-15",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "travel",
+      "skillTag": "reading",
+      "explanation": "Children pay five pounds."
+    },
+    {
+      "sortOrder": 25,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Pack a [0] for Thursday evening.",
+        "correctAnswers": [
+          "raincoat"
+        ],
+        "levelTag": "movers"
+      },
+      "questionRef": "rw-16",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "weather",
+      "skillTag": "reading",
+      "explanation": "Light rain — pack a raincoat."
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "holiday",
+      "nature",
+      "animals",
+      "shopping",
+      "food",
+      "travel",
+      "weather",
+      "safety"
+    ],
+    "distinctGrammarPatterns": [
+      "past simple irregular",
+      "going to future",
+      "adjectives",
+      "prepositions of movement",
+      "some/any"
+    ],
+    "subskillsRepresented": [
+      "listening for detail",
+      "definition matching",
+      "understanding conversations",
+      "sequencing story events",
+      "note completion"
+    ],
+    "difficultyCounts": {
+      "easy": 13,
+      "medium": 11,
+      "hard": 2
+    },
+    "notes": "M1.3 Movers T2 — holiday camp theme; balanced easy/medium/hard."
+  }
+}

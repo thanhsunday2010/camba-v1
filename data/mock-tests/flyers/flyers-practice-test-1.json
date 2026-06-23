@@ -1,0 +1,1203 @@
+{
+  "metadata": {
+    "manifestId": "flyers-practice-test-1",
+    "manifestVersion": "1.0.0",
+    "stableSlug": "flyers-practice-test-1",
+    "blueprintId": "yle-flyers-practice-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "flyers",
+    "title": "Flyers Practice Test 1",
+    "description": "Cambridge YLE Flyers practice mock — adventure race, community projects, and teamwork.",
+    "formKind": "practice",
+    "levelId": "b0000000-0000-4000-8000-000000000004",
+    "timeLimitMinutes": 50,
+    "totalScore": 32,
+    "status": "published",
+    "authoringNotes": "M1.3 mock bank — flyers-practice-test-1",
+    "grammarPatterns": [
+      "past continuous",
+      "relative clauses (who/which)",
+      "modal verbs (should/could)",
+      "linking words (although, however)",
+      "comparative and superlative"
+    ],
+    "subskills": [
+      "listening for detail in longer scripts",
+      "matching headings to paragraphs",
+      "dialogue inference",
+      "story gap completion",
+      "email and notice completion"
+    ],
+    "coverageNotes": "M1.3 Flyers T1 — medium-heavy difficulty; adventure and community themes.",
+    "seedIds": {
+      "mockTestId": "04000001-0000-4000-8000-000000000001",
+      "containerUnitId": "d4000099-0000-4000-8000-000000000003",
+      "containerLessonId": "e4000099-0000-4000-8000-000000000303",
+      "containerExerciseId": "04000001-0000-4000-8000-000000000099",
+      "sectionIds": {
+        "listening": "04000001-0000-4000-8000-000000000002",
+        "reading-writing": "04000001-0000-4000-8000-000000000003"
+      },
+      "questionIds": {
+        "listen-01": "04000001-0000-4000-8000-000000000010",
+        "listen-02": "04000001-0000-4000-8000-000000000011",
+        "listen-03": "04000001-0000-4000-8000-000000000012",
+        "listen-04": "04000001-0000-4000-8000-000000000013",
+        "listen-05": "04000001-0000-4000-8000-000000000014",
+        "listen-06": "04000001-0000-4000-8000-000000000015",
+        "listen-07": "04000001-0000-4000-8000-000000000016",
+        "listen-08": "04000001-0000-4000-8000-000000000017",
+        "listen-09": "04000001-0000-4000-8000-000000000018",
+        "listen-10": "04000001-0000-4000-8000-000000000019",
+        "rw-01": "04000001-0000-4000-8000-00000000001a",
+        "rw-02": "04000001-0000-4000-8000-00000000001b",
+        "rw-03": "04000001-0000-4000-8000-00000000001c",
+        "rw-04": "04000001-0000-4000-8000-00000000001d",
+        "rw-05": "04000001-0000-4000-8000-00000000001e",
+        "rw-06": "04000001-0000-4000-8000-00000000001f",
+        "rw-07": "04000001-0000-4000-8000-000000000020",
+        "rw-08": "04000001-0000-4000-8000-000000000021",
+        "rw-09": "04000001-0000-4000-8000-000000000022",
+        "rw-10": "04000001-0000-4000-8000-000000000023",
+        "rw-11": "04000001-0000-4000-8000-000000000024",
+        "rw-12": "04000001-0000-4000-8000-000000000025",
+        "rw-13": "04000001-0000-4000-8000-000000000026",
+        "rw-14": "04000001-0000-4000-8000-000000000027",
+        "rw-15": "04000001-0000-4000-8000-000000000028",
+        "rw-16": "04000001-0000-4000-8000-000000000029",
+        "rw-17": "04000001-0000-4000-8000-00000000002a",
+        "rw-18": "04000001-0000-4000-8000-00000000002b",
+        "rw-19": "04000001-0000-4000-8000-00000000002c",
+        "rw-20": "04000001-0000-4000-8000-00000000002d",
+        "rw-21": "04000001-0000-4000-8000-00000000002e",
+        "rw-22": "04000001-0000-4000-8000-00000000002f"
+      }
+    }
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening Practice",
+      "sortOrder": 0,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-2-fill"
+      ],
+      "questionRefs": [
+        "listen-01",
+        "listen-02",
+        "listen-03",
+        "listen-04",
+        "listen-05",
+        "listen-06",
+        "listen-07",
+        "listen-08",
+        "listen-09",
+        "listen-10"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing Practice",
+      "sortOrder": 1,
+      "skillSlug": "reading",
+      "timeLimitMinutes": 35,
+      "partSlugs": [
+        "rw-part-1-headings",
+        "rw-part-2-dialogues",
+        "rw-part-3-story-gaps",
+        "rw-part-4-messages"
+      ],
+      "questionRefs": [
+        "rw-01",
+        "rw-02",
+        "rw-03",
+        "rw-04",
+        "rw-05",
+        "rw-06",
+        "rw-07",
+        "rw-08",
+        "rw-09",
+        "rw-10",
+        "rw-11",
+        "rw-12",
+        "rw-13",
+        "rw-14",
+        "rw-15",
+        "rw-16",
+        "rw-17",
+        "rw-18",
+        "rw-19",
+        "rw-20",
+        "rw-21",
+        "rw-22"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Listening Part 2 — Fill in blanks",
+      "instructions": "Read the listening script. Write the missing words.",
+      "contextType": "listening",
+      "groupKey": "listening-part-2",
+      "passage": {
+        "title": "The Green Valley adventure race",
+        "text": "Last spring, teams from four schools joined the Green Valley adventure race. They canoed across the river, then cycled along muddy tracks. One team got lost because their map blew away, but a volunteer helped them. The winning team finished in two hours and donated their prize money to plant trees."
+      },
+      "note": "Text-simulated listening — no audio."
+    },
+    {
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "partNumber": 1,
+      "title": "Reading Part 1 — Match headings",
+      "instructions": "Match each heading to the correct paragraph.",
+      "contextType": "reading",
+      "groupKey": "rw-headings",
+      "passage": {
+        "title": "Community newsletter excerpts",
+        "text": "Paragraph A: Our local library now opens on Sundays.\nParagraph B: The new cycle path is safer for families.\nParagraph C: Students planted trees behind the sports hall.\nParagraph D: The drama club will perform a play in June.\nParagraph E: The café offers free fruit for children after school."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-06"
+      ],
+      "groupKey": "rw-dlg-1",
+      "passage": {
+        "title": "Team meeting",
+        "text": "Coach: We need a plan for the obstacle course.\nCaptain: I'll check the rope bridge first.\nCoach: Good. Remember, safety comes before speed.\nCaptain: Understood!"
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-07"
+      ],
+      "groupKey": "rw-dlg-2",
+      "passage": {
+        "title": "At the river",
+        "text": "Guide: Put on your life jackets now.\nRacer: Are the canoes stable?\nGuide: Yes, but paddle together in rhythm.\nRacer: OK, we'll try!"
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-08"
+      ],
+      "groupKey": "rw-dlg-3",
+      "passage": {
+        "title": "Lost map",
+        "text": "Volunteer: You look worried. Can I help?\nStudent: Our map flew into the bushes!\nVolunteer: I have a spare copy. Follow me.\nStudent: Thank you so much!"
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-09"
+      ],
+      "groupKey": "rw-dlg-4",
+      "passage": {
+        "title": "Prize ceremony",
+        "text": "Mayor: Congratulations to Riverside School!\nCaptain: We practised every week after class.\nMayor: Your teamwork was impressive.\nCaptain: We'll donate the money to the tree project."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-10"
+      ],
+      "groupKey": "rw-dlg-5",
+      "passage": {
+        "title": "Interview",
+        "text": "Reporter: What was the hardest part?\nRacer: The steep hill after the cycle route.\nReporter: And the best moment?\nRacer: Crossing the finish line together!"
+      }
+    },
+    {
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "partNumber": 3,
+      "title": "Reading Part 3 — Story gaps",
+      "instructions": "Read the story and complete the gaps.",
+      "contextType": "reading",
+      "groupKey": "rw-story",
+      "passage": {
+        "title": "The rope bridge",
+        "text": "Before the race began, the organisers inspected an old rope bridge. Although it looked fragile, engineers had reinforced it overnight. The first team crossed carefully, holding the side ropes. When everyone reached the other side, they cheered with relief. The bridge became the most talked-about part of the course."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-17"
+      ],
+      "groupKey": "rw-email-1",
+      "passage": {
+        "title": "Volunteer signup",
+        "text": "Green Valley Race — volunteers needed!\nRoles: marshals, first aid, water stations\nDate: 12 April\nContact: race@greenvalley.org"
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-18"
+      ],
+      "groupKey": "rw-email-2",
+      "passage": {
+        "title": "Team email",
+        "text": "Hi team,\nPractice starts at 4 pm on Monday.\nBring trainers, water bottle, and rain jacket.\nSee you!\nCoach Rivera"
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-19"
+      ],
+      "groupKey": "rw-email-3",
+      "passage": {
+        "title": "Sponsor letter",
+        "text": "Dear organisers,\nWe are pleased to sponsor the junior prizes.\nPlease display our logo on the banners.\nBest wishes,\nHilltop Sports Shop"
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-20"
+      ],
+      "groupKey": "rw-email-4",
+      "passage": {
+        "title": "Safety notice",
+        "text": "Safety reminder:\nHelmets compulsory on the cycle section.\nNo racing on the river bank.\nReport injuries to the first-aid tent immediately."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-21"
+      ],
+      "groupKey": "rw-email-5",
+      "passage": {
+        "title": "Tree project update",
+        "text": "Tree Project Update:\nThanks to the winners, we bought 50 saplings.\nPlanting day: 5 May at Riverside Park.\nVolunteers welcome!"
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-22"
+      ],
+      "groupKey": "rw-email-6",
+      "passage": {
+        "title": "Results sheet",
+        "text": "Results — Green Valley Adventure Race\n1st Riverside School — 2:04:18\n2nd Oakwood School — 2:11:05\n3rd Lakeside School — 2:15:44"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "sortOrder": 0,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Teams from four [0] joined the race.",
+        "correctAnswers": [
+          "schools"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-01",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "adventure",
+      "skillTag": "listening",
+      "explanation": "Four schools."
+    },
+    {
+      "sortOrder": 1,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They canoed across the [0].",
+        "correctAnswers": [
+          "river"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-02",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "adventure",
+      "skillTag": "listening",
+      "explanation": "Canoed across the river."
+    },
+    {
+      "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "One team got lost because their map [0] away.",
+        "correctAnswers": [
+          "blew"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-03",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "adventure",
+      "skillTag": "listening",
+      "explanation": "The map blew away."
+    },
+    {
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "A [0] helped the lost team.",
+        "correctAnswers": [
+          "volunteer"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-04",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "listening",
+      "explanation": "A volunteer helped."
+    },
+    {
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The winning team finished in two [0].",
+        "correctAnswers": [
+          "hours"
+        ],
+        "levelTag": "flyers",
+        "acceptedAnswers": {
+          "0": [
+            "hours",
+            "hour"
+          ]
+        }
+      },
+      "questionRef": "listen-05",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "adventure",
+      "skillTag": "listening",
+      "explanation": "Two hours."
+    },
+    {
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They donated prize money to plant [0].",
+        "correctAnswers": [
+          "trees"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-06",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "skillTag": "listening",
+      "explanation": "Plant trees."
+    },
+    {
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Put on your life [0] before canoeing.",
+        "correctAnswers": [
+          "jackets"
+        ],
+        "levelTag": "flyers",
+        "acceptedAnswers": {
+          "0": [
+            "jackets",
+            "jacket"
+          ]
+        }
+      },
+      "questionRef": "listen-07",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "safety",
+      "skillTag": "listening",
+      "explanation": "Life jackets."
+    },
+    {
+      "sortOrder": 7,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Paddle together in [0].",
+        "correctAnswers": [
+          "rhythm"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-08",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "teamwork",
+      "skillTag": "listening",
+      "explanation": "Paddle in rhythm."
+    },
+    {
+      "sortOrder": 8,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The volunteer had a spare [0].",
+        "correctAnswers": [
+          "copy"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-09",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "adventure",
+      "skillTag": "listening",
+      "explanation": "A spare copy of the map."
+    },
+    {
+      "sortOrder": 9,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The hardest part was the steep [0].",
+        "correctAnswers": [
+          "hill"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-10",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "adventure",
+      "skillTag": "listening",
+      "explanation": "The steep hill."
+    },
+    {
+      "sortOrder": 10,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph A",
+          "rightText": "Library Sunday opening",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph B",
+          "rightText": "Safer cycling route",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph C",
+          "rightText": "Tree planting by students",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-01",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "A=library, B=cycle path, C=trees."
+    },
+    {
+      "sortOrder": 11,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph D",
+          "rightText": "Drama club performance",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph E",
+          "rightText": "Free fruit after school",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph A",
+          "rightText": "Library Sunday opening",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-02",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "D=drama, E=café fruit, A=library."
+    },
+    {
+      "sortOrder": 12,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph B",
+          "rightText": "Safer cycling route",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph C",
+          "rightText": "Tree planting by students",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph D",
+          "rightText": "Drama club performance",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-03",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "B=cycle path, C=trees, D=drama."
+    },
+    {
+      "sortOrder": 13,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph E",
+          "rightText": "Free fruit after school",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph C",
+          "rightText": "Tree planting by students",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph B",
+          "rightText": "Safer cycling route",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-04",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "E=café, C=trees, B=cycle path."
+    },
+    {
+      "sortOrder": 14,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph A",
+          "rightText": "Library Sunday opening",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph D",
+          "rightText": "Drama club performance",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph E",
+          "rightText": "Free fruit after school",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-05",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "A=library, D=drama, E=café."
+    },
+    {
+      "sortOrder": 15,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What will the captain check first?",
+      "choices": [
+        {
+          "text": "the rope bridge",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "the river boats",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "the prize table",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-06",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "adventure",
+      "skillTag": "reading",
+      "explanation": "Check the rope bridge first."
+    },
+    {
+      "sortOrder": 16,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What must racers do when paddling?",
+      "choices": [
+        {
+          "text": "paddle together in rhythm",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "race alone quickly",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "stand up in the canoe",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-07",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "teamwork",
+      "skillTag": "reading",
+      "explanation": "Paddle together in rhythm."
+    },
+    {
+      "sortOrder": 17,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "Why was the student worried?",
+      "choices": [
+        {
+          "text": "their map flew into the bushes",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "they forgot their helmet",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "it started to snow",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-08",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "adventure",
+      "skillTag": "reading",
+      "explanation": "The map flew away."
+    },
+    {
+      "sortOrder": 18,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What will the winning team do with the money?",
+      "choices": [
+        {
+          "text": "donate it to the tree project",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "buy new bikes",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "go on holiday",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-09",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "Donate to the tree project."
+    },
+    {
+      "sortOrder": 19,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What was the best moment for the racer?",
+      "choices": [
+        {
+          "text": "crossing the finish line together",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "eating lunch",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "buying a map",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-10",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "adventure",
+      "skillTag": "reading",
+      "explanation": "Crossing the finish line together."
+    },
+    {
+      "sortOrder": 20,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Engineers had [0] the bridge overnight.",
+        "correctAnswers": [
+          "reinforced"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-11",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "adventure",
+      "skillTag": "reading",
+      "explanation": "Engineers reinforced it."
+    },
+    {
+      "sortOrder": 21,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The first team crossed [0].",
+        "correctAnswers": [
+          "carefully"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-12",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "safety",
+      "skillTag": "reading",
+      "explanation": "Crossed carefully."
+    },
+    {
+      "sortOrder": 22,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They held the side [0].",
+        "correctAnswers": [
+          "ropes"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-13",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "adventure",
+      "skillTag": "reading",
+      "explanation": "Held the side ropes."
+    },
+    {
+      "sortOrder": 23,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They cheered with [0].",
+        "correctAnswers": [
+          "relief"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-14",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "feelings",
+      "skillTag": "reading",
+      "explanation": "Cheered with relief."
+    },
+    {
+      "sortOrder": 24,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The bridge became the most talked-about [0] of the course.",
+        "correctAnswers": [
+          "part"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-15",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "adventure",
+      "skillTag": "reading",
+      "explanation": "Most talked-about part."
+    },
+    {
+      "sortOrder": 25,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Although it looked fragile, it was [0].",
+        "correctAnswers": [
+          "safe"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-16",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "safety",
+      "skillTag": "reading",
+      "explanation": "Engineers made it safe."
+    },
+    {
+      "sortOrder": 26,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Roles: marshals, first aid, water [0]",
+        "correctAnswers": [
+          "stations"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-17",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "Water stations."
+    },
+    {
+      "sortOrder": 27,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Bring trainers, water bottle, and rain [0].",
+        "correctAnswers": [
+          "jacket"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-18",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "adventure",
+      "skillTag": "reading",
+      "explanation": "Rain jacket."
+    },
+    {
+      "sortOrder": 28,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Please display our [0] on the banners.",
+        "correctAnswers": [
+          "logo"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-19",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "sponsorship",
+      "skillTag": "reading",
+      "explanation": "Display our logo."
+    },
+    {
+      "sortOrder": 29,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Helmets [0] on the cycle section.",
+        "correctAnswers": [
+          "compulsory"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-20",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "safety",
+      "skillTag": "reading",
+      "explanation": "Helmets compulsory."
+    },
+    {
+      "sortOrder": 30,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "We bought 50 [0].",
+        "correctAnswers": [
+          "saplings"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-21",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "environment",
+      "skillTag": "reading",
+      "explanation": "Fifty saplings."
+    },
+    {
+      "sortOrder": 31,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "1st Riverside School — [0]",
+        "correctAnswers": [
+          "2:04:18"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-22",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "adventure",
+      "skillTag": "reading",
+      "explanation": "Winning time."
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "adventure",
+      "community",
+      "environment",
+      "safety",
+      "teamwork",
+      "feelings",
+      "sponsorship"
+    ],
+    "distinctGrammarPatterns": [
+      "past continuous",
+      "relative clauses (who/which)",
+      "modal verbs (should/could)",
+      "linking words (although, however)",
+      "comparative and superlative"
+    ],
+    "subskillsRepresented": [
+      "listening for detail in longer scripts",
+      "matching headings to paragraphs",
+      "dialogue inference",
+      "story gap completion",
+      "email and notice completion"
+    ],
+    "difficultyCounts": {
+      "easy": 6,
+      "medium": 17,
+      "hard": 9
+    },
+    "notes": "M1.3 Flyers T1 — medium-heavy difficulty; adventure and community themes."
+  }
+}

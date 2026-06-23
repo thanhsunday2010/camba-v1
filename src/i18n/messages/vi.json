@@ -567,7 +567,23 @@
       "viewDetail": "Xem tổng quan bài thi",
       "reviewWeakSkill": "Ôn {skill}",
       "completeModeSubtitle": "Đã hoàn thành bài thi — xem kết quả bên dưới.",
-      "submitFailed": "Không nộp được bài. Vui lòng thử lại."
+      "submitFailed": "Không nộp được bài. Vui lòng thử lại.",
+      "contextPanel": {
+        "listeningPart": "Phần Nghe {part}",
+        "readingPart": "Phần Đọc {part}",
+        "dialoguePart": "Phần Hội thoại {part}",
+        "generalPart": "Phần {part}",
+        "instructions": "Hướng dẫn",
+        "passage": "Đọc đoạn văn",
+        "transcript": "Bản ghi",
+        "listeningHint": "Nghe kỹ. Bạn có thể nghe lại audio.",
+        "partContinues": "Cùng phần",
+        "audioPlay": "Phát",
+        "audioPause": "Tạm dừng",
+        "audioReplay": "Nghe lại",
+        "audioLoading": "Đang tải audio…",
+        "audioError": "Không phát được audio"
+      }
     }
   },
   "parent": {

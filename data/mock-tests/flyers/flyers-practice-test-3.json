@@ -1,0 +1,1200 @@
+{
+  "metadata": {
+    "manifestId": "flyers-practice-test-3",
+    "manifestVersion": "1.0.0",
+    "stableSlug": "flyers-practice-test-3",
+    "blueprintId": "yle-flyers-practice-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "flyers",
+    "title": "Flyers Practice Test 3",
+    "description": "Cambridge YLE Flyers practice mock — world cultures, festivals, and international school exchange.",
+    "formKind": "practice",
+    "levelId": "b0000000-0000-4000-8000-000000000004",
+    "timeLimitMinutes": 50,
+    "totalScore": 32,
+    "status": "published",
+    "authoringNotes": "M1.3 mock bank — flyers-practice-test-3",
+    "grammarPatterns": [
+      "past perfect (intro)",
+      "used to",
+      "question tags",
+      "too/enough",
+      "discourse markers (meanwhile, finally)"
+    ],
+    "subskills": [
+      "cultural vocabulary",
+      "reading multi-paragraph texts",
+      "dialogue comprehension",
+      "story cohesion",
+      "formal email completion"
+    ],
+    "coverageNotes": "M1.3 Flyers T3 — global cultures theme; medium-heavy with challenging items.",
+    "seedIds": {
+      "mockTestId": "04000003-0000-4000-8000-000000000001",
+      "containerUnitId": "d4000099-0000-4000-8000-000000000003",
+      "containerLessonId": "e4000099-0000-4000-8000-000000000303",
+      "containerExerciseId": "04000003-0000-4000-8000-000000000099",
+      "sectionIds": {
+        "listening": "04000003-0000-4000-8000-000000000002",
+        "reading-writing": "04000003-0000-4000-8000-000000000003"
+      },
+      "questionIds": {
+        "listen-01": "04000003-0000-4000-8000-000000000010",
+        "listen-02": "04000003-0000-4000-8000-000000000011",
+        "listen-03": "04000003-0000-4000-8000-000000000012",
+        "listen-04": "04000003-0000-4000-8000-000000000013",
+        "listen-05": "04000003-0000-4000-8000-000000000014",
+        "listen-06": "04000003-0000-4000-8000-000000000015",
+        "listen-07": "04000003-0000-4000-8000-000000000016",
+        "listen-08": "04000003-0000-4000-8000-000000000017",
+        "listen-09": "04000003-0000-4000-8000-000000000018",
+        "listen-10": "04000003-0000-4000-8000-000000000019",
+        "rw-01": "04000003-0000-4000-8000-00000000001a",
+        "rw-02": "04000003-0000-4000-8000-00000000001b",
+        "rw-03": "04000003-0000-4000-8000-00000000001c",
+        "rw-04": "04000003-0000-4000-8000-00000000001d",
+        "rw-05": "04000003-0000-4000-8000-00000000001e",
+        "rw-06": "04000003-0000-4000-8000-00000000001f",
+        "rw-07": "04000003-0000-4000-8000-000000000020",
+        "rw-08": "04000003-0000-4000-8000-000000000021",
+        "rw-09": "04000003-0000-4000-8000-000000000022",
+        "rw-10": "04000003-0000-4000-8000-000000000023",
+        "rw-11": "04000003-0000-4000-8000-000000000024",
+        "rw-12": "04000003-0000-4000-8000-000000000025",
+        "rw-13": "04000003-0000-4000-8000-000000000026",
+        "rw-14": "04000003-0000-4000-8000-000000000027",
+        "rw-15": "04000003-0000-4000-8000-000000000028",
+        "rw-16": "04000003-0000-4000-8000-000000000029",
+        "rw-17": "04000003-0000-4000-8000-00000000002a",
+        "rw-18": "04000003-0000-4000-8000-00000000002b",
+        "rw-19": "04000003-0000-4000-8000-00000000002c",
+        "rw-20": "04000003-0000-4000-8000-00000000002d",
+        "rw-21": "04000003-0000-4000-8000-00000000002e",
+        "rw-22": "04000003-0000-4000-8000-00000000002f"
+      }
+    }
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening Practice",
+      "sortOrder": 0,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-2-fill"
+      ],
+      "questionRefs": [
+        "listen-01",
+        "listen-02",
+        "listen-03",
+        "listen-04",
+        "listen-05",
+        "listen-06",
+        "listen-07",
+        "listen-08",
+        "listen-09",
+        "listen-10"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing Practice",
+      "sortOrder": 1,
+      "skillSlug": "reading",
+      "timeLimitMinutes": 35,
+      "partSlugs": [
+        "rw-part-1-headings",
+        "rw-part-2-dialogues",
+        "rw-part-3-story-gaps",
+        "rw-part-4-messages"
+      ],
+      "questionRefs": [
+        "rw-01",
+        "rw-02",
+        "rw-03",
+        "rw-04",
+        "rw-05",
+        "rw-06",
+        "rw-07",
+        "rw-08",
+        "rw-09",
+        "rw-10",
+        "rw-11",
+        "rw-12",
+        "rw-13",
+        "rw-14",
+        "rw-15",
+        "rw-16",
+        "rw-17",
+        "rw-18",
+        "rw-19",
+        "rw-20",
+        "rw-21",
+        "rw-22"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Listening Part 2 — Fill in blanks",
+      "instructions": "Read the listening script. Write the missing words.",
+      "contextType": "listening",
+      "groupKey": "listening-part-2",
+      "passage": {
+        "title": "International Culture Week",
+        "text": "Oakwood School celebrated International Culture Week in March. Students wore traditional costumes and cooked dishes from different countries. A guest speaker from Brazil taught a samba rhythm on drums. On Thursday, pen pals from France joined a video call. Teachers said the week helped everyone respect diverse traditions."
+      },
+      "note": "Text-simulated listening — no audio."
+    },
+    {
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "partNumber": 1,
+      "title": "Reading Part 1 — Match headings",
+      "instructions": "Match each heading to the correct paragraph.",
+      "contextType": "reading",
+      "groupKey": "rw-headings",
+      "passage": {
+        "title": "Community newsletter excerpts",
+        "text": "Paragraph A: Our local library now opens on Sundays.\nParagraph B: The new cycle path is safer for families.\nParagraph C: Students planted trees behind the sports hall.\nParagraph D: The drama club will perform a play in June.\nParagraph E: The café offers free fruit for children after school."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-06"
+      ],
+      "groupKey": "rw-dlg-1",
+      "passage": {
+        "title": "Festival planning",
+        "text": "Organiser: We need decorations for Diwali.\nStudent: I'll make paper lanterns.\nOrganiser: Wonderful. Can someone research the story of Rama?\nStudent: I'll prepare a short poster."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-07"
+      ],
+      "groupKey": "rw-dlg-2",
+      "passage": {
+        "title": "Exchange student",
+        "text": "Host mum: Did you sleep well, Amelie?\nAmelie: Yes, thank you. The bed was cosy.\nHost mum: Today we'll visit the market.\nAmelie: I'd love to try local cheese!"
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-08"
+      ],
+      "groupKey": "rw-dlg-3",
+      "passage": {
+        "title": "Museum guide",
+        "text": "Guide: This mask comes from West Africa.\nVisitor: What materials is it made from?\nGuide: Wood, beads, and natural dyes.\nVisitor: The patterns are amazing."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-09"
+      ],
+      "groupKey": "rw-dlg-4",
+      "passage": {
+        "title": "Language club",
+        "text": "Teacher: Let's practise greetings in Japanese.\nPupil: Konnichiwa — is that 'hello'?\nTeacher: Yes, in the afternoon. Remember bowing politely.\nPupil: I'll practise at home."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-10"
+      ],
+      "groupKey": "rw-dlg-5",
+      "passage": {
+        "title": "Cooking demo",
+        "text": "Chef: Mexican tacos use soft tortillas.\nAssistant: Should we add spicy salsa?\nChef: Just a little — some guests prefer mild food.\nAssistant: Good point!"
+      }
+    },
+    {
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "partNumber": 3,
+      "title": "Reading Part 3 — Story gaps",
+      "instructions": "Read the story and complete the gaps.",
+      "contextType": "reading",
+      "groupKey": "rw-story",
+      "passage": {
+        "title": "The lantern parade",
+        "text": "On the final evening, families joined a lantern parade through the town square. Although the wind was strong, the children protected their candles carefully. Musicians played drums while dancers moved in colourful skirts. Meanwhile, volunteers collected donations for a refugee charity. Finally, the mayor thanked everyone for celebrating unity."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-17"
+      ],
+      "groupKey": "rw-email-1",
+      "passage": {
+        "title": "Culture week schedule",
+        "text": "International Culture Week\nMon: costume day\nTue: food stalls\nWed: guest speakers\nThu: video call with France\nFri: lantern parade"
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-18"
+      ],
+      "groupKey": "rw-email-2",
+      "passage": {
+        "title": "Pen pal letter",
+        "text": "Dear Amelie,\nWe enjoyed the video call!\nPlease send your recipe for crepes.\nOur class wants to cook them next Friday.\nBest wishes, Class 5B"
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-19"
+      ],
+      "groupKey": "rw-email-3",
+      "passage": {
+        "title": "Charity notice",
+        "text": "Lantern Parade donations:\nAll money supports refugee children's books.\nBring coins in labelled envelopes.\nThank you for your kindness."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-20"
+      ],
+      "groupKey": "rw-email-4",
+      "passage": {
+        "title": "Workshop flyer",
+        "text": "Samba Drumming Workshop\nOpen to ages 9–12\nLimited drums — arrive early!\nSign up with Mr Santos."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-21"
+      ],
+      "groupKey": "rw-email-5",
+      "passage": {
+        "title": "Host family rules",
+        "text": "Exchange visit rules:\nRespect quiet hours after 9 pm.\nAsk before using the kitchen.\nWrite a thank-you note before leaving."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-22"
+      ],
+      "groupKey": "rw-email-6",
+      "passage": {
+        "title": "Feedback form",
+        "text": "Culture Week feedback:\nFavourite activity: food stalls (42 votes)\nMost learned: Japanese greetings\nSuggestion: invite more guest chefs"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "sortOrder": 0,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Students wore traditional [0].",
+        "correctAnswers": [
+          "costumes"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-01",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "skillTag": "listening",
+      "explanation": "Traditional costumes."
+    },
+    {
+      "sortOrder": 1,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They cooked dishes from different [0].",
+        "correctAnswers": [
+          "countries"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-02",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "culture",
+      "skillTag": "listening",
+      "explanation": "Different countries."
+    },
+    {
+      "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "A guest speaker from Brazil taught a samba [0].",
+        "correctAnswers": [
+          "rhythm"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-03",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "music",
+      "skillTag": "listening",
+      "explanation": "Samba rhythm."
+    },
+    {
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Pen pals from France joined a video [0].",
+        "correctAnswers": [
+          "call"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-04",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "exchange",
+      "skillTag": "listening",
+      "explanation": "Video call."
+    },
+    {
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The week helped everyone respect diverse [0].",
+        "correctAnswers": [
+          "traditions"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-05",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "skillTag": "listening",
+      "explanation": "Diverse traditions."
+    },
+    {
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "I'll make paper [0] for Diwali.",
+        "correctAnswers": [
+          "lanterns"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-06",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "festival",
+      "skillTag": "listening",
+      "explanation": "Paper lanterns."
+    },
+    {
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Amelie wants to try local [0].",
+        "correctAnswers": [
+          "cheese"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-07",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "food",
+      "skillTag": "listening",
+      "explanation": "Local cheese."
+    },
+    {
+      "sortOrder": 7,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The mask is made from wood, beads, and natural [0].",
+        "correctAnswers": [
+          "dyes"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-08",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "art",
+      "skillTag": "listening",
+      "explanation": "Natural dyes."
+    },
+    {
+      "sortOrder": 8,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Konnichiwa is a greeting in the [0].",
+        "correctAnswers": [
+          "afternoon"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-09",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "language",
+      "skillTag": "listening",
+      "explanation": "Afternoon greeting in Japanese."
+    },
+    {
+      "sortOrder": 9,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Mexican tacos use soft [0].",
+        "correctAnswers": [
+          "tortillas"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-10",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "food",
+      "skillTag": "listening",
+      "explanation": "Soft tortillas."
+    },
+    {
+      "sortOrder": 10,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph C",
+          "rightText": "Tree planting by students",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph A",
+          "rightText": "Library Sunday opening",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph E",
+          "rightText": "Free fruit after school",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-01",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "C=trees, A=library, E=café."
+    },
+    {
+      "sortOrder": 11,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph B",
+          "rightText": "Safer cycling route",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph D",
+          "rightText": "Drama club performance",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph A",
+          "rightText": "Library Sunday opening",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-02",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "B=cycle path, D=drama, A=library."
+    },
+    {
+      "sortOrder": 12,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph E",
+          "rightText": "Free fruit after school",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph C",
+          "rightText": "Tree planting by students",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph D",
+          "rightText": "Drama club performance",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-03",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "E=café, C=trees, D=drama."
+    },
+    {
+      "sortOrder": 13,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph A",
+          "rightText": "Library Sunday opening",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph B",
+          "rightText": "Safer cycling route",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph E",
+          "rightText": "Free fruit after school",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-04",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "A=library, B=cycle path, E=café."
+    },
+    {
+      "sortOrder": 14,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph D",
+          "rightText": "Drama club performance",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph C",
+          "rightText": "Tree planting by students",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph B",
+          "rightText": "Safer cycling route",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-05",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "D=drama, C=trees, B=cycle path."
+    },
+    {
+      "sortOrder": 15,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What will a student prepare for Diwali?",
+      "choices": [
+        {
+          "text": "a short poster about Rama",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "a bicycle map",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "a swimming timetable",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-06",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "festival",
+      "skillTag": "reading",
+      "explanation": "Poster about Rama's story."
+    },
+    {
+      "sortOrder": 16,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What does Amelie want to try?",
+      "choices": [
+        {
+          "text": "local cheese",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "spicy salsa",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "samba drums",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-07",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "food",
+      "skillTag": "reading",
+      "explanation": "Local cheese at the market."
+    },
+    {
+      "sortOrder": 17,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What is the African mask made from?",
+      "choices": [
+        {
+          "text": "wood, beads, and natural dyes",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "plastic and metal",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "paper and glue only",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-08",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "art",
+      "skillTag": "reading",
+      "explanation": "Wood, beads, natural dyes."
+    },
+    {
+      "sortOrder": 18,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "What should pupils remember in Japanese culture?",
+      "choices": [
+        {
+          "text": "bowing politely",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "shouting loudly",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "running indoors",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-09",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "language",
+      "skillTag": "reading",
+      "explanation": "Remember bowing politely."
+    },
+    {
+      "sortOrder": 19,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "How much spicy salsa should they add?",
+      "choices": [
+        {
+          "text": "just a little",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "a large bowl",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "none at all",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-10",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "food",
+      "skillTag": "reading",
+      "explanation": "Just a little salsa."
+    },
+    {
+      "sortOrder": 20,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The children protected their candles [0].",
+        "correctAnswers": [
+          "carefully"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-11",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "festival",
+      "skillTag": "reading",
+      "explanation": "Protected candles carefully."
+    },
+    {
+      "sortOrder": 21,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Musicians played drums while dancers moved in colourful [0].",
+        "correctAnswers": [
+          "skirts"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-12",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "culture",
+      "skillTag": "reading",
+      "explanation": "Colourful skirts."
+    },
+    {
+      "sortOrder": 22,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "[0], volunteers collected donations.",
+        "correctAnswers": [
+          "Meanwhile"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-13",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "writing",
+      "skillTag": "reading",
+      "explanation": "Meanwhile introduces a parallel action."
+    },
+    {
+      "sortOrder": 23,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Donations were for a refugee [0].",
+        "correctAnswers": [
+          "charity"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-14",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "Refugee charity."
+    },
+    {
+      "sortOrder": 24,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "[0], the mayor thanked everyone.",
+        "correctAnswers": [
+          "Finally"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-15",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "writing",
+      "skillTag": "reading",
+      "explanation": "Finally closes the sequence."
+    },
+    {
+      "sortOrder": 25,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The mayor thanked everyone for celebrating [0].",
+        "correctAnswers": [
+          "unity"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-16",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "culture",
+      "skillTag": "reading",
+      "explanation": "Celebrating unity."
+    },
+    {
+      "sortOrder": 26,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Thu: video call with [0]",
+        "correctAnswers": [
+          "France"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-17",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "exchange",
+      "skillTag": "reading",
+      "explanation": "Video call with France."
+    },
+    {
+      "sortOrder": 27,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Please send your recipe for [0].",
+        "correctAnswers": [
+          "crepes"
+        ],
+        "levelTag": "flyers",
+        "acceptedAnswers": {
+          "0": [
+            "crepes",
+            "crêpes"
+          ]
+        }
+      },
+      "questionRef": "rw-18",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "food",
+      "skillTag": "reading",
+      "explanation": "Recipe for crepes."
+    },
+    {
+      "sortOrder": 28,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Bring coins in labelled [0].",
+        "correctAnswers": [
+          "envelopes"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-19",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "charity",
+      "skillTag": "reading",
+      "explanation": "Labelled envelopes."
+    },
+    {
+      "sortOrder": 29,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Sign up with Mr [0].",
+        "correctAnswers": [
+          "Santos"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-20",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "music",
+      "skillTag": "reading",
+      "explanation": "Mr Santos."
+    },
+    {
+      "sortOrder": 30,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Respect quiet hours after 9 [0].",
+        "correctAnswers": [
+          "pm"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-21",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "exchange",
+      "skillTag": "reading",
+      "explanation": "After 9 pm."
+    },
+    {
+      "sortOrder": 31,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Favourite activity: food [0] (42 votes)",
+        "correctAnswers": [
+          "stalls"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-22",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "culture",
+      "skillTag": "reading",
+      "explanation": "Food stalls were favourite."
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "culture",
+      "music",
+      "exchange",
+      "festival",
+      "food",
+      "art",
+      "language",
+      "community",
+      "writing",
+      "charity"
+    ],
+    "distinctGrammarPatterns": [
+      "past perfect (intro)",
+      "used to",
+      "question tags",
+      "too/enough",
+      "discourse markers (meanwhile, finally)"
+    ],
+    "subskillsRepresented": [
+      "cultural vocabulary",
+      "reading multi-paragraph texts",
+      "dialogue comprehension",
+      "story cohesion",
+      "formal email completion"
+    ],
+    "difficultyCounts": {
+      "easy": 7,
+      "medium": 16,
+      "hard": 9
+    },
+    "notes": "M1.3 Flyers T3 — global cultures theme; medium-heavy with challenging items."
+  }
+}

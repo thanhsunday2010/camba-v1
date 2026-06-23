@@ -8,6 +8,7 @@ export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
   const tc = await getTranslations("mockTests.complete");
   const tr = await getTranslations("mockTests.review");
   const tt = await getTranslations("mockTests.take");
+  const tcp = await getTranslations("mockTests.take.contextPanel");
   const ts = await getTranslations("mockTests.status");
 
   const statusLabels: Record<MockTestDisplayState, string> = {
@@ -118,6 +119,22 @@ export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
       viewDetail: tt("viewDetail"),
       reviewWeakSkill: tt("reviewWeakSkill"),
       completeModeSubtitle: tt("completeModeSubtitle"),
+      contextPanel: {
+        listeningPart: tcp("listeningPart"),
+        readingPart: tcp("readingPart"),
+        dialoguePart: tcp("dialoguePart"),
+        generalPart: tcp("generalPart"),
+        instructions: tcp("instructions"),
+        passage: tcp("passage"),
+        transcript: tcp("transcript"),
+        listeningHint: tcp("listeningHint"),
+        partContinues: tcp("partContinues"),
+        audioPlay: tcp("audioPlay"),
+        audioPause: tcp("audioPause"),
+        audioReplay: tcp("audioReplay"),
+        audioLoading: tcp("audioLoading"),
+        audioError: tcp("audioError"),
+      },
     },
   };
 }

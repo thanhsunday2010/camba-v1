@@ -567,7 +567,23 @@
       "viewDetail": "View test overview",
       "reviewWeakSkill": "Review {skill}",
       "completeModeSubtitle": "Test complete — review your results below.",
-      "submitFailed": "Could not submit. Please try again."
+      "submitFailed": "Could not submit. Please try again.",
+      "contextPanel": {
+        "listeningPart": "Listening Part {part}",
+        "readingPart": "Reading Part {part}",
+        "dialoguePart": "Dialogue Part {part}",
+        "generalPart": "Part {part}",
+        "instructions": "Instructions",
+        "passage": "Read this",
+        "transcript": "Transcript",
+        "listeningHint": "Listen carefully. You can play the audio again.",
+        "partContinues": "Same part",
+        "audioPlay": "Play",
+        "audioPause": "Pause",
+        "audioReplay": "Listen again",
+        "audioLoading": "Loading audio…",
+        "audioError": "Could not play audio"
+      }
     }
   },
   "parent": {

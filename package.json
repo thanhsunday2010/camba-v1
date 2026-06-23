@@ -37,7 +37,11 @@
     "validate:pet": "node scripts/validate-cambridge-content.mjs pet",
     "seed:pet": "node scripts/seed-pet-all.mjs",
     "seed:cambridge-placement": "node scripts/seed-cambridge-placement.mjs",
-    "deactivate:cambridge-placement": "node scripts/deactivate-cambridge-placement.mjs",
+    "generate:mock-tests": "node scripts/generate-mock-tests.mjs",
+    "validate:mock-tests": "node scripts/validate-mock-tests.mjs",
+    "seed:mock-tests": "node scripts/seed-mock-tests.mjs",
+    "seed:all-mock-tests": "node scripts/seed-all-mock-tests.mjs",
+    "write:m1-3-mock-manifests": "node scripts/write-m1-3-mock-manifests.mjs",
     "generate:listening-audio": "node scripts/generate-listening-audio.mjs"
   },
   "dependencies": {

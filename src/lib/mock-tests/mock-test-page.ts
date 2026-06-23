@@ -1,4 +1,5 @@
 import { fetchMockTestByIdFull, getLatestMockTestAttemptDetail, getMockTestById, getUserMockTestAttempts } from "@/lib/queries/mock-tests";
+import { buildMockTestQuestionContextMap } from "@/lib/mock-tests/mock-test-context";
 import {
   buildMockTestAttemptSummary,
   deriveMockTestDisplayState,
@@ -100,6 +101,8 @@ export async function getMockTestTakeViewModel(
       skillName: section.skillName,
     }));
 
+  const contextMap = buildMockTestQuestionContextMap(test);
+
   let position = 0;
   const questions = sections.flatMap((section) => {
     const fullSection = test.sections.find((s) => s.id === section.id);
@@ -113,6 +116,7 @@ export async function getMockTestTakeViewModel(
         skillSlug: section.skillSlug,
         position,
         questionText: q.question_text,
+        context: contextMap.get(q.id) ?? null,
       };
     });
   });

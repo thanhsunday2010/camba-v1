@@ -1,0 +1,1210 @@
+{
+  "metadata": {
+    "manifestId": "flyers-practice-test-2",
+    "manifestVersion": "1.0.0",
+    "stableSlug": "flyers-practice-test-2",
+    "blueprintId": "yle-flyers-practice-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "flyers",
+    "title": "Flyers Practice Test 2",
+    "description": "Cambridge YLE Flyers practice mock — technology fair, coding, and digital safety.",
+    "formKind": "practice",
+    "levelId": "b0000000-0000-4000-8000-000000000004",
+    "timeLimitMinutes": 50,
+    "totalScore": 32,
+    "status": "published",
+    "authoringNotes": "M1.3 mock bank — flyers-practice-test-2",
+    "grammarPatterns": [
+      "present perfect",
+      "passive voice (simple)",
+      "conditional type 1",
+      "reported speech (intro)",
+      "phrasal verbs"
+    ],
+    "subskills": [
+      "technology vocabulary",
+      "reading longer dialogues",
+      "inferring purpose",
+      "completing formal notices",
+      "listening gap fill"
+    ],
+    "coverageNotes": "M1.3 Flyers T2 — technology fair theme; medium-heavy difficulty.",
+    "seedIds": {
+      "mockTestId": "04000002-0000-4000-8000-000000000001",
+      "containerUnitId": "d4000099-0000-4000-8000-000000000003",
+      "containerLessonId": "e4000099-0000-4000-8000-000000000303",
+      "containerExerciseId": "04000002-0000-4000-8000-000000000099",
+      "sectionIds": {
+        "listening": "04000002-0000-4000-8000-000000000002",
+        "reading-writing": "04000002-0000-4000-8000-000000000003"
+      },
+      "questionIds": {
+        "listen-01": "04000002-0000-4000-8000-000000000010",
+        "listen-02": "04000002-0000-4000-8000-000000000011",
+        "listen-03": "04000002-0000-4000-8000-000000000012",
+        "listen-04": "04000002-0000-4000-8000-000000000013",
+        "listen-05": "04000002-0000-4000-8000-000000000014",
+        "listen-06": "04000002-0000-4000-8000-000000000015",
+        "listen-07": "04000002-0000-4000-8000-000000000016",
+        "listen-08": "04000002-0000-4000-8000-000000000017",
+        "listen-09": "04000002-0000-4000-8000-000000000018",
+        "listen-10": "04000002-0000-4000-8000-000000000019",
+        "rw-01": "04000002-0000-4000-8000-00000000001a",
+        "rw-02": "04000002-0000-4000-8000-00000000001b",
+        "rw-03": "04000002-0000-4000-8000-00000000001c",
+        "rw-04": "04000002-0000-4000-8000-00000000001d",
+        "rw-05": "04000002-0000-4000-8000-00000000001e",
+        "rw-06": "04000002-0000-4000-8000-00000000001f",
+        "rw-07": "04000002-0000-4000-8000-000000000020",
+        "rw-08": "04000002-0000-4000-8000-000000000021",
+        "rw-09": "04000002-0000-4000-8000-000000000022",
+        "rw-10": "04000002-0000-4000-8000-000000000023",
+        "rw-11": "04000002-0000-4000-8000-000000000024",
+        "rw-12": "04000002-0000-4000-8000-000000000025",
+        "rw-13": "04000002-0000-4000-8000-000000000026",
+        "rw-14": "04000002-0000-4000-8000-000000000027",
+        "rw-15": "04000002-0000-4000-8000-000000000028",
+        "rw-16": "04000002-0000-4000-8000-000000000029",
+        "rw-17": "04000002-0000-4000-8000-00000000002a",
+        "rw-18": "04000002-0000-4000-8000-00000000002b",
+        "rw-19": "04000002-0000-4000-8000-00000000002c",
+        "rw-20": "04000002-0000-4000-8000-00000000002d",
+        "rw-21": "04000002-0000-4000-8000-00000000002e",
+        "rw-22": "04000002-0000-4000-8000-00000000002f"
+      }
+    }
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening Practice",
+      "sortOrder": 0,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-2-fill"
+      ],
+      "questionRefs": [
+        "listen-01",
+        "listen-02",
+        "listen-03",
+        "listen-04",
+        "listen-05",
+        "listen-06",
+        "listen-07",
+        "listen-08",
+        "listen-09",
+        "listen-10"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing Practice",
+      "sortOrder": 1,
+      "skillSlug": "reading",
+      "timeLimitMinutes": 35,
+      "partSlugs": [
+        "rw-part-1-headings",
+        "rw-part-2-dialogues",
+        "rw-part-3-story-gaps",
+        "rw-part-4-messages"
+      ],
+      "questionRefs": [
+        "rw-01",
+        "rw-02",
+        "rw-03",
+        "rw-04",
+        "rw-05",
+        "rw-06",
+        "rw-07",
+        "rw-08",
+        "rw-09",
+        "rw-10",
+        "rw-11",
+        "rw-12",
+        "rw-13",
+        "rw-14",
+        "rw-15",
+        "rw-16",
+        "rw-17",
+        "rw-18",
+        "rw-19",
+        "rw-20",
+        "rw-21",
+        "rw-22"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Listening Part 2 — Fill in blanks",
+      "instructions": "Read the listening script. Write the missing words.",
+      "contextType": "listening",
+      "groupKey": "listening-part-2",
+      "passage": {
+        "title": "Riverside Technology Fair",
+        "text": "The Riverside Technology Fair opened on Friday in the sports hall. Students demonstrated robots, apps, and 3D-printed models. A judge praised a wheelchair ramp designed by Year 6. Visitors voted online for the most helpful invention. The organisers promised to run the fair again next year because attendance broke records."
+      },
+      "note": "Text-simulated listening — no audio."
+    },
+    {
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "partNumber": 1,
+      "title": "Reading Part 1 — Match headings",
+      "instructions": "Match each heading to the correct paragraph.",
+      "contextType": "reading",
+      "groupKey": "rw-headings",
+      "passage": {
+        "title": "Community newsletter excerpts",
+        "text": "Paragraph A: Our local library now opens on Sundays.\nParagraph B: The new cycle path is safer for families.\nParagraph C: Students planted trees behind the sports hall.\nParagraph D: The drama club will perform a play in June.\nParagraph E: The café offers free fruit for children after school."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-06"
+      ],
+      "groupKey": "rw-dlg-1",
+      "passage": {
+        "title": "Coding workshop",
+        "text": "Tutor: Today we'll debug this game.\nStudent: I think the problem is in line ten.\nTutor: Good spot. Change the variable and test again.\nStudent: It works now!"
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-07"
+      ],
+      "groupKey": "rw-dlg-2",
+      "passage": {
+        "title": "3D printer",
+        "text": "Engineer: The printer needs fresh filament.\nPupil: Which colour should we use?\nEngineer: Blue matches our school logo.\nPupil: I'll load it carefully."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-08"
+      ],
+      "groupKey": "rw-dlg-3",
+      "passage": {
+        "title": "Online safety talk",
+        "text": "Officer: Never share passwords with friends.\nClass: Why not?\nOfficer: Someone could access your accounts.\nClass: We'll remember that."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-09"
+      ],
+      "groupKey": "rw-dlg-4",
+      "passage": {
+        "title": "Judges' discussion",
+        "text": "Judge A: The ramp project solves a real problem.\nJudge B: I agree — it's practical and well built.\nJudge A: Let's mark it highly for usefulness.\nJudge B: Definitely."
+      }
+    },
+    {
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "partNumber": 2,
+      "title": "Reading Part 2 — Dialogues",
+      "instructions": "Read the dialogue and choose the best answer.",
+      "contextType": "dialogue",
+      "questionRefs": [
+        "rw-10"
+      ],
+      "groupKey": "rw-dlg-5",
+      "passage": {
+        "title": "Visitor feedback",
+        "text": "Visitor: Which invention helps elderly neighbours?\nStudent: The grocery-delivery app tracks orders.\nVisitor: Clever! How did you test it?\nStudent: We asked three families to try it."
+      }
+    },
+    {
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "partNumber": 3,
+      "title": "Reading Part 3 — Story gaps",
+      "instructions": "Read the story and complete the gaps.",
+      "contextType": "reading",
+      "groupKey": "rw-story",
+      "passage": {
+        "title": "The drone display",
+        "text": "During the afternoon, a drone club performed a short display. Although the hall was crowded, the pilots kept the drones above head height. One drone carried a banner that read 'STEM for Everyone'. When the batteries ran low, the pilots landed smoothly on marked mats. The audience applauded for several minutes."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-17"
+      ],
+      "groupKey": "rw-email-1",
+      "passage": {
+        "title": "Fair timetable",
+        "text": "Technology Fair — Friday schedule\n10:00 Opening speech\n11:30 Robot demos\n14:00 Drone display\n16:00 Prize announcements"
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-18"
+      ],
+      "groupKey": "rw-email-2",
+      "passage": {
+        "title": "App instructions",
+        "text": "Grocery Helper App:\n1. Create an account\n2. Add items to your list\n3. Choose a delivery time\n4. Pay securely online"
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-19"
+      ],
+      "groupKey": "rw-email-3",
+      "passage": {
+        "title": "Workshop signup",
+        "text": "Coding workshop — limited places!\nLevel: beginners\nBring: laptop and charger\nRegister at desk 3 before noon."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-20"
+      ],
+      "groupKey": "rw-email-4",
+      "passage": {
+        "title": "Safety poster",
+        "text": "Digital Safety Tips:\nUse strong passwords.\nAsk an adult before downloading apps.\nReport strange messages immediately."
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-21"
+      ],
+      "groupKey": "rw-email-5",
+      "passage": {
+        "title": "Sponsor email",
+        "text": "We enjoyed sponsoring the 3D-printing zone.\nPlease send photos for our website.\nRegards,\nTechCity Ltd"
+      }
+    },
+    {
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "partNumber": 4,
+      "title": "Reading Part 4 — Messages",
+      "instructions": "Read the message and complete each gap.",
+      "contextType": "reading",
+      "questionRefs": [
+        "rw-22"
+      ],
+      "groupKey": "rw-email-6",
+      "passage": {
+        "title": "Results blog",
+        "text": "Fair results published!\nMost votes: Grocery Helper App\nRunner-up: Smart plant waterer\nThank you to all participants."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "sortOrder": 0,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The fair opened in the sports [0].",
+        "correctAnswers": [
+          "hall"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-01",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "technology",
+      "skillTag": "listening",
+      "explanation": "Sports hall."
+    },
+    {
+      "sortOrder": 1,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Students demonstrated robots, apps, and 3D-printed [0].",
+        "correctAnswers": [
+          "models"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-02",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "skillTag": "listening",
+      "explanation": "3D-printed models."
+    },
+    {
+      "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "A judge praised a wheelchair [0] designed by Year 6.",
+        "correctAnswers": [
+          "ramp"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-03",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "invention",
+      "skillTag": "listening",
+      "explanation": "Wheelchair ramp."
+    },
+    {
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Visitors voted [0] for the most helpful invention.",
+        "correctAnswers": [
+          "online"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-04",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "technology",
+      "skillTag": "listening",
+      "explanation": "Voted online."
+    },
+    {
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Attendance broke [0].",
+        "correctAnswers": [
+          "records"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-05",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "events",
+      "skillTag": "listening",
+      "explanation": "Broke records."
+    },
+    {
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Change the [0] and test again.",
+        "correctAnswers": [
+          "variable"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-06",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "coding",
+      "skillTag": "listening",
+      "explanation": "Change the variable."
+    },
+    {
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The printer needs fresh [0].",
+        "correctAnswers": [
+          "filament"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-07",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "technology",
+      "skillTag": "listening",
+      "explanation": "Fresh filament."
+    },
+    {
+      "sortOrder": 7,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "Never share [0] with friends.",
+        "correctAnswers": [
+          "passwords"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-08",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "safety",
+      "skillTag": "listening",
+      "explanation": "Never share passwords."
+    },
+    {
+      "sortOrder": 8,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The ramp project is practical and well [0].",
+        "correctAnswers": [
+          "built"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-09",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "invention",
+      "skillTag": "listening",
+      "explanation": "Well built."
+    },
+    {
+      "sortOrder": 9,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They asked three [0] to try the app.",
+        "correctAnswers": [
+          "families"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-10",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "technology",
+      "skillTag": "listening",
+      "explanation": "Three families tested it."
+    },
+    {
+      "sortOrder": 10,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph A",
+          "rightText": "Library Sunday opening",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph B",
+          "rightText": "Safer cycling route",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph D",
+          "rightText": "Drama club performance",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-01",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "Shared newsletter paragraphs."
+    },
+    {
+      "sortOrder": 11,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph C",
+          "rightText": "Tree planting by students",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph E",
+          "rightText": "Free fruit after school",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph B",
+          "rightText": "Safer cycling route",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-02",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "C=trees, E=café, B=cycle path."
+    },
+    {
+      "sortOrder": 12,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph D",
+          "rightText": "Drama club performance",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph A",
+          "rightText": "Library Sunday opening",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph C",
+          "rightText": "Tree planting by students",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-03",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "D=drama, A=library, C=trees."
+    },
+    {
+      "sortOrder": 13,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph E",
+          "rightText": "Free fruit after school",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph A",
+          "rightText": "Library Sunday opening",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph D",
+          "rightText": "Drama club performance",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-04",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "E=café, A=library, D=drama."
+    },
+    {
+      "sortOrder": 14,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "questionText": "Which heading matches each paragraph?",
+      "pairs": [
+        {
+          "leftText": "Paragraph B",
+          "rightText": "Safer cycling route",
+          "sortOrder": 0
+        },
+        {
+          "leftText": "Paragraph E",
+          "rightText": "Free fruit after school",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Paragraph C",
+          "rightText": "Tree planting by students",
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-05",
+      "partSlug": "rw-part-1-headings",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "explanation": "B=cycle path, E=café, C=trees."
+    },
+    {
+      "sortOrder": 15,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "Where was the problem in the code?",
+      "choices": [
+        {
+          "text": "line ten",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "line two",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "line fifty",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-06",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "coding",
+      "skillTag": "reading",
+      "explanation": "Problem in line ten."
+    },
+    {
+      "sortOrder": 16,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "Which colour filament will they use?",
+      "choices": [
+        {
+          "text": "blue",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "red",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "black",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-07",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "technology",
+      "skillTag": "reading",
+      "explanation": "Blue matches the logo."
+    },
+    {
+      "sortOrder": 17,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "Why should you not share passwords?",
+      "choices": [
+        {
+          "text": "someone could access your accounts",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "games will delete themselves",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "phones will stop working",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-08",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "safety",
+      "skillTag": "reading",
+      "explanation": "Accounts could be accessed."
+    },
+    {
+      "sortOrder": 18,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "Why did the judges like the ramp?",
+      "choices": [
+        {
+          "text": "it solves a real problem",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "it is the smallest project",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "it uses gold paint",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-09",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "invention",
+      "skillTag": "reading",
+      "explanation": "Practical and useful."
+    },
+    {
+      "sortOrder": 19,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "How did they test the grocery app?",
+      "choices": [
+        {
+          "text": "three families tried it",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "they read a book",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "they watched a film",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "content": {
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-10",
+      "partSlug": "rw-part-2-dialogues",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "skillTag": "reading",
+      "explanation": "Three families tested it."
+    },
+    {
+      "sortOrder": 20,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The pilots kept the drones above head [0].",
+        "correctAnswers": [
+          "height"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-11",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "skillTag": "reading",
+      "explanation": "Above head height."
+    },
+    {
+      "sortOrder": 21,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "One drone carried a [0].",
+        "correctAnswers": [
+          "banner"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-12",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "events",
+      "skillTag": "reading",
+      "explanation": "Carried a banner."
+    },
+    {
+      "sortOrder": 22,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The banner read 'STEM for [0]'.",
+        "correctAnswers": [
+          "Everyone"
+        ],
+        "levelTag": "flyers",
+        "acceptedAnswers": {
+          "0": [
+            "Everyone",
+            "everyone"
+          ]
+        }
+      },
+      "questionRef": "rw-13",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "education",
+      "skillTag": "reading",
+      "explanation": "STEM for Everyone."
+    },
+    {
+      "sortOrder": 23,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "When the batteries ran [0], they landed.",
+        "correctAnswers": [
+          "low"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-14",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "technology",
+      "skillTag": "reading",
+      "explanation": "Batteries ran low."
+    },
+    {
+      "sortOrder": 24,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "They landed on marked [0].",
+        "correctAnswers": [
+          "mats"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-15",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "safety",
+      "skillTag": "reading",
+      "explanation": "Marked mats."
+    },
+    {
+      "sortOrder": 25,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "The audience applauded for several [0].",
+        "correctAnswers": [
+          "minutes"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-16",
+      "partSlug": "rw-part-3-story-gaps",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "events",
+      "skillTag": "reading",
+      "explanation": "Applauded for several minutes."
+    },
+    {
+      "sortOrder": 26,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "14:00 Drone [0]",
+        "correctAnswers": [
+          "display"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-17",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "events",
+      "skillTag": "reading",
+      "explanation": "Drone display at 14:00."
+    },
+    {
+      "sortOrder": 27,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "4. Pay securely [0]",
+        "correctAnswers": [
+          "online"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-18",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "skillTag": "reading",
+      "explanation": "Pay securely online."
+    },
+    {
+      "sortOrder": 28,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Register at desk 3 before [0].",
+        "correctAnswers": [
+          "noon"
+        ],
+        "levelTag": "flyers",
+        "acceptedAnswers": {
+          "0": [
+            "noon",
+            "12"
+          ]
+        }
+      },
+      "questionRef": "rw-19",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "medium",
+      "topicTag": "workshop",
+      "skillTag": "reading",
+      "explanation": "Before noon."
+    },
+    {
+      "sortOrder": 29,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Report strange [0] immediately.",
+        "correctAnswers": [
+          "messages"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-20",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "safety",
+      "skillTag": "reading",
+      "explanation": "Report strange messages."
+    },
+    {
+      "sortOrder": 30,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Most votes: Grocery Helper [0]",
+        "correctAnswers": [
+          "App"
+        ],
+        "levelTag": "flyers",
+        "acceptedAnswers": {
+          "0": [
+            "App",
+            "app"
+          ]
+        }
+      },
+      "questionRef": "rw-21",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "easy",
+      "topicTag": "technology",
+      "skillTag": "reading",
+      "explanation": "Grocery Helper App won."
+    },
+    {
+      "sortOrder": 31,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the message.",
+      "content": {
+        "template": "Runner-up: Smart plant [0]",
+        "correctAnswers": [
+          "waterer"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "rw-22",
+      "partSlug": "rw-part-4-messages",
+      "sectionSlug": "reading-writing",
+      "difficulty": "hard",
+      "topicTag": "invention",
+      "skillTag": "reading",
+      "explanation": "Smart plant waterer."
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "technology",
+      "invention",
+      "events",
+      "coding",
+      "safety",
+      "community",
+      "education",
+      "workshop"
+    ],
+    "distinctGrammarPatterns": [
+      "present perfect",
+      "passive voice (simple)",
+      "conditional type 1",
+      "reported speech (intro)",
+      "phrasal verbs"
+    ],
+    "subskillsRepresented": [
+      "technology vocabulary",
+      "reading longer dialogues",
+      "inferring purpose",
+      "completing formal notices",
+      "listening gap fill"
+    ],
+    "difficultyCounts": {
+      "easy": 8,
+      "medium": 15,
+      "hard": 9
+    },
+    "notes": "M1.3 Flyers T2 — technology fair theme; medium-heavy difficulty."
+  }
+}

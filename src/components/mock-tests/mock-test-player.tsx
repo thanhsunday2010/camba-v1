@@ -5,6 +5,7 @@ import type { MockTestData, QuestionResult, UserAnswer } from "@/types/learning"
 import { QuestionRenderer } from "@/components/exercises/exercise-player";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { MockTestFramedQuestionFrame } from "@/components/mock-tests/mock-test-framed-question-frame";
+import { MockTestQuestionContextPanel } from "@/components/mock-tests/mock-test-question-context-panel";
 import { MockTestQuestionList } from "@/components/mock-tests/mock-test-question-list";
 import { Button } from "@/components/ui/button";
 import type {
@@ -96,9 +97,21 @@ export function MockTestPlayer({
   const isReviewView = Boolean(reviewQuestionId);
   const isLast = displayIndex === flatQuestions.length - 1;
   const currentQuestionResult = questionResults.find((r) => r.questionId === currentQuestion.id);
+  const questionSummary = viewModel.questions.find((q) => q.id === currentQuestion.id);
+  const questionContext = questionSummary?.context ?? null;
+
+  const contextPanel =
+    questionContext?.hasContextPanel ? (
+      <MockTestQuestionContextPanel
+        context={questionContext}
+        labels={labels.contextPanel}
+        showTranscript={isReviewView}
+      />
+    ) : null;
 
   const questionBody = (
     <div className="space-y-4">
+      {contextPanel}
       <p className="camba-body font-medium text-foreground">
         {currentQuestion.question_text}
       </p>
