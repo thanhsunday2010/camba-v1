@@ -18,6 +18,7 @@ import type {
   LessonPageViewModel,
   ResolvedLessonProgress,
 } from "@/lib/learning/lesson-page-types";
+import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
 
 interface LessonPageShellProps {
   viewModel: LessonPageViewModel;
@@ -28,7 +29,6 @@ interface LessonPageShellProps {
   sessionCompletedExerciseIds: Set<string>;
   sessionAccuracyByExerciseId: ReadonlyMap<string, number>;
   lastCompletedMeta: LessonExerciseCompletionMeta | null;
-  remainingExercisesFormatter?: (count: number) => string;
   activeExerciseId?: string | null;
   isReviewingLesson?: boolean;
   onPrimaryHeroAction?: () => void;
@@ -47,7 +47,6 @@ export function LessonPageShell({
   sessionCompletedExerciseIds,
   sessionAccuracyByExerciseId,
   lastCompletedMeta,
-  remainingExercisesFormatter,
   activeExerciseId,
   isReviewingLesson = false,
   onPrimaryHeroAction,
@@ -56,6 +55,7 @@ export function LessonPageShell({
   children,
   className,
 }: LessonPageShellProps) {
+  const fmt = useLessonI18nFormatters();
   const { lesson, context, progress, exerciseSummaries } = viewModel;
   const {
     completedCount,
@@ -87,8 +87,8 @@ export function LessonPageShell({
   }, [activeExerciseId, lastCompletedMeta, sessionAccuracyByExerciseId]);
 
   const remainingLabel =
-    remainingExercisesFormatter && remainingCount > 0 && !isLessonCompleteResolved
-      ? remainingExercisesFormatter(remainingCount)
+    remainingCount > 0 && !isLessonCompleteResolved
+      ? fmt.remainingExercises(remainingCount)
       : undefined;
 
   return (
@@ -119,7 +119,6 @@ export function LessonPageShell({
         labels={{
           estimatedMinutes: labels.estimatedMinutes,
           unitLabel: labels.unitLabel,
-          exerciseCount: labels.exerciseCount,
           continueLesson: labels.continueLesson,
           retryLesson: labels.retryLesson,
           reviewLesson: labels.reviewLesson,

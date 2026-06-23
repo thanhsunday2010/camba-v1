@@ -5,6 +5,7 @@ import { ProgressRing } from "@/components/camba/progress-ring";
 import { cn } from "@/lib/utils";
 import { ArrowLeft } from "lucide-react";
 import type { LessonChromeLabels } from "@/lib/learning/lesson-page-types";
+import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
 
 interface LessonActiveExerciseHeaderProps {
   lessonTitle: string;
@@ -27,7 +28,8 @@ export function LessonActiveExerciseHeader({
   onBackToList,
   className,
 }: LessonActiveExerciseHeaderProps) {
-  const positionLabel = labels.exercisePosition(position, total);
+  const fmt = useLessonI18nFormatters();
+  const positionLabel = fmt.exercisePosition(position, total);
 
   return (
     <div
@@ -50,7 +52,7 @@ export function LessonActiveExerciseHeader({
         <div className="flex items-center gap-2">
           <ProgressRing value={completionPercent} size={40} strokeWidth={4} />
           <span className="camba-caption text-muted hidden sm:inline">
-            {labels.lessonProgressShort(completionPercent)}
+            {fmt.lessonProgressShort(completionPercent)}
           </span>
         </div>
       </div>

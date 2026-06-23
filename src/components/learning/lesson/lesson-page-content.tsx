@@ -12,6 +12,7 @@ import type {
   LessonPageLabels,
   LessonPageViewModel,
 } from "@/lib/learning/lesson-page-types";
+import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
 import { LessonPageShell } from "@/components/learning/lesson/lesson-page-shell";
 import { LessonPlayer } from "@/components/learning/lesson-player";
 
@@ -23,10 +24,8 @@ interface LessonPageContentProps {
   listLabels: LessonExerciseListLabels & {
     exercisesTitle: string;
     exercisesSubtitle: string;
-    exercisesProgress: (completed: number, total: number) => string;
     nextSuggested: string;
     backToList: string;
-    remainingExercises?: (count: number) => string;
     reviewExercisesSubtitle?: string;
     backToComplete?: string;
   };
@@ -43,6 +42,7 @@ export function LessonPageContent({
   aiLabels,
   chromeLabels,
 }: LessonPageContentProps) {
+  const fmt = useLessonI18nFormatters();
   const [sessionCompletedExerciseIds, setSessionCompletedExerciseIds] = useState(
     () => new Set(viewModel.completedExerciseIds)
   );
@@ -146,7 +146,7 @@ export function LessonPageContent({
 
   const listSubtitle = isReviewingLesson && listLabels.reviewExercisesSubtitle
     ? listLabels.reviewExercisesSubtitle
-    : listLabels.exercisesProgress(
+    : fmt.exercisesProgress(
         resolvedProgress.completedCount,
         resolvedProgress.totalExercises
       );
@@ -161,7 +161,6 @@ export function LessonPageContent({
       sessionCompletedExerciseIds={sessionCompletedExerciseIds}
       sessionAccuracyByExerciseId={sessionAccuracyByExerciseId}
       lastCompletedMeta={lastCompletedMeta}
-      remainingExercisesFormatter={listLabels.remainingExercises}
       activeExerciseId={activeExerciseId}
       isReviewingLesson={isReviewingLesson}
       onPrimaryHeroAction={onPrimaryHeroAction}

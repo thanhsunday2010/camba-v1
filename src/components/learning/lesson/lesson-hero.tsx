@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
 import { ProgramBadge } from "@/components/camba/cambridge/program-badge";
 import {
   LessonStatusPill,
@@ -32,7 +33,6 @@ interface LessonHeroProps {
     LessonPageLabels,
     | "estimatedMinutes"
     | "unitLabel"
-    | "exerciseCount"
     | "continueLesson"
     | "retryLesson"
     | "reviewLesson"
@@ -81,6 +81,7 @@ export function LessonHero({
   onPrimaryAction,
   className,
 }: LessonHeroProps) {
+  const fmt = useLessonI18nFormatters();
   const SkillIcon = context.skillSlug ? SKILL_ICONS[context.skillSlug] : BookOpen;
   const displayState = getLessonDisplayState(
     serverProgress,
@@ -96,7 +97,7 @@ export function LessonHero({
   if (context.skillName) metaParts.push(context.skillName);
   if (context.unitTitle) metaParts.push(`${labels.unitLabel}: ${context.unitTitle}`);
   if (resolvedProgress.totalExercises > 0 && !isCompleteMode) {
-    metaParts.push(labels.exerciseCount(resolvedProgress.totalExercises));
+    metaParts.push(fmt.exerciseCount(resolvedProgress.totalExercises));
   }
 
   if (isCompleteMode) {
@@ -204,7 +205,7 @@ export function LessonHero({
               />
               <div>
                 <p className="camba-caption text-muted">
-                  {labels.exerciseCount(resolvedProgress.totalExercises)}
+                  {fmt.exerciseCount(resolvedProgress.totalExercises)}
                 </p>
                 <p className="camba-stat text-lg text-program">
                   {resolvedProgress.completedCount}/{resolvedProgress.totalExercises}

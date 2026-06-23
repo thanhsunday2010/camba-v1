@@ -12,6 +12,7 @@ import type {
   LessonExerciseListLabels,
   LessonExerciseSummary,
 } from "@/lib/learning/lesson-page-types";
+import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
 import { SKILL_ICONS } from "@/lib/design/skill-icons";
 import {
   CheckCircle2,
@@ -50,13 +51,14 @@ function getExerciseTypeLabel(
 
 function getExerciseSubtitle(
   summary: LessonExerciseSummary,
-  labels: LessonExerciseListLabels
+  labels: LessonExerciseListLabels,
+  fmt: ReturnType<typeof useLessonI18nFormatters>
 ): string {
   const typeLabel = getExerciseTypeLabel(summary, labels);
   if (summary.exerciseType === "writing") return labels.writingAi;
   if (summary.exerciseType === "speaking") return labels.speakingAi;
   if (summary.questionCount > 0) {
-    return `${typeLabel} · ${labels.questionCount(summary.questionCount)}`;
+    return `${typeLabel} · ${fmt.questionCount(summary.questionCount)}`;
   }
   return typeLabel;
 }
@@ -105,6 +107,7 @@ export function LessonExerciseCard({
   onSelect,
   className,
 }: LessonExerciseCardProps) {
+  const fmt = useLessonI18nFormatters();
   const displayState = resolveExerciseDisplayState(
     summary,
     sessionCompletedIds,
@@ -169,14 +172,12 @@ export function LessonExerciseCard({
               {typeBadge}
             </span>
             <p className="camba-caption text-muted truncate">
-              {getExerciseSubtitle(summary, labels)}
+              {getExerciseSubtitle(summary, labels, fmt)}
               {summary.latestAttempt?.accuracyPercent != null &&
                 summary.latestAttempt.accuracyPercent > 0 && (
                   <>
                     {" · "}
-                    {labels.latestScore(
-                      Math.round(summary.latestAttempt.accuracyPercent)
-                    )}
+                    {fmt.latestScore(Math.round(summary.latestAttempt.accuracyPercent))}
                   </>
                 )}
             </p>

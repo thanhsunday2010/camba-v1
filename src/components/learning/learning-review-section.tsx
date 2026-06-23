@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/camba/section-header";
 import { LearningReviewCard } from "@/components/learning/learning-review-card";
 import type { ReviewLessonItem, ReviewReasonKey } from "@/lib/learning/path-ui-utils";
@@ -12,7 +13,6 @@ interface LearningReviewSectionLabels {
   ctaReview: string;
   minutes: string;
   reasons: Record<ReviewReasonKey, string>;
-  weakSkillHint: (skill: string) => string;
 }
 
 interface LearningReviewSectionProps {
@@ -28,10 +28,12 @@ export function LearningReviewSection({
   weakSkillLabel,
   labels,
 }: LearningReviewSectionProps) {
+  const t = useTranslations("learning");
+
   if (items.length === 0) return null;
 
   const subtitle = weakSkillLabel
-    ? labels.weakSkillHint(weakSkillLabel)
+    ? t("reviewWeakSkillHint", { skill: weakSkillLabel })
     : labels.subtitle;
 
   return (

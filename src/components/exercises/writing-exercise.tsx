@@ -9,6 +9,7 @@ import { ChevronRight, Loader2, PenLine } from "lucide-react";
 import { toast } from "sonner";
 import type { WritingFeedback } from "@/types/ai";
 import type { AiExerciseLabels } from "@/lib/learning/lesson-page-types";
+import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
 
 interface WritingExerciseProps {
   exerciseId: string;
@@ -43,6 +44,7 @@ export function WritingExercise({
   nextExerciseTitle,
   onNextExercise,
 }: WritingExerciseProps) {
+  const fmt = useLessonI18nFormatters();
   const [content, setContent] = useState("");
   const [feedback, setFeedback] = useState<WritingFeedback | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -53,7 +55,7 @@ export function WritingExercise({
   async function handleSubmit() {
     setError(null);
     if (wordCount < minWords) {
-      setError(labels.minWordsError(minWords));
+      setError(fmt.minWordsError(minWords));
       return;
     }
 

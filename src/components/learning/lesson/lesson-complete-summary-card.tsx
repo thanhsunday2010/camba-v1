@@ -11,6 +11,7 @@ import type {
   LessonPageProgress,
   ResolvedLessonProgress,
 } from "@/lib/learning/lesson-page-types";
+import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
 import { ArrowRight, CheckCircle2, RotateCcw, Sparkles, Trophy } from "lucide-react";
 
 interface LessonCompleteSummaryCardProps {
@@ -28,11 +29,12 @@ interface LessonCompleteSummaryCardProps {
 function getRecommendationText(
   variant: LessonCompleteRecommendationVariant,
   labels: LessonCompleteSummaryLabels,
-  reviewableCount: number
+  reviewableCount: number,
+  fmt: ReturnType<typeof useLessonI18nFormatters>
 ): string {
   switch (variant) {
     case "exercisesNeedReview":
-      return labels.recommendationExercisesNeedReview(reviewableCount);
+      return fmt.recommendationExercisesNeedReview(reviewableCount);
     case "lessonNeedsReview":
       return labels.recommendationLessonNeedsReview;
     case "finalQuizLow":
@@ -69,6 +71,7 @@ export function LessonCompleteSummaryCard({
   onReviewLesson,
   labels,
 }: LessonCompleteSummaryCardProps) {
+  const fmt = useLessonI18nFormatters();
   const recommendationVariant = getLessonCompleteRecommendationVariant(
     serverProgress,
     resolvedProgress.isLessonCompleteResolved,
@@ -78,7 +81,8 @@ export function LessonCompleteSummaryCard({
   const recommendationText = getRecommendationText(
     recommendationVariant,
     labels,
-    reviewableExerciseCount
+    reviewableExerciseCount,
+    fmt
   );
   const recommendationSupport = getRecommendationSupport(recommendationVariant, labels);
   const isPositive = recommendationVariant === "greatJobContinue";
@@ -190,7 +194,7 @@ export function LessonCompleteSummaryCard({
               <Button variant="quest" size="lg" className="gap-2 w-full" asChild>
                 <Link href={`/learning/lesson/${nextPathLesson.id}`}>
                   <Sparkles className="h-4 w-4" />
-                  {labels.nextPathLesson(nextPathLesson.title)}
+                  {fmt.nextPathLesson(nextPathLesson.title)}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>

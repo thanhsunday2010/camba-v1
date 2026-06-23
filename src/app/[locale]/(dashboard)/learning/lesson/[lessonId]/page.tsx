@@ -66,10 +66,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
     breadcrumbLesson: t("breadcrumbLesson"),
     exercisesTitle: t("exercisesTitle"),
     exercisesSubtitle: t("exercisesSubtitle"),
-    exercisesProgress: (completed: number, total: number) =>
-      t("exercisesProgress", { completed, total }),
     estimatedMinutes: t("estimatedMinutes"),
-    exerciseCount: (count: number) => t("exerciseCount", { count }),
     completionSummary: t("completionSummary"),
     accuracy: t("accuracy"),
     mastery: t("mastery"),
@@ -80,7 +77,6 @@ export default async function LessonPage({ params }: LessonPageProps) {
     continueLesson: t("continueLesson"),
     retryLesson: t("retryLesson"),
     reviewLesson: t("reviewLesson"),
-    nextPathLesson: (lesson: string) => t("nextPathLesson", { lesson }),
     heroContinueHint: t("heroContinueHint"),
     stateLabels,
   };
@@ -88,19 +84,15 @@ export default async function LessonPage({ params }: LessonPageProps) {
   const completeSummaryLabels: LessonCompleteSummaryLabels = {
     title: tcs("title"),
     performanceNote: tcs("performanceNote"),
-    recommendationExercisesNeedReview: (count: number) =>
-      tcs("recommendationExercisesNeedReview", { count }),
     recommendationLessonNeedsReview: tcs("recommendationLessonNeedsReview"),
     recommendationFinalQuizLow: tcs("recommendationFinalQuizLow"),
     recommendationGreatJob: tcs("recommendationGreatJob"),
     backToPath: t("backToPath"),
     retryLesson: t("retryLesson"),
-    nextPathLesson: (lesson: string) => t("nextPathLesson", { lesson }),
     reviewSectionTitle: tcs("reviewSectionTitle"),
     reviewSectionSubtitle: tcs("reviewSectionSubtitle"),
     reviewExerciseAction: tcs("reviewExerciseAction"),
     finalExerciseHeading: tcs("finalExerciseHeading"),
-    finalExerciseSubtitle: (title: string) => tcs("finalExerciseSubtitle", { title }),
     finalExerciseReviewTag: tcs("finalExerciseReviewTag"),
     lessonLevelScoreNote: tcs("lessonLevelScoreNote"),
     victorySubtitle: tcs("victorySubtitle"),
@@ -126,15 +118,10 @@ export default async function LessonPage({ params }: LessonPageProps) {
     inProgress: t("inProgress"),
     needsReview: t("needsReview"),
     available: t("available"),
-    questionCount: (count: number) => t("questionCount", { count }),
     writingAi: t("writingAi"),
     speakingAi: t("speakingAi"),
-    latestScore: (score: number) => t("latestScore", { score }),
-    remainingExercises: (count: number) => t("remainingExercises", { count }),
     exercisesTitle: t("exercisesTitle"),
     exercisesSubtitle: t("exercisesSubtitle"),
-    exercisesProgress: (completed: number, total: number) =>
-      t("exercisesProgress", { completed, total }),
     nextSuggested: t("nextSuggested"),
     backToList: t("backToList"),
     reviewExercisesSubtitle: t("reviewExercisesSubtitle"),
@@ -147,7 +134,6 @@ export default async function LessonPage({ params }: LessonPageProps) {
     wordCount: t("ai.wordCount"),
     submit: t("ai.submit"),
     submitting: t("ai.submitting"),
-    minWordsError: (min: number) => t("ai.minWordsError", { min }),
     result: t("ai.result"),
     estimatedLevel: t("ai.estimatedLevel"),
     grammar: t("ai.grammar"),
@@ -175,13 +161,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
 
   const chromeLabels = {
     backToList: t("backToList"),
-    exercisePosition: (current: number, total: number) =>
-      t("exercisePosition", { current, total }),
-    lessonProgressShort: (percent: number) => t("lessonProgressShort", { percent }),
     submitFailed: t("submitFailed"),
-    embeddedResultHeading: (percent: number) => t("embeddedResultHeading", { percent }),
-    embeddedResultScore: (score: number, maxScore: number) =>
-      t("embeddedResultScore", { score, maxScore }),
   };
 
   if (!viewModel.progress.isUnlocked) {

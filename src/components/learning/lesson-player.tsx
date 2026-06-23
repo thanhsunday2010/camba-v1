@@ -254,14 +254,6 @@ export function LessonPlayer({
                 nextExercise && !showFinalExerciseFrame ? openNextExercise : undefined
               }
               embeddedResult={showFinalExerciseFrame}
-              resultLabels={
-                showFinalExerciseFrame
-                  ? {
-                      resultHeading: chromeLabels.embeddedResultHeading,
-                      scoreLine: chromeLabels.embeddedResultScore,
-                    }
-                  : undefined
-              }
             />
           )}
         </CambaCard>

@@ -14,6 +14,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExerciseContextPanel } from "@/components/exercises/exercise-context-panel";
 import { ChevronLeft, ChevronRight, CheckCircle2, XCircle, Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
 
 interface QuestionRendererProps {
   question: PublicQuestion;
@@ -148,10 +149,6 @@ interface ExercisePlayerProps {
   nextExerciseTitle?: string;
   onNextExercise?: () => void;
   embeddedResult?: boolean;
-  resultLabels?: {
-    resultHeading: (percent: number) => string;
-    scoreLine: (score: number, maxScore: number) => string;
-  };
 }
 
 export function ExercisePlayer({
@@ -166,8 +163,8 @@ export function ExercisePlayer({
   nextExerciseTitle,
   onNextExercise,
   embeddedResult = false,
-  resultLabels,
 }: ExercisePlayerProps) {
+  const fmt = useLessonI18nFormatters();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, UserAnswer>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -202,11 +199,11 @@ export function ExercisePlayer({
   }
 
   if (showResults && result) {
-    const resultHeading = resultLabels?.resultHeading
-      ? resultLabels.resultHeading(result.accuracyPercent)
+    const resultHeading = embeddedResult
+      ? fmt.embeddedResultHeading(result.accuracyPercent)
       : `Kết quả: ${result.accuracyPercent}%`;
-    const scoreLine = resultLabels?.scoreLine
-      ? resultLabels.scoreLine(result.score, result.maxScore)
+    const scoreLine = embeddedResult
+      ? fmt.embeddedResultScore(result.score, result.maxScore)
       : `Điểm: ${result.score}/${result.maxScore}`;
 
     if (embeddedResult) {

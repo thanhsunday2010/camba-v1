@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import type { LessonCompleteSummaryLabels } from "@/lib/learning/lesson-page-types";
+import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
 import { Button } from "@/components/ui/button";
 import { AlertCircle, ArrowLeft, ChevronDown } from "lucide-react";
 import type { ReactNode } from "react";
@@ -11,7 +12,6 @@ interface LessonFinalExerciseResultFrameProps {
   labels: Pick<
     LessonCompleteSummaryLabels,
     | "finalExerciseHeading"
-    | "finalExerciseSubtitle"
     | "finalExerciseReviewTag"
     | "lessonLevelScoreNote"
     | "finalExerciseDetailsLabel"
@@ -31,7 +31,8 @@ export function LessonFinalExerciseResultFrame({
   children,
   className,
 }: LessonFinalExerciseResultFrameProps) {
-  const subtitle = labels.finalExerciseSubtitle(exerciseTitle);
+  const fmt = useLessonI18nFormatters();
+  const subtitle = fmt.finalExerciseSubtitle(exerciseTitle);
 
   return (
     <section

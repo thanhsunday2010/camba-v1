@@ -166,9 +166,7 @@ export default async function LearningPage() {
           minutes: t("minutes"),
         },
         skillFilter: {
-          hiddenMessage: (skill: string) => t("skillFilterHidden", { skill }),
           showAll: t("skillFilterShowAll"),
-          switchSkill: (skill: string) => t("skillFilterSwitch", { skill }),
         },
         skillNav: {
           all: t("skillAll"),
@@ -177,7 +175,6 @@ export default async function LearningPage() {
         review: {
           title: t("reviewTitle"),
           subtitle: t("reviewSubtitle"),
-          weakSkillHint: (skill: string) => t("reviewWeakSkillHint", { skill }),
           stateNeedsReview: t("stateNeedsReview"),
           ctaReview: t("ctaReview"),
           minutes: t("minutes"),

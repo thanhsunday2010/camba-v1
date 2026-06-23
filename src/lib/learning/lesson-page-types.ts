@@ -92,9 +92,7 @@ export type LessonPageLabels = {
   breadcrumbLesson: string;
   exercisesTitle: string;
   exercisesSubtitle: string;
-  exercisesProgress: (completed: number, total: number) => string;
   estimatedMinutes: string;
-  exerciseCount: (count: number) => string;
   completionSummary: string;
   accuracy: string;
   mastery: string;
@@ -105,7 +103,6 @@ export type LessonPageLabels = {
   continueLesson: string;
   retryLesson: string;
   reviewLesson: string;
-  nextPathLesson: (lesson: string) => string;
   stateLabels: Record<LessonDisplayState, string>;
   heroContinueHint: string;
 };
@@ -119,18 +116,15 @@ export type LessonCompleteRecommendationVariant =
 export type LessonCompleteSummaryLabels = {
   title: string;
   performanceNote: string;
-  recommendationExercisesNeedReview: (count: number) => string;
   recommendationLessonNeedsReview: string;
   recommendationFinalQuizLow: string;
   recommendationGreatJob: string;
   backToPath: string;
   retryLesson: string;
-  nextPathLesson: (lesson: string) => string;
   reviewSectionTitle: string;
   reviewSectionSubtitle: string;
   reviewExerciseAction: string;
   finalExerciseHeading: string;
-  finalExerciseSubtitle: (title: string) => string;
   finalExerciseReviewTag: string;
   lessonLevelScoreNote: string;
   victorySubtitle: string;
@@ -157,7 +151,6 @@ export type AiExerciseLabels = {
   wordCount: string;
   submit: string;
   submitting: string;
-  minWordsError: (min: number) => string;
   result: string;
   estimatedLevel: string;
   grammar: string;
@@ -185,11 +178,7 @@ export type AiExerciseLabels = {
 
 export type LessonChromeLabels = {
   backToList: string;
-  exercisePosition: (current: number, total: number) => string;
-  lessonProgressShort: (percent: number) => string;
   submitFailed: string;
-  embeddedResultHeading: (percent: number) => string;
-  embeddedResultScore: (score: number, maxScore: number) => string;
 };
 
 export type LessonExerciseListLabels = {
@@ -201,9 +190,7 @@ export type LessonExerciseListLabels = {
   inProgress: string;
   completed: string;
   needsReview: string;
-  questionCount: (count: number) => string;
   writingAi: string;
   speakingAi: string;
-  latestScore: (score: number) => string;
   exerciseTypeLabels: Record<string, string>;
 };
