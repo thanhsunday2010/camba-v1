@@ -13,7 +13,7 @@ import type {
   MockTestTakeViewModel,
   ResolvedMockTestProgress,
 } from "@/lib/mock-tests/mock-test-types";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Loader2 } from "lucide-react";
 
 interface MockTestPlayerProps {
   viewModel: MockTestTakeViewModel;
@@ -222,7 +222,14 @@ export function MockTestPlayer({
 
         {isLast ? (
           <Button type="button" onClick={onSubmit} disabled={isSubmitting}>
-            {isSubmitting ? labels.submitting : labels.submit}
+            {isSubmitting ? (
+              <>
+                <Loader2 className="h-4 w-4 animate-spin" />
+                {labels.submitting}
+              </>
+            ) : (
+              labels.submit
+            )}
           </Button>
         ) : (
           <Button type="button" onClick={() => onIndexChange(currentQuestionIndex + 1)}>

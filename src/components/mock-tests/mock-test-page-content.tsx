@@ -103,29 +103,35 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
   const handleSubmit = useCallback(() => {
     const timeSpent = Math.round((Date.now() - startTime) / 1000);
     startTransition(async () => {
-      const response = await submitMockTest(viewModel.id, answers, timeSpent);
-      if (response.success && response.data) {
-        const result = response.data;
-        const attempt = buildMockTestAttemptSummary({
-          attemptId: "session",
-          score: result.score,
-          maxScore: result.maxScore,
-          completedAt: new Date().toISOString(),
-          timeSpentSeconds: timeSpent,
-          skillBreakdown: result.skillBreakdown,
-          shieldEstimate: result.shieldEstimate,
-        });
-        setSessionAttempt(attempt);
-        setQuestionResults(result.questionResults);
-        writeMockTestSessionSnapshot(viewModel.id, {
-          attempt,
-          answers,
-          questionResults: result.questionResults,
-        });
-        setActiveReviewQuestionId(null);
-        setIsReviewingTest(false);
-      } else {
-        toast.error(labels.take.submitFailed);
+      try {
+        const response = await submitMockTest(viewModel.id, answers, timeSpent);
+        if (response.success && response.data) {
+          const result = response.data;
+          const attempt = buildMockTestAttemptSummary({
+            attemptId: "session",
+            score: result.score,
+            maxScore: result.maxScore,
+            completedAt: new Date().toISOString(),
+            timeSpentSeconds: timeSpent,
+            skillBreakdown: result.skillBreakdown,
+            shieldEstimate: result.shieldEstimate,
+          });
+          writeMockTestSessionSnapshot(viewModel.id, {
+            attempt,
+            answers,
+            questionResults: result.questionResults,
+          });
+          setSessionAttempt(attempt);
+          setQuestionResults(result.questionResults);
+          setActiveReviewQuestionId(null);
+          setIsReviewingTest(false);
+        } else {
+          toast.error(response.error ?? labels.take.submitFailed);
+        }
+      } catch (error) {
+        toast.error(
+          error instanceof Error ? error.message : labels.take.submitFailed
+        );
       }
     });
   }, [answers, labels.take.submitFailed, startTime, viewModel.id]);

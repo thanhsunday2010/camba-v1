@@ -2,6 +2,7 @@
 -- Mock-bank exercises stay off the lesson path (lesson is_active = false) but questions
 -- must be readable for /mock-tests take flow.
 
+DROP POLICY IF EXISTS "Authenticated can view questions in active mock tests" ON public.questions;
 CREATE POLICY "Authenticated can view questions in active mock tests"
   ON public.questions FOR SELECT
   TO authenticated
@@ -16,6 +17,7 @@ CREATE POLICY "Authenticated can view questions in active mock tests"
     )
   );
 
+DROP POLICY IF EXISTS "Authenticated can view choices for mock test questions" ON public.choices;
 CREATE POLICY "Authenticated can view choices for mock test questions"
   ON public.choices FOR SELECT
   TO authenticated
@@ -30,6 +32,7 @@ CREATE POLICY "Authenticated can view choices for mock test questions"
     )
   );
 
+DROP POLICY IF EXISTS "Authenticated can view pairs for mock test questions" ON public.question_pairs;
 CREATE POLICY "Authenticated can view pairs for mock test questions"
   ON public.question_pairs FOR SELECT
   TO authenticated

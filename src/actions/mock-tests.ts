@@ -1,5 +1,6 @@
 "use server";
 
+import { after } from "next/server";
 import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
 import { scoreExercise } from "@/lib/learning/scoring";
@@ -74,28 +75,34 @@ export async function submitMockTest(
     return { success: false, error: attemptError.message };
   }
 
-  if (test.levelId && Object.keys(shieldEstimate).length > 0) {
-    const { data: gamification } = await supabase
-      .from("user_gamification")
-      .select("shield_progress")
-      .eq("user_id", user.id)
-      .single();
+  after(async () => {
+    try {
+      if (test.levelId && Object.keys(shieldEstimate).length > 0) {
+        const { data: gamification } = await supabase
+          .from("user_gamification")
+          .select("shield_progress")
+          .eq("user_id", user.id)
+          .single();
 
-    const existing = (gamification?.shield_progress as Record<string, number>) ?? {};
-    const merged = mergeSkillShields(existing, shieldEstimate, maxShields);
+        const existing = (gamification?.shield_progress as Record<string, number>) ?? {};
+        const merged = mergeSkillShields(existing, shieldEstimate, maxShields);
 
-    await supabase
-      .from("user_gamification")
-      .update({ shield_progress: merged as Json })
-      .eq("user_id", user.id);
-  }
+        await supabase
+          .from("user_gamification")
+          .update({ shield_progress: merged as Json })
+          .eq("user_id", user.id);
+      }
 
-  await onMockTestCompleted(user.id, testId);
+      await onMockTestCompleted(user.id, testId);
 
-  revalidatePath("/mock-tests");
-  revalidatePath("/dashboard");
-  revalidatePath(`/mock-tests/${testId}`);
-  revalidatePath(`/mock-tests/${testId}/take`);
+      revalidatePath("/mock-tests");
+      revalidatePath("/dashboard");
+      revalidatePath(`/mock-tests/${testId}`);
+      revalidatePath(`/mock-tests/${testId}/take`);
+    } catch (error) {
+      console.error("Post-mock-test submit gamification failed:", error);
+    }
+  });
 
   return {
     success: true,
