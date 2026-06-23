@@ -470,7 +470,7 @@ export function vocabularyLessons({
               questionText: "He _____ plays football in the park.",
               skillTag: "vocabulary",
               topicTag,
-              explanation: "Passage: sometimes plays football.",
+              explanation: "Trong bài đọc: sometimes plays football — đôi khi chơi, không phải mỗi ngày.",
               correct: "sometimes",
               wrong: ["never", "always"],
               distractorNotes: ["He does play sometimes", "Not every day"],

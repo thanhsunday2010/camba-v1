@@ -175,6 +175,12 @@ export type AiExerciseLabels = {
   transcript: string;
   transcriptPlaceholder: string;
   transcriptUnsupported: string;
+  micAccessDenied: string;
+  micNotFound: string;
+  micInsecureContext: string;
+  micNotSupported: string;
+  micRecorderUnsupported: string;
+  micUnknownError: string;
 };
 
 export type LessonChromeLabels = {

@@ -1477,7 +1477,7 @@
               "levelTag": "movers",
               "difficultyRating": 2,
               "points": 1,
-              "explanation": "Passage: sometimes plays football.",
+              "explanation": "Trong bài đọc: sometimes plays football — đôi khi chơi, không phải mỗi ngày.",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.3,
@@ -7954,7 +7954,7 @@
               "levelTag": "movers",
               "difficultyRating": 1,
               "points": 1,
-              "explanation": "Yes, I always do my homework after school.",
+              "explanation": "Trả lời Yes + always + làm bài — cấu trúc chuẩn Movers.",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.2,
@@ -7986,7 +7986,7 @@
               "levelTag": "movers",
               "difficultyRating": 1,
               "points": 1,
-              "explanation": "I sometimes play football in the park.",
+              "explanation": "Sometimes + động từ — nói thói quen không phải mỗi ngày.",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.2,
@@ -8033,7 +8033,7 @@
               "levelTag": "movers",
               "difficultyRating": 2,
               "points": 1,
-              "explanation": "No, I never watch TV before homework.",
+              "explanation": "No + never — phủ định rõ, không xem TV trước bài tập.",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.3,
@@ -8065,7 +8065,7 @@
               "levelTag": "movers",
               "difficultyRating": 2,
               "points": 1,
-              "explanation": "Yes, we always eat dinner at six.",
+              "explanation": "We always eat dinner at… — cả gia đình ăn tối đúng giờ.",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.3,
@@ -8175,7 +8175,7 @@
               "levelTag": "movers",
               "difficultyRating": 2,
               "points": 1,
-              "explanation": "I never go to bed late on school nights.",
+              "explanation": "Never + go to bed late — không ngủ muộn vào đêm đi học.",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.3,
@@ -8222,7 +8222,7 @@
               "levelTag": "movers",
               "difficultyRating": 2,
               "points": 1,
-              "explanation": "I always brush my teeth in the morning and evening.",
+              "explanation": "Always + đánh răng — thói quen hai lần mỗi ngày.",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.3,
@@ -8281,7 +8281,7 @@
               "levelTag": "movers",
               "difficultyRating": 1,
               "points": 1,
-              "explanation": "I go to school at seven thirty.",
+              "explanation": "At + giờ — trả lời câu hỏi What time do you go to school?",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.2,
@@ -8313,7 +8313,7 @@
               "levelTag": "movers",
               "difficultyRating": 1,
               "points": 1,
-              "explanation": "I have lunch at school.",
+              "explanation": "At school — bữa trưa ở trường, không ở nhà.",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.2,
@@ -8360,7 +8360,7 @@
               "levelTag": "movers",
               "difficultyRating": 2,
               "points": 1,
-              "explanation": "I do my homework and sometimes play with friends.",
+              "explanation": "Homework trước, sometimes chơi — thứ tự sau giờ học hợp lý.",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.3,
@@ -8392,7 +8392,7 @@
               "levelTag": "movers",
               "difficultyRating": 2,
               "points": 1,
-              "explanation": "I go to bed at nine o'clock.",
+              "explanation": "At nine o'clock — giờ đi ngủ rõ ràng.",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.3,
@@ -8549,7 +8549,7 @@
               "levelTag": "movers",
               "difficultyRating": 2,
               "points": 1,
-              "explanation": "We have dinner at six o'clock.",
+              "explanation": "We have dinner at + giờ — cả nhà ăn tối cùng lúc.",
               "qualityScores": {
                 "quality": 0.92,
                 "difficulty": 0.3,

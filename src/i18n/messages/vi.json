@@ -402,7 +402,13 @@
         "recording": "Đang ghi",
         "transcript": "Bản ghi",
         "transcriptPlaceholder": "Nói vào microphone để xem bản ghi...",
-        "transcriptUnsupported": "Trình duyệt không hỗ trợ bản ghi thời gian thực"
+        "transcriptUnsupported": "Trình duyệt không hỗ trợ bản ghi thời gian thực",
+        "micAccessDenied": "Trình duyệt đã chặn quyền micro. Bấm biểu tượng khóa cạnh thanh địa chỉ → Microphone → Cho phép, rồi tải lại trang.",
+        "micNotFound": "Không tìm thấy micro. Kiểm tra micro đã cắm và bật trong Cài đặt Windows → Quyền riêng tư → Microphone.",
+        "micInsecureContext": "Micro chỉ hoạt động trên https:// hoặc http://localhost:3000 — không dùng địa chỉ IP LAN.",
+        "micNotSupported": "Trình duyệt không hỗ trợ ghi âm. Mở bài bằng Chrome hoặc Edge (không dùng cửa sổ preview trong IDE).",
+        "micRecorderUnsupported": "Trình duyệt không hỗ trợ định dạng ghi âm. Thử Chrome hoặc Edge phiên bản mới.",
+        "micUnknownError": "Không thể truy cập micro. Kiểm tra quyền micro của trình duyệt và Windows."
       }
     }
   },

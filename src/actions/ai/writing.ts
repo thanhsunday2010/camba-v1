@@ -8,6 +8,7 @@ import {
   WRITING_FEEDBACK_SYSTEM,
   buildWritingPrompt,
 } from "@/lib/ai/prompts/writing-feedback";
+import { ZodError } from "zod";
 import { WritingFeedbackSchema } from "@/types/ai";
 import type { WritingFeedback } from "@/types/ai";
 import type { ActionResult } from "@/types";
@@ -96,6 +97,9 @@ export async function submitWritingForFeedback(
 }
 
 function mapAiSubmitError(error: unknown): string {
+  if (error instanceof ZodError) {
+    return "AI trả về dữ liệu không hợp lệ. Vui lòng thử gửi lại bài.";
+  }
   const message = error instanceof Error ? error.message : "AI processing failed";
   if (message.includes("GOOGLE_GEMINI_API_KEY")) {
     return "Chưa cấu hình API Gemini. Thêm GOOGLE_GEMINI_API_KEY vào .env.local.";

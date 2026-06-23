@@ -1,4 +1,5 @@
 import type { z } from "zod";
+import { normalizeShieldEstimate } from "@/lib/ai/normalize-shield-estimate";
 
 export function parseGeminiJson<T>(raw: string, schema: z.ZodType<T>): T {
   let cleaned = raw.trim();
@@ -8,6 +9,9 @@ export function parseGeminiJson<T>(raw: string, schema: z.ZodType<T>): T {
     cleaned = cleaned.replace(/^```\s*/, "").replace(/\s*```$/, "");
   }
 
-  const parsed = JSON.parse(cleaned);
+  const parsed = JSON.parse(cleaned) as Record<string, unknown>;
+  if (parsed.shieldEstimate !== undefined) {
+    parsed.shieldEstimate = normalizeShieldEstimate(parsed.shieldEstimate);
+  }
   return schema.parse(parsed);
 }

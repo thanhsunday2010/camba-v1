@@ -162,6 +162,12 @@ export default async function LessonPage({ params }: LessonPageProps) {
     transcript: t("ai.transcript"),
     transcriptPlaceholder: t("ai.transcriptPlaceholder"),
     transcriptUnsupported: t("ai.transcriptUnsupported"),
+    micAccessDenied: t("ai.micAccessDenied"),
+    micNotFound: t("ai.micNotFound"),
+    micInsecureContext: t("ai.micInsecureContext"),
+    micNotSupported: t("ai.micNotSupported"),
+    micRecorderUnsupported: t("ai.micRecorderUnsupported"),
+    micUnknownError: t("ai.micUnknownError"),
   };
 
   const chromeLabels = {

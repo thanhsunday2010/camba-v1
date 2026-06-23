@@ -8,6 +8,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronRight, Loader2, Mic, Square } from "lucide-react";
 import { useSpeechRecognition } from "@/lib/speech/use-speech-recognition";
 import { readBlobAsBase64 } from "@/lib/speech/blob-to-base64";
+import {
+  MicrophoneAccessError,
+  createAudioMediaRecorder,
+  requestMicrophoneStream,
+} from "@/lib/speech/request-microphone";
 import { toast } from "sonner";
 import type { SpeakingFeedback } from "@/types/ai";
 
@@ -41,6 +46,12 @@ interface SpeakingExerciseProps {
     transcript: string;
     transcriptPlaceholder: string;
     transcriptUnsupported: string;
+    micAccessDenied: string;
+    micNotFound: string;
+    micInsecureContext: string;
+    micNotSupported: string;
+    micRecorderUnsupported: string;
+    micUnknownError: string;
   };
   onComplete?: () => void;
   nextExerciseTitle?: string;
@@ -80,8 +91,29 @@ export function SpeakingExercise({
   } = useSpeechRecognition("en-US");
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const recorderMimeTypeRef = useRef("audio/webm");
   const chunksRef = useRef<Blob[]>([]);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  function getMicrophoneErrorMessage(error: unknown): string {
+    if (error instanceof MicrophoneAccessError) {
+      switch (error.code) {
+        case "not_allowed":
+          return labels.micAccessDenied;
+        case "not_found":
+          return labels.micNotFound;
+        case "insecure_context":
+          return labels.micInsecureContext;
+        case "not_supported":
+          return labels.micNotSupported;
+        case "recorder_unsupported":
+          return labels.micRecorderUnsupported;
+        default:
+          return labels.micUnknownError;
+      }
+    }
+    return labels.micUnknownError;
+  }
 
   async function startRecording() {
     try {
@@ -89,8 +121,9 @@ export function SpeakingExercise({
       resetTranscription();
       setError(null);
 
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const recorder = new MediaRecorder(stream);
+      const stream = await requestMicrophoneStream();
+      const recorder = createAudioMediaRecorder(stream);
+      recorderMimeTypeRef.current = recorder.mimeType || "audio/webm";
       chunksRef.current = [];
 
       recorder.ondataavailable = (e) => {
@@ -98,7 +131,7 @@ export function SpeakingExercise({
       };
 
       recorder.onstop = () => {
-        const blob = new Blob(chunksRef.current, { type: "audio/webm" });
+        const blob = new Blob(chunksRef.current, { type: recorderMimeTypeRef.current });
         setAudioBlob(blob);
         stream.getTracks().forEach((t) => t.stop());
       };
@@ -117,8 +150,8 @@ export function SpeakingExercise({
           return d + 1;
         });
       }, 1000);
-    } catch {
-      setError("Không thể truy cập microphone");
+    } catch (error) {
+      setError(getMicrophoneErrorMessage(error));
     }
   }
 
@@ -144,7 +177,7 @@ export function SpeakingExercise({
         lessonId,
         prompt,
         base64,
-        "audio/webm",
+        recorderMimeTypeRef.current,
         duration,
         targetLevel
       );
