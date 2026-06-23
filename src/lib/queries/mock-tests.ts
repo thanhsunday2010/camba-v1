@@ -1,5 +1,4 @@
 import { createClient } from "@/lib/supabase/server";
-import { fetchQuestionByIdFull } from "@/lib/queries/learning";
 import { sanitizeQuestionForClient } from "@/lib/learning/sanitize-questions";
 import { resolveProgramId } from "@/lib/programs/context";
 import type {
@@ -7,6 +6,53 @@ import type {
   MockTestSummary,
   Question,
 } from "@/types/learning";
+
+type SupabaseServerClient = Awaited<ReturnType<typeof createClient>>;
+
+async function fetchQuestionsByIdsBatch(
+  supabase: SupabaseServerClient,
+  questionIds: string[]
+): Promise<Map<string, Question>> {
+  const map = new Map<string, Question>();
+  if (questionIds.length === 0) return map;
+
+  const { data: questions } = await supabase
+    .from("questions")
+    .select("*")
+    .in("id", questionIds);
+
+  if (!questions?.length) return map;
+
+  const [{ data: allChoices }, { data: allPairs }] = await Promise.all([
+    supabase.from("choices").select("*").in("question_id", questionIds).order("sort_order"),
+    supabase.from("question_pairs").select("*").in("question_id", questionIds).order("sort_order"),
+  ]);
+
+  const choicesByQuestion = new Map<string, NonNullable<typeof allChoices>>();
+  for (const choice of allChoices ?? []) {
+    const bucket = choicesByQuestion.get(choice.question_id) ?? [];
+    bucket.push(choice);
+    choicesByQuestion.set(choice.question_id, bucket);
+  }
+
+  const pairsByQuestion = new Map<string, NonNullable<typeof allPairs>>();
+  for (const pair of allPairs ?? []) {
+    const bucket = pairsByQuestion.get(pair.question_id) ?? [];
+    bucket.push(pair);
+    pairsByQuestion.set(pair.question_id, bucket);
+  }
+
+  for (const question of questions) {
+    map.set(question.id, {
+      ...question,
+      content: (question.content as Record<string, unknown>) ?? {},
+      choices: choicesByQuestion.get(question.id) ?? [],
+      pairs: pairsByQuestion.get(question.id) ?? [],
+    });
+  }
+
+  return map;
+}
 
 export async function getMockTestsForUser(userId: string): Promise<MockTestSummary[]> {
   const supabase = await createClient();
@@ -134,17 +180,34 @@ export async function fetchMockTestByIdFull(testId: string): Promise<{
 
   const mockSections: { id: string; title: string; sortOrder: number; timeLimitMinutes: number | null; skillSlug: string | null; skillName: string | null; questions: Question[] }[] = [];
 
+  const junctionBySection = new Map<
+    string,
+    { question_id: string; sort_order: number; points: number | null }[]
+  >();
+  const allQuestionIds: string[] = [];
+
   for (const section of sections ?? []) {
     const { data: sectionQuestions } = await supabase
       .from("mock_test_questions")
-      .select("*")
+      .select("question_id, sort_order, points")
       .eq("mock_test_section_id", section.id)
       .order("sort_order");
 
+    const rows = sectionQuestions ?? [];
+    junctionBySection.set(section.id, rows);
+    for (const sq of rows) {
+      allQuestionIds.push(sq.question_id);
+    }
+  }
+
+  const questionsById = await fetchQuestionsByIdsBatch(supabase, [...new Set(allQuestionIds)]);
+
+  for (const section of sections ?? []) {
+    const sectionQuestionRows = junctionBySection.get(section.id) ?? [];
     const questions: Question[] = [];
 
-    for (const sq of sectionQuestions ?? []) {
-      const fullQuestion = await fetchQuestionByIdFull(sq.question_id);
+    for (const sq of sectionQuestionRows) {
+      const fullQuestion = questionsById.get(sq.question_id);
       if (fullQuestion) {
         questions.push({
           ...fullQuestion,

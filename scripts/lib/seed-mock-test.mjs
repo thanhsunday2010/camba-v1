@@ -79,7 +79,7 @@ async function ensureMockQuestionBank(supabase, manifest) {
       title: `Mock question bank (${levelSlug})`,
       description: "Container unit for YLE practice mock questions — not on learning path.",
       sort_order: 999,
-      is_active: true,
+      is_active: false,
       metadata: {
         mockBank: true,
         levelSlug,
@@ -117,8 +117,8 @@ async function ensureMockQuestionBank(supabase, manifest) {
       content: { mockManifestId: manifest.metadata.manifestId },
       status: "published",
       sort_order: 0,
-      is_active: false,
-      metadata: { mockBank: true },
+      is_active: true,
+      metadata: { mockBank: true, mockOnly: true },
     },
     { onConflict: "id" }
   );

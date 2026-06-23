@@ -118,7 +118,22 @@ data/mock-tests/.../manifest.json
 
 **Deterministic IDs** in `metadata.seedIds` — re-running seed upserts the same mock (idempotent).
 
-**Question container:** Each mock uses a dedicated `exercises` row (`is_active: false`) so `questions.exercise_id` NOT NULL is satisfied without touching lesson content.
+**Question container:** Each mock uses a dedicated `exercises` row (`is_active: true`, `metadata.mockOnly`) under an inactive lesson — not on the learning path.
+
+---
+
+## Production deployment
+
+Vercel deploys **code only**; mock content lives in Supabase. After each release:
+
+1. Apply migrations on production Supabase (required: `011_mock_test_question_rls.sql`).
+2. Seed with production credentials in `.env.local`:
+
+```bash
+npm run seed:all-mock-tests
+```
+
+If learners see **"Bài thi thử chưa sẵn sàng"** (`questionCount: 0`), production is missing question rows or RLS is blocking mock-bank questions — run the steps above.
 
 ---
 
