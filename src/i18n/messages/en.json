@@ -518,7 +518,21 @@
       "viewLatestResult": "View latest result",
       "seeStructure": "See test structure",
       "backToHubCta": "Back to all mock tests",
-      "attemptsSummary": "{count} attempt(s) · best score {score}%"
+      "attemptsSummary": "{count} attempt(s) · best score {score}%",
+      "learningInsightsTitle": "My Learning Insights"
+    },
+    "analytics": {
+      "title": "Grammar and vocabulary performance from your latest attempt.",
+      "grammarTitle": "Grammar",
+      "vocabularyTitle": "Vocabulary",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "learningInsights": "Learning insights",
+      "noAttemptMessage": "You need to complete a mock test before learning insights are available.",
+      "insufficientMetadataMessage": "Learning insights are not available yet because this mock test does not contain enough grammar and vocabulary tags.",
+      "breakdownPercent": "{percent}%",
+      "showAll": "Show all",
+      "showLess": "Show less"
     },
     "format": {
       "practiceMockBadge": "Practice mock",

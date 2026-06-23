@@ -6,6 +6,7 @@ import { useCelebrationOptional } from "@/components/camba/celebration/celebrati
 import { StudentPageShell } from "@/components/camba";
 import { MockTestPageShell } from "@/components/mock-tests/mock-test-page-shell";
 import { MockTestPlayer } from "@/components/mock-tests/mock-test-player";
+import { buildMockTestSkillAnalyticsFromAttempt } from "@/lib/mock-tests/mock-test-skill-analytics-builder";
 import {
   buildMockTestAttemptSummary,
   deriveResolvedMockTestProgress,
@@ -52,10 +53,18 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
     setQuestionResults(snapshot.questionResults);
   }, [viewModel.id]);
 
-  const flatQuestions = viewModel.test.sections.flatMap((s) => s.questions);
+  const flatQuestions = useMemo(
+    () => viewModel.test.sections.flatMap((s) => s.questions),
+    [viewModel.test.sections]
+  );
   const currentSection = viewModel.test.sections.find((s) =>
     s.questions.some((q) => q.id === flatQuestions[currentQuestionIndex]?.id)
   );
+
+  const skillAnalytics = useMemo(() => {
+    if (!sessionAttempt || questionResults.length === 0) return null;
+    return buildMockTestSkillAnalyticsFromAttempt(flatQuestions, questionResults);
+  }, [sessionAttempt, questionResults, flatQuestions]);
 
   const isTestCompleteResolved = sessionAttempt !== null;
 
@@ -192,6 +201,7 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
         resolvedProgress={resolvedProgress}
         isReviewingTest={isReviewingTest}
         sessionAttempt={sessionAttempt}
+        skillAnalytics={skillAnalytics}
         activeReviewQuestionId={activeReviewQuestionId}
         onReviewTest={enterReviewMode}
         onRetake={handleRetake}

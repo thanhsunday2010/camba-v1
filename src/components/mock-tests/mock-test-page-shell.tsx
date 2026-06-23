@@ -13,6 +13,7 @@ import type {
   MockTestTakeViewModel,
   ResolvedMockTestProgress,
 } from "@/lib/mock-tests/mock-test-types";
+import type { MockTestSkillAnalytics } from "@/lib/mock-tests/mock-test-analytics-types";
 import { ArrowLeft, Clock, FileQuestion, Layers } from "lucide-react";
 import type { ReactNode } from "react";
 
@@ -22,6 +23,7 @@ interface MockTestPageShellProps {
   resolvedProgress: ResolvedMockTestProgress;
   isReviewingTest: boolean;
   sessionAttempt: MockTestAttemptSummary | null;
+  skillAnalytics?: MockTestSkillAnalytics | null;
   activeReviewQuestionId: string | null;
   onReviewTest?: () => void;
   onRetake?: () => void;
@@ -156,6 +158,7 @@ export function MockTestPageShell({
   resolvedProgress,
   isReviewingTest,
   sessionAttempt,
+  skillAnalytics = null,
   activeReviewQuestionId,
   onReviewTest,
   onRetake,
@@ -218,6 +221,8 @@ export function MockTestPageShell({
             detailHref={viewModel.detailHref}
             labels={completeLabels}
             reviewLabels={reviewLabels}
+            analyticsLabels={labels.analytics}
+            skillAnalytics={skillAnalytics}
             ctaVariant="take"
             onReviewTest={onReviewTest}
             onRetake={onRetake}

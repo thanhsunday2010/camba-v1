@@ -60,11 +60,10 @@ describe("question intelligence metadata validation", () => {
     expect(issues.every((i) => i.severity === "warning")).toBe(true);
   });
 
-  it("existing starters T1 still seeds with metadata warnings only", () => {
+  it("starters practice test 1 is fully tagged with zero metadata warnings (M1.5.2)", () => {
     const issues = analyzeQuestionIntelligenceMetadata(
       startersPracticeTest1 as YleMockManifest
     );
-    expect(issues.some((i) => i.code === "GRAMMAR_TAG_MISSING")).toBe(true);
-    expect(issues.every((i) => i.severity === "warning")).toBe(true);
+    expect(issues).toHaveLength(0);
   });
 });

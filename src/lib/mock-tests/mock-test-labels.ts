@@ -4,6 +4,7 @@ import type {
   MockTestFormatLabels,
   MockTestPageLabels,
 } from "@/lib/mock-tests/mock-test-types";
+import type { MockTestAnalyticsLabels } from "@/lib/mock-tests/mock-test-analytics-types";
 
 async function buildMockTestFormatLabels(): Promise<MockTestFormatLabels> {
   const tf = await getTranslations("mockTests.format");
@@ -31,6 +32,7 @@ export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
   const tc = await getTranslations("mockTests.complete");
   const tr = await getTranslations("mockTests.review");
   const tt = await getTranslations("mockTests.take");
+  const ta = await getTranslations("mockTests.analytics");
   const tcp = await getTranslations("mockTests.take.contextPanel");
   const ts = await getTranslations("mockTests.status");
   const format = await buildMockTestFormatLabels();
@@ -89,6 +91,7 @@ export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
       seeStructure: td("seeStructure"),
       backToHubCta: td("backToHubCta"),
       attemptsSummary: td("attemptsSummary"),
+      learningInsightsTitle: td("learningInsightsTitle"),
       notAvailable: t("notAvailable"),
       statusLabels,
       format,
@@ -168,6 +171,19 @@ export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
         audioLoading: tcp("audioLoading"),
         audioError: tcp("audioError"),
       },
+    },
+    analytics: {
+      title: ta("title"),
+      grammarTitle: ta("grammarTitle"),
+      vocabularyTitle: ta("vocabularyTitle"),
+      strengths: ta("strengths"),
+      weaknesses: ta("weaknesses"),
+      learningInsights: ta("learningInsights"),
+      noAttemptMessage: ta("noAttemptMessage"),
+      insufficientMetadataMessage: ta("insufficientMetadataMessage"),
+      breakdownPercent: ta("breakdownPercent"),
+      showAll: ta("showAll"),
+      showLess: ta("showLess"),
     },
   };
 }

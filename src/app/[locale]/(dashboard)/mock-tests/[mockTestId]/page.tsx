@@ -41,6 +41,7 @@ export default async function MockTestDetailPage({ params }: MockTestDetailPageP
         labels={labels.detail}
         completeLabels={labels.complete}
         reviewLabels={labels.review}
+        analyticsLabels={labels.analytics}
       />
     </StudentPageShell>
   );

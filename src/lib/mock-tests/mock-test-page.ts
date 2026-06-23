@@ -1,4 +1,7 @@
 import { fetchMockTestByIdFull, getLatestMockTestAttemptDetail, getMockTestById, getUserMockTestAttempts } from "@/lib/queries/mock-tests";
+import { buildMockTestSkillAnalyticsFromAttempt } from "@/lib/mock-tests/mock-test-skill-analytics-builder";
+import { scoreExercise } from "@/lib/learning/scoring";
+import type { UserAnswer } from "@/types/learning";
 import { buildMockTestQuestionContextMap } from "@/lib/mock-tests/mock-test-context";
 import { deriveFormatFromMockTestData } from "@/lib/mock-tests/mock-test-format-queries";
 import { resolveYleLevelSlug } from "@/lib/mock-tests/mock-test-format";
@@ -62,6 +65,16 @@ export async function getMockTestDetailViewModel(
     skillBreakdown: latestAttempt?.skillBreakdown,
   });
 
+  const flatQuestions = fullTest.sections.flatMap((section) => section.questions);
+  const skillAnalytics =
+    latestRaw && Object.keys(latestRaw.answers).length > 0
+      ? buildMockTestSkillAnalyticsFromAttempt(
+          flatQuestions,
+          scoreExercise(flatQuestions, latestRaw.answers as Record<string, UserAnswer>)
+            .questionResults
+        )
+      : null;
+
   const primaryCta: MockTestPrimaryCta =
     attemptCount > 0 ? "retake" : "start";
 
@@ -88,6 +101,7 @@ export async function getMockTestDetailViewModel(
     bestScorePercent,
     sections,
     latestAttempt,
+    skillAnalytics,
     takeHref: `/mock-tests/${mockTestId}/take`,
     format,
   };

@@ -1,6 +1,7 @@
 import type { MockTestData } from "@/types/learning";
 import type { MockTestQuestionContextView } from "@/lib/mock-tests/mock-test-context";
 import type { MockTestFormatMetadata } from "@/lib/mock-tests/mock-test-format";
+import type { MockTestSkillAnalytics, MockTestAnalyticsLabels } from "@/lib/mock-tests/mock-test-analytics-types";
 import type { YleLevelSlug } from "@/lib/mock-blueprints/yle-mock-blueprint-types";
 
 export type MockTestDisplayState =
@@ -77,6 +78,7 @@ export type MockTestDetailViewModel = {
   bestScorePercent: number | null;
   sections: MockTestSectionSummary[];
   latestAttempt: MockTestAttemptSummary | null;
+  skillAnalytics: MockTestSkillAnalytics | null;
   takeHref: string;
   format: MockTestFormatMetadata;
 };
@@ -153,6 +155,7 @@ export type MockTestDetailLabels = {
   seeStructure: string;
   backToHubCta: string;
   attemptsSummary: string;
+  learningInsightsTitle: string;
   notAvailable: string;
   statusLabels: Record<MockTestDisplayState, string>;
   format: MockTestFormatLabels;
@@ -195,6 +198,7 @@ export type MockTestPageLabels = {
   review: MockTestReviewLabels;
   take: MockTestTakeLabels;
   format: MockTestFormatLabels;
+  analytics: MockTestAnalyticsLabels;
 };
 
 export type MockTestContextPanelLabels = {

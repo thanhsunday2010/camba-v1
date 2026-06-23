@@ -1,0 +1,929 @@
+{
+  "bankVersion": "1.0.0",
+  "level": "starters",
+  "itemCount": 20,
+  "sourceManifests": [
+    "starters-practice-test-1"
+  ],
+  "extractedAt": "2026-06-23T15:40:35.663Z",
+  "items": [
+    {
+      "id": "starters-listen-01",
+      "level": "starters",
+      "skill": "listening",
+      "part": "listening-part-1-link",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "family"
+      ],
+      "content": {
+        "questionText": "Match each person to what they have.",
+        "explanation": "Tom has a ball, Anna has a book, Ben has a cat.",
+        "levelTag": "starters",
+        "pairs": [
+          {
+            "leftText": "Tom",
+            "rightText": "a ball",
+            "sortOrder": 0
+          },
+          {
+            "leftText": "Anna",
+            "rightText": "a book",
+            "sortOrder": 1
+          },
+          {
+            "leftText": "Ben",
+            "rightText": "a cat",
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "listen-01",
+        "extractedAt": "2026-06-23T15:40:35.660Z",
+        "topicTag": "family",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 0,
+        "questionText": "Match each person to what they have.",
+        "explanation": "Tom has a ball, Anna has a book, Ben has a cat."
+      }
+    },
+    {
+      "id": "starters-listen-02",
+      "level": "starters",
+      "skill": "listening",
+      "part": "listening-part-1-link",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "colours"
+      ],
+      "content": {
+        "questionText": "Match each colour to the right thing.",
+        "explanation": "Red apple, blue sky, green grass.",
+        "levelTag": "starters",
+        "pairs": [
+          {
+            "leftText": "red",
+            "rightText": "an apple",
+            "sortOrder": 0
+          },
+          {
+            "leftText": "blue",
+            "rightText": "the sky",
+            "sortOrder": 1
+          },
+          {
+            "leftText": "green",
+            "rightText": "the grass",
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "listen-02",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "colours",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 1,
+        "questionText": "Match each colour to the right thing.",
+        "explanation": "Red apple, blue sky, green grass."
+      }
+    },
+    {
+      "id": "starters-listen-03",
+      "level": "starters",
+      "skill": "listening",
+      "part": "listening-part-1-link",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "food"
+      ],
+      "content": {
+        "questionText": "Match each animal to its food.",
+        "explanation": "Cats drink milk, dogs eat bones, birds eat seeds.",
+        "levelTag": "starters",
+        "pairs": [
+          {
+            "leftText": "cat",
+            "rightText": "milk",
+            "sortOrder": 0
+          },
+          {
+            "leftText": "dog",
+            "rightText": "a bone",
+            "sortOrder": 1
+          },
+          {
+            "leftText": "bird",
+            "rightText": "seeds",
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "listen-03",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "animals",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 2,
+        "questionText": "Match each animal to its food.",
+        "explanation": "Cats drink milk, dogs eat bones, birds eat seeds."
+      }
+    },
+    {
+      "id": "starters-listen-04",
+      "level": "starters",
+      "skill": "listening",
+      "part": "listening-part-1-link",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "content": {
+        "questionText": "Match each person at school to an object.",
+        "explanation": "Teacher — desk, student — book, friend — pen.",
+        "levelTag": "starters",
+        "pairs": [
+          {
+            "leftText": "teacher",
+            "rightText": "a desk",
+            "sortOrder": 0
+          },
+          {
+            "leftText": "student",
+            "rightText": "a book",
+            "sortOrder": 1
+          },
+          {
+            "leftText": "friend",
+            "rightText": "a pen",
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "listen-04",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "school",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 3,
+        "questionText": "Match each person at school to an object.",
+        "explanation": "Teacher — desk, student — book, friend — pen."
+      }
+    },
+    {
+      "id": "starters-listen-05",
+      "level": "starters",
+      "skill": "listening",
+      "part": "listening-part-2-write",
+      "questionType": "gap_fill",
+      "difficulty": "easy",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "family"
+      ],
+      "content": {
+        "questionText": "Complete the sentence.",
+        "explanation": "My name is Tom.",
+        "template": "My name [0] Tom.",
+        "correctAnswers": [
+          "is"
+        ],
+        "levelTag": "starters"
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "listen-05",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "family",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 4,
+        "questionText": "Complete the sentence.",
+        "explanation": "My name is Tom."
+      }
+    },
+    {
+      "id": "starters-listen-06",
+      "level": "starters",
+      "skill": "listening",
+      "part": "listening-part-2-write",
+      "questionType": "gap_fill",
+      "difficulty": "easy",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "family"
+      ],
+      "content": {
+        "questionText": "Complete the sentence.",
+        "explanation": "She has a little brother.",
+        "template": "She [0] a little brother.",
+        "correctAnswers": [
+          "has"
+        ],
+        "acceptedAnswers": {
+          "0": [
+            "has got",
+            "has"
+          ]
+        },
+        "levelTag": "starters"
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "listen-06",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "family",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 5,
+        "questionText": "Complete the sentence.",
+        "explanation": "She has a little brother."
+      }
+    },
+    {
+      "id": "starters-listen-07",
+      "level": "starters",
+      "skill": "listening",
+      "part": "listening-part-2-write",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "numbers",
+        "family"
+      ],
+      "content": {
+        "questionText": "Write the number.",
+        "explanation": "Anna is seven years old.",
+        "template": "Anna is [0] years old.",
+        "correctAnswers": [
+          "seven"
+        ],
+        "acceptedAnswers": {
+          "0": [
+            "seven",
+            "7"
+          ]
+        },
+        "levelTag": "starters"
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "listen-07",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "numbers",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 6,
+        "questionText": "Write the number.",
+        "explanation": "Anna is seven years old."
+      }
+    },
+    {
+      "id": "starters-listen-08",
+      "level": "starters",
+      "skill": "listening",
+      "part": "listening-part-2-write",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "content": {
+        "questionText": "Complete the sentence.",
+        "explanation": "I can swim.",
+        "template": "I [0] swim.",
+        "correctAnswers": [
+          "can"
+        ],
+        "levelTag": "starters"
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "listen-08",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "sports",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 7,
+        "questionText": "Complete the sentence.",
+        "explanation": "I can swim."
+      }
+    },
+    {
+      "id": "starters-rw-01",
+      "level": "starters",
+      "skill": "reading",
+      "part": "rw-part-1-match-words",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "animals"
+      ],
+      "content": {
+        "questionText": "Match each word to the right phrase.",
+        "explanation": "A cat says meow.",
+        "levelTag": "starters",
+        "pairs": [
+          {
+            "leftText": "cat",
+            "rightText": "says meow",
+            "sortOrder": 0
+          },
+          {
+            "leftText": "dog",
+            "rightText": "says woof",
+            "sortOrder": 1
+          },
+          {
+            "leftText": "bird",
+            "rightText": "can fly",
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "rw-01",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "animals",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 0,
+        "questionText": "Match each word to the right phrase.",
+        "explanation": "A cat says meow."
+      }
+    },
+    {
+      "id": "starters-rw-02",
+      "level": "starters",
+      "skill": "reading",
+      "part": "rw-part-1-match-words",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "content": {
+        "questionText": "Match each word to the right phrase.",
+        "explanation": "We drink water when we are thirsty.",
+        "levelTag": "starters",
+        "pairs": [
+          {
+            "leftText": "water",
+            "rightText": "we drink it",
+            "sortOrder": 0
+          },
+          {
+            "leftText": "apple",
+            "rightText": "a fruit",
+            "sortOrder": 1
+          },
+          {
+            "leftText": "milk",
+            "rightText": "from a cow",
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "rw-02",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "food",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 1,
+        "questionText": "Match each word to the right phrase.",
+        "explanation": "We drink water when we are thirsty."
+      }
+    },
+    {
+      "id": "starters-rw-03",
+      "level": "starters",
+      "skill": "reading",
+      "part": "rw-part-1-match-words",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "home"
+      ],
+      "content": {
+        "questionText": "Match each word to the right phrase.",
+        "explanation": "We sleep in a bed.",
+        "levelTag": "starters",
+        "pairs": [
+          {
+            "leftText": "bed",
+            "rightText": "we sleep here",
+            "sortOrder": 0
+          },
+          {
+            "leftText": "door",
+            "rightText": "we open it",
+            "sortOrder": 1
+          },
+          {
+            "leftText": "table",
+            "rightText": "we eat on it",
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "rw-03",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "home",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 2,
+        "questionText": "Match each word to the right phrase.",
+        "explanation": "We sleep in a bed."
+      }
+    },
+    {
+      "id": "starters-rw-04",
+      "level": "starters",
+      "skill": "reading",
+      "part": "rw-part-2-sentences",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "colours"
+      ],
+      "content": {
+        "questionText": "The ball is red. Which thing is red?",
+        "explanation": "The sentence says the ball is red.",
+        "levelTag": "starters",
+        "choices": [
+          {
+            "text": "the ball",
+            "isCorrect": true,
+            "sortOrder": 0
+          },
+          {
+            "text": "the book",
+            "isCorrect": false,
+            "sortOrder": 1
+          },
+          {
+            "text": "the desk",
+            "isCorrect": false,
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "rw-04",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "toys",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 3,
+        "questionText": "The ball is red. Which thing is red?",
+        "explanation": "The sentence says the ball is red."
+      }
+    },
+    {
+      "id": "starters-rw-05",
+      "level": "starters",
+      "skill": "reading",
+      "part": "rw-part-2-sentences",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "animals"
+      ],
+      "content": {
+        "questionText": "The cat is under the table. Where is the cat?",
+        "explanation": "Under the table means below the table.",
+        "levelTag": "starters",
+        "choices": [
+          {
+            "text": "under the table",
+            "isCorrect": true,
+            "sortOrder": 0
+          },
+          {
+            "text": "on the table",
+            "isCorrect": false,
+            "sortOrder": 1
+          },
+          {
+            "text": "in the garden",
+            "isCorrect": false,
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "rw-05",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "home",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 4,
+        "questionText": "The cat is under the table. Where is the cat?",
+        "explanation": "Under the table means below the table."
+      }
+    },
+    {
+      "id": "starters-rw-06",
+      "level": "starters",
+      "skill": "reading",
+      "part": "rw-part-2-sentences",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "transport",
+        "colours"
+      ],
+      "content": {
+        "questionText": "Tom has got a blue bike. What colour is the bike?",
+        "explanation": "The bike is blue.",
+        "levelTag": "starters",
+        "choices": [
+          {
+            "text": "blue",
+            "isCorrect": true,
+            "sortOrder": 0
+          },
+          {
+            "text": "red",
+            "isCorrect": false,
+            "sortOrder": 1
+          },
+          {
+            "text": "yellow",
+            "isCorrect": false,
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "rw-06",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "transport",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 5,
+        "questionText": "Tom has got a blue bike. What colour is the bike?",
+        "explanation": "The bike is blue."
+      }
+    },
+    {
+      "id": "starters-rw-07",
+      "level": "starters",
+      "skill": "reading",
+      "part": "rw-part-3-dialogues",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "verb_be",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "numbers"
+      ],
+      "content": {
+        "questionText": "How old is Tom?",
+        "explanation": "The text says Tom is five.",
+        "levelTag": "starters",
+        "choices": [
+          {
+            "text": "five",
+            "isCorrect": true,
+            "sortOrder": 0
+          },
+          {
+            "text": "seven",
+            "isCorrect": false,
+            "sortOrder": 1
+          },
+          {
+            "text": "ten",
+            "isCorrect": false,
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "rw-07",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "family",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 6,
+        "questionText": "How old is Tom?",
+        "explanation": "The text says Tom is five."
+      }
+    },
+    {
+      "id": "starters-rw-08",
+      "level": "starters",
+      "skill": "reading",
+      "part": "rw-part-3-dialogues",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "transport"
+      ],
+      "content": {
+        "questionText": "What does Ben like?",
+        "explanation": "Ben likes a red car and a yellow boat.",
+        "levelTag": "starters",
+        "choices": [
+          {
+            "text": "a car and a boat",
+            "isCorrect": true,
+            "sortOrder": 0
+          },
+          {
+            "text": "a cat and a dog",
+            "isCorrect": false,
+            "sortOrder": 1
+          },
+          {
+            "text": "a book and a pen",
+            "isCorrect": false,
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "rw-08",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "toys",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 7,
+        "questionText": "What does Ben like?",
+        "explanation": "Ben likes a red car and a yellow boat."
+      }
+    },
+    {
+      "id": "starters-rw-09",
+      "level": "starters",
+      "skill": "reading",
+      "part": "rw-part-3-dialogues",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "time"
+      ],
+      "content": {
+        "questionText": "When do they go to school?",
+        "explanation": "They go at eight o'clock.",
+        "levelTag": "starters",
+        "choices": [
+          {
+            "text": "at eight o'clock",
+            "isCorrect": true,
+            "sortOrder": 0
+          },
+          {
+            "text": "at ten o'clock",
+            "isCorrect": false,
+            "sortOrder": 1
+          },
+          {
+            "text": "at night",
+            "isCorrect": false,
+            "sortOrder": 2
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "rw-09",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "school",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 8,
+        "questionText": "When do they go to school?",
+        "explanation": "They go at eight o'clock."
+      }
+    },
+    {
+      "id": "starters-rw-10",
+      "level": "starters",
+      "skill": "reading",
+      "part": "rw-part-4-read-write",
+      "questionType": "gap_fill",
+      "difficulty": "easy",
+      "grammarTags": [
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "family"
+      ],
+      "content": {
+        "questionText": "Complete the word.",
+        "explanation": "This is my mother.",
+        "template": "This is my [0].",
+        "correctAnswers": [
+          "mother"
+        ],
+        "acceptedAnswers": {
+          "0": [
+            "mother",
+            "mum",
+            "mom"
+          ]
+        },
+        "levelTag": "starters"
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "rw-10",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "family",
+        "skillTag": "reading",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 9,
+        "questionText": "Complete the word.",
+        "explanation": "This is my mother."
+      }
+    },
+    {
+      "id": "starters-rw-11",
+      "level": "starters",
+      "skill": "reading",
+      "part": "rw-part-4-read-write",
+      "questionType": "gap_fill",
+      "difficulty": "easy",
+      "grammarTags": [
+        "verb_be",
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "colours"
+      ],
+      "content": {
+        "questionText": "Complete the sentence.",
+        "explanation": "The bananas are yellow.",
+        "template": "The [0] are yellow.",
+        "correctAnswers": [
+          "bananas"
+        ],
+        "levelTag": "starters"
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "rw-11",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "food",
+        "skillTag": "reading",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 10,
+        "questionText": "Complete the sentence.",
+        "explanation": "The bananas are yellow."
+      }
+    },
+    {
+      "id": "starters-rw-12",
+      "level": "starters",
+      "skill": "reading",
+      "part": "rw-part-4-read-write",
+      "questionType": "gap_fill",
+      "difficulty": "hard",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "feelings"
+      ],
+      "content": {
+        "questionText": "Complete the sentence.",
+        "explanation": "My friends are happy today.",
+        "template": "My friends [0] happy today.",
+        "correctAnswers": [
+          "are"
+        ],
+        "levelTag": "starters"
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "starters-practice-test-1",
+        "sourceQuestionRef": "rw-12",
+        "extractedAt": "2026-06-23T15:40:35.663Z",
+        "topicTag": "friends",
+        "skillTag": "reading",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 11,
+        "questionText": "Complete the sentence.",
+        "explanation": "My friends are happy today."
+      }
+    }
+  ]
+}

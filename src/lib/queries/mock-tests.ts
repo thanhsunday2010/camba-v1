@@ -398,13 +398,14 @@ export async function getLatestMockTestAttemptDetail(
   timeSpentSeconds: number | null;
   skillBreakdown: Record<string, number>;
   shieldEstimate: Record<string, number>;
+  answers: Record<string, unknown>;
 } | null> {
   const supabase = await createClient();
 
   const { data } = await supabase
     .from("mock_test_attempts")
     .select(
-      "id, score, max_score, completed_at, time_spent_seconds, skill_breakdown, shield_estimate"
+      "id, score, max_score, completed_at, time_spent_seconds, skill_breakdown, shield_estimate, answers"
     )
     .eq("user_id", userId)
     .eq("mock_test_id", testId)
@@ -423,5 +424,6 @@ export async function getLatestMockTestAttemptDetail(
     timeSpentSeconds: data.time_spent_seconds,
     skillBreakdown: (data.skill_breakdown as Record<string, number> | null) ?? {},
     shieldEstimate: (data.shield_estimate as Record<string, number> | null) ?? {},
+    answers: (data.answers as Record<string, unknown> | null) ?? {},
   };
 }

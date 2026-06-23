@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { MockTestBreadcrumb, MockTestHero } from "@/components/mock-tests/mock-test-hero";
 import { MockTestCompleteSummary } from "@/components/mock-tests/mock-test-complete-summary";
 import { MockTestFormatDisclosure } from "@/components/mock-tests/mock-test-format-disclosure";
+import { MockTestSkillAnalyticsCard } from "@/components/mock-tests/analytics/mock-test-skill-analytics-card";
 import { MockTestSectionList } from "@/components/mock-tests/mock-test-section-list";
 import type {
   MockTestCompleteLabels,
@@ -10,6 +11,7 @@ import type {
   MockTestDetailViewModel,
   MockTestReviewLabels,
 } from "@/lib/mock-tests/mock-test-types";
+import type { MockTestAnalyticsLabels } from "@/lib/mock-tests/mock-test-analytics-types";
 import { ArrowDown, Play, RotateCcw } from "lucide-react";
 
 interface MockTestDetailShellProps {
@@ -17,6 +19,7 @@ interface MockTestDetailShellProps {
   labels: MockTestDetailLabels;
   completeLabels: MockTestCompleteLabels;
   reviewLabels: MockTestReviewLabels;
+  analyticsLabels: MockTestAnalyticsLabels;
 }
 
 export function MockTestDetailShell({
@@ -24,6 +27,7 @@ export function MockTestDetailShell({
   labels,
   completeLabels,
   reviewLabels,
+  analyticsLabels,
 }: MockTestDetailShellProps) {
   const isFirstAttempt = viewModel.primaryCta === "start";
 
@@ -84,6 +88,18 @@ export function MockTestDetailShell({
             takeHref={viewModel.takeHref}
             labels={completeLabels}
             reviewLabels={reviewLabels}
+            analyticsLabels={analyticsLabels}
+          />
+        </div>
+      )}
+
+      {viewModel.latestAttempt && (
+        <div id="mock-test-learning-insights" className="scroll-mt-4 space-y-3">
+          <h2 className="camba-h2 text-foreground">{labels.learningInsightsTitle}</h2>
+          <MockTestSkillAnalyticsCard
+            analytics={viewModel.skillAnalytics}
+            labels={analyticsLabels}
+            hasAttempt
           />
         </div>
       )}

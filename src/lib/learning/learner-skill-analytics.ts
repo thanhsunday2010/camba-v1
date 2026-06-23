@@ -1,7 +1,9 @@
 import type { QuestionResult, Question } from "@/types/learning";
-import { extractRuntimeQuestionMetadata } from "@/lib/learning/question-metadata";
+import { extractQuestionIntelligenceMetadata } from "@/lib/learning/question-metadata";
 import { grammarTagLabel } from "@/lib/learning/grammar-taxonomy";
 import { vocabularyTopicLabel } from "@/lib/learning/vocabulary-taxonomy";
+
+export type LearnerAnalyticsQuestion = Pick<Question, "id" | "content">;
 
 export type LearnerAttemptSlice = {
   questionResults: QuestionResult[];
@@ -26,9 +28,9 @@ type TagAccumulator = {
 };
 
 function accumulateTagBreakdown(
-  questions: Question[],
+  questions: LearnerAnalyticsQuestion[],
   questionResults: QuestionResult[],
-  pickTags: (q: Question) => string[]
+  pickTags: (q: LearnerAnalyticsQuestion) => string[]
 ): Record<string, number> {
   const resultMap = new Map(questionResults.map((r) => [r.questionId, r]));
   const acc = new Map<string, TagAccumulator>();
@@ -80,7 +82,7 @@ function pickStrengthsAndWeaknesses(
  * Infrastructure only — no UI, no AI recommendations.
  */
 export function computeLearnerSkillAnalytics(
-  questions: Question[],
+  questions: LearnerAnalyticsQuestion[],
   attempts: LearnerAttemptSlice[]
 ): LearnerSkillAnalytics {
   const bestByQuestion = new Map<string, QuestionResult>();
@@ -98,12 +100,12 @@ export function computeLearnerSkillAnalytics(
   const grammarBreakdown = accumulateTagBreakdown(
     questions,
     mergedResults,
-    (q) => extractRuntimeQuestionMetadata(q).grammarTags
+    (q) => extractQuestionIntelligenceMetadata({ content: q.content }).grammarTags
   );
   const vocabularyBreakdown = accumulateTagBreakdown(
     questions,
     mergedResults,
-    (q) => extractRuntimeQuestionMetadata(q).vocabularyTopics
+    (q) => extractQuestionIntelligenceMetadata({ content: q.content }).vocabularyTopics
   );
 
   const grammarLabels = pickStrengthsAndWeaknesses(grammarBreakdown, grammarTagLabel);

@@ -43,6 +43,8 @@
     "seed:all-mock-tests": "node scripts/seed-all-mock-tests.mjs",
     "write:m1-3-mock-manifests": "node scripts/write-m1-3-mock-manifests.mjs",
     "analyze:content-coverage": "node scripts/analyze-content-coverage.mjs",
+    "analyze:item-bank": "node scripts/analyze-item-bank.mjs",
+    "extract:item-bank": "node scripts/extract-item-bank-from-mock.mjs",
     "generate:listening-audio": "node scripts/generate-listening-audio.mjs"
   },
   "dependencies": {

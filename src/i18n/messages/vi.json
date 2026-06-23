@@ -518,7 +518,21 @@
       "viewLatestResult": "Xem kết quả gần nhất",
       "seeStructure": "Xem cấu trúc bài thi",
       "backToHubCta": "Quay lại danh sách thi thử",
-      "attemptsSummary": "{count} lần thi · điểm cao nhất {score}%"
+      "attemptsSummary": "{count} lần thi · điểm cao nhất {score}%",
+      "learningInsightsTitle": "Thông tin học tập của tôi"
+    },
+    "analytics": {
+      "title": "Kết quả ngữ pháp và từ vựng từ lần làm bài gần nhất.",
+      "grammarTitle": "Ngữ pháp",
+      "vocabularyTitle": "Từ vựng",
+      "strengths": "Điểm mạnh",
+      "weaknesses": "Điểm yếu",
+      "learningInsights": "Thông tin học tập",
+      "noAttemptMessage": "Bạn cần hoàn thành bài mock test trước khi xem thông tin học tập.",
+      "insufficientMetadataMessage": "Chưa có thông tin học tập vì bài mock test này chưa có đủ thẻ ngữ pháp và từ vựng.",
+      "breakdownPercent": "{percent}%",
+      "showAll": "Xem tất cả",
+      "showLess": "Thu gọn"
     },
     "format": {
       "practiceMockBadge": "Bài luyện tập",

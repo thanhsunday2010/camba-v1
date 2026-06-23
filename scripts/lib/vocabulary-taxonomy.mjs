@@ -1,5 +1,7 @@
 /** Node mirror of src/lib/learning/vocabulary-taxonomy.ts — keep slugs in sync. */
 
+import { isKnownGrammarTag } from "./grammar-taxonomy.mjs";
+
 export const YLE_VOCABULARY_TOPICS = [
   "family",
   "friends",

@@ -3,11 +3,16 @@ import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { Button } from "@/components/ui/button";
 import { MockTestReviewSection } from "@/components/mock-tests/mock-test-review-section";
 import { MockTestSkillBreakdown } from "@/components/mock-tests/mock-test-skill-breakdown";
+import { MockTestSkillAnalyticsCard } from "@/components/mock-tests/analytics/mock-test-skill-analytics-card";
 import type {
   MockTestAttemptSummary,
   MockTestCompleteLabels,
   MockTestReviewLabels,
 } from "@/lib/mock-tests/mock-test-types";
+import type {
+  MockTestAnalyticsLabels,
+  MockTestSkillAnalytics,
+} from "@/lib/mock-tests/mock-test-analytics-types";
 import { ArrowRight, ListChecks, RotateCcw, Shield, Trophy } from "lucide-react";
 
 interface MockTestCompleteSummaryProps {
@@ -18,6 +23,8 @@ interface MockTestCompleteSummaryProps {
   detailHref?: string;
   labels: MockTestCompleteLabels;
   reviewLabels: MockTestReviewLabels;
+  analyticsLabels: MockTestAnalyticsLabels;
+  skillAnalytics?: MockTestSkillAnalytics | null;
   showActions?: boolean;
   ctaVariant?: "detail" | "take";
   onReviewTest?: () => void;
@@ -56,6 +63,8 @@ export function MockTestCompleteSummary({
   detailHref,
   labels,
   reviewLabels,
+  analyticsLabels,
+  skillAnalytics = null,
   showActions = true,
   ctaVariant = "detail",
   onReviewTest,
@@ -114,6 +123,15 @@ export function MockTestCompleteSummary({
           <p className="camba-body font-medium text-foreground">{recommendation.headline}</p>
           <p className="camba-caption text-muted mt-1">{recommendation.support}</p>
         </div>
+
+        {skillAnalytics && (
+          <MockTestSkillAnalyticsCard
+            analytics={skillAnalytics}
+            labels={analyticsLabels}
+            hasAttempt
+            variant="embedded"
+          />
+        )}
 
         <MockTestSkillBreakdown
           skillBreakdown={attempt.skillBreakdown}
