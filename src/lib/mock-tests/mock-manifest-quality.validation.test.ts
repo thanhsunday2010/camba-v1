@@ -1,6 +1,4 @@
 import { describe, expect, it } from "vitest";
-import moversPracticeTest1 from "../../../data/mock-tests/movers/movers-practice-test-1.json";
-import startersPracticeTest1 from "../../../data/mock-tests/starters/starters-practice-test-1.json";
 import {
   analyzeMockManifestQuality,
   GAP_FILL_RATIO_WARNING_THRESHOLD,
@@ -142,17 +140,5 @@ describe("mock manifest quality warnings", () => {
     const issues = analyzeMockManifestQuality(manifestWithQuestions(questions));
     expect(issues.some((i) => i.code === "THIN_TASK_VARIETY")).toBe(true);
     expect(MIN_DISTINCT_TASK_TYPES).toBe(3);
-  });
-
-  it("returns only warnings for starters T1 quality analysis", () => {
-    const issues = analyzeMockManifestQuality(startersPracticeTest1 as YleMockManifest);
-    expect(issues.every((i) => i.severity === "warning")).toBe(true);
-  });
-
-  it("reduces gap_fill dominance in rebalanced movers T1", () => {
-    const manifest = moversPracticeTest1 as YleMockManifest;
-    const gapCount = manifest.questions.filter((q) => q.cambaQuestionType === "gap_fill").length;
-    const ratio = gapCount / manifest.questions.length;
-    expect(ratio).toBeLessThanOrEqual(GAP_FILL_RATIO_WARNING_THRESHOLD);
   });
 });

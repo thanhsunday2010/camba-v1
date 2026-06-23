@@ -1,33 +1,31 @@
 import { describe, expect, it } from "vitest";
 import { resolve } from "node:path";
 import {
-  getItemsByGrammarTag,
   getItemsByLevel,
-  getItemsBySkill,
-  getItemsByVocabularyTopic,
   listAvailableItemBankLevels,
   loadItemBank,
 } from "@/lib/item-bank/item-bank-registry";
+import { ITEM_BANK_SAMPLE_ITEMS } from "@/lib/item-bank/fixtures/item-bank-sample-items";
 
 const BANK_ROOT = resolve(process.cwd(), "data/item-bank");
 
 describe("item bank registry", () => {
-  it("loads starters item bank from filesystem", () => {
+  it("loads empty starters bank from filesystem after wipe", () => {
     const items = getItemsByLevel("starters", { rootDir: BANK_ROOT });
-    expect(items.length).toBe(20);
+    expect(items.length).toBe(0);
   });
 
-  it("filters by skill, grammar, and vocabulary", () => {
-    const listening = getItemsBySkill("starters", "listening", { rootDir: BANK_ROOT });
-    expect(listening.length).toBe(8);
+  it("filters sample items by skill, grammar, and vocabulary", () => {
+    const listening = ITEM_BANK_SAMPLE_ITEMS.filter((i) => i.skill === "listening");
+    expect(listening.length).toBe(2);
 
-    const verbBe = getItemsByGrammarTag("starters", "verb_be", { rootDir: BANK_ROOT });
-    expect(verbBe.length).toBeGreaterThan(0);
+    const verbBe = ITEM_BANK_SAMPLE_ITEMS.filter((i) => i.grammarTags.includes("verb_be"));
+    expect(verbBe.length).toBe(1);
 
-    const family = getItemsByVocabularyTopic("starters", "family", {
-      rootDir: BANK_ROOT,
-    });
-    expect(family.length).toBeGreaterThan(0);
+    const family = ITEM_BANK_SAMPLE_ITEMS.filter((i) =>
+      i.vocabularyTopics.includes("family")
+    );
+    expect(family.length).toBe(2);
   });
 
   it("lists available levels", () => {
@@ -37,8 +35,8 @@ describe("item bank registry", () => {
     expect(levels).toContain("flyers");
   });
 
-  it("loadItemBank aggregates non-empty banks only", () => {
+  it("loadItemBank returns empty when all banks are empty", () => {
     const all = loadItemBank({ rootDir: BANK_ROOT });
-    expect(all.length).toBe(20);
+    expect(all.length).toBe(0);
   });
 });

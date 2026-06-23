@@ -1,20 +1,19 @@
 import { describe, expect, it } from "vitest";
-import startersManifest from "../../../data/mock-tests/starters/starters-practice-test-1.json";
+import { ITEM_BANK_TEST_MANIFEST } from "@/lib/item-bank/fixtures/item-bank-test-manifest";
 import { extractItemBankFromManifest } from "@/lib/item-bank/item-bank-extract";
-import type { YleMockManifest } from "@/lib/mock-blueprints/yle-mock-manifest-types";
 
 describe("item bank extraction", () => {
-  it("extracts 20 items from Starters Practice Test 1", () => {
-    const bank = extractItemBankFromManifest(startersManifest as YleMockManifest);
+  it("extracts items from fixture manifest", () => {
+    const bank = extractItemBankFromManifest(ITEM_BANK_TEST_MANIFEST);
 
-    expect(bank.itemCount).toBe(20);
-    expect(bank.items).toHaveLength(20);
+    expect(bank.itemCount).toBe(2);
+    expect(bank.items).toHaveLength(2);
     expect(bank.level).toBe("starters");
-    expect(bank.sourceManifests).toContain("starters-practice-test-1");
+    expect(bank.sourceManifests).toContain("starters-practice-test-fixture");
   });
 
   it("preserves grammar tags, vocabulary topics, and content", () => {
-    const bank = extractItemBankFromManifest(startersManifest as YleMockManifest);
+    const bank = extractItemBankFromManifest(ITEM_BANK_TEST_MANIFEST);
     const listen05 = bank.items.find((i) => i.id === "starters-listen-05");
 
     expect(listen05?.grammarTags).toEqual(["verb_be"]);

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import startersPracticeTest1 from "../../../data/mock-tests/starters/starters-practice-test-1.json";
 import { analyzeQuestionIntelligenceMetadata } from "@/lib/learning/question-metadata-validation";
+import { ITEM_BANK_TEST_MANIFEST } from "@/lib/item-bank/fixtures/item-bank-test-manifest";
 import type { YleMockManifest } from "@/lib/mock-blueprints/yle-mock-manifest-types";
 
 describe("question intelligence metadata validation", () => {
@@ -60,10 +60,8 @@ describe("question intelligence metadata validation", () => {
     expect(issues.every((i) => i.severity === "warning")).toBe(true);
   });
 
-  it("starters practice test 1 is fully tagged with zero metadata warnings (M1.5.2)", () => {
-    const issues = analyzeQuestionIntelligenceMetadata(
-      startersPracticeTest1 as YleMockManifest
-    );
+  it("passes for fully tagged fixture manifest", () => {
+    const issues = analyzeQuestionIntelligenceMetadata(ITEM_BANK_TEST_MANIFEST);
     expect(issues).toHaveLength(0);
   });
 });

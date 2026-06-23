@@ -1,22 +1,21 @@
 import { describe, expect, it } from "vitest";
-import startersManifest from "../../../data/mock-tests/starters/starters-practice-test-1.json";
+import { ITEM_BANK_TEST_MANIFEST } from "@/lib/item-bank/fixtures/item-bank-test-manifest";
 import { extractItemBankFromManifest } from "@/lib/item-bank/item-bank-extract";
 import {
   validateItemBankFile,
   validateItemBankQuestion,
 } from "@/lib/item-bank/item-bank-validation";
-import type { YleMockManifest } from "@/lib/mock-blueprints/yle-mock-manifest-types";
 
 describe("item bank validation", () => {
-  it("passes for extracted Starters Test 1 items", () => {
-    const bank = extractItemBankFromManifest(startersManifest as YleMockManifest);
+  it("passes for extracted fixture items", () => {
+    const bank = extractItemBankFromManifest(ITEM_BANK_TEST_MANIFEST);
     const result = validateItemBankFile(bank.items);
     expect(result.valid).toBe(true);
     expect(result.errors).toHaveLength(0);
   });
 
   it("fails when required metadata is missing", () => {
-    const bank = extractItemBankFromManifest(startersManifest as YleMockManifest);
+    const bank = extractItemBankFromManifest(ITEM_BANK_TEST_MANIFEST);
     const bad = { ...bank.items[0]!, grammarTags: [] };
     const result = validateItemBankQuestion(bad);
     expect(result.valid).toBe(false);
@@ -24,7 +23,7 @@ describe("item bank validation", () => {
   });
 
   it("fails on unknown grammar tag", () => {
-    const bank = extractItemBankFromManifest(startersManifest as YleMockManifest);
+    const bank = extractItemBankFromManifest(ITEM_BANK_TEST_MANIFEST);
     const bad = { ...bank.items[0]!, grammarTags: ["not_a_real_tag"] };
     const result = validateItemBankQuestion(bad);
     expect(result.valid).toBe(false);
