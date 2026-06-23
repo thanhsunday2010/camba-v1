@@ -56,7 +56,7 @@ function getExerciseSubtitle(
   if (summary.exerciseType === "writing") return labels.writingAi;
   if (summary.exerciseType === "speaking") return labels.speakingAi;
   if (summary.questionCount > 0) {
-    return `${typeLabel} · ${labels.questionCount.replace("{count}", String(summary.questionCount))}`;
+    return `${typeLabel} · ${labels.questionCount(summary.questionCount)}`;
   }
   return typeLabel;
 }
@@ -174,9 +174,8 @@ export function LessonExerciseCard({
                 summary.latestAttempt.accuracyPercent > 0 && (
                   <>
                     {" · "}
-                    {labels.latestScore.replace(
-                      "{score}",
-                      String(Math.round(summary.latestAttempt.accuracyPercent))
+                    {labels.latestScore(
+                      Math.round(summary.latestAttempt.accuracyPercent)
                     )}
                   </>
                 )}

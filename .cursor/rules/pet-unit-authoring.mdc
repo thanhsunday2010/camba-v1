@@ -1,0 +1,30 @@
+---
+description: PET U1–U14 gold blueprint authoring
+globs: scripts/lib/pet-blueprints/**/*
+alwaysApply: false
+---
+
+# PET Unit Authoring
+
+**Read first:** `scripts/lib/pet-blueprints/TEMPLATE.md`
+
+**Gold reference (Unit 1):** `scripts/lib/pet-blueprints/unit-01/` + `shared/education-and-future-plans-content.mjs`
+
+**Curriculum:** `data/curriculum/cambridge-curriculum-map.json` → `levels.pet.units[N-1]`
+
+## Pipeline
+
+```bash
+npm run generate:pet-units -- <N>
+npm run validate:pet
+npm run generate:listening-audio -- pet <N>
+npm run seed:pet -- --from <N> --to <N> --unlock-test-student
+```
+
+## PET settings
+
+- `levelTag`: `"pet"`
+- Writing `minWords`: 40
+- Speaking `maxDurationSeconds`: 150
+- Character: **Minh (15)** — education/career arc
+- 18 lessons × 90 exercises; AI only on Check

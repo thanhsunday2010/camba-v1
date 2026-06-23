@@ -27,9 +27,7 @@ export function LessonActiveExerciseHeader({
   onBackToList,
   className,
 }: LessonActiveExerciseHeaderProps) {
-  const positionLabel = labels.exercisePosition
-    .replace("{current}", String(position))
-    .replace("{total}", String(total));
+  const positionLabel = labels.exercisePosition(position, total);
 
   return (
     <div
@@ -52,7 +50,7 @@ export function LessonActiveExerciseHeader({
         <div className="flex items-center gap-2">
           <ProgressRing value={completionPercent} size={40} strokeWidth={4} />
           <span className="camba-caption text-muted hidden sm:inline">
-            {labels.lessonProgressShort.replace("{percent}", String(completionPercent))}
+            {labels.lessonProgressShort(completionPercent)}
           </span>
         </div>
       </div>

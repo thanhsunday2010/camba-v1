@@ -96,9 +96,7 @@ export function LessonHero({
   if (context.skillName) metaParts.push(context.skillName);
   if (context.unitTitle) metaParts.push(`${labels.unitLabel}: ${context.unitTitle}`);
   if (resolvedProgress.totalExercises > 0 && !isCompleteMode) {
-    metaParts.push(
-      labels.exerciseCount.replace("{count}", String(resolvedProgress.totalExercises))
-    );
+    metaParts.push(labels.exerciseCount(resolvedProgress.totalExercises));
   }
 
   if (isCompleteMode) {
@@ -206,10 +204,7 @@ export function LessonHero({
               />
               <div>
                 <p className="camba-caption text-muted">
-                  {labels.exerciseCount.replace(
-                    "{count}",
-                    String(resolvedProgress.totalExercises)
-                  )}
+                  {labels.exerciseCount(resolvedProgress.totalExercises)}
                 </p>
                 <p className="camba-stat text-lg text-program">
                   {resolvedProgress.completedCount}/{resolvedProgress.totalExercises}

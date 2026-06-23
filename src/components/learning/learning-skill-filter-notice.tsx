@@ -37,7 +37,7 @@ export function LearningSkillFilterNotice({
       </div>
       <div className="flex flex-wrap gap-2 shrink-0">
         <Button type="button" variant="outline" size="sm" onClick={onSwitchSkill}>
-          {switchSkillLabel.replace("{skill}", skillLabel)}
+          {switchSkillLabel}
         </Button>
         <Button type="button" variant="ghost" size="sm" onClick={onShowAll} className="gap-1">
           <LayoutGrid className="h-3.5 w-3.5" />

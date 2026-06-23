@@ -23,10 +23,10 @@ interface LessonPageContentProps {
   listLabels: LessonExerciseListLabels & {
     exercisesTitle: string;
     exercisesSubtitle: string;
-    exercisesProgress: string;
+    exercisesProgress: (completed: number, total: number) => string;
     nextSuggested: string;
     backToList: string;
-    remainingExercises?: string;
+    remainingExercises?: (count: number) => string;
     reviewExercisesSubtitle?: string;
     backToComplete?: string;
   };
@@ -146,9 +146,10 @@ export function LessonPageContent({
 
   const listSubtitle = isReviewingLesson && listLabels.reviewExercisesSubtitle
     ? listLabels.reviewExercisesSubtitle
-    : listLabels.exercisesProgress
-        .replace("{completed}", String(resolvedProgress.completedCount))
-        .replace("{total}", String(resolvedProgress.totalExercises));
+    : listLabels.exercisesProgress(
+        resolvedProgress.completedCount,
+        resolvedProgress.totalExercises
+      );
 
   return (
     <LessonPageShell
@@ -160,7 +161,7 @@ export function LessonPageContent({
       sessionCompletedExerciseIds={sessionCompletedExerciseIds}
       sessionAccuracyByExerciseId={sessionAccuracyByExerciseId}
       lastCompletedMeta={lastCompletedMeta}
-      remainingExercisesLabel={listLabels.remainingExercises}
+      remainingExercisesFormatter={listLabels.remainingExercises}
       activeExerciseId={activeExerciseId}
       isReviewingLesson={isReviewingLesson}
       onPrimaryHeroAction={onPrimaryHeroAction}

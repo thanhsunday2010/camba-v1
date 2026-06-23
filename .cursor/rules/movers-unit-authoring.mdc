@@ -1,0 +1,47 @@
+---
+description: Movers U2–U10 blueprint authoring — follow Unit 1 gold template
+globs: scripts/lib/movers-blueprints/**/*
+alwaysApply: false
+---
+
+# Movers Unit Authoring (U2–U10)
+
+**Read first:** `scripts/lib/movers-blueprints/TEMPLATE.md`
+
+**Gold reference (Unit 1):** `scripts/lib/movers-blueprints/unit-01/` + `shared/daily-routines-content.mjs`
+
+**Curriculum:** `data/curriculum/cambridge-curriculum-map.json` → `levels.movers.units[N-1]`
+
+## When user asks to create Movers U2–U10
+
+1. Read the unit brief from the curriculum map (slug, title, vocabulary, grammar, readingSkill, listeningSkill).
+2. Copy **structure** from Unit 1 — never copy Daily Routines **content**.
+3. Create `shared/<slug>-content.mjs` + `unit-0N.mjs` + `unit-0N/*.mjs` (6 skills).
+4. Target: **18 lessons × 90 exercises** (5 per lesson: Learn, Practice, Check, Apply, Review).
+5. Reuse character **Minh (9, Hanoi)** across Movers units.
+6. Only **Check** exercises use AI `writing` / `speaking`.
+7. Review exercises must be **hand-crafted**, not duplicates of Check.
+8. All `explanation` fields in **Vietnamese** with pedagogical distractor notes on MCQ.
+9. `topicTag` = unit slug; `levelTag` = `"movers"`.
+
+## Pipeline (run in order)
+
+```bash
+node scripts/generate-cambridge-units.mjs movers <N>
+npm run validate:movers
+npm run generate:listening-audio -- movers <N>
+npm run seed:movers -- --from <N> --to <N> --unlock-test-student
+```
+
+## Shared code (do not fork)
+
+- `scripts/lib/cambridge-unit-builder.mjs` — Movers meta: A1, minWords 15, speaking 90s
+- `scripts/lib/movers-blueprints/shared/exercise-helpers.mjs` — `createMoversFactory()`
+- `sentence_ordering`: use `items` + `correctOrder`
+
+## Scope boundary
+
+- **In scope:** Movers units 2–10 only
+- **Out of scope:** Starters, Flyers, KET, PET — each has its own blueprint folder and curriculum topics
+
+See also: `.cursor/rules/unit-content-authoring.mdc` for JSON quality rules.

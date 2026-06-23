@@ -1,0 +1,33 @@
+---
+description: KET U1 gold blueprint authoring — follow Movers/Flyers template
+globs: scripts/lib/ket-blueprints/unit-01/**/*
+alwaysApply: false
+---
+
+# KET Unit 1 Gold Authoring
+
+**Read first:** `scripts/lib/ket-blueprints/TEMPLATE.md`
+
+**Gold reference:** `scripts/lib/ket-blueprints/unit-01/` + `shared/education-and-study-content.mjs`
+
+**Curriculum:** `data/curriculum/cambridge-curriculum-map.json` → `levels.ket.units[0]`
+
+## Pipeline (Unit 1 only — modular gold)
+
+```bash
+npm run generate:ket-unit-01
+npm run validate:ket
+npm run generate:listening-audio -- ket 1
+npm run seed:ket -- --from 1 --to 1 --unlock-test-student
+```
+
+## KET U2–U12
+
+Legacy monolithic `unit-0N.mjs` (6 lessons) — migrate to modular gold using TEMPLATE.md.
+
+## Settings
+
+- `levelTag`: `"ket"`
+- Writing `minWords`: 25
+- Speaking `maxDurationSeconds`: 120
+- Character: **Linh (13)** — secondary student

@@ -19,13 +19,13 @@ import { validateUnitStructure } from "./lib/validate-unit-structure.mjs";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-const SUPPORTED_LEVELS = new Set(["movers", "flyers", "pet"]);
+const SUPPORTED_LEVELS = new Set(["movers", "flyers", "ket", "pet"]);
 
 function parseArgs() {
   const [levelArg, fromArg, toArg] = process.argv.slice(2);
   if (!levelArg || !SUPPORTED_LEVELS.has(levelArg)) {
     throw new Error(
-      `Usage: node scripts/generate-cambridge-units.mjs <movers|flyers|pet> [fromUnit] [toUnit]`
+      `Usage: node scripts/generate-cambridge-units.mjs <movers|flyers|ket|pet> [fromUnit] [toUnit]`
     );
   }
   const from = fromArg ? parseInt(fromArg, 10) : 1;

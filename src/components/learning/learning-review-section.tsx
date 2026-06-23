@@ -12,7 +12,7 @@ interface LearningReviewSectionLabels {
   ctaReview: string;
   minutes: string;
   reasons: Record<ReviewReasonKey, string>;
-  weakSkillHint: string;
+  weakSkillHint: (skill: string) => string;
 }
 
 interface LearningReviewSectionProps {
@@ -31,7 +31,7 @@ export function LearningReviewSection({
   if (items.length === 0) return null;
 
   const subtitle = weakSkillLabel
-    ? labels.weakSkillHint.replace("{skill}", weakSkillLabel)
+    ? labels.weakSkillHint(weakSkillLabel)
     : labels.subtitle;
 
   return (

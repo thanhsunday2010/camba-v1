@@ -31,7 +31,7 @@ export function LessonFinalExerciseResultFrame({
   children,
   className,
 }: LessonFinalExerciseResultFrameProps) {
-  const subtitle = labels.finalExerciseSubtitle.replace("{title}", exerciseTitle);
+  const subtitle = labels.finalExerciseSubtitle(exerciseTitle);
 
   return (
     <section

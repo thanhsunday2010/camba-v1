@@ -1,0 +1,40 @@
+---
+description: Flyers U2–U12 blueprint authoring — follow Unit 1 gold template
+globs: scripts/lib/flyers-blueprints/**/*
+alwaysApply: false
+---
+
+# Flyers Unit Authoring (U2–U12)
+
+**Read first:** `scripts/lib/flyers-blueprints/TEMPLATE.md`
+
+**Gold reference (Unit 1):** `scripts/lib/flyers-blueprints/unit-01/` + `shared/family-and-friends-extended-content.mjs`
+
+**Curriculum:** `data/curriculum/cambridge-curriculum-map.json` → `levels.flyers.units[N-1]`
+
+## When user asks to create Flyers U2–U12
+
+1. Read unit brief from curriculum map.
+2. Copy **structure** from Flyers Unit 1 — never copy Family and Friends **content**.
+3. Create `shared/<slug>-content.mjs` + `unit-0N.mjs` + `unit-0N/*.mjs`.
+4. Target: **18 lessons × 90 exercises** (Learn, Practice, Check, Apply, Review).
+5. Character **Minh (11, Hanoi)** across Flyers units.
+6. Only **Check** uses AI `writing` / `speaking`.
+7. Flyers: `minWords` 25, speaking `maxDurationSeconds` 120, `levelTag: "flyers"`.
+8. All explanations in **Vietnamese**.
+
+## Pipeline
+
+```bash
+node scripts/generate-cambridge-units.mjs flyers <N>
+npm run validate:flyers
+npm run generate:listening-audio -- flyers <N>
+npm run seed:flyers -- --from <N> --to <N> --unlock-test-student
+```
+
+## Scope
+
+- **In scope:** Flyers units 2–12
+- **Out of scope:** Movers, Starters, KET, PET — separate blueprint folders
+
+See: `.cursor/rules/unit-content-authoring.mdc`

@@ -28,7 +28,7 @@ interface LessonPageShellProps {
   sessionCompletedExerciseIds: Set<string>;
   sessionAccuracyByExerciseId: ReadonlyMap<string, number>;
   lastCompletedMeta: LessonExerciseCompletionMeta | null;
-  remainingExercisesLabel?: string;
+  remainingExercisesFormatter?: (count: number) => string;
   activeExerciseId?: string | null;
   isReviewingLesson?: boolean;
   onPrimaryHeroAction?: () => void;
@@ -47,7 +47,7 @@ export function LessonPageShell({
   sessionCompletedExerciseIds,
   sessionAccuracyByExerciseId,
   lastCompletedMeta,
-  remainingExercisesLabel,
+  remainingExercisesFormatter,
   activeExerciseId,
   isReviewingLesson = false,
   onPrimaryHeroAction,
@@ -87,8 +87,8 @@ export function LessonPageShell({
   }, [activeExerciseId, lastCompletedMeta, sessionAccuracyByExerciseId]);
 
   const remainingLabel =
-    remainingExercisesLabel && remainingCount > 0 && !isLessonCompleteResolved
-      ? remainingExercisesLabel.replace("{count}", String(remainingCount))
+    remainingExercisesFormatter && remainingCount > 0 && !isLessonCompleteResolved
+      ? remainingExercisesFormatter(remainingCount)
       : undefined;
 
   return (

@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronRight, Loader2, PenLine } from "lucide-react";
 import { toast } from "sonner";
 import type { WritingFeedback } from "@/types/ai";
+import type { AiExerciseLabels } from "@/lib/learning/lesson-page-types";
 
 interface WritingExerciseProps {
   exerciseId: string;
@@ -20,23 +21,7 @@ interface WritingExerciseProps {
   minWords?: number;
   maxWords?: number;
   targetLevel?: string;
-  labels: {
-    placeholder: string;
-    wordCount: string;
-    submit: string;
-    submitting: string;
-    minWordsError: string;
-    result: string;
-    estimatedLevel: string;
-    grammar: string;
-    vocabulary: string;
-    coherence: string;
-    improvements: string;
-    pronunciation: string;
-    fluency: string;
-    suggestions: string;
-    overallScore: string;
-  };
+  labels: AiExerciseLabels;
   onComplete?: () => void;
   nextExerciseTitle?: string;
   onNextExercise?: () => void;
@@ -68,7 +53,7 @@ export function WritingExercise({
   async function handleSubmit() {
     setError(null);
     if (wordCount < minWords) {
-      setError(labels.minWordsError.replace("{min}", String(minWords)));
+      setError(labels.minWordsError(minWords));
       return;
     }
 

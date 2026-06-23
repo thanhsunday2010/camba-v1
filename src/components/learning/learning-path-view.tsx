@@ -52,9 +52,9 @@ export interface LearningPathViewLabels {
     minutes: string;
   };
   skillFilter: {
-    hiddenMessage: string;
+    hiddenMessage: (skill: string) => string;
     showAll: string;
-    switchSkill: string;
+    switchSkill: (skill: string) => string;
   };
   skillNav: {
     all: string;
@@ -63,7 +63,7 @@ export interface LearningPathViewLabels {
   review: {
     title: string;
     subtitle: string;
-    weakSkillHint: string;
+    weakSkillHint: (skill: string) => string;
     stateNeedsReview: string;
     ctaReview: string;
     minutes: string;
@@ -323,10 +323,10 @@ export function LearningPathView({
 
       {focusHiddenByFilter && (
         <LearningSkillFilterNotice
-          message={labels.skillFilter.hiddenMessage.replace("{skill}", focusSkillLabel)}
+          message={labels.skillFilter.hiddenMessage(focusSkillLabel)}
           skillLabel={focusSkillLabel}
           showAllLabel={labels.skillFilter.showAll}
-          switchSkillLabel={labels.skillFilter.switchSkill}
+          switchSkillLabel={labels.skillFilter.switchSkill(focusSkillLabel)}
           onShowAll={() => {
             setActiveSkill("all");
             if (focusUnitSlug) setExpandedUnit(focusUnitSlug);

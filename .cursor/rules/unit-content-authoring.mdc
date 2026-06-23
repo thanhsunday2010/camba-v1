@@ -6,17 +6,16 @@ alwaysApply: false
 
 # Unit Content Authoring
 
-When creating or editing unit content, follow these rules. Gold standard: `data/content/starters/unit-01-family-and-friends.json`. Blueprint: `data/curriculum/cambridge-curriculum-map.json` (`contentStructure`).
+When creating or editing unit content, follow these rules. Gold standards: Starters `unit-01-family-and-friends.json`; Movers/Flyers/KET/PET `*/TEMPLATE.md` in respective blueprint folders. Blueprint: `data/curriculum/cambridge-curriculum-map.json` (`contentStructure`).
 
 ## Pipeline (all levels)
 
-| Step | Starters | KET |
-|------|----------|-----|
-| Curriculum | `data/curriculum/cambridge-curriculum-map.json` | same |
-| Blueprint | `scripts/lib/starters-blueprints/unit-XX.mjs` + `scripts/lib/starters-gold/hand/unit-XX.mjs` | `scripts/lib/ket-blueprints/unit-XX.mjs` |
-| Generate | `npm run generate:starters-gold` (or `generate:starters-units`) | `npm run generate:ket-units` |
-| Validate | `npm run validate:starters` | `npm run validate:ket` |
-| Seed | `npm run seed:starters` / `seed:unit` | `npm run seed:ket` |
+| Step | Starters | Movers | Flyers | KET | PET |
+|------|----------|--------|--------|-----|-----|
+| Blueprint | starters hand gold | `movers-blueprints/TEMPLATE.md` | `flyers-blueprints/TEMPLATE.md` | `ket-blueprints/TEMPLATE.md` (U1) | `pet-blueprints/TEMPLATE.md` |
+| Generate | `generate:starters-gold` | `generate:movers-units -- <N>` | `generate:flyers-units -- <N>` | `generate:ket-unit-01` / `generate:ket-units` | `generate:pet-units -- <N>` |
+| Validate | `validate:starters` | `validate:movers` | `validate:flyers` | `validate:ket` | `validate:pet` |
+| Seed | `seed:starters` | `seed:movers` | `seed:flyers` | `seed:ket` | `seed:pet` |
 
 Shared libraries: `scripts/lib/content-structure.mjs`, `exercise-factory.mjs`, `unit-assembler.mjs`, `content-ids.mjs`, `starters-gold/assemble-hand-content.mjs`.
 

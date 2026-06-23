@@ -1,5 +1,6 @@
 /**
  * Shared helpers for Movers gold blueprints.
+ * Template & U2–U10 guide: ./TEMPLATE.md
  */
 import { createCambridgeUnitBuilder } from "../../cambridge-unit-builder.mjs";
 import { TOPIC } from "./daily-routines-content.mjs";

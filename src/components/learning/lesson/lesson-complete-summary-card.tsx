@@ -32,10 +32,7 @@ function getRecommendationText(
 ): string {
   switch (variant) {
     case "exercisesNeedReview":
-      return labels.recommendationExercisesNeedReview.replace(
-        "{count}",
-        String(reviewableCount)
-      );
+      return labels.recommendationExercisesNeedReview(reviewableCount);
     case "lessonNeedsReview":
       return labels.recommendationLessonNeedsReview;
     case "finalQuizLow":
@@ -193,7 +190,7 @@ export function LessonCompleteSummaryCard({
               <Button variant="quest" size="lg" className="gap-2 w-full" asChild>
                 <Link href={`/learning/lesson/${nextPathLesson.id}`}>
                   <Sparkles className="h-4 w-4" />
-                  {labels.nextPathLesson.replace("{lesson}", nextPathLesson.title)}
+                  {labels.nextPathLesson(nextPathLesson.title)}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>

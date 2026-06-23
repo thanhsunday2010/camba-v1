@@ -149,8 +149,8 @@ interface ExercisePlayerProps {
   onNextExercise?: () => void;
   embeddedResult?: boolean;
   resultLabels?: {
-    resultHeading: string;
-    scoreLine: string;
+    resultHeading: (percent: number) => string;
+    scoreLine: (score: number, maxScore: number) => string;
   };
 }
 
@@ -203,12 +203,10 @@ export function ExercisePlayer({
 
   if (showResults && result) {
     const resultHeading = resultLabels?.resultHeading
-      ? resultLabels.resultHeading.replace("{percent}", String(result.accuracyPercent))
+      ? resultLabels.resultHeading(result.accuracyPercent)
       : `Kết quả: ${result.accuracyPercent}%`;
     const scoreLine = resultLabels?.scoreLine
-      ? resultLabels.scoreLine
-          .replace("{score}", String(result.score))
-          .replace("{maxScore}", String(result.maxScore))
+      ? resultLabels.scoreLine(result.score, result.maxScore)
       : `Điểm: ${result.score}/${result.maxScore}`;
 
     if (embeddedResult) {
