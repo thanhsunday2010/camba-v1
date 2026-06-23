@@ -6,6 +6,8 @@ import type {
   YleMockValidationResult,
 } from "@/lib/mock-blueprints/yle-mock-blueprint-types";
 import type { YleMockManifest } from "@/lib/mock-blueprints/yle-mock-manifest-types";
+import { analyzeMockManifestQuality } from "@/lib/mock-tests/mock-manifest-quality";
+import { analyzeQuestionIntelligenceMetadata } from "@/lib/learning/question-metadata-validation";
 import {
   YLE_MOCK_QUESTION_TYPE_REGISTRY,
   resolveCambaQuestionType,
@@ -393,6 +395,9 @@ export function validateYleMockManifestForSeeding(
       )
     );
   }
+
+  issues.push(...analyzeMockManifestQuality(manifest));
+  issues.push(...analyzeQuestionIntelligenceMetadata(manifest));
 
   return result(issues);
 }

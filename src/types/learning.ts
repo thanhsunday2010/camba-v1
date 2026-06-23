@@ -194,6 +194,7 @@ export interface MockTestData {
   totalScore: number;
   levelId: string | null;
   levelName: string | null;
+  settings?: Record<string, unknown> | null;
   sections: MockTestSection[];
 }
 

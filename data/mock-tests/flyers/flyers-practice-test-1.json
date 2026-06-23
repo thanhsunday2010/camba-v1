@@ -357,89 +357,243 @@
     {
       "sortOrder": 0,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Teams from four [0] joined the race.",
-        "correctAnswers": [
-          "schools"
-        ],
-        "levelTag": "flyers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "How many schools joined the race?",
+      "choices": [
+        {
+          "text": "four",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "two",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "six",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-01",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
       "topicTag": "adventure",
       "skillTag": "listening",
-      "explanation": "Four schools."
+      "explanation": "Teams from four schools.",
+      "content": {
+        "levelTag": "flyers"
+      }
     },
     {
       "sortOrder": 1,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "They canoed across the [0].",
-        "correctAnswers": [
-          "river"
-        ],
-        "levelTag": "flyers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "Why did one team get lost?",
+      "choices": [
+        {
+          "text": "their map blew away",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "they missed the bus",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "the river flooded",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-02",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "adventure",
-      "skillTag": "listening",
-      "explanation": "Canoed across the river."
-    },
-    {
-      "sortOrder": 2,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "One team got lost because their map [0] away.",
-        "correctAnswers": [
-          "blew"
-        ],
-        "levelTag": "flyers"
-      },
-      "questionRef": "listen-03",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "hard",
       "topicTag": "adventure",
       "skillTag": "listening",
-      "explanation": "The map blew away."
+      "explanation": "The map blew away.",
+      "content": {
+        "levelTag": "flyers"
+      }
+    },
+    {
+      "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did the winners donate?",
+      "choices": [
+        {
+          "text": "prize money for trees",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "old bicycles",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "science books",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-03",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "skillTag": "listening",
+      "explanation": "Donated to plant trees.",
+      "content": {
+        "levelTag": "flyers"
+      }
     },
     {
       "sortOrder": 3,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "A [0] helped the lost team.",
-        "correctAnswers": [
-          "volunteer"
-        ],
-        "levelTag": "flyers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did they canoe across?",
+      "choices": [
+        {
+          "text": "the river",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "the motorway",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "the playground",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-04",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
-      "difficulty": "medium",
-      "topicTag": "community",
+      "difficulty": "easy",
+      "topicTag": "adventure",
       "skillTag": "listening",
-      "explanation": "A volunteer helped."
+      "explanation": "Canoed across the river.",
+      "content": {
+        "levelTag": "flyers"
+      }
     },
     {
       "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What must racers wear before canoeing?",
+      "choices": [
+        {
+          "text": "life jackets",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "helmets only",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "gloves",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-05",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "safety",
+      "skillTag": "listening",
+      "explanation": "Life jackets.",
+      "content": {
+        "levelTag": "flyers"
+      }
+    },
+    {
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What was the hardest part?",
+      "choices": [
+        {
+          "text": "the steep hill",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "the ticket desk",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "the library",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-06",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "adventure",
+      "skillTag": "listening",
+      "explanation": "The steep hill.",
+      "content": {
+        "levelTag": "flyers"
+      }
+    },
+    {
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "How should teams paddle?",
+      "choices": [
+        {
+          "text": "together in rhythm",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "as fast as possible alone",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "without looking",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-07",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "teamwork",
+      "skillTag": "listening",
+      "explanation": "Paddle in rhythm.",
+      "content": {
+        "levelTag": "flyers"
+      }
+    },
+    {
+      "sortOrder": 7,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -457,7 +611,7 @@
           ]
         }
       },
-      "questionRef": "listen-05",
+      "questionRef": "listen-08",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "easy",
@@ -466,7 +620,28 @@
       "explanation": "Two hours."
     },
     {
-      "sortOrder": 5,
+      "sortOrder": 8,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "questionText": "Complete the sentence.",
+      "content": {
+        "template": "A [0] helped the lost team.",
+        "correctAnswers": [
+          "volunteer"
+        ],
+        "levelTag": "flyers"
+      },
+      "questionRef": "listen-09",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "listening",
+      "explanation": "A volunteer helped."
+    },
+    {
+      "sortOrder": 9,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -478,103 +653,13 @@
         ],
         "levelTag": "flyers"
       },
-      "questionRef": "listen-06",
+      "questionRef": "listen-10",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
       "topicTag": "environment",
       "skillTag": "listening",
       "explanation": "Plant trees."
-    },
-    {
-      "sortOrder": 6,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Put on your life [0] before canoeing.",
-        "correctAnswers": [
-          "jackets"
-        ],
-        "levelTag": "flyers",
-        "acceptedAnswers": {
-          "0": [
-            "jackets",
-            "jacket"
-          ]
-        }
-      },
-      "questionRef": "listen-07",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "medium",
-      "topicTag": "safety",
-      "skillTag": "listening",
-      "explanation": "Life jackets."
-    },
-    {
-      "sortOrder": 7,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Paddle together in [0].",
-        "correctAnswers": [
-          "rhythm"
-        ],
-        "levelTag": "flyers"
-      },
-      "questionRef": "listen-08",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "hard",
-      "topicTag": "teamwork",
-      "skillTag": "listening",
-      "explanation": "Paddle in rhythm."
-    },
-    {
-      "sortOrder": 8,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "The volunteer had a spare [0].",
-        "correctAnswers": [
-          "copy"
-        ],
-        "levelTag": "flyers"
-      },
-      "questionRef": "listen-09",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "medium",
-      "topicTag": "adventure",
-      "skillTag": "listening",
-      "explanation": "A spare copy of the map."
-    },
-    {
-      "sortOrder": 9,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "The hardest part was the steep [0].",
-        "correctAnswers": [
-          "hill"
-        ],
-        "levelTag": "flyers"
-      },
-      "questionRef": "listen-10",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "adventure",
-      "skillTag": "listening",
-      "explanation": "The steep hill."
     },
     {
       "sortOrder": 10,
@@ -1172,10 +1257,10 @@
   "coverageAchieved": {
     "distinctTopics": [
       "adventure",
-      "community",
       "environment",
       "safety",
       "teamwork",
+      "community",
       "feelings",
       "sponsorship"
     ],

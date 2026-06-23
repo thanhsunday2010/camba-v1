@@ -293,53 +293,243 @@
     {
       "sortOrder": 0,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "The science club meets in Room [0].",
-        "correctAnswers": [
-          "12"
-        ],
-        "levelTag": "movers",
-        "acceptedAnswers": {
-          "0": [
-            "12",
-            "twelve"
-          ]
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "Where does the science club meet?",
+      "choices": [
+        {
+          "text": "Room 12",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "Room 4",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "Room 20",
+          "isCorrect": false,
+          "sortOrder": 2
         }
-      },
+      ],
       "questionRef": "listen-01",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "easy",
       "topicTag": "school",
       "skillTag": "listening",
-      "explanation": "Room 12."
+      "explanation": "Room 12.",
+      "content": {
+        "levelTag": "movers"
+      }
     },
     {
       "sortOrder": 1,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "They built volcanoes with baking soda and [0].",
-        "correctAnswers": [
-          "vinegar"
-        ],
-        "levelTag": "movers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did they use with baking soda?",
+      "choices": [
+        {
+          "text": "vinegar",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "honey",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "oil",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-02",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
       "topicTag": "science",
       "skillTag": "listening",
-      "explanation": "Baking soda and vinegar."
+      "explanation": "Baking soda and vinegar.",
+      "content": {
+        "levelTag": "movers"
+      }
     },
     {
       "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What should they water in the garden?",
+      "choices": [
+        {
+          "text": "sunflowers",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "carrots only",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "the path",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-03",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "garden",
+      "skillTag": "listening",
+      "explanation": "Water the sunflowers.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "Which bin is for plastic bottles?",
+      "choices": [
+        {
+          "text": "blue recycling bin",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "green compost bin",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "black rubbish bin",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-04",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "skillTag": "listening",
+      "explanation": "Blue recycling bin.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What powered the robot?",
+      "choices": [
+        {
+          "text": "two batteries",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "solar panels only",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "a kite",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-05",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "technology",
+      "skillTag": "listening",
+      "explanation": "Two batteries.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What grew in the jars?",
+      "choices": [
+        {
+          "text": "crystals",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "fish",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "beans",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-06",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "science",
+      "skillTag": "listening",
+      "explanation": "Grow crystals.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What is farther than the Sun in the script?",
+      "choices": [
+        {
+          "text": "Polaris",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "the Moon",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "Mars",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-07",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "space",
+      "skillTag": "listening",
+      "explanation": "Polaris is farther than the Sun.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 7,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -351,7 +541,7 @@
         ],
         "levelTag": "movers"
       },
-      "questionRef": "listen-03",
+      "questionRef": "listen-08",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
@@ -360,49 +550,7 @@
       "explanation": "It bubbled over."
     },
     {
-      "sortOrder": 3,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "They learned to grow [0] in jars.",
-        "correctAnswers": [
-          "crystals"
-        ],
-        "levelTag": "movers"
-      },
-      "questionRef": "listen-04",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "hard",
-      "topicTag": "science",
-      "skillTag": "listening",
-      "explanation": "Grow crystals."
-    },
-    {
-      "sortOrder": 4,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Plastic bottles go in the blue [0] bin.",
-        "correctAnswers": [
-          "recycling"
-        ],
-        "levelTag": "movers"
-      },
-      "questionRef": "listen-05",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "environment",
-      "skillTag": "listening",
-      "explanation": "Blue recycling bin."
-    },
-    {
-      "sortOrder": 5,
+      "sortOrder": 8,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -414,7 +562,7 @@
         ],
         "levelTag": "movers"
       },
-      "questionRef": "listen-06",
+      "questionRef": "listen-09",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
@@ -423,90 +571,15 @@
       "explanation": "Green compost bin."
     },
     {
-      "sortOrder": 6,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "The robot was powered by two small [0].",
-        "correctAnswers": [
-          "batteries"
-        ],
-        "levelTag": "movers",
-        "acceptedAnswers": {
-          "0": [
-            "batteries",
-            "battery"
-          ]
-        }
-      },
-      "questionRef": "listen-07",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "technology",
-      "skillTag": "listening",
-      "explanation": "Two batteries."
-    },
-    {
-      "sortOrder": 7,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Polaris is much farther than the [0].",
-        "correctAnswers": [
-          "Sun"
-        ],
-        "levelTag": "movers",
-        "acceptedAnswers": {
-          "0": [
-            "Sun",
-            "sun"
-          ]
-        }
-      },
-      "questionRef": "listen-08",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "hard",
-      "topicTag": "space",
-      "skillTag": "listening",
-      "explanation": "Farther than the Sun."
-    },
-    {
-      "sortOrder": 8,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Don't forget the [0] too.",
-        "correctAnswers": [
-          "sunflowers"
-        ],
-        "levelTag": "movers"
-      },
-      "questionRef": "listen-09",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "garden",
-      "skillTag": "listening",
-      "explanation": "Water the sunflowers."
-    },
-    {
       "sortOrder": 9,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "questionText": "Complete the sentence.",
       "content": {
-        "template": "They measured the distance with a tape [0].",
+        "template": "They built volcanoes with baking soda and [0].",
         "correctAnswers": [
-          "measure"
+          "vinegar"
         ],
         "levelTag": "movers"
       },
@@ -516,7 +589,7 @@
       "difficulty": "medium",
       "topicTag": "science",
       "skillTag": "listening",
-      "explanation": "Tape measure."
+      "explanation": "Baking soda and vinegar."
     },
     {
       "sortOrder": 10,
@@ -975,10 +1048,10 @@
     "distinctTopics": [
       "school",
       "science",
+      "garden",
       "environment",
       "technology",
       "space",
-      "garden",
       "weather",
       "competition",
       "safety"

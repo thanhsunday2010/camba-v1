@@ -4,6 +4,7 @@ import { Link } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { MockTestCompleteSummary } from "@/components/mock-tests/mock-test-complete-summary";
+import { MockTestFormatDisclosure } from "@/components/mock-tests/mock-test-format-disclosure";
 import { MockTestStatusPill } from "@/components/mock-tests/mock-test-status-pill";
 import type {
   MockTestAttemptSummary,
@@ -185,6 +186,11 @@ export function MockTestPageShell({
           <MockTestProgressStrip
             resolvedProgress={resolvedProgress}
             labels={takeLabels}
+          />
+          <MockTestFormatDisclosure
+            format={viewModel.format}
+            labels={takeLabels.format}
+            variant="compact"
           />
         </>
       )}

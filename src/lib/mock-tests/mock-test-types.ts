@@ -1,5 +1,7 @@
 import type { MockTestData } from "@/types/learning";
 import type { MockTestQuestionContextView } from "@/lib/mock-tests/mock-test-context";
+import type { MockTestFormatMetadata } from "@/lib/mock-tests/mock-test-format";
+import type { YleLevelSlug } from "@/lib/mock-blueprints/yle-mock-blueprint-types";
 
 export type MockTestDisplayState =
   | "not-started"
@@ -16,6 +18,7 @@ export type MockTestHubSummary = {
   title: string;
   description: string | null;
   levelName: string | null;
+  levelSlug: YleLevelSlug | null;
   durationMinutes: number;
   questionCount: number;
   sectionCount: number;
@@ -25,6 +28,14 @@ export type MockTestHubSummary = {
   displayState: MockTestDisplayState;
   latestCompletedAt: string | null;
   skillTags: string[];
+  format: MockTestFormatMetadata;
+  isRecommendedForLearner: boolean;
+};
+
+export type MockTestLevelBucket = {
+  slug: YleLevelSlug;
+  name: string;
+  count: number;
 };
 
 export type MockTestAttemptSummary = {
@@ -55,6 +66,7 @@ export type MockTestDetailViewModel = {
   title: string;
   description: string | null;
   levelName: string | null;
+  levelSlug: YleLevelSlug | null;
   durationMinutes: number;
   totalScore: number;
   questionCount: number;
@@ -66,11 +78,33 @@ export type MockTestDetailViewModel = {
   sections: MockTestSectionSummary[];
   latestAttempt: MockTestAttemptSummary | null;
   takeHref: string;
+  format: MockTestFormatMetadata;
 };
 
 export type MockTestHubViewModel = {
   tests: MockTestHubSummary[];
+  recommendedTests: MockTestHubSummary[];
+  recommendedMockIds: string[];
   totalCount: number;
+  currentLearnerLevelSlug: YleLevelSlug | null;
+  currentLearnerLevelName: string | null;
+  availableLevelBuckets: MockTestLevelBucket[];
+};
+
+export type MockTestFormatLabels = {
+  practiceMockBadge: string;
+  practiceMockDescription: string;
+  autoScoredNote: string;
+  autoScoredShort: string;
+  noSpeakingWriting: string;
+  listeningLabel: string;
+  listeningAudio: string;
+  listeningText: string;
+  listeningMixed: string;
+  aboutTitle: string;
+  aboutSubtitle: string;
+  skillsIncluded: string;
+  skillsIncludedFallback: string;
 };
 
 export type MockTestHubLabels = {
@@ -81,6 +115,11 @@ export type MockTestHubLabels = {
   filterNotStarted: string;
   filterCompleted: string;
   filterNeedsReview: string;
+  scopeRecommended: string;
+  scopeAll: string;
+  recommendedSectionTitle: string;
+  recommendedSectionSubtitle: string;
+  allSectionTitle: string;
   level: string;
   minutes: string;
   questions: string;
@@ -92,6 +131,7 @@ export type MockTestHubLabels = {
   emptyTitle: string;
   emptyDescription: string;
   statusLabels: Record<MockTestDisplayState, string>;
+  format: MockTestFormatLabels;
 };
 
 export type MockTestDetailLabels = {
@@ -115,6 +155,7 @@ export type MockTestDetailLabels = {
   attemptsSummary: string;
   notAvailable: string;
   statusLabels: Record<MockTestDisplayState, string>;
+  format: MockTestFormatLabels;
 };
 
 export type MockTestCompleteLabels = {
@@ -153,6 +194,7 @@ export type MockTestPageLabels = {
   complete: MockTestCompleteLabels;
   review: MockTestReviewLabels;
   take: MockTestTakeLabels;
+  format: MockTestFormatLabels;
 };
 
 export type MockTestContextPanelLabels = {
@@ -188,6 +230,7 @@ export type MockTestTakeViewModel = {
   title: string;
   description: string | null;
   levelName: string | null;
+  levelSlug: YleLevelSlug | null;
   durationMinutes: number;
   questionCount: number;
   sectionCount: number;
@@ -197,6 +240,7 @@ export type MockTestTakeViewModel = {
   detailHref: string;
   hubHref: string;
   hasPriorAttempts: boolean;
+  format: MockTestFormatMetadata;
 };
 
 export type ResolvedMockTestProgress = {
@@ -239,5 +283,6 @@ export type MockTestTakeLabels = {
   viewDetail: string;
   reviewWeakSkill: string;
   completeModeSubtitle: string;
+  format: MockTestFormatLabels;
   contextPanel: MockTestContextPanelLabels;
 };

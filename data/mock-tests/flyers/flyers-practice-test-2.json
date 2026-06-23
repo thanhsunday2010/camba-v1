@@ -357,89 +357,243 @@
     {
       "sortOrder": 0,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "The fair opened in the sports [0].",
-        "correctAnswers": [
-          "hall"
-        ],
-        "levelTag": "flyers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "Where did the fair open?",
+      "choices": [
+        {
+          "text": "the sports hall",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "the library",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "the canteen",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-01",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "easy",
       "topicTag": "technology",
       "skillTag": "listening",
-      "explanation": "Sports hall."
+      "explanation": "Sports hall.",
+      "content": {
+        "levelTag": "flyers"
+      }
     },
     {
       "sortOrder": 1,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Students demonstrated robots, apps, and 3D-printed [0].",
-        "correctAnswers": [
-          "models"
-        ],
-        "levelTag": "flyers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did students demonstrate?",
+      "choices": [
+        {
+          "text": "robots, apps, and 3D-printed models",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "only board games",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "only paintings",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-02",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
       "topicTag": "technology",
       "skillTag": "listening",
-      "explanation": "3D-printed models."
+      "explanation": "Robots, apps and models.",
+      "content": {
+        "levelTag": "flyers"
+      }
     },
     {
       "sortOrder": 2,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "A judge praised a wheelchair [0] designed by Year 6.",
-        "correctAnswers": [
-          "ramp"
-        ],
-        "levelTag": "flyers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "How did visitors vote?",
+      "choices": [
+        {
+          "text": "online",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "by post",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "by phone only",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-03",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
-      "difficulty": "medium",
-      "topicTag": "invention",
+      "difficulty": "easy",
+      "topicTag": "technology",
       "skillTag": "listening",
-      "explanation": "Wheelchair ramp."
+      "explanation": "Voted online.",
+      "content": {
+        "levelTag": "flyers"
+      }
     },
     {
       "sortOrder": 3,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Visitors voted [0] for the most helpful invention.",
-        "correctAnswers": [
-          "online"
-        ],
-        "levelTag": "flyers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "Who tested the grocery app?",
+      "choices": [
+        {
+          "text": "three families",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "only teachers",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "only judges",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-04",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "easy",
       "topicTag": "technology",
       "skillTag": "listening",
-      "explanation": "Voted online."
+      "explanation": "Three families tried it.",
+      "content": {
+        "levelTag": "flyers"
+      }
     },
     {
       "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did a judge praise?",
+      "choices": [
+        {
+          "text": "a wheelchair ramp",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "a painting",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "a song",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-05",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "invention",
+      "skillTag": "listening",
+      "explanation": "Wheelchair ramp.",
+      "content": {
+        "levelTag": "flyers"
+      }
+    },
+    {
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What should you never share?",
+      "choices": [
+        {
+          "text": "passwords",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "homework tips",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "lunch",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-06",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "safety",
+      "skillTag": "listening",
+      "explanation": "Never share passwords.",
+      "content": {
+        "levelTag": "flyers"
+      }
+    },
+    {
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What does the ramp project need in the code task?",
+      "choices": [
+        {
+          "text": "change the variable",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "delete the app",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "add colours only",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-07",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "coding",
+      "skillTag": "listening",
+      "explanation": "Change the variable.",
+      "content": {
+        "levelTag": "flyers"
+      }
+    },
+    {
+      "sortOrder": 7,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -451,7 +605,7 @@
         ],
         "levelTag": "flyers"
       },
-      "questionRef": "listen-05",
+      "questionRef": "listen-08",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "hard",
@@ -460,28 +614,7 @@
       "explanation": "Broke records."
     },
     {
-      "sortOrder": 5,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Change the [0] and test again.",
-        "correctAnswers": [
-          "variable"
-        ],
-        "levelTag": "flyers"
-      },
-      "questionRef": "listen-06",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "hard",
-      "topicTag": "coding",
-      "skillTag": "listening",
-      "explanation": "Change the variable."
-    },
-    {
-      "sortOrder": 6,
+      "sortOrder": 8,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -493,7 +626,7 @@
         ],
         "levelTag": "flyers"
       },
-      "questionRef": "listen-07",
+      "questionRef": "listen-09",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "hard",
@@ -502,28 +635,7 @@
       "explanation": "Fresh filament."
     },
     {
-      "sortOrder": 7,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Never share [0] with friends.",
-        "correctAnswers": [
-          "passwords"
-        ],
-        "levelTag": "flyers"
-      },
-      "questionRef": "listen-08",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "medium",
-      "topicTag": "safety",
-      "skillTag": "listening",
-      "explanation": "Never share passwords."
-    },
-    {
-      "sortOrder": 8,
+      "sortOrder": 9,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -535,34 +647,13 @@
         ],
         "levelTag": "flyers"
       },
-      "questionRef": "listen-09",
+      "questionRef": "listen-10",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
       "topicTag": "invention",
       "skillTag": "listening",
       "explanation": "Well built."
-    },
-    {
-      "sortOrder": 9,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "They asked three [0] to try the app.",
-        "correctAnswers": [
-          "families"
-        ],
-        "levelTag": "flyers"
-      },
-      "questionRef": "listen-10",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "technology",
-      "skillTag": "listening",
-      "explanation": "Three families tested it."
     },
     {
       "sortOrder": 10,
@@ -1179,9 +1270,9 @@
     "distinctTopics": [
       "technology",
       "invention",
-      "events",
-      "coding",
       "safety",
+      "coding",
+      "events",
       "community",
       "education",
       "workshop"

@@ -7,24 +7,33 @@ import { MockTestEmptyState } from "@/components/mock-tests/mock-test-empty-stat
 import type {
   MockTestDisplayState,
   MockTestHubLabels,
-  MockTestHubSummary,
+  MockTestHubViewModel,
 } from "@/lib/mock-tests/mock-test-types";
 import { filterHubSummariesByDisplayState } from "@/lib/mock-tests/mock-test-ui-utils";
 import { ClipboardList } from "lucide-react";
 
 interface MockTestHubFiltersProps {
-  tests: MockTestHubSummary[];
+  hub: MockTestHubViewModel;
   labels: MockTestHubLabels;
 }
 
 type HubFilter = "all" | MockTestDisplayState;
+type HubScope = "recommended" | "all";
 
-export function MockTestHubFilters({ tests, labels }: MockTestHubFiltersProps) {
+export function MockTestHubFilters({ hub, labels }: MockTestHubFiltersProps) {
+  const hasRecommended =
+    hub.currentLearnerLevelSlug != null && hub.recommendedTests.length > 0;
+  const [scope, setScope] = useState<HubScope>(hasRecommended ? "recommended" : "all");
   const [filter, setFilter] = useState<HubFilter>("all");
 
+  const scopeTests = useMemo(() => {
+    if (scope === "recommended") return hub.recommendedTests;
+    return hub.tests;
+  }, [scope, hub.recommendedTests, hub.tests]);
+
   const filtered = useMemo(
-    () => filterHubSummariesByDisplayState(tests, filter),
-    [tests, filter]
+    () => filterHubSummariesByDisplayState(scopeTests, filter),
+    [scopeTests, filter]
   );
 
   const filterOptions: { id: HubFilter; label: string }[] = [
@@ -34,7 +43,7 @@ export function MockTestHubFilters({ tests, labels }: MockTestHubFiltersProps) {
     { id: "needs-review", label: labels.filterNeedsReview },
   ];
 
-  if (tests.length === 0) {
+  if (hub.tests.length === 0) {
     return (
       <MockTestEmptyState
         title={labels.emptyTitle}
@@ -45,6 +54,49 @@ export function MockTestHubFilters({ tests, labels }: MockTestHubFiltersProps) {
 
   return (
     <div className="space-y-4">
+      {hasRecommended && (
+        <div className="space-y-2">
+          <div className="flex flex-wrap gap-2" role="tablist" aria-label={labels.scopeRecommended}>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={scope === "recommended"}
+              onClick={() => setScope("recommended")}
+              className={cn(
+                "rounded-full px-3 py-1.5 text-xs font-semibold transition-colors camba-focus-ring",
+                scope === "recommended"
+                  ? "bg-[var(--status-mock-test)] text-white"
+                  : "bg-[var(--surface-sunken)] text-muted hover:text-foreground"
+              )}
+            >
+              {labels.scopeRecommended}
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={scope === "all"}
+              onClick={() => setScope("all")}
+              className={cn(
+                "rounded-full px-3 py-1.5 text-xs font-semibold transition-colors camba-focus-ring",
+                scope === "all"
+                  ? "bg-[var(--status-mock-test)] text-white"
+                  : "bg-[var(--surface-sunken)] text-muted hover:text-foreground"
+              )}
+            >
+              {labels.scopeAll}
+            </button>
+          </div>
+          {scope === "recommended" && hub.currentLearnerLevelName && (
+            <p className="camba-caption text-muted">
+              {labels.recommendedSectionSubtitle.replace(
+                "{level}",
+                hub.currentLearnerLevelName
+              )}
+            </p>
+          )}
+        </div>
+      )}
+
       <div className="flex flex-wrap gap-2" role="tablist" aria-label={labels.filterAll}>
         {filterOptions.map((option) => (
           <button
@@ -71,10 +123,17 @@ export function MockTestHubFilters({ tests, labels }: MockTestHubFiltersProps) {
           description={labels.emptyDescription}
         />
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2">
-          {filtered.map((test) => (
-            <MockTestCard key={test.id} test={test} labels={labels} />
-          ))}
+        <div className="space-y-3">
+          <h2 className="camba-h3 text-foreground">
+            {scope === "recommended"
+              ? labels.recommendedSectionTitle
+              : labels.allSectionTitle}
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {filtered.map((test) => (
+              <MockTestCard key={test.id} test={test} labels={labels} />
+            ))}
+          </div>
         </div>
       )}
     </div>

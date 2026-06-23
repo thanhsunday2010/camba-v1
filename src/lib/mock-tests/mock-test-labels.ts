@@ -1,5 +1,28 @@
 import { getTranslations } from "next-intl/server";
-import type { MockTestDisplayState, MockTestPageLabels } from "@/lib/mock-tests/mock-test-types";
+import type {
+  MockTestDisplayState,
+  MockTestFormatLabels,
+  MockTestPageLabels,
+} from "@/lib/mock-tests/mock-test-types";
+
+async function buildMockTestFormatLabels(): Promise<MockTestFormatLabels> {
+  const tf = await getTranslations("mockTests.format");
+  return {
+    practiceMockBadge: tf("practiceMockBadge"),
+    practiceMockDescription: tf("practiceMockDescription"),
+    autoScoredNote: tf("autoScoredNote"),
+    autoScoredShort: tf("autoScoredShort"),
+    noSpeakingWriting: tf("noSpeakingWriting"),
+    listeningLabel: tf("listeningLabel"),
+    listeningAudio: tf("listeningAudio"),
+    listeningText: tf("listeningText"),
+    listeningMixed: tf("listeningMixed"),
+    aboutTitle: tf("aboutTitle"),
+    aboutSubtitle: tf("aboutSubtitle"),
+    skillsIncluded: tf("skillsIncluded"),
+    skillsIncludedFallback: tf("skillsIncludedFallback"),
+  };
+}
 
 export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
   const t = await getTranslations("mockTests");
@@ -10,6 +33,7 @@ export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
   const tt = await getTranslations("mockTests.take");
   const tcp = await getTranslations("mockTests.take.contextPanel");
   const ts = await getTranslations("mockTests.status");
+  const format = await buildMockTestFormatLabels();
 
   const statusLabels: Record<MockTestDisplayState, string> = {
     "not-started": ts("notStarted"),
@@ -19,6 +43,7 @@ export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
   };
 
   return {
+    format,
     hub: {
       title: th("title"),
       subtitle: th("subtitle"),
@@ -27,6 +52,11 @@ export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
       filterNotStarted: th("filterNotStarted"),
       filterCompleted: th("filterCompleted"),
       filterNeedsReview: th("filterNeedsReview"),
+      scopeRecommended: th("scopeRecommended"),
+      scopeAll: th("scopeAll"),
+      recommendedSectionTitle: th("recommendedSectionTitle"),
+      recommendedSectionSubtitle: th("recommendedSectionSubtitle"),
+      allSectionTitle: th("allSectionTitle"),
       level: t("level"),
       minutes: t("minutes"),
       questions: t("questions"),
@@ -38,6 +68,7 @@ export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
       emptyTitle: th("emptyTitle"),
       emptyDescription: th("emptyDescription"),
       statusLabels,
+      format,
     },
     detail: {
       backToHub: td("backToHub"),
@@ -60,6 +91,7 @@ export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
       attemptsSummary: td("attemptsSummary"),
       notAvailable: t("notAvailable"),
       statusLabels,
+      format,
     },
     complete: {
       title: tc("title"),
@@ -119,6 +151,7 @@ export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
       viewDetail: tt("viewDetail"),
       reviewWeakSkill: tt("reviewWeakSkill"),
       completeModeSubtitle: tt("completeModeSubtitle"),
+      format,
       contextPanel: {
         listeningPart: tcp("listeningPart"),
         readingPart: tcp("readingPart"),

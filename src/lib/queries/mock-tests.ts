@@ -127,6 +127,7 @@ export async function fetchMockTestByIdFull(testId: string): Promise<{
   totalScore: number;
   levelId: string | null;
   levelName: string | null;
+  settings: Record<string, unknown> | null;
   sections: Array<{
     id: string;
     title: string;
@@ -237,6 +238,7 @@ export async function fetchMockTestByIdFull(testId: string): Promise<{
     totalScore: test.total_score,
     levelId: test.level_id,
     levelName,
+    settings: (test.settings as Record<string, unknown> | null) ?? null,
     sections: mockSections,
   };
 }

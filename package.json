@@ -42,6 +42,7 @@
     "seed:mock-tests": "node scripts/seed-mock-tests.mjs",
     "seed:all-mock-tests": "node scripts/seed-all-mock-tests.mjs",
     "write:m1-3-mock-manifests": "node scripts/write-m1-3-mock-manifests.mjs",
+    "analyze:content-coverage": "node scripts/analyze-content-coverage.mjs",
     "generate:listening-audio": "node scripts/generate-listening-audio.mjs"
   },
   "dependencies": {

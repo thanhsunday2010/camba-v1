@@ -2,6 +2,7 @@ import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/button";
 import { MockTestBreadcrumb, MockTestHero } from "@/components/mock-tests/mock-test-hero";
 import { MockTestCompleteSummary } from "@/components/mock-tests/mock-test-complete-summary";
+import { MockTestFormatDisclosure } from "@/components/mock-tests/mock-test-format-disclosure";
 import { MockTestSectionList } from "@/components/mock-tests/mock-test-section-list";
 import type {
   MockTestCompleteLabels,
@@ -63,6 +64,12 @@ export function MockTestDetailShell({
           </Button>
         )}
       </div>
+
+      <MockTestFormatDisclosure
+        format={viewModel.format}
+        labels={labels.format}
+        variant="card"
+      />
 
       <div id="mock-test-structure">
         <MockTestSectionList sections={viewModel.sections} labels={labels} />

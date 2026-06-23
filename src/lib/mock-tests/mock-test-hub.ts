@@ -1,3 +1,4 @@
+import { getActiveProgramContext } from "@/lib/programs/context";
 import { resolveProgramId } from "@/lib/programs/context";
 import { createClient } from "@/lib/supabase/server";
 import {
@@ -5,45 +6,85 @@ import {
   getMockTestSectionCounts,
   getUserMockTestAttemptAggregates,
 } from "@/lib/queries/mock-tests";
+import {
+  getMockTestFormatMap,
+  getSkillSectionsForTests,
+} from "@/lib/mock-tests/mock-test-format-queries";
+import { isMockRecommendedForLevel, resolveYleLevelSlug } from "@/lib/mock-tests/mock-test-format";
 import { deriveMockTestDisplayState } from "@/lib/mock-tests/mock-test-ui-utils";
 import type {
   MockTestHubSummary,
   MockTestHubViewModel,
+  MockTestLevelBucket,
 } from "@/lib/mock-tests/mock-test-types";
+import type { YleLevelSlug } from "@/lib/mock-blueprints/yle-mock-blueprint-types";
 
 export async function getMockTestHubViewModel(
   userId: string
 ): Promise<MockTestHubViewModel> {
+  const empty: MockTestHubViewModel = {
+    tests: [],
+    recommendedTests: [],
+    recommendedMockIds: [],
+    totalCount: 0,
+    currentLearnerLevelSlug: null,
+    currentLearnerLevelName: null,
+    availableLevelBuckets: [],
+  };
+
   const supabase = await createClient();
-  const programId = await resolveProgramId(userId);
-  if (!programId) return { tests: [], totalCount: 0 };
+  const [programId, programContext] = await Promise.all([
+    resolveProgramId(userId),
+    getActiveProgramContext(userId),
+  ]);
+
+  if (!programId) return empty;
+
+  const learnerLevelSlug = (programContext?.level?.slug as YleLevelSlug | undefined) ?? null;
+  const learnerLevelName = programContext?.level?.name ?? null;
 
   const { data: tests } = await supabase
     .from("mock_tests")
-    .select("id, title, description, time_limit_minutes, level_id")
+    .select("id, title, description, time_limit_minutes, level_id, settings")
     .eq("program_id", programId)
     .eq("is_active", true)
     .order("created_at", { ascending: false });
 
-  if (!tests?.length) return { tests: [], totalCount: 0 };
+  if (!tests?.length) {
+    return {
+      ...empty,
+      currentLearnerLevelSlug: learnerLevelSlug,
+      currentLearnerLevelName: learnerLevelName,
+    };
+  }
 
   const testIds = tests.map((t) => t.id);
-  const [attemptAggregates, questionCounts, sectionCounts] = await Promise.all([
-    getUserMockTestAttemptAggregates(userId),
-    getMockTestQuestionCounts(testIds),
-    getMockTestSectionCounts(testIds),
-  ]);
+  const [attemptAggregates, questionCounts, sectionCounts, sectionsByTest] =
+    await Promise.all([
+      getUserMockTestAttemptAggregates(userId),
+      getMockTestQuestionCounts(testIds),
+      getMockTestSectionCounts(testIds),
+      getSkillSectionsForTests(testIds),
+    ]);
+
+  const formatRows = tests.map((test) => ({
+    testId: test.id,
+    levelId: test.level_id,
+    settings: (test.settings as Record<string, unknown> | null) ?? null,
+    sections: sectionsByTest.get(test.id) ?? [],
+  }));
+  const formatMap = await getMockTestFormatMap(formatRows);
 
   const levelIds = [...new Set(tests.map((t) => t.level_id).filter(Boolean))] as string[];
-  const levelMap = new Map<string, string>();
+  const levelMap = new Map<string, { name: string; slug: string }>();
 
   if (levelIds.length > 0) {
     const { data: levels } = await supabase
       .from("levels")
-      .select("id, name")
+      .select("id, name, slug")
       .in("id", levelIds);
     for (const level of levels ?? []) {
-      levelMap.set(level.id, level.name);
+      levelMap.set(level.id, { name: level.name, slug: level.slug });
     }
   }
 
@@ -58,11 +99,18 @@ export async function getMockTestHubViewModel(
       skillBreakdown: stats?.latestSkillBreakdown,
     });
 
+    const levelMeta = test.level_id ? levelMap.get(test.level_id) : null;
+    const format = formatMap.get(test.id)!;
+    const levelSlug =
+      resolveYleLevelSlug(test.level_id, levelMeta?.slug) ??
+      (format.levelSlug ?? null);
+
     return {
       id: test.id,
       title: test.title,
       description: test.description,
-      levelName: test.level_id ? levelMap.get(test.level_id) ?? null : null,
+      levelName: levelMeta?.name ?? null,
+      levelSlug,
       durationMinutes: test.time_limit_minutes,
       questionCount: questionCounts.get(test.id) ?? 0,
       sectionCount: sectionCounts.get(test.id) ?? 0,
@@ -72,10 +120,40 @@ export async function getMockTestHubViewModel(
       displayState,
       latestCompletedAt: stats?.latestCompletedAt ?? null,
       skillTags: skillTagsByTest.get(test.id) ?? [],
+      format,
+      isRecommendedForLearner: isMockRecommendedForLevel(levelSlug, learnerLevelSlug),
     };
   });
 
-  return { tests: summaries, totalCount: summaries.length };
+  const bucketCounts = new Map<YleLevelSlug, { name: string; count: number }>();
+  for (const summary of summaries) {
+    if (!summary.levelSlug) continue;
+    const existing = bucketCounts.get(summary.levelSlug);
+    if (existing) {
+      existing.count += 1;
+    } else {
+      bucketCounts.set(summary.levelSlug, {
+        name: summary.levelName ?? summary.levelSlug,
+        count: 1,
+      });
+    }
+  }
+
+  const availableLevelBuckets: MockTestLevelBucket[] = [...bucketCounts.entries()]
+    .map(([slug, meta]) => ({ slug, name: meta.name, count: meta.count }))
+    .sort((a, b) => a.slug.localeCompare(b.slug));
+
+  const recommendedTests = summaries.filter((t) => t.isRecommendedForLearner);
+
+  return {
+    tests: summaries,
+    recommendedTests,
+    recommendedMockIds: recommendedTests.map((t) => t.id),
+    totalCount: summaries.length,
+    currentLearnerLevelSlug: learnerLevelSlug,
+    currentLearnerLevelName: learnerLevelName,
+    availableLevelBuckets,
+  };
 }
 
 async function getSkillTagsForTests(

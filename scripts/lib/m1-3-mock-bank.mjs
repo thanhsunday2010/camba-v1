@@ -259,10 +259,10 @@ function rwRefs(n, prefix = "rw") {
   return Array.from({ length: n }, (_, i) => `${prefix}-${String(i + 1).padStart(2, "0")}`);
 }
 
-function gapItems(items, levelSlug, partSlug = "listening-part-2-fill") {
+function gapItems(items, levelSlug, partSlug = "listening-part-2-fill", refStart = 1) {
   return items.map((item, i) =>
     gap(item.q ?? "Complete the sentence.", item.template, item.answer, {
-      questionRef: `listen-${String(i + 1).padStart(2, "0")}`,
+      questionRef: `listen-${String(refStart + i).padStart(2, "0")}`,
       partSlug,
       sectionSlug: "listening",
       difficulty: item.difficulty,
@@ -271,6 +271,42 @@ function gapItems(items, levelSlug, partSlug = "listening-part-2-fill") {
       explanation: item.explanation,
       levelTag: levelSlug,
       acceptedAnswers: item.acceptedAnswers,
+    })
+  );
+}
+
+function listenMcqItems(items, levelSlug, partSlug = "listening-part-2-fill", refStart = 1) {
+  return items.map((item, i) => ({
+    points: 1,
+    blueprintQuestionType: "mcq_listening",
+    cambaQuestionType: "listening",
+    questionText: item.q,
+    choices: [
+      { text: item.correct, isCorrect: true, sortOrder: 0 },
+      ...item.wrong.map((w, j) => ({ text: w, isCorrect: false, sortOrder: j + 1 })),
+    ],
+    questionRef: `listen-${String(refStart + i).padStart(2, "0")}`,
+    partSlug,
+    sectionSlug: "listening",
+    difficulty: item.difficulty,
+    topicTag: item.topic,
+    skillTag: "listening",
+    explanation: item.explanation,
+    content: { levelTag: levelSlug },
+  }));
+}
+
+function listenMatchItems(items, levelSlug, partSlug = "listening-part-2-fill", refStart = 1) {
+  return items.map((item, i) =>
+    match(item.q, item.pairs, {
+      questionRef: `listen-${String(refStart + i).padStart(2, "0")}`,
+      partSlug,
+      sectionSlug: "listening",
+      difficulty: item.difficulty,
+      topicTag: item.topic,
+      skillTag: "listening",
+      explanation: item.explanation,
+      levelTag: levelSlug,
     })
   );
 }
@@ -844,18 +880,22 @@ const MOVERS_T1 = buildManifest({
     ),
   ],
   questions: [
+    ...listenMcqItems([
+      { q: "Where did Class 3B go last Tuesday?", correct: "the city museum", wrong: ["the beach", "the library"], topic: "school-trip", difficulty: "easy", explanation: "They went to the city museum." },
+      { q: "What did they see at the museum?", correct: "dinosaur bones", wrong: ["live animals", "a swimming pool"], topic: "museum", difficulty: "easy", explanation: "They saw dinosaur bones." },
+      { q: "How much were two science show tickets?", correct: "six pounds", wrong: ["four pounds", "ten pounds"], topic: "money", difficulty: "medium", explanation: "Six pounds for two tickets." },
+      { q: "What did Tom buy in the shop?", correct: "a postcard", wrong: ["a sandwich", "a ticket"], topic: "shopping", difficulty: "easy", explanation: "Tom bought a postcard." },
+    ], "movers", "listening-part-2-fill", 1),
+    ...listenMcqItems([
+      { q: "Where did Sara find the scarf?", correct: "near the dinosaur room", wrong: ["in the shop", "on the bus"], topic: "museum", difficulty: "easy", explanation: "Near the dinosaur room." },
+      { q: "What must the children do on the bus?", correct: "fasten seatbelts", wrong: ["buy tickets", "read books"], topic: "transport", difficulty: "medium", explanation: "Fasten your seatbelts." },
+      { q: "What did everyone drink after the game?", correct: "orange juice", wrong: ["cola", "milk"], topic: "sports", difficulty: "easy", explanation: "They drank orange juice." },
+    ], "movers", "listening-part-3-dialogues", 5),
     ...gapItems([
-      { template: "They went to the city [0] last Tuesday.", answer: "museum", topic: "school-trip", difficulty: "easy", explanation: "They visited the museum." },
-      { template: "They saw dinosaur [0].", answer: "bones", topic: "museum", difficulty: "easy", explanation: "Dinosaur bones were on display." },
       { template: "The guide told stories about ancient [0].", answer: "Egypt", topic: "history", difficulty: "medium", explanation: "Stories were about ancient Egypt.", acceptedAnswers: { 0: ["Egypt", "egypt"] } },
-      { template: "Tom bought a [0] in the shop.", answer: "postcard", topic: "shopping", difficulty: "easy", explanation: "Tom bought a postcard." },
-      { template: "The science show tickets cost six [0].", answer: "pounds", topic: "money", difficulty: "medium", explanation: "Six pounds for two tickets." },
       { template: "Sara found a blue [0].", answer: "scarf", topic: "clothes", difficulty: "easy", explanation: "A blue scarf near the dinosaur room." },
-      { template: "Mia wants some [0] too.", answer: "water", topic: "food", difficulty: "easy", explanation: "Mia asks for water." },
-      { template: "The driver says: Fasten your [0].", answer: "seatbelts", topic: "transport", difficulty: "medium", explanation: "Fasten your seatbelts.", acceptedAnswers: { 0: ["seatbelts", "seatbelt"] } },
       { template: "Ben scored a [0] in the first half.", answer: "goal", topic: "sports", difficulty: "easy", explanation: "Ben scored a goal." },
-      { template: "Everyone drank orange [0] after the game.", answer: "juice", topic: "sports", difficulty: "easy", explanation: "They drank orange juice." },
-    ], "movers"),
+    ], "movers", "listening-part-2-fill", 8),
     match("Match each definition to the correct word.", [["A place with old objects on show", "museum"], ["A person who teaches you on a trip", "guide"], ["Something you send to a friend with a picture", "postcard"]], {
       questionRef: "rw-01", partSlug: "rw-part-1-definitions", sectionSlug: "reading-writing",
       difficulty: "easy", topicTag: "museum", skillTag: "reading",
@@ -901,17 +941,17 @@ const MOVERS_T1 = buildManifest({
       difficulty: "easy", topicTag: "sports", skillTag: "reading",
       explanation: "They wore yellow shirts.", levelTag: "movers",
     }),
-    gap("Complete the sentence.", "Ben scored a goal in the [0] half.", "first", {
+    mcq("When did Ben score?", "in the first half", ["after the game", "before the match"], {
       questionRef: "rw-10", partSlug: "rw-part-3-story", sectionSlug: "reading-writing",
       difficulty: "medium", topicTag: "sports", skillTag: "reading",
-      explanation: "In the first half.", levelTag: "movers",
+      explanation: "Ben scored in the first half.", levelTag: "movers",
     }),
     gap("Complete the sentence.", "The crowd clapped [0].", "loudly", {
       questionRef: "rw-11", partSlug: "rw-part-3-story", sectionSlug: "reading-writing",
       difficulty: "medium", topicTag: "sports", skillTag: "reading",
       explanation: "They clapped loudly.", levelTag: "movers",
     }),
-    gap("Complete the sentence.", "Ben felt very [0] after the game.", "proud", {
+    mcq("How did Ben feel after the game?", "proud", ["bored", "angry"], {
       questionRef: "rw-12", partSlug: "rw-part-3-story", sectionSlug: "reading-writing",
       difficulty: "hard", topicTag: "feelings", skillTag: "reading",
       explanation: "Ben felt proud.", levelTag: "movers",
@@ -921,20 +961,20 @@ const MOVERS_T1 = buildManifest({
       difficulty: "easy", topicTag: "school", skillTag: "reading",
       explanation: "Packed lunch for the trip.", levelTag: "movers",
     }),
-    gap("Complete the message.", "Lucy's party is on 14 [0].", "May", {
-      questionRef: "rw-14", partSlug: "rw-part-4-messages", sectionSlug: "reading-writing",
+    mcq("When is Lucy's party?", "14 May", ["14 March", "4 May"], {
+      questionRef: "rw-14", partSlug: "rw-part-2-conversations", sectionSlug: "reading-writing",
       difficulty: "medium", topicTag: "birthday", skillTag: "reading",
-      explanation: "14 May.", levelTag: "movers", acceptedAnswers: { 0: ["May", "may"] },
+      explanation: "14 May.", levelTag: "movers",
     }),
     gap("Complete the message.", "Bring your towel and [0].", "goggles", {
       questionRef: "rw-15", partSlug: "rw-part-4-messages", sectionSlug: "reading-writing",
       difficulty: "medium", topicTag: "sports", skillTag: "reading",
       explanation: "Towel and goggles for swimming.", levelTag: "movers",
     }),
-    gap("Complete the message.", "Return the book on [0].", "Wednesday", {
-      questionRef: "rw-16", partSlug: "rw-part-4-messages", sectionSlug: "reading-writing",
+    mcq("Which book must be returned?", "Space Heroes", ["Dinosaur Days", "River Park"], {
+      questionRef: "rw-16", partSlug: "rw-part-2-conversations", sectionSlug: "reading-writing",
       difficulty: "easy", topicTag: "library", skillTag: "reading",
-      explanation: "Due on Wednesday.", levelTag: "movers",
+      explanation: "Space Heroes is due.", levelTag: "movers",
     }),
   ],
 });
@@ -988,18 +1028,22 @@ const MOVERS_T2 = buildManifest({
     ),
   ],
   questions: [
+    ...listenMcqItems([
+      { q: "Where did they put their bags?", correct: "wooden cabins", wrong: ["metal tents", "stone houses"], topic: "holiday", difficulty: "easy", explanation: "Bags went in cabins." },
+      { q: "What did they see in the forest?", correct: "a deer", wrong: ["a dolphin", "a penguin"], topic: "animals", difficulty: "medium", explanation: "They saw a deer." },
+      { q: "How much were the sunglasses?", correct: "five pounds", wrong: ["three pounds", "eight pounds"], topic: "shopping", difficulty: "easy", explanation: "Five pounds." },
+      { q: "What did they sail on the lake?", correct: "small boats", wrong: ["bicycles", "buses"], topic: "holiday", difficulty: "easy", explanation: "They sailed small boats." },
+    ], "movers", "listening-part-2-fill", 1),
+    ...listenMcqItems([
+      { q: "What will they toast at the camp fire?", correct: "marshmallows", wrong: ["apples", "sandwiches"], topic: "food", difficulty: "medium", explanation: "Toast marshmallows." },
+      { q: "Which platform is their train?", correct: "platform four", wrong: ["platform two", "platform six"], topic: "travel", difficulty: "medium", explanation: "Platform four." },
+      { q: "What will they play when it rains?", correct: "board games inside", wrong: ["football outside", "swimming"], topic: "weather", difficulty: "easy", explanation: "Play inside when it rains." },
+    ], "movers", "listening-part-3-dialogues", 5),
     ...gapItems([
-      { template: "They put their bags in wooden [0].", answer: "cabins", topic: "holiday", difficulty: "easy", explanation: "Bags went in cabins." },
-      { template: "They sailed small boats on the [0].", answer: "lake", topic: "holiday", difficulty: "easy", explanation: "Boats on the lake." },
       { template: "On Wednesday they hiked through the [0].", answer: "forest", topic: "nature", difficulty: "medium", explanation: "Hiked through the forest." },
-      { template: "They saw a [0] in the forest.", answer: "deer", topic: "animals", difficulty: "medium", explanation: "They saw a deer." },
-      { template: "The sunglasses cost five [0].", answer: "pounds", topic: "shopping", difficulty: "easy", explanation: "Five pounds." },
-      { template: "They will toast [0] at the camp fire.", answer: "marshmallows", topic: "food", difficulty: "medium", explanation: "Toast marshmallows." },
       { template: "The train leaves at ten [0].", answer: "fifteen", topic: "travel", difficulty: "medium", explanation: "Ten fifteen.", acceptedAnswers: { 0: ["fifteen", "15"] } },
-      { template: "Platform [0] is their train.", answer: "four", topic: "travel", difficulty: "easy", explanation: "Platform four.", acceptedAnswers: { 0: ["four", "4"] } },
-      { template: "They will play board games [0].", answer: "inside", topic: "weather", difficulty: "easy", explanation: "Play inside when it rains." },
       { template: "Mum will make hot [0].", answer: "chocolate", topic: "food", difficulty: "easy", explanation: "Hot chocolate." },
-    ], "movers"),
+    ], "movers", "listening-part-2-fill", 8),
     match("Match each definition to the correct word.", [["A small house at a camp", "cabin"], ["To travel on water in a boat", "sail"], ["A large area with many trees", "forest"]], {
       questionRef: "rw-01", partSlug: "rw-part-1-definitions", sectionSlug: "reading-writing",
       difficulty: "easy", topicTag: "holiday", skillTag: "reading", explanation: "Cabin, sail, forest.", levelTag: "movers",
@@ -1118,18 +1162,22 @@ const MOVERS_T3 = buildManifest({
     ),
   ],
   questions: [
+    ...listenMcqItems([
+      { q: "Where does the science club meet?", correct: "Room 12", wrong: ["Room 4", "Room 20"], topic: "school", difficulty: "easy", explanation: "Room 12." },
+      { q: "What did they use with baking soda?", correct: "vinegar", wrong: ["honey", "oil"], topic: "science", difficulty: "medium", explanation: "Baking soda and vinegar." },
+      { q: "What should they water in the garden?", correct: "sunflowers", wrong: ["carrots only", "the path"], topic: "garden", difficulty: "easy", explanation: "Water the sunflowers." },
+      { q: "Which bin is for plastic bottles?", correct: "blue recycling bin", wrong: ["green compost bin", "black rubbish bin"], topic: "environment", difficulty: "easy", explanation: "Blue recycling bin." },
+    ], "movers", "listening-part-2-fill", 1),
+    ...listenMcqItems([
+      { q: "What powered the robot?", correct: "two batteries", wrong: ["solar panels only", "a kite"], topic: "technology", difficulty: "easy", explanation: "Two batteries." },
+      { q: "What grew in the jars?", correct: "crystals", wrong: ["fish", "beans"], topic: "science", difficulty: "hard", explanation: "Grow crystals." },
+      { q: "What is farther than the Sun in the script?", correct: "Polaris", wrong: ["the Moon", "Mars"], topic: "space", difficulty: "hard", explanation: "Polaris is farther than the Sun." },
+    ], "movers", "listening-part-3-dialogues", 5),
     ...gapItems([
-      { template: "The science club meets in Room [0].", answer: "12", topic: "school", difficulty: "easy", explanation: "Room 12.", acceptedAnswers: { 0: ["12", "twelve"] } },
-      { template: "They built volcanoes with baking soda and [0].", answer: "vinegar", topic: "science", difficulty: "medium", explanation: "Baking soda and vinegar." },
       { template: "The mixture [0] over the cups.", answer: "bubbled", topic: "science", difficulty: "medium", explanation: "It bubbled over." },
-      { template: "They learned to grow [0] in jars.", answer: "crystals", topic: "science", difficulty: "hard", explanation: "Grow crystals." },
-      { template: "Plastic bottles go in the blue [0] bin.", answer: "recycling", topic: "environment", difficulty: "easy", explanation: "Blue recycling bin." },
       { template: "Banana skins go in the green [0] bin.", answer: "compost", topic: "environment", difficulty: "medium", explanation: "Green compost bin." },
-      { template: "The robot was powered by two small [0].", answer: "batteries", topic: "technology", difficulty: "easy", explanation: "Two batteries.", acceptedAnswers: { 0: ["batteries", "battery"] } },
-      { template: "Polaris is much farther than the [0].", answer: "Sun", topic: "space", difficulty: "hard", explanation: "Farther than the Sun.", acceptedAnswers: { 0: ["Sun", "sun"] } },
-      { template: "Don't forget the [0] too.", answer: "sunflowers", topic: "garden", difficulty: "easy", explanation: "Water the sunflowers." },
-      { template: "They measured the distance with a tape [0].", answer: "measure", topic: "science", difficulty: "medium", explanation: "Tape measure." },
-    ], "movers"),
+      { template: "They built volcanoes with baking soda and [0].", answer: "vinegar", topic: "science", difficulty: "medium", explanation: "Baking soda and vinegar." },
+    ], "movers", "listening-part-2-fill", 8),
     match("Match each definition to the correct word.", [["A room where scientists work", "laboratory"], ["To make something new from parts", "build"], ["Liquid that reacts with baking soda", "vinegar"]], {
       questionRef: "rw-01", partSlug: "rw-part-1-definitions", sectionSlug: "reading-writing",
       difficulty: "medium", topicTag: "science", skillTag: "reading", explanation: "Laboratory, build, vinegar.", levelTag: "movers",
@@ -1316,18 +1364,22 @@ const FLYERS_T1 = buildManifest({
     ),
   ],
   questions: [
+    ...listenMcqItems([
+      { q: "How many schools joined the race?", correct: "four", wrong: ["two", "six"], topic: "adventure", difficulty: "medium", explanation: "Teams from four schools." },
+      { q: "Why did one team get lost?", correct: "their map blew away", wrong: ["they missed the bus", "the river flooded"], topic: "adventure", difficulty: "hard", explanation: "The map blew away." },
+      { q: "What did the winners donate?", correct: "prize money for trees", wrong: ["old bicycles", "science books"], topic: "environment", difficulty: "medium", explanation: "Donated to plant trees." },
+      { q: "What did they canoe across?", correct: "the river", wrong: ["the motorway", "the playground"], topic: "adventure", difficulty: "easy", explanation: "Canoed across the river." },
+    ], "flyers", "listening-part-2-fill", 1),
+    ...listenMcqItems([
+      { q: "What must racers wear before canoeing?", correct: "life jackets", wrong: ["helmets only", "gloves"], topic: "safety", difficulty: "medium", explanation: "Life jackets." },
+      { q: "What was the hardest part?", correct: "the steep hill", wrong: ["the ticket desk", "the library"], topic: "adventure", difficulty: "easy", explanation: "The steep hill." },
+      { q: "How should teams paddle?", correct: "together in rhythm", wrong: ["as fast as possible alone", "without looking"], topic: "teamwork", difficulty: "hard", explanation: "Paddle in rhythm." },
+    ], "flyers", "listening-part-3-dialogues", 5),
     ...gapItems([
-      { template: "Teams from four [0] joined the race.", answer: "schools", topic: "adventure", difficulty: "medium", explanation: "Four schools." },
-      { template: "They canoed across the [0].", answer: "river", topic: "adventure", difficulty: "easy", explanation: "Canoed across the river." },
-      { template: "One team got lost because their map [0] away.", answer: "blew", topic: "adventure", difficulty: "hard", explanation: "The map blew away." },
-      { template: "A [0] helped the lost team.", answer: "volunteer", topic: "community", difficulty: "medium", explanation: "A volunteer helped." },
       { template: "The winning team finished in two [0].", answer: "hours", topic: "adventure", difficulty: "easy", explanation: "Two hours.", acceptedAnswers: { 0: ["hours", "hour"] } },
+      { template: "A [0] helped the lost team.", answer: "volunteer", topic: "community", difficulty: "medium", explanation: "A volunteer helped." },
       { template: "They donated prize money to plant [0].", answer: "trees", topic: "environment", difficulty: "medium", explanation: "Plant trees." },
-      { template: "Put on your life [0] before canoeing.", answer: "jackets", topic: "safety", difficulty: "medium", explanation: "Life jackets.", acceptedAnswers: { 0: ["jackets", "jacket"] } },
-      { template: "Paddle together in [0].", answer: "rhythm", topic: "teamwork", difficulty: "hard", explanation: "Paddle in rhythm." },
-      { template: "The volunteer had a spare [0].", answer: "copy", topic: "adventure", difficulty: "medium", explanation: "A spare copy of the map." },
-      { template: "The hardest part was the steep [0].", answer: "hill", topic: "adventure", difficulty: "easy", explanation: "The steep hill." },
-    ], "flyers"),
+    ], "flyers", "listening-part-2-fill", 8),
     match("Which heading matches each paragraph?", [["Paragraph A", "Library Sunday opening"], ["Paragraph B", "Safer cycling route"], ["Paragraph C", "Tree planting by students"]], {
       questionRef: "rw-01", partSlug: "rw-part-1-headings", sectionSlug: "reading-writing",
       difficulty: "medium", topicTag: "community", skillTag: "reading", explanation: "A=library, B=cycle path, C=trees.", levelTag: "flyers",
@@ -1471,18 +1523,22 @@ const FLYERS_T2 = buildManifest({
     ),
   ],
   questions: [
+    ...listenMcqItems([
+      { q: "Where did the fair open?", correct: "the sports hall", wrong: ["the library", "the canteen"], topic: "technology", difficulty: "easy", explanation: "Sports hall." },
+      { q: "What did students demonstrate?", correct: "robots, apps, and 3D-printed models", wrong: ["only board games", "only paintings"], topic: "technology", difficulty: "medium", explanation: "Robots, apps and models." },
+      { q: "How did visitors vote?", correct: "online", wrong: ["by post", "by phone only"], topic: "technology", difficulty: "easy", explanation: "Voted online." },
+      { q: "Who tested the grocery app?", correct: "three families", wrong: ["only teachers", "only judges"], topic: "technology", difficulty: "easy", explanation: "Three families tried it." },
+    ], "flyers", "listening-part-2-fill", 1),
+    ...listenMcqItems([
+      { q: "What did a judge praise?", correct: "a wheelchair ramp", wrong: ["a painting", "a song"], topic: "invention", difficulty: "medium", explanation: "Wheelchair ramp." },
+      { q: "What should you never share?", correct: "passwords", wrong: ["homework tips", "lunch"], topic: "safety", difficulty: "medium", explanation: "Never share passwords." },
+      { q: "What does the ramp project need in the code task?", correct: "change the variable", wrong: ["delete the app", "add colours only"], topic: "coding", difficulty: "hard", explanation: "Change the variable." },
+    ], "flyers", "listening-part-3-dialogues", 5),
     ...gapItems([
-      { template: "The fair opened in the sports [0].", answer: "hall", topic: "technology", difficulty: "easy", explanation: "Sports hall." },
-      { template: "Students demonstrated robots, apps, and 3D-printed [0].", answer: "models", topic: "technology", difficulty: "medium", explanation: "3D-printed models." },
-      { template: "A judge praised a wheelchair [0] designed by Year 6.", answer: "ramp", topic: "invention", difficulty: "medium", explanation: "Wheelchair ramp." },
-      { template: "Visitors voted [0] for the most helpful invention.", answer: "online", topic: "technology", difficulty: "easy", explanation: "Voted online." },
       { template: "Attendance broke [0].", answer: "records", topic: "events", difficulty: "hard", explanation: "Broke records." },
-      { template: "Change the [0] and test again.", answer: "variable", topic: "coding", difficulty: "hard", explanation: "Change the variable." },
       { template: "The printer needs fresh [0].", answer: "filament", topic: "technology", difficulty: "hard", explanation: "Fresh filament." },
-      { template: "Never share [0] with friends.", answer: "passwords", topic: "safety", difficulty: "medium", explanation: "Never share passwords." },
       { template: "The ramp project is practical and well [0].", answer: "built", topic: "invention", difficulty: "medium", explanation: "Well built." },
-      { template: "They asked three [0] to try the app.", answer: "families", topic: "technology", difficulty: "easy", explanation: "Three families tested it." },
-    ], "flyers"),
+    ], "flyers", "listening-part-2-fill", 8),
     match("Which heading matches each paragraph?", [["Paragraph A", "Library Sunday opening"], ["Paragraph B", "Safer cycling route"], ["Paragraph D", "Drama club performance"]], {
       questionRef: "rw-01", partSlug: "rw-part-1-headings", sectionSlug: "reading-writing",
       difficulty: "medium", topicTag: "community", skillTag: "reading", explanation: "Shared newsletter paragraphs.", levelTag: "flyers",
@@ -1629,18 +1685,22 @@ const FLYERS_T3 = buildManifest({
     ),
   ],
   questions: [
+    ...listenMcqItems([
+      { q: "What did the week help everyone respect?", correct: "diverse traditions", wrong: ["only sports rules", "only maths homework"], topic: "culture", difficulty: "medium", explanation: "Respect diverse traditions." },
+      { q: "What does Amelie want to try?", correct: "local cheese", wrong: ["spicy noodles only", "ice cream"], topic: "food", difficulty: "easy", explanation: "Local cheese." },
+      { q: "When is Konnichiwa used?", correct: "in the afternoon", wrong: ["at midnight", "only at school"], topic: "language", difficulty: "hard", explanation: "Afternoon greeting." },
+      { q: "What did students wear on costume day?", correct: "traditional costumes", wrong: ["school uniforms only", "swimming kits"], topic: "culture", difficulty: "medium", explanation: "Traditional costumes." },
+    ], "flyers", "listening-part-2-fill", 1),
+    ...listenMcqItems([
+      { q: "What did the guest from Brazil teach?", correct: "a samba rhythm", wrong: ["a maths formula", "a map skill"], topic: "music", difficulty: "hard", explanation: "Samba rhythm." },
+      { q: "Who joined a video call?", correct: "pen pals from France", wrong: ["teachers from Japan", "parents from Brazil"], topic: "exchange", difficulty: "easy", explanation: "Video call with France." },
+      { q: "What do Mexican tacos use?", correct: "soft tortillas", wrong: ["hard bread only", "rice paper"], topic: "food", difficulty: "medium", explanation: "Soft tortillas." },
+    ], "flyers", "listening-part-3-dialogues", 5),
     ...gapItems([
-      { template: "Students wore traditional [0].", answer: "costumes", topic: "culture", difficulty: "medium", explanation: "Traditional costumes." },
-      { template: "They cooked dishes from different [0].", answer: "countries", topic: "culture", difficulty: "easy", explanation: "Different countries." },
-      { template: "A guest speaker from Brazil taught a samba [0].", answer: "rhythm", topic: "music", difficulty: "hard", explanation: "Samba rhythm." },
-      { template: "Pen pals from France joined a video [0].", answer: "call", topic: "exchange", difficulty: "easy", explanation: "Video call." },
-      { template: "The week helped everyone respect diverse [0].", answer: "traditions", topic: "culture", difficulty: "medium", explanation: "Diverse traditions." },
       { template: "I'll make paper [0] for Diwali.", answer: "lanterns", topic: "festival", difficulty: "medium", explanation: "Paper lanterns." },
-      { template: "Amelie wants to try local [0].", answer: "cheese", topic: "food", difficulty: "easy", explanation: "Local cheese." },
       { template: "The mask is made from wood, beads, and natural [0].", answer: "dyes", topic: "art", difficulty: "hard", explanation: "Natural dyes." },
-      { template: "Konnichiwa is a greeting in the [0].", answer: "afternoon", topic: "language", difficulty: "hard", explanation: "Afternoon greeting in Japanese." },
-      { template: "Mexican tacos use soft [0].", answer: "tortillas", topic: "food", difficulty: "medium", explanation: "Soft tortillas." },
-    ], "flyers"),
+      { template: "They cooked dishes from different [0].", answer: "countries", topic: "culture", difficulty: "easy", explanation: "Different countries." },
+    ], "flyers", "listening-part-2-fill", 8),
     match("Which heading matches each paragraph?", [["Paragraph C", "Tree planting by students"], ["Paragraph A", "Library Sunday opening"], ["Paragraph E", "Free fruit after school"]], {
       questionRef: "rw-01", partSlug: "rw-part-1-headings", sectionSlug: "reading-writing",
       difficulty: "medium", topicTag: "community", skillTag: "reading", explanation: "C=trees, A=library, E=café.", levelTag: "flyers",

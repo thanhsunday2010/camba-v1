@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/routing";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
+import { MockTestFormatBadges } from "@/components/mock-tests/mock-test-format-disclosure";
 import { MockTestStatusPill } from "@/components/mock-tests/mock-test-status-pill";
 import type { MockTestHubLabels, MockTestHubSummary } from "@/lib/mock-tests/mock-test-types";
 import { Clock, FileQuestion, Layers, Trophy } from "lucide-react";
@@ -25,6 +26,12 @@ export function MockTestCard({ test, labels }: MockTestCardProps) {
         </div>
         <MockTestStatusPill state={test.displayState} label={statusLabel} />
       </div>
+
+      <MockTestFormatBadges
+        format={test.format}
+        labels={labels.format}
+        className="mt-2"
+      />
 
       <div className="flex flex-wrap gap-2 mt-3">
         {test.levelName && (

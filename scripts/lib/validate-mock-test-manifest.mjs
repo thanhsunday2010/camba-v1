@@ -3,6 +3,9 @@
  * Mirrors critical checks from src/lib/mock-blueprints/yle-mock-validation.ts
  */
 
+import { analyzeMockManifestQuality } from "./mock-manifest-quality.mjs";
+import { analyzeQuestionIntelligenceMetadata } from "./question-metadata-validation.mjs";
+
 const RUNTIME_SEED_ALLOWED_SUPPORT = new Set(["supported", "partial"]);
 
 const BLUEPRINT_ONLY_TYPES = new Set([
@@ -124,6 +127,14 @@ export function validateManifestForSeeding(manifest) {
   }
 
   validateManifestParts(manifest, error, warn);
+
+  for (const qualityIssue of analyzeMockManifestQuality(manifest)) {
+    issues.push(qualityIssue);
+  }
+
+  for (const intelIssue of analyzeQuestionIntelligenceMetadata(manifest)) {
+    issues.push(intelIssue);
+  }
 
   const errors = issues.filter((i) => i.severity === "error");
   return { valid: errors.length === 0, issues };

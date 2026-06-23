@@ -51,6 +51,12 @@ export interface YleMockQuestionManifestBlock {
   difficulty: YleMockDifficultyBand;
   topicTag: string | null;
   skillTag: string | null;
+  /** M1.4 — canonical grammar slugs (see grammar-taxonomy.ts) */
+  grammarTags?: string[];
+  /** M1.4 — canonical vocabulary topic slugs (see vocabulary-taxonomy.ts) */
+  vocabularyTopics?: string[];
+  /** @deprecated single tag — prefer grammarTags[] */
+  grammarTag?: string | null;
   questionText: string;
   explanation?: string | null;
   /** Gap-fill / ordering / listening content fields */

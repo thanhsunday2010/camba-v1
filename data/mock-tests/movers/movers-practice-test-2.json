@@ -293,47 +293,243 @@
     {
       "sortOrder": 0,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "They put their bags in wooden [0].",
-        "correctAnswers": [
-          "cabins"
-        ],
-        "levelTag": "movers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "Where did they put their bags?",
+      "choices": [
+        {
+          "text": "wooden cabins",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "metal tents",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "stone houses",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-01",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "easy",
       "topicTag": "holiday",
       "skillTag": "listening",
-      "explanation": "Bags went in cabins."
+      "explanation": "Bags went in cabins.",
+      "content": {
+        "levelTag": "movers"
+      }
     },
     {
       "sortOrder": 1,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "They sailed small boats on the [0].",
-        "correctAnswers": [
-          "lake"
-        ],
-        "levelTag": "movers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did they see in the forest?",
+      "choices": [
+        {
+          "text": "a deer",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "a dolphin",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "a penguin",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-02",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "animals",
+      "skillTag": "listening",
+      "explanation": "They saw a deer.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "How much were the sunglasses?",
+      "choices": [
+        {
+          "text": "five pounds",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "three pounds",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "eight pounds",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-03",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "shopping",
+      "skillTag": "listening",
+      "explanation": "Five pounds.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did they sail on the lake?",
+      "choices": [
+        {
+          "text": "small boats",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "bicycles",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "buses",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-04",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "easy",
       "topicTag": "holiday",
       "skillTag": "listening",
-      "explanation": "Boats on the lake."
+      "explanation": "They sailed small boats.",
+      "content": {
+        "levelTag": "movers"
+      }
     },
     {
-      "sortOrder": 2,
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What will they toast at the camp fire?",
+      "choices": [
+        {
+          "text": "marshmallows",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "apples",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "sandwiches",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-05",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "food",
+      "skillTag": "listening",
+      "explanation": "Toast marshmallows.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "Which platform is their train?",
+      "choices": [
+        {
+          "text": "platform four",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "platform two",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "platform six",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-06",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "travel",
+      "skillTag": "listening",
+      "explanation": "Platform four.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What will they play when it rains?",
+      "choices": [
+        {
+          "text": "board games inside",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "football outside",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "swimming",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-07",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "weather",
+      "skillTag": "listening",
+      "explanation": "Play inside when it rains.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 7,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -345,7 +541,7 @@
         ],
         "levelTag": "movers"
       },
-      "questionRef": "listen-03",
+      "questionRef": "listen-08",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
@@ -354,70 +550,7 @@
       "explanation": "Hiked through the forest."
     },
     {
-      "sortOrder": 3,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "They saw a [0] in the forest.",
-        "correctAnswers": [
-          "deer"
-        ],
-        "levelTag": "movers"
-      },
-      "questionRef": "listen-04",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "medium",
-      "topicTag": "animals",
-      "skillTag": "listening",
-      "explanation": "They saw a deer."
-    },
-    {
-      "sortOrder": 4,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "The sunglasses cost five [0].",
-        "correctAnswers": [
-          "pounds"
-        ],
-        "levelTag": "movers"
-      },
-      "questionRef": "listen-05",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "shopping",
-      "skillTag": "listening",
-      "explanation": "Five pounds."
-    },
-    {
-      "sortOrder": 5,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "They will toast [0] at the camp fire.",
-        "correctAnswers": [
-          "marshmallows"
-        ],
-        "levelTag": "movers"
-      },
-      "questionRef": "listen-06",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "medium",
-      "topicTag": "food",
-      "skillTag": "listening",
-      "explanation": "Toast marshmallows."
-    },
-    {
-      "sortOrder": 6,
+      "sortOrder": 8,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -435,61 +568,13 @@
           ]
         }
       },
-      "questionRef": "listen-07",
+      "questionRef": "listen-09",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
       "topicTag": "travel",
       "skillTag": "listening",
       "explanation": "Ten fifteen."
-    },
-    {
-      "sortOrder": 7,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Platform [0] is their train.",
-        "correctAnswers": [
-          "four"
-        ],
-        "levelTag": "movers",
-        "acceptedAnswers": {
-          "0": [
-            "four",
-            "4"
-          ]
-        }
-      },
-      "questionRef": "listen-08",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "travel",
-      "skillTag": "listening",
-      "explanation": "Platform four."
-    },
-    {
-      "sortOrder": 8,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "They will play board games [0].",
-        "correctAnswers": [
-          "inside"
-        ],
-        "levelTag": "movers"
-      },
-      "questionRef": "listen-09",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "weather",
-      "skillTag": "listening",
-      "explanation": "Play inside when it rains."
     },
     {
       "sortOrder": 9,
@@ -968,12 +1053,12 @@
   "coverageAchieved": {
     "distinctTopics": [
       "holiday",
-      "nature",
       "animals",
       "shopping",
       "food",
       "travel",
       "weather",
+      "nature",
       "safety"
     ],
     "distinctGrammarPatterns": [
@@ -991,8 +1076,8 @@
       "note completion"
     ],
     "difficultyCounts": {
-      "easy": 13,
-      "medium": 11,
+      "easy": 12,
+      "medium": 12,
       "hard": 2
     },
     "notes": "M1.3 Movers T2 — holiday camp theme; balanced easy/medium/hard."

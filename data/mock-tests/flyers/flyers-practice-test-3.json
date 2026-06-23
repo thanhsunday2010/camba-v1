@@ -357,110 +357,243 @@
     {
       "sortOrder": 0,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Students wore traditional [0].",
-        "correctAnswers": [
-          "costumes"
-        ],
-        "levelTag": "flyers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did the week help everyone respect?",
+      "choices": [
+        {
+          "text": "diverse traditions",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "only sports rules",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "only maths homework",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-01",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
       "topicTag": "culture",
       "skillTag": "listening",
-      "explanation": "Traditional costumes."
+      "explanation": "Respect diverse traditions.",
+      "content": {
+        "levelTag": "flyers"
+      }
     },
     {
       "sortOrder": 1,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "They cooked dishes from different [0].",
-        "correctAnswers": [
-          "countries"
-        ],
-        "levelTag": "flyers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What does Amelie want to try?",
+      "choices": [
+        {
+          "text": "local cheese",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "spicy noodles only",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "ice cream",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-02",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "easy",
-      "topicTag": "culture",
+      "topicTag": "food",
       "skillTag": "listening",
-      "explanation": "Different countries."
+      "explanation": "Local cheese.",
+      "content": {
+        "levelTag": "flyers"
+      }
     },
     {
       "sortOrder": 2,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "A guest speaker from Brazil taught a samba [0].",
-        "correctAnswers": [
-          "rhythm"
-        ],
-        "levelTag": "flyers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "When is Konnichiwa used?",
+      "choices": [
+        {
+          "text": "in the afternoon",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "at midnight",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "only at school",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-03",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "hard",
-      "topicTag": "music",
+      "topicTag": "language",
       "skillTag": "listening",
-      "explanation": "Samba rhythm."
+      "explanation": "Afternoon greeting.",
+      "content": {
+        "levelTag": "flyers"
+      }
     },
     {
       "sortOrder": 3,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Pen pals from France joined a video [0].",
-        "correctAnswers": [
-          "call"
-        ],
-        "levelTag": "flyers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did students wear on costume day?",
+      "choices": [
+        {
+          "text": "traditional costumes",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "school uniforms only",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "swimming kits",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-04",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "exchange",
-      "skillTag": "listening",
-      "explanation": "Video call."
-    },
-    {
-      "sortOrder": 4,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "The week helped everyone respect diverse [0].",
-        "correctAnswers": [
-          "traditions"
-        ],
-        "levelTag": "flyers"
-      },
-      "questionRef": "listen-05",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
       "topicTag": "culture",
       "skillTag": "listening",
-      "explanation": "Diverse traditions."
+      "explanation": "Traditional costumes.",
+      "content": {
+        "levelTag": "flyers"
+      }
+    },
+    {
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did the guest from Brazil teach?",
+      "choices": [
+        {
+          "text": "a samba rhythm",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "a maths formula",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "a map skill",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-05",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "hard",
+      "topicTag": "music",
+      "skillTag": "listening",
+      "explanation": "Samba rhythm.",
+      "content": {
+        "levelTag": "flyers"
+      }
     },
     {
       "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "Who joined a video call?",
+      "choices": [
+        {
+          "text": "pen pals from France",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "teachers from Japan",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "parents from Brazil",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-06",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "exchange",
+      "skillTag": "listening",
+      "explanation": "Video call with France.",
+      "content": {
+        "levelTag": "flyers"
+      }
+    },
+    {
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What do Mexican tacos use?",
+      "choices": [
+        {
+          "text": "soft tortillas",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "hard bread only",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "rice paper",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-07",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "food",
+      "skillTag": "listening",
+      "explanation": "Soft tortillas.",
+      "content": {
+        "levelTag": "flyers"
+      }
+    },
+    {
+      "sortOrder": 7,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -472,7 +605,7 @@
         ],
         "levelTag": "flyers"
       },
-      "questionRef": "listen-06",
+      "questionRef": "listen-08",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
@@ -481,28 +614,7 @@
       "explanation": "Paper lanterns."
     },
     {
-      "sortOrder": 6,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Amelie wants to try local [0].",
-        "correctAnswers": [
-          "cheese"
-        ],
-        "levelTag": "flyers"
-      },
-      "questionRef": "listen-07",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "food",
-      "skillTag": "listening",
-      "explanation": "Local cheese."
-    },
-    {
-      "sortOrder": 7,
+      "sortOrder": 8,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -514,7 +626,7 @@
         ],
         "levelTag": "flyers"
       },
-      "questionRef": "listen-08",
+      "questionRef": "listen-09",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "hard",
@@ -523,46 +635,25 @@
       "explanation": "Natural dyes."
     },
     {
-      "sortOrder": 8,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Konnichiwa is a greeting in the [0].",
-        "correctAnswers": [
-          "afternoon"
-        ],
-        "levelTag": "flyers"
-      },
-      "questionRef": "listen-09",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "hard",
-      "topicTag": "language",
-      "skillTag": "listening",
-      "explanation": "Afternoon greeting in Japanese."
-    },
-    {
       "sortOrder": 9,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "questionText": "Complete the sentence.",
       "content": {
-        "template": "Mexican tacos use soft [0].",
+        "template": "They cooked dishes from different [0].",
         "correctAnswers": [
-          "tortillas"
+          "countries"
         ],
         "levelTag": "flyers"
       },
       "questionRef": "listen-10",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
-      "difficulty": "medium",
-      "topicTag": "food",
+      "difficulty": "easy",
+      "topicTag": "culture",
       "skillTag": "listening",
-      "explanation": "Soft tortillas."
+      "explanation": "Different countries."
     },
     {
       "sortOrder": 10,
@@ -1166,12 +1257,12 @@
   "coverageAchieved": {
     "distinctTopics": [
       "culture",
+      "food",
+      "language",
       "music",
       "exchange",
       "festival",
-      "food",
       "art",
-      "language",
       "community",
       "writing",
       "charity"

@@ -1,5 +1,6 @@
 import { PROGRAM_ID, LEVEL_IDS, mockSkillId } from "./mock-test-ids.mjs";
 import { validateManifestForSeeding } from "./validate-mock-test-manifest.mjs";
+import { deriveFormatFromManifest } from "./mock-format-from-manifest.mjs";
 
 function buildQuestionContent(q, mockContext) {
   const base = {
@@ -10,6 +11,16 @@ function buildQuestionContent(q, mockContext) {
       q.difficulty === "easy" ? 1 : q.difficulty === "medium" ? 2 : 3,
     ...(q.content ?? {}),
   };
+
+  if (q.grammarTags?.length) {
+    base.grammarTags = q.grammarTags;
+  } else if (q.grammarTag) {
+    base.grammarTag = q.grammarTag;
+  }
+
+  if (q.vocabularyTopics?.length) {
+    base.vocabularyTopics = q.vocabularyTopics;
+  }
 
   if (mockContext) {
     base.mockContext = mockContext;
@@ -182,6 +193,7 @@ export async function seedMockTestFromManifest(supabase, manifest) {
   const { metadata, sections, questions } = manifest;
   const { mockTestId, containerExerciseId, sectionIds, questionIds } = metadata.seedIds;
   const levelId = LEVEL_IDS[metadata.levelSlug];
+  const formatMetadata = deriveFormatFromManifest(manifest);
 
   await ensureMockQuestionBank(supabase, manifest);
 
@@ -201,6 +213,7 @@ export async function seedMockTestFromManifest(supabase, manifest) {
         blueprintId: metadata.blueprintId,
         formKind: metadata.formKind,
         yleMock: true,
+        format: formatMetadata,
       },
     },
     { onConflict: "id" }

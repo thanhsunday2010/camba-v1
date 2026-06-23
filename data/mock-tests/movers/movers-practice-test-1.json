@@ -293,47 +293,243 @@
     {
       "sortOrder": 0,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "They went to the city [0] last Tuesday.",
-        "correctAnswers": [
-          "museum"
-        ],
-        "levelTag": "movers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "Where did Class 3B go last Tuesday?",
+      "choices": [
+        {
+          "text": "the city museum",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "the beach",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "the library",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-01",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "easy",
       "topicTag": "school-trip",
       "skillTag": "listening",
-      "explanation": "They visited the museum."
+      "explanation": "They went to the city museum.",
+      "content": {
+        "levelTag": "movers"
+      }
     },
     {
       "sortOrder": 1,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "They saw dinosaur [0].",
-        "correctAnswers": [
-          "bones"
-        ],
-        "levelTag": "movers"
-      },
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did they see at the museum?",
+      "choices": [
+        {
+          "text": "dinosaur bones",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "live animals",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "a swimming pool",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "questionRef": "listen-02",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "easy",
       "topicTag": "museum",
       "skillTag": "listening",
-      "explanation": "Dinosaur bones were on display."
+      "explanation": "They saw dinosaur bones.",
+      "content": {
+        "levelTag": "movers"
+      }
     },
     {
       "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "How much were two science show tickets?",
+      "choices": [
+        {
+          "text": "six pounds",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "four pounds",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "ten pounds",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-03",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "money",
+      "skillTag": "listening",
+      "explanation": "Six pounds for two tickets.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did Tom buy in the shop?",
+      "choices": [
+        {
+          "text": "a postcard",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "a sandwich",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "a ticket",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-04",
+      "partSlug": "listening-part-2-fill",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "shopping",
+      "skillTag": "listening",
+      "explanation": "Tom bought a postcard.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "Where did Sara find the scarf?",
+      "choices": [
+        {
+          "text": "near the dinosaur room",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "in the shop",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "on the bus",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-05",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "museum",
+      "skillTag": "listening",
+      "explanation": "Near the dinosaur room.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What must the children do on the bus?",
+      "choices": [
+        {
+          "text": "fasten seatbelts",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "buy tickets",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "read books",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-06",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "medium",
+      "topicTag": "transport",
+      "skillTag": "listening",
+      "explanation": "Fasten your seatbelts.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "questionText": "What did everyone drink after the game?",
+      "choices": [
+        {
+          "text": "orange juice",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "cola",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "milk",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
+      "questionRef": "listen-07",
+      "partSlug": "listening-part-3-dialogues",
+      "sectionSlug": "listening",
+      "difficulty": "easy",
+      "topicTag": "sports",
+      "skillTag": "listening",
+      "explanation": "They drank orange juice.",
+      "content": {
+        "levelTag": "movers"
+      }
+    },
+    {
+      "sortOrder": 7,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -351,7 +547,7 @@
           ]
         }
       },
-      "questionRef": "listen-03",
+      "questionRef": "listen-08",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "medium",
@@ -360,49 +556,7 @@
       "explanation": "Stories were about ancient Egypt."
     },
     {
-      "sortOrder": 3,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Tom bought a [0] in the shop.",
-        "correctAnswers": [
-          "postcard"
-        ],
-        "levelTag": "movers"
-      },
-      "questionRef": "listen-04",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "shopping",
-      "skillTag": "listening",
-      "explanation": "Tom bought a postcard."
-    },
-    {
-      "sortOrder": 4,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "The science show tickets cost six [0].",
-        "correctAnswers": [
-          "pounds"
-        ],
-        "levelTag": "movers"
-      },
-      "questionRef": "listen-05",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "medium",
-      "topicTag": "money",
-      "skillTag": "listening",
-      "explanation": "Six pounds for two tickets."
-    },
-    {
-      "sortOrder": 5,
+      "sortOrder": 8,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -414,7 +568,7 @@
         ],
         "levelTag": "movers"
       },
-      "questionRef": "listen-06",
+      "questionRef": "listen-09",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "easy",
@@ -423,55 +577,7 @@
       "explanation": "A blue scarf near the dinosaur room."
     },
     {
-      "sortOrder": 6,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Mia wants some [0] too.",
-        "correctAnswers": [
-          "water"
-        ],
-        "levelTag": "movers"
-      },
-      "questionRef": "listen-07",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "food",
-      "skillTag": "listening",
-      "explanation": "Mia asks for water."
-    },
-    {
-      "sortOrder": 7,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "The driver says: Fasten your [0].",
-        "correctAnswers": [
-          "seatbelts"
-        ],
-        "levelTag": "movers",
-        "acceptedAnswers": {
-          "0": [
-            "seatbelts",
-            "seatbelt"
-          ]
-        }
-      },
-      "questionRef": "listen-08",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "medium",
-      "topicTag": "transport",
-      "skillTag": "listening",
-      "explanation": "Fasten your seatbelts."
-    },
-    {
-      "sortOrder": 8,
+      "sortOrder": 9,
       "points": 1,
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
@@ -483,34 +589,13 @@
         ],
         "levelTag": "movers"
       },
-      "questionRef": "listen-09",
-      "partSlug": "listening-part-2-fill",
-      "sectionSlug": "listening",
-      "difficulty": "easy",
-      "topicTag": "sports",
-      "skillTag": "listening",
-      "explanation": "Ben scored a goal."
-    },
-    {
-      "sortOrder": 9,
-      "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
-      "content": {
-        "template": "Everyone drank orange [0] after the game.",
-        "correctAnswers": [
-          "juice"
-        ],
-        "levelTag": "movers"
-      },
       "questionRef": "listen-10",
       "partSlug": "listening-part-2-fill",
       "sectionSlug": "listening",
       "difficulty": "easy",
       "topicTag": "sports",
       "skillTag": "listening",
-      "explanation": "They drank orange juice."
+      "explanation": "Ben scored a goal."
     },
     {
       "sortOrder": 10,
@@ -808,14 +893,27 @@
     {
       "sortOrder": 19,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "When did Ben score?",
+      "choices": [
+        {
+          "text": "in the first half",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "after the game",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "before the match",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "content": {
-        "template": "Ben scored a goal in the [0] half.",
-        "correctAnswers": [
-          "first"
-        ],
         "levelTag": "movers"
       },
       "questionRef": "rw-10",
@@ -824,7 +922,7 @@
       "difficulty": "medium",
       "topicTag": "sports",
       "skillTag": "reading",
-      "explanation": "In the first half."
+      "explanation": "Ben scored in the first half."
     },
     {
       "sortOrder": 20,
@@ -850,14 +948,27 @@
     {
       "sortOrder": 21,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the sentence.",
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "How did Ben feel after the game?",
+      "choices": [
+        {
+          "text": "proud",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "bored",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "angry",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "content": {
-        "template": "Ben felt very [0] after the game.",
-        "correctAnswers": [
-          "proud"
-        ],
         "levelTag": "movers"
       },
       "questionRef": "rw-12",
@@ -892,24 +1003,31 @@
     {
       "sortOrder": 23,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the message.",
-      "content": {
-        "template": "Lucy's party is on 14 [0].",
-        "correctAnswers": [
-          "May"
-        ],
-        "levelTag": "movers",
-        "acceptedAnswers": {
-          "0": [
-            "May",
-            "may"
-          ]
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "When is Lucy's party?",
+      "choices": [
+        {
+          "text": "14 May",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "14 March",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "4 May",
+          "isCorrect": false,
+          "sortOrder": 2
         }
+      ],
+      "content": {
+        "levelTag": "movers"
       },
       "questionRef": "rw-14",
-      "partSlug": "rw-part-4-messages",
+      "partSlug": "rw-part-2-conversations",
       "sectionSlug": "reading-writing",
       "difficulty": "medium",
       "topicTag": "birthday",
@@ -940,39 +1058,52 @@
     {
       "sortOrder": 25,
       "points": 1,
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill",
-      "questionText": "Complete the message.",
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "questionText": "Which book must be returned?",
+      "choices": [
+        {
+          "text": "Space Heroes",
+          "isCorrect": true,
+          "sortOrder": 0
+        },
+        {
+          "text": "Dinosaur Days",
+          "isCorrect": false,
+          "sortOrder": 1
+        },
+        {
+          "text": "River Park",
+          "isCorrect": false,
+          "sortOrder": 2
+        }
+      ],
       "content": {
-        "template": "Return the book on [0].",
-        "correctAnswers": [
-          "Wednesday"
-        ],
         "levelTag": "movers"
       },
       "questionRef": "rw-16",
-      "partSlug": "rw-part-4-messages",
+      "partSlug": "rw-part-2-conversations",
       "sectionSlug": "reading-writing",
       "difficulty": "easy",
       "topicTag": "library",
       "skillTag": "reading",
-      "explanation": "Due on Wednesday."
+      "explanation": "Space Heroes is due."
     }
   ],
   "coverageAchieved": {
     "distinctTopics": [
       "school-trip",
       "museum",
-      "history",
-      "shopping",
       "money",
-      "clothes",
-      "food",
+      "shopping",
       "transport",
       "sports",
+      "history",
+      "clothes",
       "vocabulary",
       "places",
       "feelings",
+      "food",
       "school",
       "birthday",
       "library"

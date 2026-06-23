@@ -1,8 +1,8 @@
 # M1.1 — YLE Mock Blueprint Foundation
 
-**Status:** Implemented (architecture foundation)  
+**Status:** Implemented (M1.1 foundation + M1.2 seed pipeline + M1.3 bank + M1.3b quality/disclosure)  
 **Depends on:** U6a/U6b mock-test product flow (unchanged)  
-**Next:** M1.2 manifest generation + import pipeline
+**Next:** M2 — speaking/writing runtime, audio authoring, or fuller exam fidelity (deferred)
 
 ---
 

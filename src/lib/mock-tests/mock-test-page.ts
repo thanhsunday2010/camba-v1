@@ -1,5 +1,7 @@
 import { fetchMockTestByIdFull, getLatestMockTestAttemptDetail, getMockTestById, getUserMockTestAttempts } from "@/lib/queries/mock-tests";
 import { buildMockTestQuestionContextMap } from "@/lib/mock-tests/mock-test-context";
+import { deriveFormatFromMockTestData } from "@/lib/mock-tests/mock-test-format-queries";
+import { resolveYleLevelSlug } from "@/lib/mock-tests/mock-test-format";
 import {
   buildMockTestAttemptSummary,
   deriveMockTestDisplayState,
@@ -63,11 +65,19 @@ export async function getMockTestDetailViewModel(
   const primaryCta: MockTestPrimaryCta =
     attemptCount > 0 ? "retake" : "start";
 
+  const format = deriveFormatFromMockTestData({
+    levelId: fullTest.levelId,
+    levelName: fullTest.levelName,
+    settings: fullTest.settings,
+    sections: fullTest.sections,
+  });
+
   return {
     id: fullTest.id,
     title: fullTest.title,
     description: fullTest.description,
     levelName: fullTest.levelName,
+    levelSlug: resolveYleLevelSlug(fullTest.levelId, format.levelSlug),
     durationMinutes: fullTest.timeLimitMinutes,
     totalScore: fullTest.totalScore,
     questionCount,
@@ -79,6 +89,7 @@ export async function getMockTestDetailViewModel(
     sections,
     latestAttempt,
     takeHref: `/mock-tests/${mockTestId}/take`,
+    format,
   };
 }
 
@@ -123,11 +134,19 @@ export async function getMockTestTakeViewModel(
 
   const history = await getUserMockTestAttempts(userId, mockTestId);
 
+  const format = deriveFormatFromMockTestData({
+    levelId: test.levelId ?? null,
+    levelName: test.levelName,
+    settings: test.settings,
+    sections: test.sections,
+  });
+
   return {
     id: test.id,
     title: test.title,
     description: test.description,
     levelName: test.levelName,
+    levelSlug: resolveYleLevelSlug(test.levelId ?? null, format.levelSlug),
     durationMinutes: test.timeLimitMinutes,
     questionCount: questions.length,
     sectionCount: sections.length,
@@ -137,5 +156,6 @@ export async function getMockTestTakeViewModel(
     detailHref: `/mock-tests/${mockTestId}`,
     hubHref: "/mock-tests",
     hasPriorAttempts: history.length > 0,
+    format,
   };
 }

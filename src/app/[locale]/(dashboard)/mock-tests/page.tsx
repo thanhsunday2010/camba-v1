@@ -25,7 +25,7 @@ export default async function MockTestsPage() {
           subtitle={labels.hub.subtitle}
           availableCount={availableCount}
         />
-        <MockTestHubFilters tests={hub.tests} labels={labels.hub} />
+        <MockTestHubFilters hub={hub} labels={labels.hub} />
       </div>
     </StudentPageShell>
   );
