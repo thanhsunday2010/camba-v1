@@ -25,6 +25,9 @@
     "generate:ket-units": "node scripts/generate-ket-units.mjs",
     "normalize:ket-content": "node scripts/normalize-ket-content.mjs",
     "seed:ket": "node scripts/seed-ket-all.mjs",
+    "generate:movers-units": "node scripts/generate-cambridge-units.mjs movers",
+    "validate:movers": "node scripts/validate-cambridge-content.mjs movers",
+    "seed:movers": "node scripts/seed-movers-all.mjs",
     "seed:cambridge-placement": "node scripts/seed-cambridge-placement.mjs",
     "deactivate:cambridge-placement": "node scripts/deactivate-cambridge-placement.mjs",
     "generate:listening-audio": "node scripts/generate-listening-audio.mjs"
