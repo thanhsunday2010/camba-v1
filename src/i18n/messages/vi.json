@@ -337,6 +337,26 @@
       "submitFailed": "Không nộp được bài. Vui lòng thử lại.",
       "embeddedResultHeading": "Điểm bài tập: {percent}%",
       "embeddedResultScore": "Điểm: {score}/{maxScore}",
+      "exercisePlayer": {
+        "prev": "Trước",
+        "next": "Tiếp",
+        "submit": "Nộp bài",
+        "submitting": "Đang nộp...",
+        "questionPosition": "Câu {current}/{total}",
+        "resultHeading": "Kết quả: {percent}%",
+        "resultScore": "Điểm: {score}/{maxScore}",
+        "nextExercise": "Bài tiếp theo",
+        "unsupportedQuestionType": "Loại câu hỏi này sẽ được hỗ trợ trong phiên bản tiếp theo.",
+        "connectionError": "Lỗi kết nối. Vui lòng thử lại."
+      },
+      "contextPanel": {
+        "passage": "Đoạn văn",
+        "listening": "Bài nghe",
+        "wordCount": "từ",
+        "transcriptAfter": "Bản ghi (sau khi nộp bài)",
+        "listeningHint": "Nghe audio và chọn đáp án. Bạn có thể bấm \"Nghe lại\" bất cứ lúc nào.",
+        "audioUnavailable": "Audio chưa sẵn sàng cho bài nghe này. Vui lòng báo giáo viên hoặc thử lại sau."
+      },
       "reviewExercisesSubtitle": "Chọn bài tập để ôn lại hoặc làm lại",
       "backToComplete": "Quay lại kết quả bài học",
       "completeSummary": {
@@ -399,6 +419,8 @@
         "startRecording": "Bắt đầu ghi âm",
         "stopRecording": "Dừng ghi âm",
         "noRecording": "Vui lòng ghi âm trước khi gửi",
+        "followUpPrompt": "Câu hỏi phỏng vấn — trả lời khi ghi âm:",
+        "recordedSuccess": "Đã ghi âm ({duration}s)",
         "recording": "Đang ghi",
         "transcript": "Bản ghi",
         "transcriptPlaceholder": "Nói vào microphone để xem bản ghi...",

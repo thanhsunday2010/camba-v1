@@ -11,12 +11,17 @@ import {
   deriveResolvedMockTestProgress,
   getWeakQuestionIdsForSkill,
 } from "@/lib/mock-tests/mock-test-ui-utils";
+import {
+  clearMockTestSessionSnapshot,
+  readMockTestSessionSnapshot,
+  writeMockTestSessionSnapshot,
+} from "@/lib/mock-tests/mock-test-session-storage";
 import type {
   MockTestAttemptSummary,
   MockTestPageLabels,
   MockTestTakeViewModel,
 } from "@/lib/mock-tests/mock-test-types";
-import type { UserAnswer } from "@/types/learning";
+import type { QuestionResult, UserAnswer } from "@/types/learning";
 import { toast } from "sonner";
 
 interface MockTestPageContentProps {
@@ -28,12 +33,24 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, UserAnswer>>({});
   const [sessionAttempt, setSessionAttempt] = useState<MockTestAttemptSummary | null>(null);
+  const [questionResults, setQuestionResults] = useState<QuestionResult[]>([]);
   const [isReviewingTest, setIsReviewingTest] = useState(false);
   const [activeReviewQuestionId, setActiveReviewQuestionId] = useState<string | null>(null);
-  const [startTime] = useState(() => Date.now());
+  const [startTime, setStartTime] = useState(() => Date.now());
   const [isPending, startTransition] = useTransition();
   const celebrate = useCelebrationOptional();
   const wasCompleteRef = useRef(false);
+  const hydratedRef = useRef(false);
+
+  useEffect(() => {
+    if (hydratedRef.current) return;
+    hydratedRef.current = true;
+    const snapshot = readMockTestSessionSnapshot(viewModel.id);
+    if (!snapshot) return;
+    setSessionAttempt(snapshot.attempt);
+    setAnswers(snapshot.answers);
+    setQuestionResults(snapshot.questionResults);
+  }, [viewModel.id]);
 
   const flatQuestions = viewModel.test.sections.flatMap((s) => s.questions);
   const currentSection = viewModel.test.sections.find((s) =>
@@ -89,17 +106,22 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
       const response = await submitMockTest(viewModel.id, answers, timeSpent);
       if (response.success && response.data) {
         const result = response.data;
-        setSessionAttempt(
-          buildMockTestAttemptSummary({
-            attemptId: "session",
-            score: result.score,
-            maxScore: result.maxScore,
-            completedAt: new Date().toISOString(),
-            timeSpentSeconds: timeSpent,
-            skillBreakdown: result.skillBreakdown,
-            shieldEstimate: result.shieldEstimate,
-          })
-        );
+        const attempt = buildMockTestAttemptSummary({
+          attemptId: "session",
+          score: result.score,
+          maxScore: result.maxScore,
+          completedAt: new Date().toISOString(),
+          timeSpentSeconds: timeSpent,
+          skillBreakdown: result.skillBreakdown,
+          shieldEstimate: result.shieldEstimate,
+        });
+        setSessionAttempt(attempt);
+        setQuestionResults(result.questionResults);
+        writeMockTestSessionSnapshot(viewModel.id, {
+          attempt,
+          answers,
+          questionResults: result.questionResults,
+        });
         setActiveReviewQuestionId(null);
         setIsReviewingTest(false);
       } else {
@@ -146,12 +168,15 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
   );
 
   const handleRetake = useCallback(() => {
+    clearMockTestSessionSnapshot(viewModel.id);
     setSessionAttempt(null);
+    setQuestionResults([]);
     setCurrentQuestionIndex(0);
     setAnswers({});
+    setStartTime(Date.now());
     setIsReviewingTest(false);
     setActiveReviewQuestionId(null);
-  }, []);
+  }, [viewModel.id]);
 
   return (
     <StudentPageShell narrow>
@@ -173,6 +198,7 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
           resolvedProgress={resolvedProgress}
           currentQuestionIndex={currentQuestionIndex}
           answers={answers}
+          questionResults={questionResults}
           isSubmitting={isPending}
           isReviewingTest={isReviewingTest}
           activeReviewQuestionId={activeReviewQuestionId}

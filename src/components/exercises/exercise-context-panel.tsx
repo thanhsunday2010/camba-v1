@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { ListeningAudioPlayer } from "@/components/exercises/listening-audio-player";
 
 type ReadingPassageContent = {
@@ -25,12 +28,6 @@ interface ExerciseContextPanelProps {
   content?: Record<string, unknown>;
   showListeningTranscript?: boolean;
   autoPlayListening?: boolean;
-  labels?: {
-    passage: string;
-    listening: string;
-    wordCount: string;
-    transcriptAfter: string;
-  };
 }
 
 export function ExerciseContextPanel({
@@ -38,31 +35,27 @@ export function ExerciseContextPanel({
   content,
   showListeningTranscript = false,
   autoPlayListening = true,
-  labels = {
-    passage: "Đoạn văn",
-    listening: "Bài nghe",
-    wordCount: "từ",
-    transcriptAfter: "Bản ghi (sau khi nộp bài)",
-  },
 }: ExerciseContextPanelProps) {
+  const t = useTranslations("learning.lesson.contextPanel");
+
   if (!content) return null;
 
   const passage = content.passage as ReadingPassageContent | undefined;
   if (passage?.text) {
     return (
-      <div className="rounded-lg border border-primary/15 bg-primary/5 p-4 mb-6">
-        <p className="text-xs font-medium uppercase tracking-wide text-primary mb-2">
-          {labels.passage}
+      <div className="rounded-xl border border-program/15 bg-program/5 p-4">
+        <p className="camba-caption font-semibold uppercase tracking-wide text-program mb-2">
+          {t("passage")}
         </p>
         {passage.title && (
-          <h3 className="text-base font-semibold text-gray-900 mb-2">{passage.title}</h3>
+          <h3 className="camba-body font-semibold text-foreground mb-2">{passage.title}</h3>
         )}
-        <div className="text-sm text-gray-800 whitespace-pre-line leading-relaxed">
+        <div className="camba-body text-foreground/90 whitespace-pre-line leading-relaxed">
           {passage.text}
         </div>
         {typeof passage.wordCount === "number" && passage.wordCount > 0 && (
-          <p className="text-xs text-gray-400 mt-3">
-            {passage.wordCount} {labels.wordCount}
+          <p className="camba-caption text-muted mt-3">
+            {passage.wordCount} {t("wordCount")}
           </p>
         )}
       </div>
@@ -76,23 +69,23 @@ export function ExerciseContextPanel({
 
   if (isListening && audioUrl) {
     return (
-      <div className="space-y-4 mb-6">
+      <div className="space-y-4">
         <ListeningAudioPlayer
           audioUrl={audioUrl}
           title={script?.title}
           autoPlay={autoPlayListening}
         />
         {showListeningTranscript && script?.lines?.length ? (
-          <div className="rounded-lg border border-gray-200 bg-gray-50 p-4">
-            <p className="text-xs font-medium text-gray-500 mb-2">{labels.transcriptAfter}</p>
+          <div className="rounded-xl border border-border bg-[var(--surface-sunken)] p-4">
+            <p className="camba-caption font-medium text-muted mb-2">{t("transcriptAfter")}</p>
             {script.setting && (
-              <p className="text-xs text-gray-400 mb-2">{script.setting}</p>
+              <p className="camba-caption text-muted mb-2">{script.setting}</p>
             )}
             <div className="space-y-2">
               {script.lines.map((line, index) => (
-                <p key={index} className="text-sm text-gray-700 leading-relaxed">
+                <p key={index} className="camba-body text-foreground/90 leading-relaxed">
                   {line.speaker && (
-                    <span className="font-medium text-gray-900">{line.speaker}: </span>
+                    <span className="font-medium text-foreground">{line.speaker}: </span>
                   )}
                   {line.text}
                 </p>
@@ -100,9 +93,7 @@ export function ExerciseContextPanel({
             </div>
           </div>
         ) : (
-          <p className="text-xs text-gray-500">
-            Nghe audio và chọn đáp án. Bạn có thể bấm &quot;Nghe lại&quot; bất cứ lúc nào.
-          </p>
+          <p className="camba-caption text-muted">{t("listeningHint")}</p>
         )}
       </div>
     );
@@ -110,10 +101,8 @@ export function ExerciseContextPanel({
 
   if (script?.lines?.length && exerciseType === "listening") {
     return (
-      <div className="rounded-lg border border-warning/30 bg-warning/5 p-4 mb-6">
-        <p className="text-sm text-gray-700">
-          Audio chưa sẵn sàng cho bài nghe này. Vui lòng báo giáo viên hoặc thử lại sau.
-        </p>
+      <div className="rounded-xl border border-warning/30 bg-warning/5 p-4">
+        <p className="camba-body text-foreground/90">{t("audioUnavailable")}</p>
       </div>
     );
   }

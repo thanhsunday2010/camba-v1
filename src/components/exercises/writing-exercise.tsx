@@ -4,7 +4,6 @@ import { useState } from "react";
 import { submitWritingForFeedback } from "@/actions/ai/writing";
 import { AiFeedbackPanel } from "@/components/ai/ai-feedback-panel";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronRight, Loader2, PenLine } from "lucide-react";
 import { toast } from "sonner";
 import type { WritingFeedback } from "@/types/ai";
@@ -95,9 +94,8 @@ export function WritingExercise({
         actions={
           onNextExercise ? (
             <div className="flex justify-end">
-              <Button onClick={onNextExercise}>
-                Bài tiếp theo
-                {nextExerciseTitle ? `: ${nextExerciseTitle}` : ""}
+              <Button onClick={onNextExercise} className="gap-1">
+                {fmt.nextExerciseLabel(nextExerciseTitle)}
                 <ChevronRight className="h-4 w-4" />
               </Button>
             </div>
@@ -108,61 +106,60 @@ export function WritingExercise({
   }
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <PenLine className="h-5 w-5 text-primary" />
+    <div className="space-y-6">
+      <header className="space-y-2">
+        <h2 className="camba-h3 text-foreground flex items-center gap-2">
+          <PenLine className="h-5 w-5 text-program shrink-0" />
           {title}
-        </CardTitle>
-        {instructions && <p className="text-sm text-gray-500">{instructions}</p>}
-      </CardHeader>
-      <CardContent className="space-y-4">
-        <div className="bg-primary/5 rounded-lg p-4 space-y-3">
-          {taskDescription && (
-            <p className="text-sm font-medium text-gray-900">{taskDescription}</p>
-          )}
-          {taskPrompts.length > 0 ? (
-            <ol className="list-decimal list-inside space-y-1 text-sm text-gray-800">
-              {taskPrompts.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ol>
-          ) : (
-            <p className="text-sm font-medium text-gray-900">{prompt}</p>
-          )}
-        </div>
+        </h2>
+        {instructions && <p className="camba-caption text-muted">{instructions}</p>}
+      </header>
 
-        <textarea
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
-          placeholder={labels.placeholder}
-          rows={8}
-          className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 resize-y"
-          maxLength={maxWords * 8}
-        />
-
-        <div className="flex items-center justify-between">
-          <span className="text-xs text-gray-500">
-            {labels.wordCount}: {wordCount} / {maxWords}
-          </span>
-          <Button onClick={handleSubmit} disabled={isSubmitting || wordCount === 0}>
-            {isSubmitting ? (
-              <>
-                <Loader2 className="animate-spin" />
-                {labels.submitting}
-              </>
-            ) : (
-              labels.submit
-            )}
-          </Button>
-        </div>
-
-        {error && (
-          <p className="text-sm text-error bg-red-50 border border-red-100 rounded-lg px-3 py-2">
-            {error}
-          </p>
+      <div className="rounded-xl border border-program/15 bg-program/5 p-4 space-y-3">
+        {taskDescription && (
+          <p className="camba-body font-medium text-foreground">{taskDescription}</p>
         )}
-      </CardContent>
-    </Card>
+        {taskPrompts.length > 0 ? (
+          <ol className="list-decimal list-inside space-y-1 camba-body text-foreground/90">
+            {taskPrompts.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ol>
+        ) : (
+          <p className="camba-body font-medium text-foreground">{prompt}</p>
+        )}
+      </div>
+
+      <textarea
+        value={content}
+        onChange={(e) => setContent(e.target.value)}
+        placeholder={labels.placeholder}
+        rows={8}
+        className="w-full rounded-xl border border-border bg-white px-3 py-2 camba-body text-foreground focus:outline-none focus:ring-2 focus:ring-program/30 resize-y"
+        maxLength={maxWords * 8}
+      />
+
+      <div className="flex items-center justify-between gap-3 pt-2 border-t border-border/40">
+        <span className="camba-caption text-muted">
+          {labels.wordCount}: {wordCount} / {maxWords}
+        </span>
+        <Button onClick={handleSubmit} disabled={isSubmitting || wordCount === 0}>
+          {isSubmitting ? (
+            <>
+              <Loader2 className="animate-spin" />
+              {labels.submitting}
+            </>
+          ) : (
+            labels.submit
+          )}
+        </Button>
+      </div>
+
+      {error && (
+        <p className="camba-caption text-error bg-error/5 border border-error/20 rounded-xl px-3 py-2">
+          {error}
+        </p>
+      )}
+    </div>
   );
 }

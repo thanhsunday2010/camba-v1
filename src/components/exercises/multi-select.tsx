@@ -25,7 +25,7 @@ export function MultiSelect({
 
   return (
     <div className="space-y-2">
-      <p className="text-xs text-gray-500 mb-2">Chọn tất cả đáp án đúng</p>
+      <p className="camba-caption text-muted mb-2">Chọn tất cả đáp án đúng</p>
       {choices.map((choice) => {
         const isSelected = selectedIds.includes(choice.id);
         const isCorrectChoice = correctIds.has(choice.id);
@@ -40,8 +40,8 @@ export function MultiSelect({
             onClick={() => onToggle(choice.id)}
             className={cn(
               "w-full text-left px-4 py-3 rounded-lg border transition-colors flex items-center gap-3",
-              isSelected && !showResult && "border-primary bg-primary/5",
-              !isSelected && !showResult && "border-gray-200 hover:border-gray-300 hover:bg-gray-50",
+              isSelected && !showResult && "border-program bg-program/5",
+              !isSelected && !showResult && "border-border hover:border-program/30 hover:bg-[var(--surface-sunken)]",
               showCorrect && "border-success bg-success/10",
               showWrong && "border-error bg-error/10",
               disabled && "cursor-not-allowed opacity-70"

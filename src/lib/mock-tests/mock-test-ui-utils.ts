@@ -128,7 +128,7 @@ export function deriveResolvedMockTestProgress(input: {
       ? Math.round(
           ((input.isTestCompleteResolved
             ? input.totalQuestions
-            : input.currentQuestionIndex + 1) /
+            : answeredCount) /
             input.totalQuestions) *
             100
         )

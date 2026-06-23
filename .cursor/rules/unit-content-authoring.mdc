@@ -6,20 +6,20 @@ alwaysApply: false
 
 # Unit Content Authoring
 
-When creating or editing unit content, follow these rules. Gold standards: Starters `unit-01-family-and-friends.json`; Movers/Flyers/KET/PET `*/TEMPLATE.md` in respective blueprint folders. Blueprint: `data/curriculum/cambridge-curriculum-map.json` (`contentStructure`).
+When creating or editing unit content, follow these rules. Gold standards: Starters `starters-blueprints/TEMPLATE.md` (U1); Movers/Flyers/KET/PET `*/TEMPLATE.md` in respective blueprint folders. Blueprint: `data/curriculum/cambridge-curriculum-map.json` (`contentStructure`).
 
 ## Pipeline (all levels)
 
 | Step | Starters | Movers | Flyers | KET | PET |
 |------|----------|--------|--------|-----|-----|
-| Blueprint | starters hand gold | `movers-blueprints/TEMPLATE.md` | `flyers-blueprints/TEMPLATE.md` | `ket-blueprints/TEMPLATE.md` (U1) | `pet-blueprints/TEMPLATE.md` |
-| Generate | `generate:starters-gold` | `generate:movers-units -- <N>` | `generate:flyers-units -- <N>` | `generate:ket-unit-01` / `generate:ket-units` | `generate:pet-units -- <N>` |
+| Blueprint | `starters-blueprints/TEMPLATE.md` (U1) | `movers-blueprints/TEMPLATE.md` | `flyers-blueprints/TEMPLATE.md` | `ket-blueprints/TEMPLATE.md` (U1) | `pet-blueprints/TEMPLATE.md` |
+| Generate | `generate:starters-units -- <N>` | `generate:movers-units -- <N>` | `generate:flyers-units -- <N>` | `generate:ket-unit-01` / `generate:ket-units` | `generate:pet-units -- <N>` |
 | Validate | `validate:starters` | `validate:movers` | `validate:flyers` | `validate:ket` | `validate:pet` |
 | Seed | `seed:starters` | `seed:movers` | `seed:flyers` | `seed:ket` | `seed:pet` |
 
-Shared libraries: `scripts/lib/content-structure.mjs`, `exercise-factory.mjs`, `unit-assembler.mjs`, `content-ids.mjs`, `starters-gold/assemble-hand-content.mjs`.
+Shared libraries: `scripts/lib/content-structure.mjs`, `cambridge-unit-builder.mjs`, `unit-assembler.mjs`, `content-ids.mjs`.
 
-All Starters units (1–10) use **hand-crafted gold blueprints**. Rich/legacy template generators are **banned** — never use `starters-rich-unit-generator` or `generate:starters-full`.
+Starters Unit 1 uses the modular gold blueprint (`starters-blueprints/unit-01/`). Units 2–10 may still use legacy hand gold until migrated. Rich/legacy template generators are **banned**.
 
 ## Before Writing
 

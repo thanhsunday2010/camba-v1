@@ -22,6 +22,14 @@ export function useLessonI18nFormatters() {
     embeddedResultHeading: (percent: number) => t("embeddedResultHeading", { percent }),
     embeddedResultScore: (score: number, maxScore: number) =>
       t("embeddedResultScore", { score, maxScore }),
+    questionPosition: (current: number, total: number) =>
+      t("exercisePlayer.questionPosition", { current, total }),
+    resultHeading: (percent: number) => t("exercisePlayer.resultHeading", { percent }),
+    resultScore: (score: number, maxScore: number) =>
+      t("exercisePlayer.resultScore", { score, maxScore }),
+    nextExerciseLabel: (title?: string) =>
+      title ? `${t("exercisePlayer.nextExercise")}: ${title}` : t("exercisePlayer.nextExercise"),
+    recordedSuccess: (duration: number) => t("ai.recordedSuccess", { duration }),
     recommendationExercisesNeedReview: (count: number) =>
       tcs("recommendationExercisesNeedReview", { count }),
     finalExerciseSubtitle: (title: string) => tcs("finalExerciseSubtitle", { title }),

@@ -105,6 +105,7 @@ export async function submitMockTest(
       accuracyPercent: result.accuracyPercent,
       skillBreakdown,
       shieldEstimate,
+      questionResults: result.questionResults,
     },
   };
 }

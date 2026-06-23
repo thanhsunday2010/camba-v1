@@ -12,6 +12,14 @@ import {
 import { loadCurriculumMap } from "./curriculum-map.mjs";
 
 const LEVEL_META = {
+  starters: {
+    cefr: "pre-a1",
+    targetAge: "7-9",
+    copyright:
+      "Original content by CAMBA. Not affiliated with or endorsed by Cambridge University Press & Assessment. Inspired by YLE Pre-A1 task formats only.",
+    defaultMinWords: 5,
+    speakingDuration: 60,
+  },
   ket: {
     cefr: "a2",
     targetAge: "11-14",

@@ -4,8 +4,9 @@ import { useState, useRef } from "react";
 import { submitSpeakingForFeedback } from "@/actions/ai/speaking";
 import { AiFeedbackPanel } from "@/components/ai/ai-feedback-panel";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronRight, Loader2, Mic, Square } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
 import { useSpeechRecognition } from "@/lib/speech/use-speech-recognition";
 import { readBlobAsBase64 } from "@/lib/speech/blob-to-base64";
 import {
@@ -73,6 +74,8 @@ export function SpeakingExercise({
   nextExerciseTitle,
   onNextExercise,
 }: SpeakingExerciseProps) {
+  const fmt = useLessonI18nFormatters();
+  const tAi = useTranslations("learning.lesson.ai");
   const [feedback, setFeedback] = useState<SpeakingFeedback | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isRecording, setIsRecording] = useState(false);
@@ -208,9 +211,8 @@ export function SpeakingExercise({
         actions={
           onNextExercise ? (
             <div className="flex justify-end">
-              <Button onClick={onNextExercise}>
-                Bài tiếp theo
-                {nextExerciseTitle ? `: ${nextExerciseTitle}` : ""}
+              <Button onClick={onNextExercise} className="gap-1">
+                {fmt.nextExerciseLabel(nextExerciseTitle)}
                 <ChevronRight className="h-4 w-4" />
               </Button>
             </div>
@@ -221,110 +223,107 @@ export function SpeakingExercise({
   }
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Mic className="h-5 w-5 text-primary" />
+    <div className="space-y-6">
+      <header className="space-y-2">
+        <h2 className="camba-h3 text-foreground flex items-center gap-2">
+          <Mic className="h-5 w-5 text-program shrink-0" />
           {title}
-        </CardTitle>
-        {instructions && <p className="text-sm text-gray-500">{instructions}</p>}
-      </CardHeader>
-      <CardContent className="space-y-4">
-        <div className="bg-primary/5 rounded-lg p-4 space-y-3">
-          <p className="text-sm font-medium text-gray-900">{prompt}</p>
-          {pictureDescription && (
-            <p className="text-xs text-gray-600 italic">{pictureDescription}</p>
-          )}
-          {followUpQuestions.length > 0 && (
-            <div>
-              <p className="text-xs font-medium text-gray-500 mb-2">
-                Câu hỏi phỏng vấn — trả lời khi ghi âm:
-              </p>
-              <ol className="list-decimal list-inside space-y-1 text-sm text-gray-800">
-                {followUpQuestions.map((question) => (
-                  <li key={question}>{question}</li>
-                ))}
-              </ol>
-            </div>
-          )}
+        </h2>
+        {instructions && <p className="camba-caption text-muted">{instructions}</p>}
+      </header>
+
+      <div className="rounded-xl border border-program/15 bg-program/5 p-4 space-y-3">
+        <p className="camba-body font-medium text-foreground">{prompt}</p>
+        {pictureDescription && (
+          <p className="camba-caption text-muted italic">{pictureDescription}</p>
+        )}
+        {followUpQuestions.length > 0 && (
+          <div>
+            <p className="camba-caption font-medium text-muted mb-2">{tAi("followUpPrompt")}</p>
+            <ol className="list-decimal list-inside space-y-1 camba-body text-foreground/90">
+              {followUpQuestions.map((question) => (
+                <li key={question}>{question}</li>
+              ))}
+            </ol>
+          </div>
+        )}
+      </div>
+
+      <div className="flex flex-col items-center gap-4 py-4">
+        <div
+          className={`h-20 w-20 rounded-full flex items-center justify-center ${
+            isRecording ? "bg-error/10 animate-pulse" : "bg-[var(--surface-sunken)]"
+          }`}
+        >
+          <Mic className={`h-8 w-8 ${isRecording ? "text-error" : "text-muted"}`} />
         </div>
 
-        <div className="flex flex-col items-center gap-4 py-6">
-          <div
-            className={`h-20 w-20 rounded-full flex items-center justify-center ${
-              isRecording ? "bg-error/10 animate-pulse" : "bg-gray-100"
-            }`}
-          >
-            <Mic className={`h-8 w-8 ${isRecording ? "text-error" : "text-gray-400"}`} />
-          </div>
+        {isRecording && (
+          <p className="camba-body text-error font-medium">
+            {labels.recording} {duration}s / {maxDurationSeconds}s
+          </p>
+        )}
 
-          {isRecording && (
-            <p className="text-sm text-error font-medium">
-              {labels.recording} {duration}s / {maxDurationSeconds}s
-            </p>
+        {audioBlob && !isRecording && (
+          <p className="camba-body text-success">{fmt.recordedSuccess(duration)}</p>
+        )}
+
+        {(isRecording || audioBlob) && (
+          <div className="w-full max-w-lg rounded-xl border border-border bg-[var(--surface-sunken)] p-3 text-left">
+            <p className="camba-caption font-medium text-muted mb-2">{labels.transcript}</p>
+            {displayTranscript ? (
+              <p className="camba-body text-foreground leading-relaxed">
+                {transcript}
+                {interimTranscript && (
+                  <span className="text-muted">
+                    {transcript ? " " : ""}
+                    {interimTranscript}
+                  </span>
+                )}
+              </p>
+            ) : isRecording ? (
+              <p className="camba-body text-muted italic">{labels.transcriptPlaceholder}</p>
+            ) : !isSpeechSupported ? (
+              <p className="camba-body text-muted italic">{labels.transcriptUnsupported}</p>
+            ) : (
+              <p className="camba-body text-muted italic">{labels.transcriptPlaceholder}</p>
+            )}
+          </div>
+        )}
+
+        <div className="flex gap-3">
+          {!isRecording ? (
+            <Button onClick={startRecording} variant="outline">
+              <Mic className="h-4 w-4" />
+              {labels.startRecording}
+            </Button>
+          ) : (
+            <Button onClick={stopRecording} variant="destructive">
+              <Square className="h-4 w-4" />
+              {labels.stopRecording}
+            </Button>
           )}
 
           {audioBlob && !isRecording && (
-            <p className="text-sm text-success">✓ Đã ghi âm ({duration}s)</p>
-          )}
-
-          {(isRecording || audioBlob) && (
-            <div className="w-full max-w-lg rounded-lg border border-gray-200 bg-gray-50 p-3 text-left">
-              <p className="text-xs font-medium text-gray-500 mb-2">{labels.transcript}</p>
-              {displayTranscript ? (
-                <p className="text-sm text-gray-900 leading-relaxed">
-                  {transcript}
-                  {interimTranscript && (
-                    <span className="text-gray-400">
-                      {transcript ? " " : ""}
-                      {interimTranscript}
-                    </span>
-                  )}
-                </p>
-              ) : isRecording ? (
-                <p className="text-sm text-gray-400 italic">{labels.transcriptPlaceholder}</p>
-              ) : !isSpeechSupported ? (
-                <p className="text-sm text-gray-400 italic">{labels.transcriptUnsupported}</p>
+            <Button onClick={handleSubmit} disabled={isSubmitting}>
+              {isSubmitting ? (
+                <>
+                  <Loader2 className="animate-spin" />
+                  {labels.submitting}
+                </>
               ) : (
-                <p className="text-sm text-gray-400 italic">{labels.transcriptPlaceholder}</p>
+                labels.submit
               )}
-            </div>
+            </Button>
           )}
-
-          <div className="flex gap-3">
-            {!isRecording ? (
-              <Button onClick={startRecording} variant="outline">
-                <Mic className="h-4 w-4" />
-                {labels.startRecording}
-              </Button>
-            ) : (
-              <Button onClick={stopRecording} variant="destructive">
-                <Square className="h-4 w-4" />
-                {labels.stopRecording}
-              </Button>
-            )}
-
-            {audioBlob && !isRecording && (
-              <Button onClick={handleSubmit} disabled={isSubmitting}>
-                {isSubmitting ? (
-                  <>
-                    <Loader2 className="animate-spin" />
-                    {labels.submitting}
-                  </>
-                ) : (
-                  labels.submit
-                )}
-              </Button>
-            )}
-          </div>
         </div>
+      </div>
 
-        {error && (
-          <p className="text-sm text-error bg-red-50 border border-red-100 rounded-lg px-3 py-2">
-            {error}
-          </p>
-        )}
-      </CardContent>
-    </Card>
+      {error && (
+        <p className="camba-caption text-error bg-error/5 border border-error/20 rounded-xl px-3 py-2">
+          {error}
+        </p>
+      )}
+    </div>
   );
 }

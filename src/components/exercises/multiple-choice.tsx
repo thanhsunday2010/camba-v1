@@ -38,14 +38,14 @@ export function MultipleChoice({
             onClick={() => onSelect(choice.id)}
             className={cn(
               "w-full text-left px-4 py-3 rounded-lg border transition-colors",
-              isSelected && !showResult && "border-primary bg-primary/5",
-              !isSelected && !showResult && "border-gray-200 hover:border-gray-300 hover:bg-gray-50",
+              isSelected && !showResult && "border-program bg-program/5",
+              !isSelected && !showResult && "border-border hover:border-program/30 hover:bg-[var(--surface-sunken)]",
               showCorrect && "border-success bg-success/10",
               showWrong && "border-error bg-error/10",
               disabled && "cursor-not-allowed opacity-70"
             )}
           >
-            <span className="text-sm text-gray-900">{choice.text}</span>
+            <span className="camba-body text-foreground">{choice.text}</span>
           </button>
         );
       })}

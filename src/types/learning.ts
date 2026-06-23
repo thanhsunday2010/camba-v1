@@ -214,4 +214,5 @@ export interface MockTestResult {
   accuracyPercent: number;
   skillBreakdown: Record<string, number>;
   shieldEstimate: Record<string, number>;
+  questionResults: QuestionResult[];
 }

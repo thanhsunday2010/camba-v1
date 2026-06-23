@@ -337,6 +337,26 @@
       "submitFailed": "Could not submit. Please try again.",
       "embeddedResultHeading": "Exercise score: {percent}%",
       "embeddedResultScore": "Score: {score}/{maxScore}",
+      "exercisePlayer": {
+        "prev": "Previous",
+        "next": "Next",
+        "submit": "Submit",
+        "submitting": "Submitting...",
+        "questionPosition": "Question {current}/{total}",
+        "resultHeading": "Result: {percent}%",
+        "resultScore": "Score: {score}/{maxScore}",
+        "nextExercise": "Next exercise",
+        "unsupportedQuestionType": "This question type will be supported in a future update.",
+        "connectionError": "Connection error. Please try again."
+      },
+      "contextPanel": {
+        "passage": "Passage",
+        "listening": "Listening",
+        "wordCount": "words",
+        "transcriptAfter": "Transcript (after submit)",
+        "listeningHint": "Listen to the audio and choose your answer. You can replay anytime.",
+        "audioUnavailable": "Audio is not ready for this listening exercise. Please tell your teacher or try again later."
+      },
       "reviewExercisesSubtitle": "Choose an exercise to review or retry",
       "backToComplete": "Back to lesson results",
       "completeSummary": {
@@ -399,6 +419,8 @@
         "startRecording": "Start recording",
         "stopRecording": "Stop recording",
         "noRecording": "Please record before submitting",
+        "followUpPrompt": "Interview questions — answer while recording:",
+        "recordedSuccess": "Recording saved ({duration}s)",
         "recording": "Recording",
         "transcript": "Transcript",
         "transcriptPlaceholder": "Speak into the microphone to see the transcript...",

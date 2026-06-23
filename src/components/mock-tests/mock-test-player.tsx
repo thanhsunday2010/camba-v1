@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import type { MockTestData, UserAnswer } from "@/types/learning";
+import type { MockTestData, QuestionResult, UserAnswer } from "@/types/learning";
 import { QuestionRenderer } from "@/components/exercises/exercise-player";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { MockTestFramedQuestionFrame } from "@/components/mock-tests/mock-test-framed-question-frame";
@@ -21,6 +21,7 @@ interface MockTestPlayerProps {
   resolvedProgress: ResolvedMockTestProgress;
   currentQuestionIndex: number;
   answers: Record<string, UserAnswer>;
+  questionResults: QuestionResult[];
   isSubmitting: boolean;
   isReviewingTest: boolean;
   activeReviewQuestionId: string | null;
@@ -41,6 +42,7 @@ export function MockTestPlayer({
   resolvedProgress,
   currentQuestionIndex,
   answers,
+  questionResults,
   isSubmitting,
   isReviewingTest,
   activeReviewQuestionId,
@@ -93,6 +95,7 @@ export function MockTestPlayer({
 
   const isReviewView = Boolean(reviewQuestionId);
   const isLast = displayIndex === flatQuestions.length - 1;
+  const currentQuestionResult = questionResults.find((r) => r.questionId === currentQuestion.id);
 
   const questionBody = (
     <div className="space-y-4">
@@ -108,7 +111,14 @@ export function MockTestPlayer({
             : (answer) => onAnswerChange(currentQuestion.id, answer)
         }
         disabled={isReviewView}
+        showResult={isReviewView && questionResults.length > 0}
+        questionResult={currentQuestionResult}
       />
+      {isReviewView && currentQuestionResult?.explanation && (
+        <p className="camba-caption text-muted bg-muted/40 p-2 rounded-lg">
+          {currentQuestionResult.explanation}
+        </p>
+      )}
     </div>
   );
 
