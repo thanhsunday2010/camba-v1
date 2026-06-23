@@ -5,6 +5,26 @@ function normalizeText(text: string): string {
   return text.trim().toLowerCase().replace(/\s+/g, " ");
 }
 
+function defaultAnswerForQuestion(question: Question): UserAnswer {
+  const questionType = normalizeQuestionType(question.question_type);
+  switch (questionType) {
+    case "multi_select":
+      return { type: "multi", choiceIds: [] };
+    case "matching":
+    case "drag_drop":
+      return { type: "matching", pairs: [] };
+    case "gap_fill":
+      return { type: "gap_fill", answers: [] };
+    case "sentence_ordering":
+      return { type: "sentence_ordering", order: [] };
+    case "writing":
+    case "speaking":
+      return { type: "text", text: "" };
+    default:
+      return { type: "single", choiceId: "" };
+  }
+}
+
 function scoreMultipleChoice(question: Question, answer: UserAnswer): QuestionResult {
   const userAnswer = answer as Extract<UserAnswer, { type: "single" }>;
   const correctChoice = question.choices?.find((c) => c.is_correct);
@@ -25,7 +45,7 @@ function scoreMultiSelect(question: Question, answer: UserAnswer): QuestionResul
   const correctIds = new Set(
     question.choices?.filter((c) => c.is_correct).map((c) => c.id) ?? []
   );
-  const selectedIds = new Set(userAnswer.choiceIds);
+  const selectedIds = new Set(userAnswer.choiceIds ?? []);
 
   const isCorrect =
     correctIds.size === selectedIds.size &&
@@ -47,7 +67,7 @@ function scoreMatching(question: Question, answer: UserAnswer): QuestionResult {
   let correctCount = 0;
 
   for (const pair of pairs) {
-    const userPair = userAnswer.pairs.find((p) => p.leftId === pair.id);
+    const userPair = (userAnswer.pairs ?? []).find((p) => p.leftId === pair.id);
     if (userPair && normalizeText(userPair.rightText) === normalizeText(pair.right_text)) {
       correctCount++;
     }
@@ -75,7 +95,7 @@ function scoreGapFill(question: Question, answer: UserAnswer): QuestionResult {
   let correctCount = 0;
 
   correctAnswers.forEach((correct, index) => {
-    const userVal = userAnswer.answers[index] ?? "";
+    const userVal = (userAnswer.answers ?? [])[index] ?? "";
     const accepted = (question.content.acceptedAnswers as Record<number, string[]>)?.[index];
     if (accepted) {
       if (accepted.some((a) => normalizeText(a) === normalizeText(userVal))) correctCount++;
@@ -103,9 +123,10 @@ function scoreGapFill(question: Question, answer: UserAnswer): QuestionResult {
 function scoreSentenceOrdering(question: Question, answer: UserAnswer): QuestionResult {
   const userAnswer = answer as Extract<UserAnswer, { type: "sentence_ordering" }>;
   const correctOrder = (question.content.correctOrder as string[]) ?? [];
+  const userOrder = userAnswer.order ?? [];
   const isCorrect =
-    correctOrder.length === userAnswer.order.length &&
-    correctOrder.every((id, i) => id === userAnswer.order[i]);
+    correctOrder.length === userOrder.length &&
+    correctOrder.every((id, i) => id === userOrder[i]);
 
   return {
     questionId: question.id,
@@ -150,7 +171,7 @@ export function scoreExercise(
   answers: Record<string, UserAnswer>
 ): ExerciseResult {
   const questionResults = questions.map((q) =>
-    scoreQuestion(q, answers[q.id] ?? { type: "single", choiceId: "" })
+    scoreQuestion(q, answers[q.id] ?? defaultAnswerForQuestion(q))
   );
 
   const score = questionResults.reduce((sum, r) => sum + r.pointsEarned, 0);
