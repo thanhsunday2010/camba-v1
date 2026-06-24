@@ -1,0 +1,32 @@
+{
+  "templateVersion": "1.0.0",
+  "skill": "reading",
+  "description": "Human authoring template for reading MCQ items — not generated content.",
+  "requiredFields": {
+    "id": "level-part-seq e.g. starters-rw-part-1-001",
+    "part": "M2.0 blueprint part slug",
+    "questionType": "multiple_choice | matching | reading_comprehension | gap_fill",
+    "difficulty": "easy | medium | hard",
+    "grammarTags": ["present_simple"],
+    "vocabularyTopics": ["school"],
+    "content": {
+      "questionText": "Clear stem referencing passage or picture.",
+      "choices": [
+        { "text": "Correct option", "isCorrect": true },
+        { "text": "Plausible distractor A", "isCorrect": false },
+        { "text": "Plausible distractor B", "isCorrect": false }
+      ]
+    }
+  },
+  "authoringRules": [
+    "One learning objective per item",
+    "Distractors same category as key",
+    "Age-appropriate vocabulary for level"
+  ],
+  "sourceTrace": {
+    "sourceLevel": "starters",
+    "sourceMock": "manual-authoring",
+    "sourcePart": "rw-part-1",
+    "sourceQuestion": "001"
+  }
+}

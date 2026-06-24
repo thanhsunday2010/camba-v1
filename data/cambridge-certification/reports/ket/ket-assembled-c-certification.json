@@ -1,0 +1,207 @@
+{
+  "mockId": "ket-assembled-c",
+  "version": "C",
+  "level": "ket",
+  "source": "assembled",
+  "levelAssigned": "gold",
+  "certified": true,
+  "studentFacing": true,
+  "metrics": {
+    "certificationScore": 98,
+    "coverageScore": 100,
+    "qaScore": 95,
+    "diversityScore": 100,
+    "blueprintScore": 100,
+    "grammarDistinct": 16,
+    "vocabularyDistinct": 22,
+    "skillDistinct": 4,
+    "taskDistinct": 8,
+    "topicDistinct": 22,
+    "difficultyDistinct": 3,
+    "writingCount": 2,
+    "speakingCount": 2,
+    "readingCount": 30,
+    "listeningCount": 25,
+    "duplicateItemCount": 0,
+    "duplicateClusterCount": 0
+  },
+  "issues": [
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-036",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-035",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-037",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-exp-017",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-exp-011",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-042",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-038",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-040",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-exp-012",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-041",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-045",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-exp-013",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-044",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-047",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-046",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-052",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-050",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-049",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-048",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-051",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-056",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-exp-015",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-057",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-055",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.ket-kgm-054",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    }
+  ],
+  "certifiedAt": "2026-06-24T01:29:19.786Z",
+  "notes": []
+}

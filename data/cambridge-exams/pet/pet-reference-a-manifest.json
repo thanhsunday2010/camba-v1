@@ -1,0 +1,986 @@
+{
+  "metadata": {
+    "manifestId": "cambridge-pet-a-v1",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-pet-v1",
+    "blueprintVersion": "1.0.0",
+    "level": "pet",
+    "examVersion": "A",
+    "assemblySeed": "camba-m2-4-reference:pet:A",
+    "title": "B1 Preliminary for Schools — Form A",
+    "description": "Assembled reference exam for pet (architecture validation).",
+    "formKind": "full-form",
+    "timeLimitMinutes": 130,
+    "totalScore": 174,
+    "assembledAt": "2026-06-24T00:27:16.288Z",
+    "authoringNotes": "M2.4 golden reference — not production content."
+  },
+  "papers": [
+    {
+      "paperSlug": "reading",
+      "title": "Reading",
+      "skills": [
+        "reading"
+      ],
+      "parts": [
+        {
+          "paperSlug": "reading",
+          "partSlug": "reading-part-1",
+          "partNumber": 1,
+          "title": "Multiple choice (signs)",
+          "skill": "reading",
+          "questionCount": 6,
+          "itemReferences": [
+            {
+              "itemId": "pet-reading-part-1-multiple_choice-041",
+              "partSlug": "reading-part-1",
+              "sortOrder": 1,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-1-multiple_choice-122",
+              "partSlug": "reading-part-1",
+              "sortOrder": 2,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-1-multiple_choice-115",
+              "partSlug": "reading-part-1",
+              "sortOrder": 3,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-1-multiple_choice-066",
+              "partSlug": "reading-part-1",
+              "sortOrder": 4,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-1-multiple_choice-062",
+              "partSlug": "reading-part-1",
+              "sortOrder": 5,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-1-multiple_choice-050",
+              "partSlug": "reading-part-1",
+              "sortOrder": 6,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading",
+          "partSlug": "reading-part-2",
+          "partNumber": 2,
+          "title": "Multiple matching",
+          "skill": "reading",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "pet-reading-part-2-matching-094",
+              "partSlug": "reading-part-2",
+              "sortOrder": 7,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-2-matching-085",
+              "partSlug": "reading-part-2",
+              "sortOrder": 8,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-2-matching-095",
+              "partSlug": "reading-part-2",
+              "sortOrder": 9,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-2-matching-082",
+              "partSlug": "reading-part-2",
+              "sortOrder": 10,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-2-matching-084",
+              "partSlug": "reading-part-2",
+              "sortOrder": 11,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading",
+          "partSlug": "reading-part-3",
+          "partNumber": 3,
+          "title": "Multiple choice (long text)",
+          "skill": "reading",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "pet-reading-part-3-reading_comprehension-034",
+              "partSlug": "reading-part-3",
+              "sortOrder": 12,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-3-reading_comprehension-071",
+              "partSlug": "reading-part-3",
+              "sortOrder": 13,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-3-reading_comprehension-072",
+              "partSlug": "reading-part-3",
+              "sortOrder": 14,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-3-reading_comprehension-058",
+              "partSlug": "reading-part-3",
+              "sortOrder": 15,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-3-reading_comprehension-056",
+              "partSlug": "reading-part-3",
+              "sortOrder": 16,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading",
+          "partSlug": "reading-part-4",
+          "partNumber": 4,
+          "title": "Multiple choice cloze",
+          "skill": "reading",
+          "questionCount": 6,
+          "itemReferences": [
+            {
+              "itemId": "pet-reading-part-4-multiple_choice-124",
+              "partSlug": "reading-part-4",
+              "sortOrder": 17,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-4-multiple_choice-123",
+              "partSlug": "reading-part-4",
+              "sortOrder": 18,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-4-multiple_choice-002",
+              "partSlug": "reading-part-4",
+              "sortOrder": 19,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-4-multiple_choice-018",
+              "partSlug": "reading-part-4",
+              "sortOrder": 20,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-4-multiple_choice-106",
+              "partSlug": "reading-part-4",
+              "sortOrder": 21,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-4-multiple_choice-102",
+              "partSlug": "reading-part-4",
+              "sortOrder": 22,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading",
+          "partSlug": "reading-part-5",
+          "partNumber": 5,
+          "title": "Open cloze",
+          "skill": "reading",
+          "questionCount": 6,
+          "itemReferences": [
+            {
+              "itemId": "pet-reading-part-5-open_cloze-026",
+              "partSlug": "reading-part-5",
+              "sortOrder": 23,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-5-open_cloze-034",
+              "partSlug": "reading-part-5",
+              "sortOrder": 24,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-5-open_cloze-067",
+              "partSlug": "reading-part-5",
+              "sortOrder": 25,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-5-open_cloze-035",
+              "partSlug": "reading-part-5",
+              "sortOrder": 26,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-5-open_cloze-139",
+              "partSlug": "reading-part-5",
+              "sortOrder": 27,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-5-open_cloze-141",
+              "partSlug": "reading-part-5",
+              "sortOrder": 28,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading",
+          "partSlug": "reading-part-6",
+          "partNumber": 6,
+          "title": "Gapped text",
+          "skill": "reading",
+          "questionCount": 6,
+          "itemReferences": [
+            {
+              "itemId": "pet-reading-part-6-gapped_text-066",
+              "partSlug": "reading-part-6",
+              "sortOrder": 29,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-6-gapped_text-035",
+              "partSlug": "reading-part-6",
+              "sortOrder": 30,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-6-gapped_text-061",
+              "partSlug": "reading-part-6",
+              "sortOrder": 31,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-6-gapped_text-062",
+              "partSlug": "reading-part-6",
+              "sortOrder": 32,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-6-gapped_text-055",
+              "partSlug": "reading-part-6",
+              "sortOrder": 33,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-reading-part-6-gapped_text-074",
+              "partSlug": "reading-part-6",
+              "sortOrder": 34,
+              "pointsOverride": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paperSlug": "writing",
+      "title": "Writing",
+      "skills": [
+        "writing"
+      ],
+      "parts": [
+        {
+          "paperSlug": "writing",
+          "partSlug": "writing-part-1",
+          "partNumber": 1,
+          "title": "Write an email",
+          "skill": "writing",
+          "questionCount": 1,
+          "itemReferences": [
+            {
+              "itemId": "pet-writing-part-1-write_email-008",
+              "partSlug": "writing-part-1",
+              "sortOrder": 35,
+              "pointsOverride": 20
+            }
+          ]
+        },
+        {
+          "paperSlug": "writing",
+          "partSlug": "writing-part-2",
+          "partNumber": 2,
+          "title": "Write an article or story",
+          "skill": "writing",
+          "questionCount": 1,
+          "itemReferences": [
+            {
+              "itemId": "pet-writing-part-2-write_story-020",
+              "partSlug": "writing-part-2",
+              "sortOrder": 36,
+              "pointsOverride": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paperSlug": "listening",
+      "title": "Listening",
+      "skills": [
+        "listening"
+      ],
+      "parts": [
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-1",
+          "partNumber": 1,
+          "title": "Multiple choice (pictures)",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "pet-listening-part-1-audio_multiple_choice-095",
+              "partSlug": "listening-part-1",
+              "sortOrder": 37,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-1-audio_multiple_choice-094",
+              "partSlug": "listening-part-1",
+              "sortOrder": 38,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-1-audio_multiple_choice-083",
+              "partSlug": "listening-part-1",
+              "sortOrder": 39,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-1-audio_multiple_choice-080",
+              "partSlug": "listening-part-1",
+              "sortOrder": 40,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-1-audio_multiple_choice-092",
+              "partSlug": "listening-part-1",
+              "sortOrder": 41,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-2",
+          "partNumber": 2,
+          "title": "Multiple choice (questions)",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "pet-listening-part-2-audio_multiple_choice-109",
+              "partSlug": "listening-part-2",
+              "sortOrder": 42,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-2-audio_multiple_choice-007",
+              "partSlug": "listening-part-2",
+              "sortOrder": 43,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-2-audio_multiple_choice-104",
+              "partSlug": "listening-part-2",
+              "sortOrder": 44,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-2-audio_multiple_choice-118",
+              "partSlug": "listening-part-2",
+              "sortOrder": 45,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-2-audio_multiple_choice-006",
+              "partSlug": "listening-part-2",
+              "sortOrder": 46,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-3",
+          "partNumber": 3,
+          "title": "Gap fill",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "pet-listening-part-3-audio_gap_fill-075",
+              "partSlug": "listening-part-3",
+              "sortOrder": 47,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-3-audio_gap_fill-052",
+              "partSlug": "listening-part-3",
+              "sortOrder": 48,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-3-audio_gap_fill-046",
+              "partSlug": "listening-part-3",
+              "sortOrder": 49,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-3-audio_gap_fill-032",
+              "partSlug": "listening-part-3",
+              "sortOrder": 50,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-3-audio_gap_fill-064",
+              "partSlug": "listening-part-3",
+              "sortOrder": 51,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-4",
+          "partNumber": 4,
+          "title": "Multiple choice (monologue)",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "pet-listening-part-4-audio_multiple_choice-060",
+              "partSlug": "listening-part-4",
+              "sortOrder": 52,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-4-audio_multiple_choice-078",
+              "partSlug": "listening-part-4",
+              "sortOrder": 53,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-4-audio_multiple_choice-043",
+              "partSlug": "listening-part-4",
+              "sortOrder": 54,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-4-audio_multiple_choice-065",
+              "partSlug": "listening-part-4",
+              "sortOrder": 55,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-4-audio_multiple_choice-028",
+              "partSlug": "listening-part-4",
+              "sortOrder": 56,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-5",
+          "partNumber": 5,
+          "title": "Multiple matching",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "pet-listening-part-5-audio_matching-012",
+              "partSlug": "listening-part-5",
+              "sortOrder": 57,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-5-audio_matching-100",
+              "partSlug": "listening-part-5",
+              "sortOrder": 58,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-5-audio_matching-000",
+              "partSlug": "listening-part-5",
+              "sortOrder": 59,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-5-audio_matching-090",
+              "partSlug": "listening-part-5",
+              "sortOrder": 60,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "pet-listening-part-5-audio_matching-003",
+              "partSlug": "listening-part-5",
+              "sortOrder": 61,
+              "pointsOverride": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paperSlug": "speaking",
+      "title": "Speaking",
+      "skills": [
+        "speaking"
+      ],
+      "parts": [
+        {
+          "paperSlug": "speaking",
+          "partSlug": "speaking-part-1",
+          "partNumber": 1,
+          "title": "Interview",
+          "skill": "speaking",
+          "questionCount": 1,
+          "itemReferences": [
+            {
+              "itemId": "pet-speaking-part-1-conversation-011",
+              "partSlug": "speaking-part-1",
+              "sortOrder": 62,
+              "pointsOverride": 25
+            }
+          ]
+        },
+        {
+          "paperSlug": "speaking",
+          "partSlug": "speaking-part-2",
+          "partNumber": 2,
+          "title": "Extended turn (photo description)",
+          "skill": "speaking",
+          "questionCount": 1,
+          "itemReferences": [
+            {
+              "itemId": "pet-speaking-part-2-picture_description_speaking-015",
+              "partSlug": "speaking-part-2",
+              "sortOrder": 63,
+              "pointsOverride": 25
+            }
+          ]
+        },
+        {
+          "paperSlug": "speaking",
+          "partSlug": "speaking-part-3",
+          "partNumber": 3,
+          "title": "Collaborative task",
+          "skill": "speaking",
+          "questionCount": 1,
+          "itemReferences": [
+            {
+              "itemId": "pet-speaking-part-3-conversation-001",
+              "partSlug": "speaking-part-3",
+              "sortOrder": 64,
+              "pointsOverride": 25
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "itemReferences": [
+    {
+      "itemId": "pet-reading-part-1-multiple_choice-041",
+      "partSlug": "reading-part-1",
+      "sortOrder": 1,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-1-multiple_choice-122",
+      "partSlug": "reading-part-1",
+      "sortOrder": 2,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-1-multiple_choice-115",
+      "partSlug": "reading-part-1",
+      "sortOrder": 3,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-1-multiple_choice-066",
+      "partSlug": "reading-part-1",
+      "sortOrder": 4,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-1-multiple_choice-062",
+      "partSlug": "reading-part-1",
+      "sortOrder": 5,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-1-multiple_choice-050",
+      "partSlug": "reading-part-1",
+      "sortOrder": 6,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-2-matching-094",
+      "partSlug": "reading-part-2",
+      "sortOrder": 7,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-2-matching-085",
+      "partSlug": "reading-part-2",
+      "sortOrder": 8,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-2-matching-095",
+      "partSlug": "reading-part-2",
+      "sortOrder": 9,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-2-matching-082",
+      "partSlug": "reading-part-2",
+      "sortOrder": 10,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-2-matching-084",
+      "partSlug": "reading-part-2",
+      "sortOrder": 11,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-3-reading_comprehension-034",
+      "partSlug": "reading-part-3",
+      "sortOrder": 12,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-3-reading_comprehension-071",
+      "partSlug": "reading-part-3",
+      "sortOrder": 13,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-3-reading_comprehension-072",
+      "partSlug": "reading-part-3",
+      "sortOrder": 14,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-3-reading_comprehension-058",
+      "partSlug": "reading-part-3",
+      "sortOrder": 15,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-3-reading_comprehension-056",
+      "partSlug": "reading-part-3",
+      "sortOrder": 16,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-4-multiple_choice-124",
+      "partSlug": "reading-part-4",
+      "sortOrder": 17,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-4-multiple_choice-123",
+      "partSlug": "reading-part-4",
+      "sortOrder": 18,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-4-multiple_choice-002",
+      "partSlug": "reading-part-4",
+      "sortOrder": 19,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-4-multiple_choice-018",
+      "partSlug": "reading-part-4",
+      "sortOrder": 20,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-4-multiple_choice-106",
+      "partSlug": "reading-part-4",
+      "sortOrder": 21,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-4-multiple_choice-102",
+      "partSlug": "reading-part-4",
+      "sortOrder": 22,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-5-open_cloze-026",
+      "partSlug": "reading-part-5",
+      "sortOrder": 23,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-5-open_cloze-034",
+      "partSlug": "reading-part-5",
+      "sortOrder": 24,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-5-open_cloze-067",
+      "partSlug": "reading-part-5",
+      "sortOrder": 25,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-5-open_cloze-035",
+      "partSlug": "reading-part-5",
+      "sortOrder": 26,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-5-open_cloze-139",
+      "partSlug": "reading-part-5",
+      "sortOrder": 27,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-5-open_cloze-141",
+      "partSlug": "reading-part-5",
+      "sortOrder": 28,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-6-gapped_text-066",
+      "partSlug": "reading-part-6",
+      "sortOrder": 29,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-6-gapped_text-035",
+      "partSlug": "reading-part-6",
+      "sortOrder": 30,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-6-gapped_text-061",
+      "partSlug": "reading-part-6",
+      "sortOrder": 31,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-6-gapped_text-062",
+      "partSlug": "reading-part-6",
+      "sortOrder": 32,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-6-gapped_text-055",
+      "partSlug": "reading-part-6",
+      "sortOrder": 33,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-reading-part-6-gapped_text-074",
+      "partSlug": "reading-part-6",
+      "sortOrder": 34,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-writing-part-1-write_email-008",
+      "partSlug": "writing-part-1",
+      "sortOrder": 35,
+      "pointsOverride": 20
+    },
+    {
+      "itemId": "pet-writing-part-2-write_story-020",
+      "partSlug": "writing-part-2",
+      "sortOrder": 36,
+      "pointsOverride": 20
+    },
+    {
+      "itemId": "pet-listening-part-1-audio_multiple_choice-095",
+      "partSlug": "listening-part-1",
+      "sortOrder": 37,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-1-audio_multiple_choice-094",
+      "partSlug": "listening-part-1",
+      "sortOrder": 38,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-1-audio_multiple_choice-083",
+      "partSlug": "listening-part-1",
+      "sortOrder": 39,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-1-audio_multiple_choice-080",
+      "partSlug": "listening-part-1",
+      "sortOrder": 40,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-1-audio_multiple_choice-092",
+      "partSlug": "listening-part-1",
+      "sortOrder": 41,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-2-audio_multiple_choice-109",
+      "partSlug": "listening-part-2",
+      "sortOrder": 42,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-2-audio_multiple_choice-007",
+      "partSlug": "listening-part-2",
+      "sortOrder": 43,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-2-audio_multiple_choice-104",
+      "partSlug": "listening-part-2",
+      "sortOrder": 44,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-2-audio_multiple_choice-118",
+      "partSlug": "listening-part-2",
+      "sortOrder": 45,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-2-audio_multiple_choice-006",
+      "partSlug": "listening-part-2",
+      "sortOrder": 46,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-3-audio_gap_fill-075",
+      "partSlug": "listening-part-3",
+      "sortOrder": 47,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-3-audio_gap_fill-052",
+      "partSlug": "listening-part-3",
+      "sortOrder": 48,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-3-audio_gap_fill-046",
+      "partSlug": "listening-part-3",
+      "sortOrder": 49,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-3-audio_gap_fill-032",
+      "partSlug": "listening-part-3",
+      "sortOrder": 50,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-3-audio_gap_fill-064",
+      "partSlug": "listening-part-3",
+      "sortOrder": 51,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-4-audio_multiple_choice-060",
+      "partSlug": "listening-part-4",
+      "sortOrder": 52,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-4-audio_multiple_choice-078",
+      "partSlug": "listening-part-4",
+      "sortOrder": 53,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-4-audio_multiple_choice-043",
+      "partSlug": "listening-part-4",
+      "sortOrder": 54,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-4-audio_multiple_choice-065",
+      "partSlug": "listening-part-4",
+      "sortOrder": 55,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-4-audio_multiple_choice-028",
+      "partSlug": "listening-part-4",
+      "sortOrder": 56,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-5-audio_matching-012",
+      "partSlug": "listening-part-5",
+      "sortOrder": 57,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-5-audio_matching-100",
+      "partSlug": "listening-part-5",
+      "sortOrder": 58,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-5-audio_matching-000",
+      "partSlug": "listening-part-5",
+      "sortOrder": 59,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-5-audio_matching-090",
+      "partSlug": "listening-part-5",
+      "sortOrder": 60,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-listening-part-5-audio_matching-003",
+      "partSlug": "listening-part-5",
+      "sortOrder": 61,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "pet-speaking-part-1-conversation-011",
+      "partSlug": "speaking-part-1",
+      "sortOrder": 62,
+      "pointsOverride": 25
+    },
+    {
+      "itemId": "pet-speaking-part-2-picture_description_speaking-015",
+      "partSlug": "speaking-part-2",
+      "sortOrder": 63,
+      "pointsOverride": 25
+    },
+    {
+      "itemId": "pet-speaking-part-3-conversation-001",
+      "partSlug": "speaking-part-3",
+      "sortOrder": 64,
+      "pointsOverride": 25
+    }
+  ]
+}

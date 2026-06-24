@@ -18,8 +18,14 @@ function defaultAnswerForQuestion(question: Question): UserAnswer {
     case "sentence_ordering":
       return { type: "sentence_ordering", order: [] };
     case "writing":
+      return { type: "writing", responseText: "", wordCount: 0 };
     case "speaking":
-      return { type: "text", text: "" };
+      return {
+        type: "speaking",
+        audioRef: "",
+        mimeType: "audio/webm",
+        durationSeconds: 0,
+      };
     default:
       return { type: "single", choiceId: "" };
   }
@@ -155,6 +161,15 @@ export function scoreQuestion(question: Question, answer: UserAnswer): QuestionR
       return scoreGapFill(question, answer);
     case "sentence_ordering":
       return scoreSentenceOrdering(question, answer);
+    case "writing":
+    case "speaking":
+      return {
+        questionId: question.id,
+        isCorrect: false,
+        pointsEarned: 0,
+        maxPoints: question.points,
+        explanation: question.explanation,
+      };
     default:
       return {
         questionId: question.id,

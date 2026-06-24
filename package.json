@@ -46,6 +46,15 @@
     "analyze:content-coverage": "node scripts/analyze-content-coverage.mjs",
     "analyze:item-bank": "node scripts/analyze-item-bank.mjs",
     "extract:item-bank": "node scripts/extract-item-bank-from-mock.mjs",
+    "generate:cambridge-exam": "node scripts/generate-cambridge-exam.mjs",
+    "validate:cambridge-exam": "node scripts/validate-cambridge-exam.mjs",
+    "analyze:cambridge-exam": "node scripts/analyze-cambridge-exam.mjs",
+    "analyze:gold-mock": "node scripts/analyze-gold-mock.mjs",
+    "extract:gold-mock-items": "node scripts/extract-gold-mock-items.mjs",
+    "analyze:item-bank-gaps": "node scripts/analyze-item-bank-gaps.mjs",
+    "certify:mocks": "node scripts/certify-mocks.mjs",
+    "report:gold-mock-coverage": "node scripts/report-gold-mock-coverage.mjs",
+    "review:mock-inventory": "node scripts/mock-inventory-review.mjs",
     "generate:listening-audio": "node scripts/generate-listening-audio.mjs"
   },
   "dependencies": {

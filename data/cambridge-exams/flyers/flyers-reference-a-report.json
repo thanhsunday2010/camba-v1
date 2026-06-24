@@ -1,0 +1,1113 @@
+{
+  "level": "flyers",
+  "examVersion": "A",
+  "assemblySeed": "camba-m2-4-reference:flyers:A",
+  "blueprintId": "cambridge-flyers-v1",
+  "blueprintVersion": "1.0.0",
+  "generatedAt": "2026-06-24T00:27:16.249Z",
+  "itemCount": 59,
+  "itemsSelected": [
+    {
+      "itemId": "flyers-listening-part-1-audio_matching-002",
+      "partSlug": "listening-part-1",
+      "paperSlug": "listening",
+      "taskType": "audio_matching",
+      "skill": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "past_simple",
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "sports"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-1-audio_matching-116",
+      "partSlug": "listening-part-1",
+      "paperSlug": "listening",
+      "taskType": "audio_matching",
+      "skill": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-1-audio_matching-108",
+      "partSlug": "listening-part-1",
+      "paperSlug": "listening",
+      "taskType": "audio_matching",
+      "skill": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-1-audio_matching-081",
+      "partSlug": "listening-part-1",
+      "paperSlug": "listening",
+      "taskType": "audio_matching",
+      "skill": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "pronouns",
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-1-audio_matching-109",
+      "partSlug": "listening-part-1",
+      "paperSlug": "listening",
+      "taskType": "audio_matching",
+      "skill": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-1-audio_matching-073",
+      "partSlug": "listening-part-1",
+      "paperSlug": "listening",
+      "taskType": "audio_matching",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_continuous",
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "technology",
+        "numbers"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-1-audio_matching-131",
+      "partSlug": "listening-part-1",
+      "paperSlug": "listening",
+      "taskType": "audio_matching",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "hobbies"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-2-audio_gap_fill-028",
+      "partSlug": "listening-part-2",
+      "paperSlug": "listening",
+      "taskType": "audio_gap_fill",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-2-audio_gap_fill-031",
+      "partSlug": "listening-part-2",
+      "paperSlug": "listening",
+      "taskType": "audio_gap_fill",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "superlatives",
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-2-audio_gap_fill-048",
+      "partSlug": "listening-part-2",
+      "paperSlug": "listening",
+      "taskType": "audio_gap_fill",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "body",
+        "environment"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-2-audio_gap_fill-150",
+      "partSlug": "listening-part-2",
+      "paperSlug": "listening",
+      "taskType": "audio_gap_fill",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-2-audio_gap_fill-042",
+      "partSlug": "listening-part-2",
+      "paperSlug": "listening",
+      "taskType": "audio_gap_fill",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "jobs",
+        "places"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-2-audio_gap_fill-053",
+      "partSlug": "listening-part-2",
+      "paperSlug": "listening",
+      "taskType": "audio_gap_fill",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-2-audio_gap_fill-142",
+      "partSlug": "listening-part-2",
+      "paperSlug": "listening",
+      "taskType": "audio_gap_fill",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "sports"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-3-audio_multiple_choice-075",
+      "partSlug": "listening-part-3",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "hobbies"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-3-audio_multiple_choice-089",
+      "partSlug": "listening-part-3",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "weather"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-3-audio_multiple_choice-083",
+      "partSlug": "listening-part-3",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-3-audio_multiple_choice-099",
+      "partSlug": "listening-part-3",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-3-audio_multiple_choice-096",
+      "partSlug": "listening-part-3",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-3-audio_multiple_choice-094",
+      "partSlug": "listening-part-3",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-3-audio_multiple_choice-095",
+      "partSlug": "listening-part-3",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-4-audio_multiple_choice-125",
+      "partSlug": "listening-part-4",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-4-audio_multiple_choice-038",
+      "partSlug": "listening-part-4",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "modal_can",
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-4-audio_multiple_choice-047",
+      "partSlug": "listening-part-4",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "hobbies"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-4-audio_multiple_choice-034",
+      "partSlug": "listening-part-4",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-4-audio_multiple_choice-065",
+      "partSlug": "listening-part-4",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "transport",
+        "jobs"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-4-audio_multiple_choice-046",
+      "partSlug": "listening-part-4",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ]
+    },
+    {
+      "itemId": "flyers-listening-part-4-audio_multiple_choice-068",
+      "partSlug": "listening-part-4",
+      "paperSlug": "listening",
+      "taskType": "audio_multiple_choice",
+      "skill": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-1-matching-022",
+      "partSlug": "rw-part-1",
+      "paperSlug": "reading-writing",
+      "taskType": "matching",
+      "skill": "reading",
+      "difficulty": "easy",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "numbers",
+        "community"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-1-matching-116",
+      "partSlug": "rw-part-1",
+      "paperSlug": "reading-writing",
+      "taskType": "matching",
+      "skill": "reading",
+      "difficulty": "easy",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-1-matching-018",
+      "partSlug": "rw-part-1",
+      "paperSlug": "reading-writing",
+      "taskType": "matching",
+      "skill": "reading",
+      "difficulty": "easy",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-1-true_false-113",
+      "partSlug": "rw-part-1",
+      "paperSlug": "reading-writing",
+      "taskType": "true_false",
+      "skill": "reading",
+      "difficulty": "easy",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "home"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-1-matching-124",
+      "partSlug": "rw-part-1",
+      "paperSlug": "reading-writing",
+      "taskType": "matching",
+      "skill": "reading",
+      "difficulty": "easy",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-1-matching-102",
+      "partSlug": "rw-part-1",
+      "paperSlug": "reading-writing",
+      "taskType": "matching",
+      "skill": "reading",
+      "difficulty": "easy",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-1-true_false-107",
+      "partSlug": "rw-part-1",
+      "paperSlug": "reading-writing",
+      "taskType": "true_false",
+      "skill": "reading",
+      "difficulty": "easy",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "time",
+        "family"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-2-multiple_choice-129",
+      "partSlug": "rw-part-2",
+      "paperSlug": "reading-writing",
+      "taskType": "multiple_choice",
+      "skill": "reading",
+      "difficulty": "medium",
+      "grammarTags": [
+        "pronouns",
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "technology",
+        "numbers"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-2-multiple_choice-165",
+      "partSlug": "rw-part-2",
+      "paperSlug": "reading-writing",
+      "taskType": "multiple_choice",
+      "skill": "reading",
+      "difficulty": "medium",
+      "grammarTags": [
+        "imperatives",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-2-multiple_choice-138",
+      "partSlug": "rw-part-2",
+      "paperSlug": "reading-writing",
+      "taskType": "multiple_choice",
+      "skill": "reading",
+      "difficulty": "medium",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "food"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-2-true_false-053",
+      "partSlug": "rw-part-2",
+      "paperSlug": "reading-writing",
+      "taskType": "true_false",
+      "skill": "reading",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-2-true_false-026",
+      "partSlug": "rw-part-2",
+      "paperSlug": "reading-writing",
+      "taskType": "true_false",
+      "skill": "reading",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple",
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "food"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-2-reading_comprehension-028",
+      "partSlug": "rw-part-2",
+      "paperSlug": "reading-writing",
+      "taskType": "reading_comprehension",
+      "skill": "reading",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-2-multiple_choice-156",
+      "partSlug": "rw-part-2",
+      "paperSlug": "reading-writing",
+      "taskType": "multiple_choice",
+      "skill": "reading",
+      "difficulty": "medium",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "feelings"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-3-true_false-077",
+      "partSlug": "rw-part-3",
+      "paperSlug": "reading-writing",
+      "taskType": "true_false",
+      "skill": "reading",
+      "difficulty": "hard",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "feelings",
+        "culture"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-3-true_false-089",
+      "partSlug": "rw-part-3",
+      "paperSlug": "reading-writing",
+      "taskType": "true_false",
+      "skill": "reading",
+      "difficulty": "hard",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "weather"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-3-true_false-080",
+      "partSlug": "rw-part-3",
+      "paperSlug": "reading-writing",
+      "taskType": "true_false",
+      "skill": "reading",
+      "difficulty": "hard",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-3-reading_comprehension-099",
+      "partSlug": "rw-part-3",
+      "paperSlug": "reading-writing",
+      "taskType": "reading_comprehension",
+      "skill": "reading",
+      "difficulty": "hard",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-3-reading_comprehension-096",
+      "partSlug": "rw-part-3",
+      "paperSlug": "reading-writing",
+      "taskType": "reading_comprehension",
+      "skill": "reading",
+      "difficulty": "hard",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-3-multiple_choice-085",
+      "partSlug": "rw-part-3",
+      "paperSlug": "reading-writing",
+      "taskType": "multiple_choice",
+      "skill": "reading",
+      "difficulty": "hard",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "home"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-3-multiple_choice-076",
+      "partSlug": "rw-part-3",
+      "paperSlug": "reading-writing",
+      "taskType": "multiple_choice",
+      "skill": "reading",
+      "difficulty": "hard",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "body",
+        "environment"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-4-picture_description_writing-164",
+      "partSlug": "rw-part-4",
+      "paperSlug": "reading-writing",
+      "taskType": "picture_description_writing",
+      "skill": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-4-write_note-066",
+      "partSlug": "rw-part-4",
+      "paperSlug": "reading-writing",
+      "taskType": "write_note",
+      "skill": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-4-write_note-000",
+      "partSlug": "rw-part-4",
+      "paperSlug": "reading-writing",
+      "taskType": "write_note",
+      "skill": "writing",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-4-write_note-132",
+      "partSlug": "rw-part-4",
+      "paperSlug": "reading-writing",
+      "taskType": "write_note",
+      "skill": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "body",
+        "environment"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-4-write_story-067",
+      "partSlug": "rw-part-4",
+      "paperSlug": "reading-writing",
+      "taskType": "write_story",
+      "skill": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-4-picture_description_writing-116",
+      "partSlug": "rw-part-4",
+      "paperSlug": "reading-writing",
+      "taskType": "picture_description_writing",
+      "skill": "writing",
+      "difficulty": "easy",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ]
+    },
+    {
+      "itemId": "flyers-rw-part-4-write_story-097",
+      "partSlug": "rw-part-4",
+      "paperSlug": "reading-writing",
+      "taskType": "write_story",
+      "skill": "writing",
+      "difficulty": "hard",
+      "grammarTags": [
+        "present_continuous",
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ]
+    },
+    {
+      "itemId": "flyers-speaking-part-1-picture_description_speaking-006",
+      "partSlug": "speaking-part-1",
+      "paperSlug": "speaking",
+      "taskType": "picture_description_speaking",
+      "skill": "speaking",
+      "difficulty": "easy",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ]
+    },
+    {
+      "itemId": "flyers-speaking-part-2-short_answer-003",
+      "partSlug": "speaking-part-2",
+      "paperSlug": "speaking",
+      "taskType": "short_answer",
+      "skill": "speaking",
+      "difficulty": "easy",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ]
+    },
+    {
+      "itemId": "flyers-speaking-part-3-story_telling-019",
+      "partSlug": "speaking-part-3",
+      "paperSlug": "speaking",
+      "taskType": "story_telling",
+      "skill": "speaking",
+      "difficulty": "easy",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "hobbies"
+      ]
+    }
+  ],
+  "coverageAchieved": {
+    "distinctGrammarPatterns": [
+      "past_simple",
+      "future_going_to",
+      "there_is_are",
+      "linking_words",
+      "countable_uncountable",
+      "modal_must",
+      "pronouns",
+      "question_forms",
+      "conjunctions",
+      "present_continuous",
+      "future_will",
+      "prepositions",
+      "modal_can",
+      "superlatives",
+      "possessives",
+      "present_simple",
+      "past_continuous",
+      "comparatives",
+      "verb_be",
+      "imperatives",
+      "articles",
+      "relative_clauses",
+      "adverbs_frequency",
+      "have_got"
+    ],
+    "distinctTopics": [
+      "animals",
+      "sports",
+      "drink",
+      "transport",
+      "hobbies",
+      "friends",
+      "environment",
+      "technology",
+      "numbers",
+      "places",
+      "family",
+      "school",
+      "food",
+      "leisure",
+      "body",
+      "weather",
+      "travel",
+      "jobs",
+      "community",
+      "clothes",
+      "shopping",
+      "health",
+      "colours",
+      "nature",
+      "home",
+      "time",
+      "culture",
+      "feelings"
+    ],
+    "difficultyCounts": {
+      "easy": 16,
+      "medium": 27,
+      "hard": 16
+    },
+    "skillsRepresented": [
+      "listening",
+      "reading",
+      "writing",
+      "speaking"
+    ]
+  },
+  "grammarCoverage": {
+    "past_simple": 4,
+    "future_going_to": 6,
+    "there_is_are": 9,
+    "linking_words": 7,
+    "countable_uncountable": 5,
+    "modal_must": 3,
+    "pronouns": 5,
+    "question_forms": 3,
+    "conjunctions": 2,
+    "present_continuous": 6,
+    "future_will": 6,
+    "prepositions": 4,
+    "modal_can": 4,
+    "superlatives": 5,
+    "possessives": 2,
+    "present_simple": 5,
+    "past_continuous": 8,
+    "comparatives": 7,
+    "verb_be": 4,
+    "imperatives": 5,
+    "articles": 5,
+    "relative_clauses": 6,
+    "adverbs_frequency": 5,
+    "have_got": 2
+  },
+  "vocabularyCoverage": {
+    "animals": 7,
+    "sports": 2,
+    "drink": 4,
+    "transport": 4,
+    "hobbies": 7,
+    "friends": 5,
+    "environment": 8,
+    "technology": 6,
+    "numbers": 3,
+    "places": 5,
+    "family": 4,
+    "school": 5,
+    "food": 4,
+    "leisure": 2,
+    "body": 5,
+    "weather": 6,
+    "travel": 6,
+    "jobs": 2,
+    "community": 2,
+    "clothes": 4,
+    "shopping": 4,
+    "health": 3,
+    "colours": 2,
+    "nature": 5,
+    "home": 4,
+    "time": 4,
+    "culture": 3,
+    "feelings": 2
+  },
+  "difficultyDistribution": {
+    "valid": true,
+    "counts": {
+      "easy": 11,
+      "medium": 23,
+      "hard": 15
+    },
+    "shares": {
+      "easy": 0.22448979591836735,
+      "medium": 0.46938775510204084,
+      "hard": 0.30612244897959184
+    },
+    "targets": {
+      "easy": 0.25,
+      "medium": 0.5,
+      "hard": 0.25
+    },
+    "deviations": {
+      "easy": 0.025510204081632654,
+      "medium": 0.030612244897959162,
+      "hard": 0.056122448979591844
+    },
+    "errors": [],
+    "warnings": []
+  },
+  "blueprintCompliance": true,
+  "writingIncluded": true,
+  "speakingIncluded": true,
+  "warnings": [
+    "Difficulty distribution validated on auto-scored items only; writing/speaking excluded from band targets."
+  ],
+  "errors": [],
+  "valid": true
+}

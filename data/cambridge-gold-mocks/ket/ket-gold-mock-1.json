@@ -1,0 +1,2362 @@
+{
+  "metadata": {
+    "manifestId": "ket-gold-mock-1",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-ket-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "ket",
+    "title": "A2 Key Gold Mock 1",
+    "description": "M3.1 academic reference mock for A2 Key for Schools — full reading & writing, listening, and speaking form.",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000005",
+    "timeLimitMinutes": 110,
+    "totalScore": 125,
+    "status": "published",
+    "authoringNotes": "M4.1 Gold Mock — manually authored and academically reviewed.",
+    "stableSlug": "ket-gold-mock-1"
+  },
+  "sections": [
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "sortOrder": 1,
+      "skillSlug": "reading_writing",
+      "timeLimitMinutes": 60,
+      "partSlugs": [
+        "rw-part-1",
+        "rw-part-2",
+        "rw-part-3",
+        "rw-part-4",
+        "rw-part-5",
+        "rw-part-6",
+        "rw-part-7"
+      ],
+      "questionRefs": [
+        "kgm-001",
+        "kgm-002",
+        "kgm-003",
+        "kgm-004",
+        "kgm-005",
+        "kgm-006",
+        "kgm-007",
+        "kgm-008",
+        "kgm-009",
+        "kgm-010",
+        "kgm-011",
+        "kgm-012",
+        "kgm-013",
+        "kgm-014",
+        "kgm-015",
+        "kgm-016",
+        "kgm-017",
+        "kgm-018",
+        "kgm-019",
+        "kgm-020",
+        "kgm-021",
+        "kgm-022",
+        "kgm-023",
+        "kgm-024",
+        "kgm-025",
+        "kgm-026",
+        "kgm-027",
+        "kgm-028",
+        "kgm-029",
+        "kgm-030",
+        "kgm-031",
+        "kgm-032"
+      ]
+    },
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 2,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 30,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4",
+        "listening-part-5"
+      ],
+      "questionRefs": [
+        "kgm-033",
+        "kgm-034",
+        "kgm-035",
+        "kgm-036",
+        "kgm-037",
+        "kgm-038",
+        "kgm-039",
+        "kgm-040",
+        "kgm-041",
+        "kgm-042",
+        "kgm-043",
+        "kgm-044",
+        "kgm-045",
+        "kgm-046",
+        "kgm-047",
+        "kgm-048",
+        "kgm-049",
+        "kgm-050",
+        "kgm-051",
+        "kgm-052",
+        "kgm-053",
+        "kgm-054",
+        "kgm-055",
+        "kgm-056",
+        "kgm-057"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 3,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 12,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2"
+      ],
+      "questionRefs": [
+        "kgm-058",
+        "kgm-059"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Part 1 — Listen and choose the correct picture",
+      "instructions": "Part 1 — Listen and choose the correct picture",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "transcript": "Woman: I'd like six of those red apples, please. Shop assistant: Here you are. That's three pounds.",
+        "caption": "Part 1 — Listen and choose the correct picture"
+      }
+    },
+    {
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "partNumber": 2,
+      "title": "Part 2 — Listen and choose the best answer",
+      "instructions": "Part 2 — Listen and choose the best answer",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "transcript": "Boy: Sorry I'm late, Miss. My alarm didn't go off this morning. Teacher: Please try to be on time tomorrow.",
+        "caption": "Part 2 — Listen and choose the best answer"
+      }
+    },
+    {
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "partNumber": 3,
+      "title": "Part 3 — Listen and complete each gap",
+      "instructions": "Part 3 — Listen and complete each gap",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "transcript": "Guide: Welcome to the city museum. We open at nine o'clock. Meet your group at the library entrance at half past eight.",
+        "caption": "Part 3 — Listen and complete each gap"
+      }
+    },
+    {
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "partNumber": 4,
+      "title": "Part 4 — Listen to the monologue",
+      "instructions": "Part 4 — Listen to the monologue",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "transcript": "Speaker: My favourite animals are dolphins because they are intelligent and friendly. I first saw them on a family holiday.",
+        "caption": "Part 4 — Listen to the monologue"
+      }
+    },
+    {
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "partNumber": 5,
+      "title": "Part 5 — Listen and match each day to an activity",
+      "instructions": "Part 5 — Listen and match each day to an activity",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-5.mp3",
+        "transcript": "Coordinator: On Monday we have drama club, on Tuesday basketball, Wednesday choir, Thursday coding, and Friday gardening.",
+        "caption": "Part 5 — Listen and match each day to an activity"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "kgm-001",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 1,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "transport",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "transport"
+      ],
+      "skillTag": "reading",
+      "questionText": "NO ENTRY — Staff only beyond this point.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Visitors may go through if they ask.",
+          "isCorrect": false,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Only workers can go past this door.",
+          "isCorrect": true,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The exit is closed for cleaning.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm-002",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 2,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "reading",
+      "questionText": "Library closed for repairs until 15 March.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "You can borrow books today.",
+          "isCorrect": false,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The library will open again after 15 March.",
+          "isCorrect": true,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Repairs finished yesterday.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm-003",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 3,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "food",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Café special: Buy one sandwich, get a free drink.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Drinks are cheaper than sandwiches.",
+          "isCorrect": false,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "You receive a drink at no extra cost with a sandwich.",
+          "isCorrect": true,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Sandwiches are free today.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm-004",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 4,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school",
+      "grammarTags": [
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Parents' evening — Thursday 6 p.m. Please book online.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Parents must make an appointment on the website.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The meeting is only for teachers.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Parents should arrive without booking.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm-005",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 5,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "sports",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "skillTag": "reading",
+      "questionText": "Sports hall in use — basketball training until 5 p.m.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "You can play football there now.",
+          "isCorrect": false,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The hall is busy because of basketball practice.",
+          "isCorrect": true,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Training finished at 3 p.m.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm-006",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 6,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "travel",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "skillTag": "reading",
+      "questionText": "Flight delayed — new departure time 18:40, Gate 12.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Passengers should go to Gate 12 later than planned.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The flight has been cancelled.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Gate 12 is closed.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm-007",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 7,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "hobbies",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "hobbies"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who enjoys painting landscapes?",
+      "pairs": [
+        {
+          "leftText": "Elena",
+          "rightText": "paints landscapes in her free time",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm-008",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 8,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "sports",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who trains for swimming competitions?",
+      "pairs": [
+        {
+          "leftText": "Omar",
+          "rightText": "swims every morning before school",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm-009",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 9,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who is learning to build mobile apps?",
+      "pairs": [
+        {
+          "leftText": "Priya",
+          "rightText": "is taking an online coding course",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm-010",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 10,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "music",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who played guitar in a school concert last term?",
+      "pairs": [
+        {
+          "leftText": "Luca",
+          "rightText": "performed with the school band",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm-011",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 11,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "nature",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who volunteers at an animal rescue centre?",
+      "pairs": [
+        {
+          "leftText": "Hana",
+          "rightText": "helps look after rescued dogs",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm-012",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 12,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "food",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who is going to start a cooking blog?",
+      "pairs": [
+        {
+          "leftText": "Diego",
+          "rightText": "plans to share family recipes online",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm-013",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 13,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "community",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who has organised a neighbourhood clean-up day?",
+      "pairs": [
+        {
+          "leftText": "Aisha",
+          "rightText": "has invited local families to collect litter",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm-014",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 14,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "What time did the class arrive at the museum?",
+      "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip.",
+      "choices": [
+        {
+          "text": "At ten o'clock",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "At lunchtime",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Before the shop opened",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
+      }
+    },
+    {
+      "questionRef": "kgm-015",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 15,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "technology",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "What did the students do in the robot workshop?",
+      "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip.",
+      "choices": [
+        {
+          "text": "They programmed a robot to move in a square.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They watched a film about robots.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They bought a science kit.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
+      }
+    },
+    {
+      "questionRef": "kgm-016",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 16,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which activity did the writer like most?",
+      "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip.",
+      "choices": [
+        {
+          "text": "The robot workshop",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The planet film",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Eating in the café",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
+      }
+    },
+    {
+      "questionRef": "kgm-017",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 17,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "food",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "What did the class eat at lunchtime?",
+      "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip.",
+      "choices": [
+        {
+          "text": "Sandwiches",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Hot meals from the restaurant",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Nothing — they left early",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
+      }
+    },
+    {
+      "questionRef": "kgm-018",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 18,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "shopping",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "shopping"
+      ],
+      "skillTag": "reading",
+      "questionText": "What could students buy before leaving?",
+      "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip.",
+      "choices": [
+        {
+          "text": "Postcards and science kits",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Tickets for another visit",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Robot parts",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
+      }
+    },
+    {
+      "questionRef": "kgm-019",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 19,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (1): natural ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Many teenagers enjoy learning English through films and music. When you watch a film in English, you can hear natural (1) ___ and learn new expressions. Some students write down useful phrases and (2) ___ them later. Reading short stories is also helpful because you see grammar in (3) ___. Online language apps can remind you to study every day and track your (4) ___. However, the best way to improve is to use English regularly with other (5) ___. Joining a conversation club at school gives you a chance to speak without (6) ___.",
+        "gapIndex": 0
+      },
+      "choices": [
+        {
+          "text": "speech",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "speeches",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "speaking",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm-020",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 20,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (2): ___ them later",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Many teenagers enjoy learning English through films and music. When you watch a film in English, you can hear natural (1) ___ and learn new expressions. Some students write down useful phrases and (2) ___ them later. Reading short stories is also helpful because you see grammar in (3) ___. Online language apps can remind you to study every day and track your (4) ___. However, the best way to improve is to use English regularly with other (5) ___. Joining a conversation club at school gives you a chance to speak without (6) ___.",
+        "gapIndex": 1
+      },
+      "choices": [
+        {
+          "text": "review",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "reviewed",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "reviewing",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm-021",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 21,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (3): grammar in ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Many teenagers enjoy learning English through films and music. When you watch a film in English, you can hear natural (1) ___ and learn new expressions. Some students write down useful phrases and (2) ___ them later. Reading short stories is also helpful because you see grammar in (3) ___. Online language apps can remind you to study every day and track your (4) ___. However, the best way to improve is to use English regularly with other (5) ___. Joining a conversation club at school gives you a chance to speak without (6) ___.",
+        "gapIndex": 2
+      },
+      "choices": [
+        {
+          "text": "context",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "contexts",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "contextual",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm-022",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 22,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (4): track your ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Many teenagers enjoy learning English through films and music. When you watch a film in English, you can hear natural (1) ___ and learn new expressions. Some students write down useful phrases and (2) ___ them later. Reading short stories is also helpful because you see grammar in (3) ___. Online language apps can remind you to study every day and track your (4) ___. However, the best way to improve is to use English regularly with other (5) ___. Joining a conversation club at school gives you a chance to speak without (6) ___.",
+        "gapIndex": 3
+      },
+      "choices": [
+        {
+          "text": "progress",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "progresses",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "progressive",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm-023",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 23,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "friends",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (5): with other ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Many teenagers enjoy learning English through films and music. When you watch a film in English, you can hear natural (1) ___ and learn new expressions. Some students write down useful phrases and (2) ___ them later. Reading short stories is also helpful because you see grammar in (3) ___. Online language apps can remind you to study every day and track your (4) ___. However, the best way to improve is to use English regularly with other (5) ___. Joining a conversation club at school gives you a chance to speak without (6) ___.",
+        "gapIndex": 4
+      },
+      "choices": [
+        {
+          "text": "people",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "person",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "peoples",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm-024",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 24,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "feelings",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (6): speak without ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Many teenagers enjoy learning English through films and music. When you watch a film in English, you can hear natural (1) ___ and learn new expressions. Some students write down useful phrases and (2) ___ them later. Reading short stories is also helpful because you see grammar in (3) ___. Online language apps can remind you to study every day and track your (4) ___. However, the best way to improve is to use English regularly with other (5) ___. Joining a conversation club at school gives you a chance to speak without (6) ___.",
+        "gapIndex": 5
+      },
+      "choices": [
+        {
+          "text": "fear",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "afraid",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "fearful",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm-025",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 25,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "travel",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "skillTag": "reading",
+      "questionText": "We took ___ train to the coast.",
+      "template": "We took [0] train to the coast.",
+      "correctAnswers": [
+        "the"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "We took [0] train to the coast.",
+        "correctAnswers": [
+          "the"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm-026",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 26,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "weather",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "weather"
+      ],
+      "skillTag": "reading",
+      "questionText": "It ___ raining when we arrived.",
+      "template": "It [0] raining when we arrived.",
+      "correctAnswers": [
+        "was"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "It [0] raining when we arrived.",
+        "correctAnswers": [
+          "was"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm-027",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 27,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "home",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "home"
+      ],
+      "skillTag": "reading",
+      "questionText": "She is interested ___ learning Spanish.",
+      "template": "She is interested [0] learning Spanish.",
+      "correctAnswers": [
+        "in"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "She is interested [0] learning Spanish.",
+        "correctAnswers": [
+          "in"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm-028",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 28,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "health",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "skillTag": "reading",
+      "questionText": "Walking is ___ than driving in the city centre.",
+      "template": "Walking is [0] than driving in the city centre.",
+      "correctAnswers": [
+        "healthier"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Walking is [0] than driving in the city centre.",
+        "correctAnswers": [
+          "healthier"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm-029",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 29,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "jobs",
+      "grammarTags": [
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "The woman ___ works in the bookshop is my aunt.",
+      "template": "The woman [0] works in the bookshop is my aunt.",
+      "correctAnswers": [
+        "who"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The woman [0] works in the bookshop is my aunt.",
+        "correctAnswers": [
+          "who"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm-030",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 30,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "environment",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "reading",
+      "questionText": "We ___ recycle plastic bottles at school.",
+      "template": "We [0] recycle plastic bottles at school.",
+      "correctAnswers": [
+        "must"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "We [0] recycle plastic bottles at school.",
+        "correctAnswers": [
+          "must"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm-031",
+      "partSlug": "rw-part-6",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 31,
+      "points": 15,
+      "difficulty": "medium",
+      "topicTag": "school",
+      "grammarTags": [
+        "future_will",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write an email to your English teacher.",
+      "cambridgeTaskType": "write_email",
+      "prompt": "Your English class is going on a trip to the theatre next Friday. Write an email to your teacher.",
+      "taskDescription": "Write 25–35 words. Include all three points.",
+      "minWords": 25,
+      "maxWords": 35,
+      "requiredPoints": [
+        "Say whether you can come on the trip",
+        "Explain how you will travel to the theatre",
+        "Ask one question about the visit"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_email",
+        "prompt": "Your English class is going on a trip to the theatre next Friday. Write an email to your teacher.",
+        "taskDescription": "Write 25–35 words. Include all three points.",
+        "minWords": 25,
+        "maxWords": 35,
+        "requiredPoints": [
+          "Say whether you can come on the trip",
+          "Explain how you will travel to the theatre",
+          "Ask one question about the visit"
+        ],
+        "rubricId": "gold-write_email-v1"
+      }
+    },
+    {
+      "questionRef": "kgm-032",
+      "partSlug": "rw-part-7",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 32,
+      "points": 15,
+      "difficulty": "medium",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "past_simple",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a story about a lost dog.",
+      "cambridgeTaskType": "write_story",
+      "prompt": "Your English teacher has asked you to write a story. Your story must begin with this sentence: 'The dog ran into the park.'",
+      "taskDescription": "Write 35 words or more.",
+      "minWords": 35,
+      "maxWords": 100,
+      "imageUrl": "/images/gold-mocks/ket-gold-mock-1-story.svg",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_story",
+        "prompt": "Your English teacher has asked you to write a story. Your story must begin with this sentence: 'The dog ran into the park.'",
+        "taskDescription": "Write 35 words or more.",
+        "minWords": 35,
+        "maxWords": 100,
+        "imageUrl": "/images/gold-mocks/ket-gold-mock-1-story.svg",
+        "rubricId": "gold-write_story-v1"
+      }
+    },
+    {
+      "questionRef": "kgm-033",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 33,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "food",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the woman buying?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Apples",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Bread",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Cheese",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-034",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 34,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "transport",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "transport"
+      ],
+      "skillTag": "listening",
+      "questionText": "Where are the children waiting?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "At a bus stop",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "At a train station",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Outside a café",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-035",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 35,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "sports",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "skillTag": "listening",
+      "questionText": "What sport are they playing?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Tennis",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Football",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Swimming",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-036",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 36,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "home",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "home"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the man doing in the kitchen?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Washing dishes",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Cooking pasta",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Making coffee",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-037",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 37,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "weather",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "weather"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the weather like?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "It is snowing",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "It is sunny",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "It is windy",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-038",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 38,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "Why was the boy late for school?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "His alarm did not ring",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "He missed the bus",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "He lost his bag",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-039",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 39,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "hobbies",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "hobbies"
+      ],
+      "skillTag": "listening",
+      "questionText": "How often does Anna go to the gym?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Twice a week",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Every day",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Once a month",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-040",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 40,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "travel",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "skillTag": "listening",
+      "questionText": "Where are they going on holiday?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "To the mountains",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "To the beach",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "To a big city",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-041",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 41,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "listening",
+      "questionText": "What has Tom already finished?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "His science project",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "His history homework",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "His maths test",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-042",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 42,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "health",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "skillTag": "listening",
+      "questionText": "What does the doctor tell the patient to do?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Rest for two days",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Take more exercise",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Change his diet completely",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-043",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 43,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "places",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "places"
+      ],
+      "skillTag": "listening",
+      "questionText": "The museum opens at ___ o'clock.",
+      "template": "The museum opens at [0] o'clock.",
+      "correctAnswers": [
+        "nine",
+        "9"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The museum opens at [0] o'clock.",
+        "correctAnswers": [
+          "nine",
+          "9"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm-044",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 44,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "transport",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "transport"
+      ],
+      "skillTag": "listening",
+      "questionText": "Meet me ___ the library entrance.",
+      "template": "Meet me [0] the library entrance.",
+      "correctAnswers": [
+        "at"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Meet me [0] the library entrance.",
+        "correctAnswers": [
+          "at"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm-045",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 45,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "time",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "time"
+      ],
+      "skillTag": "listening",
+      "questionText": "The film starts at quarter ___ seven.",
+      "template": "The film starts at quarter [0] seven.",
+      "correctAnswers": [
+        "past",
+        "to"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The film starts at quarter [0] seven.",
+        "correctAnswers": [
+          "past",
+          "to"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm-046",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 46,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "shopping",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "shopping"
+      ],
+      "skillTag": "listening",
+      "questionText": "Please bring a ___ of water.",
+      "template": "Please bring a [0] of water.",
+      "correctAnswers": [
+        "bottle"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Please bring a [0] of water.",
+        "correctAnswers": [
+          "bottle"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm-047",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 47,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "jobs",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "listening",
+      "questionText": "She ___ as a nurse in the local hospital.",
+      "template": "She [0] as a nurse in the local hospital.",
+      "correctAnswers": [
+        "works",
+        "worked"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "She [0] as a nurse in the local hospital.",
+        "correctAnswers": [
+          "works",
+          "worked"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm-048",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 48,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "animals",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "animals"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the speaker's favourite animal?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Dolphins",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Horses",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Rabbits",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-049",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 49,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "culture",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "When did the speaker learn to play the piano?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "At the age of seven",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "At secondary school",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Last year",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-050",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 50,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "listening",
+      "questionText": "Why does the speaker recycle at home?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "To protect the environment",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Because it is the law",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "To save money on bills",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-051",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 51,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "family",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "family"
+      ],
+      "skillTag": "listening",
+      "questionText": "Who does the speaker usually cook dinner with?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Her grandmother",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Her brother",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Her neighbour",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-052",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 52,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "community",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the main reason the speaker joined the club?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "To meet people with similar interests",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "To improve his grades",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "To prepare for a job",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm-053",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 53,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which activity takes place on Monday?",
+      "pairs": [
+        {
+          "leftText": "Monday",
+          "rightText": "drama club",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm-054",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 54,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "sports",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which activity takes place on Tuesday?",
+      "pairs": [
+        {
+          "leftText": "Tuesday",
+          "rightText": "basketball practice",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm-055",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 55,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which activity takes place on Wednesday?",
+      "pairs": [
+        {
+          "leftText": "Wednesday",
+          "rightText": "choir rehearsal",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm-056",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 56,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which activity takes place on Thursday?",
+      "pairs": [
+        {
+          "leftText": "Thursday",
+          "rightText": "coding workshop",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm-057",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 57,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "nature",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which activity takes place on Friday?",
+      "pairs": [
+        {
+          "leftText": "Friday",
+          "rightText": "gardening club",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm-058",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 58,
+      "points": 20,
+      "difficulty": "medium",
+      "topicTag": "friends",
+      "grammarTags": [
+        "present_simple",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "school"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Answer the examiner's questions about you and your daily life.",
+      "cambridgeTaskType": "conversation",
+      "prompt": "The examiner will ask you about yourself, your family, and your free time.",
+      "maxDurationSeconds": 120,
+      "followUpQuestions": [
+        "Where do you live?",
+        "What do you enjoy doing at the weekend?",
+        "Tell me about your best friend."
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "conversation",
+        "prompt": "The examiner will ask you about yourself, your family, and your free time.",
+        "maxDurationSeconds": 120,
+        "followUpQuestions": [
+          "Where do you live?",
+          "What do you enjoy doing at the weekend?",
+          "Tell me about your best friend."
+        ],
+        "rubricId": "gold-conversation-v1"
+      }
+    },
+    {
+      "questionRef": "kgm-059",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 59,
+      "points": 20,
+      "difficulty": "medium",
+      "topicTag": "places",
+      "grammarTags": [
+        "present_continuous",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "leisure"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Talk about the picture and compare the two scenes.",
+      "cambridgeTaskType": "picture_description_speaking",
+      "prompt": "Look at the photograph. Describe what you can see and say how the people might be feeling.",
+      "maxDurationSeconds": 120,
+      "imageUrl": "/images/gold-mocks/ket-gold-mock-1-speaking-photo.svg",
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "picture_description_speaking",
+        "prompt": "Look at the photograph. Describe what you can see and say how the people might be feeling.",
+        "maxDurationSeconds": 120,
+        "imageUrl": "/images/gold-mocks/ket-gold-mock-1-speaking-photo.svg",
+        "rubricId": "gold-picture_description_speaking-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "transport",
+      "leisure",
+      "food",
+      "school",
+      "sports",
+      "travel",
+      "hobbies",
+      "technology",
+      "music",
+      "nature",
+      "community",
+      "shopping",
+      "friends",
+      "feelings",
+      "weather",
+      "home",
+      "health",
+      "jobs",
+      "environment",
+      "places",
+      "time",
+      "animals",
+      "culture",
+      "family"
+    ],
+    "distinctGrammarPatterns": [
+      "imperatives",
+      "present_simple",
+      "modal_can",
+      "future_will",
+      "present_continuous",
+      "prepositions",
+      "past_simple",
+      "future_going_to",
+      "superlatives",
+      "articles",
+      "comparatives",
+      "relative_clauses",
+      "modal_must",
+      "linking_words",
+      "countable_uncountable",
+      "question_forms"
+    ],
+    "subskillsRepresented": [
+      "reading",
+      "writing",
+      "listening",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "easy": 21,
+      "medium": 25,
+      "hard": 13
+    },
+    "notes": "Authored for M3.1 Gold Mock specification."
+  },
+  "gold": {
+    "tier": "gold",
+    "goldMockId": "ket-gold-mock-1",
+    "goldMockVersion": "1.0.0",
+    "specificationId": "gold-mock-ket-v1",
+    "specificationVersion": "1.0.0",
+    "authoredAt": "2026-06-22T00:00:00.000Z",
+    "status": "published",
+    "academicAuthority": true,
+    "authoringMethod": "manual",
+    "qaChecklistVersion": "1.0.0"
+  },
+  "specification": {
+    "specificationId": "gold-mock-ket-v1",
+    "specificationVersion": "1.0.0",
+    "level": "ket",
+    "coverageTargets": {
+      "minDistinctGrammarTags": 8,
+      "minDistinctVocabularyTopics": 8,
+      "minSkillsRepresented": 4,
+      "difficultyDistribution": {
+        "easy": 0.3,
+        "medium": 0.5,
+        "hard": 0.2
+      },
+      "maxTopicShare": 0.2,
+      "requireWritingTasks": true,
+      "requireSpeakingTasks": true
+    }
+  }
+}

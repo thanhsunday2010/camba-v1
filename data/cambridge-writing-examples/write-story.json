@@ -1,0 +1,14 @@
+{
+  "id": "writing-example-write-story",
+  "question_type": "writing",
+  "question_text": "Write a story using the pictures.",
+  "points": 0,
+  "content": {
+    "cambridgeTaskType": "write_story",
+    "prompt": "Write a story about a day at the beach.",
+    "taskDescription": "Write 35 words or more.",
+    "minWords": 35,
+    "maxWords": 120,
+    "bulletPoints": ["Say where the story happens.", "Use past tense."]
+  }
+}

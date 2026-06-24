@@ -1,0 +1,2631 @@
+{
+  "metadata": {
+    "manifestId": "pet-gold-mock-2",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-pet-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "pet",
+    "title": "B1 Preliminary Gold Mock 2",
+    "description": "M4.1 academic reference mock for B1 Preliminary — Media, Environment, and Lifestyle themes across reading, writing, listening, and speaking.",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000006",
+    "timeLimitMinutes": 130,
+    "totalScore": 174,
+    "status": "published",
+    "authoringNotes": "M4.1 Gold Mock — manually authored and academically reviewed.",
+    "stableSlug": "pet-gold-mock-2"
+  },
+  "sections": [
+    {
+      "sectionSlug": "reading",
+      "title": "Reading",
+      "sortOrder": 1,
+      "skillSlug": "reading",
+      "timeLimitMinutes": 45,
+      "partSlugs": [
+        "reading-part-1",
+        "reading-part-2",
+        "reading-part-3",
+        "reading-part-4",
+        "reading-part-5",
+        "reading-part-6"
+      ],
+      "questionRefs": [
+        "pgm2-001",
+        "pgm2-002",
+        "pgm2-003",
+        "pgm2-004",
+        "pgm2-005",
+        "pgm2-006",
+        "pgm2-007",
+        "pgm2-008",
+        "pgm2-009",
+        "pgm2-010",
+        "pgm2-011",
+        "pgm2-012",
+        "pgm2-013",
+        "pgm2-014",
+        "pgm2-015",
+        "pgm2-016",
+        "pgm2-017",
+        "pgm2-018",
+        "pgm2-019",
+        "pgm2-020",
+        "pgm2-021",
+        "pgm2-022",
+        "pgm2-023",
+        "pgm2-024",
+        "pgm2-025",
+        "pgm2-026",
+        "pgm2-027",
+        "pgm2-028",
+        "pgm2-029",
+        "pgm2-030",
+        "pgm2-031",
+        "pgm2-032",
+        "pgm2-033",
+        "pgm2-034"
+      ]
+    },
+    {
+      "sectionSlug": "writing",
+      "title": "Writing",
+      "sortOrder": 2,
+      "skillSlug": "writing",
+      "timeLimitMinutes": 45,
+      "partSlugs": [
+        "writing-part-1",
+        "writing-part-2"
+      ],
+      "questionRefs": [
+        "pgm2-035",
+        "pgm2-036"
+      ]
+    },
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 3,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 30,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4",
+        "listening-part-5"
+      ],
+      "questionRefs": [
+        "pgm2-037",
+        "pgm2-038",
+        "pgm2-039",
+        "pgm2-040",
+        "pgm2-041",
+        "pgm2-042",
+        "pgm2-043",
+        "pgm2-044",
+        "pgm2-045",
+        "pgm2-046",
+        "pgm2-047",
+        "pgm2-048",
+        "pgm2-049",
+        "pgm2-050",
+        "pgm2-051",
+        "pgm2-052",
+        "pgm2-053",
+        "pgm2-054",
+        "pgm2-055",
+        "pgm2-056",
+        "pgm2-057",
+        "pgm2-058",
+        "pgm2-059",
+        "pgm2-060",
+        "pgm2-061"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 4,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 14,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2",
+        "speaking-part-3"
+      ],
+      "questionRefs": [
+        "pgm2-062",
+        "pgm2-063",
+        "pgm2-064"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Part 1 — Listen and choose the correct picture",
+      "instructions": "Part 1 — Listen and choose the correct picture",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "transcript": "Girl: I'm recording a short video review in the studio. Boy: At the beach, we're carrying rubbish bags and gloves for the clean-up.",
+        "caption": "Part 1 — Listen and choose the correct picture"
+      }
+    },
+    {
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "partNumber": 2,
+      "title": "Part 2 — Listen and choose the best answer",
+      "instructions": "Part 2 — Listen and choose the best answer",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "transcript": "Boy: I missed film club because I had to finish editing. Girl: Next weekend I'm joining a river clean-up with friends.",
+        "caption": "Part 2 — Listen and choose the best answer"
+      }
+    },
+    {
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "partNumber": 3,
+      "title": "Part 3 — Listen and complete each gap",
+      "instructions": "Part 3 — Listen and complete each gap",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "transcript": "Organiser: The eco-film festival starts in April. Student tickets cost eight pounds. Bring a reusable bottle.",
+        "caption": "Part 3 — Listen and complete each gap"
+      }
+    },
+    {
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "partNumber": 4,
+      "title": "Part 4 — Listen to the monologue",
+      "instructions": "Part 4 — Listen to the monologue",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "transcript": "Speaker: I learned to edit at a community media centre. I limit streaming before bed and compost kitchen waste at home.",
+        "caption": "Part 4 — Listen to the monologue"
+      }
+    },
+    {
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "partNumber": 5,
+      "title": "Part 5 — Listen and match each speaker to an activity",
+      "instructions": "Part 5 — Listen and match each speaker to an activity",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-5.mp3",
+        "transcript": "Five students describe activities: school radio, vegan cooking club, tree planting, photography society, and recycling volunteering.",
+        "caption": "Part 5 — Listen and match each speaker to an activity"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "pgm2-001",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 1,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "media",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "No filming without permission — media team badge required at all events.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Only staff with a badge may record video.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Filming is allowed for everyone.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The media team has finished work.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm2-002",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 2,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "transport"
+      ],
+      "skillTag": "reading",
+      "questionText": "Bike lane closed for tree planting — cyclists use Riverside Path until Friday.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Cyclists should take an alternative route this week.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The bike lane is permanently removed.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Tree planting has been cancelled.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm2-003",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 3,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Farmers' market — organic produce and reusable bag discount every Saturday.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Shoppers save money if they bring their own bags.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The market sells only imported goods.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Organic food is unavailable on Saturdays.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm2-004",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 4,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "media",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Podcast recording in progress — please speak quietly in the corridor.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "People nearby should keep noise down.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The corridor is closed all day.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Recording equipment is for sale.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm2-005",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 5,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "skillTag": "reading",
+      "questionText": "Wellness week — free yoga at lunchtime; register online by Wednesday.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Students must sign up on the website before Wednesday.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Yoga classes cost ten pounds.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wellness week ended last month.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm2-006",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 6,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "reading",
+      "questionText": "Solar panel tour — learn how the school reduces its carbon footprint.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Visitors can see how clean energy is used at school.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Solar panels are not installed yet.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The tour is only for teachers.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm2-007",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 7,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "media",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who hosts a weekly podcast about music?",
+      "pairs": [
+        {
+          "leftText": "Leo",
+          "rightText": "records interviews with local bands",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm2-008",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 8,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who leads a beach clean-up club?",
+      "pairs": [
+        {
+          "leftText": "Priya",
+          "rightText": "organises monthly litter collections",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm2-009",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 9,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who writes reviews for a lifestyle blog?",
+      "pairs": [
+        {
+          "leftText": "Tom",
+          "rightText": "posts about healthy cooking",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm2-010",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 10,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "media",
+      "grammarTags": [
+        "present_perfect"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who edits videos for an environmental channel?",
+      "pairs": [
+        {
+          "leftText": "Nina",
+          "rightText": "has created clips about recycling",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm2-011",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 11,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "transport"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who is planning a car-free day campaign?",
+      "pairs": [
+        {
+          "leftText": "Omar",
+          "rightText": "is going to ask the council for support",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm2-012",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 12,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "media",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Why did Leo start his podcast?",
+      "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about.",
+      "choices": [
+        {
+          "text": "To share interviews and reviews about local music",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "To replace his school presentations",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "To work for a commercial radio station",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
+      }
+    },
+    {
+      "questionRef": "pgm2-013",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 13,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "media",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "places"
+      ],
+      "skillTag": "reading",
+      "questionText": "Where does Leo edit his episodes?",
+      "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about.",
+      "choices": [
+        {
+          "text": "In a free library studio",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "At the community radio station",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "In his bedroom only",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
+      }
+    },
+    {
+      "questionRef": "pgm2-014",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 14,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "reading",
+      "questionText": "What happened after the eco-festival feature?",
+      "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about.",
+      "choices": [
+        {
+          "text": "A radio station invited him to co-host a show",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "His teachers cancelled the podcast",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Listenership dropped sharply",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
+      }
+    },
+    {
+      "questionRef": "pgm2-015",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 15,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "skillTag": "reading",
+      "questionText": "What did the project teach Leo?",
+      "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about.",
+      "choices": [
+        {
+          "text": "Media can connect people and support causes",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Editing is easier than presenting",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Music interviews are always live",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
+      }
+    },
+    {
+      "questionRef": "pgm2-016",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 16,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "How did teachers react to Leo's work?",
+      "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about.",
+      "choices": [
+        {
+          "text": "They noticed his confidence in presentations",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They banned podcast topics",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They asked him to stop interviewing bands",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
+      }
+    },
+    {
+      "questionRef": "pgm2-017",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 17,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (1): become more ___ about going online",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Streaming services have changed how teenagers discover films and series. Instead of waiting for weekly broadcasts, viewers can watch entire seasons in one weekend. Critics warn that binge-watching may reduce sleep, yet many students say it helps them relax after exams. Documentaries about climate change are especially popular because they combine entertainment with useful facts. Some schools now discuss media habits in class, encouraging pupils to balance screen time with outdoor activities. Parents who set clear limits often find that children become more (1) ___ about when they go online. Teachers recommend keeping devices out of bedrooms so evenings remain (2) ___ for rest. When families watch a film together, they can talk about messages on recycling or healthy lifestyles, making screen time more (3) ___. Community cinemas still matter because they offer shared experiences that streaming cannot (4) ___. Local festivals also promote films made by young directors, giving students a chance to be (5) ___ in real events. In the long run, thoughtful media choices support both mental health and environmental (6) ___ awareness.",
+        "gapIndex": 0
+      },
+      "choices": [
+        {
+          "text": "conscious",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "consciously",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "consciousness",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm2-018",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 18,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "adjectives"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (2): evenings remain ___ for rest",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Streaming services have changed how teenagers discover films and series. Instead of waiting for weekly broadcasts, viewers can watch entire seasons in one weekend. Critics warn that binge-watching may reduce sleep, yet many students say it helps them relax after exams. Documentaries about climate change are especially popular because they combine entertainment with useful facts. Some schools now discuss media habits in class, encouraging pupils to balance screen time with outdoor activities. Parents who set clear limits often find that children become more (1) ___ about when they go online. Teachers recommend keeping devices out of bedrooms so evenings remain (2) ___ for rest. When families watch a film together, they can talk about messages on recycling or healthy lifestyles, making screen time more (3) ___. Community cinemas still matter because they offer shared experiences that streaming cannot (4) ___. Local festivals also promote films made by young directors, giving students a chance to be (5) ___ in real events. In the long run, thoughtful media choices support both mental health and environmental (6) ___ awareness.",
+        "gapIndex": 1
+      },
+      "choices": [
+        {
+          "text": "suitable",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "suitably",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "suit",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm2-019",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 19,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "media",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (3): screen time more ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Streaming services have changed how teenagers discover films and series. Instead of waiting for weekly broadcasts, viewers can watch entire seasons in one weekend. Critics warn that binge-watching may reduce sleep, yet many students say it helps them relax after exams. Documentaries about climate change are especially popular because they combine entertainment with useful facts. Some schools now discuss media habits in class, encouraging pupils to balance screen time with outdoor activities. Parents who set clear limits often find that children become more (1) ___ about when they go online. Teachers recommend keeping devices out of bedrooms so evenings remain (2) ___ for rest. When families watch a film together, they can talk about messages on recycling or healthy lifestyles, making screen time more (3) ___. Community cinemas still matter because they offer shared experiences that streaming cannot (4) ___. Local festivals also promote films made by young directors, giving students a chance to be (5) ___ in real events. In the long run, thoughtful media choices support both mental health and environmental (6) ___ awareness.",
+        "gapIndex": 2
+      },
+      "choices": [
+        {
+          "text": "meaningful",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "mean",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "meaning",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm2-020",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 20,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "media",
+      "grammarTags": [
+        "modal_verbs"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (4): streaming cannot ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Streaming services have changed how teenagers discover films and series. Instead of waiting for weekly broadcasts, viewers can watch entire seasons in one weekend. Critics warn that binge-watching may reduce sleep, yet many students say it helps them relax after exams. Documentaries about climate change are especially popular because they combine entertainment with useful facts. Some schools now discuss media habits in class, encouraging pupils to balance screen time with outdoor activities. Parents who set clear limits often find that children become more (1) ___ about when they go online. Teachers recommend keeping devices out of bedrooms so evenings remain (2) ___ for rest. When families watch a film together, they can talk about messages on recycling or healthy lifestyles, making screen time more (3) ___. Community cinemas still matter because they offer shared experiences that streaming cannot (4) ___. Local festivals also promote films made by young directors, giving students a chance to be (5) ___ in real events. In the long run, thoughtful media choices support both mental health and environmental (6) ___ awareness.",
+        "gapIndex": 3
+      },
+      "choices": [
+        {
+          "text": "replace",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "replaces",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "replacing",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm2-021",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 21,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "passive_voice"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (5): chance to be ___ in real events",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Streaming services have changed how teenagers discover films and series. Instead of waiting for weekly broadcasts, viewers can watch entire seasons in one weekend. Critics warn that binge-watching may reduce sleep, yet many students say it helps them relax after exams. Documentaries about climate change are especially popular because they combine entertainment with useful facts. Some schools now discuss media habits in class, encouraging pupils to balance screen time with outdoor activities. Parents who set clear limits often find that children become more (1) ___ about when they go online. Teachers recommend keeping devices out of bedrooms so evenings remain (2) ___ for rest. When families watch a film together, they can talk about messages on recycling or healthy lifestyles, making screen time more (3) ___. Community cinemas still matter because they offer shared experiences that streaming cannot (4) ___. Local festivals also promote films made by young directors, giving students a chance to be (5) ___ in real events. In the long run, thoughtful media choices support both mental health and environmental (6) ___ awareness.",
+        "gapIndex": 4
+      },
+      "choices": [
+        {
+          "text": "involved",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "involve",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "involving",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm2-022",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 22,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (6): environmental ___ awareness",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Streaming services have changed how teenagers discover films and series. Instead of waiting for weekly broadcasts, viewers can watch entire seasons in one weekend. Critics warn that binge-watching may reduce sleep, yet many students say it helps them relax after exams. Documentaries about climate change are especially popular because they combine entertainment with useful facts. Some schools now discuss media habits in class, encouraging pupils to balance screen time with outdoor activities. Parents who set clear limits often find that children become more (1) ___ about when they go online. Teachers recommend keeping devices out of bedrooms so evenings remain (2) ___ for rest. When families watch a film together, they can talk about messages on recycling or healthy lifestyles, making screen time more (3) ___. Community cinemas still matter because they offer shared experiences that streaming cannot (4) ___. Local festivals also promote films made by young directors, giving students a chance to be (5) ___ in real events. In the long run, thoughtful media choices support both mental health and environmental (6) ___ awareness.",
+        "gapIndex": 5
+      },
+      "choices": [
+        {
+          "text": "awareness",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "aware",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "awaring",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm2-023",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 23,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "media",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "The documentary ___ millions of views last month.",
+      "template": "The documentary [0] millions of views last month.",
+      "correctAnswers": [
+        "got",
+        "received"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The documentary [0] millions of views last month.",
+        "correctAnswers": [
+          "got",
+          "received"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm2-024",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 24,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "grammarTags": [
+        "phrasal_verbs"
+      ],
+      "vocabularyTopics": [
+        "home"
+      ],
+      "skillTag": "reading",
+      "questionText": "We should turn ___ the lights when we leave.",
+      "template": "We should turn [0] the lights when we leave.",
+      "correctAnswers": [
+        "off"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "We should turn [0] the lights when we leave.",
+        "correctAnswers": [
+          "off"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm2-025",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 25,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "science"
+      ],
+      "skillTag": "reading",
+      "questionText": "She is interested ___ learning about renewable energy.",
+      "template": "She is interested [0] learning about renewable energy.",
+      "correctAnswers": [
+        "in"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "She is interested [0] learning about renewable energy.",
+        "correctAnswers": [
+          "in"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm2-026",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 26,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "conditionals"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "If you ___ less meat, your carbon footprint may fall.",
+      "template": "If you [0] less meat, your carbon footprint may fall.",
+      "correctAnswers": [
+        "eat"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "If you [0] less meat, your carbon footprint may fall.",
+        "correctAnswers": [
+          "eat"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm2-027",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 27,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "media",
+      "grammarTags": [
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "places"
+      ],
+      "skillTag": "reading",
+      "questionText": "The influencer whose videos we watched ___ from Brazil.",
+      "template": "The influencer whose videos we watched [0] from Brazil.",
+      "correctAnswers": [
+        "is",
+        "comes"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The influencer whose videos we watched [0] from Brazil.",
+        "correctAnswers": [
+          "is",
+          "comes"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm2-028",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 28,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "passive_voice"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "reading",
+      "questionText": "Plastic bottles ___ recycled at the sports centre.",
+      "template": "Plastic bottles [0] recycled at the sports centre.",
+      "correctAnswers": [
+        "are"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Plastic bottles [0] recycled at the sports centre.",
+        "correctAnswers": [
+          "are"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm2-029",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 29,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which sentence introduces the problem of ocean pollution?",
+      "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+      "choices": [
+        {
+          "text": "[A] Plastic waste in oceans harms marine life and enters the food chain.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "[C] Some teenagers film short documentaries about what they collect and share them online.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "[E] Local shops have responded by offering discounts to customers who bring their own containers.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
+      }
+    },
+    {
+      "questionRef": "pgm2-030",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 30,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which sentence describes community action on beaches?",
+      "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+      "choices": [
+        {
+          "text": "[B] Many coastal towns now organise monthly beach clean-ups led by volunteers.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "[A] Plastic waste in oceans harms marine life and enters the food chain.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "[F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
+      }
+    },
+    {
+      "questionRef": "pgm2-031",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 31,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "media",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which sentence links teenagers with media?",
+      "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+      "choices": [
+        {
+          "text": "[C] Some teenagers film short documentaries about what they collect and share them online.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "[B] Many coastal towns now organise monthly beach clean-ups led by volunteers.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "[D] These videos encourage viewers to use reusable bottles and bags.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
+      }
+    },
+    {
+      "questionRef": "pgm2-032",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 32,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which sentence explains the effect of the videos?",
+      "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+      "choices": [
+        {
+          "text": "[D] These videos encourage viewers to use reusable bottles and bags.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "[A] Plastic waste in oceans harms marine life and enters the food chain.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "[C] Some teenagers film short documentaries about what they collect and share them online.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
+      }
+    },
+    {
+      "questionRef": "pgm2-033",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 33,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "community",
+      "grammarTags": [
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "shopping"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which sentence shows how businesses respond?",
+      "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+      "choices": [
+        {
+          "text": "[E] Local shops have responded by offering discounts to customers who bring their own containers.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "[D] These videos encourage viewers to use reusable bottles and bags.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "[B] Many coastal towns now organise monthly beach clean-ups led by volunteers.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
+      }
+    },
+    {
+      "questionRef": "pgm2-034",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 34,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "media",
+      "grammarTags": [
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which sentence best concludes the text?",
+      "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+      "choices": [
+        {
+          "text": "[F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "[A] Plastic waste in oceans harms marine life and enters the food chain.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "[E] Local shops have responded by offering discounts to customers who bring their own containers.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
+      }
+    },
+    {
+      "questionRef": "pgm2-035",
+      "partSlug": "writing-part-1",
+      "sectionSlug": "writing",
+      "sortOrder": 35,
+      "points": 20,
+      "difficulty": "medium",
+      "topicTag": "media",
+      "grammarTags": [
+        "future_will",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "technology",
+        "school"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write an email in response to your English teacher about media.",
+      "cambridgeTaskType": "write_email",
+      "prompt": "Your English teacher has asked you to write about how young people use social media responsibly. Write an email to your teacher.",
+      "taskDescription": "Write about 100 words. Answer all three points.",
+      "minWords": 100,
+      "maxWords": 120,
+      "requiredPoints": [
+        "Describe one social media platform you use and why",
+        "Explain how you balance screen time with other activities",
+        "Suggest one school project that could promote healthy media habits"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_email",
+        "prompt": "Your English teacher has asked you to write about how young people use social media responsibly. Write an email to your teacher.",
+        "taskDescription": "Write about 100 words. Answer all three points.",
+        "minWords": 100,
+        "maxWords": 120,
+        "requiredPoints": [
+          "Describe one social media platform you use and why",
+          "Explain how you balance screen time with other activities",
+          "Suggest one school project that could promote healthy media habits"
+        ],
+        "rubricId": "gold-write_email-v1"
+      }
+    },
+    {
+      "questionRef": "pgm2-036",
+      "partSlug": "writing-part-2",
+      "sectionSlug": "writing",
+      "sortOrder": 36,
+      "points": 20,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "past_simple",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "feelings"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a story about environment that begins with the sentence below.",
+      "cambridgeTaskType": "write_story",
+      "prompt": "Your teacher has asked you to write a story. Your story must begin with this sentence: 'The beach was cleaner than I had ever seen it, thanks to our volunteer team.'",
+      "taskDescription": "Write about 100 words.",
+      "minWords": 100,
+      "maxWords": 130,
+      "imageUrl": "/images/gold-mocks/pet-gold-mock-2-story.svg",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_story",
+        "prompt": "Your teacher has asked you to write a story. Your story must begin with this sentence: 'The beach was cleaner than I had ever seen it, thanks to our volunteer team.'",
+        "taskDescription": "Write about 100 words.",
+        "minWords": 100,
+        "maxWords": 130,
+        "imageUrl": "/images/gold-mocks/pet-gold-mock-2-story.svg",
+        "rubricId": "gold-write_story-v1"
+      }
+    },
+    {
+      "questionRef": "pgm2-037",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 37,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "media",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the girl doing in the photo studio?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Recording a video review",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Printing photographs",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Designing a magazine cover",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-038",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 38,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "skillTag": "listening",
+      "questionText": "What are the students carrying on the beach?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Rubbish bags and gloves",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Surfboards",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Camera tripods",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-039",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 39,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "listening",
+      "questionText": "Where is the man buying a reusable cup?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "At a coffee shop counter",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "At a sports stadium",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "At a bus station",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-040",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 40,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "media",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "questionText": "What are the friends watching on the tablet?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "A documentary about oceans",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A comedy series",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "A football match",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-041",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 41,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "transport"
+      ],
+      "skillTag": "listening",
+      "questionText": "What activity are the cyclists promoting?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Car-free travel to school",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A racing competition",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "A charity concert",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-042",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 42,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "media",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "Why did the boy miss the film club meeting?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "He had to finish an editing project",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The club was cancelled",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "He lost his membership card",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-043",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 43,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the woman going to do next weekend?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Join a river clean-up",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Start a new job",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Visit her grandparents",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-044",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 44,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "skillTag": "listening",
+      "questionText": "How often does the wellness podcast release episodes?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Every two weeks",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Once a year",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Daily",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-045",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 45,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "media",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "listening",
+      "questionText": "What must visitors do before entering the media lab?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Sign the equipment register",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Pay a membership fee",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Complete an online course",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-046",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 46,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "present_perfect"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "listening",
+      "questionText": "What has the family recently started doing?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Meal planning to reduce food waste",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Growing all their vegetables",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Selling homemade snacks online",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-047",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 47,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "media",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "listening",
+      "questionText": "Where did the speaker first learn to edit videos?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "At a community media centre",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "At university",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "On a holiday abroad",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-048",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 48,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "skillTag": "listening",
+      "questionText": "Why does the speaker limit streaming before bed?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Because it affects sleep quality",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Because the internet is slow",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Because subscriptions are expensive",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-049",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 49,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "present_perfect"
+      ],
+      "vocabularyTopics": [
+        "home"
+      ],
+      "skillTag": "listening",
+      "questionText": "What change has the speaker made at home?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Composting kitchen waste",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Installing wind turbines",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Buying only organic clothes",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-050",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 50,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "media",
+      "grammarTags": [
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "listening",
+      "questionText": "How often does the speaker upload podcast episodes?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Once a week",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Every morning",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Only in summer",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-051",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 51,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "community",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "listening",
+      "questionText": "What advice does the speaker give to new volunteers?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Start with a small task and share your progress online",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Work alone until you feel confident",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Focus only on fundraising",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm2-052",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 52,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "media",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "places"
+      ],
+      "skillTag": "listening",
+      "questionText": "The eco-film festival starts ___ April.",
+      "template": "The eco-film festival starts [0] April.",
+      "correctAnswers": [
+        "in",
+        "on"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The eco-film festival starts [0] April.",
+        "correctAnswers": [
+          "in",
+          "on"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm2-053",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 53,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "numbers",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "numbers"
+      ],
+      "skillTag": "listening",
+      "questionText": "Tickets cost ___ pounds for students.",
+      "template": "Tickets cost [0] pounds for students.",
+      "correctAnswers": [
+        "eight",
+        "8"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Tickets cost [0] pounds for students.",
+        "correctAnswers": [
+          "eight",
+          "8"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm2-054",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 54,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "weather",
+      "grammarTags": [
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "weather"
+      ],
+      "skillTag": "listening",
+      "questionText": "The weather forecast says it ___ be sunny tomorrow.",
+      "template": "The weather forecast says it [0] be sunny tomorrow.",
+      "correctAnswers": [
+        "will",
+        "might"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The weather forecast says it [0] be sunny tomorrow.",
+        "correctAnswers": [
+          "will",
+          "might"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm2-055",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 55,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "adjectives"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "listening",
+      "questionText": "Please bring a ___ bottle of water.",
+      "template": "Please bring a [0] bottle of water.",
+      "correctAnswers": [
+        "reusable"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Please bring a [0] bottle of water.",
+        "correctAnswers": [
+          "reusable"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm2-056",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 56,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "media",
+      "grammarTags": [
+        "passive_voice"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "listening",
+      "questionText": "The interview ___ posted online yesterday.",
+      "template": "The interview [0] posted online yesterday.",
+      "correctAnswers": [
+        "was"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The interview [0] posted online yesterday.",
+        "correctAnswers": [
+          "was"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm2-057",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 57,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "media",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which speaker talks about a school radio show?",
+      "pairs": [
+        {
+          "leftText": "Speaker 1",
+          "rightText": "weekly radio show on sustainability",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm2-058",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 58,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which speaker mentions a vegan cooking club?",
+      "pairs": [
+        {
+          "leftText": "Speaker 2",
+          "rightText": "plant-based recipe workshops",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm2-059",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 59,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which speaker describes a tree-planting project?",
+      "pairs": [
+        {
+          "leftText": "Speaker 3",
+          "rightText": "urban tree planting Saturdays",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm2-060",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 60,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "media",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "hobbies"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which speaker joined a photography society?",
+      "pairs": [
+        {
+          "leftText": "Speaker 4",
+          "rightText": "photo society documenting local parks",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm2-061",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 61,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "environment",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which speaker volunteers at a recycling centre?",
+      "pairs": [
+        {
+          "leftText": "Speaker 5",
+          "rightText": "sorting materials at a recycling hub",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm2-062",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 62,
+      "points": 25,
+      "difficulty": "medium",
+      "topicTag": "media",
+      "grammarTags": [
+        "present_simple",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "technology",
+        "hobbies"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Answer the examiner's questions about media.",
+      "cambridgeTaskType": "conversation",
+      "prompt": "The examiner will ask about how you use media, your hobbies, and how you spend your free time.",
+      "maxDurationSeconds": 240,
+      "followUpQuestions": [
+        "What kind of films or series do you enjoy watching?",
+        "Do you prefer listening to music or podcasts? Why?",
+        "How much time do you spend online on a typical school day?",
+        "Have you ever created content for social media or a school project?",
+        "What would you like to learn about media production?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "conversation",
+        "prompt": "The examiner will ask about how you use media, your hobbies, and how you spend your free time.",
+        "maxDurationSeconds": 240,
+        "followUpQuestions": [
+          "What kind of films or series do you enjoy watching?",
+          "Do you prefer listening to music or podcasts? Why?",
+          "How much time do you spend online on a typical school day?",
+          "Have you ever created content for social media or a school project?",
+          "What would you like to learn about media production?"
+        ],
+        "rubricId": "gold-conversation-v1"
+      }
+    },
+    {
+      "questionRef": "pgm2-063",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 63,
+      "points": 25,
+      "difficulty": "medium",
+      "topicTag": "lifestyle",
+      "grammarTags": [
+        "present_continuous",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "places"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Describe the lifestyle and say what you think is happening.",
+      "cambridgeTaskType": "picture_description_speaking",
+      "prompt": "Look at the photograph. Describe the people, the place, and explain why they might be there.",
+      "maxDurationSeconds": 240,
+      "imageUrl": "/images/gold-mocks/pet-gold-mock-2-speaking-photo.svg",
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "picture_description_speaking",
+        "prompt": "Look at the photograph. Describe the people, the place, and explain why they might be there.",
+        "maxDurationSeconds": 240,
+        "imageUrl": "/images/gold-mocks/pet-gold-mock-2-speaking-photo.svg",
+        "rubricId": "gold-picture_description_speaking-v1"
+      }
+    },
+    {
+      "questionRef": "pgm2-064",
+      "partSlug": "speaking-part-3",
+      "sectionSlug": "speaking",
+      "sortOrder": 64,
+      "points": 25,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "modal_must",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "community"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Discuss ways young people can live more sustainably.",
+      "cambridgeTaskType": "conversation",
+      "prompt": "Talk with your partner about lifestyle changes that protect the environment in your town.",
+      "maxDurationSeconds": 300,
+      "followUpQuestions": [
+        "Which change would be easiest for students to start?",
+        "How could social media help spread environmental messages?",
+        "What problems might people face when changing habits?",
+        "Should schools ban single-use plastic completely?",
+        "How could local businesses support greener lifestyles?",
+        "Which idea would make the biggest difference long term?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "conversation",
+        "prompt": "Talk with your partner about lifestyle changes that protect the environment in your town.",
+        "maxDurationSeconds": 300,
+        "followUpQuestions": [
+          "Which change would be easiest for students to start?",
+          "How could social media help spread environmental messages?",
+          "What problems might people face when changing habits?",
+          "Should schools ban single-use plastic completely?",
+          "How could local businesses support greener lifestyles?",
+          "Which idea would make the biggest difference long term?"
+        ],
+        "rubricId": "gold-conversation-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "media",
+      "environment",
+      "lifestyle",
+      "school",
+      "community",
+      "numbers",
+      "weather"
+    ],
+    "distinctGrammarPatterns": [
+      "modal_must",
+      "imperatives",
+      "present_simple",
+      "future_will",
+      "comparatives",
+      "present_continuous",
+      "present_perfect",
+      "future_going_to",
+      "past_simple",
+      "prepositions",
+      "linking_words",
+      "adjectives",
+      "modal_verbs",
+      "passive_voice",
+      "countable_uncountable",
+      "phrasal_verbs",
+      "conditionals",
+      "relative_clauses",
+      "pronouns",
+      "conjunctions",
+      "adverbs_frequency",
+      "question_forms"
+    ],
+    "subskillsRepresented": [
+      "reading",
+      "writing",
+      "listening",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "easy": 15,
+      "medium": 37,
+      "hard": 12
+    },
+    "notes": "Authored for M3.1 Gold Mock specification."
+  },
+  "gold": {
+    "tier": "gold",
+    "goldMockId": "pet-gold-mock-2",
+    "goldMockVersion": "1.0.0",
+    "specificationId": "gold-mock-pet-v1",
+    "specificationVersion": "1.0.0",
+    "authoredAt": "2026-06-22T00:00:00.000Z",
+    "status": "published",
+    "academicAuthority": true,
+    "authoringMethod": "manual",
+    "qaChecklistVersion": "1.0.0"
+  },
+  "specification": {
+    "specificationId": "gold-mock-pet-v1",
+    "specificationVersion": "1.0.0",
+    "level": "pet",
+    "coverageTargets": {
+      "minDistinctGrammarTags": 10,
+      "minDistinctVocabularyTopics": 10,
+      "minSkillsRepresented": 4,
+      "difficultyDistribution": {
+        "easy": 0.25,
+        "medium": 0.55,
+        "hard": 0.2
+      },
+      "maxTopicShare": 0.2,
+      "requireWritingTasks": true,
+      "requireSpeakingTasks": true
+    }
+  }
+}

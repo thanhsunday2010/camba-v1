@@ -9,11 +9,25 @@ import {
 import type {
   ItemBankCoverageReport,
   ItemBankQuestion,
+  ItemBankSpeakingContent,
+  ItemBankWritingContent,
   ItemLevel,
 } from "@/lib/item-bank/item-bank-types";
 
 function increment(map: Record<string, number>, key: string): void {
   map[key] = (map[key] ?? 0) + 1;
+}
+
+function writingTask(item: ItemBankQuestion): string | null {
+  if (item.questionType !== "writing") return null;
+  const c = item.content as ItemBankWritingContent;
+  return c.writingTaskType ?? null;
+}
+
+function speakingTask(item: ItemBankQuestion): string | null {
+  if (item.questionType !== "speaking") return null;
+  const c = item.content as ItemBankSpeakingContent;
+  return c.speakingTaskType ?? null;
 }
 
 export function analyzeItemBankCoverage(
@@ -28,17 +42,22 @@ export function analyzeItemBankCoverage(
     hard: 0,
   };
   const skillCoverage: Record<string, number> = {};
+  const taskTypeCoverage: Record<string, number> = {};
+  const writingTaskCoverage: Record<string, number> = {};
+  const speakingTaskCoverage: Record<string, number> = {};
 
   for (const item of items) {
     increment(difficultyCoverage, item.difficulty);
     increment(skillCoverage, item.skill);
+    increment(taskTypeCoverage, item.questionType);
 
-    for (const tag of item.grammarTags) {
-      increment(grammarCoverage, tag);
-    }
-    for (const topic of item.vocabularyTopics) {
-      increment(vocabularyCoverage, topic);
-    }
+    const wt = writingTask(item);
+    if (wt) increment(writingTaskCoverage, wt);
+    const st = speakingTask(item);
+    if (st) increment(speakingTaskCoverage, st);
+
+    for (const tag of item.grammarTags) increment(grammarCoverage, tag);
+    for (const topic of item.vocabularyTopics) increment(vocabularyCoverage, topic);
   }
 
   const usedGrammar = new Set(Object.keys(grammarCoverage));
@@ -51,6 +70,9 @@ export function analyzeItemBankCoverage(
     vocabularyCoverage,
     difficultyCoverage: difficultyCoverage as ItemBankCoverageReport["difficultyCoverage"],
     skillCoverage,
+    taskTypeCoverage,
+    writingTaskCoverage,
+    speakingTaskCoverage,
     missingGrammarTags: YLE_GRAMMAR_TAGS.filter((t) => !usedGrammar.has(t)),
     missingVocabularyTopics: YLE_VOCABULARY_TOPICS.filter((t) => !usedVocab.has(t)),
   };
@@ -95,6 +117,16 @@ export function formatItemBankCoverageLines(report: ItemBankCoverageReport): str
     lines.push(
       `  ${band.padEnd(22, " ")} ${String(report.difficultyCoverage[band] ?? 0).padStart(3, " ")}`
     );
+  }
+
+  lines.push("", "Writing tasks");
+  for (const [task, count] of Object.entries(report.writingTaskCoverage)) {
+    lines.push(`  ${task.padEnd(22, " ")} ${String(count).padStart(3, " ")}`);
+  }
+
+  lines.push("", "Speaking tasks");
+  for (const [task, count] of Object.entries(report.speakingTaskCoverage)) {
+    lines.push(`  ${task.padEnd(22, " ")} ${String(count).padStart(3, " ")}`);
   }
 
   lines.push("", "Missing grammar areas:");

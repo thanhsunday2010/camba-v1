@@ -1,0 +1,2584 @@
+{
+  "metadata": {
+    "manifestId": "flyers-gold-mock-1",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-flyers-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "flyers",
+    "title": "Cambridge Flyers Gold Mock 1",
+    "description": "Manually authored A2 Flyers gold mock — full 59-item form with listening, reading & writing, and speaking tasks aligned to the M2.0 blueprint.",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000004",
+    "timeLimitMinutes": 65,
+    "totalScore": 71,
+    "status": "published",
+    "authoringNotes": "M4.1 Gold Mock — manually authored and academically reviewed.",
+    "stableSlug": "flyers-gold-mock-1"
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 1,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4"
+      ],
+      "questionRefs": [
+        "fgm-001",
+        "fgm-002",
+        "fgm-003",
+        "fgm-004",
+        "fgm-005",
+        "fgm-006",
+        "fgm-007",
+        "fgm-008",
+        "fgm-009",
+        "fgm-010",
+        "fgm-011",
+        "fgm-012",
+        "fgm-013",
+        "fgm-014",
+        "fgm-015",
+        "fgm-016",
+        "fgm-017",
+        "fgm-018",
+        "fgm-019",
+        "fgm-020",
+        "fgm-021",
+        "fgm-022",
+        "fgm-023",
+        "fgm-024",
+        "fgm-025",
+        "fgm-026",
+        "fgm-027",
+        "fgm-028"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "sortOrder": 2,
+      "skillSlug": "reading_writing",
+      "timeLimitMinutes": 20,
+      "partSlugs": [
+        "rw-part-1",
+        "rw-part-2",
+        "rw-part-3",
+        "rw-part-4"
+      ],
+      "questionRefs": [
+        "fgm-029",
+        "fgm-030",
+        "fgm-031",
+        "fgm-032",
+        "fgm-033",
+        "fgm-034",
+        "fgm-035",
+        "fgm-036",
+        "fgm-037",
+        "fgm-038",
+        "fgm-039",
+        "fgm-040",
+        "fgm-041",
+        "fgm-042",
+        "fgm-043",
+        "fgm-044",
+        "fgm-045",
+        "fgm-046",
+        "fgm-047",
+        "fgm-048",
+        "fgm-049",
+        "fgm-050",
+        "fgm-051",
+        "fgm-052",
+        "fgm-053",
+        "fgm-054",
+        "fgm-055",
+        "fgm-056"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 3,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 10,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2",
+        "speaking-part-3"
+      ],
+      "questionRefs": [
+        "fgm-057",
+        "fgm-058",
+        "fgm-059"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Link names to pictures",
+      "instructions": "Link names to pictures",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mrs Chen. She's selling flowers at the festival stall.\nOmar is playing the drums on the main stage.\nPriya is taking photos of the dancers.\nMr Lopez cooks paella at the food stand every year.\nFinn's got a bright green festival wristband on his arm.\nZoe is standing next to the painting display near the entrance.\nThe mayor gave a short speech on the platform last night.",
+        "caption": "Link names to pictures"
+      }
+    },
+    {
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "partNumber": 2,
+      "title": "Write words or numbers",
+      "instructions": "Write words or numbers",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "transcript": "Examiner: Listen and write the missing word or number.\n\nThe guest works as an engineer at a technology company.\nThe students are building a robot for the science fair.\nTomorrow the temperature will be twenty-two degrees.\nThe train to Brighton is leaving from platform five.\nThe old castle was built in eleven fifty.\nMaria was the fastest runner in the school competition.\nYou need two hundred grams of flour for the cake.",
+        "caption": "Write words or numbers"
+      }
+    },
+    {
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "partNumber": 3,
+      "title": "Tick the correct picture",
+      "instructions": "Tick the correct picture",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe explorers are carefully crossing a wooden bridge over the river.\nFrom the top of the hill they can see a green valley and a lake.\nLast night there was a thunderstorm but everyone stayed safe in the tents.\nThey cook a tasty vegetable stew on the campfire every evening.\nThe campsite is next to a forest path, two kilometres from the village.\nTomorrow morning they will canoe on the river if the weather is good.\nThey thought the eagle was the most interesting animal on the walk.",
+        "caption": "Tick the correct picture"
+      }
+    },
+    {
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "partNumber": 4,
+      "title": "Colour and draw",
+      "instructions": "Colour and draw",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "transcript": "Examiner: Listen and colour or draw.\n\nColour the shop sign turquoise.\nDraw a bicycle next to the bus stop sign.\nColour the woman's scarf scarlet.\nDraw an arrow from the boy to the library.\nDraw three clouds in the sky above the street.\nColour the post box red.\nDraw a cat sitting on the garden wall.",
+        "caption": "Colour and draw"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "fgm-001",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 1,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "city_festival",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which woman is Mrs Chen?",
+      "pairs": [
+        {
+          "leftText": "Mrs Chen",
+          "rightText": "Woman selling flowers at a stall",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "This is Mrs Chen. She's selling flowers at the festival stall.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-002",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 2,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "music_festival",
+      "grammarTags": [
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "hobbies"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which boy is Omar?",
+      "pairs": [
+        {
+          "leftText": "Omar",
+          "rightText": "Boy playing drums on the stage",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Omar is playing the drums on the main stage.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-003",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 3,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "festival_crowd",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "places"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which girl is Priya?",
+      "pairs": [
+        {
+          "leftText": "Priya",
+          "rightText": "Girl taking photos with a camera",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Priya is taking photos of the dancers.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-004",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 4,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "festival_food",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which man is Mr Lopez?",
+      "pairs": [
+        {
+          "leftText": "Mr Lopez",
+          "rightText": "Man cooking paella in a large pan",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Mr Lopez cooks paella at the food stand every year.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-005",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 5,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "festival_kids",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which boy is Finn?",
+      "pairs": [
+        {
+          "leftText": "Finn",
+          "rightText": "Boy wearing a festival wristband",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Finn's got a bright green festival wristband on his arm.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-006",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 6,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "festival_art",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "hobbies"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which girl is Zoe?",
+      "pairs": [
+        {
+          "leftText": "Zoe",
+          "rightText": "Girl standing next to a painting display",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Zoe is standing next to the painting display near the entrance.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-007",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 7,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "festival_evening",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "time",
+        "places"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which woman is the mayor?",
+      "pairs": [
+        {
+          "leftText": "The mayor",
+          "rightText": "Woman giving a speech on the platform",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The mayor gave a short speech on the platform last night.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-008",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 8,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "radio_interview",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "jobs",
+        "technology"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. What job does the guest do?",
+      "template": "The guest works as a [0].",
+      "correctAnswers": [
+        "engineer"
+      ],
+      "content": {
+        "template": "The guest works as a [0].",
+        "correctAnswers": [
+          "engineer"
+        ],
+        "transcriptSnippet": "The guest works as an engineer at a technology company."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm-009",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 9,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "science_fair",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "technology"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. What are the students building?",
+      "template": "The students are building a [0].",
+      "correctAnswers": [
+        "robot"
+      ],
+      "content": {
+        "template": "The students are building a [0].",
+        "correctAnswers": [
+          "robot"
+        ],
+        "transcriptSnippet": "The students are building a robot for the science fair."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm-010",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 10,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "weather_report",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "weather"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. What will the temperature be tomorrow?",
+      "template": "Tomorrow the temperature will be [0] degrees.",
+      "correctAnswers": [
+        "twenty-two",
+        "22"
+      ],
+      "content": {
+        "template": "Tomorrow the temperature will be [0] degrees.",
+        "correctAnswers": [
+          "twenty-two",
+          "22"
+        ],
+        "transcriptSnippet": "Tomorrow the temperature will be twenty-two degrees."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm-011",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 11,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "train_announcement",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "transport",
+        "time"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. Which platform is the train leaving from?",
+      "template": "The train is leaving from platform [0].",
+      "correctAnswers": [
+        "five",
+        "5"
+      ],
+      "content": {
+        "template": "The train is leaving from platform [0].",
+        "correctAnswers": [
+          "five",
+          "5"
+        ],
+        "transcriptSnippet": "The train to Brighton is leaving from platform five."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm-012",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 12,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "museum_guide",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. When was the old castle built?",
+      "template": "The castle was built in [0].",
+      "correctAnswers": [
+        "eleven fifty",
+        "1150"
+      ],
+      "content": {
+        "template": "The castle was built in [0].",
+        "correctAnswers": [
+          "eleven fifty",
+          "1150"
+        ],
+        "transcriptSnippet": "The old castle was built in eleven fifty."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm-013",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 13,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "competition_result",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. Who was the fastest runner?",
+      "template": "The fastest runner was [0].",
+      "correctAnswers": [
+        "Maria"
+      ],
+      "content": {
+        "template": "The fastest runner was [0].",
+        "correctAnswers": [
+          "Maria"
+        ],
+        "transcriptSnippet": "Maria was the fastest runner in the school competition."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm-014",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 14,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "recipe_show",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. How much flour do you need?",
+      "template": "You need [0] grams of flour.",
+      "correctAnswers": [
+        "two hundred",
+        "200"
+      ],
+      "content": {
+        "template": "You need [0] grams of flour.",
+        "correctAnswers": [
+          "two hundred",
+          "200"
+        ],
+        "transcriptSnippet": "You need two hundred grams of flour for the cake."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm-015",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 15,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "adventure_camp",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "nature"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What are the explorers doing now?",
+      "choices": [
+        {
+          "text": "Crossing a wooden bridge",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Sleeping at home",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Shopping in a mall",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The explorers are carefully crossing a wooden bridge over the river."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-016",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 16,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "camp_discovery",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "animals"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What can they see from the hill?",
+      "choices": [
+        {
+          "text": "A valley and a lake",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A busy motorway",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "An airport runway",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "From the top of the hill they can see a green valley and a lake."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-017",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 17,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "camp_storm",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "weather"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What happened last night?",
+      "choices": [
+        {
+          "text": "There was a thunderstorm",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They went to the cinema",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They flew to Paris",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Last night there was a thunderstorm but everyone stayed safe in the tents."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-018",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 18,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "camp_cooking",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What do they cook on the campfire?",
+      "choices": [
+        {
+          "text": "Vegetable stew",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Ice cream",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Chocolate cake",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "They cook a tasty vegetable stew on the campfire every evening."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-019",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 19,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "camp_map",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "places"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Where is the campsite?",
+      "choices": [
+        {
+          "text": "Next to a forest path",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Inside a shopping centre",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "On a boat",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The campsite is next to a forest path, two kilometres from the village."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-020",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 20,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "camp_plan",
+      "grammarTags": [
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "transport",
+        "time"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What will they do tomorrow morning?",
+      "choices": [
+        {
+          "text": "Canoe on the river",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Watch television",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Stay in bed all day",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Tomorrow morning they will canoe on the river if the weather is good."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-021",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 21,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "camp_wildlife",
+      "grammarTags": [
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "nature"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Which animal did they think was the most interesting?",
+      "choices": [
+        {
+          "text": "The eagle",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The goldfish",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The pet cat",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "They thought the eagle was the most interesting animal on the walk."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-022",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 22,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "street_scene",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "colours"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Colour the shop sign. Which colour?",
+      "choices": [
+        {
+          "text": "Turquoise",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Beige",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Maroon",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Colour the shop sign turquoise.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-023",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 23,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "street_scene",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "transport"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw a bicycle near the bus stop. Where?",
+      "choices": [
+        {
+          "text": "Next to the bus stop sign",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "On the roof",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "In the river",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw a bicycle next to the bus stop sign.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-024",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 24,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "street_scene",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "colours"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Colour the scarf on the woman. Which colour?",
+      "choices": [
+        {
+          "text": "Scarlet",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Cream",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Navy",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Colour the woman's scarf scarlet.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-025",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 25,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "street_scene",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "places"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw an arrow from the boy to the library. Which picture?",
+      "choices": [
+        {
+          "text": "Boy facing the library building",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Boy walking away from town",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Boy inside a café",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw an arrow from the boy to the library.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-026",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 26,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "street_scene",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw clouds in the sky. How many?",
+      "choices": [
+        {
+          "text": "Three clouds",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "One cloud",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Ten clouds",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw three clouds in the sky above the street.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-027",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 27,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "street_scene",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Colour the post box. Which colour?",
+      "choices": [
+        {
+          "text": "Red",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Lilac",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Yellow",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Colour the post box red.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-028",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 28,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "street_scene",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "home"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw a cat sitting on the wall. Which picture?",
+      "choices": [
+        {
+          "text": "Cat on the garden wall",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Cat under the car",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Cat in the sea",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw a cat sitting on the garden wall.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm-029",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 29,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "technology",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word to the picture.",
+      "pairs": [
+        {
+          "leftText": "tablet",
+          "rightText": "Flat screen device you can carry",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-030",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 30,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word to the picture.",
+      "pairs": [
+        {
+          "leftText": "recycling",
+          "rightText": "Putting used materials in special bins",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-031",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 31,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "travel",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word to the picture.",
+      "pairs": [
+        {
+          "leftText": "luggage",
+          "rightText": "Bags you take on a journey",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-032",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 32,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "health",
+      "grammarTags": [
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word to the picture.",
+      "pairs": [
+        {
+          "leftText": "ambulance",
+          "rightText": "Vehicle that takes sick people to hospital",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-033",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 33,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "culture",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word to the picture.",
+      "pairs": [
+        {
+          "leftText": "sculpture",
+          "rightText": "Art made of stone, wood or metal",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-034",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 34,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "jobs",
+      "grammarTags": [
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word to the picture.",
+      "pairs": [
+        {
+          "leftText": "mechanic",
+          "rightText": "Person who repairs cars",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-035",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 35,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "nature",
+      "grammarTags": [
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word to the picture.",
+      "pairs": [
+        {
+          "leftText": "volcano",
+          "rightText": "Mountain that can shoot out hot lava",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm-036",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 36,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "news_article",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the sentence. Choose the correct picture.",
+      "passage": "The local library is organising a reading festival for children this month.",
+      "choices": [
+        {
+          "text": "Library festival poster",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Football stadium",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Airport departure board",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The local library is organising a reading festival for children this month."
+      }
+    },
+    {
+      "questionRef": "fgm-037",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 37,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "invention",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the sentence. Choose the correct picture.",
+      "passage": "Engineers are testing a new electric bus in the city centre.",
+      "choices": [
+        {
+          "text": "Electric bus on a city street",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Horse and cart",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Submarine",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Engineers are testing a new electric bus in the city centre."
+      }
+    },
+    {
+      "questionRef": "fgm-038",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 38,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "conservation",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the sentence. Choose the correct picture.",
+      "passage": "Last year volunteers cleaned plastic from the beach and helped baby turtles reach the sea.",
+      "choices": [
+        {
+          "text": "Beach clean-up and turtles",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Snowy mountain climb",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Indoor cinema",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last year volunteers cleaned plastic from the beach and helped baby turtles reach the sea."
+      }
+    },
+    {
+      "questionRef": "fgm-039",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 39,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school_project",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the sentence. Choose the correct picture.",
+      "passage": "Our class is going to design a website about famous inventors.",
+      "choices": [
+        {
+          "text": "Students using computers",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Students sleeping",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Students fishing",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our class is going to design a website about famous inventors."
+      }
+    },
+    {
+      "questionRef": "fgm-040",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 40,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "restaurant",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the sentence. Choose the correct picture.",
+      "passage": "The restaurant has got a menu with vegetarian and vegan dishes.",
+      "choices": [
+        {
+          "text": "Restaurant menu with vegetables",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Pet shop",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Car garage",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The restaurant has got a menu with vegetarian and vegan dishes."
+      }
+    },
+    {
+      "questionRef": "fgm-041",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 41,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "storm_damage",
+      "grammarTags": [
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "home"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the sentence. Choose the correct picture.",
+      "passage": "While the storm was blowing, branches were falling from the old tree in the garden.",
+      "choices": [
+        {
+          "text": "Tree in strong wind",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Calm sunny picnic",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Desert with camels",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "While the storm was blowing, branches were falling from the old tree in the garden."
+      }
+    },
+    {
+      "questionRef": "fgm-042",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 42,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "charity_run",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the sentence. Choose the correct picture.",
+      "passage": "Runners can collect sponsorship money to help build a new children's hospital.",
+      "choices": [
+        {
+          "text": "Charity running event",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Quiet library",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Empty classroom",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Runners can collect sponsorship money to help build a new children's hospital."
+      }
+    },
+    {
+      "questionRef": "fgm-043",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 43,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "magazine_interview",
+      "grammarTags": [
+        "past_simple",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "jobs",
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read and choose the best answer.",
+      "passage": "Interview with Dr Reyes — marine biologist\n\nI've always loved the ocean. I studied biology at university and now I work on a research boat. Last summer we discovered a new species of fish near the coral reef. Plastic pollution is a big problem, so our team also teaches schools about protecting the sea.",
+      "choices": [
+        {
+          "text": "Dr Reyes works on a research boat.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Dr Reyes is a football coach.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The team found plastic in a supermarket.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Interview with Dr Reyes — marine biologist\n\nI've always loved the ocean. I studied biology at university and now I work on a research boat. Last summer we discovered a new species of fish near the coral reef. Plastic pollution is a big problem, so our team also teaches schools about protecting the sea."
+      }
+    },
+    {
+      "questionRef": "fgm-044",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 44,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "historical_text",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "places"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read and choose the best answer.",
+      "passage": "The Old Observatory was built in 1892 on a hill above the town. Astronomers used it to study the stars before modern computers existed. During the war it closed, but volunteers reopened it as a museum in 1985. Today visitors can look through the original telescope on clear nights.",
+      "choices": [
+        {
+          "text": "The observatory is now a museum.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "It was built last year.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Nobody can visit the building.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The Old Observatory was built in 1892 on a hill above the town. Astronomers used it to study the stars before modern computers existed. During the war it closed, but volunteers reopened it as a museum in 1985. Today visitors can look through the original telescope on clear nights."
+      }
+    },
+    {
+      "questionRef": "fgm-045",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 45,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "blog_post",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read and choose the best answer.",
+      "passage": "Day 3 — Cycling in the countryside\n\nWe are cycling along quiet country lanes and stopping at small farms to buy cheese and bread. The hills are tiring but the views are amazing. Tonight we are staying in a guest house where the owner is cooking a traditional meal for all the guests.",
+      "choices": [
+        {
+          "text": "They are staying in a guest house tonight.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They are flying home today.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They never stop to buy food.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Day 3 — Cycling in the countryside\n\nWe are cycling along quiet country lanes and stopping at small farms to buy cheese and bread. The hills are tiring but the views are amazing. Tonight we are staying in a guest house where the owner is cooking a traditional meal for all the guests."
+      }
+    },
+    {
+      "questionRef": "fgm-046",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 46,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school_magazine",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "environment"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read and choose the best answer.",
+      "passage": "Green School News\n\nStudents must turn off lights when they leave a room. We mustn't leave taps running because water is precious. The eco club planted fifty trees behind the sports field and built bird boxes for the garden. Next term we are going to start a compost project.",
+      "choices": [
+        {
+          "text": "The eco club planted trees at school.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Students can waste water.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "No birds live near the school.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Green School News\n\nStudents must turn off lights when they leave a room. We mustn't leave taps running because water is precious. The eco club planted fifty trees behind the sports field and built bird boxes for the garden. Next term we are going to start a compost project."
+      }
+    },
+    {
+      "questionRef": "fgm-047",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 47,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "adventure_story",
+      "grammarTags": [
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "feelings"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read and choose the best answer.",
+      "passage": "When the path suddenly disappeared in the fog, Maya felt nervous. She was checking her map while her brother was calling the mountain rescue on his phone. They were wearing warm jackets because the temperature was falling quickly. An hour later a guide arrived and led them safely back to the village.",
+      "choices": [
+        {
+          "text": "A guide helped them return to the village.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They continued alone in the fog.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They were at the beach.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When the path suddenly disappeared in the fog, Maya felt nervous. She was checking her map while her brother was calling the mountain rescue on his phone. They were wearing warm jackets because the temperature was falling quickly. An hour later a guide arrived and led them safely back to the village."
+      }
+    },
+    {
+      "questionRef": "fgm-048",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 48,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "science_article",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "technology",
+        "health"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read and choose the best answer.",
+      "passage": "Wearable fitness trackers can count your steps and measure your heart rate. Some models are more accurate than others, especially when you are running. Doctors say trackers are useful, but sleeping well and eating healthy food are more important for long-term health.",
+      "choices": [
+        {
+          "text": "Some trackers are more accurate than others.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Doctors say trackers replace sleep.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Trackers only work when you swim.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Wearable fitness trackers can count your steps and measure your heart rate. Some models are more accurate than others, especially when you are running. Doctors say trackers are useful, but sleeping well and eating healthy food are more important for long-term health."
+      }
+    },
+    {
+      "questionRef": "fgm-049",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 49,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "festival_review",
+      "grammarTags": [
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read and choose the best answer.",
+      "passage": "The Riverside Arts Festival was the most exciting event of the year. The jazz concert was the loudest performance, but the puppet show was the funniest for younger children. Food stalls sold dishes from twelve countries. Many people said the fireworks at the end were the most beautiful they had ever seen.",
+      "choices": [
+        {
+          "text": "People enjoyed the fireworks at the end.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "There was no music at the festival.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Only one food stall opened.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The Riverside Arts Festival was the most exciting event of the year. The jazz concert was the loudest performance, but the puppet show was the funniest for younger children. Food stalls sold dishes from twelve countries. Many people said the fireworks at the end were the most beautiful they had ever seen."
+      }
+    },
+    {
+      "questionRef": "fgm-050",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 50,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "camp_message",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "travel"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a message to your friend about your summer camp plans.",
+      "cambridgeTaskType": "write_note",
+      "prompt": "Write a message to your friend about your summer camp plans.",
+      "minWords": 20,
+      "maxWords": 50,
+      "taskDescription": "Tell your friend about camp.",
+      "requiredPoints": [
+        "Say when you are going",
+        "Say what activities you will do",
+        "Ask your friend a question"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_note",
+        "prompt": "Write a message to your friend about your summer camp plans.",
+        "taskDescription": "Tell your friend about camp.",
+        "minWords": 20,
+        "maxWords": 50,
+        "requiredPoints": [
+          "Say when you are going",
+          "Say what activities you will do",
+          "Ask your friend a question"
+        ],
+        "rubricId": "gold-write_note-v1"
+      }
+    },
+    {
+      "questionRef": "fgm-051",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 51,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "thank_you_note",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "school"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a thank-you note to a visitor at your school.",
+      "cambridgeTaskType": "write_note",
+      "prompt": "Write a thank-you note to the scientist who visited your school.",
+      "minWords": 18,
+      "maxWords": 45,
+      "taskDescription": "Thank the visitor.",
+      "requiredPoints": [
+        "Say what you learned",
+        "Say what you enjoyed most",
+        "Invite them to come again"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_note",
+        "prompt": "Write a thank-you note to the scientist who visited your school.",
+        "taskDescription": "Thank the visitor.",
+        "minWords": 18,
+        "maxWords": 45,
+        "requiredPoints": [
+          "Say what you learned",
+          "Say what you enjoyed most",
+          "Invite them to come again"
+        ],
+        "rubricId": "gold-write_note-v1"
+      }
+    },
+    {
+      "questionRef": "fgm-052",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 52,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "lost_property",
+      "grammarTags": [
+        "past_simple",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a note for the school notice board about something you lost.",
+      "cambridgeTaskType": "write_note",
+      "prompt": "Write a note for the school notice board about something you lost.",
+      "minWords": 20,
+      "maxWords": 55,
+      "taskDescription": "Describe your lost item.",
+      "requiredPoints": [
+        "Say what you lost",
+        "Say where you last had it",
+        "Give a contact name"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_note",
+        "prompt": "Write a note for the school notice board about something you lost.",
+        "taskDescription": "Describe your lost item.",
+        "minWords": 20,
+        "maxWords": 55,
+        "requiredPoints": [
+          "Say what you lost",
+          "Say where you last had it",
+          "Give a contact name"
+        ],
+        "rubricId": "gold-write_note-v1"
+      }
+    },
+    {
+      "questionRef": "fgm-053",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 53,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "story_competition",
+      "grammarTags": [
+        "past_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a story called 'The Hidden Door'.",
+      "cambridgeTaskType": "write_story",
+      "prompt": "Write a story called 'The Hidden Door'.",
+      "minWords": 35,
+      "maxWords": 80,
+      "taskDescription": "Write an adventure story.",
+      "requiredPoints": [
+        "Include a problem",
+        "Include how the problem was solved"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_story",
+        "prompt": "Write a story called 'The Hidden Door'.",
+        "taskDescription": "Write an adventure story.",
+        "minWords": 35,
+        "maxWords": 80,
+        "requiredPoints": [
+          "Include a problem",
+          "Include how the problem was solved"
+        ],
+        "rubricId": "gold-write_story-v1"
+      }
+    },
+    {
+      "questionRef": "fgm-054",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 54,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "story_storm",
+      "grammarTags": [
+        "past_simple",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "feelings"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a story about a stormy night.",
+      "cambridgeTaskType": "write_story",
+      "prompt": "Write a story about a stormy night.",
+      "minWords": 40,
+      "maxWords": 90,
+      "taskDescription": "Write a story with a clear beginning, middle and end.",
+      "requiredPoints": [
+        "Describe the weather",
+        "Say how the characters felt"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_story",
+        "prompt": "Write a story about a stormy night.",
+        "taskDescription": "Write a story with a clear beginning, middle and end.",
+        "minWords": 40,
+        "maxWords": 90,
+        "requiredPoints": [
+          "Describe the weather",
+          "Say how the characters felt"
+        ],
+        "rubricId": "gold-write_story-v1"
+      }
+    },
+    {
+      "questionRef": "fgm-055",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 55,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "harbour_scene",
+      "grammarTags": [
+        "present_continuous",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "transport"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write three or four sentences about the harbour.",
+      "cambridgeTaskType": "picture_description",
+      "prompt": "Look at the picture. Write three or four sentences about the harbour.",
+      "minWords": 12,
+      "maxWords": 40,
+      "imageUrl": "/images/gold-mocks/flyers/fgm-053-harbour.png",
+      "taskDescription": "Describe the harbour scene.",
+      "requiredPoints": [
+        "Say what boats are doing",
+        "Say where people are"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Look at the picture. Write three or four sentences about the harbour.",
+        "taskDescription": "Describe the harbour scene.",
+        "minWords": 12,
+        "maxWords": 40,
+        "imageUrl": "/images/gold-mocks/flyers/fgm-053-harbour.png",
+        "requiredPoints": [
+          "Say what boats are doing",
+          "Say where people are"
+        ],
+        "rubricId": "gold-picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "fgm-056",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 56,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "city_square",
+      "grammarTags": [
+        "there_is_are",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "community"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write three or four sentences about the city square.",
+      "cambridgeTaskType": "picture_description",
+      "prompt": "Look at the picture. Write three or four sentences about the city square.",
+      "minWords": 12,
+      "maxWords": 45,
+      "imageUrl": "/images/gold-mocks/flyers/fgm-054-city-square.png",
+      "taskDescription": "Describe the busy square.",
+      "requiredPoints": [
+        "Compare two things in the picture",
+        "Say what different people are doing"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Look at the picture. Write three or four sentences about the city square.",
+        "taskDescription": "Describe the busy square.",
+        "minWords": 12,
+        "maxWords": 45,
+        "imageUrl": "/images/gold-mocks/flyers/fgm-054-city-square.png",
+        "requiredPoints": [
+          "Compare two things in the picture",
+          "Say what different people are doing"
+        ],
+        "rubricId": "gold-picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "fgm-057",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 57,
+      "points": 5,
+      "difficulty": "medium",
+      "topicTag": "city_differences",
+      "grammarTags": [
+        "there_is_are",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "transport"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Look at the two pictures. Tell your partner about the differences.",
+      "cambridgeTaskType": "speaking_picture_description",
+      "prompt": "Look at the two pictures of a city street. Tell your partner about five differences between them.",
+      "maxDurationSeconds": 120,
+      "imageUrl": "/images/gold-mocks/flyers/fgm-055-city-pair.png",
+      "followUpQuestions": [
+        "How many cars are in picture A?",
+        "What is different about the café?",
+        "Is there a cyclist in both pictures?",
+        "Where is the bus in picture B?",
+        "What colour is the traffic light in picture A?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_picture_description",
+        "prompt": "Look at the two pictures of a city street. Tell your partner about five differences between them.",
+        "maxDurationSeconds": 120,
+        "followUpQuestions": [
+          "How many cars are in picture A?",
+          "What is different about the café?",
+          "Is there a cyclist in both pictures?",
+          "Where is the bus in picture B?",
+          "What colour is the traffic light in picture A?"
+        ],
+        "imageUrl": "/images/gold-mocks/flyers/fgm-055-city-pair.png",
+        "rubricId": "gold-speaking_picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "fgm-058",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 58,
+      "points": 5,
+      "difficulty": "easy",
+      "topicTag": "about_you_flyers",
+      "grammarTags": [
+        "present_simple",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "hobbies",
+        "travel"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Answer the examiner's questions about you.",
+      "cambridgeTaskType": "speaking_personal_questions",
+      "prompt": "Answer the examiner's questions about yourself, your school, hobbies and future plans.",
+      "maxDurationSeconds": 180,
+      "followUpQuestions": [
+        "Tell me about your best friend.",
+        "What are you learning at school this year?",
+        "Describe a place you visited recently.",
+        "What would you like to do when you are older?",
+        "How do you usually spend your weekends?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_personal_questions",
+        "prompt": "Answer the examiner's questions about yourself, your school, hobbies and future plans.",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "Tell me about your best friend.",
+          "What are you learning at school this year?",
+          "Describe a place you visited recently.",
+          "What would you like to do when you are older?",
+          "How do you usually spend your weekends?"
+        ],
+        "rubricId": "gold-speaking_personal_questions-v1"
+      }
+    },
+    {
+      "questionRef": "fgm-059",
+      "partSlug": "speaking-part-3",
+      "sectionSlug": "speaking",
+      "sortOrder": 59,
+      "points": 5,
+      "difficulty": "hard",
+      "topicTag": "story_treasure",
+      "grammarTags": [
+        "past_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "feelings",
+        "nature"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Look at the pictures and tell the story.",
+      "cambridgeTaskType": "speaking_storytelling",
+      "prompt": "Look at these pictures and tell the story of the treasure map adventure.",
+      "maxDurationSeconds": 180,
+      "pictureSequence": [
+        "/images/gold-mocks/flyers/fgm-057-story-1-map.png",
+        "/images/gold-mocks/flyers/fgm-057-story-2-cave.png",
+        "/images/gold-mocks/flyers/fgm-057-story-3-bridge.png",
+        "/images/gold-mocks/flyers/fgm-057-story-4-celebrate.png"
+      ],
+      "followUpQuestions": [
+        "Where did the children find the map?",
+        "What problem did they have at the cave?",
+        "How did they cross the river?",
+        "What did they discover?",
+        "How did they feel at the end?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_storytelling",
+        "prompt": "Look at these pictures and tell the story of the treasure map adventure.",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "Where did the children find the map?",
+          "What problem did they have at the cave?",
+          "How did they cross the river?",
+          "What did they discover?",
+          "How did they feel at the end?"
+        ],
+        "pictureSequence": [
+          "/images/gold-mocks/flyers/fgm-057-story-1-map.png",
+          "/images/gold-mocks/flyers/fgm-057-story-2-cave.png",
+          "/images/gold-mocks/flyers/fgm-057-story-3-bridge.png",
+          "/images/gold-mocks/flyers/fgm-057-story-4-celebrate.png"
+        ],
+        "rubricId": "gold-speaking_storytelling-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "city_festival",
+      "music_festival",
+      "festival_crowd",
+      "festival_food",
+      "festival_kids",
+      "festival_art",
+      "festival_evening",
+      "radio_interview",
+      "science_fair",
+      "weather_report",
+      "train_announcement",
+      "museum_guide",
+      "competition_result",
+      "recipe_show",
+      "adventure_camp",
+      "camp_discovery",
+      "camp_storm",
+      "camp_cooking",
+      "camp_map",
+      "camp_plan",
+      "camp_wildlife",
+      "street_scene",
+      "technology",
+      "environment",
+      "travel",
+      "health",
+      "culture",
+      "jobs",
+      "nature",
+      "news_article",
+      "invention",
+      "conservation",
+      "school_project",
+      "restaurant",
+      "storm_damage",
+      "charity_run",
+      "magazine_interview",
+      "historical_text",
+      "blog_post",
+      "school_magazine",
+      "adventure_story",
+      "science_article",
+      "festival_review",
+      "camp_message",
+      "thank_you_note",
+      "lost_property",
+      "story_competition",
+      "story_storm",
+      "harbour_scene",
+      "city_square",
+      "city_differences",
+      "about_you_flyers",
+      "story_treasure"
+    ],
+    "distinctGrammarPatterns": [
+      "verb_be",
+      "possessives",
+      "present_continuous",
+      "present_simple",
+      "have_got",
+      "prepositions",
+      "past_simple",
+      "future_going_to",
+      "comparatives",
+      "countable_uncountable",
+      "modal_can",
+      "future_will",
+      "superlatives",
+      "imperatives",
+      "articles",
+      "there_is_are",
+      "past_continuous",
+      "modal_must",
+      "linking_words"
+    ],
+    "subskillsRepresented": [
+      "listening",
+      "reading",
+      "writing",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "easy": 17,
+      "medium": 24,
+      "hard": 18
+    },
+    "notes": "Authored for M3.1 Gold Mock specification."
+  },
+  "gold": {
+    "tier": "gold",
+    "goldMockId": "flyers-gold-mock-1",
+    "goldMockVersion": "1.0.0",
+    "specificationId": "gold-mock-flyers-v1",
+    "specificationVersion": "1.0.0",
+    "authoredAt": "2026-06-22T00:00:00.000Z",
+    "status": "published",
+    "academicAuthority": true,
+    "authoringMethod": "manual",
+    "qaChecklistVersion": "1.0.0"
+  },
+  "specification": {
+    "specificationId": "gold-mock-flyers-v1",
+    "specificationVersion": "1.0.0",
+    "level": "flyers",
+    "coverageTargets": {
+      "minDistinctGrammarTags": 8,
+      "minDistinctVocabularyTopics": 7,
+      "minSkillsRepresented": 4,
+      "difficultyDistribution": {
+        "easy": 0.25,
+        "medium": 0.5,
+        "hard": 0.25
+      },
+      "maxTopicShare": 0.2,
+      "requireWritingTasks": true,
+      "requireSpeakingTasks": true
+    }
+  }
+}

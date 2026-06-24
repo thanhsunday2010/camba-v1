@@ -1,0 +1,14 @@
+{
+  "id": "writing-example-write-sentence",
+  "question_type": "writing",
+  "question_text": "Write one sentence about the picture.",
+  "points": 0,
+  "content": {
+    "cambridgeTaskType": "write_sentence",
+    "prompt": "Look at the picture. Write one sentence.",
+    "taskDescription": "Describe what you see.",
+    "minWords": 3,
+    "maxWords": 20,
+    "imageUrl": "/images/placeholders/writing-picture.svg"
+  }
+}

@@ -1,0 +1,20 @@
+=== Cambridge Exam Assembly Report ===
+Level: MOVERS | Version: A
+Blueprint: cambridge-movers-v1@1.0.0
+Seed: camba-m2-4-reference:movers:A
+Items: 51 | Valid: YES
+
+Difficulty distribution:
+  easy: 15 (35.7% / target 35.0%)
+  medium: 19 (45.2% / target 45.0%)
+  hard: 8 (19.0% / target 20.0%)
+
+Writing included: yes
+Speaking included: yes
+Blueprint compliant: yes
+
+Grammar tags (24): conjunctions, have_got, relative_clauses, verb_be, imperatives, question_forms, superlatives, possessives, past_simple, future_going_to, prepositions, modal_can, present_simple, past_continuous, present_continuous, future_will, comparatives, pronouns, articles, linking_words, countable_uncountable, modal_must, adverbs_frequency, there_is_are
+Vocab topics (28): clothes, technology, community, drink, home, shopping, colours, nature, time, family, jobs, places, friends, transport, hobbies, school, weather, culture, food, numbers, health, sports, animals, leisure, body, environment, travel, feelings
+
+Warnings:
+  - Difficulty distribution validated on auto-scored items only; writing/speaking excluded from band targets.

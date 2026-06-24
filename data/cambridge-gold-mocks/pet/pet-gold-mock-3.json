@@ -1,0 +1,2627 @@
+{
+  "metadata": {
+    "manifestId": "pet-gold-mock-3",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-pet-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "pet",
+    "title": "B1 Preliminary Gold Mock 3",
+    "description": "M4.1 academic reference mock for B1 Preliminary — Career, Relationships, and Global topics across reading, writing, listening, and speaking.",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000006",
+    "timeLimitMinutes": 130,
+    "totalScore": 174,
+    "status": "published",
+    "authoringNotes": "M4.1 Gold Mock — manually authored and academically reviewed.",
+    "stableSlug": "pet-gold-mock-3"
+  },
+  "sections": [
+    {
+      "sectionSlug": "reading",
+      "title": "Reading",
+      "sortOrder": 1,
+      "skillSlug": "reading",
+      "timeLimitMinutes": 45,
+      "partSlugs": [
+        "reading-part-1",
+        "reading-part-2",
+        "reading-part-3",
+        "reading-part-4",
+        "reading-part-5",
+        "reading-part-6"
+      ],
+      "questionRefs": [
+        "pgm3-001",
+        "pgm3-002",
+        "pgm3-003",
+        "pgm3-004",
+        "pgm3-005",
+        "pgm3-006",
+        "pgm3-007",
+        "pgm3-008",
+        "pgm3-009",
+        "pgm3-010",
+        "pgm3-011",
+        "pgm3-012",
+        "pgm3-013",
+        "pgm3-014",
+        "pgm3-015",
+        "pgm3-016",
+        "pgm3-017",
+        "pgm3-018",
+        "pgm3-019",
+        "pgm3-020",
+        "pgm3-021",
+        "pgm3-022",
+        "pgm3-023",
+        "pgm3-024",
+        "pgm3-025",
+        "pgm3-026",
+        "pgm3-027",
+        "pgm3-028",
+        "pgm3-029",
+        "pgm3-030",
+        "pgm3-031",
+        "pgm3-032",
+        "pgm3-033",
+        "pgm3-034"
+      ]
+    },
+    {
+      "sectionSlug": "writing",
+      "title": "Writing",
+      "sortOrder": 2,
+      "skillSlug": "writing",
+      "timeLimitMinutes": 45,
+      "partSlugs": [
+        "writing-part-1",
+        "writing-part-2"
+      ],
+      "questionRefs": [
+        "pgm3-035",
+        "pgm3-036"
+      ]
+    },
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 3,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 30,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4",
+        "listening-part-5"
+      ],
+      "questionRefs": [
+        "pgm3-037",
+        "pgm3-038",
+        "pgm3-039",
+        "pgm3-040",
+        "pgm3-041",
+        "pgm3-042",
+        "pgm3-043",
+        "pgm3-044",
+        "pgm3-045",
+        "pgm3-046",
+        "pgm3-047",
+        "pgm3-048",
+        "pgm3-049",
+        "pgm3-050",
+        "pgm3-051",
+        "pgm3-052",
+        "pgm3-053",
+        "pgm3-054",
+        "pgm3-055",
+        "pgm3-056",
+        "pgm3-057",
+        "pgm3-058",
+        "pgm3-059",
+        "pgm3-060",
+        "pgm3-061"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 4,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 14,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2",
+        "speaking-part-3"
+      ],
+      "questionRefs": [
+        "pgm3-062",
+        "pgm3-063",
+        "pgm3-064"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Part 1 — Listen and choose the correct picture",
+      "instructions": "Part 1 — Listen and choose the correct picture",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "transcript": "Woman: I'm asking about internship forms at the careers desk. Friends: We're celebrating a reunion with food in the park.",
+        "caption": "Part 1 — Listen and choose the correct picture"
+      }
+    },
+    {
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "partNumber": 2,
+      "title": "Part 2 — Listen and choose the best answer",
+      "instructions": "Part 2 — Listen and choose the best answer",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "transcript": "Girl: I missed mentoring because of a family appointment. Boy: After school I'm going to a university open day.",
+        "caption": "Part 2 — Listen and choose the best answer"
+      }
+    },
+    {
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "partNumber": 3,
+      "title": "Part 3 — Listen and complete each gap",
+      "instructions": "Part 3 — Listen and complete each gap",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "transcript": "Organiser: The careers webinar starts at 5 p.m. Registration costs ten pounds. The mentor will reply by Friday.",
+        "caption": "Part 3 — Listen and complete each gap"
+      }
+    },
+    {
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "partNumber": 4,
+      "title": "Part 4 — Listen to the monologue",
+      "instructions": "Part 4 — Listen to the monologue",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "transcript": "Speaker: I met my mentor at a school careers event. I schedule calls with friends abroad and practise interviews twice a week.",
+        "caption": "Part 4 — Listen to the monologue"
+      }
+    },
+    {
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "partNumber": 5,
+      "title": "Part 5 — Listen and match each speaker to an activity",
+      "instructions": "Part 5 — Listen and match each speaker to an activity",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-5.mp3",
+        "transcript": "Five students describe hospital work experience, long-distance friendship, Model UN, coding internship, and peer mediation.",
+        "caption": "Part 5 — Listen and match each speaker to an activity"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "pgm3-001",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 1,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "career",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "Careers fair — meet employers from twelve countries, hall open until 4 p.m.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Students can talk to international employers this afternoon.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The careers fair finished yesterday.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Only teachers may enter the hall.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm3-002",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 2,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "global",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Language exchange tonight — practise English and Spanish with visiting students.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "People can practise languages with visitors tonight.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Spanish classes are cancelled.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The exchange is for staff only.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm3-003",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 3,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "skillTag": "reading",
+      "questionText": "Peer support room — talk confidentially about friendship or family worries.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Students can discuss personal worries in private.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The room is for exam revision only.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Appointments are not available.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm3-004",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 4,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "career",
+      "grammarTags": [
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "Internship applications close Monday — CV workshop Friday at 3 p.m.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Students can get CV help before the deadline.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Internships are already full.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The workshop is on Monday morning.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm3-005",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 5,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "World cultures day — traditional food and music from five continents.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Visitors can experience food and music from many regions.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Only local food will be served.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The event is next month.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm3-006",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 6,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "modal_should"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Conflict resolution session — learn strategies for healthy discussions.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Participants will learn how to discuss disagreements calmly.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The session teaches advanced maths.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Registration is not required.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm3-007",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 7,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "career",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who is doing a marketing internship?",
+      "pairs": [
+        {
+          "leftText": "Amira",
+          "rightText": "is working for an international charity",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm3-008",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 8,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who counsels students about friendship problems?",
+      "pairs": [
+        {
+          "leftText": "Ben",
+          "rightText": "runs a peer listening service",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm3-009",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 9,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who hosts a podcast about working abroad?",
+      "pairs": [
+        {
+          "leftText": "Clara",
+          "rightText": "interviews graduates in different countries",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm3-010",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 10,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "global",
+      "grammarTags": [
+        "present_perfect"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who has organised a multicultural food festival?",
+      "pairs": [
+        {
+          "leftText": "Diego",
+          "rightText": "has raised money for exchange trips",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm3-011",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 11,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "career",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who is going to apply for a nursing course?",
+      "pairs": [
+        {
+          "leftText": "Elena",
+          "rightText": "plans to study health care at college",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm3-012",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 12,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "skillTag": "reading",
+      "questionText": "Why was Amira worried at first?",
+      "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home.",
+      "choices": [
+        {
+          "text": "She had to use English every day abroad",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "She did not like charity work",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "She refused to attend meetings",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
+      }
+    },
+    {
+      "questionRef": "pgm3-013",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 13,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "career",
+      "grammarTags": [
+        "infinitives"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "What did Amira learn to do?",
+      "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home.",
+      "choices": [
+        {
+          "text": "Write clear emails to international partners",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Translate documents into three languages",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Design websites for local shops",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
+      }
+    },
+    {
+      "questionRef": "pgm3-014",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 14,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "What campaign did Amira help launch?",
+      "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home.",
+      "choices": [
+        {
+          "text": "A clean water project for rural schools",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A music festival in her hometown",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "A sports competition for interns",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
+      }
+    },
+    {
+      "questionRef": "pgm3-015",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 15,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "skillTag": "reading",
+      "questionText": "What did the experience show Amira?",
+      "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home.",
+      "choices": [
+        {
+          "text": "Global teamwork can improve distant communities",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Internships are always easy",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Video calls are unnecessary",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
+      }
+    },
+    {
+      "questionRef": "pgm3-016",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 16,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who supported Amira at the start?",
+      "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home.",
+      "choices": [
+        {
+          "text": "A local volunteer mentor",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Her university professor only",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "A government official",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
+      }
+    },
+    {
+      "questionRef": "pgm3-017",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 17,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "career",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (1): future work seem less ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Choosing a career path can feel stressful when friends already talk about university plans. Career advisers suggest exploring internships, part-time jobs, and volunteering to discover what skills you enjoy. Strong relationships with teachers and family often help teenagers handle pressure and make realistic goals. Global companies increasingly value employees who speak more than one language and understand different cultures. Some schools invite alumni to share stories about their first jobs, which makes future work seem less (1) ___. Mentors recommend practising interviews with a friend so answers sound natural rather than (2) ___. When students disagree with parents about career choices, calm conversations usually work better than (3) ___ arguments. International exchange programmes build friendships that last for years and open doors to (4) ___ opportunities. Employers also notice candidates who show empathy and communicate clearly in (5) ___ teams. In a connected world, combining personal relationships with global awareness can lead to a more (6) ___ career journey.",
+        "gapIndex": 0
+      },
+      "choices": [
+        {
+          "text": "intimidating",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "intimidate",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "intimidatingly",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm3-018",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 18,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "career",
+      "grammarTags": [
+        "adjectives"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (2): rather than ___ arguments",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Choosing a career path can feel stressful when friends already talk about university plans. Career advisers suggest exploring internships, part-time jobs, and volunteering to discover what skills you enjoy. Strong relationships with teachers and family often help teenagers handle pressure and make realistic goals. Global companies increasingly value employees who speak more than one language and understand different cultures. Some schools invite alumni to share stories about their first jobs, which makes future work seem less (1) ___. Mentors recommend practising interviews with a friend so answers sound natural rather than (2) ___. When students disagree with parents about career choices, calm conversations usually work better than (3) ___ arguments. International exchange programmes build friendships that last for years and open doors to (4) ___ opportunities. Employers also notice candidates who show empathy and communicate clearly in (5) ___ teams. In a connected world, combining personal relationships with global awareness can lead to a more (6) ___ career journey.",
+        "gapIndex": 1
+      },
+      "choices": [
+        {
+          "text": " rehearsed",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "rehearse",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "rehearsal",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm3-019",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 19,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (3): better than ___ arguments",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Choosing a career path can feel stressful when friends already talk about university plans. Career advisers suggest exploring internships, part-time jobs, and volunteering to discover what skills you enjoy. Strong relationships with teachers and family often help teenagers handle pressure and make realistic goals. Global companies increasingly value employees who speak more than one language and understand different cultures. Some schools invite alumni to share stories about their first jobs, which makes future work seem less (1) ___. Mentors recommend practising interviews with a friend so answers sound natural rather than (2) ___. When students disagree with parents about career choices, calm conversations usually work better than (3) ___ arguments. International exchange programmes build friendships that last for years and open doors to (4) ___ opportunities. Employers also notice candidates who show empathy and communicate clearly in (5) ___ teams. In a connected world, combining personal relationships with global awareness can lead to a more (6) ___ career journey.",
+        "gapIndex": 2
+      },
+      "choices": [
+        {
+          "text": " heated",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "heat",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "heating",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm3-020",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 20,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "adjectives"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (4): doors to ___ opportunities",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Choosing a career path can feel stressful when friends already talk about university plans. Career advisers suggest exploring internships, part-time jobs, and volunteering to discover what skills you enjoy. Strong relationships with teachers and family often help teenagers handle pressure and make realistic goals. Global companies increasingly value employees who speak more than one language and understand different cultures. Some schools invite alumni to share stories about their first jobs, which makes future work seem less (1) ___. Mentors recommend practising interviews with a friend so answers sound natural rather than (2) ___. When students disagree with parents about career choices, calm conversations usually work better than (3) ___ arguments. International exchange programmes build friendships that last for years and open doors to (4) ___ opportunities. Employers also notice candidates who show empathy and communicate clearly in (5) ___ teams. In a connected world, combining personal relationships with global awareness can lead to a more (6) ___ career journey.",
+        "gapIndex": 3
+      },
+      "choices": [
+        {
+          "text": " international",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "internationally",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "internationality",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm3-021",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 21,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "global",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (5): communicate in ___ teams",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Choosing a career path can feel stressful when friends already talk about university plans. Career advisers suggest exploring internships, part-time jobs, and volunteering to discover what skills you enjoy. Strong relationships with teachers and family often help teenagers handle pressure and make realistic goals. Global companies increasingly value employees who speak more than one language and understand different cultures. Some schools invite alumni to share stories about their first jobs, which makes future work seem less (1) ___. Mentors recommend practising interviews with a friend so answers sound natural rather than (2) ___. When students disagree with parents about career choices, calm conversations usually work better than (3) ___ arguments. International exchange programmes build friendships that last for years and open doors to (4) ___ opportunities. Employers also notice candidates who show empathy and communicate clearly in (5) ___ teams. In a connected world, combining personal relationships with global awareness can lead to a more (6) ___ career journey.",
+        "gapIndex": 4
+      },
+      "choices": [
+        {
+          "text": " diverse",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "diversity",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "diversify",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm3-022",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 22,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "career",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (6): more ___ career journey",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Choosing a career path can feel stressful when friends already talk about university plans. Career advisers suggest exploring internships, part-time jobs, and volunteering to discover what skills you enjoy. Strong relationships with teachers and family often help teenagers handle pressure and make realistic goals. Global companies increasingly value employees who speak more than one language and understand different cultures. Some schools invite alumni to share stories about their first jobs, which makes future work seem less (1) ___. Mentors recommend practising interviews with a friend so answers sound natural rather than (2) ___. When students disagree with parents about career choices, calm conversations usually work better than (3) ___ arguments. International exchange programmes build friendships that last for years and open doors to (4) ___ opportunities. Employers also notice candidates who show empathy and communicate clearly in (5) ___ teams. In a connected world, combining personal relationships with global awareness can lead to a more (6) ___ career journey.",
+        "gapIndex": 5
+      },
+      "choices": [
+        {
+          "text": " rewarding",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "reward",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "rewards",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "pgm3-023",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 23,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "career",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "She applied ___ a summer internship in Geneva.",
+      "template": "She applied [0] a summer internship in Geneva.",
+      "correctAnswers": [
+        "for"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "She applied [0] a summer internship in Geneva.",
+        "correctAnswers": [
+          "for"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm3-024",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 24,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "present_perfect"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "reading",
+      "questionText": "They have known each other ___ primary school.",
+      "template": "They have known each other [0] primary school.",
+      "correctAnswers": [
+        "since"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "They have known each other [0] primary school.",
+        "correctAnswers": [
+          "since"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm3-025",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 25,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "conditionals"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "skillTag": "reading",
+      "questionText": "If you ___ politely, people usually listen.",
+      "template": "If you [0] politely, people usually listen.",
+      "correctAnswers": [
+        "speak"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "If you [0] politely, people usually listen.",
+        "correctAnswers": [
+          "speak"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm3-026",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 26,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "The colleague ___ advice I trust works in Berlin.",
+      "template": "The colleague [0] advice I trust works in Berlin.",
+      "correctAnswers": [
+        "whose"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The colleague [0] advice I trust works in Berlin.",
+        "correctAnswers": [
+          "whose"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm3-027",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 27,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "global",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Although the time zones were different, the team ___ successfully.",
+      "template": "Although the time zones were different, the team [0] successfully.",
+      "correctAnswers": [
+        "collaborated",
+        "cooperated",
+        "worked"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Although the time zones were different, the team [0] successfully.",
+        "correctAnswers": [
+          "collaborated",
+          "cooperated",
+          "worked"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm3-028",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 28,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "career",
+      "grammarTags": [
+        "passive_voice"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "His CV ___ reviewed by two mentors yesterday.",
+      "template": "His CV [0] reviewed by two mentors yesterday.",
+      "correctAnswers": [
+        "was"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "His CV [0] reviewed by two mentors yesterday.",
+        "correctAnswers": [
+          "was"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm3-029",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 29,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which sentence introduces friendships across borders?",
+      "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded.",
+      "choices": [
+        {
+          "text": "[A] Many teenagers stay in touch with friends who move to other countries.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "[B] Messaging apps make it easy to share news across continents within seconds.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "[F] Maintaining global relationships helps young people feel connected and more open-minded.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
+      }
+    },
+    {
+      "questionRef": "pgm3-030",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 30,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "global",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which sentence explains how technology helps?",
+      "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded.",
+      "choices": [
+        {
+          "text": "[B] Messaging apps make it easy to share news across continents within seconds.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "[A] Many teenagers stay in touch with friends who move to other countries.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "[E] Cultural differences can cause misunderstandings, but they also teach patience.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
+      }
+    },
+    {
+      "questionRef": "pgm3-031",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 31,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which sentence introduces a challenge?",
+      "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded.",
+      "choices": [
+        {
+          "text": "[C] However, long-distance friendships need trust and regular communication.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "[D] Some students schedule weekly video calls so they do not lose contact.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "[B] Messaging apps make it easy to share news across continents within seconds.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
+      }
+    },
+    {
+      "questionRef": "pgm3-032",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 32,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "purpose_clauses"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which sentence describes a practical habit?",
+      "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded.",
+      "choices": [
+        {
+          "text": "[D] Some students schedule weekly video calls so they do not lose contact.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "[C] However, long-distance friendships need trust and regular communication.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "[A] Many teenagers stay in touch with friends who move to other countries.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
+      }
+    },
+    {
+      "questionRef": "pgm3-033",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 33,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "global",
+      "grammarTags": [
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which sentence mentions cultural learning?",
+      "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded.",
+      "choices": [
+        {
+          "text": "[E] Cultural differences can cause misunderstandings, but they also teach patience.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "[D] Some students schedule weekly video calls so they do not lose contact.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "[F] Maintaining global relationships helps young people feel connected and more open-minded.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
+      }
+    },
+    {
+      "questionRef": "pgm3-034",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 34,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "reading",
+      "questionText": "Which sentence best concludes the text?",
+      "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded.",
+      "choices": [
+        {
+          "text": "[F] Maintaining global relationships helps young people feel connected and more open-minded.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "[A] Many teenagers stay in touch with friends who move to other countries.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "[E] Cultural differences can cause misunderstandings, but they also teach patience.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
+      }
+    },
+    {
+      "questionRef": "pgm3-035",
+      "partSlug": "writing-part-1",
+      "sectionSlug": "writing",
+      "sortOrder": 35,
+      "points": 20,
+      "difficulty": "medium",
+      "topicTag": "career",
+      "grammarTags": [
+        "future_will",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "jobs",
+        "school"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write an email in response to your English teacher about career.",
+      "cambridgeTaskType": "write_email",
+      "prompt": "Your English teacher has asked you to write about your future career plans. Write an email to your teacher.",
+      "taskDescription": "Write about 100 words. Answer all three points.",
+      "minWords": 100,
+      "maxWords": 120,
+      "requiredPoints": [
+        "Describe a job or field you are interested in",
+        "Explain what skills or experience you need",
+        "Ask for advice about steps you could take now"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_email",
+        "prompt": "Your English teacher has asked you to write about your future career plans. Write an email to your teacher.",
+        "taskDescription": "Write about 100 words. Answer all three points.",
+        "minWords": 100,
+        "maxWords": 120,
+        "requiredPoints": [
+          "Describe a job or field you are interested in",
+          "Explain what skills or experience you need",
+          "Ask for advice about steps you could take now"
+        ],
+        "rubricId": "gold-write_email-v1"
+      }
+    },
+    {
+      "questionRef": "pgm3-036",
+      "partSlug": "writing-part-2",
+      "sectionSlug": "writing",
+      "sortOrder": 36,
+      "points": 20,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "past_simple",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "feelings"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a story about relationships that begins with the sentence below.",
+      "cambridgeTaskType": "write_story",
+      "prompt": "Your teacher has asked you to write a story. Your story must begin with this sentence: 'I had not seen my best friend for two years, but the message arrived at the perfect moment.'",
+      "taskDescription": "Write about 100 words.",
+      "minWords": 100,
+      "maxWords": 130,
+      "imageUrl": "/images/gold-mocks/pet-gold-mock-3-story.svg",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_story",
+        "prompt": "Your teacher has asked you to write a story. Your story must begin with this sentence: 'I had not seen my best friend for two years, but the message arrived at the perfect moment.'",
+        "taskDescription": "Write about 100 words.",
+        "minWords": 100,
+        "maxWords": 130,
+        "imageUrl": "/images/gold-mocks/pet-gold-mock-3-story.svg",
+        "rubricId": "gold-write_story-v1"
+      }
+    },
+    {
+      "questionRef": "pgm3-037",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 37,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "career",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the woman doing at the careers desk?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Asking about internship forms",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Buying conference tickets",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Returning library books",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-038",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 38,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "listening",
+      "questionText": "What are the friends doing in the park?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Celebrating a reunion with food",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Practising for a sports match",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Filming a travel advert",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-039",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 39,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "places"
+      ],
+      "skillTag": "listening",
+      "questionText": "Where are the students looking at a world map?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "In a geography classroom",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "At a bus station",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "In a swimming pool",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-040",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 40,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "career",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the man holding during the interview?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "A CV folder",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A musical instrument",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "A cooking pan",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-041",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 41,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "What activity are the classmates organising?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "A pen-pal video exchange",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A car wash fundraiser",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "A chess tournament",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-042",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 42,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "family"
+      ],
+      "skillTag": "listening",
+      "questionText": "Why did the girl miss the mentoring session?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "She had a family appointment",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The mentor cancelled",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "She forgot her login details",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-043",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 43,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "career",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the boy going to do after school?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Attend a university open day",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Fly to another country",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Start a full-time job",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-044",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 44,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "How often does the language club meet?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Every Thursday",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Once a term",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Daily at lunchtime",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-045",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 45,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "career",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "What must participants bring to the workshop?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "A list of questions for alumni",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A printed passport",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Sports equipment",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-046",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 46,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "present_perfect"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "listening",
+      "questionText": "What has the speaker recently achieved?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Reconnecting with a friend abroad",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Winning a national cooking prize",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Moving to a new house",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-047",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 47,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "career",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "listening",
+      "questionText": "Where did the speaker meet her mentor?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "At a school careers event",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "On a holiday cruise",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "At a music festival",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-048",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 48,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "Why does the speaker enjoy international projects?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Because she learns from different perspectives",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Because travel is always free",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Because she dislikes teamwork",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-049",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 49,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "present_perfect"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "listening",
+      "questionText": "What change has the speaker made in friendships?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Scheduling regular calls with friends abroad",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Stopping all social media use",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Moving to another continent",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-050",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 50,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "career",
+      "grammarTags": [
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "listening",
+      "questionText": "How often does the speaker practise interview answers?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Twice a week",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Every morning",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Only before exams",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-051",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 51,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "skillTag": "listening",
+      "questionText": "What advice does the speaker give about disagreements?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Listen first and explain your view calmly",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Avoid talking until the other person apologises",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Ask a stranger to decide immediately",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "pgm3-052",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 52,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "career",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "places"
+      ],
+      "skillTag": "listening",
+      "questionText": "The careers webinar starts ___ 5 p.m.",
+      "template": "The careers webinar starts [0] 5 p.m.",
+      "correctAnswers": [
+        "at"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The careers webinar starts [0] 5 p.m.",
+        "correctAnswers": [
+          "at"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm3-053",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 53,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "numbers",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "numbers"
+      ],
+      "skillTag": "listening",
+      "questionText": "Registration costs ___ pounds online.",
+      "template": "Registration costs [0] pounds online.",
+      "correctAnswers": [
+        "ten",
+        "10"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Registration costs [0] pounds online.",
+        "correctAnswers": [
+          "ten",
+          "10"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm3-054",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 54,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "skillTag": "listening",
+      "questionText": "The mentor says she ___ reply by Friday.",
+      "template": "The mentor says she [0] reply by Friday.",
+      "correctAnswers": [
+        "will"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The mentor says she [0] reply by Friday.",
+        "correctAnswers": [
+          "will"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm3-055",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 55,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "career",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "skillTag": "listening",
+      "questionText": "Please write a short ___ about your goals.",
+      "template": "Please write a short [0] about your goals.",
+      "correctAnswers": [
+        "paragraph",
+        "summary"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Please write a short [0] about your goals.",
+        "correctAnswers": [
+          "paragraph",
+          "summary"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm3-056",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 56,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "global",
+      "grammarTags": [
+        "passive_voice"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "The invitation ___ sent to all final-year students.",
+      "template": "The invitation [0] sent to all final-year students.",
+      "correctAnswers": [
+        "was"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The invitation [0] sent to all final-year students.",
+        "correctAnswers": [
+          "was"
+        ]
+      }
+    },
+    {
+      "questionRef": "pgm3-057",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 57,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "career",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which speaker talks about a hospital work experience?",
+      "pairs": [
+        {
+          "leftText": "Speaker 1",
+          "rightText": "shadowing nurses for a week",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm3-058",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 58,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which speaker mentions a long-distance best friend?",
+      "pairs": [
+        {
+          "leftText": "Speaker 2",
+          "rightText": "weekly calls with a friend in Canada",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm3-059",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 59,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which speaker describes a Model United Nations club?",
+      "pairs": [
+        {
+          "leftText": "Speaker 3",
+          "rightText": "debating global issues after school",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm3-060",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 60,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "career",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which speaker joined a coding internship?",
+      "pairs": [
+        {
+          "leftText": "Speaker 4",
+          "rightText": "building apps for a start-up",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm3-061",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 61,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which speaker volunteers as a peer mediator?",
+      "pairs": [
+        {
+          "leftText": "Speaker 5",
+          "rightText": "helping classmates resolve conflicts",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "pgm3-062",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 62,
+      "points": 25,
+      "difficulty": "medium",
+      "topicTag": "career",
+      "grammarTags": [
+        "present_simple",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "jobs",
+        "school"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Answer the examiner's questions about career.",
+      "cambridgeTaskType": "conversation",
+      "prompt": "The examiner will ask about your school subjects, career interests, and plans for the future.",
+      "maxDurationSeconds": 240,
+      "followUpQuestions": [
+        "Which school subjects do you enjoy most? Why?",
+        "Have you ever done work experience or volunteering?",
+        "What kind of job would you like in the future?",
+        "Do you prefer working alone or in a team?",
+        "What skills do you think are important for your chosen career?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "conversation",
+        "prompt": "The examiner will ask about your school subjects, career interests, and plans for the future.",
+        "maxDurationSeconds": 240,
+        "followUpQuestions": [
+          "Which school subjects do you enjoy most? Why?",
+          "Have you ever done work experience or volunteering?",
+          "What kind of job would you like in the future?",
+          "Do you prefer working alone or in a team?",
+          "What skills do you think are important for your chosen career?"
+        ],
+        "rubricId": "gold-conversation-v1"
+      }
+    },
+    {
+      "questionRef": "pgm3-063",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 63,
+      "points": 25,
+      "difficulty": "medium",
+      "topicTag": "global",
+      "grammarTags": [
+        "present_continuous",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "places"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Describe the global and say what you think is happening.",
+      "cambridgeTaskType": "picture_description_speaking",
+      "prompt": "Look at the photograph. Describe the setting, the people, and what you think they are doing.",
+      "maxDurationSeconds": 240,
+      "imageUrl": "/images/gold-mocks/pet-gold-mock-3-speaking-photo.svg",
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "picture_description_speaking",
+        "prompt": "Look at the photograph. Describe the setting, the people, and what you think they are doing.",
+        "maxDurationSeconds": 240,
+        "imageUrl": "/images/gold-mocks/pet-gold-mock-3-speaking-photo.svg",
+        "rubricId": "gold-picture_description_speaking-v1"
+      }
+    },
+    {
+      "questionRef": "pgm3-064",
+      "partSlug": "speaking-part-3",
+      "sectionSlug": "speaking",
+      "sortOrder": 64,
+      "points": 25,
+      "difficulty": "medium",
+      "topicTag": "relationships",
+      "grammarTags": [
+        "modal_must",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "feelings"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Discuss how young people can maintain strong relationships in a global world.",
+      "cambridgeTaskType": "conversation",
+      "prompt": "Talk with your partner about keeping friendships and family relationships healthy when people live far apart.",
+      "maxDurationSeconds": 300,
+      "followUpQuestions": [
+        "What are the best ways to stay in touch with friends abroad?",
+        "How can misunderstandings be avoided in online conversations?",
+        "Should schools teach communication skills formally?",
+        "What role do parents play in supporting friendships?",
+        "How does social media help or harm relationships?",
+        "Which habit has worked best for you or someone you know?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "conversation",
+        "prompt": "Talk with your partner about keeping friendships and family relationships healthy when people live far apart.",
+        "maxDurationSeconds": 300,
+        "followUpQuestions": [
+          "What are the best ways to stay in touch with friends abroad?",
+          "How can misunderstandings be avoided in online conversations?",
+          "Should schools teach communication skills formally?",
+          "What role do parents play in supporting friendships?",
+          "How does social media help or harm relationships?",
+          "Which habit has worked best for you or someone you know?"
+        ],
+        "rubricId": "gold-conversation-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "career",
+      "global",
+      "relationships",
+      "numbers"
+    ],
+    "distinctGrammarPatterns": [
+      "present_simple",
+      "imperatives",
+      "modal_can",
+      "future_will",
+      "comparatives",
+      "modal_should",
+      "present_continuous",
+      "present_perfect",
+      "future_going_to",
+      "past_simple",
+      "infinitives",
+      "linking_words",
+      "adjectives",
+      "countable_uncountable",
+      "prepositions",
+      "conditionals",
+      "relative_clauses",
+      "passive_voice",
+      "conjunctions",
+      "purpose_clauses",
+      "modal_must",
+      "adverbs_frequency",
+      "question_forms"
+    ],
+    "subskillsRepresented": [
+      "reading",
+      "writing",
+      "listening",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "easy": 15,
+      "medium": 37,
+      "hard": 12
+    },
+    "notes": "Authored for M3.1 Gold Mock specification."
+  },
+  "gold": {
+    "tier": "gold",
+    "goldMockId": "pet-gold-mock-3",
+    "goldMockVersion": "1.0.0",
+    "specificationId": "gold-mock-pet-v1",
+    "specificationVersion": "1.0.0",
+    "authoredAt": "2026-06-22T00:00:00.000Z",
+    "status": "published",
+    "academicAuthority": true,
+    "authoringMethod": "manual",
+    "qaChecklistVersion": "1.0.0"
+  },
+  "specification": {
+    "specificationId": "gold-mock-pet-v1",
+    "specificationVersion": "1.0.0",
+    "level": "pet",
+    "coverageTargets": {
+      "minDistinctGrammarTags": 10,
+      "minDistinctVocabularyTopics": 10,
+      "minSkillsRepresented": 4,
+      "difficultyDistribution": {
+        "easy": 0.25,
+        "medium": 0.55,
+        "hard": 0.2
+      },
+      "maxTopicShare": 0.2,
+      "requireWritingTasks": true,
+      "requireSpeakingTasks": true
+    }
+  }
+}

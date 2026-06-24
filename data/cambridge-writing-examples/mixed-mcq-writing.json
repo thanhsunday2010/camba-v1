@@ -1,0 +1,28 @@
+{
+  "description": "Mixed MCQ + writing fixture for runtime verification (M2.1)",
+  "questions": [
+    {
+      "id": "mixed-mcq-01",
+      "question_type": "multiple_choice",
+      "question_text": "What colour is the sky?",
+      "points": 1,
+      "content": {},
+      "choices": [
+        { "id": "c1", "text": "Blue", "sort_order": 0 },
+        { "id": "c2", "text": "Green", "sort_order": 1 }
+      ]
+    },
+    {
+      "id": "mixed-writing-01",
+      "question_type": "writing",
+      "question_text": "Write a sentence about the weather.",
+      "points": 0,
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Write one sentence about today's weather.",
+        "minWords": 3,
+        "maxWords": 15
+      }
+    }
+  ]
+}

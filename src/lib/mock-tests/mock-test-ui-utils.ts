@@ -1,3 +1,5 @@
+import type { PublicQuestion, UserAnswer } from "@/types/learning";
+import { countAnsweredQuestions } from "@/lib/writing/writing-utils";
 import type {
   MockTestAttemptSummary,
   MockTestDisplayState,
@@ -117,12 +119,15 @@ export function filterHubSummariesByDisplayState(
 export function deriveResolvedMockTestProgress(input: {
   totalQuestions: number;
   currentQuestionIndex: number;
-  answers: Record<string, unknown>;
+  answers: Record<string, UserAnswer>;
+  questions?: PublicQuestion[];
   isTestCompleteResolved: boolean;
   currentSectionTitle?: string | null;
   currentSectionId?: string | null;
 }): ResolvedMockTestProgress {
-  const answeredCount = Object.keys(input.answers).length;
+  const answeredCount = input.questions?.length
+    ? countAnsweredQuestions(input.questions, input.answers)
+    : Object.keys(input.answers).length;
   const completionPercent =
     input.totalQuestions > 0
       ? Math.round(

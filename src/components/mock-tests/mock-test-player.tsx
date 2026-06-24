@@ -3,6 +3,8 @@
 import { useMemo } from "react";
 import type { MockTestData, QuestionResult, UserAnswer } from "@/types/learning";
 import { QuestionRenderer } from "@/components/exercises/exercise-player";
+import { isWritingQuestion } from "@/lib/writing/writing-utils";
+import { isSpeakingQuestion } from "@/lib/speaking/speaking-utils";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { MockTestFramedQuestionFrame } from "@/components/mock-tests/mock-test-framed-question-frame";
 import { MockTestQuestionContextPanel } from "@/components/mock-tests/mock-test-question-context-panel";
@@ -97,6 +99,9 @@ export function MockTestPlayer({
   const isReviewView = Boolean(reviewQuestionId);
   const isLast = displayIndex === flatQuestions.length - 1;
   const currentQuestionResult = questionResults.find((r) => r.questionId === currentQuestion.id);
+  const isAiReview =
+    isReviewView && (isWritingQuestion(currentQuestion) || isSpeakingQuestion(currentQuestion));
+  const showQuestionResult = isReviewView && (questionResults.length > 0 || isAiReview);
   const questionSummary = viewModel.questions.find((q) => q.id === currentQuestion.id);
   const questionContext = questionSummary?.context ?? null;
 
@@ -124,10 +129,10 @@ export function MockTestPlayer({
             : (answer) => onAnswerChange(currentQuestion.id, answer)
         }
         disabled={isReviewView}
-        showResult={isReviewView && questionResults.length > 0}
+        showResult={showQuestionResult}
         questionResult={currentQuestionResult}
       />
-      {isReviewView && currentQuestionResult?.explanation && (
+      {isReviewView && !isAiReview && currentQuestionResult?.explanation && (
         <p className="camba-caption text-muted bg-muted/40 p-2 rounded-lg">
           {currentQuestionResult.explanation}
         </p>

@@ -1,0 +1,898 @@
+{
+  "metadata": {
+    "manifestId": "cambridge-ket-a-v1",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-ket-v1",
+    "blueprintVersion": "1.0.0",
+    "level": "ket",
+    "examVersion": "A",
+    "assemblySeed": "camba-m2-4-reference:ket:A",
+    "title": "A2 Key for Schools — Form A",
+    "description": "Assembled reference exam for ket (architecture validation).",
+    "formKind": "full-form",
+    "timeLimitMinutes": 110,
+    "totalScore": 125,
+    "assembledAt": "2026-06-24T00:27:16.267Z",
+    "authoringNotes": "M2.4 golden reference — not production content."
+  },
+  "papers": [
+    {
+      "paperSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "skills": [
+        "reading",
+        "writing"
+      ],
+      "parts": [
+        {
+          "paperSlug": "reading-writing",
+          "partSlug": "rw-part-1",
+          "partNumber": 1,
+          "title": "Multiple choice (signs and messages)",
+          "skill": "reading",
+          "questionCount": 6,
+          "itemReferences": [
+            {
+              "itemId": "ket-rw-part-1-multiple_choice-111",
+              "partSlug": "rw-part-1",
+              "sortOrder": 1,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-1-multiple_choice-054",
+              "partSlug": "rw-part-1",
+              "sortOrder": 2,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-1-multiple_choice-106",
+              "partSlug": "rw-part-1",
+              "sortOrder": 3,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-1-multiple_choice-114",
+              "partSlug": "rw-part-1",
+              "sortOrder": 4,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-1-multiple_choice-130",
+              "partSlug": "rw-part-1",
+              "sortOrder": 5,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-1-multiple_choice-018",
+              "partSlug": "rw-part-1",
+              "sortOrder": 6,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading-writing",
+          "partSlug": "rw-part-2",
+          "partNumber": 2,
+          "title": "Multiple matching",
+          "skill": "reading",
+          "questionCount": 7,
+          "itemReferences": [
+            {
+              "itemId": "ket-rw-part-2-matching-098",
+              "partSlug": "rw-part-2",
+              "sortOrder": 7,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-2-matching-091",
+              "partSlug": "rw-part-2",
+              "sortOrder": 8,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-2-matching-084",
+              "partSlug": "rw-part-2",
+              "sortOrder": 9,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-2-matching-096",
+              "partSlug": "rw-part-2",
+              "sortOrder": 10,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-2-matching-140",
+              "partSlug": "rw-part-2",
+              "sortOrder": 11,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-2-matching-099",
+              "partSlug": "rw-part-2",
+              "sortOrder": 12,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-2-matching-064",
+              "partSlug": "rw-part-2",
+              "sortOrder": 13,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading-writing",
+          "partSlug": "rw-part-3",
+          "partNumber": 3,
+          "title": "Multiple choice (long text)",
+          "skill": "reading",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "ket-rw-part-3-multiple_choice-069",
+              "partSlug": "rw-part-3",
+              "sortOrder": 14,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-3-reading_comprehension-030",
+              "partSlug": "rw-part-3",
+              "sortOrder": 15,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-3-reading_comprehension-078",
+              "partSlug": "rw-part-3",
+              "sortOrder": 16,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-3-multiple_choice-063",
+              "partSlug": "rw-part-3",
+              "sortOrder": 17,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-3-reading_comprehension-056",
+              "partSlug": "rw-part-3",
+              "sortOrder": 18,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading-writing",
+          "partSlug": "rw-part-4",
+          "partNumber": 4,
+          "title": "Multiple choice cloze",
+          "skill": "reading",
+          "questionCount": 6,
+          "itemReferences": [
+            {
+              "itemId": "ket-rw-part-4-multiple_choice-024",
+              "partSlug": "rw-part-4",
+              "sortOrder": 19,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-4-multiple_choice-112",
+              "partSlug": "rw-part-4",
+              "sortOrder": 20,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-4-multiple_choice-000",
+              "partSlug": "rw-part-4",
+              "sortOrder": 21,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-4-multiple_choice-027",
+              "partSlug": "rw-part-4",
+              "sortOrder": 22,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-4-multiple_choice-120",
+              "partSlug": "rw-part-4",
+              "sortOrder": 23,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-4-multiple_choice-121",
+              "partSlug": "rw-part-4",
+              "sortOrder": 24,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading-writing",
+          "partSlug": "rw-part-5",
+          "partNumber": 5,
+          "title": "Open cloze",
+          "skill": "reading",
+          "questionCount": 6,
+          "itemReferences": [
+            {
+              "itemId": "ket-rw-part-5-open_cloze-045",
+              "partSlug": "rw-part-5",
+              "sortOrder": 25,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-5-open_cloze-048",
+              "partSlug": "rw-part-5",
+              "sortOrder": 26,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-5-open_cloze-141",
+              "partSlug": "rw-part-5",
+              "sortOrder": 27,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-5-open_cloze-142",
+              "partSlug": "rw-part-5",
+              "sortOrder": 28,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-5-open_cloze-134",
+              "partSlug": "rw-part-5",
+              "sortOrder": 29,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-rw-part-5-open_cloze-079",
+              "partSlug": "rw-part-5",
+              "sortOrder": 30,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading-writing",
+          "partSlug": "rw-part-6",
+          "partNumber": 6,
+          "title": "Writing — message",
+          "skill": "writing",
+          "questionCount": 1,
+          "itemReferences": [
+            {
+              "itemId": "ket-rw-part-6-write_email-023",
+              "partSlug": "rw-part-6",
+              "sortOrder": 31,
+              "pointsOverride": 15
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading-writing",
+          "partSlug": "rw-part-7",
+          "partNumber": 7,
+          "title": "Writing — picture story",
+          "skill": "writing",
+          "questionCount": 1,
+          "itemReferences": [
+            {
+              "itemId": "ket-rw-part-7-write_story-020",
+              "partSlug": "rw-part-7",
+              "sortOrder": 32,
+              "pointsOverride": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paperSlug": "listening",
+      "title": "Listening",
+      "skills": [
+        "listening"
+      ],
+      "parts": [
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-1",
+          "partNumber": 1,
+          "title": "Multiple choice (pictures)",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "ket-listening-part-1-audio_multiple_choice-082",
+              "partSlug": "listening-part-1",
+              "sortOrder": 33,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-1-audio_multiple_choice-085",
+              "partSlug": "listening-part-1",
+              "sortOrder": 34,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-1-audio_multiple_choice-092",
+              "partSlug": "listening-part-1",
+              "sortOrder": 35,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-1-audio_multiple_choice-084",
+              "partSlug": "listening-part-1",
+              "sortOrder": 36,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-1-audio_multiple_choice-097",
+              "partSlug": "listening-part-1",
+              "sortOrder": 37,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-2",
+          "partNumber": 2,
+          "title": "Multiple choice (questions)",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "ket-listening-part-2-audio_multiple_choice-056",
+              "partSlug": "listening-part-2",
+              "sortOrder": 38,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-2-audio_multiple_choice-078",
+              "partSlug": "listening-part-2",
+              "sortOrder": 39,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-2-audio_multiple_choice-048",
+              "partSlug": "listening-part-2",
+              "sortOrder": 40,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-2-audio_multiple_choice-039",
+              "partSlug": "listening-part-2",
+              "sortOrder": 41,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-2-audio_multiple_choice-041",
+              "partSlug": "listening-part-2",
+              "sortOrder": 42,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-3",
+          "partNumber": 3,
+          "title": "Gap fill",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "ket-listening-part-3-audio_gap_fill-000",
+              "partSlug": "listening-part-3",
+              "sortOrder": 43,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-3-audio_gap_fill-027",
+              "partSlug": "listening-part-3",
+              "sortOrder": 44,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-3-audio_gap_fill-116",
+              "partSlug": "listening-part-3",
+              "sortOrder": 45,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-3-audio_gap_fill-005",
+              "partSlug": "listening-part-3",
+              "sortOrder": 46,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-3-audio_gap_fill-119",
+              "partSlug": "listening-part-3",
+              "sortOrder": 47,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-4",
+          "partNumber": 4,
+          "title": "Multiple choice (monologue)",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "ket-listening-part-4-audio_multiple_choice-031",
+              "partSlug": "listening-part-4",
+              "sortOrder": 48,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-4-audio_multiple_choice-045",
+              "partSlug": "listening-part-4",
+              "sortOrder": 49,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-4-audio_multiple_choice-067",
+              "partSlug": "listening-part-4",
+              "sortOrder": 50,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-4-audio_multiple_choice-039",
+              "partSlug": "listening-part-4",
+              "sortOrder": 51,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-4-audio_multiple_choice-063",
+              "partSlug": "listening-part-4",
+              "sortOrder": 52,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-5",
+          "partNumber": 5,
+          "title": "Multiple matching",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "ket-listening-part-5-audio_matching-056",
+              "partSlug": "listening-part-5",
+              "sortOrder": 53,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-5-audio_matching-004",
+              "partSlug": "listening-part-5",
+              "sortOrder": 54,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-5-audio_matching-108",
+              "partSlug": "listening-part-5",
+              "sortOrder": 55,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-5-audio_matching-083",
+              "partSlug": "listening-part-5",
+              "sortOrder": 56,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "ket-listening-part-5-audio_matching-071",
+              "partSlug": "listening-part-5",
+              "sortOrder": 57,
+              "pointsOverride": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paperSlug": "speaking",
+      "title": "Speaking",
+      "skills": [
+        "speaking"
+      ],
+      "parts": [
+        {
+          "paperSlug": "speaking",
+          "partSlug": "speaking-part-1",
+          "partNumber": 1,
+          "title": "Interview",
+          "skill": "speaking",
+          "questionCount": 1,
+          "itemReferences": [
+            {
+              "itemId": "ket-speaking-part-1-conversation-017",
+              "partSlug": "speaking-part-1",
+              "sortOrder": 58,
+              "pointsOverride": 20
+            }
+          ]
+        },
+        {
+          "paperSlug": "speaking",
+          "partSlug": "speaking-part-2",
+          "partNumber": 2,
+          "title": "Collaborative task",
+          "skill": "speaking",
+          "questionCount": 1,
+          "itemReferences": [
+            {
+              "itemId": "ket-speaking-part-2-conversation-000",
+              "partSlug": "speaking-part-2",
+              "sortOrder": 59,
+              "pointsOverride": 20
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "itemReferences": [
+    {
+      "itemId": "ket-rw-part-1-multiple_choice-111",
+      "partSlug": "rw-part-1",
+      "sortOrder": 1,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-1-multiple_choice-054",
+      "partSlug": "rw-part-1",
+      "sortOrder": 2,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-1-multiple_choice-106",
+      "partSlug": "rw-part-1",
+      "sortOrder": 3,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-1-multiple_choice-114",
+      "partSlug": "rw-part-1",
+      "sortOrder": 4,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-1-multiple_choice-130",
+      "partSlug": "rw-part-1",
+      "sortOrder": 5,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-1-multiple_choice-018",
+      "partSlug": "rw-part-1",
+      "sortOrder": 6,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-2-matching-098",
+      "partSlug": "rw-part-2",
+      "sortOrder": 7,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-2-matching-091",
+      "partSlug": "rw-part-2",
+      "sortOrder": 8,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-2-matching-084",
+      "partSlug": "rw-part-2",
+      "sortOrder": 9,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-2-matching-096",
+      "partSlug": "rw-part-2",
+      "sortOrder": 10,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-2-matching-140",
+      "partSlug": "rw-part-2",
+      "sortOrder": 11,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-2-matching-099",
+      "partSlug": "rw-part-2",
+      "sortOrder": 12,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-2-matching-064",
+      "partSlug": "rw-part-2",
+      "sortOrder": 13,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-3-multiple_choice-069",
+      "partSlug": "rw-part-3",
+      "sortOrder": 14,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-3-reading_comprehension-030",
+      "partSlug": "rw-part-3",
+      "sortOrder": 15,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-3-reading_comprehension-078",
+      "partSlug": "rw-part-3",
+      "sortOrder": 16,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-3-multiple_choice-063",
+      "partSlug": "rw-part-3",
+      "sortOrder": 17,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-3-reading_comprehension-056",
+      "partSlug": "rw-part-3",
+      "sortOrder": 18,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-4-multiple_choice-024",
+      "partSlug": "rw-part-4",
+      "sortOrder": 19,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-4-multiple_choice-112",
+      "partSlug": "rw-part-4",
+      "sortOrder": 20,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-4-multiple_choice-000",
+      "partSlug": "rw-part-4",
+      "sortOrder": 21,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-4-multiple_choice-027",
+      "partSlug": "rw-part-4",
+      "sortOrder": 22,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-4-multiple_choice-120",
+      "partSlug": "rw-part-4",
+      "sortOrder": 23,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-4-multiple_choice-121",
+      "partSlug": "rw-part-4",
+      "sortOrder": 24,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-5-open_cloze-045",
+      "partSlug": "rw-part-5",
+      "sortOrder": 25,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-5-open_cloze-048",
+      "partSlug": "rw-part-5",
+      "sortOrder": 26,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-5-open_cloze-141",
+      "partSlug": "rw-part-5",
+      "sortOrder": 27,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-5-open_cloze-142",
+      "partSlug": "rw-part-5",
+      "sortOrder": 28,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-5-open_cloze-134",
+      "partSlug": "rw-part-5",
+      "sortOrder": 29,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-5-open_cloze-079",
+      "partSlug": "rw-part-5",
+      "sortOrder": 30,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-rw-part-6-write_email-023",
+      "partSlug": "rw-part-6",
+      "sortOrder": 31,
+      "pointsOverride": 15
+    },
+    {
+      "itemId": "ket-rw-part-7-write_story-020",
+      "partSlug": "rw-part-7",
+      "sortOrder": 32,
+      "pointsOverride": 15
+    },
+    {
+      "itemId": "ket-listening-part-1-audio_multiple_choice-082",
+      "partSlug": "listening-part-1",
+      "sortOrder": 33,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-1-audio_multiple_choice-085",
+      "partSlug": "listening-part-1",
+      "sortOrder": 34,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-1-audio_multiple_choice-092",
+      "partSlug": "listening-part-1",
+      "sortOrder": 35,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-1-audio_multiple_choice-084",
+      "partSlug": "listening-part-1",
+      "sortOrder": 36,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-1-audio_multiple_choice-097",
+      "partSlug": "listening-part-1",
+      "sortOrder": 37,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-2-audio_multiple_choice-056",
+      "partSlug": "listening-part-2",
+      "sortOrder": 38,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-2-audio_multiple_choice-078",
+      "partSlug": "listening-part-2",
+      "sortOrder": 39,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-2-audio_multiple_choice-048",
+      "partSlug": "listening-part-2",
+      "sortOrder": 40,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-2-audio_multiple_choice-039",
+      "partSlug": "listening-part-2",
+      "sortOrder": 41,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-2-audio_multiple_choice-041",
+      "partSlug": "listening-part-2",
+      "sortOrder": 42,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-3-audio_gap_fill-000",
+      "partSlug": "listening-part-3",
+      "sortOrder": 43,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-3-audio_gap_fill-027",
+      "partSlug": "listening-part-3",
+      "sortOrder": 44,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-3-audio_gap_fill-116",
+      "partSlug": "listening-part-3",
+      "sortOrder": 45,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-3-audio_gap_fill-005",
+      "partSlug": "listening-part-3",
+      "sortOrder": 46,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-3-audio_gap_fill-119",
+      "partSlug": "listening-part-3",
+      "sortOrder": 47,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-4-audio_multiple_choice-031",
+      "partSlug": "listening-part-4",
+      "sortOrder": 48,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-4-audio_multiple_choice-045",
+      "partSlug": "listening-part-4",
+      "sortOrder": 49,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-4-audio_multiple_choice-067",
+      "partSlug": "listening-part-4",
+      "sortOrder": 50,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-4-audio_multiple_choice-039",
+      "partSlug": "listening-part-4",
+      "sortOrder": 51,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-4-audio_multiple_choice-063",
+      "partSlug": "listening-part-4",
+      "sortOrder": 52,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-5-audio_matching-056",
+      "partSlug": "listening-part-5",
+      "sortOrder": 53,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-5-audio_matching-004",
+      "partSlug": "listening-part-5",
+      "sortOrder": 54,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-5-audio_matching-108",
+      "partSlug": "listening-part-5",
+      "sortOrder": 55,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-5-audio_matching-083",
+      "partSlug": "listening-part-5",
+      "sortOrder": 56,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-listening-part-5-audio_matching-071",
+      "partSlug": "listening-part-5",
+      "sortOrder": 57,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "ket-speaking-part-1-conversation-017",
+      "partSlug": "speaking-part-1",
+      "sortOrder": 58,
+      "pointsOverride": 20
+    },
+    {
+      "itemId": "ket-speaking-part-2-conversation-000",
+      "partSlug": "speaking-part-2",
+      "sortOrder": 59,
+      "pointsOverride": 20
+    }
+  ]
+}

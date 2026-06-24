@@ -1,0 +1,1885 @@
+{
+  "metadata": {
+    "manifestId": "starters-gold-mock-3",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-starters-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "starters",
+    "title": "Cambridge Starters Gold Mock 3",
+    "description": "M4.1 manually authored Pre-A1 Starters gold mock — Food, Sports & Travel theme. Full 43-item form with listening, reading & writing, and speaking tasks aligned to the M2.0 blueprint.",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000002",
+    "timeLimitMinutes": 45,
+    "totalScore": 55,
+    "status": "published",
+    "authoringNotes": "M4.1 Gold Mock — manually authored and academically reviewed.",
+    "stableSlug": "starters-gold-mock-3"
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 1,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4"
+      ],
+      "questionRefs": [
+        "sgm3-001",
+        "sgm3-002",
+        "sgm3-003",
+        "sgm3-004",
+        "sgm3-005",
+        "sgm3-006",
+        "sgm3-007",
+        "sgm3-008",
+        "sgm3-009",
+        "sgm3-010",
+        "sgm3-011",
+        "sgm3-012",
+        "sgm3-013",
+        "sgm3-014",
+        "sgm3-015",
+        "sgm3-016",
+        "sgm3-017",
+        "sgm3-018",
+        "sgm3-019",
+        "sgm3-020"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "sortOrder": 2,
+      "skillSlug": "reading_writing",
+      "timeLimitMinutes": 20,
+      "partSlugs": [
+        "rw-part-1",
+        "rw-part-2",
+        "rw-part-3",
+        "rw-part-4"
+      ],
+      "questionRefs": [
+        "sgm3-021",
+        "sgm3-022",
+        "sgm3-023",
+        "sgm3-024",
+        "sgm3-025",
+        "sgm3-026",
+        "sgm3-027",
+        "sgm3-028",
+        "sgm3-029",
+        "sgm3-030",
+        "sgm3-031",
+        "sgm3-032",
+        "sgm3-033",
+        "sgm3-034",
+        "sgm3-035",
+        "sgm3-036",
+        "sgm3-037",
+        "sgm3-038",
+        "sgm3-039",
+        "sgm3-040"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 3,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 10,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2",
+        "speaking-part-3"
+      ],
+      "questionRefs": [
+        "sgm3-041",
+        "sgm3-042",
+        "sgm3-043"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Link names to pictures",
+      "instructions": "Link names to pictures",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Jake. He's wearing a green football shirt today.\nSofia is holding a big bowl of fruit for the picnic.\nOmar has got a blue suitcase. He's ready to travel.\nPriya is wearing a red swimming cap at the pool.\nLook at Finn. He's eating a sandwich on the train.",
+        "caption": "Link names to pictures"
+      }
+    },
+    {
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "partNumber": 2,
+      "title": "Write words or numbers",
+      "instructions": "Write words or numbers",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "transcript": "Examiner: Listen and write the missing word or number.\n\nAmy always drinks cold milk for breakfast.\nCarlos plays tennis every Tuesday after school.\nNext week the family is going to the beach for their holiday.\nThere are four cheese sandwiches in the lunch box.\nThe big tour bus is yellow with black windows.",
+        "caption": "Write words or numbers"
+      }
+    },
+    {
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "partNumber": 3,
+      "title": "Tick the correct picture",
+      "instructions": "Tick the correct picture",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe girl is eating a big red strawberry.\nThe boys are playing basketball in the sports hall.\nThe plane is flying high in the sky.\nDad orders a cup of hot tea at the café.\nThe tourists are looking at the sea and taking photos on the ferry.",
+        "caption": "Tick the correct picture"
+      }
+    },
+    {
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "partNumber": 4,
+      "title": "Colour and draw",
+      "instructions": "Colour and draw",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "transcript": "Examiner: Listen and colour or draw.\n\nColour the apple green, please.\nNow colour the football orange.\nDraw an X on the airport on the map.\nColour the birthday cake pink.\nDraw a line from the boy to the small boat on the lake.",
+        "caption": "Colour and draw"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "sgm3-001",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 1,
+      "difficulty": "easy",
+      "topicTag": "sports_football",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "questionText": "Listen. Which boy is Jake?",
+      "skillTag": "listening",
+      "points": 1,
+      "pairs": [
+        {
+          "leftText": "Jake",
+          "rightText": "Boy wearing a green football shirt",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "This is Jake. He's wearing a green football shirt today."
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm3-002",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 2,
+      "difficulty": "easy",
+      "topicTag": "food_cooking",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "questionText": "Listen. Which girl is Sofia?",
+      "skillTag": "listening",
+      "points": 1,
+      "pairs": [
+        {
+          "leftText": "Sofia",
+          "rightText": "Girl holding a bowl of fruit",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Sofia is holding a big bowl of fruit for the picnic."
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm3-003",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 3,
+      "difficulty": "easy",
+      "topicTag": "travel_airport",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "questionText": "Listen. Which boy is Omar?",
+      "skillTag": "listening",
+      "points": 1,
+      "pairs": [
+        {
+          "leftText": "Omar",
+          "rightText": "Boy with a blue suitcase",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Omar has got a blue suitcase. He's ready to travel."
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm3-004",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 4,
+      "difficulty": "easy",
+      "topicTag": "sports_swimming",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "questionText": "Listen. Which girl is Priya?",
+      "skillTag": "listening",
+      "points": 1,
+      "pairs": [
+        {
+          "leftText": "Priya",
+          "rightText": "Girl in a red swimming cap",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Priya is wearing a red swimming cap at the pool."
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm3-005",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 5,
+      "difficulty": "medium",
+      "topicTag": "travel_train",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "food"
+      ],
+      "questionText": "Listen. Which boy is Finn?",
+      "skillTag": "listening",
+      "points": 1,
+      "pairs": [
+        {
+          "leftText": "Finn",
+          "rightText": "Boy eating a sandwich on the train",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Look at Finn. He's eating a sandwich on the train."
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm3-006",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 6,
+      "difficulty": "easy",
+      "topicTag": "food_breakfast",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "questionText": "Listen and write. What does Amy drink for breakfast?",
+      "skillTag": "listening",
+      "points": 1,
+      "template": "Amy drinks [0] for breakfast.",
+      "correctAnswers": [
+        "milk"
+      ],
+      "content": {
+        "template": "Amy drinks [0] for breakfast.",
+        "correctAnswers": [
+          "milk"
+        ],
+        "transcriptSnippet": "Amy always drinks cold milk for breakfast."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "sgm3-007",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 7,
+      "difficulty": "easy",
+      "topicTag": "sports_tennis",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "questionText": "Listen and write. What sport does Carlos play?",
+      "skillTag": "listening",
+      "points": 1,
+      "template": "Carlos plays [0].",
+      "correctAnswers": [
+        "tennis"
+      ],
+      "content": {
+        "template": "Carlos plays [0].",
+        "correctAnswers": [
+          "tennis"
+        ],
+        "transcriptSnippet": "Carlos plays tennis every Tuesday after school."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "sgm3-008",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 8,
+      "difficulty": "medium",
+      "topicTag": "travel_holiday",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "questionText": "Listen and write. Where is the family going on holiday?",
+      "skillTag": "listening",
+      "points": 1,
+      "template": "The family is going to the [0].",
+      "correctAnswers": [
+        "beach"
+      ],
+      "content": {
+        "template": "The family is going to the [0].",
+        "correctAnswers": [
+          "beach"
+        ],
+        "transcriptSnippet": "Next week the family is going to the beach for their holiday."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "sgm3-009",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 9,
+      "difficulty": "medium",
+      "topicTag": "food_lunch",
+      "grammarTags": [
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "questionText": "Listen and write. How many sandwiches are in the box?",
+      "skillTag": "listening",
+      "points": 1,
+      "template": "There are [0] sandwiches in the box.",
+      "correctAnswers": [
+        "four",
+        "4"
+      ],
+      "content": {
+        "template": "There are [0] sandwiches in the box.",
+        "correctAnswers": [
+          "four",
+          "4"
+        ],
+        "transcriptSnippet": "There are four cheese sandwiches in the lunch box."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "sgm3-010",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 10,
+      "difficulty": "easy",
+      "topicTag": "travel_bus",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "colours"
+      ],
+      "questionText": "Listen and write. What colour is the tour bus?",
+      "skillTag": "listening",
+      "points": 1,
+      "template": "The tour bus is [0].",
+      "correctAnswers": [
+        "yellow"
+      ],
+      "content": {
+        "template": "The tour bus is [0].",
+        "correctAnswers": [
+          "yellow"
+        ],
+        "transcriptSnippet": "The big tour bus is yellow with black windows."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "sgm3-011",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 11,
+      "difficulty": "easy",
+      "topicTag": "food_fruit",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "questionText": "What is the girl eating?",
+      "skillTag": "listening",
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "A strawberry",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A shoe",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "A pencil",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The girl is eating a big red strawberry."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm3-012",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 12,
+      "difficulty": "easy",
+      "topicTag": "sports_basketball",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "questionText": "What are the boys playing?",
+      "skillTag": "listening",
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Basketball",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Chess",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The piano",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The boys are playing basketball in the sports hall."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm3-013",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 13,
+      "difficulty": "easy",
+      "topicTag": "travel_plane",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "questionText": "Where is the plane?",
+      "skillTag": "listening",
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "In the sky",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Under the bed",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "In the fridge",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The plane is flying high in the sky."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm3-014",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 14,
+      "difficulty": "medium",
+      "topicTag": "food_restaurant",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "places"
+      ],
+      "questionText": "What does Dad order at the café?",
+      "skillTag": "listening",
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "A cup of tea",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A pair of shoes",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "A tennis racket",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Dad orders a cup of hot tea at the café."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm3-015",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 15,
+      "difficulty": "hard",
+      "topicTag": "travel_ferry",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "weather"
+      ],
+      "questionText": "What are the tourists doing on the ferry?",
+      "skillTag": "listening",
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Looking at the sea and taking photos",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Cooking dinner in a kitchen",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Sleeping in class",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The tourists are looking at the sea and taking photos on the ferry."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm3-016",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 16,
+      "difficulty": "easy",
+      "topicTag": "food_picnic",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "colours"
+      ],
+      "questionText": "Colour the apple. Which colour?",
+      "skillTag": "listening",
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Green",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Silver",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Pink",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Colour the apple green, please."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm3-017",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 17,
+      "difficulty": "easy",
+      "topicTag": "sports_ball",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "colours"
+      ],
+      "questionText": "Colour the football. Which colour?",
+      "skillTag": "listening",
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Orange",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Purple",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "White",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Now colour the football orange."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm3-018",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 18,
+      "difficulty": "medium",
+      "topicTag": "travel_map",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "questionText": "Draw an X on the airport on the map. Which picture shows this?",
+      "skillTag": "listening",
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "X marked on the airport symbol",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "X marked on the swimming pool",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "X marked on the zoo",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw an X on the airport on the map."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm3-019",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 19,
+      "difficulty": "medium",
+      "topicTag": "food_cake",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "colours"
+      ],
+      "questionText": "Colour the birthday cake. Which colour?",
+      "skillTag": "listening",
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Pink",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Grey",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Brown",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Colour the birthday cake pink."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm3-020",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 20,
+      "difficulty": "hard",
+      "topicTag": "travel_boat",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "places"
+      ],
+      "questionText": "Draw a line from the boy to the boat. Which picture shows this?",
+      "skillTag": "listening",
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Boy standing next to the small boat",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Boy sitting in a classroom",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Boy sleeping in bed",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw a line from the boy to the small boat on the lake."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm3-021",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 21,
+      "difficulty": "easy",
+      "topicTag": "food",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "questionText": "Match the word 'sandwich' to the picture.",
+      "skillTag": "reading",
+      "points": 1,
+      "pairs": [
+        {
+          "leftText": "sandwich",
+          "rightText": "Food with bread, cheese and salad inside",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm3-022",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 22,
+      "difficulty": "easy",
+      "topicTag": "sports",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "questionText": "Match the word 'helmet' to the picture.",
+      "skillTag": "reading",
+      "points": 1,
+      "pairs": [
+        {
+          "leftText": "helmet",
+          "rightText": "Hard hat you wear when riding a bike",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm3-023",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 23,
+      "difficulty": "easy",
+      "topicTag": "travel",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "questionText": "Match the word 'passport' to the picture.",
+      "skillTag": "reading",
+      "points": 1,
+      "pairs": [
+        {
+          "leftText": "passport",
+          "rightText": "Small book you need when you travel to another country",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm3-024",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 24,
+      "difficulty": "easy",
+      "topicTag": "food_drink",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "drink"
+      ],
+      "questionText": "Match the word 'lemonade' to the picture.",
+      "skillTag": "reading",
+      "points": 1,
+      "pairs": [
+        {
+          "leftText": "lemonade",
+          "rightText": "Cold sweet drink made from lemons",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm3-025",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 25,
+      "difficulty": "medium",
+      "topicTag": "sports",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "places"
+      ],
+      "questionText": "Match the word 'stadium' to the picture.",
+      "skillTag": "reading",
+      "points": 1,
+      "pairs": [
+        {
+          "leftText": "stadium",
+          "rightText": "Big building where people watch football matches",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm3-026",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 26,
+      "difficulty": "easy",
+      "topicTag": "food_kitchen",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "family"
+      ],
+      "questionText": "Read: \"Grandpa is making vegetable soup in a bi…\" Choose the correct picture.",
+      "skillTag": "reading",
+      "points": 1,
+      "passage": "Grandpa is making vegetable soup in a big pot on the stove.",
+      "choices": [
+        {
+          "text": "Old man cooking soup in a kitchen",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Old man playing tennis",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Old man sleeping on a bus",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Grandpa is making vegetable soup in a big pot on the stove."
+      }
+    },
+    {
+      "questionRef": "sgm3-027",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 27,
+      "difficulty": "easy",
+      "topicTag": "sports_running",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "questionText": "Read: \"The children are running a race on the s…\" Choose the correct picture.",
+      "skillTag": "reading",
+      "points": 1,
+      "passage": "The children are running a race on the school sports field.",
+      "choices": [
+        {
+          "text": "Children running on a sports field",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children eating cake at a party",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children reading books in a library",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The children are running a race on the school sports field."
+      }
+    },
+    {
+      "questionRef": "sgm3-028",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 28,
+      "difficulty": "easy",
+      "topicTag": "travel_station",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "questionText": "Read: \"We are waiting for our train on platform…\" Choose the correct picture.",
+      "skillTag": "reading",
+      "points": 1,
+      "passage": "We are waiting for our train on platform three at the station.",
+      "choices": [
+        {
+          "text": "Family waiting on a train platform",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Family swimming in the sea",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Family cooking pizza at home",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "We are waiting for our train on platform three at the station."
+      }
+    },
+    {
+      "questionRef": "sgm3-029",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 29,
+      "difficulty": "medium",
+      "topicTag": "food_market",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "shopping"
+      ],
+      "questionText": "Read: \"Every Friday Dad buys fresh bread and gr…\" Choose the correct picture.",
+      "skillTag": "reading",
+      "points": 1,
+      "passage": "Every Friday Dad buys fresh bread and grapes at the market.",
+      "choices": [
+        {
+          "text": "Man buying bread and grapes at a market",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Man playing basketball alone",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Man flying a plane",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Every Friday Dad buys fresh bread and grapes at the market."
+      }
+    },
+    {
+      "questionRef": "sgm3-030",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 30,
+      "difficulty": "hard",
+      "topicTag": "travel_camping",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "weather"
+      ],
+      "questionText": "Read: \"It is getting dark, so we are putting up…\" Choose the correct picture.",
+      "skillTag": "reading",
+      "points": 1,
+      "passage": "It is getting dark, so we are putting up our tent at the campsite near the lake.",
+      "choices": [
+        {
+          "text": "Family putting up a tent at a campsite",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Family eating breakfast in a café",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Family watching TV on the sofa",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "It is getting dark, so we are putting up our tent at the campsite near the lake."
+      }
+    },
+    {
+      "questionRef": "sgm3-031",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 31,
+      "difficulty": "easy",
+      "topicTag": "food_favourite",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "questionText": "Read the text beginning \"My name is Marco. I am nine years o…\" and choose the best answer.",
+      "skillTag": "reading",
+      "points": 1,
+      "passage": "My name is Marco. I am nine years old. My favourite food is pasta with tomato sauce. I don't like fish, but I love cheese on my pizza. On Saturdays I help Mum make pancakes for breakfast.",
+      "choices": [
+        {
+          "text": "Marco's favourite food is pasta with tomato sauce.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Marco loves eating fish every day.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Marco never helps in the kitchen.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "My name is Marco. I am nine years old. My favourite food is pasta with tomato sauce. I don't like fish, but I love cheese on my pizza. On Saturdays I help Mum make pancakes for breakfast."
+      }
+    },
+    {
+      "questionRef": "sgm3-032",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 32,
+      "difficulty": "easy",
+      "topicTag": "sports_club",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "questionText": "Read the text beginning \"I go to the Sports Club on Mondays…\" and choose the best answer.",
+      "skillTag": "reading",
+      "points": 1,
+      "passage": "I go to the Sports Club on Mondays and Wednesdays. I learn to swim in the pool and play badminton in the hall. My coach is called Mr Lee. He says I am getting faster every week.",
+      "choices": [
+        {
+          "text": "The writer goes to the Sports Club twice a week.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The writer only plays football at the club.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Mr Lee is a maths teacher.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "I go to the Sports Club on Mondays and Wednesdays. I learn to swim in the pool and play badminton in the hall. My coach is called Mr Lee. He says I am getting faster every week."
+      }
+    },
+    {
+      "questionRef": "sgm3-033",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 33,
+      "difficulty": "medium",
+      "topicTag": "travel_trip",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "family"
+      ],
+      "questionText": "Read the text beginning \"Last summer we flew to Spain for tw…\" and choose the best answer.",
+      "skillTag": "reading",
+      "points": 1,
+      "passage": "Last summer we flew to Spain for two weeks. We stayed in a hotel near the sea. Every morning we ate fresh fruit for breakfast and walked along the beach. I collected ten pretty shells.",
+      "choices": [
+        {
+          "text": "They flew to Spain for their holiday.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They travelled to Spain by train.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They stayed in a tent in the mountains.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last summer we flew to Spain for two weeks. We stayed in a hotel near the sea. Every morning we ate fresh fruit for breakfast and walked along the beach. I collected ten pretty shells."
+      }
+    },
+    {
+      "questionRef": "sgm3-034",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 34,
+      "difficulty": "medium",
+      "topicTag": "food_party",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ],
+      "questionText": "Read the text beginning \"Yesterday was Sports Day at school.…\" and choose the best answer.",
+      "skillTag": "reading",
+      "points": 1,
+      "passage": "Yesterday was Sports Day at school. After the races we had a big picnic. There were sandwiches, watermelon and juice for everyone. My team won the relay race and we got gold medals.",
+      "choices": [
+        {
+          "text": "They had a picnic after Sports Day.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Nobody ate any food at Sports Day.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The writer's team lost every race.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Yesterday was Sports Day at school. After the races we had a big picnic. There were sandwiches, watermelon and juice for everyone. My team won the relay race and we got gold medals."
+      }
+    },
+    {
+      "questionRef": "sgm3-035",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 35,
+      "difficulty": "hard",
+      "topicTag": "travel_museum",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "places"
+      ],
+      "questionText": "Read the text beginning \"Next month our class is going to th…\" and choose the best answer.",
+      "skillTag": "reading",
+      "points": 1,
+      "passage": "Next month our class is going to the City Museum by coach. We can see old cars, dinosaur bones and a model of a spaceship. Our teacher says we must bring a packed lunch and a notebook to draw pictures.",
+      "choices": [
+        {
+          "text": "The class is visiting the City Museum next month.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They are going to the museum by plane.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Students cannot bring any food on the trip.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Next month our class is going to the City Museum by coach. We can see old cars, dinosaur bones and a model of a spaceship. Our teacher says we must bring a packed lunch and a notebook to draw pictures."
+      }
+    },
+    {
+      "questionRef": "sgm3-036",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 36,
+      "difficulty": "easy",
+      "topicTag": "food_table",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "questionText": "Look at the picture. Write one sentence about the fruit on the table.",
+      "skillTag": "writing",
+      "points": 1,
+      "cambridgeTaskType": "write_sentence",
+      "prompt": "Look at the picture. Write one sentence about the fruit on the table.",
+      "minWords": 3,
+      "maxWords": 15,
+      "imageUrl": "/images/gold-mocks/starters/sgm3-036-fruit-table.png",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Look at the picture. Write one sentence about the fruit on the table.",
+        "minWords": 3,
+        "maxWords": 15,
+        "imageUrl": "/images/gold-mocks/starters/sgm3-036-fruit-table.png",
+        "rubricId": "gold-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "sgm3-037",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 37,
+      "difficulty": "easy",
+      "topicTag": "sports_football",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "questionText": "Look at the picture. Write one sentence about the boy and the football.",
+      "skillTag": "writing",
+      "points": 1,
+      "cambridgeTaskType": "write_sentence",
+      "prompt": "Look at the picture. Write one sentence about the boy and the football.",
+      "minWords": 3,
+      "maxWords": 15,
+      "imageUrl": "/images/gold-mocks/starters/sgm3-037-boy-football.png",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Look at the picture. Write one sentence about the boy and the football.",
+        "minWords": 3,
+        "maxWords": 15,
+        "imageUrl": "/images/gold-mocks/starters/sgm3-037-boy-football.png",
+        "rubricId": "gold-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "sgm3-038",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 38,
+      "difficulty": "medium",
+      "topicTag": "travel_airport",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "questionText": "Look at the picture. Write one sentence about the family at the airport.",
+      "skillTag": "writing",
+      "points": 1,
+      "cambridgeTaskType": "write_sentence",
+      "prompt": "Look at the picture. Write one sentence about the family at the airport.",
+      "minWords": 4,
+      "maxWords": 18,
+      "imageUrl": "/images/gold-mocks/starters/sgm3-038-airport-family.png",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Look at the picture. Write one sentence about the family at the airport.",
+        "minWords": 4,
+        "maxWords": 18,
+        "imageUrl": "/images/gold-mocks/starters/sgm3-038-airport-family.png",
+        "rubricId": "gold-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "sgm3-039",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 39,
+      "difficulty": "medium",
+      "topicTag": "sports_pool",
+      "grammarTags": [
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "places"
+      ],
+      "questionText": "Look at the picture. Write two or three sentences about the swimming pool.",
+      "skillTag": "writing",
+      "points": 1,
+      "cambridgeTaskType": "picture_description",
+      "prompt": "Look at the picture. Write two or three sentences about the swimming pool.",
+      "taskDescription": "Describe what you can see at the swimming pool.",
+      "minWords": 5,
+      "maxWords": 25,
+      "requiredPoints": [
+        "Say who is at the pool",
+        "Say what people are doing"
+      ],
+      "imageUrl": "/images/gold-mocks/starters/sgm3-039-swimming-pool.png",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Look at the picture. Write two or three sentences about the swimming pool.",
+        "taskDescription": "Describe what you can see at the swimming pool.",
+        "minWords": 5,
+        "maxWords": 25,
+        "imageUrl": "/images/gold-mocks/starters/sgm3-039-swimming-pool.png",
+        "requiredPoints": [
+          "Say who is at the pool",
+          "Say what people are doing"
+        ],
+        "rubricId": "gold-picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "sgm3-040",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 40,
+      "difficulty": "hard",
+      "topicTag": "travel_beach",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "food"
+      ],
+      "questionText": "Look at the picture. Write two or three sentences about the beach picnic.",
+      "skillTag": "writing",
+      "points": 1,
+      "cambridgeTaskType": "picture_description",
+      "prompt": "Look at the picture. Write two or three sentences about the beach picnic.",
+      "taskDescription": "Describe the beach and the food people are eating.",
+      "minWords": 5,
+      "maxWords": 25,
+      "requiredPoints": [
+        "Say where the people are",
+        "Say what food you can see"
+      ],
+      "imageUrl": "/images/gold-mocks/starters/sgm3-040-beach-picnic.png",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Look at the picture. Write two or three sentences about the beach picnic.",
+        "taskDescription": "Describe the beach and the food people are eating.",
+        "minWords": 5,
+        "maxWords": 25,
+        "imageUrl": "/images/gold-mocks/starters/sgm3-040-beach-picnic.png",
+        "requiredPoints": [
+          "Say where the people are",
+          "Say what food you can see"
+        ],
+        "rubricId": "gold-picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "sgm3-041",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 41,
+      "difficulty": "medium",
+      "topicTag": "sports_hall",
+      "grammarTags": [
+        "there_is_are",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "places"
+      ],
+      "questionText": "Look at the two sports hall pictures. Tell your partner about the differences.",
+      "skillTag": "speaking",
+      "points": 5,
+      "cambridgeTaskType": "speaking_picture_description",
+      "prompt": "Look at the two pictures of a sports hall. Tell your partner about five differences between them.",
+      "maxDurationSeconds": 120,
+      "followUpQuestions": [
+        "How many basketballs are on the floor in picture A?",
+        "What colour is the goal in picture B?",
+        "Is there a coach in both pictures?",
+        "Where is the water bottle in picture A?",
+        "What are the children doing in picture B?"
+      ],
+      "imageUrl": "/images/gold-mocks/starters/sgm3-041-sports-hall-pair.png",
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_picture_description",
+        "prompt": "Look at the two pictures of a sports hall. Tell your partner about five differences between them.",
+        "maxDurationSeconds": 120,
+        "followUpQuestions": [
+          "How many basketballs are on the floor in picture A?",
+          "What colour is the goal in picture B?",
+          "Is there a coach in both pictures?",
+          "Where is the water bottle in picture A?",
+          "What are the children doing in picture B?"
+        ],
+        "imageUrl": "/images/gold-mocks/starters/sgm3-041-sports-hall-pair.png",
+        "rubricId": "gold-speaking_picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "sgm3-042",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 42,
+      "difficulty": "easy",
+      "topicTag": "about_you_food_sport",
+      "grammarTags": [
+        "present_simple",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "sports"
+      ],
+      "questionText": "Answer the examiner's questions about about you food sport.",
+      "skillTag": "speaking",
+      "points": 5,
+      "cambridgeTaskType": "speaking_personal_questions",
+      "prompt": "Answer the examiner's questions about yourself, your favourite food and sports you like.",
+      "maxDurationSeconds": 180,
+      "followUpQuestions": [
+        "What's your name?",
+        "How old are you?",
+        "What is your favourite food?",
+        "What sport do you like playing?",
+        "Have you ever travelled to another town or city?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_personal_questions",
+        "prompt": "Answer the examiner's questions about yourself, your favourite food and sports you like.",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "What's your name?",
+          "How old are you?",
+          "What is your favourite food?",
+          "What sport do you like playing?",
+          "Have you ever travelled to another town or city?"
+        ],
+        "rubricId": "gold-speaking_personal_questions-v1"
+      }
+    },
+    {
+      "questionRef": "sgm3-043",
+      "partSlug": "speaking-part-3",
+      "sectionSlug": "speaking",
+      "sortOrder": 43,
+      "difficulty": "medium",
+      "topicTag": "story_train_trip",
+      "grammarTags": [
+        "past_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "food",
+        "family"
+      ],
+      "questionText": "Look at these pictures and tell the story of Ana's train trip to the city.",
+      "skillTag": "speaking",
+      "points": 5,
+      "cambridgeTaskType": "speaking_storytelling",
+      "prompt": "Look at these pictures and tell the story of Ana's train trip to the city.",
+      "maxDurationSeconds": 180,
+      "followUpQuestions": [
+        "Who travelled with Ana?",
+        "What did they buy at the station?",
+        "What did Ana eat at the café?",
+        "What did they see from the train window?",
+        "What did Ana buy before going home?"
+      ],
+      "pictureSequence": [
+        "/images/gold-mocks/starters/sgm3-043-story-1-tickets.png",
+        "/images/gold-mocks/starters/sgm3-043-story-2-train.png",
+        "/images/gold-mocks/starters/sgm3-043-story-3-cafe.png",
+        "/images/gold-mocks/starters/sgm3-043-story-4-souvenir.png"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_storytelling",
+        "prompt": "Look at these pictures and tell the story of Ana's train trip to the city.",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "Who travelled with Ana?",
+          "What did they buy at the station?",
+          "What did Ana eat at the café?",
+          "What did they see from the train window?",
+          "What did Ana buy before going home?"
+        ],
+        "pictureSequence": [
+          "/images/gold-mocks/starters/sgm3-043-story-1-tickets.png",
+          "/images/gold-mocks/starters/sgm3-043-story-2-train.png",
+          "/images/gold-mocks/starters/sgm3-043-story-3-cafe.png",
+          "/images/gold-mocks/starters/sgm3-043-story-4-souvenir.png"
+        ],
+        "rubricId": "gold-speaking_storytelling-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "sports_football",
+      "food_cooking",
+      "travel_airport",
+      "sports_swimming",
+      "travel_train",
+      "food_breakfast",
+      "sports_tennis",
+      "travel_holiday",
+      "food_lunch",
+      "travel_bus",
+      "food_fruit",
+      "sports_basketball",
+      "travel_plane",
+      "food_restaurant",
+      "travel_ferry",
+      "food_picnic",
+      "sports_ball",
+      "travel_map",
+      "food_cake",
+      "travel_boat",
+      "food",
+      "sports",
+      "travel",
+      "food_drink",
+      "food_kitchen",
+      "sports_running",
+      "travel_station",
+      "food_market",
+      "travel_camping",
+      "food_favourite",
+      "sports_club",
+      "travel_trip",
+      "food_party",
+      "travel_museum",
+      "food_table",
+      "sports_pool",
+      "travel_beach",
+      "sports_hall",
+      "about_you_food_sport",
+      "story_train_trip"
+    ],
+    "distinctGrammarPatterns": [
+      "verb_be",
+      "present_continuous",
+      "have_got",
+      "present_simple",
+      "future_going_to",
+      "there_is_are",
+      "imperatives",
+      "articles",
+      "past_simple",
+      "modal_can",
+      "prepositions",
+      "past_continuous"
+    ],
+    "subskillsRepresented": [
+      "listening",
+      "reading",
+      "writing",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "easy": 24,
+      "medium": 14,
+      "hard": 5
+    },
+    "notes": "Authored for M3.1 Gold Mock specification."
+  },
+  "gold": {
+    "tier": "gold",
+    "goldMockId": "starters-gold-mock-3",
+    "goldMockVersion": "1.0.0",
+    "specificationId": "gold-mock-starters-v1",
+    "specificationVersion": "1.0.0",
+    "authoredAt": "2026-06-22T00:00:00.000Z",
+    "status": "published",
+    "academicAuthority": true,
+    "authoringMethod": "manual",
+    "qaChecklistVersion": "1.0.0"
+  },
+  "specification": {
+    "specificationId": "gold-mock-starters-v1",
+    "specificationVersion": "1.0.0",
+    "level": "starters",
+    "coverageTargets": {
+      "minDistinctGrammarTags": 4,
+      "minDistinctVocabularyTopics": 5,
+      "minSkillsRepresented": 4,
+      "difficultyDistribution": {
+        "easy": 0.6,
+        "medium": 0.3,
+        "hard": 0.1
+      },
+      "maxTopicShare": 0.25,
+      "requireWritingTasks": true,
+      "requireSpeakingTasks": true
+    }
+  }
+}

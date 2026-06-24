@@ -1,0 +1,12 @@
+{
+  "id": "speaking-example-personal-questions",
+  "question_type": "speaking",
+  "question_text": "Answer the questions about you.",
+  "points": 0,
+  "content": {
+    "cambridgeTaskType": "speaking_personal_questions",
+    "prompt": "Tell me about your family.",
+    "followUpQuestions": ["How old are you?", "Where do you live?"],
+    "maxDurationSeconds": 90
+  }
+}

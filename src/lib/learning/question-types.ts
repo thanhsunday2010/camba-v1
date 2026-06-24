@@ -1,4 +1,6 @@
 import type { ExerciseType } from "@/types/database";
+import { isWritingQuestion } from "@/lib/writing/writing-utils";
+import { isSpeakingQuestion } from "@/lib/speaking/speaking-utils";
 
 /** DB legacy value mapped to application exercise type */
 const LEGACY_QUESTION_TYPE_MAP: Record<string, ExerciseType> = {
@@ -21,4 +23,16 @@ export function isMcStyleQuestionType(type: string): boolean {
     normalized === "reading_comprehension" ||
     normalized === "image_selection"
   );
+}
+
+export function isWritingQuestionType(
+  question: Pick<{ question_type: string; content: Record<string, unknown> }, "question_type" | "content">
+): boolean {
+  return isWritingQuestion(question as Parameters<typeof isWritingQuestion>[0]);
+}
+
+export function isSpeakingQuestionType(
+  question: Pick<{ question_type: string; content: Record<string, unknown> }, "question_type" | "content">
+): boolean {
+  return isSpeakingQuestion(question as Parameters<typeof isSpeakingQuestion>[0]);
 }

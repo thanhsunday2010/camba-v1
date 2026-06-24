@@ -1,0 +1,20 @@
+{
+  "templateVersion": "1.0.0",
+  "skill": "listening",
+  "description": "Template for listening gap-fill / MCQ with audio context.",
+  "requiredFields": {
+    "part": "listening-part-2",
+    "questionType": "gap_fill | listening",
+    "content": {
+      "questionText": "Listen and write the word.",
+      "template": "She has got a [0] cat.",
+      "correctAnswers": ["black"],
+      "audioUrl": "/audio/item-bank/{level}/{id}.mp3",
+      "transcript": "Full transcript for authoring QA."
+    }
+  },
+  "partContext": {
+    "audio": { "src": "/audio/...", "transcript": "..." },
+    "instructions": "Part-level instructions shown once."
+  }
+}

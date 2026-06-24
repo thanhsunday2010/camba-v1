@@ -1,0 +1,14 @@
+{
+  "id": "writing-example-write-note",
+  "question_type": "writing",
+  "question_text": "Write a short note to your friend.",
+  "points": 0,
+  "content": {
+    "cambridgeTaskType": "write_note",
+    "prompt": "Your friend is coming to your house. Write a note with the time and one thing to bring.",
+    "taskDescription": "Write a note (25–35 words).",
+    "minWords": 10,
+    "maxWords": 40,
+    "requiredPoints": ["time", "one thing to bring"]
+  }
+}

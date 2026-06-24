@@ -1,0 +1,28 @@
+{
+  "templateVersion": "1.0.0",
+  "skill": "writing",
+  "description": "M2.2-compatible writing item template.",
+  "requiredFields": {
+    "questionType": "writing",
+    "content": {
+      "prompt": "Write a message to your friend about...",
+      "instructions": "Write 25–35 words. Include all three points.",
+      "writingTaskType": "writing_email | writing_message | writing_story | writing_article | writing_review | write_sentence | write_note | picture_description",
+      "cambridgeTaskType": "M2.2 runtime alias",
+      "minWords": 25,
+      "maxWords": 35,
+      "requiredPoints": ["Point 1", "Point 2", "Point 3"],
+      "rubricId": "cambridge-write-email-v1"
+    }
+  },
+  "supportedWritingTypes": [
+    "writing_email",
+    "writing_story",
+    "writing_message",
+    "writing_article",
+    "writing_review",
+    "write_sentence",
+    "write_note",
+    "picture_description"
+  ]
+}

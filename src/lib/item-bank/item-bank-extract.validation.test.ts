@@ -18,7 +18,9 @@ describe("item bank extraction", () => {
 
     expect(listen05?.grammarTags).toEqual(["verb_be"]);
     expect(listen05?.vocabularyTopics).toEqual(["family"]);
-    expect(listen05?.content.template).toBe("My name [0] Tom.");
+    expect(listen05?.content && "template" in listen05.content
+      ? listen05.content.template
+      : undefined).toBe("My name [0] Tom.");
     expect(listen05?.authoringMetadata.sourceQuestionRef).toBe("listen-05");
   });
 });

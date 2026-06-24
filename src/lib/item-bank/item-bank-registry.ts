@@ -1,13 +1,25 @@
-import { readFileSync, existsSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join, resolve } from "node:path";
+
 import type {
   ItemBankFile,
   ItemBankQuestion,
   ItemLevel,
 } from "@/lib/item-bank/item-bank-types";
+import {
+  CAMBRIDGE_ITEM_BANK_ROOT,
+  loadUnifiedItemBank,
+  loadUnifiedItemBankOrBuild,
+} from "@/lib/item-bank/item-bank-builder";
 import { ITEM_BANK_LEVELS } from "@/lib/item-bank/item-bank-validation";
 
-const DEFAULT_BANK_ROOT = resolve(process.cwd(), "data/item-bank");
+const LEGACY_BANK_ROOT = resolve(process.cwd(), "data/item-bank");
+
+export type ItemBankRegistryOptions = {
+  rootDir?: string;
+  /** Prefer cambridge unified bank (gold + expansion). */
+  preferCambridgeBank?: boolean;
+};
 
 function bankFilePath(root: string, level: ItemLevel): string {
   return join(root, level, "items.json");
@@ -19,18 +31,21 @@ function readBankFile(root: string, level: ItemLevel): ItemBankFile | null {
   return JSON.parse(readFileSync(path, "utf8")) as ItemBankFile;
 }
 
-export type ItemBankRegistryOptions = {
-  rootDir?: string;
-};
-
-/** Load all item banks from the filesystem (no DB). */
+/** Load all item banks — prefers cambridge-item-banks when present. */
 export function loadItemBank(options: ItemBankRegistryOptions = {}): ItemBankQuestion[] {
-  const root = options.rootDir ?? DEFAULT_BANK_ROOT;
+  const preferCambridge = options.preferCambridgeBank !== false;
+  const root = options.rootDir ?? (preferCambridge ? CAMBRIDGE_ITEM_BANK_ROOT : LEGACY_BANK_ROOT);
   const all: ItemBankQuestion[] = [];
 
   for (const level of ITEM_BANK_LEVELS) {
     const bank = readBankFile(root, level);
-    if (bank?.items?.length) all.push(...bank.items);
+    if (bank?.items?.length) {
+      all.push(...bank.items);
+      continue;
+    }
+    if (preferCambridge) {
+      all.push(...loadUnifiedItemBankOrBuild(level).items);
+    }
   }
 
   return all;
@@ -40,8 +55,12 @@ export function loadItemBankFile(
   level: ItemLevel,
   options: ItemBankRegistryOptions = {}
 ): ItemBankFile | null {
-  const root = options.rootDir ?? DEFAULT_BANK_ROOT;
-  return readBankFile(root, level);
+  const preferCambridge = options.preferCambridgeBank !== false;
+  const root = options.rootDir ?? (preferCambridge ? CAMBRIDGE_ITEM_BANK_ROOT : LEGACY_BANK_ROOT);
+  const file = readBankFile(root, level);
+  if (file?.items?.length) return file;
+  if (preferCambridge) return loadUnifiedItemBank(level) ?? loadUnifiedItemBankOrBuild(level);
+  return null;
 }
 
 export function getItemsByLevel(
@@ -82,13 +101,15 @@ export function getItemsByVocabularyTopic(
 export function listAvailableItemBankLevels(
   options: ItemBankRegistryOptions = {}
 ): ItemLevel[] {
-  const root = options.rootDir ?? DEFAULT_BANK_ROOT;
-  if (!existsSync(root)) return [];
+  const root = options.rootDir ?? CAMBRIDGE_ITEM_BANK_ROOT;
+  if (!existsSync(root)) return ITEM_BANK_LEVELS;
 
-  return readdirSync(root, { withFileTypes: true })
+  const fromDisk = readdirSync(root, { withFileTypes: true })
     .filter((d) => d.isDirectory())
     .map((d) => d.name)
-    .filter((name): name is ItemLevel =>
-      (ITEM_BANK_LEVELS as string[]).includes(name)
-    );
+    .filter((name): name is ItemLevel => (ITEM_BANK_LEVELS as string[]).includes(name));
+
+  return fromDisk.length ? fromDisk : ITEM_BANK_LEVELS;
 }
+
+export { CAMBRIDGE_ITEM_BANK_ROOT, LEGACY_BANK_ROOT };

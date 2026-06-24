@@ -1,0 +1,2560 @@
+{
+  "metadata": {
+    "manifestId": "cambridge-ket-a-v1",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-ket-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "ket",
+    "title": "A2 Key for Schools — Form A",
+    "description": "Assembled reference exam for ket (architecture validation).",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000005",
+    "timeLimitMinutes": 110,
+    "totalScore": 125,
+    "status": "review",
+    "authoringNotes": "M2.4 golden reference — not production content.",
+    "stableSlug": "ket-assembled-a"
+  },
+  "sections": [
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "sortOrder": 1,
+      "skillSlug": "reading_writing",
+      "timeLimitMinutes": 60,
+      "partSlugs": [
+        "rw-part-1",
+        "rw-part-2",
+        "rw-part-3",
+        "rw-part-4",
+        "rw-part-5",
+        "rw-part-6",
+        "rw-part-7"
+      ],
+      "questionRefs": [
+        "ket-rw-part-1-multiple_choice-111",
+        "ket-rw-part-1-multiple_choice-054",
+        "ket-rw-part-1-multiple_choice-106",
+        "ket-rw-part-1-multiple_choice-114",
+        "ket-rw-part-1-multiple_choice-130",
+        "ket-rw-part-1-multiple_choice-018",
+        "ket-rw-part-2-matching-098",
+        "ket-rw-part-2-matching-091",
+        "ket-rw-part-2-matching-084",
+        "ket-rw-part-2-matching-096",
+        "ket-rw-part-2-matching-140",
+        "ket-rw-part-2-matching-099",
+        "ket-rw-part-2-matching-064",
+        "ket-rw-part-3-multiple_choice-069",
+        "ket-rw-part-3-reading_comprehension-030",
+        "ket-rw-part-3-reading_comprehension-078",
+        "ket-rw-part-3-multiple_choice-063",
+        "ket-rw-part-3-reading_comprehension-056",
+        "ket-rw-part-4-multiple_choice-024",
+        "ket-rw-part-4-multiple_choice-112",
+        "ket-rw-part-4-multiple_choice-000",
+        "ket-rw-part-4-multiple_choice-027",
+        "ket-rw-part-4-multiple_choice-120",
+        "ket-rw-part-4-multiple_choice-121",
+        "ket-rw-part-5-open_cloze-045",
+        "ket-rw-part-5-open_cloze-048",
+        "ket-rw-part-5-open_cloze-141",
+        "ket-rw-part-5-open_cloze-142",
+        "ket-rw-part-5-open_cloze-134",
+        "ket-rw-part-5-open_cloze-079",
+        "ket-rw-part-6-write_email-023",
+        "ket-rw-part-7-write_story-020"
+      ]
+    },
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 2,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 30,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4",
+        "listening-part-5"
+      ],
+      "questionRefs": [
+        "ket-listening-part-1-audio_multiple_choice-082",
+        "ket-listening-part-1-audio_multiple_choice-085",
+        "ket-listening-part-1-audio_multiple_choice-092",
+        "ket-listening-part-1-audio_multiple_choice-084",
+        "ket-listening-part-1-audio_multiple_choice-097",
+        "ket-listening-part-2-audio_multiple_choice-056",
+        "ket-listening-part-2-audio_multiple_choice-078",
+        "ket-listening-part-2-audio_multiple_choice-048",
+        "ket-listening-part-2-audio_multiple_choice-039",
+        "ket-listening-part-2-audio_multiple_choice-041",
+        "ket-listening-part-3-audio_gap_fill-000",
+        "ket-listening-part-3-audio_gap_fill-027",
+        "ket-listening-part-3-audio_gap_fill-116",
+        "ket-listening-part-3-audio_gap_fill-005",
+        "ket-listening-part-3-audio_gap_fill-119",
+        "ket-listening-part-4-audio_multiple_choice-031",
+        "ket-listening-part-4-audio_multiple_choice-045",
+        "ket-listening-part-4-audio_multiple_choice-067",
+        "ket-listening-part-4-audio_multiple_choice-039",
+        "ket-listening-part-4-audio_multiple_choice-063",
+        "ket-listening-part-5-audio_matching-056",
+        "ket-listening-part-5-audio_matching-004",
+        "ket-listening-part-5-audio_matching-108",
+        "ket-listening-part-5-audio_matching-083",
+        "ket-listening-part-5-audio_matching-071"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 3,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 12,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2"
+      ],
+      "questionRefs": [
+        "ket-speaking-part-1-conversation-017",
+        "ket-speaking-part-2-conversation-000"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "ket-rw-part-1-multiple_choice-111",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 1,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-1 #112.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-1 #112."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-1-multiple_choice-054",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "skillTag": "reading",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "food"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-1 #55.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-1 #55."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-1-multiple_choice-106",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "numbers",
+      "skillTag": "reading",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "numbers",
+        "community"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-1 #107.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-1 #107."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-1-multiple_choice-114",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "animals",
+      "skillTag": "reading",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "sports"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-1 #115.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-1 #115."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-1-multiple_choice-130",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "nature",
+      "skillTag": "reading",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-1 #131.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-1 #131."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-1-multiple_choice-018",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "nature",
+      "skillTag": "reading",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-1 #19.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-1 #19."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-2-matching-098",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 7,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "jobs",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_simple",
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "jobs",
+        "places"
+      ],
+      "questionText": "Match the items — ket rw-part-2 #99.",
+      "content": {
+        "questionText": "Match the items — ket rw-part-2 #99."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-2-matching-091",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 8,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "sports",
+      "skillTag": "reading",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "clothes"
+      ],
+      "questionText": "Match the items — ket rw-part-2 #92.",
+      "content": {
+        "questionText": "Match the items — ket rw-part-2 #92."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-2-matching-084",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 9,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "family",
+      "skillTag": "reading",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Match the items — ket rw-part-2 #85.",
+      "content": {
+        "questionText": "Match the items — ket rw-part-2 #85."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-2-matching-096",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 10,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "clothes",
+      "skillTag": "reading",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ],
+      "questionText": "Match the items — ket rw-part-2 #97.",
+      "content": {
+        "questionText": "Match the items — ket rw-part-2 #97."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-2-matching-140",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 11,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "family",
+      "skillTag": "reading",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Match the items — ket rw-part-2 #141.",
+      "content": {
+        "questionText": "Match the items — ket rw-part-2 #141."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-2-matching-099",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 12,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "travel",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ],
+      "questionText": "Match the items — ket rw-part-2 #100.",
+      "content": {
+        "questionText": "Match the items — ket rw-part-2 #100."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-2-matching-064",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 13,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "leisure",
+      "skillTag": "reading",
+      "grammarTags": [
+        "conjunctions",
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "colours"
+      ],
+      "questionText": "Match the items — ket rw-part-2 #65.",
+      "content": {
+        "questionText": "Match the items — ket rw-part-2 #65."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-3-multiple_choice-069",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 14,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "colours",
+      "skillTag": "reading",
+      "grammarTags": [
+        "imperatives",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-3 #70.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-3 #70."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-3-reading_comprehension-030",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 15,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "medium",
+      "topicTag": "animals",
+      "skillTag": "reading",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "sports"
+      ],
+      "questionText": "Read and answer — ket rw-part-3 #31.",
+      "content": {
+        "questionText": "Read and answer — ket rw-part-3 #31.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-3-reading_comprehension-078",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 16,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "medium",
+      "topicTag": "numbers",
+      "skillTag": "reading",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "numbers",
+        "community"
+      ],
+      "questionText": "Read and answer — ket rw-part-3 #79.",
+      "content": {
+        "questionText": "Read and answer — ket rw-part-3 #79.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-3-multiple_choice-063",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 17,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "sports",
+      "skillTag": "reading",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "clothes"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-3 #64.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-3 #64."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-3-reading_comprehension-056",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 18,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "medium",
+      "topicTag": "family",
+      "skillTag": "reading",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Read and answer — ket rw-part-3 #57.",
+      "content": {
+        "questionText": "Read and answer — ket rw-part-3 #57.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-4-multiple_choice-024",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 19,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "hobbies",
+      "skillTag": "reading",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-4 #25.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-4 #25."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-4-multiple_choice-112",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 20,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "family",
+      "skillTag": "reading",
+      "grammarTags": [
+        "conjunctions",
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-4 #113.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-4 #113."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-4-multiple_choice-000",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 21,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "family",
+      "skillTag": "reading",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-4 #1.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-4 #1."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-4-multiple_choice-027",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 22,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-4 #28.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-4 #28."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-4-multiple_choice-120",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 23,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "leisure",
+      "skillTag": "reading",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "colours"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-4 #121.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-4 #121."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-4-multiple_choice-121",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 24,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "transport",
+      "skillTag": "reading",
+      "grammarTags": [
+        "present_continuous",
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "transport",
+        "jobs"
+      ],
+      "questionText": "Choose the correct answer — ket rw-part-4 #122.",
+      "content": {
+        "questionText": "Choose the correct answer — ket rw-part-4 #122."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-rw-part-5-open_cloze-045",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 25,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "skillTag": "reading",
+      "grammarTags": [
+        "imperatives",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "technology",
+        "numbers"
+      ],
+      "questionText": "Complete the gap — ket rw-part-5 #46.",
+      "content": {
+        "questionText": "Complete the gap — ket rw-part-5 #46.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "ket-rw-part-5-open_cloze-048",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 26,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "body",
+      "skillTag": "reading",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "body",
+        "environment"
+      ],
+      "questionText": "Complete the gap — ket rw-part-5 #49.",
+      "content": {
+        "questionText": "Complete the gap — ket rw-part-5 #49.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "ket-rw-part-5-open_cloze-141",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 27,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "friends",
+      "skillTag": "reading",
+      "grammarTags": [
+        "imperatives",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "home"
+      ],
+      "questionText": "Complete the gap — ket rw-part-5 #142.",
+      "content": {
+        "questionText": "Complete the gap — ket rw-part-5 #142.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "ket-rw-part-5-open_cloze-142",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 28,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "animals",
+      "skillTag": "reading",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "sports"
+      ],
+      "questionText": "Complete the gap — ket rw-part-5 #143.",
+      "content": {
+        "questionText": "Complete the gap — ket rw-part-5 #143.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "ket-rw-part-5-open_cloze-134",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 29,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "numbers",
+      "skillTag": "reading",
+      "grammarTags": [
+        "modal_can",
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "numbers",
+        "community"
+      ],
+      "questionText": "Complete the gap — ket rw-part-5 #135.",
+      "content": {
+        "questionText": "Complete the gap — ket rw-part-5 #135.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "ket-rw-part-5-open_cloze-079",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 30,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "time",
+      "skillTag": "reading",
+      "grammarTags": [
+        "superlatives",
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "time",
+        "family"
+      ],
+      "questionText": "Complete the gap — ket rw-part-5 #80.",
+      "content": {
+        "questionText": "Complete the gap — ket rw-part-5 #80.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "ket-rw-part-6-write_email-023",
+      "partSlug": "rw-part-6",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 31,
+      "points": 15,
+      "blueprintQuestionType": "writing_message",
+      "cambaQuestionType": "writing",
+      "difficulty": "easy",
+      "topicTag": "time",
+      "skillTag": "writing",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "time",
+        "family"
+      ],
+      "questionText": "Writing task: ket rw-part-6 writing #24.",
+      "content": {
+        "cambridgeTaskType": "write_email",
+        "prompt": "Writing task: ket rw-part-6 writing #24.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 25,
+        "maxWords": 100,
+        "requiredPoints": [
+          "Respond to all bullet points",
+          "Use appropriate register"
+        ],
+        "rubricId": "cambridge-write_email-v1"
+      }
+    },
+    {
+      "questionRef": "ket-rw-part-7-write_story-020",
+      "partSlug": "rw-part-7",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 32,
+      "points": 15,
+      "blueprintQuestionType": "writing_message",
+      "cambaQuestionType": "writing",
+      "difficulty": "easy",
+      "topicTag": "body",
+      "skillTag": "writing",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "body",
+        "environment"
+      ],
+      "questionText": "Writing task: ket rw-part-7 writing #21.",
+      "content": {
+        "cambridgeTaskType": "write_story",
+        "prompt": "Writing task: ket rw-part-7 writing #21.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 35,
+        "maxWords": 100,
+        "imageUrl": "/images/placeholders/writing-story.svg",
+        "rubricId": "cambridge-write_story-v1"
+      }
+    },
+    {
+      "questionRef": "ket-listening-part-1-audio_multiple_choice-082",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 33,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "culture",
+      "skillTag": "listening",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "food"
+      ],
+      "questionText": "Listen and choose — ket listening-part-1 #83.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-1 #83.",
+        "audioUrl": "/audio/assembly/ket/listening-part-1-82.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-1-audio_multiple_choice-085",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 34,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "friends",
+      "skillTag": "listening",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "home"
+      ],
+      "questionText": "Listen and choose — ket listening-part-1 #86.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-1 #86.",
+        "audioUrl": "/audio/assembly/ket/listening-part-1-85.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-1-audio_multiple_choice-092",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 35,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "leisure",
+      "skillTag": "listening",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "colours"
+      ],
+      "questionText": "Listen and choose — ket listening-part-1 #93.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-1 #93.",
+        "audioUrl": "/audio/assembly/ket/listening-part-1-92.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-1-audio_multiple_choice-084",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 36,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "family",
+      "skillTag": "listening",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Listen and choose — ket listening-part-1 #85.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-1 #85.",
+        "audioUrl": "/audio/assembly/ket/listening-part-1-84.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-1-audio_multiple_choice-097",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 37,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "colours",
+      "skillTag": "listening",
+      "grammarTags": [
+        "present_continuous",
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ],
+      "questionText": "Listen and choose — ket listening-part-1 #98.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-1 #98.",
+        "audioUrl": "/audio/assembly/ket/listening-part-1-97.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-2-audio_multiple_choice-056",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 38,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "family",
+      "skillTag": "listening",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Listen and choose — ket listening-part-2 #57.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-2 #57.",
+        "audioUrl": "/audio/assembly/ket/listening-part-2-56.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-2-audio_multiple_choice-078",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 39,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "numbers",
+      "skillTag": "listening",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "numbers",
+        "community"
+      ],
+      "questionText": "Listen and choose — ket listening-part-2 #79.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-2 #79.",
+        "audioUrl": "/audio/assembly/ket/listening-part-2-78.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-2-audio_multiple_choice-048",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 40,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "body",
+      "skillTag": "listening",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "body",
+        "environment"
+      ],
+      "questionText": "Listen and choose — ket listening-part-2 #49.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-2 #49.",
+        "audioUrl": "/audio/assembly/ket/listening-part-2-48.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-2-audio_multiple_choice-039",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 41,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "shopping",
+      "skillTag": "listening",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Listen and choose — ket listening-part-2 #40.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-2 #40.",
+        "audioUrl": "/audio/assembly/ket/listening-part-2-39.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-2-audio_multiple_choice-041",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 42,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "colours",
+      "skillTag": "listening",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ],
+      "questionText": "Listen and choose — ket listening-part-2 #42.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-2 #42.",
+        "audioUrl": "/audio/assembly/ket/listening-part-2-41.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-3-audio_gap_fill-000",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 43,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "easy",
+      "topicTag": "family",
+      "skillTag": "listening",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Complete the gap — ket listening-part-3 #1.",
+      "content": {
+        "questionText": "Complete the gap — ket listening-part-3 #1.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "ket-listening-part-3-audio_gap_fill-027",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 44,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "easy",
+      "topicTag": "community",
+      "skillTag": "listening",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Complete the gap — ket listening-part-3 #28.",
+      "content": {
+        "questionText": "Complete the gap — ket listening-part-3 #28.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "ket-listening-part-3-audio_gap_fill-116",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 45,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "easy",
+      "topicTag": "drink",
+      "skillTag": "listening",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ],
+      "questionText": "Complete the gap — ket listening-part-3 #117.",
+      "content": {
+        "questionText": "Complete the gap — ket listening-part-3 #117.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "ket-listening-part-3-audio_gap_fill-005",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 46,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "easy",
+      "topicTag": "school",
+      "skillTag": "listening",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "weather"
+      ],
+      "questionText": "Complete the gap — ket listening-part-3 #6.",
+      "content": {
+        "questionText": "Complete the gap — ket listening-part-3 #6.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "ket-listening-part-3-audio_gap_fill-119",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 47,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "easy",
+      "topicTag": "sports",
+      "skillTag": "listening",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "clothes"
+      ],
+      "questionText": "Complete the gap — ket listening-part-3 #120.",
+      "content": {
+        "questionText": "Complete the gap — ket listening-part-3 #120.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "ket-listening-part-4-audio_multiple_choice-031",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 48,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "food",
+      "skillTag": "listening",
+      "grammarTags": [
+        "superlatives",
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ],
+      "questionText": "Listen and choose — ket listening-part-4 #32.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-4 #32.",
+        "audioUrl": "/audio/assembly/ket/listening-part-4-31.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-4-audio_multiple_choice-045",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 49,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "skillTag": "listening",
+      "grammarTags": [
+        "imperatives",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "technology",
+        "numbers"
+      ],
+      "questionText": "Listen and choose — ket listening-part-4 #46.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-4 #46.",
+        "audioUrl": "/audio/assembly/ket/listening-part-4-45.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-4-audio_multiple_choice-067",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 50,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "shopping",
+      "skillTag": "listening",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Listen and choose — ket listening-part-4 #68.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-4 #68.",
+        "audioUrl": "/audio/assembly/ket/listening-part-4-67.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-4-audio_multiple_choice-039",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 51,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "shopping",
+      "skillTag": "listening",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Listen and choose — ket listening-part-4 #40.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-4 #40.",
+        "audioUrl": "/audio/assembly/ket/listening-part-4-39.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-4-audio_multiple_choice-063",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 52,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "sports",
+      "skillTag": "listening",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "clothes"
+      ],
+      "questionText": "Listen and choose — ket listening-part-4 #64.",
+      "content": {
+        "questionText": "Listen and choose — ket listening-part-4 #64.",
+        "audioUrl": "/audio/assembly/ket/listening-part-4-63.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-5-audio_matching-056",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 53,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "family",
+      "skillTag": "listening",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Match the items — ket listening-part-5 #57.",
+      "content": {
+        "questionText": "Match the items — ket listening-part-5 #57."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-5-audio_matching-004",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 54,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "drink",
+      "skillTag": "listening",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ],
+      "questionText": "Match the items — ket listening-part-5 #5.",
+      "content": {
+        "questionText": "Match the items — ket listening-part-5 #5."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-5-audio_matching-108",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 55,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "hobbies",
+      "skillTag": "listening",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Match the items — ket listening-part-5 #109.",
+      "content": {
+        "questionText": "Match the items — ket listening-part-5 #109."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-5-audio_matching-083",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 56,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "community",
+      "skillTag": "listening",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Match the items — ket listening-part-5 #84.",
+      "content": {
+        "questionText": "Match the items — ket listening-part-5 #84."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-listening-part-5-audio_matching-071",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 57,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "travel",
+      "skillTag": "listening",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ],
+      "questionText": "Match the items — ket listening-part-5 #72.",
+      "content": {
+        "questionText": "Match the items — ket listening-part-5 #72."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "ket-speaking-part-1-conversation-017",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 58,
+      "points": 20,
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "technology",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "technology",
+        "numbers"
+      ],
+      "questionText": "Speaking task: ket speaking-part-1 speaking #18.",
+      "content": {
+        "cambridgeTaskType": "speaking_discussion",
+        "prompt": "Speaking task: ket speaking-part-1 speaking #18.",
+        "taskDescription": "Discuss the topic with your partner.",
+        "followUpQuestions": [
+          "What do you think?",
+          "Why do you prefer that?"
+        ],
+        "maxDurationSeconds": 240,
+        "rubricId": "cambridge-conversation-v1"
+      }
+    },
+    {
+      "questionRef": "ket-speaking-part-2-conversation-000",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 59,
+      "points": 20,
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "family",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Speaking task: ket speaking-part-2 speaking #1.",
+      "content": {
+        "cambridgeTaskType": "speaking_discussion",
+        "prompt": "Speaking task: ket speaking-part-2 speaking #1.",
+        "taskDescription": "Discuss the topic with your partner.",
+        "followUpQuestions": [
+          "What do you think?",
+          "Why do you prefer that?"
+        ],
+        "maxDurationSeconds": 240,
+        "rubricId": "cambridge-conversation-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "community",
+      "culture",
+      "numbers",
+      "animals",
+      "nature",
+      "jobs",
+      "sports",
+      "family",
+      "clothes",
+      "travel",
+      "leisure",
+      "colours",
+      "hobbies",
+      "transport",
+      "technology",
+      "body",
+      "friends",
+      "time",
+      "shopping",
+      "drink",
+      "school",
+      "food"
+    ],
+    "distinctGrammarPatterns": [
+      "modal_must",
+      "verb_be",
+      "comparatives",
+      "pronouns",
+      "possessives",
+      "question_forms",
+      "imperatives",
+      "past_simple",
+      "future_going_to",
+      "have_got",
+      "relative_clauses",
+      "countable_uncountable",
+      "present_simple",
+      "past_continuous",
+      "there_is_are",
+      "linking_words",
+      "conjunctions",
+      "articles",
+      "prepositions",
+      "present_continuous",
+      "future_will",
+      "modal_can",
+      "adverbs_frequency",
+      "superlatives"
+    ],
+    "subskillsRepresented": [
+      "reading",
+      "writing",
+      "listening",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "easy": 21,
+      "medium": 27,
+      "hard": 11
+    },
+    "notes": "Generated by M2.4 exam assembly engine."
+  }
+}

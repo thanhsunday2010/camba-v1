@@ -1,0 +1,20 @@
+=== Cambridge Exam Assembly Report ===
+Level: PET | Version: A
+Blueprint: cambridge-pet-v1@1.0.0
+Seed: camba-m2-4-reference:pet:A
+Items: 64 | Valid: YES
+
+Difficulty distribution:
+  easy: 17 (28.8% / target 25.0%)
+  medium: 31 (52.5% / target 55.0%)
+  hard: 11 (18.6% / target 20.0%)
+
+Writing included: yes
+Speaking included: yes
+Blueprint compliant: yes
+
+Grammar tags (24): adverbs_frequency, there_is_are, past_simple, future_going_to, have_got, relative_clauses, verb_be, imperatives, modal_can, present_continuous, question_forms, conjunctions, linking_words, possessives, countable_uncountable, modal_must, present_simple, past_continuous, articles, prepositions, future_will, superlatives, comparatives, pronouns
+Vocab topics (28): colours, nature, weather, travel, food, leisure, home, shopping, numbers, community, friends, health, culture, family, school, body, feelings, animals, sports, clothes, technology, time, drink, environment, hobbies, places, transport, jobs
+
+Warnings:
+  - Difficulty distribution validated on auto-scored items only; writing/speaking excluded from band targets.

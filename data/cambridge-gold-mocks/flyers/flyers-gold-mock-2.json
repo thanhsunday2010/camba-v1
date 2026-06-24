@@ -1,0 +1,2616 @@
+{
+  "metadata": {
+    "manifestId": "flyers-gold-mock-2",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-flyers-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "flyers",
+    "title": "Cambridge Flyers Gold Mock 2",
+    "description": "Manually authored A2 Flyers gold mock 2 — community, shopping and hobbies themes with open-ended writing and natural speaking prompts.",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000004",
+    "timeLimitMinutes": 65,
+    "totalScore": 71,
+    "status": "published",
+    "authoringNotes": "M4.1 Gold Mock — manually authored and academically reviewed.",
+    "stableSlug": "flyers-gold-mock-2"
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 1,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4"
+      ],
+      "questionRefs": [
+        "fgm2-001",
+        "fgm2-002",
+        "fgm2-003",
+        "fgm2-004",
+        "fgm2-005",
+        "fgm2-006",
+        "fgm2-007",
+        "fgm2-008",
+        "fgm2-009",
+        "fgm2-010",
+        "fgm2-011",
+        "fgm2-012",
+        "fgm2-013",
+        "fgm2-014",
+        "fgm2-015",
+        "fgm2-016",
+        "fgm2-017",
+        "fgm2-018",
+        "fgm2-019",
+        "fgm2-020",
+        "fgm2-021",
+        "fgm2-022",
+        "fgm2-023",
+        "fgm2-024",
+        "fgm2-025",
+        "fgm2-026",
+        "fgm2-027",
+        "fgm2-028"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "sortOrder": 2,
+      "skillSlug": "reading_writing",
+      "timeLimitMinutes": 20,
+      "partSlugs": [
+        "rw-part-1",
+        "rw-part-2",
+        "rw-part-3",
+        "rw-part-4"
+      ],
+      "questionRefs": [
+        "fgm2-029",
+        "fgm2-030",
+        "fgm2-031",
+        "fgm2-032",
+        "fgm2-033",
+        "fgm2-034",
+        "fgm2-035",
+        "fgm2-036",
+        "fgm2-037",
+        "fgm2-038",
+        "fgm2-039",
+        "fgm2-040",
+        "fgm2-041",
+        "fgm2-042",
+        "fgm2-043",
+        "fgm2-044",
+        "fgm2-045",
+        "fgm2-046",
+        "fgm2-047",
+        "fgm2-048",
+        "fgm2-049",
+        "fgm2-050",
+        "fgm2-051",
+        "fgm2-052",
+        "fgm2-053",
+        "fgm2-054",
+        "fgm2-055",
+        "fgm2-056"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 3,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 10,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2",
+        "speaking-part-3"
+      ],
+      "questionRefs": [
+        "fgm2-057",
+        "fgm2-058",
+        "fgm2-059"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Link names to pictures",
+      "instructions": "Link names to pictures",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mrs Okonkwo. She's serving soup at the community stall.\nDylan's building a model aeroplane at the hobby club table.\nAmira is arranging second-hand books on the charity sale table.\nMr Hughes fixes bicycles for the neighbourhood project every Saturday.\nSofia's got a colourful handmade bracelet she's selling at her craft stall.\nKai is standing beside a rack of football boots at the sports shop display.\nThe coordinator gave clear instructions to all the volunteers yesterday morning.",
+        "caption": "Link names to pictures"
+      }
+    },
+    {
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "partNumber": 2,
+      "title": "Write words or numbers",
+      "instructions": "Write words or numbers",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "transcript": "Examiner: Listen and write the missing word or number.\n\nThe shop closes at six o'clock on Saturdays.\nThe blue jacket in the window costs twenty-four pounds.\nThey need fifteen volunteers for the community garden project.\nBus number forty-two goes to the shopping centre every twenty minutes.\nThe chess club started in two thousand eighteen.\nBen swam the fastest length at the hobby club swimming session.\nYou need three eggs for the hobby club baking recipe.",
+        "caption": "Write words or numbers"
+      }
+    },
+    {
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "partNumber": 3,
+      "title": "Tick the correct picture",
+      "instructions": "Tick the correct picture",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe children are choosing fresh vegetables at the Saturday market.\nIn the music shop you can try different guitars before you buy one.\nLast weekend volunteers cleaned litter from the park near the community centre.\nThe bookshop sells comics and magazines on Sundays.\nThe youth club is behind the library, next to the sports hall.\nTomorrow there will be a pottery demonstration at the community craft fair.\nThe handmade kite was the best hobby project and won first prize.",
+        "caption": "Tick the correct picture"
+      }
+    },
+    {
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "partNumber": 4,
+      "title": "Colour and draw",
+      "instructions": "Colour and draw",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "transcript": "Examiner: Listen and colour or draw.\n\nColour the bakery sign golden yellow.\nDraw a shopping trolley next to the supermarket entrance.\nColour the boy's hat purple.\nDraw an arrow from the girl to the community centre.\nDraw a skateboard on the pavement near the hobby shop.\nColour the awning above the café striped green and white.\nDraw a dog sitting by the pet shop door.",
+        "caption": "Colour and draw"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "fgm2-001",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 1,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "community_fair",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "places"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which woman is Mrs Okonkwo?",
+      "pairs": [
+        {
+          "leftText": "Mrs Okonkwo",
+          "rightText": "Woman serving soup at the community stall",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "This is Mrs Okonkwo. She's serving soup at the community stall.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-002",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 2,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "hobby_club",
+      "grammarTags": [
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "community"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which boy is Dylan?",
+      "pairs": [
+        {
+          "leftText": "Dylan",
+          "rightText": "Boy building a model aeroplane at the hobby table",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Dylan's building a model aeroplane at the hobby club table.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-003",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 3,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "charity_sale",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "community"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which girl is Amira?",
+      "pairs": [
+        {
+          "leftText": "Amira",
+          "rightText": "Girl arranging books on a charity sale table",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Amira is arranging second-hand books on the charity sale table.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-004",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 4,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "bike_repair",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "community"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which man is Mr Hughes?",
+      "pairs": [
+        {
+          "leftText": "Mr Hughes",
+          "rightText": "Man fixing bicycles for the neighbourhood project",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Mr Hughes fixes bicycles for the neighbourhood project every Saturday.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-005",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 5,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "craft_stall",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "shopping"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which girl is Sofia?",
+      "pairs": [
+        {
+          "leftText": "Sofia",
+          "rightText": "Girl wearing a handmade bracelet she is selling",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Sofia's got a colourful handmade bracelet she's selling at her craft stall.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-006",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 6,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "sports_gear",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "sports"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which boy is Kai?",
+      "pairs": [
+        {
+          "leftText": "Kai",
+          "rightText": "Boy standing beside a rack of football boots",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Kai is standing beside a rack of football boots at the sports shop display.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-007",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 7,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "volunteer_team",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "jobs"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which woman is the coordinator?",
+      "pairs": [
+        {
+          "leftText": "The coordinator",
+          "rightText": "Woman giving instructions to volunteers with a clipboard",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The coordinator gave clear instructions to all the volunteers yesterday morning.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-008",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 8,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "shop_hours",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "time"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. What time does the shop close on Saturdays?",
+      "template": "The shop closes at [0] on Saturdays.",
+      "correctAnswers": [
+        "six",
+        "6",
+        "six o'clock"
+      ],
+      "content": {
+        "template": "The shop closes at [0] on Saturdays.",
+        "correctAnswers": [
+          "six",
+          "6",
+          "six o'clock"
+        ],
+        "transcriptSnippet": "The shop closes at six o'clock on Saturdays."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm2-009",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 9,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "jacket_price",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "clothes"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. How much is the blue jacket?",
+      "template": "The blue jacket costs [0] pounds.",
+      "correctAnswers": [
+        "twenty-four",
+        "24"
+      ],
+      "content": {
+        "template": "The blue jacket costs [0] pounds.",
+        "correctAnswers": [
+          "twenty-four",
+          "24"
+        ],
+        "transcriptSnippet": "The blue jacket in the window costs twenty-four pounds."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm2-010",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 10,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "volunteer_count",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. How many volunteers are needed?",
+      "template": "They need [0] volunteers.",
+      "correctAnswers": [
+        "fifteen",
+        "15"
+      ],
+      "content": {
+        "template": "They need [0] volunteers.",
+        "correctAnswers": [
+          "fifteen",
+          "15"
+        ],
+        "transcriptSnippet": "They need fifteen volunteers for the community garden project."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm2-011",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 11,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "bus_route",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "transport",
+        "shopping"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. Which bus goes to the shopping centre?",
+      "template": "Bus number [0] goes to the shopping centre.",
+      "correctAnswers": [
+        "forty-two",
+        "42"
+      ],
+      "content": {
+        "template": "Bus number [0] goes to the shopping centre.",
+        "correctAnswers": [
+          "forty-two",
+          "42"
+        ],
+        "transcriptSnippet": "Bus number forty-two goes to the shopping centre every twenty minutes."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm2-012",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 12,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "chess_club",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "community"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. When did the chess club start?",
+      "template": "The chess club started in [0].",
+      "correctAnswers": [
+        "two thousand eighteen",
+        "2018"
+      ],
+      "content": {
+        "template": "The chess club started in [0].",
+        "correctAnswers": [
+          "two thousand eighteen",
+          "2018"
+        ],
+        "transcriptSnippet": "The chess club started in two thousand eighteen."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm2-013",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 13,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "swimming_club",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "sports"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. Who swam the fastest length?",
+      "template": "The fastest swimmer was [0].",
+      "correctAnswers": [
+        "Ben"
+      ],
+      "content": {
+        "template": "The fastest swimmer was [0].",
+        "correctAnswers": [
+          "Ben"
+        ],
+        "transcriptSnippet": "Ben swam the fastest length at the hobby club swimming session."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm2-014",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 14,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "baking_class",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "hobbies"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. How many eggs do you need for the recipe?",
+      "template": "You need [0] eggs.",
+      "correctAnswers": [
+        "three",
+        "3"
+      ],
+      "content": {
+        "template": "You need [0] eggs.",
+        "correctAnswers": [
+          "three",
+          "3"
+        ],
+        "transcriptSnippet": "You need three eggs for the hobby club baking recipe."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "fgm2-015",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 15,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "market_visit",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "food"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What are the children doing at the market?",
+      "choices": [
+        {
+          "text": "Choosing fresh vegetables",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Flying a kite",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Watching a film",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The children are choosing fresh vegetables at the Saturday market."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-016",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 16,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "music_shop",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "shopping"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What can you try in the music shop?",
+      "choices": [
+        {
+          "text": "Different guitars",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Swimming goggles",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Winter coats",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "In the music shop you can try different guitars before you buy one."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-017",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 17,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "community_cleanup",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "environment"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What did the volunteers do last weekend?",
+      "choices": [
+        {
+          "text": "Cleaned litter from the park",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Built a new airport",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Went on a cruise",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Last weekend volunteers cleaned litter from the park near the community centre."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-018",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 18,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "bookshop",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "hobbies"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What does the bookshop sell on Sundays?",
+      "choices": [
+        {
+          "text": "Comics and magazines",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Fresh fish",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Car tyres",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The bookshop sells comics and magazines on Sundays."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-019",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 19,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "youth_club",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "places"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Where is the youth club?",
+      "choices": [
+        {
+          "text": "Behind the library",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "On the beach",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Under the bridge",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The youth club is behind the library, next to the sports hall."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-020",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 20,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "craft_fair",
+      "grammarTags": [
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "community"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What will happen at the craft fair tomorrow?",
+      "choices": [
+        {
+          "text": "There will be a pottery demonstration",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The shop will close forever",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "It will snow heavily",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Tomorrow there will be a pottery demonstration at the community craft fair."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-021",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 21,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "hobby_display",
+      "grammarTags": [
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "community"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Which hobby project won first prize?",
+      "choices": [
+        {
+          "text": "The handmade kite",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The broken chair",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The empty box",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The handmade kite was the best hobby project and won first prize."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-022",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 22,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "high_street",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "colours"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Colour the bakery sign. Which colour?",
+      "choices": [
+        {
+          "text": "Golden yellow",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Grey",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Brown",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Colour the bakery sign golden yellow.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-023",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 23,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "high_street",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "transport"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw a shopping trolley near the supermarket. Where?",
+      "choices": [
+        {
+          "text": "Next to the supermarket entrance",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "On the roof",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "In the pond",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw a shopping trolley next to the supermarket entrance.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-024",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 24,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "high_street",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "shopping"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Colour the hat on the boy. Which colour?",
+      "choices": [
+        {
+          "text": "Purple",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "White",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Black",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Colour the boy's hat purple.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-025",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 25,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "high_street",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "places"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw an arrow from the girl to the community centre. Which picture?",
+      "choices": [
+        {
+          "text": "Girl pointing towards the community centre",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Girl walking away from town",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Girl inside a cinema",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw an arrow from the girl to the community centre.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-026",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 26,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "high_street",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "hobbies"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw a skateboard on the pavement. Where?",
+      "choices": [
+        {
+          "text": "Near the hobby shop",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "On the river",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Inside the bakery",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw a skateboard on the pavement near the hobby shop.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-027",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 27,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "high_street",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "shopping"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Colour the awning above the café. Which colour?",
+      "choices": [
+        {
+          "text": "Striped green and white",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Plain pink",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Dark blue only",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Colour the awning above the café striped green and white.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-028",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 28,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "high_street",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "hobbies"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw a dog waiting outside the pet shop. Which picture?",
+      "choices": [
+        {
+          "text": "Dog sitting by the pet shop door",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Dog on a boat",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Dog flying in the sky",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw a dog sitting by the pet shop door.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "fgm2-029",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 29,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "community_hub",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'volunteer' to the picture.",
+      "pairs": [
+        {
+          "leftText": "volunteer",
+          "rightText": "Person who helps without being paid",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-030",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 30,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "shopping_mall",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "shopping"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'receipt' to the picture.",
+      "pairs": [
+        {
+          "leftText": "receipt",
+          "rightText": "Paper that shows what you paid in a shop",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-031",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 31,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "photography_club",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "hobbies"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'tripod' to the picture.",
+      "pairs": [
+        {
+          "leftText": "tripod",
+          "rightText": "Stand that holds a camera steady",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-032",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 32,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "local_market",
+      "grammarTags": [
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'stall' to the picture.",
+      "pairs": [
+        {
+          "leftText": "stall",
+          "rightText": "Small table where someone sells things outdoors",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-033",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 33,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "craft_hobby",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "hobbies"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'knitting' to the picture.",
+      "pairs": [
+        {
+          "leftText": "knitting",
+          "rightText": "Making clothes using wool and two needles",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-034",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 34,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "neighbourhood",
+      "grammarTags": [
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "places"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'noticeboard' to the picture.",
+      "pairs": [
+        {
+          "leftText": "noticeboard",
+          "rightText": "Board where local news is posted",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-035",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 35,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "collecting",
+      "grammarTags": [
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "shopping"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'collection' to the picture.",
+      "pairs": [
+        {
+          "leftText": "collection",
+          "rightText": "Group of similar items someone keeps as a hobby",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "fgm2-036",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 36,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "food_bank",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"Volunteers at the food bank are packing…\" Choose the correct picture.",
+      "passage": "Volunteers at the food bank are packing boxes of groceries for families in need.",
+      "choices": [
+        {
+          "text": "Volunteers packing food boxes",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "People skiing",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Empty classroom",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Volunteers at the food bank are packing boxes of groceries for families in need."
+      }
+    },
+    {
+      "questionRef": "fgm2-037",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 37,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "department_store",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "shopping"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"Shoppers are trying on winter coats on t…\" Choose the correct picture.",
+      "passage": "Shoppers are trying on winter coats on the third floor of the department store.",
+      "choices": [
+        {
+          "text": "People trying on coats in a shop",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Farmers picking apples",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Divers under the sea",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Shoppers are trying on winter coats on the third floor of the department store."
+      }
+    },
+    {
+      "questionRef": "fgm2-038",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 38,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "drama_club",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"Last month the drama club performed a pl…\" Choose the correct picture.",
+      "passage": "Last month the drama club performed a play about friendship at the community hall.",
+      "choices": [
+        {
+          "text": "Children performing on a stage",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Quiet library reading",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Desert caravan",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last month the drama club performed a play about friendship at the community hall."
+      }
+    },
+    {
+      "questionRef": "fgm2-039",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 39,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "charity_shop",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"The charity shop is going to sell handma…\" Choose the correct picture.",
+      "passage": "The charity shop is going to sell handmade gifts before the winter festival.",
+      "choices": [
+        {
+          "text": "Charity shop with handmade gifts",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Airport runway",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Mountain rescue",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The charity shop is going to sell handmade gifts before the winter festival."
+      }
+    },
+    {
+      "questionRef": "fgm2-040",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 40,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "skate_park",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "sports"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"The skate park has got new ramps and a s…\" Choose the correct picture.",
+      "passage": "The skate park has got new ramps and a safe area for beginners.",
+      "choices": [
+        {
+          "text": "Skate park with ramps",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Hospital ward",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Supermarket checkout",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The skate park has got new ramps and a safe area for beginners."
+      }
+    },
+    {
+      "questionRef": "fgm2-041",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 41,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "street_festival",
+      "grammarTags": [
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"While musicians were playing, families w…\" Choose the correct picture.",
+      "passage": "While musicians were playing, families were dancing in the street during the neighbourhood festival.",
+      "choices": [
+        {
+          "text": "Street festival with music and dancing",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Silent exam room",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Snowy igloo",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "While musicians were playing, families were dancing in the street during the neighbourhood festival."
+      }
+    },
+    {
+      "questionRef": "fgm2-042",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 42,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "online_shopping",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "technology"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"Customers can compare prices online befo…\" Choose the correct picture.",
+      "passage": "Customers can compare prices online before they visit the high street shops.",
+      "choices": [
+        {
+          "text": "Person comparing prices on a laptop",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Person cooking on a campfire",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Person climbing a cliff",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Customers can compare prices online before they visit the high street shops."
+      }
+    },
+    {
+      "questionRef": "fgm2-043",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 43,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "community_garden",
+      "grammarTags": [
+        "past_simple",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "hobbies"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"Community Garden News\n\nLast spring,…\" and choose the best answer.",
+      "passage": "Community Garden News\n\nLast spring, neighbours turned an empty plot into a shared garden. Tomatoes, herbs and sunflowers now grow in raised beds. Every Saturday, families water the plants and share gardening tips. Children painted colourful signs for each vegetable patch. Next month the garden club is going to organise a harvest picnic for the whole street.",
+      "choices": [
+        {
+          "text": "Neighbours created a shared garden.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The garden is inside a shopping mall.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Nobody helps with the plants.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Community Garden News\n\nLast spring, neighbours turned an empty plot into a shared garden. Tomatoes, herbs and sunflowers now grow in raised beds. Every Saturday, families water the plants and share gardening tips. Children painted colourful signs for each vegetable patch. Next month the garden club is going to organise a harvest picnic for the whole street."
+      }
+    },
+    {
+      "questionRef": "fgm2-044",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 44,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "market_history",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "places"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"Riverside Market opened in 1924 bes…\" and choose the best answer.",
+      "passage": "Riverside Market opened in 1924 beside the old bridge. Traders sold fruit, fabric and tools to people from nearby villages. During the war the market closed for two years, but it reopened in 1946. Today you can buy street food, handmade jewellery and second-hand books. Many visitors say it is the liveliest place in town on Saturday mornings.",
+      "choices": [
+        {
+          "text": "The market reopened after the war.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The market opened last week.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "No food is sold there now.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Riverside Market opened in 1924 beside the old bridge. Traders sold fruit, fabric and tools to people from nearby villages. During the war the market closed for two years, but it reopened in 1946. Today you can buy street food, handmade jewellery and second-hand books. Many visitors say it is the liveliest place in town on Saturday mornings."
+      }
+    },
+    {
+      "questionRef": "fgm2-045",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 45,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "hobby_blog",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"My Hobby Blog — Week 6\n\nI am learni…\" and choose the best answer.",
+      "passage": "My Hobby Blog — Week 6\n\nI am learning to play the ukulele with my cousin. We are practising three songs for the school talent show. Our fingers hurt a little, but we are enjoying it. Tonight we are recording a short video to share with our grandparents. I think performing in front of people will be scary but exciting.",
+      "choices": [
+        {
+          "text": "The writer is learning to play the ukulele.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They have already won the talent show.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They never practise together.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "My Hobby Blog — Week 6\n\nI am learning to play the ukulele with my cousin. We are practising three songs for the school talent show. Our fingers hurt a little, but we are enjoying it. Tonight we are recording a short video to share with our grandparents. I think performing in front of people will be scary but exciting."
+      }
+    },
+    {
+      "questionRef": "fgm2-046",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 46,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "youth_magazine",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "shopping"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"Youth Centre Notice\n\nMembers must b…\" and choose the best answer.",
+      "passage": "Youth Centre Notice\n\nMembers must bring their membership card to every activity. You mustn't leave bags unattended in the changing rooms. The tuck shop sells healthy snacks and reusable water bottles. Profits help pay for new sports equipment. Next week the centre is going to open a swap shelf where you can exchange books and games.",
+      "choices": [
+        {
+          "text": "The tuck shop helps pay for sports equipment.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Members can forget their cards.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The centre never sells snacks.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Youth Centre Notice\n\nMembers must bring their membership card to every activity. You mustn't leave bags unattended in the changing rooms. The tuck shop sells healthy snacks and reusable water bottles. Profits help pay for new sports equipment. Next week the centre is going to open a swap shelf where you can exchange books and games."
+      }
+    },
+    {
+      "questionRef": "fgm2-047",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 47,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "shopping_story",
+      "grammarTags": [
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "feelings"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"While Lina was searching for a birt…\" and choose the best answer.",
+      "passage": "While Lina was searching for a birthday present, the shop assistant was showing her different board games. Lina felt unsure because she wanted something special but not too expensive. She was comparing two puzzles when her brother called to say he preferred outdoor games. In the end she chose a kite kit and left the shop smiling.",
+      "choices": [
+        {
+          "text": "Lina bought a kite kit for a birthday present.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Lina bought a winter coat.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The shop was closed.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "While Lina was searching for a birthday present, the shop assistant was showing her different board games. Lina felt unsure because she wanted something special but not too expensive. She was comparing two puzzles when her brother called to say he preferred outdoor games. In the end she chose a kite kit and left the shop smiling."
+      }
+    },
+    {
+      "questionRef": "fgm2-048",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 48,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "club_comparison",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "sports"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"The chess club meets on quiet after…\" and choose the best answer.",
+      "passage": "The chess club meets on quiet afternoons, but the basketball club is louder and faster. Chess helps you plan carefully, while basketball improves your fitness. Some students think chess is more relaxing than basketball, but others say scoring a basket feels more exciting. The school encourages everyone to try both before choosing a favourite hobby.",
+      "choices": [
+        {
+          "text": "Some students prefer chess because it is more relaxing.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Basketball is always quieter than chess.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Students cannot try both clubs.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The chess club meets on quiet afternoons, but the basketball club is louder and faster. Chess helps you plan carefully, while basketball improves your fitness. Some students think chess is more relaxing than basketball, but others say scoring a basket feels more exciting. The school encourages everyone to try both before choosing a favourite hobby."
+      }
+    },
+    {
+      "questionRef": "fgm2-049",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 49,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "fair_review",
+      "grammarTags": [
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"The Spring Community Fair was the b…\" and choose the best answer.",
+      "passage": "The Spring Community Fair was the busiest event of the year. The juggling workshop was the most popular activity for younger children. Food from local cafés was the tastiest part of the day, according to many visitors. Several people said the handmade craft stalls were the most colourful section. Everyone agreed the volunteer team did the best job organising the fair.",
+      "choices": [
+        {
+          "text": "Many visitors enjoyed the food from local cafés.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "No children joined the workshops.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "There were no craft stalls.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The Spring Community Fair was the busiest event of the year. The juggling workshop was the most popular activity for younger children. Food from local cafés was the tastiest part of the day, according to many visitors. Several people said the handmade craft stalls were the most colourful section. Everyone agreed the volunteer team did the best job organising the fair."
+      }
+    },
+    {
+      "questionRef": "fgm2-050",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 50,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "club_invitation",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a message inviting your friend to join a hobby club.",
+      "cambridgeTaskType": "write_note",
+      "prompt": "Write a message inviting your friend to join a hobby club you belong to. Explain why you think they would enjoy it and suggest a time to meet.",
+      "minWords": 25,
+      "maxWords": 60,
+      "taskDescription": "Invite your friend to a hobby club.",
+      "requiredPoints": [
+        "Say which club you belong to",
+        "Explain why your friend might enjoy it",
+        "Suggest when and where to meet",
+        "Ask your friend to reply"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_note",
+        "prompt": "Write a message inviting your friend to join a hobby club you belong to. Explain why you think they would enjoy it and suggest a time to meet.",
+        "taskDescription": "Invite your friend to a hobby club.",
+        "minWords": 25,
+        "maxWords": 60,
+        "requiredPoints": [
+          "Say which club you belong to",
+          "Explain why your friend might enjoy it",
+          "Suggest when and where to meet",
+          "Ask your friend to reply"
+        ],
+        "rubricId": "gold-write_note-v1"
+      }
+    },
+    {
+      "questionRef": "fgm2-051",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 51,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "volunteer_thanks",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a thank-you note to volunteers at a community event.",
+      "cambridgeTaskType": "write_note",
+      "prompt": "Write a thank-you note to the volunteers who helped at a community event. Describe what they did and explain how their help made a difference.",
+      "minWords": 22,
+      "maxWords": 55,
+      "taskDescription": "Thank community volunteers.",
+      "requiredPoints": [
+        "Say which event they helped with",
+        "Describe what the volunteers did",
+        "Explain why their help was important",
+        "Say something you hope happens next time"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_note",
+        "prompt": "Write a thank-you note to the volunteers who helped at a community event. Describe what they did and explain how their help made a difference.",
+        "taskDescription": "Thank community volunteers.",
+        "minWords": 22,
+        "maxWords": 55,
+        "requiredPoints": [
+          "Say which event they helped with",
+          "Describe what the volunteers did",
+          "Explain why their help was important",
+          "Say something you hope happens next time"
+        ],
+        "rubricId": "gold-write_note-v1"
+      }
+    },
+    {
+      "questionRef": "fgm2-052",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 52,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "shop_review",
+      "grammarTags": [
+        "past_simple",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "shopping"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a note recommending a shop to a classmate.",
+      "cambridgeTaskType": "write_note",
+      "prompt": "Write a note to a classmate recommending a shop you visited recently. Say what you bought and give your opinion about the shop.",
+      "minWords": 25,
+      "maxWords": 60,
+      "taskDescription": "Recommend a shop.",
+      "requiredPoints": [
+        "Say which shop you visited",
+        "Describe what you bought or saw",
+        "Give your opinion about the shop",
+        "Say whether you would go again"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_note",
+        "prompt": "Write a note to a classmate recommending a shop you visited recently. Say what you bought and give your opinion about the shop.",
+        "taskDescription": "Recommend a shop.",
+        "minWords": 25,
+        "maxWords": 60,
+        "requiredPoints": [
+          "Say which shop you visited",
+          "Describe what you bought or saw",
+          "Give your opinion about the shop",
+          "Say whether you would go again"
+        ],
+        "rubricId": "gold-write_note-v1"
+      }
+    },
+    {
+      "questionRef": "fgm2-053",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 53,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "story_market",
+      "grammarTags": [
+        "past_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "community"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a story called 'The Missing Wallet'.",
+      "cambridgeTaskType": "write_story",
+      "prompt": "Write a story called 'The Missing Wallet'. Include what happened at the market, how the characters felt, and how the problem was solved.",
+      "minWords": 40,
+      "maxWords": 95,
+      "taskDescription": "Write a story set at a market.",
+      "requiredPoints": [
+        "Describe where the story happens",
+        "Include a problem and how characters felt",
+        "Explain how the problem was solved"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_story",
+        "prompt": "Write a story called 'The Missing Wallet'. Include what happened at the market, how the characters felt, and how the problem was solved.",
+        "taskDescription": "Write a story set at a market.",
+        "minWords": 40,
+        "maxWords": 95,
+        "requiredPoints": [
+          "Describe where the story happens",
+          "Include a problem and how characters felt",
+          "Explain how the problem was solved"
+        ],
+        "rubricId": "gold-write_story-v1"
+      }
+    },
+    {
+      "questionRef": "fgm2-054",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 54,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "story_hobby",
+      "grammarTags": [
+        "past_simple",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "feelings"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a story about discovering a new hobby.",
+      "cambridgeTaskType": "write_story",
+      "prompt": "Write a story about a child who discovers a new hobby. Describe what happened, how they felt at first, and what they learned.",
+      "minWords": 45,
+      "maxWords": 100,
+      "taskDescription": "Write a story about a new hobby.",
+      "requiredPoints": [
+        "Say how the character discovered the hobby",
+        "Describe a challenge or surprise",
+        "Explain how the character felt at the end"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_story",
+        "prompt": "Write a story about a child who discovers a new hobby. Describe what happened, how they felt at first, and what they learned.",
+        "taskDescription": "Write a story about a new hobby.",
+        "minWords": 45,
+        "maxWords": 100,
+        "requiredPoints": [
+          "Say how the character discovered the hobby",
+          "Describe a challenge or surprise",
+          "Explain how the character felt at the end"
+        ],
+        "rubricId": "gold-write_story-v1"
+      }
+    },
+    {
+      "questionRef": "fgm2-055",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 55,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "market_scene",
+      "grammarTags": [
+        "present_continuous",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "community"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write about the busy market scene.",
+      "cambridgeTaskType": "picture_description",
+      "prompt": "Look at the picture. Write three or four sentences about the busy market. Say what people are buying and what different stallholders are doing.",
+      "minWords": 15,
+      "maxWords": 50,
+      "imageUrl": "/images/gold-mocks/flyers/fgm2-055-market.png",
+      "taskDescription": "Describe the market scene.",
+      "requiredPoints": [
+        "Say what people are buying or selling",
+        "Describe at least two different activities in the picture",
+        "Use your own words to add a detail you notice"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Look at the picture. Write three or four sentences about the busy market. Say what people are buying and what different stallholders are doing.",
+        "taskDescription": "Describe the market scene.",
+        "minWords": 15,
+        "maxWords": 50,
+        "imageUrl": "/images/gold-mocks/flyers/fgm2-055-market.png",
+        "requiredPoints": [
+          "Say what people are buying or selling",
+          "Describe at least two different activities in the picture",
+          "Use your own words to add a detail you notice"
+        ],
+        "rubricId": "gold-picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "fgm2-056",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 56,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "hobby_room",
+      "grammarTags": [
+        "there_is_are",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "home"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write about the hobby room.",
+      "cambridgeTaskType": "picture_description",
+      "prompt": "Look at the picture. Write three or four sentences about the hobby room. Compare two areas of the room and say what the people are doing.",
+      "minWords": 15,
+      "maxWords": 55,
+      "imageUrl": "/images/gold-mocks/flyers/fgm2-056-hobby-room.png",
+      "taskDescription": "Describe the hobby room.",
+      "requiredPoints": [
+        "Compare two things in the picture",
+        "Say what at least two people are doing",
+        "Add one detail that shows why the room is special"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Look at the picture. Write three or four sentences about the hobby room. Compare two areas of the room and say what the people are doing.",
+        "taskDescription": "Describe the hobby room.",
+        "minWords": 15,
+        "maxWords": 55,
+        "imageUrl": "/images/gold-mocks/flyers/fgm2-056-hobby-room.png",
+        "requiredPoints": [
+          "Compare two things in the picture",
+          "Say what at least two people are doing",
+          "Add one detail that shows why the room is special"
+        ],
+        "rubricId": "gold-picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "fgm2-057",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 57,
+      "points": 5,
+      "difficulty": "medium",
+      "topicTag": "shop_differences",
+      "grammarTags": [
+        "there_is_are",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "places"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Look at the two shop differences pictures. Tell your partner about the differences.",
+      "cambridgeTaskType": "speaking_picture_description",
+      "prompt": "Look at these two pictures of a shopping street. Tell your partner about five differences between them. Explain what you see and where things are.",
+      "maxDurationSeconds": 120,
+      "imageUrl": "/images/gold-mocks/flyers/fgm2-057-shopping-pair.png",
+      "followUpQuestions": [
+        "What is different about the bakery window?",
+        "How many shoppers can you see in picture B?",
+        "Is there a bus in both pictures?",
+        "Where is the bicycle in picture A?",
+        "What colour is the awning in picture B?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_picture_description",
+        "prompt": "Look at these two pictures of a shopping street. Tell your partner about five differences between them. Explain what you see and where things are.",
+        "maxDurationSeconds": 120,
+        "followUpQuestions": [
+          "What is different about the bakery window?",
+          "How many shoppers can you see in picture B?",
+          "Is there a bus in both pictures?",
+          "Where is the bicycle in picture A?",
+          "What colour is the awning in picture B?"
+        ],
+        "imageUrl": "/images/gold-mocks/flyers/fgm2-057-shopping-pair.png",
+        "rubricId": "gold-speaking_picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "fgm2-058",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 58,
+      "points": 5,
+      "difficulty": "easy",
+      "topicTag": "about_hobbies_community",
+      "grammarTags": [
+        "present_simple",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "community",
+        "shopping"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Answer the examiner's questions about about hobbies community.",
+      "cambridgeTaskType": "speaking_personal_questions",
+      "prompt": "The examiner will ask you about your hobbies, shopping habits and community activities. Answer naturally and give reasons for your opinions.",
+      "maxDurationSeconds": 180,
+      "followUpQuestions": [
+        "What hobby do you enjoy most and why?",
+        "Tell me about a shop you like visiting in your town.",
+        "Have you ever helped at a community event? What did you do?",
+        "What new hobby would you like to try and why?",
+        "How do you usually decide what to buy when you go shopping?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_personal_questions",
+        "prompt": "The examiner will ask you about your hobbies, shopping habits and community activities. Answer naturally and give reasons for your opinions.",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "What hobby do you enjoy most and why?",
+          "Tell me about a shop you like visiting in your town.",
+          "Have you ever helped at a community event? What did you do?",
+          "What new hobby would you like to try and why?",
+          "How do you usually decide what to buy when you go shopping?"
+        ],
+        "rubricId": "gold-speaking_personal_questions-v1"
+      }
+    },
+    {
+      "questionRef": "fgm2-059",
+      "partSlug": "speaking-part-3",
+      "sectionSlug": "speaking",
+      "sortOrder": 59,
+      "points": 5,
+      "difficulty": "hard",
+      "topicTag": "story_fair",
+      "grammarTags": [
+        "past_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "shopping",
+        "hobbies"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Look at these pictures and tell the story of a family visit to the community fair. Describe what happened, how people felt, and how the day ended.",
+      "cambridgeTaskType": "speaking_storytelling",
+      "prompt": "Look at these pictures and tell the story of a family visit to the community fair. Describe what happened, how people felt, and how the day ended.",
+      "maxDurationSeconds": 180,
+      "pictureSequence": [
+        "/images/gold-mocks/flyers/fgm2-059-story-1-arrive.png",
+        "/images/gold-mocks/flyers/fgm2-059-story-2-stall.png",
+        "/images/gold-mocks/flyers/fgm2-059-story-3-lost.png",
+        "/images/gold-mocks/flyers/fgm2-059-story-4-happy.png"
+      ],
+      "followUpQuestions": [
+        "Why did the family go to the fair?",
+        "What did they buy or try at the hobby stall?",
+        "What problem happened in the third picture?",
+        "How did they solve the problem?",
+        "How did everyone feel at the end of the day?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_storytelling",
+        "prompt": "Look at these pictures and tell the story of a family visit to the community fair. Describe what happened, how people felt, and how the day ended.",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "Why did the family go to the fair?",
+          "What did they buy or try at the hobby stall?",
+          "What problem happened in the third picture?",
+          "How did they solve the problem?",
+          "How did everyone feel at the end of the day?"
+        ],
+        "pictureSequence": [
+          "/images/gold-mocks/flyers/fgm2-059-story-1-arrive.png",
+          "/images/gold-mocks/flyers/fgm2-059-story-2-stall.png",
+          "/images/gold-mocks/flyers/fgm2-059-story-3-lost.png",
+          "/images/gold-mocks/flyers/fgm2-059-story-4-happy.png"
+        ],
+        "rubricId": "gold-speaking_storytelling-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "community_fair",
+      "hobby_club",
+      "charity_sale",
+      "bike_repair",
+      "craft_stall",
+      "sports_gear",
+      "volunteer_team",
+      "shop_hours",
+      "jacket_price",
+      "volunteer_count",
+      "bus_route",
+      "chess_club",
+      "swimming_club",
+      "baking_class",
+      "market_visit",
+      "music_shop",
+      "community_cleanup",
+      "bookshop",
+      "youth_club",
+      "craft_fair",
+      "hobby_display",
+      "high_street",
+      "community_hub",
+      "shopping_mall",
+      "photography_club",
+      "local_market",
+      "craft_hobby",
+      "neighbourhood",
+      "collecting",
+      "food_bank",
+      "department_store",
+      "drama_club",
+      "charity_shop",
+      "skate_park",
+      "street_festival",
+      "online_shopping",
+      "community_garden",
+      "market_history",
+      "hobby_blog",
+      "youth_magazine",
+      "shopping_story",
+      "club_comparison",
+      "fair_review",
+      "club_invitation",
+      "volunteer_thanks",
+      "shop_review",
+      "story_market",
+      "story_hobby",
+      "market_scene",
+      "hobby_room",
+      "shop_differences",
+      "about_hobbies_community",
+      "story_fair"
+    ],
+    "distinctGrammarPatterns": [
+      "verb_be",
+      "possessives",
+      "present_continuous",
+      "present_simple",
+      "have_got",
+      "prepositions",
+      "past_simple",
+      "future_going_to",
+      "comparatives",
+      "countable_uncountable",
+      "modal_can",
+      "future_will",
+      "superlatives",
+      "imperatives",
+      "articles",
+      "there_is_are",
+      "past_continuous",
+      "modal_must",
+      "linking_words"
+    ],
+    "subskillsRepresented": [
+      "listening",
+      "reading",
+      "writing",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "easy": 17,
+      "medium": 24,
+      "hard": 18
+    },
+    "notes": "Authored for M3.1 Gold Mock specification."
+  },
+  "gold": {
+    "tier": "gold",
+    "goldMockId": "flyers-gold-mock-2",
+    "goldMockVersion": "1.0.0",
+    "specificationId": "gold-mock-flyers-v1",
+    "specificationVersion": "1.0.0",
+    "authoredAt": "2026-06-22T00:00:00.000Z",
+    "status": "published",
+    "academicAuthority": true,
+    "authoringMethod": "manual",
+    "qaChecklistVersion": "1.0.0"
+  },
+  "specification": {
+    "specificationId": "gold-mock-flyers-v1",
+    "specificationVersion": "1.0.0",
+    "level": "flyers",
+    "coverageTargets": {
+      "minDistinctGrammarTags": 8,
+      "minDistinctVocabularyTopics": 7,
+      "minSkillsRepresented": 4,
+      "difficultyDistribution": {
+        "easy": 0.25,
+        "medium": 0.5,
+        "hard": 0.25
+      },
+      "maxTopicShare": 0.2,
+      "requireWritingTasks": true,
+      "requireSpeakingTasks": true
+    }
+  }
+}

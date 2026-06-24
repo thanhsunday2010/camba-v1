@@ -5,6 +5,15 @@ import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
 import { scoreExercise } from "@/lib/learning/scoring";
 import {
+  hasCambridgeAiEvaluatedQuestions,
+  mergeMockTestCambridgeAiScores,
+  runCambridgeAiEvaluationPipeline,
+  serializeCambridgeAiAnswersForAttempt,
+} from "@/lib/learning/cambridge-ai-evaluation-pipeline";
+import { persistWritingEvaluationsForAttempt } from "@/lib/writing/writing-evaluation-persistence";
+import { persistSpeakingEvaluationsForAttempt } from "@/lib/speaking/speaking-evaluation-persistence";
+import { generateRecommendationsFromFeedback } from "@/lib/ai/recommendations-engine";
+import {
   computeShieldEstimate,
   computeSkillBreakdown,
 } from "@/lib/learning/mock-test-scoring";
@@ -44,6 +53,7 @@ function serializeMockTestResult(result: {
   skillBreakdown: Record<string, number>;
   shieldEstimate: Record<string, number>;
   questionResults: QuestionResult[];
+  answers?: Record<string, UserAnswer>;
 }): MockTestResult {
   return JSON.parse(
     JSON.stringify({
@@ -64,6 +74,7 @@ function serializeMockTestResult(result: {
         ...(r.correctAnswers != null ? { correctAnswers: r.correctAnswers } : {}),
         ...(r.correctOrder != null ? { correctOrder: r.correctOrder } : {}),
       })),
+      ...(result.answers ? { answers: result.answers } : {}),
     })
   ) as MockTestResult;
 }
@@ -119,7 +130,27 @@ export async function submitMockTest(
       return { success: false, error: "No questions in this test" };
     }
 
-    const result = scoreExercise(allQuestions, answers);
+    const normalizedAnswers = serializeCambridgeAiAnswersForAttempt(answers);
+    const baseResult = scoreExercise(allQuestions, normalizedAnswers);
+
+    const aiPipeline = hasCambridgeAiEvaluatedQuestions(allQuestions)
+      ? await runCambridgeAiEvaluationPipeline({
+          questions: allQuestions,
+          answers: normalizedAnswers,
+          level: test.levelName ?? undefined,
+        })
+      : null;
+
+    const result = aiPipeline
+      ? {
+          score: aiPipeline.score,
+          maxScore: aiPipeline.maxScore,
+          accuracyPercent: aiPipeline.accuracyPercent,
+          questionResults: aiPipeline.questionResults,
+        }
+      : baseResult;
+
+    const answersToStore = aiPipeline?.enrichedAnswers ?? normalizedAnswers;
 
     let maxShields = DEFAULT_SHIELD_SCALE_MAX;
     try {
@@ -131,12 +162,18 @@ export async function submitMockTest(
       console.error("Mock test shield scale lookup failed, using default:", error);
     }
 
-    const skillBreakdown = computeSkillBreakdown(test.sections, result.questionResults);
+    const skillBreakdown = mergeMockTestCambridgeAiScores(
+      test.sections,
+      answersToStore,
+      computeSkillBreakdown(test.sections, result.questionResults)
+    );
     const shieldEstimate = computeShieldEstimate(skillBreakdown, maxShields);
     const levelId = test.levelId;
     const userId = user.id;
 
-    const { error: attemptError } = await supabase.from("mock_test_attempts").insert({
+    const { data: attemptRow, error: attemptError } = await supabase
+      .from("mock_test_attempts")
+      .insert({
       user_id: userId,
       mock_test_id: testId,
       score: result.score,
@@ -144,14 +181,16 @@ export async function submitMockTest(
       estimated_level_id: levelId,
       shield_estimate: shieldEstimate as Json,
       skill_breakdown: skillBreakdown as Json,
-      answers: answers as unknown as Json,
+      answers: answersToStore as unknown as Json,
       time_spent_seconds: timeSpentSeconds,
       is_completed: true,
       completed_at: new Date().toISOString(),
-    });
+    })
+      .select("id")
+      .single();
 
-    if (attemptError) {
-      return { success: false, error: attemptError.message };
+    if (attemptError || !attemptRow) {
+      return { success: false, error: attemptError?.message ?? "Submit failed" };
     }
 
     const postSubmitInput = {
@@ -164,6 +203,25 @@ export async function submitMockTest(
 
     after(async () => {
       try {
+        if (aiPipeline) {
+          await persistWritingEvaluationsForAttempt(
+            aiPipeline.writingPersistence.map((p) => ({
+              ...p,
+              attemptType: "mock_test_attempt" as const,
+              attemptId: attemptRow.id,
+            }))
+          );
+          await persistSpeakingEvaluationsForAttempt(
+            aiPipeline.speakingPersistence.map((p) => ({
+              ...p,
+              attemptType: "mock_test_attempt" as const,
+              attemptId: attemptRow.id,
+            }))
+          );
+          if (aiPipeline.analyticsWeaknesses.length) {
+            await generateRecommendationsFromFeedback(userId, aiPipeline.analyticsWeaknesses);
+          }
+        }
         await runPostMockTestSubmitWork(postSubmitInput);
       } catch (error) {
         console.error("Post-mock-test submit gamification failed:", error);
@@ -179,6 +237,7 @@ export async function submitMockTest(
         skillBreakdown,
         shieldEstimate,
         questionResults: result.questionResults,
+        answers: answersToStore,
       }),
     };
   } catch (error) {

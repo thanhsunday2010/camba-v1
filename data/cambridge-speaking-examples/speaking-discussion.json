@@ -1,0 +1,12 @@
+{
+  "id": "speaking-example-discussion",
+  "question_type": "speaking",
+  "question_text": "Discuss the topic with your partner.",
+  "points": 0,
+  "content": {
+    "cambridgeTaskType": "speaking_discussion",
+    "prompt": "Talk about how you use technology at school.",
+    "cambridgeLevel": "pet",
+    "maxDurationSeconds": 180
+  }
+}

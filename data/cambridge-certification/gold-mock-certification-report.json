@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-06-24T01:29:20.096Z",
+  "entries": [
+    {
+      "level": "starters",
+      "goldMockId": "starters-gold-mock-1",
+      "goldScore": 90,
+      "goldLevel": "gold",
+      "assembledMockId": "starters-assembled-a",
+      "assembledScore": 95,
+      "assembledLevel": "rejected",
+      "goldOutperforms": false,
+      "scoreDelta": -5
+    },
+    {
+      "level": "movers",
+      "goldMockId": "movers-gold-mock-1",
+      "goldScore": 90,
+      "goldLevel": "gold",
+      "assembledMockId": "movers-assembled-a",
+      "assembledScore": 91,
+      "assembledLevel": "rejected",
+      "goldOutperforms": false,
+      "scoreDelta": -1
+    },
+    {
+      "level": "flyers",
+      "goldMockId": "flyers-gold-mock-1",
+      "goldScore": 90,
+      "goldLevel": "gold",
+      "assembledMockId": "flyers-assembled-a",
+      "assembledScore": 90,
+      "assembledLevel": "rejected",
+      "goldOutperforms": true,
+      "scoreDelta": 0
+    },
+    {
+      "level": "ket",
+      "goldMockId": "ket-gold-mock-1",
+      "goldScore": 98,
+      "goldLevel": "gold",
+      "assembledMockId": "ket-assembled-a",
+      "assembledScore": 98,
+      "assembledLevel": "gold",
+      "goldOutperforms": true,
+      "scoreDelta": 0
+    },
+    {
+      "level": "pet",
+      "goldMockId": "pet-gold-mock-1",
+      "goldScore": 98,
+      "goldLevel": "gold",
+      "assembledMockId": "pet-assembled-a",
+      "assembledScore": 78,
+      "assembledLevel": "rejected",
+      "goldOutperforms": true,
+      "scoreDelta": 20
+    }
+  ],
+  "allGoldOutperform": false
+}

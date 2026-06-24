@@ -1,0 +1,333 @@
+{
+  "mockId": "flyers-assembled-c",
+  "version": "C",
+  "level": "flyers",
+  "source": "assembled",
+  "levelAssigned": "rejected",
+  "certified": false,
+  "studentFacing": false,
+  "metrics": {
+    "certificationScore": 90,
+    "coverageScore": 100,
+    "qaScore": 99,
+    "diversityScore": 50,
+    "blueprintScore": 100,
+    "grammarDistinct": 17,
+    "vocabularyDistinct": 24,
+    "skillDistinct": 4,
+    "taskDistinct": 9,
+    "topicDistinct": 20,
+    "difficultyDistinct": 3,
+    "writingCount": 7,
+    "speakingCount": 3,
+    "readingCount": 21,
+    "listeningCount": 28,
+    "duplicateItemCount": 0,
+    "duplicateClusterCount": 0
+  },
+  "issues": [
+    {
+      "code": "EMPTY_PASSAGE",
+      "path": "questions.flyers-exp-010.content.passage",
+      "message": "Reading comprehension missing passage.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "EMPTY_PASSAGE",
+      "path": "questions.flyers-exp-013.content.passage",
+      "message": "Reading comprehension missing passage.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "EMPTY_PASSAGE",
+      "path": "questions.flyers-exp-014.content.passage",
+      "message": "Reading comprehension missing passage.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "READING_PASSAGE_SHORT",
+      "path": "questions.flyers-exp-010",
+      "message": "Passage too short.",
+      "category": "reading",
+      "severity": "warning"
+    },
+    {
+      "code": "READING_PASSAGE_SHORT",
+      "path": "questions.flyers-exp-013",
+      "message": "Passage too short.",
+      "category": "reading",
+      "severity": "warning"
+    },
+    {
+      "code": "READING_PASSAGE_SHORT",
+      "path": "questions.flyers-exp-014",
+      "message": "Passage too short.",
+      "category": "reading",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.flyers-exp-002",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.flyers-exp-001",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.flyers-exp-003",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.flyers-exp-004",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.flyers-exp-005",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.flyers-exp-007",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.flyers-exp-016",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-035/flyers-fgm-029",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-035/flyers-fgm-031",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-035/flyers-fgm-030",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-035/flyers-fgm-033",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-029/flyers-fgm-031",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-029/flyers-fgm-030",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-029/flyers-fgm-033",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-031/flyers-fgm-030",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-031/flyers-fgm-033",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-030/flyers-fgm-033",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-039/flyers-fgm-042",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-039/flyers-fgm-037",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-039/flyers-fgm-036",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-039/flyers-fgm-040",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-042/flyers-fgm-037",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-042/flyers-fgm-036",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-042/flyers-fgm-040",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-037/flyers-fgm-036",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-037/flyers-fgm-040",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-036/flyers-fgm-040",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-049/flyers-fgm-048",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-049/flyers-fgm-047",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-049/flyers-fgm-043",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-049/flyers-fgm-044",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-048/flyers-fgm-047",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-048/flyers-fgm-043",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-048/flyers-fgm-044",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-047/flyers-fgm-043",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-047/flyers-fgm-044",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "flyers-fgm-043/flyers-fgm-044",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    }
+  ],
+  "certifiedAt": "2026-06-24T01:29:19.729Z",
+  "notes": []
+}

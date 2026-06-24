@@ -1,0 +1,2799 @@
+{
+  "metadata": {
+    "manifestId": "cambridge-pet-a-v1",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-pet-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "pet",
+    "title": "B1 Preliminary for Schools — Form A",
+    "description": "Assembled reference exam for pet (architecture validation).",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000006",
+    "timeLimitMinutes": 130,
+    "totalScore": 174,
+    "status": "review",
+    "authoringNotes": "M2.4 golden reference — not production content.",
+    "stableSlug": "pet-assembled-a"
+  },
+  "sections": [
+    {
+      "sectionSlug": "reading",
+      "title": "Reading",
+      "sortOrder": 1,
+      "skillSlug": "reading",
+      "timeLimitMinutes": 45,
+      "partSlugs": [
+        "reading-part-1",
+        "reading-part-2",
+        "reading-part-3",
+        "reading-part-4",
+        "reading-part-5",
+        "reading-part-6"
+      ],
+      "questionRefs": [
+        "pet-reading-part-1-multiple_choice-041",
+        "pet-reading-part-1-multiple_choice-122",
+        "pet-reading-part-1-multiple_choice-115",
+        "pet-reading-part-1-multiple_choice-066",
+        "pet-reading-part-1-multiple_choice-062",
+        "pet-reading-part-1-multiple_choice-050",
+        "pet-reading-part-2-matching-094",
+        "pet-reading-part-2-matching-085",
+        "pet-reading-part-2-matching-095",
+        "pet-reading-part-2-matching-082",
+        "pet-reading-part-2-matching-084",
+        "pet-reading-part-3-reading_comprehension-034",
+        "pet-reading-part-3-reading_comprehension-071",
+        "pet-reading-part-3-reading_comprehension-072",
+        "pet-reading-part-3-reading_comprehension-058",
+        "pet-reading-part-3-reading_comprehension-056",
+        "pet-reading-part-4-multiple_choice-124",
+        "pet-reading-part-4-multiple_choice-123",
+        "pet-reading-part-4-multiple_choice-002",
+        "pet-reading-part-4-multiple_choice-018",
+        "pet-reading-part-4-multiple_choice-106",
+        "pet-reading-part-4-multiple_choice-102",
+        "pet-reading-part-5-open_cloze-026",
+        "pet-reading-part-5-open_cloze-034",
+        "pet-reading-part-5-open_cloze-067",
+        "pet-reading-part-5-open_cloze-035",
+        "pet-reading-part-5-open_cloze-139",
+        "pet-reading-part-5-open_cloze-141",
+        "pet-reading-part-6-gapped_text-066",
+        "pet-reading-part-6-gapped_text-035",
+        "pet-reading-part-6-gapped_text-061",
+        "pet-reading-part-6-gapped_text-062",
+        "pet-reading-part-6-gapped_text-055",
+        "pet-reading-part-6-gapped_text-074"
+      ]
+    },
+    {
+      "sectionSlug": "writing",
+      "title": "Writing",
+      "sortOrder": 2,
+      "skillSlug": "writing",
+      "timeLimitMinutes": 45,
+      "partSlugs": [
+        "writing-part-1",
+        "writing-part-2"
+      ],
+      "questionRefs": [
+        "pet-writing-part-1-write_email-008",
+        "pet-writing-part-2-write_story-020"
+      ]
+    },
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 3,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 30,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4",
+        "listening-part-5"
+      ],
+      "questionRefs": [
+        "pet-listening-part-1-audio_multiple_choice-095",
+        "pet-listening-part-1-audio_multiple_choice-094",
+        "pet-listening-part-1-audio_multiple_choice-083",
+        "pet-listening-part-1-audio_multiple_choice-080",
+        "pet-listening-part-1-audio_multiple_choice-092",
+        "pet-listening-part-2-audio_multiple_choice-109",
+        "pet-listening-part-2-audio_multiple_choice-007",
+        "pet-listening-part-2-audio_multiple_choice-104",
+        "pet-listening-part-2-audio_multiple_choice-118",
+        "pet-listening-part-2-audio_multiple_choice-006",
+        "pet-listening-part-3-audio_gap_fill-075",
+        "pet-listening-part-3-audio_gap_fill-052",
+        "pet-listening-part-3-audio_gap_fill-046",
+        "pet-listening-part-3-audio_gap_fill-032",
+        "pet-listening-part-3-audio_gap_fill-064",
+        "pet-listening-part-4-audio_multiple_choice-060",
+        "pet-listening-part-4-audio_multiple_choice-078",
+        "pet-listening-part-4-audio_multiple_choice-043",
+        "pet-listening-part-4-audio_multiple_choice-065",
+        "pet-listening-part-4-audio_multiple_choice-028",
+        "pet-listening-part-5-audio_matching-012",
+        "pet-listening-part-5-audio_matching-100",
+        "pet-listening-part-5-audio_matching-000",
+        "pet-listening-part-5-audio_matching-090",
+        "pet-listening-part-5-audio_matching-003"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 4,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 14,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2",
+        "speaking-part-3"
+      ],
+      "questionRefs": [
+        "pet-speaking-part-1-conversation-011",
+        "pet-speaking-part-2-picture_description_speaking-015",
+        "pet-speaking-part-3-conversation-001"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "pet-reading-part-1-multiple_choice-041",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 1,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "colours",
+      "skillTag": "reading",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ],
+      "questionText": "Choose the correct answer — pet reading-part-1 #42.",
+      "content": {
+        "questionText": "Choose the correct answer — pet reading-part-1 #42."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-1-multiple_choice-122",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "weather",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_simple",
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Choose the correct answer — pet reading-part-1 #123.",
+      "content": {
+        "questionText": "Choose the correct answer — pet reading-part-1 #123."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-1-multiple_choice-115",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "food",
+      "skillTag": "reading",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ],
+      "questionText": "Choose the correct answer — pet reading-part-1 #116.",
+      "content": {
+        "questionText": "Choose the correct answer — pet reading-part-1 #116."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-1-multiple_choice-066",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "weather",
+      "skillTag": "reading",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Choose the correct answer — pet reading-part-1 #67.",
+      "content": {
+        "questionText": "Choose the correct answer — pet reading-part-1 #67."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-1-multiple_choice-062",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "home",
+      "skillTag": "reading",
+      "grammarTags": [
+        "modal_can",
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Choose the correct answer — pet reading-part-1 #63.",
+      "content": {
+        "questionText": "Choose the correct answer — pet reading-part-1 #63."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-1-multiple_choice-050",
+      "partSlug": "reading-part-1",
+      "sectionSlug": "reading",
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "numbers",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_simple",
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "numbers",
+        "community"
+      ],
+      "questionText": "Choose the correct answer — pet reading-part-1 #51.",
+      "content": {
+        "questionText": "Choose the correct answer — pet reading-part-1 #51."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-2-matching-094",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 7,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "weather",
+      "skillTag": "reading",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Match the items — pet reading-part-2 #95.",
+      "content": {
+        "questionText": "Match the items — pet reading-part-2 #95."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-2-matching-085",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 8,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "friends",
+      "skillTag": "reading",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "home"
+      ],
+      "questionText": "Match the items — pet reading-part-2 #86.",
+      "content": {
+        "questionText": "Match the items — pet reading-part-2 #86."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-2-matching-095",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 9,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "shopping",
+      "skillTag": "reading",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Match the items — pet reading-part-2 #96.",
+      "content": {
+        "questionText": "Match the items — pet reading-part-2 #96."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-2-matching-082",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 10,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "culture",
+      "skillTag": "reading",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "food"
+      ],
+      "questionText": "Match the items — pet reading-part-2 #83.",
+      "content": {
+        "questionText": "Match the items — pet reading-part-2 #83."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-2-matching-084",
+      "partSlug": "reading-part-2",
+      "sectionSlug": "reading",
+      "sortOrder": 11,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "family",
+      "skillTag": "reading",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Match the items — pet reading-part-2 #85.",
+      "content": {
+        "questionText": "Match the items — pet reading-part-2 #85."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-3-reading_comprehension-034",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 12,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "medium",
+      "topicTag": "home",
+      "skillTag": "reading",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Read and answer — pet reading-part-3 #35.",
+      "content": {
+        "questionText": "Read and answer — pet reading-part-3 #35.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-3-reading_comprehension-071",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 13,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "medium",
+      "topicTag": "travel",
+      "skillTag": "reading",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ],
+      "questionText": "Read and answer — pet reading-part-3 #72.",
+      "content": {
+        "questionText": "Read and answer — pet reading-part-3 #72.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-3-reading_comprehension-072",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 14,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "medium",
+      "topicTag": "health",
+      "skillTag": "reading",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "feelings"
+      ],
+      "questionText": "Read and answer — pet reading-part-3 #73.",
+      "content": {
+        "questionText": "Read and answer — pet reading-part-3 #73.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-3-reading_comprehension-058",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 15,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "medium",
+      "topicTag": "animals",
+      "skillTag": "reading",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "sports"
+      ],
+      "questionText": "Read and answer — pet reading-part-3 #59.",
+      "content": {
+        "questionText": "Read and answer — pet reading-part-3 #59.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-3-reading_comprehension-056",
+      "partSlug": "reading-part-3",
+      "sectionSlug": "reading",
+      "sortOrder": 16,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "medium",
+      "topicTag": "family",
+      "skillTag": "reading",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Read and answer — pet reading-part-3 #57.",
+      "content": {
+        "questionText": "Read and answer — pet reading-part-3 #57.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-4-multiple_choice-124",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 17,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "clothes",
+      "skillTag": "reading",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ],
+      "questionText": "Choose the correct answer — pet reading-part-4 #125.",
+      "content": {
+        "questionText": "Choose the correct answer — pet reading-part-4 #125."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-4-multiple_choice-123",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 18,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "shopping",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Choose the correct answer — pet reading-part-4 #124.",
+      "content": {
+        "questionText": "Choose the correct answer — pet reading-part-4 #124."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-4-multiple_choice-002",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 19,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "animals",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_simple",
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "sports"
+      ],
+      "questionText": "Choose the correct answer — pet reading-part-4 #3.",
+      "content": {
+        "questionText": "Choose the correct answer — pet reading-part-4 #3."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-4-multiple_choice-018",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 20,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "nature",
+      "skillTag": "reading",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ],
+      "questionText": "Choose the correct answer — pet reading-part-4 #19.",
+      "content": {
+        "questionText": "Choose the correct answer — pet reading-part-4 #19."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-4-multiple_choice-106",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 21,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "numbers",
+      "skillTag": "reading",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "numbers",
+        "community"
+      ],
+      "questionText": "Choose the correct answer — pet reading-part-4 #107.",
+      "content": {
+        "questionText": "Choose the correct answer — pet reading-part-4 #107."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-4-multiple_choice-102",
+      "partSlug": "reading-part-4",
+      "sectionSlug": "reading",
+      "sortOrder": 22,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "nature",
+      "skillTag": "reading",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ],
+      "questionText": "Choose the correct answer — pet reading-part-4 #103.",
+      "content": {
+        "questionText": "Choose the correct answer — pet reading-part-4 #103."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-5-open_cloze-026",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 23,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_simple",
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "food"
+      ],
+      "questionText": "Complete the gap — pet reading-part-5 #27.",
+      "content": {
+        "questionText": "Complete the gap — pet reading-part-5 #27.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "pet-reading-part-5-open_cloze-034",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 24,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "home",
+      "skillTag": "reading",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Complete the gap — pet reading-part-5 #35.",
+      "content": {
+        "questionText": "Complete the gap — pet reading-part-5 #35.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "pet-reading-part-5-open_cloze-067",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 25,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "shopping",
+      "skillTag": "reading",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Complete the gap — pet reading-part-5 #68.",
+      "content": {
+        "questionText": "Complete the gap — pet reading-part-5 #68.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "pet-reading-part-5-open_cloze-035",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 26,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "sports",
+      "skillTag": "reading",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "clothes"
+      ],
+      "questionText": "Complete the gap — pet reading-part-5 #36.",
+      "content": {
+        "questionText": "Complete the gap — pet reading-part-5 #36.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "pet-reading-part-5-open_cloze-139",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 27,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Complete the gap — pet reading-part-5 #140.",
+      "content": {
+        "questionText": "Complete the gap — pet reading-part-5 #140.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "pet-reading-part-5-open_cloze-141",
+      "partSlug": "reading-part-5",
+      "sectionSlug": "reading",
+      "sortOrder": 28,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "friends",
+      "skillTag": "reading",
+      "grammarTags": [
+        "imperatives",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "home"
+      ],
+      "questionText": "Complete the gap — pet reading-part-5 #142.",
+      "content": {
+        "questionText": "Complete the gap — pet reading-part-5 #142.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "pet-reading-part-6-gapped_text-066",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 29,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "weather",
+      "skillTag": "reading",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Choose the missing sentence — pet reading-part-6 #67.",
+      "content": {
+        "questionText": "Choose the missing sentence — pet reading-part-6 #67.",
+        "passage": "Paragraph with a gap for sentence selection."
+      },
+      "choices": [
+        {
+          "text": "Correct sentence",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong sentence A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong sentence B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-6-gapped_text-035",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 30,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "sports",
+      "skillTag": "reading",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "clothes"
+      ],
+      "questionText": "Choose the missing sentence — pet reading-part-6 #36.",
+      "content": {
+        "questionText": "Choose the missing sentence — pet reading-part-6 #36.",
+        "passage": "Paragraph with a gap for sentence selection."
+      },
+      "choices": [
+        {
+          "text": "Correct sentence",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong sentence A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong sentence B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-6-gapped_text-061",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 31,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "school",
+      "skillTag": "reading",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "weather"
+      ],
+      "questionText": "Choose the missing sentence — pet reading-part-6 #62.",
+      "content": {
+        "questionText": "Choose the missing sentence — pet reading-part-6 #62.",
+        "passage": "Paragraph with a gap for sentence selection."
+      },
+      "choices": [
+        {
+          "text": "Correct sentence",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong sentence A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong sentence B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-6-gapped_text-062",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 32,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "home",
+      "skillTag": "reading",
+      "grammarTags": [
+        "modal_can",
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Choose the missing sentence — pet reading-part-6 #63.",
+      "content": {
+        "questionText": "Choose the missing sentence — pet reading-part-6 #63.",
+        "passage": "Paragraph with a gap for sentence selection."
+      },
+      "choices": [
+        {
+          "text": "Correct sentence",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong sentence A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong sentence B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-6-gapped_text-055",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 33,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "grammarTags": [
+        "superlatives",
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Choose the missing sentence — pet reading-part-6 #56.",
+      "content": {
+        "questionText": "Choose the missing sentence — pet reading-part-6 #56.",
+        "passage": "Paragraph with a gap for sentence selection."
+      },
+      "choices": [
+        {
+          "text": "Correct sentence",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong sentence A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong sentence B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-reading-part-6-gapped_text-074",
+      "partSlug": "reading-part-6",
+      "sectionSlug": "reading",
+      "sortOrder": 34,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "nature",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_simple",
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ],
+      "questionText": "Choose the missing sentence — pet reading-part-6 #75.",
+      "content": {
+        "questionText": "Choose the missing sentence — pet reading-part-6 #75.",
+        "passage": "Paragraph with a gap for sentence selection."
+      },
+      "choices": [
+        {
+          "text": "Correct sentence",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong sentence A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong sentence B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-writing-part-1-write_email-008",
+      "partSlug": "writing-part-1",
+      "sectionSlug": "writing",
+      "sortOrder": 35,
+      "points": 20,
+      "blueprintQuestionType": "writing_message",
+      "cambaQuestionType": "writing",
+      "difficulty": "easy",
+      "topicTag": "leisure",
+      "skillTag": "writing",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "colours"
+      ],
+      "questionText": "Writing task: pet writing-part-1 writing #9.",
+      "content": {
+        "cambridgeTaskType": "write_email",
+        "prompt": "Writing task: pet writing-part-1 writing #9.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 25,
+        "maxWords": 100,
+        "requiredPoints": [
+          "Respond to all bullet points",
+          "Use appropriate register"
+        ],
+        "rubricId": "cambridge-write_email-v1"
+      }
+    },
+    {
+      "questionRef": "pet-writing-part-2-write_story-020",
+      "partSlug": "writing-part-2",
+      "sectionSlug": "writing",
+      "sortOrder": 36,
+      "points": 20,
+      "blueprintQuestionType": "writing_message",
+      "cambaQuestionType": "writing",
+      "difficulty": "easy",
+      "topicTag": "body",
+      "skillTag": "writing",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "body",
+        "environment"
+      ],
+      "questionText": "Writing task: pet writing-part-2 writing #21.",
+      "content": {
+        "cambridgeTaskType": "write_story",
+        "prompt": "Writing task: pet writing-part-2 writing #21.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 35,
+        "maxWords": 100,
+        "imageUrl": "/images/placeholders/writing-story.svg",
+        "rubricId": "cambridge-write_story-v1"
+      }
+    },
+    {
+      "questionRef": "pet-listening-part-1-audio_multiple_choice-095",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 37,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "shopping",
+      "skillTag": "listening",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Listen and choose — pet listening-part-1 #96.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-1 #96.",
+        "audioUrl": "/audio/assembly/pet/listening-part-1-95.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-1-audio_multiple_choice-094",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 38,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "weather",
+      "skillTag": "listening",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Listen and choose — pet listening-part-1 #95.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-1 #95.",
+        "audioUrl": "/audio/assembly/pet/listening-part-1-94.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-1-audio_multiple_choice-083",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 39,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "community",
+      "skillTag": "listening",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Listen and choose — pet listening-part-1 #84.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-1 #84.",
+        "audioUrl": "/audio/assembly/pet/listening-part-1-83.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-1-audio_multiple_choice-080",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 40,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "hobbies",
+      "skillTag": "listening",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Listen and choose — pet listening-part-1 #81.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-1 #81.",
+        "audioUrl": "/audio/assembly/pet/listening-part-1-80.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-1-audio_multiple_choice-092",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 41,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "leisure",
+      "skillTag": "listening",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "colours"
+      ],
+      "questionText": "Listen and choose — pet listening-part-1 #93.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-1 #93.",
+        "audioUrl": "/audio/assembly/pet/listening-part-1-92.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-2-audio_multiple_choice-109",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 42,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "skillTag": "listening",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ],
+      "questionText": "Listen and choose — pet listening-part-2 #110.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-2 #110.",
+        "audioUrl": "/audio/assembly/pet/listening-part-2-109.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-2-audio_multiple_choice-007",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 43,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "sports",
+      "skillTag": "listening",
+      "grammarTags": [
+        "superlatives",
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "clothes"
+      ],
+      "questionText": "Listen and choose — pet listening-part-2 #8.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-2 #8.",
+        "audioUrl": "/audio/assembly/pet/listening-part-2-7.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-2-audio_multiple_choice-104",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 44,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "body",
+      "skillTag": "listening",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "body",
+        "environment"
+      ],
+      "questionText": "Listen and choose — pet listening-part-2 #105.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-2 #105.",
+        "audioUrl": "/audio/assembly/pet/listening-part-2-104.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-2-audio_multiple_choice-118",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 45,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "home",
+      "skillTag": "listening",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Listen and choose — pet listening-part-2 #119.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-2 #119.",
+        "audioUrl": "/audio/assembly/pet/listening-part-2-118.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-2-audio_multiple_choice-006",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 46,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "home",
+      "skillTag": "listening",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Listen and choose — pet listening-part-2 #7.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-2 #7.",
+        "audioUrl": "/audio/assembly/pet/listening-part-2-6.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-3-audio_gap_fill-075",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 47,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "places",
+      "skillTag": "listening",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "hobbies"
+      ],
+      "questionText": "Complete the gap — pet listening-part-3 #76.",
+      "content": {
+        "questionText": "Complete the gap — pet listening-part-3 #76.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "pet-listening-part-3-audio_gap_fill-052",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 48,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "hobbies",
+      "skillTag": "listening",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Complete the gap — pet listening-part-3 #53.",
+      "content": {
+        "questionText": "Complete the gap — pet listening-part-3 #53.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "pet-listening-part-3-audio_gap_fill-046",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 49,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "nature",
+      "skillTag": "listening",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ],
+      "questionText": "Complete the gap — pet listening-part-3 #47.",
+      "content": {
+        "questionText": "Complete the gap — pet listening-part-3 #47.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "pet-listening-part-3-audio_gap_fill-032",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 50,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "drink",
+      "skillTag": "listening",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ],
+      "questionText": "Complete the gap — pet listening-part-3 #33.",
+      "content": {
+        "questionText": "Complete the gap — pet listening-part-3 #33.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "pet-listening-part-3-audio_gap_fill-064",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 51,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "leisure",
+      "skillTag": "listening",
+      "grammarTags": [
+        "conjunctions",
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "colours"
+      ],
+      "questionText": "Complete the gap — pet listening-part-3 #65.",
+      "content": {
+        "questionText": "Complete the gap — pet listening-part-3 #65.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "pet-listening-part-4-audio_multiple_choice-060",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 52,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "drink",
+      "skillTag": "listening",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ],
+      "questionText": "Listen and choose — pet listening-part-4 #61.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-4 #61.",
+        "audioUrl": "/audio/assembly/pet/listening-part-4-60.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-4-audio_multiple_choice-078",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 53,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "numbers",
+      "skillTag": "listening",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "numbers",
+        "community"
+      ],
+      "questionText": "Listen and choose — pet listening-part-4 #79.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-4 #79.",
+        "audioUrl": "/audio/assembly/pet/listening-part-4-78.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-4-audio_multiple_choice-043",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 54,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "travel",
+      "skillTag": "listening",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ],
+      "questionText": "Listen and choose — pet listening-part-4 #44.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-4 #44.",
+        "audioUrl": "/audio/assembly/pet/listening-part-4-43.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-4-audio_multiple_choice-065",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 55,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "transport",
+      "skillTag": "listening",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "transport",
+        "jobs"
+      ],
+      "questionText": "Listen and choose — pet listening-part-4 #66.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-4 #66.",
+        "audioUrl": "/audio/assembly/pet/listening-part-4-65.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-4-audio_multiple_choice-028",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 56,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "family",
+      "skillTag": "listening",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Listen and choose — pet listening-part-4 #29.",
+      "content": {
+        "questionText": "Listen and choose — pet listening-part-4 #29.",
+        "audioUrl": "/audio/assembly/pet/listening-part-4-28.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-5-audio_matching-012",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 57,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "clothes",
+      "skillTag": "listening",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ],
+      "questionText": "Match the items — pet listening-part-5 #13.",
+      "content": {
+        "questionText": "Match the items — pet listening-part-5 #13."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-5-audio_matching-100",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 58,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "health",
+      "skillTag": "listening",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "feelings"
+      ],
+      "questionText": "Match the items — pet listening-part-5 #101.",
+      "content": {
+        "questionText": "Match the items — pet listening-part-5 #101."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-5-audio_matching-000",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 59,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "family",
+      "skillTag": "listening",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Match the items — pet listening-part-5 #1.",
+      "content": {
+        "questionText": "Match the items — pet listening-part-5 #1."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-5-audio_matching-090",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 60,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "home",
+      "skillTag": "listening",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Match the items — pet listening-part-5 #91.",
+      "content": {
+        "questionText": "Match the items — pet listening-part-5 #91."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-listening-part-5-audio_matching-003",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 61,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "food",
+      "skillTag": "listening",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ],
+      "questionText": "Match the items — pet listening-part-5 #4.",
+      "content": {
+        "questionText": "Match the items — pet listening-part-5 #4."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "pet-speaking-part-1-conversation-011",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 62,
+      "points": 25,
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "shopping",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Speaking task: pet speaking-part-1 speaking #12.",
+      "content": {
+        "cambridgeTaskType": "speaking_discussion",
+        "prompt": "Speaking task: pet speaking-part-1 speaking #12.",
+        "taskDescription": "Discuss the topic with your partner.",
+        "followUpQuestions": [
+          "What do you think?",
+          "Why do you prefer that?"
+        ],
+        "maxDurationSeconds": 240,
+        "rubricId": "cambridge-conversation-v1"
+      }
+    },
+    {
+      "questionRef": "pet-speaking-part-2-picture_description_speaking-015",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 63,
+      "points": 25,
+      "blueprintQuestionType": "speaking_picture_story",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "travel",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ],
+      "questionText": "Speaking task: pet speaking-part-2 speaking #16.",
+      "content": {
+        "cambridgeTaskType": "speaking_picture_description",
+        "prompt": "Speaking task: pet speaking-part-2 speaking #16.",
+        "taskDescription": "Describe what you see in the picture.",
+        "maxDurationSeconds": 120,
+        "imageUrl": "/images/placeholders/speaking-picture.svg",
+        "rubricId": "cambridge-picture_description_speaking-v1"
+      }
+    },
+    {
+      "questionRef": "pet-speaking-part-3-conversation-001",
+      "partSlug": "speaking-part-3",
+      "sectionSlug": "speaking",
+      "sortOrder": 64,
+      "points": 25,
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "friends",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "present_continuous",
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "home"
+      ],
+      "questionText": "Speaking task: pet speaking-part-3 speaking #2.",
+      "content": {
+        "cambridgeTaskType": "speaking_discussion",
+        "prompt": "Speaking task: pet speaking-part-3 speaking #2.",
+        "taskDescription": "Discuss the topic with your partner.",
+        "followUpQuestions": [
+          "What do you think?",
+          "Why do you prefer that?"
+        ],
+        "maxDurationSeconds": 240,
+        "rubricId": "cambridge-conversation-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "colours",
+      "weather",
+      "food",
+      "home",
+      "numbers",
+      "friends",
+      "shopping",
+      "culture",
+      "family",
+      "travel",
+      "health",
+      "animals",
+      "clothes",
+      "nature",
+      "sports",
+      "community",
+      "school",
+      "leisure",
+      "body",
+      "hobbies",
+      "environment",
+      "places",
+      "drink",
+      "transport"
+    ],
+    "distinctGrammarPatterns": [
+      "adverbs_frequency",
+      "there_is_are",
+      "past_simple",
+      "future_going_to",
+      "have_got",
+      "relative_clauses",
+      "verb_be",
+      "imperatives",
+      "modal_can",
+      "present_continuous",
+      "question_forms",
+      "conjunctions",
+      "linking_words",
+      "possessives",
+      "countable_uncountable",
+      "modal_must",
+      "present_simple",
+      "past_continuous",
+      "articles",
+      "prepositions",
+      "future_will",
+      "superlatives",
+      "comparatives",
+      "pronouns"
+    ],
+    "subskillsRepresented": [
+      "reading",
+      "writing",
+      "listening",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "medium": 31,
+      "easy": 22,
+      "hard": 11
+    },
+    "notes": "Generated by M2.4 exam assembly engine."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "speaking-example-picture-description",
+  "question_type": "speaking",
+  "question_text": "Describe the picture.",
+  "points": 0,
+  "content": {
+    "cambridgeTaskType": "speaking_picture_description",
+    "prompt": "Look at the picture and describe what you see.",
+    "taskDescription": "Say at least two sentences.",
+    "maxDurationSeconds": 60,
+    "imageUrl": "/images/placeholders/speaking-picture.svg"
+  }
+}

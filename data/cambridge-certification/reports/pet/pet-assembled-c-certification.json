@@ -1,0 +1,1089 @@
+{
+  "mockId": "pet-assembled-c",
+  "version": "C",
+  "level": "pet",
+  "source": "assembled",
+  "levelAssigned": "rejected",
+  "certified": false,
+  "studentFacing": false,
+  "metrics": {
+    "certificationScore": 78,
+    "coverageScore": 100,
+    "qaScore": 66,
+    "diversityScore": 50,
+    "blueprintScore": 100,
+    "grammarDistinct": 24,
+    "vocabularyDistinct": 28,
+    "skillDistinct": 4,
+    "taskDistinct": 8,
+    "topicDistinct": 23,
+    "difficultyDistinct": 3,
+    "writingCount": 2,
+    "speakingCount": 3,
+    "readingCount": 34,
+    "listeningCount": 25,
+    "duplicateItemCount": 0,
+    "duplicateClusterCount": 0
+  },
+  "issues": [
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-1-multiple_choice-022",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-1-multiple_choice-060",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-1-multiple_choice-074",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-1-multiple_choice-078",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-1-multiple_choice-032",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-1-multiple_choice-011",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-2-matching-087",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-2-matching-093",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-2-matching-081",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-2-matching-084",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-2-matching-095",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-4-multiple_choice-122",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-4-multiple_choice-004",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-4-multiple_choice-010",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-4-multiple_choice-117",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-4-multiple_choice-124",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-reading-part-4-multiple_choice-011",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-writing-part-1-write_email-021",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-writing-part-2-write_story-014",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-listening-part-5-audio_matching-026",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-listening-part-5-audio_matching-056",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-listening-part-5-audio_matching-004",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-listening-part-5-audio_matching-047",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-listening-part-5-audio_matching-063",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-speaking-part-1-conversation-001",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-speaking-part-2-picture_description_speaking-003",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "MALFORMED_PROMPT",
+      "path": "questions.pet-speaking-part-3-conversation-003",
+      "message": "Question stem is empty or placeholder.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "WRITING_PLACEHOLDER",
+      "path": "questions.pet-writing-part-1-write_email-021",
+      "message": "Writing prompt is placeholder.",
+      "category": "writing",
+      "severity": "error"
+    },
+    {
+      "code": "WRITING_PLACEHOLDER",
+      "path": "questions.pet-writing-part-2-write_story-014",
+      "message": "Writing prompt is placeholder.",
+      "category": "writing",
+      "severity": "error"
+    },
+    {
+      "code": "SPEAKING_PLACEHOLDER",
+      "path": "questions.pet-speaking-part-1-conversation-001",
+      "message": "Speaking prompt is placeholder.",
+      "category": "speaking",
+      "severity": "error"
+    },
+    {
+      "code": "SPEAKING_PLACEHOLDER",
+      "path": "questions.pet-speaking-part-2-picture_description_speaking-003",
+      "message": "Speaking prompt is placeholder.",
+      "category": "speaking",
+      "severity": "error"
+    },
+    {
+      "code": "SPEAKING_PLACEHOLDER",
+      "path": "questions.pet-speaking-part-3-conversation-003",
+      "message": "Speaking prompt is placeholder.",
+      "category": "speaking",
+      "severity": "error"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.pet-listening-part-3-audio_gap_fill-081",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.pet-listening-part-3-audio_gap_fill-095",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.pet-listening-part-3-audio_gap_fill-091",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.pet-listening-part-3-audio_gap_fill-086",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.pet-listening-part-3-audio_gap_fill-093",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.pet-listening-part-5-audio_matching-026",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.pet-listening-part-5-audio_matching-056",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.pet-listening-part-5-audio_matching-004",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.pet-listening-part-5-audio_matching-047",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.pet-listening-part-5-audio_matching-063",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-022/pet-reading-part-1-multiple_choice-060",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-022/pet-reading-part-1-multiple_choice-074",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-022/pet-reading-part-1-multiple_choice-078",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-022/pet-reading-part-1-multiple_choice-032",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-022/pet-reading-part-1-multiple_choice-011",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-060/pet-reading-part-1-multiple_choice-074",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-060/pet-reading-part-1-multiple_choice-078",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-060/pet-reading-part-1-multiple_choice-032",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-060/pet-reading-part-1-multiple_choice-011",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-074/pet-reading-part-1-multiple_choice-078",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-074/pet-reading-part-1-multiple_choice-032",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-074/pet-reading-part-1-multiple_choice-011",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-078/pet-reading-part-1-multiple_choice-032",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-078/pet-reading-part-1-multiple_choice-011",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-1-multiple_choice-032/pet-reading-part-1-multiple_choice-011",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-2-matching-087/pet-reading-part-2-matching-093",
+      "message": "Near-duplicate (100%): \"match the items — pet reading-part-2 #88\" ~ \"match the items — pet reading-part-2 #94\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-2-matching-087/pet-reading-part-2-matching-081",
+      "message": "Near-duplicate (100%): \"match the items — pet reading-part-2 #88\" ~ \"match the items — pet reading-part-2 #82\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-2-matching-087/pet-reading-part-2-matching-084",
+      "message": "Near-duplicate (100%): \"match the items — pet reading-part-2 #88\" ~ \"match the items — pet reading-part-2 #85\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-2-matching-087/pet-reading-part-2-matching-095",
+      "message": "Near-duplicate (100%): \"match the items — pet reading-part-2 #88\" ~ \"match the items — pet reading-part-2 #96\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-2-matching-093/pet-reading-part-2-matching-081",
+      "message": "Near-duplicate (100%): \"match the items — pet reading-part-2 #94\" ~ \"match the items — pet reading-part-2 #82\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-2-matching-093/pet-reading-part-2-matching-084",
+      "message": "Near-duplicate (100%): \"match the items — pet reading-part-2 #94\" ~ \"match the items — pet reading-part-2 #85\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-2-matching-093/pet-reading-part-2-matching-095",
+      "message": "Near-duplicate (100%): \"match the items — pet reading-part-2 #94\" ~ \"match the items — pet reading-part-2 #96\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-2-matching-081/pet-reading-part-2-matching-084",
+      "message": "Near-duplicate (100%): \"match the items — pet reading-part-2 #82\" ~ \"match the items — pet reading-part-2 #85\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-2-matching-081/pet-reading-part-2-matching-095",
+      "message": "Near-duplicate (100%): \"match the items — pet reading-part-2 #82\" ~ \"match the items — pet reading-part-2 #96\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-2-matching-084/pet-reading-part-2-matching-095",
+      "message": "Near-duplicate (100%): \"match the items — pet reading-part-2 #85\" ~ \"match the items — pet reading-part-2 #96\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-3-reading_comprehension-029/pet-reading-part-3-reading_comprehension-034",
+      "message": "Near-duplicate (100%): \"read and answer — pet reading-part-3 #30\" ~ \"read and answer — pet reading-part-3 #35\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-3-reading_comprehension-029/pet-reading-part-3-reading_comprehension-078",
+      "message": "Near-duplicate (100%): \"read and answer — pet reading-part-3 #30\" ~ \"read and answer — pet reading-part-3 #79\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-3-reading_comprehension-029/pet-reading-part-3-reading_comprehension-027",
+      "message": "Near-duplicate (100%): \"read and answer — pet reading-part-3 #30\" ~ \"read and answer — pet reading-part-3 #28\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-3-reading_comprehension-029/pet-reading-part-3-reading_comprehension-055",
+      "message": "Near-duplicate (100%): \"read and answer — pet reading-part-3 #30\" ~ \"read and answer — pet reading-part-3 #56\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-3-reading_comprehension-034/pet-reading-part-3-reading_comprehension-078",
+      "message": "Near-duplicate (100%): \"read and answer — pet reading-part-3 #35\" ~ \"read and answer — pet reading-part-3 #79\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-3-reading_comprehension-034/pet-reading-part-3-reading_comprehension-027",
+      "message": "Near-duplicate (100%): \"read and answer — pet reading-part-3 #35\" ~ \"read and answer — pet reading-part-3 #28\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-3-reading_comprehension-034/pet-reading-part-3-reading_comprehension-055",
+      "message": "Near-duplicate (100%): \"read and answer — pet reading-part-3 #35\" ~ \"read and answer — pet reading-part-3 #56\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-3-reading_comprehension-078/pet-reading-part-3-reading_comprehension-027",
+      "message": "Near-duplicate (100%): \"read and answer — pet reading-part-3 #79\" ~ \"read and answer — pet reading-part-3 #28\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-3-reading_comprehension-078/pet-reading-part-3-reading_comprehension-055",
+      "message": "Near-duplicate (100%): \"read and answer — pet reading-part-3 #79\" ~ \"read and answer — pet reading-part-3 #56\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-3-reading_comprehension-027/pet-reading-part-3-reading_comprehension-055",
+      "message": "Near-duplicate (100%): \"read and answer — pet reading-part-3 #28\" ~ \"read and answer — pet reading-part-3 #56\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-4-multiple_choice-004/pet-reading-part-4-multiple_choice-010",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-4-multiple_choice-004/pet-reading-part-4-multiple_choice-011",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-4-multiple_choice-010/pet-reading-part-4-multiple_choice-011",
+      "message": "Near-duplicate (100%): \"choose the correct answer — pet reading-\" ~ \"choose the correct answer — pet reading-\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-5-open_cloze-075/pet-reading-part-5-open_cloze-029",
+      "message": "Near-duplicate (100%): \"complete the gap — pet reading-part-5 #7\" ~ \"complete the gap — pet reading-part-5 #3\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-5-open_cloze-075/pet-reading-part-5-open_cloze-078",
+      "message": "Near-duplicate (100%): \"complete the gap — pet reading-part-5 #7\" ~ \"complete the gap — pet reading-part-5 #7\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-5-open_cloze-075/pet-reading-part-5-open_cloze-054",
+      "message": "Near-duplicate (100%): \"complete the gap — pet reading-part-5 #7\" ~ \"complete the gap — pet reading-part-5 #5\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-5-open_cloze-075/pet-reading-part-5-open_cloze-064",
+      "message": "Near-duplicate (100%): \"complete the gap — pet reading-part-5 #7\" ~ \"complete the gap — pet reading-part-5 #6\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-5-open_cloze-029/pet-reading-part-5-open_cloze-078",
+      "message": "Near-duplicate (100%): \"complete the gap — pet reading-part-5 #3\" ~ \"complete the gap — pet reading-part-5 #7\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-5-open_cloze-029/pet-reading-part-5-open_cloze-054",
+      "message": "Near-duplicate (100%): \"complete the gap — pet reading-part-5 #3\" ~ \"complete the gap — pet reading-part-5 #5\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-5-open_cloze-029/pet-reading-part-5-open_cloze-064",
+      "message": "Near-duplicate (100%): \"complete the gap — pet reading-part-5 #3\" ~ \"complete the gap — pet reading-part-5 #6\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-5-open_cloze-078/pet-reading-part-5-open_cloze-054",
+      "message": "Near-duplicate (100%): \"complete the gap — pet reading-part-5 #7\" ~ \"complete the gap — pet reading-part-5 #5\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-5-open_cloze-078/pet-reading-part-5-open_cloze-064",
+      "message": "Near-duplicate (100%): \"complete the gap — pet reading-part-5 #7\" ~ \"complete the gap — pet reading-part-5 #6\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-5-open_cloze-054/pet-reading-part-5-open_cloze-064",
+      "message": "Near-duplicate (100%): \"complete the gap — pet reading-part-5 #5\" ~ \"complete the gap — pet reading-part-5 #6\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-090/pet-reading-part-6-gapped_text-074",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-090/pet-reading-part-6-gapped_text-069",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-090/pet-reading-part-6-gapped_text-060",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-090/pet-reading-part-6-gapped_text-043",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-090/pet-reading-part-6-gapped_text-092",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-074/pet-reading-part-6-gapped_text-069",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-074/pet-reading-part-6-gapped_text-060",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-074/pet-reading-part-6-gapped_text-043",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-074/pet-reading-part-6-gapped_text-092",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-069/pet-reading-part-6-gapped_text-060",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-069/pet-reading-part-6-gapped_text-043",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-069/pet-reading-part-6-gapped_text-092",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-060/pet-reading-part-6-gapped_text-043",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-060/pet-reading-part-6-gapped_text-092",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-reading-part-6-gapped_text-043/pet-reading-part-6-gapped_text-092",
+      "message": "Near-duplicate (100%): \"choose the missing sentence — pet readin\" ~ \"choose the missing sentence — pet readin\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-1-audio_multiple_choice-002/pet-listening-part-1-audio_multiple_choice-018",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-1\" ~ \"listen and choose — pet listening-part-1\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-1-audio_multiple_choice-002/pet-listening-part-1-audio_multiple_choice-003",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-1\" ~ \"listen and choose — pet listening-part-1\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-1-audio_multiple_choice-002/pet-listening-part-1-audio_multiple_choice-008",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-1\" ~ \"listen and choose — pet listening-part-1\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-1-audio_multiple_choice-018/pet-listening-part-1-audio_multiple_choice-003",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-1\" ~ \"listen and choose — pet listening-part-1\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-1-audio_multiple_choice-018/pet-listening-part-1-audio_multiple_choice-008",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-1\" ~ \"listen and choose — pet listening-part-1\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-1-audio_multiple_choice-003/pet-listening-part-1-audio_multiple_choice-008",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-1\" ~ \"listen and choose — pet listening-part-1\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-2-audio_multiple_choice-056/pet-listening-part-2-audio_multiple_choice-028",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-2\" ~ \"listen and choose — pet listening-part-2\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-2-audio_multiple_choice-056/pet-listening-part-2-audio_multiple_choice-067",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-2\" ~ \"listen and choose — pet listening-part-2\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-2-audio_multiple_choice-056/pet-listening-part-2-audio_multiple_choice-057",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-2\" ~ \"listen and choose — pet listening-part-2\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-2-audio_multiple_choice-056/pet-listening-part-2-audio_multiple_choice-034",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-2\" ~ \"listen and choose — pet listening-part-2\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-2-audio_multiple_choice-028/pet-listening-part-2-audio_multiple_choice-067",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-2\" ~ \"listen and choose — pet listening-part-2\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-2-audio_multiple_choice-028/pet-listening-part-2-audio_multiple_choice-057",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-2\" ~ \"listen and choose — pet listening-part-2\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-2-audio_multiple_choice-028/pet-listening-part-2-audio_multiple_choice-034",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-2\" ~ \"listen and choose — pet listening-part-2\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-2-audio_multiple_choice-067/pet-listening-part-2-audio_multiple_choice-057",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-2\" ~ \"listen and choose — pet listening-part-2\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-2-audio_multiple_choice-067/pet-listening-part-2-audio_multiple_choice-034",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-2\" ~ \"listen and choose — pet listening-part-2\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-2-audio_multiple_choice-057/pet-listening-part-2-audio_multiple_choice-034",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-2\" ~ \"listen and choose — pet listening-part-2\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-3-audio_gap_fill-081/pet-listening-part-3-audio_gap_fill-095",
+      "message": "Near-duplicate (100%): \"complete the gap — pet listening-part-3 \" ~ \"complete the gap — pet listening-part-3 \"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-3-audio_gap_fill-081/pet-listening-part-3-audio_gap_fill-091",
+      "message": "Near-duplicate (100%): \"complete the gap — pet listening-part-3 \" ~ \"complete the gap — pet listening-part-3 \"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-3-audio_gap_fill-081/pet-listening-part-3-audio_gap_fill-086",
+      "message": "Near-duplicate (100%): \"complete the gap — pet listening-part-3 \" ~ \"complete the gap — pet listening-part-3 \"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-3-audio_gap_fill-081/pet-listening-part-3-audio_gap_fill-093",
+      "message": "Near-duplicate (100%): \"complete the gap — pet listening-part-3 \" ~ \"complete the gap — pet listening-part-3 \"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-3-audio_gap_fill-095/pet-listening-part-3-audio_gap_fill-091",
+      "message": "Near-duplicate (100%): \"complete the gap — pet listening-part-3 \" ~ \"complete the gap — pet listening-part-3 \"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-3-audio_gap_fill-095/pet-listening-part-3-audio_gap_fill-086",
+      "message": "Near-duplicate (100%): \"complete the gap — pet listening-part-3 \" ~ \"complete the gap — pet listening-part-3 \"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-3-audio_gap_fill-095/pet-listening-part-3-audio_gap_fill-093",
+      "message": "Near-duplicate (100%): \"complete the gap — pet listening-part-3 \" ~ \"complete the gap — pet listening-part-3 \"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-3-audio_gap_fill-091/pet-listening-part-3-audio_gap_fill-086",
+      "message": "Near-duplicate (100%): \"complete the gap — pet listening-part-3 \" ~ \"complete the gap — pet listening-part-3 \"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-3-audio_gap_fill-091/pet-listening-part-3-audio_gap_fill-093",
+      "message": "Near-duplicate (100%): \"complete the gap — pet listening-part-3 \" ~ \"complete the gap — pet listening-part-3 \"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-3-audio_gap_fill-086/pet-listening-part-3-audio_gap_fill-093",
+      "message": "Near-duplicate (100%): \"complete the gap — pet listening-part-3 \" ~ \"complete the gap — pet listening-part-3 \"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-4-audio_multiple_choice-032/pet-listening-part-4-audio_multiple_choice-036",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-4\" ~ \"listen and choose — pet listening-part-4\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-4-audio_multiple_choice-032/pet-listening-part-4-audio_multiple_choice-029",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-4\" ~ \"listen and choose — pet listening-part-4\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-4-audio_multiple_choice-032/pet-listening-part-4-audio_multiple_choice-065",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-4\" ~ \"listen and choose — pet listening-part-4\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-4-audio_multiple_choice-032/pet-listening-part-4-audio_multiple_choice-040",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-4\" ~ \"listen and choose — pet listening-part-4\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-4-audio_multiple_choice-036/pet-listening-part-4-audio_multiple_choice-029",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-4\" ~ \"listen and choose — pet listening-part-4\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-4-audio_multiple_choice-036/pet-listening-part-4-audio_multiple_choice-065",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-4\" ~ \"listen and choose — pet listening-part-4\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-4-audio_multiple_choice-036/pet-listening-part-4-audio_multiple_choice-040",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-4\" ~ \"listen and choose — pet listening-part-4\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-4-audio_multiple_choice-029/pet-listening-part-4-audio_multiple_choice-065",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-4\" ~ \"listen and choose — pet listening-part-4\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-4-audio_multiple_choice-029/pet-listening-part-4-audio_multiple_choice-040",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-4\" ~ \"listen and choose — pet listening-part-4\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-4-audio_multiple_choice-065/pet-listening-part-4-audio_multiple_choice-040",
+      "message": "Near-duplicate (100%): \"listen and choose — pet listening-part-4\" ~ \"listen and choose — pet listening-part-4\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-5-audio_matching-026/pet-listening-part-5-audio_matching-056",
+      "message": "Near-duplicate (100%): \"match the items — pet listening-part-5 #\" ~ \"match the items — pet listening-part-5 #\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-5-audio_matching-026/pet-listening-part-5-audio_matching-004",
+      "message": "Near-duplicate (100%): \"match the items — pet listening-part-5 #\" ~ \"match the items — pet listening-part-5 #\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-5-audio_matching-026/pet-listening-part-5-audio_matching-047",
+      "message": "Near-duplicate (100%): \"match the items — pet listening-part-5 #\" ~ \"match the items — pet listening-part-5 #\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-5-audio_matching-026/pet-listening-part-5-audio_matching-063",
+      "message": "Near-duplicate (100%): \"match the items — pet listening-part-5 #\" ~ \"match the items — pet listening-part-5 #\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-5-audio_matching-056/pet-listening-part-5-audio_matching-004",
+      "message": "Near-duplicate (100%): \"match the items — pet listening-part-5 #\" ~ \"match the items — pet listening-part-5 #\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-5-audio_matching-056/pet-listening-part-5-audio_matching-047",
+      "message": "Near-duplicate (100%): \"match the items — pet listening-part-5 #\" ~ \"match the items — pet listening-part-5 #\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-5-audio_matching-056/pet-listening-part-5-audio_matching-063",
+      "message": "Near-duplicate (100%): \"match the items — pet listening-part-5 #\" ~ \"match the items — pet listening-part-5 #\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-5-audio_matching-004/pet-listening-part-5-audio_matching-047",
+      "message": "Near-duplicate (100%): \"match the items — pet listening-part-5 #\" ~ \"match the items — pet listening-part-5 #\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-5-audio_matching-004/pet-listening-part-5-audio_matching-063",
+      "message": "Near-duplicate (100%): \"match the items — pet listening-part-5 #\" ~ \"match the items — pet listening-part-5 #\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "pet-listening-part-5-audio_matching-047/pet-listening-part-5-audio_matching-063",
+      "message": "Near-duplicate (100%): \"match the items — pet listening-part-5 #\" ~ \"match the items — pet listening-part-5 #\"",
+      "severity": "warning",
+      "category": "duplicate"
+    }
+  ],
+  "certifiedAt": "2026-06-24T01:29:19.869Z",
+  "notes": []
+}

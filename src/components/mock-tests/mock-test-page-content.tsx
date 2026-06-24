@@ -74,6 +74,7 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
         totalQuestions: viewModel.questionCount,
         currentQuestionIndex,
         answers,
+        questions: flatQuestions,
         isTestCompleteResolved,
         currentSectionTitle: currentSection?.title ?? null,
         currentSectionId: currentSection?.id ?? null,
@@ -82,6 +83,7 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
       viewModel.questionCount,
       currentQuestionIndex,
       answers,
+      flatQuestions,
       isTestCompleteResolved,
       currentSection?.title,
       currentSection?.id,
@@ -116,6 +118,7 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
         const response = await submitMockTest(viewModel.id, answers, timeSpent);
         if (response.success && response.data) {
           const result = response.data;
+          const storedAnswers = result.answers ?? answers;
           const attempt = buildMockTestAttemptSummary({
             attemptId: "session",
             score: result.score,
@@ -127,10 +130,11 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
           });
           writeMockTestSessionSnapshot(viewModel.id, {
             attempt,
-            answers,
+            answers: storedAnswers,
             questionResults: result.questionResults,
           });
           setSessionAttempt(attempt);
+          setAnswers(storedAnswers);
           setQuestionResults(result.questionResults);
           setActiveReviewQuestionId(null);
           setIsReviewingTest(false);

@@ -1,0 +1,3841 @@
+{
+  "bankVersion": "2.0.0",
+  "level": "movers",
+  "itemCount": 81,
+  "sourceManifests": [
+    "movers-gold-mock-1",
+    "movers-expansion-batch-1"
+  ],
+  "extractedAt": "2026-06-24T01:13:14.633Z",
+  "bankTier": "cambridge-unified",
+  "items": [
+    {
+      "id": "movers-mgm-001",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "sports"
+      ],
+      "content": {
+        "questionText": "Listen. Which girl is Mia?",
+        "transcriptSnippet": "This is Mia. She's holding a tennis racket.",
+        "audioCue": "name_introduction",
+        "pairs": [
+          {
+            "leftText": "Mia",
+            "rightText": "Girl holding a tennis racket",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-001",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "school_sports",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 1,
+        "questionText": "Listen. Which girl is Mia?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "mgm-001",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-002",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "school"
+      ],
+      "content": {
+        "questionText": "Listen. Which boy is Hugo?",
+        "transcriptSnippet": "Hugo is my classmate. He's got curly black hair.",
+        "audioCue": "name_introduction",
+        "pairs": [
+          {
+            "leftText": "Hugo",
+            "rightText": "Boy with curly black hair",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-002",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "school_friends",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 2,
+        "questionText": "Listen. Which boy is Hugo?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "mgm-002",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-003",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "content": {
+        "questionText": "Listen. Which girl is Eva?",
+        "transcriptSnippet": "Eva always sits at the front desk in our classroom.",
+        "audioCue": "name_introduction",
+        "pairs": [
+          {
+            "leftText": "Eva",
+            "rightText": "Girl sitting at the front desk",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-003",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "school_class",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 3,
+        "questionText": "Listen. Which girl is Eva?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "mgm-003",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-004",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "content": {
+        "questionText": "Listen. Which boy is Leo?",
+        "transcriptSnippet": "Look at Leo. He's running in the school race.",
+        "audioCue": "name_introduction",
+        "pairs": [
+          {
+            "leftText": "Leo",
+            "rightText": "Boy running in a race",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-004",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "sports_day",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 4,
+        "questionText": "Listen. Which boy is Leo?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "mgm-004",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-005",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "clothes"
+      ],
+      "content": {
+        "questionText": "Listen. Which girl is Nina?",
+        "transcriptSnippet": "Nina's got a new green scarf today.",
+        "audioCue": "name_introduction",
+        "pairs": [
+          {
+            "leftText": "Nina",
+            "rightText": "Girl wearing a green scarf",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-005",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "school_playground",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 5,
+        "questionText": "Listen. Which girl is Nina?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "mgm-005",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-006",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "matching",
+      "difficulty": "hard",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "friends"
+      ],
+      "content": {
+        "questionText": "Listen. Which boy is Max?",
+        "transcriptSnippet": "Max is standing between Anna and Kim in the team photo.",
+        "audioCue": "name_introduction",
+        "pairs": [
+          {
+            "leftText": "Max",
+            "rightText": "Boy standing between two girls",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-006",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "team_photo",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 6,
+        "questionText": "Listen. Which boy is Max?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "mgm-006",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-007",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "gap_fill",
+      "difficulty": "easy",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "home"
+      ],
+      "content": {
+        "questionText": "Listen and write. What pet has Grandma got?",
+        "template": "Grandma has got a [0].",
+        "correctAnswers": [
+          "dog"
+        ],
+        "transcriptSnippet": "Grandma has got a friendly brown dog called Patch."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-007",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "grandma_house",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 7,
+        "questionText": "Listen and write. What pet has Grandma got?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "mgm-007",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-008",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "home"
+      ],
+      "content": {
+        "questionText": "Listen and write. What colour are the roses?",
+        "template": "The roses are [0].",
+        "correctAnswers": [
+          "red"
+        ],
+        "transcriptSnippet": "The roses in Grandma's garden are red."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-008",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "garden_flowers",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 8,
+        "questionText": "Listen and write. What colour are the roses?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "mgm-008",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-009",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "home"
+      ],
+      "content": {
+        "questionText": "Listen and write. What is Grandma making?",
+        "template": "Grandma is making [0].",
+        "correctAnswers": [
+          "biscuits",
+          "cookies"
+        ],
+        "transcriptSnippet": "Grandma is making biscuits in the kitchen."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-009",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "kitchen_baking",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 9,
+        "questionText": "Listen and write. What is Grandma making?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "mgm-009",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-010",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "numbers"
+      ],
+      "content": {
+        "questionText": "Listen and write. How many chairs are in the dining room?",
+        "template": "There are [0] chairs.",
+        "correctAnswers": [
+          "ten",
+          "10"
+        ],
+        "transcriptSnippet": "There are ten chairs in the dining room."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-010",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "visit_numbers",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 10,
+        "questionText": "Listen and write. How many chairs are in the dining room?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "mgm-010",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-011",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "weather"
+      ],
+      "content": {
+        "questionText": "Listen and write. What is the weather like?",
+        "template": "The weather is [0].",
+        "correctAnswers": [
+          "windy"
+        ],
+        "transcriptSnippet": "The weather is windy today."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-011",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "weather_visit",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 11,
+        "questionText": "Listen and write. What is the weather like?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "mgm-011",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-012",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "gap_fill",
+      "difficulty": "hard",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "transport",
+        "time"
+      ],
+      "content": {
+        "questionText": "Listen and write. What time did the train arrive?",
+        "template": "The train arrived at [0].",
+        "correctAnswers": [
+          "half past three",
+          "3:30"
+        ],
+        "transcriptSnippet": "The train arrived at half past three."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-012",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "train_journey",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 12,
+        "questionText": "Listen and write. What time did the train arrive?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "mgm-012",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-013",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "sports"
+      ],
+      "content": {
+        "questionText": "What are the children doing?",
+        "transcriptSnippet": "The children are swimming in the lake at summer camp.",
+        "choices": [
+          {
+            "text": "Swimming in the lake",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Sleeping in class",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Cooking dinner",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-013",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "summer_camp",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 13,
+        "questionText": "What are the children doing?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "mgm-013",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-014",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "content": {
+        "questionText": "What do they eat for breakfast?",
+        "transcriptSnippet": "They eat cereal and fruit for breakfast every morning.",
+        "choices": [
+          {
+            "text": "Cereal and fruit",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Pizza and chips",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Soup and bread",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-014",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "camp_food",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 14,
+        "questionText": "What do they eat for breakfast?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "mgm-014",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-015",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "leisure"
+      ],
+      "content": {
+        "questionText": "What can Tom play?",
+        "transcriptSnippet": "Tom can play the guitar and he loves singing too.",
+        "choices": [
+          {
+            "text": "The guitar",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "The violin",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "The trumpet",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-015",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "camp_music",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 15,
+        "questionText": "What can Tom play?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "mgm-015",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-016",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "clothes"
+      ],
+      "content": {
+        "questionText": "What is the weather like at camp?",
+        "transcriptSnippet": "The weather at camp is hot and sunny this week.",
+        "choices": [
+          {
+            "text": "Hot and sunny",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Cold and snowy",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Dark and foggy",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-016",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "camp_weather",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 16,
+        "questionText": "What is the weather like at camp?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "mgm-016",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-017",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "nature"
+      ],
+      "content": {
+        "questionText": "What animals do they see on the walk?",
+        "transcriptSnippet": "On the forest walk they see rabbits and squirrels.",
+        "choices": [
+          {
+            "text": "Rabbits and squirrels",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Sharks and whales",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Camels and snakes",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-017",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "camp_animals",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 17,
+        "questionText": "What animals do they see on the walk?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "mgm-017",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-018",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "time"
+      ],
+      "content": {
+        "questionText": "What are they going to do tonight?",
+        "transcriptSnippet": "Tonight they are going to watch a film outside under the stars.",
+        "choices": [
+          {
+            "text": "Watch a film outside",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Go shopping in town",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Fly to another country",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-018",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "camp_evening",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 18,
+        "questionText": "What are they going to do tonight?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "mgm-018",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-019",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "colours"
+      ],
+      "content": {
+        "questionText": "Colour the lamp. Which colour?",
+        "transcriptSnippet": "Colour the lamp purple, please.",
+        "taskProxy": "colour_and_draw",
+        "choices": [
+          {
+            "text": "Purple",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Silver",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Gold",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-019",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "bedroom_picture",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 19,
+        "questionText": "Colour the lamp. Which colour?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "mgm-019",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-020",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "colours"
+      ],
+      "content": {
+        "questionText": "Colour the jacket on the chair. Which colour?",
+        "transcriptSnippet": "Now colour the jacket on the chair orange.",
+        "taskProxy": "colour_and_draw",
+        "choices": [
+          {
+            "text": "Orange",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "White",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Pink",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-020",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "bedroom_picture",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 20,
+        "questionText": "Colour the jacket on the chair. Which colour?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "mgm-020",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-021",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "home"
+      ],
+      "content": {
+        "questionText": "Draw a clock on the wall. Where?",
+        "transcriptSnippet": "Draw a clock on the wall above the bed.",
+        "taskProxy": "colour_and_draw",
+        "choices": [
+          {
+            "text": "Above the bed",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Under the desk",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "On the floor",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-021",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "bedroom_picture",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 21,
+        "questionText": "Draw a clock on the wall. Where?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "mgm-021",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-022",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "colours"
+      ],
+      "content": {
+        "questionText": "Colour the fish in the bowl. Which colour?",
+        "transcriptSnippet": "Colour the fish in the bowl blue.",
+        "taskProxy": "colour_and_draw",
+        "choices": [
+          {
+            "text": "Blue",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Brown",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Grey",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-022",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "bedroom_picture",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 22,
+        "questionText": "Colour the fish in the bowl. Which colour?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "mgm-022",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-023",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "nature"
+      ],
+      "content": {
+        "questionText": "Draw a plant next to the window. Which picture is correct?",
+        "transcriptSnippet": "Draw a plant next to the window.",
+        "taskProxy": "colour_and_draw",
+        "choices": [
+          {
+            "text": "Plant beside the window",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Plant inside the cupboard",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Plant on the roof",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-023",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "bedroom_picture",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 23,
+        "questionText": "Draw a plant next to the window. Which picture is correct?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "mgm-023",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-024",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "places"
+      ],
+      "content": {
+        "questionText": "Draw a line from the boy to his school bag. Which picture?",
+        "transcriptSnippet": "Draw a line from the boy to his school bag.",
+        "taskProxy": "colour_and_draw",
+        "choices": [
+          {
+            "text": "Boy pointing at bag near door",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Boy sitting far from bag",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Boy without a bag",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-024",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "bedroom_picture",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 24,
+        "questionText": "Draw a line from the boy to his school bag. Which picture?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "mgm-024",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-025",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-1",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "hobbies"
+      ],
+      "content": {
+        "questionText": "Match the word to the picture.",
+        "pairs": [
+          {
+            "leftText": "guitar",
+            "rightText": "Musical instrument with six strings",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-025",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "hobbies",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 25,
+        "questionText": "Match the word to the picture.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-1",
+          "sourceQuestion": "mgm-025",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-026",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-1",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "content": {
+        "questionText": "Match the word to the picture.",
+        "pairs": [
+          {
+            "leftText": "skateboard",
+            "rightText": "Board with wheels for riding",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-026",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "sports",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 26,
+        "questionText": "Match the word to the picture.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-1",
+          "sourceQuestion": "mgm-026",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-027",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-1",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "content": {
+        "questionText": "Match the word to the picture.",
+        "pairs": [
+          {
+            "leftText": "camera",
+            "rightText": "Thing you use to take photos",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-027",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "leisure",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 27,
+        "questionText": "Match the word to the picture.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-1",
+          "sourceQuestion": "mgm-027",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-028",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-1",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "content": {
+        "questionText": "Match the word to the picture.",
+        "pairs": [
+          {
+            "leftText": "dictionary",
+            "rightText": "Book that helps you find word meanings",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-028",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "school",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 28,
+        "questionText": "Match the word to the picture.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-1",
+          "sourceQuestion": "mgm-028",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-029",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-1",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "transport"
+      ],
+      "content": {
+        "questionText": "Match the word to the picture.",
+        "pairs": [
+          {
+            "leftText": "helicopter",
+            "rightText": "Flying machine with big blades on top",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-029",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "transport",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 29,
+        "questionText": "Match the word to the picture.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-1",
+          "sourceQuestion": "mgm-029",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-030",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-1",
+      "questionType": "matching",
+      "difficulty": "hard",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "content": {
+        "questionText": "Match the word to the picture.",
+        "pairs": [
+          {
+            "leftText": "waterfall",
+            "rightText": "Water falling from a high place",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-030",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "nature",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 30,
+        "questionText": "Match the word to the picture.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-1",
+          "sourceQuestion": "mgm-030",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-031",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-2",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "time"
+      ],
+      "content": {
+        "questionText": "Read the sentence. Choose the correct picture.",
+        "passage": "Every morning I brush my teeth before breakfast.",
+        "choices": [
+          {
+            "text": "Child brushing teeth",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Child swimming",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Child sleeping",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-031",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "daily_routine",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 31,
+        "questionText": "Read the sentence. Choose the correct picture.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-2",
+          "sourceQuestion": "mgm-031",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-032",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-2",
+      "questionType": "reading_comprehension",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "sports"
+      ],
+      "content": {
+        "questionText": "Read the sentence. Choose the correct picture.",
+        "passage": "After school my sister is practising the piano.",
+        "choices": [
+          {
+            "text": "Girl playing piano",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Girl riding a horse",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Girl cooking soup",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-032",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "after_school",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 32,
+        "questionText": "Read the sentence. Choose the correct picture.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-2",
+          "sourceQuestion": "mgm-032",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-033",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-2",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "leisure"
+      ],
+      "content": {
+        "questionText": "Read the sentence. Choose the correct picture.",
+        "passage": "On Saturdays we visit our grandparents and play board games.",
+        "choices": [
+          {
+            "text": "Family playing board games",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Family at the airport",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Family in a supermarket",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-033",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "weekend",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 33,
+        "questionText": "Read the sentence. Choose the correct picture.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-2",
+          "sourceQuestion": "mgm-033",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-034",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-2",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "clothes"
+      ],
+      "content": {
+        "questionText": "Read the sentence. Choose the correct picture.",
+        "passage": "I've got a new pair of trainers for the school sports club.",
+        "choices": [
+          {
+            "text": "New sports shoes",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Winter coat",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Summer hat",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-034",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "shopping",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 34,
+        "questionText": "Read the sentence. Choose the correct picture.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-2",
+          "sourceQuestion": "mgm-034",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-035",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-2",
+      "questionType": "reading_comprehension",
+      "difficulty": "easy",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "home"
+      ],
+      "content": {
+        "questionText": "Read the sentence. Choose the correct picture.",
+        "passage": "Our rabbit is sleeping under the table in the living room.",
+        "choices": [
+          {
+            "text": "Rabbit under a table",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Rabbit flying",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Rabbit in a tree",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-035",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "pets",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 35,
+        "questionText": "Read the sentence. Choose the correct picture.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-2",
+          "sourceQuestion": "mgm-035",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-036",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-2",
+      "questionType": "reading_comprehension",
+      "difficulty": "hard",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "transport"
+      ],
+      "content": {
+        "questionText": "Read the sentence. Choose the correct picture.",
+        "passage": "It's raining, so Dad is driving us to school today.",
+        "choices": [
+          {
+            "text": "Car in the rain",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Bicycle on a sunny road",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Boat on a lake",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-036",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "rainy_day",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 36,
+        "questionText": "Read the sentence. Choose the correct picture.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-2",
+          "sourceQuestion": "mgm-036",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-037",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "school"
+      ],
+      "content": {
+        "questionText": "Read and choose the best answer.",
+        "passage": "Hi! I'm Pablo from Spain. I'm ten years old. I love football and I play in a team after school. My best friend is called Diego. We often ride our bikes to the park.",
+        "choices": [
+          {
+            "text": "Pablo plays football after school.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Pablo is twelve years old.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Diego lives in England.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-037",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "penpal_letter",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 37,
+        "questionText": "Read and choose the best answer.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-3",
+          "sourceQuestion": "mgm-037",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-038",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "school"
+      ],
+      "content": {
+        "questionText": "Read and choose the best answer.",
+        "passage": "Last Tuesday our class visited the science museum. We saw robots and a planetarium show. The guide told us about space. We ate our lunch in the museum café and bought postcards in the shop.",
+        "choices": [
+          {
+            "text": "The class went to a science museum.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "They saw dolphins at the museum.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "They did not eat lunch.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-038",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "museum_trip",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 38,
+        "questionText": "Read and choose the best answer.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-3",
+          "sourceQuestion": "mgm-038",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-039",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "hobbies"
+      ],
+      "content": {
+        "questionText": "Read and choose the best answer.",
+        "passage": "Every Wednesday I go to cooking club at school. This week we are making vegetable soup. First we wash the carrots and potatoes. Then we cut them carefully with a knife. I really enjoy cooking with my friends.",
+        "choices": [
+          {
+            "text": "They are making vegetable soup this week.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Cooking club is on Fridays.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "They never use vegetables.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-039",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "cooking_club",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 39,
+        "questionText": "Read and choose the best answer.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-3",
+          "sourceQuestion": "mgm-039",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-040",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "easy",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "leisure"
+      ],
+      "content": {
+        "questionText": "Read and choose the best answer.",
+        "passage": "Our school library is open every day. You can borrow two books for one week. I like adventure stories and books about animals. The librarian helps us find good books to read.",
+        "choices": [
+          {
+            "text": "Students can borrow two books.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "The library is only open on Mondays.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Nobody helps you find books.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-040",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "library",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 40,
+        "questionText": "Read and choose the best answer.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-3",
+          "sourceQuestion": "mgm-040",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-041",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "hard",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "weather"
+      ],
+      "content": {
+        "questionText": "Read and choose the best answer.",
+        "passage": "Next month my family is going to stay at a campsite near a lake. We are going to swim and cook food on a campfire. My dad says the weather will be warm but we must take raincoats too. I am very excited!",
+        "choices": [
+          {
+            "text": "They are going to stay at a campsite.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "They are going to live in a hotel in the city.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "They are not taking any clothes.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-041",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "holiday_campsite",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 41,
+        "questionText": "Read and choose the best answer.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-3",
+          "sourceQuestion": "mgm-041",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-042",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "hard",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "school"
+      ],
+      "content": {
+        "questionText": "Read and choose the best answer.",
+        "passage": "At our school we learn about the environment. We must put paper and plastic in different bins. Our teacher says we mustn't waste water when we wash our hands. Last week we planted trees in the school garden.",
+        "choices": [
+          {
+            "text": "Students must recycle paper and plastic.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "They planted trees in the ocean.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "They can throw all rubbish in one bin.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-042",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "recycling",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 42,
+        "questionText": "Read and choose the best answer.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-3",
+          "sourceQuestion": "mgm-042",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "movers-mgm-043",
+      "level": "movers",
+      "skill": "writing",
+      "part": "rw-part-4",
+      "questionType": "writing",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "animals"
+      ],
+      "content": {
+        "prompt": "Look at the picture. Write one sentence about the giraffe.",
+        "writingTaskType": "write_sentence",
+        "cambridgeTaskType": "write_sentence",
+        "minWords": 3,
+        "maxWords": 18,
+        "imageUrl": "/images/gold-mocks/movers/mgm-043-giraffe.png",
+        "rubricId": "gold-write_sentence-v1",
+        "questionText": "Look at the picture. Write one sentence about the giraffe."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-043",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "zoo_visit",
+        "skillTag": "writing",
+        "blueprintQuestionType": "writing_copy",
+        "cambridgeTaskType": "write_sentence",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 43,
+        "questionText": "Look at the picture. Write one sentence about the giraffe.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-4",
+          "sourceQuestion": "mgm-043",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-write_sentence-v1"
+      }
+    },
+    {
+      "id": "movers-mgm-044",
+      "level": "movers",
+      "skill": "writing",
+      "part": "rw-part-4",
+      "questionType": "writing",
+      "difficulty": "easy",
+      "grammarTags": [
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "places"
+      ],
+      "content": {
+        "prompt": "Look at the picture. Write one sentence about the children in the park.",
+        "writingTaskType": "write_sentence",
+        "cambridgeTaskType": "write_sentence",
+        "minWords": 3,
+        "maxWords": 18,
+        "imageUrl": "/images/gold-mocks/movers/mgm-044-park.png",
+        "rubricId": "gold-write_sentence-v1",
+        "questionText": "Look at the picture. Write one sentence about the children in the park."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-044",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "park_play",
+        "skillTag": "writing",
+        "blueprintQuestionType": "writing_copy",
+        "cambridgeTaskType": "write_sentence",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 44,
+        "questionText": "Look at the picture. Write one sentence about the children in the park.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-4",
+          "sourceQuestion": "mgm-044",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-write_sentence-v1"
+      }
+    },
+    {
+      "id": "movers-mgm-045",
+      "level": "movers",
+      "skill": "writing",
+      "part": "rw-part-4",
+      "questionType": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "leisure"
+      ],
+      "content": {
+        "prompt": "Write a message to your friend about your birthday party.",
+        "instructions": "Invite your friend to your party.",
+        "taskDescription": "Invite your friend to your party.",
+        "writingTaskType": "writing_message",
+        "cambridgeTaskType": "write_note",
+        "minWords": 15,
+        "maxWords": 40,
+        "requiredPoints": [
+          "Say when the party is",
+          "Say where it is",
+          "Say what you will do"
+        ],
+        "rubricId": "gold-write_note-v1",
+        "questionText": "Write a message to your friend about your birthday party."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-045",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "party_invite",
+        "skillTag": "writing",
+        "blueprintQuestionType": "writing_copy",
+        "cambridgeTaskType": "write_note",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 45,
+        "questionText": "Write a message to your friend about your birthday party.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-4",
+          "sourceQuestion": "mgm-045",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-write_note-v1"
+      }
+    },
+    {
+      "id": "movers-mgm-046",
+      "level": "movers",
+      "skill": "writing",
+      "part": "rw-part-4",
+      "questionType": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "transport"
+      ],
+      "content": {
+        "prompt": "Write a note to your teacher about yesterday's school trip.",
+        "instructions": "Tell your teacher about the trip.",
+        "taskDescription": "Tell your teacher about the trip.",
+        "writingTaskType": "writing_message",
+        "cambridgeTaskType": "write_note",
+        "minWords": 15,
+        "maxWords": 45,
+        "requiredPoints": [
+          "Say where you went",
+          "Say what you liked",
+          "Say thank you"
+        ],
+        "rubricId": "gold-write_note-v1",
+        "questionText": "Write a note to your teacher about yesterday's trip."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-046",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "school_trip",
+        "skillTag": "writing",
+        "blueprintQuestionType": "writing_copy",
+        "cambridgeTaskType": "write_note",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 46,
+        "questionText": "Write a note to your teacher about yesterday's trip.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-4",
+          "sourceQuestion": "mgm-046",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-write_note-v1"
+      }
+    },
+    {
+      "id": "movers-mgm-047",
+      "level": "movers",
+      "skill": "writing",
+      "part": "rw-part-4",
+      "questionType": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_continuous",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "food"
+      ],
+      "content": {
+        "prompt": "Look at the picture. Write two or three sentences about the market.",
+        "instructions": "Describe the market scene.",
+        "taskDescription": "Describe the market scene.",
+        "writingTaskType": "picture_description",
+        "cambridgeTaskType": "picture_description",
+        "minWords": 8,
+        "maxWords": 30,
+        "requiredPoints": [
+          "Say what people are buying",
+          "Say where things are"
+        ],
+        "imageUrl": "/images/gold-mocks/movers/mgm-047-market.png",
+        "rubricId": "gold-picture_description-v1",
+        "questionText": "Look at the picture. Write two or three sentences about the market."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-047",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "market_scene",
+        "skillTag": "writing",
+        "blueprintQuestionType": "writing_copy",
+        "cambridgeTaskType": "picture_description",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 47,
+        "questionText": "Look at the picture. Write two or three sentences about the market.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-4",
+          "sourceQuestion": "mgm-047",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-picture_description-v1"
+      }
+    },
+    {
+      "id": "movers-mgm-048",
+      "level": "movers",
+      "skill": "writing",
+      "part": "rw-part-4",
+      "questionType": "writing",
+      "difficulty": "hard",
+      "grammarTags": [
+        "past_simple",
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "content": {
+        "prompt": "Look at the picture. Write two or three sentences about the football match.",
+        "instructions": "Describe what happened in the match.",
+        "taskDescription": "Describe what happened in the match.",
+        "writingTaskType": "picture_description",
+        "cambridgeTaskType": "picture_description",
+        "minWords": 8,
+        "maxWords": 35,
+        "requiredPoints": [
+          "Say who is playing",
+          "Say what is happening"
+        ],
+        "imageUrl": "/images/gold-mocks/movers/mgm-048-football.png",
+        "rubricId": "gold-picture_description-v1",
+        "questionText": "Look at the picture. Write two or three sentences about the football match."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-048",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "sports_match",
+        "skillTag": "writing",
+        "blueprintQuestionType": "writing_copy",
+        "cambridgeTaskType": "picture_description",
+        "sectionSlug": "reading-writing",
+        "points": 1,
+        "sortOrder": 48,
+        "questionText": "Look at the picture. Write two or three sentences about the football match.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "rw-part-4",
+          "sourceQuestion": "mgm-048",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-picture_description-v1"
+      }
+    },
+    {
+      "id": "movers-mgm-049",
+      "level": "movers",
+      "skill": "speaking",
+      "part": "speaking-part-1",
+      "questionType": "speaking",
+      "difficulty": "medium",
+      "grammarTags": [
+        "there_is_are",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "places"
+      ],
+      "content": {
+        "prompt": "Look at the two pictures of a park. Tell your partner about five differences between them.",
+        "speakingTaskType": "speaking_picture_description",
+        "cambridgeTaskType": "speaking_picture_description",
+        "maxDurationSeconds": 120,
+        "followUpQuestions": [
+          "How many ducks are in the lake in picture A?",
+          "What colour is the bench in picture B?",
+          "Is there a dog in both pictures?",
+          "Where is the kite in picture A?",
+          "What is the boy holding in picture B?"
+        ],
+        "imageUrl": "/images/gold-mocks/movers/mgm-049-park-pair.png",
+        "rubricId": "gold-speaking_picture_description-v1",
+        "questionText": "Look at the two pictures. Tell your partner about the differences."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-049",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "park_differences",
+        "skillTag": "speaking",
+        "blueprintQuestionType": "speaking_interview",
+        "cambridgeTaskType": "speaking_picture_description",
+        "sectionSlug": "speaking",
+        "points": 5,
+        "sortOrder": 49,
+        "questionText": "Look at the two pictures. Tell your partner about the differences.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "speaking-part-1",
+          "sourceQuestion": "mgm-049",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-speaking_picture_description-v1"
+      }
+    },
+    {
+      "id": "movers-mgm-050",
+      "level": "movers",
+      "skill": "speaking",
+      "part": "speaking-part-2",
+      "questionType": "speaking",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school",
+        "hobbies"
+      ],
+      "content": {
+        "prompt": "Answer the examiner's questions about yourself, your family, school and free time.",
+        "speakingTaskType": "speaking_personal_questions",
+        "cambridgeTaskType": "speaking_personal_questions",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "What's your name and how old are you?",
+          "Where do you live?",
+          "What do you usually do after school?",
+          "Have you got any pets?",
+          "What sport or hobby do you enjoy most?"
+        ],
+        "rubricId": "gold-speaking_personal_questions-v1",
+        "questionText": "Answer the examiner's questions about you."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-050",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "about_you_movers",
+        "skillTag": "speaking",
+        "blueprintQuestionType": "speaking_interview",
+        "cambridgeTaskType": "speaking_personal_questions",
+        "sectionSlug": "speaking",
+        "points": 5,
+        "sortOrder": 50,
+        "questionText": "Answer the examiner's questions about you.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "speaking-part-2",
+          "sourceQuestion": "mgm-050",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-speaking_personal_questions-v1"
+      }
+    },
+    {
+      "id": "movers-mgm-051",
+      "level": "movers",
+      "skill": "speaking",
+      "part": "speaking-part-3",
+      "questionType": "speaking",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "places",
+        "feelings"
+      ],
+      "content": {
+        "prompt": "Look at these pictures and tell the story of how Anna found her lost dog.",
+        "speakingTaskType": "speaking_storytelling",
+        "cambridgeTaskType": "speaking_storytelling",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "Where did Anna look first?",
+          "Who helped her?",
+          "Where did she find the dog?",
+          "How did Anna feel at the end?",
+          "What did she do when she saw her dog?"
+        ],
+        "pictureSequence": [
+          "/images/gold-mocks/movers/mgm-051-story-1-worry.png",
+          "/images/gold-mocks/movers/mgm-051-story-2-search.png",
+          "/images/gold-mocks/movers/mgm-051-story-3-park.png",
+          "/images/gold-mocks/movers/mgm-051-story-4-happy.png"
+        ],
+        "rubricId": "gold-speaking_storytelling-v1",
+        "questionText": "Look at the pictures and tell the story."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "movers-gold-mock-1",
+        "sourceQuestionRef": "mgm-051",
+        "extractedAt": "2026-06-24T01:13:14.632Z",
+        "topicTag": "story_lost_dog",
+        "skillTag": "speaking",
+        "blueprintQuestionType": "speaking_interview",
+        "cambridgeTaskType": "speaking_storytelling",
+        "sectionSlug": "speaking",
+        "points": 5,
+        "sortOrder": 51,
+        "questionText": "Look at the pictures and tell the story.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-gold-mock-1",
+          "sourcePart": "speaking-part-3",
+          "sourceQuestion": "mgm-051",
+          "extractedAt": "2026-06-24T01:13:14.632Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-speaking_storytelling-v1"
+      }
+    },
+    {
+      "id": "movers-exp-001",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "content": {
+        "questionText": "Listen and match each teacher to the classroom they describe."
+      },
+      "authoringMetadata": {
+        "topicTag": "school",
+        "skillTag": "listening",
+        "questionText": "Listen and match each teacher to the classroom they describe.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "001",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-002",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "content": {
+        "questionText": "Listen and match each friend to the hobby they talk about."
+      },
+      "authoringMetadata": {
+        "topicTag": "friends",
+        "skillTag": "listening",
+        "questionText": "Listen and match each friend to the hobby they talk about.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "002",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-003",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "gap_fill",
+      "difficulty": "easy",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "weather"
+      ],
+      "content": {
+        "questionText": "Listen and write the missing weather word.",
+        "template": "Yesterday it was very [0] and windy.",
+        "correctAnswers": [
+          "cold"
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "weather",
+        "skillTag": "listening",
+        "questionText": "Listen and write the missing weather word.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "003",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-004",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "places"
+      ],
+      "content": {
+        "questionText": "Listen and write the missing place word.",
+        "template": "The library is next to the [0].",
+        "correctAnswers": [
+          "museum"
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "places",
+        "skillTag": "listening",
+        "questionText": "Listen and write the missing place word.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "004",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-005",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "content": {
+        "questionText": "Listen. Which picture shows children playing basketball?"
+      },
+      "authoringMetadata": {
+        "topicTag": "sports",
+        "skillTag": "listening",
+        "questionText": "Listen. Which picture shows children playing basketball?",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "005",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-006",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "content": {
+        "questionText": "Listen. What can the girl do when she feels tired?",
+        "choices": [
+          {
+            "text": "drink water and rest",
+            "isCorrect": true
+          },
+          {
+            "text": "run very fast",
+            "isCorrect": false
+          },
+          {
+            "text": "eat lots of sweets",
+            "isCorrect": false
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "health",
+        "skillTag": "listening",
+        "questionText": "Listen. What can the girl do when she feels tired?",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "006",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-007",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "multiple_choice",
+      "difficulty": "easy",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "content": {
+        "questionText": "Listen. Which flower should be coloured blue in the picture?",
+        "choices": [
+          {
+            "text": "the flower by the tree",
+            "isCorrect": true
+          },
+          {
+            "text": "the flower by the gate",
+            "isCorrect": false
+          },
+          {
+            "text": "the flower on the bench",
+            "isCorrect": false
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "nature",
+        "skillTag": "listening",
+        "questionText": "Listen. Which flower should be coloured blue in the picture?",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "007",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-008",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-1",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "content": {
+        "questionText": "Match each job word to the correct workplace picture."
+      },
+      "authoringMetadata": {
+        "topicTag": "jobs",
+        "skillTag": "reading",
+        "questionText": "Match each job word to the correct workplace picture.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-1",
+          "sourceQuestion": "008",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-009",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-1",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "animals"
+      ],
+      "content": {
+        "questionText": "Match each animal word to the picture of the bigger animal."
+      },
+      "authoringMetadata": {
+        "topicTag": "animals",
+        "skillTag": "reading",
+        "questionText": "Match each animal word to the picture of the bigger animal.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-1",
+          "sourceQuestion": "009",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-010",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-2",
+      "questionType": "reading_comprehension",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "home"
+      ],
+      "content": {
+        "questionText": "Read: 'Every evening Dad cooks dinner and Mum reads a book.' Who cooks dinner?"
+      },
+      "authoringMetadata": {
+        "topicTag": "home",
+        "skillTag": "reading",
+        "questionText": "Read: 'Every evening Dad cooks dinner and Mum reads a book.' Who cooks dinner?",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-2",
+          "sourceQuestion": "010",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-011",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-2",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "hobbies"
+      ],
+      "content": {
+        "questionText": "Read: 'Lisa often paints pictures on Saturdays.' How often does Lisa paint?",
+        "choices": [
+          {
+            "text": "never",
+            "isCorrect": false
+          },
+          {
+            "text": "often",
+            "isCorrect": true
+          },
+          {
+            "text": "once a year",
+            "isCorrect": false
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "hobbies",
+        "skillTag": "reading",
+        "questionText": "Read: 'Lisa often paints pictures on Saturdays.' How often does Lisa paint?",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-2",
+          "sourceQuestion": "011",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-012",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-2",
+      "questionType": "multiple_choice",
+      "difficulty": "easy",
+      "grammarTags": [
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "shopping"
+      ],
+      "content": {
+        "questionText": "Read: 'There are five oranges but only two apples in the shop.' Which fruit is there more of?",
+        "choices": [
+          {
+            "text": "apples",
+            "isCorrect": false
+          },
+          {
+            "text": "oranges",
+            "isCorrect": true
+          },
+          {
+            "text": "bananas",
+            "isCorrect": false
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "shopping",
+        "skillTag": "reading",
+        "questionText": "Read: 'There are five oranges but only two apples in the shop.' Which fruit is there more of?",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-2",
+          "sourceQuestion": "012",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-013",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "content": {
+        "questionText": "Read the email: 'We visited London last weekend. The train was slow but fun.' Where did they go?"
+      },
+      "authoringMetadata": {
+        "topicTag": "travel",
+        "skillTag": "reading",
+        "questionText": "Read the email: 'We visited London last weekend. The train was slow but fun.' Where did they go?",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-3",
+          "sourceQuestion": "013",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-014",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "easy",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "content": {
+        "questionText": "Read: 'We are going to watch a film at the cinema tonight.' What will they do tonight?"
+      },
+      "authoringMetadata": {
+        "topicTag": "leisure",
+        "skillTag": "reading",
+        "questionText": "Read: 'We are going to watch a film at the cinema tonight.' What will they do tonight?",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-3",
+          "sourceQuestion": "014",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-015",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-3",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "content": {
+        "questionText": "Complete: 'I like pasta _____ I don't like rice.'",
+        "template": "I like pasta [0] I don't like rice.",
+        "correctAnswers": [
+          "but"
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "food",
+        "skillTag": "reading",
+        "questionText": "Complete: 'I like pasta _____ I don't like rice.'",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-3",
+          "sourceQuestion": "015",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-016",
+      "level": "movers",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "clothes"
+      ],
+      "content": {
+        "questionText": "Listen. Draw a hat on the boy who is wearing shorts."
+      },
+      "authoringMetadata": {
+        "topicTag": "clothes",
+        "skillTag": "listening",
+        "questionText": "Listen. Draw a hat on the boy who is wearing shorts.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "016",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-017",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-1",
+      "questionType": "multiple_choice",
+      "difficulty": "easy",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "drink"
+      ],
+      "content": {
+        "questionText": "Which sentence matches the picture of many bottles of water?",
+        "choices": [
+          {
+            "text": "There is some water.",
+            "isCorrect": false
+          },
+          {
+            "text": "There are many bottles of water.",
+            "isCorrect": true
+          },
+          {
+            "text": "There is one bottle of juice.",
+            "isCorrect": false
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "drink",
+        "skillTag": "reading",
+        "questionText": "Which sentence matches the picture of many bottles of water?",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-1",
+          "sourceQuestion": "017",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-018",
+      "level": "movers",
+      "skill": "reading",
+      "part": "rw-part-3",
+      "questionType": "gap_fill",
+      "difficulty": "easy",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "content": {
+        "questionText": "Complete: 'You _____ wear your school uniform on Monday.'",
+        "template": "You [0] wear your school uniform on Monday.",
+        "correctAnswers": [
+          "must"
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "school",
+        "skillTag": "reading",
+        "questionText": "Complete: 'You _____ wear your school uniform on Monday.'",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-3",
+          "sourceQuestion": "018",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-019",
+      "level": "movers",
+      "skill": "writing",
+      "part": "rw-part-4",
+      "questionType": "writing",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "content": {
+        "prompt": "Look at the picture. Write one sentence about what the team is doing.",
+        "writingTaskType": "write_sentence",
+        "minWords": 4,
+        "maxWords": 18,
+        "rubricId": "expansion-write_sentence-v1",
+        "questionText": "Look at the picture. Write one sentence about what the team is doing."
+      },
+      "authoringMetadata": {
+        "topicTag": "sports",
+        "skillTag": "writing",
+        "questionText": "Look at the picture. Write one sentence about what the team is doing.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-4",
+          "sourceQuestion": "019",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-020",
+      "level": "movers",
+      "skill": "writing",
+      "part": "rw-part-4",
+      "questionType": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "content": {
+        "prompt": "Look at the picture. Write one sentence about what the family did at the airport.",
+        "writingTaskType": "write_sentence",
+        "minWords": 5,
+        "maxWords": 20,
+        "rubricId": "expansion-write_sentence-v1",
+        "questionText": "Look at the picture. Write one sentence about what the family did at the airport."
+      },
+      "authoringMetadata": {
+        "topicTag": "travel",
+        "skillTag": "writing",
+        "questionText": "Look at the picture. Write one sentence about what the family did at the airport.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-4",
+          "sourceQuestion": "020",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-021",
+      "level": "movers",
+      "skill": "writing",
+      "part": "rw-part-4",
+      "questionType": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "content": {
+        "prompt": "Write a short note inviting your neighbour to a street party.",
+        "writingTaskType": "writing_message",
+        "minWords": 8,
+        "maxWords": 35,
+        "rubricId": "expansion-writing_message-v1",
+        "questionText": "Write a short note inviting your neighbour to a street party."
+      },
+      "authoringMetadata": {
+        "topicTag": "community",
+        "skillTag": "writing",
+        "questionText": "Write a short note inviting your neighbour to a street party.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-4",
+          "sourceQuestion": "021",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-022",
+      "level": "movers",
+      "skill": "writing",
+      "part": "rw-part-4",
+      "questionType": "writing",
+      "difficulty": "easy",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "content": {
+        "prompt": "Write a message to your cousin explaining how to stay healthy.",
+        "writingTaskType": "writing_message",
+        "minWords": 8,
+        "maxWords": 35,
+        "rubricId": "expansion-writing_message-v1",
+        "questionText": "Write a message to your cousin explaining how to stay healthy."
+      },
+      "authoringMetadata": {
+        "topicTag": "health",
+        "skillTag": "writing",
+        "questionText": "Write a message to your cousin explaining how to stay healthy.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-4",
+          "sourceQuestion": "022",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-023",
+      "level": "movers",
+      "skill": "writing",
+      "part": "rw-part-4",
+      "questionType": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "content": {
+        "prompt": "Look at the river picture. Write two sentences about pollution you can see.",
+        "writingTaskType": "picture_description",
+        "minWords": 10,
+        "maxWords": 35,
+        "rubricId": "expansion-picture_description-v1",
+        "questionText": "Look at the river picture. Write two sentences about pollution you can see."
+      },
+      "authoringMetadata": {
+        "topicTag": "environment",
+        "skillTag": "writing",
+        "questionText": "Look at the river picture. Write two sentences about pollution you can see.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-4",
+          "sourceQuestion": "023",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-024",
+      "level": "movers",
+      "skill": "writing",
+      "part": "rw-part-4",
+      "questionType": "writing",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "content": {
+        "prompt": "Look at the classroom picture. Write two sentences about the computers and books.",
+        "writingTaskType": "picture_description",
+        "minWords": 10,
+        "maxWords": 35,
+        "rubricId": "expansion-picture_description-v1",
+        "questionText": "Look at the classroom picture. Write two sentences about the computers and books."
+      },
+      "authoringMetadata": {
+        "topicTag": "technology",
+        "skillTag": "writing",
+        "questionText": "Look at the classroom picture. Write two sentences about the computers and books.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "rw-part-4",
+          "sourceQuestion": "024",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-025",
+      "level": "movers",
+      "skill": "speaking",
+      "part": "speaking-part-1",
+      "questionType": "speaking",
+      "difficulty": "medium",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "home"
+      ],
+      "content": {
+        "prompt": "Look at the two kitchen pictures. Tell your teacher five differences.",
+        "speakingTaskType": "speaking_picture_description",
+        "maxDurationSeconds": 90,
+        "rubricId": "expansion-speaking_picture_description-v1",
+        "questionText": "Look at the two kitchen pictures. Tell your teacher five differences."
+      },
+      "authoringMetadata": {
+        "topicTag": "home",
+        "skillTag": "speaking",
+        "questionText": "Look at the two kitchen pictures. Tell your teacher five differences.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "speaking-part-1",
+          "sourceQuestion": "025",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-026",
+      "level": "movers",
+      "skill": "speaking",
+      "part": "speaking-part-1",
+      "questionType": "speaking",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "content": {
+        "prompt": "Look at the two café pictures. Say what people are doing differently.",
+        "speakingTaskType": "speaking_picture_description",
+        "maxDurationSeconds": 90,
+        "rubricId": "expansion-speaking_picture_description-v1",
+        "questionText": "Look at the two café pictures. Say what people are doing differently."
+      },
+      "authoringMetadata": {
+        "topicTag": "leisure",
+        "skillTag": "speaking",
+        "questionText": "Look at the two café pictures. Say what people are doing differently.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "speaking-part-1",
+          "sourceQuestion": "026",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-027",
+      "level": "movers",
+      "skill": "speaking",
+      "part": "speaking-part-2",
+      "questionType": "speaking",
+      "difficulty": "easy",
+      "grammarTags": [
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "content": {
+        "prompt": "Answer questions about your school day.",
+        "speakingTaskType": "speaking_personal_questions",
+        "maxDurationSeconds": 75,
+        "followUpQuestions": [
+          "What time do you start school?",
+          "Which subject do you enjoy most?",
+          "What do you usually eat for lunch?"
+        ],
+        "rubricId": "expansion-speaking_personal_questions-v1",
+        "questionText": "Answer questions about your school day."
+      },
+      "authoringMetadata": {
+        "topicTag": "school",
+        "skillTag": "speaking",
+        "questionText": "Answer questions about your school day.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "speaking-part-2",
+          "sourceQuestion": "027",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-028",
+      "level": "movers",
+      "skill": "speaking",
+      "part": "speaking-part-2",
+      "questionType": "speaking",
+      "difficulty": "medium",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "hobbies"
+      ],
+      "content": {
+        "prompt": "Answer questions about things you can do and want to learn.",
+        "speakingTaskType": "speaking_personal_questions",
+        "maxDurationSeconds": 75,
+        "followUpQuestions": [
+          "Can you play a musical instrument?",
+          "What new hobby would you like to try?",
+          "Who taught you to ride a bike?"
+        ],
+        "rubricId": "expansion-speaking_personal_questions-v1",
+        "questionText": "Answer questions about things you can do and want to learn."
+      },
+      "authoringMetadata": {
+        "topicTag": "hobbies",
+        "skillTag": "speaking",
+        "questionText": "Answer questions about things you can do and want to learn.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "speaking-part-2",
+          "sourceQuestion": "028",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-029",
+      "level": "movers",
+      "skill": "speaking",
+      "part": "speaking-part-3",
+      "questionType": "speaking",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "content": {
+        "prompt": "Look at the picture story. Tell the story of the school music concert.",
+        "speakingTaskType": "speaking_storytelling",
+        "maxDurationSeconds": 120,
+        "rubricId": "expansion-speaking_storytelling-v1",
+        "questionText": "Look at the picture story. Tell the story of the school music concert."
+      },
+      "authoringMetadata": {
+        "topicTag": "culture",
+        "skillTag": "speaking",
+        "questionText": "Look at the picture story. Tell the story of the school music concert.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "speaking-part-3",
+          "sourceQuestion": "029",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "movers-exp-030",
+      "level": "movers",
+      "skill": "speaking",
+      "part": "speaking-part-3",
+      "questionType": "speaking",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "animals"
+      ],
+      "content": {
+        "prompt": "Look at the picture story. Tell the story of the visit to the animal shelter.",
+        "speakingTaskType": "speaking_storytelling",
+        "maxDurationSeconds": 120,
+        "rubricId": "expansion-speaking_storytelling-v1",
+        "questionText": "Look at the picture story. Tell the story of the visit to the animal shelter."
+      },
+      "authoringMetadata": {
+        "topicTag": "animals",
+        "skillTag": "speaking",
+        "questionText": "Look at the picture story. Tell the story of the visit to the animal shelter.",
+        "extractedAt": "2026-06-24T01:13:13.968Z",
+        "source": {
+          "sourceLevel": "movers",
+          "sourceMock": "movers-expansion-batch-1",
+          "sourcePart": "speaking-part-3",
+          "sourceQuestion": "030",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    }
+  ]
+}

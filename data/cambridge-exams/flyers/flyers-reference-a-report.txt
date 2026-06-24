@@ -1,0 +1,20 @@
+=== Cambridge Exam Assembly Report ===
+Level: FLYERS | Version: A
+Blueprint: cambridge-flyers-v1@1.0.0
+Seed: camba-m2-4-reference:flyers:A
+Items: 59 | Valid: YES
+
+Difficulty distribution:
+  easy: 11 (22.4% / target 25.0%)
+  medium: 23 (46.9% / target 50.0%)
+  hard: 15 (30.6% / target 25.0%)
+
+Writing included: yes
+Speaking included: yes
+Blueprint compliant: yes
+
+Grammar tags (24): past_simple, future_going_to, there_is_are, linking_words, countable_uncountable, modal_must, pronouns, question_forms, conjunctions, present_continuous, future_will, prepositions, modal_can, superlatives, possessives, present_simple, past_continuous, comparatives, verb_be, imperatives, articles, relative_clauses, adverbs_frequency, have_got
+Vocab topics (28): animals, sports, drink, transport, hobbies, friends, environment, technology, numbers, places, family, school, food, leisure, body, weather, travel, jobs, community, clothes, shopping, health, colours, nature, home, time, culture, feelings
+
+Warnings:
+  - Difficulty distribution validated on auto-scored items only; writing/speaking excluded from band targets.

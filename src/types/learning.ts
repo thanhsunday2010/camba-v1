@@ -118,7 +118,25 @@ export type UserAnswer =
   | { type: "matching"; pairs: { leftId: string; rightText: string }[] }
   | { type: "gap_fill"; answers: string[] }
   | { type: "sentence_ordering"; order: string[] }
-  | { type: "text"; text: string };
+  | { type: "text"; text: string }
+  | {
+      type: "writing";
+      responseText: string;
+      wordCount: number;
+      submittedAt?: string;
+      taskType?: string;
+      evaluation?: import("@/lib/writing/writing-evaluation-types").WritingEvaluationEnvelope;
+    }
+  | {
+      type: "speaking";
+      audioRef: string;
+      mimeType: string;
+      durationSeconds: number;
+      submittedAt?: string;
+      taskType?: string;
+      transcript?: string;
+      evaluation?: import("@/lib/speaking/speaking-evaluation-types").SpeakingEvaluationEnvelope;
+    };
 
 export interface QuestionResult {
   questionId: string;
@@ -138,6 +156,8 @@ export interface ExerciseResult {
   maxScore: number;
   accuracyPercent: number;
   questionResults: QuestionResult[];
+  /** Enriched answers including writing evaluations when applicable. */
+  answers?: Record<string, UserAnswer>;
 }
 
 export interface PlacementQuestion extends PublicQuestion {
@@ -216,4 +236,5 @@ export interface MockTestResult {
   skillBreakdown: Record<string, number>;
   shieldEstimate: Record<string, number>;
   questionResults: QuestionResult[];
+  answers?: Record<string, UserAnswer>;
 }

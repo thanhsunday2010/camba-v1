@@ -1,0 +1,12 @@
+{
+  "id": "speaking-example-storytelling",
+  "question_type": "speaking",
+  "question_text": "Tell a story about the pictures.",
+  "points": 0,
+  "content": {
+    "cambridgeTaskType": "speaking_storytelling",
+    "prompt": "Look at the pictures and tell the story.",
+    "maxDurationSeconds": 120,
+    "pictureSequence": ["A boy finds a dog.", "They play in the park.", "They go home together."]
+  }
+}

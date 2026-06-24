@@ -1,0 +1,20 @@
+=== Cambridge Exam Assembly Report ===
+Level: STARTERS | Version: A
+Blueprint: cambridge-starters-v1@1.0.0
+Seed: camba-m2-4-reference:starters:A
+Items: 43 | Valid: YES
+
+Difficulty distribution:
+  easy: 18 (51.4% / target 60.0%)
+  medium: 12 (34.3% / target 30.0%)
+  hard: 5 (14.3% / target 10.0%)
+
+Writing included: yes
+Speaking included: yes
+Blueprint compliant: yes
+
+Grammar tags (23): imperatives, present_simple, relative_clauses, present_continuous, prepositions, modal_can, past_continuous, comparatives, pronouns, there_is_are, linking_words, future_will, verb_be, have_got, articles, modal_must, future_going_to, past_simple, possessives, question_forms, adverbs_frequency, conjunctions, countable_uncountable
+Vocab topics (28): school, weather, jobs, places, sports, clothes, hobbies, friends, numbers, community, leisure, colours, nature, home, shopping, travel, body, drink, transport, health, environment, animals, time, family, feelings, culture, food, technology
+
+Warnings:
+  - Difficulty distribution validated on auto-scored items only; writing/speaking excluded from band targets.

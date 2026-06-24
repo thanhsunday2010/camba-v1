@@ -1,0 +1,4526 @@
+{
+  "bankVersion": "2.0.0",
+  "level": "pet",
+  "itemCount": 94,
+  "sourceManifests": [
+    "pet-gold-mock-1",
+    "pet-expansion-batch-1"
+  ],
+  "extractedAt": "2026-06-24T01:13:14.668Z",
+  "bankTier": "cambridge-unified",
+  "items": [
+    {
+      "id": "pet-pgm-001",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-1",
+      "questionType": "multiple_choice",
+      "difficulty": "easy",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "transport"
+      ],
+      "content": {
+        "questionText": "Parking for permit holders only — all other vehicles will be removed.",
+        "choices": [
+          {
+            "text": "Anyone may park here for one hour.",
+            "isCorrect": false,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Only drivers with a permit can leave their car here.",
+            "isCorrect": true,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Parking is free after 6 p.m.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-001",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "transport",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 1,
+        "questionText": "Parking for permit holders only — all other vehicles will be removed.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-1",
+          "sourceQuestion": "pgm-001",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-002",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-1",
+      "questionType": "multiple_choice",
+      "difficulty": "easy",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "content": {
+        "questionText": "Pharmacy closed — emergency prescriptions available at City Hospital.",
+        "choices": [
+          {
+            "text": "You can collect urgent medicine at the hospital.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "The pharmacy opens at midnight.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "No medicine is available today.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-002",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "health",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 2,
+        "questionText": "Pharmacy closed — emergency prescriptions available at City Hospital.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-1",
+          "sourceQuestion": "pgm-002",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-003",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-1",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "content": {
+        "questionText": "Exhibition ends Sunday — last entry 4:30 p.m.",
+        "choices": [
+          {
+            "text": "Visitors cannot enter after half past four.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "The exhibition continues next month.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Tickets are sold only online.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-003",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "leisure",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 3,
+        "questionText": "Exhibition ends Sunday — last entry 4:30 p.m.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-1",
+          "sourceQuestion": "pgm-003",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-004",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-1",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "shopping"
+      ],
+      "content": {
+        "questionText": "Winter sale — further reductions on selected coats this week only.",
+        "choices": [
+          {
+            "text": "Coats will be cheaper for a limited time.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "All clothes are half price.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "The sale finished yesterday.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-004",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "shopping",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 4,
+        "questionText": "Winter sale — further reductions on selected coats this week only.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-1",
+          "sourceQuestion": "pgm-004",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-005",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-1",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "content": {
+        "questionText": "Exam results published online Friday — paper copies available on request.",
+        "choices": [
+          {
+            "text": "Students can ask for a printed copy if they want one.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Results appear only on noticeboards.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Paper copies are not offered.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-005",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "school",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 5,
+        "questionText": "Exam results published online Friday — paper copies available on request.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-1",
+          "sourceQuestion": "pgm-005",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-006",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-1",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "content": {
+        "questionText": "Reusable cups required — disposable cups no longer provided.",
+        "choices": [
+          {
+            "text": "Customers must bring or buy a cup they can use again.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "The café has stopped selling drinks.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Paper cups are free at the counter.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-006",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "environment",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 6,
+        "questionText": "Reusable cups required — disposable cups no longer provided.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-1",
+          "sourceQuestion": "pgm-006",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-007",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-2",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "content": {
+        "questionText": "Which person works in a hospital?",
+        "pairs": [
+          {
+            "leftText": "Nadia",
+            "rightText": "is training to be a nurse",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-007",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "jobs",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 7,
+        "questionText": "Which person works in a hospital?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-2",
+          "sourceQuestion": "pgm-007",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-008",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-2",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "content": {
+        "questionText": "Which person cycled across Europe last summer?",
+        "pairs": [
+          {
+            "leftText": "Felix",
+            "rightText": "completed a charity bike tour",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-008",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "travel",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 8,
+        "questionText": "Which person cycled across Europe last summer?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-2",
+          "sourceQuestion": "pgm-008",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-009",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-2",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "content": {
+        "questionText": "Which person is designing a language-learning app?",
+        "pairs": [
+          {
+            "leftText": "Sofia",
+            "rightText": "is building an app with classmates",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-009",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "technology",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 9,
+        "questionText": "Which person is designing a language-learning app?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-2",
+          "sourceQuestion": "pgm-009",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-010",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-2",
+      "questionType": "matching",
+      "difficulty": "hard",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "content": {
+        "questionText": "Which person has written articles for a music magazine?",
+        "pairs": [
+          {
+            "leftText": "Jon",
+            "rightText": "has interviewed several local bands",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-010",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "culture",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 10,
+        "questionText": "Which person has written articles for a music magazine?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-2",
+          "sourceQuestion": "pgm-010",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-011",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-2",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "content": {
+        "questionText": "Which person is going to organise a food bank collection?",
+        "pairs": [
+          {
+            "leftText": "Rosa",
+            "rightText": "plans to ask local shops for donations",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-011",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "community",
+        "skillTag": "reading",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 11,
+        "questionText": "Which person is going to organise a food bank collection?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-2",
+          "sourceQuestion": "pgm-011",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-012",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "content": {
+        "questionText": "Why did Maya join the photography society?",
+        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays.",
+        "choices": [
+          {
+            "text": "Because she enjoyed photographing street life",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Because her course required it",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Because she wanted to work in a hospital",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-012",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "school",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 12,
+        "questionText": "Why did Maya join the photography society?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-3",
+          "sourceQuestion": "pgm-012",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-013",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "content": {
+        "questionText": "What charity project did Maya work on?",
+        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays.",
+        "choices": [
+          {
+            "text": "Photographing an exhibition for a hospital",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Teaching children to use cameras",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Selling photos in a supermarket",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-013",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "community",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 13,
+        "questionText": "What charity project did Maya work on?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-3",
+          "sourceQuestion": "pgm-013",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-014",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "content": {
+        "questionText": "How did the project help Maya socially?",
+        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays.",
+        "choices": [
+          {
+            "text": "She met students from different courses",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "She moved back to her hometown",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "She stopped attending meetings",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-014",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "friends",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 14,
+        "questionText": "How did the project help Maya socially?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-3",
+          "sourceQuestion": "pgm-014",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-015",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "hard",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "content": {
+        "questionText": "What does Maya do with her friends now?",
+        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays.",
+        "choices": [
+          {
+            "text": "They travel together during holidays",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "They only meet at society events",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "They study photography online",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-015",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "travel",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 15,
+        "questionText": "What does Maya do with her friends now?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-3",
+          "sourceQuestion": "pgm-015",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-016",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "feelings"
+      ],
+      "content": {
+        "questionText": "How did Maya feel at the beginning of the story?",
+        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays.",
+        "choices": [
+          {
+            "text": "Nervous about making friends",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Angry about moving city",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Bored with university life",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-016",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "feelings",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 16,
+        "questionText": "How did Maya feel at the beginning of the story?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-3",
+          "sourceQuestion": "pgm-016",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-017",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-4",
+      "questionType": "multiple_choice",
+      "difficulty": "easy",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "content": {
+        "questionText": "Gap (1): fresh produce ___ expensive",
+        "passage": "Urban gardening has become popular among young professionals who live in flats. Many people grow herbs and vegetables on balconies because fresh produce (1) ___ expensive in supermarkets. Community gardens also offer shared spaces where neighbours can (2) ___ advice and tools. Experts recommend starting with easy plants such as lettuce or mint, which grow quickly and need little (3) ___. Some cities provide free workshops so residents learn how to compost and save (4) ___. Although space is limited, careful planning can turn a small corner into a productive and (5) ___ garden. In the long term, gardening can reduce stress and encourage people to spend more time (6) ___. ",
+        "gapIndex": 0,
+        "choices": [
+          {
+            "text": "is",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "are",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "be",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-017",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "food",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 17,
+        "questionText": "Gap (1): fresh produce ___ expensive",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-4",
+          "sourceQuestion": "pgm-017",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-018",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-4",
+      "questionType": "multiple_choice",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "content": {
+        "questionText": "Gap (2): can ___ advice",
+        "passage": "Urban gardening has become popular among young professionals who live in flats. Many people grow herbs and vegetables on balconies because fresh produce (1) ___ expensive in supermarkets. Community gardens also offer shared spaces where neighbours can (2) ___ advice and tools. Experts recommend starting with easy plants such as lettuce or mint, which grow quickly and need little (3) ___. Some cities provide free workshops so residents learn how to compost and save (4) ___. Although space is limited, careful planning can turn a small corner into a productive and (5) ___ garden. In the long term, gardening can reduce stress and encourage people to spend more time (6) ___. ",
+        "gapIndex": 1,
+        "choices": [
+          {
+            "text": "exchange",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "exchanges",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "exchanging",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-018",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "community",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 18,
+        "questionText": "Gap (2): can ___ advice",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-4",
+          "sourceQuestion": "pgm-018",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-019",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-4",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "content": {
+        "questionText": "Gap (3): need little ___",
+        "passage": "Urban gardening has become popular among young professionals who live in flats. Many people grow herbs and vegetables on balconies because fresh produce (1) ___ expensive in supermarkets. Community gardens also offer shared spaces where neighbours can (2) ___ advice and tools. Experts recommend starting with easy plants such as lettuce or mint, which grow quickly and need little (3) ___. Some cities provide free workshops so residents learn how to compost and save (4) ___. Although space is limited, careful planning can turn a small corner into a productive and (5) ___ garden. In the long term, gardening can reduce stress and encourage people to spend more time (6) ___. ",
+        "gapIndex": 2,
+        "choices": [
+          {
+            "text": "maintenance",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "maintain",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "maintained",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-019",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "nature",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 19,
+        "questionText": "Gap (3): need little ___",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-4",
+          "sourceQuestion": "pgm-019",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-020",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-4",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "content": {
+        "questionText": "Gap (4): save ___",
+        "passage": "Urban gardening has become popular among young professionals who live in flats. Many people grow herbs and vegetables on balconies because fresh produce (1) ___ expensive in supermarkets. Community gardens also offer shared spaces where neighbours can (2) ___ advice and tools. Experts recommend starting with easy plants such as lettuce or mint, which grow quickly and need little (3) ___. Some cities provide free workshops so residents learn how to compost and save (4) ___. Although space is limited, careful planning can turn a small corner into a productive and (5) ___ garden. In the long term, gardening can reduce stress and encourage people to spend more time (6) ___. ",
+        "gapIndex": 3,
+        "choices": [
+          {
+            "text": "water",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "watery",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "watering",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-020",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "environment",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 20,
+        "questionText": "Gap (4): save ___",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-4",
+          "sourceQuestion": "pgm-020",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-021",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-4",
+      "questionType": "multiple_choice",
+      "difficulty": "hard",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "home"
+      ],
+      "content": {
+        "questionText": "Gap (5): productive and ___ garden",
+        "passage": "Urban gardening has become popular among young professionals who live in flats. Many people grow herbs and vegetables on balconies because fresh produce (1) ___ expensive in supermarkets. Community gardens also offer shared spaces where neighbours can (2) ___ advice and tools. Experts recommend starting with easy plants such as lettuce or mint, which grow quickly and need little (3) ___. Some cities provide free workshops so residents learn how to compost and save (4) ___. Although space is limited, careful planning can turn a small corner into a productive and (5) ___ garden. In the long term, gardening can reduce stress and encourage people to spend more time (6) ___. ",
+        "gapIndex": 4,
+        "choices": [
+          {
+            "text": "attractive",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "attract",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "attractively",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-021",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "home",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 21,
+        "questionText": "Gap (5): productive and ___ garden",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-4",
+          "sourceQuestion": "pgm-021",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-022",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-4",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "content": {
+        "questionText": "Gap (6): spend more time ___",
+        "passage": "Urban gardening has become popular among young professionals who live in flats. Many people grow herbs and vegetables on balconies because fresh produce (1) ___ expensive in supermarkets. Community gardens also offer shared spaces where neighbours can (2) ___ advice and tools. Experts recommend starting with easy plants such as lettuce or mint, which grow quickly and need little (3) ___. Some cities provide free workshops so residents learn how to compost and save (4) ___. Although space is limited, careful planning can turn a small corner into a productive and (5) ___ garden. In the long term, gardening can reduce stress and encourage people to spend more time (6) ___. ",
+        "gapIndex": 5,
+        "choices": [
+          {
+            "text": "outdoors",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "outdoor",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "outside of",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-022",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "health",
+        "skillTag": "reading",
+        "blueprintQuestionType": "mcq_single",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 22,
+        "questionText": "Gap (6): spend more time ___",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-4",
+          "sourceQuestion": "pgm-022",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-023",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-5",
+      "questionType": "gap_fill",
+      "difficulty": "easy",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "content": {
+        "questionText": "She found ___ interesting job in marketing.",
+        "template": "She found [0] interesting job in marketing.",
+        "correctAnswers": [
+          "an"
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-023",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "work",
+        "skillTag": "reading",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 23,
+        "questionText": "She found ___ interesting job in marketing.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-5",
+          "sourceQuestion": "pgm-023",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-024",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-5",
+      "questionType": "gap_fill",
+      "difficulty": "easy",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "content": {
+        "questionText": "We ___ our tickets online yesterday.",
+        "template": "We [0] our tickets online yesterday.",
+        "correctAnswers": [
+          "booked",
+          "bought"
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-024",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "travel",
+        "skillTag": "reading",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 24,
+        "questionText": "We ___ our tickets online yesterday.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-5",
+          "sourceQuestion": "pgm-024",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-025",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-5",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "content": {
+        "questionText": "The laptop ___ I borrowed belongs to my cousin.",
+        "template": "The laptop [0] I borrowed belongs to my cousin.",
+        "correctAnswers": [
+          "that",
+          "which"
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-025",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "technology",
+        "skillTag": "reading",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 25,
+        "questionText": "The laptop ___ I borrowed belongs to my cousin.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-5",
+          "sourceQuestion": "pgm-025",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-026",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-5",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "content": {
+        "questionText": "Running is ___ than cycling in hot weather.",
+        "template": "Running is [0] than cycling in hot weather.",
+        "correctAnswers": [
+          "harder",
+          "more tiring"
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-026",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "sports",
+        "skillTag": "reading",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 26,
+        "questionText": "Running is ___ than cycling in hot weather.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-5",
+          "sourceQuestion": "pgm-026",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-027",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-5",
+      "questionType": "gap_fill",
+      "difficulty": "hard",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "content": {
+        "questionText": "___ the film was long, the audience enjoyed it.",
+        "template": "[0] the film was long, the audience enjoyed it.",
+        "correctAnswers": [
+          "Although",
+          "Though"
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-027",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "culture",
+        "skillTag": "reading",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 27,
+        "questionText": "___ the film was long, the audience enjoyed it.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-5",
+          "sourceQuestion": "pgm-027",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-028",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-5",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "content": {
+        "questionText": "Plastic waste ___ collected every Friday in our area.",
+        "template": "Plastic waste [0] collected every Friday in our area.",
+        "correctAnswers": [
+          "is"
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-028",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "environment",
+        "skillTag": "reading",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 28,
+        "questionText": "Plastic waste ___ collected every Friday in our area.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-5",
+          "sourceQuestion": "pgm-028",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-029",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-6",
+      "questionType": "reading_comprehension",
+      "difficulty": "easy",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "content": {
+        "questionText": "Which sentence best fits gap 1? (after the opening sentence about navigation)",
+        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+        "choices": [
+          {
+            "text": "[B] Today, light pollution in cities makes it harder to see stars clearly.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "[F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "[D] These parks also support wildlife that depends on natural darkness.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-029",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "nature",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 29,
+        "questionText": "Which sentence best fits gap 1? (after the opening sentence about navigation)",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-6",
+          "sourceQuestion": "pgm-029",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-030",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-6",
+      "questionType": "reading_comprehension",
+      "difficulty": "easy",
+      "grammarTags": [
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "content": {
+        "questionText": "Which sentence introduces a contrast after the problem of light pollution?",
+        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+        "choices": [
+          {
+            "text": "[C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "[A] For centuries, people have looked to the night sky for navigation and inspiration.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "[E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-030",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "environment",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 30,
+        "questionText": "Which sentence introduces a contrast after the problem of light pollution?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-6",
+          "sourceQuestion": "pgm-030",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-031",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-6",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "animals"
+      ],
+      "content": {
+        "questionText": "Which sentence explains a benefit of dark-sky parks for living things?",
+        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+        "choices": [
+          {
+            "text": "[D] These parks also support wildlife that depends on natural darkness.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "[B] Today, light pollution in cities makes it harder to see stars clearly.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "[C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-031",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "animals",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 31,
+        "questionText": "Which sentence explains a benefit of dark-sky parks for living things?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-6",
+          "sourceQuestion": "pgm-031",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-032",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-6",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "content": {
+        "questionText": "Which sentence shows a consequence of protecting dark skies?",
+        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+        "choices": [
+          {
+            "text": "[E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "[A] For centuries, people have looked to the night sky for navigation and inspiration.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "[D] These parks also support wildlife that depends on natural darkness.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-032",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "community",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 32,
+        "questionText": "Which sentence shows a consequence of protecting dark skies?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-6",
+          "sourceQuestion": "pgm-032",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-033",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-6",
+      "questionType": "reading_comprehension",
+      "difficulty": "hard",
+      "grammarTags": [
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "content": {
+        "questionText": "Which sentence would best conclude the text for general readers?",
+        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+        "choices": [
+          {
+            "text": "[F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "[B] Today, light pollution in cities makes it harder to see stars clearly.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "[E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-033",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "travel",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 33,
+        "questionText": "Which sentence would best conclude the text for general readers?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-6",
+          "sourceQuestion": "pgm-033",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-034",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-6",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "content": {
+        "questionText": "Which sentence describes where people can study the stars today?",
+        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+        "choices": [
+          {
+            "text": "[C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations.",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "[A] For centuries, people have looked to the night sky for navigation and inspiration.",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "[F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-034",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "science",
+        "skillTag": "reading",
+        "blueprintQuestionType": "reading_comprehension",
+        "sectionSlug": "reading",
+        "points": 1,
+        "sortOrder": 34,
+        "questionText": "Which sentence describes where people can study the stars today?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "reading-part-6",
+          "sourceQuestion": "pgm-034",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-035",
+      "level": "pet",
+      "skill": "writing",
+      "part": "writing-part-1",
+      "questionType": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_will",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "technology"
+      ],
+      "content": {
+        "prompt": "Your English teacher has sent you an email about a project on local history. Write an email to your teacher.",
+        "instructions": "Write about 100 words. Answer all three points.",
+        "taskDescription": "Write about 100 words. Answer all three points.",
+        "writingTaskType": "writing_email",
+        "cambridgeTaskType": "write_email",
+        "minWords": 100,
+        "maxWords": 120,
+        "requiredPoints": [
+          "Explain which historical place you want to research",
+          "Say why it interests you",
+          "Ask for advice about useful sources"
+        ],
+        "rubricId": "gold-write_email-v1",
+        "questionText": "Write an email in response to your English teacher."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-035",
+        "extractedAt": "2026-06-24T01:13:14.667Z",
+        "topicTag": "school",
+        "skillTag": "writing",
+        "blueprintQuestionType": "writing_copy",
+        "cambridgeTaskType": "write_email",
+        "sectionSlug": "writing",
+        "points": 20,
+        "sortOrder": 35,
+        "questionText": "Write an email in response to your English teacher.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "writing-part-1",
+          "sourceQuestion": "pgm-035",
+          "extractedAt": "2026-06-24T01:13:14.667Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-write_email-v1"
+      }
+    },
+    {
+      "id": "pet-pgm-036",
+      "level": "pet",
+      "skill": "writing",
+      "part": "writing-part-2",
+      "questionType": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "feelings"
+      ],
+      "content": {
+        "prompt": "Your teacher has asked you to write a story. Your story must begin with this sentence: 'The train was late, but I didn't mind.'",
+        "instructions": "Write about 100 words.",
+        "taskDescription": "Write about 100 words.",
+        "writingTaskType": "writing_story",
+        "cambridgeTaskType": "write_story",
+        "minWords": 100,
+        "maxWords": 130,
+        "imageUrl": "/images/gold-mocks/pet-gold-mock-1-story.svg",
+        "rubricId": "gold-write_story-v1",
+        "questionText": "Write a story that begins with the sentence below."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-036",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "travel",
+        "skillTag": "writing",
+        "blueprintQuestionType": "writing_copy",
+        "cambridgeTaskType": "write_story",
+        "sectionSlug": "writing",
+        "points": 20,
+        "sortOrder": 36,
+        "questionText": "Write a story that begins with the sentence below.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "writing-part-2",
+          "sourceQuestion": "pgm-036",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-write_story-v1"
+      }
+    },
+    {
+      "id": "pet-pgm-037",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "content": {
+        "questionText": "What is the man ordering in the café?",
+        "choices": [
+          {
+            "text": "A chicken sandwich",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "A vegetable soup",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "A fruit salad",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-037",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "food",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 37,
+        "questionText": "What is the man ordering in the café?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "pgm-037",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-038",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "clothes"
+      ],
+      "content": {
+        "questionText": "What is the woman trying on in the shop?",
+        "choices": [
+          {
+            "text": "A blue jacket",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "A red scarf",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Black boots",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-038",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "clothes",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 38,
+        "questionText": "What is the woman trying on in the shop?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "pgm-038",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-039",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "transport"
+      ],
+      "content": {
+        "questionText": "Where are the tourists standing?",
+        "choices": [
+          {
+            "text": "Near a tour bus",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "On a ferry",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "At a taxi rank",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-039",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "transport",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 39,
+        "questionText": "Where are the tourists standing?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "pgm-039",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-040",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "home"
+      ],
+      "content": {
+        "questionText": "What are the children doing in the garden?",
+        "choices": [
+          {
+            "text": "Planting flowers",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Building a treehouse",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Playing football",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-040",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "home",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 40,
+        "questionText": "What are the children doing in the garden?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "pgm-040",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-041",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "content": {
+        "questionText": "Which activity are the friends watching?",
+        "choices": [
+          {
+            "text": "A volleyball match",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "A cycling race",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "A swimming competition",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-041",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "sports",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 41,
+        "questionText": "Which activity are the friends watching?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "pgm-041",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-042",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "content": {
+        "questionText": "Why did the girl miss the chemistry lesson?",
+        "choices": [
+          {
+            "text": "She had a dentist appointment",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "She overslept",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "The classroom was closed",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-042",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "school",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 42,
+        "questionText": "Why did the girl miss the chemistry lesson?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "pgm-042",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-043",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "content": {
+        "questionText": "What is the man going to do next month?",
+        "choices": [
+          {
+            "text": "Start an internship",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Move to another city",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Take a holiday abroad",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-043",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "work",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 43,
+        "questionText": "What is the man going to do next month?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "pgm-043",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-044",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "hobbies"
+      ],
+      "content": {
+        "questionText": "How often does the club meet?",
+        "choices": [
+          {
+            "text": "Every two weeks",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Once a year",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Three times a week",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-044",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "hobbies",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 44,
+        "questionText": "How often does the club meet?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "pgm-044",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-045",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "content": {
+        "questionText": "What must students do before using the laptops?",
+        "choices": [
+          {
+            "text": "Register their name online",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Pay a deposit",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Ask their parents for permission",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-045",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "technology",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 45,
+        "questionText": "What must students do before using the laptops?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "pgm-045",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-046",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "family"
+      ],
+      "content": {
+        "questionText": "What has the woman recently celebrated?",
+        "choices": [
+          {
+            "text": "Her parents' wedding anniversary",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Her brother's graduation",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Her cousin's birthday",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-046",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "family",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 46,
+        "questionText": "What has the woman recently celebrated?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "pgm-046",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-047",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "gap_fill",
+      "difficulty": "easy",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "places"
+      ],
+      "content": {
+        "questionText": "The conference is held ___ the city hall.",
+        "template": "The conference is held [0] the city hall.",
+        "correctAnswers": [
+          "in",
+          "at"
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-047",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "places",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 47,
+        "questionText": "The conference is held ___ the city hall.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "pgm-047",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-048",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "gap_fill",
+      "difficulty": "easy",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "numbers"
+      ],
+      "content": {
+        "questionText": "Tickets cost ___ pounds for adults.",
+        "template": "Tickets cost [0] pounds for adults.",
+        "correctAnswers": [
+          "fifteen",
+          "15"
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-048",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "numbers",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 48,
+        "questionText": "Tickets cost ___ pounds for adults.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "pgm-048",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-049",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "weather"
+      ],
+      "content": {
+        "questionText": "The forecast says it ___ rain later.",
+        "template": "The forecast says it [0] rain later.",
+        "correctAnswers": [
+          "will"
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-049",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "weather",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 49,
+        "questionText": "The forecast says it ___ rain later.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "pgm-049",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-050",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "shopping"
+      ],
+      "content": {
+        "questionText": "Could you pick up a ___ of milk?",
+        "template": "Could you pick up a [0] of milk?",
+        "correctAnswers": [
+          "bottle",
+          "carton"
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-050",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "shopping",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 50,
+        "questionText": "Could you pick up a ___ of milk?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "pgm-050",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-051",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "gap_fill",
+      "difficulty": "hard",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "content": {
+        "questionText": "The report ___ sent to all staff yesterday.",
+        "template": "The report [0] sent to all staff yesterday.",
+        "correctAnswers": [
+          "was"
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-051",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "work",
+        "skillTag": "listening",
+        "blueprintQuestionType": "gap_fill",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 51,
+        "questionText": "The report ___ sent to all staff yesterday.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "pgm-051",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-052",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "content": {
+        "questionText": "Where did the speaker go on her first solo trip?",
+        "choices": [
+          {
+            "text": "To Portugal",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "To Canada",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "To Japan",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-052",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "travel",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 52,
+        "questionText": "Where did the speaker go on her first solo trip?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "pgm-052",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-053",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "content": {
+        "questionText": "Why does the speaker enjoy live theatre?",
+        "choices": [
+          {
+            "text": "Because each performance feels unique",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Because tickets are always cheap",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Because she wants to become an actor",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-053",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "culture",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 53,
+        "questionText": "Why does the speaker enjoy live theatre?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "pgm-053",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-054",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "listening",
+      "difficulty": "medium",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "content": {
+        "questionText": "What change has the speaker made at home?",
+        "choices": [
+          {
+            "text": "Using less single-use plastic",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Installing solar panels",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Growing all their vegetables",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-054",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "environment",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 54,
+        "questionText": "What change has the speaker made at home?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "pgm-054",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-055",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "content": {
+        "questionText": "How often does the speaker go running?",
+        "choices": [
+          {
+            "text": "Three times a week",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Every morning",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Only in winter",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-055",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "health",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 55,
+        "questionText": "How often does the speaker go running?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "pgm-055",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-056",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "listening",
+      "difficulty": "hard",
+      "grammarTags": [
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "content": {
+        "questionText": "What advice does the speaker give to new volunteers?",
+        "choices": [
+          {
+            "text": "Start with a small task and ask questions",
+            "isCorrect": true,
+            "sortOrder": 1,
+            "mediaUrl": null
+          },
+          {
+            "text": "Work alone until you feel confident",
+            "isCorrect": false,
+            "sortOrder": 2,
+            "mediaUrl": null
+          },
+          {
+            "text": "Focus only on fundraising",
+            "isCorrect": false,
+            "sortOrder": 3,
+            "mediaUrl": null
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-056",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "community",
+        "skillTag": "listening",
+        "blueprintQuestionType": "mcq_listening",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 56,
+        "questionText": "What advice does the speaker give to new volunteers?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "pgm-056",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-057",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-5",
+      "questionType": "matching",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "content": {
+        "questionText": "Which speaker talks about a film club?",
+        "pairs": [
+          {
+            "leftText": "Speaker 1",
+            "rightText": "film club on Thursdays",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-057",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "leisure",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 57,
+        "questionText": "Which speaker talks about a film club?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-5",
+          "sourceQuestion": "pgm-057",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-058",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-5",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "content": {
+        "questionText": "Which speaker mentions a climbing wall?",
+        "pairs": [
+          {
+            "leftText": "Speaker 2",
+            "rightText": "indoor climbing sessions",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-058",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "sports",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 58,
+        "questionText": "Which speaker mentions a climbing wall?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-5",
+          "sourceQuestion": "pgm-058",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-059",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-5",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "content": {
+        "questionText": "Which speaker describes a pottery class?",
+        "pairs": [
+          {
+            "leftText": "Speaker 3",
+            "rightText": "pottery workshop",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-059",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "culture",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 59,
+        "questionText": "Which speaker describes a pottery class?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-5",
+          "sourceQuestion": "pgm-059",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-060",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-5",
+      "questionType": "matching",
+      "difficulty": "hard",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "content": {
+        "questionText": "Which speaker joined a robotics team?",
+        "pairs": [
+          {
+            "leftText": "Speaker 4",
+            "rightText": "school robotics team",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-060",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "technology",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 60,
+        "questionText": "Which speaker joined a robotics team?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-5",
+          "sourceQuestion": "pgm-060",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-061",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-5",
+      "questionType": "matching",
+      "difficulty": "hard",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "nature"
+      ],
+      "content": {
+        "questionText": "Which speaker volunteers at a bird sanctuary?",
+        "pairs": [
+          {
+            "leftText": "Speaker 5",
+            "rightText": "bird sanctuary volunteer work",
+            "sortOrder": 1
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-061",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "nature",
+        "skillTag": "listening",
+        "blueprintQuestionType": "matching",
+        "sectionSlug": "listening",
+        "points": 1,
+        "sortOrder": 61,
+        "questionText": "Which speaker volunteers at a bird sanctuary?",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "listening-part-5",
+          "sourceQuestion": "pgm-061",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        }
+      }
+    },
+    {
+      "id": "pet-pgm-062",
+      "level": "pet",
+      "skill": "speaking",
+      "part": "speaking-part-1",
+      "questionType": "speaking",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "hobbies"
+      ],
+      "content": {
+        "prompt": "The examiner will ask about your daily routine, studies, and what you like doing in your free time.",
+        "speakingTaskType": "speaking_personal_questions",
+        "cambridgeTaskType": "conversation",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "Tell me about the subjects you enjoy at school.",
+          "What would you like to do after you finish school?",
+          "How do you usually relax after a busy day?"
+        ],
+        "rubricId": "gold-conversation-v1",
+        "questionText": "Answer the examiner's questions about your life and interests."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-062",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "school",
+        "skillTag": "speaking",
+        "blueprintQuestionType": "speaking_interview",
+        "cambridgeTaskType": "conversation",
+        "sectionSlug": "speaking",
+        "points": 25,
+        "sortOrder": 62,
+        "questionText": "Answer the examiner's questions about your life and interests.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "speaking-part-1",
+          "sourceQuestion": "pgm-062",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-conversation-v1"
+      }
+    },
+    {
+      "id": "pet-pgm-063",
+      "level": "pet",
+      "skill": "speaking",
+      "part": "speaking-part-2",
+      "questionType": "speaking",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_continuous",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "places"
+      ],
+      "content": {
+        "prompt": "Look at the photograph. Describe the place and the people, and explain why they might be there.",
+        "speakingTaskType": "speaking_personal_questions",
+        "cambridgeTaskType": "picture_description_speaking",
+        "maxDurationSeconds": 180,
+        "imageUrl": "/images/gold-mocks/pet-gold-mock-1-speaking-photo.svg",
+        "rubricId": "gold-picture_description_speaking-v1",
+        "questionText": "Describe the photograph and say what you think is happening."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-063",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "travel",
+        "skillTag": "speaking",
+        "blueprintQuestionType": "speaking_interview",
+        "cambridgeTaskType": "picture_description_speaking",
+        "sectionSlug": "speaking",
+        "points": 25,
+        "sortOrder": 63,
+        "questionText": "Describe the photograph and say what you think is happening.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "speaking-part-2",
+          "sourceQuestion": "pgm-063",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-picture_description_speaking-v1"
+      }
+    },
+    {
+      "id": "pet-pgm-064",
+      "level": "pet",
+      "skill": "speaking",
+      "part": "speaking-part-3",
+      "questionType": "speaking",
+      "difficulty": "medium",
+      "grammarTags": [
+        "modal_must",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "community"
+      ],
+      "content": {
+        "prompt": "Talk with your partner about things people could do to protect the environment in your area.",
+        "speakingTaskType": "speaking_personal_questions",
+        "cambridgeTaskType": "conversation",
+        "maxDurationSeconds": 240,
+        "followUpQuestions": [
+          "Which idea would be easiest to start?",
+          "What problems might people face?",
+          "How could young people encourage others to take part?"
+        ],
+        "rubricId": "gold-conversation-v1",
+        "questionText": "Discuss ways to make your neighbourhood more environmentally friendly."
+      },
+      "authoringMetadata": {
+        "sourceManifestId": "pet-gold-mock-1",
+        "sourceQuestionRef": "pgm-064",
+        "extractedAt": "2026-06-24T01:13:14.668Z",
+        "topicTag": "environment",
+        "skillTag": "speaking",
+        "blueprintQuestionType": "speaking_interview",
+        "cambridgeTaskType": "conversation",
+        "sectionSlug": "speaking",
+        "points": 25,
+        "sortOrder": 64,
+        "questionText": "Discuss ways to make your neighbourhood more environmentally friendly.",
+        "explanation": null,
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-gold-mock-1",
+          "sourcePart": "speaking-part-3",
+          "sourceQuestion": "pgm-064",
+          "extractedAt": "2026-06-24T01:13:14.668Z",
+          "goldMockTier": "gold"
+        },
+        "rubricId": "gold-conversation-v1"
+      }
+    },
+    {
+      "id": "pet-exp-001",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-1",
+      "questionType": "multiple_choice",
+      "difficulty": "easy",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "shopping"
+      ],
+      "content": {
+        "questionText": "Sign: 'Customers must queue behind the red line.' What should customers do?",
+        "choices": [
+          {
+            "text": "stand behind the red line",
+            "isCorrect": true
+          },
+          {
+            "text": "pay at any counter",
+            "isCorrect": false
+          },
+          {
+            "text": "enter through the back door",
+            "isCorrect": false
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "shopping",
+        "skillTag": "reading",
+        "questionText": "Sign: 'Customers must queue behind the red line.' What should customers do?",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-1",
+          "sourceQuestion": "001",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-002",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-1",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "content": {
+        "questionText": "Clinic notice: 'Patients must not eat for six hours before the test.' What is forbidden?",
+        "choices": [
+          {
+            "text": "eating before the test",
+            "isCorrect": true
+          },
+          {
+            "text": "drinking water",
+            "isCorrect": false
+          },
+          {
+            "text": "bringing a friend",
+            "isCorrect": false
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "health",
+        "skillTag": "reading",
+        "questionText": "Clinic notice: 'Patients must not eat for six hours before the test.' What is forbidden?",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-1",
+          "sourceQuestion": "002",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-003",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-2",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "content": {
+        "questionText": "Match each job advertisement to the person who would be most interested."
+      },
+      "authoringMetadata": {
+        "topicTag": "jobs",
+        "skillTag": "reading",
+        "questionText": "Match each job advertisement to the person who would be most interested.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-2",
+          "sourceQuestion": "003",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-004",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-2",
+      "questionType": "matching",
+      "difficulty": "hard",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "content": {
+        "questionText": "Match each travel review to the type of holiday it describes."
+      },
+      "authoringMetadata": {
+        "topicTag": "travel",
+        "skillTag": "reading",
+        "questionText": "Match each travel review to the type of holiday it describes.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-2",
+          "sourceQuestion": "004",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-005",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "medium",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "content": {
+        "questionText": "Article: 'Although smartphones are useful, they can distract students during lessons.' What is the writer's concern?"
+      },
+      "authoringMetadata": {
+        "topicTag": "technology",
+        "skillTag": "reading",
+        "questionText": "Article: 'Although smartphones are useful, they can distract students during lessons.' What is the writer's concern?",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-3",
+          "sourceQuestion": "005",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-006",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-3",
+      "questionType": "reading_comprehension",
+      "difficulty": "hard",
+      "grammarTags": [
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "content": {
+        "questionText": "Text: 'Scientists who study coral reefs warn that pollution is damaging them.' Who issued the warning?"
+      },
+      "authoringMetadata": {
+        "topicTag": "environment",
+        "skillTag": "reading",
+        "questionText": "Text: 'Scientists who study coral reefs warn that pollution is damaging them.' Who issued the warning?",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-3",
+          "sourceQuestion": "006",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-007",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-4",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "content": {
+        "questionText": "Choose the best word: 'She gave me ___ useful advice about the exhibition.'",
+        "choices": [
+          {
+            "text": "a",
+            "isCorrect": false
+          },
+          {
+            "text": "an",
+            "isCorrect": false
+          },
+          {
+            "text": "some",
+            "isCorrect": true
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "culture",
+        "skillTag": "reading",
+        "questionText": "Choose the best word: 'She gave me ___ useful advice about the exhibition.'",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-4",
+          "sourceQuestion": "007",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-008",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-4",
+      "questionType": "multiple_choice",
+      "difficulty": "easy",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "places"
+      ],
+      "content": {
+        "questionText": "Choose the best word: 'We walked ___ the bridge to reach the island.'",
+        "choices": [
+          {
+            "text": "across",
+            "isCorrect": true
+          },
+          {
+            "text": "into",
+            "isCorrect": false
+          },
+          {
+            "text": "among",
+            "isCorrect": false
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "places",
+        "skillTag": "reading",
+        "questionText": "Choose the best word: 'We walked ___ the bridge to reach the island.'",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-4",
+          "sourceQuestion": "008",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-009",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-5",
+      "questionType": "gap_fill",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "content": {
+        "questionText": "Complete: 'I hadn't seen Marco for years, but we _____ friends immediately.'",
+        "template": "I hadn't seen Marco for years, but we [0] friends immediately.",
+        "correctAnswers": [
+          "became"
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "friends",
+        "skillTag": "reading",
+        "questionText": "Complete: 'I hadn't seen Marco for years, but we _____ friends immediately.'",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-5",
+          "sourceQuestion": "009",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-010",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-5",
+      "questionType": "gap_fill",
+      "difficulty": "hard",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "content": {
+        "questionText": "Complete: 'Local residents are _____ a campaign to save the old theatre.'",
+        "template": "Local residents are [0] a campaign to save the old theatre.",
+        "correctAnswers": [
+          "organising"
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "community",
+        "skillTag": "reading",
+        "questionText": "Complete: 'Local residents are _____ a campaign to save the old theatre.'",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-5",
+          "sourceQuestion": "010",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-011",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-6",
+      "questionType": "reading_comprehension",
+      "difficulty": "hard",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "content": {
+        "questionText": "Gapped text: Choose the sentence that best introduces the paragraph about street art in the city."
+      },
+      "authoringMetadata": {
+        "topicTag": "culture",
+        "skillTag": "reading",
+        "questionText": "Gapped text: Choose the sentence that best introduces the paragraph about street art in the city.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-6",
+          "sourceQuestion": "011",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-012",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-6",
+      "questionType": "matching",
+      "difficulty": "medium",
+      "grammarTags": [
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "content": {
+        "questionText": "Match each removed sentence to the correct gap in the article about sleep habits."
+      },
+      "authoringMetadata": {
+        "topicTag": "health",
+        "skillTag": "reading",
+        "questionText": "Match each removed sentence to the correct gap in the article about sleep habits.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-6",
+          "sourceQuestion": "012",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-013",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-1",
+      "questionType": "listening",
+      "difficulty": "easy",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "content": {
+        "questionText": "Listen. Which picture shows the chef preparing seafood?"
+      },
+      "authoringMetadata": {
+        "topicTag": "food",
+        "skillTag": "listening",
+        "questionText": "Listen. Which picture shows the chef preparing seafood?",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "listening-part-1",
+          "sourceQuestion": "013",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-014",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-2",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "jobs"
+      ],
+      "content": {
+        "questionText": "Listen. What is the woman going to study at college?",
+        "choices": [
+          {
+            "text": "graphic design",
+            "isCorrect": true
+          },
+          {
+            "text": "mechanical engineering",
+            "isCorrect": false
+          },
+          {
+            "text": "marine biology",
+            "isCorrect": false
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "jobs",
+        "skillTag": "listening",
+        "questionText": "Listen. What is the woman going to study at college?",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "listening-part-2",
+          "sourceQuestion": "014",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-015",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-3",
+      "questionType": "gap_fill",
+      "difficulty": "hard",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "content": {
+        "questionText": "Listen and write the missing word: 'The ferry leaves from the _____ terminal.'",
+        "template": "The ferry leaves from the [0] terminal.",
+        "correctAnswers": [
+          "north"
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "travel",
+        "skillTag": "listening",
+        "questionText": "Listen and write the missing word: 'The ferry leaves from the _____ terminal.'",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "listening-part-3",
+          "sourceQuestion": "015",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-016",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-4",
+      "questionType": "multiple_choice",
+      "difficulty": "medium",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "sports"
+      ],
+      "content": {
+        "questionText": "Listen to the announcement. Why has the tennis match been delayed?",
+        "choices": [
+          {
+            "text": "heavy rain on the court",
+            "isCorrect": true
+          },
+          {
+            "text": "a player injury",
+            "isCorrect": false
+          },
+          {
+            "text": "a power failure",
+            "isCorrect": false
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "sports",
+        "skillTag": "listening",
+        "questionText": "Listen to the announcement. Why has the tennis match been delayed?",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "listening-part-4",
+          "sourceQuestion": "016",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-017",
+      "level": "pet",
+      "skill": "listening",
+      "part": "listening-part-5",
+      "questionType": "matching",
+      "difficulty": "hard",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "content": {
+        "questionText": "Listen and match each speaker to the reason they prefer their hobby."
+      },
+      "authoringMetadata": {
+        "topicTag": "leisure",
+        "skillTag": "listening",
+        "questionText": "Listen and match each speaker to the reason they prefer their hobby.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "listening-part-5",
+          "sourceQuestion": "017",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-018",
+      "level": "pet",
+      "skill": "reading",
+      "part": "reading-part-3",
+      "questionType": "multiple_choice",
+      "difficulty": "easy",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "shopping"
+      ],
+      "content": {
+        "questionText": "Review: 'This jacket is warmer than the one I bought last year.' Which jacket is warmer?",
+        "choices": [
+          {
+            "text": "the new jacket",
+            "isCorrect": true
+          },
+          {
+            "text": "last year's jacket",
+            "isCorrect": false
+          },
+          {
+            "text": "both are equal",
+            "isCorrect": false
+          }
+        ]
+      },
+      "authoringMetadata": {
+        "topicTag": "shopping",
+        "skillTag": "reading",
+        "questionText": "Review: 'This jacket is warmer than the one I bought last year.' Which jacket is warmer?",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "reading-part-3",
+          "sourceQuestion": "018",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-019",
+      "level": "pet",
+      "skill": "writing",
+      "part": "writing-part-1",
+      "questionType": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "content": {
+        "prompt": "Write an email to your English teacher about a school trip you want to organise. Explain the destination, dates, and why the trip would be educational.",
+        "writingTaskType": "writing_email",
+        "minWords": 100,
+        "maxWords": 120,
+        "rubricId": "expansion-writing_email-v1",
+        "questionText": "Write an email to your English teacher about a school trip you want to organise."
+      },
+      "authoringMetadata": {
+        "topicTag": "school",
+        "skillTag": "writing",
+        "questionText": "Write an email to your English teacher about a school trip you want to organise.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "writing-part-1",
+          "sourceQuestion": "019",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-020",
+      "level": "pet",
+      "skill": "writing",
+      "part": "writing-part-1",
+      "questionType": "writing",
+      "difficulty": "easy",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "content": {
+        "prompt": "Write an email to your friend inviting them to join a weekend hiking group. Give details about the route and what to bring.",
+        "writingTaskType": "writing_email",
+        "minWords": 100,
+        "maxWords": 120,
+        "rubricId": "expansion-writing_email-v1",
+        "questionText": "Write an email to your friend inviting them to join a weekend hiking group."
+      },
+      "authoringMetadata": {
+        "topicTag": "friends",
+        "skillTag": "writing",
+        "questionText": "Write an email to your friend inviting them to join a weekend hiking group.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "writing-part-1",
+          "sourceQuestion": "020",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-021",
+      "level": "pet",
+      "skill": "writing",
+      "part": "writing-part-1",
+      "questionType": "writing",
+      "difficulty": "hard",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel"
+      ],
+      "content": {
+        "prompt": "Write a message to your class group chat about plans for a language course abroad. Mention your budget and preferred country.",
+        "writingTaskType": "writing_message",
+        "minWords": 100,
+        "maxWords": 120,
+        "rubricId": "expansion-writing_message-v1",
+        "questionText": "Write a message to your class group chat about plans for a language course abroad."
+      },
+      "authoringMetadata": {
+        "topicTag": "travel",
+        "skillTag": "writing",
+        "questionText": "Write a message to your class group chat about plans for a language course abroad.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "writing-part-1",
+          "sourceQuestion": "021",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-022",
+      "level": "pet",
+      "skill": "writing",
+      "part": "writing-part-2",
+      "questionType": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "content": {
+        "prompt": "Write a story titled 'The surprise in the old town square'. Include a problem and a happy ending.",
+        "writingTaskType": "writing_story",
+        "minWords": 100,
+        "maxWords": 120,
+        "rubricId": "expansion-writing_story-v1",
+        "questionText": "Write a story titled 'The surprise in the old town square'."
+      },
+      "authoringMetadata": {
+        "topicTag": "community",
+        "skillTag": "writing",
+        "questionText": "Write a story titled 'The surprise in the old town square'.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "writing-part-2",
+          "sourceQuestion": "022",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-023",
+      "level": "pet",
+      "skill": "writing",
+      "part": "writing-part-2",
+      "questionType": "writing",
+      "difficulty": "hard",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "weather"
+      ],
+      "content": {
+        "prompt": "Write a story about a camping trip that almost went wrong because of the weather. Use linking words to show the sequence of events.",
+        "writingTaskType": "writing_story",
+        "minWords": 100,
+        "maxWords": 120,
+        "rubricId": "expansion-writing_story-v1",
+        "questionText": "Write a story about a camping trip that almost went wrong because of the weather."
+      },
+      "authoringMetadata": {
+        "topicTag": "weather",
+        "skillTag": "writing",
+        "questionText": "Write a story about a camping trip that almost went wrong because of the weather.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "writing-part-2",
+          "sourceQuestion": "023",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-024",
+      "level": "pet",
+      "skill": "writing",
+      "part": "writing-part-2",
+      "questionType": "writing",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "technology"
+      ],
+      "content": {
+        "prompt": "Write an article for a youth magazine about whether teenagers should limit screen time. Give reasons and examples.",
+        "writingTaskType": "writing_article",
+        "minWords": 100,
+        "maxWords": 120,
+        "rubricId": "expansion-writing_article-v1",
+        "questionText": "Write an article for a youth magazine about whether teenagers should limit screen time."
+      },
+      "authoringMetadata": {
+        "topicTag": "technology",
+        "skillTag": "writing",
+        "questionText": "Write an article for a youth magazine about whether teenagers should limit screen time.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "writing-part-2",
+          "sourceQuestion": "024",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-025",
+      "level": "pet",
+      "skill": "speaking",
+      "part": "speaking-part-3",
+      "questionType": "speaking",
+      "difficulty": "easy",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "hobbies"
+      ],
+      "content": {
+        "prompt": "Discuss with your partner which school club new students should join first.",
+        "speakingTaskType": "speaking_discussion",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "Which club is easiest for beginners?",
+          "What skills can students learn there?",
+          "How often does the club meet?"
+        ],
+        "rubricId": "expansion-speaking_discussion-v1",
+        "questionText": "Discuss with your partner which school club new students should join first."
+      },
+      "authoringMetadata": {
+        "topicTag": "hobbies",
+        "skillTag": "speaking",
+        "questionText": "Discuss with your partner which school club new students should join first.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "speaking-part-3",
+          "sourceQuestion": "025",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-026",
+      "level": "pet",
+      "skill": "speaking",
+      "part": "speaking-part-1",
+      "questionType": "speaking",
+      "difficulty": "easy",
+      "grammarTags": [
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "home"
+      ],
+      "content": {
+        "prompt": "Answer interview questions about where you live and your daily routine.",
+        "speakingTaskType": "speaking_personal_questions",
+        "maxDurationSeconds": 150,
+        "followUpQuestions": [
+          "What kind of house do you live in?",
+          "Who do you usually have meals with?",
+          "What do you do to relax after school?"
+        ],
+        "rubricId": "expansion-speaking_personal_questions-v1",
+        "questionText": "Answer interview questions about where you live and your daily routine."
+      },
+      "authoringMetadata": {
+        "topicTag": "home",
+        "skillTag": "speaking",
+        "questionText": "Answer interview questions about where you live and your daily routine.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "speaking-part-1",
+          "sourceQuestion": "026",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-027",
+      "level": "pet",
+      "skill": "speaking",
+      "part": "speaking-part-2",
+      "questionType": "speaking",
+      "difficulty": "medium",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "content": {
+        "prompt": "Describe the photograph of a family enjoying a city festival. Say what each person is doing and what the atmosphere is like.",
+        "speakingTaskType": "speaking_picture_description",
+        "maxDurationSeconds": 180,
+        "rubricId": "expansion-speaking_picture_description-v1",
+        "questionText": "Describe the photograph of a family enjoying a city festival."
+      },
+      "authoringMetadata": {
+        "topicTag": "leisure",
+        "skillTag": "speaking",
+        "questionText": "Describe the photograph of a family enjoying a city festival.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "speaking-part-2",
+          "sourceQuestion": "027",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-028",
+      "level": "pet",
+      "skill": "speaking",
+      "part": "speaking-part-2",
+      "questionType": "speaking",
+      "difficulty": "hard",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "transport"
+      ],
+      "content": {
+        "prompt": "Describe the photograph of passengers waiting at an international airport gate. Compare what different people are doing.",
+        "speakingTaskType": "speaking_picture_description",
+        "maxDurationSeconds": 180,
+        "rubricId": "expansion-speaking_picture_description-v1",
+        "questionText": "Describe the photograph of passengers waiting at an international airport gate."
+      },
+      "authoringMetadata": {
+        "topicTag": "transport",
+        "skillTag": "speaking",
+        "questionText": "Describe the photograph of passengers waiting at an international airport gate.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "speaking-part-2",
+          "sourceQuestion": "028",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-029",
+      "level": "pet",
+      "skill": "speaking",
+      "part": "speaking-part-3",
+      "questionType": "speaking",
+      "difficulty": "medium",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "content": {
+        "prompt": "Discuss with your partner how your town could encourage more people to cycle.",
+        "speakingTaskType": "speaking_discussion",
+        "maxDurationSeconds": 240,
+        "followUpQuestions": [
+          "What new facilities would help cyclists?",
+          "Who should pay for bike lanes?",
+          "How can schools promote cycling safely?"
+        ],
+        "rubricId": "expansion-speaking_discussion-v1",
+        "questionText": "Discuss with your partner how your town could encourage more people to cycle."
+      },
+      "authoringMetadata": {
+        "topicTag": "environment",
+        "skillTag": "speaking",
+        "questionText": "Discuss with your partner how your town could encourage more people to cycle.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "speaking-part-3",
+          "sourceQuestion": "029",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    },
+    {
+      "id": "pet-exp-030",
+      "level": "pet",
+      "skill": "speaking",
+      "part": "speaking-part-1",
+      "questionType": "speaking",
+      "difficulty": "hard",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "content": {
+        "prompt": "Tell your partner about a memorable performance you watched at a theatre or concert.",
+        "speakingTaskType": "speaking_storytelling",
+        "maxDurationSeconds": 180,
+        "rubricId": "expansion-speaking_storytelling-v1",
+        "questionText": "Tell your partner about a memorable performance you watched at a theatre or concert."
+      },
+      "authoringMetadata": {
+        "topicTag": "culture",
+        "skillTag": "speaking",
+        "questionText": "Tell your partner about a memorable performance you watched at a theatre or concert.",
+        "extractedAt": "2026-06-24T01:13:14.043Z",
+        "source": {
+          "sourceLevel": "pet",
+          "sourceMock": "pet-expansion-batch-1",
+          "sourcePart": "speaking-part-1",
+          "sourceQuestion": "030",
+          "goldMockTier": "expansion"
+        },
+        "authoringNotes": "M3.2 manual expansion sample — high-quality authored content."
+      }
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "mockId": "starters-assembled-a",
+  "version": "A",
+  "level": "starters",
+  "source": "assembled",
+  "levelAssigned": "rejected",
+  "certified": false,
+  "studentFacing": false,
+  "metrics": {
+    "certificationScore": 95,
+    "coverageScore": 100,
+    "qaScore": 99,
+    "diversityScore": 76,
+    "blueprintScore": 100,
+    "grammarDistinct": 13,
+    "vocabularyDistinct": 16,
+    "skillDistinct": 4,
+    "taskDistinct": 8,
+    "topicDistinct": 13,
+    "difficultyDistinct": 3,
+    "writingCount": 5,
+    "speakingCount": 3,
+    "readingCount": 15,
+    "listeningCount": 20,
+    "duplicateItemCount": 0,
+    "duplicateClusterCount": 0
+  },
+  "issues": [
+    {
+      "code": "EMPTY_PASSAGE",
+      "path": "questions.starters-exp-013.content.passage",
+      "message": "Reading comprehension missing passage.",
+      "category": "safety",
+      "severity": "error"
+    },
+    {
+      "code": "READING_PASSAGE_SHORT",
+      "path": "questions.starters-exp-013",
+      "message": "Passage too short.",
+      "category": "reading",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.starters-exp-001",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.starters-exp-002",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.starters-exp-004",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.starters-exp-006",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "LISTENING_NO_TRANSCRIPT",
+      "path": "questions.starters-exp-007",
+      "message": "Missing transcript for QA.",
+      "category": "listening",
+      "severity": "warning"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "starters-sgm-022/starters-sgm-021",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "starters-sgm-022/starters-sgm-023",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "starters-sgm-021/starters-sgm-023",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "starters-sgm-029/starters-sgm-030",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "starters-sgm-029/starters-sgm-026",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "starters-sgm-030/starters-sgm-026",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "starters-sgm-034/starters-sgm-033",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "starters-sgm-034/starters-sgm-031",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "starters-sgm-034/starters-sgm-035",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "starters-sgm-033/starters-sgm-031",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "starters-sgm-033/starters-sgm-035",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "starters-sgm-031/starters-sgm-035",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    }
+  ],
+  "certifiedAt": "2026-06-24T01:29:19.595Z",
+  "notes": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "writing-example-picture-description",
+  "question_type": "writing",
+  "question_text": "Describe the picture in writing.",
+  "points": 0,
+  "content": {
+    "cambridgeTaskType": "picture_description",
+    "prompt": "Describe what the people are doing in the picture.",
+    "minWords": 5,
+    "maxWords": 30,
+    "imageUrl": "/images/placeholders/writing-picture.svg",
+    "imageDescription": "Two children playing in a park."
+  }
+}

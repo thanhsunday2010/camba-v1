@@ -1,0 +1,2511 @@
+{
+  "metadata": {
+    "manifestId": "cambridge-flyers-a-v1",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-flyers-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "flyers",
+    "title": "A2 Flyers — Form A",
+    "description": "Assembled reference exam for flyers (architecture validation).",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000004",
+    "timeLimitMinutes": 65,
+    "totalScore": 71,
+    "status": "review",
+    "authoringNotes": "M2.4 golden reference — not production content.",
+    "stableSlug": "flyers-assembled-a"
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 1,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4"
+      ],
+      "questionRefs": [
+        "flyers-listening-part-1-audio_matching-002",
+        "flyers-listening-part-1-audio_matching-116",
+        "flyers-listening-part-1-audio_matching-108",
+        "flyers-listening-part-1-audio_matching-081",
+        "flyers-listening-part-1-audio_matching-109",
+        "flyers-listening-part-1-audio_matching-073",
+        "flyers-listening-part-1-audio_matching-131",
+        "flyers-listening-part-2-audio_gap_fill-028",
+        "flyers-listening-part-2-audio_gap_fill-031",
+        "flyers-listening-part-2-audio_gap_fill-048",
+        "flyers-listening-part-2-audio_gap_fill-150",
+        "flyers-listening-part-2-audio_gap_fill-042",
+        "flyers-listening-part-2-audio_gap_fill-053",
+        "flyers-listening-part-2-audio_gap_fill-142",
+        "flyers-listening-part-3-audio_multiple_choice-075",
+        "flyers-listening-part-3-audio_multiple_choice-089",
+        "flyers-listening-part-3-audio_multiple_choice-083",
+        "flyers-listening-part-3-audio_multiple_choice-099",
+        "flyers-listening-part-3-audio_multiple_choice-096",
+        "flyers-listening-part-3-audio_multiple_choice-094",
+        "flyers-listening-part-3-audio_multiple_choice-095",
+        "flyers-listening-part-4-audio_multiple_choice-125",
+        "flyers-listening-part-4-audio_multiple_choice-038",
+        "flyers-listening-part-4-audio_multiple_choice-047",
+        "flyers-listening-part-4-audio_multiple_choice-034",
+        "flyers-listening-part-4-audio_multiple_choice-065",
+        "flyers-listening-part-4-audio_multiple_choice-046",
+        "flyers-listening-part-4-audio_multiple_choice-068"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "sortOrder": 2,
+      "skillSlug": "reading_writing",
+      "timeLimitMinutes": 20,
+      "partSlugs": [
+        "rw-part-1",
+        "rw-part-2",
+        "rw-part-3",
+        "rw-part-4"
+      ],
+      "questionRefs": [
+        "flyers-rw-part-1-matching-022",
+        "flyers-rw-part-1-matching-116",
+        "flyers-rw-part-1-matching-018",
+        "flyers-rw-part-1-true_false-113",
+        "flyers-rw-part-1-matching-124",
+        "flyers-rw-part-1-matching-102",
+        "flyers-rw-part-1-true_false-107",
+        "flyers-rw-part-2-multiple_choice-129",
+        "flyers-rw-part-2-multiple_choice-165",
+        "flyers-rw-part-2-multiple_choice-138",
+        "flyers-rw-part-2-true_false-053",
+        "flyers-rw-part-2-true_false-026",
+        "flyers-rw-part-2-reading_comprehension-028",
+        "flyers-rw-part-2-multiple_choice-156",
+        "flyers-rw-part-3-true_false-077",
+        "flyers-rw-part-3-true_false-089",
+        "flyers-rw-part-3-true_false-080",
+        "flyers-rw-part-3-reading_comprehension-099",
+        "flyers-rw-part-3-reading_comprehension-096",
+        "flyers-rw-part-3-multiple_choice-085",
+        "flyers-rw-part-3-multiple_choice-076",
+        "flyers-rw-part-4-picture_description_writing-164",
+        "flyers-rw-part-4-write_note-066",
+        "flyers-rw-part-4-write_note-000",
+        "flyers-rw-part-4-write_note-132",
+        "flyers-rw-part-4-write_story-067",
+        "flyers-rw-part-4-picture_description_writing-116",
+        "flyers-rw-part-4-write_story-097"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 3,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 10,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2",
+        "speaking-part-3"
+      ],
+      "questionRefs": [
+        "flyers-speaking-part-1-picture_description_speaking-006",
+        "flyers-speaking-part-2-short_answer-003",
+        "flyers-speaking-part-3-story_telling-019"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "flyers-listening-part-1-audio_matching-002",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 1,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "animals",
+      "skillTag": "listening",
+      "grammarTags": [
+        "past_simple",
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "sports"
+      ],
+      "questionText": "Match the items — flyers listening-part-1 #3.",
+      "content": {
+        "questionText": "Match the items — flyers listening-part-1 #3."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-1-audio_matching-116",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "drink",
+      "skillTag": "listening",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ],
+      "questionText": "Match the items — flyers listening-part-1 #117.",
+      "content": {
+        "questionText": "Match the items — flyers listening-part-1 #117."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-1-audio_matching-108",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "hobbies",
+      "skillTag": "listening",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Match the items — flyers listening-part-1 #109.",
+      "content": {
+        "questionText": "Match the items — flyers listening-part-1 #109."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-1-audio_matching-081",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "environment",
+      "skillTag": "listening",
+      "grammarTags": [
+        "pronouns",
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ],
+      "questionText": "Match the items — flyers listening-part-1 #82.",
+      "content": {
+        "questionText": "Match the items — flyers listening-part-1 #82."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-1-audio_matching-109",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "skillTag": "listening",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ],
+      "questionText": "Match the items — flyers listening-part-1 #110.",
+      "content": {
+        "questionText": "Match the items — flyers listening-part-1 #110."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-1-audio_matching-073",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "skillTag": "listening",
+      "grammarTags": [
+        "present_continuous",
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "technology",
+        "numbers"
+      ],
+      "questionText": "Match the items — flyers listening-part-1 #74.",
+      "content": {
+        "questionText": "Match the items — flyers listening-part-1 #74."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-1-audio_matching-131",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 7,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "places",
+      "skillTag": "listening",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "hobbies"
+      ],
+      "questionText": "Match the items — flyers listening-part-1 #132.",
+      "content": {
+        "questionText": "Match the items — flyers listening-part-1 #132."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-2-audio_gap_fill-028",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 8,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "family",
+      "skillTag": "listening",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Complete the gap — flyers listening-part-2 #29.",
+      "content": {
+        "questionText": "Complete the gap — flyers listening-part-2 #29.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "flyers-listening-part-2-audio_gap_fill-031",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 9,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "food",
+      "skillTag": "listening",
+      "grammarTags": [
+        "superlatives",
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ],
+      "questionText": "Complete the gap — flyers listening-part-2 #32.",
+      "content": {
+        "questionText": "Complete the gap — flyers listening-part-2 #32.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "flyers-listening-part-2-audio_gap_fill-048",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 10,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "body",
+      "skillTag": "listening",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "body",
+        "environment"
+      ],
+      "questionText": "Complete the gap — flyers listening-part-2 #49.",
+      "content": {
+        "questionText": "Complete the gap — flyers listening-part-2 #49.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "flyers-listening-part-2-audio_gap_fill-150",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 11,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "weather",
+      "skillTag": "listening",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Complete the gap — flyers listening-part-2 #151.",
+      "content": {
+        "questionText": "Complete the gap — flyers listening-part-2 #151.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "flyers-listening-part-2-audio_gap_fill-042",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 12,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "jobs",
+      "skillTag": "listening",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "jobs",
+        "places"
+      ],
+      "questionText": "Complete the gap — flyers listening-part-2 #43.",
+      "content": {
+        "questionText": "Complete the gap — flyers listening-part-2 #43.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "flyers-listening-part-2-audio_gap_fill-053",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 13,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "skillTag": "listening",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ],
+      "questionText": "Complete the gap — flyers listening-part-2 #54.",
+      "content": {
+        "questionText": "Complete the gap — flyers listening-part-2 #54.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "flyers-listening-part-2-audio_gap_fill-142",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 14,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "medium",
+      "topicTag": "animals",
+      "skillTag": "listening",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "sports"
+      ],
+      "questionText": "Complete the gap — flyers listening-part-2 #143.",
+      "content": {
+        "questionText": "Complete the gap — flyers listening-part-2 #143.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "flyers-listening-part-3-audio_multiple_choice-075",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 15,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "places",
+      "skillTag": "listening",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "hobbies"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-3 #76.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-3 #76.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-3-75.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-3-audio_multiple_choice-089",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 16,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "school",
+      "skillTag": "listening",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "weather"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-3 #90.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-3 #90.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-3-89.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-3-audio_multiple_choice-083",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 17,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "community",
+      "skillTag": "listening",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-3 #84.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-3 #84.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-3-83.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-3-audio_multiple_choice-099",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 18,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "travel",
+      "skillTag": "listening",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-3 #100.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-3 #100.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-3-99.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-3-audio_multiple_choice-096",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 19,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "clothes",
+      "skillTag": "listening",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-3 #97.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-3 #97.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-3-96.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-3-audio_multiple_choice-094",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 20,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "weather",
+      "skillTag": "listening",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-3 #95.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-3 #95.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-3-94.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-3-audio_multiple_choice-095",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 21,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "hard",
+      "topicTag": "shopping",
+      "skillTag": "listening",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-3 #96.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-3 #96.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-3-95.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-4-audio_multiple_choice-125",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 22,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "colours",
+      "skillTag": "listening",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-4 #126.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-4 #126.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-4-125.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-4-audio_multiple_choice-038",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 23,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "weather",
+      "skillTag": "listening",
+      "grammarTags": [
+        "modal_can",
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-4 #39.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-4 #39.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-4-38.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-4-audio_multiple_choice-047",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 24,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "places",
+      "skillTag": "listening",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "hobbies"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-4 #48.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-4 #48.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-4-47.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-4-audio_multiple_choice-034",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 25,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "home",
+      "skillTag": "listening",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-4 #35.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-4 #35.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-4-34.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-4-audio_multiple_choice-065",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 26,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "transport",
+      "skillTag": "listening",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "transport",
+        "jobs"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-4 #66.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-4 #66.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-4-65.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-4-audio_multiple_choice-046",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 27,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "nature",
+      "skillTag": "listening",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-4 #47.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-4 #47.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-4-46.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-listening-part-4-audio_multiple_choice-068",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 28,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "clothes",
+      "skillTag": "listening",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ],
+      "questionText": "Listen and choose — flyers listening-part-4 #69.",
+      "content": {
+        "questionText": "Listen and choose — flyers listening-part-4 #69.",
+        "audioUrl": "/audio/assembly/flyers/listening-part-4-68.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-1-matching-022",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 29,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "numbers",
+      "skillTag": "reading",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "numbers",
+        "community"
+      ],
+      "questionText": "Match the items — flyers rw-part-1 #23.",
+      "content": {
+        "questionText": "Match the items — flyers rw-part-1 #23."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-1-matching-116",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 30,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "drink",
+      "skillTag": "reading",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ],
+      "questionText": "Match the items — flyers rw-part-1 #117.",
+      "content": {
+        "questionText": "Match the items — flyers rw-part-1 #117."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-1-matching-018",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 31,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "nature",
+      "skillTag": "reading",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ],
+      "questionText": "Match the items — flyers rw-part-1 #19.",
+      "content": {
+        "questionText": "Match the items — flyers rw-part-1 #19."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-1-true_false-113",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 32,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "friends",
+      "skillTag": "reading",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "home"
+      ],
+      "questionText": "Is this statement true? — flyers rw-part-1 #114.",
+      "content": {
+        "questionText": "Is this statement true? — flyers rw-part-1 #114.",
+        "passage": "Statement context passage."
+      },
+      "choices": [
+        {
+          "text": "True",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "False",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-1-matching-124",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 33,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "clothes",
+      "skillTag": "reading",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ],
+      "questionText": "Match the items — flyers rw-part-1 #125.",
+      "content": {
+        "questionText": "Match the items — flyers rw-part-1 #125."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-1-matching-102",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 34,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "nature",
+      "skillTag": "reading",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ],
+      "questionText": "Match the items — flyers rw-part-1 #103.",
+      "content": {
+        "questionText": "Match the items — flyers rw-part-1 #103."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-1-true_false-107",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 35,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "time",
+      "skillTag": "reading",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "time",
+        "family"
+      ],
+      "questionText": "Is this statement true? — flyers rw-part-1 #108.",
+      "content": {
+        "questionText": "Is this statement true? — flyers rw-part-1 #108.",
+        "passage": "Statement context passage."
+      },
+      "choices": [
+        {
+          "text": "True",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "False",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-2-multiple_choice-129",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 36,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "skillTag": "reading",
+      "grammarTags": [
+        "pronouns",
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "technology",
+        "numbers"
+      ],
+      "questionText": "Choose the correct answer — flyers rw-part-2 #130.",
+      "content": {
+        "questionText": "Choose the correct answer — flyers rw-part-2 #130."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-2-multiple_choice-165",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 37,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "skillTag": "reading",
+      "grammarTags": [
+        "imperatives",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ],
+      "questionText": "Choose the correct answer — flyers rw-part-2 #166.",
+      "content": {
+        "questionText": "Choose the correct answer — flyers rw-part-2 #166."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-2-multiple_choice-138",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 38,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "skillTag": "reading",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "food"
+      ],
+      "questionText": "Choose the correct answer — flyers rw-part-2 #139.",
+      "content": {
+        "questionText": "Choose the correct answer — flyers rw-part-2 #139."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-2-true_false-053",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 39,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "environment",
+      "skillTag": "reading",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ],
+      "questionText": "Is this statement true? — flyers rw-part-2 #54.",
+      "content": {
+        "questionText": "Is this statement true? — flyers rw-part-2 #54.",
+        "passage": "Statement context passage."
+      },
+      "choices": [
+        {
+          "text": "True",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "False",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-2-true_false-026",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 40,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_simple",
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "food"
+      ],
+      "questionText": "Is this statement true? — flyers rw-part-2 #27.",
+      "content": {
+        "questionText": "Is this statement true? — flyers rw-part-2 #27.",
+        "passage": "Statement context passage."
+      },
+      "choices": [
+        {
+          "text": "True",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "False",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-2-reading_comprehension-028",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 41,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "medium",
+      "topicTag": "family",
+      "skillTag": "reading",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Read and answer — flyers rw-part-2 #29.",
+      "content": {
+        "questionText": "Read and answer — flyers rw-part-2 #29.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-2-multiple_choice-156",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 42,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "health",
+      "skillTag": "reading",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "feelings"
+      ],
+      "questionText": "Choose the correct answer — flyers rw-part-2 #157.",
+      "content": {
+        "questionText": "Choose the correct answer — flyers rw-part-2 #157."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-3-true_false-077",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 43,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "hard",
+      "topicTag": "feelings",
+      "skillTag": "reading",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "feelings",
+        "culture"
+      ],
+      "questionText": "Is this statement true? — flyers rw-part-3 #78.",
+      "content": {
+        "questionText": "Is this statement true? — flyers rw-part-3 #78.",
+        "passage": "Statement context passage."
+      },
+      "choices": [
+        {
+          "text": "True",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "False",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-3-true_false-089",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 44,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "hard",
+      "topicTag": "school",
+      "skillTag": "reading",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "weather"
+      ],
+      "questionText": "Is this statement true? — flyers rw-part-3 #90.",
+      "content": {
+        "questionText": "Is this statement true? — flyers rw-part-3 #90.",
+        "passage": "Statement context passage."
+      },
+      "choices": [
+        {
+          "text": "True",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "False",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-3-true_false-080",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 45,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "hard",
+      "topicTag": "hobbies",
+      "skillTag": "reading",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Is this statement true? — flyers rw-part-3 #81.",
+      "content": {
+        "questionText": "Is this statement true? — flyers rw-part-3 #81.",
+        "passage": "Statement context passage."
+      },
+      "choices": [
+        {
+          "text": "True",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "False",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-3-reading_comprehension-099",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 46,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "hard",
+      "topicTag": "travel",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ],
+      "questionText": "Read and answer — flyers rw-part-3 #100.",
+      "content": {
+        "questionText": "Read and answer — flyers rw-part-3 #100.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-3-reading_comprehension-096",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 47,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "hard",
+      "topicTag": "clothes",
+      "skillTag": "reading",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ],
+      "questionText": "Read and answer — flyers rw-part-3 #97.",
+      "content": {
+        "questionText": "Read and answer — flyers rw-part-3 #97.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-3-multiple_choice-085",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 48,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "hard",
+      "topicTag": "friends",
+      "skillTag": "reading",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "home"
+      ],
+      "questionText": "Choose the correct answer — flyers rw-part-3 #86.",
+      "content": {
+        "questionText": "Choose the correct answer — flyers rw-part-3 #86."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-3-multiple_choice-076",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 49,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "hard",
+      "topicTag": "body",
+      "skillTag": "reading",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "body",
+        "environment"
+      ],
+      "questionText": "Choose the correct answer — flyers rw-part-3 #77.",
+      "content": {
+        "questionText": "Choose the correct answer — flyers rw-part-3 #77."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "flyers-rw-part-4-picture_description_writing-164",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 50,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "medium",
+      "topicTag": "hobbies",
+      "skillTag": "writing",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Writing task: flyers rw-part-4 writing #165.",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Writing task: flyers rw-part-4 writing #165.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-picture_description_writing-v1"
+      }
+    },
+    {
+      "questionRef": "flyers-rw-part-4-write_note-066",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 51,
+      "points": 1,
+      "blueprintQuestionType": "writing_message",
+      "cambaQuestionType": "writing",
+      "difficulty": "medium",
+      "topicTag": "weather",
+      "skillTag": "writing",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Writing task: flyers rw-part-4 writing #67.",
+      "content": {
+        "cambridgeTaskType": "write_note",
+        "prompt": "Writing task: flyers rw-part-4 writing #67.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 15,
+        "maxWords": 50,
+        "requiredPoints": [
+          "Say where you are",
+          "Say what you are doing"
+        ],
+        "rubricId": "cambridge-write_note-v1"
+      }
+    },
+    {
+      "questionRef": "flyers-rw-part-4-write_note-000",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 52,
+      "points": 1,
+      "blueprintQuestionType": "writing_message",
+      "cambaQuestionType": "writing",
+      "difficulty": "easy",
+      "topicTag": "family",
+      "skillTag": "writing",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Writing task: flyers rw-part-4 writing #1.",
+      "content": {
+        "cambridgeTaskType": "write_note",
+        "prompt": "Writing task: flyers rw-part-4 writing #1.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 15,
+        "maxWords": 50,
+        "requiredPoints": [
+          "Say where you are",
+          "Say what you are doing"
+        ],
+        "rubricId": "cambridge-write_note-v1"
+      }
+    },
+    {
+      "questionRef": "flyers-rw-part-4-write_note-132",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 53,
+      "points": 1,
+      "blueprintQuestionType": "writing_message",
+      "cambaQuestionType": "writing",
+      "difficulty": "medium",
+      "topicTag": "body",
+      "skillTag": "writing",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "body",
+        "environment"
+      ],
+      "questionText": "Writing task: flyers rw-part-4 writing #133.",
+      "content": {
+        "cambridgeTaskType": "write_note",
+        "prompt": "Writing task: flyers rw-part-4 writing #133.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 15,
+        "maxWords": 50,
+        "requiredPoints": [
+          "Say where you are",
+          "Say what you are doing"
+        ],
+        "rubricId": "cambridge-write_note-v1"
+      }
+    },
+    {
+      "questionRef": "flyers-rw-part-4-write_story-067",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 54,
+      "points": 1,
+      "blueprintQuestionType": "writing_message",
+      "cambaQuestionType": "writing",
+      "difficulty": "medium",
+      "topicTag": "shopping",
+      "skillTag": "writing",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Writing task: flyers rw-part-4 writing #68.",
+      "content": {
+        "cambridgeTaskType": "write_story",
+        "prompt": "Writing task: flyers rw-part-4 writing #68.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 35,
+        "maxWords": 100,
+        "imageUrl": "/images/placeholders/writing-story.svg",
+        "rubricId": "cambridge-write_story-v1"
+      }
+    },
+    {
+      "questionRef": "flyers-rw-part-4-picture_description_writing-116",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 55,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "easy",
+      "topicTag": "drink",
+      "skillTag": "writing",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ],
+      "questionText": "Writing task: flyers rw-part-4 writing #117.",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Writing task: flyers rw-part-4 writing #117.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-picture_description_writing-v1"
+      }
+    },
+    {
+      "questionRef": "flyers-rw-part-4-write_story-097",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 56,
+      "points": 1,
+      "blueprintQuestionType": "writing_message",
+      "cambaQuestionType": "writing",
+      "difficulty": "hard",
+      "topicTag": "colours",
+      "skillTag": "writing",
+      "grammarTags": [
+        "present_continuous",
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ],
+      "questionText": "Writing task: flyers rw-part-4 writing #98.",
+      "content": {
+        "cambridgeTaskType": "write_story",
+        "prompt": "Writing task: flyers rw-part-4 writing #98.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 35,
+        "maxWords": 100,
+        "imageUrl": "/images/placeholders/writing-story.svg",
+        "rubricId": "cambridge-write_story-v1"
+      }
+    },
+    {
+      "questionRef": "flyers-speaking-part-1-picture_description_speaking-006",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 57,
+      "points": 5,
+      "blueprintQuestionType": "speaking_picture_story",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "home",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Speaking task: flyers speaking-part-1 speaking #7.",
+      "content": {
+        "cambridgeTaskType": "speaking_picture_description",
+        "prompt": "Speaking task: flyers speaking-part-1 speaking #7.",
+        "taskDescription": "Describe what you see in the picture.",
+        "maxDurationSeconds": 120,
+        "imageUrl": "/images/placeholders/speaking-picture.svg",
+        "rubricId": "cambridge-picture_description_speaking-v1"
+      }
+    },
+    {
+      "questionRef": "flyers-speaking-part-2-short_answer-003",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 58,
+      "points": 5,
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "food",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ],
+      "questionText": "Speaking task: flyers speaking-part-2 speaking #4.",
+      "content": {
+        "cambridgeTaskType": "speaking_personal_questions",
+        "prompt": "Speaking task: flyers speaking-part-2 speaking #4.",
+        "taskDescription": "Answer the examiner's questions.",
+        "followUpQuestions": [
+          "What is your name?",
+          "How old are you?"
+        ],
+        "maxDurationSeconds": 120,
+        "imageUrl": "/images/placeholders/speaking-interview.svg",
+        "rubricId": "cambridge-short_answer-v1"
+      }
+    },
+    {
+      "questionRef": "flyers-speaking-part-3-story_telling-019",
+      "partSlug": "speaking-part-3",
+      "sectionSlug": "speaking",
+      "sortOrder": 59,
+      "points": 5,
+      "blueprintQuestionType": "speaking_picture_story",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "places",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "hobbies"
+      ],
+      "questionText": "Speaking task: flyers speaking-part-3 speaking #20.",
+      "content": {
+        "cambridgeTaskType": "speaking_storytelling",
+        "prompt": "Speaking task: flyers speaking-part-3 speaking #20.",
+        "taskDescription": "Tell the story shown in the pictures.",
+        "maxDurationSeconds": 180,
+        "pictureSequence": [
+          "/images/placeholders/story-1.svg",
+          "/images/placeholders/story-2.svg",
+          "/images/placeholders/story-3.svg"
+        ],
+        "rubricId": "cambridge-story_telling-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "animals",
+      "drink",
+      "hobbies",
+      "environment",
+      "technology",
+      "places",
+      "family",
+      "food",
+      "body",
+      "weather",
+      "jobs",
+      "school",
+      "community",
+      "travel",
+      "clothes",
+      "shopping",
+      "colours",
+      "home",
+      "transport",
+      "nature",
+      "numbers",
+      "friends",
+      "time",
+      "culture",
+      "health",
+      "feelings"
+    ],
+    "distinctGrammarPatterns": [
+      "past_simple",
+      "future_going_to",
+      "there_is_are",
+      "linking_words",
+      "countable_uncountable",
+      "modal_must",
+      "pronouns",
+      "question_forms",
+      "conjunctions",
+      "present_continuous",
+      "future_will",
+      "prepositions",
+      "modal_can",
+      "superlatives",
+      "possessives",
+      "present_simple",
+      "past_continuous",
+      "comparatives",
+      "verb_be",
+      "imperatives",
+      "articles",
+      "relative_clauses",
+      "adverbs_frequency",
+      "have_got"
+    ],
+    "subskillsRepresented": [
+      "listening",
+      "reading",
+      "writing",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "easy": 16,
+      "hard": 16,
+      "medium": 27
+    },
+    "notes": "Generated by M2.4 exam assembly engine."
+  }
+}

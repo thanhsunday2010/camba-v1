@@ -1,0 +1,1873 @@
+{
+  "metadata": {
+    "manifestId": "cambridge-starters-a-v1",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-starters-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "starters",
+    "title": "Pre A1 Starters — Form A",
+    "description": "Assembled reference exam for starters (architecture validation).",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000002",
+    "timeLimitMinutes": 45,
+    "totalScore": 55,
+    "status": "review",
+    "authoringNotes": "M2.4 golden reference — not production content.",
+    "stableSlug": "starters-assembled-a"
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 1,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4"
+      ],
+      "questionRefs": [
+        "starters-listening-part-1-audio_matching-117",
+        "starters-listening-part-1-audio_matching-070",
+        "starters-listening-part-1-audio_matching-035",
+        "starters-listening-part-1-audio_matching-024",
+        "starters-listening-part-1-audio_matching-078",
+        "starters-listening-part-2-audio_gap_fill-092",
+        "starters-listening-part-2-audio_gap_fill-097",
+        "starters-listening-part-2-audio_gap_fill-090",
+        "starters-listening-part-2-audio_gap_fill-094",
+        "starters-listening-part-2-audio_gap_fill-099",
+        "starters-listening-part-3-audio_multiple_choice-019",
+        "starters-listening-part-3-audio_multiple_choice-032",
+        "starters-listening-part-3-audio_multiple_choice-039",
+        "starters-listening-part-3-audio_multiple_choice-053",
+        "starters-listening-part-3-audio_multiple_choice-051",
+        "starters-listening-part-4-audio_multiple_choice-080",
+        "starters-listening-part-4-audio_multiple_choice-077",
+        "starters-listening-part-4-audio_multiple_choice-071",
+        "starters-listening-part-4-audio_multiple_choice-063",
+        "starters-listening-part-4-audio_multiple_choice-078"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "sortOrder": 2,
+      "skillSlug": "reading_writing",
+      "timeLimitMinutes": 20,
+      "partSlugs": [
+        "rw-part-1",
+        "rw-part-2",
+        "rw-part-3",
+        "rw-part-4"
+      ],
+      "questionRefs": [
+        "starters-rw-part-1-matching-003",
+        "starters-rw-part-1-matching-058",
+        "starters-rw-part-1-matching-039",
+        "starters-rw-part-1-matching-049",
+        "starters-rw-part-1-matching-046",
+        "starters-rw-part-2-reading_comprehension-111",
+        "starters-rw-part-2-multiple_choice-034",
+        "starters-rw-part-2-multiple_choice-038",
+        "starters-rw-part-2-multiple_choice-118",
+        "starters-rw-part-2-reading_comprehension-013",
+        "starters-rw-part-3-multiple_choice-089",
+        "starters-rw-part-3-multiple_choice-083",
+        "starters-rw-part-3-reading_comprehension-072",
+        "starters-rw-part-3-multiple_choice-077",
+        "starters-rw-part-3-multiple_choice-063",
+        "starters-rw-part-4-write_sentence-112",
+        "starters-rw-part-4-picture_description_writing-087",
+        "starters-rw-part-4-picture_description_writing-077",
+        "starters-rw-part-4-picture_description_writing-101",
+        "starters-rw-part-4-picture_description_writing-113"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 3,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 10,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2",
+        "speaking-part-3"
+      ],
+      "questionRefs": [
+        "starters-speaking-part-1-picture_description_speaking-009",
+        "starters-speaking-part-2-short_answer-008",
+        "starters-speaking-part-3-story_telling-000"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "starters-listening-part-1-audio_matching-117",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 1,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "school",
+      "skillTag": "listening",
+      "grammarTags": [
+        "imperatives",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "weather"
+      ],
+      "questionText": "Match the items — starters listening-part-1 #118.",
+      "content": {
+        "questionText": "Match the items — starters listening-part-1 #118."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-1-audio_matching-070",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "jobs",
+      "skillTag": "listening",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "jobs",
+        "places"
+      ],
+      "questionText": "Match the items — starters listening-part-1 #71.",
+      "content": {
+        "questionText": "Match the items — starters listening-part-1 #71."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-1-audio_matching-035",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "sports",
+      "skillTag": "listening",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "clothes"
+      ],
+      "questionText": "Match the items — starters listening-part-1 #36.",
+      "content": {
+        "questionText": "Match the items — starters listening-part-1 #36."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-1-audio_matching-024",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "hobbies",
+      "skillTag": "listening",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Match the items — starters listening-part-1 #25.",
+      "content": {
+        "questionText": "Match the items — starters listening-part-1 #25."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-1-audio_matching-078",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "numbers",
+      "skillTag": "listening",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "numbers",
+        "community"
+      ],
+      "questionText": "Match the items — starters listening-part-1 #79.",
+      "content": {
+        "questionText": "Match the items — starters listening-part-1 #79."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-2-audio_gap_fill-092",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "hard",
+      "topicTag": "leisure",
+      "skillTag": "listening",
+      "grammarTags": [
+        "there_is_are",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "colours"
+      ],
+      "questionText": "Complete the gap — starters listening-part-2 #93.",
+      "content": {
+        "questionText": "Complete the gap — starters listening-part-2 #93.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "starters-listening-part-2-audio_gap_fill-097",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 7,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "hard",
+      "topicTag": "colours",
+      "skillTag": "listening",
+      "grammarTags": [
+        "present_continuous",
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ],
+      "questionText": "Complete the gap — starters listening-part-2 #98.",
+      "content": {
+        "questionText": "Complete the gap — starters listening-part-2 #98.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "starters-listening-part-2-audio_gap_fill-090",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 8,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "hard",
+      "topicTag": "home",
+      "skillTag": "listening",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Complete the gap — starters listening-part-2 #91.",
+      "content": {
+        "questionText": "Complete the gap — starters listening-part-2 #91.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "starters-listening-part-2-audio_gap_fill-094",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 9,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "hard",
+      "topicTag": "weather",
+      "skillTag": "listening",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Complete the gap — starters listening-part-2 #95.",
+      "content": {
+        "questionText": "Complete the gap — starters listening-part-2 #95.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "starters-listening-part-2-audio_gap_fill-099",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 10,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "hard",
+      "topicTag": "travel",
+      "skillTag": "listening",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ],
+      "questionText": "Complete the gap — starters listening-part-2 #100.",
+      "content": {
+        "questionText": "Complete the gap — starters listening-part-2 #100.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "starters-listening-part-3-audio_multiple_choice-019",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 11,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "places",
+      "skillTag": "listening",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "hobbies"
+      ],
+      "questionText": "Listen and choose — starters listening-part-3 #20.",
+      "content": {
+        "questionText": "Listen and choose — starters listening-part-3 #20.",
+        "audioUrl": "/audio/assembly/starters/listening-part-3-19.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-3-audio_multiple_choice-032",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 12,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "drink",
+      "skillTag": "listening",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ],
+      "questionText": "Listen and choose — starters listening-part-3 #33.",
+      "content": {
+        "questionText": "Listen and choose — starters listening-part-3 #33.",
+        "audioUrl": "/audio/assembly/starters/listening-part-3-32.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-3-audio_multiple_choice-039",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 13,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "shopping",
+      "skillTag": "listening",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Listen and choose — starters listening-part-3 #40.",
+      "content": {
+        "questionText": "Listen and choose — starters listening-part-3 #40.",
+        "audioUrl": "/audio/assembly/starters/listening-part-3-39.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-3-audio_multiple_choice-053",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 14,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "environment",
+      "skillTag": "listening",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "animals"
+      ],
+      "questionText": "Listen and choose — starters listening-part-3 #54.",
+      "content": {
+        "questionText": "Listen and choose — starters listening-part-3 #54.",
+        "audioUrl": "/audio/assembly/starters/listening-part-3-53.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-3-audio_multiple_choice-051",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 15,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "time",
+      "skillTag": "listening",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "time",
+        "family"
+      ],
+      "questionText": "Listen and choose — starters listening-part-3 #52.",
+      "content": {
+        "questionText": "Listen and choose — starters listening-part-3 #52.",
+        "audioUrl": "/audio/assembly/starters/listening-part-3-51.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-4-audio_multiple_choice-080",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 16,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "hobbies",
+      "skillTag": "listening",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Listen and choose — starters listening-part-4 #81.",
+      "content": {
+        "questionText": "Listen and choose — starters listening-part-4 #81.",
+        "audioUrl": "/audio/assembly/starters/listening-part-4-80.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-4-audio_multiple_choice-077",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 17,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "feelings",
+      "skillTag": "listening",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "feelings",
+        "culture"
+      ],
+      "questionText": "Listen and choose — starters listening-part-4 #78.",
+      "content": {
+        "questionText": "Listen and choose — starters listening-part-4 #78.",
+        "audioUrl": "/audio/assembly/starters/listening-part-4-77.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-4-audio_multiple_choice-071",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 18,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "travel",
+      "skillTag": "listening",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ],
+      "questionText": "Listen and choose — starters listening-part-4 #72.",
+      "content": {
+        "questionText": "Listen and choose — starters listening-part-4 #72.",
+        "audioUrl": "/audio/assembly/starters/listening-part-4-71.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-4-audio_multiple_choice-063",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 19,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "sports",
+      "skillTag": "listening",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "clothes"
+      ],
+      "questionText": "Listen and choose — starters listening-part-4 #64.",
+      "content": {
+        "questionText": "Listen and choose — starters listening-part-4 #64.",
+        "audioUrl": "/audio/assembly/starters/listening-part-4-63.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-listening-part-4-audio_multiple_choice-078",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 20,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "numbers",
+      "skillTag": "listening",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "numbers",
+        "community"
+      ],
+      "questionText": "Listen and choose — starters listening-part-4 #79.",
+      "content": {
+        "questionText": "Listen and choose — starters listening-part-4 #79.",
+        "audioUrl": "/audio/assembly/starters/listening-part-4-78.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-1-matching-003",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 21,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "food",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ],
+      "questionText": "Match the items — starters rw-part-1 #4.",
+      "content": {
+        "questionText": "Match the items — starters rw-part-1 #4."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-1-matching-058",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 22,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "animals",
+      "skillTag": "reading",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "sports"
+      ],
+      "questionText": "Match the items — starters rw-part-1 #59.",
+      "content": {
+        "questionText": "Match the items — starters rw-part-1 #59."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-1-matching-039",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 23,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "shopping",
+      "skillTag": "reading",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Match the items — starters rw-part-1 #40.",
+      "content": {
+        "questionText": "Match the items — starters rw-part-1 #40."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-1-matching-049",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 24,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "feelings",
+      "skillTag": "reading",
+      "grammarTags": [
+        "present_continuous",
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "feelings",
+        "culture"
+      ],
+      "questionText": "Match the items — starters rw-part-1 #50.",
+      "content": {
+        "questionText": "Match the items — starters rw-part-1 #50."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-1-matching-046",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 25,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "nature",
+      "skillTag": "reading",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ],
+      "questionText": "Match the items — starters rw-part-1 #47.",
+      "content": {
+        "questionText": "Match the items — starters rw-part-1 #47."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-2-reading_comprehension-111",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 26,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "easy",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Read and answer — starters rw-part-2 #112.",
+      "content": {
+        "questionText": "Read and answer — starters rw-part-2 #112.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-2-multiple_choice-034",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 27,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "home",
+      "skillTag": "reading",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Choose the correct answer — starters rw-part-2 #35.",
+      "content": {
+        "questionText": "Choose the correct answer — starters rw-part-2 #35."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-2-multiple_choice-038",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 28,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "weather",
+      "skillTag": "reading",
+      "grammarTags": [
+        "modal_can",
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Choose the correct answer — starters rw-part-2 #39.",
+      "content": {
+        "questionText": "Choose the correct answer — starters rw-part-2 #39."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-2-multiple_choice-118",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 29,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "home",
+      "skillTag": "reading",
+      "grammarTags": [
+        "relative_clauses",
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Choose the correct answer — starters rw-part-2 #119.",
+      "content": {
+        "questionText": "Choose the correct answer — starters rw-part-2 #119."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-2-reading_comprehension-013",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 30,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "easy",
+      "topicTag": "colours",
+      "skillTag": "reading",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ],
+      "questionText": "Read and answer — starters rw-part-2 #14.",
+      "content": {
+        "questionText": "Read and answer — starters rw-part-2 #14.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-3-multiple_choice-089",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 31,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "school",
+      "skillTag": "reading",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "weather"
+      ],
+      "questionText": "Choose the correct answer — starters rw-part-3 #90.",
+      "content": {
+        "questionText": "Choose the correct answer — starters rw-part-3 #90."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-3-multiple_choice-083",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 32,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "reading",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Choose the correct answer — starters rw-part-3 #84.",
+      "content": {
+        "questionText": "Choose the correct answer — starters rw-part-3 #84."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-3-reading_comprehension-072",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 33,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "medium",
+      "topicTag": "health",
+      "skillTag": "reading",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "feelings"
+      ],
+      "questionText": "Read and answer — starters rw-part-3 #73.",
+      "content": {
+        "questionText": "Read and answer — starters rw-part-3 #73.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-3-multiple_choice-077",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 34,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "feelings",
+      "skillTag": "reading",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "feelings",
+        "culture"
+      ],
+      "questionText": "Choose the correct answer — starters rw-part-3 #78.",
+      "content": {
+        "questionText": "Choose the correct answer — starters rw-part-3 #78."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-3-multiple_choice-063",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 35,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "sports",
+      "skillTag": "reading",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "clothes"
+      ],
+      "questionText": "Choose the correct answer — starters rw-part-3 #64.",
+      "content": {
+        "questionText": "Choose the correct answer — starters rw-part-3 #64."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "starters-rw-part-4-write_sentence-112",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 36,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "easy",
+      "topicTag": "family",
+      "skillTag": "writing",
+      "grammarTags": [
+        "conjunctions",
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Writing task: starters rw-part-4 writing #113.",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Writing task: starters rw-part-4 writing #113.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "starters-rw-part-4-picture_description_writing-087",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 37,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "medium",
+      "topicTag": "food",
+      "skillTag": "writing",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ],
+      "questionText": "Writing task: starters rw-part-4 writing #88.",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Writing task: starters rw-part-4 writing #88.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-picture_description_writing-v1"
+      }
+    },
+    {
+      "questionRef": "starters-rw-part-4-picture_description_writing-077",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 38,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "medium",
+      "topicTag": "feelings",
+      "skillTag": "writing",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "feelings",
+        "culture"
+      ],
+      "questionText": "Writing task: starters rw-part-4 writing #78.",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Writing task: starters rw-part-4 writing #78.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-picture_description_writing-v1"
+      }
+    },
+    {
+      "questionRef": "starters-rw-part-4-picture_description_writing-101",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 39,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "easy",
+      "topicTag": "technology",
+      "skillTag": "writing",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "technology",
+        "numbers"
+      ],
+      "questionText": "Writing task: starters rw-part-4 writing #102.",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Writing task: starters rw-part-4 writing #102.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-picture_description_writing-v1"
+      }
+    },
+    {
+      "questionRef": "starters-rw-part-4-picture_description_writing-113",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 40,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "easy",
+      "topicTag": "friends",
+      "skillTag": "writing",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "home"
+      ],
+      "questionText": "Writing task: starters rw-part-4 writing #114.",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Writing task: starters rw-part-4 writing #114.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-picture_description_writing-v1"
+      }
+    },
+    {
+      "questionRef": "starters-speaking-part-1-picture_description_speaking-009",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 41,
+      "points": 5,
+      "blueprintQuestionType": "speaking_picture_story",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "transport",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "pronouns",
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "transport",
+        "jobs"
+      ],
+      "questionText": "Speaking task: starters speaking-part-1 speaking #10.",
+      "content": {
+        "cambridgeTaskType": "speaking_picture_description",
+        "prompt": "Speaking task: starters speaking-part-1 speaking #10.",
+        "taskDescription": "Describe what you see in the picture.",
+        "maxDurationSeconds": 120,
+        "imageUrl": "/images/placeholders/speaking-picture.svg",
+        "rubricId": "cambridge-picture_description_speaking-v1"
+      }
+    },
+    {
+      "questionRef": "starters-speaking-part-2-short_answer-008",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 42,
+      "points": 5,
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "leisure",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "articles",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "colours"
+      ],
+      "questionText": "Speaking task: starters speaking-part-2 speaking #9.",
+      "content": {
+        "cambridgeTaskType": "speaking_personal_questions",
+        "prompt": "Speaking task: starters speaking-part-2 speaking #9.",
+        "taskDescription": "Answer the examiner's questions.",
+        "followUpQuestions": [
+          "What is your name?",
+          "How old are you?"
+        ],
+        "maxDurationSeconds": 120,
+        "imageUrl": "/images/placeholders/speaking-interview.svg",
+        "rubricId": "cambridge-short_answer-v1"
+      }
+    },
+    {
+      "questionRef": "starters-speaking-part-3-story_telling-000",
+      "partSlug": "speaking-part-3",
+      "sectionSlug": "speaking",
+      "sortOrder": 43,
+      "points": 5,
+      "blueprintQuestionType": "speaking_picture_story",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "family",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Speaking task: starters speaking-part-3 speaking #1.",
+      "content": {
+        "cambridgeTaskType": "speaking_storytelling",
+        "prompt": "Speaking task: starters speaking-part-3 speaking #1.",
+        "taskDescription": "Tell the story shown in the pictures.",
+        "maxDurationSeconds": 180,
+        "pictureSequence": [
+          "/images/placeholders/story-1.svg",
+          "/images/placeholders/story-2.svg",
+          "/images/placeholders/story-3.svg"
+        ],
+        "rubricId": "cambridge-story_telling-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "school",
+      "jobs",
+      "sports",
+      "hobbies",
+      "numbers",
+      "leisure",
+      "colours",
+      "home",
+      "weather",
+      "travel",
+      "places",
+      "drink",
+      "shopping",
+      "environment",
+      "time",
+      "feelings",
+      "food",
+      "animals",
+      "nature",
+      "community",
+      "health",
+      "family",
+      "technology",
+      "friends",
+      "transport"
+    ],
+    "distinctGrammarPatterns": [
+      "imperatives",
+      "present_simple",
+      "relative_clauses",
+      "present_continuous",
+      "prepositions",
+      "modal_can",
+      "past_continuous",
+      "comparatives",
+      "pronouns",
+      "there_is_are",
+      "linking_words",
+      "future_will",
+      "verb_be",
+      "have_got",
+      "articles",
+      "modal_must",
+      "future_going_to",
+      "past_simple",
+      "possessives",
+      "question_forms",
+      "adverbs_frequency",
+      "conjunctions",
+      "countable_uncountable"
+    ],
+    "subskillsRepresented": [
+      "listening",
+      "reading",
+      "writing",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "easy": 24,
+      "medium": 14,
+      "hard": 5
+    },
+    "notes": "Generated by M2.4 exam assembly engine."
+  }
+}

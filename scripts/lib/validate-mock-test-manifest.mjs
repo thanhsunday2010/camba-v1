@@ -8,12 +8,8 @@ import { analyzeQuestionIntelligenceMetadata } from "./question-metadata-validat
 
 const RUNTIME_SEED_ALLOWED_SUPPORT = new Set(["supported", "partial"]);
 
-const BLUEPRINT_ONLY_TYPES = new Set([
-  "writing_copy",
-  "writing_message",
-  "speaking_picture_story",
-  "speaking_interview",
-]);
+/** M2.4 — writing/speaking types are now runtime-supported via M2.1/M2.3. */
+const BLUEPRINT_ONLY_TYPES = new Set([]);
 
 const CAMBA_TYPE_MAP = {
   mcq_single: "multiple_choice",

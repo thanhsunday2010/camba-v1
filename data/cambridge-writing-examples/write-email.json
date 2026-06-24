@@ -1,0 +1,13 @@
+{
+  "id": "writing-example-write-email",
+  "question_type": "writing",
+  "question_text": "Write an email to your English teacher.",
+  "points": 0,
+  "content": {
+    "cambridgeTaskType": "write_email",
+    "prompt": "Write an email to your teacher explaining why you will be late for class.",
+    "taskDescription": "Write 25 words or more.",
+    "minWords": 25,
+    "maxWords": 100
+  }
+}

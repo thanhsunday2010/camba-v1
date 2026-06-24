@@ -1,0 +1,676 @@
+{
+  "metadata": {
+    "manifestId": "cambridge-starters-a-v1",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-starters-v1",
+    "blueprintVersion": "1.0.0",
+    "level": "starters",
+    "examVersion": "A",
+    "assemblySeed": "camba-m2-4-reference:starters:A",
+    "title": "Pre A1 Starters — Form A",
+    "description": "Assembled reference exam for starters (architecture validation).",
+    "formKind": "full-form",
+    "timeLimitMinutes": 45,
+    "totalScore": 55,
+    "assembledAt": "2026-06-24T00:27:16.212Z",
+    "authoringNotes": "M2.4 golden reference — not production content."
+  },
+  "papers": [
+    {
+      "paperSlug": "listening",
+      "title": "Listening",
+      "skills": [
+        "listening"
+      ],
+      "parts": [
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-1",
+          "partNumber": 1,
+          "title": "Link names to pictures",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "starters-listening-part-1-audio_matching-117",
+              "partSlug": "listening-part-1",
+              "sortOrder": 1,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-1-audio_matching-070",
+              "partSlug": "listening-part-1",
+              "sortOrder": 2,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-1-audio_matching-035",
+              "partSlug": "listening-part-1",
+              "sortOrder": 3,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-1-audio_matching-024",
+              "partSlug": "listening-part-1",
+              "sortOrder": 4,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-1-audio_matching-078",
+              "partSlug": "listening-part-1",
+              "sortOrder": 5,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-2",
+          "partNumber": 2,
+          "title": "Write words or numbers",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "starters-listening-part-2-audio_gap_fill-092",
+              "partSlug": "listening-part-2",
+              "sortOrder": 6,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-2-audio_gap_fill-097",
+              "partSlug": "listening-part-2",
+              "sortOrder": 7,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-2-audio_gap_fill-090",
+              "partSlug": "listening-part-2",
+              "sortOrder": 8,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-2-audio_gap_fill-094",
+              "partSlug": "listening-part-2",
+              "sortOrder": 9,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-2-audio_gap_fill-099",
+              "partSlug": "listening-part-2",
+              "sortOrder": 10,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-3",
+          "partNumber": 3,
+          "title": "Tick the correct picture",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "starters-listening-part-3-audio_multiple_choice-019",
+              "partSlug": "listening-part-3",
+              "sortOrder": 11,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-3-audio_multiple_choice-032",
+              "partSlug": "listening-part-3",
+              "sortOrder": 12,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-3-audio_multiple_choice-039",
+              "partSlug": "listening-part-3",
+              "sortOrder": 13,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-3-audio_multiple_choice-053",
+              "partSlug": "listening-part-3",
+              "sortOrder": 14,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-3-audio_multiple_choice-051",
+              "partSlug": "listening-part-3",
+              "sortOrder": 15,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "listening",
+          "partSlug": "listening-part-4",
+          "partNumber": 4,
+          "title": "Colour and draw",
+          "skill": "listening",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "starters-listening-part-4-audio_multiple_choice-080",
+              "partSlug": "listening-part-4",
+              "sortOrder": 16,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-4-audio_multiple_choice-077",
+              "partSlug": "listening-part-4",
+              "sortOrder": 17,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-4-audio_multiple_choice-071",
+              "partSlug": "listening-part-4",
+              "sortOrder": 18,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-4-audio_multiple_choice-063",
+              "partSlug": "listening-part-4",
+              "sortOrder": 19,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-listening-part-4-audio_multiple_choice-078",
+              "partSlug": "listening-part-4",
+              "sortOrder": 20,
+              "pointsOverride": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paperSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "skills": [
+        "reading",
+        "writing"
+      ],
+      "parts": [
+        {
+          "paperSlug": "reading-writing",
+          "partSlug": "rw-part-1",
+          "partNumber": 1,
+          "title": "Match words to pictures",
+          "skill": "reading",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "starters-rw-part-1-matching-003",
+              "partSlug": "rw-part-1",
+              "sortOrder": 21,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-1-matching-058",
+              "partSlug": "rw-part-1",
+              "sortOrder": 22,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-1-matching-039",
+              "partSlug": "rw-part-1",
+              "sortOrder": 23,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-1-matching-049",
+              "partSlug": "rw-part-1",
+              "sortOrder": 24,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-1-matching-046",
+              "partSlug": "rw-part-1",
+              "sortOrder": 25,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading-writing",
+          "partSlug": "rw-part-2",
+          "partNumber": 2,
+          "title": "Read sentences and choose pictures",
+          "skill": "reading",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "starters-rw-part-2-reading_comprehension-111",
+              "partSlug": "rw-part-2",
+              "sortOrder": 26,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-2-multiple_choice-034",
+              "partSlug": "rw-part-2",
+              "sortOrder": 27,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-2-multiple_choice-038",
+              "partSlug": "rw-part-2",
+              "sortOrder": 28,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-2-multiple_choice-118",
+              "partSlug": "rw-part-2",
+              "sortOrder": 29,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-2-reading_comprehension-013",
+              "partSlug": "rw-part-2",
+              "sortOrder": 30,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading-writing",
+          "partSlug": "rw-part-3",
+          "partNumber": 3,
+          "title": "Read and choose answers",
+          "skill": "reading",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "starters-rw-part-3-multiple_choice-089",
+              "partSlug": "rw-part-3",
+              "sortOrder": 31,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-3-multiple_choice-083",
+              "partSlug": "rw-part-3",
+              "sortOrder": 32,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-3-reading_comprehension-072",
+              "partSlug": "rw-part-3",
+              "sortOrder": 33,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-3-multiple_choice-077",
+              "partSlug": "rw-part-3",
+              "sortOrder": 34,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-3-multiple_choice-063",
+              "partSlug": "rw-part-3",
+              "sortOrder": 35,
+              "pointsOverride": 1
+            }
+          ]
+        },
+        {
+          "paperSlug": "reading-writing",
+          "partSlug": "rw-part-4",
+          "partNumber": 4,
+          "title": "Copy and complete writing",
+          "skill": "writing",
+          "questionCount": 5,
+          "itemReferences": [
+            {
+              "itemId": "starters-rw-part-4-write_sentence-112",
+              "partSlug": "rw-part-4",
+              "sortOrder": 36,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-4-picture_description_writing-087",
+              "partSlug": "rw-part-4",
+              "sortOrder": 37,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-4-picture_description_writing-077",
+              "partSlug": "rw-part-4",
+              "sortOrder": 38,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-4-picture_description_writing-101",
+              "partSlug": "rw-part-4",
+              "sortOrder": 39,
+              "pointsOverride": 1
+            },
+            {
+              "itemId": "starters-rw-part-4-picture_description_writing-113",
+              "partSlug": "rw-part-4",
+              "sortOrder": 40,
+              "pointsOverride": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paperSlug": "speaking",
+      "title": "Speaking",
+      "skills": [
+        "speaking"
+      ],
+      "parts": [
+        {
+          "paperSlug": "speaking",
+          "partSlug": "speaking-part-1",
+          "partNumber": 1,
+          "title": "Find differences",
+          "skill": "speaking",
+          "questionCount": 1,
+          "itemReferences": [
+            {
+              "itemId": "starters-speaking-part-1-picture_description_speaking-009",
+              "partSlug": "speaking-part-1",
+              "sortOrder": 41,
+              "pointsOverride": 5
+            }
+          ]
+        },
+        {
+          "paperSlug": "speaking",
+          "partSlug": "speaking-part-2",
+          "partNumber": 2,
+          "title": "Personal questions",
+          "skill": "speaking",
+          "questionCount": 1,
+          "itemReferences": [
+            {
+              "itemId": "starters-speaking-part-2-short_answer-008",
+              "partSlug": "speaking-part-2",
+              "sortOrder": 42,
+              "pointsOverride": 5
+            }
+          ]
+        },
+        {
+          "paperSlug": "speaking",
+          "partSlug": "speaking-part-3",
+          "partNumber": 3,
+          "title": "Picture story",
+          "skill": "speaking",
+          "questionCount": 1,
+          "itemReferences": [
+            {
+              "itemId": "starters-speaking-part-3-story_telling-000",
+              "partSlug": "speaking-part-3",
+              "sortOrder": 43,
+              "pointsOverride": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "itemReferences": [
+    {
+      "itemId": "starters-listening-part-1-audio_matching-117",
+      "partSlug": "listening-part-1",
+      "sortOrder": 1,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-1-audio_matching-070",
+      "partSlug": "listening-part-1",
+      "sortOrder": 2,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-1-audio_matching-035",
+      "partSlug": "listening-part-1",
+      "sortOrder": 3,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-1-audio_matching-024",
+      "partSlug": "listening-part-1",
+      "sortOrder": 4,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-1-audio_matching-078",
+      "partSlug": "listening-part-1",
+      "sortOrder": 5,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-2-audio_gap_fill-092",
+      "partSlug": "listening-part-2",
+      "sortOrder": 6,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-2-audio_gap_fill-097",
+      "partSlug": "listening-part-2",
+      "sortOrder": 7,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-2-audio_gap_fill-090",
+      "partSlug": "listening-part-2",
+      "sortOrder": 8,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-2-audio_gap_fill-094",
+      "partSlug": "listening-part-2",
+      "sortOrder": 9,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-2-audio_gap_fill-099",
+      "partSlug": "listening-part-2",
+      "sortOrder": 10,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-3-audio_multiple_choice-019",
+      "partSlug": "listening-part-3",
+      "sortOrder": 11,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-3-audio_multiple_choice-032",
+      "partSlug": "listening-part-3",
+      "sortOrder": 12,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-3-audio_multiple_choice-039",
+      "partSlug": "listening-part-3",
+      "sortOrder": 13,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-3-audio_multiple_choice-053",
+      "partSlug": "listening-part-3",
+      "sortOrder": 14,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-3-audio_multiple_choice-051",
+      "partSlug": "listening-part-3",
+      "sortOrder": 15,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-4-audio_multiple_choice-080",
+      "partSlug": "listening-part-4",
+      "sortOrder": 16,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-4-audio_multiple_choice-077",
+      "partSlug": "listening-part-4",
+      "sortOrder": 17,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-4-audio_multiple_choice-071",
+      "partSlug": "listening-part-4",
+      "sortOrder": 18,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-4-audio_multiple_choice-063",
+      "partSlug": "listening-part-4",
+      "sortOrder": 19,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-listening-part-4-audio_multiple_choice-078",
+      "partSlug": "listening-part-4",
+      "sortOrder": 20,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-1-matching-003",
+      "partSlug": "rw-part-1",
+      "sortOrder": 21,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-1-matching-058",
+      "partSlug": "rw-part-1",
+      "sortOrder": 22,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-1-matching-039",
+      "partSlug": "rw-part-1",
+      "sortOrder": 23,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-1-matching-049",
+      "partSlug": "rw-part-1",
+      "sortOrder": 24,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-1-matching-046",
+      "partSlug": "rw-part-1",
+      "sortOrder": 25,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-2-reading_comprehension-111",
+      "partSlug": "rw-part-2",
+      "sortOrder": 26,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-2-multiple_choice-034",
+      "partSlug": "rw-part-2",
+      "sortOrder": 27,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-2-multiple_choice-038",
+      "partSlug": "rw-part-2",
+      "sortOrder": 28,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-2-multiple_choice-118",
+      "partSlug": "rw-part-2",
+      "sortOrder": 29,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-2-reading_comprehension-013",
+      "partSlug": "rw-part-2",
+      "sortOrder": 30,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-3-multiple_choice-089",
+      "partSlug": "rw-part-3",
+      "sortOrder": 31,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-3-multiple_choice-083",
+      "partSlug": "rw-part-3",
+      "sortOrder": 32,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-3-reading_comprehension-072",
+      "partSlug": "rw-part-3",
+      "sortOrder": 33,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-3-multiple_choice-077",
+      "partSlug": "rw-part-3",
+      "sortOrder": 34,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-3-multiple_choice-063",
+      "partSlug": "rw-part-3",
+      "sortOrder": 35,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-4-write_sentence-112",
+      "partSlug": "rw-part-4",
+      "sortOrder": 36,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-4-picture_description_writing-087",
+      "partSlug": "rw-part-4",
+      "sortOrder": 37,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-4-picture_description_writing-077",
+      "partSlug": "rw-part-4",
+      "sortOrder": 38,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-4-picture_description_writing-101",
+      "partSlug": "rw-part-4",
+      "sortOrder": 39,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-rw-part-4-picture_description_writing-113",
+      "partSlug": "rw-part-4",
+      "sortOrder": 40,
+      "pointsOverride": 1
+    },
+    {
+      "itemId": "starters-speaking-part-1-picture_description_speaking-009",
+      "partSlug": "speaking-part-1",
+      "sortOrder": 41,
+      "pointsOverride": 5
+    },
+    {
+      "itemId": "starters-speaking-part-2-short_answer-008",
+      "partSlug": "speaking-part-2",
+      "sortOrder": 42,
+      "pointsOverride": 5
+    },
+    {
+      "itemId": "starters-speaking-part-3-story_telling-000",
+      "partSlug": "speaking-part-3",
+      "sortOrder": 43,
+      "pointsOverride": 5
+    }
+  ]
+}

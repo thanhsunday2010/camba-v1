@@ -1,0 +1,2255 @@
+{
+  "metadata": {
+    "manifestId": "movers-gold-mock-3",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-movers-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "movers",
+    "title": "Cambridge Movers Gold Mock 3",
+    "description": "Manually authored A1 Movers gold mock 3 — full 51-item form with Health, Culture, and Environment themes aligned to the M2.0 blueprint.",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000003",
+    "timeLimitMinutes": 55,
+    "totalScore": 63,
+    "status": "published",
+    "authoringNotes": "M4.1 Gold Mock — manually authored and academically reviewed.",
+    "stableSlug": "movers-gold-mock-3"
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 1,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4"
+      ],
+      "questionRefs": [
+        "mgm3-001",
+        "mgm3-002",
+        "mgm3-003",
+        "mgm3-004",
+        "mgm3-005",
+        "mgm3-006",
+        "mgm3-007",
+        "mgm3-008",
+        "mgm3-009",
+        "mgm3-010",
+        "mgm3-011",
+        "mgm3-012",
+        "mgm3-013",
+        "mgm3-014",
+        "mgm3-015",
+        "mgm3-016",
+        "mgm3-017",
+        "mgm3-018",
+        "mgm3-019",
+        "mgm3-020",
+        "mgm3-021",
+        "mgm3-022",
+        "mgm3-023",
+        "mgm3-024"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "sortOrder": 2,
+      "skillSlug": "reading_writing",
+      "timeLimitMinutes": 20,
+      "partSlugs": [
+        "rw-part-1",
+        "rw-part-2",
+        "rw-part-3",
+        "rw-part-4"
+      ],
+      "questionRefs": [
+        "mgm3-025",
+        "mgm3-026",
+        "mgm3-027",
+        "mgm3-028",
+        "mgm3-029",
+        "mgm3-030",
+        "mgm3-031",
+        "mgm3-032",
+        "mgm3-033",
+        "mgm3-034",
+        "mgm3-035",
+        "mgm3-036",
+        "mgm3-037",
+        "mgm3-038",
+        "mgm3-039",
+        "mgm3-040",
+        "mgm3-041",
+        "mgm3-042",
+        "mgm3-043",
+        "mgm3-044",
+        "mgm3-045",
+        "mgm3-046",
+        "mgm3-047",
+        "mgm3-048"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 3,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 10,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2",
+        "speaking-part-3"
+      ],
+      "questionRefs": [
+        "mgm3-049",
+        "mgm3-050",
+        "mgm3-051"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Link names to pictures",
+      "instructions": "Link names to pictures",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mia. She's brushing her teeth in the bathroom.\nOmar is wearing a colourful traditional costume for the festival.\nClara is putting empty bottles in the green recycling bin.\nFinn always eats fruit at break time. Today he's eating an apple.\nAisha is dancing a folk dance on the stage.\nNoah is planting a tree between two benches in the park.",
+        "caption": "Link names to pictures"
+      }
+    },
+    {
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "partNumber": 2,
+      "title": "Write words or numbers",
+      "instructions": "Write words or numbers",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "transcript": "Examiner: Listen and write the missing word or number.\n\nThe doctor says eat more apples every day.\nThis year's international festival is from Brazil.\nThey planted twelve trees in the park last weekend.\nMum is drinking water instead of fizzy drinks.\nAt the cultural show they play the drum.\nThe health walk in the park starts at nine o'clock.",
+        "caption": "Write words or numbers"
+      }
+    },
+    {
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "partNumber": 3,
+      "title": "Tick the correct picture",
+      "instructions": "Tick the correct picture",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe children are doing yoga in the sports hall.\nSalad with vegetables is healthy for lunch.\nIn culture club they are learning salsa dancing.\nAt school we must recycle paper and glass in different bins.\nThe museum is about ancient history and old objects.\nOn Saturday they are going to clean the beach near our town.",
+        "caption": "Tick the correct picture"
+      }
+    },
+    {
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "partNumber": 4,
+      "title": "Colour and draw",
+      "instructions": "Colour and draw",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "transcript": "Examiner: Listen and colour or draw.\n\nColour the recycling bin green, please.\nNow colour the first-aid box white.\nDraw a flag on top of the building.\nColour the water bottle blue.\nDraw flowers in the garden.\nDraw a line from the boy to the museum entrance.",
+        "caption": "Colour and draw"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "mgm3-001",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 1,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "morning_health",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "home"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which girl is Mia?",
+      "pairs": [
+        {
+          "leftText": "Mia",
+          "rightText": "Girl brushing her teeth",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "This is Mia. She's brushing her teeth in the bathroom.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "mgm3-002",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 2,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "cultural_costume",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "clothes"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which boy is Omar?",
+      "pairs": [
+        {
+          "leftText": "Omar",
+          "rightText": "Boy in a colourful traditional costume",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Omar is wearing a colourful traditional costume for the festival.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "mgm3-003",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 3,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "recycling_bins",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which girl is Clara?",
+      "pairs": [
+        {
+          "leftText": "Clara",
+          "rightText": "Girl putting bottles in a recycling bin",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Clara is putting empty bottles in the green recycling bin.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "mgm3-004",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 4,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "healthy_snack",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "food"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which boy is Finn?",
+      "pairs": [
+        {
+          "leftText": "Finn",
+          "rightText": "Boy eating an apple",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Finn always eats fruit at break time. Today he's eating an apple.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "mgm3-005",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 5,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "folk_dance",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which girl is Aisha?",
+      "pairs": [
+        {
+          "leftText": "Aisha",
+          "rightText": "Girl dancing a folk dance",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Aisha is dancing a folk dance on the stage.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "mgm3-006",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 6,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "tree_planting",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "nature"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which boy is Noah?",
+      "pairs": [
+        {
+          "leftText": "Noah",
+          "rightText": "Boy planting a tree between two benches",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Noah is planting a tree between two benches in the park.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "mgm3-007",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 7,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "doctor_advice",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "food"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. What fruit does the doctor recommend?",
+      "template": "Eat more [0].",
+      "correctAnswers": [
+        "apples"
+      ],
+      "content": {
+        "template": "Eat more [0].",
+        "correctAnswers": [
+          "apples"
+        ],
+        "transcriptSnippet": "The doctor says eat more apples every day."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "mgm3-008",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 8,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "international_festival",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "places"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. Which country is the festival from?",
+      "template": "The festival is from [0].",
+      "correctAnswers": [
+        "Brazil"
+      ],
+      "content": {
+        "template": "The festival is from [0].",
+        "correctAnswers": [
+          "Brazil"
+        ],
+        "transcriptSnippet": "This year's international festival is from Brazil."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "mgm3-009",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 9,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "park_cleanup",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "numbers"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. How many trees did they plant?",
+      "template": "They planted [0] trees.",
+      "correctAnswers": [
+        "twelve",
+        "12"
+      ],
+      "content": {
+        "template": "They planted [0] trees.",
+        "correctAnswers": [
+          "twelve",
+          "12"
+        ],
+        "transcriptSnippet": "They planted twelve trees in the park last weekend."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "mgm3-010",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 10,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "healthy_drink",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "family"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. What is Mum drinking?",
+      "template": "Mum is drinking [0].",
+      "correctAnswers": [
+        "water"
+      ],
+      "content": {
+        "template": "Mum is drinking [0].",
+        "correctAnswers": [
+          "water"
+        ],
+        "transcriptSnippet": "Mum is drinking water instead of fizzy drinks."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "mgm3-011",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 11,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "world_music",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "hobbies"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. What instrument do they play?",
+      "template": "They play the [0].",
+      "correctAnswers": [
+        "drum",
+        "drums"
+      ],
+      "content": {
+        "template": "They play the [0].",
+        "correctAnswers": [
+          "drum",
+          "drums"
+        ],
+        "transcriptSnippet": "At the cultural show they play the drum."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "mgm3-012",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 12,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "health_walk",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "time"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. What time does the health walk start?",
+      "template": "It starts at [0].",
+      "correctAnswers": [
+        "nine o'clock",
+        "9:00",
+        "9 o'clock"
+      ],
+      "content": {
+        "template": "It starts at [0].",
+        "correctAnswers": [
+          "nine o'clock",
+          "9:00",
+          "9 o'clock"
+        ],
+        "transcriptSnippet": "The health walk in the park starts at nine o'clock."
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "mgm3-013",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 13,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "yoga_class",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What exercise are the children doing?",
+      "choices": [
+        {
+          "text": "Yoga",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Ice skating",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Playing football",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The children are doing yoga in the sports hall."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "mgm3-014",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 14,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "healthy_lunch",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "food"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Which food is healthy?",
+      "choices": [
+        {
+          "text": "Salad with vegetables",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Lots of sweets",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Only crisps",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Salad with vegetables is healthy for lunch."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "mgm3-015",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 15,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "dance_lesson",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What dance are they learning?",
+      "choices": [
+        {
+          "text": "Salsa",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Ballet only",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "No dance at all",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "In culture club they are learning salsa dancing."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "mgm3-016",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 16,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "recycling_rules",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What must we recycle at school?",
+      "choices": [
+        {
+          "text": "Paper and glass",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Dirty food waste in one bin",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Nothing at all",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "At school we must recycle paper and glass in different bins."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "mgm3-017",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 17,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "museum_visit",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "places"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What is the museum about?",
+      "choices": [
+        {
+          "text": "Ancient history",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Modern robots only",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Fast food",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The museum is about ancient history and old objects."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "mgm3-018",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 18,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "beach_cleanup",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What are they going to do on Saturday?",
+      "choices": [
+        {
+          "text": "Clean the beach",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Fly to another country",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Stay in bed all day",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "On Saturday they are going to clean the beach near our town."
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "mgm3-019",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 19,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "park_picture",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "colours"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Colour the recycling bin. Which colour?",
+      "choices": [
+        {
+          "text": "Green",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Orange",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Purple",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Colour the recycling bin green, please.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "mgm3-020",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 20,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "park_picture",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "colours"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Colour the first-aid box. Which colour?",
+      "choices": [
+        {
+          "text": "White",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Black",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Brown",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Now colour the first-aid box white.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "mgm3-021",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 21,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "park_picture",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "places"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw a flag on the building. Which picture is correct?",
+      "choices": [
+        {
+          "text": "Flag on top of the building",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Flag under the table",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Flag inside a bag",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw a flag on top of the building.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "mgm3-022",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 22,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "park_picture",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "colours"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Colour the water bottle. Which colour?",
+      "choices": [
+        {
+          "text": "Blue",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Red",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Grey",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Colour the water bottle blue.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "mgm3-023",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 23,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "park_picture",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "nature"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw flowers in the garden. Which picture is correct?",
+      "choices": [
+        {
+          "text": "Flowers in the garden",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Flowers on the roof",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Flowers in the sea",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw flowers in the garden.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "mgm3-024",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 24,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "park_picture",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "places"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw a line from the boy to the museum entrance. Which picture?",
+      "choices": [
+        {
+          "text": "Boy walking towards museum door",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Boy far from museum",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Boy without a museum",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw a line from the boy to the museum entrance.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "mgm3-025",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 25,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "medical_place",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "places"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'hospital' to the picture.",
+      "pairs": [
+        {
+          "leftText": "hospital",
+          "rightText": "Place where doctors help sick people",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "mgm3-026",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 26,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "celebration_event",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "leisure"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'festival' to the picture.",
+      "pairs": [
+        {
+          "leftText": "festival",
+          "rightText": "Special event with music, food and dancing",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "mgm3-027",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 27,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "green_habits",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'recycling' to the picture.",
+      "pairs": [
+        {
+          "leftText": "recycling",
+          "rightText": "Using old things again instead of throwing them away",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "mgm3-028",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 28,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "teeth_doctor",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'dentist' to the picture.",
+      "pairs": [
+        {
+          "leftText": "dentist",
+          "rightText": "Person who looks after your teeth",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "mgm3-029",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 29,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "travel_document",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "travel"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'passport' to the picture.",
+      "pairs": [
+        {
+          "leftText": "passport",
+          "rightText": "Book you need to travel to another country",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "mgm3-030",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 30,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "dirty_air",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "environment"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word 'pollution' to the picture.",
+      "pairs": [
+        {
+          "leftText": "pollution",
+          "rightText": "Dirty smoke and rubbish that hurts nature",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "mgm3-031",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 31,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "nurse_helping",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "jobs"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"The nurse is helping the patient in the…\" Choose the correct picture.",
+      "passage": "The nurse is helping the patient in the hospital room.",
+      "choices": [
+        {
+          "text": "Nurse with patient in bed",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Nurse playing football",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Nurse cooking pizza",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The nurse is helping the patient in the hospital room."
+      }
+    },
+    {
+      "questionRef": "mgm3-032",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 32,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "carnival_clothes",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "clothes"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"We wear special colourful clothes for th…\" Choose the correct picture.",
+      "passage": "We wear special colourful clothes for the carnival parade.",
+      "choices": [
+        {
+          "text": "Children in carnival costumes",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children in pyjamas at home",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children in school uniforms only",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "We wear special colourful clothes for the carnival parade."
+      }
+    },
+    {
+      "questionRef": "mgm3-033",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 33,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "river_rubbish",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "nature"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"Don't throw rubbish in the river because…\" Choose the correct picture.",
+      "passage": "Don't throw rubbish in the river because fish live there.",
+      "choices": [
+        {
+          "text": "Clean river with fish",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Rubbish floating in water",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Car on a motorway",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Don't throw rubbish in the river because fish live there."
+      }
+    },
+    {
+      "questionRef": "mgm3-034",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 34,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "milk_bones",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"I drink milk every day because it is goo…\" Choose the correct picture.",
+      "passage": "I drink milk every day because it is good for my bones.",
+      "choices": [
+        {
+          "text": "Child drinking a glass of milk",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Child eating only sweets",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Child sleeping at school",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "I drink milk every day because it is good for my bones."
+      }
+    },
+    {
+      "questionRef": "mgm3-035",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 35,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "japanese_food",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"Our class is learning about Japanese foo…\" Choose the correct picture.",
+      "passage": "Our class is learning about Japanese food and chopsticks.",
+      "choices": [
+        {
+          "text": "Children trying Japanese food",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children skiing on a mountain",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children riding elephants",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our class is learning about Japanese food and chopsticks."
+      }
+    },
+    {
+      "questionRef": "mgm3-036",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 36,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "beach_litter",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "leisure"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read: \"The beach is dirty so we must pick up li…\" Choose the correct picture.",
+      "passage": "The beach is dirty so we must pick up litter before we swim.",
+      "choices": [
+        {
+          "text": "Children collecting litter on beach",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children leaving rubbish on sand",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children in a snowstorm",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The beach is dirty so we must pick up litter before we swim."
+      }
+    },
+    {
+      "questionRef": "mgm3-037",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 37,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "healthy_penpal",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"Hi! I'm Lin from China. I eat rice,…\" and choose the best answer.",
+      "passage": "Hi! I'm Lin from China. I eat rice, vegetables and fruit every day. I don't drink fizzy drinks because they aren't good for me. After school I walk in the park with my grandma. I want to be strong and healthy.",
+      "choices": [
+        {
+          "text": "Lin eats healthy food every day.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Lin only eats sweets.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Lin never walks in the park.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Hi! I'm Lin from China. I eat rice, vegetables and fruit every day. I don't drink fizzy drinks because they aren't good for me. After school I walk in the park with my grandma. I want to be strong and healthy."
+      }
+    },
+    {
+      "questionRef": "mgm3-038",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 38,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "cultural_day",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"Last Friday was cultural day at our…\" and choose the best answer.",
+      "passage": "Last Friday was cultural day at our school. Students wore clothes from different countries and brought traditional food to share. We listened to music from Africa and Asia. My favourite dish was spicy rice from India.",
+      "choices": [
+        {
+          "text": "Students celebrated cultural day at school.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Nobody brought food to school.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They only listened to one song.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Friday was cultural day at our school. Students wore clothes from different countries and brought traditional food to share. We listened to music from Africa and Asia. My favourite dish was spicy rice from India."
+      }
+    },
+    {
+      "questionRef": "mgm3-039",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 39,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "recycling_project",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"Our class started a recycling proje…\" and choose the best answer.",
+      "passage": "Our class started a recycling project this term. We collect paper, plastic bottles and old batteries in special boxes. Every Friday two students take the boxes to the recycling centre. Our teacher says we are helping the planet.",
+      "choices": [
+        {
+          "text": "The class collects items for recycling.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They throw everything in one bin.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They never visit the recycling centre.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our class started a recycling project this term. We collect paper, plastic bottles and old batteries in special boxes. Every Friday two students take the boxes to the recycling centre. Our teacher says we are helping the planet."
+      }
+    },
+    {
+      "questionRef": "mgm3-040",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 40,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "doctor_visit",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "places"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"Yesterday I went to the doctor beca…\" and choose the best answer.",
+      "passage": "Yesterday I went to the doctor because I had a sore throat. The doctor looked at my throat and said I must drink warm water and rest. I didn't go to school today. I feel better now.",
+      "choices": [
+        {
+          "text": "The child visited the doctor yesterday.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The child went swimming yesterday.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The doctor said to eat only ice cream.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Yesterday I went to the doctor because I had a sore throat. The doctor looked at my throat and said I must drink warm water and rest. I didn't go to school today. I feel better now."
+      }
+    },
+    {
+      "questionRef": "mgm3-041",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 41,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "world_music_concert",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "leisure"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"Next month our town is going to hav…\" and choose the best answer.",
+      "passage": "Next month our town is going to have a world music concert in the park. Musicians from Mexico, Kenya and Scotland are going to play. We are going to buy tickets next week. My family loves listening to music from other countries.",
+      "choices": [
+        {
+          "text": "There will be a world music concert in the park.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The concert was last year.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Only one country will perform.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Next month our town is going to have a world music concert in the park. Musicians from Mexico, Kenya and Scotland are going to play. We are going to buy tickets next week. My family loves listening to music from other countries."
+      }
+    },
+    {
+      "questionRef": "mgm3-042",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 42,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "tree_planting_day",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "nature"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the text beginning \"On tree planting day our whole scho…\" and choose the best answer.",
+      "passage": "On tree planting day our whole school went to the forest near town. We dug holes and planted young trees together. The ranger showed us how to water them carefully. We must go back in spring to check they are growing well.",
+      "choices": [
+        {
+          "text": "The school planted trees on tree planting day.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They cut down all the trees.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Nobody learned about watering.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "On tree planting day our whole school went to the forest near town. We dug holes and planted young trees together. The ranger showed us how to water them carefully. We must go back in spring to check they are growing well."
+      }
+    },
+    {
+      "questionRef": "mgm3-043",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 43,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "dentist_picture",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "health"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write one sentence about the dentist.",
+      "cambridgeTaskType": "write_sentence",
+      "prompt": "Look at the picture. Write one sentence about the dentist.",
+      "minWords": 3,
+      "maxWords": 18,
+      "imageUrl": "/images/gold-mocks/movers/mgm3-043-dentist.png",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Look at the picture. Write one sentence about the dentist.",
+        "minWords": 3,
+        "maxWords": 18,
+        "imageUrl": "/images/gold-mocks/movers/mgm3-043-dentist.png",
+        "rubricId": "gold-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "mgm3-044",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 44,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "festival_picture",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "leisure"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write one sentence about the festival.",
+      "cambridgeTaskType": "write_sentence",
+      "prompt": "Look at the picture. Write one sentence about the children at the festival.",
+      "minWords": 3,
+      "maxWords": 18,
+      "imageUrl": "/images/gold-mocks/movers/mgm3-044-festival.png",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Look at the picture. Write one sentence about the children at the festival.",
+        "minWords": 3,
+        "maxWords": 18,
+        "imageUrl": "/images/gold-mocks/movers/mgm3-044-festival.png",
+        "rubricId": "gold-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "mgm3-045",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 45,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "sports_day_note",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "school"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a note to your teacher about sports day.",
+      "cambridgeTaskType": "write_note",
+      "prompt": "Write a note to your teacher about sports day at school.",
+      "minWords": 15,
+      "maxWords": 40,
+      "taskDescription": "Tell your teacher about sports day.",
+      "requiredPoints": [
+        "Say what you did",
+        "Say how you felt",
+        "Say thank you"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_note",
+        "prompt": "Write a note to your teacher about sports day at school.",
+        "taskDescription": "Tell your teacher about sports day.",
+        "minWords": 15,
+        "maxWords": 40,
+        "requiredPoints": [
+          "Say what you did",
+          "Say how you felt",
+          "Say thank you"
+        ],
+        "rubricId": "gold-write_note-v1"
+      }
+    },
+    {
+      "questionRef": "mgm3-046",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 46,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "cultural_event_invite",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "friends"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a message inviting your friend to a cultural event.",
+      "cambridgeTaskType": "write_note",
+      "prompt": "Write a message inviting your friend to a cultural event at school.",
+      "minWords": 15,
+      "maxWords": 45,
+      "taskDescription": "Invite your friend to the event.",
+      "requiredPoints": [
+        "Say when it is",
+        "Say what will happen",
+        "Ask your friend to come"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_note",
+        "prompt": "Write a message inviting your friend to a cultural event at school.",
+        "taskDescription": "Invite your friend to the event.",
+        "minWords": 15,
+        "maxWords": 45,
+        "requiredPoints": [
+          "Say when it is",
+          "Say what will happen",
+          "Ask your friend to come"
+        ],
+        "rubricId": "gold-write_note-v1"
+      }
+    },
+    {
+      "questionRef": "mgm3-047",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 47,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "recycling_centre",
+      "grammarTags": [
+        "present_continuous",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "places"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write two or three sentences about the recycling centre.",
+      "cambridgeTaskType": "picture_description",
+      "prompt": "Look at the picture. Write two or three sentences about the recycling centre.",
+      "minWords": 8,
+      "maxWords": 30,
+      "imageUrl": "/images/gold-mocks/movers/mgm3-047-recycling.png",
+      "taskDescription": "Describe the recycling centre scene.",
+      "requiredPoints": [
+        "Say what people are recycling",
+        "Say where the bins are"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Look at the picture. Write two or three sentences about the recycling centre.",
+        "taskDescription": "Describe the recycling centre scene.",
+        "minWords": 8,
+        "maxWords": 30,
+        "imageUrl": "/images/gold-mocks/movers/mgm3-047-recycling.png",
+        "requiredPoints": [
+          "Say what people are recycling",
+          "Say where the bins are"
+        ],
+        "rubricId": "gold-picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "mgm3-048",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 48,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "healthy_lunch_picture",
+      "grammarTags": [
+        "present_simple",
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "food"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write two or three sentences about the healthy lunch.",
+      "cambridgeTaskType": "picture_description",
+      "prompt": "Look at the picture. Write two or three sentences about the healthy lunch.",
+      "minWords": 8,
+      "maxWords": 35,
+      "imageUrl": "/images/gold-mocks/movers/mgm3-048-lunch.png",
+      "taskDescription": "Describe the healthy lunch on the table.",
+      "requiredPoints": [
+        "Say what food you can see",
+        "Say why it is healthy"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Look at the picture. Write two or three sentences about the healthy lunch.",
+        "taskDescription": "Describe the healthy lunch on the table.",
+        "minWords": 8,
+        "maxWords": 35,
+        "imageUrl": "/images/gold-mocks/movers/mgm3-048-lunch.png",
+        "requiredPoints": [
+          "Say what food you can see",
+          "Say why it is healthy"
+        ],
+        "rubricId": "gold-picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "mgm3-049",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 49,
+      "points": 5,
+      "difficulty": "medium",
+      "topicTag": "park_differences_env",
+      "grammarTags": [
+        "there_is_are",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "places"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Look at the two park differences env pictures. Tell your partner about the differences.",
+      "cambridgeTaskType": "speaking_picture_description",
+      "prompt": "Look at the two pictures of a park — one clean and one dirty. Tell your partner about five differences between them.",
+      "maxDurationSeconds": 120,
+      "imageUrl": "/images/gold-mocks/movers/mgm3-049-park-pair.png",
+      "followUpQuestions": [
+        "Is there litter in picture B?",
+        "How many trees are in picture A?",
+        "Are birds in both pictures?",
+        "Where is the recycling bin in picture A?",
+        "What is the boy doing in picture B?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_picture_description",
+        "prompt": "Look at the two pictures of a park — one clean and one dirty. Tell your partner about five differences between them.",
+        "maxDurationSeconds": 120,
+        "followUpQuestions": [
+          "Is there litter in picture B?",
+          "How many trees are in picture A?",
+          "Are birds in both pictures?",
+          "Where is the recycling bin in picture A?",
+          "What is the boy doing in picture B?"
+        ],
+        "imageUrl": "/images/gold-mocks/movers/mgm3-049-park-pair.png",
+        "rubricId": "gold-speaking_picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "mgm3-050",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 50,
+      "points": 5,
+      "difficulty": "easy",
+      "topicTag": "about_you_health_culture",
+      "grammarTags": [
+        "present_simple",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "culture",
+        "school"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Answer the examiner's questions about about you health culture.",
+      "cambridgeTaskType": "speaking_personal_questions",
+      "prompt": "Answer the examiner's questions about yourself, healthy habits, and culture in your country.",
+      "maxDurationSeconds": 180,
+      "followUpQuestions": [
+        "What's your name and how old are you?",
+        "What healthy food do you like?",
+        "What festival or celebration do you enjoy?",
+        "How do you help the environment at home or school?",
+        "What sport do you do to stay healthy?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_personal_questions",
+        "prompt": "Answer the examiner's questions about yourself, healthy habits, and culture in your country.",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "What's your name and how old are you?",
+          "What healthy food do you like?",
+          "What festival or celebration do you enjoy?",
+          "How do you help the environment at home or school?",
+          "What sport do you do to stay healthy?"
+        ],
+        "rubricId": "gold-speaking_personal_questions-v1"
+      }
+    },
+    {
+      "questionRef": "mgm3-051",
+      "partSlug": "speaking-part-3",
+      "sectionSlug": "speaking",
+      "sortOrder": 51,
+      "points": 5,
+      "difficulty": "medium",
+      "topicTag": "story_beach_cleanup",
+      "grammarTags": [
+        "past_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "environment",
+        "places",
+        "feelings"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Look at these pictures and tell the story of how the children cleaned the beach.",
+      "cambridgeTaskType": "speaking_storytelling",
+      "prompt": "Look at these pictures and tell the story of how the children cleaned the beach.",
+      "maxDurationSeconds": 180,
+      "pictureSequence": [
+        "/images/gold-mocks/movers/mgm3-051-story-1-dirty.png",
+        "/images/gold-mocks/movers/mgm3-051-story-2-plan.png",
+        "/images/gold-mocks/movers/mgm3-051-story-3-work.png",
+        "/images/gold-mocks/movers/mgm3-051-story-4-clean.png"
+      ],
+      "followUpQuestions": [
+        "What was wrong with the beach at the start?",
+        "What did the children take with them?",
+        "How long did they work?",
+        "How did they feel at the end?",
+        "What did they do when the beach was clean?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_storytelling",
+        "prompt": "Look at these pictures and tell the story of how the children cleaned the beach.",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "What was wrong with the beach at the start?",
+          "What did the children take with them?",
+          "How long did they work?",
+          "How did they feel at the end?",
+          "What did they do when the beach was clean?"
+        ],
+        "pictureSequence": [
+          "/images/gold-mocks/movers/mgm3-051-story-1-dirty.png",
+          "/images/gold-mocks/movers/mgm3-051-story-2-plan.png",
+          "/images/gold-mocks/movers/mgm3-051-story-3-work.png",
+          "/images/gold-mocks/movers/mgm3-051-story-4-clean.png"
+        ],
+        "rubricId": "gold-speaking_storytelling-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "morning_health",
+      "cultural_costume",
+      "recycling_bins",
+      "healthy_snack",
+      "folk_dance",
+      "tree_planting",
+      "doctor_advice",
+      "international_festival",
+      "park_cleanup",
+      "healthy_drink",
+      "world_music",
+      "health_walk",
+      "yoga_class",
+      "healthy_lunch",
+      "dance_lesson",
+      "recycling_rules",
+      "museum_visit",
+      "beach_cleanup",
+      "park_picture",
+      "medical_place",
+      "celebration_event",
+      "green_habits",
+      "teeth_doctor",
+      "travel_document",
+      "dirty_air",
+      "nurse_helping",
+      "carnival_clothes",
+      "river_rubbish",
+      "milk_bones",
+      "japanese_food",
+      "beach_litter",
+      "healthy_penpal",
+      "cultural_day",
+      "recycling_project",
+      "doctor_visit",
+      "world_music_concert",
+      "tree_planting_day",
+      "dentist_picture",
+      "festival_picture",
+      "sports_day_note",
+      "cultural_event_invite",
+      "recycling_centre",
+      "healthy_lunch_picture",
+      "park_differences_env",
+      "about_you_health_culture",
+      "story_beach_cleanup"
+    ],
+    "distinctGrammarPatterns": [
+      "present_continuous",
+      "verb_be",
+      "present_simple",
+      "prepositions",
+      "imperatives",
+      "past_simple",
+      "modal_must",
+      "future_going_to",
+      "articles",
+      "have_got",
+      "comparatives",
+      "adverbs_frequency",
+      "there_is_are",
+      "past_continuous"
+    ],
+    "subskillsRepresented": [
+      "listening",
+      "reading",
+      "writing",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "easy": 17,
+      "medium": 25,
+      "hard": 9
+    },
+    "notes": "Authored for M3.1 Gold Mock specification."
+  },
+  "gold": {
+    "tier": "gold",
+    "goldMockId": "movers-gold-mock-3",
+    "goldMockVersion": "1.0.0",
+    "specificationId": "gold-mock-movers-v1",
+    "specificationVersion": "1.0.0",
+    "authoredAt": "2026-06-22T00:00:00.000Z",
+    "status": "published",
+    "academicAuthority": true,
+    "authoringMethod": "manual",
+    "qaChecklistVersion": "1.0.0"
+  },
+  "specification": {
+    "specificationId": "gold-mock-movers-v1",
+    "specificationVersion": "1.0.0",
+    "level": "movers",
+    "coverageTargets": {
+      "minDistinctGrammarTags": 6,
+      "minDistinctVocabularyTopics": 6,
+      "minSkillsRepresented": 4,
+      "difficultyDistribution": {
+        "easy": 0.35,
+        "medium": 0.45,
+        "hard": 0.2
+      },
+      "maxTopicShare": 0.2,
+      "requireWritingTasks": true,
+      "requireSpeakingTasks": true
+    }
+  }
+}

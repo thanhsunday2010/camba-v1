@@ -1,0 +1,281 @@
+{
+  "registryVersion": "1.0.0",
+  "updatedAt": "2026-06-24T01:29:19.870Z",
+  "records": [
+    {
+      "mockId": "starters-gold-mock-1",
+      "version": "1.0.0",
+      "level": "starters",
+      "source": "gold",
+      "certificationLevel": "gold",
+      "certificationScore": 90,
+      "coverageScore": 100,
+      "qaScore": 100,
+      "diversityScore": 50,
+      "certifiedAt": "2026-06-24T01:29:19.577Z",
+      "notes": [
+        "Manually authored Gold Mock — academic authority baseline.",
+        "Passes validateGoldMock() — academic authority baseline."
+      ]
+    },
+    {
+      "mockId": "starters-assembled-a",
+      "version": "A",
+      "level": "starters",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 95,
+      "coverageScore": 100,
+      "qaScore": 99,
+      "diversityScore": 76,
+      "certifiedAt": "2026-06-24T01:29:19.595Z",
+      "notes": []
+    },
+    {
+      "mockId": "starters-assembled-b",
+      "version": "B",
+      "level": "starters",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 93,
+      "coverageScore": 100,
+      "qaScore": 99,
+      "diversityScore": 68,
+      "certifiedAt": "2026-06-24T01:29:19.606Z",
+      "notes": []
+    },
+    {
+      "mockId": "starters-assembled-c",
+      "version": "C",
+      "level": "starters",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 95,
+      "coverageScore": 100,
+      "qaScore": 99,
+      "diversityScore": 76,
+      "certifiedAt": "2026-06-24T01:29:19.618Z",
+      "notes": []
+    },
+    {
+      "mockId": "movers-gold-mock-1",
+      "version": "1.0.0",
+      "level": "movers",
+      "source": "gold",
+      "certificationLevel": "gold",
+      "certificationScore": 90,
+      "coverageScore": 100,
+      "qaScore": 100,
+      "diversityScore": 50,
+      "certifiedAt": "2026-06-24T01:29:19.629Z",
+      "notes": [
+        "Manually authored Gold Mock — academic authority baseline.",
+        "Passes validateGoldMock() — academic authority baseline."
+      ]
+    },
+    {
+      "mockId": "movers-assembled-a",
+      "version": "A",
+      "level": "movers",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 91,
+      "coverageScore": 100,
+      "qaScore": 98,
+      "diversityScore": 56,
+      "certifiedAt": "2026-06-24T01:29:19.643Z",
+      "notes": []
+    },
+    {
+      "mockId": "movers-assembled-b",
+      "version": "B",
+      "level": "movers",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 92,
+      "coverageScore": 100,
+      "qaScore": 99,
+      "diversityScore": 64,
+      "certifiedAt": "2026-06-24T01:29:19.657Z",
+      "notes": []
+    },
+    {
+      "mockId": "movers-assembled-c",
+      "version": "C",
+      "level": "movers",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 90,
+      "coverageScore": 100,
+      "qaScore": 99,
+      "diversityScore": 50,
+      "certifiedAt": "2026-06-24T01:29:19.669Z",
+      "notes": []
+    },
+    {
+      "mockId": "flyers-gold-mock-1",
+      "version": "1.0.0",
+      "level": "flyers",
+      "source": "gold",
+      "certificationLevel": "gold",
+      "certificationScore": 90,
+      "coverageScore": 100,
+      "qaScore": 100,
+      "diversityScore": 50,
+      "certifiedAt": "2026-06-24T01:29:19.682Z",
+      "notes": [
+        "Manually authored Gold Mock — academic authority baseline.",
+        "Passes validateGoldMock() — academic authority baseline."
+      ]
+    },
+    {
+      "mockId": "flyers-assembled-a",
+      "version": "A",
+      "level": "flyers",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 90,
+      "coverageScore": 100,
+      "qaScore": 99,
+      "diversityScore": 50,
+      "certifiedAt": "2026-06-24T01:29:19.698Z",
+      "notes": []
+    },
+    {
+      "mockId": "flyers-assembled-b",
+      "version": "B",
+      "level": "flyers",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 90,
+      "coverageScore": 100,
+      "qaScore": 99,
+      "diversityScore": 50,
+      "certifiedAt": "2026-06-24T01:29:19.714Z",
+      "notes": []
+    },
+    {
+      "mockId": "flyers-assembled-c",
+      "version": "C",
+      "level": "flyers",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 90,
+      "coverageScore": 100,
+      "qaScore": 99,
+      "diversityScore": 50,
+      "certifiedAt": "2026-06-24T01:29:19.729Z",
+      "notes": []
+    },
+    {
+      "mockId": "ket-gold-mock-1",
+      "version": "1.0.0",
+      "level": "ket",
+      "source": "gold",
+      "certificationLevel": "gold",
+      "certificationScore": 98,
+      "coverageScore": 100,
+      "qaScore": 95,
+      "diversityScore": 100,
+      "certifiedAt": "2026-06-24T01:29:19.743Z",
+      "notes": [
+        "Manually authored Gold Mock — academic authority baseline.",
+        "Passes validateGoldMock() — academic authority baseline."
+      ]
+    },
+    {
+      "mockId": "ket-assembled-a",
+      "version": "A",
+      "level": "ket",
+      "source": "assembled",
+      "certificationLevel": "gold",
+      "certificationScore": 98,
+      "coverageScore": 100,
+      "qaScore": 95,
+      "diversityScore": 100,
+      "certifiedAt": "2026-06-24T01:29:19.758Z",
+      "notes": []
+    },
+    {
+      "mockId": "ket-assembled-b",
+      "version": "B",
+      "level": "ket",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 98,
+      "coverageScore": 100,
+      "qaScore": 95,
+      "diversityScore": 100,
+      "certifiedAt": "2026-06-24T01:29:19.771Z",
+      "notes": []
+    },
+    {
+      "mockId": "ket-assembled-c",
+      "version": "C",
+      "level": "ket",
+      "source": "assembled",
+      "certificationLevel": "gold",
+      "certificationScore": 98,
+      "coverageScore": 100,
+      "qaScore": 95,
+      "diversityScore": 100,
+      "certifiedAt": "2026-06-24T01:29:19.786Z",
+      "notes": []
+    },
+    {
+      "mockId": "pet-gold-mock-1",
+      "version": "1.0.0",
+      "level": "pet",
+      "source": "gold",
+      "certificationLevel": "gold",
+      "certificationScore": 98,
+      "coverageScore": 100,
+      "qaScore": 95,
+      "diversityScore": 100,
+      "certifiedAt": "2026-06-24T01:29:19.801Z",
+      "notes": [
+        "Manually authored Gold Mock — academic authority baseline.",
+        "Passes validateGoldMock() — academic authority baseline."
+      ]
+    },
+    {
+      "mockId": "pet-assembled-a",
+      "version": "A",
+      "level": "pet",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 78,
+      "coverageScore": 100,
+      "qaScore": 66,
+      "diversityScore": 50,
+      "certifiedAt": "2026-06-24T01:29:19.826Z",
+      "notes": []
+    },
+    {
+      "mockId": "pet-assembled-b",
+      "version": "B",
+      "level": "pet",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 78,
+      "coverageScore": 100,
+      "qaScore": 66,
+      "diversityScore": 50,
+      "certifiedAt": "2026-06-24T01:29:19.847Z",
+      "notes": []
+    },
+    {
+      "mockId": "pet-assembled-c",
+      "version": "C",
+      "level": "pet",
+      "source": "assembled",
+      "certificationLevel": "rejected",
+      "certificationScore": 78,
+      "coverageScore": 100,
+      "qaScore": 66,
+      "diversityScore": 50,
+      "certifiedAt": "2026-06-24T01:29:19.869Z",
+      "notes": []
+    }
+  ]
+}

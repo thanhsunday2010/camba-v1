@@ -1,0 +1,357 @@
+{
+  "mockId": "movers-gold-mock-1",
+  "version": "1.0.0",
+  "level": "movers",
+  "source": "gold",
+  "levelAssigned": "gold",
+  "certified": true,
+  "studentFacing": true,
+  "metrics": {
+    "certificationScore": 90,
+    "coverageScore": 100,
+    "qaScore": 100,
+    "diversityScore": 50,
+    "blueprintScore": 100,
+    "grammarDistinct": 16,
+    "vocabularyDistinct": 21,
+    "skillDistinct": 4,
+    "taskDistinct": 6,
+    "topicDistinct": 46,
+    "difficultyDistinct": 3,
+    "writingCount": 6,
+    "speakingCount": 3,
+    "readingCount": 18,
+    "listeningCount": 24,
+    "duplicateItemCount": 0,
+    "duplicateClusterCount": 0
+  },
+  "issues": [
+    {
+      "code": "TOPIC_OVER_REPRESENTED",
+      "path": "coverage.vocabulary.school",
+      "message": "Topic \"school\" exceeds max share.",
+      "category": "coverage",
+      "severity": "warning"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-025/mgm-026",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-025/mgm-027",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-025/mgm-028",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-025/mgm-029",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-025/mgm-030",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-026/mgm-027",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-026/mgm-028",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-026/mgm-029",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-026/mgm-030",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-027/mgm-028",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-027/mgm-029",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-027/mgm-030",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-028/mgm-029",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-028/mgm-030",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-029/mgm-030",
+      "message": "Near-duplicate (100%): \"match the word to the picture.\" ~ \"match the word to the picture.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-031/mgm-032",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-031/mgm-033",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-031/mgm-034",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-031/mgm-035",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-031/mgm-036",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-032/mgm-033",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-032/mgm-034",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-032/mgm-035",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-032/mgm-036",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-033/mgm-034",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-033/mgm-035",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-033/mgm-036",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-034/mgm-035",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-034/mgm-036",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-035/mgm-036",
+      "message": "Near-duplicate (100%): \"read the sentence. choose the correct pi\" ~ \"read the sentence. choose the correct pi\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-037/mgm-038",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-037/mgm-039",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-037/mgm-040",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-037/mgm-041",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-037/mgm-042",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-038/mgm-039",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-038/mgm-040",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-038/mgm-041",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-038/mgm-042",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-039/mgm-040",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-039/mgm-041",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-039/mgm-042",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-040/mgm-041",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-040/mgm-042",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    },
+    {
+      "code": "NEAR_DUPLICATE_STEM",
+      "path": "mgm-041/mgm-042",
+      "message": "Near-duplicate (100%): \"read and choose the best answer.\" ~ \"read and choose the best answer.\"",
+      "severity": "warning",
+      "category": "duplicate"
+    }
+  ],
+  "certifiedAt": "2026-06-24T01:29:19.629Z",
+  "notes": [
+    "Manually authored Gold Mock — academic authority baseline.",
+    "Passes validateGoldMock() — academic authority baseline."
+  ]
+}

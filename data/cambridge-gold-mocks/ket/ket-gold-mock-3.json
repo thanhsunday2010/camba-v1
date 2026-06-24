@@ -1,0 +1,2358 @@
+{
+  "metadata": {
+    "manifestId": "ket-gold-mock-3",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-ket-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "ket",
+    "title": "A2 Key Gold Mock 3",
+    "description": "M4.1 academic mock for A2 Key — education, entertainment, and social themes across reading, writing, listening, and speaking.",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000005",
+    "timeLimitMinutes": 110,
+    "totalScore": 125,
+    "status": "published",
+    "authoringNotes": "M4.1 Gold Mock — manually authored and academically reviewed.",
+    "stableSlug": "ket-gold-mock-3"
+  },
+  "sections": [
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "sortOrder": 1,
+      "skillSlug": "reading_writing",
+      "timeLimitMinutes": 60,
+      "partSlugs": [
+        "rw-part-1",
+        "rw-part-2",
+        "rw-part-3",
+        "rw-part-4",
+        "rw-part-5",
+        "rw-part-6",
+        "rw-part-7"
+      ],
+      "questionRefs": [
+        "kgm3-001",
+        "kgm3-002",
+        "kgm3-003",
+        "kgm3-004",
+        "kgm3-005",
+        "kgm3-006",
+        "kgm3-007",
+        "kgm3-008",
+        "kgm3-009",
+        "kgm3-010",
+        "kgm3-011",
+        "kgm3-012",
+        "kgm3-013",
+        "kgm3-014",
+        "kgm3-015",
+        "kgm3-016",
+        "kgm3-017",
+        "kgm3-018",
+        "kgm3-019",
+        "kgm3-020",
+        "kgm3-021",
+        "kgm3-022",
+        "kgm3-023",
+        "kgm3-024",
+        "kgm3-025",
+        "kgm3-026",
+        "kgm3-027",
+        "kgm3-028",
+        "kgm3-029",
+        "kgm3-030",
+        "kgm3-031",
+        "kgm3-032"
+      ]
+    },
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 2,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 30,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4",
+        "listening-part-5"
+      ],
+      "questionRefs": [
+        "kgm3-033",
+        "kgm3-034",
+        "kgm3-035",
+        "kgm3-036",
+        "kgm3-037",
+        "kgm3-038",
+        "kgm3-039",
+        "kgm3-040",
+        "kgm3-041",
+        "kgm3-042",
+        "kgm3-043",
+        "kgm3-044",
+        "kgm3-045",
+        "kgm3-046",
+        "kgm3-047",
+        "kgm3-048",
+        "kgm3-049",
+        "kgm3-050",
+        "kgm3-051",
+        "kgm3-052",
+        "kgm3-053",
+        "kgm3-054",
+        "kgm3-055",
+        "kgm3-056",
+        "kgm3-057"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 3,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 12,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2"
+      ],
+      "questionRefs": [
+        "kgm3-058",
+        "kgm3-059"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Part 1 — Listen and choose the correct picture",
+      "instructions": "Part 1 — Listen and choose the correct picture",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "transcript": "Teacher: Please write the answer on the board so everyone can see it. Student: OK, I'll write the example now.",
+        "caption": "Part 1 — Listen and choose the correct picture"
+      }
+    },
+    {
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "partNumber": 2,
+      "title": "Part 2 — Listen and choose the best answer",
+      "instructions": "Part 2 — Listen and choose the best answer",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "transcript": "Boy: I couldn't do the maths test because I was ill. Teacher: Don't worry — you can take it next week.",
+        "caption": "Part 2 — Listen and choose the best answer"
+      }
+    },
+    {
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "partNumber": 3,
+      "title": "Part 3 — Listen and complete each gap",
+      "instructions": "Part 3 — Listen and complete each gap",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "transcript": "Organiser: The lecture begins at eleven o'clock. Let's meet at the school gate. The exhibition closes at half past five.",
+        "caption": "Part 3 — Listen and complete each gap"
+      }
+    },
+    {
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "partNumber": 4,
+      "title": "Part 4 — Listen to the monologue",
+      "instructions": "Part 4 — Listen to the monologue",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "transcript": "Speaker: My favourite subject is biology, and I joined the film club at the start of this term. I enjoy group projects because I like sharing ideas.",
+        "caption": "Part 4 — Listen to the monologue"
+      }
+    },
+    {
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "partNumber": 5,
+      "title": "Part 5 — Listen and match each day to an activity",
+      "instructions": "Part 5 — Listen and match each day to an activity",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-5.mp3",
+        "transcript": "Coordinator: Debate club is on Monday, film screening Tuesday, poetry reading Wednesday, games night Thursday, and the talent show on Friday.",
+        "caption": "Part 5 — Listen and match each day to an activity"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "kgm3-001",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 1,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Exam results available online from 9 a.m. Friday.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Students can check results on the website on Friday morning.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Results are only given in person.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Results were published last week.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm3-002",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 2,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "culture",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Cinema — Student tickets half price on weekdays.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Students pay less from Monday to Friday.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "All tickets are free for students.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Prices are higher at the weekend.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm3-003",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 3,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "friends",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "reading",
+      "questionText": "Youth club — New members welcome. Join us on Thursdays.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Anyone can become a member and meet on Thursdays.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The club is only for existing members.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Meetings happen every day.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm3-004",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 4,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school",
+      "grammarTags": [
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Science fair — Projects must be submitted by 3 p.m. on 12 May.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "Students need to hand in projects before the deadline.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The fair has already finished.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Projects can be submitted any time.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm3-005",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 5,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "reading",
+      "questionText": "Concert tonight — doors open 7 p.m., show starts 8 p.m.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "The performance begins at eight o'clock.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The concert was cancelled.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Doors close at seven.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm3-006",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 6,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "community",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "Charity fun run — Registration closes 48 hours before the event.",
+      "blueprintQuestionType": "mcq_single",
+      "choices": [
+        {
+          "text": "You cannot register in the last two days before the run.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Registration is open until the race starts.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The event is only for charity workers.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm3-007",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 7,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who enjoys studying history?",
+      "pairs": [
+        {
+          "leftText": "Nadia",
+          "rightText": "reads books about ancient civilisations",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm3-008",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 8,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "music",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "music"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who plays the violin in the school orchestra?",
+      "pairs": [
+        {
+          "leftText": "Leo",
+          "rightText": "practises with the orchestra every Friday",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm3-009",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 9,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "friends",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who is organising a surprise party?",
+      "pairs": [
+        {
+          "leftText": "Ines",
+          "rightText": "is planning a birthday celebration for her cousin",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm3-010",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 10,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who saw a famous band in concert last month?",
+      "pairs": [
+        {
+          "leftText": "Kai",
+          "rightText": "travelled to the capital for a live music festival",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm3-011",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 11,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who helps younger students with maths homework?",
+      "pairs": [
+        {
+          "leftText": "Amira",
+          "rightText": "volunteers in the after-school tutoring club",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm3-012",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 12,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "culture",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who is going to perform in a street theatre festival?",
+      "pairs": [
+        {
+          "leftText": "Felix",
+          "rightText": "is rehearsing a comedy sketch with his classmates",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm3-013",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 13,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "community",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who has created a social media group for new students?",
+      "pairs": [
+        {
+          "leftText": "Zara",
+          "rightText": "has invited classmates to share advice online",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm3-014",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 14,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "When does the drama club meet?",
+      "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre.",
+      "choices": [
+        {
+          "text": "Every Wednesday after lessons",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Every Monday morning",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Only at weekends",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
+      }
+    },
+    {
+      "questionRef": "kgm3-015",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 15,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "culture",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "What is the school show about?",
+      "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre.",
+      "choices": [
+        {
+          "text": "Friends who enter a talent competition",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A school trip to the theatre",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "A history lesson in the hall",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
+      }
+    },
+    {
+      "questionRef": "kgm3-016",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 16,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "What are the students practising now?",
+      "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre.",
+      "choices": [
+        {
+          "text": "Dances and lighting changes",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Only their speaking lines",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Ticket sales",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
+      }
+    },
+    {
+      "questionRef": "kgm3-017",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 17,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "community",
+      "grammarTags": [
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "reading",
+      "questionText": "Who will be able to buy tickets?",
+      "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre.",
+      "choices": [
+        {
+          "text": "Parents and local residents",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Only drama club members",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Teachers only",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
+      }
+    },
+    {
+      "questionRef": "kgm3-018",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 18,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "school",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Why is everyone excited about the show?",
+      "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre.",
+      "choices": [
+        {
+          "text": "It is the first live performance since the theatre reopened",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They have never rehearsed before",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Tickets are free for all students",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
+      }
+    },
+    {
+      "questionRef": "kgm3-019",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 19,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "music",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "music"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (1): patience and regular ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Learning a musical instrument takes patience and regular (1) ___. Beginners should practise for short periods every day rather than one long session at the (2) ___. It helps to play pieces you enjoy, but your teacher may also give you exercises to improve your (3) ___. When you perform in front of others, try to stay calm and listen carefully to the (4) ___. Joining a school band or orchestra is a good way to meet people who share your (5) ___. Remember that progress may be slow at first, but consistent effort usually leads to better (6) ___ over time.",
+        "gapIndex": 0
+      },
+      "choices": [
+        {
+          "text": "practice",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "practise",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "practised",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm3-020",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 20,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "time",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "time"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (2): one long session at the ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Learning a musical instrument takes patience and regular (1) ___. Beginners should practise for short periods every day rather than one long session at the (2) ___. It helps to play pieces you enjoy, but your teacher may also give you exercises to improve your (3) ___. When you perform in front of others, try to stay calm and listen carefully to the (4) ___. Joining a school band or orchestra is a good way to meet people who share your (5) ___. Remember that progress may be slow at first, but consistent effort usually leads to better (6) ___ over time.",
+        "gapIndex": 1
+      },
+      "choices": [
+        {
+          "text": "weekend",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "weekends",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "weekend's",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm3-021",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 21,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "music",
+      "grammarTags": [
+        "nouns"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (3): improve your ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Learning a musical instrument takes patience and regular (1) ___. Beginners should practise for short periods every day rather than one long session at the (2) ___. It helps to play pieces you enjoy, but your teacher may also give you exercises to improve your (3) ___. When you perform in front of others, try to stay calm and listen carefully to the (4) ___. Joining a school band or orchestra is a good way to meet people who share your (5) ___. Remember that progress may be slow at first, but consistent effort usually leads to better (6) ___ over time.",
+        "gapIndex": 2
+      },
+      "choices": [
+        {
+          "text": "technique",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "techniques",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "technical",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm3-022",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 22,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "music",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (4): listen carefully to the ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Learning a musical instrument takes patience and regular (1) ___. Beginners should practise for short periods every day rather than one long session at the (2) ___. It helps to play pieces you enjoy, but your teacher may also give you exercises to improve your (3) ___. When you perform in front of others, try to stay calm and listen carefully to the (4) ___. Joining a school band or orchestra is a good way to meet people who share your (5) ___. Remember that progress may be slow at first, but consistent effort usually leads to better (6) ___ over time.",
+        "gapIndex": 3
+      },
+      "choices": [
+        {
+          "text": "music",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "musics",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "musical",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm3-023",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 23,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "friends",
+      "grammarTags": [
+        "nouns"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (5): share your ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Learning a musical instrument takes patience and regular (1) ___. Beginners should practise for short periods every day rather than one long session at the (2) ___. It helps to play pieces you enjoy, but your teacher may also give you exercises to improve your (3) ___. When you perform in front of others, try to stay calm and listen carefully to the (4) ___. Joining a school band or orchestra is a good way to meet people who share your (5) ___. Remember that progress may be slow at first, but consistent effort usually leads to better (6) ___ over time.",
+        "gapIndex": 4
+      },
+      "choices": [
+        {
+          "text": "interest",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "interested",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "interesting",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm3-024",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 24,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "school",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Gap (6): leads to better ___",
+      "blueprintQuestionType": "mcq_single",
+      "content": {
+        "passage": "Learning a musical instrument takes patience and regular (1) ___. Beginners should practise for short periods every day rather than one long session at the (2) ___. It helps to play pieces you enjoy, but your teacher may also give you exercises to improve your (3) ___. When you perform in front of others, try to stay calm and listen carefully to the (4) ___. Joining a school band or orchestra is a good way to meet people who share your (5) ___. Remember that progress may be slow at first, but consistent effort usually leads to better (6) ___ over time.",
+        "gapIndex": 5
+      },
+      "choices": [
+        {
+          "text": "results",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "resulting",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "resulted",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "multiple_choice"
+    },
+    {
+      "questionRef": "kgm3-025",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 25,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "She is ___ best student in our class.",
+      "template": "She is [0] best student in our class.",
+      "correctAnswers": [
+        "the"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "She is [0] best student in our class.",
+        "correctAnswers": [
+          "the"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm3-026",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 26,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "reading",
+      "questionText": "We ___ a great film at the cinema yesterday.",
+      "template": "We [0] a great film at the cinema yesterday.",
+      "correctAnswers": [
+        "saw",
+        "watched"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "We [0] a great film at the cinema yesterday.",
+        "correctAnswers": [
+          "saw",
+          "watched"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm3-027",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 27,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "friends",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "reading",
+      "questionText": "I met my friends ___ the youth club.",
+      "template": "I met my friends [0] the youth club.",
+      "correctAnswers": [
+        "at"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "I met my friends [0] the youth club.",
+        "correctAnswers": [
+          "at"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm3-028",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 28,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school",
+      "grammarTags": [
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Group projects are ___ than working alone.",
+      "template": "Group projects are [0] than working alone.",
+      "correctAnswers": [
+        "easier",
+        "more fun"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Group projects are [0] than working alone.",
+        "correctAnswers": [
+          "easier",
+          "more fun"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm3-029",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 29,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "culture",
+      "grammarTags": [
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "reading",
+      "questionText": "The singer ___ won the competition lives nearby.",
+      "template": "The singer [0] won the competition lives nearby.",
+      "correctAnswers": [
+        "who",
+        "that"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The singer [0] won the competition lives nearby.",
+        "correctAnswers": [
+          "who",
+          "that"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm3-030",
+      "partSlug": "rw-part-5",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 30,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "school",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Students ___ hand in homework on time.",
+      "template": "Students [0] hand in homework on time.",
+      "correctAnswers": [
+        "must"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Students [0] hand in homework on time.",
+        "correctAnswers": [
+          "must"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm3-031",
+      "partSlug": "rw-part-6",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 31,
+      "points": 15,
+      "difficulty": "medium",
+      "topicTag": "school",
+      "grammarTags": [
+        "future_will",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write an email to your English teacher about school.",
+      "cambridgeTaskType": "write_email",
+      "prompt": "Your class is organising a charity concert at school. Write an email to your English teacher.",
+      "taskDescription": "Write 25–35 words. Include all three points.",
+      "minWords": 25,
+      "maxWords": 35,
+      "requiredPoints": [
+        "Say whether you can help before the concert",
+        "Explain one job you could do",
+        "Ask what time you should arrive on the day"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_email",
+        "prompt": "Your class is organising a charity concert at school. Write an email to your English teacher.",
+        "taskDescription": "Write 25–35 words. Include all three points.",
+        "minWords": 25,
+        "maxWords": 35,
+        "requiredPoints": [
+          "Say whether you can help before the concert",
+          "Explain one job you could do",
+          "Ask what time you should arrive on the day"
+        ],
+        "rubricId": "gold-write_email-v1"
+      }
+    },
+    {
+      "questionRef": "kgm3-032",
+      "partSlug": "rw-part-7",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 32,
+      "points": 15,
+      "difficulty": "medium",
+      "topicTag": "friends",
+      "grammarTags": [
+        "past_simple",
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "writing",
+      "questionText": "Write a story about meeting a new friend.",
+      "cambridgeTaskType": "write_story",
+      "prompt": "Your English teacher has asked you to write a story. Your story must begin with this sentence: 'I was nervous before the school party.'",
+      "taskDescription": "Write 35 words or more.",
+      "minWords": 35,
+      "maxWords": 100,
+      "imageUrl": "/images/gold-mocks/ket-gold-mock-3-story.svg",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_story",
+        "prompt": "Your English teacher has asked you to write a story. Your story must begin with this sentence: 'I was nervous before the school party.'",
+        "taskDescription": "Write 35 words or more.",
+        "minWords": 35,
+        "maxWords": 100,
+        "imageUrl": "/images/gold-mocks/ket-gold-mock-3-story.svg",
+        "rubricId": "gold-write_story-v1"
+      }
+    },
+    {
+      "questionRef": "kgm3-033",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 33,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the girl doing in the classroom?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Writing on the board",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Reading a magazine",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Using a microscope",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-034",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 34,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "questionText": "What are the boys doing?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Playing video games",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Playing chess",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Building a model",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-035",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 35,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "What instrument is the man playing?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "The guitar",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The drums",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The flute",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-036",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 36,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "friends",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "listening",
+      "questionText": "Where are the teenagers chatting?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "In a café",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "In a library",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "On a bus",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-037",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 37,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "sports"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is happening on stage?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "A dance performance",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A magic show",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "A prize ceremony",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-038",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 38,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "Why did the boy miss the maths test?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "He was ill",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "He forgot his calculator",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "He arrived too early",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-039",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 39,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "questionText": "How often does Mia go to the cinema?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Once a month",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Every weekend",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Twice a week",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-040",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 40,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "friends",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "listening",
+      "questionText": "What are the friends going to do on Saturday?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Have a picnic in the park",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Study for an exam",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Visit a museum",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-041",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 41,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "technology"
+      ],
+      "skillTag": "listening",
+      "questionText": "What prize did the team win?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "First place in the science competition",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A sports trophy",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "A book voucher",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-042",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 42,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "culture",
+      "grammarTags": [
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "What does the teacher tell students about the performance?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "They must arrive thirty minutes early",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They can wear casual clothes",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They should bring their own microphones",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-043",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 43,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "numbers"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "The lecture begins at ___ o'clock.",
+      "template": "The lecture begins at [0] o'clock.",
+      "correctAnswers": [
+        "eleven",
+        "11"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The lecture begins at [0] o'clock.",
+        "correctAnswers": [
+          "eleven",
+          "11"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm3-044",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 44,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "friends",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "listening",
+      "questionText": "Let's meet ___ the school gate.",
+      "template": "Let's meet [0] the school gate.",
+      "correctAnswers": [
+        "at",
+        "outside"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Let's meet [0] the school gate.",
+        "correctAnswers": [
+          "at",
+          "outside"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm3-045",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 45,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "grammarTags": [
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "The exhibition closes ___ half past five.",
+      "template": "The exhibition closes [0] half past five.",
+      "correctAnswers": [
+        "at"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "The exhibition closes [0] half past five.",
+        "correctAnswers": [
+          "at"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm3-046",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 46,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "questionText": "Don't forget to bring a ___ for the quiz team.",
+      "template": "Don't forget to bring a [0] for the quiz team.",
+      "correctAnswers": [
+        "pen",
+        "pencil"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "Don't forget to bring a [0] for the quiz team.",
+        "correctAnswers": [
+          "pen",
+          "pencil"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm3-047",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 47,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "school",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "She ___ in the school choir for three years.",
+      "template": "She [0] in the school choir for three years.",
+      "correctAnswers": [
+        "sang",
+        "has sung"
+      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "content": {
+        "template": "She [0] in the school choir for three years.",
+        "correctAnswers": [
+          "sang",
+          "has sung"
+        ]
+      }
+    },
+    {
+      "questionRef": "kgm3-048",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 48,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the speaker's favourite subject?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Biology",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Geography",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Art",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-049",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 49,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "questionText": "When did the speaker join the film club?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "At the start of this term",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Two years ago",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "During the summer holidays",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-050",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 50,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "friends",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "listening",
+      "questionText": "Why does the speaker enjoy group projects?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "She likes sharing ideas with classmates",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "They are always easy",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "She does not have to speak",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-051",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 51,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which type of music does the speaker prefer?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "Jazz",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Heavy metal",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Classical opera",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-052",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 52,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "community",
+      "grammarTags": [
+        "linking_words"
+      ],
+      "vocabularyTopics": [
+        "community"
+      ],
+      "skillTag": "listening",
+      "questionText": "What is the main reason the speaker joined the volunteer group?",
+      "blueprintQuestionType": "mcq_listening",
+      "choices": [
+        {
+          "text": "To meet people and help the local community",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "To improve his exam results",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "To learn a new language",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "kgm3-053",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 53,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which club meets on Monday?",
+      "pairs": [
+        {
+          "leftText": "Monday",
+          "rightText": "debate club",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm3-054",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 54,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "leisure"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which activity is on Tuesday?",
+      "pairs": [
+        {
+          "leftText": "Tuesday",
+          "rightText": "film screening",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm3-055",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 55,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "culture"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which event takes place on Wednesday?",
+      "pairs": [
+        {
+          "leftText": "Wednesday",
+          "rightText": "poetry reading",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm3-056",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 56,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "friends",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which social event is planned for Thursday?",
+      "pairs": [
+        {
+          "leftText": "Thursday",
+          "rightText": "games night",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm3-057",
+      "partSlug": "listening-part-5",
+      "sectionSlug": "listening",
+      "sortOrder": 57,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "school",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "Which performance is on Friday?",
+      "pairs": [
+        {
+          "leftText": "Friday",
+          "rightText": "school talent show",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "kgm3-058",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 58,
+      "points": 20,
+      "difficulty": "medium",
+      "topicTag": "school",
+      "grammarTags": [
+        "present_simple",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "friends"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Answer the examiner's questions about school.",
+      "cambridgeTaskType": "conversation",
+      "prompt": "The examiner will ask you about your school, your favourite subjects, and how you spend time with friends.",
+      "maxDurationSeconds": 120,
+      "followUpQuestions": [
+        "Which subject do you enjoy most at school?",
+        "How do you usually relax after a busy week?",
+        "Tell me about a club or activity you belong to."
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "conversation",
+        "prompt": "The examiner will ask you about your school, your favourite subjects, and how you spend time with friends.",
+        "maxDurationSeconds": 120,
+        "followUpQuestions": [
+          "Which subject do you enjoy most at school?",
+          "How do you usually relax after a busy week?",
+          "Tell me about a club or activity you belong to."
+        ],
+        "rubricId": "gold-conversation-v1"
+      }
+    },
+    {
+      "questionRef": "kgm3-059",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 59,
+      "points": 20,
+      "difficulty": "medium",
+      "topicTag": "leisure",
+      "grammarTags": [
+        "present_continuous",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "friends"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Describe the leisure picture and say what the people are doing.",
+      "cambridgeTaskType": "picture_description_speaking",
+      "prompt": "Look at the photograph of teenagers at an outdoor concert. Describe what you can see and say how the people might be feeling.",
+      "maxDurationSeconds": 120,
+      "imageUrl": "/images/gold-mocks/ket-gold-mock-3-speaking-photo.svg",
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "picture_description_speaking",
+        "prompt": "Look at the photograph of teenagers at an outdoor concert. Describe what you can see and say how the people might be feeling.",
+        "maxDurationSeconds": 120,
+        "imageUrl": "/images/gold-mocks/ket-gold-mock-3-speaking-photo.svg",
+        "rubricId": "gold-picture_description_speaking-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "school",
+      "culture",
+      "friends",
+      "leisure",
+      "community",
+      "music",
+      "time"
+    ],
+    "distinctGrammarPatterns": [
+      "imperatives",
+      "present_simple",
+      "modal_can",
+      "future_will",
+      "present_continuous",
+      "prepositions",
+      "past_simple",
+      "future_going_to",
+      "articles",
+      "nouns",
+      "countable_uncountable",
+      "comparatives",
+      "relative_clauses",
+      "modal_must",
+      "linking_words",
+      "numbers",
+      "question_forms"
+    ],
+    "subskillsRepresented": [
+      "reading",
+      "writing",
+      "listening",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "easy": 21,
+      "medium": 25,
+      "hard": 13
+    },
+    "notes": "Authored for M3.1 Gold Mock specification."
+  },
+  "gold": {
+    "tier": "gold",
+    "goldMockId": "ket-gold-mock-3",
+    "goldMockVersion": "1.0.0",
+    "specificationId": "gold-mock-ket-v1",
+    "specificationVersion": "1.0.0",
+    "authoredAt": "2026-06-22T00:00:00.000Z",
+    "status": "published",
+    "academicAuthority": true,
+    "authoringMethod": "manual",
+    "qaChecklistVersion": "1.0.0"
+  },
+  "specification": {
+    "specificationId": "gold-mock-ket-v1",
+    "specificationVersion": "1.0.0",
+    "level": "ket",
+    "coverageTargets": {
+      "minDistinctGrammarTags": 8,
+      "minDistinctVocabularyTopics": 8,
+      "minSkillsRepresented": 4,
+      "difficultyDistribution": {
+        "easy": 0.3,
+        "medium": 0.5,
+        "hard": 0.2
+      },
+      "maxTopicShare": 0.2,
+      "requireWritingTasks": true,
+      "requireSpeakingTasks": true
+    }
+  }
+}

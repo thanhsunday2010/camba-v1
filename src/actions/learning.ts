@@ -22,6 +22,15 @@ import { resolveProgramId } from "@/lib/programs/context";
 import { getMasteryUnlockThreshold } from "@/lib/programs/settings";
 import { getProgramIdForLesson } from "@/lib/programs/progress-cleanup";
 import { unlockNextLessonsInLevel } from "@/lib/learning/unlock-lessons";
+import {
+  hasCambridgeAiEvaluatedQuestions,
+  markCambridgeAiAnswersPending,
+  runCambridgeAiEvaluationPipeline,
+  serializeCambridgeAiAnswersForAttempt,
+} from "@/lib/learning/cambridge-ai-evaluation-pipeline";
+import { persistWritingEvaluationsForAttempt } from "@/lib/writing/writing-evaluation-persistence";
+import { persistSpeakingEvaluationsForAttempt } from "@/lib/speaking/speaking-evaluation-persistence";
+import { generateRecommendationsFromFeedback } from "@/lib/ai/recommendations-engine";
 import type { ActionResult } from "@/types";
 import type { Json } from "@/types/database";
 import type { ExerciseResult, UserAnswer } from "@/types/learning";
@@ -53,26 +62,139 @@ export async function submitExerciseAttempt(
     return { success: false, error: "No questions found" };
   }
 
-  const result = scoreExercise(questions, answers);
+  const normalizedAnswers = serializeCambridgeAiAnswersForAttempt(answers);
+  const hasAiEval = hasCambridgeAiEvaluatedQuestions(questions);
+  const supabase = await createClient();
   const wasLessonComplete = await getPreviousCompletion(user.id, lessonId);
 
-  const supabase = await createClient();
-  const { error: attemptError } = await supabase.from("exercise_attempts").insert({
-    user_id: user.id,
-    exercise_id: exerciseId,
-    lesson_id: lessonId,
-    score: result.score,
-    max_score: result.maxScore,
-    accuracy_percent: result.accuracyPercent,
-    time_spent_seconds: timeSpentSeconds,
-    answers: answers as unknown as Json,
-    is_completed: true,
-    completed_at: new Date().toISOString(),
+  if (!hasAiEval) {
+    const result = scoreExercise(questions, normalizedAnswers);
+    const { error: attemptError } = await supabase.from("exercise_attempts").insert({
+      user_id: user.id,
+      exercise_id: exerciseId,
+      lesson_id: lessonId,
+      score: result.score,
+      max_score: result.maxScore,
+      accuracy_percent: result.accuracyPercent,
+      time_spent_seconds: timeSpentSeconds,
+      answers: normalizedAnswers as unknown as Json,
+      is_completed: true,
+      completed_at: new Date().toISOString(),
+    });
+
+    if (attemptError) {
+      return { success: false, error: attemptError.message };
+    }
+
+    after(async () => {
+      try {
+        await updateLessonProgress(user.id, lessonId);
+        const exerciseIds = await getLessonExerciseIds(lessonId);
+        const { data: attemptsAfter } = await supabase
+          .from("exercise_attempts")
+          .select("exercise_id")
+          .eq("user_id", user.id)
+          .eq("lesson_id", lessonId)
+          .eq("is_completed", true);
+
+        const completedCount = new Set(attemptsAfter?.map((a) => a.exercise_id)).size;
+        const lessonJustCompleted =
+          !wasLessonComplete && exerciseIds.length > 0 && completedCount >= exerciseIds.length;
+
+        await onExerciseCompleted(
+          user.id,
+          lessonId,
+          exerciseId,
+          result.accuracyPercent,
+          timeSpentSeconds,
+          lessonJustCompleted
+        );
+
+        revalidatePath("/learning");
+        revalidatePath(`/learning/lesson/${lessonId}`);
+        revalidatePath("/dashboard");
+      } catch (error) {
+        console.error("Post-submit progress/gamification failed:", error);
+      }
+    });
+
+    return { success: true, data: result };
+  }
+
+  const pendingAnswers = markCambridgeAiAnswersPending(questions, normalizedAnswers);
+
+  const { data: attemptRow, error: draftError } = await supabase
+    .from("exercise_attempts")
+    .insert({
+      user_id: user.id,
+      exercise_id: exerciseId,
+      lesson_id: lessonId,
+      score: 0,
+      max_score: 100,
+      accuracy_percent: 0,
+      time_spent_seconds: timeSpentSeconds,
+      answers: pendingAnswers as unknown as Json,
+      is_completed: false,
+      completed_at: null,
+    })
+    .select("id")
+    .single();
+
+  if (draftError || !attemptRow) {
+    return { success: false, error: draftError?.message ?? "Failed to save attempt" };
+  }
+
+  const pipeline = await runCambridgeAiEvaluationPipeline({
+    questions,
+    answers: normalizedAnswers,
   });
+
+  const result: ExerciseResult = {
+    score: pipeline.score,
+    maxScore: pipeline.maxScore,
+    accuracyPercent: pipeline.accuracyPercent,
+    questionResults: pipeline.questionResults,
+  };
+
+  const { error: attemptError } = await supabase
+    .from("exercise_attempts")
+    .update({
+      score: result.score,
+      max_score: result.maxScore,
+      accuracy_percent: result.accuracyPercent,
+      answers: pipeline.enrichedAnswers as unknown as Json,
+      is_completed: true,
+      completed_at: new Date().toISOString(),
+    })
+    .eq("id", attemptRow.id);
 
   if (attemptError) {
     return { success: false, error: attemptError.message };
   }
+
+  after(async () => {
+    try {
+      await persistWritingEvaluationsForAttempt(
+        pipeline.writingPersistence.map((p) => ({
+          ...p,
+          attemptType: "exercise_attempt" as const,
+          attemptId: attemptRow.id,
+        }))
+      );
+      await persistSpeakingEvaluationsForAttempt(
+        pipeline.speakingPersistence.map((p) => ({
+          ...p,
+          attemptType: "exercise_attempt" as const,
+          attemptId: attemptRow.id,
+        }))
+      );
+      if (pipeline.analyticsWeaknesses.length) {
+        await generateRecommendationsFromFeedback(user.id, pipeline.analyticsWeaknesses);
+      }
+    } catch (error) {
+      console.error("Post-writing evaluation persistence failed:", error);
+    }
+  });
 
   after(async () => {
     try {
@@ -107,7 +229,7 @@ export async function submitExerciseAttempt(
     }
   });
 
-  return { success: true, data: result };
+  return { success: true, data: { ...result, answers: pipeline.enrichedAnswers } };
 }
 
 async function getPreviousCompletion(userId: string, lessonId: string): Promise<number> {

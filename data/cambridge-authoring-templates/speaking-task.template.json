@@ -1,0 +1,23 @@
+{
+  "templateVersion": "1.0.0",
+  "skill": "speaking",
+  "description": "M2.3-compatible speaking item template.",
+  "requiredFields": {
+    "questionType": "speaking",
+    "content": {
+      "prompt": "Examiner instruction shown to candidate.",
+      "speakingTaskType": "speaking_personal_questions | speaking_picture_description | speaking_storytelling | speaking_discussion",
+      "cambridgeTaskType": "M2.3 runtime alias",
+      "maxDurationSeconds": 120,
+      "followUpQuestions": ["Optional follow-up 1", "Optional follow-up 2"],
+      "imageUrl": "/images/speaking/...",
+      "rubricId": "cambridge-speaking-interview-v1"
+    }
+  },
+  "supportedSpeakingTypes": [
+    "speaking_personal_questions",
+    "speaking_picture_description",
+    "speaking_storytelling",
+    "speaking_discussion"
+  ]
+}

@@ -1,0 +1,1930 @@
+{
+  "metadata": {
+    "manifestId": "starters-gold-mock-1",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-starters-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "starters",
+    "title": "Cambridge Starters Gold Mock 1",
+    "description": "Manually authored Pre-A1 Starters gold mock — full 43-item form with listening, reading & writing, and speaking tasks aligned to the M2.0 blueprint.",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000002",
+    "timeLimitMinutes": 45,
+    "totalScore": 55,
+    "status": "published",
+    "authoringNotes": "M4.1 Gold Mock — manually authored and academically reviewed.",
+    "stableSlug": "starters-gold-mock-1"
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 1,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4"
+      ],
+      "questionRefs": [
+        "sgm-001",
+        "sgm-002",
+        "sgm-003",
+        "sgm-004",
+        "sgm-005",
+        "sgm-006",
+        "sgm-007",
+        "sgm-008",
+        "sgm-009",
+        "sgm-010",
+        "sgm-011",
+        "sgm-012",
+        "sgm-013",
+        "sgm-014",
+        "sgm-015",
+        "sgm-016",
+        "sgm-017",
+        "sgm-018",
+        "sgm-019",
+        "sgm-020"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "sortOrder": 2,
+      "skillSlug": "reading_writing",
+      "timeLimitMinutes": 20,
+      "partSlugs": [
+        "rw-part-1",
+        "rw-part-2",
+        "rw-part-3",
+        "rw-part-4"
+      ],
+      "questionRefs": [
+        "sgm-021",
+        "sgm-022",
+        "sgm-023",
+        "sgm-024",
+        "sgm-025",
+        "sgm-026",
+        "sgm-027",
+        "sgm-028",
+        "sgm-029",
+        "sgm-030",
+        "sgm-031",
+        "sgm-032",
+        "sgm-033",
+        "sgm-034",
+        "sgm-035",
+        "sgm-036",
+        "sgm-037",
+        "sgm-038",
+        "sgm-039",
+        "sgm-040"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 3,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 10,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2",
+        "speaking-part-3"
+      ],
+      "questionRefs": [
+        "sgm-041",
+        "sgm-042",
+        "sgm-043"
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "partNumber": 1,
+      "title": "Link names to pictures",
+      "instructions": "Link names to pictures",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Tom. He's got a red school bag.\nAnna is my sister. She's got long brown hair.\nBen wears glasses in class every day.\nLucy is my friend. She's wearing a yellow T-shirt today.\nLook at Sam. He's playing football in the playground.",
+        "caption": "Link names to pictures"
+      }
+    },
+    {
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "partNumber": 2,
+      "title": "Write words or numbers",
+      "instructions": "Write words or numbers",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "transcript": "Examiner: Listen and write the missing word or number.\n\nSally has got a small white cat. Its name is Snow.\nJack loves pizza. He eats pizza for lunch on Fridays.\nIt's a beautiful day. The weather is sunny and warm.\nThere are seven books on the teacher's desk.\nEmma is wearing a new blue hat today.",
+        "caption": "Write words or numbers"
+      }
+    },
+    {
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "partNumber": 3,
+      "title": "Tick the correct picture",
+      "instructions": "Tick the correct picture",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe horse is running in the field near the farm.\nMum is drinking a glass of orange juice at breakfast.\nThe boy is playing with his toy train on the floor.\nThe girl can play the piano very well.\nDad and Grandpa are building a big sandcastle on the beach.",
+        "caption": "Tick the correct picture"
+      }
+    },
+    {
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "partNumber": 4,
+      "title": "Colour and draw",
+      "instructions": "Colour and draw",
+      "contextType": "listening",
+      "audio": {
+        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "transcript": "Examiner: Listen and colour or draw.\n\nColour the bird green, please.\nNow colour the boy's T-shirt red.\nDraw a sun in the top left of the picture.\nColour the flower yellow.\nDraw a line from the girl to the swing.",
+        "caption": "Colour and draw"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "sgm-001",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 1,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school_friends",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "friends"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which boy is Tom?",
+      "pairs": [
+        {
+          "leftText": "Tom",
+          "rightText": "Boy with a red school bag",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "This is Tom. He's got a red school bag.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm-002",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 2,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "family",
+      "grammarTags": [
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "family"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which girl is Anna?",
+      "pairs": [
+        {
+          "leftText": "Anna",
+          "rightText": "Girl with long brown hair",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Anna is my sister. She's got long brown hair.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm-003",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 3,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which boy is Ben?",
+      "pairs": [
+        {
+          "leftText": "Ben",
+          "rightText": "Boy wearing glasses",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Ben wears glasses in class every day.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm-004",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 4,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "friends",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "friends"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which girl is Lucy?",
+      "pairs": [
+        {
+          "leftText": "Lucy",
+          "rightText": "Girl in a yellow T-shirt",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Lucy is my friend. She's wearing a yellow T-shirt today.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm-005",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 5,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school_playground",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "sports"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen. Which boy is Sam?",
+      "pairs": [
+        {
+          "leftText": "Sam",
+          "rightText": "Boy playing football",
+          "sortOrder": 1
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Look at Sam. He's playing football in the playground.",
+        "audioCue": "name_introduction"
+      },
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm-006",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 6,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "animals_pet",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "animals"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. What pet has Sally got?",
+      "template": "Sally has got a [0].",
+      "correctAnswers": [
+        "cat"
+      ],
+      "content": {
+        "template": "Sally has got a [0].",
+        "correctAnswers": [
+          "cat"
+        ],
+        "transcriptSnippet": "Sally has got a small white cat. Its name is Snow.",
+        "expectedWordType": "noun"
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "sgm-007",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 7,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "food_lunch",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. What does Jack eat for lunch?",
+      "template": "Jack eats [0] for lunch.",
+      "correctAnswers": [
+        "pizza"
+      ],
+      "content": {
+        "template": "Jack eats [0] for lunch.",
+        "correctAnswers": [
+          "pizza"
+        ],
+        "transcriptSnippet": "Jack loves pizza. He eats pizza for lunch on Fridays.",
+        "expectedWordType": "noun"
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "sgm-008",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 8,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "weather",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "weather"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. What is the weather like today?",
+      "template": "Today the weather is [0].",
+      "correctAnswers": [
+        "sunny"
+      ],
+      "content": {
+        "template": "Today the weather is [0].",
+        "correctAnswers": [
+          "sunny"
+        ],
+        "transcriptSnippet": "It's a beautiful day. The weather is sunny and warm.",
+        "expectedWordType": "adjective"
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "sgm-009",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 9,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school_classroom",
+      "grammarTags": [
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. How many books are on the teacher's desk?",
+      "template": "There are [0] books on the desk.",
+      "correctAnswers": [
+        "seven",
+        "7"
+      ],
+      "content": {
+        "template": "There are [0] books on the desk.",
+        "correctAnswers": [
+          "seven",
+          "7"
+        ],
+        "transcriptSnippet": "There are seven books on the teacher's desk.",
+        "expectedWordType": "number"
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "sgm-010",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 10,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "clothes",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "clothes"
+      ],
+      "skillTag": "listening",
+      "questionText": "Listen and write. What colour is Emma's hat?",
+      "template": "Emma's hat is [0].",
+      "correctAnswers": [
+        "blue"
+      ],
+      "content": {
+        "template": "Emma's hat is [0].",
+        "correctAnswers": [
+          "blue"
+        ],
+        "transcriptSnippet": "Emma is wearing a new blue hat today.",
+        "expectedWordType": "colour"
+      },
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill"
+    },
+    {
+      "questionRef": "sgm-011",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 11,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "animals_farm",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "animals"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Where is the horse?",
+      "choices": [
+        {
+          "text": "In the field",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "In the kitchen",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "On the bus",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The horse is running in the field near the farm.",
+        "imageOptions": [
+          "field",
+          "kitchen",
+          "bus"
+        ]
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm-012",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 12,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "food_breakfast",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "drink"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What is Mum drinking?",
+      "choices": [
+        {
+          "text": "Orange juice",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Soup",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Ice cream",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Mum is drinking a glass of orange juice at breakfast.",
+        "imageOptions": [
+          "juice",
+          "soup",
+          "ice_cream"
+        ]
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm-013",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 13,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "leisure_toys",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "home"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What is the boy playing with?",
+      "choices": [
+        {
+          "text": "A toy train",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "A football",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "A kite",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The boy is playing with his toy train on the floor.",
+        "imageOptions": [
+          "train",
+          "football",
+          "kite"
+        ]
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm-014",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 14,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school_music",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "hobbies"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What can the girl play?",
+      "choices": [
+        {
+          "text": "The piano",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The guitar",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "The drums",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "The girl can play the piano very well.",
+        "imageOptions": [
+          "piano",
+          "guitar",
+          "drums"
+        ]
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm-015",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 15,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "family_beach",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "weather"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "What are Dad and Grandpa doing?",
+      "choices": [
+        {
+          "text": "Building a sandcastle",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Reading a book",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Cooking fish",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Dad and Grandpa are building a big sandcastle on the beach.",
+        "imageOptions": [
+          "sandcastle",
+          "book",
+          "cooking"
+        ]
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm-016",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 16,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "animals_garden",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "colours"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Colour the bird. Which colour?",
+      "choices": [
+        {
+          "text": "Green",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Purple",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Black",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Colour the bird green, please.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm-017",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 17,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "clothes_bedroom",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "clothes"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Colour the boy's T-shirt. Which colour?",
+      "choices": [
+        {
+          "text": "Red",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Brown",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Grey",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Now colour the boy's T-shirt red.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm-018",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 18,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "home_garden",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "nature"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw a sun in the sky. Where should it go?",
+      "choices": [
+        {
+          "text": "Top left of the picture",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Under the table",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Inside the bag",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw a sun in the top left of the picture.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm-019",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 19,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "garden_art",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Colour the flower. Which colour?",
+      "choices": [
+        {
+          "text": "Yellow",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Orange",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Pink",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Colour the flower yellow.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm-020",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 20,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "leisure_park",
+      "grammarTags": [
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "places"
+      ],
+      "skillTag": "listening",
+      "blueprintQuestionType": "mcq_listening",
+      "questionText": "Draw a line from the girl to the swing. Which picture shows this?",
+      "choices": [
+        {
+          "text": "Girl standing next to the swing",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Girl sitting on a bench far away",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Girl inside the café",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "content": {
+        "transcriptSnippet": "Draw a line from the girl to the swing.",
+        "taskProxy": "colour_and_draw"
+      },
+      "cambaQuestionType": "listening"
+    },
+    {
+      "questionRef": "sgm-021",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 21,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "animals",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "animals"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word to the picture.",
+      "pairs": [
+        {
+          "leftText": "elephant",
+          "rightText": "Big grey animal with a long nose",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm-022",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 22,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "food",
+      "grammarTags": [
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word to the picture.",
+      "pairs": [
+        {
+          "leftText": "banana",
+          "rightText": "Long yellow fruit",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm-023",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 23,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "clothes",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "clothes"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word to the picture.",
+      "pairs": [
+        {
+          "leftText": "trousers",
+          "rightText": "Clothes you wear on your legs",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm-024",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 24,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school",
+      "grammarTags": [
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word to the picture.",
+      "pairs": [
+        {
+          "leftText": "ruler",
+          "rightText": "Tool for drawing straight lines",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm-025",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 25,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "weather",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "weather"
+      ],
+      "skillTag": "reading",
+      "questionText": "Match the word to the picture.",
+      "pairs": [
+        {
+          "leftText": "cloud",
+          "rightText": "White or grey thing in the sky",
+          "sortOrder": 1
+        }
+      ],
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching"
+    },
+    {
+      "questionRef": "sgm-026",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 26,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "family_home",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "home"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the sentence. Choose the correct picture.",
+      "passage": "My brother likes playing computer games in his bedroom.",
+      "choices": [
+        {
+          "text": "Boy playing on a computer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Boy swimming in a pool",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Boy riding a bike outside",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "My brother likes playing computer games in his bedroom."
+      }
+    },
+    {
+      "questionRef": "sgm-027",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 27,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "animals_zoo",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "places"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the sentence. Choose the correct picture.",
+      "passage": "The monkeys are funny. They are jumping in the zoo.",
+      "choices": [
+        {
+          "text": "Monkeys jumping in a zoo",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Fish swimming in a bowl",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Birds sitting on a house",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The monkeys are funny. They are jumping in the zoo."
+      }
+    },
+    {
+      "questionRef": "sgm-028",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 28,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "food_market",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "shopping"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the sentence. Choose the correct picture.",
+      "passage": "Mum buys apples and oranges at the market every Saturday.",
+      "choices": [
+        {
+          "text": "Woman buying fruit at a market",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Man cooking soup in a kitchen",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children eating ice cream at the cinema",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Mum buys apples and oranges at the market every Saturday."
+      }
+    },
+    {
+      "questionRef": "sgm-029",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 29,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school_lunch",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "food"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the sentence. Choose the correct picture.",
+      "passage": "The children have got sandwiches and milk for lunch at school.",
+      "choices": [
+        {
+          "text": "Children eating sandwiches at school",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children watching TV at home",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children sleeping in bed",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The children have got sandwiches and milk for lunch at school."
+      }
+    },
+    {
+      "questionRef": "sgm-030",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 30,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "weather_seasons",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "clothes"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read the sentence. Choose the correct picture.",
+      "passage": "It is raining today, so the children are wearing boots and coats.",
+      "choices": [
+        {
+          "text": "Children in coats and boots in the rain",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children in shorts on a sunny beach",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Children in pyjamas in bed",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "It is raining today, so the children are wearing boots and coats."
+      }
+    },
+    {
+      "questionRef": "sgm-031",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 31,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "pets",
+      "grammarTags": [
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "family"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read and choose the best answer.",
+      "passage": "Hello! My name is Kim. I am eight years old. I have got a small brown dog. His name is Rocky. Rocky can run very fast. We play in the garden every day after school.",
+      "choices": [
+        {
+          "text": "Kim has got a dog called Rocky.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Kim has got a cat called Rocky.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Rocky is a big black horse.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Hello! My name is Kim. I am eight years old. I have got a small brown dog. His name is Rocky. Rocky can run very fast. We play in the garden every day after school."
+      }
+    },
+    {
+      "questionRef": "sgm-032",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 32,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "school_day",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "time"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read and choose the best answer.",
+      "passage": "Our school starts at eight o'clock. We have English and Maths in the morning. After lunch we go to the playground. I like playing with my friends there.",
+      "choices": [
+        {
+          "text": "The children play in the playground after lunch.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "School starts at ten o'clock.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They only study English all day.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our school starts at eight o'clock. We have English and Maths in the morning. After lunch we go to the playground. I like playing with my friends there."
+      }
+    },
+    {
+      "questionRef": "sgm-033",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 33,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "birthday_party",
+      "grammarTags": [
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "food",
+        "leisure"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read and choose the best answer.",
+      "passage": "Last Sunday was my birthday. My grandma made a big chocolate cake. My cousins came to my house. We played games and opened presents. It was a great day!",
+      "choices": [
+        {
+          "text": "The birthday party was last Sunday.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The cake was made of cheese.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Nobody came to the party.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Sunday was my birthday. My grandma made a big chocolate cake. My cousins came to my house. We played games and opened presents. It was a great day!"
+      }
+    },
+    {
+      "questionRef": "sgm-034",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 34,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "trip_zoo",
+      "grammarTags": [
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "transport"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read and choose the best answer.",
+      "passage": "Yesterday our class went to the zoo by bus. We saw lions, giraffes and penguins. The penguins can swim but they can't fly. My favourite animal was the tall giraffe.",
+      "choices": [
+        {
+          "text": "The class went to the zoo by bus.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Penguins can fly very high.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They saw dolphins at the zoo.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Yesterday our class went to the zoo by bus. We saw lions, giraffes and penguins. The penguins can swim but they can't fly. My favourite animal was the tall giraffe."
+      }
+    },
+    {
+      "questionRef": "sgm-035",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 35,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "weather_holiday",
+      "grammarTags": [
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel",
+        "clothes"
+      ],
+      "skillTag": "reading",
+      "questionText": "Read and choose the best answer.",
+      "passage": "Next week my family is going to the beach. The weather forecast says it will be sunny and hot. I am going to take my swimsuit, sunglasses and a sun hat. I can't wait!",
+      "choices": [
+        {
+          "text": "The family is going to the beach next week.",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "The weather will be cold and snowy.",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "They are going to the mountains.",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ],
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Next week my family is going to the beach. The weather forecast says it will be sunny and hot. I am going to take my swimsuit, sunglasses and a sun hat. I can't wait!"
+      }
+    },
+    {
+      "questionRef": "sgm-036",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 36,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "family",
+      "grammarTags": [
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "family"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write one sentence about the girl and her mum.",
+      "cambridgeTaskType": "write_sentence",
+      "prompt": "Look at the picture. Write one sentence about the girl and her mum.",
+      "minWords": 3,
+      "maxWords": 15,
+      "imageUrl": "/images/gold-mocks/starters/sgm-036-family-kitchen.png",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Look at the picture. Write one sentence about the girl and her mum.",
+        "minWords": 3,
+        "maxWords": 15,
+        "imageUrl": "/images/gold-mocks/starters/sgm-036-family-kitchen.png",
+        "rubricId": "gold-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "sgm-037",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 37,
+      "points": 1,
+      "difficulty": "easy",
+      "topicTag": "animals",
+      "grammarTags": [
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "animals"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write one sentence about the cat.",
+      "cambridgeTaskType": "write_sentence",
+      "prompt": "Look at the picture. Write one sentence about the cat.",
+      "minWords": 3,
+      "maxWords": 15,
+      "imageUrl": "/images/gold-mocks/starters/sgm-037-cat-window.png",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Look at the picture. Write one sentence about the cat.",
+        "minWords": 3,
+        "maxWords": 15,
+        "imageUrl": "/images/gold-mocks/starters/sgm-037-cat-window.png",
+        "rubricId": "gold-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "sgm-038",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 38,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "school",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "school"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write one sentence about what the children are doing.",
+      "cambridgeTaskType": "write_sentence",
+      "prompt": "Look at the picture. Write one sentence about what the children are doing.",
+      "minWords": 4,
+      "maxWords": 18,
+      "imageUrl": "/images/gold-mocks/starters/sgm-038-classroom-drawing.png",
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Look at the picture. Write one sentence about what the children are doing.",
+        "minWords": 4,
+        "maxWords": 18,
+        "imageUrl": "/images/gold-mocks/starters/sgm-038-classroom-drawing.png",
+        "rubricId": "gold-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "sgm-039",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 39,
+      "points": 1,
+      "difficulty": "medium",
+      "topicTag": "park_play",
+      "grammarTags": [
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "places"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write two or three sentences about the park.",
+      "cambridgeTaskType": "picture_description",
+      "prompt": "Look at the picture. Write two or three sentences about the park.",
+      "taskDescription": "Describe what you can see in the park picture.",
+      "minWords": 5,
+      "maxWords": 25,
+      "imageUrl": "/images/gold-mocks/starters/sgm-039-park-scene.png",
+      "requiredPoints": [
+        "Say what is in the park",
+        "Say what someone is doing"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Look at the picture. Write two or three sentences about the park.",
+        "taskDescription": "Describe what you can see in the park picture.",
+        "minWords": 5,
+        "maxWords": 25,
+        "imageUrl": "/images/gold-mocks/starters/sgm-039-park-scene.png",
+        "requiredPoints": [
+          "Say what is in the park",
+          "Say what someone is doing"
+        ],
+        "rubricId": "gold-picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "sgm-040",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 40,
+      "points": 1,
+      "difficulty": "hard",
+      "topicTag": "weather_clothes",
+      "grammarTags": [
+        "present_continuous"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "clothes"
+      ],
+      "skillTag": "writing",
+      "questionText": "Look at the picture. Write two or three sentences about the children in the rain.",
+      "cambridgeTaskType": "picture_description",
+      "prompt": "Look at the picture. Write two or three sentences about the children in the rain.",
+      "taskDescription": "Describe the weather and what the children are wearing.",
+      "minWords": 5,
+      "maxWords": 25,
+      "imageUrl": "/images/gold-mocks/starters/sgm-040-rainy-street.png",
+      "requiredPoints": [
+        "Say what the weather is like",
+        "Say what the children are wearing"
+      ],
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Look at the picture. Write two or three sentences about the children in the rain.",
+        "taskDescription": "Describe the weather and what the children are wearing.",
+        "minWords": 5,
+        "maxWords": 25,
+        "imageUrl": "/images/gold-mocks/starters/sgm-040-rainy-street.png",
+        "requiredPoints": [
+          "Say what the weather is like",
+          "Say what the children are wearing"
+        ],
+        "rubricId": "gold-picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "sgm-041",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 41,
+      "points": 5,
+      "difficulty": "medium",
+      "topicTag": "home_living_room",
+      "grammarTags": [
+        "there_is_are",
+        "prepositions"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "leisure"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Look at the two pictures. Tell your partner about the differences.",
+      "cambridgeTaskType": "speaking_picture_description",
+      "prompt": "Look at the two pictures of a living room. Tell your partner about five differences between them.",
+      "maxDurationSeconds": 120,
+      "imageUrl": "/images/gold-mocks/starters/sgm-041-living-room-pair.png",
+      "followUpQuestions": [
+        "How many toys are on the floor in picture A?",
+        "What colour is the sofa in picture B?",
+        "Is there a cat in both pictures?",
+        "Where is the lamp in picture A?",
+        "What is on the table in picture B?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_picture_description",
+        "prompt": "Look at the two pictures of a living room. Tell your partner about five differences between them.",
+        "maxDurationSeconds": 120,
+        "followUpQuestions": [
+          "How many toys are on the floor in picture A?",
+          "What colour is the sofa in picture B?",
+          "Is there a cat in both pictures?",
+          "Where is the lamp in picture A?",
+          "What is on the table in picture B?"
+        ],
+        "imageUrl": "/images/gold-mocks/starters/sgm-041-living-room-pair.png",
+        "rubricId": "gold-speaking_picture_description-v1"
+      }
+    },
+    {
+      "questionRef": "sgm-042",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 42,
+      "points": 5,
+      "difficulty": "easy",
+      "topicTag": "about_you",
+      "grammarTags": [
+        "present_simple",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school",
+        "hobbies"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Answer the examiner's questions about you.",
+      "cambridgeTaskType": "speaking_personal_questions",
+      "prompt": "Answer the examiner's questions about yourself, your family and your school.",
+      "maxDurationSeconds": 180,
+      "followUpQuestions": [
+        "What's your name?",
+        "How old are you?",
+        "Have you got any brothers or sisters?",
+        "What is your favourite school subject?",
+        "What do you like doing in your free time?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_personal_questions",
+        "prompt": "Answer the examiner's questions about yourself, your family and your school.",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "What's your name?",
+          "How old are you?",
+          "Have you got any brothers or sisters?",
+          "What is your favourite school subject?",
+          "What do you like doing in your free time?"
+        ],
+        "rubricId": "gold-speaking_personal_questions-v1"
+      }
+    },
+    {
+      "questionRef": "sgm-043",
+      "partSlug": "speaking-part-3",
+      "sectionSlug": "speaking",
+      "sortOrder": 43,
+      "points": 5,
+      "difficulty": "medium",
+      "topicTag": "story_beach_day",
+      "grammarTags": [
+        "past_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "weather",
+        "food"
+      ],
+      "skillTag": "speaking",
+      "questionText": "Look at the pictures and tell the story.",
+      "cambridgeTaskType": "speaking_storytelling",
+      "prompt": "Look at these pictures and tell the story of Tom's day at the beach.",
+      "maxDurationSeconds": 180,
+      "pictureSequence": [
+        "/images/gold-mocks/starters/sgm-043-story-1-car.png",
+        "/images/gold-mocks/starters/sgm-043-story-2-beach.png",
+        "/images/gold-mocks/starters/sgm-043-story-3-icecream.png",
+        "/images/gold-mocks/starters/sgm-043-story-4-home.png"
+      ],
+      "followUpQuestions": [
+        "Who went to the beach with Tom?",
+        "What did they do first?",
+        "What did Tom eat?",
+        "How was the weather?",
+        "What happened at the end of the day?"
+      ],
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "content": {
+        "cambridgeTaskType": "speaking_storytelling",
+        "prompt": "Look at these pictures and tell the story of Tom's day at the beach.",
+        "maxDurationSeconds": 180,
+        "followUpQuestions": [
+          "Who went to the beach with Tom?",
+          "What did they do first?",
+          "What did Tom eat?",
+          "How was the weather?",
+          "What happened at the end of the day?"
+        ],
+        "pictureSequence": [
+          "/images/gold-mocks/starters/sgm-043-story-1-car.png",
+          "/images/gold-mocks/starters/sgm-043-story-2-beach.png",
+          "/images/gold-mocks/starters/sgm-043-story-3-icecream.png",
+          "/images/gold-mocks/starters/sgm-043-story-4-home.png"
+        ],
+        "rubricId": "gold-speaking_storytelling-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "school_friends",
+      "family",
+      "school",
+      "friends",
+      "school_playground",
+      "animals_pet",
+      "food_lunch",
+      "weather",
+      "school_classroom",
+      "clothes",
+      "animals_farm",
+      "food_breakfast",
+      "leisure_toys",
+      "school_music",
+      "family_beach",
+      "animals_garden",
+      "clothes_bedroom",
+      "home_garden",
+      "garden_art",
+      "leisure_park",
+      "animals",
+      "food",
+      "family_home",
+      "animals_zoo",
+      "food_market",
+      "school_lunch",
+      "weather_seasons",
+      "pets",
+      "school_day",
+      "birthday_party",
+      "trip_zoo",
+      "weather_holiday",
+      "park_play",
+      "weather_clothes",
+      "home_living_room",
+      "about_you",
+      "story_beach_day"
+    ],
+    "distinctGrammarPatterns": [
+      "verb_be",
+      "possessives",
+      "present_simple",
+      "present_continuous",
+      "have_got",
+      "there_is_are",
+      "modal_can",
+      "imperatives",
+      "articles",
+      "past_simple",
+      "future_going_to",
+      "prepositions",
+      "past_continuous"
+    ],
+    "subskillsRepresented": [
+      "listening",
+      "reading",
+      "writing",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "easy": 24,
+      "medium": 14,
+      "hard": 5
+    },
+    "notes": "Authored for M3.1 Gold Mock specification."
+  },
+  "gold": {
+    "tier": "gold",
+    "goldMockId": "starters-gold-mock-1",
+    "goldMockVersion": "1.0.0",
+    "specificationId": "gold-mock-starters-v1",
+    "specificationVersion": "1.0.0",
+    "authoredAt": "2026-06-22T00:00:00.000Z",
+    "status": "published",
+    "academicAuthority": true,
+    "authoringMethod": "manual",
+    "qaChecklistVersion": "1.0.0"
+  },
+  "specification": {
+    "specificationId": "gold-mock-starters-v1",
+    "specificationVersion": "1.0.0",
+    "level": "starters",
+    "coverageTargets": {
+      "minDistinctGrammarTags": 4,
+      "minDistinctVocabularyTopics": 5,
+      "minSkillsRepresented": 4,
+      "difficultyDistribution": {
+        "easy": 0.6,
+        "medium": 0.3,
+        "hard": 0.1
+      },
+      "maxTopicShare": 0.25,
+      "requireWritingTasks": true,
+      "requireSpeakingTasks": true
+    }
+  }
+}

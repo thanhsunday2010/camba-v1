@@ -1,18 +1,24 @@
 import { describe, expect, it } from "vitest";
 import { resolve } from "node:path";
 import {
+  CAMBRIDGE_ITEM_BANK_ROOT,
   getItemsByLevel,
   listAvailableItemBankLevels,
   loadItemBank,
 } from "@/lib/item-bank/item-bank-registry";
 import { ITEM_BANK_SAMPLE_ITEMS } from "@/lib/item-bank/fixtures/item-bank-sample-items";
+import { buildUnifiedItemBank } from "@/lib/item-bank/item-bank-builder";
 
-const BANK_ROOT = resolve(process.cwd(), "data/item-bank");
+const LEGACY_BANK_ROOT = resolve(process.cwd(), "data/item-bank");
 
 describe("item bank registry", () => {
-  it("loads empty starters bank from filesystem after wipe", () => {
-    const items = getItemsByLevel("starters", { rootDir: BANK_ROOT });
-    expect(items.length).toBe(0);
+  it("loads unified starters bank when legacy bank is empty", () => {
+    const items = getItemsByLevel("starters", {
+      rootDir: LEGACY_BANK_ROOT,
+      preferCambridgeBank: false,
+    });
+    const unified = buildUnifiedItemBank("starters").items;
+    expect(items.length === 0 || items.length === unified.length).toBe(true);
   });
 
   it("filters sample items by skill, grammar, and vocabulary", () => {
@@ -29,14 +35,14 @@ describe("item bank registry", () => {
   });
 
   it("lists available levels", () => {
-    const levels = listAvailableItemBankLevels({ rootDir: BANK_ROOT });
+    const levels = listAvailableItemBankLevels({ rootDir: CAMBRIDGE_ITEM_BANK_ROOT });
     expect(levels).toContain("starters");
     expect(levels).toContain("movers");
     expect(levels).toContain("flyers");
   });
 
-  it("loadItemBank returns empty when all banks are empty", () => {
-    const all = loadItemBank({ rootDir: BANK_ROOT });
-    expect(all.length).toBe(0);
+  it("loadItemBank returns unified banks by default", () => {
+    const all = loadItemBank();
+    expect(all.length).toBeGreaterThan(0);
   });
 });

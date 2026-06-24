@@ -1,0 +1,2205 @@
+{
+  "metadata": {
+    "manifestId": "cambridge-movers-a-v1",
+    "manifestVersion": "1.0.0",
+    "blueprintId": "cambridge-movers-v1",
+    "blueprintVersion": "1.0.0",
+    "levelSlug": "movers",
+    "title": "A1 Movers — Form A",
+    "description": "Assembled reference exam for movers (architecture validation).",
+    "formKind": "full-form",
+    "levelId": "b0000000-0000-4000-8000-000000000003",
+    "timeLimitMinutes": 55,
+    "totalScore": 63,
+    "status": "review",
+    "authoringNotes": "M2.4 golden reference — not production content.",
+    "stableSlug": "movers-assembled-a"
+  },
+  "sections": [
+    {
+      "sectionSlug": "listening",
+      "title": "Listening",
+      "sortOrder": 1,
+      "skillSlug": "listening",
+      "timeLimitMinutes": 15,
+      "partSlugs": [
+        "listening-part-1",
+        "listening-part-2",
+        "listening-part-3",
+        "listening-part-4"
+      ],
+      "questionRefs": [
+        "movers-listening-part-1-audio_matching-040",
+        "movers-listening-part-1-audio_matching-139",
+        "movers-listening-part-1-audio_matching-090",
+        "movers-listening-part-1-audio_matching-013",
+        "movers-listening-part-1-audio_matching-079",
+        "movers-listening-part-1-audio_matching-018",
+        "movers-listening-part-2-audio_gap_fill-098",
+        "movers-listening-part-2-audio_gap_fill-085",
+        "movers-listening-part-2-audio_gap_fill-088",
+        "movers-listening-part-2-audio_gap_fill-083",
+        "movers-listening-part-2-audio_gap_fill-096",
+        "movers-listening-part-2-audio_gap_fill-024",
+        "movers-listening-part-3-audio_multiple_choice-061",
+        "movers-listening-part-3-audio_multiple_choice-136",
+        "movers-listening-part-3-audio_multiple_choice-138",
+        "movers-listening-part-3-audio_multiple_choice-073",
+        "movers-listening-part-3-audio_multiple_choice-054",
+        "movers-listening-part-3-audio_multiple_choice-067",
+        "movers-listening-part-4-audio_multiple_choice-125",
+        "movers-listening-part-4-audio_multiple_choice-119",
+        "movers-listening-part-4-audio_multiple_choice-114",
+        "movers-listening-part-4-audio_multiple_choice-108",
+        "movers-listening-part-4-audio_multiple_choice-131",
+        "movers-listening-part-4-audio_multiple_choice-002"
+      ]
+    },
+    {
+      "sectionSlug": "reading-writing",
+      "title": "Reading & Writing",
+      "sortOrder": 2,
+      "skillSlug": "reading_writing",
+      "timeLimitMinutes": 20,
+      "partSlugs": [
+        "rw-part-1",
+        "rw-part-2",
+        "rw-part-3",
+        "rw-part-4"
+      ],
+      "questionRefs": [
+        "movers-rw-part-1-matching-059",
+        "movers-rw-part-1-matching-040",
+        "movers-rw-part-1-matching-063",
+        "movers-rw-part-1-matching-075",
+        "movers-rw-part-1-matching-064",
+        "movers-rw-part-1-matching-076",
+        "movers-rw-part-2-reading_comprehension-127",
+        "movers-rw-part-2-reading_comprehension-115",
+        "movers-rw-part-2-reading_comprehension-023",
+        "movers-rw-part-2-multiple_choice-100",
+        "movers-rw-part-2-multiple_choice-004",
+        "movers-rw-part-2-reading_comprehension-021",
+        "movers-rw-part-3-multiple_choice-089",
+        "movers-rw-part-3-multiple_choice-079",
+        "movers-rw-part-3-reading_comprehension-136",
+        "movers-rw-part-3-multiple_choice-051",
+        "movers-rw-part-3-multiple_choice-087",
+        "movers-rw-part-3-multiple_choice-077",
+        "movers-rw-part-4-write_sentence-000",
+        "movers-rw-part-4-picture_description_writing-038",
+        "movers-rw-part-4-write_sentence-051",
+        "movers-rw-part-4-write_sentence-027",
+        "movers-rw-part-4-picture_description_writing-071",
+        "movers-rw-part-4-write_sentence-105"
+      ]
+    },
+    {
+      "sectionSlug": "speaking",
+      "title": "Speaking",
+      "sortOrder": 3,
+      "skillSlug": "speaking",
+      "timeLimitMinutes": 10,
+      "partSlugs": [
+        "speaking-part-1",
+        "speaking-part-2",
+        "speaking-part-3"
+      ],
+      "questionRefs": [
+        "movers-speaking-part-1-picture_description_speaking-010",
+        "movers-speaking-part-2-short_answer-009",
+        "movers-speaking-part-3-story_telling-013"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "questionRef": "movers-listening-part-1-audio_matching-040",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 1,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "clothes",
+      "skillTag": "listening",
+      "grammarTags": [
+        "conjunctions",
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ],
+      "questionText": "Match the items — movers listening-part-1 #41.",
+      "content": {
+        "questionText": "Match the items — movers listening-part-1 #41."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-1-audio_matching-139",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 2,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "community",
+      "skillTag": "listening",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Match the items — movers listening-part-1 #140.",
+      "content": {
+        "questionText": "Match the items — movers listening-part-1 #140."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-1-audio_matching-090",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 3,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "hard",
+      "topicTag": "home",
+      "skillTag": "listening",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "home",
+        "shopping"
+      ],
+      "questionText": "Match the items — movers listening-part-1 #91.",
+      "content": {
+        "questionText": "Match the items — movers listening-part-1 #91."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-1-audio_matching-013",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 4,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "colours",
+      "skillTag": "listening",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ],
+      "questionText": "Match the items — movers listening-part-1 #14.",
+      "content": {
+        "questionText": "Match the items — movers listening-part-1 #14."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-1-audio_matching-079",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 5,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "time",
+      "skillTag": "listening",
+      "grammarTags": [
+        "superlatives",
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "time",
+        "family"
+      ],
+      "questionText": "Match the items — movers listening-part-1 #80.",
+      "content": {
+        "questionText": "Match the items — movers listening-part-1 #80."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-1-audio_matching-018",
+      "partSlug": "listening-part-1",
+      "sectionSlug": "listening",
+      "sortOrder": 6,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "easy",
+      "topicTag": "nature",
+      "skillTag": "listening",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "nature",
+        "time"
+      ],
+      "questionText": "Match the items — movers listening-part-1 #19.",
+      "content": {
+        "questionText": "Match the items — movers listening-part-1 #19."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-2-audio_gap_fill-098",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 7,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "hard",
+      "topicTag": "jobs",
+      "skillTag": "listening",
+      "grammarTags": [
+        "past_simple",
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "jobs",
+        "places"
+      ],
+      "questionText": "Complete the gap — movers listening-part-2 #99.",
+      "content": {
+        "questionText": "Complete the gap — movers listening-part-2 #99.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "movers-listening-part-2-audio_gap_fill-085",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 8,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "hard",
+      "topicTag": "friends",
+      "skillTag": "listening",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "friends",
+        "home"
+      ],
+      "questionText": "Complete the gap — movers listening-part-2 #86.",
+      "content": {
+        "questionText": "Complete the gap — movers listening-part-2 #86.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "movers-listening-part-2-audio_gap_fill-088",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 9,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "hard",
+      "topicTag": "drink",
+      "skillTag": "listening",
+      "grammarTags": [
+        "conjunctions",
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ],
+      "questionText": "Complete the gap — movers listening-part-2 #89.",
+      "content": {
+        "questionText": "Complete the gap — movers listening-part-2 #89.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "movers-listening-part-2-audio_gap_fill-083",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 10,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "hard",
+      "topicTag": "community",
+      "skillTag": "listening",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Complete the gap — movers listening-part-2 #84.",
+      "content": {
+        "questionText": "Complete the gap — movers listening-part-2 #84.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "movers-listening-part-2-audio_gap_fill-096",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 11,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "hard",
+      "topicTag": "clothes",
+      "skillTag": "listening",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ],
+      "questionText": "Complete the gap — movers listening-part-2 #97.",
+      "content": {
+        "questionText": "Complete the gap — movers listening-part-2 #97.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "movers-listening-part-2-audio_gap_fill-024",
+      "partSlug": "listening-part-2",
+      "sectionSlug": "listening",
+      "sortOrder": 12,
+      "points": 1,
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
+      "difficulty": "easy",
+      "topicTag": "hobbies",
+      "skillTag": "listening",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Complete the gap — movers listening-part-2 #25.",
+      "content": {
+        "questionText": "Complete the gap — movers listening-part-2 #25.",
+        "template": "The answer is [0].",
+        "correctAnswers": [
+          "correct"
+        ]
+      }
+    },
+    {
+      "questionRef": "movers-listening-part-3-audio_multiple_choice-061",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 13,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "school",
+      "skillTag": "listening",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "weather"
+      ],
+      "questionText": "Listen and choose — movers listening-part-3 #62.",
+      "content": {
+        "questionText": "Listen and choose — movers listening-part-3 #62.",
+        "audioUrl": "/audio/assembly/movers/listening-part-3-61.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-3-audio_multiple_choice-136",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 14,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "hobbies",
+      "skillTag": "listening",
+      "grammarTags": [
+        "conjunctions",
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Listen and choose — movers listening-part-3 #137.",
+      "content": {
+        "questionText": "Listen and choose — movers listening-part-3 #137.",
+        "audioUrl": "/audio/assembly/movers/listening-part-3-136.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-3-audio_multiple_choice-138",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 15,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "skillTag": "listening",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "food"
+      ],
+      "questionText": "Listen and choose — movers listening-part-3 #139.",
+      "content": {
+        "questionText": "Listen and choose — movers listening-part-3 #139.",
+        "audioUrl": "/audio/assembly/movers/listening-part-3-138.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-3-audio_multiple_choice-073",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 16,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "technology",
+      "skillTag": "listening",
+      "grammarTags": [
+        "present_continuous",
+        "future_will"
+      ],
+      "vocabularyTopics": [
+        "technology",
+        "numbers"
+      ],
+      "questionText": "Listen and choose — movers listening-part-3 #74.",
+      "content": {
+        "questionText": "Listen and choose — movers listening-part-3 #74.",
+        "audioUrl": "/audio/assembly/movers/listening-part-3-73.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-3-audio_multiple_choice-054",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 17,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "culture",
+      "skillTag": "listening",
+      "grammarTags": [
+        "comparatives",
+        "pronouns"
+      ],
+      "vocabularyTopics": [
+        "culture",
+        "food"
+      ],
+      "questionText": "Listen and choose — movers listening-part-3 #55.",
+      "content": {
+        "questionText": "Listen and choose — movers listening-part-3 #55.",
+        "audioUrl": "/audio/assembly/movers/listening-part-3-54.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-3-audio_multiple_choice-067",
+      "partSlug": "listening-part-3",
+      "sectionSlug": "listening",
+      "sortOrder": 18,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "medium",
+      "topicTag": "shopping",
+      "skillTag": "listening",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "shopping",
+        "health"
+      ],
+      "questionText": "Listen and choose — movers listening-part-3 #68.",
+      "content": {
+        "questionText": "Listen and choose — movers listening-part-3 #68.",
+        "audioUrl": "/audio/assembly/movers/listening-part-3-67.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-4-audio_multiple_choice-125",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 19,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "colours",
+      "skillTag": "listening",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ],
+      "questionText": "Listen and choose — movers listening-part-4 #126.",
+      "content": {
+        "questionText": "Listen and choose — movers listening-part-4 #126.",
+        "audioUrl": "/audio/assembly/movers/listening-part-4-125.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-4-audio_multiple_choice-119",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 20,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "sports",
+      "skillTag": "listening",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "clothes"
+      ],
+      "questionText": "Listen and choose — movers listening-part-4 #120.",
+      "content": {
+        "questionText": "Listen and choose — movers listening-part-4 #120.",
+        "audioUrl": "/audio/assembly/movers/listening-part-4-119.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-4-audio_multiple_choice-114",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 21,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "animals",
+      "skillTag": "listening",
+      "grammarTags": [
+        "verb_be",
+        "imperatives"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "sports"
+      ],
+      "questionText": "Listen and choose — movers listening-part-4 #115.",
+      "content": {
+        "questionText": "Listen and choose — movers listening-part-4 #115.",
+        "audioUrl": "/audio/assembly/movers/listening-part-4-114.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-4-audio_multiple_choice-108",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 22,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "hobbies",
+      "skillTag": "listening",
+      "grammarTags": [
+        "countable_uncountable",
+        "modal_must"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Listen and choose — movers listening-part-4 #109.",
+      "content": {
+        "questionText": "Listen and choose — movers listening-part-4 #109.",
+        "audioUrl": "/audio/assembly/movers/listening-part-4-108.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-4-audio_multiple_choice-131",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 23,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "places",
+      "skillTag": "listening",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "hobbies"
+      ],
+      "questionText": "Listen and choose — movers listening-part-4 #132.",
+      "content": {
+        "questionText": "Listen and choose — movers listening-part-4 #132.",
+        "audioUrl": "/audio/assembly/movers/listening-part-4-131.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-listening-part-4-audio_multiple_choice-002",
+      "partSlug": "listening-part-4",
+      "sectionSlug": "listening",
+      "sortOrder": 24,
+      "points": 1,
+      "blueprintQuestionType": "mcq_listening",
+      "cambaQuestionType": "listening",
+      "difficulty": "easy",
+      "topicTag": "animals",
+      "skillTag": "listening",
+      "grammarTags": [
+        "past_simple",
+        "future_going_to"
+      ],
+      "vocabularyTopics": [
+        "animals",
+        "sports"
+      ],
+      "questionText": "Listen and choose — movers listening-part-4 #3.",
+      "content": {
+        "questionText": "Listen and choose — movers listening-part-4 #3.",
+        "audioUrl": "/audio/assembly/movers/listening-part-4-2.mp3",
+        "transcript": "Sample listening transcript."
+      },
+      "choices": [
+        {
+          "text": "Option A",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option B",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Option C",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-1-matching-059",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 25,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "food",
+      "skillTag": "reading",
+      "grammarTags": [
+        "prepositions",
+        "modal_can"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ],
+      "questionText": "Match the items — movers rw-part-1 #60.",
+      "content": {
+        "questionText": "Match the items — movers rw-part-1 #60."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-1-matching-040",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 26,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "clothes",
+      "skillTag": "reading",
+      "grammarTags": [
+        "conjunctions",
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "clothes",
+        "technology"
+      ],
+      "questionText": "Match the items — movers rw-part-1 #41.",
+      "content": {
+        "questionText": "Match the items — movers rw-part-1 #41."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-1-matching-063",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 27,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "sports",
+      "skillTag": "reading",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "sports",
+        "clothes"
+      ],
+      "questionText": "Match the items — movers rw-part-1 #64.",
+      "content": {
+        "questionText": "Match the items — movers rw-part-1 #64."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-1-matching-075",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 28,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "places",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "places",
+        "hobbies"
+      ],
+      "questionText": "Match the items — movers rw-part-1 #76.",
+      "content": {
+        "questionText": "Match the items — movers rw-part-1 #76."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-1-matching-064",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 29,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "leisure",
+      "skillTag": "reading",
+      "grammarTags": [
+        "conjunctions",
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "leisure",
+        "colours"
+      ],
+      "questionText": "Match the items — movers rw-part-1 #65.",
+      "content": {
+        "questionText": "Match the items — movers rw-part-1 #65."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-1-matching-076",
+      "partSlug": "rw-part-1",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 30,
+      "points": 1,
+      "blueprintQuestionType": "matching",
+      "cambaQuestionType": "matching",
+      "difficulty": "medium",
+      "topicTag": "body",
+      "skillTag": "reading",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "body",
+        "environment"
+      ],
+      "questionText": "Match the items — movers rw-part-1 #77.",
+      "content": {
+        "questionText": "Match the items — movers rw-part-1 #77."
+      },
+      "pairs": [
+        {
+          "leftText": "Item A",
+          "rightText": "Match 1",
+          "sortOrder": 1
+        },
+        {
+          "leftText": "Item B",
+          "rightText": "Match 2",
+          "sortOrder": 2
+        },
+        {
+          "leftText": "Item C",
+          "rightText": "Match 3",
+          "sortOrder": 3
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-2-reading_comprehension-127",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 31,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "easy",
+      "topicTag": "travel",
+      "skillTag": "reading",
+      "grammarTags": [
+        "superlatives",
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ],
+      "questionText": "Read and answer — movers rw-part-2 #128.",
+      "content": {
+        "questionText": "Read and answer — movers rw-part-2 #128.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-2-reading_comprehension-115",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 32,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "easy",
+      "topicTag": "food",
+      "skillTag": "reading",
+      "grammarTags": [
+        "have_got",
+        "relative_clauses"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ],
+      "questionText": "Read and answer — movers rw-part-2 #116.",
+      "content": {
+        "questionText": "Read and answer — movers rw-part-2 #116.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-2-reading_comprehension-023",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 33,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "easy",
+      "topicTag": "time",
+      "skillTag": "reading",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "time",
+        "family"
+      ],
+      "questionText": "Read and answer — movers rw-part-2 #24.",
+      "content": {
+        "questionText": "Read and answer — movers rw-part-2 #24.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-2-multiple_choice-100",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 34,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "health",
+      "skillTag": "reading",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "health",
+        "feelings"
+      ],
+      "questionText": "Choose the correct answer — movers rw-part-2 #101.",
+      "content": {
+        "questionText": "Choose the correct answer — movers rw-part-2 #101."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-2-multiple_choice-004",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 35,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "easy",
+      "topicTag": "drink",
+      "skillTag": "reading",
+      "grammarTags": [
+        "future_will",
+        "superlatives"
+      ],
+      "vocabularyTopics": [
+        "drink",
+        "transport"
+      ],
+      "questionText": "Choose the correct answer — movers rw-part-2 #5.",
+      "content": {
+        "questionText": "Choose the correct answer — movers rw-part-2 #5."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-2-reading_comprehension-021",
+      "partSlug": "rw-part-2",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 36,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "easy",
+      "topicTag": "feelings",
+      "skillTag": "reading",
+      "grammarTags": [
+        "imperatives",
+        "present_simple"
+      ],
+      "vocabularyTopics": [
+        "feelings",
+        "culture"
+      ],
+      "questionText": "Read and answer — movers rw-part-2 #22.",
+      "content": {
+        "questionText": "Read and answer — movers rw-part-2 #22.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-3-multiple_choice-089",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 37,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "hard",
+      "topicTag": "school",
+      "skillTag": "reading",
+      "grammarTags": [
+        "adverbs_frequency",
+        "there_is_are"
+      ],
+      "vocabularyTopics": [
+        "school",
+        "weather"
+      ],
+      "questionText": "Choose the correct answer — movers rw-part-3 #90.",
+      "content": {
+        "questionText": "Choose the correct answer — movers rw-part-3 #90."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-3-multiple_choice-079",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 38,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "time",
+      "skillTag": "reading",
+      "grammarTags": [
+        "superlatives",
+        "possessives"
+      ],
+      "vocabularyTopics": [
+        "time",
+        "family"
+      ],
+      "questionText": "Choose the correct answer — movers rw-part-3 #80.",
+      "content": {
+        "questionText": "Choose the correct answer — movers rw-part-3 #80."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-3-reading_comprehension-136",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 39,
+      "points": 1,
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "difficulty": "medium",
+      "topicTag": "hobbies",
+      "skillTag": "reading",
+      "grammarTags": [
+        "conjunctions",
+        "have_got"
+      ],
+      "vocabularyTopics": [
+        "hobbies",
+        "friends"
+      ],
+      "questionText": "Read and answer — movers rw-part-3 #137.",
+      "content": {
+        "questionText": "Read and answer — movers rw-part-3 #137.",
+        "passage": "Short reading passage for comprehension."
+      },
+      "choices": [
+        {
+          "text": "Correct answer",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Distractor B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-3-multiple_choice-051",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 40,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "time",
+      "skillTag": "reading",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "time",
+        "family"
+      ],
+      "questionText": "Choose the correct answer — movers rw-part-3 #52.",
+      "content": {
+        "questionText": "Choose the correct answer — movers rw-part-3 #52."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-3-multiple_choice-087",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 41,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "hard",
+      "topicTag": "food",
+      "skillTag": "reading",
+      "grammarTags": [
+        "modal_must",
+        "verb_be"
+      ],
+      "vocabularyTopics": [
+        "food",
+        "leisure"
+      ],
+      "questionText": "Choose the correct answer — movers rw-part-3 #88.",
+      "content": {
+        "questionText": "Choose the correct answer — movers rw-part-3 #88."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-3-multiple_choice-077",
+      "partSlug": "rw-part-3",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 42,
+      "points": 1,
+      "blueprintQuestionType": "mcq_single",
+      "cambaQuestionType": "multiple_choice",
+      "difficulty": "medium",
+      "topicTag": "feelings",
+      "skillTag": "reading",
+      "grammarTags": [
+        "future_going_to",
+        "articles"
+      ],
+      "vocabularyTopics": [
+        "feelings",
+        "culture"
+      ],
+      "questionText": "Choose the correct answer — movers rw-part-3 #78.",
+      "content": {
+        "questionText": "Choose the correct answer — movers rw-part-3 #78."
+      },
+      "choices": [
+        {
+          "text": "Correct",
+          "isCorrect": true,
+          "sortOrder": 1,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong A",
+          "isCorrect": false,
+          "sortOrder": 2,
+          "mediaUrl": null
+        },
+        {
+          "text": "Wrong B",
+          "isCorrect": false,
+          "sortOrder": 3,
+          "mediaUrl": null
+        }
+      ]
+    },
+    {
+      "questionRef": "movers-rw-part-4-write_sentence-000",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 43,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "easy",
+      "topicTag": "family",
+      "skillTag": "writing",
+      "grammarTags": [
+        "present_simple",
+        "past_continuous"
+      ],
+      "vocabularyTopics": [
+        "family",
+        "school"
+      ],
+      "questionText": "Writing task: movers rw-part-4 writing #1.",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Writing task: movers rw-part-4 writing #1.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "movers-rw-part-4-picture_description_writing-038",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 44,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "medium",
+      "topicTag": "weather",
+      "skillTag": "writing",
+      "grammarTags": [
+        "modal_can",
+        "adverbs_frequency"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Writing task: movers rw-part-4 writing #39.",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Writing task: movers rw-part-4 writing #39.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-picture_description_writing-v1"
+      }
+    },
+    {
+      "questionRef": "movers-rw-part-4-write_sentence-051",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 45,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "medium",
+      "topicTag": "time",
+      "skillTag": "writing",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "time",
+        "family"
+      ],
+      "questionText": "Writing task: movers rw-part-4 writing #52.",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Writing task: movers rw-part-4 writing #52.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "movers-rw-part-4-write_sentence-027",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 46,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "easy",
+      "topicTag": "community",
+      "skillTag": "writing",
+      "grammarTags": [
+        "past_continuous",
+        "comparatives"
+      ],
+      "vocabularyTopics": [
+        "community",
+        "drink"
+      ],
+      "questionText": "Writing task: movers rw-part-4 writing #28.",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Writing task: movers rw-part-4 writing #28.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "movers-rw-part-4-picture_description_writing-071",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 47,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "medium",
+      "topicTag": "travel",
+      "skillTag": "writing",
+      "grammarTags": [
+        "linking_words",
+        "past_simple"
+      ],
+      "vocabularyTopics": [
+        "travel",
+        "body"
+      ],
+      "questionText": "Writing task: movers rw-part-4 writing #72.",
+      "content": {
+        "cambridgeTaskType": "picture_description",
+        "prompt": "Writing task: movers rw-part-4 writing #72.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-picture_description_writing-v1"
+      }
+    },
+    {
+      "questionRef": "movers-rw-part-4-write_sentence-105",
+      "partSlug": "rw-part-4",
+      "sectionSlug": "reading-writing",
+      "sortOrder": 48,
+      "points": 1,
+      "blueprintQuestionType": "writing_copy",
+      "cambaQuestionType": "writing",
+      "difficulty": "easy",
+      "topicTag": "feelings",
+      "skillTag": "writing",
+      "grammarTags": [
+        "pronouns",
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "feelings",
+        "culture"
+      ],
+      "questionText": "Writing task: movers rw-part-4 writing #106.",
+      "content": {
+        "cambridgeTaskType": "write_sentence",
+        "prompt": "Writing task: movers rw-part-4 writing #106.",
+        "taskDescription": "Respond to the prompt in complete sentences.",
+        "minWords": 3,
+        "maxWords": 25,
+        "imageUrl": "/images/placeholders/writing-picture.svg",
+        "rubricId": "cambridge-write_sentence-v1"
+      }
+    },
+    {
+      "questionRef": "movers-speaking-part-1-picture_description_speaking-010",
+      "partSlug": "speaking-part-1",
+      "sectionSlug": "speaking",
+      "sortOrder": 49,
+      "points": 5,
+      "blueprintQuestionType": "speaking_picture_story",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "weather",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "possessives",
+        "question_forms"
+      ],
+      "vocabularyTopics": [
+        "weather",
+        "travel"
+      ],
+      "questionText": "Speaking task: movers speaking-part-1 speaking #11.",
+      "content": {
+        "cambridgeTaskType": "speaking_picture_description",
+        "prompt": "Speaking task: movers speaking-part-1 speaking #11.",
+        "taskDescription": "Describe what you see in the picture.",
+        "maxDurationSeconds": 120,
+        "imageUrl": "/images/placeholders/speaking-picture.svg",
+        "rubricId": "cambridge-picture_description_speaking-v1"
+      }
+    },
+    {
+      "questionRef": "movers-speaking-part-2-short_answer-009",
+      "partSlug": "speaking-part-2",
+      "sectionSlug": "speaking",
+      "sortOrder": 50,
+      "points": 5,
+      "blueprintQuestionType": "speaking_interview",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "transport",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "pronouns",
+        "countable_uncountable"
+      ],
+      "vocabularyTopics": [
+        "transport",
+        "jobs"
+      ],
+      "questionText": "Speaking task: movers speaking-part-2 speaking #10.",
+      "content": {
+        "cambridgeTaskType": "speaking_personal_questions",
+        "prompt": "Speaking task: movers speaking-part-2 speaking #10.",
+        "taskDescription": "Answer the examiner's questions.",
+        "followUpQuestions": [
+          "What is your name?",
+          "How old are you?"
+        ],
+        "maxDurationSeconds": 120,
+        "imageUrl": "/images/placeholders/speaking-interview.svg",
+        "rubricId": "cambridge-short_answer-v1"
+      }
+    },
+    {
+      "questionRef": "movers-speaking-part-3-story_telling-013",
+      "partSlug": "speaking-part-3",
+      "sectionSlug": "speaking",
+      "sortOrder": 51,
+      "points": 5,
+      "blueprintQuestionType": "speaking_picture_story",
+      "cambaQuestionType": "speaking",
+      "difficulty": "easy",
+      "topicTag": "colours",
+      "skillTag": "speaking",
+      "grammarTags": [
+        "question_forms",
+        "conjunctions"
+      ],
+      "vocabularyTopics": [
+        "colours",
+        "nature"
+      ],
+      "questionText": "Speaking task: movers speaking-part-3 speaking #14.",
+      "content": {
+        "cambridgeTaskType": "speaking_storytelling",
+        "prompt": "Speaking task: movers speaking-part-3 speaking #14.",
+        "taskDescription": "Tell the story shown in the pictures.",
+        "maxDurationSeconds": 180,
+        "pictureSequence": [
+          "/images/placeholders/story-1.svg",
+          "/images/placeholders/story-2.svg",
+          "/images/placeholders/story-3.svg"
+        ],
+        "rubricId": "cambridge-story_telling-v1"
+      }
+    }
+  ],
+  "coverageAchieved": {
+    "distinctTopics": [
+      "clothes",
+      "community",
+      "home",
+      "colours",
+      "time",
+      "nature",
+      "jobs",
+      "friends",
+      "drink",
+      "hobbies",
+      "school",
+      "culture",
+      "technology",
+      "shopping",
+      "sports",
+      "animals",
+      "places",
+      "food",
+      "leisure",
+      "body",
+      "travel",
+      "health",
+      "feelings",
+      "family",
+      "weather",
+      "transport"
+    ],
+    "distinctGrammarPatterns": [
+      "conjunctions",
+      "have_got",
+      "relative_clauses",
+      "verb_be",
+      "imperatives",
+      "question_forms",
+      "superlatives",
+      "possessives",
+      "past_simple",
+      "future_going_to",
+      "prepositions",
+      "modal_can",
+      "present_simple",
+      "past_continuous",
+      "present_continuous",
+      "future_will",
+      "comparatives",
+      "pronouns",
+      "articles",
+      "linking_words",
+      "countable_uncountable",
+      "modal_must",
+      "adverbs_frequency",
+      "there_is_are"
+    ],
+    "subskillsRepresented": [
+      "listening",
+      "reading",
+      "writing",
+      "speaking"
+    ],
+    "difficultyCounts": {
+      "medium": 22,
+      "hard": 8,
+      "easy": 21
+    },
+    "notes": "Generated by M2.4 exam assembly engine."
+  }
+}

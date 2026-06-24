@@ -4,6 +4,10 @@ import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { normalizeQuestionType } from "@/lib/learning/question-types";
+import { isWritingQuestion, isQuestionAnswered } from "@/lib/writing/writing-utils";
+import { isSpeakingQuestion } from "@/lib/speaking/speaking-utils";
+import { WritingPlayer } from "@/components/writing/writing-player";
+import { SpeakingPlayer } from "@/components/speaking/speaking-player";
 import type { PublicQuestion, QuestionResult, UserAnswer, ExerciseResult } from "@/types/learning";
 import { MultipleChoice } from "./multiple-choice";
 import { MultiSelect } from "./multi-select";
@@ -130,6 +134,34 @@ export function QuestionRenderer({
       );
     }
 
+    case "writing":
+      if (isWritingQuestion(question)) {
+        return (
+          <WritingPlayer
+            question={question}
+            answer={answer}
+            onAnswer={onAnswer}
+            disabled={disabled}
+            showResult={showResult}
+          />
+        );
+      }
+      return <p className="camba-caption text-muted">{t("unsupportedQuestionType")}</p>;
+
+    case "speaking":
+      if (isSpeakingQuestion(question)) {
+        return (
+          <SpeakingPlayer
+            question={question}
+            answer={answer}
+            onAnswer={onAnswer}
+            disabled={disabled}
+            showResult={showResult}
+          />
+        );
+      }
+      return <p className="camba-caption text-muted">{t("unsupportedQuestionType")}</p>;
+
     default:
       return <p className="camba-caption text-muted">{t("unsupportedQuestionType")}</p>;
   }
@@ -167,7 +199,7 @@ function QuestionProgressDots({
             "h-1.5 flex-1 rounded-full transition-colors",
             i === currentIndex
               ? "bg-program"
-              : answers[q.id]
+              : isQuestionAnswered(q, answers[q.id])
                 ? "bg-program/40"
                 : "bg-[var(--surface-sunken)]"
           )}
@@ -316,11 +348,18 @@ export function ExercisePlayer({
     setAnswers((prev) => ({ ...prev, [currentQuestion.id]: answer }));
   }
 
+  const hasWriting = questions.some((q) => isWritingQuestion(q));
+  const hasSpeaking = questions.some((q) => isSpeakingQuestion(q));
+  const hasAiEval = hasWriting || hasSpeaking;
+
   async function handleSubmit() {
     setIsSubmitting(true);
     try {
       const exerciseResult = await onSubmit(answers);
       if (exerciseResult) {
+        if (exerciseResult.answers) {
+          setAnswers(exerciseResult.answers);
+        }
         setResult(exerciseResult);
         setShowResults(true);
         onComplete?.(exerciseResult);
@@ -400,7 +439,7 @@ export function ExercisePlayer({
             {isSubmitting ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />
-                {tp("submitting")}
+                {hasAiEval ? "Evaluating responses…" : tp("submitting")}
               </>
             ) : (
               tp("submit")
@@ -410,7 +449,7 @@ export function ExercisePlayer({
           <Button
             type="button"
             onClick={() => setCurrentIndex((i) => i + 1)}
-            disabled={!answers[currentQuestion.id]}
+            disabled={!isQuestionAnswered(currentQuestion, answers[currentQuestion.id])}
           >
             {tp("next")}
             <ChevronRight className="h-4 w-4" />
