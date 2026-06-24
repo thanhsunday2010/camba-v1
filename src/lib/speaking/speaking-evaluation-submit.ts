@@ -7,7 +7,7 @@ import {
   mergeSpeakingIntoQuestionResults,
   mergeSpeakingSkillBreakdown,
 } from "@/lib/speaking/speaking-evaluation";
-import { normalizeCambridgeExamLevel } from "@/lib/writing/writing-evaluation";
+import { normalizeCambridgeExamLevel } from "@/lib/cambridge-assessment/cambridge-level-utils";
 import {
   isSpeakingQuestion,
   parseSpeakingQuestionContent,

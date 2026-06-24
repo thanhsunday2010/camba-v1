@@ -13,7 +13,7 @@ import {
   toSpeakingSubmission,
   userAnswerToSpeakingPayload,
 } from "@/lib/speaking/speaking-utils";
-import { toSpeakingQuestionEvaluationSummary } from "@/lib/speaking/speaking-evaluation";
+import { toSpeakingQuestionEvaluationSummary } from "@/lib/speaking/speaking-evaluation-ui";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";

@@ -3,7 +3,7 @@ import type { CambridgeTaskTypeKey } from "@/lib/cambridge-assessment/cambridge-
 import type { SpeakingAiEvaluationRequest } from "@/lib/cambridge-assessment/cambridge-speaking-ai-contracts";
 import { evaluateCambridgeSpeaking, SpeakingEvaluationError } from "@/lib/ai/speaking/cambridge-speaking-evaluator";
 import { GEMINI_MODEL_VERSION } from "@/lib/ai/gemini-client";
-import { normalizeCambridgeExamLevel } from "@/lib/writing/writing-evaluation";
+import { normalizeCambridgeExamLevel } from "@/lib/cambridge-assessment/cambridge-level-utils";
 import type { Question, QuestionResult, UserAnswer } from "@/types/learning";
 import {
   isSpeakingQuestion,
@@ -15,9 +15,10 @@ import type {
   SpeakingEvaluationEnvelope,
   SpeakingEvaluationResult,
   SpeakingFeedback,
-  SpeakingQuestionEvaluationSummary,
 } from "@/lib/speaking/speaking-evaluation-types";
-import { randomUUID } from "node:crypto";
+import { createRandomId } from "@/lib/utils/random-id";
+
+export { toSpeakingQuestionEvaluationSummary } from "@/lib/speaking/speaking-evaluation-ui";
 
 function resolveQuestionLevel(
   question: Question,
@@ -93,7 +94,7 @@ export function buildSpeakingEvaluationRequest(
   const level = resolveQuestionLevel(question, options?.level);
 
   return {
-    requestId: randomUUID(),
+    requestId: createRandomId(),
     level,
     taskType: toTaxonomyTaskType(content.cambridgeTaskType),
     prompt: content.prompt.prompt,
@@ -245,23 +246,6 @@ export function mergeSpeakingSkillBreakdown(
 
 export function hasSpeakingQuestions(questions: Question[]): boolean {
   return questions.some((q) => isSpeakingQuestion(q));
-}
-
-export function toSpeakingQuestionEvaluationSummary(
-  envelope: SpeakingEvaluationEnvelope | null
-): SpeakingQuestionEvaluationSummary | null {
-  if (!envelope?.result) return null;
-  const r = envelope.result;
-  return {
-    overallScore: r.overallScore,
-    bandScore: r.bandScore,
-    dimensions: r.dimensions,
-    strengths: r.strengths,
-    weaknesses: r.weaknesses,
-    feedback: r.feedback,
-    transcript: r.transcript,
-    status: envelope.status,
-  };
 }
 
 export function toSpeakingFeedback(result: SpeakingEvaluationResult): SpeakingFeedback {

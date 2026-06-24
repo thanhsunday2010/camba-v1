@@ -14,7 +14,7 @@ import {
   toWritingSubmission,
   userAnswerToWritingPayload,
 } from "@/lib/writing/writing-utils";
-import { toWritingQuestionEvaluationSummary } from "@/lib/writing/writing-evaluation";
+import { toWritingQuestionEvaluationSummary } from "@/lib/writing/writing-evaluation-ui";
 import { Loader2 } from "lucide-react";
 
 type WritingPlayerProps = {

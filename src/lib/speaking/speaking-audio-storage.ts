@@ -4,7 +4,7 @@ import {
   validateSpeakingAudioInput,
   normalizeSpeakingMimeType,
 } from "@/lib/speaking/speaking-submission";
-import { randomUUID } from "node:crypto";
+import { createRandomId } from "@/lib/utils/random-id";
 
 export type StoredSpeakingAudio = {
   submissionId: string;
@@ -34,7 +34,7 @@ export async function storeSpeakingAudioSubmission(input: {
     throw new Error(issues.map((i) => i.message).join("; "));
   }
 
-  const submissionId = randomUUID();
+  const submissionId = createRandomId();
   const ext = mimeType.includes("wav") ? "wav" : mimeType.includes("mpeg") || mimeType.includes("mp3") ? "mp3" : "webm";
   const audioRef = `${user.id}/${submissionId}.${ext}`;
 

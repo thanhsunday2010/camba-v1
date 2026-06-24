@@ -1,4 +1,5 @@
 import type { CambridgeExamLevel } from "@/lib/cambridge-assessment/cambridge-assessment-types";
+import { normalizeCambridgeExamLevel } from "@/lib/cambridge-assessment/cambridge-level-utils";
 import type { CambridgeTaskTypeKey } from "@/lib/cambridge-assessment/cambridge-task-taxonomy";
 import type { WritingAiEvaluationRequest } from "@/lib/cambridge-assessment/cambridge-writing-ai-contracts";
 import { evaluateCambridgeWriting, WritingEvaluationError } from "@/lib/ai/writing/cambridge-writing-evaluator";
@@ -14,9 +15,8 @@ import type {
   WritingEvaluationEnvelope,
   WritingEvaluationResult,
   WritingFeedback,
-  WritingQuestionEvaluationSummary,
 } from "@/lib/writing/writing-evaluation-types";
-import { randomUUID } from "node:crypto";
+import { createRandomId } from "@/lib/utils/random-id";
 
 export {
   WRITING_EVALUATION_MAX_WORDS,
@@ -24,19 +24,8 @@ export {
   WRITING_EVALUATION_TIMEOUT_MS,
 } from "@/lib/writing/writing-evaluation-validation";
 
-export function normalizeCambridgeExamLevel(raw?: string | null): CambridgeExamLevel {
-  if (!raw) return "flyers";
-  const slug = raw.toLowerCase().replace(/\s+/g, "_");
-  if (slug.includes("starter")) return "starters";
-  if (slug.includes("mover")) return "movers";
-  if (slug.includes("flyer")) return "flyers";
-  if (slug.includes("ket") || slug.includes("a2_key")) return "ket";
-  if (slug.includes("pet") || slug.includes("b1_preliminary")) return "pet";
-  if (["starters", "movers", "flyers", "ket", "pet"].includes(slug)) {
-    return slug as CambridgeExamLevel;
-  }
-  return "flyers";
-}
+export { normalizeCambridgeExamLevel } from "@/lib/cambridge-assessment/cambridge-level-utils";
+export { toWritingQuestionEvaluationSummary } from "@/lib/writing/writing-evaluation-ui";
 
 function resolveQuestionLevel(
   question: Question,
@@ -69,7 +58,7 @@ export function buildWritingEvaluationRequest(
   const level = resolveQuestionLevel(question, options?.level);
 
   return {
-    requestId: randomUUID(),
+    requestId: createRandomId(),
     level,
     taskType: toTaxonomyTaskType(content.cambridgeTaskType),
     prompt: content.prompt.prompt,
@@ -255,23 +244,6 @@ export function computeHybridMetricsFromResults(
     questions.length > 0 ? Math.round(percentSum / questions.length) : 0;
 
   return { score, maxScore, accuracyPercent };
-}
-
-export function toWritingQuestionEvaluationSummary(
-  envelope: WritingEvaluationEnvelope | null
-): WritingQuestionEvaluationSummary | null {
-  if (!envelope?.result) return null;
-  const r = envelope.result;
-  return {
-    overallScore: r.overallScore,
-    bandScore: r.bandScore,
-    dimensions: r.dimensions,
-    strengths: r.strengths,
-    weaknesses: r.weaknesses,
-    feedback: r.feedback,
-    correctedVersion: r.correctedVersion,
-    status: envelope.status,
-  };
 }
 
 export function toWritingFeedback(result: WritingEvaluationResult): WritingFeedback {
