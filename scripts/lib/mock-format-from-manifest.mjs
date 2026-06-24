@@ -24,12 +24,16 @@ export function deriveFormatFromManifest(manifest) {
     else listeningMode = "text";
   }
 
+  const hasWriting = (manifest.questions ?? []).some((q) => q.cambaQuestionType === "writing");
+  const hasSpeaking = (manifest.questions ?? []).some((q) => q.cambaQuestionType === "speaking");
+
   return {
     levelSlug: manifest.metadata.levelSlug ?? null,
-    isPracticeMock: true,
-    isAutoScoredSubset: true,
-    includesSpeaking: false,
-    includesWriting: false,
+    isPracticeMock: manifest.gold?.tier !== "gold",
+    isGoldMock: manifest.gold?.tier === "gold",
+    isAutoScoredSubset: false,
+    includesSpeaking: hasSpeaking,
+    includesWriting: hasWriting,
     includedSkillSlugs: [...new Set(sections.map((s) => s.skillSlug).filter(Boolean))],
     includedSectionTitles: sections.map((s) => s.title),
     listeningMode,

@@ -15,13 +15,22 @@ export function loadEnvFile(filePath) {
   }
 }
 
-export function createSupabaseFromEnv(rootDir) {
-  loadEnvFile(resolve(rootDir, ".env.local"));
+export function createSupabaseFromEnv(rootDir, options = {}) {
+  const envKey = options.env ?? process.env.SEED_ENV ?? "local";
+  const envFiles = {
+    local: ".env.local",
+    staging: ".env.staging.local",
+    production: ".env.production.local",
+  };
+  const envFile = envFiles[envKey] ?? envKey;
+  loadEnvFile(resolve(rootDir, envFile));
 
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim();
   if (!url || !key) {
-    throw new Error("Thiếu NEXT_PUBLIC_SUPABASE_URL hoặc SUPABASE_SERVICE_ROLE_KEY trong .env.local");
+    throw new Error(
+      `Thiếu NEXT_PUBLIC_SUPABASE_URL hoặc SUPABASE_SERVICE_ROLE_KEY trong ${envFile}`
+    );
   }
 
   return { url, key };

@@ -11,7 +11,9 @@ export { PROGRAM_ID, LEVEL_IDS };
 
 export const MOCK_BANK_UNIT_NUMBER = 99;
 
-const LEVEL_PREFIX = { starters: "02", movers: "03", flyers: "04" };
+const LEVEL_PREFIX = { starters: "02", movers: "03", flyers: "04", ket: "05", pet: "06" };
+
+const LEVEL_SERIES = { starters: "2", movers: "3", flyers: "4", ket: "5", pet: "6" };
 
 function assertLevel(levelSlug) {
   if (!LEVEL_PREFIX[levelSlug]) {
@@ -63,7 +65,8 @@ export function buildManifestSeedIds(levelSlug, testNumber, sectionSlugs, questi
 }
 
 export function mockBankUnitId(levelSlug, skillSlug = "reading") {
-  const series = { starters: "2", movers: "3", flyers: "4" }[levelSlug];
+  const series = LEVEL_SERIES[levelSlug];
+  if (!series) throw new Error(`No mock bank unit series for level "${levelSlug}"`);
   const suffix = {
     vocabulary: "000000000001",
     grammar: "000000000002",
@@ -76,7 +79,8 @@ export function mockBankUnitId(levelSlug, skillSlug = "reading") {
 }
 
 export function mockBankLessonId(levelSlug, skillSlug = "reading") {
-  const series = { starters: "2", movers: "3", flyers: "4" }[levelSlug];
+  const series = LEVEL_SERIES[levelSlug];
+  if (!series) throw new Error(`No mock bank lesson series for level "${levelSlug}"`);
   const suffix = {
     vocabulary: "000000000301",
     grammar: "000000000302",

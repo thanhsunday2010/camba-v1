@@ -1,12 +1,15 @@
 import { PROGRAM_ID, LEVEL_IDS, mockSkillId } from "./mock-test-ids.mjs";
 import { validateManifestForSeeding } from "./validate-mock-test-manifest.mjs";
 import { deriveFormatFromManifest } from "./mock-format-from-manifest.mjs";
+import { resolveDbQuestionType } from "./db-question-type.mjs";
 
 function buildQuestionContent(q, mockContext) {
   const base = {
     skillTag: q.skillTag,
     topicTag: q.topicTag,
     levelTag: q.content?.levelTag ?? null,
+    cambaQuestionType: q.cambaQuestionType,
+    blueprintQuestionType: q.blueprintQuestionType ?? null,
     difficultyRating:
       q.difficulty === "easy" ? 1 : q.difficulty === "medium" ? 2 : 3,
     ...(q.content ?? {}),
@@ -142,7 +145,7 @@ async function upsertQuestion(supabase, exerciseId, q, questionId, sortOrder, mo
       id: questionId,
       exercise_id: exerciseId,
       question_text: q.questionText,
-      question_type: q.cambaQuestionType,
+      question_type: resolveDbQuestionType(q.cambaQuestionType),
       points: q.points,
       sort_order: sortOrder,
       explanation: q.explanation ?? null,
@@ -180,6 +183,12 @@ async function upsertQuestion(supabase, exerciseId, q, questionId, sortOrder, mo
   }
 }
 
+function normalizeSectionSkillSlug(skillSlug) {
+  if (!skillSlug) return null;
+  if (skillSlug === "reading_writing") return "reading";
+  return skillSlug;
+}
+
 export async function seedMockTestFromManifest(supabase, manifest) {
   const validation = validateManifestForSeeding(manifest);
   if (!validation.valid) {
@@ -193,6 +202,7 @@ export async function seedMockTestFromManifest(supabase, manifest) {
   const { metadata, sections, questions } = manifest;
   const { mockTestId, containerExerciseId, sectionIds, questionIds } = metadata.seedIds;
   const levelId = LEVEL_IDS[metadata.levelSlug];
+  const isGoldMock = manifest.gold?.tier === "gold";
   const formatMetadata = deriveFormatFromManifest(manifest);
 
   await ensureMockQuestionBank(supabase, manifest);
@@ -212,7 +222,9 @@ export async function seedMockTestFromManifest(supabase, manifest) {
         stableSlug: metadata.stableSlug,
         blueprintId: metadata.blueprintId,
         formKind: metadata.formKind,
-        yleMock: true,
+        yleMock: !isGoldMock,
+        goldMock: isGoldMock,
+        goldMockId: manifest.gold?.goldMockId ?? null,
         format: formatMetadata,
       },
     },
@@ -229,7 +241,7 @@ export async function seedMockTestFromManifest(supabase, manifest) {
     }
 
     const skillIdForSection = section.skillSlug
-      ? mockSkillId(metadata.levelSlug, section.skillSlug)
+      ? mockSkillId(metadata.levelSlug, normalizeSectionSkillSlug(section.skillSlug))
       : null;
 
     const { error: sectionError } = await supabase.from("mock_test_sections").upsert(

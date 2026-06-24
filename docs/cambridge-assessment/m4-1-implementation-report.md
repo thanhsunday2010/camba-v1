@@ -123,3 +123,6 @@ Gold Mocks are the permanent source of truth. Generated mocks must not replace t
 | `npm run certify:mocks` | Batch certification (15 mocks) |
 | `npm run report:gold-mock-coverage` | Regenerate coverage report |
 | `GOLD_WRITE=1 npm run test:validation` | Rewrite JSON manifests |
+| `npm run seed:gold-mocks` | Publish all 15 Gold Mocks to Supabase |
+| `SEED_ENV=staging npm run seed:gold-mocks` | Seed staging database |
+| `SEED_ENV=production npm run seed:gold-mocks` | Seed production database |

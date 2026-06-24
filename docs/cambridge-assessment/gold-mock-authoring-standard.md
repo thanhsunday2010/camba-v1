@@ -182,7 +182,33 @@ Use `goldSpeaking()` helper only. Gemini evaluation uses M2.3 contracts.
 
 ---
 
-## File Structure
+## Supabase Publishing (M4.1 → student-facing)
+
+Gold Mocks in the repo are **not** visible on `/mock-tests` until seeded into Supabase.
+
+```bash
+# Validate all 15 manifests (no DB writes)
+npm run seed:gold-mocks -- --dry-run
+
+# Seed local/staging (.env.local)
+npm run seed:gold-mocks
+
+# Seed one level
+npm run seed:gold-mocks -- starters
+
+# Staging / production (create .env.staging.local or .env.production.local)
+SEED_ENV=staging npm run seed:gold-mocks
+SEED_ENV=production npm run seed:gold-mocks
+```
+
+Requires `NEXT_PUBLIC_SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` in the chosen env file.
+
+Deterministic mock test IDs: `{levelSeries}{version}-0000-4000-8000-000000000001`  
+(e.g. Starters Mock 1 → `02000001-…`, PET Mock 3 → `06000003-…`).
+
+**Note:** If migration `010_data_model_alignment.sql` is not applied on the target DB, `reading_comprehension` items are stored as `reading` (runtime normalizes via `normalizeQuestionType`).
+
+---
 
 ```
 src/lib/cambridge-assessment/gold-mocks/manifests/
