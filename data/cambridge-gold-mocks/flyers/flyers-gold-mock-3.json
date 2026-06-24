@@ -129,7 +129,7 @@
       "instructions": "Link names to pictures",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "src": "/audio/gold-mocks/flyers-gold-mock-3/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Dr Tan. She's pointing at birds with her binoculars.\nHugo's building a sandcastle near the sea.\nMei is sketching wild flowers in her woodland notebook.\nMr Costa plays guitar while families relax on the grass every Sunday.\nRuby's got a hat with a bright butterfly badge on it.\nSamir is standing beside a canoe on the riverbank with his team.\nThe ranger showed a trail map at the hilltop viewpoint yesterday evening.",
         "caption": "Link names to pictures"
       }
@@ -142,7 +142,7 @@
       "instructions": "Write words or numbers",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "src": "/audio/gold-mocks/flyers-gold-mock-3/listening-part-2.mp3",
         "transcript": "Examiner: Listen and write the missing word or number.\n\nTomorrow the temperature will be nineteen degrees with sunny spells.\nThe children are looking for a deer on the nature trail.\nThe film starts at quarter past four this afternoon.\nThey are going to camp for two nights in the forest.\nThe waterfall path opened in two thousand twenty.\nIvy swam across the lake faster than anyone else in the group.\nYou need six apples for the picnic fruit salad.",
         "caption": "Write words or numbers"
       }
@@ -155,7 +155,7 @@
       "instructions": "Tick the correct picture",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "src": "/audio/gold-mocks/flyers-gold-mock-3/listening-part-3.mp3",
         "transcript": "Examiner: Listen and tick the correct picture.\n\nThe children are watching colourful birds in the trees near the lake.\nAt the theme park visitors can ride a fast wooden roller coaster.\nDuring the hike it started raining heavily so they put on waterproof jackets.\nThe leisure centre offers swimming and badminton on Fridays.\nThe cave entrance is at the bottom of the cliff path by the sea.\nOn the first day of their holiday the family will explore a coastal nature reserve.\nThe otter was the most surprising animal to see on the river walk.",
         "caption": "Tick the correct picture"
       }
@@ -168,7 +168,7 @@
       "instructions": "Colour and draw",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "src": "/audio/gold-mocks/flyers-gold-mock-3/listening-part-4.mp3",
         "transcript": "Examiner: Listen and colour or draw.\n\nColour the flowers in the planter bright pink.\nDraw a kite in the sky above the picnic area.\nColour the girl's scarf sky blue.\nDraw an arrow from the boy to the lake.\nDraw two ducks on the pond near the reeds.\nColour the picnic blanket red and white checks.\nDraw a butterfly beside the flower bed.",
         "caption": "Colour and draw"
       }
@@ -409,11 +409,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. How many degrees will it be tomorrow?",
-      "template": "Tomorrow the temperature will be [0] degrees.",
-      "correctAnswers": [
-        "nineteen",
-        "19"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "Tomorrow the temperature will be [0] degrees.",
         "correctAnswers": [
@@ -421,9 +418,7 @@
           "19"
         ],
         "transcriptSnippet": "Tomorrow the temperature will be nineteen degrees with sunny spells."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm3-009",
@@ -442,19 +437,15 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. Which animal are the children looking for?",
-      "template": "The children are looking for a [0].",
-      "correctAnswers": [
-        "deer"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The children are looking for a [0].",
         "correctAnswers": [
           "deer"
         ],
         "transcriptSnippet": "The children are looking for a deer on the nature trail."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm3-010",
@@ -473,12 +464,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What time does the film start?",
-      "template": "The film starts at [0].",
-      "correctAnswers": [
-        "quarter past four",
-        "4:15",
-        "four fifteen"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The film starts at [0].",
         "correctAnswers": [
@@ -487,9 +474,7 @@
           "four fifteen"
         ],
         "transcriptSnippet": "The film starts at quarter past four this afternoon."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm3-011",
@@ -508,11 +493,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. How many nights are they going to camp?",
-      "template": "They are going to camp for [0] nights.",
-      "correctAnswers": [
-        "two",
-        "2"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "They are going to camp for [0] nights.",
         "correctAnswers": [
@@ -520,9 +502,7 @@
           "2"
         ],
         "transcriptSnippet": "They are going to camp for two nights in the forest."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm3-012",
@@ -541,11 +521,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. When did the waterfall path open?",
-      "template": "The waterfall path opened in [0].",
-      "correctAnswers": [
-        "two thousand twenty",
-        "2020"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The waterfall path opened in [0].",
         "correctAnswers": [
@@ -553,9 +530,7 @@
           "2020"
         ],
         "transcriptSnippet": "The waterfall path opened in two thousand twenty."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm3-013",
@@ -574,19 +549,15 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. Who swam across the lake fastest?",
-      "template": "The fastest swimmer was [0].",
-      "correctAnswers": [
-        "Ivy"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The fastest swimmer was [0].",
         "correctAnswers": [
           "Ivy"
         ],
         "transcriptSnippet": "Ivy swam across the lake faster than anyone else in the group."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm3-014",
@@ -605,11 +576,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. How many apples do you need for the picnic?",
-      "template": "You need [0] apples.",
-      "correctAnswers": [
-        "six",
-        "6"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "You need [0] apples.",
         "correctAnswers": [
@@ -617,9 +585,7 @@
           "6"
         ],
         "transcriptSnippet": "You need six apples for the picnic fruit salad."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm3-015",
@@ -1431,7 +1397,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"The school butterfly garden attracts bee…\" Choose the correct picture.",
-      "passage": "The school butterfly garden attracts bees and colourful insects every spring.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The school butterfly garden attracts bees and colourful insects every spring."
+      },
       "choices": [
         {
           "text": "Garden with butterflies and flowers",
@@ -1451,12 +1421,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The school butterfly garden attracts bees and colourful insects every spring."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-037",
@@ -1475,7 +1440,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"The crowd is cheering because their favo…\" Choose the correct picture.",
-      "passage": "The crowd is cheering because their favourite band is playing on stage.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The crowd is cheering because their favourite band is playing on stage."
+      },
       "choices": [
         {
           "text": "Excited crowd at a concert",
@@ -1495,12 +1464,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The crowd is cheering because their favourite band is playing on stage."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-038",
@@ -1519,7 +1483,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"Last week rangers rescued a young fox th…\" Choose the correct picture.",
-      "passage": "Last week rangers rescued a young fox that was trapped near the forest path.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last week rangers rescued a young fox that was trapped near the forest path."
+      },
       "choices": [
         {
           "text": "Rangers helping a fox",
@@ -1539,12 +1507,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last week rangers rescued a young fox that was trapped near the forest path."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-039",
@@ -1563,7 +1526,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"We are going to pack swimming costumes a…\" Choose the correct picture.",
-      "passage": "We are going to pack swimming costumes and sun hats for our lakeside holiday.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "We are going to pack swimming costumes and sun hats for our lakeside holiday."
+      },
       "choices": [
         {
           "text": "Family packing holiday bags",
@@ -1583,12 +1550,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "We are going to pack swimming costumes and sun hats for our lakeside holiday."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-040",
@@ -1607,7 +1569,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"The lake has got clear water and small b…\" Choose the correct picture.",
-      "passage": "The lake has got clear water and small boats for visitors to rent.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The lake has got clear water and small boats for visitors to rent."
+      },
       "choices": [
         {
           "text": "Calm lake with rental boats",
@@ -1627,12 +1593,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The lake has got clear water and small boats for visitors to rent."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-041",
@@ -1651,7 +1612,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"While the wind was blowing, the climber…\" Choose the correct picture.",
-      "passage": "While the wind was blowing, the climber was feeling nervous on the narrow ridge.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "While the wind was blowing, the climber was feeling nervous on the narrow ridge."
+      },
       "choices": [
         {
           "text": "Climber on a windy ridge",
@@ -1671,12 +1636,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "While the wind was blowing, the climber was feeling nervous on the narrow ridge."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-042",
@@ -1695,7 +1655,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"Friends can borrow films from the librar…\" Choose the correct picture.",
-      "passage": "Friends can borrow films from the library and watch them together at home.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Friends can borrow films from the library and watch them together at home."
+      },
       "choices": [
         {
           "text": "Friends watching a film at home",
@@ -1715,12 +1679,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Friends can borrow films from the library and watch them together at home."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-043",
@@ -1740,7 +1699,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"Rainforest Diary — Day 2\n\nWe walked…\" and choose the best answer.",
-      "passage": "Rainforest Diary — Day 2\n\nWe walked beneath tall trees and heard monkeys calling above us. Our guide explained how plants and animals depend on each other. Yesterday we saw a bright tree frog near a stream. Tonight we are going to camp beside a waterfall and listen for night birds. Protecting the forest is important for the whole planet.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Rainforest Diary — Day 2\n\nWe walked beneath tall trees and heard monkeys calling above us. Our guide explained how plants and animals depend on each other. Yesterday we saw a bright tree frog near a stream. Tonight we are going to camp beside a waterfall and listen for night birds. Protecting the forest is important for the whole planet."
+      },
       "choices": [
         {
           "text": "They heard monkeys in the rainforest.",
@@ -1760,12 +1723,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Rainforest Diary — Day 2\n\nWe walked beneath tall trees and heard monkeys calling above us. Our guide explained how plants and animals depend on each other. Yesterday we saw a bright tree frog near a stream. Tonight we are going to camp beside a waterfall and listen for night birds. Protecting the forest is important for the whole planet."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-044",
@@ -1784,7 +1742,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"Harbour Lighthouse was built in 187…\" and choose the best answer.",
-      "passage": "Harbour Lighthouse was built in 1871 on a rocky headland. Keepers guided ships safely for many years before modern radar existed. During a fierce storm in 1953, the lamp stayed lit all night. Today visitors can climb the tower and learn about sea rescue. On clear evenings the view of the coastline is breathtaking.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Harbour Lighthouse was built in 1871 on a rocky headland. Keepers guided ships safely for many years before modern radar existed. During a fierce storm in 1953, the lamp stayed lit all night. Today visitors can climb the tower and learn about sea rescue. On clear evenings the view of the coastline is breathtaking."
+      },
       "choices": [
         {
           "text": "The lighthouse helped guide ships.",
@@ -1804,12 +1766,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Harbour Lighthouse was built in 1871 on a rocky headland. Keepers guided ships safely for many years before modern radar existed. During a fierce storm in 1953, the lamp stayed lit all night. Today visitors can climb the tower and learn about sea rescue. On clear evenings the view of the coastline is breathtaking."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-045",
@@ -1828,7 +1785,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"My Feelings Journal\n\nI am preparing…\" and choose the best answer.",
-      "passage": "My Feelings Journal\n\nI am preparing for the school play and I feel excited but also a little nervous. My friends are practising their lines in the drama room. We are helping each other remember when to speak. The teacher says it is normal to feel worried before a performance. I think the audience will enjoy the story.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "My Feelings Journal\n\nI am preparing for the school play and I feel excited but also a little nervous. My friends are practising their lines in the drama room. We are helping each other remember when to speak. The teacher says it is normal to feel worried before a performance. I think the audience will enjoy the story."
+      },
       "choices": [
         {
           "text": "The writer feels excited and a little nervous.",
@@ -1848,12 +1809,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "My Feelings Journal\n\nI am preparing for the school play and I feel excited but also a little nervous. My friends are practising their lines in the drama room. We are helping each other remember when to speak. The teacher says it is normal to feel worried before a performance. I think the audience will enjoy the story."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-046",
@@ -1872,7 +1828,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"Summer Leisure Guide\n\nSwimmers must…\" and choose the best answer.",
-      "passage": "Summer Leisure Guide\n\nSwimmers must shower before entering the pool. You mustn't run on the wet floor because it is slippery. The outdoor cinema shows family films every Friday. Tennis courts are free before ten o'clock in the morning. Next week the park is going to host a kite-flying festival.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Summer Leisure Guide\n\nSwimmers must shower before entering the pool. You mustn't run on the wet floor because it is slippery. The outdoor cinema shows family films every Friday. Tennis courts are free before ten o'clock in the morning. Next week the park is going to host a kite-flying festival."
+      },
       "choices": [
         {
           "text": "The outdoor cinema shows films on Fridays.",
@@ -1892,12 +1852,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Summer Leisure Guide\n\nSwimmers must shower before entering the pool. You mustn't run on the wet floor because it is slippery. The outdoor cinema shows family films every Friday. Tennis courts are free before ten o'clock in the morning. Next week the park is going to host a kite-flying festival."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-047",
@@ -1916,7 +1871,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"When the forest path split in two d…\" and choose the best answer.",
-      "passage": "When the forest path split in two directions, Leo felt confused. He was checking the map while his sister was listening for the stream they had crossed earlier. They were getting tired because the sun was setting quickly. A ranger appeared with a torch and calmly led them back to the campsite. Leo felt grateful and promised to stay on marked trails.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When the forest path split in two directions, Leo felt confused. He was checking the map while his sister was listening for the stream they had crossed earlier. They were getting tired because the sun was setting quickly. A ranger appeared with a torch and calmly led them back to the campsite. Leo felt grateful and promised to stay on marked trails."
+      },
       "choices": [
         {
           "text": "A ranger helped them return to the campsite.",
@@ -1936,12 +1895,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When the forest path split in two directions, Leo felt confused. He was checking the map while his sister was listening for the stream they had crossed earlier. They were getting tired because the sun was setting quickly. A ranger appeared with a torch and calmly led them back to the campsite. Leo felt grateful and promised to stay on marked trails."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-048",
@@ -1960,7 +1914,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"Reading a book by the lake is quiet…\" and choose the best answer.",
-      "passage": "Reading a book by the lake is quieter than playing volleyball on the beach. Some people find fishing more relaxing than cycling uphill. Others say team sports feel more exciting than sitting still. Doctors remind us that different leisure activities suit different moods, and it is good to try more than one.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Reading a book by the lake is quieter than playing volleyball on the beach. Some people find fishing more relaxing than cycling uphill. Others say team sports feel more exciting than sitting still. Doctors remind us that different leisure activities suit different moods, and it is good to try more than one."
+      },
       "choices": [
         {
           "text": "Different activities suit different moods.",
@@ -1980,12 +1938,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Reading a book by the lake is quieter than playing volleyball on the beach. Some people find fishing more relaxing than cycling uphill. Others say team sports feel more exciting than sitting still. Doctors remind us that different leisure activities suit different moods, and it is good to try more than one."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-049",
@@ -2004,7 +1957,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"The Lakeside Nature Festival was th…\" and choose the best answer.",
-      "passage": "The Lakeside Nature Festival was the most popular event of the summer. The bird-watching walk was the quietest activity, but the canoe race was the most thrilling. Many families said the sunset picnic was the most beautiful moment of the day. The recycled-art workshop was the most creative stall. Visitors agreed the lake setting was the best part of the festival.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The Lakeside Nature Festival was the most popular event of the summer. The bird-watching walk was the quietest activity, but the canoe race was the most thrilling. Many families said the sunset picnic was the most beautiful moment of the day. The recycled-art workshop was the most creative stall. Visitors agreed the lake setting was the best part of the festival."
+      },
       "choices": [
         {
           "text": "Many families enjoyed the sunset picnic.",
@@ -2024,12 +1981,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The Lakeside Nature Festival was the most popular event of the summer. The bird-watching walk was the quietest activity, but the canoe race was the most thrilling. Many families said the sunset picnic was the most beautiful moment of the day. The recycled-art workshop was the most creative stall. Visitors agreed the lake setting was the best part of the festival."
-      }
+      ]
     },
     {
       "questionRef": "fgm3-050",
@@ -2048,17 +2000,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a message about a nature trip you are planning.",
-      "cambridgeTaskType": "write_note",
-      "prompt": "Write a message to a friend about a nature trip you are planning. Say where you are going, what you hope to see, and why you think your friend would enjoy it.",
-      "minWords": 25,
-      "maxWords": 60,
-      "taskDescription": "Invite your friend on a nature trip.",
-      "requiredPoints": [
-        "Say where you are going",
-        "Explain what you hope to see or do",
-        "Say why your friend might enjoy it",
-        "Ask your friend to come with you"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2093,17 +2034,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a note to a friend about how you felt after an event.",
-      "cambridgeTaskType": "write_note",
-      "prompt": "Write a note to a friend explaining how you felt after a school event or performance. Describe what happened and why you felt that way.",
-      "minWords": 22,
-      "maxWords": 55,
-      "taskDescription": "Describe your feelings after an event.",
-      "requiredPoints": [
-        "Say which event you are writing about",
-        "Describe how you felt and why",
-        "Mention one thing that happened",
-        "Ask your friend about a similar experience"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2138,17 +2068,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a note recommending a leisure activity.",
-      "cambridgeTaskType": "write_note",
-      "prompt": "Write a note to a classmate recommending a leisure activity you tried recently. Explain what you did and give your honest opinion.",
-      "minWords": 25,
-      "maxWords": 60,
-      "taskDescription": "Recommend a leisure activity.",
-      "requiredPoints": [
-        "Say which activity you tried",
-        "Describe what you did",
-        "Give your opinion and reasons",
-        "Say who else might enjoy it"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2184,17 +2103,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a story called 'The Whispering Trees'.",
-      "cambridgeTaskType": "write_story",
-      "prompt": "Write a story called 'The Whispering Trees'. Include what the characters discovered in the forest, how they felt, and how the adventure ended.",
-      "minWords": 40,
-      "maxWords": 95,
-      "taskDescription": "Write a forest adventure story.",
-      "requiredPoints": [
-        "Set the story in a natural place",
-        "Include a surprise or problem",
-        "Describe how characters felt",
-        "Explain how the story ended"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2230,17 +2138,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a story about a holiday that did not go as planned.",
-      "cambridgeTaskType": "write_story",
-      "prompt": "Write a story about a holiday that did not go as planned. Describe what went wrong, how the characters felt, and what they did next.",
-      "minWords": 45,
-      "maxWords": 100,
-      "taskDescription": "Write a holiday story with a problem.",
-      "requiredPoints": [
-        "Explain what the characters expected",
-        "Describe the problem that happened",
-        "Say how the characters felt",
-        "Explain what they did in the end"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2276,17 +2173,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write about the waterfall scene.",
-      "cambridgeTaskType": "picture_description",
-      "prompt": "Look at the picture. Write three or four sentences about the waterfall scene. Say what people and animals are doing and describe the natural surroundings.",
-      "minWords": 15,
-      "maxWords": 50,
-      "imageUrl": "/images/gold-mocks/flyers/fgm3-055-waterfall.png",
-      "taskDescription": "Describe the waterfall scene.",
-      "requiredPoints": [
-        "Describe the natural surroundings",
-        "Say what at least two people or animals are doing",
-        "Add a detail that shows how the place feels"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2295,7 +2181,7 @@
         "taskDescription": "Describe the waterfall scene.",
         "minWords": 15,
         "maxWords": 50,
-        "imageUrl": "/images/gold-mocks/flyers/fgm3-055-waterfall.png",
+        "imageUrl": "/images/gold-mocks/flyers/fgm3-055-waterfall.svg",
         "requiredPoints": [
           "Describe the natural surroundings",
           "Say what at least two people or animals are doing",
@@ -2322,17 +2208,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write about the leisure park.",
-      "cambridgeTaskType": "picture_description",
-      "prompt": "Look at the picture. Write three or four sentences about the leisure park. Compare two areas and say what visitors are enjoying.",
-      "minWords": 15,
-      "maxWords": 55,
-      "imageUrl": "/images/gold-mocks/flyers/fgm3-056-leisure-park.png",
-      "taskDescription": "Describe the leisure park.",
-      "requiredPoints": [
-        "Compare two areas or activities in the picture",
-        "Say what visitors are enjoying",
-        "Use your own words to describe the atmosphere"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2341,7 +2216,7 @@
         "taskDescription": "Describe the leisure park.",
         "minWords": 15,
         "maxWords": 55,
-        "imageUrl": "/images/gold-mocks/flyers/fgm3-056-leisure-park.png",
+        "imageUrl": "/images/gold-mocks/flyers/fgm3-056-leisure-park.svg",
         "requiredPoints": [
           "Compare two areas or activities in the picture",
           "Say what visitors are enjoying",
@@ -2368,17 +2243,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Look at the two park differences pictures. Tell your partner about the differences.",
-      "cambridgeTaskType": "speaking_picture_description",
-      "prompt": "Look at these two pictures of a nature park. Tell your partner about five differences between them. Describe what you see and how the scene feels.",
-      "maxDurationSeconds": 120,
-      "imageUrl": "/images/gold-mocks/flyers/fgm3-057-park-pair.png",
-      "followUpQuestions": [
-        "What is different about the trees in picture B?",
-        "How many people are sitting by the lake in picture A?",
-        "Is there a kite in both pictures?",
-        "Where is the dog in picture B?",
-        "What colour are the flowers in picture A?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2392,7 +2256,7 @@
           "Where is the dog in picture B?",
           "What colour are the flowers in picture A?"
         ],
-        "imageUrl": "/images/gold-mocks/flyers/fgm3-057-park-pair.png",
+        "imageUrl": "/images/gold-mocks/flyers/fgm3-057-park-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -2415,16 +2279,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Answer the examiner's questions about about nature feelings.",
-      "cambridgeTaskType": "speaking_personal_questions",
-      "prompt": "The examiner will ask you about nature, how you feel in different situations, and how you spend your free time. Answer in your own words and give examples from your life.",
-      "maxDurationSeconds": 180,
-      "followUpQuestions": [
-        "Tell me about a place in nature you like visiting. Why do you enjoy it?",
-        "How do you usually feel before a test or performance?",
-        "What do you like doing with friends at the weekend?",
-        "Describe a time when you felt proud of something you did.",
-        "If you could spend a day anywhere outdoors, where would you go and why?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2460,22 +2314,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Look at these pictures and tell the story of a family camping trip by the lake. Describe what happened, how people felt at different moments, and how the trip ended.",
-      "cambridgeTaskType": "speaking_storytelling",
-      "prompt": "Look at these pictures and tell the story of a family camping trip by the lake. Describe what happened, how people felt at different moments, and how the trip ended.",
-      "maxDurationSeconds": 180,
-      "pictureSequence": [
-        "/images/gold-mocks/flyers/fgm3-059-story-1-arrive.png",
-        "/images/gold-mocks/flyers/fgm3-059-story-2-rain.png",
-        "/images/gold-mocks/flyers/fgm3-059-story-3-shelter.png",
-        "/images/gold-mocks/flyers/fgm3-059-story-4-stars.png"
-      ],
-      "followUpQuestions": [
-        "Why did the family choose to camp by the lake?",
-        "What happened when the weather changed?",
-        "How did the family feel during the problem?",
-        "What did they do to stay comfortable?",
-        "How did they feel when they saw the stars?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2490,10 +2328,10 @@
           "How did they feel when they saw the stars?"
         ],
         "pictureSequence": [
-          "/images/gold-mocks/flyers/fgm3-059-story-1-arrive.png",
-          "/images/gold-mocks/flyers/fgm3-059-story-2-rain.png",
-          "/images/gold-mocks/flyers/fgm3-059-story-3-shelter.png",
-          "/images/gold-mocks/flyers/fgm3-059-story-4-stars.png"
+          "/images/gold-mocks/flyers/fgm3-059-story-1-arrive.svg",
+          "/images/gold-mocks/flyers/fgm3-059-story-2-rain.svg",
+          "/images/gold-mocks/flyers/fgm3-059-story-3-shelter.svg",
+          "/images/gold-mocks/flyers/fgm3-059-story-4-stars.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

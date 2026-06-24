@@ -1,5 +1,7 @@
 export const SPEAKING_SUPPORTED_MIME_TYPES = [
   "audio/webm",
+  "audio/mp4",
+  "audio/ogg",
   "audio/mp3",
   "audio/mpeg",
   "audio/wav",

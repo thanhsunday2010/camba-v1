@@ -121,7 +121,7 @@
       "instructions": "Link names to pictures",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "src": "/audio/gold-mocks/movers-gold-mock-2/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Emma. She's holding a red umbrella because it's raining.\nSam is working on the building site. He's wearing a yellow hard hat.\nLily always uses a laptop in computer class.\nBen is pointing at the weather map on the TV screen.\nZoe's got small tools and she's fixing a computer.\nJake is standing between two computer screens in the office.",
         "caption": "Link names to pictures"
       }
@@ -134,7 +134,7 @@
       "instructions": "Write words or numbers",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "src": "/audio/gold-mocks/movers-gold-mock-2/listening-part-2.mp3",
         "transcript": "Examiner: Listen and write the missing word or number.\n\nThe temperature today is twenty degrees.\nMy dad is an engineer and he builds bridges.\nLook outside. The weather is cloudy and grey.\nThere are eight computers in the technology shop.\nShe is downloading a new game on her tablet.\nThe weather show starts at quarter past four.",
         "caption": "Write words or numbers"
       }
@@ -147,7 +147,7 @@
       "instructions": "Tick the correct picture",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "src": "/audio/gold-mocks/movers-gold-mock-2/listening-part-3.mp3",
         "transcript": "Examiner: Listen and tick the correct picture.\n\nAt robot club the children are learning how to build robots.\nMaria uses a weather app every morning before school.\nOur robot can play music when we clap our hands.\nThe forecast says it is going to rain tomorrow.\nThey use a tablet to film their school technology project.\nThis afternoon they are going to test the new drone in the playground.",
         "caption": "Tick the correct picture"
       }
@@ -160,7 +160,7 @@
       "instructions": "Colour and draw",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "src": "/audio/gold-mocks/movers-gold-mock-2/listening-part-4.mp3",
         "transcript": "Examiner: Listen and colour or draw.\n\nColour the computer screen blue, please.\nNow colour the raincoat on the chair yellow.\nDraw a cloud above the building.\nColour the tablet case red.\nDraw a sun next to the window.\nDraw a line from the girl to the microphone on her desk.",
         "caption": "Colour and draw"
       }
@@ -370,11 +370,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What is the temperature today?",
-      "template": "The temperature is [0] degrees.",
-      "correctAnswers": [
-        "twenty",
-        "20"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The temperature is [0] degrees.",
         "correctAnswers": [
@@ -382,9 +379,7 @@
           "20"
         ],
         "transcriptSnippet": "The temperature today is twenty degrees."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "mgm2-008",
@@ -403,19 +398,15 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What is Dad's job?",
-      "template": "Dad is a [0].",
-      "correctAnswers": [
-        "engineer"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "Dad is a [0].",
         "correctAnswers": [
           "engineer"
         ],
         "transcriptSnippet": "My dad is an engineer and he builds bridges."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "mgm2-009",
@@ -433,19 +424,15 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What is the weather like?",
-      "template": "The weather is [0].",
-      "correctAnswers": [
-        "cloudy"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The weather is [0].",
         "correctAnswers": [
           "cloudy"
         ],
         "transcriptSnippet": "Look outside. The weather is cloudy and grey."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "mgm2-010",
@@ -464,11 +451,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. How many computers are in the shop?",
-      "template": "There are [0] computers.",
-      "correctAnswers": [
-        "eight",
-        "8"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "There are [0] computers.",
         "correctAnswers": [
@@ -476,9 +460,7 @@
           "8"
         ],
         "transcriptSnippet": "There are eight computers in the technology shop."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "mgm2-011",
@@ -497,19 +479,15 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What is the girl downloading?",
-      "template": "She is downloading a [0].",
-      "correctAnswers": [
-        "game"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "She is downloading a [0].",
         "correctAnswers": [
           "game"
         ],
         "transcriptSnippet": "She is downloading a new game on her tablet."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "mgm2-012",
@@ -528,12 +506,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What time does the weather show start?",
-      "template": "The show starts at [0].",
-      "correctAnswers": [
-        "quarter past four",
-        "4:15",
-        "4.15"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The show starts at [0].",
         "correctAnswers": [
@@ -542,9 +516,7 @@
           "4.15"
         ],
         "transcriptSnippet": "The weather show starts at quarter past four."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "mgm2-013",
@@ -1240,7 +1212,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"The thunderstorm is very loud tonight an…\" Choose the correct picture.",
-      "passage": "The thunderstorm is very loud tonight and we can't sleep.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The thunderstorm is very loud tonight and we can't sleep."
+      },
       "choices": [
         {
           "text": "Dark sky with lightning",
@@ -1260,12 +1236,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The thunderstorm is very loud tonight and we can't sleep."
-      }
+      ]
     },
     {
       "questionRef": "mgm2-032",
@@ -1284,7 +1255,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"My uncle is teaching computer skills at…\" Choose the correct picture.",
-      "passage": "My uncle is teaching computer skills at our school.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "My uncle is teaching computer skills at our school."
+      },
       "choices": [
         {
           "text": "Man helping children use computers",
@@ -1304,12 +1279,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "My uncle is teaching computer skills at our school."
-      }
+      ]
     },
     {
       "questionRef": "mgm2-033",
@@ -1328,7 +1298,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"We watch the weather news on TV every ev…\" Choose the correct picture.",
-      "passage": "We watch the weather news on TV every evening after dinner.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "We watch the weather news on TV every evening after dinner."
+      },
       "choices": [
         {
           "text": "Family watching weather on TV",
@@ -1348,12 +1322,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "We watch the weather news on TV every evening after dinner."
-      }
+      ]
     },
     {
       "questionRef": "mgm2-034",
@@ -1372,7 +1341,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"My mum wears a blue uniform when she wor…\" Choose the correct picture.",
-      "passage": "My mum wears a blue uniform when she works at the hospital.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "My mum wears a blue uniform when she works at the hospital."
+      },
       "choices": [
         {
           "text": "Woman in blue nurse uniform",
@@ -1392,12 +1365,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "My mum wears a blue uniform when she works at the hospital."
-      }
+      ]
     },
     {
       "questionRef": "mgm2-035",
@@ -1416,7 +1384,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"The robot is moving around the classroom…\" Choose the correct picture.",
-      "passage": "The robot is moving around the classroom and saying hello.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The robot is moving around the classroom and saying hello."
+      },
       "choices": [
         {
           "text": "Robot in a classroom",
@@ -1436,12 +1408,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The robot is moving around the classroom and saying hello."
-      }
+      ]
     },
     {
       "questionRef": "mgm2-036",
@@ -1460,7 +1427,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read: \"It's snowing heavily so we can't ride ou…\" Choose the correct picture.",
-      "passage": "It's snowing heavily so we can't ride our bikes to school today.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "It's snowing heavily so we can't ride our bikes to school today."
+      },
       "choices": [
         {
           "text": "Snow falling, bikes in garage",
@@ -1480,12 +1451,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "It's snowing heavily so we can't ride our bikes to school today."
-      }
+      ]
     },
     {
       "questionRef": "mgm2-037",
@@ -1504,7 +1470,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"Hi! I'm Sofia and I'm in the weathe…\" and choose the best answer.",
-      "passage": "Hi! I'm Sofia and I'm in the weather club at school. Every Friday we check the thermometer and write a short forecast for our class. Last week we said it would be windy and we were right! I want to be a weather reporter when I'm older.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Hi! I'm Sofia and I'm in the weather club at school. Every Friday we check the thermometer and write a short forecast for our class. Last week we said it would be windy and we were right! I want to be a weather reporter when I'm older."
+      },
       "choices": [
         {
           "text": "Sofia is in a weather club at school.",
@@ -1524,12 +1494,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Hi! I'm Sofia and I'm in the weather club at school. Every Friday we check the thermometer and write a short forecast for our class. Last week we said it would be windy and we were right! I want to be a weather reporter when I'm older."
-      }
+      ]
     },
     {
       "questionRef": "mgm2-038",
@@ -1548,7 +1513,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"Last Saturday our school had a tech…\" and choose the best answer.",
-      "passage": "Last Saturday our school had a technology fair. Students showed robots, tablets and a small drone. My team built a robot that could carry books. The judges gave us a prize for the best design. We were very proud.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Saturday our school had a technology fair. Students showed robots, tablets and a small drone. My team built a robot that could carry books. The judges gave us a prize for the best design. We were very proud."
+      },
       "choices": [
         {
           "text": "The school had a technology fair on Saturday.",
@@ -1568,12 +1537,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last Saturday our school had a technology fair. Students showed robots, tablets and a small drone. My team built a robot that could carry books. The judges gave us a prize for the best design. We were very proud."
-      }
+      ]
     },
     {
       "questionRef": "mgm2-039",
@@ -1592,7 +1556,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"My dad started a new job at an offi…\" and choose the best answer.",
-      "passage": "My dad started a new job at an office last month. He designs websites on his computer every day. Sometimes he works from home when the weather is bad. He says his job is interesting but he must finish projects on time.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "My dad started a new job at an office last month. He designs websites on his computer every day. Sometimes he works from home when the weather is bad. He says his job is interesting but he must finish projects on time."
+      },
       "choices": [
         {
           "text": "Dad designs websites at his new job.",
@@ -1612,12 +1580,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "My dad started a new job at an office last month. He designs websites on his computer every day. Sometimes he works from home when the weather is bad. He says his job is interesting but he must finish projects on time."
-      }
+      ]
     },
     {
       "questionRef": "mgm2-040",
@@ -1636,7 +1599,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"Our teacher showed us a new app for…\" and choose the best answer.",
-      "passage": "Our teacher showed us a new app for learning English. You can listen to stories and record your voice. I use it for ten minutes after homework. The app tells me when I make a mistake with a word.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our teacher showed us a new app for learning English. You can listen to stories and record your voice. I use it for ten minutes after homework. The app tells me when I make a mistake with a word."
+      },
       "choices": [
         {
           "text": "The app helps students learn English.",
@@ -1656,12 +1623,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Our teacher showed us a new app for learning English. You can listen to stories and record your voice. I use it for ten minutes after homework. The app tells me when I make a mistake with a word."
-      }
+      ]
     },
     {
       "questionRef": "mgm2-041",
@@ -1680,7 +1642,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"Yesterday there was a big storm dur…\" and choose the best answer.",
-      "passage": "Yesterday there was a big storm during school. The lights went out for five minutes and we stayed in our classroom. Our teacher read us a story by torch light. When the storm finished, we went home early because the bus could not come.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Yesterday there was a big storm during school. The lights went out for five minutes and we stayed in our classroom. Our teacher read us a story by torch light. When the storm finished, we went home early because the bus could not come."
+      },
       "choices": [
         {
           "text": "There was a storm at school yesterday.",
@@ -1700,12 +1666,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Yesterday there was a big storm during school. The lights went out for five minutes and we stayed in our classroom. Our teacher read us a story by torch light. When the storm finished, we went home early because the bus could not come."
-      }
+      ]
     },
     {
       "questionRef": "mgm2-042",
@@ -1724,7 +1685,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the text beginning \"Next week our school is going to ha…\" and choose the best answer.",
-      "passage": "Next week our school is going to have a careers day. A pilot, a scientist and a web designer will visit our class. We are going to ask them questions about their jobs. I am going to ask the scientist about space because I love stars and planets.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Next week our school is going to have a careers day. A pilot, a scientist and a web designer will visit our class. We are going to ask them questions about their jobs. I am going to ask the scientist about space because I love stars and planets."
+      },
       "choices": [
         {
           "text": "Different workers will visit the school next week.",
@@ -1744,12 +1709,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Next week our school is going to have a careers day. A pilot, a scientist and a web designer will visit our class. We are going to ask them questions about their jobs. I am going to ask the scientist about space because I love stars and planets."
-      }
+      ]
     },
     {
       "questionRef": "mgm2-043",
@@ -1767,11 +1727,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write one sentence about the thunderstorm.",
-      "cambridgeTaskType": "write_sentence",
-      "prompt": "Look at the picture. Write one sentence about the thunderstorm.",
-      "minWords": 3,
-      "maxWords": 18,
-      "imageUrl": "/images/gold-mocks/movers/mgm2-043-thunderstorm.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1779,7 +1734,7 @@
         "prompt": "Look at the picture. Write one sentence about the thunderstorm.",
         "minWords": 3,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/movers/mgm2-043-thunderstorm.png",
+        "imageUrl": "/images/gold-mocks/movers/mgm2-043-thunderstorm.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1800,11 +1755,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write one sentence about the chef.",
-      "cambridgeTaskType": "write_sentence",
-      "prompt": "Look at the picture. Write one sentence about the chef in the kitchen.",
-      "minWords": 3,
-      "maxWords": 18,
-      "imageUrl": "/images/gold-mocks/movers/mgm2-044-chef.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1812,7 +1762,7 @@
         "prompt": "Look at the picture. Write one sentence about the chef in the kitchen.",
         "minWords": 3,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/movers/mgm2-044-chef.png",
+        "imageUrl": "/images/gold-mocks/movers/mgm2-044-chef.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1833,16 +1783,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a note to your friend about today's technology lesson.",
-      "cambridgeTaskType": "write_note",
-      "prompt": "Write a note to your friend about today's technology lesson.",
-      "minWords": 15,
-      "maxWords": 40,
-      "taskDescription": "Tell your friend about the lesson.",
-      "requiredPoints": [
-        "Say what you made",
-        "Say what you liked",
-        "Ask your friend a question"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1876,16 +1816,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a message to your friend about a rainy day at home.",
-      "cambridgeTaskType": "write_note",
-      "prompt": "Write a message to your friend about a rainy day at home.",
-      "minWords": 15,
-      "maxWords": 45,
-      "taskDescription": "Tell your friend what you did indoors.",
-      "requiredPoints": [
-        "Say what the weather was like",
-        "Say what you did",
-        "Say what you will do tomorrow"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1920,16 +1850,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write two or three sentences about the computer lab.",
-      "cambridgeTaskType": "picture_description",
-      "prompt": "Look at the picture. Write two or three sentences about the computer lab.",
-      "minWords": 8,
-      "maxWords": 30,
-      "imageUrl": "/images/gold-mocks/movers/mgm2-047-computer-lab.png",
-      "taskDescription": "Describe the computer lab scene.",
-      "requiredPoints": [
-        "Say what the children are doing",
-        "Say what technology you can see"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1938,7 +1858,7 @@
         "taskDescription": "Describe the computer lab scene.",
         "minWords": 8,
         "maxWords": 30,
-        "imageUrl": "/images/gold-mocks/movers/mgm2-047-computer-lab.png",
+        "imageUrl": "/images/gold-mocks/movers/mgm2-047-computer-lab.svg",
         "requiredPoints": [
           "Say what the children are doing",
           "Say what technology you can see"
@@ -1964,16 +1884,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write two or three sentences about the rainy street.",
-      "cambridgeTaskType": "picture_description",
-      "prompt": "Look at the picture. Write two or three sentences about the rainy street.",
-      "minWords": 8,
-      "maxWords": 35,
-      "imageUrl": "/images/gold-mocks/movers/mgm2-048-rainy-street.png",
-      "taskDescription": "Describe the rainy street scene.",
-      "requiredPoints": [
-        "Say what the weather is like",
-        "Say what people are doing"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1982,7 +1892,7 @@
         "taskDescription": "Describe the rainy street scene.",
         "minWords": 8,
         "maxWords": 35,
-        "imageUrl": "/images/gold-mocks/movers/mgm2-048-rainy-street.png",
+        "imageUrl": "/images/gold-mocks/movers/mgm2-048-rainy-street.svg",
         "requiredPoints": [
           "Say what the weather is like",
           "Say what people are doing"
@@ -2008,17 +1918,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Look at the two weather differences pictures. Tell your partner about the differences.",
-      "cambridgeTaskType": "speaking_picture_description",
-      "prompt": "Look at the two pictures of a town in different weather. Tell your partner about five differences between them.",
-      "maxDurationSeconds": 120,
-      "imageUrl": "/images/gold-mocks/movers/mgm2-049-weather-pair.png",
-      "followUpQuestions": [
-        "Is it sunny in picture A?",
-        "How many clouds are in picture B?",
-        "Are people wearing raincoats in picture B?",
-        "Where is the rainbow in picture A?",
-        "What is the boy holding in picture B?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2032,7 +1931,7 @@
           "Where is the rainbow in picture A?",
           "What is the boy holding in picture B?"
         ],
-        "imageUrl": "/images/gold-mocks/movers/mgm2-049-weather-pair.png",
+        "imageUrl": "/images/gold-mocks/movers/mgm2-049-weather-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -2055,16 +1954,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Answer the examiner's questions about about you weather tech.",
-      "cambridgeTaskType": "speaking_personal_questions",
-      "prompt": "Answer the examiner's questions about yourself, the weather where you live, and technology you use.",
-      "maxDurationSeconds": 180,
-      "followUpQuestions": [
-        "What's your name and how old are you?",
-        "What's the weather like today where you live?",
-        "What technology do you use at home or school?",
-        "What job would you like to have when you are older?",
-        "Do you prefer sunny days or rainy days? Why?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2100,22 +1989,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Look at these pictures and tell the story of how Tom found his lost tablet.",
-      "cambridgeTaskType": "speaking_storytelling",
-      "prompt": "Look at these pictures and tell the story of how Tom found his lost tablet.",
-      "maxDurationSeconds": 180,
-      "pictureSequence": [
-        "/images/gold-mocks/movers/mgm2-051-story-1-worry.png",
-        "/images/gold-mocks/movers/mgm2-051-story-2-search.png",
-        "/images/gold-mocks/movers/mgm2-051-story-3-library.png",
-        "/images/gold-mocks/movers/mgm2-051-story-4-happy.png"
-      ],
-      "followUpQuestions": [
-        "Where did Tom look first?",
-        "Who helped him?",
-        "Where did he find the tablet?",
-        "How did Tom feel at the end?",
-        "What did he do when he found it?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2130,10 +2003,10 @@
           "What did he do when he found it?"
         ],
         "pictureSequence": [
-          "/images/gold-mocks/movers/mgm2-051-story-1-worry.png",
-          "/images/gold-mocks/movers/mgm2-051-story-2-search.png",
-          "/images/gold-mocks/movers/mgm2-051-story-3-library.png",
-          "/images/gold-mocks/movers/mgm2-051-story-4-happy.png"
+          "/images/gold-mocks/movers/mgm2-051-story-1-worry.svg",
+          "/images/gold-mocks/movers/mgm2-051-story-2-search.svg",
+          "/images/gold-mocks/movers/mgm2-051-story-3-library.svg",
+          "/images/gold-mocks/movers/mgm2-051-story-4-happy.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

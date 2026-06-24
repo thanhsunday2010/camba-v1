@@ -132,7 +132,7 @@
       "instructions": "Part 1 — Listen and choose the correct picture",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-2/listening-part-1.mp3",
         "transcript": "Man: I think I've got everything — passport, tickets, and my suitcase is ready by the door.",
         "caption": "Part 1 — Listen and choose the correct picture"
       }
@@ -145,7 +145,7 @@
       "instructions": "Part 2 — Listen and choose the best answer",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-2/listening-part-2.mp3",
         "transcript": "Guest: We picked this hotel because it's only five minutes from the beach. Receptionist: Yes, many families choose it for that reason.",
         "caption": "Part 2 — Listen and choose the best answer"
       }
@@ -158,7 +158,7 @@
       "instructions": "Part 3 — Listen and complete each gap",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-2/listening-part-3.mp3",
         "transcript": "Guide: Welcome to the walking tour. We start at ten o'clock. Please wait at the main reception desk. The next bus to the old town leaves in fifteen minutes.",
         "caption": "Part 3 — Listen and complete each gap"
       }
@@ -171,7 +171,7 @@
       "instructions": "Part 4 — Listen to the monologue",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-2/listening-part-4.mp3",
         "transcript": "Speaker: I love travelling because I can try food I've never tasted before. I started my current job two years ago, but I still save money for trips abroad.",
         "caption": "Part 4 — Listen to the monologue"
       }
@@ -184,7 +184,7 @@
       "instructions": "Part 5 — Listen and match each day to an activity",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-5.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-2/listening-part-5.mp3",
         "transcript": "Manager: Emma works the morning shift on Monday. Tuesday we run a coastal walking tour. Wednesday is kitchen cleaning day, Thursday is first aid training, and Friday we offer a weekend city break.",
         "caption": "Part 5 — Listen and match each day to an activity"
       }
@@ -624,7 +624,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Where does Maria work?",
-      "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year."
+      },
       "choices": [
         {
           "text": "At a city hotel",
@@ -644,12 +648,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year."
-      }
+      ]
     },
     {
       "questionRef": "kgm2-015",
@@ -667,7 +666,11 @@
       ],
       "skillTag": "reading",
       "questionText": "How often does Maria work at the hotel?",
-      "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year."
+      },
       "choices": [
         {
           "text": "Three afternoons a week",
@@ -687,12 +690,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year."
-      }
+      ]
     },
     {
       "questionRef": "kgm2-016",
@@ -710,7 +708,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What is Maria saving money for?",
-      "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year."
+      },
       "choices": [
         {
           "text": "A summer trip to Portugal",
@@ -730,12 +732,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year."
-      }
+      ]
     },
     {
       "questionRef": "kgm2-017",
@@ -753,7 +750,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Who showed Maria how to use the computer system?",
-      "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year."
+      },
       "choices": [
         {
           "text": "Mr Chen, the hotel manager",
@@ -773,12 +774,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year."
-      }
+      ]
     },
     {
       "questionRef": "kgm2-018",
@@ -796,7 +792,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What do Maria's colleagues say about her?",
-      "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year."
+      },
       "choices": [
         {
           "text": "She is friendly and organised",
@@ -816,12 +816,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last month, Maria started her first part-time job at a busy city hotel. She works at the reception desk three afternoons a week after school. On her first day, she learned how to check guests in and answer phone calls. The hotel manager, Mr Chen, showed her where to find room keys and how to use the computer system. Maria enjoys meeting travellers from different countries and helping them find local restaurants. She saves most of her wages for a summer trip to Portugal. Her colleagues say she is friendly and organised, and she hopes to work there again next year."
-      }
+      ]
     },
     {
       "questionRef": "kgm2-019",
@@ -1097,10 +1092,6 @@
       ],
       "skillTag": "reading",
       "questionText": "She got ___ job at a local café.",
-      "template": "She got [0] job at a local café.",
-      "correctAnswers": [
-        "a"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1126,10 +1117,6 @@
       ],
       "skillTag": "reading",
       "questionText": "I ___ the dishes after dinner last night.",
-      "template": "I [0] the dishes after dinner last night.",
-      "correctAnswers": [
-        "washed"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1155,10 +1142,6 @@
       ],
       "skillTag": "reading",
       "questionText": "We arrived ___ the airport two hours early.",
-      "template": "We arrived [0] the airport two hours early.",
-      "correctAnswers": [
-        "at"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1185,10 +1168,6 @@
       ],
       "skillTag": "reading",
       "questionText": "Working from home is ___ convenient than commuting.",
-      "template": "Working from home is [0] convenient than commuting.",
-      "correctAnswers": [
-        "more"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1214,10 +1193,6 @@
       ],
       "skillTag": "reading",
       "questionText": "The neighbour ___ lives upstairs plays the piano.",
-      "template": "The neighbour [0] lives upstairs plays the piano.",
-      "correctAnswers": [
-        "who"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1243,10 +1218,6 @@
       ],
       "skillTag": "reading",
       "questionText": "Employees ___ wear a name badge at all times.",
-      "template": "Employees [0] wear a name badge at all times.",
-      "correctAnswers": [
-        "must"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1273,16 +1244,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write an email to your manager.",
-      "cambridgeTaskType": "write_email",
-      "prompt": "You cannot come to work on Friday because you need to travel to another city. Write an email to your manager.",
-      "taskDescription": "Write 25–35 words. Include all three points.",
-      "minWords": 25,
-      "maxWords": 35,
-      "requiredPoints": [
-        "Explain why you cannot come to work on Friday",
-        "Say when you will return to work",
-        "Offer to finish an important task before you leave"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1316,12 +1277,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a story about a missed train.",
-      "cambridgeTaskType": "write_story",
-      "prompt": "Your English teacher has asked you to write a story. Your story must begin with this sentence: 'I arrived at the station just as the train was leaving.'",
-      "taskDescription": "Write 35 words or more.",
-      "minWords": 35,
-      "maxWords": 100,
-      "imageUrl": "/images/gold-mocks/ket-gold-mock-2-story.svg",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1742,11 +1697,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The tour starts at ___ o'clock.",
-      "template": "The tour starts at [0] o'clock.",
-      "correctAnswers": [
-        "ten",
-        "10"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1773,10 +1723,6 @@
       ],
       "skillTag": "listening",
       "questionText": "Please wait ___ the main reception desk.",
-      "template": "Please wait [0] the main reception desk.",
-      "correctAnswers": [
-        "at"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1802,11 +1748,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The next bus leaves in ___ minutes.",
-      "template": "The next bus leaves in [0] minutes.",
-      "correctAnswers": [
-        "fifteen",
-        "15"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1833,11 +1774,6 @@
       ],
       "skillTag": "listening",
       "questionText": "Could you buy a ___ of milk on your way home?",
-      "template": "Could you buy a [0] of milk on your way home?",
-      "correctAnswers": [
-        "bottle",
-        "carton"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1864,11 +1800,6 @@
       ],
       "skillTag": "listening",
       "questionText": "He ___ as a tour guide in the summer.",
-      "template": "He [0] as a tour guide in the summer.",
-      "correctAnswers": [
-        "works",
-        "worked"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2223,14 +2154,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Answer the examiner's questions about work.",
-      "cambridgeTaskType": "conversation",
-      "prompt": "The examiner will ask you about your daily life, any jobs you have, and places you like to visit.",
-      "maxDurationSeconds": 120,
-      "followUpQuestions": [
-        "What do you usually do after school or work?",
-        "Have you ever had a part-time job?",
-        "Where would you like to travel in the future?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2263,10 +2186,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Describe the travel picture and say what the people are doing.",
-      "cambridgeTaskType": "picture_description_speaking",
-      "prompt": "Look at the photograph of a busy train station. Describe what you can see and say where the people might be going.",
-      "maxDurationSeconds": 120,
-      "imageUrl": "/images/gold-mocks/ket-gold-mock-2-speaking-photo.svg",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {

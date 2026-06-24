@@ -56,7 +56,10 @@
     "certify:mocks": "node scripts/certify-mocks.mjs",
     "report:gold-mock-coverage": "node scripts/report-gold-mock-coverage.mjs",
     "review:mock-inventory": "node scripts/mock-inventory-review.mjs",
-    "generate:listening-audio": "node scripts/generate-listening-audio.mjs"
+    "generate:listening-audio": "node scripts/generate-listening-audio.mjs",
+    "generate:gold-mock-audio": "node scripts/generate-gold-mock-audio.mjs",
+    "generate:gold-mock-images": "node scripts/generate-gold-mock-images.mjs",
+    "audit:gold-mocks": "node scripts/audit-gold-mocks.mjs"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

@@ -8,6 +8,7 @@ interface ListeningAudioPlayerProps {
   audioUrl: string;
   title?: string;
   autoPlay?: boolean;
+  transcriptFallback?: string | null;
   labels?: {
     play: string;
     pause: string;
@@ -29,6 +30,7 @@ export function ListeningAudioPlayer({
   audioUrl,
   title,
   autoPlay = true,
+  transcriptFallback,
   labels = {
     play: "Phát",
     pause: "Tạm dừng",
@@ -143,7 +145,17 @@ export function ListeningAudioPlayer({
               {labels.loading}
             </p>
           ) : hasError ? (
-            <p className="text-sm text-error">{labels.error}</p>
+            <div className="space-y-2">
+              <p className="text-sm text-error">{labels.error}</p>
+              {transcriptFallback?.trim() && (
+                <div className="rounded-lg border border-border/60 bg-background/60 p-3">
+                  <p className="text-xs font-medium text-muted mb-1">Transcript</p>
+                  <p className="text-sm text-foreground/90 whitespace-pre-line leading-relaxed">
+                    {transcriptFallback}
+                  </p>
+                </div>
+              )}
+            </div>
           ) : (
             <div className="flex flex-wrap gap-2">
               <Button type="button" size="sm" variant="default" onClick={togglePlay}>

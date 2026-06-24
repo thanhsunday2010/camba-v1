@@ -349,7 +349,7 @@
       "category": "duplicate"
     }
   ],
-  "certifiedAt": "2026-06-24T01:29:19.629Z",
+  "certifiedAt": "2026-06-24T05:08:46.510Z",
   "notes": [
     "Manually authored Gold Mock — academic authority baseline.",
     "Passes validateGoldMock() — academic authority baseline."

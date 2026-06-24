@@ -83,6 +83,7 @@ export function MockTestQuestionContextPanel({
             audioUrl={context.audio.src}
             title={context.audio.caption ?? undefined}
             autoPlay={false}
+            transcriptFallback={context.audio.transcript ?? null}
             labels={audioLabels}
           />
           {showTranscript && context.audio.transcript && (

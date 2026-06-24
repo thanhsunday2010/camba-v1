@@ -151,6 +151,45 @@ describe("M4.1 Gold Mock Program", () => {
     });
   }
 
+  it("keeps writing/speaking payload fields inside content only", () => {
+    const duplicateKeys = [
+      "cambridgeTaskType",
+      "prompt",
+      "imageUrl",
+      "pictureSequence",
+      "passage",
+      "template",
+    ];
+    for (const mock of getAllGoldMockManifests()) {
+      for (const q of mock.questions) {
+        if (!q.content) continue;
+        for (const key of duplicateKeys) {
+          if (key in q.content) {
+            expect(q).not.toHaveProperty(key);
+          }
+        }
+      }
+    }
+  });
+
+  it("uses normalized SVG paths for gold mock images", () => {
+    for (const mock of getAllGoldMockManifests()) {
+      for (const q of mock.questions) {
+        const content = q.content ?? {};
+        if (typeof content.imageUrl === "string") {
+          expect(content.imageUrl.startsWith("/images/gold-mocks/")).toBe(true);
+          expect(content.imageUrl.endsWith(".svg")).toBe(true);
+        }
+        if (Array.isArray(content.pictureSequence)) {
+          for (const url of content.pictureSequence) {
+            expect(typeof url).toBe("string");
+            expect(url.endsWith(".svg")).toBe(true);
+          }
+        }
+      }
+    }
+  });
+
   it("writes all gold mock JSON when GOLD_WRITE=1", () => {
     if (process.env.GOLD_WRITE !== "1") return;
     writeAllGoldMockJson();

@@ -1,6 +1,6 @@
 {
   "registryVersion": "1.0.0",
-  "updatedAt": "2026-06-24T01:29:19.870Z",
+  "updatedAt": "2026-06-24T05:08:47.192Z",
   "records": [
     {
       "mockId": "starters-gold-mock-1",
@@ -12,7 +12,7 @@
       "coverageScore": 100,
       "qaScore": 100,
       "diversityScore": 50,
-      "certifiedAt": "2026-06-24T01:29:19.577Z",
+      "certifiedAt": "2026-06-24T05:08:46.250Z",
       "notes": [
         "Manually authored Gold Mock — academic authority baseline.",
         "Passes validateGoldMock() — academic authority baseline."
@@ -28,7 +28,7 @@
       "coverageScore": 100,
       "qaScore": 99,
       "diversityScore": 76,
-      "certifiedAt": "2026-06-24T01:29:19.595Z",
+      "certifiedAt": "2026-06-24T05:08:46.338Z",
       "notes": []
     },
     {
@@ -41,7 +41,7 @@
       "coverageScore": 100,
       "qaScore": 99,
       "diversityScore": 68,
-      "certifiedAt": "2026-06-24T01:29:19.606Z",
+      "certifiedAt": "2026-06-24T05:08:46.381Z",
       "notes": []
     },
     {
@@ -54,7 +54,7 @@
       "coverageScore": 100,
       "qaScore": 99,
       "diversityScore": 76,
-      "certifiedAt": "2026-06-24T01:29:19.618Z",
+      "certifiedAt": "2026-06-24T05:08:46.451Z",
       "notes": []
     },
     {
@@ -67,7 +67,7 @@
       "coverageScore": 100,
       "qaScore": 100,
       "diversityScore": 50,
-      "certifiedAt": "2026-06-24T01:29:19.629Z",
+      "certifiedAt": "2026-06-24T05:08:46.510Z",
       "notes": [
         "Manually authored Gold Mock — academic authority baseline.",
         "Passes validateGoldMock() — academic authority baseline."
@@ -83,7 +83,7 @@
       "coverageScore": 100,
       "qaScore": 98,
       "diversityScore": 56,
-      "certifiedAt": "2026-06-24T01:29:19.643Z",
+      "certifiedAt": "2026-06-24T05:08:46.554Z",
       "notes": []
     },
     {
@@ -96,7 +96,7 @@
       "coverageScore": 100,
       "qaScore": 99,
       "diversityScore": 64,
-      "certifiedAt": "2026-06-24T01:29:19.657Z",
+      "certifiedAt": "2026-06-24T05:08:46.625Z",
       "notes": []
     },
     {
@@ -109,7 +109,7 @@
       "coverageScore": 100,
       "qaScore": 99,
       "diversityScore": 50,
-      "certifiedAt": "2026-06-24T01:29:19.669Z",
+      "certifiedAt": "2026-06-24T05:08:46.665Z",
       "notes": []
     },
     {
@@ -122,7 +122,7 @@
       "coverageScore": 100,
       "qaScore": 100,
       "diversityScore": 50,
-      "certifiedAt": "2026-06-24T01:29:19.682Z",
+      "certifiedAt": "2026-06-24T05:08:46.695Z",
       "notes": [
         "Manually authored Gold Mock — academic authority baseline.",
         "Passes validateGoldMock() — academic authority baseline."
@@ -138,7 +138,7 @@
       "coverageScore": 100,
       "qaScore": 99,
       "diversityScore": 50,
-      "certifiedAt": "2026-06-24T01:29:19.698Z",
+      "certifiedAt": "2026-06-24T05:08:46.735Z",
       "notes": []
     },
     {
@@ -151,7 +151,7 @@
       "coverageScore": 100,
       "qaScore": 99,
       "diversityScore": 50,
-      "certifiedAt": "2026-06-24T01:29:19.714Z",
+      "certifiedAt": "2026-06-24T05:08:46.778Z",
       "notes": []
     },
     {
@@ -164,7 +164,7 @@
       "coverageScore": 100,
       "qaScore": 99,
       "diversityScore": 50,
-      "certifiedAt": "2026-06-24T01:29:19.729Z",
+      "certifiedAt": "2026-06-24T05:08:46.823Z",
       "notes": []
     },
     {
@@ -177,7 +177,7 @@
       "coverageScore": 100,
       "qaScore": 95,
       "diversityScore": 100,
-      "certifiedAt": "2026-06-24T01:29:19.743Z",
+      "certifiedAt": "2026-06-24T05:08:46.861Z",
       "notes": [
         "Manually authored Gold Mock — academic authority baseline.",
         "Passes validateGoldMock() — academic authority baseline."
@@ -193,7 +193,7 @@
       "coverageScore": 100,
       "qaScore": 95,
       "diversityScore": 100,
-      "certifiedAt": "2026-06-24T01:29:19.758Z",
+      "certifiedAt": "2026-06-24T05:08:46.908Z",
       "notes": []
     },
     {
@@ -206,7 +206,7 @@
       "coverageScore": 100,
       "qaScore": 95,
       "diversityScore": 100,
-      "certifiedAt": "2026-06-24T01:29:19.771Z",
+      "certifiedAt": "2026-06-24T05:08:46.957Z",
       "notes": []
     },
     {
@@ -219,7 +219,7 @@
       "coverageScore": 100,
       "qaScore": 95,
       "diversityScore": 100,
-      "certifiedAt": "2026-06-24T01:29:19.786Z",
+      "certifiedAt": "2026-06-24T05:08:46.999Z",
       "notes": []
     },
     {
@@ -232,7 +232,7 @@
       "coverageScore": 100,
       "qaScore": 95,
       "diversityScore": 100,
-      "certifiedAt": "2026-06-24T01:29:19.801Z",
+      "certifiedAt": "2026-06-24T05:08:47.038Z",
       "notes": [
         "Manually authored Gold Mock — academic authority baseline.",
         "Passes validateGoldMock() — academic authority baseline."
@@ -248,7 +248,7 @@
       "coverageScore": 100,
       "qaScore": 66,
       "diversityScore": 50,
-      "certifiedAt": "2026-06-24T01:29:19.826Z",
+      "certifiedAt": "2026-06-24T05:08:47.107Z",
       "notes": []
     },
     {
@@ -261,7 +261,7 @@
       "coverageScore": 100,
       "qaScore": 66,
       "diversityScore": 50,
-      "certifiedAt": "2026-06-24T01:29:19.847Z",
+      "certifiedAt": "2026-06-24T05:08:47.156Z",
       "notes": []
     },
     {
@@ -274,7 +274,7 @@
       "coverageScore": 100,
       "qaScore": 66,
       "diversityScore": 50,
-      "certifiedAt": "2026-06-24T01:29:19.869Z",
+      "certifiedAt": "2026-06-24T05:08:47.191Z",
       "notes": []
     }
   ]

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7FBFF"/>
+      <stop offset="100%" stop-color="#EEF5FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect x="8" y="8" width="624" height="344" rx="16" fill="#fff" stroke="#F4B942" stroke-width="4"/>
+  
+    <circle cx="570" cy="55" r="28" fill="#5C6BC0" opacity="0.95"/>
+    <g stroke="#5C6BC0" stroke-width="4" stroke-linecap="round">
+      <line x1="606" y1="55" x2="618" y2="55"/><line x1="595.4558441227157" y1="80.45584412271572" x2="603.9411254969543" y2="88.94112549695427"/><line x1="570" y1="91" x2="570" y2="103"/><line x1="544.5441558772843" y1="80.45584412271572" x2="536.0588745030457" y2="88.94112549695429"/><line x1="534" y1="55.00000000000001" x2="522" y2="55.00000000000001"/><line x1="544.5441558772843" y1="29.54415587728429" x2="536.0588745030457" y2="21.058874503045722"/><line x1="570" y1="19" x2="570" y2="7"/><line x1="595.4558441227157" y1="29.544155877284282" x2="603.9411254969543" y2="21.058874503045715"/>
+    </g>
+    <g fill="#fff" opacity="0.95">
+      <ellipse cx="90" cy="60" rx="34" ry="18"/>
+      <ellipse cx="68" cy="64" rx="20" ry="14"/>
+      <ellipse cx="114" cy="66" rx="24" ry="16"/>
+    </g>
+    <g fill="#fff" opacity="0.95">
+      <ellipse cx="490" cy="85" rx="34" ry="18"/>
+      <ellipse cx="468" cy="89" rx="20" ry="14"/>
+      <ellipse cx="514" cy="91" rx="24" ry="16"/>
+    </g><rect x="0" y="250" width="640" height="110" fill="#A5D6A7"/><rect x="0" y="0" width="640" height="250" fill="#E0F7FA"/><rect x="40" y="40" width="560" height="210" fill="#FFF8E7" stroke="#BCAAA4" stroke-width="3" rx="8"/>
+    <g transform="translate(320, 240)">
+      <rect x="-36" y="-8" width="72" height="8" rx="3" fill="#A1887F"/>
+      <rect x="-30" y="0" width="6" height="24" fill="#8D6E63"/>
+      <rect x="24" y="0" width="6" height="24" fill="#8D6E63"/>
+      <circle cx="-18" cy="-14" r="8" fill="#EF5350"/>
+      <circle cx="0" cy="-14" r="8" fill="#FFCA28"/>
+      <circle cx="18" cy="-14" r="8" fill="#66BB6A"/>
+    </g>
+    <g transform="translate(260, 242) scale(1.1)">
+      <circle cx="0" cy="-34" r="12" fill="#F4C095"/>
+      <rect x="-11" y="-22" width="22" height="26" rx="8" fill="#FF7043"/>
+      <rect x="-9" y="4" width="8" height="22" rx="4" fill="#455A64"/>
+      <rect x="1" y="4" width="8" height="22" rx="4" fill="#455A64"/>
+      <text x="0" y="38" text-anchor="middle" font-size="11" fill="#334">Person</text>
+    </g>
+    <g transform="translate(380, 242) scale(1)">
+      <circle cx="0" cy="-34" r="12" fill="#F4C095"/>
+      <rect x="-11" y="-22" width="22" height="26" rx="8" fill="#5C6BC0"/>
+      <rect x="-9" y="4" width="8" height="22" rx="4" fill="#37474F"/>
+      <rect x="1" y="4" width="8" height="22" rx="4" fill="#37474F"/>
+      
+    </g>
+  
+  <text x="320" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1A237E">037 Mum Kitchen</text>
+  <text x="320" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#546E7A">Look at the picture. Write one sentence about Mum in the kitchen.</text>
+</svg>

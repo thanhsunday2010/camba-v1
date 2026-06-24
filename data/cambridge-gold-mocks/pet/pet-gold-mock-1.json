@@ -150,7 +150,7 @@
       "instructions": "Part 1 — Listen and choose the correct picture",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-1/listening-part-1.mp3",
         "transcript": "Man: Could I have the chicken sandwich and a glass of water, please? Waiter: Of course. I'll bring it to your table.",
         "caption": "Part 1 — Listen and choose the correct picture"
       }
@@ -163,7 +163,7 @@
       "instructions": "Part 2 — Listen and choose the best answer",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-1/listening-part-2.mp3",
         "transcript": "Girl: I missed chemistry because I had a dentist appointment. Teacher: Remember to collect the notes from your partner.",
         "caption": "Part 2 — Listen and choose the best answer"
       }
@@ -176,7 +176,7 @@
       "instructions": "Part 3 — Listen and complete each gap",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-1/listening-part-3.mp3",
         "transcript": "Organiser: The conference is at the city hall. Adult tickets cost fifteen pounds. The weather forecast says it will rain later.",
         "caption": "Part 3 — Listen and complete each gap"
       }
@@ -189,7 +189,7 @@
       "instructions": "Part 4 — Listen to the monologue",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-1/listening-part-4.mp3",
         "transcript": "Speaker: My first solo trip was to Portugal. I love live theatre because every performance feels different.",
         "caption": "Part 4 — Listen to the monologue"
       }
@@ -202,7 +202,7 @@
       "instructions": "Part 5 — Listen and match each speaker to an activity",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-5.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-1/listening-part-5.mp3",
         "transcript": "Five students describe clubs: film club, climbing wall, pottery class, robotics team, and bird sanctuary volunteering.",
         "caption": "Part 5 — Listen and match each speaker to an activity"
       }
@@ -589,7 +589,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Why did Maya join the photography society?",
-      "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays."
+      },
       "choices": [
         {
           "text": "Because she enjoyed photographing street life",
@@ -609,12 +613,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays."
-      }
+      ]
     },
     {
       "questionRef": "pgm-013",
@@ -632,7 +631,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What charity project did Maya work on?",
-      "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays."
+      },
       "choices": [
         {
           "text": "Photographing an exhibition for a hospital",
@@ -652,12 +655,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays."
-      }
+      ]
     },
     {
       "questionRef": "pgm-014",
@@ -675,7 +673,11 @@
       ],
       "skillTag": "reading",
       "questionText": "How did the project help Maya socially?",
-      "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays."
+      },
       "choices": [
         {
           "text": "She met students from different courses",
@@ -695,12 +697,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays."
-      }
+      ]
     },
     {
       "questionRef": "pgm-015",
@@ -718,7 +715,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What does Maya do with her friends now?",
-      "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays."
+      },
       "choices": [
         {
           "text": "They travel together during holidays",
@@ -738,12 +739,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays."
-      }
+      ]
     },
     {
       "questionRef": "pgm-016",
@@ -761,7 +757,11 @@
       ],
       "skillTag": "reading",
       "questionText": "How did Maya feel at the beginning of the story?",
-      "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays."
+      },
       "choices": [
         {
           "text": "Nervous about making friends",
@@ -781,12 +781,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Maya moved to a new city for university, she felt nervous about making friends. During the first week, she joined a photography society because she loved taking pictures of street life. At the first meeting, members shared tips about lighting and composition. Maya volunteered to photograph the society's charity exhibition, which raised money for a local hospital. Working on the project helped her meet students from different courses. By the end of the term, she had not only improved her technical skills but also built a close group of friends who still travel together during holidays."
-      }
+      ]
     },
     {
       "questionRef": "pgm-017",
@@ -1062,10 +1057,6 @@
       ],
       "skillTag": "reading",
       "questionText": "She found ___ interesting job in marketing.",
-      "template": "She found [0] interesting job in marketing.",
-      "correctAnswers": [
-        "an"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1091,11 +1082,6 @@
       ],
       "skillTag": "reading",
       "questionText": "We ___ our tickets online yesterday.",
-      "template": "We [0] our tickets online yesterday.",
-      "correctAnswers": [
-        "booked",
-        "bought"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1122,11 +1108,6 @@
       ],
       "skillTag": "reading",
       "questionText": "The laptop ___ I borrowed belongs to my cousin.",
-      "template": "The laptop [0] I borrowed belongs to my cousin.",
-      "correctAnswers": [
-        "that",
-        "which"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1153,11 +1134,6 @@
       ],
       "skillTag": "reading",
       "questionText": "Running is ___ than cycling in hot weather.",
-      "template": "Running is [0] than cycling in hot weather.",
-      "correctAnswers": [
-        "harder",
-        "more tiring"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1184,11 +1160,6 @@
       ],
       "skillTag": "reading",
       "questionText": "___ the film was long, the audience enjoyed it.",
-      "template": "[0] the film was long, the audience enjoyed it.",
-      "correctAnswers": [
-        "Although",
-        "Though"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1215,10 +1186,6 @@
       ],
       "skillTag": "reading",
       "questionText": "Plastic waste ___ collected every Friday in our area.",
-      "template": "Plastic waste [0] collected every Friday in our area.",
-      "correctAnswers": [
-        "is"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1244,7 +1211,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence best fits gap 1? (after the opening sentence about navigation)",
-      "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike."
+      },
       "choices": [
         {
           "text": "[B] Today, light pollution in cities makes it harder to see stars clearly.",
@@ -1264,12 +1235,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike."
-      }
+      ]
     },
     {
       "questionRef": "pgm-030",
@@ -1287,7 +1253,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence introduces a contrast after the problem of light pollution?",
-      "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike."
+      },
       "choices": [
         {
           "text": "[C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations.",
@@ -1307,12 +1277,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike."
-      }
+      ]
     },
     {
       "questionRef": "pgm-031",
@@ -1330,7 +1295,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence explains a benefit of dark-sky parks for living things?",
-      "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike."
+      },
       "choices": [
         {
           "text": "[D] These parks also support wildlife that depends on natural darkness.",
@@ -1350,12 +1319,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike."
-      }
+      ]
     },
     {
       "questionRef": "pgm-032",
@@ -1373,7 +1337,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence shows a consequence of protecting dark skies?",
-      "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike."
+      },
       "choices": [
         {
           "text": "[E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting.",
@@ -1393,12 +1361,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike."
-      }
+      ]
     },
     {
       "questionRef": "pgm-033",
@@ -1416,7 +1379,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence would best conclude the text for general readers?",
-      "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike."
+      },
       "choices": [
         {
           "text": "[F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
@@ -1436,12 +1403,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike."
-      }
+      ]
     },
     {
       "questionRef": "pgm-034",
@@ -1459,7 +1421,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence describes where people can study the stars today?",
-      "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike."
+      },
       "choices": [
         {
           "text": "[C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations.",
@@ -1479,12 +1445,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] For centuries, people have looked to the night sky for navigation and inspiration. [B] Today, light pollution in cities makes it harder to see stars clearly. [C] However, dark-sky parks protect areas where astronomers and tourists can observe constellations. [D] These parks also support wildlife that depends on natural darkness. [E] As a result, several countries have introduced laws to reduce unnecessary outdoor lighting. [F] Visiting a dark-sky park can be an unforgettable experience for families and students alike."
-      }
+      ]
     },
     {
       "questionRef": "pgm-035",
@@ -1504,16 +1465,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write an email in response to your English teacher.",
-      "cambridgeTaskType": "write_email",
-      "prompt": "Your English teacher has sent you an email about a project on local history. Write an email to your teacher.",
-      "taskDescription": "Write about 100 words. Answer all three points.",
-      "minWords": 100,
-      "maxWords": 120,
-      "requiredPoints": [
-        "Explain which historical place you want to research",
-        "Say why it interests you",
-        "Ask for advice about useful sources"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1548,12 +1499,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a story that begins with the sentence below.",
-      "cambridgeTaskType": "write_story",
-      "prompt": "Your teacher has asked you to write a story. Your story must begin with this sentence: 'The train was late, but I didn't mind.'",
-      "taskDescription": "Write about 100 words.",
-      "minWords": 100,
-      "maxWords": 130,
-      "imageUrl": "/images/gold-mocks/pet-gold-mock-1-story.svg",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1972,11 +1917,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The conference is held ___ the city hall.",
-      "template": "The conference is held [0] the city hall.",
-      "correctAnswers": [
-        "in",
-        "at"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2003,11 +1943,6 @@
       ],
       "skillTag": "listening",
       "questionText": "Tickets cost ___ pounds for adults.",
-      "template": "Tickets cost [0] pounds for adults.",
-      "correctAnswers": [
-        "fifteen",
-        "15"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2034,10 +1969,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The forecast says it ___ rain later.",
-      "template": "The forecast says it [0] rain later.",
-      "correctAnswers": [
-        "will"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2063,11 +1994,6 @@
       ],
       "skillTag": "listening",
       "questionText": "Could you pick up a ___ of milk?",
-      "template": "Could you pick up a [0] of milk?",
-      "correctAnswers": [
-        "bottle",
-        "carton"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2094,10 +2020,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The report ___ sent to all staff yesterday.",
-      "template": "The report [0] sent to all staff yesterday.",
-      "correctAnswers": [
-        "was"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2450,14 +2372,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Answer the examiner's questions about your life and interests.",
-      "cambridgeTaskType": "conversation",
-      "prompt": "The examiner will ask about your daily routine, studies, and what you like doing in your free time.",
-      "maxDurationSeconds": 180,
-      "followUpQuestions": [
-        "Tell me about the subjects you enjoy at school.",
-        "What would you like to do after you finish school?",
-        "How do you usually relax after a busy day?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2490,10 +2404,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Describe the photograph and say what you think is happening.",
-      "cambridgeTaskType": "picture_description_speaking",
-      "prompt": "Look at the photograph. Describe the place and the people, and explain why they might be there.",
-      "maxDurationSeconds": 180,
-      "imageUrl": "/images/gold-mocks/pet-gold-mock-1-speaking-photo.svg",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2522,14 +2432,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Discuss ways to make your neighbourhood more environmentally friendly.",
-      "cambridgeTaskType": "conversation",
-      "prompt": "Talk with your partner about things people could do to protect the environment in your area.",
-      "maxDurationSeconds": 240,
-      "followUpQuestions": [
-        "Which idea would be easiest to start?",
-        "What problems might people face?",
-        "How could young people encourage others to take part?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {

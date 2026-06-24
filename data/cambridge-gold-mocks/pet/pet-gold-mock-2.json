@@ -150,7 +150,7 @@
       "instructions": "Part 1 — Listen and choose the correct picture",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-2/listening-part-1.mp3",
         "transcript": "Girl: I'm recording a short video review in the studio. Boy: At the beach, we're carrying rubbish bags and gloves for the clean-up.",
         "caption": "Part 1 — Listen and choose the correct picture"
       }
@@ -163,7 +163,7 @@
       "instructions": "Part 2 — Listen and choose the best answer",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-2/listening-part-2.mp3",
         "transcript": "Boy: I missed film club because I had to finish editing. Girl: Next weekend I'm joining a river clean-up with friends.",
         "caption": "Part 2 — Listen and choose the best answer"
       }
@@ -176,7 +176,7 @@
       "instructions": "Part 3 — Listen and complete each gap",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-2/listening-part-3.mp3",
         "transcript": "Organiser: The eco-film festival starts in April. Student tickets cost eight pounds. Bring a reusable bottle.",
         "caption": "Part 3 — Listen and complete each gap"
       }
@@ -189,7 +189,7 @@
       "instructions": "Part 4 — Listen to the monologue",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-2/listening-part-4.mp3",
         "transcript": "Speaker: I learned to edit at a community media centre. I limit streaming before bed and compost kitchen waste at home.",
         "caption": "Part 4 — Listen to the monologue"
       }
@@ -202,7 +202,7 @@
       "instructions": "Part 5 — Listen and match each speaker to an activity",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-5.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-2/listening-part-5.mp3",
         "transcript": "Five students describe activities: school radio, vegan cooking club, tree planting, photography society, and recycling volunteering.",
         "caption": "Part 5 — Listen and match each speaker to an activity"
       }
@@ -589,7 +589,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Why did Leo start his podcast?",
-      "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
+      },
       "choices": [
         {
           "text": "To share interviews and reviews about local music",
@@ -609,12 +613,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
-      }
+      ]
     },
     {
       "questionRef": "pgm2-013",
@@ -632,7 +631,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Where does Leo edit his episodes?",
-      "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
+      },
       "choices": [
         {
           "text": "In a free library studio",
@@ -652,12 +655,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
-      }
+      ]
     },
     {
       "questionRef": "pgm2-014",
@@ -675,7 +673,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What happened after the eco-festival feature?",
-      "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
+      },
       "choices": [
         {
           "text": "A radio station invited him to co-host a show",
@@ -695,12 +697,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
-      }
+      ]
     },
     {
       "questionRef": "pgm2-015",
@@ -718,7 +715,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What did the project teach Leo?",
-      "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
+      },
       "choices": [
         {
           "text": "Media can connect people and support causes",
@@ -738,12 +739,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
-      }
+      ]
     },
     {
       "questionRef": "pgm2-016",
@@ -761,7 +757,11 @@
       ],
       "skillTag": "reading",
       "questionText": "How did teachers react to Leo's work?",
-      "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
+      },
       "choices": [
         {
           "text": "They noticed his confidence in presentations",
@@ -781,12 +781,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Leo started a school podcast about local music, he never expected hundreds of listeners. Each week he interviews bands and reviews new albums, editing episodes in a free studio the library offers. Teachers noticed his confidence growing in presentations, and classmates began sharing story ideas for future episodes. After a feature on eco-friendly festivals, a community radio station invited Leo to co-host a live show about sustainable events. The experience taught him that creative media projects can connect people while promoting causes he cares about."
-      }
+      ]
     },
     {
       "questionRef": "pgm2-017",
@@ -1062,11 +1057,6 @@
       ],
       "skillTag": "reading",
       "questionText": "The documentary ___ millions of views last month.",
-      "template": "The documentary [0] millions of views last month.",
-      "correctAnswers": [
-        "got",
-        "received"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1093,10 +1083,6 @@
       ],
       "skillTag": "reading",
       "questionText": "We should turn ___ the lights when we leave.",
-      "template": "We should turn [0] the lights when we leave.",
-      "correctAnswers": [
-        "off"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1122,10 +1108,6 @@
       ],
       "skillTag": "reading",
       "questionText": "She is interested ___ learning about renewable energy.",
-      "template": "She is interested [0] learning about renewable energy.",
-      "correctAnswers": [
-        "in"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1151,10 +1133,6 @@
       ],
       "skillTag": "reading",
       "questionText": "If you ___ less meat, your carbon footprint may fall.",
-      "template": "If you [0] less meat, your carbon footprint may fall.",
-      "correctAnswers": [
-        "eat"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1180,11 +1158,6 @@
       ],
       "skillTag": "reading",
       "questionText": "The influencer whose videos we watched ___ from Brazil.",
-      "template": "The influencer whose videos we watched [0] from Brazil.",
-      "correctAnswers": [
-        "is",
-        "comes"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1211,10 +1184,6 @@
       ],
       "skillTag": "reading",
       "questionText": "Plastic bottles ___ recycled at the sports centre.",
-      "template": "Plastic bottles [0] recycled at the sports centre.",
-      "correctAnswers": [
-        "are"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1240,7 +1209,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence introduces the problem of ocean pollution?",
-      "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
+      },
       "choices": [
         {
           "text": "[A] Plastic waste in oceans harms marine life and enters the food chain.",
@@ -1260,12 +1233,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
-      }
+      ]
     },
     {
       "questionRef": "pgm2-030",
@@ -1283,7 +1251,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence describes community action on beaches?",
-      "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
+      },
       "choices": [
         {
           "text": "[B] Many coastal towns now organise monthly beach clean-ups led by volunteers.",
@@ -1303,12 +1275,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
-      }
+      ]
     },
     {
       "questionRef": "pgm2-031",
@@ -1326,7 +1293,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence links teenagers with media?",
-      "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
+      },
       "choices": [
         {
           "text": "[C] Some teenagers film short documentaries about what they collect and share them online.",
@@ -1346,12 +1317,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
-      }
+      ]
     },
     {
       "questionRef": "pgm2-032",
@@ -1369,7 +1335,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence explains the effect of the videos?",
-      "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
+      },
       "choices": [
         {
           "text": "[D] These videos encourage viewers to use reusable bottles and bags.",
@@ -1389,12 +1359,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
-      }
+      ]
     },
     {
       "questionRef": "pgm2-033",
@@ -1412,7 +1377,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence shows how businesses respond?",
-      "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
+      },
       "choices": [
         {
           "text": "[E] Local shops have responded by offering discounts to customers who bring their own containers.",
@@ -1432,12 +1401,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
-      }
+      ]
     },
     {
       "questionRef": "pgm2-034",
@@ -1455,7 +1419,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence best concludes the text?",
-      "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
+      },
       "choices": [
         {
           "text": "[F] Small lifestyle changes, when shared through media, can inspire wider community action.",
@@ -1475,12 +1443,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] Plastic waste in oceans harms marine life and enters the food chain. [B] Many coastal towns now organise monthly beach clean-ups led by volunteers. [C] Some teenagers film short documentaries about what they collect and share them online. [D] These videos encourage viewers to use reusable bottles and bags. [E] Local shops have responded by offering discounts to customers who bring their own containers. [F] Small lifestyle changes, when shared through media, can inspire wider community action."
-      }
+      ]
     },
     {
       "questionRef": "pgm2-035",
@@ -1500,16 +1463,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write an email in response to your English teacher about media.",
-      "cambridgeTaskType": "write_email",
-      "prompt": "Your English teacher has asked you to write about how young people use social media responsibly. Write an email to your teacher.",
-      "taskDescription": "Write about 100 words. Answer all three points.",
-      "minWords": 100,
-      "maxWords": 120,
-      "requiredPoints": [
-        "Describe one social media platform you use and why",
-        "Explain how you balance screen time with other activities",
-        "Suggest one school project that could promote healthy media habits"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1544,12 +1497,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a story about environment that begins with the sentence below.",
-      "cambridgeTaskType": "write_story",
-      "prompt": "Your teacher has asked you to write a story. Your story must begin with this sentence: 'The beach was cleaner than I had ever seen it, thanks to our volunteer team.'",
-      "taskDescription": "Write about 100 words.",
-      "minWords": 100,
-      "maxWords": 130,
-      "imageUrl": "/images/gold-mocks/pet-gold-mock-2-story.svg",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2163,11 +2110,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The eco-film festival starts ___ April.",
-      "template": "The eco-film festival starts [0] April.",
-      "correctAnswers": [
-        "in",
-        "on"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2194,11 +2136,6 @@
       ],
       "skillTag": "listening",
       "questionText": "Tickets cost ___ pounds for students.",
-      "template": "Tickets cost [0] pounds for students.",
-      "correctAnswers": [
-        "eight",
-        "8"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2225,11 +2162,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The weather forecast says it ___ be sunny tomorrow.",
-      "template": "The weather forecast says it [0] be sunny tomorrow.",
-      "correctAnswers": [
-        "will",
-        "might"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2256,10 +2188,6 @@
       ],
       "skillTag": "listening",
       "questionText": "Please bring a ___ bottle of water.",
-      "template": "Please bring a [0] bottle of water.",
-      "correctAnswers": [
-        "reusable"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2285,10 +2213,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The interview ___ posted online yesterday.",
-      "template": "The interview [0] posted online yesterday.",
-      "correctAnswers": [
-        "was"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2446,16 +2370,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Answer the examiner's questions about media.",
-      "cambridgeTaskType": "conversation",
-      "prompt": "The examiner will ask about how you use media, your hobbies, and how you spend your free time.",
-      "maxDurationSeconds": 240,
-      "followUpQuestions": [
-        "What kind of films or series do you enjoy watching?",
-        "Do you prefer listening to music or podcasts? Why?",
-        "How much time do you spend online on a typical school day?",
-        "Have you ever created content for social media or a school project?",
-        "What would you like to learn about media production?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2490,10 +2404,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Describe the lifestyle and say what you think is happening.",
-      "cambridgeTaskType": "picture_description_speaking",
-      "prompt": "Look at the photograph. Describe the people, the place, and explain why they might be there.",
-      "maxDurationSeconds": 240,
-      "imageUrl": "/images/gold-mocks/pet-gold-mock-2-speaking-photo.svg",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2522,17 +2432,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Discuss ways young people can live more sustainably.",
-      "cambridgeTaskType": "conversation",
-      "prompt": "Talk with your partner about lifestyle changes that protect the environment in your town.",
-      "maxDurationSeconds": 300,
-      "followUpQuestions": [
-        "Which change would be easiest for students to start?",
-        "How could social media help spread environmental messages?",
-        "What problems might people face when changing habits?",
-        "Should schools ban single-use plastic completely?",
-        "How could local businesses support greener lifestyles?",
-        "Which idea would make the biggest difference long term?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {

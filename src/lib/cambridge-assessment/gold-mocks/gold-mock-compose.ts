@@ -24,6 +24,64 @@ function paperToSectionSlug(paperSlug: string): string {
   return paperSlug;
 }
 
+function normalizeGoldMockImageSrc(src: string): string {
+  if (src.startsWith("/images/gold-mocks/") && src.endsWith(".png")) {
+    return src.replace(/\.png$/, ".svg");
+  }
+  return src;
+}
+
+function normalizeQuestionImages(questions: GoldMockQuestionBlock[]): GoldMockQuestionBlock[] {
+  return questions.map((question) => {
+    if (!question.content) return question;
+    const content = { ...question.content } as Record<string, unknown>;
+    if (typeof content.imageUrl === "string") {
+      content.imageUrl = normalizeGoldMockImageSrc(content.imageUrl);
+    }
+    if (Array.isArray(content.pictureSequence)) {
+      content.pictureSequence = content.pictureSequence.map((url) =>
+        typeof url === "string" ? normalizeGoldMockImageSrc(url) : url
+      );
+    }
+    const next = { ...question, content } as GoldMockQuestionBlock & Record<string, unknown>;
+    for (const key of [
+      "cambridgeTaskType",
+      "prompt",
+      "taskDescription",
+      "minWords",
+      "maxWords",
+      "imageUrl",
+      "requiredPoints",
+      "maxDurationSeconds",
+      "followUpQuestions",
+      "pictureSequence",
+      "template",
+      "correctAnswers",
+      "passage",
+    ]) {
+      if (key in next) delete next[key];
+    }
+    return next as GoldMockQuestionBlock;
+  });
+}
+
+function normalizeListeningParts(
+  parts: YleMockPartContextManifest[] | undefined,
+  goldMockId: string
+): YleMockPartContextManifest[] | undefined {
+  if (!parts?.length) return parts;
+  return parts.map((part) => {
+    if (part.sectionSlug !== "listening" || !part.audio?.transcript?.trim()) return part;
+    return {
+      ...part,
+      audio: {
+        ...part.audio,
+        src: `/audio/gold-mocks/${goldMockId}/${part.partSlug}.mp3`,
+      },
+    };
+  });
+}
+
 function sectionSkillSlug(paperSlug: string): string | null {
   if (paperSlug === "listening") return "listening";
   if (paperSlug === "reading-writing") return "reading_writing";
@@ -100,8 +158,8 @@ export function composeGoldMockManifest(input: ComposeGoldMockInput): GoldMockMa
       stableSlug: input.goldMockId,
     },
     sections,
-    parts: input.parts,
-    questions: input.questions,
+    parts: normalizeListeningParts(input.parts, input.goldMockId),
+    questions: normalizeQuestionImages(input.questions),
     coverageAchieved: {
       distinctTopics: [...topics],
       distinctGrammarPatterns: [...grammarTags],

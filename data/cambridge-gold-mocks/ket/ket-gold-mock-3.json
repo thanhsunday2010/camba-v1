@@ -132,7 +132,7 @@
       "instructions": "Part 1 — Listen and choose the correct picture",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-3/listening-part-1.mp3",
         "transcript": "Teacher: Please write the answer on the board so everyone can see it. Student: OK, I'll write the example now.",
         "caption": "Part 1 — Listen and choose the correct picture"
       }
@@ -145,7 +145,7 @@
       "instructions": "Part 2 — Listen and choose the best answer",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-3/listening-part-2.mp3",
         "transcript": "Boy: I couldn't do the maths test because I was ill. Teacher: Don't worry — you can take it next week.",
         "caption": "Part 2 — Listen and choose the best answer"
       }
@@ -158,7 +158,7 @@
       "instructions": "Part 3 — Listen and complete each gap",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-3/listening-part-3.mp3",
         "transcript": "Organiser: The lecture begins at eleven o'clock. Let's meet at the school gate. The exhibition closes at half past five.",
         "caption": "Part 3 — Listen and complete each gap"
       }
@@ -171,7 +171,7 @@
       "instructions": "Part 4 — Listen to the monologue",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-3/listening-part-4.mp3",
         "transcript": "Speaker: My favourite subject is biology, and I joined the film club at the start of this term. I enjoy group projects because I like sharing ideas.",
         "caption": "Part 4 — Listen to the monologue"
       }
@@ -184,7 +184,7 @@
       "instructions": "Part 5 — Listen and match each day to an activity",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-5.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-3/listening-part-5.mp3",
         "transcript": "Coordinator: Debate club is on Monday, film screening Tuesday, poetry reading Wednesday, games night Thursday, and the talent show on Friday.",
         "caption": "Part 5 — Listen and match each day to an activity"
       }
@@ -624,7 +624,11 @@
       ],
       "skillTag": "reading",
       "questionText": "When does the drama club meet?",
-      "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
+      },
       "choices": [
         {
           "text": "Every Wednesday after lessons",
@@ -644,12 +648,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
-      }
+      ]
     },
     {
       "questionRef": "kgm3-015",
@@ -667,7 +666,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What is the school show about?",
-      "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
+      },
       "choices": [
         {
           "text": "Friends who enter a talent competition",
@@ -687,12 +690,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
-      }
+      ]
     },
     {
       "questionRef": "kgm3-016",
@@ -710,7 +708,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What are the students practising now?",
-      "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
+      },
       "choices": [
         {
           "text": "Dances and lighting changes",
@@ -730,12 +732,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
-      }
+      ]
     },
     {
       "questionRef": "kgm3-017",
@@ -753,7 +750,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Who will be able to buy tickets?",
-      "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
+      },
       "choices": [
         {
           "text": "Parents and local residents",
@@ -773,12 +774,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
-      }
+      ]
     },
     {
       "questionRef": "kgm3-018",
@@ -796,7 +792,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Why is everyone excited about the show?",
-      "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
+      },
       "choices": [
         {
           "text": "It is the first live performance since the theatre reopened",
@@ -816,12 +816,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Our school drama club is preparing a comedy for the end-of-term show. Twenty students from Years 9 and 10 meet every Wednesday after lessons in the hall. The drama teacher, Ms Ortiz, has written a script about a group of friends who enter a talent competition. Rehearsals started six weeks ago, and the students have already learned most of their lines. They are now practising dances and simple lighting changes. Tickets will go on sale next Monday for parents and local residents. The club hopes to raise money for new costumes and sound equipment. Everyone is excited because this is the first live performance since the school reopened the theatre."
-      }
+      ]
     },
     {
       "questionRef": "kgm3-019",
@@ -1098,10 +1093,6 @@
       ],
       "skillTag": "reading",
       "questionText": "She is ___ best student in our class.",
-      "template": "She is [0] best student in our class.",
-      "correctAnswers": [
-        "the"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1127,11 +1118,6 @@
       ],
       "skillTag": "reading",
       "questionText": "We ___ a great film at the cinema yesterday.",
-      "template": "We [0] a great film at the cinema yesterday.",
-      "correctAnswers": [
-        "saw",
-        "watched"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1158,10 +1144,6 @@
       ],
       "skillTag": "reading",
       "questionText": "I met my friends ___ the youth club.",
-      "template": "I met my friends [0] the youth club.",
-      "correctAnswers": [
-        "at"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1187,11 +1169,6 @@
       ],
       "skillTag": "reading",
       "questionText": "Group projects are ___ than working alone.",
-      "template": "Group projects are [0] than working alone.",
-      "correctAnswers": [
-        "easier",
-        "more fun"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1218,11 +1195,6 @@
       ],
       "skillTag": "reading",
       "questionText": "The singer ___ won the competition lives nearby.",
-      "template": "The singer [0] won the competition lives nearby.",
-      "correctAnswers": [
-        "who",
-        "that"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1249,10 +1221,6 @@
       ],
       "skillTag": "reading",
       "questionText": "Students ___ hand in homework on time.",
-      "template": "Students [0] hand in homework on time.",
-      "correctAnswers": [
-        "must"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1279,16 +1247,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write an email to your English teacher about school.",
-      "cambridgeTaskType": "write_email",
-      "prompt": "Your class is organising a charity concert at school. Write an email to your English teacher.",
-      "taskDescription": "Write 25–35 words. Include all three points.",
-      "minWords": 25,
-      "maxWords": 35,
-      "requiredPoints": [
-        "Say whether you can help before the concert",
-        "Explain one job you could do",
-        "Ask what time you should arrive on the day"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1322,12 +1280,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a story about meeting a new friend.",
-      "cambridgeTaskType": "write_story",
-      "prompt": "Your English teacher has asked you to write a story. Your story must begin with this sentence: 'I was nervous before the school party.'",
-      "taskDescription": "Write 35 words or more.",
-      "minWords": 35,
-      "maxWords": 100,
-      "imageUrl": "/images/gold-mocks/ket-gold-mock-3-story.svg",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1748,11 +1700,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The lecture begins at ___ o'clock.",
-      "template": "The lecture begins at [0] o'clock.",
-      "correctAnswers": [
-        "eleven",
-        "11"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1779,11 +1726,6 @@
       ],
       "skillTag": "listening",
       "questionText": "Let's meet ___ the school gate.",
-      "template": "Let's meet [0] the school gate.",
-      "correctAnswers": [
-        "at",
-        "outside"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1810,10 +1752,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The exhibition closes ___ half past five.",
-      "template": "The exhibition closes [0] half past five.",
-      "correctAnswers": [
-        "at"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1839,11 +1777,6 @@
       ],
       "skillTag": "listening",
       "questionText": "Don't forget to bring a ___ for the quiz team.",
-      "template": "Don't forget to bring a [0] for the quiz team.",
-      "correctAnswers": [
-        "pen",
-        "pencil"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1870,11 +1803,6 @@
       ],
       "skillTag": "listening",
       "questionText": "She ___ in the school choir for three years.",
-      "template": "She [0] in the school choir for three years.",
-      "correctAnswers": [
-        "sang",
-        "has sung"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2228,14 +2156,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Answer the examiner's questions about school.",
-      "cambridgeTaskType": "conversation",
-      "prompt": "The examiner will ask you about your school, your favourite subjects, and how you spend time with friends.",
-      "maxDurationSeconds": 120,
-      "followUpQuestions": [
-        "Which subject do you enjoy most at school?",
-        "How do you usually relax after a busy week?",
-        "Tell me about a club or activity you belong to."
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2268,10 +2188,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Describe the leisure picture and say what the people are doing.",
-      "cambridgeTaskType": "picture_description_speaking",
-      "prompt": "Look at the photograph of teenagers at an outdoor concert. Describe what you can see and say how the people might be feeling.",
-      "maxDurationSeconds": 120,
-      "imageUrl": "/images/gold-mocks/ket-gold-mock-3-speaking-photo.svg",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {

@@ -150,7 +150,7 @@
       "instructions": "Part 1 — Listen and choose the correct picture",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-3/listening-part-1.mp3",
         "transcript": "Woman: I'm asking about internship forms at the careers desk. Friends: We're celebrating a reunion with food in the park.",
         "caption": "Part 1 — Listen and choose the correct picture"
       }
@@ -163,7 +163,7 @@
       "instructions": "Part 2 — Listen and choose the best answer",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-3/listening-part-2.mp3",
         "transcript": "Girl: I missed mentoring because of a family appointment. Boy: After school I'm going to a university open day.",
         "caption": "Part 2 — Listen and choose the best answer"
       }
@@ -176,7 +176,7 @@
       "instructions": "Part 3 — Listen and complete each gap",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-3/listening-part-3.mp3",
         "transcript": "Organiser: The careers webinar starts at 5 p.m. Registration costs ten pounds. The mentor will reply by Friday.",
         "caption": "Part 3 — Listen and complete each gap"
       }
@@ -189,7 +189,7 @@
       "instructions": "Part 4 — Listen to the monologue",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-3/listening-part-4.mp3",
         "transcript": "Speaker: I met my mentor at a school careers event. I schedule calls with friends abroad and practise interviews twice a week.",
         "caption": "Part 4 — Listen to the monologue"
       }
@@ -202,7 +202,7 @@
       "instructions": "Part 5 — Listen and match each speaker to an activity",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-5.mp3",
+        "src": "/audio/gold-mocks/pet-gold-mock-3/listening-part-5.mp3",
         "transcript": "Five students describe hospital work experience, long-distance friendship, Model UN, coding internship, and peer mediation.",
         "caption": "Part 5 — Listen and match each speaker to an activity"
       }
@@ -589,7 +589,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Why was Amira worried at first?",
-      "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
+      },
       "choices": [
         {
           "text": "She had to use English every day abroad",
@@ -609,12 +613,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
-      }
+      ]
     },
     {
       "questionRef": "pgm3-013",
@@ -632,7 +631,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What did Amira learn to do?",
-      "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
+      },
       "choices": [
         {
           "text": "Write clear emails to international partners",
@@ -652,12 +655,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
-      }
+      ]
     },
     {
       "questionRef": "pgm3-014",
@@ -675,7 +673,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What campaign did Amira help launch?",
-      "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
+      },
       "choices": [
         {
           "text": "A clean water project for rural schools",
@@ -695,12 +697,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
-      }
+      ]
     },
     {
       "questionRef": "pgm3-015",
@@ -718,7 +715,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What did the experience show Amira?",
-      "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
+      },
       "choices": [
         {
           "text": "Global teamwork can improve distant communities",
@@ -738,12 +739,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
-      }
+      ]
     },
     {
       "questionRef": "pgm3-016",
@@ -761,7 +757,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Who supported Amira at the start?",
-      "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
+      },
       "choices": [
         {
           "text": "A local volunteer mentor",
@@ -781,12 +781,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When Amira moved abroad for a summer internship at an international charity, she worried about communicating in English every day. Her mentor paired her with a local volunteer who showed her how to organise online meetings across time zones. Amira learned to write clear emails to partners in three countries and to listen carefully during video calls. By the end of the programme, she had helped launch a campaign about clean water in rural schools. The experience strengthened her confidence and showed her how global teamwork can improve communities far from home."
-      }
+      ]
     },
     {
       "questionRef": "pgm3-017",
@@ -1062,10 +1057,6 @@
       ],
       "skillTag": "reading",
       "questionText": "She applied ___ a summer internship in Geneva.",
-      "template": "She applied [0] a summer internship in Geneva.",
-      "correctAnswers": [
-        "for"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1091,10 +1082,6 @@
       ],
       "skillTag": "reading",
       "questionText": "They have known each other ___ primary school.",
-      "template": "They have known each other [0] primary school.",
-      "correctAnswers": [
-        "since"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1120,10 +1107,6 @@
       ],
       "skillTag": "reading",
       "questionText": "If you ___ politely, people usually listen.",
-      "template": "If you [0] politely, people usually listen.",
-      "correctAnswers": [
-        "speak"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1149,10 +1132,6 @@
       ],
       "skillTag": "reading",
       "questionText": "The colleague ___ advice I trust works in Berlin.",
-      "template": "The colleague [0] advice I trust works in Berlin.",
-      "correctAnswers": [
-        "whose"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1178,12 +1157,6 @@
       ],
       "skillTag": "reading",
       "questionText": "Although the time zones were different, the team ___ successfully.",
-      "template": "Although the time zones were different, the team [0] successfully.",
-      "correctAnswers": [
-        "collaborated",
-        "cooperated",
-        "worked"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1211,10 +1184,6 @@
       ],
       "skillTag": "reading",
       "questionText": "His CV ___ reviewed by two mentors yesterday.",
-      "template": "His CV [0] reviewed by two mentors yesterday.",
-      "correctAnswers": [
-        "was"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1240,7 +1209,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence introduces friendships across borders?",
-      "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
+      },
       "choices": [
         {
           "text": "[A] Many teenagers stay in touch with friends who move to other countries.",
@@ -1260,12 +1233,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
-      }
+      ]
     },
     {
       "questionRef": "pgm3-030",
@@ -1283,7 +1251,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence explains how technology helps?",
-      "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
+      },
       "choices": [
         {
           "text": "[B] Messaging apps make it easy to share news across continents within seconds.",
@@ -1303,12 +1275,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
-      }
+      ]
     },
     {
       "questionRef": "pgm3-031",
@@ -1326,7 +1293,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence introduces a challenge?",
-      "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
+      },
       "choices": [
         {
           "text": "[C] However, long-distance friendships need trust and regular communication.",
@@ -1346,12 +1317,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
-      }
+      ]
     },
     {
       "questionRef": "pgm3-032",
@@ -1369,7 +1335,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence describes a practical habit?",
-      "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
+      },
       "choices": [
         {
           "text": "[D] Some students schedule weekly video calls so they do not lose contact.",
@@ -1389,12 +1359,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
-      }
+      ]
     },
     {
       "questionRef": "pgm3-033",
@@ -1412,7 +1377,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence mentions cultural learning?",
-      "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
+      },
       "choices": [
         {
           "text": "[E] Cultural differences can cause misunderstandings, but they also teach patience.",
@@ -1432,12 +1401,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
-      }
+      ]
     },
     {
       "questionRef": "pgm3-034",
@@ -1455,7 +1419,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which sentence best concludes the text?",
-      "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
+      },
       "choices": [
         {
           "text": "[F] Maintaining global relationships helps young people feel connected and more open-minded.",
@@ -1475,12 +1443,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "[A] Many teenagers stay in touch with friends who move to other countries. [B] Messaging apps make it easy to share news across continents within seconds. [C] However, long-distance friendships need trust and regular communication. [D] Some students schedule weekly video calls so they do not lose contact. [E] Cultural differences can cause misunderstandings, but they also teach patience. [F] Maintaining global relationships helps young people feel connected and more open-minded."
-      }
+      ]
     },
     {
       "questionRef": "pgm3-035",
@@ -1500,16 +1463,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write an email in response to your English teacher about career.",
-      "cambridgeTaskType": "write_email",
-      "prompt": "Your English teacher has asked you to write about your future career plans. Write an email to your teacher.",
-      "taskDescription": "Write about 100 words. Answer all three points.",
-      "minWords": 100,
-      "maxWords": 120,
-      "requiredPoints": [
-        "Describe a job or field you are interested in",
-        "Explain what skills or experience you need",
-        "Ask for advice about steps you could take now"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1544,12 +1497,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a story about relationships that begins with the sentence below.",
-      "cambridgeTaskType": "write_story",
-      "prompt": "Your teacher has asked you to write a story. Your story must begin with this sentence: 'I had not seen my best friend for two years, but the message arrived at the perfect moment.'",
-      "taskDescription": "Write about 100 words.",
-      "minWords": 100,
-      "maxWords": 130,
-      "imageUrl": "/images/gold-mocks/pet-gold-mock-3-story.svg",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2163,10 +2110,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The careers webinar starts ___ 5 p.m.",
-      "template": "The careers webinar starts [0] 5 p.m.",
-      "correctAnswers": [
-        "at"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2192,11 +2135,6 @@
       ],
       "skillTag": "listening",
       "questionText": "Registration costs ___ pounds online.",
-      "template": "Registration costs [0] pounds online.",
-      "correctAnswers": [
-        "ten",
-        "10"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2223,10 +2161,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The mentor says she ___ reply by Friday.",
-      "template": "The mentor says she [0] reply by Friday.",
-      "correctAnswers": [
-        "will"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2252,11 +2186,6 @@
       ],
       "skillTag": "listening",
       "questionText": "Please write a short ___ about your goals.",
-      "template": "Please write a short [0] about your goals.",
-      "correctAnswers": [
-        "paragraph",
-        "summary"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2283,10 +2212,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The invitation ___ sent to all final-year students.",
-      "template": "The invitation [0] sent to all final-year students.",
-      "correctAnswers": [
-        "was"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2444,16 +2369,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Answer the examiner's questions about career.",
-      "cambridgeTaskType": "conversation",
-      "prompt": "The examiner will ask about your school subjects, career interests, and plans for the future.",
-      "maxDurationSeconds": 240,
-      "followUpQuestions": [
-        "Which school subjects do you enjoy most? Why?",
-        "Have you ever done work experience or volunteering?",
-        "What kind of job would you like in the future?",
-        "Do you prefer working alone or in a team?",
-        "What skills do you think are important for your chosen career?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2488,10 +2403,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Describe the global and say what you think is happening.",
-      "cambridgeTaskType": "picture_description_speaking",
-      "prompt": "Look at the photograph. Describe the setting, the people, and what you think they are doing.",
-      "maxDurationSeconds": 240,
-      "imageUrl": "/images/gold-mocks/pet-gold-mock-3-speaking-photo.svg",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2520,17 +2431,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Discuss how young people can maintain strong relationships in a global world.",
-      "cambridgeTaskType": "conversation",
-      "prompt": "Talk with your partner about keeping friendships and family relationships healthy when people live far apart.",
-      "maxDurationSeconds": 300,
-      "followUpQuestions": [
-        "What are the best ways to stay in touch with friends abroad?",
-        "How can misunderstandings be avoided in online conversations?",
-        "Should schools teach communication skills formally?",
-        "What role do parents play in supporting friendships?",
-        "How does social media help or harm relationships?",
-        "Which habit has worked best for you or someone you know?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {

@@ -129,7 +129,7 @@
       "instructions": "Link names to pictures",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "src": "/audio/gold-mocks/flyers-gold-mock-1/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mrs Chen. She's selling flowers at the festival stall.\nOmar is playing the drums on the main stage.\nPriya is taking photos of the dancers.\nMr Lopez cooks paella at the food stand every year.\nFinn's got a bright green festival wristband on his arm.\nZoe is standing next to the painting display near the entrance.\nThe mayor gave a short speech on the platform last night.",
         "caption": "Link names to pictures"
       }
@@ -142,7 +142,7 @@
       "instructions": "Write words or numbers",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "src": "/audio/gold-mocks/flyers-gold-mock-1/listening-part-2.mp3",
         "transcript": "Examiner: Listen and write the missing word or number.\n\nThe guest works as an engineer at a technology company.\nThe students are building a robot for the science fair.\nTomorrow the temperature will be twenty-two degrees.\nThe train to Brighton is leaving from platform five.\nThe old castle was built in eleven fifty.\nMaria was the fastest runner in the school competition.\nYou need two hundred grams of flour for the cake.",
         "caption": "Write words or numbers"
       }
@@ -155,7 +155,7 @@
       "instructions": "Tick the correct picture",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "src": "/audio/gold-mocks/flyers-gold-mock-1/listening-part-3.mp3",
         "transcript": "Examiner: Listen and tick the correct picture.\n\nThe explorers are carefully crossing a wooden bridge over the river.\nFrom the top of the hill they can see a green valley and a lake.\nLast night there was a thunderstorm but everyone stayed safe in the tents.\nThey cook a tasty vegetable stew on the campfire every evening.\nThe campsite is next to a forest path, two kilometres from the village.\nTomorrow morning they will canoe on the river if the weather is good.\nThey thought the eagle was the most interesting animal on the walk.",
         "caption": "Tick the correct picture"
       }
@@ -168,7 +168,7 @@
       "instructions": "Colour and draw",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "src": "/audio/gold-mocks/flyers-gold-mock-1/listening-part-4.mp3",
         "transcript": "Examiner: Listen and colour or draw.\n\nColour the shop sign turquoise.\nDraw a bicycle next to the bus stop sign.\nColour the woman's scarf scarlet.\nDraw an arrow from the boy to the library.\nDraw three clouds in the sky above the street.\nColour the post box red.\nDraw a cat sitting on the garden wall.",
         "caption": "Colour and draw"
       }
@@ -409,19 +409,15 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What job does the guest do?",
-      "template": "The guest works as a [0].",
-      "correctAnswers": [
-        "engineer"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The guest works as a [0].",
         "correctAnswers": [
           "engineer"
         ],
         "transcriptSnippet": "The guest works as an engineer at a technology company."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm-009",
@@ -440,19 +436,15 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What are the students building?",
-      "template": "The students are building a [0].",
-      "correctAnswers": [
-        "robot"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The students are building a [0].",
         "correctAnswers": [
           "robot"
         ],
         "transcriptSnippet": "The students are building a robot for the science fair."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm-010",
@@ -470,11 +462,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What will the temperature be tomorrow?",
-      "template": "Tomorrow the temperature will be [0] degrees.",
-      "correctAnswers": [
-        "twenty-two",
-        "22"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "Tomorrow the temperature will be [0] degrees.",
         "correctAnswers": [
@@ -482,9 +471,7 @@
           "22"
         ],
         "transcriptSnippet": "Tomorrow the temperature will be twenty-two degrees."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm-011",
@@ -503,11 +490,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. Which platform is the train leaving from?",
-      "template": "The train is leaving from platform [0].",
-      "correctAnswers": [
-        "five",
-        "5"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The train is leaving from platform [0].",
         "correctAnswers": [
@@ -515,9 +499,7 @@
           "5"
         ],
         "transcriptSnippet": "The train to Brighton is leaving from platform five."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm-012",
@@ -536,11 +518,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. When was the old castle built?",
-      "template": "The castle was built in [0].",
-      "correctAnswers": [
-        "eleven fifty",
-        "1150"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The castle was built in [0].",
         "correctAnswers": [
@@ -548,9 +527,7 @@
           "1150"
         ],
         "transcriptSnippet": "The old castle was built in eleven fifty."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm-013",
@@ -568,19 +545,15 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. Who was the fastest runner?",
-      "template": "The fastest runner was [0].",
-      "correctAnswers": [
-        "Maria"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The fastest runner was [0].",
         "correctAnswers": [
           "Maria"
         ],
         "transcriptSnippet": "Maria was the fastest runner in the school competition."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm-014",
@@ -598,11 +571,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. How much flour do you need?",
-      "template": "You need [0] grams of flour.",
-      "correctAnswers": [
-        "two hundred",
-        "200"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "You need [0] grams of flour.",
         "correctAnswers": [
@@ -610,9 +580,7 @@
           "200"
         ],
         "transcriptSnippet": "You need two hundred grams of flour for the cake."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "fgm-015",
@@ -1415,7 +1383,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the sentence. Choose the correct picture.",
-      "passage": "The local library is organising a reading festival for children this month.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The local library is organising a reading festival for children this month."
+      },
       "choices": [
         {
           "text": "Library festival poster",
@@ -1435,12 +1407,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The local library is organising a reading festival for children this month."
-      }
+      ]
     },
     {
       "questionRef": "fgm-037",
@@ -1458,7 +1425,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the sentence. Choose the correct picture.",
-      "passage": "Engineers are testing a new electric bus in the city centre.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Engineers are testing a new electric bus in the city centre."
+      },
       "choices": [
         {
           "text": "Electric bus on a city street",
@@ -1478,12 +1449,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Engineers are testing a new electric bus in the city centre."
-      }
+      ]
     },
     {
       "questionRef": "fgm-038",
@@ -1502,7 +1468,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the sentence. Choose the correct picture.",
-      "passage": "Last year volunteers cleaned plastic from the beach and helped baby turtles reach the sea.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last year volunteers cleaned plastic from the beach and helped baby turtles reach the sea."
+      },
       "choices": [
         {
           "text": "Beach clean-up and turtles",
@@ -1522,12 +1492,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last year volunteers cleaned plastic from the beach and helped baby turtles reach the sea."
-      }
+      ]
     },
     {
       "questionRef": "fgm-039",
@@ -1545,7 +1510,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the sentence. Choose the correct picture.",
-      "passage": "Our class is going to design a website about famous inventors.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our class is going to design a website about famous inventors."
+      },
       "choices": [
         {
           "text": "Students using computers",
@@ -1565,12 +1534,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Our class is going to design a website about famous inventors."
-      }
+      ]
     },
     {
       "questionRef": "fgm-040",
@@ -1588,7 +1552,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the sentence. Choose the correct picture.",
-      "passage": "The restaurant has got a menu with vegetarian and vegan dishes.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The restaurant has got a menu with vegetarian and vegan dishes."
+      },
       "choices": [
         {
           "text": "Restaurant menu with vegetables",
@@ -1608,12 +1576,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The restaurant has got a menu with vegetarian and vegan dishes."
-      }
+      ]
     },
     {
       "questionRef": "fgm-041",
@@ -1632,7 +1595,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the sentence. Choose the correct picture.",
-      "passage": "While the storm was blowing, branches were falling from the old tree in the garden.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "While the storm was blowing, branches were falling from the old tree in the garden."
+      },
       "choices": [
         {
           "text": "Tree in strong wind",
@@ -1652,12 +1619,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "While the storm was blowing, branches were falling from the old tree in the garden."
-      }
+      ]
     },
     {
       "questionRef": "fgm-042",
@@ -1676,7 +1638,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the sentence. Choose the correct picture.",
-      "passage": "Runners can collect sponsorship money to help build a new children's hospital.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Runners can collect sponsorship money to help build a new children's hospital."
+      },
       "choices": [
         {
           "text": "Charity running event",
@@ -1696,12 +1662,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Runners can collect sponsorship money to help build a new children's hospital."
-      }
+      ]
     },
     {
       "questionRef": "fgm-043",
@@ -1721,7 +1682,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read and choose the best answer.",
-      "passage": "Interview with Dr Reyes — marine biologist\n\nI've always loved the ocean. I studied biology at university and now I work on a research boat. Last summer we discovered a new species of fish near the coral reef. Plastic pollution is a big problem, so our team also teaches schools about protecting the sea.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Interview with Dr Reyes — marine biologist\n\nI've always loved the ocean. I studied biology at university and now I work on a research boat. Last summer we discovered a new species of fish near the coral reef. Plastic pollution is a big problem, so our team also teaches schools about protecting the sea."
+      },
       "choices": [
         {
           "text": "Dr Reyes works on a research boat.",
@@ -1741,12 +1706,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Interview with Dr Reyes — marine biologist\n\nI've always loved the ocean. I studied biology at university and now I work on a research boat. Last summer we discovered a new species of fish near the coral reef. Plastic pollution is a big problem, so our team also teaches schools about protecting the sea."
-      }
+      ]
     },
     {
       "questionRef": "fgm-044",
@@ -1765,7 +1725,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read and choose the best answer.",
-      "passage": "The Old Observatory was built in 1892 on a hill above the town. Astronomers used it to study the stars before modern computers existed. During the war it closed, but volunteers reopened it as a museum in 1985. Today visitors can look through the original telescope on clear nights.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The Old Observatory was built in 1892 on a hill above the town. Astronomers used it to study the stars before modern computers existed. During the war it closed, but volunteers reopened it as a museum in 1985. Today visitors can look through the original telescope on clear nights."
+      },
       "choices": [
         {
           "text": "The observatory is now a museum.",
@@ -1785,12 +1749,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The Old Observatory was built in 1892 on a hill above the town. Astronomers used it to study the stars before modern computers existed. During the war it closed, but volunteers reopened it as a museum in 1985. Today visitors can look through the original telescope on clear nights."
-      }
+      ]
     },
     {
       "questionRef": "fgm-045",
@@ -1809,7 +1768,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read and choose the best answer.",
-      "passage": "Day 3 — Cycling in the countryside\n\nWe are cycling along quiet country lanes and stopping at small farms to buy cheese and bread. The hills are tiring but the views are amazing. Tonight we are staying in a guest house where the owner is cooking a traditional meal for all the guests.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Day 3 — Cycling in the countryside\n\nWe are cycling along quiet country lanes and stopping at small farms to buy cheese and bread. The hills are tiring but the views are amazing. Tonight we are staying in a guest house where the owner is cooking a traditional meal for all the guests."
+      },
       "choices": [
         {
           "text": "They are staying in a guest house tonight.",
@@ -1829,12 +1792,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Day 3 — Cycling in the countryside\n\nWe are cycling along quiet country lanes and stopping at small farms to buy cheese and bread. The hills are tiring but the views are amazing. Tonight we are staying in a guest house where the owner is cooking a traditional meal for all the guests."
-      }
+      ]
     },
     {
       "questionRef": "fgm-046",
@@ -1853,7 +1811,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read and choose the best answer.",
-      "passage": "Green School News\n\nStudents must turn off lights when they leave a room. We mustn't leave taps running because water is precious. The eco club planted fifty trees behind the sports field and built bird boxes for the garden. Next term we are going to start a compost project.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Green School News\n\nStudents must turn off lights when they leave a room. We mustn't leave taps running because water is precious. The eco club planted fifty trees behind the sports field and built bird boxes for the garden. Next term we are going to start a compost project."
+      },
       "choices": [
         {
           "text": "The eco club planted trees at school.",
@@ -1873,12 +1835,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Green School News\n\nStudents must turn off lights when they leave a room. We mustn't leave taps running because water is precious. The eco club planted fifty trees behind the sports field and built bird boxes for the garden. Next term we are going to start a compost project."
-      }
+      ]
     },
     {
       "questionRef": "fgm-047",
@@ -1897,7 +1854,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read and choose the best answer.",
-      "passage": "When the path suddenly disappeared in the fog, Maya felt nervous. She was checking her map while her brother was calling the mountain rescue on his phone. They were wearing warm jackets because the temperature was falling quickly. An hour later a guide arrived and led them safely back to the village.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "When the path suddenly disappeared in the fog, Maya felt nervous. She was checking her map while her brother was calling the mountain rescue on his phone. They were wearing warm jackets because the temperature was falling quickly. An hour later a guide arrived and led them safely back to the village."
+      },
       "choices": [
         {
           "text": "A guide helped them return to the village.",
@@ -1917,12 +1878,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "When the path suddenly disappeared in the fog, Maya felt nervous. She was checking her map while her brother was calling the mountain rescue on his phone. They were wearing warm jackets because the temperature was falling quickly. An hour later a guide arrived and led them safely back to the village."
-      }
+      ]
     },
     {
       "questionRef": "fgm-048",
@@ -1941,7 +1897,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read and choose the best answer.",
-      "passage": "Wearable fitness trackers can count your steps and measure your heart rate. Some models are more accurate than others, especially when you are running. Doctors say trackers are useful, but sleeping well and eating healthy food are more important for long-term health.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Wearable fitness trackers can count your steps and measure your heart rate. Some models are more accurate than others, especially when you are running. Doctors say trackers are useful, but sleeping well and eating healthy food are more important for long-term health."
+      },
       "choices": [
         {
           "text": "Some trackers are more accurate than others.",
@@ -1961,12 +1921,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Wearable fitness trackers can count your steps and measure your heart rate. Some models are more accurate than others, especially when you are running. Doctors say trackers are useful, but sleeping well and eating healthy food are more important for long-term health."
-      }
+      ]
     },
     {
       "questionRef": "fgm-049",
@@ -1985,7 +1940,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read and choose the best answer.",
-      "passage": "The Riverside Arts Festival was the most exciting event of the year. The jazz concert was the loudest performance, but the puppet show was the funniest for younger children. Food stalls sold dishes from twelve countries. Many people said the fireworks at the end were the most beautiful they had ever seen.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The Riverside Arts Festival was the most exciting event of the year. The jazz concert was the loudest performance, but the puppet show was the funniest for younger children. Food stalls sold dishes from twelve countries. Many people said the fireworks at the end were the most beautiful they had ever seen."
+      },
       "choices": [
         {
           "text": "People enjoyed the fireworks at the end.",
@@ -2005,12 +1964,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The Riverside Arts Festival was the most exciting event of the year. The jazz concert was the loudest performance, but the puppet show was the funniest for younger children. Food stalls sold dishes from twelve countries. Many people said the fireworks at the end were the most beautiful they had ever seen."
-      }
+      ]
     },
     {
       "questionRef": "fgm-050",
@@ -2029,16 +1983,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a message to your friend about your summer camp plans.",
-      "cambridgeTaskType": "write_note",
-      "prompt": "Write a message to your friend about your summer camp plans.",
-      "minWords": 20,
-      "maxWords": 50,
-      "taskDescription": "Tell your friend about camp.",
-      "requiredPoints": [
-        "Say when you are going",
-        "Say what activities you will do",
-        "Ask your friend a question"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2072,16 +2016,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a thank-you note to a visitor at your school.",
-      "cambridgeTaskType": "write_note",
-      "prompt": "Write a thank-you note to the scientist who visited your school.",
-      "minWords": 18,
-      "maxWords": 45,
-      "taskDescription": "Thank the visitor.",
-      "requiredPoints": [
-        "Say what you learned",
-        "Say what you enjoyed most",
-        "Invite them to come again"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2115,16 +2049,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a note for the school notice board about something you lost.",
-      "cambridgeTaskType": "write_note",
-      "prompt": "Write a note for the school notice board about something you lost.",
-      "minWords": 20,
-      "maxWords": 55,
-      "taskDescription": "Describe your lost item.",
-      "requiredPoints": [
-        "Say what you lost",
-        "Say where you last had it",
-        "Give a contact name"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2158,15 +2082,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a story called 'The Hidden Door'.",
-      "cambridgeTaskType": "write_story",
-      "prompt": "Write a story called 'The Hidden Door'.",
-      "minWords": 35,
-      "maxWords": 80,
-      "taskDescription": "Write an adventure story.",
-      "requiredPoints": [
-        "Include a problem",
-        "Include how the problem was solved"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2200,15 +2115,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a story about a stormy night.",
-      "cambridgeTaskType": "write_story",
-      "prompt": "Write a story about a stormy night.",
-      "minWords": 40,
-      "maxWords": 90,
-      "taskDescription": "Write a story with a clear beginning, middle and end.",
-      "requiredPoints": [
-        "Describe the weather",
-        "Say how the characters felt"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2242,16 +2148,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write three or four sentences about the harbour.",
-      "cambridgeTaskType": "picture_description",
-      "prompt": "Look at the picture. Write three or four sentences about the harbour.",
-      "minWords": 12,
-      "maxWords": 40,
-      "imageUrl": "/images/gold-mocks/flyers/fgm-053-harbour.png",
-      "taskDescription": "Describe the harbour scene.",
-      "requiredPoints": [
-        "Say what boats are doing",
-        "Say where people are"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2260,7 +2156,7 @@
         "taskDescription": "Describe the harbour scene.",
         "minWords": 12,
         "maxWords": 40,
-        "imageUrl": "/images/gold-mocks/flyers/fgm-053-harbour.png",
+        "imageUrl": "/images/gold-mocks/flyers/fgm-053-harbour.svg",
         "requiredPoints": [
           "Say what boats are doing",
           "Say where people are"
@@ -2286,16 +2182,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write three or four sentences about the city square.",
-      "cambridgeTaskType": "picture_description",
-      "prompt": "Look at the picture. Write three or four sentences about the city square.",
-      "minWords": 12,
-      "maxWords": 45,
-      "imageUrl": "/images/gold-mocks/flyers/fgm-054-city-square.png",
-      "taskDescription": "Describe the busy square.",
-      "requiredPoints": [
-        "Compare two things in the picture",
-        "Say what different people are doing"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -2304,7 +2190,7 @@
         "taskDescription": "Describe the busy square.",
         "minWords": 12,
         "maxWords": 45,
-        "imageUrl": "/images/gold-mocks/flyers/fgm-054-city-square.png",
+        "imageUrl": "/images/gold-mocks/flyers/fgm-054-city-square.svg",
         "requiredPoints": [
           "Compare two things in the picture",
           "Say what different people are doing"
@@ -2330,17 +2216,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Look at the two pictures. Tell your partner about the differences.",
-      "cambridgeTaskType": "speaking_picture_description",
-      "prompt": "Look at the two pictures of a city street. Tell your partner about five differences between them.",
-      "maxDurationSeconds": 120,
-      "imageUrl": "/images/gold-mocks/flyers/fgm-055-city-pair.png",
-      "followUpQuestions": [
-        "How many cars are in picture A?",
-        "What is different about the café?",
-        "Is there a cyclist in both pictures?",
-        "Where is the bus in picture B?",
-        "What colour is the traffic light in picture A?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2354,7 +2229,7 @@
           "Where is the bus in picture B?",
           "What colour is the traffic light in picture A?"
         ],
-        "imageUrl": "/images/gold-mocks/flyers/fgm-055-city-pair.png",
+        "imageUrl": "/images/gold-mocks/flyers/fgm-055-city-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -2377,16 +2252,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Answer the examiner's questions about you.",
-      "cambridgeTaskType": "speaking_personal_questions",
-      "prompt": "Answer the examiner's questions about yourself, your school, hobbies and future plans.",
-      "maxDurationSeconds": 180,
-      "followUpQuestions": [
-        "Tell me about your best friend.",
-        "What are you learning at school this year?",
-        "Describe a place you visited recently.",
-        "What would you like to do when you are older?",
-        "How do you usually spend your weekends?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2422,22 +2287,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Look at the pictures and tell the story.",
-      "cambridgeTaskType": "speaking_storytelling",
-      "prompt": "Look at these pictures and tell the story of the treasure map adventure.",
-      "maxDurationSeconds": 180,
-      "pictureSequence": [
-        "/images/gold-mocks/flyers/fgm-057-story-1-map.png",
-        "/images/gold-mocks/flyers/fgm-057-story-2-cave.png",
-        "/images/gold-mocks/flyers/fgm-057-story-3-bridge.png",
-        "/images/gold-mocks/flyers/fgm-057-story-4-celebrate.png"
-      ],
-      "followUpQuestions": [
-        "Where did the children find the map?",
-        "What problem did they have at the cave?",
-        "How did they cross the river?",
-        "What did they discover?",
-        "How did they feel at the end?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2452,10 +2301,10 @@
           "How did they feel at the end?"
         ],
         "pictureSequence": [
-          "/images/gold-mocks/flyers/fgm-057-story-1-map.png",
-          "/images/gold-mocks/flyers/fgm-057-story-2-cave.png",
-          "/images/gold-mocks/flyers/fgm-057-story-3-bridge.png",
-          "/images/gold-mocks/flyers/fgm-057-story-4-celebrate.png"
+          "/images/gold-mocks/flyers/fgm-057-story-1-map.svg",
+          "/images/gold-mocks/flyers/fgm-057-story-2-cave.svg",
+          "/images/gold-mocks/flyers/fgm-057-story-3-bridge.svg",
+          "/images/gold-mocks/flyers/fgm-057-story-4-celebrate.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

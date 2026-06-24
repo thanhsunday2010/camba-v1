@@ -113,7 +113,7 @@
       "instructions": "Link names to pictures",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "src": "/audio/gold-mocks/starters-gold-mock-1/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Tom. He's got a red school bag.\nAnna is my sister. She's got long brown hair.\nBen wears glasses in class every day.\nLucy is my friend. She's wearing a yellow T-shirt today.\nLook at Sam. He's playing football in the playground.",
         "caption": "Link names to pictures"
       }
@@ -126,7 +126,7 @@
       "instructions": "Write words or numbers",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "src": "/audio/gold-mocks/starters-gold-mock-1/listening-part-2.mp3",
         "transcript": "Examiner: Listen and write the missing word or number.\n\nSally has got a small white cat. Its name is Snow.\nJack loves pizza. He eats pizza for lunch on Fridays.\nIt's a beautiful day. The weather is sunny and warm.\nThere are seven books on the teacher's desk.\nEmma is wearing a new blue hat today.",
         "caption": "Write words or numbers"
       }
@@ -139,7 +139,7 @@
       "instructions": "Tick the correct picture",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "src": "/audio/gold-mocks/starters-gold-mock-1/listening-part-3.mp3",
         "transcript": "Examiner: Listen and tick the correct picture.\n\nThe horse is running in the field near the farm.\nMum is drinking a glass of orange juice at breakfast.\nThe boy is playing with his toy train on the floor.\nThe girl can play the piano very well.\nDad and Grandpa are building a big sandcastle on the beach.",
         "caption": "Tick the correct picture"
       }
@@ -152,7 +152,7 @@
       "instructions": "Colour and draw",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "src": "/audio/gold-mocks/starters-gold-mock-1/listening-part-4.mp3",
         "transcript": "Examiner: Listen and colour or draw.\n\nColour the bird green, please.\nNow colour the boy's T-shirt red.\nDraw a sun in the top left of the picture.\nColour the flower yellow.\nDraw a line from the girl to the swing.",
         "caption": "Colour and draw"
       }
@@ -327,10 +327,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What pet has Sally got?",
-      "template": "Sally has got a [0].",
-      "correctAnswers": [
-        "cat"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "Sally has got a [0].",
         "correctAnswers": [
@@ -338,9 +336,7 @@
         ],
         "transcriptSnippet": "Sally has got a small white cat. Its name is Snow.",
         "expectedWordType": "noun"
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm-007",
@@ -358,10 +354,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What does Jack eat for lunch?",
-      "template": "Jack eats [0] for lunch.",
-      "correctAnswers": [
-        "pizza"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "Jack eats [0] for lunch.",
         "correctAnswers": [
@@ -369,9 +363,7 @@
         ],
         "transcriptSnippet": "Jack loves pizza. He eats pizza for lunch on Fridays.",
         "expectedWordType": "noun"
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm-008",
@@ -389,10 +381,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What is the weather like today?",
-      "template": "Today the weather is [0].",
-      "correctAnswers": [
-        "sunny"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "Today the weather is [0].",
         "correctAnswers": [
@@ -400,9 +390,7 @@
         ],
         "transcriptSnippet": "It's a beautiful day. The weather is sunny and warm.",
         "expectedWordType": "adjective"
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm-009",
@@ -420,11 +408,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. How many books are on the teacher's desk?",
-      "template": "There are [0] books on the desk.",
-      "correctAnswers": [
-        "seven",
-        "7"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "There are [0] books on the desk.",
         "correctAnswers": [
@@ -433,9 +418,7 @@
         ],
         "transcriptSnippet": "There are seven books on the teacher's desk.",
         "expectedWordType": "number"
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm-010",
@@ -453,10 +436,8 @@
       ],
       "skillTag": "listening",
       "questionText": "Listen and write. What colour is Emma's hat?",
-      "template": "Emma's hat is [0].",
-      "correctAnswers": [
-        "blue"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "Emma's hat is [0].",
         "correctAnswers": [
@@ -464,9 +445,7 @@
         ],
         "transcriptSnippet": "Emma is wearing a new blue hat today.",
         "expectedWordType": "colour"
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm-011",
@@ -1073,7 +1052,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the sentence. Choose the correct picture.",
-      "passage": "My brother likes playing computer games in his bedroom.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "My brother likes playing computer games in his bedroom."
+      },
       "choices": [
         {
           "text": "Boy playing on a computer",
@@ -1093,12 +1076,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "My brother likes playing computer games in his bedroom."
-      }
+      ]
     },
     {
       "questionRef": "sgm-027",
@@ -1117,7 +1095,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the sentence. Choose the correct picture.",
-      "passage": "The monkeys are funny. They are jumping in the zoo.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The monkeys are funny. They are jumping in the zoo."
+      },
       "choices": [
         {
           "text": "Monkeys jumping in a zoo",
@@ -1137,12 +1119,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The monkeys are funny. They are jumping in the zoo."
-      }
+      ]
     },
     {
       "questionRef": "sgm-028",
@@ -1161,7 +1138,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the sentence. Choose the correct picture.",
-      "passage": "Mum buys apples and oranges at the market every Saturday.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Mum buys apples and oranges at the market every Saturday."
+      },
       "choices": [
         {
           "text": "Woman buying fruit at a market",
@@ -1181,12 +1162,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Mum buys apples and oranges at the market every Saturday."
-      }
+      ]
     },
     {
       "questionRef": "sgm-029",
@@ -1205,7 +1181,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the sentence. Choose the correct picture.",
-      "passage": "The children have got sandwiches and milk for lunch at school.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The children have got sandwiches and milk for lunch at school."
+      },
       "choices": [
         {
           "text": "Children eating sandwiches at school",
@@ -1225,12 +1205,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The children have got sandwiches and milk for lunch at school."
-      }
+      ]
     },
     {
       "questionRef": "sgm-030",
@@ -1249,7 +1224,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read the sentence. Choose the correct picture.",
-      "passage": "It is raining today, so the children are wearing boots and coats.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "It is raining today, so the children are wearing boots and coats."
+      },
       "choices": [
         {
           "text": "Children in coats and boots in the rain",
@@ -1269,12 +1248,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "It is raining today, so the children are wearing boots and coats."
-      }
+      ]
     },
     {
       "questionRef": "sgm-031",
@@ -1293,7 +1267,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read and choose the best answer.",
-      "passage": "Hello! My name is Kim. I am eight years old. I have got a small brown dog. His name is Rocky. Rocky can run very fast. We play in the garden every day after school.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Hello! My name is Kim. I am eight years old. I have got a small brown dog. His name is Rocky. Rocky can run very fast. We play in the garden every day after school."
+      },
       "choices": [
         {
           "text": "Kim has got a dog called Rocky.",
@@ -1313,12 +1291,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Hello! My name is Kim. I am eight years old. I have got a small brown dog. His name is Rocky. Rocky can run very fast. We play in the garden every day after school."
-      }
+      ]
     },
     {
       "questionRef": "sgm-032",
@@ -1337,7 +1310,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read and choose the best answer.",
-      "passage": "Our school starts at eight o'clock. We have English and Maths in the morning. After lunch we go to the playground. I like playing with my friends there.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our school starts at eight o'clock. We have English and Maths in the morning. After lunch we go to the playground. I like playing with my friends there."
+      },
       "choices": [
         {
           "text": "The children play in the playground after lunch.",
@@ -1357,12 +1334,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Our school starts at eight o'clock. We have English and Maths in the morning. After lunch we go to the playground. I like playing with my friends there."
-      }
+      ]
     },
     {
       "questionRef": "sgm-033",
@@ -1382,7 +1354,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read and choose the best answer.",
-      "passage": "Last Sunday was my birthday. My grandma made a big chocolate cake. My cousins came to my house. We played games and opened presents. It was a great day!",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Sunday was my birthday. My grandma made a big chocolate cake. My cousins came to my house. We played games and opened presents. It was a great day!"
+      },
       "choices": [
         {
           "text": "The birthday party was last Sunday.",
@@ -1402,12 +1378,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last Sunday was my birthday. My grandma made a big chocolate cake. My cousins came to my house. We played games and opened presents. It was a great day!"
-      }
+      ]
     },
     {
       "questionRef": "sgm-034",
@@ -1426,7 +1397,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read and choose the best answer.",
-      "passage": "Yesterday our class went to the zoo by bus. We saw lions, giraffes and penguins. The penguins can swim but they can't fly. My favourite animal was the tall giraffe.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Yesterday our class went to the zoo by bus. We saw lions, giraffes and penguins. The penguins can swim but they can't fly. My favourite animal was the tall giraffe."
+      },
       "choices": [
         {
           "text": "The class went to the zoo by bus.",
@@ -1446,12 +1421,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Yesterday our class went to the zoo by bus. We saw lions, giraffes and penguins. The penguins can swim but they can't fly. My favourite animal was the tall giraffe."
-      }
+      ]
     },
     {
       "questionRef": "sgm-035",
@@ -1471,7 +1441,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Read and choose the best answer.",
-      "passage": "Next week my family is going to the beach. The weather forecast says it will be sunny and hot. I am going to take my swimsuit, sunglasses and a sun hat. I can't wait!",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Next week my family is going to the beach. The weather forecast says it will be sunny and hot. I am going to take my swimsuit, sunglasses and a sun hat. I can't wait!"
+      },
       "choices": [
         {
           "text": "The family is going to the beach next week.",
@@ -1491,12 +1465,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Next week my family is going to the beach. The weather forecast says it will be sunny and hot. I am going to take my swimsuit, sunglasses and a sun hat. I can't wait!"
-      }
+      ]
     },
     {
       "questionRef": "sgm-036",
@@ -1514,11 +1483,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write one sentence about the girl and her mum.",
-      "cambridgeTaskType": "write_sentence",
-      "prompt": "Look at the picture. Write one sentence about the girl and her mum.",
-      "minWords": 3,
-      "maxWords": 15,
-      "imageUrl": "/images/gold-mocks/starters/sgm-036-family-kitchen.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1526,7 +1490,7 @@
         "prompt": "Look at the picture. Write one sentence about the girl and her mum.",
         "minWords": 3,
         "maxWords": 15,
-        "imageUrl": "/images/gold-mocks/starters/sgm-036-family-kitchen.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm-036-family-kitchen.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1546,11 +1510,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write one sentence about the cat.",
-      "cambridgeTaskType": "write_sentence",
-      "prompt": "Look at the picture. Write one sentence about the cat.",
-      "minWords": 3,
-      "maxWords": 15,
-      "imageUrl": "/images/gold-mocks/starters/sgm-037-cat-window.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1558,7 +1517,7 @@
         "prompt": "Look at the picture. Write one sentence about the cat.",
         "minWords": 3,
         "maxWords": 15,
-        "imageUrl": "/images/gold-mocks/starters/sgm-037-cat-window.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm-037-cat-window.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1578,11 +1537,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write one sentence about what the children are doing.",
-      "cambridgeTaskType": "write_sentence",
-      "prompt": "Look at the picture. Write one sentence about what the children are doing.",
-      "minWords": 4,
-      "maxWords": 18,
-      "imageUrl": "/images/gold-mocks/starters/sgm-038-classroom-drawing.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1590,7 +1544,7 @@
         "prompt": "Look at the picture. Write one sentence about what the children are doing.",
         "minWords": 4,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/starters/sgm-038-classroom-drawing.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm-038-classroom-drawing.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1611,16 +1565,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write two or three sentences about the park.",
-      "cambridgeTaskType": "picture_description",
-      "prompt": "Look at the picture. Write two or three sentences about the park.",
-      "taskDescription": "Describe what you can see in the park picture.",
-      "minWords": 5,
-      "maxWords": 25,
-      "imageUrl": "/images/gold-mocks/starters/sgm-039-park-scene.png",
-      "requiredPoints": [
-        "Say what is in the park",
-        "Say what someone is doing"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1629,7 +1573,7 @@
         "taskDescription": "Describe what you can see in the park picture.",
         "minWords": 5,
         "maxWords": 25,
-        "imageUrl": "/images/gold-mocks/starters/sgm-039-park-scene.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm-039-park-scene.svg",
         "requiredPoints": [
           "Say what is in the park",
           "Say what someone is doing"
@@ -1654,16 +1598,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Look at the picture. Write two or three sentences about the children in the rain.",
-      "cambridgeTaskType": "picture_description",
-      "prompt": "Look at the picture. Write two or three sentences about the children in the rain.",
-      "taskDescription": "Describe the weather and what the children are wearing.",
-      "minWords": 5,
-      "maxWords": 25,
-      "imageUrl": "/images/gold-mocks/starters/sgm-040-rainy-street.png",
-      "requiredPoints": [
-        "Say what the weather is like",
-        "Say what the children are wearing"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1672,7 +1606,7 @@
         "taskDescription": "Describe the weather and what the children are wearing.",
         "minWords": 5,
         "maxWords": 25,
-        "imageUrl": "/images/gold-mocks/starters/sgm-040-rainy-street.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm-040-rainy-street.svg",
         "requiredPoints": [
           "Say what the weather is like",
           "Say what the children are wearing"
@@ -1698,17 +1632,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Look at the two pictures. Tell your partner about the differences.",
-      "cambridgeTaskType": "speaking_picture_description",
-      "prompt": "Look at the two pictures of a living room. Tell your partner about five differences between them.",
-      "maxDurationSeconds": 120,
-      "imageUrl": "/images/gold-mocks/starters/sgm-041-living-room-pair.png",
-      "followUpQuestions": [
-        "How many toys are on the floor in picture A?",
-        "What colour is the sofa in picture B?",
-        "Is there a cat in both pictures?",
-        "Where is the lamp in picture A?",
-        "What is on the table in picture B?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -1722,7 +1645,7 @@
           "Where is the lamp in picture A?",
           "What is on the table in picture B?"
         ],
-        "imageUrl": "/images/gold-mocks/starters/sgm-041-living-room-pair.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm-041-living-room-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -1745,16 +1668,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Answer the examiner's questions about you.",
-      "cambridgeTaskType": "speaking_personal_questions",
-      "prompt": "Answer the examiner's questions about yourself, your family and your school.",
-      "maxDurationSeconds": 180,
-      "followUpQuestions": [
-        "What's your name?",
-        "How old are you?",
-        "Have you got any brothers or sisters?",
-        "What is your favourite school subject?",
-        "What do you like doing in your free time?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -1790,22 +1703,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Look at the pictures and tell the story.",
-      "cambridgeTaskType": "speaking_storytelling",
-      "prompt": "Look at these pictures and tell the story of Tom's day at the beach.",
-      "maxDurationSeconds": 180,
-      "pictureSequence": [
-        "/images/gold-mocks/starters/sgm-043-story-1-car.png",
-        "/images/gold-mocks/starters/sgm-043-story-2-beach.png",
-        "/images/gold-mocks/starters/sgm-043-story-3-icecream.png",
-        "/images/gold-mocks/starters/sgm-043-story-4-home.png"
-      ],
-      "followUpQuestions": [
-        "Who went to the beach with Tom?",
-        "What did they do first?",
-        "What did Tom eat?",
-        "How was the weather?",
-        "What happened at the end of the day?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -1820,10 +1717,10 @@
           "What happened at the end of the day?"
         ],
         "pictureSequence": [
-          "/images/gold-mocks/starters/sgm-043-story-1-car.png",
-          "/images/gold-mocks/starters/sgm-043-story-2-beach.png",
-          "/images/gold-mocks/starters/sgm-043-story-3-icecream.png",
-          "/images/gold-mocks/starters/sgm-043-story-4-home.png"
+          "/images/gold-mocks/starters/sgm-043-story-1-car.svg",
+          "/images/gold-mocks/starters/sgm-043-story-2-beach.svg",
+          "/images/gold-mocks/starters/sgm-043-story-3-icecream.svg",
+          "/images/gold-mocks/starters/sgm-043-story-4-home.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

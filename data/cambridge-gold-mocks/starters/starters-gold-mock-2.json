@@ -113,7 +113,7 @@
       "instructions": "Link names to pictures",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "src": "/audio/gold-mocks/starters-gold-mock-2/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Max. He's feeding a brown rabbit in the garden.\nMia has got a small kitten. She's holding it carefully.\nLeo is wearing a blue shirt. A green parrot is on his shoulder.\nEva is riding a white pony near the farm gate.\nLook at Hugo. He's watching ducks on the pond in the park.",
         "caption": "Link names to pictures"
       }
@@ -126,7 +126,7 @@
       "instructions": "Write words or numbers",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "src": "/audio/gold-mocks/starters-gold-mock-2/listening-part-2.mp3",
         "transcript": "Examiner: Listen and write the missing word or number.\n\nTom has got a friendly black and white dog. Its name is Patch.\nThe hamster sleeps in its cage next to the window.\nThere are three orange fish in the glass bowl.\nA little rabbit lives in the garden behind our house.\nThe bird on the tree is orange and very noisy.",
         "caption": "Write words or numbers"
       }
@@ -139,7 +139,7 @@
       "instructions": "Tick the correct picture",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "src": "/audio/gold-mocks/starters-gold-mock-2/listening-part-3.mp3",
         "transcript": "Examiner: Listen and tick the correct picture.\n\nThe cat is sleeping on the sofa in the living room.\nThe hungry dog is eating a big bone in the kitchen.\nThe rabbit is eating carrots near the fence.\nThe ducks are on the pond near the big willow tree.\nThe horse can jump over the fence very well.",
         "caption": "Tick the correct picture"
       }
@@ -152,7 +152,7 @@
       "instructions": "Colour and draw",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "src": "/audio/gold-mocks/starters-gold-mock-2/listening-part-4.mp3",
         "transcript": "Examiner: Listen and colour or draw.\n\nColour the butterfly purple, please.\nNow colour the dog's bowl pink.\nDraw a bone next to the puppy on the grass.\nColour the fish in the bowl blue.\nDraw a line from the girl to the horse in the field.",
         "caption": "Colour and draw"
       }
@@ -323,19 +323,15 @@
       "questionText": "Listen and write. What pet has Tom got?",
       "skillTag": "listening",
       "points": 1,
-      "template": "Tom has got a [0].",
-      "correctAnswers": [
-        "dog"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "Tom has got a [0].",
         "correctAnswers": [
           "dog"
         ],
         "transcriptSnippet": "Tom has got a friendly black and white dog. Its name is Patch."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm2-007",
@@ -354,19 +350,15 @@
       "questionText": "Listen and write. Where does the hamster sleep?",
       "skillTag": "listening",
       "points": 1,
-      "template": "The hamster sleeps in its [0].",
-      "correctAnswers": [
-        "cage"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The hamster sleeps in its [0].",
         "correctAnswers": [
           "cage"
         ],
         "transcriptSnippet": "The hamster sleeps in its cage next to the window."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm2-008",
@@ -384,11 +376,8 @@
       "questionText": "Listen and write. How many fish are in the bowl?",
       "skillTag": "listening",
       "points": 1,
-      "template": "There are [0] fish in the bowl.",
-      "correctAnswers": [
-        "three",
-        "3"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "There are [0] fish in the bowl.",
         "correctAnswers": [
@@ -396,9 +385,7 @@
           "3"
         ],
         "transcriptSnippet": "There are three orange fish in the glass bowl."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm2-009",
@@ -417,19 +404,15 @@
       "questionText": "Listen and write. What animal lives in the garden?",
       "skillTag": "listening",
       "points": 1,
-      "template": "A [0] lives in the garden.",
-      "correctAnswers": [
-        "rabbit"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "A [0] lives in the garden.",
         "correctAnswers": [
           "rabbit"
         ],
         "transcriptSnippet": "A little rabbit lives in the garden behind our house."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm2-010",
@@ -448,19 +431,15 @@
       "questionText": "Listen and write. What colour is the bird?",
       "skillTag": "listening",
       "points": 1,
-      "template": "The bird is [0].",
-      "correctAnswers": [
-        "orange"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The bird is [0].",
         "correctAnswers": [
           "orange"
         ],
         "transcriptSnippet": "The bird on the tree is orange and very noisy."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm2-011",
@@ -1038,7 +1017,11 @@
       "questionText": "Read: \"Dad is cooking pasta for dinner in the k…\" Choose the correct picture.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "Dad is cooking pasta for dinner in the kitchen.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Dad is cooking pasta for dinner in the kitchen."
+      },
       "choices": [
         {
           "text": "Man cooking in a kitchen",
@@ -1058,12 +1041,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Dad is cooking pasta for dinner in the kitchen."
-      }
+      ]
     },
     {
       "questionRef": "sgm2-027",
@@ -1082,7 +1060,11 @@
       "questionText": "Read: \"The grey cat is sleeping on the bed in t…\" Choose the correct picture.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "The grey cat is sleeping on the bed in the bedroom.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The grey cat is sleeping on the bed in the bedroom."
+      },
       "choices": [
         {
           "text": "Cat sleeping on a bed",
@@ -1102,12 +1084,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The grey cat is sleeping on the bed in the bedroom."
-      }
+      ]
     },
     {
       "questionRef": "sgm2-028",
@@ -1126,7 +1103,11 @@
       "questionText": "Read: \"The children are playing on the swings a…\" Choose the correct picture.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "The children are playing on the swings and the slide in the park.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The children are playing on the swings and the slide in the park."
+      },
       "choices": [
         {
           "text": "Children on swings and a slide",
@@ -1146,12 +1127,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The children are playing on the swings and the slide in the park."
-      }
+      ]
     },
     {
       "questionRef": "sgm2-029",
@@ -1170,7 +1146,11 @@
       "questionText": "Read: \"Grandma is reading a story book in the a…\" Choose the correct picture.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "Grandma is reading a story book in the armchair by the window.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Grandma is reading a story book in the armchair by the window."
+      },
       "choices": [
         {
           "text": "Old woman reading in an armchair",
@@ -1190,12 +1170,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Grandma is reading a story book in the armchair by the window."
-      }
+      ]
     },
     {
       "questionRef": "sgm2-030",
@@ -1214,7 +1189,11 @@
       "questionText": "Read: \"It is windy today, so Ben is flying his…\" Choose the correct picture.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "It is windy today, so Ben is flying his kite high above the park trees.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "It is windy today, so Ben is flying his kite high above the park trees."
+      },
       "choices": [
         {
           "text": "Boy flying a kite in a windy park",
@@ -1234,12 +1213,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "It is windy today, so Ben is flying his kite high above the park trees."
-      }
+      ]
     },
     {
       "questionRef": "sgm2-031",
@@ -1258,7 +1232,11 @@
       "questionText": "Read the text beginning \"Hello! My name is Nina. I am seven…\" and choose the best answer.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "Hello! My name is Nina. I am seven years old. I have got a white rabbit called Floppy. Floppy lives in a hutch in our garden. Every morning I give him fresh carrots and water.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Hello! My name is Nina. I am seven years old. I have got a white rabbit called Floppy. Floppy lives in a hutch in our garden. Every morning I give him fresh carrots and water."
+      },
       "choices": [
         {
           "text": "Nina has got a rabbit called Floppy.",
@@ -1278,12 +1256,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Hello! My name is Nina. I am seven years old. I have got a white rabbit called Floppy. Floppy lives in a hutch in our garden. Every morning I give him fresh carrots and water."
-      }
+      ]
     },
     {
       "questionRef": "sgm2-032",
@@ -1301,7 +1274,11 @@
       "questionText": "Read the text beginning \"This is my bedroom. There is a blue…\" and choose the best answer.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "This is my bedroom. There is a blue bed, a desk and a big wardrobe. My hamster cage is on the desk. I keep my books and toys on the shelf above my bed.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "This is my bedroom. There is a blue bed, a desk and a big wardrobe. My hamster cage is on the desk. I keep my books and toys on the shelf above my bed."
+      },
       "choices": [
         {
           "text": "There is a hamster cage on the desk.",
@@ -1321,12 +1298,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "This is my bedroom. There is a blue bed, a desk and a big wardrobe. My hamster cage is on the desk. I keep my books and toys on the shelf above my bed."
-      }
+      ]
     },
     {
       "questionRef": "sgm2-033",
@@ -1345,7 +1317,11 @@
       "questionText": "Read the text beginning \"Last Saturday we went to Riverside…\" and choose the best answer.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "Last Saturday we went to Riverside Park. My little brother fed the ducks and I played on the swings. Later we had a picnic under a big oak tree. We walked home when the sun went down.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Saturday we went to Riverside Park. My little brother fed the ducks and I played on the swings. Later we had a picnic under a big oak tree. We walked home when the sun went down."
+      },
       "choices": [
         {
           "text": "They had a picnic in the park.",
@@ -1365,12 +1341,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last Saturday we went to Riverside Park. My little brother fed the ducks and I played on the swings. Later we had a picnic under a big oak tree. We walked home when the sun went down."
-      }
+      ]
     },
     {
       "questionRef": "sgm2-034",
@@ -1389,7 +1360,11 @@
       "questionText": "Read the text beginning \"Our dog Rex is very clever. He can…\" and choose the best answer.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "Our dog Rex is very clever. He can sit, fetch his ball and open the kitchen door with his paw. Rex sleeps in a basket next to the sofa. He loves going to the park with my dad.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Our dog Rex is very clever. He can sit, fetch his ball and open the kitchen door with his paw. Rex sleeps in a basket next to the sofa. He loves going to the park with my dad."
+      },
       "choices": [
         {
           "text": "Rex can fetch his ball.",
@@ -1409,12 +1384,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Our dog Rex is very clever. He can sit, fetch his ball and open the kitchen door with his paw. Rex sleeps in a basket next to the sofa. He loves going to the park with my dad."
-      }
+      ]
     },
     {
       "questionRef": "sgm2-035",
@@ -1433,7 +1403,11 @@
       "questionText": "Read the text beginning \"Yesterday our class visited City Zo…\" and choose the best answer.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "Yesterday our class visited City Zoo. We saw giraffes, penguins and a sleepy tiger. The zookeeper told us the tiger eats meat twice a day. My favourite animals were the funny penguins.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Yesterday our class visited City Zoo. We saw giraffes, penguins and a sleepy tiger. The zookeeper told us the tiger eats meat twice a day. My favourite animals were the funny penguins."
+      },
       "choices": [
         {
           "text": "The class visited the zoo yesterday.",
@@ -1453,12 +1427,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Yesterday our class visited City Zoo. We saw giraffes, penguins and a sleepy tiger. The zookeeper told us the tiger eats meat twice a day. My favourite animals were the funny penguins."
-      }
+      ]
     },
     {
       "questionRef": "sgm2-036",
@@ -1477,11 +1446,6 @@
       "questionText": "Look at the picture. Write one sentence about the boy and his dog.",
       "skillTag": "writing",
       "points": 1,
-      "cambridgeTaskType": "write_sentence",
-      "prompt": "Look at the picture. Write one sentence about the boy and his dog.",
-      "minWords": 3,
-      "maxWords": 15,
-      "imageUrl": "/images/gold-mocks/starters/sgm2-036-boy-dog-sofa.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1489,7 +1453,7 @@
         "prompt": "Look at the picture. Write one sentence about the boy and his dog.",
         "minWords": 3,
         "maxWords": 15,
-        "imageUrl": "/images/gold-mocks/starters/sgm2-036-boy-dog-sofa.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm2-036-boy-dog-sofa.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1510,11 +1474,6 @@
       "questionText": "Look at the picture. Write one sentence about Mum in the kitchen.",
       "skillTag": "writing",
       "points": 1,
-      "cambridgeTaskType": "write_sentence",
-      "prompt": "Look at the picture. Write one sentence about Mum in the kitchen.",
-      "minWords": 3,
-      "maxWords": 15,
-      "imageUrl": "/images/gold-mocks/starters/sgm2-037-mum-kitchen.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1522,7 +1481,7 @@
         "prompt": "Look at the picture. Write one sentence about Mum in the kitchen.",
         "minWords": 3,
         "maxWords": 15,
-        "imageUrl": "/images/gold-mocks/starters/sgm2-037-mum-kitchen.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm2-037-mum-kitchen.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1543,11 +1502,6 @@
       "questionText": "Look at the picture. Write one sentence about the ducks on the pond.",
       "skillTag": "writing",
       "points": 1,
-      "cambridgeTaskType": "write_sentence",
-      "prompt": "Look at the picture. Write one sentence about the ducks on the pond.",
-      "minWords": 4,
-      "maxWords": 18,
-      "imageUrl": "/images/gold-mocks/starters/sgm2-038-ducks-pond.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1555,7 +1509,7 @@
         "prompt": "Look at the picture. Write one sentence about the ducks on the pond.",
         "minWords": 4,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/starters/sgm2-038-ducks-pond.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm2-038-ducks-pond.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1576,16 +1530,6 @@
       "questionText": "Look at the picture. Write two or three sentences about the playground.",
       "skillTag": "writing",
       "points": 1,
-      "cambridgeTaskType": "picture_description",
-      "prompt": "Look at the picture. Write two or three sentences about the playground.",
-      "taskDescription": "Describe what you can see in the park playground picture.",
-      "minWords": 5,
-      "maxWords": 25,
-      "requiredPoints": [
-        "Say what is in the playground",
-        "Say what the children are doing"
-      ],
-      "imageUrl": "/images/gold-mocks/starters/sgm2-039-playground.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1594,7 +1538,7 @@
         "taskDescription": "Describe what you can see in the park playground picture.",
         "minWords": 5,
         "maxWords": 25,
-        "imageUrl": "/images/gold-mocks/starters/sgm2-039-playground.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm2-039-playground.svg",
         "requiredPoints": [
           "Say what is in the playground",
           "Say what the children are doing"
@@ -1619,16 +1563,6 @@
       "questionText": "Look at the picture. Write two or three sentences about the garden and the pets.",
       "skillTag": "writing",
       "points": 1,
-      "cambridgeTaskType": "picture_description",
-      "prompt": "Look at the picture. Write two or three sentences about the garden and the pets.",
-      "taskDescription": "Describe the garden and the animals you can see.",
-      "minWords": 5,
-      "maxWords": 25,
-      "requiredPoints": [
-        "Say what animals are in the garden",
-        "Say what someone is doing"
-      ],
-      "imageUrl": "/images/gold-mocks/starters/sgm2-040-garden-pets.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1637,7 +1571,7 @@
         "taskDescription": "Describe the garden and the animals you can see.",
         "minWords": 5,
         "maxWords": 25,
-        "imageUrl": "/images/gold-mocks/starters/sgm2-040-garden-pets.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm2-040-garden-pets.svg",
         "requiredPoints": [
           "Say what animals are in the garden",
           "Say what someone is doing"
@@ -1663,17 +1597,6 @@
       "questionText": "Look at the two park scene pictures. Tell your partner about the differences.",
       "skillTag": "speaking",
       "points": 5,
-      "cambridgeTaskType": "speaking_picture_description",
-      "prompt": "Look at the two pictures of a park. Tell your partner about five differences between them.",
-      "maxDurationSeconds": 120,
-      "followUpQuestions": [
-        "How many ducks are on the pond in picture A?",
-        "What colour is the bench in picture B?",
-        "Is there a dog in both pictures?",
-        "Where is the kite in picture A?",
-        "What is the girl doing in picture B?"
-      ],
-      "imageUrl": "/images/gold-mocks/starters/sgm2-041-park-pair.png",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -1687,7 +1610,7 @@
           "Where is the kite in picture A?",
           "What is the girl doing in picture B?"
         ],
-        "imageUrl": "/images/gold-mocks/starters/sgm2-041-park-pair.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm2-041-park-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -1709,16 +1632,6 @@
       "questionText": "Answer the examiner's questions about about you pets.",
       "skillTag": "speaking",
       "points": 5,
-      "cambridgeTaskType": "speaking_personal_questions",
-      "prompt": "Answer the examiner's questions about yourself, your home and any pets you have.",
-      "maxDurationSeconds": 180,
-      "followUpQuestions": [
-        "What's your name?",
-        "Where do you live — in a house or a flat?",
-        "Have you got any pets?",
-        "What is your favourite animal?",
-        "What do you like doing in the park?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -1754,22 +1667,6 @@
       "questionText": "Look at these pictures and tell the story of Lily's day in the park with her dog.",
       "skillTag": "speaking",
       "points": 5,
-      "cambridgeTaskType": "speaking_storytelling",
-      "prompt": "Look at these pictures and tell the story of Lily's day in the park with her dog.",
-      "maxDurationSeconds": 180,
-      "followUpQuestions": [
-        "Who went to the park with Lily?",
-        "What did they do at the pond?",
-        "What did Lily eat?",
-        "What was the weather like?",
-        "What happened when they got home?"
-      ],
-      "pictureSequence": [
-        "/images/gold-mocks/starters/sgm2-043-story-1-leash.png",
-        "/images/gold-mocks/starters/sgm2-043-story-2-pond.png",
-        "/images/gold-mocks/starters/sgm2-043-story-3-icecream.png",
-        "/images/gold-mocks/starters/sgm2-043-story-4-home.png"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -1784,10 +1681,10 @@
           "What happened when they got home?"
         ],
         "pictureSequence": [
-          "/images/gold-mocks/starters/sgm2-043-story-1-leash.png",
-          "/images/gold-mocks/starters/sgm2-043-story-2-pond.png",
-          "/images/gold-mocks/starters/sgm2-043-story-3-icecream.png",
-          "/images/gold-mocks/starters/sgm2-043-story-4-home.png"
+          "/images/gold-mocks/starters/sgm2-043-story-1-leash.svg",
+          "/images/gold-mocks/starters/sgm2-043-story-2-pond.svg",
+          "/images/gold-mocks/starters/sgm2-043-story-3-icecream.svg",
+          "/images/gold-mocks/starters/sgm2-043-story-4-home.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

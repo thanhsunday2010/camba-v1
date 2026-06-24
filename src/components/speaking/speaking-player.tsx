@@ -43,12 +43,13 @@ export function SpeakingPlayer({
     audioRef: string;
     mimeType: string;
     durationSeconds: number;
+    transcript?: string;
   }) {
     onAnswer(
       createSpeakingUserAnswer({
         ...recording,
         taskType: content.cambridgeTaskType,
-        transcript: payload?.transcript,
+        transcript: recording.transcript ?? payload?.transcript,
       })
     );
     toast.success("Recording saved");
@@ -87,6 +88,16 @@ export function SpeakingPlayer({
             transcript={evaluationSummary?.transcript ?? submission.transcript ?? ""}
           />
         )}
+        {content.stimulus?.pictureSequence?.map((src, index) => (
+          <Image
+            key={src}
+            src={src}
+            alt={`Story picture ${index + 1}`}
+            width={640}
+            height={360}
+            className="max-w-full h-auto rounded-xl border border-border/50"
+          />
+        ))}
         {evaluationSummary ? (
           <SpeakingFeedbackCard evaluation={evaluationSummary} />
         ) : payload?.evaluation?.status === "failed" ? (
@@ -126,6 +137,25 @@ export function SpeakingPlayer({
         )}
       </CambaCard>
 
+      {content.stimulus?.pictureSequence && content.stimulus.pictureSequence.length > 0 && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {content.stimulus.pictureSequence.map((src, index) => (
+            <div key={src} className="space-y-1">
+              <p className="camba-caption font-medium text-muted">
+                Picture {index + 1}
+              </p>
+              <Image
+                src={src}
+                alt={`Story picture ${index + 1}`}
+                width={640}
+                height={360}
+                className="w-full h-auto rounded-xl border border-border/50"
+              />
+            </div>
+          ))}
+        </div>
+      )}
+
       {content.stimulus?.imageUrl && (
         <Image
           src={content.stimulus.imageUrl}
@@ -139,6 +169,7 @@ export function SpeakingPlayer({
       {payload?.audioRef ? (
         <CambaCard variant="default" padding="md" className="space-y-2">
           <p className="camba-body text-foreground">Recording saved ({payload.durationSeconds}s)</p>
+          {payload.transcript && <SpeakingTranscriptCard transcript={payload.transcript} />}
           <p className="camba-caption text-muted">Record again to replace your answer before submitting.</p>
           <SpeakingRecorder
             questionId={question.id}

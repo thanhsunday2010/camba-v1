@@ -51,14 +51,15 @@ export function goldGapFill(
     content?: Record<string, unknown>;
   }
 ): GoldMockQuestionBlock {
+  const { template, correctAnswers, content, ...base } = opts;
   return {
-    ...opts,
+    ...base,
     blueprintQuestionType: "gap_fill",
     cambaQuestionType: "gap_fill",
     content: {
-      template: opts.template,
-      correctAnswers: opts.correctAnswers,
-      ...opts.content,
+      template,
+      correctAnswers,
+      ...content,
     },
   };
 }
@@ -69,12 +70,13 @@ export function goldReadingComprehension(
     choices: Array<{ text: string; isCorrect: boolean }>;
   }
 ): GoldMockQuestionBlock {
+  const { passage, choices, ...base } = opts;
   return {
-    ...opts,
+    ...base,
     blueprintQuestionType: "reading_comprehension",
     cambaQuestionType: "reading_comprehension",
-    content: { passage: opts.passage },
-    choices: opts.choices.map((c, i) => ({ ...c, sortOrder: i + 1, mediaUrl: null })),
+    content: { passage },
+    choices: choices.map((c, i) => ({ ...c, sortOrder: i + 1, mediaUrl: null })),
   };
 }
 
@@ -89,20 +91,30 @@ export function goldWriting(
     requiredPoints?: string[];
   }
 ): GoldMockQuestionBlock {
+  const {
+    cambridgeTaskType,
+    prompt,
+    taskDescription,
+    minWords,
+    maxWords,
+    imageUrl,
+    requiredPoints,
+    ...base
+  } = opts;
   return {
-    ...opts,
+    ...base,
     blueprintQuestionType: "writing_copy",
     cambaQuestionType: "writing",
     skillTag: "writing",
     content: {
-      cambridgeTaskType: opts.cambridgeTaskType,
-      prompt: opts.prompt,
-      taskDescription: opts.taskDescription,
-      minWords: opts.minWords,
-      maxWords: opts.maxWords,
-      imageUrl: opts.imageUrl,
-      requiredPoints: opts.requiredPoints,
-      rubricId: `gold-${opts.cambridgeTaskType}-v1`,
+      cambridgeTaskType,
+      prompt,
+      taskDescription,
+      minWords,
+      maxWords,
+      imageUrl,
+      requiredPoints,
+      rubricId: `gold-${cambridgeTaskType}-v1`,
     },
   };
 }
@@ -117,25 +129,44 @@ export function goldSpeaking(
     pictureSequence?: string[];
   }
 ): GoldMockQuestionBlock {
+  const {
+    cambridgeTaskType,
+    prompt,
+    maxDurationSeconds,
+    followUpQuestions,
+    imageUrl,
+    pictureSequence,
+    ...base
+  } = opts;
   return {
-    ...opts,
+    ...base,
     blueprintQuestionType: "speaking_interview",
     cambaQuestionType: "speaking",
     skillTag: "speaking",
     points: opts.points,
     content: {
-      cambridgeTaskType: opts.cambridgeTaskType,
-      prompt: opts.prompt,
-      maxDurationSeconds: opts.maxDurationSeconds,
-      followUpQuestions: opts.followUpQuestions,
-      imageUrl: opts.imageUrl,
-      pictureSequence: opts.pictureSequence,
-      rubricId: `gold-${opts.cambridgeTaskType}-v1`,
+      cambridgeTaskType,
+      prompt,
+      maxDurationSeconds,
+      followUpQuestions,
+      imageUrl,
+      pictureSequence,
+      rubricId: `gold-${cambridgeTaskType}-v1`,
     },
   };
 }
 
-export function listeningAudio(partSlug: string, partNumber: number, title: string, transcript: string) {
+export function goldMockListeningAudioSrc(goldMockId: string, partSlug: string): string {
+  return `/audio/gold-mocks/${goldMockId}/${partSlug}.mp3`;
+}
+
+export function listeningAudio(
+  partSlug: string,
+  partNumber: number,
+  title: string,
+  transcript: string,
+  goldMockId?: string
+) {
   return {
     partSlug,
     sectionSlug: "listening",
@@ -144,7 +175,9 @@ export function listeningAudio(partSlug: string, partNumber: number, title: stri
     instructions: title,
     contextType: "listening" as const,
     audio: {
-      src: `/audio/gold-mocks/${partSlug}.mp3`,
+      src: goldMockId
+        ? goldMockListeningAudioSrc(goldMockId, partSlug)
+        : `/audio/gold-mocks/${partSlug}.mp3`,
       transcript,
       caption: title,
     },

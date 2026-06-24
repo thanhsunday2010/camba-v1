@@ -132,7 +132,7 @@
       "instructions": "Part 1 — Listen and choose the correct picture",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-1/listening-part-1.mp3",
         "transcript": "Woman: I'd like six of those red apples, please. Shop assistant: Here you are. That's three pounds.",
         "caption": "Part 1 — Listen and choose the correct picture"
       }
@@ -145,7 +145,7 @@
       "instructions": "Part 2 — Listen and choose the best answer",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-1/listening-part-2.mp3",
         "transcript": "Boy: Sorry I'm late, Miss. My alarm didn't go off this morning. Teacher: Please try to be on time tomorrow.",
         "caption": "Part 2 — Listen and choose the best answer"
       }
@@ -158,7 +158,7 @@
       "instructions": "Part 3 — Listen and complete each gap",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-1/listening-part-3.mp3",
         "transcript": "Guide: Welcome to the city museum. We open at nine o'clock. Meet your group at the library entrance at half past eight.",
         "caption": "Part 3 — Listen and complete each gap"
       }
@@ -171,7 +171,7 @@
       "instructions": "Part 4 — Listen to the monologue",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-1/listening-part-4.mp3",
         "transcript": "Speaker: My favourite animals are dolphins because they are intelligent and friendly. I first saw them on a family holiday.",
         "caption": "Part 4 — Listen to the monologue"
       }
@@ -184,7 +184,7 @@
       "instructions": "Part 5 — Listen and match each day to an activity",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-5.mp3",
+        "src": "/audio/gold-mocks/ket-gold-mock-1/listening-part-5.mp3",
         "transcript": "Coordinator: On Monday we have drama club, on Tuesday basketball, Wednesday choir, Thursday coding, and Friday gardening.",
         "caption": "Part 5 — Listen and match each day to an activity"
       }
@@ -623,7 +623,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What time did the class arrive at the museum?",
-      "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
+      },
       "choices": [
         {
           "text": "At ten o'clock",
@@ -643,12 +647,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
-      }
+      ]
     },
     {
       "questionRef": "kgm-015",
@@ -666,7 +665,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What did the students do in the robot workshop?",
-      "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
+      },
       "choices": [
         {
           "text": "They programmed a robot to move in a square.",
@@ -686,12 +689,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
-      }
+      ]
     },
     {
       "questionRef": "kgm-016",
@@ -709,7 +707,11 @@
       ],
       "skillTag": "reading",
       "questionText": "Which activity did the writer like most?",
-      "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
+      },
       "choices": [
         {
           "text": "The robot workshop",
@@ -729,12 +731,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
-      }
+      ]
     },
     {
       "questionRef": "kgm-017",
@@ -752,7 +749,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What did the class eat at lunchtime?",
-      "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
+      },
       "choices": [
         {
           "text": "Sandwiches",
@@ -772,12 +773,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
-      }
+      ]
     },
     {
       "questionRef": "kgm-018",
@@ -795,7 +791,11 @@
       ],
       "skillTag": "reading",
       "questionText": "What could students buy before leaving?",
-      "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
+      },
       "choices": [
         {
           "text": "Postcards and science kits",
@@ -815,12 +815,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last Saturday, our class visited the city science museum. We arrived at ten o'clock and met our guide, Mr Patel. First, we watched a short film about planets. Then we tried interactive experiments in the energy room. My favourite part was the robot workshop, where we programmed a small robot to move in a square. At lunchtime, we ate sandwiches in the café and talked about what we had learned. Before we left, the museum shop sold postcards and science kits. Everyone agreed it was an interesting and fun trip."
-      }
+      ]
     },
     {
       "questionRef": "kgm-019",
@@ -1096,10 +1091,6 @@
       ],
       "skillTag": "reading",
       "questionText": "We took ___ train to the coast.",
-      "template": "We took [0] train to the coast.",
-      "correctAnswers": [
-        "the"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1125,10 +1116,6 @@
       ],
       "skillTag": "reading",
       "questionText": "It ___ raining when we arrived.",
-      "template": "It [0] raining when we arrived.",
-      "correctAnswers": [
-        "was"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1154,10 +1141,6 @@
       ],
       "skillTag": "reading",
       "questionText": "She is interested ___ learning Spanish.",
-      "template": "She is interested [0] learning Spanish.",
-      "correctAnswers": [
-        "in"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1183,10 +1166,6 @@
       ],
       "skillTag": "reading",
       "questionText": "Walking is ___ than driving in the city centre.",
-      "template": "Walking is [0] than driving in the city centre.",
-      "correctAnswers": [
-        "healthier"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1212,10 +1191,6 @@
       ],
       "skillTag": "reading",
       "questionText": "The woman ___ works in the bookshop is my aunt.",
-      "template": "The woman [0] works in the bookshop is my aunt.",
-      "correctAnswers": [
-        "who"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1241,10 +1216,6 @@
       ],
       "skillTag": "reading",
       "questionText": "We ___ recycle plastic bottles at school.",
-      "template": "We [0] recycle plastic bottles at school.",
-      "correctAnswers": [
-        "must"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1271,16 +1242,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write an email to your English teacher.",
-      "cambridgeTaskType": "write_email",
-      "prompt": "Your English class is going on a trip to the theatre next Friday. Write an email to your teacher.",
-      "taskDescription": "Write 25–35 words. Include all three points.",
-      "minWords": 25,
-      "maxWords": 35,
-      "requiredPoints": [
-        "Say whether you can come on the trip",
-        "Explain how you will travel to the theatre",
-        "Ask one question about the visit"
-      ],
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1314,12 +1275,6 @@
       ],
       "skillTag": "writing",
       "questionText": "Write a story about a lost dog.",
-      "cambridgeTaskType": "write_story",
-      "prompt": "Your English teacher has asked you to write a story. Your story must begin with this sentence: 'The dog ran into the park.'",
-      "taskDescription": "Write 35 words or more.",
-      "minWords": 35,
-      "maxWords": 100,
-      "imageUrl": "/images/gold-mocks/ket-gold-mock-1-story.svg",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1738,11 +1693,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The museum opens at ___ o'clock.",
-      "template": "The museum opens at [0] o'clock.",
-      "correctAnswers": [
-        "nine",
-        "9"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1769,10 +1719,6 @@
       ],
       "skillTag": "listening",
       "questionText": "Meet me ___ the library entrance.",
-      "template": "Meet me [0] the library entrance.",
-      "correctAnswers": [
-        "at"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1798,11 +1744,6 @@
       ],
       "skillTag": "listening",
       "questionText": "The film starts at quarter ___ seven.",
-      "template": "The film starts at quarter [0] seven.",
-      "correctAnswers": [
-        "past",
-        "to"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1829,10 +1770,6 @@
       ],
       "skillTag": "listening",
       "questionText": "Please bring a ___ of water.",
-      "template": "Please bring a [0] of water.",
-      "correctAnswers": [
-        "bottle"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -1858,11 +1795,6 @@
       ],
       "skillTag": "listening",
       "questionText": "She ___ as a nurse in the local hospital.",
-      "template": "She [0] as a nurse in the local hospital.",
-      "correctAnswers": [
-        "works",
-        "worked"
-      ],
       "blueprintQuestionType": "gap_fill",
       "cambaQuestionType": "gap_fill",
       "content": {
@@ -2216,14 +2148,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Answer the examiner's questions about you and your daily life.",
-      "cambridgeTaskType": "conversation",
-      "prompt": "The examiner will ask you about yourself, your family, and your free time.",
-      "maxDurationSeconds": 120,
-      "followUpQuestions": [
-        "Where do you live?",
-        "What do you enjoy doing at the weekend?",
-        "Tell me about your best friend."
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -2256,10 +2180,6 @@
       ],
       "skillTag": "speaking",
       "questionText": "Talk about the picture and compare the two scenes.",
-      "cambridgeTaskType": "picture_description_speaking",
-      "prompt": "Look at the photograph. Describe what you can see and say how the people might be feeling.",
-      "maxDurationSeconds": 120,
-      "imageUrl": "/images/gold-mocks/ket-gold-mock-1-speaking-photo.svg",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {

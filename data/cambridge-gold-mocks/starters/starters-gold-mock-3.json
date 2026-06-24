@@ -113,7 +113,7 @@
       "instructions": "Link names to pictures",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-1.mp3",
+        "src": "/audio/gold-mocks/starters-gold-mock-3/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Jake. He's wearing a green football shirt today.\nSofia is holding a big bowl of fruit for the picnic.\nOmar has got a blue suitcase. He's ready to travel.\nPriya is wearing a red swimming cap at the pool.\nLook at Finn. He's eating a sandwich on the train.",
         "caption": "Link names to pictures"
       }
@@ -126,7 +126,7 @@
       "instructions": "Write words or numbers",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-2.mp3",
+        "src": "/audio/gold-mocks/starters-gold-mock-3/listening-part-2.mp3",
         "transcript": "Examiner: Listen and write the missing word or number.\n\nAmy always drinks cold milk for breakfast.\nCarlos plays tennis every Tuesday after school.\nNext week the family is going to the beach for their holiday.\nThere are four cheese sandwiches in the lunch box.\nThe big tour bus is yellow with black windows.",
         "caption": "Write words or numbers"
       }
@@ -139,7 +139,7 @@
       "instructions": "Tick the correct picture",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-3.mp3",
+        "src": "/audio/gold-mocks/starters-gold-mock-3/listening-part-3.mp3",
         "transcript": "Examiner: Listen and tick the correct picture.\n\nThe girl is eating a big red strawberry.\nThe boys are playing basketball in the sports hall.\nThe plane is flying high in the sky.\nDad orders a cup of hot tea at the café.\nThe tourists are looking at the sea and taking photos on the ferry.",
         "caption": "Tick the correct picture"
       }
@@ -152,7 +152,7 @@
       "instructions": "Colour and draw",
       "contextType": "listening",
       "audio": {
-        "src": "/audio/gold-mocks/listening-part-4.mp3",
+        "src": "/audio/gold-mocks/starters-gold-mock-3/listening-part-4.mp3",
         "transcript": "Examiner: Listen and colour or draw.\n\nColour the apple green, please.\nNow colour the football orange.\nDraw an X on the airport on the map.\nColour the birthday cake pink.\nDraw a line from the boy to the small boat on the lake.",
         "caption": "Colour and draw"
       }
@@ -321,19 +321,15 @@
       "questionText": "Listen and write. What does Amy drink for breakfast?",
       "skillTag": "listening",
       "points": 1,
-      "template": "Amy drinks [0] for breakfast.",
-      "correctAnswers": [
-        "milk"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "Amy drinks [0] for breakfast.",
         "correctAnswers": [
           "milk"
         ],
         "transcriptSnippet": "Amy always drinks cold milk for breakfast."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm3-007",
@@ -351,19 +347,15 @@
       "questionText": "Listen and write. What sport does Carlos play?",
       "skillTag": "listening",
       "points": 1,
-      "template": "Carlos plays [0].",
-      "correctAnswers": [
-        "tennis"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "Carlos plays [0].",
         "correctAnswers": [
           "tennis"
         ],
         "transcriptSnippet": "Carlos plays tennis every Tuesday after school."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm3-008",
@@ -381,19 +373,15 @@
       "questionText": "Listen and write. Where is the family going on holiday?",
       "skillTag": "listening",
       "points": 1,
-      "template": "The family is going to the [0].",
-      "correctAnswers": [
-        "beach"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The family is going to the [0].",
         "correctAnswers": [
           "beach"
         ],
         "transcriptSnippet": "Next week the family is going to the beach for their holiday."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm3-009",
@@ -411,11 +399,8 @@
       "questionText": "Listen and write. How many sandwiches are in the box?",
       "skillTag": "listening",
       "points": 1,
-      "template": "There are [0] sandwiches in the box.",
-      "correctAnswers": [
-        "four",
-        "4"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "There are [0] sandwiches in the box.",
         "correctAnswers": [
@@ -423,9 +408,7 @@
           "4"
         ],
         "transcriptSnippet": "There are four cheese sandwiches in the lunch box."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm3-010",
@@ -444,19 +427,15 @@
       "questionText": "Listen and write. What colour is the tour bus?",
       "skillTag": "listening",
       "points": 1,
-      "template": "The tour bus is [0].",
-      "correctAnswers": [
-        "yellow"
-      ],
+      "blueprintQuestionType": "gap_fill",
+      "cambaQuestionType": "gap_fill",
       "content": {
         "template": "The tour bus is [0].",
         "correctAnswers": [
           "yellow"
         ],
         "transcriptSnippet": "The big tour bus is yellow with black windows."
-      },
-      "blueprintQuestionType": "gap_fill",
-      "cambaQuestionType": "gap_fill"
+      }
     },
     {
       "questionRef": "sgm3-011",
@@ -1033,7 +1012,11 @@
       "questionText": "Read: \"Grandpa is making vegetable soup in a bi…\" Choose the correct picture.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "Grandpa is making vegetable soup in a big pot on the stove.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Grandpa is making vegetable soup in a big pot on the stove."
+      },
       "choices": [
         {
           "text": "Old man cooking soup in a kitchen",
@@ -1053,12 +1036,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Grandpa is making vegetable soup in a big pot on the stove."
-      }
+      ]
     },
     {
       "questionRef": "sgm3-027",
@@ -1076,7 +1054,11 @@
       "questionText": "Read: \"The children are running a race on the s…\" Choose the correct picture.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "The children are running a race on the school sports field.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "The children are running a race on the school sports field."
+      },
       "choices": [
         {
           "text": "Children running on a sports field",
@@ -1096,12 +1078,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "The children are running a race on the school sports field."
-      }
+      ]
     },
     {
       "questionRef": "sgm3-028",
@@ -1119,7 +1096,11 @@
       "questionText": "Read: \"We are waiting for our train on platform…\" Choose the correct picture.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "We are waiting for our train on platform three at the station.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "We are waiting for our train on platform three at the station."
+      },
       "choices": [
         {
           "text": "Family waiting on a train platform",
@@ -1139,12 +1120,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "We are waiting for our train on platform three at the station."
-      }
+      ]
     },
     {
       "questionRef": "sgm3-029",
@@ -1163,7 +1139,11 @@
       "questionText": "Read: \"Every Friday Dad buys fresh bread and gr…\" Choose the correct picture.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "Every Friday Dad buys fresh bread and grapes at the market.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Every Friday Dad buys fresh bread and grapes at the market."
+      },
       "choices": [
         {
           "text": "Man buying bread and grapes at a market",
@@ -1183,12 +1163,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Every Friday Dad buys fresh bread and grapes at the market."
-      }
+      ]
     },
     {
       "questionRef": "sgm3-030",
@@ -1207,7 +1182,11 @@
       "questionText": "Read: \"It is getting dark, so we are putting up…\" Choose the correct picture.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "It is getting dark, so we are putting up our tent at the campsite near the lake.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "It is getting dark, so we are putting up our tent at the campsite near the lake."
+      },
       "choices": [
         {
           "text": "Family putting up a tent at a campsite",
@@ -1227,12 +1206,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "It is getting dark, so we are putting up our tent at the campsite near the lake."
-      }
+      ]
     },
     {
       "questionRef": "sgm3-031",
@@ -1250,7 +1224,11 @@
       "questionText": "Read the text beginning \"My name is Marco. I am nine years o…\" and choose the best answer.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "My name is Marco. I am nine years old. My favourite food is pasta with tomato sauce. I don't like fish, but I love cheese on my pizza. On Saturdays I help Mum make pancakes for breakfast.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "My name is Marco. I am nine years old. My favourite food is pasta with tomato sauce. I don't like fish, but I love cheese on my pizza. On Saturdays I help Mum make pancakes for breakfast."
+      },
       "choices": [
         {
           "text": "Marco's favourite food is pasta with tomato sauce.",
@@ -1270,12 +1248,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "My name is Marco. I am nine years old. My favourite food is pasta with tomato sauce. I don't like fish, but I love cheese on my pizza. On Saturdays I help Mum make pancakes for breakfast."
-      }
+      ]
     },
     {
       "questionRef": "sgm3-032",
@@ -1293,7 +1266,11 @@
       "questionText": "Read the text beginning \"I go to the Sports Club on Mondays…\" and choose the best answer.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "I go to the Sports Club on Mondays and Wednesdays. I learn to swim in the pool and play badminton in the hall. My coach is called Mr Lee. He says I am getting faster every week.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "I go to the Sports Club on Mondays and Wednesdays. I learn to swim in the pool and play badminton in the hall. My coach is called Mr Lee. He says I am getting faster every week."
+      },
       "choices": [
         {
           "text": "The writer goes to the Sports Club twice a week.",
@@ -1313,12 +1290,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "I go to the Sports Club on Mondays and Wednesdays. I learn to swim in the pool and play badminton in the hall. My coach is called Mr Lee. He says I am getting faster every week."
-      }
+      ]
     },
     {
       "questionRef": "sgm3-033",
@@ -1337,7 +1309,11 @@
       "questionText": "Read the text beginning \"Last summer we flew to Spain for tw…\" and choose the best answer.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "Last summer we flew to Spain for two weeks. We stayed in a hotel near the sea. Every morning we ate fresh fruit for breakfast and walked along the beach. I collected ten pretty shells.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Last summer we flew to Spain for two weeks. We stayed in a hotel near the sea. Every morning we ate fresh fruit for breakfast and walked along the beach. I collected ten pretty shells."
+      },
       "choices": [
         {
           "text": "They flew to Spain for their holiday.",
@@ -1357,12 +1333,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Last summer we flew to Spain for two weeks. We stayed in a hotel near the sea. Every morning we ate fresh fruit for breakfast and walked along the beach. I collected ten pretty shells."
-      }
+      ]
     },
     {
       "questionRef": "sgm3-034",
@@ -1381,7 +1352,11 @@
       "questionText": "Read the text beginning \"Yesterday was Sports Day at school.…\" and choose the best answer.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "Yesterday was Sports Day at school. After the races we had a big picnic. There were sandwiches, watermelon and juice for everyone. My team won the relay race and we got gold medals.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Yesterday was Sports Day at school. After the races we had a big picnic. There were sandwiches, watermelon and juice for everyone. My team won the relay race and we got gold medals."
+      },
       "choices": [
         {
           "text": "They had a picnic after Sports Day.",
@@ -1401,12 +1376,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Yesterday was Sports Day at school. After the races we had a big picnic. There were sandwiches, watermelon and juice for everyone. My team won the relay race and we got gold medals."
-      }
+      ]
     },
     {
       "questionRef": "sgm3-035",
@@ -1425,7 +1395,11 @@
       "questionText": "Read the text beginning \"Next month our class is going to th…\" and choose the best answer.",
       "skillTag": "reading",
       "points": 1,
-      "passage": "Next month our class is going to the City Museum by coach. We can see old cars, dinosaur bones and a model of a spaceship. Our teacher says we must bring a packed lunch and a notebook to draw pictures.",
+      "blueprintQuestionType": "reading_comprehension",
+      "cambaQuestionType": "reading_comprehension",
+      "content": {
+        "passage": "Next month our class is going to the City Museum by coach. We can see old cars, dinosaur bones and a model of a spaceship. Our teacher says we must bring a packed lunch and a notebook to draw pictures."
+      },
       "choices": [
         {
           "text": "The class is visiting the City Museum next month.",
@@ -1445,12 +1419,7 @@
           "sortOrder": 3,
           "mediaUrl": null
         }
-      ],
-      "blueprintQuestionType": "reading_comprehension",
-      "cambaQuestionType": "reading_comprehension",
-      "content": {
-        "passage": "Next month our class is going to the City Museum by coach. We can see old cars, dinosaur bones and a model of a spaceship. Our teacher says we must bring a packed lunch and a notebook to draw pictures."
-      }
+      ]
     },
     {
       "questionRef": "sgm3-036",
@@ -1468,11 +1437,6 @@
       "questionText": "Look at the picture. Write one sentence about the fruit on the table.",
       "skillTag": "writing",
       "points": 1,
-      "cambridgeTaskType": "write_sentence",
-      "prompt": "Look at the picture. Write one sentence about the fruit on the table.",
-      "minWords": 3,
-      "maxWords": 15,
-      "imageUrl": "/images/gold-mocks/starters/sgm3-036-fruit-table.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1480,7 +1444,7 @@
         "prompt": "Look at the picture. Write one sentence about the fruit on the table.",
         "minWords": 3,
         "maxWords": 15,
-        "imageUrl": "/images/gold-mocks/starters/sgm3-036-fruit-table.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm3-036-fruit-table.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1500,11 +1464,6 @@
       "questionText": "Look at the picture. Write one sentence about the boy and the football.",
       "skillTag": "writing",
       "points": 1,
-      "cambridgeTaskType": "write_sentence",
-      "prompt": "Look at the picture. Write one sentence about the boy and the football.",
-      "minWords": 3,
-      "maxWords": 15,
-      "imageUrl": "/images/gold-mocks/starters/sgm3-037-boy-football.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1512,7 +1471,7 @@
         "prompt": "Look at the picture. Write one sentence about the boy and the football.",
         "minWords": 3,
         "maxWords": 15,
-        "imageUrl": "/images/gold-mocks/starters/sgm3-037-boy-football.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm3-037-boy-football.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1532,11 +1491,6 @@
       "questionText": "Look at the picture. Write one sentence about the family at the airport.",
       "skillTag": "writing",
       "points": 1,
-      "cambridgeTaskType": "write_sentence",
-      "prompt": "Look at the picture. Write one sentence about the family at the airport.",
-      "minWords": 4,
-      "maxWords": 18,
-      "imageUrl": "/images/gold-mocks/starters/sgm3-038-airport-family.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1544,7 +1498,7 @@
         "prompt": "Look at the picture. Write one sentence about the family at the airport.",
         "minWords": 4,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/starters/sgm3-038-airport-family.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm3-038-airport-family.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1565,16 +1519,6 @@
       "questionText": "Look at the picture. Write two or three sentences about the swimming pool.",
       "skillTag": "writing",
       "points": 1,
-      "cambridgeTaskType": "picture_description",
-      "prompt": "Look at the picture. Write two or three sentences about the swimming pool.",
-      "taskDescription": "Describe what you can see at the swimming pool.",
-      "minWords": 5,
-      "maxWords": 25,
-      "requiredPoints": [
-        "Say who is at the pool",
-        "Say what people are doing"
-      ],
-      "imageUrl": "/images/gold-mocks/starters/sgm3-039-swimming-pool.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1583,7 +1527,7 @@
         "taskDescription": "Describe what you can see at the swimming pool.",
         "minWords": 5,
         "maxWords": 25,
-        "imageUrl": "/images/gold-mocks/starters/sgm3-039-swimming-pool.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm3-039-swimming-pool.svg",
         "requiredPoints": [
           "Say who is at the pool",
           "Say what people are doing"
@@ -1608,16 +1552,6 @@
       "questionText": "Look at the picture. Write two or three sentences about the beach picnic.",
       "skillTag": "writing",
       "points": 1,
-      "cambridgeTaskType": "picture_description",
-      "prompt": "Look at the picture. Write two or three sentences about the beach picnic.",
-      "taskDescription": "Describe the beach and the food people are eating.",
-      "minWords": 5,
-      "maxWords": 25,
-      "requiredPoints": [
-        "Say where the people are",
-        "Say what food you can see"
-      ],
-      "imageUrl": "/images/gold-mocks/starters/sgm3-040-beach-picnic.png",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
@@ -1626,7 +1560,7 @@
         "taskDescription": "Describe the beach and the food people are eating.",
         "minWords": 5,
         "maxWords": 25,
-        "imageUrl": "/images/gold-mocks/starters/sgm3-040-beach-picnic.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm3-040-beach-picnic.svg",
         "requiredPoints": [
           "Say where the people are",
           "Say what food you can see"
@@ -1652,17 +1586,6 @@
       "questionText": "Look at the two sports hall pictures. Tell your partner about the differences.",
       "skillTag": "speaking",
       "points": 5,
-      "cambridgeTaskType": "speaking_picture_description",
-      "prompt": "Look at the two pictures of a sports hall. Tell your partner about five differences between them.",
-      "maxDurationSeconds": 120,
-      "followUpQuestions": [
-        "How many basketballs are on the floor in picture A?",
-        "What colour is the goal in picture B?",
-        "Is there a coach in both pictures?",
-        "Where is the water bottle in picture A?",
-        "What are the children doing in picture B?"
-      ],
-      "imageUrl": "/images/gold-mocks/starters/sgm3-041-sports-hall-pair.png",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -1676,7 +1599,7 @@
           "Where is the water bottle in picture A?",
           "What are the children doing in picture B?"
         ],
-        "imageUrl": "/images/gold-mocks/starters/sgm3-041-sports-hall-pair.png",
+        "imageUrl": "/images/gold-mocks/starters/sgm3-041-sports-hall-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -1698,16 +1621,6 @@
       "questionText": "Answer the examiner's questions about about you food sport.",
       "skillTag": "speaking",
       "points": 5,
-      "cambridgeTaskType": "speaking_personal_questions",
-      "prompt": "Answer the examiner's questions about yourself, your favourite food and sports you like.",
-      "maxDurationSeconds": 180,
-      "followUpQuestions": [
-        "What's your name?",
-        "How old are you?",
-        "What is your favourite food?",
-        "What sport do you like playing?",
-        "Have you ever travelled to another town or city?"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -1743,22 +1656,6 @@
       "questionText": "Look at these pictures and tell the story of Ana's train trip to the city.",
       "skillTag": "speaking",
       "points": 5,
-      "cambridgeTaskType": "speaking_storytelling",
-      "prompt": "Look at these pictures and tell the story of Ana's train trip to the city.",
-      "maxDurationSeconds": 180,
-      "followUpQuestions": [
-        "Who travelled with Ana?",
-        "What did they buy at the station?",
-        "What did Ana eat at the café?",
-        "What did they see from the train window?",
-        "What did Ana buy before going home?"
-      ],
-      "pictureSequence": [
-        "/images/gold-mocks/starters/sgm3-043-story-1-tickets.png",
-        "/images/gold-mocks/starters/sgm3-043-story-2-train.png",
-        "/images/gold-mocks/starters/sgm3-043-story-3-cafe.png",
-        "/images/gold-mocks/starters/sgm3-043-story-4-souvenir.png"
-      ],
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
@@ -1773,10 +1670,10 @@
           "What did Ana buy before going home?"
         ],
         "pictureSequence": [
-          "/images/gold-mocks/starters/sgm3-043-story-1-tickets.png",
-          "/images/gold-mocks/starters/sgm3-043-story-2-train.png",
-          "/images/gold-mocks/starters/sgm3-043-story-3-cafe.png",
-          "/images/gold-mocks/starters/sgm3-043-story-4-souvenir.png"
+          "/images/gold-mocks/starters/sgm3-043-story-1-tickets.svg",
+          "/images/gold-mocks/starters/sgm3-043-story-2-train.svg",
+          "/images/gold-mocks/starters/sgm3-043-story-3-cafe.svg",
+          "/images/gold-mocks/starters/sgm3-043-story-4-souvenir.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

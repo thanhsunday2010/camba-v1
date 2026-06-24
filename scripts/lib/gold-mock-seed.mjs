@@ -7,6 +7,7 @@ import { join, resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildManifestSeedIds } from "./mock-test-ids.mjs";
 import { validateManifestForSeeding } from "./validate-mock-test-manifest.mjs";
+import { normalizeManifestQuestionImages } from "./gold-mock-image-paths.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 export const GOLD_MOCK_ROOT = resolve(__dirname, "../../data/cambridge-gold-mocks");
@@ -70,6 +71,19 @@ export function prepareGoldMockForSeeding(goldManifest) {
 
   const seedIds = buildManifestSeedIds(levelSlug, testNumber, sectionSlugs, questionRefs);
 
+  const parts = (goldManifest.parts ?? []).map((part) => {
+    if (part.sectionSlug !== "listening" || !part.audio?.transcript?.trim()) return part;
+    return {
+      ...part,
+      audio: {
+        ...part.audio,
+        src: `/audio/gold-mocks/${goldMockId}/${part.partSlug}.mp3`,
+      },
+    };
+  });
+
+  const questions = normalizeManifestQuestionImages(goldManifest.questions ?? []);
+
   return {
     metadata: {
       ...goldManifest.metadata,
@@ -77,8 +91,8 @@ export function prepareGoldMockForSeeding(goldManifest) {
       seedIds,
     },
     sections: goldManifest.sections,
-    questions: goldManifest.questions,
-    parts: goldManifest.parts ?? [],
+    questions,
+    parts,
     gold: goldManifest.gold ?? { tier: "gold", goldMockId },
   };
 }

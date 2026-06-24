@@ -202,7 +202,7 @@
       "severity": "warning"
     }
   ],
-  "certifiedAt": "2026-06-24T01:29:19.801Z",
+  "certifiedAt": "2026-06-24T05:08:47.038Z",
   "notes": [
     "Manually authored Gold Mock — academic authority baseline.",
     "Passes validateGoldMock() — academic authority baseline."

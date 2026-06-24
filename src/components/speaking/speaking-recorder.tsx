@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import { uploadSpeakingRecording } from "@/actions/speaking-evaluation";
 import { Button } from "@/components/ui/button";
 import { readBlobAsBase64 } from "@/lib/speech/blob-to-base64";
@@ -9,6 +10,7 @@ import {
   createAudioMediaRecorder,
   requestMicrophoneStream,
 } from "@/lib/speech/request-microphone";
+import { useSpeechRecognition } from "@/lib/speech/use-speech-recognition";
 import { Loader2, Mic, Square } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -20,6 +22,7 @@ type SpeakingRecorderProps = {
     audioRef: string;
     mimeType: string;
     durationSeconds: number;
+    transcript?: string;
   }) => void;
   onError?: (message: string) => void;
   className?: string;
@@ -33,6 +36,7 @@ export function SpeakingRecorder({
   onError,
   className,
 }: SpeakingRecorderProps) {
+  const t = useTranslations("learning.lesson.ai");
   const [isRecording, setIsRecording] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
   const [duration, setDuration] = useState(0);
@@ -41,9 +45,49 @@ export function SpeakingRecorder({
   const mimeTypeRef = useRef("audio/webm");
   const chunksRef = useRef<Blob[]>([]);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const durationRef = useRef(0);
+  const transcriptRef = useRef("");
+
+  const {
+    transcript,
+    interimTranscript,
+    displayTranscript,
+    isSupported: isSpeechSupported,
+    start: startTranscription,
+    stop: stopTranscription,
+    reset: resetTranscription,
+  } = useSpeechRecognition("en-US");
+
+  useEffect(() => {
+    transcriptRef.current = displayTranscript;
+  }, [displayTranscript]);
+
+  function getMicrophoneErrorMessage(error: unknown): string {
+    if (error instanceof MicrophoneAccessError) {
+      switch (error.code) {
+        case "not_allowed":
+          return t("micAccessDenied");
+        case "not_found":
+          return t("micNotFound");
+        case "insecure_context":
+          return t("micInsecureContext");
+        case "not_supported":
+          return t("micNotSupported");
+        case "recorder_unsupported":
+          return t("micRecorderUnsupported");
+        default:
+          return t("micUnknownError");
+      }
+    }
+    return t("micUnknownError");
+  }
 
   async function startRecording() {
     try {
+      resetTranscription();
+      transcriptRef.current = "";
+      durationRef.current = 0;
+
       const stream = await requestMicrophoneStream();
       const recorder = createAudioMediaRecorder(stream);
       mimeTypeRef.current = recorder.mimeType || "audio/webm";
@@ -54,7 +98,11 @@ export function SpeakingRecorder({
       };
 
       recorder.onstop = async () => {
-        stream.getTracks().forEach((t) => t.stop());
+        stream.getTracks().forEach((track) => track.stop());
+
+        const recordedDuration = Math.max(durationRef.current, 1);
+        const capturedTranscript = transcriptRef.current.trim();
+
         const blob = new Blob(chunksRef.current, { type: mimeTypeRef.current });
         if (blob.size === 0) {
           onError?.("Recording was empty. Please try again.");
@@ -67,7 +115,7 @@ export function SpeakingRecorder({
           const result = await uploadSpeakingRecording(
             base64,
             mimeTypeRef.current,
-            duration,
+            recordedDuration,
             questionId
           );
           if (result.success && result.data) {
@@ -75,6 +123,7 @@ export function SpeakingRecorder({
               audioRef: result.data.audioRef,
               mimeType: result.data.mimeType,
               durationSeconds: result.data.durationSeconds,
+              transcript: capturedTranscript || undefined,
             });
           } else {
             onError?.(result.error ?? "Failed to save recording");
@@ -90,28 +139,29 @@ export function SpeakingRecorder({
       recorder.start();
       setIsRecording(true);
       setDuration(0);
+      startTranscription();
 
       timerRef.current = setInterval(() => {
-        setDuration((d) => {
-          if (d + 1 >= maxDurationSeconds) {
-            stopRecording();
-          }
-          return d + 1;
-        });
+        durationRef.current += 1;
+        setDuration(durationRef.current);
+        if (durationRef.current >= maxDurationSeconds) {
+          stopRecording();
+        }
       }, 1000);
     } catch (error) {
-      const message =
-        error instanceof MicrophoneAccessError
-          ? "Microphone access denied or unavailable."
-          : "Could not start recording.";
-      onError?.(message);
+      onError?.(getMicrophoneErrorMessage(error));
     }
   }
 
   function stopRecording() {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+    transcriptRef.current = [transcript, interimTranscript].filter(Boolean).join(" ").trim();
+    stopTranscription();
     mediaRecorderRef.current?.stop();
     setIsRecording(false);
-    if (timerRef.current) clearInterval(timerRef.current);
   }
 
   const formatDuration = (seconds: number) => {
@@ -136,20 +186,46 @@ export function SpeakingRecorder({
             ) : (
               <Mic className="h-4 w-4" />
             )}
-            {isUploading ? "Saving…" : "Start recording"}
+            {isUploading ? t("submitting") : t("startRecording")}
           </Button>
         ) : (
           <Button type="button" variant="destructive" onClick={stopRecording} className="gap-2">
             <Square className="h-4 w-4" />
-            Stop recording
+            {t("stopRecording")}
           </Button>
         )}
         <span className="camba-caption text-muted">
           {formatDuration(duration)} / {formatDuration(maxDurationSeconds)}
         </span>
       </div>
+
       {isRecording && (
-        <p className="camba-caption text-program animate-pulse">Recording… speak clearly into your microphone.</p>
+        <p className="camba-caption text-program animate-pulse">
+          {t("recording")}…
+        </p>
+      )}
+
+      {(isRecording || displayTranscript) && (
+        <div className="rounded-xl border border-border bg-[var(--surface-sunken)] p-3">
+          <p className="camba-caption font-medium text-muted mb-2">{t("transcript")}</p>
+          {displayTranscript ? (
+            <p className="camba-body text-foreground leading-relaxed">
+              {transcript}
+              {interimTranscript && (
+                <span className="text-muted">
+                  {transcript ? " " : ""}
+                  {interimTranscript}
+                </span>
+              )}
+            </p>
+          ) : isRecording ? (
+            <p className="camba-body text-muted italic">{t("transcriptPlaceholder")}</p>
+          ) : !isSpeechSupported ? (
+            <p className="camba-body text-muted italic">{t("transcriptUnsupported")}</p>
+          ) : (
+            <p className="camba-body text-muted italic">{t("transcriptPlaceholder")}</p>
+          )}
+        </div>
       )}
     </div>
   );

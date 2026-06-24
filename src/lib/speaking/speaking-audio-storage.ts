@@ -35,7 +35,15 @@ export async function storeSpeakingAudioSubmission(input: {
   }
 
   const submissionId = createRandomId();
-  const ext = mimeType.includes("wav") ? "wav" : mimeType.includes("mpeg") || mimeType.includes("mp3") ? "mp3" : "webm";
+  const ext = mimeType.includes("wav")
+    ? "wav"
+    : mimeType.includes("mpeg") || mimeType.includes("mp3")
+      ? "mp3"
+      : mimeType.includes("mp4")
+        ? "mp4"
+        : mimeType.includes("ogg")
+          ? "ogg"
+          : "webm";
   const audioRef = `${user.id}/${submissionId}.${ext}`;
 
   const { error: uploadError } = await supabase.storage
