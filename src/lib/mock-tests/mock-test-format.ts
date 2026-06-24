@@ -7,10 +7,10 @@ export type MockTestListeningMode = "none" | "audio" | "text" | "mixed";
 
 export type MockTestFormatMetadata = {
   levelSlug: YleLevelSlug | null;
-  isPracticeMock: true;
-  isAutoScoredSubset: true;
-  includesSpeaking: false;
-  includesWriting: false;
+  isPracticeMock: boolean;
+  isAutoScoredSubset: boolean;
+  includesSpeaking: boolean;
+  includesWriting: boolean;
   includedSkillSlugs: string[];
   includedSectionTitles: string[];
   listeningMode: MockTestListeningMode;
@@ -99,12 +99,18 @@ export function deriveMockTestFormatMetadata(input: DeriveFormatInput): MockTest
   const hasTextBasedListening =
     listeningMode === "text" || listeningMode === "mixed";
 
+  const isGoldMock = Boolean(input.settings?.goldMock);
+  const includesWriting =
+    stored?.includesWriting ?? includedSkillSlugs.includes("writing");
+  const includesSpeaking =
+    stored?.includesSpeaking ?? includedSkillSlugs.includes("speaking");
+
   return {
     levelSlug,
-    isPracticeMock: true,
-    isAutoScoredSubset: true,
-    includesSpeaking: false,
-    includesWriting: false,
+    isPracticeMock: stored?.isPracticeMock ?? !isGoldMock,
+    isAutoScoredSubset: stored?.isAutoScoredSubset ?? (!includesWriting && !includesSpeaking),
+    includesSpeaking,
+    includesWriting,
     includedSkillSlugs,
     includedSectionTitles: input.sections.map((s) => s.title),
     listeningMode,

@@ -53,13 +53,19 @@ export function MockTestFormatDisclosure({
           {labels.practiceMockBadge}
         </p>
         <p className="camba-caption text-muted">{labels.autoScoredNote}</p>
-        {listening && (
-          <p className="camba-caption text-muted flex items-center gap-1">
-            <Headphones className="h-3 w-3 shrink-0" />
-            {listening}
+        {!format.includesWriting && !format.includesSpeaking && (
+          <p className="camba-caption text-muted">{labels.noSpeakingWriting}</p>
+        )}
+        {format.includesWriting && (
+          <p className="camba-caption font-medium text-[var(--status-writing)]">
+            {labels.writingAi ?? "Writing evaluated by AI"}
           </p>
         )}
-        <p className="camba-caption text-muted">{labels.noSpeakingWriting}</p>
+        {format.includesSpeaking && (
+          <p className="camba-caption font-medium text-[var(--status-speaking)]">
+            {labels.speakingAi ?? "Speaking evaluated by AI"}
+          </p>
+        )}
       </div>
     );
   }
@@ -103,7 +109,19 @@ export function MockTestFormatDisclosure({
           </li>
         )}
         <li className="text-muted">{labels.autoScoredNote}</li>
-        <li className="text-muted">{labels.noSpeakingWriting}</li>
+        {!format.includesWriting && !format.includesSpeaking && (
+          <li className="text-muted">{labels.noSpeakingWriting}</li>
+        )}
+        {format.includesWriting && (
+          <li className="text-muted font-medium text-[var(--status-writing)]">
+            {labels.writingAi ?? "Writing evaluated by AI"}
+          </li>
+        )}
+        {format.includesSpeaking && (
+          <li className="text-muted font-medium text-[var(--status-speaking)]">
+            {labels.speakingAi ?? "Speaking evaluated by AI"}
+          </li>
+        )}
       </ul>
     </div>
   );

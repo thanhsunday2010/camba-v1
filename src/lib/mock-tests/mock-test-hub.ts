@@ -105,6 +105,8 @@ export async function getMockTestHubViewModel(
       resolveYleLevelSlug(test.level_id, levelMeta?.slug) ??
       (format.levelSlug ?? null);
 
+    const settings = (test.settings as Record<string, unknown> | null) ?? null;
+
     return {
       id: test.id,
       title: test.title,
@@ -122,6 +124,9 @@ export async function getMockTestHubViewModel(
       skillTags: skillTagsByTest.get(test.id) ?? [],
       format,
       isRecommendedForLearner: isMockRecommendedForLevel(levelSlug, learnerLevelSlug),
+      isGoldMock: Boolean(settings?.goldMock),
+      goldMockId:
+        typeof settings?.goldMockId === "string" ? settings.goldMockId : null,
     };
   });
 

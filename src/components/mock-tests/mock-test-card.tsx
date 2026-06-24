@@ -3,15 +3,16 @@ import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { MockTestFormatBadges } from "@/components/mock-tests/mock-test-format-disclosure";
 import { MockTestStatusPill } from "@/components/mock-tests/mock-test-status-pill";
 import type { MockTestHubLabels, MockTestHubSummary } from "@/lib/mock-tests/mock-test-types";
-import { Clock, FileQuestion, Layers, Trophy } from "lucide-react";
+import { Clock, FileQuestion, Layers, Trophy, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface MockTestCardProps {
   test: MockTestHubSummary;
   labels: MockTestHubLabels;
+  goldBadgeLabel?: string;
 }
 
-export function MockTestCard({ test, labels }: MockTestCardProps) {
+export function MockTestCard({ test, labels, goldBadgeLabel }: MockTestCardProps) {
   const detailHref = `/mock-tests/${test.id}`;
   const statusLabel = labels.statusLabels[test.displayState];
 
@@ -26,6 +27,13 @@ export function MockTestCard({ test, labels }: MockTestCardProps) {
         </div>
         <MockTestStatusPill state={test.displayState} label={statusLabel} />
       </div>
+
+      {test.isGoldMock && goldBadgeLabel && (
+        <span className="inline-flex items-center gap-1 rounded-full bg-[var(--color-badge)]/15 px-2 py-0.5 camba-caption font-bold text-[var(--color-badge)] border border-[var(--color-badge)]/25 mt-2">
+          <Award className="h-3.5 w-3.5" aria-hidden />
+          {goldBadgeLabel}
+        </span>
+      )}
 
       <MockTestFormatBadges
         format={test.format}

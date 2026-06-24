@@ -31,6 +31,8 @@ export type MockTestHubSummary = {
   skillTags: string[];
   format: MockTestFormatMetadata;
   isRecommendedForLearner: boolean;
+  isGoldMock: boolean;
+  goldMockId: string | null;
 };
 
 export type MockTestLevelBucket = {
@@ -81,6 +83,10 @@ export type MockTestDetailViewModel = {
   skillAnalytics: MockTestSkillAnalytics | null;
   takeHref: string;
   format: MockTestFormatMetadata;
+  isGoldMock: boolean;
+  goldMockId: string | null;
+  readinessPercent: number | null;
+  readinessBand: "building" | "developing" | "approaching" | "ready" | null;
 };
 
 export type MockTestHubViewModel = {
@@ -107,6 +113,8 @@ export type MockTestFormatLabels = {
   aboutSubtitle: string;
   skillsIncluded: string;
   skillsIncludedFallback: string;
+  writingAi?: string;
+  speakingAi?: string;
 };
 
 export type MockTestHubLabels = {
@@ -159,6 +167,12 @@ export type MockTestDetailLabels = {
   notAvailable: string;
   statusLabels: Record<MockTestDisplayState, string>;
   format: MockTestFormatLabels;
+  goldBadge: string;
+  readinessTitle: string;
+  readinessBuilding: string;
+  readinessDeveloping: string;
+  readinessApproaching: string;
+  readinessReady: string;
 };
 
 export type MockTestCompleteLabels = {

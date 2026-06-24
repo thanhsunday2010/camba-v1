@@ -1,14 +1,34 @@
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { SectionHeader } from "@/components/camba/section-header";
 import type { MockTestDetailLabels, MockTestSectionSummary } from "@/lib/mock-tests/mock-test-types";
-import { Clock, FileQuestion, ListChecks } from "lucide-react";
+import { Clock, FileQuestion, ListChecks, Mic, PenLine } from "lucide-react";
 
 interface MockTestSectionListProps {
   sections: MockTestSectionSummary[];
   labels: Pick<
     MockTestDetailLabels,
-    "structureTitle" | "structureSubtitle" | "sectionLabel" | "sectionQuestions" | "sectionMinutes"
+    "structureTitle" | "structureSubtitle" | "sectionLabel" | "sectionQuestions" | "sectionMinutes" | "format"
   >;
+}
+
+function sectionAiBadge(skillSlug: string | null, labels: MockTestSectionListProps["labels"]) {
+  if (skillSlug === "writing") {
+    return (
+      <span className="inline-flex items-center gap-1 rounded-full bg-[var(--status-writing)]/10 px-2 py-0.5 camba-caption font-semibold text-[var(--status-writing)]">
+        <PenLine className="h-3 w-3" aria-hidden />
+        {labels.format.writingAi ?? "Writing evaluated by AI"}
+      </span>
+    );
+  }
+  if (skillSlug === "speaking") {
+    return (
+      <span className="inline-flex items-center gap-1 rounded-full bg-[var(--status-speaking)]/10 px-2 py-0.5 camba-caption font-semibold text-[var(--status-speaking)]">
+        <Mic className="h-3 w-3" aria-hidden />
+        {labels.format.speakingAi ?? "Speaking evaluated by AI"}
+      </span>
+    );
+  }
+  return null;
 }
 
 export function MockTestSectionList({ sections, labels }: MockTestSectionListProps) {
@@ -32,11 +52,14 @@ export function MockTestSectionList({ sections, labels }: MockTestSectionListPro
                   {labels.sectionLabel} {index + 1}
                 </p>
                 <p className="camba-h3 text-foreground mt-0.5">{section.title}</p>
-                {section.skillName && (
-                  <p className="camba-caption text-program font-medium mt-1 capitalize">
-                    {section.skillName}
-                  </p>
-                )}
+                <div className="flex flex-wrap items-center gap-2 mt-1">
+                  {section.skillName && (
+                    <p className="camba-caption text-program font-medium capitalize">
+                      {section.skillName}
+                    </p>
+                  )}
+                  {sectionAiBadge(section.skillSlug, labels)}
+                </div>
               </div>
               <div className="flex flex-col items-end gap-1 shrink-0 camba-caption text-muted">
                 <span className="inline-flex items-center gap-1">

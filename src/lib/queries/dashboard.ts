@@ -18,6 +18,7 @@ export interface NextLessonContext {
   skillName: string | null;
   completionPercent: number;
   masteryLevel: number;
+  lastActivityAt: string | null;
 }
 
 /** Aggregate lesson completion by skill for dashboard snapshot */
@@ -135,6 +136,13 @@ export async function getNextLessonContext(
     skillName = skill?.name ?? null;
   }
 
+  const { data: progressRow } = await supabase
+    .from("lesson_progress")
+    .select("last_attempt_at, updated_at")
+    .eq("user_id", userId)
+    .eq("lesson_id", lesson.id)
+    .maybeSingle();
+
   return {
     id: lesson.id,
     title: lesson.title,
@@ -144,5 +152,7 @@ export async function getNextLessonContext(
     skillName,
     completionPercent: Number(lesson.progress?.completion_percent ?? 0),
     masteryLevel: lesson.progress?.mastery_level ?? 0,
+    lastActivityAt:
+      progressRow?.last_attempt_at ?? progressRow?.updated_at ?? null,
   };
 }

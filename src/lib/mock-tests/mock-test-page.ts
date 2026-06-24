@@ -5,6 +5,7 @@ import type { UserAnswer } from "@/types/learning";
 import { buildMockTestQuestionContextMap } from "@/lib/mock-tests/mock-test-context";
 import { deriveFormatFromMockTestData } from "@/lib/mock-tests/mock-test-format-queries";
 import { resolveYleLevelSlug } from "@/lib/mock-tests/mock-test-format";
+import { deriveDetailReadiness } from "@/lib/mock-tests/mock-center-utils";
 import {
   buildMockTestAttemptSummary,
   deriveMockTestDisplayState,
@@ -85,6 +86,11 @@ export async function getMockTestDetailViewModel(
     sections: fullTest.sections,
   });
 
+  const settings = (fullTest.settings as Record<string, unknown> | null) ?? null;
+  const { readinessPercent, readinessBand } = deriveDetailReadiness(
+    latestAttempt?.scorePercent ?? null
+  );
+
   return {
     id: fullTest.id,
     title: fullTest.title,
@@ -104,6 +110,10 @@ export async function getMockTestDetailViewModel(
     skillAnalytics,
     takeHref: `/mock-tests/${mockTestId}/take`,
     format,
+    isGoldMock: Boolean(settings?.goldMock),
+    goldMockId: typeof settings?.goldMockId === "string" ? settings.goldMockId : null,
+    readinessPercent,
+    readinessBand,
   };
 }
 

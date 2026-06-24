@@ -22,6 +22,8 @@ async function buildMockTestFormatLabels(): Promise<MockTestFormatLabels> {
     aboutSubtitle: tf("aboutSubtitle"),
     skillsIncluded: tf("skillsIncluded"),
     skillsIncludedFallback: tf("skillsIncludedFallback"),
+    writingAi: tf("writingAi"),
+    speakingAi: tf("speakingAi"),
   };
 }
 
@@ -95,6 +97,12 @@ export async function buildMockTestPageLabels(): Promise<MockTestPageLabels> {
       notAvailable: t("notAvailable"),
       statusLabels,
       format,
+      goldBadge: td("goldBadge"),
+      readinessTitle: td("readinessTitle"),
+      readinessBuilding: td("readinessBuilding"),
+      readinessDeveloping: td("readinessDeveloping"),
+      readinessApproaching: td("readinessApproaching"),
+      readinessReady: td("readinessReady"),
     },
     complete: {
       title: tc("title"),

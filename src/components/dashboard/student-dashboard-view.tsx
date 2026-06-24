@@ -1,67 +1,38 @@
-import {
-  StudentPageShell,
-  ContentSection,
-  CambridgeShieldCard,
-} from "@/components/camba";
+import { StudentPageShell } from "@/components/camba";
 import { DashboardHero } from "@/components/dashboard/dashboard-hero";
-import { TodayMissionSection } from "@/components/dashboard/today-mission-section";
-import { ContinueLearningPanel } from "@/components/dashboard/continue-learning-panel";
-import { SkillProgressSection } from "@/components/dashboard/skill-progress-section";
-import { AchievementSection } from "@/components/dashboard/achievement-section";
-import { LearningStreakSection } from "@/components/dashboard/learning-streak-section";
-import { MockTestPanel } from "@/components/dashboard/mock-test-panel";
-import { SmartRecommendationPanel } from "@/components/dashboard/smart-recommendation-panel";
+import { DashboardDailyMissionCard } from "@/components/dashboard/dashboard-daily-mission-card";
+import { DashboardContinueLearningCard } from "@/components/dashboard/dashboard-continue-learning-card";
+import { DashboardWeeklyProgress } from "@/components/dashboard/dashboard-weekly-progress";
+import { DashboardRecommendedMock, type DashboardRecommendedMockLabels } from "@/components/dashboard/dashboard-recommended-mock";
+import { DashboardAchievementsSection } from "@/components/dashboard/dashboard-achievements-section";
+import type { AchievementShowcaseLabels } from "@/components/achievements/achievement-showcase";
+import type { NextAchievementCardLabels } from "@/components/achievements/next-achievement-card";
+import { DashboardSkillInsights } from "@/components/dashboard/dashboard-skill-insights";
+import { DashboardRecentActivity } from "@/components/dashboard/dashboard-recent-activity";
+import { DashboardJourneyPreview } from "@/components/dashboard/dashboard-journey-preview";
+import { SectionHeader } from "@/components/camba/section-header";
 import { PlacementTestCTA } from "@/components/dashboard/placement-test-cta";
-import { StudyCoachCard } from "@/components/ai/study-coach-card";
 import { ProgramPicker } from "@/components/programs/program-picker";
-import type { DailyMissionItem } from "@/components/gamification/daily-missions";
-import type { BadgeItem } from "@/components/gamification/badge-grid";
-import type { SkillProgressRow, NextLessonContext } from "@/lib/queries/dashboard";
-import type { ActiveProgramContext } from "@/lib/programs/context";
-import type { UserGamification, Program } from "@/types/database";
-import type { MockTestSummary } from "@/types/learning";
+import type { StudentDashboardData } from "@/lib/dashboard/student-dashboard-data";
+import { Route } from "lucide-react";
 
 export interface StudentDashboardLabels {
-  encouragement: {
-    program: string;
-    topSkill: string;
-    weakSkill: string;
-    streak: string;
-    missions: string;
-    default: string;
-    start: string;
-  };
   hero: {
-    greeting: string;
-    continueLesson: string;
-    startLearning: string;
-    minutes: string;
-    recommendedReason: string;
-    shieldLabel: string;
-    levelLabel: string;
-    stats: {
-      xp: string;
-      level: string;
-      coins: string;
-      streak: string;
-      xpToday: string;
-      lessonsToday: string;
-      days: string;
-    };
+    welcomeBack: string;
+    progressingThrough: string;
+    currentStreak: string;
+    days: string;
+    xp: string;
+    level: string;
+    cefrEstimate: string;
+    viewPortfolio?: string;
   };
-  missions: {
+  dailyMission: {
     title: string;
     subtitle: string;
     emptyTitle: string;
     emptyDescription: string;
     emptyAction: string;
-    allCompleteTitle: string;
-    allCompleteDesc: string;
-    progressLabel: string;
-    progressRingLabel: string;
-    pendingXpLabel: string;
-    xpLabel: string;
-    coinsLabel: string;
   };
   continueLearning: {
     title: string;
@@ -73,64 +44,59 @@ export interface StudentDashboardLabels {
     emptyTitle: string;
     emptyDescription: string;
     inProgress: string;
-    recommended: string;
-    notStarted: string;
-    skillPrefix: string;
+    lastActivity: string;
     unitPrefix: string;
   };
-  skills: {
+  weeklyProgress: {
     title: string;
     subtitle: string;
+    xpEarned: string;
+    lessonsCompleted: string;
+    mockTestsCompleted: string;
+    writingTasksCompleted: string;
+    speakingTasksCompleted: string;
+    emptyNote: string;
+  };
+  recommendedMock: DashboardRecommendedMockLabels;
+  achievements: AchievementShowcaseLabels & {
+    next: NextAchievementCardLabels;
+    toastUnlocked: string;
+    toastCelebration: string;
+    itemLabels: Record<string, { title: string; description: string }>;
+  };
+  skillInsights: {
+    title: string;
+    subtitle: string;
+    strengths: string;
+    weaknesses: string;
+    grammar: string;
+    vocabulary: string;
+    skills: string;
+    viewDetails: string;
     emptyTitle: string;
     emptyDescription: string;
-    focusLabel: string;
-    strongLabel: string;
-    shieldBySkill: string;
     emptyAction: string;
   };
-  achievements: {
+  recentActivity: {
     title: string;
     subtitle: string;
     emptyTitle: string;
     emptyDescription: string;
     emptyAction: string;
-    nextBadgeTitle: string;
-    recentEarnedTitle: string;
-    earnedSummary: string;
+    kindLesson: string;
+    kindMock: string;
+    kindBadge: string;
   };
-  streak: {
+  journeyPreview: {
     title: string;
     subtitle: string;
-    currentStreak: string;
-    bestStreak: string;
-    days: string;
-    encouragement: string;
-    calendarLabel: string;
-    todayLabel: string;
-    noStreakYet: string;
-  };
-  mockTests: {
-    title: string;
-    subtitle: string;
-    viewAll: string;
+    currentLevel: string;
+    currentUnit: string;
+    nextMilestone: string;
+    openJourney: string;
     emptyTitle: string;
     emptyDescription: string;
-    ctaLabel: string;
-    retakeLabel: string;
-    bestScore: string;
-    attempts: string;
-    moreTests: string;
-  };
-  recommendations: {
-    title: string;
-    subtitle: string;
-    emptyTitle: string;
-    emptyDescription: string;
-    motivationLabel: string;
-  };
-  shield: {
-    title: string;
-    description: string;
+    emptyAction: string;
   };
   placement: {
     title: string;
@@ -144,183 +110,108 @@ export interface StudentDashboardLabels {
     selecting: string;
     current: string;
   };
-  ai: {
-    coachTitle: string;
-    coachSubtitle: string;
-    generate: string;
-    generating: string;
-    dailyRecommendations: string;
-    motivation: string;
-    strengths: string;
-    weaknesses: string;
-    weeklyPlan: string;
-  };
   skillLabels: Record<string, string>;
 }
 
 interface StudentDashboardViewProps {
   userName: string;
-  encouragement: string;
-  programs: Pick<Program, "id" | "slug" | "name" | "description">[];
-  programContext: ActiveProgramContext | null;
-  gamification: UserGamification | null;
-  currentStreak: number;
-  bestStreak: number;
-  xpToday: number;
-  lessonsToday: number;
-  levelProgressPercent: number;
-  missions: DailyMissionItem[];
-  streakCalendar: { activity_date: string; xp_earned: number; lessons_completed: number }[];
-  badges: BadgeItem[];
-  nextLesson: NextLessonContext | null;
-  skillSnapshot: SkillProgressRow[];
-  mockTests: MockTestSummary[];
-  shieldFilledSegments: number;
-  shieldProgress: Record<string, number> | null;
-  coachPlan: Awaited<ReturnType<typeof import("@/actions/ai/study-coach").getLatestStudyCoach>>;
-  recommendations: Awaited<
-    ReturnType<typeof import("@/actions/ai/recommendations").fetchActiveRecommendations>
-  >;
+  data: StudentDashboardData;
   labels: StudentDashboardLabels;
 }
 
-export function StudentDashboardView({
-  userName,
-  encouragement,
-  programs,
-  programContext,
-  gamification,
-  currentStreak,
-  bestStreak,
-  xpToday,
-  lessonsToday,
-  levelProgressPercent,
-  missions,
-  streakCalendar,
-  badges,
-  nextLesson,
-  skillSnapshot,
-  mockTests,
-  shieldFilledSegments,
-  shieldProgress,
-  coachPlan,
-  recommendations,
-  labels,
-}: StudentDashboardViewProps) {
-  const hasProgram = !!programContext?.programId;
-  const programName = programContext?.program.name;
-  const levelName = programContext?.level?.name;
-  const programSlug = programContext?.program.slug;
-  const skillLabel = nextLesson?.skillSlug
-    ? labels.skillLabels[nextLesson.skillSlug] ?? nextLesson.skillName ?? undefined
+export function StudentDashboardView({ userName, data, labels }: StudentDashboardViewProps) {
+  const hasProgram = !!data.programContext?.programId;
+  const programName = data.programContext?.program.name;
+  const levelName = data.programContext?.level?.name;
+  const programSlug = data.programContext?.program.slug;
+  const skillLabel = data.nextLesson?.skillSlug
+    ? labels.skillLabels[data.nextLesson.skillSlug] ?? data.nextLesson.skillName ?? undefined
     : undefined;
-
-  const coachMotivation = coachPlan?.motivationMessage ?? null;
 
   return (
     <StudentPageShell>
       {!hasProgram && (
-        <ProgramPicker programs={programs} labels={labels.programPicker} />
+        <ProgramPicker programs={data.programs} labels={labels.programPicker} />
       )}
 
-      {hasProgram && gamification && (
+      {hasProgram && data.gamification && (
         <div className="camba-section-stack gap-8 sm:gap-10">
           <DashboardHero
             studentName={userName}
-            encouragement={encouragement}
             programName={programName}
             levelName={levelName}
             programSlug={programSlug}
-            totalXp={gamification.total_xp}
-            level={gamification.level}
-            coins={gamification.coins}
-            streak={currentStreak}
-            xpToday={xpToday}
-            lessonsToday={lessonsToday}
-            levelProgressPercent={levelProgressPercent}
-            shieldFilledSegments={shieldFilledSegments}
-            nextLesson={nextLesson}
-            skillLabel={skillLabel}
+            totalXp={data.gamification.total_xp}
+            level={data.gamification.level}
+            streak={data.currentStreak}
+            cefrEstimate={data.cefrEstimate}
+            levelProgressPercent={data.levelProgressPercent}
             labels={labels.hero}
           />
 
-          <TodayMissionSection missions={missions} labels={labels.missions} />
-
-          <LearningStreakSection
-            days={streakCalendar}
-            currentStreak={currentStreak}
-            bestStreak={bestStreak}
-            labels={labels.streak}
+          <DashboardDailyMissionCard
+            mission={data.dailyMission}
+            labels={labels.dailyMission}
           />
 
-          <ContinueLearningPanel
-            nextLesson={nextLesson}
-            secondaryRecommendations={recommendations}
+          <DashboardContinueLearningCard
+            nextLesson={data.nextLesson}
             labels={labels.continueLearning}
             skillLabel={skillLabel}
           />
 
-          <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
-            <SkillProgressSection
-              skills={skillSnapshot}
-              labels={labels.skills}
-              skillLabels={labels.skillLabels}
-              shieldProgress={shieldProgress}
+          <section aria-labelledby="journey-preview-heading">
+            <SectionHeader
+              titleId="journey-preview-heading"
+              title={labels.journeyPreview.title}
+              description={labels.journeyPreview.subtitle}
+              icon={Route}
             />
-            <AchievementSection
-              badges={badges}
-              labels={{
-                ...labels.achievements,
-                earnedSummary: labels.achievements.earnedSummary.replace(
-                  "{count}",
-                  String(badges.filter((b) => b.earned).length)
-                ),
-              }}
+            <DashboardJourneyPreview
+              preview={data.journeyPreview}
+              labels={labels.journeyPreview}
             />
-          </div>
+          </section>
 
-          <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
-            <MockTestPanel tests={mockTests} labels={labels.mockTests} />
-            <div className="hidden lg:block">
-              <CambridgeShieldCard
-                programSlug={programSlug}
-                programLabel={levelName ?? programName}
-                filledSegments={shieldFilledSegments}
-                title={labels.shield.title}
-                description={labels.shield.description}
-              />
-            </div>
-          </div>
+          <DashboardWeeklyProgress
+            stats={data.weeklyProgress}
+            labels={labels.weeklyProgress}
+          />
 
-          <div className="grid gap-6 xl:grid-cols-2">
-            <SmartRecommendationPanel
-              recommendations={recommendations}
-              coachMotivation={coachMotivation}
-              labels={labels.recommendations}
-            />
-            <StudyCoachCard
-              initialPlan={coachPlan}
-              labels={{
-                title: labels.ai.coachTitle,
-                subtitle: labels.ai.coachSubtitle,
-                generate: labels.ai.generate,
-                generating: labels.ai.generating,
-                dailyRecommendations: labels.ai.dailyRecommendations,
-                motivation: labels.ai.motivation,
-                strengths: labels.ai.strengths,
-                weaknesses: labels.ai.weaknesses,
-                weeklyPlan: labels.ai.weeklyPlan,
-              }}
-            />
-          </div>
+          <DashboardRecommendedMock
+            test={data.recommendedMock}
+            labels={labels.recommendedMock}
+          />
 
-          <ContentSection>
-            <PlacementTestCTA
-              title={labels.placement.title}
-              description={labels.placement.description}
-              buttonText={labels.placement.button}
-            />
-          </ContentSection>
+          <DashboardAchievementsSection
+            recentUnlocked={data.achievements.recentUnlocked}
+            nextAchievement={data.achievements.nextAchievement}
+            unlockedCount={data.achievements.unlockedCount}
+            totalCount={data.achievements.totalCount}
+            itemLabels={labels.achievements.itemLabels}
+            showcaseLabels={labels.achievements}
+            nextLabels={labels.achievements.next}
+            toastLabels={{
+              unlocked: labels.achievements.toastUnlocked,
+              celebration: labels.achievements.toastCelebration,
+            }}
+          />
+
+          <DashboardSkillInsights
+            insights={data.skillInsights}
+            labels={labels.skillInsights}
+          />
+
+          <DashboardRecentActivity
+            items={data.recentActivity}
+            labels={labels.recentActivity}
+          />
+
+          <PlacementTestCTA
+            title={labels.placement.title}
+            description={labels.placement.description}
+            buttonText={labels.placement.button}
+          />
         </div>
       )}
 

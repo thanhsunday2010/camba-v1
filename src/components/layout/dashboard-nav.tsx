@@ -13,7 +13,10 @@ import {
   ClipboardList,
   Settings,
   LogOut,
+  Map,
   Menu,
+  Trophy,
+  UserCircle,
   X,
 } from "lucide-react";
 import { useState } from "react";
@@ -27,8 +30,11 @@ interface DashboardNavProps {
 
 const navItems = [
   { href: "/dashboard", icon: LayoutDashboard, labelKey: "dashboard" as const },
+  { href: "/journey", icon: Map, labelKey: "journey" as const },
   { href: "/learning", icon: BookOpen, labelKey: "learningPath" as const },
   { href: "/mock-tests", icon: FileText, labelKey: "mockTests" as const },
+  { href: "/achievements", icon: Trophy, labelKey: "achievements" as const },
+  { href: "/profile", icon: UserCircle, labelKey: "profile" as const },
 ];
 
 function NavLink({

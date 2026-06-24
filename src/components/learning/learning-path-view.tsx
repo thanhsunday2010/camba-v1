@@ -126,6 +126,7 @@ function focusToNextContext(focus: FocusLessonResult): NextLessonContext {
     skillName: focus.skillName,
     completionPercent: focus.lesson.progress?.completion_percent ?? 0,
     masteryLevel: focus.lesson.progress?.mastery_level ?? 0,
+    lastActivityAt: null,
   };
 }
 
