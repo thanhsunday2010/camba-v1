@@ -18,7 +18,7 @@
   "nav": {
     "dashboard": "Dashboard",
     "journey": "Learning Journey",
-    "learningPath": "Learning Path",
+    "learningPath": "Wow Lessons",
     "mockTests": "Mock Tests",
     "achievements": "Achievements",
     "placementTest": "Placement Test",
@@ -654,7 +654,8 @@
     "footerNote": "CAMBA — Cambridge English learning platform",
     "backToProfile": "Back to portfolio"
   },
-    "title": "Learning Path",
+  "learning": {
+    "title": "Wow Lessons",
     "subtitle": "Complete lessons to unlock the next one",
     "noLevelTitle": "Choose your Cambridge level to begin",
     "noLevelDesc": "Pick the level that matches your goal — lessons unlock step by step as you master each unit.",

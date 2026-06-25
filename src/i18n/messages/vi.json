@@ -16,9 +16,9 @@
     "errorRecoveryRetry": "Thử lại"
   },
   "nav": {
-    "dashboard": "Trang chủ",
+    "dashboard": "Dashboard",
     "journey": "Hành trình học",
-    "learningPath": "Lộ trình học",
+    "learningPath": "Học mà vui",
     "mockTests": "Thi thử",
     "achievements": "Thành tích",
     "placementTest": "Kiểm tra trình độ",
@@ -653,7 +653,7 @@
     "backToProfile": "Về hồ sơ"
   },
   "learning": {
-    "title": "Lộ trình học",
+    "title": "Học mà vui",
     "subtitle": "Hoàn thành bài học để mở khóa bài tiếp theo",
     "noLevelTitle": "Chọn level để bắt đầu học",
     "noLevelDesc": "Chọn level phù hợp — bài học sẽ mở khóa tuần tự theo thứ tự unit/lesson",
