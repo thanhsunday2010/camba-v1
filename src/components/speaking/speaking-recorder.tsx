@@ -179,7 +179,7 @@ export function SpeakingRecorder({
             variant="outline"
             onClick={startRecording}
             disabled={disabled || isUploading}
-            className="gap-2"
+            className="gap-2 min-h-[var(--touch-target-min)] px-5"
           >
             {isUploading ? (
               <Loader2 className="h-4 w-4 animate-spin" />
@@ -189,7 +189,12 @@ export function SpeakingRecorder({
             {isUploading ? t("submitting") : t("startRecording")}
           </Button>
         ) : (
-          <Button type="button" variant="destructive" onClick={stopRecording} className="gap-2">
+          <Button
+            type="button"
+            variant="destructive"
+            onClick={stopRecording}
+            className="gap-2 min-h-[var(--touch-target-min)] px-5"
+          >
             <Square className="h-4 w-4" />
             {t("stopRecording")}
           </Button>

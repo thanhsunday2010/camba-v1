@@ -50,7 +50,7 @@ function NavLink({
   isActive: boolean;
   onClick?: () => void;
 }) {
-  const className = `flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+  const className = `flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[var(--touch-target-min)] md:min-h-0 md:py-2 ${
     isActive ? "bg-primary/10 text-primary" : "text-gray-600 hover:bg-gray-100"
   }`;
 
@@ -92,14 +92,15 @@ export function DashboardNav({ user, placementTests = [] }: DashboardNavProps) {
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-gray-200 bg-white">
-        <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+      <header className="sticky top-0 z-40 border-b border-gray-200 bg-white camba-safe-top">
+        <div className="max-w-7xl mx-auto px-4 h-14 sm:h-16 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <button
               type="button"
-              className="md:hidden p-2 -ml-2"
+              className="md:hidden p-2 -ml-2 camba-touch-target camba-focus-ring rounded-lg"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
+              aria-expanded={mobileOpen}
             >
               {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
@@ -143,12 +144,12 @@ export function DashboardNav({ user, placementTests = [] }: DashboardNavProps) {
               {user.fullName || user.email}
             </span>
             <Link href="/settings">
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className="camba-touch-target md:h-9 md:w-9">
                 <Settings className="h-4 w-4" />
               </Button>
             </Link>
             <form action={signOut}>
-              <Button variant="ghost" size="icon" type="submit">
+              <Button variant="ghost" size="icon" type="submit" className="camba-touch-target md:h-9 md:w-9">
                 <LogOut className="h-4 w-4" />
               </Button>
             </form>

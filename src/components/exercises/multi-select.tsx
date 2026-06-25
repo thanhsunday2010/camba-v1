@@ -39,7 +39,7 @@ export function MultiSelect({
             disabled={disabled}
             onClick={() => onToggle(choice.id)}
             className={cn(
-              "w-full text-left px-4 py-3 rounded-lg border transition-colors flex items-center gap-3",
+              "w-full text-left px-4 py-3.5 rounded-lg border transition-colors flex items-center gap-3 min-h-[var(--touch-target-min)] camba-focus-ring",
               isSelected && !showResult && "border-program bg-program/5",
               !isSelected && !showResult && "border-border hover:border-program/30 hover:bg-[var(--surface-sunken)]",
               showCorrect && "border-success bg-success/10",

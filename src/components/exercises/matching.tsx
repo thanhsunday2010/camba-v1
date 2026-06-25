@@ -38,7 +38,7 @@ export function Matching({
               disabled={disabled}
               onChange={(e) => onMatch(pair.id, e.target.value)}
               className={cn(
-                "sm:w-1/2 h-10 rounded-lg border px-3 text-sm",
+                "w-full sm:w-1/2 min-h-[var(--touch-target-min)] rounded-lg border px-3 camba-input-mobile",
                 showResult && isCorrect && "border-success bg-success/10",
                 showResult && selected && !isCorrect && "border-error bg-error/10",
                 !showResult && "border-gray-200"

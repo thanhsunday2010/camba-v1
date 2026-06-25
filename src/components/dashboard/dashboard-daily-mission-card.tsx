@@ -1,9 +1,10 @@
-import { Link } from "@/i18n/routing";
-import { CambaCard } from "@/components/camba/primitives/camba-card";
+import { FeatureEmptyState } from "@/components/camba/empty-states";
 import { SectionHeader } from "@/components/camba/section-header";
 import type { DashboardDailyMission } from "@/lib/dashboard/daily-mission";
 import { ArrowRight, Target } from "lucide-react";
+import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/button";
+import { CambaCard } from "@/components/camba/primitives/camba-card";
 
 interface DashboardDailyMissionCardProps {
   mission: DashboardDailyMission | null;
@@ -27,15 +28,12 @@ export function DashboardDailyMissionCard({ mission, labels }: DashboardDailyMis
       />
 
       {!mission ? (
-        <CambaCard variant="default" padding="lg" className="border-dashed border-program/20">
-          <div className="text-center py-4 space-y-2">
-            <p className="camba-h3 text-foreground">{labels.emptyTitle}</p>
-            <p className="camba-body text-muted max-w-md mx-auto">{labels.emptyDescription}</p>
-            <Link href="/learning" className="inline-block mt-4">
-              <Button variant="quest">{labels.emptyAction}</Button>
-            </Link>
-          </div>
-        </CambaCard>
+        <FeatureEmptyState
+          icon={Target}
+          title={labels.emptyTitle}
+          description={labels.emptyDescription}
+          primaryAction={{ label: labels.emptyAction, href: "/learning" }}
+        />
       ) : (
         <CambaCard variant="mission" padding="lg" className="relative overflow-hidden">
           <div

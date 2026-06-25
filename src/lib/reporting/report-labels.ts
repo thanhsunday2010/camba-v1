@@ -1,0 +1,83 @@
+/** U8.5 — Parent report label contract (resolved from i18n at page boundary). */
+
+export type StudentProgressReportLabels = {
+  reportTitle: string;
+  reportSubtitle: string;
+  snapshotTitle: string;
+  generatedOn: string;
+  studentLabel: string;
+  levelLabel: string;
+  streakLabel: string;
+  lessonsLabel: string;
+  unitsLabel: string;
+  mocksLabel: string;
+  latestActivityLabel: string;
+  journeyLabel: string;
+  learningTitle: string;
+  mockTitle: string;
+  writingTitle: string;
+  speakingTitle: string;
+  skillsTitle: string;
+  achievementsTitle: string;
+  journeyTitle: string;
+  nextStepsTitle: string;
+  strengthsLabel: string;
+  needsPracticeLabel: string;
+  averageLabel: string;
+  bestScoreLabel: string;
+  latestScoreLabel: string;
+  readinessLabel: string;
+  consistencyLabel: string;
+  sectionEmpty: string;
+  gettingStartedTitle: string;
+  gettingStartedBody: string;
+  learningEmpty: string;
+  mockEmpty: string;
+  writingEmpty: string;
+  speakingEmpty: string;
+  skillsEmpty: string;
+  achievementsEmpty: string;
+  journeyEmpty: string;
+  nextStepsEmpty: string;
+  recentActivityTemplate: string;
+  consistency: {
+    consistent: string;
+    returning: string;
+    "getting-started": string;
+  };
+  trends: {
+    improving: string;
+    stable: string;
+    building: string;
+  };
+  readinessBands: {
+    building: string;
+    developing: string;
+    approaching: string;
+    ready: string;
+  };
+  nextSteps: {
+    continueLesson: string;
+    continueLessonReason: string;
+    startLearning: string;
+    startLearningReason: string;
+    takeMock: string;
+    takeMockReason: string;
+    practiceWriting: string;
+    practiceWritingReason: string;
+    reviewWriting: string;
+    reviewWritingReason: string;
+    practiceSpeaking: string;
+    practiceSpeakingReason: string;
+    improveFluency: string;
+    improveFluencyReason: string;
+    reviewGrammar: string;
+    reviewGrammarReason: string;
+  };
+  exportSnapshot: string;
+  exportFull: string;
+  previewTitle: string;
+  previewSubtitle: string;
+  printAction: string;
+  footerNote: string;
+};

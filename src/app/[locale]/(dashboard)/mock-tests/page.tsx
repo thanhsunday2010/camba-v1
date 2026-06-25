@@ -64,6 +64,7 @@ export default async function MockTestsPage() {
       subtitle: tmc("goldSubtitle"),
       emptyTitle: tmc("goldEmptyTitle"),
       emptyDescription: tmc("goldEmptyDescription"),
+      emptyAction: tmc("goldEmptyAction"),
       certifiedDate: tmc("certifiedDate"),
     },
     levels: {
@@ -87,12 +88,14 @@ export default async function MockTestsPage() {
       ready: tmc("readinessReady"),
       emptyTitle: tmc("readinessEmptyTitle"),
       emptyDescription: tmc("readinessEmptyDescription"),
+      emptyAction: tmc("readinessEmptyAction"),
     },
     recent: {
       title: tmc("recentTitle"),
       subtitle: tmc("recentSubtitle"),
       emptyTitle: tmc("recentEmptyTitle"),
       emptyDescription: tmc("recentEmptyDescription"),
+      emptyAction: tmc("recentEmptyAction"),
       writing: tmc("writingScore"),
       speaking: tmc("speakingScore"),
       viewDetail: labels.hub.viewDetail,

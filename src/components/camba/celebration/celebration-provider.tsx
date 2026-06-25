@@ -4,6 +4,10 @@ import { createContext, useCallback, useContext, useMemo, useState } from "react
 import { LevelUpModal } from "@/components/camba/celebration/level-up-modal";
 import { BadgeUnlockModal } from "@/components/camba/celebration/badge-unlock-modal";
 import {
+  MotionCelebrationProvider,
+  useMotionCelebration,
+} from "@/components/camba/motion/motion-celebration-provider";
+import {
   showBadgeEarnedToast,
   showLevelUpToast,
   showMissionCompleteToast,
@@ -20,17 +24,18 @@ interface CelebrationContextValue {
 
 const CelebrationContext = createContext<CelebrationContextValue | null>(null);
 
-interface CelebrationProviderProps {
+interface CelebrationProviderInnerProps {
   children: React.ReactNode;
   labels?: RewardToastLabels;
   useModalsForMajorEvents?: boolean;
 }
 
-export function CelebrationProvider({
+function CelebrationProviderInner({
   children,
   labels,
   useModalsForMajorEvents = true,
-}: CelebrationProviderProps) {
+}: CelebrationProviderInnerProps) {
+  const motionCelebration = useMotionCelebration();
   const [levelUpOpen, setLevelUpOpen] = useState(false);
   const [levelUpLevel, setLevelUpLevel] = useState(1);
   const [badgeOpen, setBadgeOpen] = useState(false);
@@ -40,31 +45,34 @@ export function CelebrationProvider({
   const celebrateXp = useCallback(
     (amount: number) => {
       showXpEarnedToast(amount, labels);
+      motionCelebration?.showXpBurst(amount);
     },
-    [labels]
+    [labels, motionCelebration]
   );
 
   const celebrateLevelUp = useCallback(
     (level: number) => {
       showLevelUpToast(level, labels);
+      motionCelebration?.showXpBurst(level * 10);
       if (useModalsForMajorEvents) {
         setLevelUpLevel(level);
         setLevelUpOpen(true);
       }
     },
-    [labels, useModalsForMajorEvents]
+    [labels, useModalsForMajorEvents, motionCelebration]
   );
 
   const celebrateBadge = useCallback(
     (name: string, description?: string) => {
       showBadgeEarnedToast(name, labels);
+      motionCelebration?.showBadgeMoment(name, description);
       if (useModalsForMajorEvents) {
         setBadgeName(name);
         setBadgeDescription(description);
         setBadgeOpen(true);
       }
     },
-    [labels, useModalsForMajorEvents]
+    [labels, useModalsForMajorEvents, motionCelebration]
   );
 
   const celebrateMission = useCallback(() => {
@@ -87,6 +95,20 @@ export function CelebrationProvider({
         badgeDescription={badgeDescription}
       />
     </CelebrationContext.Provider>
+  );
+}
+
+interface CelebrationProviderProps {
+  children: React.ReactNode;
+  labels?: RewardToastLabels;
+  useModalsForMajorEvents?: boolean;
+}
+
+export function CelebrationProvider(props: CelebrationProviderProps) {
+  return (
+    <MotionCelebrationProvider>
+      <CelebrationProviderInner {...props} />
+    </MotionCelebrationProvider>
   );
 }
 

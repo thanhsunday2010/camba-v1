@@ -1,0 +1,118 @@
+/**
+ * U8.4 — Mobile-first layout tokens and utilities.
+ */
+
+:root {
+  --space-page-y-mobile: 1rem;
+  --space-section-mobile: 1.25rem;
+  --mobile-action-bar-height: 4.5rem;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --text-display: 1.625rem;
+    --text-stat: 1.5rem;
+  }
+}
+
+/* Prevent iOS zoom on focus — 16px minimum on form controls */
+.camba-input-mobile,
+.camba-input-mobile textarea,
+.camba-input-mobile input {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+textarea.camba-input-mobile,
+input.camba-input-mobile {
+  font-size: 1rem;
+}
+
+/* Touch-friendly minimum height */
+.camba-touch-target {
+  min-height: var(--touch-target-min);
+  min-width: var(--touch-target-min);
+}
+
+.camba-touch-target-inline {
+  min-height: var(--touch-target-min);
+  padding-inline: 1rem;
+}
+
+/* Safe area for notched devices */
+.camba-safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.camba-safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.camba-safe-x {
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+/* Sticky bottom action bar — mock take, high-stakes flows */
+@media (max-width: 767px) {
+  .camba-mobile-action-bar {
+    position: sticky;
+    bottom: 0;
+    z-index: 20;
+    margin-inline: -1rem;
+    padding: 0.75rem 1rem;
+    padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+    background: color-mix(in srgb, var(--background) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  }
+
+  .camba-mobile-action-spacer {
+    padding-bottom: calc(var(--mobile-action-bar-height) + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+@media (min-width: 768px) {
+  .camba-mobile-action-bar {
+    position: static;
+    margin-inline: 0;
+    padding: 0;
+    background: transparent;
+    backdrop-filter: none;
+    border-top: none;
+  }
+
+  .camba-mobile-action-spacer {
+    padding-bottom: 0;
+  }
+}
+
+/* Horizontal scroll rails — hide scrollbar, keep swipe */
+.camba-scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.camba-scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Prevent flex overflow blowout */
+@media print {
+  body {
+    background: white !important;
+  }
+
+  .print\\:hidden {
+    display: none !important;
+  }
+}

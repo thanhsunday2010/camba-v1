@@ -48,6 +48,8 @@ export function MockTestHubFilters({ hub, labels }: MockTestHubFiltersProps) {
       <MockTestEmptyState
         title={labels.emptyTitle}
         description={labels.emptyDescription}
+        actionLabel={labels.emptyAction}
+        actionHref="/learning"
       />
     );
   }
@@ -63,7 +65,7 @@ export function MockTestHubFilters({ hub, labels }: MockTestHubFiltersProps) {
               aria-selected={scope === "recommended"}
               onClick={() => setScope("recommended")}
               className={cn(
-                "rounded-full px-3 py-1.5 text-xs font-semibold transition-colors camba-focus-ring",
+                "rounded-full px-3 py-2 text-xs font-semibold transition-colors camba-focus-ring min-h-[var(--touch-target-min)] sm:min-h-0 sm:py-1.5 inline-flex items-center",
                 scope === "recommended"
                   ? "bg-[var(--status-mock-test)] text-white"
                   : "bg-[var(--surface-sunken)] text-muted hover:text-foreground"
@@ -77,7 +79,7 @@ export function MockTestHubFilters({ hub, labels }: MockTestHubFiltersProps) {
               aria-selected={scope === "all"}
               onClick={() => setScope("all")}
               className={cn(
-                "rounded-full px-3 py-1.5 text-xs font-semibold transition-colors camba-focus-ring",
+                "rounded-full px-3 py-2 text-xs font-semibold transition-colors camba-focus-ring min-h-[var(--touch-target-min)] sm:min-h-0 sm:py-1.5 inline-flex items-center",
                 scope === "all"
                   ? "bg-[var(--status-mock-test)] text-white"
                   : "bg-[var(--surface-sunken)] text-muted hover:text-foreground"
@@ -119,8 +121,10 @@ export function MockTestHubFilters({ hub, labels }: MockTestHubFiltersProps) {
 
       {filtered.length === 0 ? (
         <MockTestEmptyState
-          title={labels.emptyTitle}
-          description={labels.emptyDescription}
+          title={labels.filterEmptyTitle ?? labels.emptyTitle}
+          description={labels.filterEmptyDescription ?? labels.emptyDescription}
+          secondaryActionLabel={labels.filterResetAction}
+          onSecondaryAction={() => setFilter("all")}
         />
       ) : (
         <div className="space-y-3">

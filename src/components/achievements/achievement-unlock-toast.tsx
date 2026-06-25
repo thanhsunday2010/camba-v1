@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { toast } from "sonner";
 import { Award } from "lucide-react";
 import { createElement } from "react";
+import { useMotionCelebration } from "@/components/camba/motion/motion-celebration-provider";
 import type { EvaluatedAchievement } from "@/lib/achievements/achievement-types";
 
 const STORAGE_KEY = "camba_seen_achievements";
@@ -40,6 +41,7 @@ export function AchievementUnlockNotifier({
   labels,
 }: AchievementUnlockNotifierProps) {
   const notifiedRef = useRef(false);
+  const motionCelebration = useMotionCelebration();
 
   useEffect(() => {
     if (notifiedRef.current || unlockedAchievements.length === 0) return;
@@ -57,11 +59,12 @@ export function AchievementUnlockNotifier({
         icon: createElement(Award, { className: "h-4 w-4 text-[var(--color-badge)]" }),
         duration: 4500,
       });
+      motionCelebration?.showBadgeMoment(title, labels.celebration);
       seen.add(achievement.id);
     }
 
     writeSeenIds(seen);
-  }, [unlockedAchievements, resolveTitle, labels]);
+  }, [unlockedAchievements, resolveTitle, labels, motionCelebration]);
 
   return null;
 }

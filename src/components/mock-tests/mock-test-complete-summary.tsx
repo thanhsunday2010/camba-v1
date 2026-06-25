@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/routing";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
+import { AnimatedCounter } from "@/components/camba/motion";
 import { Button } from "@/components/ui/button";
 import { MockTestReviewSection } from "@/components/mock-tests/mock-test-review-section";
 import { MockTestSkillBreakdown } from "@/components/mock-tests/mock-test-skill-breakdown";
@@ -100,7 +101,7 @@ export function MockTestCompleteSummary({
               {labels.overallScore}
             </p>
             <p className="camba-stat text-2xl text-foreground mt-0.5">
-              {attempt.scorePercent}%
+              <AnimatedCounter value={attempt.scorePercent} format={(v) => `${Math.round(v)}%`} />
             </p>
           </div>
           <div className="rounded-xl bg-white border border-border px-3 py-3 text-center sm:text-left">

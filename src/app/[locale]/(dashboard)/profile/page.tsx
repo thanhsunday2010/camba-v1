@@ -71,6 +71,7 @@ export default async function ProfilePage() {
             profileCompletion: t("profileCompletion"),
             memberSince: t("memberSince"),
             editSettings: t("editSettings"),
+            viewReport: t("viewReport"),
             cefrEstimate: t("cefrEstimate"),
           },
           snapshot: {

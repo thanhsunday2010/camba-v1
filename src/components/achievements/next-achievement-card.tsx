@@ -1,8 +1,9 @@
-import { Link } from "@/i18n/routing";
+import { AchievementEmptyState } from "@/components/camba/empty-states";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { AchievementIcon, RARITY_STYLES } from "@/components/achievements/achievement-icon";
 import type { EvaluatedAchievement } from "@/lib/achievements/achievement-types";
 import { formatAchievementProgressMessage } from "@/lib/achievements/achievement-utils";
+import { Link } from "@/i18n/routing";
 import { Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -30,20 +31,13 @@ export function NextAchievementCard({
 }: NextAchievementCardProps) {
   if (!achievement) {
     return (
-      <CambaCard variant="default" padding="md" className="border-dashed border-program/20">
-        <div className="flex items-start gap-3">
-          <div className="camba-icon-box bg-program-muted text-program">
-            <Target className="h-5 w-5" aria-hidden />
-          </div>
-          <div className="min-w-0 flex-1">
-            <p className="camba-h3 text-foreground">{labels.emptyTitle}</p>
-            <p className="camba-caption text-muted mt-1">{labels.emptyDescription}</p>
-            <Button variant="outline" size="sm" className="mt-3" asChild>
-              <Link href="/learning">{labels.emptyAction}</Link>
-            </Button>
-          </div>
-        </div>
-      </CambaCard>
+      <AchievementEmptyState
+        icon={Target}
+        variant="inline"
+        title={labels.emptyTitle}
+        description={labels.emptyDescription}
+        primaryAction={{ label: labels.emptyAction, href: "/learning" }}
+      />
     );
   }
 

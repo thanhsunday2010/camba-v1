@@ -1,7 +1,10 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import { formatNumber } from "@/lib/utils";
 import { ProgramBadge } from "@/components/camba/cambridge/program-badge";
 import { PortfolioLink } from "@/components/profile/portfolio-link";
+import { AnimatedCounter, AnimatedProgress } from "@/components/camba/motion";
 import { Flame, Sparkles, Zap } from "lucide-react";
 
 export interface DashboardHeroLabels {
@@ -93,35 +96,31 @@ export function DashboardHero({
             </p>
           </header>
 
-          <div className="flex shrink-0 flex-col items-stretch sm:items-end gap-3">
+          <div className="flex shrink-0 flex-col items-stretch gap-3 w-full sm:w-auto sm:items-end">
             {labels.viewPortfolio && (
-              <PortfolioLink label={labels.viewPortfolio} className="self-end" />
+              <PortfolioLink label={labels.viewPortfolio} className="self-start sm:self-end" />
             )}
-            <div className="flex shrink-0 gap-3 sm:gap-4">
-            <div className="rounded-2xl border border-white/80 bg-white/90 px-4 py-3 shadow-sm min-w-[6.5rem]">
+            <div className="grid grid-cols-2 gap-3 w-full sm:flex sm:w-auto sm:gap-4">
+            <div className="rounded-2xl border border-white/80 bg-white/90 px-4 py-3 shadow-sm min-w-0">
               <p className="camba-caption text-muted flex items-center gap-1">
                 <Zap className="h-3.5 w-3.5 text-[var(--color-xp)]" aria-hidden />
                 {labels.xp}
               </p>
-              <p className="camba-stat text-foreground mt-0.5">{formatNumber(totalXp)}</p>
+              <p className="camba-stat text-foreground mt-0.5">
+                <AnimatedCounter value={totalXp} format={formatNumber} />
+              </p>
             </div>
-            <div className="rounded-2xl border border-white/80 bg-white/90 px-4 py-3 shadow-sm min-w-[6.5rem]">
+            <div className="rounded-2xl border border-white/80 bg-white/90 px-4 py-3 shadow-sm min-w-0">
               <p className="camba-caption text-muted flex items-center gap-1">
                 <Sparkles className="h-3.5 w-3.5 text-[var(--color-level-up)]" aria-hidden />
                 {labels.level}
               </p>
               <p className="camba-stat text-foreground mt-0.5">{level}</p>
-              <div className="mt-2 h-1.5 rounded-full bg-program-muted overflow-hidden">
-                <div
-                  className="h-full camba-gradient-program rounded-full transition-all duration-700"
-                  style={{ width: `${levelProgressPercent}%` }}
-                  role="progressbar"
-                  aria-valuenow={levelProgressPercent}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                  aria-label={`${labels.level} ${levelProgressPercent}%`}
-                />
-              </div>
+              <AnimatedProgress
+                className="mt-2"
+                percent={levelProgressPercent}
+                ariaLabel={`${labels.level} ${levelProgressPercent}%`}
+              />
             </div>
             </div>
           </div>

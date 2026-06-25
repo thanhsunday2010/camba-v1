@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Skeleton } from "@/components/ui/skeleton";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
+import { SkeletonShimmer } from "@/components/camba/motion";
 
 export function SkeletonCard({ className }: { className?: string }) {
   return (
@@ -36,13 +37,13 @@ export function SkeletonList({
 export function DashboardSkeleton() {
   return (
     <div className="camba-section-stack">
-      <Skeleton className="h-36 w-full rounded-2xl" />
+      <SkeletonShimmer className="h-36 w-full rounded-2xl" />
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         {Array.from({ length: 4 }).map((_, i) => (
-          <Skeleton key={i} className="h-24 rounded-2xl" />
+          <SkeletonShimmer key={i} className="h-24 rounded-2xl" />
         ))}
       </div>
-      <Skeleton className="h-20 w-full rounded-2xl" />
+      <SkeletonShimmer className="h-20 w-full rounded-2xl" />
       <div className="grid md:grid-cols-2 gap-4">
         <SkeletonCard />
         <SkeletonCard />

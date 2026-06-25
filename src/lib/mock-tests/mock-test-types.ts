@@ -140,6 +140,10 @@ export type MockTestHubLabels = {
   viewDetail: string;
   emptyTitle: string;
   emptyDescription: string;
+  emptyAction?: string;
+  filterEmptyTitle?: string;
+  filterEmptyDescription?: string;
+  filterResetAction?: string;
   statusLabels: Record<MockTestDisplayState, string>;
   format: MockTestFormatLabels;
 };

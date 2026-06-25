@@ -25,6 +25,7 @@ export type AchievementsCollectionLabels = AchievementCardLabels &
     emptyTitle: string;
     emptyDescription: string;
     emptyAction: string;
+    resetFiltersAction: string;
     unlockedSummary: string;
     encouragement: string;
   };
@@ -152,6 +153,12 @@ export function AchievementsCollectionView({
           description={labels.emptyDescription}
           actionLabel={labels.emptyAction}
           actionHref="/learning"
+          secondaryActionLabel={labels.resetFiltersAction}
+          onSecondaryAction={() => {
+            setStatusFilter("all");
+            setCategoryFilter("all");
+            setRarityFilter("all");
+          }}
         />
       ) : (
         <div
@@ -202,8 +209,8 @@ function FilterChip({
       role="tab"
       aria-selected={active}
       onClick={onClick}
-      className={cn(
-        "rounded-full px-3 py-1.5 camba-caption font-semibold transition-colors camba-focus-ring",
+            className={cn(
+              "rounded-full px-3 py-2 camba-caption font-semibold transition-colors camba-focus-ring min-h-[var(--touch-target-min)] sm:min-h-0 sm:py-1.5 inline-flex items-center",
         active
           ? "bg-program text-white"
           : "bg-[var(--surface-sunken)] text-muted hover:text-foreground"

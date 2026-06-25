@@ -173,8 +173,8 @@ export function MockTestPlayer({
   }
 
   return (
-    <CambaCard variant="elevated" padding="md" className="space-y-4">
-      <div className="flex gap-1 flex-wrap">
+    <CambaCard variant="elevated" padding="md" className="space-y-4 camba-mobile-action-spacer">
+      <div className="camba-scroll-x flex gap-1.5 flex-nowrap pb-1 -mx-1 px-1">
         {test.sections.map((section) => {
           const sectionQuestionIds = new Set(section.questions.map((q) => q.id));
           const reachedInSection = flatQuestions.some(
@@ -185,7 +185,7 @@ export function MockTestPlayer({
           return (
             <span
               key={section.id}
-              className={`text-xs px-2 py-1 rounded-full ${
+              className={`shrink-0 text-xs px-3 py-1.5 rounded-full min-h-[var(--touch-target-min)] sm:min-h-0 sm:py-1 inline-flex items-center ${
                 isActive
                   ? "bg-[var(--status-mock-test)] text-white"
                   : reachedInSection
@@ -208,25 +208,35 @@ export function MockTestPlayer({
                 ? "bg-[var(--status-mock-test)]"
                 : "bg-[var(--surface-sunken)]"
             }`}
+            aria-hidden
           />
         ))}
       </div>
 
       {questionBody}
 
-      <div className="flex justify-between gap-2 pt-2">
+      <div className="camba-mobile-action-bar flex justify-between gap-2 pt-2 md:pt-2">
         <Button
           type="button"
           variant="outline"
+          size="lg"
+          className="flex-1 sm:flex-none min-h-[var(--touch-target-min)]"
           onClick={() => onIndexChange(Math.max(0, currentQuestionIndex - 1))}
           disabled={currentQuestionIndex === 0}
+          aria-label={labels.previous}
         >
-          <ChevronLeft className="h-4 w-4" />
-          {labels.previous}
+          <ChevronLeft className="h-4 w-4" aria-hidden />
+          <span className="hidden sm:inline">{labels.previous}</span>
         </Button>
 
         {isLast ? (
-          <Button type="button" onClick={onSubmit} disabled={isSubmitting}>
+          <Button
+            type="button"
+            size="lg"
+            className="flex-1 sm:flex-none min-h-[var(--touch-target-min)]"
+            onClick={onSubmit}
+            disabled={isSubmitting}
+          >
             {isSubmitting ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />
@@ -237,7 +247,12 @@ export function MockTestPlayer({
             )}
           </Button>
         ) : (
-          <Button type="button" onClick={() => onIndexChange(currentQuestionIndex + 1)}>
+          <Button
+            type="button"
+            size="lg"
+            className="flex-1 sm:flex-none min-h-[var(--touch-target-min)]"
+            onClick={() => onIndexChange(currentQuestionIndex + 1)}
+          >
             {labels.next}
             <ChevronRight className="h-4 w-4" />
           </Button>

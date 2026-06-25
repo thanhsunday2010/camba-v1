@@ -15,6 +15,7 @@ export type StudentProfileHeroLabels = {
   profileCompletion: string;
   memberSince: string;
   editSettings: string;
+  viewReport: string;
   cefrEstimate: string;
 };
 
@@ -121,12 +122,17 @@ export function StudentProfileHero({ identity, hero, labels }: StudentProfileHer
               </div>
             </div>
           </div>
-          <Button variant="outline" size="sm" className="self-start" asChild>
-            <Link href="/settings">
-              <Settings className="h-4 w-4 mr-1" aria-hidden />
-              {labels.editSettings}
-            </Link>
-          </Button>
+          <div className="flex flex-col gap-2 self-start">
+            <Button variant="quest" size="sm" asChild>
+              <Link href="/profile/report">{labels.viewReport}</Link>
+            </Button>
+            <Button variant="outline" size="sm" asChild>
+              <Link href="/settings">
+                <Settings className="h-4 w-4 mr-1" aria-hidden />
+                {labels.editSettings}
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

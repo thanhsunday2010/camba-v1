@@ -4,6 +4,7 @@ import type { WritingDimensionScore, WritingBandScore } from "@/lib/cambridge-as
 import { WRITING_DIMENSION_LABELS } from "@/lib/cambridge-assessment/cambridge-writing-ai-contracts";
 import type { WritingQuestionEvaluationSummary } from "@/lib/writing/writing-evaluation-types";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
+import { AnimatedSection, AnimatedCounter } from "@/components/camba/motion";
 import { WritingDimensionBreakdown } from "@/components/writing/writing-dimension-breakdown";
 import { WritingCorrectedVersion } from "@/components/writing/writing-corrected-version";
 import { AlertCircle, Star } from "lucide-react";
@@ -38,6 +39,7 @@ export function WritingFeedbackCard({ evaluation, className }: WritingFeedbackCa
   }
 
   return (
+    <AnimatedSection>
     <CambaCard variant="default" padding="md" className={`space-y-4 ${className ?? ""}`}>
       <div className="flex items-center gap-2">
         <Star className="h-5 w-5 text-program" />
@@ -47,7 +49,9 @@ export function WritingFeedbackCard({ evaluation, className }: WritingFeedbackCa
       <div className="flex flex-wrap gap-3">
         <div className="rounded-xl bg-program/5 px-4 py-2">
           <p className="camba-caption text-muted">Overall score</p>
-          <p className="camba-h3 text-program">{evaluation.overallScore}/100</p>
+          <p className="camba-h3 text-program">
+            <AnimatedCounter value={evaluation.overallScore} format={(v) => `${Math.round(v)}/100`} />
+          </p>
         </div>
         <div className="rounded-xl bg-[var(--surface-sunken)]/60 px-4 py-2">
           <p className="camba-caption text-muted">Band</p>
@@ -90,6 +94,7 @@ export function WritingFeedbackCard({ evaluation, className }: WritingFeedbackCa
         <WritingCorrectedVersion text={evaluation.correctedVersion} />
       )}
     </CambaCard>
+    </AnimatedSection>
   );
 }
 

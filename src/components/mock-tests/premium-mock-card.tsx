@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/routing";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
+import { AnimatedCard } from "@/components/camba/motion";
 import { MockTestStatusPill } from "@/components/mock-tests/mock-test-status-pill";
 import { MockAiSkillBadges } from "@/components/mock-tests/mock-ai-skill-badges";
 import { deriveMockDifficulty } from "@/lib/mock-tests/mock-center-utils";
@@ -54,6 +55,7 @@ export function PremiumMockCard({ test, labels, compact }: PremiumMockCardProps)
     : detailHref;
 
   return (
+    <AnimatedCard hoverLift className="h-full">
     <CambaCard variant="mockTest" padding="md" className="h-full flex flex-col">
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div className="min-w-0 flex-1">
@@ -138,5 +140,6 @@ export function PremiumMockCard({ test, labels, compact }: PremiumMockCardProps)
         </Button>
       </div>
     </CambaCard>
+    </AnimatedCard>
   );
 }

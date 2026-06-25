@@ -1,4 +1,5 @@
 import type { StudentPortfolioViewModel } from "@/lib/profile/student-profile-types";
+import { AnimatedSection } from "@/components/camba/motion";
 import { StudentProfileHero, type StudentProfileHeroLabels } from "@/components/profile/student-profile-hero";
 import { CambridgeSnapshotCard, type CambridgeSnapshotLabels } from "@/components/profile/cambridge-snapshot-card";
 import {
@@ -71,47 +72,65 @@ export function StudentProfileView({
 }: StudentProfileViewProps) {
   return (
     <div className="camba-section-stack gap-8 sm:gap-10">
-      <StudentProfileHero identity={model.identity} hero={model.hero} labels={labels.hero} />
+      <AnimatedSection staggerIndex={0}>
+        <StudentProfileHero identity={model.identity} hero={model.hero} labels={labels.hero} />
+      </AnimatedSection>
 
-      <CambridgeSnapshotCard snapshot={model.snapshot} labels={labels.snapshot} />
+      <AnimatedSection staggerIndex={1}>
+        <CambridgeSnapshotCard snapshot={model.snapshot} labels={labels.snapshot} />
+      </AnimatedSection>
 
-      <LearningProgressSection learning={model.learning} labels={labels.learning} />
+      <AnimatedSection staggerIndex={2}>
+        <LearningProgressSection learning={model.learning} labels={labels.learning} />
+      </AnimatedSection>
 
-      <MockPerformanceSection
-        mockPerformance={model.mockPerformance}
-        labels={labels.mockPerformance}
-      />
+      <AnimatedSection staggerIndex={3}>
+        <MockPerformanceSection
+          mockPerformance={model.mockPerformance}
+          labels={labels.mockPerformance}
+        />
+      </AnimatedSection>
 
-      <div className="grid gap-8 lg:grid-cols-2">
-        <WritingGrowthSection writing={model.writing} labels={labels.writing} />
-        <SpeakingGrowthSection speaking={model.speaking} labels={labels.speaking} />
-      </div>
+      <AnimatedSection staggerIndex={4}>
+        <div className="grid gap-8 lg:grid-cols-2">
+          <WritingGrowthSection writing={model.writing} labels={labels.writing} />
+          <SpeakingGrowthSection speaking={model.speaking} labels={labels.speaking} />
+        </div>
+      </AnimatedSection>
 
-      <CertificationShowcase
-        certifications={model.certifications}
-        labels={labels.certifications}
-        resolveTitle={resolveCertificationTitle}
-      />
+      <AnimatedSection staggerIndex={5}>
+        <CertificationShowcase
+          certifications={model.certifications}
+          labels={labels.certifications}
+          resolveTitle={resolveCertificationTitle}
+        />
+      </AnimatedSection>
 
-      <ProfileAchievementSection
-        achievements={model.achievements}
-        showcaseLabels={labels.achievements}
-        nextLabels={labels.achievements.next}
-        resolveText={resolveAchievementText}
-        rareTitle={labels.achievements.rareTitle}
-        rareSubtitle={labels.achievements.rareSubtitle}
-      />
+      <AnimatedSection staggerIndex={6}>
+        <ProfileAchievementSection
+          achievements={model.achievements}
+          showcaseLabels={labels.achievements}
+          nextLabels={labels.achievements.next}
+          resolveText={resolveAchievementText}
+          rareTitle={labels.achievements.rareTitle}
+          rareSubtitle={labels.achievements.rareSubtitle}
+        />
+      </AnimatedSection>
 
-      <JourneyProgressSection journey={model.journey} labels={labels.journey} />
+      <AnimatedSection staggerIndex={7}>
+        <JourneyProgressSection journey={model.journey} labels={labels.journey} />
+      </AnimatedSection>
 
-      <FutureGoalsCard
-        goals={model.futureGoals}
-        labels={{
-          ...labels.futureGoals,
-          resolveTitle: (goal) => resolveGoalTitle(goal.titleKey),
-          resolveDescription: (goal) => resolveGoalDescription(goal.descriptionKey),
-        }}
-      />
+      <AnimatedSection staggerIndex={8}>
+        <FutureGoalsCard
+          goals={model.futureGoals}
+          labels={{
+            ...labels.futureGoals,
+            resolveTitle: (goal) => resolveGoalTitle(goal.titleKey),
+            resolveDescription: (goal) => resolveGoalDescription(goal.descriptionKey),
+          }}
+        />
+      </AnimatedSection>
     </div>
   );
 }

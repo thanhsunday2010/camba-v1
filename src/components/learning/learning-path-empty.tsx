@@ -1,8 +1,8 @@
-import { DashboardEmptyState } from "@/components/dashboard/dashboard-empty-state";
+import { LearningEmptyState } from "@/components/camba/empty-states";
 import type { LucideIcon } from "lucide-react";
 
 interface LearningPathEmptyProps {
-  icon: LucideIcon;
+  icon?: LucideIcon;
   title: string;
   description: string;
   actionLabel?: string;
@@ -22,12 +22,16 @@ export function LearningPathEmpty({
 }: LearningPathEmptyProps) {
   return (
     <div className={className}>
-      <DashboardEmptyState
+      <LearningEmptyState
         icon={icon}
         title={title}
         description={description}
-        actionLabel={actionLabel}
-        actionHref={actionHref}
+        variant="feature"
+        primaryAction={
+          actionLabel && actionHref
+            ? { label: actionLabel, href: actionHref }
+            : undefined
+        }
       />
       {children && <div className="mt-6">{children}</div>}
     </div>

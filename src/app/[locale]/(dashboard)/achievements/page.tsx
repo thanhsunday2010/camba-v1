@@ -37,6 +37,7 @@ export default async function AchievementsPage() {
     emptyTitle: t("emptyTitle"),
     emptyDescription: t("emptyDescription"),
     emptyAction: t("emptyAction"),
+    resetFiltersAction: t("resetFiltersAction"),
     unlockedSummary: t("unlockedSummary"),
     encouragement: t("encouragement"),
     ...shared,

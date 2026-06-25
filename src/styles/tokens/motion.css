@@ -2,6 +2,9 @@
   --duration-fast: 150ms;
   --duration-normal: 250ms;
   --duration-slow: 400ms;
+  --duration-celebration: 600ms;
+  --duration-page: 300ms;
+  --duration-modal: 250ms;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -95,4 +98,30 @@
 .camba-hero-pattern {
   background-image: radial-gradient(circle at 1px 1px, rgb(var(--program-rgb) / 0.07) 1px, transparent 0);
   background-size: 20px 20px;
+}
+
+@keyframes camba-skeleton-shimmer {
+  0% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0.55;
+  }
+}
+
+.camba-skeleton-shimmer {
+  animation: camba-skeleton-shimmer 1.6s var(--ease-out) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .camba-skeleton-shimmer,
+  .camba-pulse-soft,
+  .camba-streak-glow,
+  .camba-badge-shine,
+  .camba-scale-in {
+    animation: none !important;
+  }
 }

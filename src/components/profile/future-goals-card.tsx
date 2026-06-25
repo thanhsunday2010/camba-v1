@@ -1,7 +1,8 @@
-import { Link } from "@/i18n/routing";
+import { PortfolioInlineEmptyState } from "@/components/camba/empty-states";
 import { SectionHeader } from "@/components/camba/section-header";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import type { FutureGoal } from "@/lib/profile/student-profile-types";
+import { Link } from "@/i18n/routing";
 import { Target } from "lucide-react";
 
 export type FutureGoalsCardLabels = {
@@ -29,10 +30,10 @@ export function FutureGoalsCard({ goals, labels }: FutureGoalsCardProps) {
       />
 
       {goals.length === 0 ? (
-        <CambaCard variant="default" padding="md" className="border-dashed">
-          <p className="camba-h3 text-foreground">{labels.emptyTitle}</p>
-          <p className="camba-caption text-muted mt-1">{labels.emptyDescription}</p>
-        </CambaCard>
+        <PortfolioInlineEmptyState
+          title={labels.emptyTitle}
+          description={labels.emptyDescription}
+        />
       ) : (
         <ol className="space-y-3" role="list">
           {goals.map((goal) => (

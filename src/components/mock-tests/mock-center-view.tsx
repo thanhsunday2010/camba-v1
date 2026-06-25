@@ -7,6 +7,7 @@ import { deriveMockDifficulty } from "@/lib/mock-tests/mock-center-utils";
 import type { MockCenterViewModel } from "@/lib/mock-tests/mock-center-utils";
 import { MockCenterAchievementPreview } from "@/components/mock-tests/mock-center-achievement-preview";
 import { PortfolioLink } from "@/components/profile/portfolio-link";
+import { AnimatedSection } from "@/components/camba/motion";
 import type { AchievementCardLabels } from "@/components/achievements/achievement-card";
 import type { NextAchievementCardLabels } from "@/components/achievements/next-achievement-card";
 import type { MockTestHubSummary } from "@/lib/mock-tests/mock-test-types";
@@ -54,6 +55,7 @@ export interface MockCenterLabels {
     subtitle: string;
     emptyTitle: string;
     emptyDescription: string;
+    emptyAction: string;
     certifiedDate: string;
   };
   levels: {
@@ -77,12 +79,14 @@ export interface MockCenterLabels {
     ready: string;
     emptyTitle: string;
     emptyDescription: string;
+    emptyAction: string;
   };
   recent: {
     title: string;
     subtitle: string;
     emptyTitle: string;
     emptyDescription: string;
+    emptyAction: string;
     writing: string;
     speaking: string;
     viewDetail: string;
@@ -135,6 +139,7 @@ function MockCenterHero({
   const detailHref = `/mock-tests/${test.id}`;
 
   return (
+    <AnimatedSection>
     <section
       aria-labelledby="mock-center-featured-heading"
       className="relative overflow-hidden rounded-3xl border-2 border-[var(--status-mock-test)]/30 bg-gradient-to-br from-[var(--status-mock-test)]/12 via-white to-[var(--color-badge)]/5 p-5 sm:p-8 shadow-md"
@@ -196,6 +201,7 @@ function MockCenterHero({
         </div>
       </div>
     </section>
+    </AnimatedSection>
   );
 }
 
@@ -284,6 +290,8 @@ export function MockCenterView({
           <MockTestEmptyState
             title={labels.gold.emptyTitle}
             description={labels.gold.emptyDescription}
+            actionLabel={labels.gold.emptyAction}
+            actionHref="/mock-tests"
           />
         ) : (
           <div className="grid gap-4 sm:grid-cols-2">
@@ -345,6 +353,8 @@ export function MockCenterView({
           <MockTestEmptyState
             title={labels.readiness.emptyTitle}
             description={labels.readiness.emptyDescription}
+            actionLabel={labels.readiness.emptyAction}
+            actionHref="/mock-tests"
           />
         ) : (
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 camba-caption">
@@ -402,6 +412,8 @@ export function MockCenterView({
           <MockTestEmptyState
             title={labels.recent.emptyTitle}
             description={labels.recent.emptyDescription}
+            actionLabel={labels.recent.emptyAction}
+            actionHref="/mock-tests"
           />
         ) : (
           <ol className="space-y-2" aria-label={labels.recent.title}>

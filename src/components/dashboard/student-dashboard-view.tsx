@@ -1,4 +1,5 @@
 import { StudentPageShell } from "@/components/camba";
+import { AnimatedSection } from "@/components/camba/motion";
 import { DashboardHero } from "@/components/dashboard/dashboard-hero";
 import { DashboardDailyMissionCard } from "@/components/dashboard/dashboard-daily-mission-card";
 import { DashboardContinueLearningCard } from "@/components/dashboard/dashboard-continue-learning-card";
@@ -136,31 +137,37 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
 
       {hasProgram && data.gamification && (
         <div className="camba-section-stack gap-8 sm:gap-10">
-          <DashboardHero
-            studentName={userName}
-            programName={programName}
-            levelName={levelName}
-            programSlug={programSlug}
-            totalXp={data.gamification.total_xp}
-            level={data.gamification.level}
-            streak={data.currentStreak}
-            cefrEstimate={data.cefrEstimate}
-            levelProgressPercent={data.levelProgressPercent}
-            labels={labels.hero}
-          />
+          <AnimatedSection staggerIndex={0}>
+            <DashboardHero
+              studentName={userName}
+              programName={programName}
+              levelName={levelName}
+              programSlug={programSlug}
+              totalXp={data.gamification.total_xp}
+              level={data.gamification.level}
+              streak={data.currentStreak}
+              cefrEstimate={data.cefrEstimate}
+              levelProgressPercent={data.levelProgressPercent}
+              labels={labels.hero}
+            />
+          </AnimatedSection>
 
-          <DashboardDailyMissionCard
-            mission={data.dailyMission}
-            labels={labels.dailyMission}
-          />
+          <AnimatedSection staggerIndex={1}>
+            <DashboardDailyMissionCard
+              mission={data.dailyMission}
+              labels={labels.dailyMission}
+            />
+          </AnimatedSection>
 
-          <DashboardContinueLearningCard
-            nextLesson={data.nextLesson}
-            labels={labels.continueLearning}
-            skillLabel={skillLabel}
-          />
+          <AnimatedSection staggerIndex={2}>
+            <DashboardContinueLearningCard
+              nextLesson={data.nextLesson}
+              labels={labels.continueLearning}
+              skillLabel={skillLabel}
+            />
+          </AnimatedSection>
 
-          <section aria-labelledby="journey-preview-heading">
+          <AnimatedSection staggerIndex={3} aria-labelledby="journey-preview-heading">
             <SectionHeader
               titleId="journey-preview-heading"
               title={labels.journeyPreview.title}
@@ -171,47 +178,59 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
               preview={data.journeyPreview}
               labels={labels.journeyPreview}
             />
-          </section>
+          </AnimatedSection>
 
-          <DashboardWeeklyProgress
-            stats={data.weeklyProgress}
-            labels={labels.weeklyProgress}
-          />
+          <AnimatedSection staggerIndex={4}>
+            <DashboardWeeklyProgress
+              stats={data.weeklyProgress}
+              labels={labels.weeklyProgress}
+            />
+          </AnimatedSection>
 
-          <DashboardRecommendedMock
-            test={data.recommendedMock}
-            labels={labels.recommendedMock}
-          />
+          <AnimatedSection staggerIndex={5}>
+            <DashboardRecommendedMock
+              test={data.recommendedMock}
+              labels={labels.recommendedMock}
+            />
+          </AnimatedSection>
 
-          <DashboardAchievementsSection
-            recentUnlocked={data.achievements.recentUnlocked}
-            nextAchievement={data.achievements.nextAchievement}
-            unlockedCount={data.achievements.unlockedCount}
-            totalCount={data.achievements.totalCount}
-            itemLabels={labels.achievements.itemLabels}
-            showcaseLabels={labels.achievements}
-            nextLabels={labels.achievements.next}
-            toastLabels={{
-              unlocked: labels.achievements.toastUnlocked,
-              celebration: labels.achievements.toastCelebration,
-            }}
-          />
+          <AnimatedSection staggerIndex={6}>
+            <DashboardAchievementsSection
+              recentUnlocked={data.achievements.recentUnlocked}
+              nextAchievement={data.achievements.nextAchievement}
+              unlockedCount={data.achievements.unlockedCount}
+              totalCount={data.achievements.totalCount}
+              itemLabels={labels.achievements.itemLabels}
+              showcaseLabels={labels.achievements}
+              nextLabels={labels.achievements.next}
+              toastLabels={{
+                unlocked: labels.achievements.toastUnlocked,
+                celebration: labels.achievements.toastCelebration,
+              }}
+            />
+          </AnimatedSection>
 
-          <DashboardSkillInsights
-            insights={data.skillInsights}
-            labels={labels.skillInsights}
-          />
+          <AnimatedSection staggerIndex={7}>
+            <DashboardSkillInsights
+              insights={data.skillInsights}
+              labels={labels.skillInsights}
+            />
+          </AnimatedSection>
 
-          <DashboardRecentActivity
-            items={data.recentActivity}
-            labels={labels.recentActivity}
-          />
+          <AnimatedSection staggerIndex={8}>
+            <DashboardRecentActivity
+              items={data.recentActivity}
+              labels={labels.recentActivity}
+            />
+          </AnimatedSection>
 
-          <PlacementTestCTA
-            title={labels.placement.title}
-            description={labels.placement.description}
-            buttonText={labels.placement.button}
-          />
+          <AnimatedSection staggerIndex={9}>
+            <PlacementTestCTA
+              title={labels.placement.title}
+              description={labels.placement.description}
+              buttonText={labels.placement.button}
+            />
+          </AnimatedSection>
         </div>
       )}
 

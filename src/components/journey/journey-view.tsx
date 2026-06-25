@@ -1,4 +1,5 @@
 import { StudentPageShell } from "@/components/camba";
+import { AnimatedSection, AnimatedCard } from "@/components/camba/motion";
 import { SectionHeader } from "@/components/camba/section-header";
 import { JourneyProgressSummary } from "@/components/journey/journey-progress-summary";
 import { JourneyLevelCard } from "@/components/journey/journey-level-card";
@@ -87,7 +88,8 @@ export function JourneyView({
   return (
     <StudentPageShell>
       <div className="camba-section-stack gap-8 sm:gap-10">
-        <header className="space-y-2">
+        <AnimatedSection staggerIndex={0}>
+          <header className="space-y-2">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div className="min-w-0 space-y-2 flex-1">
               <div className="flex items-center gap-2 text-program">
@@ -100,10 +102,13 @@ export function JourneyView({
             {labels.viewPortfolio && <PortfolioLink label={labels.viewPortfolio} />}
           </div>
         </header>
+        </AnimatedSection>
 
+        <AnimatedSection staggerIndex={1}>
         <JourneyProgressSummary summary={model.summary} labels={labels.summary} />
+        </AnimatedSection>
 
-        <section aria-labelledby="journey-levels-heading">
+        <AnimatedSection staggerIndex={2} aria-labelledby="journey-levels-heading">
           <SectionHeader
             titleId="journey-levels-heading"
             title={labels.levelPathTitle}
@@ -111,14 +116,16 @@ export function JourneyView({
             icon={Map}
           />
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-            {model.levels.map((level) => (
-              <JourneyLevelCard key={level.id} level={level} labels={labels.levels} />
+            {model.levels.map((level, index) => (
+              <AnimatedCard key={level.id} delay={index * 0.04}>
+                <JourneyLevelCard level={level} labels={labels.levels} />
+              </AnimatedCard>
             ))}
           </div>
-        </section>
+        </AnimatedSection>
 
         {currentLevel && currentLevel.units.length > 0 && (
-          <section aria-labelledby="journey-units-heading">
+          <AnimatedSection staggerIndex={3} aria-labelledby="journey-units-heading">
             <SectionHeader
               titleId="journey-units-heading"
               title={labels.unitRoadmapTitle}
@@ -131,11 +138,11 @@ export function JourneyView({
               recommendedMockId={model.recommendedMockId}
               labels={labels.roadmap}
             />
-          </section>
+          </AnimatedSection>
         )}
 
         {currentLevel && (
-          <section aria-labelledby="journey-mocks-heading">
+          <AnimatedSection staggerIndex={4} aria-labelledby="journey-mocks-heading">
             <SectionHeader
               titleId="journey-mocks-heading"
               title={labels.mockSectionTitle}
@@ -146,10 +153,12 @@ export function JourneyView({
               recommendedMockId={model.recommendedMockId}
               labels={labels.mocks}
             />
-          </section>
+          </AnimatedSection>
         )}
 
+        <AnimatedSection staggerIndex={5}>
         <JourneyMilestoneSection milestones={model.milestones} labels={labels.milestones} />
+        </AnimatedSection>
 
         {journeyAchievements &&
           journeyAchievements.length > 0 &&

@@ -59,6 +59,20 @@ export {
   MissionCompletedBanner,
 } from "./feedback/banners";
 export { SkeletonCard, SkeletonList, DashboardSkeleton } from "./feedback/skeletons";
+// Feedback & empty states (U8.3)
+export {
+  EmptyState,
+  FeatureEmptyState,
+  InlineEmptyState,
+  LearningEmptyState,
+  MockEmptyState,
+  AchievementEmptyState,
+  AnalyticsEmptyState,
+  PortfolioEmptyState,
+  PortfolioInlineEmptyState,
+  MockHubEmptyState,
+  ErrorRecoveryState,
+} from "./empty-states";
 export { EmptyStateIllustrated } from "./empty-state-illustrated";
 export { EmptyIllustratedState } from "./feedback/empty-state";
 
@@ -85,3 +99,17 @@ export {
   type MasteryLevel,
 } from "@/lib/design/status-tokens";
 export { cambaCardVariants, bannerVariants } from "@/lib/design/card-variants";
+
+// Motion system (U8.2)
+export {
+  AnimatedSection,
+  AnimatedCard,
+  AnimatedCounter,
+  AnimatedProgress,
+  AnimatedBadge,
+  AnimatedAchievement,
+  AnimatedPageTransition,
+  MockCompletionCelebration,
+  SkeletonShimmer,
+  useCambaMotion,
+} from "@/components/camba/motion";

@@ -48,8 +48,8 @@ export function WritingEditor({
         maxLength={maxChars}
         className={cn(
           "w-full min-h-[10rem] rounded-xl border border-border bg-white px-3 py-3",
-          "camba-body text-foreground placeholder:text-muted/70",
-          "focus:outline-none focus:ring-2 focus:ring-program/30 resize-y",
+          "camba-body camba-input-mobile text-foreground placeholder:text-muted/70",
+          "focus:outline-none focus:ring-2 focus:ring-program/30 resize-y scroll-mb-24",
           disabled && "opacity-60 cursor-not-allowed"
         )}
       />

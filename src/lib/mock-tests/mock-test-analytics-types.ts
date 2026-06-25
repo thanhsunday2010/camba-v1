@@ -41,7 +41,10 @@ export type MockTestAnalyticsLabels = {
   strengths: string;
   weaknesses: string;
   learningInsights: string;
+  noAttemptTitle: string;
   noAttemptMessage: string;
+  noAttemptAction: string;
+  insufficientMetadataTitle: string;
   insufficientMetadataMessage: string;
   breakdownPercent: string;
   showAll: string;

@@ -3,6 +3,7 @@
 import type { SpeakingBandScore } from "@/lib/cambridge-assessment/cambridge-speaking-ai-contracts";
 import type { SpeakingQuestionEvaluationSummary } from "@/lib/speaking/speaking-evaluation-types";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
+import { AnimatedSection, AnimatedCounter } from "@/components/camba/motion";
 import { SpeakingDimensionBreakdown } from "@/components/speaking/speaking-dimension-breakdown";
 import { SpeakingTranscriptCard } from "@/components/speaking/speaking-transcript-card";
 import { AlertCircle, Star } from "lucide-react";
@@ -37,6 +38,7 @@ export function SpeakingFeedbackCard({ evaluation, className }: SpeakingFeedback
   }
 
   return (
+    <AnimatedSection>
     <CambaCard variant="default" padding="md" className={`space-y-4 ${className ?? ""}`}>
       <div className="flex items-center gap-2">
         <Star className="h-5 w-5 text-program" />
@@ -46,7 +48,9 @@ export function SpeakingFeedbackCard({ evaluation, className }: SpeakingFeedback
       <div className="flex flex-wrap gap-3">
         <div className="rounded-xl bg-program/5 px-4 py-2">
           <p className="camba-caption text-muted">Overall score</p>
-          <p className="camba-h3 text-program">{evaluation.overallScore}/100</p>
+          <p className="camba-h3 text-program">
+            <AnimatedCounter value={evaluation.overallScore} format={(v) => `${Math.round(v)}/100`} />
+          </p>
         </div>
         <div className="rounded-xl bg-[var(--surface-sunken)]/60 px-4 py-2">
           <p className="camba-caption text-muted">Band</p>
@@ -89,5 +93,6 @@ export function SpeakingFeedbackCard({ evaluation, className }: SpeakingFeedback
         <p className="camba-body text-foreground/90">{evaluation.feedback}</p>
       </div>
     </CambaCard>
+    </AnimatedSection>
   );
 }

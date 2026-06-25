@@ -4,6 +4,7 @@ import { Link } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { MockTestCompleteSummary } from "@/components/mock-tests/mock-test-complete-summary";
+import { MockCompletionCelebration } from "@/components/camba/motion";
 import { MockTestFormatDisclosure } from "@/components/mock-tests/mock-test-format-disclosure";
 import { MockTestStatusPill } from "@/components/mock-tests/mock-test-status-pill";
 import type {
@@ -213,6 +214,7 @@ export function MockTestPageShell({
             label={takeLabels.completeModeSubtitle}
             statusLabel={labels.detail.statusLabels.completed}
           />
+          <MockCompletionCelebration active={!activeReviewQuestionId}>
           <MockTestCompleteSummary
             testTitle={viewModel.title}
             attempt={sessionAttempt}
@@ -228,6 +230,7 @@ export function MockTestPageShell({
             onRetake={onRetake}
             onReviewSkill={onReviewSkill}
           />
+          </MockCompletionCelebration>
         </div>
       )}
 

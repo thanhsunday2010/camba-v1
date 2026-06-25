@@ -26,9 +26,9 @@ export default async function DashboardLayout({
   return (
     <CambridgeProgramTheme programSlug={programContext?.level?.slug}>
       <CelebrationProvider>
-        <div className="min-h-screen bg-background">
+        <div className="min-h-screen bg-background camba-safe-x">
           <DashboardNav user={user} placementTests={placementTests} />
-          <main className="max-w-7xl mx-auto px-4 py-6">{children}</main>
+          <main className="max-w-7xl mx-auto px-4 py-4 sm:py-6 camba-min-w-0">{children}</main>
         </div>
       </CelebrationProvider>
     </CambridgeProgramTheme>

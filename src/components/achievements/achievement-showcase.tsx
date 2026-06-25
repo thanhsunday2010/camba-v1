@@ -6,6 +6,7 @@ import { SectionHeader } from "@/components/camba/section-header";
 import { AchievementCard, type AchievementCardLabels } from "@/components/achievements/achievement-card";
 import { AchievementDetailDialog, type AchievementDetailLabels } from "@/components/achievements/achievement-detail-dialog";
 import { DashboardEmptyState } from "@/components/dashboard/dashboard-empty-state";
+import { AnimatedAchievement } from "@/components/camba/motion";
 import type { EvaluatedAchievement } from "@/lib/achievements/achievement-types";
 import { Award, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -76,12 +77,13 @@ export function AchievementShowcase({
           role="list"
           aria-label={labels.title}
         >
-          {visible.map((achievement) => {
+          {visible.map((achievement, index) => {
             const text = resolveText(achievement);
             return (
-              <div
+              <AnimatedAchievement
                 key={achievement.id}
-                role="listitem"
+                index={index}
+                unlocked={achievement.unlocked}
                 className="snap-start shrink-0 w-[10.5rem] sm:w-[11.5rem]"
               >
                 <AchievementCard
@@ -92,7 +94,7 @@ export function AchievementShowcase({
                   compact
                   onClick={() => setSelected(achievement)}
                 />
-              </div>
+              </AnimatedAchievement>
             );
           })}
         </div>
