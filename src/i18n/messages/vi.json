@@ -1431,6 +1431,23 @@
       "recommended": "Phổ biến",
       "subscribeToast": "Tính năng thanh toán sắp ra mắt. Liên hệ Camba để đăng ký gói."
     },
+    "checkout": {
+      "title": "Thanh toán VietQR",
+      "description": "Quét mã QR hoặc chuyển khoản để kích hoạt {tier} — {program}.",
+      "amount": "Số tiền: {amount} ₫",
+      "transferMemo": "Nội dung CK",
+      "bankAccount": "Số tài khoản",
+      "bankName": "Ngân hàng",
+      "accountHolder": "Chủ tài khoản",
+      "scanHint": "Chuyển khoản đúng số tiền và nội dung để hệ thống tự kích hoạt gói.",
+      "waiting": "Đang chờ xác nhận thanh toán…",
+      "paid": "Thanh toán thành công! Gói của bạn đã được kích hoạt.",
+      "expired": "Đơn thanh toán đã hết hạn. Vui lòng tạo đơn mới.",
+      "copyCode": "Sao chép nội dung",
+      "copied": "Đã sao chép",
+      "close": "Đóng",
+      "error": "Không thể tạo đơn thanh toán."
+    },
     "aiUsage": {
       "label": "AI hôm nay: {used}/{limit}",
       "remaining": "còn {count} lượt"

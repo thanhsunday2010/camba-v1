@@ -42,6 +42,23 @@ export function buildSubscriptionPricingLabels(
       remaining: t("aiUsage.remaining"),
     },
     subscribeToast: t("pricing.subscribeToast"),
+    checkout: {
+      title: t("checkout.title"),
+      description: t("checkout.description"),
+      amount: t("checkout.amount"),
+      transferMemo: t("checkout.transferMemo"),
+      bankAccount: t("checkout.bankAccount"),
+      bankName: t("checkout.bankName"),
+      accountHolder: t("checkout.accountHolder"),
+      scanHint: t("checkout.scanHint"),
+      waiting: t("checkout.waiting"),
+      paid: t("checkout.paid"),
+      expired: t("checkout.expired"),
+      copyCode: t("checkout.copyCode"),
+      copied: t("checkout.copied"),
+      close: t("checkout.close"),
+      error: t("checkout.error"),
+    },
   };
 }
 

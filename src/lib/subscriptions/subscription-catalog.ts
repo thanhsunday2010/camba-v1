@@ -1,6 +1,7 @@
 import type {
   SubscriptionProgramCatalog,
   SubscriptionTier,
+  BillingPeriod,
 } from "@/lib/subscriptions/subscription-types";
 
 export const AI_DAILY_LIMITS: Record<SubscriptionTier, number> = {
@@ -72,4 +73,14 @@ export const SUBSCRIPTION_PROGRAMS: SubscriptionProgramCatalog[] = [
 
 export function formatVnd(amount: number): string {
   return new Intl.NumberFormat("vi-VN").format(amount);
+}
+
+export function getPlanPriceVnd(
+  tier: Exclude<SubscriptionTier, "free">,
+  period: BillingPeriod
+): number {
+  if (tier === "pro") {
+    return period === "yearly" ? PRO_YEARLY : PRO_MONTHLY;
+  }
+  return period === "yearly" ? VIP_YEARLY : VIP_MONTHLY;
 }

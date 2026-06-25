@@ -7,6 +7,7 @@ import {
   getUserSubscriptionStatus,
 } from "@/lib/subscriptions/subscription-service";
 import { buildSubscriptionPricingLabels } from "@/lib/subscriptions/subscription-labels";
+import { isSepayConfigured } from "@/lib/payments/sepay-config";
 
 export const dynamic = "force-dynamic";
 
@@ -24,5 +25,12 @@ export default async function SubscriptionsPage() {
 
   const labels = buildSubscriptionPricingLabels((key) => t(key));
 
-  return <SubscriptionPricingView catalog={catalog} status={status} labels={labels} />;
+  return (
+    <SubscriptionPricingView
+      catalog={catalog}
+      status={status}
+      labels={labels}
+      paymentsEnabled={isSepayConfigured()}
+    />
+  );
 }

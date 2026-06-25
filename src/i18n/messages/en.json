@@ -1433,6 +1433,23 @@
       "recommended": "Popular",
       "subscribeToast": "Payments coming soon. Contact Camba to subscribe."
     },
+    "checkout": {
+      "title": "Pay with VietQR",
+      "description": "Scan the QR code or transfer to activate {tier} — {program}.",
+      "amount": "Amount: {amount} ₫",
+      "transferMemo": "Transfer memo",
+      "bankAccount": "Account number",
+      "bankName": "Bank",
+      "accountHolder": "Account holder",
+      "scanHint": "Transfer the exact amount and memo so your plan activates automatically.",
+      "waiting": "Waiting for payment confirmation…",
+      "paid": "Payment successful! Your plan is now active.",
+      "expired": "This payment order has expired. Please create a new one.",
+      "copyCode": "Copy memo",
+      "copied": "Copied",
+      "close": "Close",
+      "error": "Could not create payment order."
+    },
     "aiUsage": {
       "label": "AI today: {used}/{limit}",
       "remaining": "{count} left"

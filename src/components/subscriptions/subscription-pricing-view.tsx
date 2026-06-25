@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { toast } from "sonner";
 import { StudentPageShell } from "@/components/camba";
 import { SectionHeader } from "@/components/camba/section-header";
@@ -7,6 +8,10 @@ import {
   SubscriptionPlanCard,
   type SubscriptionPlanCardLabels,
 } from "@/components/subscriptions/subscription-plan-card";
+import {
+  SubscriptionCheckoutDialog,
+  type SubscriptionCheckoutLabels,
+} from "@/components/subscriptions/subscription-checkout-dialog";
 import { AiUsageBadge } from "@/components/subscriptions/ai-usage-badge";
 import type { SubscriptionProgramCatalog } from "@/lib/subscriptions/subscription-types";
 import type { UserSubscriptionStatus } from "@/lib/subscriptions/subscription-types";
@@ -31,12 +36,14 @@ export type SubscriptionPricingLabels = {
     remaining: string;
   };
   subscribeToast: string;
+  checkout: SubscriptionCheckoutLabels;
 };
 
 interface SubscriptionPricingViewProps {
   catalog: SubscriptionProgramCatalog[];
   status: UserSubscriptionStatus;
   labels: SubscriptionPricingLabels;
+  paymentsEnabled: boolean;
 }
 
 const PROGRAM_NAME_KEYS: Record<SubscriptionProgram, keyof SubscriptionPricingLabels["programs"]> = {
@@ -48,17 +55,41 @@ export function SubscriptionPricingView({
   catalog,
   status,
   labels,
+  paymentsEnabled,
 }: SubscriptionPricingViewProps) {
+  const [checkoutOpen, setCheckoutOpen] = useState(false);
+  const [checkoutRequest, setCheckoutRequest] = useState<{
+    program: SubscriptionProgram;
+    tier: Exclude<SubscriptionTier, "free">;
+    billingPeriod: BillingPeriod;
+  } | null>(null);
+
   function handleSubscribe(
     program: SubscriptionProgram,
     tier: SubscriptionTier,
     period: BillingPeriod
   ) {
-    void program;
-    void tier;
-    void period;
-    toast.info(labels.subscribeToast);
+    if (tier === "free") return;
+
+    if (!paymentsEnabled) {
+      toast.info(labels.subscribeToast);
+      return;
+    }
+
+    setCheckoutRequest({ program, tier, billingPeriod: period });
+    setCheckoutOpen(true);
   }
+
+  const tierLabels: Record<SubscriptionTier, string> = {
+    free: labels.planCard.free,
+    pro: labels.planCard.pro,
+    vip: labels.planCard.vip,
+  };
+
+  const programLabels: Record<SubscriptionProgram, string> = {
+    cambridge: labels.programs.cambridge.name,
+    speaking_writing: labels.programs.speakingWriting.name,
+  };
 
   return (
     <StudentPageShell narrow>
@@ -109,6 +140,15 @@ export function SubscriptionPricingView({
           );
         })}
       </div>
+
+      <SubscriptionCheckoutDialog
+        open={checkoutOpen}
+        onOpenChange={setCheckoutOpen}
+        request={checkoutRequest}
+        labels={labels.checkout}
+        tierLabels={tierLabels}
+        programLabels={programLabels}
+      />
     </StudentPageShell>
   );
 }
