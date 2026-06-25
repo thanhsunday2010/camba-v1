@@ -4,15 +4,16 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import type { ActionResult } from "@/types";
-import { getAppUrl } from "@/lib/env";
+import { DEFAULT_LOCALE } from "@/lib/constants";
+import { getAuthCallbackUrl } from "@/lib/auth/request-origin";
+import { signInWithGoogleOAuth } from "@/lib/auth/google-oauth";
 import { resolveSignIn } from "@/lib/auth/sign-in";
 import { resolveAuthIdentity } from "@/lib/auth/identity";
 
 const AUTH_PATHS = {
-  login: "/login",
-  register: "/register",
-  dashboard: "/dashboard",
-  callback: "/auth/callback",
+  login: `/${DEFAULT_LOCALE}/login`,
+  register: `/${DEFAULT_LOCALE}/register`,
+  dashboard: `/${DEFAULT_LOCALE}/dashboard`,
 } as const;
 
 export async function signUp(formData: FormData): Promise<ActionResult<{ method: "phone" | "email" }>> {
@@ -34,8 +35,7 @@ export async function signUp(formData: FormData): Promise<ActionResult<{ method:
         full_name: fullName,
         phone: identity.phone ?? undefined,
       },
-      emailRedirectTo:
-        identity.method === "email" ? `${getAppUrl()}${AUTH_PATHS.callback}` : undefined,
+      emailRedirectTo: identity.method === "email" ? await getAuthCallbackUrl() : undefined,
     },
   });
 
@@ -79,23 +79,10 @@ export async function signIn(formData: FormData): Promise<ActionResult> {
   redirect(outcome.redirectPath);
 }
 
-export async function signInWithGoogle(): Promise<void> {
+export async function signInWithGoogle(formData: FormData): Promise<void> {
+  const nextPath = formData.get("redirect") as string | null;
   const supabase = await createClient();
-
-  const { data, error } = await supabase.auth.signInWithOAuth({
-    provider: "google",
-    options: {
-      redirectTo: `${getAppUrl()}${AUTH_PATHS.callback}`,
-    },
-  });
-
-  if (error) {
-    redirect(`${AUTH_PATHS.login}?error=${encodeURIComponent(error.message)}`);
-  }
-
-  if (data.url) {
-    redirect(data.url);
-  }
+  await signInWithGoogleOAuth(supabase, { loginPath: AUTH_PATHS.login, nextPath });
 }
 
 export async function signOut(): Promise<void> {
@@ -110,7 +97,7 @@ export async function resetPassword(formData: FormData): Promise<ActionResult> {
   const email = formData.get("email") as string;
 
   const { error } = await supabase.auth.resetPasswordForEmail(email, {
-    redirectTo: `${getAppUrl()}/auth/callback?next=/reset-password`,
+    redirectTo: await getAuthCallbackUrl("/reset-password"),
   });
 
   if (error) {

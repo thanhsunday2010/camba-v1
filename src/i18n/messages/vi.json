@@ -60,6 +60,7 @@
     "resetEmailSent": "Chúng tôi đã gửi liên kết đặt lại mật khẩu đến email của bạn",
     "passwordMismatch": "Mật khẩu không khớp",
     "invalidCredentials": "Số điện thoại/email hoặc mật khẩu không đúng",
+    "authCallbackError": "Đăng nhập Google thất bại. Vui lòng thử lại.",
     "phoneInvalid": "Vui lòng nhập số điện thoại hợp lệ (vd: 0901234567)",
     "phoneRegisterSuccess": "Tạo tài khoản thành công. Hãy đăng nhập bằng số điện thoại và mật khẩu.",
     "emailRequired": "Vui lòng nhập email",

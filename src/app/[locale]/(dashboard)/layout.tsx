@@ -1,20 +1,17 @@
-import { redirect } from "next/navigation";
-import { getCurrentUser } from "@/lib/auth/current-user";
+import { getCurrentUser, requireCurrentUser } from "@/lib/auth/current-user";
 import { DashboardNav } from "@/components/layout/dashboard-nav";
 import { fetchActiveProgramContext } from "@/actions/programs";
 import { getUserGamification } from "@/lib/queries/user";
 import { CambridgeProgramTheme, CelebrationProvider } from "@/components/camba";
+
+export const dynamic = "force-dynamic";
 
 export default async function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const user = await getCurrentUser();
-
-  if (!user) {
-    redirect("/login");
-  }
+  const user = await requireCurrentUser();
 
   const gamification = await getUserGamification(user.id);
   const programContext = await fetchActiveProgramContext(gamification);

@@ -1,6 +1,7 @@
 "use client";
 
-import { useActionState, useTransition } from "react";
+import { useActionState } from "react";
+import { useFormStatus } from "react-dom";
 import { useTranslations } from "next-intl";
 import { loginAction, signInWithGoogle } from "@/actions/login";
 import { AuthMethodFields } from "@/components/auth/auth-method-fields";
@@ -10,6 +11,18 @@ import { Label } from "@/components/ui/label";
 import { Link } from "@/i18n/routing";
 import { Loader2 } from "lucide-react";
 import type { ActionResult } from "@/types";
+
+function GoogleSignInButton() {
+  const t = useTranslations("auth");
+  const { pending } = useFormStatus();
+
+  return (
+    <Button type="submit" variant="outline" className="w-full" disabled={pending}>
+      {pending ? <Loader2 className="animate-spin" /> : <GoogleIcon />}
+      {t("loginWithGoogle")}
+    </Button>
+  );
+}
 
 export function LoginForm({
   redirectPath,
@@ -23,7 +36,6 @@ export function LoginForm({
     loginAction,
     null
   );
-  const [isGooglePending, startGoogleTransition] = useTransition();
 
   const errorMessage =
     state && !state.success
@@ -33,14 +45,10 @@ export function LoginForm({
           ? t("emailRequired")
           : (state.error ?? t("invalidCredentials"))
       : authError
-        ? decodeURIComponent(authError)
+        ? authError === "auth_callback_error"
+          ? t("authCallbackError")
+          : decodeURIComponent(authError)
         : null;
-
-  function handleGoogleSignIn() {
-    startGoogleTransition(async () => {
-      await signInWithGoogle();
-    });
-  }
 
   return (
     <div className="space-y-6">
@@ -89,20 +97,10 @@ export function LoginForm({
         </div>
       </div>
 
-      <Button
-        type="button"
-        variant="outline"
-        className="w-full"
-        onClick={handleGoogleSignIn}
-        disabled={isGooglePending}
-      >
-        {isGooglePending ? (
-          <Loader2 className="animate-spin" />
-        ) : (
-          <GoogleIcon />
-        )}
-        {t("loginWithGoogle")}
-      </Button>
+      <form action={signInWithGoogle}>
+        {redirectPath && <input type="hidden" name="redirect" value={redirectPath} />}
+        <GoogleSignInButton />
+      </form>
 
       <p className="text-center text-sm text-gray-600">
         {t("noAccount")}{" "}

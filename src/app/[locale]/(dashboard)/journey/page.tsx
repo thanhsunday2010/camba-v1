@@ -1,6 +1,6 @@
-import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { getCurrentUser } from "@/lib/auth/current-user";
+import { requireCurrentUser } from "@/lib/auth/current-user";
+import { redirectToPath } from "@/lib/auth/navigation";
 import { getLearningJourneyViewModel } from "@/lib/learning/journey/learning-journey-view-model";
 import { getJourneyAchievementPreview } from "@/lib/achievements/achievement-view-model";
 import { buildSharedAchievementLabels } from "@/lib/achievements/achievement-i18n";
@@ -8,9 +8,10 @@ import { JourneyView } from "@/components/journey/journey-view";
 import { fetchActiveProgramContext, fetchLevelsForProgram } from "@/actions/programs";
 import { getUserGamification } from "@/lib/queries/user";
 
+export const dynamic = "force-dynamic";
+
 export default async function JourneyPage() {
-  const user = await getCurrentUser();
-  if (!user) redirect("/login");
+  const user = await requireCurrentUser();
 
   const t = await getTranslations("journey");
   const tp = await getTranslations("programs");
@@ -19,18 +20,21 @@ export default async function JourneyPage() {
   const gamification = await getUserGamification(user.id);
   const programContext = await fetchActiveProgramContext(gamification);
 
-  if (!programContext?.programId) {
-    redirect("/settings");
+  const programId = programContext?.programId;
+  if (!programId) {
+    await redirectToPath("/settings");
+    throw new Error("Unreachable");
   }
 
-  const [model, levels, journeyAchievementPreview] = await Promise.all([
+  const [journeyModel, levels, journeyAchievementPreview] = await Promise.all([
     getLearningJourneyViewModel(user.id, t("nextMilestoneFallback")),
-    fetchLevelsForProgram(programContext.programId),
+    fetchLevelsForProgram(programId),
     getJourneyAchievementPreview(user.id),
   ]);
 
-  if (!model) {
-    redirect("/settings");
+  if (!journeyModel) {
+    await redirectToPath("/settings");
+    throw new Error("Unreachable");
   }
 
   const levelCompleteLabels = {
@@ -53,7 +57,7 @@ export default async function JourneyPage() {
 
   return (
     <JourneyView
-      model={model}
+      model={journeyModel}
       levels={levels}
       journeyAchievements={journeyAchievementPreview.achievements}
       achievementItemLabels={achievementShared.itemLabels}

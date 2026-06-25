@@ -1,6 +1,5 @@
-import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { getCurrentUser } from "@/lib/auth/current-user";
+import { requireCurrentUser } from "@/lib/auth/current-user";
 import { StudentPageShell } from "@/components/camba";
 import { getAchievementViewModel } from "@/lib/achievements/achievement-view-model";
 import {
@@ -13,9 +12,10 @@ import {
 } from "@/lib/achievements/achievement-i18n";
 import { AchievementUnlockNotifier } from "@/components/achievements/achievement-unlock-toast";
 
+export const dynamic = "force-dynamic";
+
 export default async function AchievementsPage() {
-  const user = await getCurrentUser();
-  if (!user) redirect("/login");
+  const user = await requireCurrentUser();
 
   const [t, model] = await Promise.all([
     getTranslations("achievements"),

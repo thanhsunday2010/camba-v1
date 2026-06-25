@@ -1,6 +1,5 @@
-import { redirect } from "next/navigation";
 import { getTranslations } from "next-intl/server";
-import { getCurrentUser } from "@/lib/auth/current-user";
+import { requireCurrentUser } from "@/lib/auth/current-user";
 import { StudentPageShell } from "@/components/camba";
 import { getStudentPortfolioViewModel } from "@/lib/profile/student-profile-view-model";
 import { StudentProfileView } from "@/components/profile/student-profile-view";
@@ -11,9 +10,10 @@ import {
 } from "@/lib/achievements/achievement-i18n";
 import { buildMockTestPageLabels } from "@/lib/mock-tests/mock-test-labels";
 
+export const dynamic = "force-dynamic";
+
 export default async function ProfilePage() {
-  const user = await getCurrentUser();
-  if (!user) redirect("/login");
+  const user = await requireCurrentUser();
 
   const t = await getTranslations("profile");
   const [ta, tmc, tj, mockLabels, model] = await Promise.all([

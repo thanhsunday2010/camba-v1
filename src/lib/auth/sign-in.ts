@@ -2,7 +2,9 @@ import type { SupabaseClient } from "@supabase/supabase-js";
 import type { ActionResult } from "@/types";
 import type { Database, UserRole } from "@/types/database";
 import { getDashboardPath } from "@/lib/auth/roles";
-import { resolvePostAuthRedirect, sanitizeRedirectPath } from "@/lib/auth/redirect";
+import { sanitizeRedirectPath, resolvePostAuthRedirect } from "@/lib/auth/redirect";
+import { withLocalePath } from "@/lib/auth/request-origin";
+import { DEFAULT_LOCALE } from "@/lib/constants";
 import { resolveAuthIdentity } from "@/lib/auth/identity";
 
 export type SignInSuccess = {
@@ -57,5 +59,5 @@ export async function resolveSignIn(
   const roleBasedPath = getDashboardPath(roles as UserRole[]);
   const redirectPath = resolvePostAuthRedirect(redirectTo, roleBasedPath);
 
-  return { ok: true, redirectPath };
+  return { ok: true, redirectPath: withLocalePath(redirectPath, DEFAULT_LOCALE) };
 }

@@ -6,7 +6,19 @@ import type { SupportedLocale } from "@/lib/constants";
 
 const intlMiddleware = createMiddleware(routing);
 
-const protectedRoutes = ["/dashboard", "/learning", "/mock-tests", "/profile", "/settings", "/admin", "/placement-test", "/parent", "/teacher"];
+const protectedRoutes = [
+  "/dashboard",
+  "/learning",
+  "/mock-tests",
+  "/achievements",
+  "/journey",
+  "/profile",
+  "/settings",
+  "/admin",
+  "/placement-test",
+  "/parent",
+  "/teacher",
+];
 const authRoutes = ["/login", "/register", "/forgot-password"];
 
 function getLocaleFromPathname(pathname: string): SupportedLocale {
@@ -20,6 +32,11 @@ function getLocaleFromPathname(pathname: string): SupportedLocale {
 export async function middleware(request: NextRequest) {
   const { supabaseResponse, user } = await updateSession(request);
   const pathname = request.nextUrl.pathname;
+
+  if (pathname.startsWith("/auth/callback")) {
+    return supabaseResponse;
+  }
+
   const locale = getLocaleFromPathname(pathname);
 
   const pathnameWithoutLocale = pathname.replace(/^\/(vi|en|zh|ja|ko)/, "") || "/";

@@ -60,6 +60,7 @@
     "resetEmailSent": "We sent a password reset link to your email",
     "passwordMismatch": "Passwords do not match",
     "invalidCredentials": "Incorrect phone/email or password",
+    "authCallbackError": "Google sign-in failed. Please try again.",
     "phoneInvalid": "Enter a valid phone number (e.g. 0901234567)",
     "phoneRegisterSuccess": "Account created. Sign in with your phone number and password.",
     "emailRequired": "Email is required",

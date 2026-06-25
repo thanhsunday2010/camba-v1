@@ -4,13 +4,9 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { resolveSignIn } from "@/lib/auth/sign-in";
-import { getAppUrl } from "@/lib/env";
+import { signInWithGoogleOAuth } from "@/lib/auth/google-oauth";
+import { DEFAULT_LOCALE } from "@/lib/constants";
 import type { ActionResult } from "@/types";
-
-const AUTH_PATHS = {
-  login: "/login",
-  callback: "/auth/callback",
-} as const;
 
 export async function loginAction(
   _previousState: ActionResult | null,
@@ -27,21 +23,11 @@ export async function loginAction(
   redirect(outcome.redirectPath);
 }
 
-export async function signInWithGoogle(): Promise<void> {
+export async function signInWithGoogle(formData: FormData): Promise<void> {
+  const nextPath = formData.get("redirect") as string | null;
   const supabase = await createClient();
-
-  const { data, error } = await supabase.auth.signInWithOAuth({
-    provider: "google",
-    options: {
-      redirectTo: `${getAppUrl()}${AUTH_PATHS.callback}`,
-    },
+  await signInWithGoogleOAuth(supabase, {
+    loginPath: `/${DEFAULT_LOCALE}/login`,
+    nextPath,
   });
-
-  if (error) {
-    redirect(`${AUTH_PATHS.login}?error=${encodeURIComponent(error.message)}`);
-  }
-
-  if (data.url) {
-    redirect(data.url);
-  }
 }

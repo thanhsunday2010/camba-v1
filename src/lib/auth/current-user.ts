@@ -24,3 +24,13 @@ export const getCurrentUser = cache(async (): Promise<AuthUser | null> => {
     onboardingCompleted: profile?.onboarding_completed ?? false,
   };
 });
+
+export async function requireCurrentUser(): Promise<AuthUser> {
+  const user = await getCurrentUser();
+  if (!user) {
+    const { redirectToLogin } = await import("@/lib/auth/navigation");
+    await redirectToLogin();
+    throw new Error("Unreachable");
+  }
+  return user;
+}
