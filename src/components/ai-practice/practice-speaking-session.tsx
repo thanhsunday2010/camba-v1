@@ -14,6 +14,10 @@ import {
 } from "@/lib/ai-practice/practice-session-storage";
 import { useMascotOptional } from "@/components/mascot/mascot-provider";
 import { PracticeFeedbackPanel } from "@/components/ai-practice/practice-feedback-panel";
+import {
+  PracticeHistoryPanel,
+  type PracticeHistoryLabels,
+} from "@/components/ai-practice/practice-history-panel";
 import { StudentPageShell } from "@/components/camba";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { Button } from "@/components/ui/button";
@@ -28,6 +32,7 @@ import {
 } from "@/lib/speech/request-microphone";
 import { toast } from "sonner";
 import type { PracticeSpeakingFeedback } from "@/types/ai";
+import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
 
 export interface PracticeSpeakingSessionLabels {
   setupPath: string;
@@ -75,9 +80,15 @@ export interface PracticeSpeakingSessionLabels {
 
 interface PracticeSpeakingSessionProps {
   labels: PracticeSpeakingSessionLabels;
+  historySummary: PracticeHistorySummary;
+  historyLabels: PracticeHistoryLabels;
 }
 
-export function PracticeSpeakingSession({ labels }: PracticeSpeakingSessionProps) {
+export function PracticeSpeakingSession({
+  labels,
+  historySummary,
+  historyLabels,
+}: PracticeSpeakingSessionProps) {
   const router = useRouter();
   const mascot = useMascotOptional();
   const [session, setSession] = useState(() => readPracticeSession());
@@ -223,6 +234,7 @@ export function PracticeSpeakingSession({ labels }: PracticeSpeakingSessionProps
       );
       if (result.success && result.data) {
         setFeedback(result.data);
+        router.refresh();
         if (result.data.overallScore >= 75) {
           mascot?.cheerHighScore(result.data.overallScore);
         } else {
@@ -393,6 +405,12 @@ export function PracticeSpeakingSession({ labels }: PracticeSpeakingSessionProps
             }
           />
         )}
+
+        <PracticeHistoryPanel
+          skill="speaking"
+          summary={historySummary}
+          labels={historyLabels}
+        />
       </div>
     </StudentPageShell>
   );

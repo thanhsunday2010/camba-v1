@@ -1378,6 +1378,24 @@
       "overallScore": "Overall score",
       "modelAnswer": "Suggested model answer",
       "errorHighlights": "Errors to fix"
+    },
+    "history": {
+      "title": "Practice history",
+      "subtitle": "Track your progress across AI practice sessions.",
+      "statTotal": "Total sessions",
+      "statAverage": "Average score",
+      "statBest": "Best score",
+      "statThisWeek": "This week",
+      "totalSessionsCompact": "{count} sessions",
+      "averageScoreCompact": "avg {score}%",
+      "recentTitle": "Recent sessions",
+      "emptyTitle": "No practice history yet",
+      "emptyDescription": "Complete your first practice session to see stats here.",
+      "score": "{score}%",
+      "estimatedLevel": "AI estimate",
+      "words": "{count} words",
+      "duration": "{seconds}s recorded",
+      "noScore": "—"
     }
   },
   "errors": {

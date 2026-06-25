@@ -1,15 +1,25 @@
 import { getTranslations } from "next-intl/server";
 import { PracticeSetupForm } from "@/components/ai-practice/practice-setup-form";
+import { PracticeHistoryPanel } from "@/components/ai-practice/practice-history-panel";
 import { StudentPageShell } from "@/components/camba";
-import { buildWritingSetupLabels } from "@/lib/ai-practice/practice-labels";
+import {
+  buildPracticeHistoryLabels,
+  buildWritingSetupLabels,
+} from "@/lib/ai-practice/practice-labels";
+import { getPracticeHistorySummary } from "@/lib/ai-practice/practice-history";
 
 export default async function PracticeWritingSetupPage() {
   const t = await getTranslations("aiPractice");
   const labels = buildWritingSetupLabels((key) => t(key));
+  const historyLabels = buildPracticeHistoryLabels((key) => t(key));
+  const historySummary = await getPracticeHistorySummary("writing");
 
   return (
     <StudentPageShell narrow>
-      <PracticeSetupForm skill="writing" labels={labels} sessionPath="/practice/writing/session" />
+      <div className="camba-section-stack gap-8 max-w-2xl mx-auto">
+        <PracticeSetupForm skill="writing" labels={labels} sessionPath="/practice/writing/session" />
+        <PracticeHistoryPanel skill="writing" summary={historySummary} labels={historyLabels} />
+      </div>
     </StudentPageShell>
   );
 }

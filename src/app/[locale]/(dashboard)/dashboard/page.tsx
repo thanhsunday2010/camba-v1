@@ -4,7 +4,8 @@ import { StudentDashboardView } from "@/components/dashboard/student-dashboard-v
 import { getStudentDashboardData } from "@/lib/dashboard/student-dashboard-data";
 import { buildMockTestPageLabels } from "@/lib/mock-tests/mock-test-labels";
 import { buildSharedAchievementLabels } from "@/lib/achievements/achievement-i18n";
-import { buildDashboardAiPracticeLabels } from "@/lib/ai-practice/practice-labels";
+import { buildDashboardAiPracticeLabels, buildPracticeHistoryLabels } from "@/lib/ai-practice/practice-labels";
+import { getPracticeDashboardSummaries } from "@/lib/ai-practice/practice-history";
 
 export default async function DashboardPage() {
   const user = await getCurrentUser();
@@ -17,6 +18,8 @@ export default async function DashboardPage() {
   const tap = await getTranslations("aiPractice");
   const mockLabels = await buildMockTestPageLabels();
   const achievementShared = buildSharedAchievementLabels(taAch);
+  const practiceSummaries = await getPracticeDashboardSummaries();
+  const practiceHistoryLabels = buildPracticeHistoryLabels((key) => tap(key));
 
   const userName = user.fullName || user.email.split("@")[0];
 
@@ -189,6 +192,11 @@ export default async function DashboardPage() {
           speaking: t("skillSpeaking"),
         },
         aiPractice: buildDashboardAiPracticeLabels((key) => tap(key)),
+        aiPracticeHistory: {
+          writingSummary: practiceSummaries.writing,
+          speakingSummary: practiceSummaries.speaking,
+          labels: practiceHistoryLabels,
+        },
       }}
     />
   );

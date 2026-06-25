@@ -1,4 +1,5 @@
 import type { PracticeSetupLabels } from "@/components/ai-practice/practice-setup-form";
+import type { PracticeHistoryLabels } from "@/components/ai-practice/practice-history-panel";
 import type { PracticeSpeakingSessionLabels } from "@/components/ai-practice/practice-speaking-session";
 import type { PracticeWritingSessionLabels } from "@/components/ai-practice/practice-writing-session";
 
@@ -122,6 +123,32 @@ export function buildSpeakingSessionLabels(t: Translator): PracticeSpeakingSessi
     feedback: {
       ...sharedFeedbackLabels(t),
       transcript: t("speaking.transcript"),
+    },
+  };
+}
+
+export function buildPracticeHistoryLabels(t: Translator): PracticeHistoryLabels {
+  return {
+    title: t("history.title"),
+    subtitle: t("history.subtitle"),
+    statTotal: t("history.statTotal"),
+    statAverage: t("history.statAverage"),
+    statBest: t("history.statBest"),
+    statThisWeek: t("history.statThisWeek"),
+    totalSessionsCompact: t("history.totalSessionsCompact"),
+    averageScoreCompact: t("history.averageScoreCompact"),
+    recentTitle: t("history.recentTitle"),
+    emptyTitle: t("history.emptyTitle"),
+    emptyDescription: t("history.emptyDescription"),
+    score: t("history.score"),
+    estimatedLevel: t("history.estimatedLevel"),
+    words: t("history.words"),
+    duration: t("history.duration"),
+    noScore: t("history.noScore"),
+    programs: {
+      general: t("programs.general"),
+      ielts: t("programs.ielts"),
+      toeic: t("programs.toeic"),
     },
   };
 }

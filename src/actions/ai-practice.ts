@@ -1,5 +1,6 @@
 "use server";
 
+import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
 import { generateJsonResponse, generateJsonWithAudio } from "@/lib/ai/gemini-client";
 import { parseGeminiJson } from "@/lib/ai/parse-feedback";
@@ -26,6 +27,12 @@ import type {
 import { ZodError } from "zod";
 import type { ActionResult } from "@/types";
 import { saveAiFeedback } from "@/actions/ai/_shared";
+
+function revalidatePracticePaths(skill: "writing" | "speaking") {
+  revalidatePath("/dashboard");
+  revalidatePath(`/practice/${skill}`);
+  revalidatePath(`/practice/${skill}/session`);
+}
 
 function mapAiPracticeError(error: unknown): string {
   if (error instanceof ZodError) {
@@ -123,6 +130,8 @@ export async function submitStandaloneWritingPractice(
       shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
     });
 
+    revalidatePracticePaths("writing");
+
     return { success: true, data: feedback };
   } catch (error) {
     return { success: false, error: mapAiPracticeError(error) };
@@ -205,6 +214,8 @@ export async function submitStandaloneSpeakingPractice(
       responseData: feedback as unknown as Record<string, unknown>,
       shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
     });
+
+    revalidatePracticePaths("speaking");
 
     return { success: true, data: feedback };
   } catch (error) {

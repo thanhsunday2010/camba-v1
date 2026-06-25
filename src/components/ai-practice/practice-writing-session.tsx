@@ -13,12 +13,17 @@ import {
 } from "@/lib/ai-practice/practice-session-storage";
 import { useMascotOptional } from "@/components/mascot/mascot-provider";
 import { PracticeFeedbackPanel } from "@/components/ai-practice/practice-feedback-panel";
+import {
+  PracticeHistoryPanel,
+  type PracticeHistoryLabels,
+} from "@/components/ai-practice/practice-history-panel";
 import { StudentPageShell } from "@/components/camba";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { Button } from "@/components/ui/button";
 import { Loader2, PenLine, RotateCcw } from "lucide-react";
 import { toast } from "sonner";
 import type { PracticeWritingFeedback } from "@/types/ai";
+import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
 
 export interface PracticeWritingSessionLabels {
   setupPath: string;
@@ -51,9 +56,15 @@ export interface PracticeWritingSessionLabels {
 
 interface PracticeWritingSessionProps {
   labels: PracticeWritingSessionLabels;
+  historySummary: PracticeHistorySummary;
+  historyLabels: PracticeHistoryLabels;
 }
 
-export function PracticeWritingSession({ labels }: PracticeWritingSessionProps) {
+export function PracticeWritingSession({
+  labels,
+  historySummary,
+  historyLabels,
+}: PracticeWritingSessionProps) {
   const router = useRouter();
   const mascot = useMascotOptional();
   const [session, setSession] = useState(() => readPracticeSession());
@@ -91,6 +102,7 @@ export function PracticeWritingSession({ labels }: PracticeWritingSessionProps) 
       const result = await submitStandaloneWritingPractice(profile, currentPrompt.prompt, content);
       if (result.success && result.data) {
         setFeedback(result.data);
+        router.refresh();
         if (result.data.overallScore >= 75) {
           mascot?.cheerHighScore(result.data.overallScore);
         } else {
@@ -192,6 +204,12 @@ export function PracticeWritingSession({ labels }: PracticeWritingSessionProps) 
             }
           />
         )}
+
+        <PracticeHistoryPanel
+          skill="writing"
+          summary={historySummary}
+          labels={historyLabels}
+        />
       </div>
     </StudentPageShell>
   );

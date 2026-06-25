@@ -3,6 +3,8 @@
 import { Link } from "@/i18n/routing";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { Button } from "@/components/ui/button";
+import { PracticeHistoryPanel, type PracticeHistoryLabels } from "@/components/ai-practice/practice-history-panel";
+import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
 import { Mic, PenLine, Sparkles } from "lucide-react";
 
 interface DashboardAiPracticeSectionProps {
@@ -16,9 +18,17 @@ interface DashboardAiPracticeSectionProps {
     start: string;
     aiBadge: string;
   };
+  writingSummary: PracticeHistorySummary;
+  speakingSummary: PracticeHistorySummary;
+  historyLabels: PracticeHistoryLabels;
 }
 
-export function DashboardAiPracticeSection({ labels }: DashboardAiPracticeSectionProps) {
+export function DashboardAiPracticeSection({
+  labels,
+  writingSummary,
+  speakingSummary,
+  historyLabels,
+}: DashboardAiPracticeSectionProps) {
   return (
     <section className="space-y-4" aria-labelledby="ai-practice-heading">
       <div>
@@ -48,6 +58,12 @@ export function DashboardAiPracticeSection({ labels }: DashboardAiPracticeSectio
           <Link href="/practice/writing" className="mt-4 block">
             <Button className="w-full">{labels.start}</Button>
           </Link>
+          <PracticeHistoryPanel
+            skill="writing"
+            summary={writingSummary}
+            labels={historyLabels}
+            compact
+          />
         </CambaCard>
 
         <CambaCard variant="lesson" padding="md" className="h-full flex flex-col">
@@ -63,6 +79,12 @@ export function DashboardAiPracticeSection({ labels }: DashboardAiPracticeSectio
           <Link href="/practice/speaking" className="mt-4 block">
             <Button className="w-full">{labels.start}</Button>
           </Link>
+          <PracticeHistoryPanel
+            skill="speaking"
+            summary={speakingSummary}
+            labels={historyLabels}
+            compact
+          />
         </CambaCard>
       </div>
     </section>

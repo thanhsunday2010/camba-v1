@@ -12,6 +12,8 @@ import { DashboardSkillInsights } from "@/components/dashboard/dashboard-skill-i
 import { DashboardRecentActivity } from "@/components/dashboard/dashboard-recent-activity";
 import { DashboardJourneyPreview } from "@/components/dashboard/dashboard-journey-preview";
 import { DashboardAiPracticeSection } from "@/components/dashboard/dashboard-ai-practice-section";
+import type { PracticeHistoryLabels } from "@/components/ai-practice/practice-history-panel";
+import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
 import { SectionHeader } from "@/components/camba/section-header";
 import { PlacementTestCTA } from "@/components/dashboard/placement-test-cta";
 import { ProgramPicker } from "@/components/programs/program-picker";
@@ -123,6 +125,11 @@ export interface StudentDashboardLabels {
     start: string;
     aiBadge: string;
   };
+  aiPracticeHistory: {
+    writingSummary: PracticeHistorySummary;
+    speakingSummary: PracticeHistorySummary;
+    labels: PracticeHistoryLabels;
+  };
 }
 
 interface StudentDashboardViewProps {
@@ -206,7 +213,12 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
           </AnimatedSection>
 
           <AnimatedSection staggerIndex={6}>
-            <DashboardAiPracticeSection labels={labels.aiPractice} />
+            <DashboardAiPracticeSection
+              labels={labels.aiPractice}
+              writingSummary={labels.aiPracticeHistory.writingSummary}
+              speakingSummary={labels.aiPracticeHistory.speakingSummary}
+              historyLabels={labels.aiPracticeHistory.labels}
+            />
           </AnimatedSection>
 
           <AnimatedSection staggerIndex={7}>

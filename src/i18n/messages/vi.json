@@ -1376,6 +1376,24 @@
       "overallScore": "Điểm tổng",
       "modelAnswer": "Gợi ý câu trả lời mẫu",
       "errorHighlights": "Lỗi cần sửa"
+    },
+    "history": {
+      "title": "Lịch sử luyện tập",
+      "subtitle": "Theo dõi tiến bộ qua các lần luyện tập với AI.",
+      "statTotal": "Tổng lượt",
+      "statAverage": "Điểm TB",
+      "statBest": "Điểm cao nhất",
+      "statThisWeek": "Tuần này",
+      "totalSessionsCompact": "{count} lượt luyện tập",
+      "averageScoreCompact": "TB {score}%",
+      "recentTitle": "Các lần gần đây",
+      "emptyTitle": "Chưa có lịch sử luyện tập",
+      "emptyDescription": "Hoàn thành bài luyện tập đầu tiên để xem thống kê tại đây.",
+      "score": "{score}%",
+      "estimatedLevel": "AI ước lượng",
+      "words": "{count} từ",
+      "duration": "{seconds}s ghi âm",
+      "noScore": "—"
     }
   },
   "errors": {
