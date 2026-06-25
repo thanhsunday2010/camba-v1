@@ -117,6 +117,8 @@ export function buildSpeakingSessionLabels(t: Translator): PracticeSpeakingSessi
     micNotSupported: t("speaking.micNotSupported"),
     micRecorderUnsupported: t("speaking.micRecorderUnsupported"),
     micUnknownError: t("speaking.micUnknownError"),
+    questionAudioPlaying: t("speaking.questionAudioPlaying"),
+    replayQuestion: t("speaking.replayQuestion"),
     feedback: {
       ...sharedFeedbackLabels(t),
       transcript: t("speaking.transcript"),

@@ -1350,7 +1350,9 @@
       "micInsecureContext": "Microphone only works on HTTPS or localhost.",
       "micNotSupported": "Microphone is not supported in this browser.",
       "micRecorderUnsupported": "Audio recording is not supported in this browser.",
-      "micUnknownError": "Could not start the microphone. Please try again."
+      "micUnknownError": "Could not start the microphone. Please try again.",
+      "questionAudioPlaying": "Playing question...",
+      "replayQuestion": "Listen again"
     },
     "session": {
       "round": "Practice round {n}",

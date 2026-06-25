@@ -17,8 +17,9 @@ import { PracticeFeedbackPanel } from "@/components/ai-practice/practice-feedbac
 import { StudentPageShell } from "@/components/camba";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { Button } from "@/components/ui/button";
-import { Loader2, Mic, RotateCcw, Square } from "lucide-react";
+import { Loader2, Mic, RotateCcw, Square, Volume2 } from "lucide-react";
 import { useSpeechRecognition } from "@/lib/speech/use-speech-recognition";
+import { usePracticePromptSpeech } from "@/lib/speech/use-practice-prompt-speech";
 import { readBlobAsBase64 } from "@/lib/speech/blob-to-base64";
 import {
   MicrophoneAccessError,
@@ -53,6 +54,8 @@ export interface PracticeSpeakingSessionLabels {
   micNotSupported: string;
   micRecorderUnsupported: string;
   micUnknownError: string;
+  questionAudioPlaying: string;
+  replayQuestion: string;
   feedback: {
     result: string;
     estimatedLevel: string;
@@ -102,6 +105,23 @@ export function PracticeSpeakingSession({ labels }: PracticeSpeakingSessionProps
     reset: resetTranscription,
   } = useSpeechRecognition(speechLocale);
 
+  const promptPlaybackKey = session
+    ? `${session.round}:${session.currentPrompt.prompt}`
+    : "";
+
+  const {
+    isSpeaking: isQuestionSpeaking,
+    play: replayQuestionAudio,
+    cancel: cancelQuestionAudio,
+  } = usePracticePromptSpeech({
+    language: session?.profile.language ?? "en",
+    levelId: session?.profile.level ?? "a1",
+    promptText: session?.currentPrompt.prompt ?? "",
+    followUpQuestions: session?.currentPrompt.followUpQuestions,
+    playbackKey: promptPlaybackKey,
+    enabled: !!session && session.profile.skill === "speaking" && !feedback,
+  });
+
   useEffect(() => {
     if (!session || session.profile.skill !== "speaking") {
       router.replace(labels.setupPath);
@@ -138,6 +158,7 @@ export function PracticeSpeakingSession({ labels }: PracticeSpeakingSessionProps
 
   async function startRecording() {
     try {
+      cancelQuestionAudio();
       setAudioBlob(null);
       resetTranscription();
       setError(null);
@@ -254,7 +275,30 @@ export function PracticeSpeakingSession({ labels }: PracticeSpeakingSessionProps
             <p className="camba-body text-muted mt-1">{currentPrompt.analysisSummary}</p>
           </div>
           <div>
-            <p className="camba-caption font-semibold text-foreground">{labels.prompt}</p>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <p className="camba-caption font-semibold text-foreground">{labels.prompt}</p>
+              {!feedback && (
+                <div className="flex items-center gap-2">
+                  {isQuestionSpeaking && (
+                    <span className="inline-flex items-center gap-1.5 text-xs text-program font-medium">
+                      <Volume2 className="h-3.5 w-3.5 animate-pulse" />
+                      {labels.questionAudioPlaying}
+                    </span>
+                  )}
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    size="sm"
+                    className="h-8 px-2"
+                    onClick={() => void replayQuestionAudio()}
+                    disabled={isQuestionSpeaking || isRecording}
+                  >
+                    <Volume2 className="h-4 w-4" />
+                    {labels.replayQuestion}
+                  </Button>
+                </div>
+              )}
+            </div>
             <p className="camba-body mt-1 whitespace-pre-wrap">{currentPrompt.prompt}</p>
           </div>
           <p className="text-sm text-gray-600">{currentPrompt.instructions}</p>
