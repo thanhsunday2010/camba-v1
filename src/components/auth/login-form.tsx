@@ -3,6 +3,7 @@
 import { useActionState, useTransition } from "react";
 import { useTranslations } from "next-intl";
 import { loginAction, signInWithGoogle } from "@/actions/login";
+import { AuthMethodFields } from "@/components/auth/auth-method-fields";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -26,7 +27,11 @@ export function LoginForm({
 
   const errorMessage =
     state && !state.success
-      ? (state.error ?? t("invalidCredentials"))
+      ? state.error === "phoneInvalid"
+        ? t("phoneInvalid")
+        : state.error === "emailRequired"
+          ? t("emailRequired")
+          : (state.error ?? t("invalidCredentials"))
       : authError
         ? decodeURIComponent(authError)
         : null;
@@ -41,17 +46,8 @@ export function LoginForm({
     <div className="space-y-6">
       <form action={formAction} className="space-y-4">
         {redirectPath && <input type="hidden" name="redirect" value={redirectPath} />}
-        <div className="space-y-2">
-          <Label htmlFor="email">{t("email")}</Label>
-          <Input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="email@example.com"
-            required
-            autoComplete="email"
-          />
-        </div>
+
+        <AuthMethodFields defaultMethod="phone" emailAutoComplete="username" />
 
         <div className="space-y-2">
           <div className="flex items-center justify-between">

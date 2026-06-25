@@ -3,14 +3,14 @@
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { AnimatedCard } from "@/components/camba/motion/animated-card";
 import type { LandingFeature, LandingFeatureIcon } from "@/components/landing/landing-types";
-import { BookOpen, Sparkles, FileText, Map, Trophy, Gift } from "lucide-react";
+import { BookOpen, Sparkles, FileText, Trophy, Gift, Globe } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 const FEATURE_ICONS: Record<LandingFeatureIcon, LucideIcon> = {
+  globe: Globe,
   bookOpen: BookOpen,
   sparkles: Sparkles,
   fileText: FileText,
-  map: Map,
   trophy: Trophy,
   gift: Gift,
 };

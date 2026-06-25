@@ -1,8 +1,8 @@
 export type LandingFeatureIcon =
+  | "globe"
   | "bookOpen"
   | "sparkles"
   | "fileText"
-  | "map"
   | "trophy"
   | "gift";
 
@@ -10,6 +10,13 @@ export interface LandingFeature {
   icon: LandingFeatureIcon;
   title: string;
   description: string;
+}
+
+export interface LandingProgram {
+  key: string;
+  title: string;
+  description: string;
+  badge: string;
 }
 
 export interface LandingPageLabels {
@@ -21,9 +28,11 @@ export interface LandingPageLabels {
   heroSubtitle: string;
   heroBadgeFree: string;
   heroBadgeAi: string;
-  heroBadgeCambridge: string;
+  heroBadgePrograms: string;
   getStarted: string;
   loginCta: string;
+  programsTitle: string;
+  programsSubtitle: string;
   featuresTitle: string;
   featuresSubtitle: string;
   highlight1: string;

@@ -3,23 +3,26 @@
 import { useState, useTransition } from "react";
 import { useTranslations } from "next-intl";
 import { signUp, signInWithGoogle } from "@/actions/auth";
+import { AuthMethodFields } from "@/components/auth/auth-method-fields";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Link } from "@/i18n/routing";
 import { Loader2, CheckCircle2 } from "lucide-react";
 
+type RegisterSuccessMode = "email" | "phone";
+
 export function RegisterForm() {
   const t = useTranslations("auth");
   const tc = useTranslations("common");
   const [error, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState(false);
+  const [successMode, setSuccessMode] = useState<RegisterSuccessMode | null>(null);
   const [isPending, startTransition] = useTransition();
   const [isGooglePending, startGoogleTransition] = useTransition();
 
   function handleSubmit(formData: FormData) {
     setError(null);
-    setSuccess(false);
+    setSuccessMode(null);
 
     const password = formData.get("password") as string;
     const confirmPassword = formData.get("confirmPassword") as string;
@@ -37,9 +40,15 @@ export function RegisterForm() {
     startTransition(async () => {
       const result = await signUp(formData);
       if (!result.success) {
-        setError(result.error ?? tc("error"));
+        setError(
+          result.error === "phoneInvalid"
+            ? t("phoneInvalid")
+            : result.error === "emailRequired"
+              ? t("emailRequired")
+              : (result.error ?? tc("error"))
+        );
       } else {
-        setSuccess(true);
+        setSuccessMode(result.data?.method === "email" ? "email" : "phone");
       }
     });
   }
@@ -50,13 +59,25 @@ export function RegisterForm() {
     });
   }
 
-  if (success) {
+  if (successMode === "email") {
     return (
       <div className="text-center space-y-4 py-4">
         <CheckCircle2 className="h-12 w-12 text-success mx-auto" />
         <p className="text-gray-700">{t("checkEmail")}</p>
         <Link href="/login">
           <Button variant="outline">{t("signIn")}</Button>
+        </Link>
+      </div>
+    );
+  }
+
+  if (successMode === "phone") {
+    return (
+      <div className="text-center space-y-4 py-4">
+        <CheckCircle2 className="h-12 w-12 text-success mx-auto" />
+        <p className="text-gray-700">{t("phoneRegisterSuccess")}</p>
+        <Link href="/login">
+          <Button variant="quest">{t("signIn")}</Button>
         </Link>
       </div>
     );
@@ -76,17 +97,7 @@ export function RegisterForm() {
           />
         </div>
 
-        <div className="space-y-2">
-          <Label htmlFor="email">{t("email")}</Label>
-          <Input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="email@example.com"
-            required
-            autoComplete="email"
-          />
-        </div>
+        <AuthMethodFields defaultMethod="phone" />
 
         <div className="space-y-2">
           <Label htmlFor="password">{t("password")}</Label>

@@ -21,24 +21,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(getAppUrl()),
   title: {
-    default: "CAMBA - Luyện thi Cambridge English",
+    default: "CAMBA - Nền tảng tự học Tiếng Anh",
     template: "%s | CAMBA",
   },
   description:
-    "Nền tảng tự học luyện thi Cambridge English dành cho học sinh K12",
+    "Nền tảng tự học đa chương trình — Cambridge, IELTS, SAT, ĐGNL — có AI chấm sửa",
   openGraph: {
     type: "website",
     siteName: "CAMBA",
-    title: "CAMBA - Luyện thi Cambridge English",
+    title: "CAMBA - Nền tảng tự học Tiếng Anh",
     description:
-      "Nền tảng tự học luyện thi Cambridge English dành cho học sinh K12",
+      "Nền tảng tự học đa chương trình — Cambridge, IELTS, SAT, ĐGNL — có AI chấm sửa",
     locale: "vi_VN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CAMBA - Luyện thi Cambridge English",
+    title: "CAMBA - Nền tảng tự học Tiếng Anh",
     description:
-      "Nền tảng tự học luyện thi Cambridge English dành cho học sinh K12",
+      "Nền tảng tự học đa chương trình — Cambridge, IELTS, SAT, ĐGNL — có AI chấm sửa",
   },
   robots: {
     index: true,

@@ -6,6 +6,7 @@ import { createClient } from "@/lib/supabase/server";
 import type { ActionResult } from "@/types";
 import { getAppUrl } from "@/lib/env";
 import { resolveSignIn } from "@/lib/auth/sign-in";
+import { resolveAuthIdentity } from "@/lib/auth/identity";
 
 const AUTH_PATHS = {
   login: "/login",
@@ -14,19 +15,27 @@ const AUTH_PATHS = {
   callback: "/auth/callback",
 } as const;
 
-export async function signUp(formData: FormData): Promise<ActionResult> {
+export async function signUp(formData: FormData): Promise<ActionResult<{ method: "phone" | "email" }>> {
   const supabase = await createClient();
 
-  const email = formData.get("email") as string;
+  const identity = resolveAuthIdentity(formData);
+  if (!identity.ok) {
+    return { success: false, error: identity.errorKey };
+  }
+
   const password = formData.get("password") as string;
   const fullName = formData.get("fullName") as string;
 
-  const { error } = await supabase.auth.signUp({
-    email,
+  const { data, error } = await supabase.auth.signUp({
+    email: identity.authEmail,
     password,
     options: {
-      data: { full_name: fullName },
-      emailRedirectTo: `${getAppUrl()}${AUTH_PATHS.callback}`,
+      data: {
+        full_name: fullName,
+        phone: identity.phone ?? undefined,
+      },
+      emailRedirectTo:
+        identity.method === "email" ? `${getAppUrl()}${AUTH_PATHS.callback}` : undefined,
     },
   });
 
@@ -34,7 +43,28 @@ export async function signUp(formData: FormData): Promise<ActionResult> {
     return { success: false, error: error.message };
   }
 
-  return { success: true };
+  if (identity.phone && data.user) {
+    await supabase.from("profiles").update({ phone: identity.phone }).eq("id", data.user.id);
+  }
+
+  if (identity.method === "phone") {
+    if (data.session) {
+      revalidatePath("/", "layout");
+      redirect(AUTH_PATHS.dashboard);
+    }
+
+    const { error: signInError } = await supabase.auth.signInWithPassword({
+      email: identity.authEmail,
+      password,
+    });
+
+    if (!signInError) {
+      revalidatePath("/", "layout");
+      redirect(AUTH_PATHS.dashboard);
+    }
+  }
+
+  return { success: true, data: { method: identity.method } };
 }
 
 export async function signIn(formData: FormData): Promise<ActionResult> {

@@ -3,6 +3,7 @@ import type { ActionResult } from "@/types";
 import type { Database, UserRole } from "@/types/database";
 import { getDashboardPath } from "@/lib/auth/roles";
 import { resolvePostAuthRedirect, sanitizeRedirectPath } from "@/lib/auth/redirect";
+import { resolveAuthIdentity } from "@/lib/auth/identity";
 
 export type SignInSuccess = {
   ok: true;
@@ -20,12 +21,22 @@ export async function resolveSignIn(
   supabase: SupabaseClient<Database>,
   formData: FormData
 ): Promise<SignInOutcome> {
-  const email = formData.get("email") as string;
+  const identity = resolveAuthIdentity(formData);
   const password = formData.get("password") as string;
   const redirectTo = sanitizeRedirectPath(formData.get("redirect") as string | null);
 
+  if (!identity.ok) {
+    return {
+      ok: false,
+      result: {
+        success: false,
+        error: identity.errorKey,
+      },
+    };
+  }
+
   const { error } = await supabase.auth.signInWithPassword({
-    email,
+    email: identity.authEmail,
     password,
   });
 

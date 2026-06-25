@@ -4,7 +4,8 @@ import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { SectionHeader } from "@/components/camba/section-header";
 import { CambridgeProgramTheme } from "@/components/camba/cambridge-program-theme";
 import { LandingFeatureGrid } from "@/components/landing/landing-feature-grid";
-import type { LandingFeature, LandingPageLabels } from "@/components/landing/landing-types";
+import { LandingProgramsSection } from "@/components/landing/landing-programs-section";
+import type { LandingFeature, LandingPageLabels, LandingProgram } from "@/components/landing/landing-types";
 import {
   ArrowRight,
   GraduationCap,
@@ -16,10 +17,11 @@ import {
 
 interface LandingPageViewProps {
   labels: LandingPageLabels;
+  programs: LandingProgram[];
   features: LandingFeature[];
 }
 
-export function LandingPageView({ labels: l, features }: LandingPageViewProps) {
+export function LandingPageView({ labels: l, programs, features }: LandingPageViewProps) {
   return (
     <CambridgeProgramTheme>
       <div className="min-h-screen bg-background camba-safe-x flex flex-col">
@@ -66,7 +68,7 @@ export function LandingPageView({ labels: l, features }: LandingPageViewProps) {
                   </span>
                   <span className="inline-flex items-center gap-1.5 rounded-full bg-white/85 border border-program/20 px-3 py-1 camba-caption font-semibold text-program">
                     <GraduationCap className="h-3.5 w-3.5" aria-hidden />
-                    {l.heroBadgeCambridge}
+                    {l.heroBadgePrograms}
                   </span>
                 </div>
 
@@ -105,6 +107,12 @@ export function LandingPageView({ labels: l, features }: LandingPageViewProps) {
                 </div>
               </div>
             </section>
+
+            <LandingProgramsSection
+              title={l.programsTitle}
+              subtitle={l.programsSubtitle}
+              programs={programs}
+            />
 
             <section aria-labelledby="landing-features-heading">
               <SectionHeader
