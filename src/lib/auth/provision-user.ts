@@ -1,5 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { Database } from "@/types/database";
+import { ensureDefaultLearningContext } from "@/lib/programs/ensure-default-learning-context";
 
 export async function ensureUserBootstrap(
   supabase: SupabaseClient<Database>,
@@ -10,15 +11,15 @@ export async function ensureUserBootstrap(
     supabase.from("user_gamification").select("user_id").eq("user_id", userId).maybeSingle(),
   ]);
 
-  if (profile && gamification) {
-    return;
+  if (!profile || !gamification) {
+    const { error } = await supabase.rpc("ensure_user_bootstrap", {
+      p_user_id: userId,
+    });
+
+    if (error) {
+      console.error("[ensureUserBootstrap]", error.message);
+    }
   }
 
-  const { error } = await supabase.rpc("ensure_user_bootstrap", {
-    p_user_id: userId,
-  });
-
-  if (error) {
-    console.error("[ensureUserBootstrap]", error.message);
-  }
+  await ensureDefaultLearningContext(supabase, userId);
 }
