@@ -10,6 +10,10 @@ import { isGoogleAuthEnabled } from "@/lib/auth/google-auth-enabled";
 import { signInWithGoogleOAuth } from "@/lib/auth/google-oauth";
 import { resolveSignIn } from "@/lib/auth/sign-in";
 import { resolveAuthIdentity } from "@/lib/auth/identity";
+import {
+  confirmPhoneAuthUser,
+  isEmailNotConfirmedError,
+} from "@/lib/auth/confirm-phone-auth-user";
 
 const AUTH_PATHS = {
   login: `/${DEFAULT_LOCALE}/login`,
@@ -45,6 +49,7 @@ export async function signUp(formData: FormData): Promise<ActionResult<{ method:
   }
 
   if (identity.phone && data.user) {
+    await confirmPhoneAuthUser(data.user.id);
     await supabase.from("profiles").update({ phone: identity.phone }).eq("id", data.user.id);
   }
 
@@ -54,10 +59,18 @@ export async function signUp(formData: FormData): Promise<ActionResult<{ method:
       redirect(AUTH_PATHS.dashboard);
     }
 
-    const { error: signInError } = await supabase.auth.signInWithPassword({
+    let { error: signInError } = await supabase.auth.signInWithPassword({
       email: identity.authEmail,
       password,
     });
+
+    if (signInError && isEmailNotConfirmedError(signInError)) {
+      await confirmPhoneAuthUser(data.user!.id);
+      ({ error: signInError } = await supabase.auth.signInWithPassword({
+        email: identity.authEmail,
+        password,
+      }));
+    }
 
     if (!signInError) {
       revalidatePath("/", "layout");

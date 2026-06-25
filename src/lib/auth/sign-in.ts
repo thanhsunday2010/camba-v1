@@ -6,6 +6,10 @@ import { sanitizeRedirectPath, resolvePostAuthRedirect } from "@/lib/auth/redire
 import { withLocalePath } from "@/lib/auth/request-origin";
 import { DEFAULT_LOCALE } from "@/lib/constants";
 import { resolveAuthIdentity } from "@/lib/auth/identity";
+import {
+  confirmPhoneAuthUserForIdentity,
+  isEmailNotConfirmedError,
+} from "@/lib/auth/confirm-phone-auth-user";
 import { ensureUserBootstrap } from "@/lib/auth/provision-user";
 
 export type SignInSuccess = {
@@ -38,10 +42,20 @@ export async function resolveSignIn(
     };
   }
 
-  const { error } = await supabase.auth.signInWithPassword({
+  let { error } = await supabase.auth.signInWithPassword({
     email: identity.authEmail,
     password,
   });
+
+  if (error && identity.method === "phone" && isEmailNotConfirmedError(error)) {
+    const confirmed = await confirmPhoneAuthUserForIdentity(identity);
+    if (confirmed) {
+      ({ error } = await supabase.auth.signInWithPassword({
+        email: identity.authEmail,
+        password,
+      }));
+    }
+  }
 
   if (error) {
     return { ok: false, result: { success: false, error: error.message } };
