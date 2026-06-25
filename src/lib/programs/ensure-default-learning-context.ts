@@ -1,5 +1,5 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
-import { getDefaultProgramId } from "@/lib/programs/context";
+import { resolveDefaultProgramId } from "@/lib/programs/context";
 import { initializeLessonUnlocks } from "@/lib/queries/learning";
 import type { Database } from "@/types/database";
 
@@ -17,7 +17,7 @@ export async function ensureDefaultLearningContext(
   let levelId = gamification?.current_level_id ?? null;
 
   if (!programId) {
-    programId = await getDefaultProgramId();
+    programId = await resolveDefaultProgramId(supabase);
   }
 
   if (!programId) {

@@ -1,8 +1,7 @@
-import { unstable_cache } from "next/cache";
+import type { SupabaseClient } from "@supabase/supabase-js";
 import { createClient } from "@/lib/supabase/server";
-import { createPublicClient } from "@/lib/supabase/public";
 import { DEFAULT_PROGRAM_SLUG } from "@/lib/programs/constants";
-import type { Level, Program, UserGamification } from "@/types/database";
+import type { Database, Level, Program, UserGamification } from "@/types/database";
 
 export interface ActiveProgramContext {
   programId: string;
@@ -11,23 +10,34 @@ export interface ActiveProgramContext {
   level: Pick<Level, "id" | "slug" | "name"> | null;
 }
 
-const getDefaultProgramIdCached = unstable_cache(
-  async () => {
-    const supabase = createPublicClient();
-    const { data } = await supabase
-      .from("programs")
-      .select("id")
-      .eq("slug", DEFAULT_PROGRAM_SLUG)
-      .eq("is_active", true)
-      .maybeSingle();
-    return data?.id ?? null;
-  },
-  ["default-program-id"],
-  { revalidate: 3600 }
-);
+export async function resolveDefaultProgramId(
+  supabase: SupabaseClient<Database>
+): Promise<string | null> {
+  const { data: bySlug } = await supabase
+    .from("programs")
+    .select("id")
+    .eq("slug", DEFAULT_PROGRAM_SLUG)
+    .eq("is_active", true)
+    .maybeSingle();
+
+  if (bySlug?.id) {
+    return bySlug.id;
+  }
+
+  const { data: firstActive } = await supabase
+    .from("programs")
+    .select("id")
+    .eq("is_active", true)
+    .order("sort_order", { ascending: true })
+    .limit(1)
+    .maybeSingle();
+
+  return firstActive?.id ?? null;
+}
 
 export async function getDefaultProgramId(): Promise<string | null> {
-  return getDefaultProgramIdCached();
+  const supabase = await createClient();
+  return resolveDefaultProgramId(supabase);
 }
 
 export async function resolveProgramId(
@@ -53,7 +63,8 @@ export async function resolveProgramId(
 
   if (currentProgramId) return currentProgramId;
 
-  return getDefaultProgramId();
+  const supabase = await createClient();
+  return resolveDefaultProgramId(supabase);
 }
 
 export async function getActiveProgramContext(
