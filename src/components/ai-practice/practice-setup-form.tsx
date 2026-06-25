@@ -9,6 +9,10 @@ import {
   PRACTICE_PROGRAMS,
 } from "@/lib/ai-practice/practice-config";
 import type { PracticeLanguage, PracticeProfile, PracticeSkill } from "@/lib/ai-practice/practice-types";
+import type { AiLimitDialogLabels } from "@/components/subscriptions/ai-limit-dialog";
+import type { AiUsageStatus } from "@/lib/subscriptions/subscription-types";
+import { AiUsageBadge } from "@/components/subscriptions/ai-usage-badge";
+import { useAiLimitDialog } from "@/components/subscriptions/use-ai-limit-dialog";
 import { createPracticeSession, writePracticeSession } from "@/lib/ai-practice/practice-session-storage";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
@@ -33,10 +37,21 @@ interface PracticeSetupFormProps {
   skill: PracticeSkill;
   labels: PracticeSetupLabels;
   sessionPath: string;
+  aiUsage: AiUsageStatus;
+  aiUsageLabels: { label: string; remaining: string };
+  limitDialogLabels: AiLimitDialogLabels;
 }
 
-export function PracticeSetupForm({ skill, labels, sessionPath }: PracticeSetupFormProps) {
+export function PracticeSetupForm({
+  skill,
+  labels,
+  sessionPath,
+  aiUsage,
+  aiUsageLabels,
+  limitDialogLabels,
+}: PracticeSetupFormProps) {
   const router = useRouter();
+  const { handleActionResult, dialog: limitDialog } = useAiLimitDialog(limitDialogLabels);
   const [language, setLanguage] = useState<PracticeLanguage>("en");
   const [level, setLevel] = useState(() => LEVELS_BY_LANGUAGE.en[0]?.id ?? "");
   const [program, setProgram] = useState<PracticeProfile["program"]>("general");
@@ -63,6 +78,7 @@ export function PracticeSetupForm({ skill, labels, sessionPath }: PracticeSetupF
     startTransition(async () => {
       const result = await generatePracticePrompt(profile, []);
       if (!result.success || !result.data) {
+        if (handleActionResult(result)) return;
         const message = result.error ?? "Không tạo được đề bài. Vui lòng thử lại.";
         setError(message);
         toast.error(message);
@@ -75,11 +91,16 @@ export function PracticeSetupForm({ skill, labels, sessionPath }: PracticeSetupF
   }
 
   return (
-    <CambaCard variant="elevated" padding="lg" className="max-w-2xl mx-auto space-y-6">
-      <div>
-        <h1 className="camba-h2 text-foreground">{labels.title}</h1>
-        <p className="camba-body text-muted mt-2">{labels.subtitle}</p>
-      </div>
+    <>
+      {limitDialog}
+      <CambaCard variant="elevated" padding="lg" className="max-w-2xl mx-auto space-y-6">
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <h1 className="camba-h2 text-foreground">{labels.title}</h1>
+            <p className="camba-body text-muted mt-2">{labels.subtitle}</p>
+          </div>
+          <AiUsageBadge aiUsage={aiUsage} labels={aiUsageLabels} />
+        </div>
 
       <div className="space-y-2">
         <Label htmlFor="practice-language">{labels.language}</Label>
@@ -140,5 +161,6 @@ export function PracticeSetupForm({ skill, labels, sessionPath }: PracticeSetupF
         {isPending ? labels.starting : labels.start}
       </Button>
     </CambaCard>
+    </>
   );
 }

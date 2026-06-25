@@ -27,6 +27,14 @@ import type {
 import { ZodError } from "zod";
 import type { ActionResult } from "@/types";
 import { saveAiFeedback } from "@/actions/ai/_shared";
+import { assertAiUsageAllowed } from "@/lib/subscriptions/assert-ai-usage";
+import {
+  AI_SPEAKING_DURATION_LIMIT_ERROR,
+  AI_WRITING_MAX_WORDS,
+  AI_WRITING_WORD_LIMIT_ERROR,
+  countWords,
+  isWithinSpeakingDurationLimit,
+} from "@/lib/ai/ai-input-limits";
 
 function revalidatePracticePaths(skill: "writing" | "speaking") {
   revalidatePath("/dashboard");
@@ -63,6 +71,16 @@ export async function generatePracticePrompt(
   } = await supabase.auth.getUser();
   if (!user) return { success: false, error: "Unauthorized" };
 
+  const usageCheck = await assertAiUsageAllowed(user.id);
+  if (!usageCheck.success) {
+    return {
+      success: false,
+      error: usageCheck.error,
+      code: usageCheck.code,
+      limitMeta: usageCheck.limitMeta,
+    };
+  }
+
   try {
     const rawJson = await generateJsonResponse(
       PRACTICE_PROMPT_SYSTEM,
@@ -89,11 +107,25 @@ export async function submitStandaloneWritingPractice(
     return { success: false, error: "Nội dung bài viết không được để trống." };
   }
 
+  if (countWords(content) > AI_WRITING_MAX_WORDS) {
+    return { success: false, error: AI_WRITING_WORD_LIMIT_ERROR };
+  }
+
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
   if (!user) return { success: false, error: "Unauthorized" };
+
+  const usageCheck = await assertAiUsageAllowed(user.id);
+  if (!usageCheck.success) {
+    return {
+      success: false,
+      error: usageCheck.error,
+      code: usageCheck.code,
+      limitMeta: usageCheck.limitMeta,
+    };
+  }
 
   try {
     const wordCount = content.split(/\s+/).filter(Boolean).length;
@@ -155,6 +187,20 @@ export async function submitStandaloneSpeakingPractice(
     data: { user },
   } = await supabase.auth.getUser();
   if (!user) return { success: false, error: "Unauthorized" };
+
+  if (!isWithinSpeakingDurationLimit(durationSeconds)) {
+    return { success: false, error: AI_SPEAKING_DURATION_LIMIT_ERROR };
+  }
+
+  const usageCheck = await assertAiUsageAllowed(user.id);
+  if (!usageCheck.success) {
+    return {
+      success: false,
+      error: usageCheck.error,
+      code: usageCheck.code,
+      limitMeta: usageCheck.limitMeta,
+    };
+  }
 
   try {
     const filePath = `${user.id}/practice-${Date.now()}.webm`;

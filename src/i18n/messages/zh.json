@@ -18,6 +18,7 @@
     "mockTests": "Mock Tests",
     "placementTest": "Placement Test",
     "profile": "Profile",
+    "pricing": "Pricing",
     "settings": "Settings",
     "logout": "Log out"
   },
@@ -377,6 +378,57 @@
     "ctaSubtitle": "Create a free account in under a minute — pick your program and take your first lesson.",
     "ctaRegister": "Create free account",
     "ctaLogin": "I already have an account"
+  },
+  "subscriptions": {
+    "pageTitle": "Pricing",
+    "pageSubtitle": "Choose the Camba plan that fits your goals. Access every program — daily AI limits differ by tier.",
+    "currentTier": "Current plan: {tier}",
+    "programs": {
+      "cambridge": {
+        "name": "Camba Cambridge",
+        "description": "Cambridge YLE, KET, PET, FCE prep with AI-scored mock tests."
+      },
+      "speakingWriting": {
+        "name": "Camba Speaking & Writing",
+        "description": "Standalone speaking and writing practice with level-aware AI feedback."
+      }
+    },
+    "tiers": {
+      "free": "Camba Free",
+      "pro": "Camba Pro",
+      "vip": "Camba VIP"
+    },
+    "features": {
+      "accessAll": "Access all programs & practice",
+      "aiLimit": "{count} AI uses / day"
+    },
+    "pricing": {
+      "perMonth": "/ month",
+      "perYear": "/ year",
+      "yearlyBadge": "Yearly — best value",
+      "yearlySavings": "Save {percent}%",
+      "monthlyOption": "Or pay monthly",
+      "currentPlan": "Current plan",
+      "subscribe": "Subscribe",
+      "recommended": "Popular",
+      "subscribeToast": "Payments coming soon. Contact Camba to subscribe."
+    },
+    "aiUsage": {
+      "label": "AI today: {used}/{limit}",
+      "remaining": "{count} left"
+    },
+    "limitDialog": {
+      "freeTitle": "Free AI limit reached",
+      "freeDescription": "You've used today's free AI session. Subscribe to Pro or VIP for more daily AI practice.",
+      "proTitle": "Daily AI limit reached",
+      "proDescription": "You've used all 5 AI sessions today. Upgrade to VIP for more daily AI practice.",
+      "vipTitle": "Daily AI limit reached",
+      "vipDescription": "You've used all 10 AI sessions today. Come back tomorrow to continue with AI.",
+      "usageSummary": "Used {used}/{limit} AI sessions today.",
+      "subscribeCta": "View pricing",
+      "upgradeCta": "Upgrade to VIP",
+      "close": "Close"
+    }
   },
   "errors": {
     "title": "Something went wrong",

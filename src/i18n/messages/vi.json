@@ -23,6 +23,7 @@
     "achievements": "Thành tích",
     "placementTest": "Test trình độ",
     "profile": "Hồ sơ",
+    "pricing": "Bảng giá",
     "settings": "Cài đặt",
     "logout": "Đăng xuất",
     "parentDashboard": "Phụ huynh",
@@ -1394,6 +1395,57 @@
       "words": "{count} từ",
       "duration": "{seconds}s ghi âm",
       "noScore": "—"
+    }
+  },
+  "subscriptions": {
+    "pageTitle": "Bảng giá",
+    "pageSubtitle": "Chọn gói Camba phù hợp với mục tiêu học tập. Truy cập mọi chương trình — khác nhau ở số lượt AI mỗi ngày.",
+    "currentTier": "Gói hiện tại: {tier}",
+    "programs": {
+      "cambridge": {
+        "name": "Camba Cambridge",
+        "description": "Luyện thi Cambridge YLE, KET, PET, FCE và thi thử có AI chấm điểm."
+      },
+      "speakingWriting": {
+        "name": "Camba Speaking & Writing",
+        "description": "Luyện Speaking và Writing độc lập với AI phản hồi chi tiết theo trình độ."
+      }
+    },
+    "tiers": {
+      "free": "Camba Free",
+      "pro": "Camba Pro",
+      "vip": "Camba VIP"
+    },
+    "features": {
+      "accessAll": "Truy cập tất cả chương trình & luyện tập",
+      "aiLimit": "{count} lượt AI / ngày"
+    },
+    "pricing": {
+      "perMonth": "/ tháng",
+      "perYear": "/ năm",
+      "yearlyBadge": "Gói năm — tiết kiệm nhất",
+      "yearlySavings": "Tiết kiệm {percent}%",
+      "monthlyOption": "Hoặc trả theo tháng",
+      "currentPlan": "Gói hiện tại",
+      "subscribe": "Đăng ký gói",
+      "recommended": "Phổ biến",
+      "subscribeToast": "Tính năng thanh toán sắp ra mắt. Liên hệ Camba để đăng ký gói."
+    },
+    "aiUsage": {
+      "label": "AI hôm nay: {used}/{limit}",
+      "remaining": "còn {count} lượt"
+    },
+    "limitDialog": {
+      "freeTitle": "Hết lượt AI miễn phí",
+      "freeDescription": "Bạn đã dùng hết lượt AI miễn phí hôm nay. Đăng ký gói Pro hoặc VIP để luyện tập nhiều hơn với AI.",
+      "proTitle": "Hết lượt AI trong ngày",
+      "proDescription": "Bạn đã dùng hết 5 lượt AI hôm nay. Nâng cấp lên VIP để có thêm lượt mỗi ngày.",
+      "vipTitle": "Hết lượt AI trong ngày",
+      "vipDescription": "Bạn đã dùng hết 10 lượt AI hôm nay. Hãy quay lại vào ngày mai để tiếp tục luyện tập với AI.",
+      "usageSummary": "Đã dùng {used}/{limit} lượt AI hôm nay.",
+      "subscribeCta": "Xem bảng giá",
+      "upgradeCta": "Nâng cấp VIP",
+      "close": "Đóng"
     }
   },
   "errors": {

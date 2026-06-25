@@ -10,8 +10,19 @@ export interface AuthUser {
   onboardingCompleted: boolean;
 }
 
+export interface AiLimitMeta {
+  tier: "free" | "pro" | "vip";
+  usedToday: number;
+  dailyLimit: number;
+  remaining: number;
+}
+
+export type ActionErrorCode = "AI_LIMIT_EXCEEDED";
+
 export interface ActionResult<T = void> {
   success: boolean;
   data?: T;
   error?: string;
+  code?: ActionErrorCode;
+  limitMeta?: AiLimitMeta;
 }

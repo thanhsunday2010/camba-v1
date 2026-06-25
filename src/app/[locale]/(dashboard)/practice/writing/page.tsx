@@ -7,17 +7,28 @@ import {
   buildWritingSetupLabels,
 } from "@/lib/ai-practice/practice-labels";
 import { getPracticeHistorySummary } from "@/lib/ai-practice/practice-history";
+import { requirePracticeSubscriptionContext } from "@/lib/subscriptions/practice-subscription-context";
 
 export default async function PracticeWritingSetupPage() {
   const t = await getTranslations("aiPractice");
   const labels = buildWritingSetupLabels((key) => t(key));
   const historyLabels = buildPracticeHistoryLabels((key) => t(key));
-  const historySummary = await getPracticeHistorySummary("writing");
+  const [historySummary, subscriptionContext] = await Promise.all([
+    getPracticeHistorySummary("writing"),
+    requirePracticeSubscriptionContext(),
+  ]);
 
   return (
     <StudentPageShell narrow>
       <div className="camba-section-stack gap-8 max-w-2xl mx-auto">
-        <PracticeSetupForm skill="writing" labels={labels} sessionPath="/practice/writing/session" />
+        <PracticeSetupForm
+          skill="writing"
+          labels={labels}
+          sessionPath="/practice/writing/session"
+          aiUsage={subscriptionContext.aiUsage}
+          aiUsageLabels={subscriptionContext.aiUsageLabels}
+          limitDialogLabels={subscriptionContext.limitDialogLabels}
+        />
         <PracticeHistoryPanel skill="writing" summary={historySummary} labels={historyLabels} />
       </div>
     </StudentPageShell>

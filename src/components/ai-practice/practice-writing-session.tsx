@@ -24,6 +24,16 @@ import { Loader2, PenLine, RotateCcw } from "lucide-react";
 import { toast } from "sonner";
 import type { PracticeWritingFeedback } from "@/types/ai";
 import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
+import { AiWritingWordCounter } from "@/components/ai/ai-writing-word-counter";
+import {
+  AI_WRITING_MAX_WORDS,
+  clampWritingToWordLimit,
+  countWords,
+} from "@/lib/ai/ai-input-limits";
+import type { AiUsageStatus } from "@/lib/subscriptions/subscription-types";
+import type { AiLimitDialogLabels } from "@/components/subscriptions/ai-limit-dialog";
+import { AiUsageBadge } from "@/components/subscriptions/ai-usage-badge";
+import { useAiLimitDialog } from "@/components/subscriptions/use-ai-limit-dialog";
 
 export interface PracticeWritingSessionLabels {
   setupPath: string;
@@ -58,15 +68,22 @@ interface PracticeWritingSessionProps {
   labels: PracticeWritingSessionLabels;
   historySummary: PracticeHistorySummary;
   historyLabels: PracticeHistoryLabels;
+  aiUsage: AiUsageStatus;
+  aiUsageLabels: { label: string; remaining: string };
+  limitDialogLabels: AiLimitDialogLabels;
 }
 
 export function PracticeWritingSession({
   labels,
   historySummary,
   historyLabels,
+  aiUsage,
+  aiUsageLabels,
+  limitDialogLabels,
 }: PracticeWritingSessionProps) {
   const router = useRouter();
   const mascot = useMascotOptional();
+  const { handleActionResult, dialog: limitDialog } = useAiLimitDialog(limitDialogLabels);
   const [session, setSession] = useState(() => readPracticeSession());
   const [content, setContent] = useState("");
   const [feedback, setFeedback] = useState<PracticeWritingFeedback | null>(null);
@@ -87,8 +104,8 @@ export function PracticeWritingSession({
   const activeSession = session;
   const { currentPrompt, profile, round } = activeSession;
   const minWords = currentPrompt.minWords ?? 40;
-  const maxWords = currentPrompt.maxWords ?? 300;
-  const wordCount = content.split(/\s+/).filter(Boolean).length;
+  const maxWords = AI_WRITING_MAX_WORDS;
+  const wordCount = countWords(content);
 
   async function handleSubmit() {
     setError(null);
@@ -108,6 +125,8 @@ export function PracticeWritingSession({
         } else {
           mascot?.cheerExerciseComplete();
         }
+      } else if (handleActionResult(result)) {
+        setError(result.error ?? null);
       } else {
         const message = result.error ?? "Không gửi được bài.";
         setError(message);
@@ -122,6 +141,7 @@ export function PracticeWritingSession({
     startContinueTransition(async () => {
       const result = await generatePracticePrompt(activeSession.profile, activeSession.previousPrompts);
       if (!result.success || !result.data) {
+        if (handleActionResult(result)) return;
         toast.error(result.error ?? "Không tạo được đề tiếp theo.");
         return;
       }
@@ -140,13 +160,17 @@ export function PracticeWritingSession({
 
   return (
     <StudentPageShell narrow>
+      {limitDialog}
       <div className="camba-section-stack gap-6">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <p className="camba-caption text-muted">{labels.round.replace("{n}", String(round))}</p>
-          <Button variant="ghost" size="sm" onClick={handleChangeSetup}>
+          <div className="flex items-center gap-2">
+            <AiUsageBadge aiUsage={aiUsage} labels={aiUsageLabels} />
+            <Button variant="ghost" size="sm" onClick={handleChangeSetup}>
             <RotateCcw className="h-4 w-4" />
             {labels.changeSetup}
           </Button>
+          </div>
         </div>
 
         <CambaCard variant="lesson" padding="md" className="space-y-4">
@@ -173,14 +197,9 @@ export function PracticeWritingSession({
               id="writing-content"
               className="w-full min-h-[200px] rounded-xl border border-border p-4 text-sm camba-focus-ring resize-y"
               value={content}
-              onChange={(e) => setContent(e.target.value)}
-              maxLength={maxWords * 8}
+              onChange={(e) => setContent(clampWritingToWordLimit(e.target.value))}
             />
-            <div className="flex justify-between text-xs text-muted">
-              <span>
-                {wordCount} / {maxWords} từ (tối thiểu {minWords})
-              </span>
-            </div>
+            <AiWritingWordCounter text={content} maxWords={maxWords} minWords={minWords} />
             {error && (
               <p className="text-sm text-error bg-red-50 border border-red-100 rounded-lg px-3 py-2">
                 {error}

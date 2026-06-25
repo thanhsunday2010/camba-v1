@@ -9,6 +9,13 @@ import { toast } from "sonner";
 import type { WritingFeedback } from "@/types/ai";
 import type { AiExerciseLabels } from "@/lib/learning/lesson-page-types";
 import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
+import { AiWritingWordCounter } from "@/components/ai/ai-writing-word-counter";
+import {
+  AI_WRITING_MAX_WORDS,
+  AI_WRITING_WORD_LIMIT_ERROR,
+  clampWritingToWordLimit,
+  countWords,
+} from "@/lib/ai/ai-input-limits";
 
 interface WritingExerciseProps {
   exerciseId: string;
@@ -19,7 +26,6 @@ interface WritingExerciseProps {
   taskDescription?: string;
   taskPrompts?: string[];
   minWords?: number;
-  maxWords?: number;
   targetLevel?: string;
   labels: AiExerciseLabels;
   onComplete?: () => void;
@@ -36,7 +42,6 @@ export function WritingExercise({
   taskDescription,
   taskPrompts = [],
   minWords = 30,
-  maxWords = 200,
   targetLevel,
   labels,
   onComplete,
@@ -49,12 +54,17 @@ export function WritingExercise({
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const wordCount = content.split(/\s+/).filter(Boolean).length;
+  const maxWords = AI_WRITING_MAX_WORDS;
+  const wordCount = countWords(content);
 
   async function handleSubmit() {
     setError(null);
     if (wordCount < minWords) {
       setError(fmt.minWordsError(minWords));
+      return;
+    }
+    if (wordCount > maxWords) {
+      setError(AI_WRITING_WORD_LIMIT_ERROR);
       return;
     }
 
@@ -132,17 +142,14 @@ export function WritingExercise({
 
       <textarea
         value={content}
-        onChange={(e) => setContent(e.target.value)}
+        onChange={(e) => setContent(clampWritingToWordLimit(e.target.value))}
         placeholder={labels.placeholder}
         rows={8}
         className="w-full rounded-xl border border-border bg-white px-3 py-2 camba-body text-foreground focus:outline-none focus:ring-2 focus:ring-program/30 resize-y"
-        maxLength={maxWords * 8}
       />
 
       <div className="flex items-center justify-between gap-3 pt-2 border-t border-border/40">
-        <span className="camba-caption text-muted">
-          {labels.wordCount}: {wordCount} / {maxWords}
-        </span>
+        <AiWritingWordCounter text={content} maxWords={maxWords} minWords={minWords} label={labels.wordCount} />
         <Button onClick={handleSubmit} disabled={isSubmitting || wordCount === 0}>
           {isSubmitting ? (
             <>

@@ -12,7 +12,13 @@ import { ZodError } from "zod";
 import { WritingFeedbackSchema } from "@/types/ai";
 import type { WritingFeedback } from "@/types/ai";
 import type { ActionResult } from "@/types";
-import { assertExerciseInLesson, assertLessonUnlockedForUser } from "@/lib/auth/lesson-access";
+import { assertLessonUnlockedForUser, assertExerciseInLesson } from "@/lib/auth/lesson-access";
+import { assertAiUsageAllowed } from "@/lib/subscriptions/assert-ai-usage";
+import {
+  AI_WRITING_MAX_WORDS,
+  AI_WRITING_WORD_LIMIT_ERROR,
+  countWords,
+} from "@/lib/ai/ai-input-limits";
 import { completeAiExercise, saveAiFeedback } from "./_shared";
 import { generateRecommendationsFromFeedback } from "@/lib/ai/recommendations-engine";
 
@@ -43,6 +49,20 @@ export async function submitWritingForFeedback(
 
   if (!content.trim()) {
     return { success: false, error: "Nội dung bài viết không được để trống" };
+  }
+
+  if (countWords(content) > AI_WRITING_MAX_WORDS) {
+    return { success: false, error: AI_WRITING_WORD_LIMIT_ERROR };
+  }
+
+  const usageCheck = await assertAiUsageAllowed(user.id);
+  if (!usageCheck.success) {
+    return {
+      success: false,
+      error: usageCheck.error,
+      code: usageCheck.code,
+      limitMeta: usageCheck.limitMeta,
+    };
   }
 
   try {

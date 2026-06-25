@@ -13,6 +13,11 @@ import type { SpeakingFeedback } from "@/types/ai";
 import { ZodError } from "zod";
 import type { ActionResult } from "@/types";
 import { assertExerciseInLesson, assertLessonUnlockedForUser } from "@/lib/auth/lesson-access";
+import { assertAiUsageAllowed } from "@/lib/subscriptions/assert-ai-usage";
+import {
+  AI_SPEAKING_DURATION_LIMIT_ERROR,
+  isWithinSpeakingDurationLimit,
+} from "@/lib/ai/ai-input-limits";
 import { completeAiExercise, saveAiFeedback } from "./_shared";
 import { generateRecommendationsFromFeedback } from "@/lib/ai/recommendations-engine";
 
@@ -41,6 +46,20 @@ export async function submitSpeakingForFeedback(
   const exerciseCheck = await assertExerciseInLesson(exerciseId, lessonId);
   if (!exerciseCheck.ok) {
     return { success: false, error: exerciseCheck.error };
+  }
+
+  if (!isWithinSpeakingDurationLimit(durationSeconds)) {
+    return { success: false, error: AI_SPEAKING_DURATION_LIMIT_ERROR };
+  }
+
+  const usageCheck = await assertAiUsageAllowed(user.id);
+  if (!usageCheck.success) {
+    return {
+      success: false,
+      error: usageCheck.error,
+      code: usageCheck.code,
+      limitMeta: usageCheck.limitMeta,
+    };
   }
 
   try {

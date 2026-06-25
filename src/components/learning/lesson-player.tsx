@@ -11,7 +11,6 @@ import {
   getFollowUpQuestions,
   getWritingPrompts,
   resolveTargetLevel,
-  resolveWritingMaxWords,
   resolveWritingMinWords,
 } from "@/lib/learning/ai-exercise-content";
 import {
@@ -206,7 +205,6 @@ export function LessonPlayer({
               taskDescription={content.taskDescription as string | undefined}
               taskPrompts={getWritingPrompts(content)}
               minWords={resolveWritingMinWords(content)}
-              maxWords={resolveWritingMaxWords(content)}
               targetLevel={targetLevel}
               labels={aiLabels}
               onComplete={() => markExerciseCompleted(exercise.id, { exerciseId: exercise.id })}
@@ -225,7 +223,6 @@ export function LessonPlayer({
               prompt={speakingPrompt}
               followUpQuestions={getFollowUpQuestions(content)}
               pictureDescription={content.pictureDescription as string | undefined}
-              maxDurationSeconds={(content.maxDurationSeconds as number) ?? 120}
               targetLevel={targetLevel}
               labels={aiLabels}
               onComplete={() => markExerciseCompleted(exercise.id, { exerciseId: exercise.id })}

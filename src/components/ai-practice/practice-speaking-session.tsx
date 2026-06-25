@@ -33,6 +33,12 @@ import {
 import { toast } from "sonner";
 import type { PracticeSpeakingFeedback } from "@/types/ai";
 import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
+import { AiSpeakingCountdown } from "@/components/ai/ai-speaking-countdown";
+import { AI_SPEAKING_MAX_SECONDS } from "@/lib/ai/ai-input-limits";
+import type { AiUsageStatus } from "@/lib/subscriptions/subscription-types";
+import type { AiLimitDialogLabels } from "@/components/subscriptions/ai-limit-dialog";
+import { AiUsageBadge } from "@/components/subscriptions/ai-usage-badge";
+import { useAiLimitDialog } from "@/components/subscriptions/use-ai-limit-dialog";
 
 export interface PracticeSpeakingSessionLabels {
   setupPath: string;
@@ -82,15 +88,22 @@ interface PracticeSpeakingSessionProps {
   labels: PracticeSpeakingSessionLabels;
   historySummary: PracticeHistorySummary;
   historyLabels: PracticeHistoryLabels;
+  aiUsage: AiUsageStatus;
+  aiUsageLabels: { label: string; remaining: string };
+  limitDialogLabels: AiLimitDialogLabels;
 }
 
 export function PracticeSpeakingSession({
   labels,
   historySummary,
   historyLabels,
+  aiUsage,
+  aiUsageLabels,
+  limitDialogLabels,
 }: PracticeSpeakingSessionProps) {
   const router = useRouter();
   const mascot = useMascotOptional();
+  const { handleActionResult, dialog: limitDialog } = useAiLimitDialog(limitDialogLabels);
   const [session, setSession] = useState(() => readPracticeSession());
   const [feedback, setFeedback] = useState<PracticeSpeakingFeedback | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -145,7 +158,7 @@ export function PracticeSpeakingSession({
 
   const activeSession = session;
   const { currentPrompt, profile, round } = activeSession;
-  const maxDurationSeconds = currentPrompt.maxDurationSeconds ?? 120;
+  const maxDurationSeconds = AI_SPEAKING_MAX_SECONDS;
 
   function getMicrophoneErrorMessage(err: unknown): string {
     if (err instanceof MicrophoneAccessError) {
@@ -197,10 +210,12 @@ export function PracticeSpeakingSession({
 
       timerRef.current = setInterval(() => {
         setDuration((d) => {
-          if (d + 1 >= maxDurationSeconds) {
+          const next = d + 1;
+          if (next >= maxDurationSeconds) {
             stopRecording();
+            return maxDurationSeconds;
           }
-          return d + 1;
+          return next;
         });
       }, 1000);
     } catch (err) {
@@ -240,6 +255,8 @@ export function PracticeSpeakingSession({
         } else {
           mascot?.cheerExerciseComplete();
         }
+      } else if (handleActionResult(result)) {
+        setError(result.error ?? null);
       } else {
         const message = result.error ?? "Không gửi được bài.";
         setError(message);
@@ -254,6 +271,7 @@ export function PracticeSpeakingSession({
     startContinueTransition(async () => {
       const result = await generatePracticePrompt(activeSession.profile, activeSession.previousPrompts);
       if (!result.success || !result.data) {
+        if (handleActionResult(result)) return;
         toast.error(result.error ?? "Không tạo được đề tiếp theo.");
         return;
       }
@@ -270,13 +288,17 @@ export function PracticeSpeakingSession({
 
   return (
     <StudentPageShell narrow>
+      {limitDialog}
       <div className="camba-section-stack gap-6">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <p className="camba-caption text-muted">{labels.round.replace("{n}", String(round))}</p>
-          <Button variant="ghost" size="sm" onClick={() => router.push(labels.setupPath)}>
+          <div className="flex items-center gap-2">
+            <AiUsageBadge aiUsage={aiUsage} labels={aiUsageLabels} />
+            <Button variant="ghost" size="sm" onClick={() => router.push(labels.setupPath)}>
             <RotateCcw className="h-4 w-4" />
             {labels.changeSetup}
           </Button>
+          </div>
         </div>
 
         <CambaCard variant="lesson" padding="md" className="space-y-4">
@@ -329,6 +351,12 @@ export function PracticeSpeakingSession({
         {!feedback ? (
           <CambaCard variant="elevated" padding="md" className="space-y-4">
             <div className="flex flex-col items-center gap-4 py-2">
+              <AiSpeakingCountdown
+                elapsedSeconds={duration}
+                maxSeconds={maxDurationSeconds}
+                isRecording={isRecording}
+                recordingLabel={labels.recording}
+              />
               <div
                 className={`h-20 w-20 rounded-full flex items-center justify-center ${
                   isRecording ? "bg-error/10 animate-pulse" : "bg-[var(--surface-sunken)]"
@@ -336,12 +364,6 @@ export function PracticeSpeakingSession({
               >
                 <Mic className={`h-8 w-8 ${isRecording ? "text-error" : "text-muted"}`} />
               </div>
-
-              {isRecording && (
-                <p className="text-sm text-error font-medium">
-                  {labels.recording} {duration}s / {maxDurationSeconds}s
-                </p>
-              )}
 
               {(isRecording || audioBlob) && (
                 <div className="w-full rounded-xl border border-border bg-[var(--surface-sunken)] p-3">

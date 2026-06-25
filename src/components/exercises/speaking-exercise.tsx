@@ -16,6 +16,8 @@ import {
 } from "@/lib/speech/request-microphone";
 import { toast } from "sonner";
 import type { SpeakingFeedback } from "@/types/ai";
+import { AiSpeakingCountdown } from "@/components/ai/ai-speaking-countdown";
+import { AI_SPEAKING_MAX_SECONDS } from "@/lib/ai/ai-input-limits";
 
 interface SpeakingExerciseProps {
   exerciseId: string;
@@ -25,7 +27,6 @@ interface SpeakingExerciseProps {
   prompt: string;
   followUpQuestions?: string[];
   pictureDescription?: string;
-  maxDurationSeconds?: number;
   targetLevel?: string;
   labels: {
     startRecording: string;
@@ -67,7 +68,6 @@ export function SpeakingExercise({
   prompt,
   followUpQuestions = [],
   pictureDescription,
-  maxDurationSeconds = 120,
   targetLevel,
   labels,
   onComplete,
@@ -76,6 +76,7 @@ export function SpeakingExercise({
 }: SpeakingExerciseProps) {
   const fmt = useLessonI18nFormatters();
   const tAi = useTranslations("learning.lesson.ai");
+  const maxDurationSeconds = AI_SPEAKING_MAX_SECONDS;
   const [feedback, setFeedback] = useState<SpeakingFeedback | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isRecording, setIsRecording] = useState(false);
@@ -147,10 +148,12 @@ export function SpeakingExercise({
 
       timerRef.current = setInterval(() => {
         setDuration((d) => {
-          if (d + 1 >= maxDurationSeconds) {
+          const next = d + 1;
+          if (next >= maxDurationSeconds) {
             stopRecording();
+            return maxDurationSeconds;
           }
-          return d + 1;
+          return next;
         });
       }, 1000);
     } catch (error) {
@@ -258,11 +261,12 @@ export function SpeakingExercise({
           <Mic className={`h-8 w-8 ${isRecording ? "text-error" : "text-muted"}`} />
         </div>
 
-        {isRecording && (
-          <p className="camba-body text-error font-medium">
-            {labels.recording} {duration}s / {maxDurationSeconds}s
-          </p>
-        )}
+        <AiSpeakingCountdown
+          elapsedSeconds={duration}
+          maxSeconds={maxDurationSeconds}
+          isRecording={isRecording}
+          recordingLabel={labels.recording}
+        />
 
         {audioBlob && !isRecording && (
           <p className="camba-body text-success">{fmt.recordedSuccess(duration)}</p>
