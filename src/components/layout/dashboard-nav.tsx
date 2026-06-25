@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/routing";
 import { signOut } from "@/actions/auth";
 import { Button } from "@/components/ui/button";
-import { PlacementPickerDialog } from "@/components/learning/placement-picker-dialog";
+import { cn } from "@/lib/utils";
 import {
   GraduationCap,
   LayoutDashboard,
@@ -21,19 +21,18 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import type { AuthUser } from "@/types";
-import type { PlacementTestSummary } from "@/types/learning";
 
 interface DashboardNavProps {
   user: AuthUser;
-  placementTests?: PlacementTestSummary[];
 }
 
 const navItems = [
   { href: "/dashboard", icon: LayoutDashboard, labelKey: "dashboard" as const },
   { href: "/journey", icon: Map, labelKey: "journey" as const },
-  { href: "/learning", icon: BookOpen, labelKey: "learningPath" as const },
+  { href: "/learning", icon: BookOpen, labelKey: "learningPath" as const, featured: true },
   { href: "/mock-tests", icon: FileText, labelKey: "mockTests" as const },
   { href: "/achievements", icon: Trophy, labelKey: "achievements" as const },
+  { href: "/placement-test", icon: ClipboardList, labelKey: "placementTest" as const },
   { href: "/profile", icon: UserCircle, labelKey: "profile" as const },
 ];
 
@@ -42,53 +41,52 @@ function NavLink({
   icon: Icon,
   label,
   isActive,
+  featured = false,
   onClick,
 }: {
   href?: string;
   icon: typeof LayoutDashboard;
   label: string;
   isActive: boolean;
+  featured?: boolean;
   onClick?: () => void;
 }) {
-  const className = `flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors min-h-[var(--touch-target-min)] md:min-h-0 md:py-2 ${
-    isActive ? "bg-primary/10 text-primary" : "text-gray-600 hover:bg-gray-100"
-  }`;
+  const className = cn(
+    "flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium transition-all min-h-[var(--touch-target-min)] md:min-h-0 md:py-2",
+    featured
+      ? cn(
+          "camba-gradient-program text-white font-semibold shadow-md hover:opacity-95",
+          isActive && "ring-2 ring-program/50 ring-offset-1 shadow-lg"
+        )
+      : cn(
+          isActive ? "bg-primary/10 text-primary" : "text-gray-600 hover:bg-gray-100"
+        )
+  );
+
+  const iconClassName = cn("h-4 w-4 shrink-0", featured && "text-white");
 
   if (href) {
     return (
       <Link href={href} className={className} onClick={onClick}>
-        <Icon className="h-4 w-4" />
-        {label}
+        <Icon className={iconClassName} />
+        <span className={featured ? "tracking-wide" : undefined}>{label}</span>
       </Link>
     );
   }
 
   return (
     <button type="button" className={className} onClick={onClick}>
-      <Icon className="h-4 w-4" />
-      {label}
+      <Icon className={iconClassName} />
+      <span className={featured ? "tracking-wide" : undefined}>{label}</span>
     </button>
   );
 }
 
-export function DashboardNav({ user, placementTests = [] }: DashboardNavProps) {
+export function DashboardNav({ user }: DashboardNavProps) {
   const t = useTranslations("nav");
-  const tp = useTranslations("placement");
   const tc = useTranslations("common");
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  const placementActive =
-    pathname === "/placement-test" || pathname.startsWith("/placement-test/");
-
-  const placementTrigger = (mobile?: boolean) => (
-    <NavLink
-      icon={ClipboardList}
-      label={t("placementTest")}
-      isActive={placementActive}
-      onClick={mobile ? () => setMobileOpen(false) : undefined}
-    />
-  );
 
   return (
     <>
@@ -120,23 +118,10 @@ export function DashboardNav({ user, placementTests = [] }: DashboardNavProps) {
                   icon={item.icon}
                   label={t(item.labelKey)}
                   isActive={isActive}
+                  featured={"featured" in item && item.featured}
                 />
               );
             })}
-            {placementTests.length > 0 && (
-              <PlacementPickerDialog
-                tests={placementTests}
-                labels={{
-                  title: tp("pickerTitle"),
-                  subtitle: tp("pickerSubtitle"),
-                  questions: tp("questions"),
-                  minutes: tp("minutes"),
-                  empty: tp("pickerEmpty"),
-                  close: tp("close"),
-                }}
-                trigger={placementTrigger()}
-              />
-            )}
           </nav>
 
           <div className="flex items-center gap-3">
@@ -167,24 +152,11 @@ export function DashboardNav({ user, placementTests = [] }: DashboardNavProps) {
                   icon={item.icon}
                   label={t(item.labelKey)}
                   isActive={isActive}
+                  featured={"featured" in item && item.featured}
                   onClick={() => setMobileOpen(false)}
                 />
               );
             })}
-            {placementTests.length > 0 && (
-              <PlacementPickerDialog
-                tests={placementTests}
-                labels={{
-                  title: tp("pickerTitle"),
-                  subtitle: tp("pickerSubtitle"),
-                  questions: tp("questions"),
-                  minutes: tp("minutes"),
-                  empty: tp("pickerEmpty"),
-                  close: tp("close"),
-                }}
-                trigger={placementTrigger(true)}
-              />
-            )}
           </nav>
         )}
       </header>
