@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getSepayConfig } from "@/lib/payments/sepay-config";
+import { getSepayConfig, assertSepayProductionReady, isProductionEnv } from "@/lib/payments/sepay-config";
 import { processSepayWebhook } from "@/lib/payments/subscription-payment";
 import {
   verifySepayApiKey,
@@ -11,6 +11,14 @@ export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 export async function POST(request: Request) {
+  try {
+    assertSepayProductionReady();
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "production_not_ready";
+    console.error("[sepay webhook]", message);
+    return NextResponse.json({ success: false, error: "production_not_ready" }, { status: 503 });
+  }
+
   const config = getSepayConfig();
   if (!config) {
     return NextResponse.json({ success: false, error: "not_configured" }, { status: 503 });
@@ -30,6 +38,10 @@ export async function POST(request: Request) {
   });
 
   if (!apiKeyOk || !hmacOk) {
+    return NextResponse.json({ success: false, error: "unauthorized" }, { status: 401 });
+  }
+
+  if (isProductionEnv() && !config.webhookApiKey) {
     return NextResponse.json({ success: false, error: "unauthorized" }, { status: 401 });
   }
 

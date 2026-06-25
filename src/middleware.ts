@@ -39,6 +39,10 @@ export async function middleware(request: NextRequest) {
     return supabaseResponse;
   }
 
+  if (pathname.startsWith("/api/")) {
+    return supabaseResponse;
+  }
+
   const locale = getLocaleFromPathname(pathname);
 
   const pathnameWithoutLocale = pathname.replace(/^\/(vi|en|zh|ja|ko)/, "") || "/";

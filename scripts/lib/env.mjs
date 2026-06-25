@@ -1,7 +1,8 @@
 import { readFileSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
 
-export function loadEnvFile(filePath) {
+export function loadEnvFile(filePath, options = {}) {
+  const { overwrite = false } = options;
   if (!existsSync(filePath)) return;
   const content = readFileSync(filePath, "utf8");
   for (const line of content.split("\n")) {
@@ -11,7 +12,9 @@ export function loadEnvFile(filePath) {
     if (sep === -1) continue;
     const key = trimmed.slice(0, sep).trim();
     const value = trimmed.slice(sep + 1).trim();
-    if (!process.env[key]) process.env[key] = value;
+    if (overwrite || process.env[key] == null || process.env[key] === "") {
+      process.env[key] = value;
+    }
   }
 }
 

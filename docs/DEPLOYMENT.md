@@ -26,9 +26,27 @@ supabase/migrations/007_parent_teacher.sql
 supabase/migrations/008_ielts_program.sql
 supabase/migrations/009_security_integrity.sql
 supabase/migrations/010_data_model_alignment.sql
+supabase/migrations/013_subscriptions.sql
+supabase/migrations/014_sepay_payments.sql
 ```
 
 Then run `supabase/seed.sql` for Cambridge program data (optional for production; use admin UI for custom content).
+
+### SePay Live (subscription payments)
+
+1. **SePay Dashboard → Live mode** (not Test mode). Link your real bank account (e.g. ACB `83993998`).
+2. **Company → Payment code**: prefix `CAMBA` (must match `SEPAY_PAYMENT_CODE_PREFIX`).
+3. **Webhooks → Create (Live)**:
+   - URL: `https://your-domain.vercel.app/api/webhooks/sepay`
+   - Event: incoming transfers only
+   - Bank account: your linked Live account
+   - Security: **API Key** — copy the key into Vercel as `SEPAY_WEBHOOK_API_KEY` (Live keys do not start with `spsk_test_`).
+4. Set `SEPAY_LIVE=true` in Production env.
+5. Local dev with real money: use ngrok (`npm run dev:sepay-ngrok`) and point the **Live** webhook URL to `https://xxxx.ngrok-free.dev/api/webhooks/sepay` temporarily.
+
+Run `npm run sepay:setup` locally to print the checklist and webhook URL.
+
+Do **not** use `npm run test:sepay-webhook` for real payments — it simulates webhooks. Real flow: user pays via VietQR on `/subscriptions`, SePay sends the webhook, plan activates automatically.
 
 ### Auth configuration
 
@@ -66,6 +84,14 @@ Copy from `.env.example` and set in **Vercel → Project → Settings → Enviro
 | `SUPABASE_SERVICE_ROLE_KEY` | Production only | Yes (server) |
 | `GOOGLE_GEMINI_API_KEY` | Production | Yes (AI features) |
 | `NEXT_PUBLIC_APP_URL` | Production, Preview | Yes |
+| `SEPAY_BANK_ACCOUNT` | Production | Yes (subscriptions) |
+| `SEPAY_BANK_NAME` | Production | Yes (subscriptions) |
+| `SEPAY_ACCOUNT_HOLDER` | Production | Recommended |
+| `SEPAY_PAYMENT_CODE_PREFIX` | Production | Yes (`CAMBA`) |
+| `SEPAY_WEBHOOK_API_KEY` | Production | Yes (Live webhook API key) |
+| `SEPAY_LIVE` | Production | Yes (`true`) |
+| `SEPAY_WEBHOOK_SECRET` | Production | Optional (HMAC) |
+| `SEPAY_QR_MEMO_PREFIX` | Production | Optional (some banks) |
 
 **Production example:**
 

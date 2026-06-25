@@ -2,7 +2,7 @@ import { randomBytes } from "node:crypto";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { buildSepayQrImageUrl, buildSepayTransferMemo } from "@/lib/payments/sepay-qr";
-import { requireSepayConfig } from "@/lib/payments/sepay-config";
+import { requireSepayConfig, normalizeBankAccount } from "@/lib/payments/sepay-config";
 import { getPlanPriceVnd } from "@/lib/subscriptions/subscription-catalog";
 import type {
   BillingPeriod,
@@ -225,6 +225,12 @@ export async function processSepayWebhook(payload: SepayWebhookPayload): Promise
 
   if (payload.transferAmount < order.amount_vnd) {
     return { handled: false, reason: "insufficient_amount" };
+  }
+
+  const expectedAccount = normalizeBankAccount(config.bankAccount);
+  const receivedAccount = normalizeBankAccount(payload.accountNumber ?? "");
+  if (expectedAccount && receivedAccount && expectedAccount !== receivedAccount) {
+    return { handled: false, reason: "account_mismatch" };
   }
 
   const paidAt = new Date().toISOString();
