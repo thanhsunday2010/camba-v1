@@ -116,12 +116,36 @@
   animation: camba-skeleton-shimmer 1.6s var(--ease-out) infinite;
 }
 
+@keyframes mascot-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes mascot-wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-4deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .camba-skeleton-shimmer,
   .camba-pulse-soft,
   .camba-streak-glow,
   .camba-badge-shine,
-  .camba-scale-in {
+  .camba-scale-in,
+  [class*="animate-[mascot-"] {
     animation: none !important;
   }
 }

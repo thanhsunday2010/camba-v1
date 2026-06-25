@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { submitMockTest } from "@/actions/mock-tests";
 import { useCelebrationOptional } from "@/components/camba/celebration/celebration-provider";
+import { useMascotOptional } from "@/components/mascot/mascot-provider";
 import { StudentPageShell } from "@/components/camba";
 import { MockTestPageShell } from "@/components/mock-tests/mock-test-page-shell";
 import { MockTestPlayer } from "@/components/mock-tests/mock-test-player";
@@ -40,6 +41,7 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
   const [startTime, setStartTime] = useState(() => Date.now());
   const [isPending, startTransition] = useTransition();
   const celebrate = useCelebrationOptional();
+  const mascot = useMascotOptional();
   const wasCompleteRef = useRef(false);
   const hydratedRef = useRef(false);
 
@@ -138,6 +140,9 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
           setQuestionResults(result.questionResults);
           setActiveReviewQuestionId(null);
           setIsReviewingTest(false);
+          const scorePercent =
+            result.maxScore > 0 ? (result.score / result.maxScore) * 100 : 0;
+          mascot?.cheerMockTestComplete(scorePercent);
         } else {
           toast.error(response.error ?? labels.take.submitFailed);
         }
@@ -147,7 +152,7 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
         );
       }
     });
-  }, [answers, labels.take.submitFailed, startTime, viewModel.id]);
+  }, [answers, labels.take.submitFailed, mascot, startTime, viewModel.id]);
 
   const enterReviewMode = useCallback(() => {
     setIsReviewingTest(true);

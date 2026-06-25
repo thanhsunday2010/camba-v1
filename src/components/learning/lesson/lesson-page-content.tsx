@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { deriveResolvedLessonProgress } from "@/lib/learning/lesson-ui-utils";
 import { useCelebrationOptional } from "@/components/camba/celebration/celebration-provider";
+import { useMascotOptional } from "@/components/mascot/mascot-provider";
 import type {
   AiExerciseLabels,
   LessonChromeLabels,
@@ -54,6 +55,7 @@ export function LessonPageContent({
   const [activeExerciseId, setActiveExerciseId] = useState<string | null>(null);
   const [isReviewingLesson, setIsReviewingLesson] = useState(false);
   const celebrate = useCelebrationOptional();
+  const mascot = useMascotOptional();
   const wasCompleteRef = useRef(false);
   const prevLessonCompleteRef = useRef(false);
 
@@ -74,9 +76,10 @@ export function LessonPageContent({
   useEffect(() => {
     if (resolvedProgress.isLessonCompleteResolved && !wasCompleteRef.current) {
       celebrate?.celebrateMission();
+      mascot?.cheerLessonComplete();
     }
     wasCompleteRef.current = resolvedProgress.isLessonCompleteResolved;
-  }, [resolvedProgress.isLessonCompleteResolved, celebrate]);
+  }, [resolvedProgress.isLessonCompleteResolved, celebrate, mascot]);
 
   useEffect(() => {
     const justCompleted =
@@ -106,13 +109,19 @@ export function LessonPageContent({
           next.set(exerciseId, meta.accuracyPercent!);
           return next;
         });
+
+        if (meta.accuracyPercent >= 75) {
+          mascot?.cheerHighScore(meta.accuracyPercent);
+        } else {
+          mascot?.cheerExerciseComplete();
+        }
       }
       setLastCompletedMeta({
         exerciseId,
         accuracyPercent: meta?.accuracyPercent,
       });
     },
-    []
+    [mascot]
   );
 
   const onPrimaryHeroAction = useCallback(() => {

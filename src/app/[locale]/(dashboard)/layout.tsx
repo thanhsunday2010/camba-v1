@@ -3,6 +3,7 @@ import { DashboardNav } from "@/components/layout/dashboard-nav";
 import { fetchActiveProgramContext } from "@/actions/programs";
 import { getUserGamification } from "@/lib/queries/user";
 import { CambridgeProgramTheme, CelebrationProvider } from "@/components/camba";
+import { MascotProvider } from "@/components/mascot";
 
 export const dynamic = "force-dynamic";
 
@@ -18,12 +19,14 @@ export default async function DashboardLayout({
 
   return (
     <CambridgeProgramTheme programSlug={programContext?.level?.slug}>
-      <CelebrationProvider>
-        <div className="min-h-screen bg-background camba-safe-x">
-          <DashboardNav user={user} />
-          <main className="max-w-7xl mx-auto px-4 py-4 sm:py-6 camba-min-w-0">{children}</main>
-        </div>
-      </CelebrationProvider>
+      <MascotProvider>
+        <CelebrationProvider>
+          <div className="min-h-screen bg-background camba-safe-x">
+            <DashboardNav user={user} />
+            <main className="max-w-7xl mx-auto px-4 py-4 sm:py-6 camba-min-w-0">{children}</main>
+          </div>
+        </CelebrationProvider>
+      </MascotProvider>
     </CambridgeProgramTheme>
   );
 }

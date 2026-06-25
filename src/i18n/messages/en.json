@@ -28,6 +28,35 @@
     "parentDashboard": "Parent",
     "teacherDashboard": "Teacher"
   },
+  "mascot": {
+    "loading": "Hold on a sec...",
+    "brand": "Camba",
+    "subtitle": "Smart rabbit",
+    "idle": "I'm Camba the rabbit — let's learn!",
+    "lessonComplete": [
+      "Awesome! Lesson complete!",
+      "Great job — I'm proud of you!",
+      "Another lesson conquered!"
+    ],
+    "exerciseComplete": [
+      "Nice work on that exercise!",
+      "Well done — keep it up!",
+      "I saw your effort!"
+    ],
+    "highScore": [
+      "{score}% — brilliant!",
+      "Wow {score}%! You nailed it!",
+      "{score}% — clever and sharp!"
+    ],
+    "mockComplete": [
+      "Mock test done! Check your results!",
+      "You finished the mock — great job!",
+      "Test complete — take a breather!"
+    ],
+    "levelUp": "Level {level}! You're getting stronger!",
+    "badge": "New badge: {name}!",
+    "xp": "+{amount} XP — nice!"
+  },
   "auth": {
     "login": "Log in",
     "register": "Sign up",

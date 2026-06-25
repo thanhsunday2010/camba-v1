@@ -7,6 +7,7 @@ import {
   MotionCelebrationProvider,
   useMotionCelebration,
 } from "@/components/camba/motion/motion-celebration-provider";
+import { useMascotOptional } from "@/components/mascot/mascot-provider";
 import {
   showBadgeEarnedToast,
   showLevelUpToast,
@@ -36,6 +37,7 @@ function CelebrationProviderInner({
   useModalsForMajorEvents = true,
 }: CelebrationProviderInnerProps) {
   const motionCelebration = useMotionCelebration();
+  const mascot = useMascotOptional();
   const [levelUpOpen, setLevelUpOpen] = useState(false);
   const [levelUpLevel, setLevelUpLevel] = useState(1);
   const [badgeOpen, setBadgeOpen] = useState(false);
@@ -46,33 +48,36 @@ function CelebrationProviderInner({
     (amount: number) => {
       showXpEarnedToast(amount, labels);
       motionCelebration?.showXpBurst(amount);
+      mascot?.cheerXp(amount);
     },
-    [labels, motionCelebration]
+    [labels, motionCelebration, mascot]
   );
 
   const celebrateLevelUp = useCallback(
     (level: number) => {
       showLevelUpToast(level, labels);
       motionCelebration?.showXpBurst(level * 10);
+      mascot?.cheerLevelUp(level);
       if (useModalsForMajorEvents) {
         setLevelUpLevel(level);
         setLevelUpOpen(true);
       }
     },
-    [labels, useModalsForMajorEvents, motionCelebration]
+    [labels, useModalsForMajorEvents, motionCelebration, mascot]
   );
 
   const celebrateBadge = useCallback(
     (name: string, description?: string) => {
       showBadgeEarnedToast(name, labels);
       motionCelebration?.showBadgeMoment(name, description);
+      mascot?.cheerBadge(name);
       if (useModalsForMajorEvents) {
         setBadgeName(name);
         setBadgeDescription(description);
         setBadgeOpen(true);
       }
     },
-    [labels, useModalsForMajorEvents, motionCelebration]
+    [labels, useModalsForMajorEvents, motionCelebration, mascot]
   );
 
   const celebrateMission = useCallback(() => {

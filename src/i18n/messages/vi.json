@@ -28,6 +28,35 @@
     "parentDashboard": "Phụ huynh",
     "teacherDashboard": "Giáo viên"
   },
+  "mascot": {
+    "loading": "Chờ mình chút nhé...",
+    "brand": "Camba",
+    "subtitle": "Thỏ thông minh",
+    "idle": "Mình là Thỏ Camba — học cùng nhau nha!",
+    "lessonComplete": [
+      "Giỏi quá! Xong bài học rồi!",
+      "Xuất sắc! Thỏ tự hào về con!",
+      "Một bài nữa chinh phục — đỉnh!"
+    ],
+    "exerciseComplete": [
+      "Hay lắm! Làm tốt bài tập rồi!",
+      "Khéo quá — tiếp tục phát huy nha!",
+      "Thỏ thấy con cố gắng đó!"
+    ],
+    "highScore": [
+      "{score}% — đỉnh của chóp!",
+      "Wow {score}%! Thỏ tin con làm được mà!",
+      "{score}% rồi — lém lỉnh mà giỏi!"
+    ],
+    "mockComplete": [
+      "Xong bài thi thử! Xem kết quả nè!",
+      "Hoàn thành mock test — giỏi lắm!",
+      "Thi xong rồi! Nghỉ tí rồi học tiếp nha!"
+    ],
+    "levelUp": "Level {level}! Con mạnh hơn rồi!",
+    "badge": "Huy hiệu mới: {name}!",
+    "xp": "+{amount} XP — lụm đi!"
+  },
   "auth": {
     "login": "Đăng nhập",
     "register": "Đăng ký",

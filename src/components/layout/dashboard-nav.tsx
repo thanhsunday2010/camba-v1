@@ -5,8 +5,8 @@ import { Link, usePathname } from "@/i18n/routing";
 import { signOut } from "@/actions/auth";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { MascotBrandLink } from "@/components/mascot";
 import {
-  GraduationCap,
   LayoutDashboard,
   BookOpen,
   FileText,
@@ -84,7 +84,6 @@ function NavLink({
 
 export function DashboardNav({ user }: DashboardNavProps) {
   const t = useTranslations("nav");
-  const tc = useTranslations("common");
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -102,10 +101,9 @@ export function DashboardNav({ user }: DashboardNavProps) {
             >
               {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
-            <Link href="/dashboard" className="flex items-center gap-2 text-primary">
-              <GraduationCap className="h-6 w-6" />
-              <span className="font-bold hidden sm:inline">{tc("appName")}</span>
-            </Link>
+            <div className="relative">
+              <MascotBrandLink />
+            </div>
           </div>
 
           <nav className="hidden md:flex items-center gap-1">
