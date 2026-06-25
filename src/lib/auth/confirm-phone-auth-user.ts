@@ -9,14 +9,20 @@ export function isEmailNotConfirmedError(error: {
   return error.code === "email_not_confirmed" || message.includes("email not confirmed");
 }
 
-async function resolvePhoneAuthUserId(
+async function resolveAuthUserId(
   identity: Extract<ResolvedAuthIdentity, { ok: true }>
 ): Promise<string | null> {
-  if (identity.method !== "phone") {
-    return null;
-  }
-
   const supabase = await createServiceClient();
+
+  if (identity.method === "email") {
+    const { data: byEmail } = await supabase
+      .from("profiles")
+      .select("id")
+      .eq("email", identity.authEmail)
+      .maybeSingle();
+
+    return byEmail?.id ?? null;
+  }
 
   if (identity.phone) {
     const { data: byPhone } = await supabase
@@ -51,11 +57,7 @@ export async function confirmPhoneAuthUser(userId: string): Promise<boolean> {
 export async function confirmPhoneAuthUserForIdentity(
   identity: Extract<ResolvedAuthIdentity, { ok: true }>
 ): Promise<boolean> {
-  if (identity.method !== "phone") {
-    return false;
-  }
-
-  const userId = await resolvePhoneAuthUserId(identity);
+  const userId = await resolveAuthUserId(identity);
   if (!userId) {
     return false;
   }

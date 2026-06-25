@@ -1294,6 +1294,88 @@
     "select": "Chọn",
     "unsupported": "Loại câu hỏi này sẽ được hỗ trợ trong phiên bản tiếp theo"
   },
+  "aiPractice": {
+    "start": "Luyện tập ngay",
+    "starting": "AI đang phân tích...",
+    "levelRequired": "Vui lòng chọn trình độ.",
+    "fields": {
+      "language": "Ngôn ngữ luyện tập",
+      "level": "Trình độ hiện tại",
+      "program": "Chương trình luyện tập"
+    },
+    "languages": {
+      "english": "Tiếng Anh",
+      "chinese": "Tiếng Trung (Giản thể)",
+      "french": "Tiếng Pháp",
+      "japanese": "Tiếng Nhật",
+      "korean": "Tiếng Hàn",
+      "german": "Tiếng Đức"
+    },
+    "programs": {
+      "general": "Giao tiếp thông thường",
+      "ielts": "Luyện thi IELTS",
+      "toeic": "Luyện thi TOEIC"
+    },
+    "dashboard": {
+      "title": "Luyện tập với AI",
+      "subtitle": "Chọn Speaking hoặc Writing — AI (Gemini) tạo đề và chấm sửa theo ngôn ngữ, trình độ và chương trình của bạn.",
+      "writingTitle": "Luyện tập Writing",
+      "writingDesc": "Viết bài theo đề AI, nhận phản hồi ngữ pháp, từ vựng và gợi ý bài mẫu.",
+      "speakingTitle": "Luyện tập Speaking",
+      "speakingDesc": "Ghi âm câu trả lời, AI chấm phát âm, độ trôi chảy và gợi ý cách trả lời.",
+      "start": "Bắt đầu",
+      "aiBadge": "Gemini AI"
+    },
+    "writing": {
+      "setupTitle": "Luyện tập Writing với AI",
+      "setupSubtitle": "Chọn ngôn ngữ, trình độ và chương trình — AI sẽ tạo đề bài phù hợp.",
+      "yourWriting": "Bài viết của bạn",
+      "minWordsError": "Bài viết cần ít nhất {min} từ."
+    },
+    "speaking": {
+      "setupTitle": "Luyện tập Speaking với AI",
+      "setupSubtitle": "Chọn ngôn ngữ, trình độ và chương trình — AI sẽ tạo câu hỏi phù hợp.",
+      "followUp": "Câu hỏi gợi ý thêm",
+      "startRecording": "Bắt đầu ghi âm",
+      "stopRecording": "Dừng ghi âm",
+      "noRecording": "Vui lòng ghi âm câu trả lời trước khi nộp.",
+      "recording": "Đang ghi",
+      "transcript": "Bản ghi tạm thời",
+      "transcriptPlaceholder": "Đang nghe...",
+      "transcriptUnsupported": "Trình duyệt không hỗ trợ nhận dạng giọng nói trực tiếp.",
+      "micAccessDenied": "Không có quyền truy cập micro. Hãy cho phép trong cài đặt trình duyệt.",
+      "micNotFound": "Không tìm thấy micro.",
+      "micInsecureContext": "Micro chỉ hoạt động trên HTTPS hoặc localhost.",
+      "micNotSupported": "Trình duyệt không hỗ trợ micro.",
+      "micRecorderUnsupported": "Trình duyệt không hỗ trợ ghi âm.",
+      "micUnknownError": "Không thể bật micro. Vui lòng thử lại."
+    },
+    "session": {
+      "round": "Lượt luyện tập {n}",
+      "analysis": "Phân tích AI",
+      "prompt": "Đề bài",
+      "instructions": "Hướng dẫn",
+      "submit": "Nộp bài",
+      "submitting": "AI đang chấm...",
+      "continue": "Tiếp tục luyện tập",
+      "continuing": "Đang tạo đề mới...",
+      "changeSetup": "Đổi cài đặt"
+    },
+    "feedback": {
+      "result": "Kết quả",
+      "estimatedLevel": "Trình độ ước lượng",
+      "grammar": "Ngữ pháp",
+      "vocabulary": "Từ vựng",
+      "coherence": "Mạch lạc",
+      "improvements": "Cần cải thiện",
+      "pronunciation": "Phát âm",
+      "fluency": "Độ trôi chảy",
+      "suggestions": "Gợi ý",
+      "overallScore": "Điểm tổng",
+      "modelAnswer": "Gợi ý câu trả lời mẫu",
+      "errorHighlights": "Lỗi cần sửa"
+    }
+  },
   "errors": {
     "title": "Đã xảy ra lỗi",
     "description": "Không thể tải trang. Vui lòng thử lại.",

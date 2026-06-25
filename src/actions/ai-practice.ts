@@ -1,0 +1,213 @@
+"use server";
+
+import { createClient } from "@/lib/supabase/server";
+import { generateJsonResponse, generateJsonWithAudio } from "@/lib/ai/gemini-client";
+import { parseGeminiJson } from "@/lib/ai/parse-feedback";
+import {
+  PRACTICE_PROMPT_SYSTEM,
+  PRACTICE_SPEAKING_FEEDBACK_SYSTEM,
+  PRACTICE_WRITING_FEEDBACK_SYSTEM,
+  buildPracticePromptRequest,
+  buildPracticeSpeakingFeedbackRequest,
+  buildPracticeWritingFeedbackRequest,
+} from "@/lib/ai/prompts/ai-practice";
+import { PracticeProfileSchema } from "@/lib/ai-practice/practice-types";
+import type { PracticeProfile } from "@/lib/ai-practice/practice-types";
+import {
+  PracticePromptSchema,
+  PracticeSpeakingFeedbackSchema,
+  PracticeWritingFeedbackSchema,
+} from "@/types/ai";
+import type {
+  PracticePromptResult,
+  PracticeSpeakingFeedback,
+  PracticeWritingFeedback,
+} from "@/types/ai";
+import { ZodError } from "zod";
+import type { ActionResult } from "@/types";
+import { saveAiFeedback } from "@/actions/ai/_shared";
+
+function mapAiPracticeError(error: unknown): string {
+  if (error instanceof ZodError) {
+    return "AI trả về dữ liệu không hợp lệ. Vui lòng thử lại.";
+  }
+  const message = error instanceof Error ? error.message : "AI processing failed";
+  if (message.includes("GOOGLE_GEMINI_API_KEY")) {
+    return "Chưa cấu hình API Gemini. Thêm GOOGLE_GEMINI_API_KEY vào môi trường.";
+  }
+  if (message.includes("timed out")) {
+    return "AI phản hồi quá lâu. Vui lòng thử lại.";
+  }
+  return message;
+}
+
+export async function generatePracticePrompt(
+  profileInput: PracticeProfile,
+  previousPrompts: string[] = []
+): Promise<ActionResult<PracticePromptResult>> {
+  const parsed = PracticeProfileSchema.safeParse(profileInput);
+  if (!parsed.success) {
+    return { success: false, error: "Thông tin luyện tập không hợp lệ." };
+  }
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return { success: false, error: "Unauthorized" };
+
+  try {
+    const rawJson = await generateJsonResponse(
+      PRACTICE_PROMPT_SYSTEM,
+      buildPracticePromptRequest(parsed.data, previousPrompts)
+    );
+    const prompt = parseGeminiJson(rawJson, PracticePromptSchema);
+    return { success: true, data: prompt };
+  } catch (error) {
+    return { success: false, error: mapAiPracticeError(error) };
+  }
+}
+
+export async function submitStandaloneWritingPractice(
+  profileInput: PracticeProfile,
+  prompt: string,
+  content: string
+): Promise<ActionResult<PracticeWritingFeedback>> {
+  const parsed = PracticeProfileSchema.safeParse(profileInput);
+  if (!parsed.success) {
+    return { success: false, error: "Thông tin luyện tập không hợp lệ." };
+  }
+
+  if (!content.trim()) {
+    return { success: false, error: "Nội dung bài viết không được để trống." };
+  }
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return { success: false, error: "Unauthorized" };
+
+  try {
+    const wordCount = content.split(/\s+/).filter(Boolean).length;
+
+    const { data: submission, error: subError } = await supabase
+      .from("writing_submissions")
+      .insert({
+        user_id: user.id,
+        exercise_id: null,
+        prompt,
+        content,
+        word_count: wordCount,
+      })
+      .select("id")
+      .single();
+
+    if (subError || !submission) {
+      return { success: false, error: subError?.message ?? "Failed to save submission" };
+    }
+
+    const rawJson = await generateJsonResponse(
+      PRACTICE_WRITING_FEEDBACK_SYSTEM,
+      buildPracticeWritingFeedbackRequest(parsed.data, prompt, content)
+    );
+
+    const feedback = parseGeminiJson(rawJson, PracticeWritingFeedbackSchema);
+
+    await saveAiFeedback({
+      feedbackType: "writing",
+      referenceType: "writing_submission",
+      referenceId: submission.id,
+      inputData: { profile: parsed.data, prompt, content, wordCount, standalone: true },
+      responseData: feedback as unknown as Record<string, unknown>,
+      shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
+    });
+
+    return { success: true, data: feedback };
+  } catch (error) {
+    return { success: false, error: mapAiPracticeError(error) };
+  }
+}
+
+export async function submitStandaloneSpeakingPractice(
+  profileInput: PracticeProfile,
+  prompt: string,
+  audioBase64: string,
+  mimeType: string,
+  durationSeconds: number
+): Promise<ActionResult<PracticeSpeakingFeedback>> {
+  const parsed = PracticeProfileSchema.safeParse(profileInput);
+  if (!parsed.success) {
+    return { success: false, error: "Thông tin luyện tập không hợp lệ." };
+  }
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return { success: false, error: "Unauthorized" };
+
+  try {
+    const filePath = `${user.id}/practice-${Date.now()}.webm`;
+    const audioBuffer = Buffer.from(audioBase64, "base64");
+
+    const { error: uploadError } = await supabase.storage
+      .from("speaking-audio")
+      .upload(filePath, audioBuffer, { contentType: mimeType, upsert: false });
+
+    let audioUrl = filePath;
+    if (!uploadError) {
+      const { data: signed, error: signError } = await supabase.storage
+        .from("speaking-audio")
+        .createSignedUrl(filePath, 60 * 60 * 24 * 7);
+
+      if (!signError && signed?.signedUrl) {
+        audioUrl = signed.signedUrl;
+      }
+    }
+
+    const rawJson = await generateJsonWithAudio(
+      PRACTICE_SPEAKING_FEEDBACK_SYSTEM,
+      buildPracticeSpeakingFeedbackRequest(parsed.data, prompt),
+      audioBase64,
+      mimeType
+    );
+
+    const feedback = parseGeminiJson(rawJson, PracticeSpeakingFeedbackSchema);
+
+    const { data: submission, error: subError } = await supabase
+      .from("speaking_submissions")
+      .insert({
+        user_id: user.id,
+        exercise_id: null,
+        prompt,
+        audio_url: audioUrl,
+        duration_seconds: durationSeconds,
+        transcript: feedback.transcript ?? "",
+      })
+      .select("id")
+      .single();
+
+    if (subError || !submission) {
+      return { success: false, error: subError?.message ?? "Failed to save submission" };
+    }
+
+    await saveAiFeedback({
+      feedbackType: "speaking",
+      referenceType: "speaking_submission",
+      referenceId: submission.id,
+      inputData: {
+        profile: parsed.data,
+        prompt,
+        durationSeconds,
+        standalone: true,
+      },
+      responseData: feedback as unknown as Record<string, unknown>,
+      shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
+    });
+
+    return { success: true, data: feedback };
+  } catch (error) {
+    return { success: false, error: mapAiPracticeError(error) };
+  }
+}

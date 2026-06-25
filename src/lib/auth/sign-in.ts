@@ -47,7 +47,7 @@ export async function resolveSignIn(
     password,
   });
 
-  if (error && identity.method === "phone" && isEmailNotConfirmedError(error)) {
+  if (error && isEmailNotConfirmedError(error)) {
     const confirmed = await confirmPhoneAuthUserForIdentity(identity);
     if (confirmed) {
       ({ error } = await supabase.auth.signInWithPassword({

@@ -16,6 +16,7 @@ const protectedRoutes = [
   "/settings",
   "/admin",
   "/placement-test",
+  "/practice",
   "/parent",
   "/teacher",
 ];

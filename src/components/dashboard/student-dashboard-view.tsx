@@ -11,6 +11,7 @@ import type { NextAchievementCardLabels } from "@/components/achievements/next-a
 import { DashboardSkillInsights } from "@/components/dashboard/dashboard-skill-insights";
 import { DashboardRecentActivity } from "@/components/dashboard/dashboard-recent-activity";
 import { DashboardJourneyPreview } from "@/components/dashboard/dashboard-journey-preview";
+import { DashboardAiPracticeSection } from "@/components/dashboard/dashboard-ai-practice-section";
 import { SectionHeader } from "@/components/camba/section-header";
 import { PlacementTestCTA } from "@/components/dashboard/placement-test-cta";
 import { ProgramPicker } from "@/components/programs/program-picker";
@@ -112,6 +113,16 @@ export interface StudentDashboardLabels {
     current: string;
   };
   skillLabels: Record<string, string>;
+  aiPractice: {
+    title: string;
+    subtitle: string;
+    writingTitle: string;
+    writingDesc: string;
+    speakingTitle: string;
+    speakingDesc: string;
+    start: string;
+    aiBadge: string;
+  };
 }
 
 interface StudentDashboardViewProps {
@@ -195,6 +206,10 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
           </AnimatedSection>
 
           <AnimatedSection staggerIndex={6}>
+            <DashboardAiPracticeSection labels={labels.aiPractice} />
+          </AnimatedSection>
+
+          <AnimatedSection staggerIndex={7}>
             <DashboardAchievementsSection
               recentUnlocked={data.achievements.recentUnlocked}
               nextAchievement={data.achievements.nextAchievement}
@@ -210,21 +225,21 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
             />
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={7}>
+          <AnimatedSection staggerIndex={8}>
             <DashboardSkillInsights
               insights={data.skillInsights}
               labels={labels.skillInsights}
             />
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={8}>
+          <AnimatedSection staggerIndex={9}>
             <DashboardRecentActivity
               items={data.recentActivity}
               labels={labels.recentActivity}
             />
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={9}>
+          <AnimatedSection staggerIndex={10}>
             <PlacementTestCTA
               title={labels.placement.title}
               description={labels.placement.description}

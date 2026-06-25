@@ -69,6 +69,29 @@ export const QuestionGeneratorSchema = z.object({
 
 export type WritingFeedback = z.infer<typeof WritingFeedbackSchema>;
 export type SpeakingFeedback = z.infer<typeof SpeakingFeedbackSchema>;
+
+export const PracticePromptSchema = z.object({
+  analysisSummary: z.string(),
+  prompt: z.string(),
+  instructions: z.string(),
+  minWords: z.number().optional(),
+  maxWords: z.number().optional(),
+  maxDurationSeconds: z.number().optional(),
+  followUpQuestions: z.array(z.string()).optional(),
+});
+
+export const PracticeWritingFeedbackSchema = WritingFeedbackSchema.extend({
+  modelAnswerSuggestion: z.string(),
+  errorHighlights: z.array(z.string()).optional(),
+});
+
+export const PracticeSpeakingFeedbackSchema = SpeakingFeedbackSchema.extend({
+  modelAnswerSuggestion: z.string(),
+});
+
+export type PracticePromptResult = z.infer<typeof PracticePromptSchema>;
+export type PracticeWritingFeedback = z.infer<typeof PracticeWritingFeedbackSchema>;
+export type PracticeSpeakingFeedback = z.infer<typeof PracticeSpeakingFeedbackSchema>;
 export type StudyCoachResponse = z.infer<typeof StudyCoachSchema>;
 export type QuestionGeneratorResponse = z.infer<typeof QuestionGeneratorSchema>;
 export type ShieldEstimate = z.infer<typeof ShieldEstimateSchema>;

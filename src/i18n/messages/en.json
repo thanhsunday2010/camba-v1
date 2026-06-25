@@ -1296,6 +1296,88 @@
     "select": "Select",
     "unsupported": "This question type will be supported in a future version"
   },
+  "aiPractice": {
+    "start": "Start practice",
+    "starting": "AI is analyzing...",
+    "levelRequired": "Please select your level.",
+    "fields": {
+      "language": "Practice language",
+      "level": "Current level",
+      "program": "Practice program"
+    },
+    "languages": {
+      "english": "English",
+      "chinese": "Chinese (Simplified)",
+      "french": "French",
+      "japanese": "Japanese",
+      "korean": "Korean",
+      "german": "German"
+    },
+    "programs": {
+      "general": "Everyday communication",
+      "ielts": "IELTS preparation",
+      "toeic": "TOEIC preparation"
+    },
+    "dashboard": {
+      "title": "AI practice",
+      "subtitle": "Choose Speaking or Writing — Gemini generates prompts and feedback matched to your language, level, and program.",
+      "writingTitle": "Writing practice",
+      "writingDesc": "Write to an AI prompt and get grammar, vocabulary, and model-answer feedback.",
+      "speakingTitle": "Speaking practice",
+      "speakingDesc": "Record your answer and get pronunciation, fluency, and model-response feedback.",
+      "start": "Get started",
+      "aiBadge": "Gemini AI"
+    },
+    "writing": {
+      "setupTitle": "AI Writing practice",
+      "setupSubtitle": "Pick language, level, and program — AI will generate a matching prompt.",
+      "yourWriting": "Your writing",
+      "minWordsError": "Write at least {min} words."
+    },
+    "speaking": {
+      "setupTitle": "AI Speaking practice",
+      "setupSubtitle": "Pick language, level, and program — AI will generate matching questions.",
+      "followUp": "Follow-up questions",
+      "startRecording": "Start recording",
+      "stopRecording": "Stop recording",
+      "noRecording": "Please record your answer before submitting.",
+      "recording": "Recording",
+      "transcript": "Live transcript",
+      "transcriptPlaceholder": "Listening...",
+      "transcriptUnsupported": "Live speech recognition is not supported in this browser.",
+      "micAccessDenied": "Microphone access denied. Allow it in browser settings.",
+      "micNotFound": "No microphone found.",
+      "micInsecureContext": "Microphone only works on HTTPS or localhost.",
+      "micNotSupported": "Microphone is not supported in this browser.",
+      "micRecorderUnsupported": "Audio recording is not supported in this browser.",
+      "micUnknownError": "Could not start the microphone. Please try again."
+    },
+    "session": {
+      "round": "Practice round {n}",
+      "analysis": "AI analysis",
+      "prompt": "Prompt",
+      "instructions": "Instructions",
+      "submit": "Submit",
+      "submitting": "AI is grading...",
+      "continue": "Continue practicing",
+      "continuing": "Generating next prompt...",
+      "changeSetup": "Change setup"
+    },
+    "feedback": {
+      "result": "Result",
+      "estimatedLevel": "Estimated level",
+      "grammar": "Grammar",
+      "vocabulary": "Vocabulary",
+      "coherence": "Coherence",
+      "improvements": "Areas to improve",
+      "pronunciation": "Pronunciation",
+      "fluency": "Fluency",
+      "suggestions": "Suggestions",
+      "overallScore": "Overall score",
+      "modelAnswer": "Suggested model answer",
+      "errorHighlights": "Errors to fix"
+    }
+  },
   "errors": {
     "title": "Something went wrong",
     "description": "We couldn't load this page. Please try again.",

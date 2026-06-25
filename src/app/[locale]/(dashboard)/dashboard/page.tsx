@@ -4,6 +4,7 @@ import { StudentDashboardView } from "@/components/dashboard/student-dashboard-v
 import { getStudentDashboardData } from "@/lib/dashboard/student-dashboard-data";
 import { buildMockTestPageLabels } from "@/lib/mock-tests/mock-test-labels";
 import { buildSharedAchievementLabels } from "@/lib/achievements/achievement-i18n";
+import { buildDashboardAiPracticeLabels } from "@/lib/ai-practice/practice-labels";
 
 export default async function DashboardPage() {
   const user = await getCurrentUser();
@@ -13,6 +14,7 @@ export default async function DashboardPage() {
   const ta = await getTranslations("ai");
   const tp = await getTranslations("programs");
   const taAch = await getTranslations("achievements");
+  const tap = await getTranslations("aiPractice");
   const mockLabels = await buildMockTestPageLabels();
   const achievementShared = buildSharedAchievementLabels(taAch);
 
@@ -186,6 +188,7 @@ export default async function DashboardPage() {
           writing: t("skillWriting"),
           speaking: t("skillSpeaking"),
         },
+        aiPractice: buildDashboardAiPracticeLabels((key) => tap(key)),
       }}
     />
   );

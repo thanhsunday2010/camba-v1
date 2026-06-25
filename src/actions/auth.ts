@@ -48,12 +48,16 @@ export async function signUp(formData: FormData): Promise<ActionResult<{ method:
     return { success: false, error: error.message };
   }
 
-  if (identity.phone && data.user) {
-    await confirmPhoneAuthUser(data.user.id);
-    await supabase.from("profiles").update({ phone: identity.phone }).eq("id", data.user.id);
+  if (data.user) {
+    if (identity.phone) {
+      await confirmPhoneAuthUser(data.user.id);
+      await supabase.from("profiles").update({ phone: identity.phone }).eq("id", data.user.id);
+    } else if (identity.method === "email") {
+      await confirmPhoneAuthUser(data.user.id);
+    }
   }
 
-  if (identity.method === "phone") {
+  if (identity.method === "phone" || identity.method === "email") {
     if (data.session) {
       revalidatePath("/", "layout");
       redirect(AUTH_PATHS.dashboard);
