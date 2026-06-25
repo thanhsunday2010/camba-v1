@@ -30,7 +30,7 @@ import {
 import { FutureGoalsCard, type FutureGoalsCardLabels } from "@/components/profile/future-goals-card";
 import type { AchievementShowcaseLabels } from "@/components/achievements/achievement-showcase";
 import type { NextAchievementCardLabels } from "@/components/achievements/next-achievement-card";
-import type { EvaluatedAchievement } from "@/lib/achievements/achievement-types";
+import type { AchievementItemLabels } from "@/lib/achievements/achievement-i18n";
 import type { CertificationPortfolio } from "@/lib/profile/student-profile-types";
 
 export type StudentProfileViewLabels = {
@@ -53,10 +53,7 @@ export type StudentProfileViewLabels = {
 interface StudentProfileViewProps {
   model: StudentPortfolioViewModel;
   labels: StudentProfileViewLabels;
-  resolveAchievementText: (achievement: EvaluatedAchievement) => {
-    title: string;
-    description: string;
-  };
+  achievementItemLabels: AchievementItemLabels;
   resolveCertificationTitle: (entry: CertificationPortfolio["entries"][number]) => string;
   resolveGoalTitle: (goalKey: string) => string;
   resolveGoalDescription: (goalKey: string) => string;
@@ -65,7 +62,7 @@ interface StudentProfileViewProps {
 export function StudentProfileView({
   model,
   labels,
-  resolveAchievementText,
+  achievementItemLabels,
   resolveCertificationTitle,
   resolveGoalTitle,
   resolveGoalDescription,
@@ -109,9 +106,9 @@ export function StudentProfileView({
       <AnimatedSection staggerIndex={6}>
         <ProfileAchievementSection
           achievements={model.achievements}
+          achievementItemLabels={achievementItemLabels}
           showcaseLabels={labels.achievements}
           nextLabels={labels.achievements.next}
-          resolveText={resolveAchievementText}
           rareTitle={labels.achievements.rareTitle}
           rareSubtitle={labels.achievements.rareSubtitle}
         />

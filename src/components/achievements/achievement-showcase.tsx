@@ -7,7 +7,7 @@ import { AchievementCard, type AchievementCardLabels } from "@/components/achiev
 import { AchievementDetailDialog, type AchievementDetailLabels } from "@/components/achievements/achievement-detail-dialog";
 import { DashboardEmptyState } from "@/components/dashboard/dashboard-empty-state";
 import { AnimatedAchievement } from "@/components/camba/motion";
-import type { EvaluatedAchievement } from "@/lib/achievements/achievement-types";
+import type { ResolvedEvaluatedAchievement } from "@/lib/achievements/achievement-types";
 import { Award, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -23,11 +23,10 @@ export type AchievementShowcaseLabels = AchievementCardLabels &
   };
 
 interface AchievementShowcaseProps {
-  achievements: EvaluatedAchievement[];
+  achievements: ResolvedEvaluatedAchievement[];
   unlockedCount: number;
   totalCount: number;
   labels: AchievementShowcaseLabels;
-  resolveText: (achievement: EvaluatedAchievement) => { title: string; description: string };
   maxVisible?: number;
   showViewAll?: boolean;
 }
@@ -37,11 +36,10 @@ export function AchievementShowcase({
   unlockedCount,
   totalCount,
   labels,
-  resolveText,
   maxVisible = 5,
   showViewAll = true,
 }: AchievementShowcaseProps) {
-  const [selected, setSelected] = useState<EvaluatedAchievement | null>(null);
+  const [selected, setSelected] = useState<ResolvedEvaluatedAchievement | null>(null);
   const visible = achievements.slice(0, maxVisible);
 
   return (
@@ -77,9 +75,7 @@ export function AchievementShowcase({
           role="list"
           aria-label={labels.title}
         >
-          {visible.map((achievement, index) => {
-            const text = resolveText(achievement);
-            return (
+          {visible.map((achievement, index) => (
               <AnimatedAchievement
                 key={achievement.id}
                 index={index}
@@ -88,22 +84,20 @@ export function AchievementShowcase({
               >
                 <AchievementCard
                   achievement={achievement}
-                  title={text.title}
-                  description={text.description}
+                  title={achievement.title}
+                  description={achievement.description}
                   labels={labels}
                   compact
                   onClick={() => setSelected(achievement)}
                 />
               </AnimatedAchievement>
-            );
-          })}
+            ))}
         </div>
       )}
 
       <AchievementDetailDialog
         achievement={selected}
         labels={labels}
-        resolveText={resolveText}
         open={selected != null}
         onOpenChange={(open) => !open && setSelected(null)}
       />

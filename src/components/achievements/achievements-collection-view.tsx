@@ -8,8 +8,7 @@ import { PortfolioLink } from "@/components/profile/portfolio-link";
 import type {
   AchievementCategory,
   AchievementRarity,
-  AchievementViewModel,
-  EvaluatedAchievement,
+  ResolvedAchievementViewModel,
 } from "@/lib/achievements/achievement-types";
 import { Award } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -34,20 +33,18 @@ type FilterStatus = "all" | "unlocked" | "locked";
 type FilterCategory = AchievementCategory | "all";
 
 interface AchievementsCollectionViewProps {
-  model: AchievementViewModel;
+  model: ResolvedAchievementViewModel;
   labels: AchievementsCollectionLabels;
-  resolveText: (achievement: EvaluatedAchievement) => { title: string; description: string };
 }
 
 export function AchievementsCollectionView({
   model,
   labels,
-  resolveText,
 }: AchievementsCollectionViewProps) {
   const [statusFilter, setStatusFilter] = useState<FilterStatus>("all");
   const [categoryFilter, setCategoryFilter] = useState<FilterCategory>("all");
   const [rarityFilter, setRarityFilter] = useState<AchievementRarity | "all">("all");
-  const [selected, setSelected] = useState<EvaluatedAchievement | null>(null);
+  const [selected, setSelected] = useState<ResolvedAchievementViewModel["achievements"][number] | null>(null);
 
   const filtered = useMemo(() => {
     return model.achievements.filter((a) => {
@@ -166,27 +163,23 @@ export function AchievementsCollectionView({
           role="list"
           aria-label={labels.pageTitle}
         >
-          {filtered.map((achievement) => {
-            const text = resolveText(achievement);
-            return (
+          {filtered.map((achievement) => (
               <div key={achievement.id} role="listitem">
                 <AchievementCard
                   achievement={achievement}
-                  title={text.title}
-                  description={text.description}
+                  title={achievement.title}
+                  description={achievement.description}
                   labels={labels}
                   onClick={() => setSelected(achievement)}
                 />
               </div>
-            );
-          })}
+            ))}
         </div>
       )}
 
       <AchievementDetailDialog
         achievement={selected}
         labels={labels}
-        resolveText={resolveText}
         open={selected != null}
         onOpenChange={(open) => !open && setSelected(null)}
       />

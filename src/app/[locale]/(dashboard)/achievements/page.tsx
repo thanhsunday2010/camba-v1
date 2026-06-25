@@ -8,7 +8,7 @@ import {
 } from "@/components/achievements/achievements-collection-view";
 import {
   buildSharedAchievementLabels,
-  resolveAchievementText,
+  resolveAchievementViewModel,
 } from "@/lib/achievements/achievement-i18n";
 import { AchievementUnlockNotifier } from "@/components/achievements/achievement-unlock-toast";
 
@@ -24,8 +24,7 @@ export default async function AchievementsPage() {
 
   const shared = buildSharedAchievementLabels(t);
   const items = shared.itemLabels;
-  const resolveText = (achievement: Parameters<typeof resolveAchievementText>[0]) =>
-    resolveAchievementText(achievement, items);
+  const resolvedModel = resolveAchievementViewModel(model, items);
 
   const labels: AchievementsCollectionLabels = {
     pageTitle: t("pageTitle"),
@@ -46,17 +45,15 @@ export default async function AchievementsPage() {
   return (
     <StudentPageShell narrow>
       <AchievementUnlockNotifier
-        unlockedAchievements={model.unlocked}
-        resolveTitle={(a) => resolveText(a).title}
+        unlockedAchievements={resolvedModel.unlocked}
         labels={{
           unlocked: t("toastUnlocked"),
           celebration: t("toastCelebration"),
         }}
       />
       <AchievementsCollectionView
-        model={model}
+        model={resolvedModel}
         labels={labels}
-        resolveText={resolveText}
       />
     </StudentPageShell>
   );

@@ -89,6 +89,11 @@ export type EvaluatedAchievement = {
   sortOrder: number;
 };
 
+export type ResolvedEvaluatedAchievement = EvaluatedAchievement & {
+  title: string;
+  description: string;
+};
+
 export type AchievementViewModel = {
   achievements: EvaluatedAchievement[];
   unlocked: EvaluatedAchievement[];
@@ -98,4 +103,16 @@ export type AchievementViewModel = {
   unlockedCount: number;
   totalCount: number;
   byCategory: Record<AchievementCategory, EvaluatedAchievement[]>;
+};
+
+export type ResolvedAchievementViewModel = Omit<
+  AchievementViewModel,
+  "achievements" | "unlocked" | "locked" | "recentUnlocked" | "nextAchievement" | "byCategory"
+> & {
+  achievements: ResolvedEvaluatedAchievement[];
+  unlocked: ResolvedEvaluatedAchievement[];
+  locked: ResolvedEvaluatedAchievement[];
+  recentUnlocked: ResolvedEvaluatedAchievement[];
+  nextAchievement: ResolvedEvaluatedAchievement | null;
+  byCategory: Record<AchievementCategory, ResolvedEvaluatedAchievement[]>;
 };

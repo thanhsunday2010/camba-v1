@@ -1,15 +1,58 @@
 import { ACTIVE_ACHIEVEMENT_DEFINITIONS } from "@/lib/achievements/achievement-definitions";
-import type { EvaluatedAchievement } from "@/lib/achievements/achievement-types";
+import type {
+  AchievementViewModel,
+  EvaluatedAchievement,
+  ResolvedAchievementViewModel,
+  ResolvedEvaluatedAchievement,
+} from "@/lib/achievements/achievement-types";
+
+export type AchievementItemLabels = Record<string, { title: string; description: string }>;
 
 export function resolveAchievementText(
   achievement: EvaluatedAchievement,
-  items: Record<string, { title: string; description: string }>
+  items: AchievementItemLabels
 ): { title: string; description: string } {
   const item = items[achievement.titleKey];
   if (item) return item;
   return {
     title: achievement.titleKey,
     description: achievement.descriptionKey,
+  };
+}
+
+export function withAchievementText(
+  achievement: EvaluatedAchievement,
+  items: AchievementItemLabels
+): ResolvedEvaluatedAchievement {
+  return { ...achievement, ...resolveAchievementText(achievement, items) };
+}
+
+export function withAchievementTexts(
+  achievements: EvaluatedAchievement[],
+  items: AchievementItemLabels
+): ResolvedEvaluatedAchievement[] {
+  return achievements.map((achievement) => withAchievementText(achievement, items));
+}
+
+export function resolveAchievementViewModel(
+  model: AchievementViewModel,
+  items: AchievementItemLabels
+): ResolvedAchievementViewModel {
+  return {
+    ...model,
+    achievements: withAchievementTexts(model.achievements, items),
+    unlocked: withAchievementTexts(model.unlocked, items),
+    locked: withAchievementTexts(model.locked, items),
+    recentUnlocked: withAchievementTexts(model.recentUnlocked, items),
+    nextAchievement: model.nextAchievement
+      ? withAchievementText(model.nextAchievement, items)
+      : null,
+    byCategory: Object.fromEntries(
+      Object.entries(model.byCategory).map(([category, achievements]) => [
+        category,
+        withAchievementTexts(achievements, items),
+      ])
+    ) as ResolvedAchievementViewModel["byCategory"],
   };
 }
 

@@ -3,7 +3,7 @@
 import { AchievementShowcase, type AchievementShowcaseLabels } from "@/components/achievements/achievement-showcase";
 import { NextAchievementCard, type NextAchievementCardLabels } from "@/components/achievements/next-achievement-card";
 import { AchievementUnlockNotifier } from "@/components/achievements/achievement-unlock-toast";
-import { resolveAchievementText } from "@/lib/achievements/achievement-i18n";
+import { withAchievementText, withAchievementTexts } from "@/lib/achievements/achievement-i18n";
 import type { EvaluatedAchievement } from "@/lib/achievements/achievement-types";
 
 interface DashboardAchievementsSectionProps {
@@ -27,22 +27,20 @@ export function DashboardAchievementsSection({
   nextLabels,
   toastLabels,
 }: DashboardAchievementsSectionProps) {
-  const resolveText = (achievement: EvaluatedAchievement) =>
-    resolveAchievementText(achievement, itemLabels);
+  const resolvedRecent = withAchievementTexts(recentUnlocked, itemLabels);
+  const resolvedNext = nextAchievement ? withAchievementText(nextAchievement, itemLabels) : null;
 
   return (
     <>
       <AchievementUnlockNotifier
-        unlockedAchievements={recentUnlocked}
-        resolveTitle={(a) => resolveText(a).title}
+        unlockedAchievements={resolvedRecent.filter((a) => a.unlocked)}
         labels={toastLabels}
       />
       <AchievementShowcase
-        achievements={recentUnlocked}
+        achievements={resolvedRecent}
         unlockedCount={unlockedCount}
         totalCount={totalCount}
         labels={showcaseLabels}
-        resolveText={resolveText}
         maxVisible={5}
       />
       <section aria-labelledby="next-achievement-heading" className="space-y-3">
@@ -50,9 +48,8 @@ export function DashboardAchievementsSection({
           {nextLabels.title}
         </h2>
         <NextAchievementCard
-          achievement={nextAchievement}
+          achievement={resolvedNext}
           labels={nextLabels}
-          resolveText={resolveText}
         />
       </section>
     </>

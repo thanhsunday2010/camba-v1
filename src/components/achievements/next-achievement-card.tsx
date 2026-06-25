@@ -1,7 +1,7 @@
 import { AchievementEmptyState } from "@/components/camba/empty-states";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { AchievementIcon, RARITY_STYLES } from "@/components/achievements/achievement-icon";
-import type { EvaluatedAchievement } from "@/lib/achievements/achievement-types";
+import type { ResolvedEvaluatedAchievement } from "@/lib/achievements/achievement-types";
 import { formatAchievementProgressMessage } from "@/lib/achievements/achievement-utils";
 import { Link } from "@/i18n/routing";
 import { Target } from "lucide-react";
@@ -19,15 +19,13 @@ export type NextAchievementCardLabels = {
 };
 
 interface NextAchievementCardProps {
-  achievement: EvaluatedAchievement | null;
+  achievement: ResolvedEvaluatedAchievement | null;
   labels: NextAchievementCardLabels;
-  resolveText: (achievement: EvaluatedAchievement) => { title: string; description: string };
 }
 
 export function NextAchievementCard({
   achievement,
   labels,
-  resolveText,
 }: NextAchievementCardProps) {
   if (!achievement) {
     return (
@@ -41,7 +39,6 @@ export function NextAchievementCard({
     );
   }
 
-  const text = resolveText(achievement);
   const styles = RARITY_STYLES[achievement.rarity];
   const progressMessage = formatAchievementProgressMessage(achievement, {
     remaining: labels.progressRemaining,
@@ -59,7 +56,7 @@ export function NextAchievementCard({
             <p className="camba-caption font-bold text-program uppercase tracking-wide">
               {labels.title}
             </p>
-            <p className="camba-h3 text-foreground mt-0.5">{text.title}</p>
+            <p className="camba-h3 text-foreground mt-0.5">{achievement.title}</p>
             <p className="camba-caption text-muted mt-1">{progressMessage}</p>
             <div
               className="mt-2 h-1.5 rounded-full bg-[var(--surface-sunken)] overflow-hidden max-w-xs"

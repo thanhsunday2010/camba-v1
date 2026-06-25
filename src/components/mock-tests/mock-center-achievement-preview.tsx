@@ -3,14 +3,14 @@
 import { Link } from "@/i18n/routing";
 import { NextAchievementCard, type NextAchievementCardLabels } from "@/components/achievements/next-achievement-card";
 import { AchievementCard, type AchievementCardLabels } from "@/components/achievements/achievement-card";
-import { resolveAchievementText } from "@/lib/achievements/achievement-i18n";
+import { withAchievementText, withAchievementTexts, type AchievementItemLabels } from "@/lib/achievements/achievement-i18n";
 import type { EvaluatedAchievement } from "@/lib/achievements/achievement-types";
 import { Award } from "lucide-react";
 
 interface MockCenterAchievementPreviewProps {
   recentUnlocked: EvaluatedAchievement[];
   nextAchievement: EvaluatedAchievement | null;
-  itemLabels: Record<string, { title: string; description: string }>;
+  itemLabels: AchievementItemLabels;
   cardLabels: AchievementCardLabels;
   nextLabels: NextAchievementCardLabels;
   labels: {
@@ -27,7 +27,8 @@ export function MockCenterAchievementPreview({
   nextLabels,
   labels,
 }: MockCenterAchievementPreviewProps) {
-  const resolveText = (a: EvaluatedAchievement) => resolveAchievementText(a, itemLabels);
+  const resolvedRecent = withAchievementTexts(recentUnlocked, itemLabels);
+  const resolvedNext = nextAchievement ? withAchievementText(nextAchievement, itemLabels) : null;
 
   return (
     <section aria-labelledby="mock-achievements-heading" className="space-y-4">
@@ -42,32 +43,28 @@ export function MockCenterAchievementPreview({
         <p className="camba-caption text-muted mt-1">{labels.subtitle}</p>
       </header>
 
-      {recentUnlocked.length > 0 && (
+      {resolvedRecent.length > 0 && (
         <div className="grid gap-3 sm:grid-cols-2" role="list">
-          {recentUnlocked.map((achievement) => {
-            const text = resolveText(achievement);
-            return (
+          {resolvedRecent.map((achievement) => (
               <div key={achievement.id} role="listitem">
                 <Link href="/achievements" className="block camba-focus-ring rounded-2xl">
                   <AchievementCard
                     achievement={achievement}
-                    title={text.title}
-                    description={text.description}
+                    title={achievement.title}
+                    description={achievement.description}
                     labels={cardLabels}
                     compact
                   />
                 </Link>
               </div>
-            );
-          })}
+            ))}
         </div>
       )}
 
-      {nextAchievement && (
+      {resolvedNext && (
         <NextAchievementCard
-          achievement={nextAchievement}
+          achievement={resolvedNext}
           labels={nextLabels}
-          resolveText={resolveText}
         />
       )}
     </section>

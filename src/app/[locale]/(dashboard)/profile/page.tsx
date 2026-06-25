@@ -6,7 +6,6 @@ import { StudentProfileView } from "@/components/profile/student-profile-view";
 import {
   buildAchievementItemLabels,
   buildSharedAchievementLabels,
-  resolveAchievementText,
 } from "@/lib/achievements/achievement-i18n";
 import { buildMockTestPageLabels } from "@/lib/mock-tests/mock-test-labels";
 
@@ -26,8 +25,6 @@ export default async function ProfilePage() {
 
   const achievementItems = buildAchievementItemLabels(ta);
   const achievementShared = buildSharedAchievementLabels(ta);
-  const resolveAchievement = (a: Parameters<typeof resolveAchievementText>[0]) =>
-    resolveAchievementText(a, achievementItems);
 
   const resolveMilestone = (titleKey: string) => {
     try {
@@ -56,7 +53,7 @@ export default async function ProfilePage() {
     <StudentPageShell narrow>
       <StudentProfileView
         model={model}
-        resolveAchievementText={resolveAchievement}
+        achievementItemLabels={achievementItems}
         resolveCertificationTitle={resolveCertTitle}
         resolveGoalTitle={resolveGoal}
         resolveGoalDescription={resolveGoal}

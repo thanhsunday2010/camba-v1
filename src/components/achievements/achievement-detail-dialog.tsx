@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dialog";
 import { AchievementIcon, AchievementRarityBadge, RARITY_STYLES } from "@/components/achievements/achievement-icon";
 import type { AchievementCardLabels } from "@/components/achievements/achievement-card";
-import type { EvaluatedAchievement, AchievementCategory } from "@/lib/achievements/achievement-types";
+import type { AchievementCategory, ResolvedEvaluatedAchievement } from "@/lib/achievements/achievement-types";
 import { formatAchievementProgressMessage } from "@/lib/achievements/achievement-utils";
 import { CheckCircle2, Lock } from "lucide-react";
 
@@ -25,9 +25,8 @@ export type AchievementDetailLabels = AchievementCardLabels & {
 };
 
 interface AchievementDetailDialogProps {
-  achievement: EvaluatedAchievement | null;
+  achievement: ResolvedEvaluatedAchievement | null;
   labels: AchievementDetailLabels;
-  resolveText: (achievement: EvaluatedAchievement) => { title: string; description: string };
   open: boolean;
   onOpenChange: (open: boolean) => void;
 }
@@ -35,15 +34,13 @@ interface AchievementDetailDialogProps {
 export function AchievementDetailDialog({
   achievement,
   labels,
-  resolveText,
   open,
   onOpenChange,
 }: AchievementDetailDialogProps) {
   if (!achievement) return null;
 
-  const text = resolveText(achievement);
-  const styles = RARITY_STYLES[achievement.rarity];
   const categoryLabel = labels.category[achievement.category] ?? achievement.category;
+  const styles = RARITY_STYLES[achievement.rarity];
   const progressMessage = formatAchievementProgressMessage(achievement, {
     remaining: labels.progressRemaining,
     complete: labels.progressComplete,
@@ -64,9 +61,9 @@ export function AchievementDetailDialog({
               )}
             </div>
             <div className="min-w-0 text-left">
-              <DialogTitle className="camba-h2">{text.title}</DialogTitle>
+              <DialogTitle className="camba-h2">{achievement.title}</DialogTitle>
               <DialogDescription className="camba-caption text-muted mt-1">
-                {text.description}
+                {achievement.description}
               </DialogDescription>
             </div>
           </div>
@@ -85,7 +82,7 @@ export function AchievementDetailDialog({
 
           <div className="rounded-xl border border-border/60 bg-[var(--surface-sunken)]/40 p-3 space-y-2">
             <p className="font-semibold text-foreground">{labels.unlockCondition}</p>
-            <p className="text-muted">{text.description}</p>
+            <p className="text-muted">{achievement.description}</p>
             {!achievement.unlocked && (
               <>
                 <p className="font-semibold text-foreground pt-1">{labels.progressLabel}</p>
