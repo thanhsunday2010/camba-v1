@@ -6,6 +6,7 @@ import { sanitizeRedirectPath, resolvePostAuthRedirect } from "@/lib/auth/redire
 import { withLocalePath } from "@/lib/auth/request-origin";
 import { DEFAULT_LOCALE } from "@/lib/constants";
 import { resolveAuthIdentity } from "@/lib/auth/identity";
+import { ensureUserBootstrap } from "@/lib/auth/provision-user";
 
 export type SignInSuccess = {
   ok: true;
@@ -49,6 +50,10 @@ export async function resolveSignIn(
   const {
     data: { user },
   } = await supabase.auth.getUser();
+
+  if (user) {
+    await ensureUserBootstrap(supabase, user.id);
+  }
 
   const roles = user
     ? ((await supabase.from("user_roles").select("role").eq("user_id", user.id)).data?.map(

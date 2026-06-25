@@ -12,7 +12,7 @@ export async function getUserGamification(
     .from("user_gamification")
     .select("*")
     .eq("user_id", userId)
-    .single();
+    .maybeSingle();
 
   return data;
 }
@@ -24,7 +24,7 @@ export async function getUserStreak(userId: string): Promise<UserStreak | null> 
     .from("user_streaks")
     .select("*")
     .eq("user_id", userId)
-    .single();
+    .maybeSingle();
 
   return data;
 }

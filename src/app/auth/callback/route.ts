@@ -94,6 +94,15 @@ export async function GET(request: NextRequest) {
     );
   }
 
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (user) {
+    const { ensureUserBootstrap } = await import("@/lib/auth/provision-user");
+    await ensureUserBootstrap(supabase, user.id);
+  }
+
   const redirectUrl = await resolvePostOAuthRedirect(supabase, origin, next);
   const response = NextResponse.redirect(redirectUrl);
   applyCookiesToResponse(response, pendingCookies);

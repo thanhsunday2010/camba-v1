@@ -1310,6 +1310,10 @@ export interface Database {
         Args: { code: string };
         Returns: string;
       };
+      ensure_user_bootstrap: {
+        Args: { p_user_id?: string };
+        Returns: undefined;
+      };
     };
     Enums: {
       user_role: UserRole;
