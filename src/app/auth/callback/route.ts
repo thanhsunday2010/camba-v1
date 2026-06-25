@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 import { getPublicEnv } from "@/lib/env";
+import { isGoogleAuthEnabled } from "@/lib/auth/google-auth-enabled";
 import { getDashboardPath } from "@/lib/auth/roles";
 import { sanitizeRedirectPath } from "@/lib/auth/redirect";
 import { withLocalePath } from "@/lib/auth/request-origin";
@@ -51,6 +52,10 @@ export async function GET(request: NextRequest) {
   const oauthError = requestUrl.searchParams.get("error");
   const origin = requestUrl.origin;
   const loginUrl = `${origin}${withLocalePath("/login", DEFAULT_LOCALE)}`;
+
+  if (!isGoogleAuthEnabled()) {
+    return NextResponse.redirect(`${loginUrl}?error=auth_callback_error`);
+  }
 
   if (oauthError) {
     return NextResponse.redirect(`${loginUrl}?error=${encodeURIComponent(oauthError)}`);

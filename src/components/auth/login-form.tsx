@@ -5,6 +5,7 @@ import { useFormStatus } from "react-dom";
 import { useTranslations } from "next-intl";
 import { loginAction, signInWithGoogle } from "@/actions/login";
 import { AuthMethodFields } from "@/components/auth/auth-method-fields";
+import { isGoogleAuthEnabled } from "@/lib/auth/google-auth-enabled";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -88,19 +89,23 @@ export function LoginForm({
         </Button>
       </form>
 
-      <div className="relative">
-        <div className="absolute inset-0 flex items-center">
-          <span className="w-full border-t border-gray-200" />
-        </div>
-        <div className="relative flex justify-center text-xs uppercase">
-          <span className="bg-white px-2 text-gray-500">{t("or")}</span>
-        </div>
-      </div>
+      {isGoogleAuthEnabled() && (
+        <>
+          <div className="relative">
+            <div className="absolute inset-0 flex items-center">
+              <span className="w-full border-t border-gray-200" />
+            </div>
+            <div className="relative flex justify-center text-xs uppercase">
+              <span className="bg-white px-2 text-gray-500">{t("or")}</span>
+            </div>
+          </div>
 
-      <form action={signInWithGoogle}>
-        {redirectPath && <input type="hidden" name="redirect" value={redirectPath} />}
-        <GoogleSignInButton />
-      </form>
+          <form action={signInWithGoogle}>
+            {redirectPath && <input type="hidden" name="redirect" value={redirectPath} />}
+            <GoogleSignInButton />
+          </form>
+        </>
+      )}
 
       <p className="text-center text-sm text-gray-600">
         {t("noAccount")}{" "}

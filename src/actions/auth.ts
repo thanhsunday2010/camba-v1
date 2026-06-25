@@ -6,6 +6,7 @@ import { createClient } from "@/lib/supabase/server";
 import type { ActionResult } from "@/types";
 import { DEFAULT_LOCALE } from "@/lib/constants";
 import { getAuthCallbackUrl } from "@/lib/auth/request-origin";
+import { isGoogleAuthEnabled } from "@/lib/auth/google-auth-enabled";
 import { signInWithGoogleOAuth } from "@/lib/auth/google-oauth";
 import { resolveSignIn } from "@/lib/auth/sign-in";
 import { resolveAuthIdentity } from "@/lib/auth/identity";
@@ -80,6 +81,10 @@ export async function signIn(formData: FormData): Promise<ActionResult> {
 }
 
 export async function signInWithGoogle(formData: FormData): Promise<void> {
+  if (!isGoogleAuthEnabled()) {
+    redirect(AUTH_PATHS.login);
+  }
+
   const nextPath = formData.get("redirect") as string | null;
   const supabase = await createClient();
   await signInWithGoogleOAuth(supabase, { loginPath: AUTH_PATHS.login, nextPath });

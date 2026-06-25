@@ -16,8 +16,10 @@ describe("auth identity", () => {
   });
 
   it("maps phone to internal auth email", () => {
-    expect(phoneToAuthEmail("84901234567")).toBe("84901234567@phone.camba.app");
+    expect(phoneToAuthEmail("84901234567")).toBe("phone+84901234567@camba.app");
+    expect(isAuthEmailAddress("phone+84901234567@camba.app")).toBe(true);
     expect(isAuthEmailAddress("84901234567@phone.camba.app")).toBe(true);
+    expect(isAuthEmailAddress("student@example.com")).toBe(false);
   });
 
   it("formats phone for display", () => {
@@ -31,7 +33,7 @@ describe("auth identity", () => {
     expect(result.ok).toBe(true);
     if (result.ok) {
       expect(result.method).toBe("phone");
-      expect(result.authEmail).toBe("84901234567@phone.camba.app");
+      expect(result.authEmail).toBe("phone+84901234567@camba.app");
       expect(result.phone).toBe("84901234567");
     }
   });

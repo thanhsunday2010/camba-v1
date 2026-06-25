@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { resolveSignIn } from "@/lib/auth/sign-in";
+import { isGoogleAuthEnabled } from "@/lib/auth/google-auth-enabled";
 import { signInWithGoogleOAuth } from "@/lib/auth/google-oauth";
 import { DEFAULT_LOCALE } from "@/lib/constants";
 import type { ActionResult } from "@/types";
@@ -24,6 +25,10 @@ export async function loginAction(
 }
 
 export async function signInWithGoogle(formData: FormData): Promise<void> {
+  if (!isGoogleAuthEnabled()) {
+    redirect(`/${DEFAULT_LOCALE}/login`);
+  }
+
   const nextPath = formData.get("redirect") as string | null;
   const supabase = await createClient();
   await signInWithGoogleOAuth(supabase, {
