@@ -27,7 +27,7 @@ export function TeacherNav({ user }: TeacherNavProps) {
         <nav className="flex items-center gap-1">
           <Link
             href="/teacher"
-            className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium ${
+            className={`flex items-center gap-2 px-3 py-2 rounded-lg camba-ui-sm font-medium ${
               pathname === "/teacher" || pathname.startsWith("/teacher/")
                 ? "bg-primary/10 text-primary"
                 : "text-gray-600 hover:bg-gray-100"
@@ -39,7 +39,7 @@ export function TeacherNav({ user }: TeacherNavProps) {
         </nav>
 
         <div className="flex items-center gap-3">
-          <span className="text-sm text-gray-600 hidden sm:inline truncate max-w-[120px]">
+          <span className="camba-ui-sm text-gray-600 hidden sm:inline truncate max-w-[120px]">
             {user.fullName || user.email}
           </span>
           <Link href="/settings">

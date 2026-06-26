@@ -50,7 +50,7 @@ function NavLink({
   onClick?: () => void;
 }) {
   const className = cn(
-    "flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium transition-all min-h-[var(--touch-target-min)] md:min-h-0 md:py-2",
+    "flex items-center gap-2 px-3 py-2.5 rounded-lg camba-ui-sm font-medium transition-all min-h-[var(--touch-target-min)] md:min-h-0 md:py-2",
     isActive
       ? "camba-gradient-program text-white font-semibold shadow-md ring-2 ring-program/50 ring-offset-1"
       : featured
@@ -125,7 +125,7 @@ export function DashboardNav({ user }: DashboardNavProps) {
           </nav>
 
           <div className="flex items-center gap-3">
-            <span className="text-sm text-gray-600 hidden sm:inline truncate max-w-[120px]">
+            <span className="camba-ui-sm text-gray-600 hidden sm:inline truncate max-w-[120px]">
               {user.fullName || user.email}
             </span>
             <Link href="/settings">

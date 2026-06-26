@@ -44,8 +44,8 @@ export const TYPOGRAPHY_TOKENS = {
   h1: { size: "1.5rem", weight: 700, lineHeight: 1.25 },
   h2: { size: "1.25rem", weight: 700, lineHeight: 1.3 },
   h3: { size: "1.125rem", weight: 600, lineHeight: 1.35 },
-  body: { size: "0.9375rem", weight: 400, lineHeight: 1.5 },
-  caption: { size: "0.8125rem", weight: 500, lineHeight: 1.4 },
+  body: { size: "1rem", weight: 400, lineHeight: 1.5 },
+  caption: { size: "0.875rem", weight: 500, lineHeight: 1.4 },
   stat: { size: "1.75rem", weight: 800, lineHeight: 1.1 },
 } as const;
 
