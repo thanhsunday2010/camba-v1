@@ -92,6 +92,7 @@
     "invalidCredentials": "Incorrect phone/email or password",
     "authCallbackError": "Google sign-in failed. Please try again.",
     "phoneInvalid": "Enter a valid phone number (e.g. 0901234567)",
+    "phoneDisabled": "Phone sign-in is disabled. Use email or Google instead.",
     "phoneRegisterSuccess": "Account created. Sign in with your phone number and password.",
     "emailRequired": "Email is required",
     "passwordRequired": "Password is required",
@@ -200,6 +201,9 @@
     "hubTabOverview": "Overview",
     "hubTabAchievements": "Achievements",
     "hubTabProfile": "Profile",
+    "sectionExpand": "Expand section",
+    "sectionCollapse": "Collapse section",
+    "progressStripLabel": "Progress and mock tests",
     "viewPortfolio": "View portfolio",
     "progressingThrough": "You are progressing through Cambridge {level}.",
     "currentStreakLabel": "Current streak: {count} days",
@@ -898,6 +902,20 @@
         "multipleChoice": "Multiple choice",
         "multiSelect": "Multi-select",
         "sentenceOrdering": "Sentence ordering"
+      },
+      "vocabulary": {
+        "openBank": "Vocabulary list",
+        "title": "Lesson vocabulary",
+        "description": "Words in «{lesson}».",
+        "colIndex": "No.",
+        "colWord": "Word (EN) · Meaning (VI)",
+        "colExample": "Example (EN) · Translation (VI)",
+        "colIpa": "IPA",
+        "colPronunciation": "Pronunciation",
+        "pronounceUs": "US English: {word}",
+        "pronounceUk": "UK English: {word}",
+        "exampleMissing": "—",
+        "unsupportedSpeech": "Speech is not supported in this browser. You can still browse the vocabulary table."
       },
       "ai": {
         "placeholder": "Write your answer here...",

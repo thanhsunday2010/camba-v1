@@ -16,6 +16,8 @@ import { LearningLevelSwitcher } from "@/components/learning/learning-level-swit
 import { StudentPageShell } from "@/components/camba";
 import { fetchActiveProgramContext, fetchLevelsForProgram } from "@/actions/programs";
 import { isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
+import { buildDashboardAiPracticeLabels, buildPracticeHistoryLabels } from "@/lib/ai-practice/practice-labels";
+import { getPracticeDashboardSummaries } from "@/lib/ai-practice/practice-history";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
 import type { UnitVisualState } from "@/lib/learning/path-ui-utils";
 import { BookOpen, Map } from "lucide-react";
@@ -29,6 +31,7 @@ export default async function LearningPage() {
   const tm = await getTranslations("mastery");
   const td = await getTranslations("dashboard");
   const ta = await getTranslations("ai");
+  const tap = await getTranslations("aiPractice");
 
   const gamification = await getUserGamification(user.id);
   const programContext = await fetchActiveProgramContext(gamification);
@@ -104,10 +107,11 @@ export default async function LearningPage() {
 
   await initializeLessonUnlocks(user.id, levelId);
 
-  const [path, nextLesson, skillProgress] = await Promise.all([
+  const [path, nextLesson, skillProgress, practiceSummaries] = await Promise.all([
     getLearningPath(user.id, levelId),
     getNextLessonContext(user.id, levelId),
     getSkillProgressSnapshot(user.id, levelId),
+    getPracticeDashboardSummaries(),
   ]);
 
   if (!path) {
@@ -125,6 +129,8 @@ export default async function LearningPage() {
   const objectiveText = nextLesson
     ? t("objectiveNextLesson", { lesson: nextLesson.title })
     : t("objectiveExplore");
+
+  const practiceHistoryLabels = buildPracticeHistoryLabels((key) => tap(key));
 
   return (
     <LearningPathView
@@ -204,6 +210,12 @@ export default async function LearningPage() {
           sectionSubtitle: t("journeySubtitle"),
         },
         unlockAllBanner: t("unlockAllBanner"),
+      }}
+      aiPractice={{
+        labels: buildDashboardAiPracticeLabels((key) => tap(key)),
+        writingSummary: practiceSummaries.writing,
+        speakingSummary: practiceSummaries.speaking,
+        historyLabels: practiceHistoryLabels,
       }}
     />
   );

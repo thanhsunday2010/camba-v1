@@ -1,4 +1,5 @@
 import type { PublicQuestion, Question } from "@/types/learning";
+import { resolveQuestionChoices } from "@/lib/learning/question-choices";
 
 const SENSITIVE_CONTENT_KEYS = [
   "correctAnswers",
@@ -11,6 +12,13 @@ export function sanitizeQuestionForClient(question: Question): PublicQuestion {
   for (const key of SENSITIVE_CONTENT_KEYS) {
     delete content[key];
   }
+
+  const resolvedChoices = resolveQuestionChoices(
+    question.id,
+    question.choices,
+    question.content
+  );
+  delete content.choices;
 
   const pairs = question.pairs?.map(({ id, question_id, left_text, sort_order }) => ({
     id,
@@ -27,7 +35,7 @@ export function sanitizeQuestionForClient(question: Question): PublicQuestion {
   return {
     ...question,
     content,
-    choices: question.choices?.map((choice) => ({
+    choices: resolvedChoices.map((choice) => ({
       id: choice.id,
       question_id: choice.question_id,
       text: choice.text,

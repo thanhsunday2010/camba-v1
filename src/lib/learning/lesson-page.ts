@@ -5,6 +5,7 @@ import {
   getNextUnlockedLessonFast,
 } from "@/lib/queries/learning";
 import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
+import { parseVocabularyBank, type VocabularyWord } from "@/lib/learning/vocabulary-bank";
 import {
   getExerciseUiState,
   getPersistedCompletedExerciseIds,
@@ -143,6 +144,20 @@ function groupAttemptsByExercise(
   return map;
 }
 
+async function fetchUnitVocabularyBank(unitId: string | null | undefined): Promise<VocabularyWord[]> {
+  if (!unitId) return [];
+
+  const supabase = await createClient();
+  const { data: unit } = await supabase
+    .from("units")
+    .select("metadata")
+    .eq("id", unitId)
+    .maybeSingle();
+
+  const metadata = (unit?.metadata as Record<string, unknown> | null) ?? null;
+  return parseVocabularyBank(metadata?.vocabularyBank);
+}
+
 function buildExerciseSummaries(
   exercises: Exercise[],
   attemptsByExercise: Map<string, ExerciseAttemptRow[]>
@@ -190,6 +205,10 @@ export async function getLessonPageViewModel(
   const attemptsByExercise = groupAttemptsByExercise(attempts);
   const exerciseSummaries = buildExerciseSummaries(exercises, attemptsByExercise);
   const completedExerciseIds = getPersistedCompletedExerciseIds(exerciseSummaries);
+  const vocabularyBank =
+    context.skillSlug === "vocabulary"
+      ? await fetchUnitVocabularyBank(context.unitId ?? lesson.unit_id)
+      : [];
 
   const progress = {
     isUnlocked: isLessonUnlockedFromProgress(progressRow),
@@ -228,5 +247,6 @@ export async function getLessonPageViewModel(
     completedExerciseIds,
     nextSuggestedExerciseId: initialResolved.nextSuggestedExerciseId,
     nextPathLesson,
+    vocabularyBank,
   };
 }

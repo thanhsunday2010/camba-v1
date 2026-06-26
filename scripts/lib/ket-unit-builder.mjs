@@ -160,6 +160,7 @@ export function buildVocabWord({
   partOfSpeech,
   vietnameseMeaning,
   exampleSentence,
+  exampleTranslation,
   difficulty = 1,
   topic,
 }) {
@@ -169,6 +170,7 @@ export function buildVocabWord({
     partOfSpeech,
     vietnameseMeaning,
     exampleSentence,
+    ...(exampleTranslation ? { exampleTranslation } : {}),
     difficulty,
     topic,
     programLevel: LEVEL,

@@ -51,6 +51,11 @@ export async function storeSpeakingAudioSubmission(input: {
     .upload(audioRef, buffer, { contentType: mimeType, upsert: false });
 
   if (uploadError) {
+    if (uploadError.message.toLowerCase().includes("bucket not found")) {
+      throw new Error(
+        "Speaking storage is not configured. Run `npm run ensure:storage-buckets` or apply Supabase migration 005."
+      );
+    }
     throw new Error(uploadError.message);
   }
 

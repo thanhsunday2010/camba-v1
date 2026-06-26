@@ -34,6 +34,7 @@ interface LessonPageShellProps {
   onPrimaryHeroAction?: () => void;
   onReviewLesson?: () => void;
   onOpenReviewExercise?: (exerciseId: string) => void;
+  onOpenVocabularyBank?: () => void;
   children: ReactNode;
   className?: string;
 }
@@ -52,6 +53,7 @@ export function LessonPageShell({
   onPrimaryHeroAction,
   onReviewLesson,
   onOpenReviewExercise,
+  onOpenVocabularyBank,
   children,
   className,
 }: LessonPageShellProps) {
@@ -116,6 +118,7 @@ export function LessonPageShell({
         isReviewingLesson={isReviewingLesson}
         isCompleteMode={showCompleteLayer}
         onPrimaryAction={onPrimaryHeroAction}
+        onOpenVocabularyBank={onOpenVocabularyBank}
         labels={{
           estimatedMinutes: labels.estimatedMinutes,
           unitLabel: labels.unitLabel,
@@ -123,6 +126,7 @@ export function LessonPageShell({
           retryLesson: labels.retryLesson,
           reviewLesson: labels.reviewLesson,
           heroContinueHint: labels.heroContinueHint,
+          openVocabularyBank: labels.openVocabularyBank,
           stateLabels: labels.stateLabels,
         }}
       />

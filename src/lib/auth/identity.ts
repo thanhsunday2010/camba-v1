@@ -73,29 +73,18 @@ export function formatPhoneForDisplay(phoneDigits: string): string {
 
 export type ResolvedAuthIdentity =
   | { ok: true; method: AuthMethod; authEmail: string; phone: string | null; contactEmail: string | null }
-  | { ok: false; errorKey: "phoneInvalid" | "emailRequired" };
+  | { ok: false; errorKey: "phoneInvalid" | "emailRequired" | "phoneDisabled" };
 
 export function resolveAuthIdentity(formData: FormData): ResolvedAuthIdentity {
-  const method = (formData.get("authMethod") as AuthMethod | null) ?? "phone";
+  const method = (formData.get("authMethod") as AuthMethod | null) ?? "email";
 
-  if (method === "email") {
-    const contactEmail = (formData.get("email") as string | null)?.trim().toLowerCase() ?? "";
-    if (!contactEmail) {
-      return { ok: false, errorKey: "emailRequired" };
-    }
-    return { ok: true, method, authEmail: contactEmail, phone: null, contactEmail };
+  if (method === "phone") {
+    return { ok: false, errorKey: "phoneDisabled" };
   }
 
-  const phone = normalizePhoneNumber((formData.get("phone") as string | null) ?? "");
-  if (!phone) {
-    return { ok: false, errorKey: "phoneInvalid" };
+  const contactEmail = (formData.get("email") as string | null)?.trim().toLowerCase() ?? "";
+  if (!contactEmail) {
+    return { ok: false, errorKey: "emailRequired" };
   }
-
-  return {
-    ok: true,
-    method,
-    authEmail: phoneToAuthEmail(phone),
-    phone,
-    contactEmail: null,
-  };
+  return { ok: true, method: "email", authEmail: contactEmail, phone: null, contactEmail };
 }

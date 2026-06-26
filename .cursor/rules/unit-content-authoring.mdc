@@ -44,7 +44,32 @@ Skill order: `vocabulary` → `grammar` → `reading` → `listening` → `writi
 
 | Skill | Must include |
 |-------|--------------|
-| **vocabulary** | ~12+ words in `vocabularyBank`; **3 lessons × 5 exercises** each |
+| **vocabulary** | ~12+ words in `vocabularyBank`; **3 lessons × 5 exercises** each; each word must power the in-app vocabulary popup (see below) |
+
+### Vocabulary lesson popup (runtime UI)
+
+When a learner opens any **vocabulary** lesson, CAMBA shows a popup table sourced from `vocabularyBank` (stored in the vocabulary unit’s `metadata` via seed).
+
+Each `vocabularyBank` entry **must** include:
+
+| Field | Required | Notes |
+|-------|----------|-------|
+| `word` | yes | English headword |
+| `vietnameseMeaning` | yes | Vietnamese gloss |
+| `ipa` | yes | IPA transcription, e.g. `/ˈfɑːðə(r)/` |
+| `exampleSentence` | yes | Short English example at level |
+| `exampleTranslation` | yes | Vietnamese translation of the example |
+| `partOfSpeech` | recommended | noun, verb, adjective, … |
+| `difficulty`, `topic`, `qualityScores` | yes | Same as existing bank rules |
+
+Authoring checklist for vocabulary popup:
+
+- Example sentence must use the target word naturally (Starters: ≤ 8 words where possible).
+- `exampleTranslation` must match `exampleSentence` meaning — not a duplicate of `vietnameseMeaning` unless the example is definitional.
+- IPA must match the headword (British-style IPA is fine; UI offers both US and UK speech).
+- All words in the unit bank appear in the popup for every vocabulary lesson in that unit.
+
+Use `buildVocabWord({ word, ipa, partOfSpeech, vietnameseMeaning, exampleSentence, exampleTranslation, … })` in blueprints so new units stay consistent.
 | **grammar** | Items in `grammarReference` with `commonMistakes`; **3 lessons × 5 exercises** |
 | **reading** | Passage(s) with `wordCount`, `imagePrompt`; **3 lessons × 5 exercises** |
 | **listening** | Script(s) with `speakers`, `lines`; **3 lessons × 5 exercises**; run `npm run generate:listening-audio` |

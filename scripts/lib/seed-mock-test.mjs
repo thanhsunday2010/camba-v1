@@ -25,6 +25,14 @@ function buildQuestionContent(q, mockContext) {
     base.vocabularyTopics = q.vocabularyTopics;
   }
 
+  if (q.choices?.length) {
+    base.choices = q.choices.map((c, i) => ({
+      text: c.text,
+      sortOrder: c.sortOrder ?? i,
+      ...(c.mediaUrl != null ? { mediaUrl: c.mediaUrl } : {}),
+    }));
+  }
+
   if (mockContext) {
     base.mockContext = mockContext;
   }

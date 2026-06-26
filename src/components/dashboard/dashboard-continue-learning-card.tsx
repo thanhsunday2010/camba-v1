@@ -23,6 +23,7 @@ interface DashboardContinueLearningCardProps {
     unitPrefix: string;
   };
   skillLabel?: string;
+  compact?: boolean;
 }
 
 function lessonState(completion: number): LessonVisualState {
@@ -44,10 +45,13 @@ export function DashboardContinueLearningCard({
   nextLesson,
   labels,
   skillLabel,
+  compact = false,
 }: DashboardContinueLearningCardProps) {
   const subtitle = nextLesson?.unitTitle
     ? `${labels.unitPrefix}: ${nextLesson.unitTitle}${skillLabel ? ` · ${skillLabel}` : ""}`
-    : labels.subtitle;
+    : compact
+      ? undefined
+      : labels.subtitle;
 
   return (
     <section aria-labelledby="continue-learning-heading">
@@ -70,11 +74,15 @@ export function DashboardContinueLearningCard({
         <div className="space-y-2">
           <LessonCard
             title={nextLesson.title}
-            subtitle={`${nextLesson.estimated_minutes} ${labels.minutes} · ${nextLesson.completionPercent}%${
-              nextLesson.lastActivityAt
-                ? ` · ${formatRelativeDate(nextLesson.lastActivityAt, labels.lastActivity)}`
-                : ""
-            }`}
+            subtitle={
+              compact
+                ? `${nextLesson.estimated_minutes} ${labels.minutes}`
+                : `${nextLesson.estimated_minutes} ${labels.minutes} · ${nextLesson.completionPercent}%${
+                    nextLesson.lastActivityAt
+                      ? ` · ${formatRelativeDate(nextLesson.lastActivityAt, labels.lastActivity)}`
+                      : ""
+                  }`
+            }
             href={`/learning/lesson/${nextLesson.id}`}
             state={lessonState(nextLesson.completionPercent)}
             stateLabel={
@@ -83,7 +91,7 @@ export function DashboardContinueLearningCard({
             recommended
           />
           <Link href={`/learning/lesson/${nextLesson.id}`} className="camba-focus-ring rounded-xl block">
-            <Button variant="quest" className="w-full sm:w-auto">
+            <Button variant="quest" size={compact ? "default" : "default"} className="w-full sm:w-auto">
               {nextLesson.completionPercent > 0 ? labels.continueLesson : labels.startLearning}
               <ArrowRight className="h-4 w-4 ml-1" aria-hidden />
             </Button>

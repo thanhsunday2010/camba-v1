@@ -21,6 +21,7 @@ interface DashboardSkillInsightsProps {
     emptyDescription: string;
     emptyAction: string;
   };
+  bodyOnly?: boolean;
 }
 
 function InsightList({
@@ -57,30 +58,36 @@ function InsightList({
   );
 }
 
-export function DashboardSkillInsights({ insights, labels }: DashboardSkillInsightsProps) {
+export function DashboardSkillInsights({ insights, labels, bodyOnly = false }: DashboardSkillInsightsProps) {
   const hasContent =
     insights.hasAnalytics ||
     insights.skillStrengths.length > 0 ||
     insights.skillWeaknesses.length > 0;
 
+  const headerAction = hasContent ? (
+    <Link href={insights.detailHref}>
+      <Button variant="ghost" size="sm">
+        {labels.viewDetails}
+        <ArrowRight className="h-4 w-4" aria-hidden />
+      </Button>
+    </Link>
+  ) : undefined;
+
   return (
-    <section aria-labelledby="skill-insights-heading">
-      <SectionHeader
-        titleId="skill-insights-heading"
-        title={labels.title}
-        description={labels.subtitle}
-        icon={Brain}
-        action={
-          hasContent ? (
-            <Link href={insights.detailHref}>
-              <Button variant="ghost" size="sm">
-                {labels.viewDetails}
-                <ArrowRight className="h-4 w-4" aria-hidden />
-              </Button>
-            </Link>
-          ) : undefined
-        }
-      />
+    <section aria-labelledby={bodyOnly ? undefined : "skill-insights-heading"}>
+      {!bodyOnly && (
+        <SectionHeader
+          titleId="skill-insights-heading"
+          title={labels.title}
+          description={labels.subtitle}
+          icon={Brain}
+          action={headerAction}
+        />
+      )}
+
+      {bodyOnly && hasContent && (
+        <div className="mb-3 flex justify-end">{headerAction}</div>
+      )}
 
       {!hasContent ? (
         <DashboardEmptyState

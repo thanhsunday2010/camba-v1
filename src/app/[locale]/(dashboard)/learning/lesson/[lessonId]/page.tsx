@@ -78,6 +78,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
     retryLesson: t("retryLesson"),
     reviewLesson: t("reviewLesson"),
     heroContinueHint: t("heroContinueHint"),
+    openVocabularyBank: t("vocabulary.openBank"),
     stateLabels,
   };
 
@@ -164,6 +165,20 @@ export default async function LessonPage({ params }: LessonPageProps) {
     submitFailed: t("submitFailed"),
   };
 
+  const vocabularyLabels = {
+    title: t("vocabulary.title"),
+    description: t("vocabulary.description"),
+    colIndex: t("vocabulary.colIndex"),
+    colWord: t("vocabulary.colWord"),
+    colExample: t("vocabulary.colExample"),
+    colIpa: t("vocabulary.colIpa"),
+    colPronunciation: t("vocabulary.colPronunciation"),
+    pronounceUs: t("vocabulary.pronounceUs"),
+    pronounceUk: t("vocabulary.pronounceUk"),
+    exampleMissing: t("vocabulary.exampleMissing"),
+    unsupportedSpeech: t("vocabulary.unsupportedSpeech"),
+  };
+
   if (!viewModel.progress.isUnlocked) {
     const continueHref = viewModel.nextPathLesson
       ? `/learning/lesson/${viewModel.nextPathLesson.id}`
@@ -209,6 +224,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
         listLabels={listLabels}
         aiLabels={aiLabels}
         chromeLabels={chromeLabels}
+        vocabularyLabels={vocabularyLabels}
       />
     </StudentPageShell>
   );

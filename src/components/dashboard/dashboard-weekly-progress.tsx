@@ -1,5 +1,6 @@
 import { SectionHeader } from "@/components/camba/section-header";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
+import { DashboardSlideStrip } from "@/components/dashboard/dashboard-slide-strip";
 import type { WeeklyProgressStats } from "@/lib/dashboard/student-dashboard-data";
 import { BarChart3, BookOpen, FileText, Mic, PenLine, Zap } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
@@ -16,6 +17,7 @@ interface DashboardWeeklyProgressProps {
     speakingTasksCompleted: string;
     emptyNote: string;
   };
+  variant?: "grid" | "strip";
 }
 
 function StatTile({
@@ -23,14 +25,22 @@ function StatTile({
   label,
   value,
   iconClassName,
+  compact,
 }: {
   icon: LucideIcon;
   label: string;
   value: number;
   iconClassName: string;
+  compact?: boolean;
 }) {
   return (
-    <div className="rounded-xl border border-border/60 bg-white px-3 py-3 flex items-center gap-3 min-w-0">
+    <div
+      className={
+        compact
+          ? "rounded-xl border border-border/60 bg-white px-3 py-2.5 flex items-center gap-2.5 min-w-[9.5rem] h-full"
+          : "rounded-xl border border-border/60 bg-white px-3 py-3 flex items-center gap-3 min-w-0"
+      }
+    >
       <div className={`camba-icon-box-sm shrink-0 ${iconClassName}`}>
         <Icon className="h-4 w-4" aria-hidden />
       </div>
@@ -42,7 +52,11 @@ function StatTile({
   );
 }
 
-export function DashboardWeeklyProgress({ stats, labels }: DashboardWeeklyProgressProps) {
+export function DashboardWeeklyProgress({
+  stats,
+  labels,
+  variant = "grid",
+}: DashboardWeeklyProgressProps) {
   const hasActivity =
     stats.xpEarned > 0 ||
     stats.lessonsCompleted > 0 ||
@@ -83,6 +97,20 @@ export function DashboardWeeklyProgress({ stats, labels }: DashboardWeeklyProgre
     },
   ];
 
+  const tileNodes = tiles.map((tile) => (
+    <StatTile key={tile.label} {...tile} compact={variant === "strip"} />
+  ));
+
+  if (variant === "strip") {
+    return (
+      <div className="space-y-2">
+        <p className="camba-caption font-semibold text-foreground">{labels.title}</p>
+        {!hasActivity && <p className="camba-caption text-muted">{labels.emptyNote}</p>}
+        <DashboardSlideStrip label={labels.title}>{tileNodes}</DashboardSlideStrip>
+      </div>
+    );
+  }
+
   return (
     <section aria-labelledby="weekly-progress-heading">
       <SectionHeader
@@ -93,14 +121,8 @@ export function DashboardWeeklyProgress({ stats, labels }: DashboardWeeklyProgre
       />
 
       <CambaCard variant="default" padding="md">
-        {!hasActivity && (
-          <p className="camba-caption text-muted mb-3">{labels.emptyNote}</p>
-        )}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-          {tiles.map((tile) => (
-            <StatTile key={tile.label} {...tile} />
-          ))}
-        </div>
+        {!hasActivity && <p className="camba-caption text-muted mb-3">{labels.emptyNote}</p>}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">{tileNodes}</div>
       </CambaCard>
     </section>
   );

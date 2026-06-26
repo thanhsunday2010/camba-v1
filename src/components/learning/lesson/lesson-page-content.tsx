@@ -16,6 +16,10 @@ import type {
 import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
 import { LessonPageShell } from "@/components/learning/lesson/lesson-page-shell";
 import { LessonPlayer } from "@/components/learning/lesson-player";
+import {
+  VocabularyLessonDialog,
+  type VocabularyLessonDialogLabels,
+} from "@/components/learning/vocabulary/vocabulary-lesson-dialog";
 
 interface LessonPageContentProps {
   viewModel: LessonPageViewModel;
@@ -32,6 +36,7 @@ interface LessonPageContentProps {
   };
   aiLabels: AiExerciseLabels;
   chromeLabels: LessonChromeLabels;
+  vocabularyLabels?: VocabularyLessonDialogLabels;
 }
 
 export function LessonPageContent({
@@ -42,8 +47,10 @@ export function LessonPageContent({
   listLabels,
   aiLabels,
   chromeLabels,
+  vocabularyLabels,
 }: LessonPageContentProps) {
   const fmt = useLessonI18nFormatters();
+  const [vocabularyDialogOpen, setVocabularyDialogOpen] = useState(false);
   const [sessionCompletedExerciseIds, setSessionCompletedExerciseIds] = useState(
     () => new Set(viewModel.completedExerciseIds)
   );
@@ -58,6 +65,18 @@ export function LessonPageContent({
   const mascot = useMascotOptional();
   const wasCompleteRef = useRef(false);
   const prevLessonCompleteRef = useRef(false);
+
+  const hasVocabularyBank = viewModel.vocabularyBank.length > 0 && Boolean(vocabularyLabels);
+
+  useEffect(() => {
+    if (hasVocabularyBank) {
+      setVocabularyDialogOpen(true);
+    }
+  }, [hasVocabularyBank, viewModel.lesson.id]);
+
+  const openVocabularyBank = useCallback(() => {
+    setVocabularyDialogOpen(true);
+  }, []);
 
   const resolvedProgress = useMemo(
     () =>
@@ -161,21 +180,33 @@ export function LessonPageContent({
       );
 
   return (
-    <LessonPageShell
-      viewModel={viewModel}
-      labels={labels}
-      completeSummaryLabels={completeSummaryLabels}
-      masteryLabel={masteryLabel}
-      resolvedProgress={resolvedProgress}
-      sessionCompletedExerciseIds={sessionCompletedExerciseIds}
-      sessionAccuracyByExerciseId={sessionAccuracyByExerciseId}
-      lastCompletedMeta={lastCompletedMeta}
-      activeExerciseId={activeExerciseId}
-      isReviewingLesson={isReviewingLesson}
-      onPrimaryHeroAction={onPrimaryHeroAction}
-      onReviewLesson={enterReviewMode}
-      onOpenReviewExercise={onOpenReviewExercise}
-    >
+    <>
+      {hasVocabularyBank && vocabularyLabels && (
+        <VocabularyLessonDialog
+          open={vocabularyDialogOpen}
+          onOpenChange={setVocabularyDialogOpen}
+          words={viewModel.vocabularyBank}
+          lessonTitle={viewModel.lesson.title}
+          labels={vocabularyLabels}
+        />
+      )}
+
+      <LessonPageShell
+        viewModel={viewModel}
+        labels={labels}
+        completeSummaryLabels={completeSummaryLabels}
+        masteryLabel={masteryLabel}
+        resolvedProgress={resolvedProgress}
+        sessionCompletedExerciseIds={sessionCompletedExerciseIds}
+        sessionAccuracyByExerciseId={sessionAccuracyByExerciseId}
+        lastCompletedMeta={lastCompletedMeta}
+        activeExerciseId={activeExerciseId}
+        isReviewingLesson={isReviewingLesson}
+        onPrimaryHeroAction={onPrimaryHeroAction}
+        onReviewLesson={enterReviewMode}
+        onOpenReviewExercise={onOpenReviewExercise}
+        onOpenVocabularyBank={hasVocabularyBank ? openVocabularyBank : undefined}
+      >
       <LessonPlayer
         lessonId={viewModel.lesson.id}
         lessonTitle={viewModel.lesson.title}
@@ -198,6 +229,7 @@ export function LessonPageContent({
           exercisesSubtitle: listSubtitle,
         }}
       />
-    </LessonPageShell>
+      </LessonPageShell>
+    </>
   );
 }

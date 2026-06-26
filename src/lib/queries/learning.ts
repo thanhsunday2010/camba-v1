@@ -1,4 +1,10 @@
 import { createClient } from "@/lib/supabase/server";
+import {
+  fetchChoicesByQuestionIds,
+  fetchPairsByQuestionIds,
+  groupRowsByQuestionId,
+} from "@/lib/learning/fetch-question-relations";
+import { resolveQuestionChoices } from "@/lib/learning/question-choices";
 import { sanitizeQuestionForClient } from "@/lib/learning/sanitize-questions";
 import {
   fetchUserLessonProgress,
@@ -182,22 +188,16 @@ export async function fetchQuestionByIdFull(questionId: string): Promise<Questio
 
   if (!question) return null;
 
-  const { data: choices } = await supabase
-    .from("choices")
-    .select("*")
-    .eq("question_id", questionId)
-    .order("sort_order");
-
-  const { data: pairs } = await supabase
-    .from("question_pairs")
-    .select("*")
-    .eq("question_id", questionId)
-    .order("sort_order");
+  const [choices, pairs] = await Promise.all([
+    fetchChoicesByQuestionIds(supabase, [questionId]),
+    fetchPairsByQuestionIds(supabase, [questionId]),
+  ]);
+  const content = (question.content as Record<string, unknown>) ?? {};
 
   return {
     ...question,
-    content: (question.content as Record<string, unknown>) ?? {},
-    choices: choices ?? [],
+    content,
+    choices: resolveQuestionChoices(questionId, choices, content),
     pairs: pairs ?? [],
   };
 }
@@ -221,39 +221,27 @@ export async function fetchExerciseQuestionsFull(exerciseId: string): Promise<Qu
 
   const questionIds = questions.map((question) => question.id);
 
-  const [{ data: allChoices }, { data: allPairs }] = await Promise.all([
-    supabase
-      .from("choices")
-      .select("*")
-      .in("question_id", questionIds)
-      .order("sort_order"),
-    supabase
-      .from("question_pairs")
-      .select("*")
-      .in("question_id", questionIds)
-      .order("sort_order"),
+  const [allChoices, allPairs] = await Promise.all([
+    fetchChoicesByQuestionIds(supabase, questionIds),
+    fetchPairsByQuestionIds(supabase, questionIds),
   ]);
 
-  const choicesByQuestion = new Map<string, NonNullable<typeof allChoices>>();
-  for (const choice of allChoices ?? []) {
-    const bucket = choicesByQuestion.get(choice.question_id) ?? [];
-    bucket.push(choice);
-    choicesByQuestion.set(choice.question_id, bucket);
-  }
+  const choicesByQuestion = groupRowsByQuestionId(allChoices);
+  const pairsByQuestion = groupRowsByQuestionId(allPairs);
 
-  const pairsByQuestion = new Map<string, NonNullable<typeof allPairs>>();
-  for (const pair of allPairs ?? []) {
-    const bucket = pairsByQuestion.get(pair.question_id) ?? [];
-    bucket.push(pair);
-    pairsByQuestion.set(pair.question_id, bucket);
-  }
-
-  return questions.map((question) => ({
-    ...question,
-    content: (question.content as Record<string, unknown>) ?? {},
-    choices: choicesByQuestion.get(question.id) ?? [],
-    pairs: pairsByQuestion.get(question.id) ?? [],
-  }));
+  return questions.map((question) => {
+    const content = (question.content as Record<string, unknown>) ?? {};
+    return {
+      ...question,
+      content,
+      choices: resolveQuestionChoices(
+        question.id,
+        choicesByQuestion.get(question.id) ?? [],
+        content
+      ),
+      pairs: pairsByQuestion.get(question.id) ?? [],
+    };
+  });
 }
 
 export async function getLessonExerciseIds(lessonId: string): Promise<string[]> {

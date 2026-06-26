@@ -1,4 +1,5 @@
 import type { Exercise } from "@/types/learning";
+import type { VocabularyWord } from "@/lib/learning/vocabulary-bank";
 
 export type ExerciseUiState = "available" | "in_progress" | "completed" | "needs_review";
 
@@ -84,6 +85,7 @@ export type LessonPageViewModel = {
   completedExerciseIds: string[];
   nextSuggestedExerciseId: string | null;
   nextPathLesson: LessonNextPathLesson;
+  vocabularyBank: VocabularyWord[];
 };
 
 export type LessonPageLabels = {
@@ -105,6 +107,7 @@ export type LessonPageLabels = {
   reviewLesson: string;
   stateLabels: Record<LessonDisplayState, string>;
   heroContinueHint: string;
+  openVocabularyBank: string;
 };
 
 export type LessonCompleteRecommendationVariant =

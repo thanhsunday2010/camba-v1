@@ -7,11 +7,14 @@ import { DashboardRecommendedMock, type DashboardRecommendedMockLabels } from "@
 import { DashboardSkillInsights } from "@/components/dashboard/dashboard-skill-insights";
 import { DashboardRecentActivity } from "@/components/dashboard/dashboard-recent-activity";
 import { DashboardAiPracticeSection } from "@/components/dashboard/dashboard-ai-practice-section";
+import { DashboardCollapsibleSection } from "@/components/dashboard/dashboard-collapsible-section";
+import { DashboardSlideItem, DashboardSlideStrip } from "@/components/dashboard/dashboard-slide-strip";
 import type { PracticeHistoryLabels } from "@/components/ai-practice/practice-history-panel";
 import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
 import { PlacementTestCTA } from "@/components/dashboard/placement-test-cta";
 import { ProgramPicker } from "@/components/programs/program-picker";
 import type { StudentDashboardData } from "@/lib/dashboard/student-dashboard-data";
+import { Activity, Brain, ClipboardList } from "lucide-react";
 
 export interface StudentDashboardLabels {
   hero: {
@@ -105,6 +108,9 @@ export interface StudentDashboardLabels {
     speakingSummary: PracticeHistorySummary;
     labels: PracticeHistoryLabels;
   };
+  sectionExpand: string;
+  sectionCollapse: string;
+  progressStripLabel: string;
 }
 
 interface StudentDashboardViewProps {
@@ -122,14 +128,17 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
     ? labels.skillLabels[data.nextLesson.skillSlug] ?? data.nextLesson.skillName ?? undefined
     : undefined;
 
+  const sectionToggle = {
+    expandLabel: labels.sectionExpand,
+    collapseLabel: labels.sectionCollapse,
+  };
+
   return (
     <>
-      {!hasProgram && (
-        <ProgramPicker programs={data.programs} labels={labels.programPicker} />
-      )}
+      {!hasProgram && <ProgramPicker programs={data.programs} labels={labels.programPicker} />}
 
       {hasProgram && data.gamification && (
-        <div className="camba-section-stack gap-8 sm:gap-10">
+        <div className="camba-section-stack gap-4 sm:gap-6">
           <AnimatedSection staggerIndex={0}>
             <DashboardHero
               studentName={userName}
@@ -147,36 +156,20 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
           </AnimatedSection>
 
           <AnimatedSection staggerIndex={1}>
-            <DashboardDailyMissionCard
-              mission={data.dailyMission}
-              labels={labels.dailyMission}
-            />
+            <div className="grid gap-4 lg:grid-cols-2">
+              <DashboardDailyMissionCard mission={data.dailyMission} labels={labels.dailyMission} compact />
+              <DashboardContinueLearningCard
+                nextLesson={data.nextLesson}
+                labels={labels.continueLearning}
+                skillLabel={skillLabel}
+                compact
+              />
+            </div>
           </AnimatedSection>
 
           <AnimatedSection staggerIndex={2}>
-            <DashboardContinueLearningCard
-              nextLesson={data.nextLesson}
-              labels={labels.continueLearning}
-              skillLabel={skillLabel}
-            />
-          </AnimatedSection>
-
-          <AnimatedSection staggerIndex={3}>
-            <DashboardWeeklyProgress
-              stats={data.weeklyProgress}
-              labels={labels.weeklyProgress}
-            />
-          </AnimatedSection>
-
-          <AnimatedSection staggerIndex={4}>
-            <DashboardRecommendedMock
-              test={data.recommendedMock}
-              labels={labels.recommendedMock}
-            />
-          </AnimatedSection>
-
-          <AnimatedSection staggerIndex={5}>
             <DashboardAiPracticeSection
+              variant="strip"
               labels={labels.aiPractice}
               writingSummary={labels.aiPracticeHistory.writingSummary}
               speakingSummary={labels.aiPracticeHistory.speakingSummary}
@@ -184,26 +177,59 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
             />
           </AnimatedSection>
 
+          <AnimatedSection staggerIndex={3}>
+            <DashboardSlideStrip label={labels.progressStripLabel}>
+              <DashboardSlideItem className="w-[min(100%,20rem)] sm:w-[22rem]">
+                <DashboardWeeklyProgress stats={data.weeklyProgress} labels={labels.weeklyProgress} variant="strip" />
+              </DashboardSlideItem>
+              <DashboardSlideItem className="w-[min(100%,20rem)] sm:w-[22rem]">
+                <DashboardRecommendedMock test={data.recommendedMock} labels={labels.recommendedMock} compact />
+              </DashboardSlideItem>
+            </DashboardSlideStrip>
+          </AnimatedSection>
+
+          <AnimatedSection staggerIndex={4}>
+            <DashboardCollapsibleSection
+              title={labels.skillInsights.title}
+              icon={Brain}
+              defaultOpen={false}
+              {...sectionToggle}
+            >
+              <DashboardSkillInsights insights={data.skillInsights} labels={labels.skillInsights} bodyOnly />
+            </DashboardCollapsibleSection>
+          </AnimatedSection>
+
+          <AnimatedSection staggerIndex={5}>
+            <DashboardCollapsibleSection
+              title={labels.recentActivity.title}
+              icon={Activity}
+              defaultOpen={false}
+              {...sectionToggle}
+            >
+              <DashboardRecentActivity
+                items={data.recentActivity}
+                labels={labels.recentActivity}
+                bodyOnly
+                variant="strip"
+                maxVisible={8}
+              />
+            </DashboardCollapsibleSection>
+          </AnimatedSection>
+
           <AnimatedSection staggerIndex={6}>
-            <DashboardSkillInsights
-              insights={data.skillInsights}
-              labels={labels.skillInsights}
-            />
-          </AnimatedSection>
-
-          <AnimatedSection staggerIndex={7}>
-            <DashboardRecentActivity
-              items={data.recentActivity}
-              labels={labels.recentActivity}
-            />
-          </AnimatedSection>
-
-          <AnimatedSection staggerIndex={8}>
-            <PlacementTestCTA
+            <DashboardCollapsibleSection
               title={labels.placement.title}
-              description={labels.placement.description}
-              buttonText={labels.placement.button}
-            />
+              icon={ClipboardList}
+              defaultOpen={false}
+              {...sectionToggle}
+            >
+              <PlacementTestCTA
+                title={labels.placement.title}
+                description={labels.placement.description}
+                buttonText={labels.placement.button}
+                compact
+              />
+            </DashboardCollapsibleSection>
           </AnimatedSection>
         </div>
       )}
@@ -213,6 +239,7 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
           title={labels.placement.title}
           description={labels.placement.description}
           buttonText={labels.placement.button}
+          compact
         />
       )}
     </>

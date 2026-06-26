@@ -30,6 +30,9 @@ import type { Skill } from "@/types/learning";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
 import type { ReviewReasonKey, UnitVisualState } from "@/lib/learning/path-ui-utils";
 import { BookOpen, Sparkles } from "lucide-react";
+import { DashboardAiPracticeSection, type DashboardAiPracticeLabels } from "@/components/dashboard/dashboard-ai-practice-section";
+import type { PracticeHistoryLabels } from "@/components/ai-practice/practice-history-panel";
+import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
 
 interface LevelOption {
   id: string;
@@ -100,6 +103,12 @@ interface LearningPathViewProps {
   objectiveText: string;
   labels: LearningPathViewLabels;
   showUnlockAllBanner?: boolean;
+  aiPractice?: {
+    labels: DashboardAiPracticeLabels;
+    writingSummary: PracticeHistorySummary;
+    speakingSummary: PracticeHistorySummary;
+    historyLabels: PracticeHistoryLabels;
+  };
 }
 
 function buildRecommendedSubtitle(
@@ -143,6 +152,7 @@ export function LearningPathView({
   objectiveText,
   labels,
   showUnlockAllBanner,
+  aiPractice,
 }: LearningPathViewProps) {
   const t = useTranslations("learning");
   const units = useMemo(() => pivotSkillsToCurriculumUnits(skills), [skills]);
@@ -260,6 +270,16 @@ export function LearningPathView({
 
   return (
     <StudentPageShell>
+      {aiPractice && (
+        <DashboardAiPracticeSection
+          variant="strip"
+          labels={aiPractice.labels}
+          writingSummary={aiPractice.writingSummary}
+          speakingSummary={aiPractice.speakingSummary}
+          historyLabels={aiPractice.historyLabels}
+        />
+      )}
+
       {showUnlockAllBanner && (
         <div className="rounded-2xl border border-amber-200/80 bg-amber-50 px-4 py-3 text-sm text-amber-950 camba-body">
           {labels.unlockAllBanner}

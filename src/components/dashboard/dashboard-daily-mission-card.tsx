@@ -15,15 +15,20 @@ interface DashboardDailyMissionCardProps {
     emptyDescription: string;
     emptyAction: string;
   };
+  compact?: boolean;
 }
 
-export function DashboardDailyMissionCard({ mission, labels }: DashboardDailyMissionCardProps) {
+export function DashboardDailyMissionCard({
+  mission,
+  labels,
+  compact = false,
+}: DashboardDailyMissionCardProps) {
   return (
     <section aria-labelledby="daily-mission-heading">
       <SectionHeader
         titleId="daily-mission-heading"
         title={labels.title}
-        description={labels.subtitle}
+        description={compact ? undefined : labels.subtitle}
         icon={Target}
       />
 
@@ -35,15 +40,19 @@ export function DashboardDailyMissionCard({ mission, labels }: DashboardDailyMis
           primaryAction={{ label: labels.emptyAction, href: "/learning" }}
         />
       ) : (
-        <CambaCard variant="mission" padding="lg" className="relative overflow-hidden">
+        <CambaCard variant="mission" padding={compact ? "md" : "lg"} className="relative overflow-hidden">
           <div
             className="pointer-events-none absolute inset-0 opacity-[0.06] camba-gradient-program"
             aria-hidden
           />
-          <div className="relative flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="relative flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="min-w-0 flex-1 space-y-2">
-              <h2 className="camba-h2 text-foreground">{mission.title}</h2>
-              <p className="camba-body text-muted leading-relaxed">{mission.description}</p>
+              <h2 className={compact ? "camba-h3 text-foreground" : "camba-h2 text-foreground"}>
+                {mission.title}
+              </h2>
+              {!compact && (
+                <p className="camba-body text-muted leading-relaxed">{mission.description}</p>
+              )}
               {mission.progressPercent != null && mission.progressPercent > 0 && (
                 <div className="space-y-1.5 max-w-sm">
                   <div className="flex justify-between camba-caption text-muted">
@@ -64,7 +73,7 @@ export function DashboardDailyMissionCard({ mission, labels }: DashboardDailyMis
               )}
             </div>
             <Link href={mission.href} className="shrink-0 camba-focus-ring rounded-xl">
-              <Button variant="quest" size="lg" className="w-full sm:w-auto min-w-[10rem]">
+              <Button variant="quest" size={compact ? "default" : "lg"} className="w-full sm:w-auto min-w-[9rem]">
                 {mission.ctaLabel}
                 <ArrowRight className="h-4 w-4 ml-1" aria-hidden />
               </Button>

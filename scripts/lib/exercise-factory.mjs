@@ -170,6 +170,7 @@ export function createExerciseFactory(level, topicTag) {
     partOfSpeech,
     vietnameseMeaning,
     exampleSentence,
+    exampleTranslation,
     difficulty = 1,
     topic = topicTag,
   }) {
@@ -179,6 +180,7 @@ export function createExerciseFactory(level, topicTag) {
       partOfSpeech,
       vietnameseMeaning,
       exampleSentence,
+      ...(exampleTranslation ? { exampleTranslation } : {}),
       difficulty,
       topic,
       programLevel: level,

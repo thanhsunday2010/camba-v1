@@ -12,7 +12,7 @@ import { Label } from "@/components/ui/label";
 import { Link } from "@/i18n/routing";
 import { Loader2, CheckCircle2 } from "lucide-react";
 
-type RegisterSuccessMode = "email" | "phone";
+type RegisterSuccessMode = "email";
 
 function GoogleRegisterButton() {
   const t = useTranslations("auth");
@@ -63,14 +63,16 @@ export function RegisterForm() {
       const result = await signUp(formData);
       if (!result.success) {
         setError(
-          result.error === "phoneInvalid"
+          result.error === "phoneDisabled"
+            ? t("phoneDisabled")
+            : result.error === "phoneInvalid"
             ? t("phoneInvalid")
             : result.error === "emailRequired"
               ? t("emailRequired")
               : (result.error ?? tc("error"))
         );
       } else {
-        setSuccessMode(result.data?.method === "email" ? "email" : "phone");
+        setSuccessMode("email");
       }
     });
   }
@@ -87,20 +89,25 @@ export function RegisterForm() {
     );
   }
 
-  if (successMode === "phone") {
-    return (
-      <div className="text-center space-y-4 py-4">
-        <CheckCircle2 className="h-12 w-12 text-success mx-auto" />
-        <p className="text-gray-700">{t("phoneRegisterSuccess")}</p>
-        <Link href="/login">
-          <Button variant="quest">{t("signIn")}</Button>
-        </Link>
-      </div>
-    );
-  }
-
   return (
     <div className="space-y-6">
+      {isGoogleAuthEnabled() && (
+        <>
+          <form action={signInWithGoogle}>
+            <GoogleRegisterButton />
+          </form>
+
+          <div className="relative">
+            <div className="absolute inset-0 flex items-center">
+              <span className="w-full border-t border-gray-200" />
+            </div>
+            <div className="relative flex justify-center text-xs uppercase">
+              <span className="bg-white px-2 text-gray-500">{t("or")}</span>
+            </div>
+          </div>
+        </>
+      )}
+
       <form action={handleSubmit} className="space-y-4">
         <div className="space-y-2">
           <Label htmlFor="fullName">{t("fullName")}</Label>
@@ -113,7 +120,7 @@ export function RegisterForm() {
           />
         </div>
 
-        <AuthMethodFields defaultMethod="phone" />
+        <AuthMethodFields />
 
         <div className="space-y-2">
           <Label htmlFor="password">{t("password")}</Label>
@@ -150,23 +157,6 @@ export function RegisterForm() {
           {t("register")}
         </Button>
       </form>
-
-      {isGoogleAuthEnabled() && (
-        <>
-          <div className="relative">
-            <div className="absolute inset-0 flex items-center">
-              <span className="w-full border-t border-gray-200" />
-            </div>
-            <div className="relative flex justify-center text-xs uppercase">
-              <span className="bg-white px-2 text-gray-500">{t("or")}</span>
-            </div>
-          </div>
-
-          <form action={signInWithGoogle}>
-            <GoogleRegisterButton />
-          </form>
-        </>
-      )}
 
       <p className="text-center text-sm text-gray-600">
         {t("hasAccount")}{" "}

@@ -92,6 +92,7 @@
     "invalidCredentials": "Số điện thoại/email hoặc mật khẩu không đúng",
     "authCallbackError": "Đăng nhập Google thất bại. Vui lòng thử lại.",
     "phoneInvalid": "Vui lòng nhập số điện thoại hợp lệ (vd: 0901234567)",
+    "phoneDisabled": "Đăng nhập bằng số điện thoại đã tắt. Vui lòng dùng email hoặc Google.",
     "phoneRegisterSuccess": "Tạo tài khoản thành công. Hãy đăng nhập bằng số điện thoại và mật khẩu.",
     "emailRequired": "Vui lòng nhập email",
     "passwordRequired": "Vui lòng nhập mật khẩu",
@@ -200,6 +201,9 @@
     "hubTabOverview": "Tổng quan",
     "hubTabAchievements": "Thành tích",
     "hubTabProfile": "Hồ sơ",
+    "sectionExpand": "Mở rộng",
+    "sectionCollapse": "Thu gọn",
+    "progressStripLabel": "Tiến độ và thi thử",
     "viewPortfolio": "Xem hồ sơ học tập",
     "progressingThrough": "Con đang tiến bộ với Cambridge {level}.",
     "currentStreakLabel": "Chuỗi ngày hiện tại: {count} ngày",
@@ -896,6 +900,20 @@
         "multipleChoice": "Trắc nghiệm",
         "multiSelect": "Chọn nhiều",
         "sentenceOrdering": "Sắp xếp câu"
+      },
+      "vocabulary": {
+        "openBank": "Bảng từ vựng",
+        "title": "Bảng từ vựng bài học",
+        "description": "Danh sách từ vựng trong bài «{lesson}».",
+        "colIndex": "STT",
+        "colWord": "Từ (TA) · Nghĩa (TV)",
+        "colExample": "Câu ví dụ (TA) · Dịch (TV)",
+        "colIpa": "Phiên âm",
+        "colPronunciation": "Phát âm",
+        "pronounceUs": "Phát âm Anh-Mỹ: {word}",
+        "pronounceUk": "Phát âm Anh-Anh: {word}",
+        "exampleMissing": "—",
+        "unsupportedSpeech": "Trình duyệt không hỗ trợ đọc từ. Bạn vẫn có thể xem bảng từ vựng."
       },
       "ai": {
         "placeholder": "Viết câu trả lời của bạn tại đây...",

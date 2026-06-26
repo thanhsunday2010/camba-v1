@@ -19,7 +19,7 @@ import type {
   LessonPageProgress,
   ResolvedLessonProgress,
 } from "@/lib/learning/lesson-page-types";
-import { ArrowRight, BookOpen, Clock, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, Clock, List, Sparkles } from "lucide-react";
 
 interface LessonHeroProps {
   title: string;
@@ -37,12 +37,14 @@ interface LessonHeroProps {
     | "retryLesson"
     | "reviewLesson"
     | "heroContinueHint"
+    | "openVocabularyBank"
     | "stateLabels"
   >;
   isActiveExercise?: boolean;
   isReviewingLesson?: boolean;
   isCompleteMode?: boolean;
   onPrimaryAction?: () => void;
+  onOpenVocabularyBank?: () => void;
   className?: string;
 }
 
@@ -79,6 +81,7 @@ export function LessonHero({
   isReviewingLesson,
   isCompleteMode,
   onPrimaryAction,
+  onOpenVocabularyBank,
   className,
 }: LessonHeroProps) {
   const fmt = useLessonI18nFormatters();
@@ -180,6 +183,18 @@ export function LessonHero({
                   <Clock className="h-3.5 w-3.5" />
                   {estimatedMinutes} {labels.estimatedMinutes}
                 </span>
+              )}
+              {onOpenVocabularyBank && (
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="sm"
+                  className="gap-1.5 bg-white/80"
+                  onClick={onOpenVocabularyBank}
+                >
+                  <List className="h-3.5 w-3.5" />
+                  {labels.openVocabularyBank}
+                </Button>
               )}
               <MasteryBadge
                 level={

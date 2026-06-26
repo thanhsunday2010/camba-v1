@@ -261,6 +261,9 @@ export default async function DashboardPage({
                   speakingSummary: practiceSummaries.speaking,
                   labels: practiceHistoryLabels,
                 },
+                sectionExpand: t("sectionExpand"),
+                sectionCollapse: t("sectionCollapse"),
+                progressStripLabel: t("progressStripLabel"),
               },
             }
           : undefined

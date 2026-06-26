@@ -40,7 +40,9 @@ export function LoginForm({
 
   const errorMessage =
     state && !state.success
-      ? state.error === "phoneInvalid"
+      ? state.error === "phoneDisabled"
+        ? t("phoneDisabled")
+        : state.error === "phoneInvalid"
         ? t("phoneInvalid")
         : state.error === "emailRequired"
           ? t("emailRequired")
@@ -56,7 +58,7 @@ export function LoginForm({
       <form action={formAction} className="space-y-4">
         {redirectPath && <input type="hidden" name="redirect" value={redirectPath} />}
 
-        <AuthMethodFields defaultMethod="phone" emailAutoComplete="username" />
+        <AuthMethodFields emailAutoComplete="username" />
 
         <div className="space-y-2">
           <div className="flex items-center justify-between">

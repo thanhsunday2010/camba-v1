@@ -26,15 +26,25 @@ describe("auth identity", () => {
     expect(formatPhoneForDisplay("84901234567")).toBe("090 123 4567");
   });
 
-  it("resolves phone identity from form data by default", () => {
+  it("rejects phone sign-in when phone auth is disabled", () => {
     const formData = new FormData();
+    formData.set("authMethod", "phone");
     formData.set("phone", "0901234567");
+    const result = resolveAuthIdentity(formData);
+    expect(result.ok).toBe(false);
+    if (!result.ok) {
+      expect(result.errorKey).toBe("phoneDisabled");
+    }
+  });
+
+  it("resolves email identity by default", () => {
+    const formData = new FormData();
+    formData.set("email", "student@example.com");
     const result = resolveAuthIdentity(formData);
     expect(result.ok).toBe(true);
     if (result.ok) {
-      expect(result.method).toBe("phone");
-      expect(result.authEmail).toBe("phone+84901234567@camba.app");
-      expect(result.phone).toBe("84901234567");
+      expect(result.method).toBe("email");
+      expect(result.authEmail).toBe("student@example.com");
     }
   });
 

@@ -39,14 +39,29 @@ export function isSpeakingQuestion(
   return parseSpeakingQuestionContent(question).cambridgeTaskType != null;
 }
 
+function inferSpeakingTaskType(content: Record<string, unknown>): SpeakingRuntimeTaskType {
+  const explicit =
+    normalizeSpeakingTaskType(content.cambridgeTaskType) ??
+    normalizeSpeakingTaskType(content.speakingTaskType);
+  if (explicit) return explicit;
+
+  const criteriaRef =
+    typeof content.assessmentCriteriaRef === "string" ? content.assessmentCriteriaRef : "";
+  const criteriaSlug = criteriaRef.toLowerCase();
+  if (criteriaSlug.includes("picture")) return "speaking_picture_description";
+  if (criteriaSlug.includes("story")) return "speaking_storytelling";
+  if (criteriaSlug.includes("discussion") || criteriaSlug.includes("conversation")) {
+    return "speaking_discussion";
+  }
+
+  return "speaking_personal_questions";
+}
+
 export function parseSpeakingQuestionContent(
   question: Pick<PublicQuestion, "question_text" | "content" | "media_url">
 ): SpeakingQuestionContent {
   const content = question.content ?? {};
-  const taskType =
-    normalizeSpeakingTaskType(content.cambridgeTaskType) ??
-    normalizeSpeakingTaskType(content.speakingTaskType) ??
-    "speaking_personal_questions";
+  const taskType = inferSpeakingTaskType(content);
 
   const followUpQuestions = Array.isArray(content.followUpQuestions)
     ? content.followUpQuestions.filter((p): p is string => typeof p === "string")

@@ -1,4 +1,10 @@
 import { createClient } from "@/lib/supabase/server";
+import {
+  fetchChoicesByQuestionIds,
+  fetchPairsByQuestionIds,
+  groupRowsByQuestionId,
+} from "@/lib/learning/fetch-question-relations";
+import { resolveQuestionChoices } from "@/lib/learning/question-choices";
 import { sanitizeQuestionForClient } from "@/lib/learning/sanitize-questions";
 import { resolveProgramId } from "@/lib/programs/context";
 import type {
@@ -23,30 +29,24 @@ async function fetchQuestionsByIdsBatch(
 
   if (!questions?.length) return map;
 
-  const [{ data: allChoices }, { data: allPairs }] = await Promise.all([
-    supabase.from("choices").select("*").in("question_id", questionIds).order("sort_order"),
-    supabase.from("question_pairs").select("*").in("question_id", questionIds).order("sort_order"),
+  const [allChoices, allPairs] = await Promise.all([
+    fetchChoicesByQuestionIds(supabase, questionIds),
+    fetchPairsByQuestionIds(supabase, questionIds),
   ]);
 
-  const choicesByQuestion = new Map<string, NonNullable<typeof allChoices>>();
-  for (const choice of allChoices ?? []) {
-    const bucket = choicesByQuestion.get(choice.question_id) ?? [];
-    bucket.push(choice);
-    choicesByQuestion.set(choice.question_id, bucket);
-  }
-
-  const pairsByQuestion = new Map<string, NonNullable<typeof allPairs>>();
-  for (const pair of allPairs ?? []) {
-    const bucket = pairsByQuestion.get(pair.question_id) ?? [];
-    bucket.push(pair);
-    pairsByQuestion.set(pair.question_id, bucket);
-  }
+  const choicesByQuestion = groupRowsByQuestionId(allChoices);
+  const pairsByQuestion = groupRowsByQuestionId(allPairs);
 
   for (const question of questions) {
+    const content = (question.content as Record<string, unknown>) ?? {};
     map.set(question.id, {
       ...question,
-      content: (question.content as Record<string, unknown>) ?? {},
-      choices: choicesByQuestion.get(question.id) ?? [],
+      content,
+      choices: resolveQuestionChoices(
+        question.id,
+        choicesByQuestion.get(question.id) ?? [],
+        content
+      ),
       pairs: pairsByQuestion.get(question.id) ?? [],
     });
   }
