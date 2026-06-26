@@ -168,11 +168,19 @@ export default async function LessonPage({ params }: LessonPageProps) {
     errorHighlights: t("ai.errorHighlights"),
     correctedVersion: t("ai.correctedVersion"),
     modelAnswer: t("ai.modelAnswer"),
+    bestPhrase: t("ai.bestPhrase"),
+    focusFix: t("ai.focusFix"),
     questionAudioPlaying: t("ai.questionAudioPlaying"),
     replayQuestion: t("ai.replayQuestion"),
     stopAudio: t("ai.stopAudio"),
     modelAnswerAudioPlaying: t("ai.modelAnswerAudioPlaying"),
     replayModelAnswer: t("ai.replayModelAnswer"),
+    retrySamePrompt: t("ai.retrySamePrompt"),
+    retryHint: t("ai.retryHint"),
+    scoreDelta: t("ai.scoreDelta"),
+    focusFixTitle: t("ai.focusFixTitle"),
+    attemptPrevious: t("ai.attemptPrevious"),
+    attemptCurrent: t("ai.attemptCurrent"),
   };
 
   const chromeLabels = {

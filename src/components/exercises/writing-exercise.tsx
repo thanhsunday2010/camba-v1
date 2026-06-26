@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { submitWritingForFeedback } from "@/actions/ai/writing";
 import { AiFeedbackPanel } from "@/components/ai/ai-feedback-panel";
+import { LessonAiRetryPanel } from "@/components/exercises/lesson-ai-retry-panel";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Loader2, PenLine } from "lucide-react";
 import { toast } from "sonner";
@@ -16,6 +17,11 @@ import {
   clampWritingToWordLimit,
   countWords,
 } from "@/lib/ai/ai-input-limits";
+import {
+  buildLessonRetryContext,
+  getLessonScoreDelta,
+  type LessonAttemptRecord,
+} from "@/lib/learning/lesson-ai-retry";
 
 interface WritingExerciseProps {
   exerciseId: string;
@@ -54,8 +60,25 @@ export function WritingExercise({
   const fmt = useLessonI18nFormatters();
   const [content, setContent] = useState("");
   const [feedback, setFeedback] = useState<WritingFeedback | null>(null);
+  const [attempts, setAttempts] = useState<LessonAttemptRecord[]>([]);
+  const [focusFixHint, setFocusFixHint] = useState<string | undefined>();
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const retryContext = useMemo(() => buildLessonRetryContext(attempts), [attempts]);
+  const scoreDelta = useMemo(() => getLessonScoreDelta(attempts), [attempts]);
+
+  const retryLabels = useMemo(
+    () => ({
+      retrySamePrompt: labels.retrySamePrompt,
+      retryHint: labels.retryHint,
+      scoreDelta: labels.scoreDelta,
+      focusFixTitle: labels.focusFixTitle,
+      attemptPrevious: labels.attemptPrevious,
+      attemptCurrent: labels.attemptCurrent,
+    }),
+    [labels]
+  );
 
   const maxWords = AI_WRITING_MAX_WORDS;
   const wordCount = countWords(content);
@@ -73,19 +96,33 @@ export function WritingExercise({
 
     setIsSubmitting(true);
     try {
+      const attemptNumber = attempts.length + 1;
       const result = await submitWritingForFeedback(
         exerciseId,
         lessonId,
         prompt,
         content,
-        targetLevel
+        targetLevel,
+        { attemptNumber, focusFixHint }
       );
       if (result.success && result.data) {
         setFeedback(result.data);
-        onComplete?.({
-          accuracyPercent: result.data.overallScore,
-          gamification: result.data.gamification,
-        });
+        setAttempts((prev) => [
+          ...prev,
+          {
+            attemptNumber,
+            overallScore: result.data!.overallScore,
+            preview: content.slice(0, 200),
+            submittedAt: new Date().toISOString(),
+          },
+        ]);
+        if (result.data.focusFix) setFocusFixHint(result.data.focusFix);
+        if (attemptNumber <= 1) {
+          onComplete?.({
+            accuracyPercent: result.data.overallScore,
+            gamification: result.data.gamification,
+          });
+        }
       } else {
         const message = result.error ?? "Không gửi được bài. Vui lòng thử lại.";
         setError(message);
@@ -101,6 +138,12 @@ export function WritingExercise({
     }
   }
 
+  function handleRetry() {
+    setContent("");
+    setFeedback(null);
+    setError(null);
+  }
+
   if (feedback) {
     return (
       <AiFeedbackPanel
@@ -108,14 +151,23 @@ export function WritingExercise({
         feedback={feedback}
         labels={labels}
         actions={
-          onNextExercise ? (
-            <div className="flex justify-end">
-              <Button onClick={onNextExercise} className="gap-1">
-                {fmt.nextExerciseLabel(nextExerciseTitle)}
-                <ChevronRight className="h-4 w-4" />
-              </Button>
-            </div>
-          ) : undefined
+          <div className="space-y-4">
+            <LessonAiRetryPanel
+              scoreDelta={scoreDelta}
+              retryContext={retryContext}
+              focusFix={feedback.focusFix}
+              labels={retryLabels}
+              onRetry={handleRetry}
+            />
+            {onNextExercise ? (
+              <div className="flex justify-end">
+                <Button onClick={onNextExercise} className="gap-1">
+                  {fmt.nextExerciseLabel(nextExerciseTitle)}
+                  <ChevronRight className="h-4 w-4" />
+                </Button>
+              </div>
+            ) : null}
+          </div>
         }
       />
     );

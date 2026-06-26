@@ -15,6 +15,15 @@
     "errorRecoveryDescription": "Something went wrong while fetching your data. Please try again — your progress is safe.",
     "errorRecoveryRetry": "Try again"
   },
+  "contact": {
+    "open": "Contact CAMBA",
+    "close": "Close contact menu",
+    "menuLabel": "Contact channels",
+    "channel": {
+      "zalo": "Chat on Zalo",
+      "messenger": "Messenger"
+    }
+  },
   "nav": {
     "dashboard": "Dashboard",
     "journey": "Learning Journey",
@@ -985,11 +994,19 @@
         "errorHighlights": "Errors to fix",
         "correctedVersion": "Suggested correction",
         "modelAnswer": "Suggested model answer",
+        "bestPhrase": "Best phrase",
+        "focusFix": "Focus fix",
         "questionAudioPlaying": "Playing question...",
         "replayQuestion": "Listen again",
         "stopAudio": "Stop audio",
         "modelAnswerAudioPlaying": "Playing model answer...",
-        "replayModelAnswer": "Replay model answer"
+        "replayModelAnswer": "Replay model answer",
+        "retrySamePrompt": "Retry same prompt",
+        "retryHint": "Your retry will focus on one key fix.",
+        "scoreDelta": "Vs last attempt: {delta} pts",
+        "focusFixTitle": "Priority for retry",
+        "attemptPrevious": "Attempt {n}",
+        "attemptCurrent": "Attempt {n}"
       }
     }
   },
@@ -1367,7 +1384,13 @@
     "fields": {
       "language": "Practice language",
       "level": "Current level",
-      "program": "Practice program"
+      "program": "Practice program",
+      "mode": "Practice mode"
+    },
+    "modes": {
+      "standard": "Standard",
+      "micro": "Quick (60s / ~50 words)",
+      "roleplay": "Role-play scenario"
     },
     "languages": {
       "english": "English",
@@ -1396,7 +1419,12 @@
       "setupTitle": "AI Writing practice",
       "setupSubtitle": "Pick language, level, and program — AI will generate a matching prompt.",
       "yourWriting": "Your writing",
-      "minWordsError": "Write at least {min} words."
+      "minWordsError": "Write at least {min} words.",
+      "outlineStep": "Step 1: Outline",
+      "outlineHint": "List 3–5 main points before writing your full answer.",
+      "outlinePlaceholder": "1. ...\n2. ...\n3. ...",
+      "outlineRequired": "Please write an outline first.",
+      "outlineNext": "Continue to writing"
     },
     "speaking": {
       "setupTitle": "AI Speaking practice",
@@ -1427,7 +1455,15 @@
       "submitting": "AI is grading...",
       "continue": "Continue practicing",
       "continuing": "Generating next prompt...",
-      "changeSetup": "Change setup"
+      "changeSetup": "Change setup",
+      "sentenceStarters": "Suggested sentence starters"
+    },
+    "phases": {
+      "listen": "Listen",
+      "repeat": "Repeat model",
+      "answer": "Answer",
+      "nextPhase": "Next step",
+      "repeatPrompt": "Repeat this model phrase"
     },
     "feedback": {
       "result": "Result",
@@ -1442,7 +1478,39 @@
       "overallScore": "Overall score",
       "modelAnswer": "Suggested model answer",
       "errorHighlights": "Errors to fix",
-      "correctedVersion": "Suggested correction"
+      "correctedVersion": "Suggested correction",
+      "bestPhrase": "Best phrase",
+      "focusFix": "Focus fix"
+    },
+    "enhancement": {
+      "improvementTitle": "Your progress",
+      "scoreDelta": "Vs last attempt: {delta} pts",
+      "newPersonalBest": "New personal best!",
+      "peerCompare": "Better than {percentile}% at your level",
+      "xpEarned": "+{xp} XP",
+      "focusFixTitle": "Priority for retry",
+      "bestPhraseTitle": "What you did well",
+      "retrySamePrompt": "Retry same prompt",
+      "retryHint": "Your retry will focus on one key fix.",
+      "shareImprovement": "Copy progress card",
+      "shareCopied": "Copied!"
+    },
+    "progress": {
+      "title": "Practice progress",
+      "overall": "Avg score",
+      "personalBest": "Personal best",
+      "thisWeek": "Sessions this week",
+      "heatmap": "28-day activity",
+      "recurringErrors": "Recurring errors",
+      "weeklySummary": "Weekly summary",
+      "trendUp": "Improving",
+      "trendDown": "Needs focus",
+      "trendStable": "Stable"
+    },
+    "modelAnswerTts": {
+      "playing": "Playing model answer...",
+      "replay": "Listen again",
+      "stop": "Stop"
     },
     "history": {
       "title": "Practice history",

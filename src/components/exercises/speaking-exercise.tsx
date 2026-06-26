@@ -3,6 +3,7 @@
 import { useMemo, useState, useRef } from "react";
 import { submitSpeakingForFeedback } from "@/actions/ai/speaking";
 import { AiFeedbackPanel } from "@/components/ai/ai-feedback-panel";
+import { LessonAiRetryPanel } from "@/components/exercises/lesson-ai-retry-panel";
 import { SpeakingSpeechControls } from "@/components/exercises/speaking-speech-controls";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Loader2, Mic, Square } from "lucide-react";
@@ -21,6 +22,11 @@ import { toast } from "sonner";
 import type { SpeakingFeedback } from "@/types/ai";
 import { AiSpeakingCountdown } from "@/components/ai/ai-speaking-countdown";
 import { AI_SPEAKING_MAX_SECONDS } from "@/lib/ai/ai-input-limits";
+import {
+  buildLessonRetryContext,
+  getLessonScoreDelta,
+  type LessonAttemptRecord,
+} from "@/lib/learning/lesson-ai-retry";
 
 interface SpeakingExerciseProps {
   exerciseId: string;
@@ -63,6 +69,8 @@ export function SpeakingExercise({
   const tAi = useTranslations("learning.lesson.ai");
   const maxDurationSeconds = AI_SPEAKING_MAX_SECONDS;
   const [feedback, setFeedback] = useState<SpeakingFeedback | null>(null);
+  const [attempts, setAttempts] = useState<LessonAttemptRecord[]>([]);
+  const [focusFixHint, setFocusFixHint] = useState<string | undefined>();
   const [error, setError] = useState<string | null>(null);
   const [isRecording, setIsRecording] = useState(false);
   const [duration, setDuration] = useState(0);
@@ -96,6 +104,21 @@ export function SpeakingExercise({
     playbackKey: questionPlaybackKey,
     enabled: !feedback,
   });
+
+  const retryContext = useMemo(() => buildLessonRetryContext(attempts), [attempts]);
+  const scoreDelta = useMemo(() => getLessonScoreDelta(attempts), [attempts]);
+
+  const retryLabels = useMemo(
+    () => ({
+      retrySamePrompt: labels.retrySamePrompt,
+      retryHint: labels.retryHint,
+      scoreDelta: labels.scoreDelta,
+      focusFixTitle: labels.focusFixTitle,
+      attemptPrevious: labels.attemptPrevious,
+      attemptCurrent: labels.attemptCurrent,
+    }),
+    [labels]
+  );
 
   const modelAnswerTexts = useMemo(
     () =>
@@ -196,6 +219,8 @@ export function SpeakingExercise({
       return;
     }
 
+    const attemptNumber = attempts.length + 1;
+
     cancelQuestionAudio();
     setError(null);
     setIsSubmitting(true);
@@ -213,14 +238,29 @@ export function SpeakingExercise({
           sceneDescription: sceneDescription ?? pictureDescription ?? undefined,
           followUpQuestions,
           clientTranscript: transcript.trim() || undefined,
+          attemptNumber,
+          focusFixHint,
         }
       );
       if (result.success && result.data) {
         setFeedback(result.data);
-        onComplete?.({
-          accuracyPercent: result.data.overallScore,
-          gamification: result.data.gamification,
-        });
+        const preview = (result.data.transcript ?? transcript).slice(0, 200);
+        setAttempts((prev) => [
+          ...prev,
+          {
+            attemptNumber,
+            overallScore: result.data!.overallScore,
+            preview,
+            submittedAt: new Date().toISOString(),
+          },
+        ]);
+        if (result.data.focusFix) setFocusFixHint(result.data.focusFix);
+        if (attemptNumber <= 1) {
+          onComplete?.({
+            accuracyPercent: result.data.overallScore,
+            gamification: result.data.gamification,
+          });
+        }
       } else {
         const message = result.error ?? "Không gửi được bài. Vui lòng thử lại.";
         setError(message);
@@ -234,6 +274,15 @@ export function SpeakingExercise({
     } finally {
       setIsSubmitting(false);
     }
+  }
+
+  function handleRetry() {
+    cancelModelAnswerAudio();
+    setFeedback(null);
+    setAudioBlob(null);
+    setDuration(0);
+    resetTranscription();
+    setError(null);
   }
 
   if (feedback) {
@@ -255,14 +304,23 @@ export function SpeakingExercise({
           ) : undefined
         }
         actions={
-          onNextExercise ? (
-            <div className="flex justify-end">
-              <Button onClick={onNextExercise} className="gap-1">
-                {fmt.nextExerciseLabel(nextExerciseTitle)}
-                <ChevronRight className="h-4 w-4" />
-              </Button>
-            </div>
-          ) : undefined
+          <div className="space-y-4">
+            <LessonAiRetryPanel
+              scoreDelta={scoreDelta}
+              retryContext={retryContext}
+              focusFix={feedback.focusFix}
+              labels={retryLabels}
+              onRetry={handleRetry}
+            />
+            {onNextExercise ? (
+              <div className="flex justify-end">
+                <Button onClick={onNextExercise} className="gap-1">
+                  {fmt.nextExerciseLabel(nextExerciseTitle)}
+                  <ChevronRight className="h-4 w-4" />
+                </Button>
+              </div>
+            ) : null}
+          </div>
         }
       />
     );

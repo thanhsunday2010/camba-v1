@@ -1,29 +1,44 @@
 "use client";
 
-import { useEffect, useRef, useState, useTransition } from "react";
+import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { useRouter } from "@/i18n/routing";
 import {
   generatePracticePrompt,
   submitStandaloneSpeakingPractice,
+  type PracticeSpeakingResult,
 } from "@/actions/ai-practice";
 import { SPEECH_LOCALES } from "@/lib/ai-practice/practice-config";
 import {
   advancePracticeSession,
   readPracticeSession,
+  recordPracticeAttempt,
+  resetPracticeForRetry,
+  setFocusFixHint,
+  updateSpeakingPhase,
   writePracticeSession,
 } from "@/lib/ai-practice/practice-session-storage";
-import { useMascotOptional } from "@/components/mascot/mascot-provider";
+import { useCelebrationOptional } from "@/components/camba/celebration/celebration-provider";
+import { celebratePracticeSubmit } from "@/lib/gamification/celebrate-client";
 import { PracticeFeedbackPanel } from "@/components/ai-practice/practice-feedback-panel";
+import {
+  PracticeEnhancementCards,
+  PracticeSentenceStarters,
+  PracticeSpeakingPhaseBar,
+} from "@/components/ai-practice/practice-enhancement-cards";
+import { PracticeModelAnswerTts } from "@/components/ai-practice/practice-model-answer-tts";
 import {
   PracticeHistoryPanel,
   type PracticeHistoryLabels,
 } from "@/components/ai-practice/practice-history-panel";
+import { PracticeProgressPanel } from "@/components/ai-practice/practice-progress-panel";
+import type { PracticeSpeakingSessionLabels } from "@/lib/ai-practice/practice-session-labels";
 import { StudentPageShell } from "@/components/camba";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { Button } from "@/components/ui/button";
 import { Loader2, Mic, RotateCcw, Square, Volume2 } from "lucide-react";
 import { useSpeechRecognition } from "@/lib/speech/use-speech-recognition";
 import { usePracticePromptSpeech } from "@/lib/speech/use-practice-prompt-speech";
+import { useLessonSpeakingSpeech } from "@/lib/speech/use-lesson-speaking-speech";
 import { readBlobAsBase64 } from "@/lib/speech/blob-to-base64";
 import {
   MicrophoneAccessError,
@@ -31,8 +46,8 @@ import {
   requestMicrophoneStream,
 } from "@/lib/speech/request-microphone";
 import { toast } from "sonner";
-import type { PracticeSpeakingFeedback } from "@/types/ai";
 import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
+import type { PracticeProgressViewModel } from "@/lib/ai-practice/practice-enhancement-types";
 import { AiSpeakingCountdown } from "@/components/ai/ai-speaking-countdown";
 import { AI_SPEAKING_MAX_SECONDS } from "@/lib/ai/ai-input-limits";
 import type { AiUsageStatus } from "@/lib/subscriptions/subscription-types";
@@ -40,54 +55,11 @@ import type { AiLimitDialogLabels } from "@/components/subscriptions/ai-limit-di
 import { AiUsageBadge } from "@/components/subscriptions/ai-usage-badge";
 import { useAiLimitDialog } from "@/components/subscriptions/use-ai-limit-dialog";
 
-export interface PracticeSpeakingSessionLabels {
-  setupPath: string;
-  round: string;
-  analysis: string;
-  prompt: string;
-  instructions: string;
-  followUp: string;
-  submit: string;
-  submitting: string;
-  continue: string;
-  continuing: string;
-  changeSetup: string;
-  startRecording: string;
-  stopRecording: string;
-  noRecording: string;
-  recording: string;
-  transcript: string;
-  transcriptPlaceholder: string;
-  transcriptUnsupported: string;
-  micAccessDenied: string;
-  micNotFound: string;
-  micInsecureContext: string;
-  micNotSupported: string;
-  micRecorderUnsupported: string;
-  micUnknownError: string;
-  questionAudioPlaying: string;
-  replayQuestion: string;
-  feedback: {
-    result: string;
-    estimatedLevel: string;
-    grammar: string;
-    vocabulary: string;
-    coherence: string;
-    improvements: string;
-    pronunciation: string;
-    fluency: string;
-    suggestions: string;
-    overallScore: string;
-    transcript?: string;
-    modelAnswer: string;
-    errorHighlights?: string;
-  };
-}
-
 interface PracticeSpeakingSessionProps {
   labels: PracticeSpeakingSessionLabels;
   historySummary: PracticeHistorySummary;
   historyLabels: PracticeHistoryLabels;
+  progress: PracticeProgressViewModel | null;
   aiUsage: AiUsageStatus;
   aiUsageLabels: { label: string; remaining: string };
   limitDialogLabels: AiLimitDialogLabels;
@@ -97,15 +69,16 @@ export function PracticeSpeakingSession({
   labels,
   historySummary,
   historyLabels,
+  progress,
   aiUsage,
   aiUsageLabels,
   limitDialogLabels,
 }: PracticeSpeakingSessionProps) {
   const router = useRouter();
-  const mascot = useMascotOptional();
+  const celebration = useCelebrationOptional();
   const { handleActionResult, dialog: limitDialog } = useAiLimitDialog(limitDialogLabels);
   const [session, setSession] = useState(() => readPracticeSession());
-  const [feedback, setFeedback] = useState<PracticeSpeakingFeedback | null>(null);
+  const [feedback, setFeedback] = useState<PracticeSpeakingResult | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isRecording, setIsRecording] = useState(false);
   const [duration, setDuration] = useState(0);
@@ -129,9 +102,8 @@ export function PracticeSpeakingSession({
     reset: resetTranscription,
   } = useSpeechRecognition(speechLocale);
 
-  const promptPlaybackKey = session
-    ? `${session.round}:${session.currentPrompt.prompt}`
-    : "";
+  const speakingPhase = session?.speakingPhase ?? "listen";
+  const promptPlaybackKey = session ? `${session.round}:${session.currentPrompt.prompt}` : "";
 
   const {
     isSpeaking: isQuestionSpeaking,
@@ -143,7 +115,19 @@ export function PracticeSpeakingSession({
     promptText: session?.currentPrompt.prompt ?? "",
     followUpQuestions: session?.currentPrompt.followUpQuestions,
     playbackKey: promptPlaybackKey,
-    enabled: !!session && session.profile.skill === "speaking" && !feedback,
+    enabled:
+      !!session &&
+      session.profile.skill === "speaking" &&
+      !feedback &&
+      speakingPhase === "listen",
+  });
+
+  const repeatText = session?.currentPrompt.repeatPhrase?.trim() ?? "";
+  const { play: playRepeatPhrase, isSpeaking: isRepeatSpeaking } = useLessonSpeakingSpeech({
+    texts: repeatText ? [repeatText] : [],
+    targetLevel: session?.profile.level,
+    playbackKey: `${promptPlaybackKey}:repeat`,
+    enabled: !!repeatText && speakingPhase === "repeat" && !feedback,
   });
 
   useEffect(() => {
@@ -152,13 +136,42 @@ export function PracticeSpeakingSession({
     }
   }, [session, router, labels.setupPath]);
 
+  const retryContext = useMemo(() => {
+    if (!feedback || !session || session.attempts.length < 2) return null;
+    const prev = session.attempts[session.attempts.length - 2];
+    const current = session.attempts[session.attempts.length - 1];
+    return {
+      previousScore: prev.overallScore,
+      previousPreview: prev.preview,
+      currentScore: current.overallScore,
+      currentPreview: current.preview,
+      attemptNumber: current.attemptNumber,
+    };
+  }, [feedback, session]);
+
   if (!session || session.profile.skill !== "speaking") {
     return null;
   }
 
   const activeSession = session;
   const { currentPrompt, profile, round } = activeSession;
-  const maxDurationSeconds = AI_SPEAKING_MAX_SECONDS;
+  const maxDurationSeconds =
+    currentPrompt.maxDurationSeconds ??
+    (profile.mode === "micro" ? 60 : AI_SPEAKING_MAX_SECONDS);
+  const previousBest = progress?.personalBest ?? historySummary.bestScore;
+  const canRecord = speakingPhase === "answer";
+
+  function persistSession(next: typeof activeSession) {
+    writePracticeSession(next);
+    setSession(next);
+  }
+
+  function advancePhase() {
+    const nextPhase =
+      speakingPhase === "listen" ? "repeat" : speakingPhase === "repeat" ? "answer" : "answer";
+    cancelQuestionAudio();
+    persistSession(updateSpeakingPhase(activeSession, nextPhase));
+  }
 
   function getMicrophoneErrorMessage(err: unknown): string {
     if (err instanceof MicrophoneAccessError) {
@@ -181,6 +194,7 @@ export function PracticeSpeakingSession({
   }
 
   async function startRecording() {
+    if (!canRecord) return;
     try {
       cancelQuestionAudio();
       setAudioBlob(null);
@@ -236,6 +250,10 @@ export function PracticeSpeakingSession({
       return;
     }
 
+    const attemptNumber = activeSession.attempts.length + 1;
+    const previousAttemptScore =
+      activeSession.attempts[activeSession.attempts.length - 1]?.overallScore ?? null;
+
     setError(null);
     setIsSubmitting(true);
     try {
@@ -246,16 +264,33 @@ export function PracticeSpeakingSession({
         base64,
         recorderMimeTypeRef.current,
         duration,
-        transcript.trim() || undefined
+        transcript.trim() || undefined,
+        {
+          attemptNumber,
+          focusFixHint: activeSession.focusFixHint,
+          previousBest,
+          previousAttemptScore,
+        }
       );
       if (result.success && result.data) {
         setFeedback(result.data);
+        const preview = (result.data.transcript ?? transcript).slice(0, 200);
+        const withAttempt = recordPracticeAttempt(activeSession, {
+          attemptNumber,
+          overallScore: result.data.overallScore,
+          preview,
+          submittedAt: new Date().toISOString(),
+          pronunciationScore: result.data.pronunciationScore,
+          fluencyScore: result.data.fluencyScore,
+          grammarScore: result.data.grammarScore,
+          vocabularyScore: result.data.vocabularyScore,
+        });
+        persistSession(setFocusFixHint(withAttempt, result.data.focusFix));
         router.refresh();
-        if (result.data.overallScore >= 75) {
-          mascot?.cheerHighScore(result.data.overallScore);
-        } else {
-          mascot?.cheerExerciseComplete();
-        }
+        celebratePracticeSubmit(celebration, {
+          overallScore: result.data.overallScore,
+          xpAwarded: result.data.meta.xpAwarded,
+        });
       } else if (handleActionResult(result)) {
         setError(result.error ?? null);
       } else {
@@ -266,6 +301,15 @@ export function PracticeSpeakingSession({
     } finally {
       setIsSubmitting(false);
     }
+  }
+
+  function handleRetry() {
+    persistSession(resetPracticeForRetry(activeSession));
+    setFeedback(null);
+    setAudioBlob(null);
+    setDuration(0);
+    resetTranscription();
+    setError(null);
   }
 
   function handleContinue() {
@@ -292,27 +336,35 @@ export function PracticeSpeakingSession({
       {limitDialog}
       <div className="camba-section-stack gap-6">
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <p className="camba-caption text-muted">{labels.round.replace("{n}", String(round))}</p>
+          <div className="flex items-center gap-2">
+            <p className="camba-caption text-muted">{labels.round.replace("{n}", String(round))}</p>
+            {profile.mode !== "standard" && (
+              <span className="camba-caption rounded-full bg-program/10 text-program px-2 py-0.5 font-medium">
+                {profile.mode === "micro" ? labels.modeMicro : labels.modeRoleplay}
+              </span>
+            )}
+          </div>
           <div className="flex items-center gap-2">
             <AiUsageBadge aiUsage={aiUsage} labels={aiUsageLabels} />
             <Button variant="ghost" size="sm" onClick={() => router.push(labels.setupPath)}>
-            <RotateCcw className="h-4 w-4" />
-            {labels.changeSetup}
-          </Button>
+              <RotateCcw className="h-4 w-4" />
+              {labels.changeSetup}
+            </Button>
           </div>
         </div>
 
         <CambaCard variant="lesson" padding="md" className="space-y-4">
+          {currentPrompt.rolePlayPersona && (
+            <p className="camba-caption font-semibold text-program">{currentPrompt.rolePlayPersona}</p>
+          )}
           <div>
-            <p className="camba-caption font-semibold text-program uppercase tracking-wide">
-              {labels.analysis}
-            </p>
+            <p className="camba-caption font-semibold text-program uppercase tracking-wide">{labels.analysis}</p>
             <p className="camba-body text-muted mt-1">{currentPrompt.analysisSummary}</p>
           </div>
           <div>
             <div className="flex flex-wrap items-center justify-between gap-2">
               <p className="camba-caption font-semibold text-foreground">{labels.prompt}</p>
-              {!feedback && (
+              {!feedback && speakingPhase === "listen" && (
                 <div className="flex items-center gap-2">
                   {isQuestionSpeaking && (
                     <span className="inline-flex items-center gap-1.5 text-xs text-program font-medium">
@@ -347,68 +399,92 @@ export function PracticeSpeakingSession({
               </ol>
             </div>
           )}
+          <PracticeSentenceStarters
+            starters={currentPrompt.sentenceStarters ?? []}
+            label={labels.sentenceStarters}
+          />
         </CambaCard>
 
         {!feedback ? (
           <CambaCard variant="elevated" padding="md" className="space-y-4">
-            <div className="flex flex-col items-center gap-4 py-2">
-              <AiSpeakingCountdown
-                elapsedSeconds={duration}
-                maxSeconds={maxDurationSeconds}
-                isRecording={isRecording}
-                recordingLabel={labels.recording}
-              />
-              <div
-                className={`h-20 w-20 rounded-full flex items-center justify-center ${
-                  isRecording ? "bg-error/10 animate-pulse" : "bg-[var(--surface-sunken)]"
-                }`}
-              >
-                <Mic className={`h-8 w-8 ${isRecording ? "text-error" : "text-muted"}`} />
-              </div>
+            <PracticeSpeakingPhaseBar
+              phase={speakingPhase}
+              labels={labels.phases}
+              onAdvance={speakingPhase !== "answer" ? advancePhase : undefined}
+            />
 
-              {(isRecording || audioBlob) && (
-                <div className="w-full rounded-xl border border-border bg-[var(--surface-sunken)] p-3">
-                  <p className="camba-caption font-medium text-muted mb-2">{labels.transcript}</p>
-                  {displayTranscript ? (
-                    <p className="text-sm leading-relaxed">
-                      {transcript}
-                      {interimTranscript && (
-                        <span className="text-muted">
-                          {transcript ? " " : ""}
-                          {interimTranscript}
-                        </span>
-                      )}
-                    </p>
-                  ) : isRecording ? (
-                    <p className="text-sm text-muted italic">{labels.transcriptPlaceholder}</p>
-                  ) : !isSpeechSupported ? (
-                    <p className="text-sm text-muted italic">{labels.transcriptUnsupported}</p>
+            {speakingPhase === "repeat" && repeatText && (
+              <div className="rounded-lg bg-program/5 border border-program/15 p-3 space-y-2">
+                <p className="camba-caption font-medium text-muted">{labels.phases.repeatPrompt}</p>
+                <p className="camba-body font-medium text-foreground">{repeatText}</p>
+                <Button type="button" variant="outline" size="sm" onClick={() => void playRepeatPhrase()} disabled={isRepeatSpeaking}>
+                  <Volume2 className="h-4 w-4" />
+                  {labels.replayQuestion}
+                </Button>
+              </div>
+            )}
+
+            {canRecord && (
+              <div className="flex flex-col items-center gap-4 py-2">
+                <AiSpeakingCountdown
+                  elapsedSeconds={duration}
+                  maxSeconds={maxDurationSeconds}
+                  isRecording={isRecording}
+                  recordingLabel={labels.recording}
+                />
+                <div
+                  className={`h-20 w-20 rounded-full flex items-center justify-center ${
+                    isRecording ? "bg-error/10 animate-pulse" : "bg-[var(--surface-sunken)]"
+                  }`}
+                >
+                  <Mic className={`h-8 w-8 ${isRecording ? "text-error" : "text-muted"}`} />
+                </div>
+
+                {(isRecording || audioBlob) && (
+                  <div className="w-full rounded-xl border border-border bg-[var(--surface-sunken)] p-3">
+                    <p className="camba-caption font-medium text-muted mb-2">{labels.transcript}</p>
+                    {displayTranscript ? (
+                      <p className="text-sm leading-relaxed">
+                        {transcript}
+                        {interimTranscript && (
+                          <span className="text-muted">
+                            {transcript ? " " : ""}
+                            {interimTranscript}
+                          </span>
+                        )}
+                      </p>
+                    ) : isRecording ? (
+                      <p className="text-sm text-muted italic">{labels.transcriptPlaceholder}</p>
+                    ) : !isSpeechSupported ? (
+                      <p className="text-sm text-muted italic">{labels.transcriptUnsupported}</p>
+                    ) : (
+                      <p className="text-sm text-muted italic">{labels.transcriptPlaceholder}</p>
+                    )}
+                  </div>
+                )}
+
+                <div className="flex gap-3">
+                  {!isRecording ? (
+                    <Button onClick={startRecording} variant="outline">
+                      <Mic className="h-4 w-4" />
+                      {labels.startRecording}
+                    </Button>
                   ) : (
-                    <p className="text-sm text-muted italic">{labels.transcriptPlaceholder}</p>
+                    <Button onClick={stopRecording} variant="destructive">
+                      <Square className="h-4 w-4" />
+                      {labels.stopRecording}
+                    </Button>
+                  )}
+                  {audioBlob && !isRecording && (
+                    <Button onClick={handleSubmit} disabled={isSubmitting}>
+                      {isSubmitting && <Loader2 className="animate-spin" />}
+                      {isSubmitting ? labels.submitting : labels.submit}
+                    </Button>
                   )}
                 </div>
-              )}
-
-              <div className="flex gap-3">
-                {!isRecording ? (
-                  <Button onClick={startRecording} variant="outline">
-                    <Mic className="h-4 w-4" />
-                    {labels.startRecording}
-                  </Button>
-                ) : (
-                  <Button onClick={stopRecording} variant="destructive">
-                    <Square className="h-4 w-4" />
-                    {labels.stopRecording}
-                  </Button>
-                )}
-                {audioBlob && !isRecording && (
-                  <Button onClick={handleSubmit} disabled={isSubmitting}>
-                    {isSubmitting && <Loader2 className="animate-spin" />}
-                    {isSubmitting ? labels.submitting : labels.submit}
-                  </Button>
-                )}
               </div>
-            </div>
+            )}
+
             {error && (
               <p className="text-sm text-error bg-red-50 border border-red-100 rounded-lg px-3 py-2">
                 {error}
@@ -416,24 +492,44 @@ export function PracticeSpeakingSession({
             )}
           </CambaCard>
         ) : (
-          <PracticeFeedbackPanel
-            type="speaking"
-            feedback={feedback}
-            labels={labels.feedback}
-            actions={
-              <Button className="w-full" onClick={handleContinue} disabled={isContinuing}>
-                {isContinuing && <Loader2 className="animate-spin" />}
-                {isContinuing ? labels.continuing : labels.continue}
-              </Button>
-            }
-          />
+          <div className="space-y-4">
+            <PracticeEnhancementCards
+              meta={feedback.meta}
+              focusFix={feedback.focusFix}
+              bestPhrase={feedback.bestPhrase}
+              retryContext={retryContext}
+              labels={labels.enhancement}
+              onRetry={handleRetry}
+            />
+            <PracticeFeedbackPanel
+              type="speaking"
+              feedback={feedback}
+              labels={labels.feedback}
+              actions={
+                <Button className="w-full" onClick={handleContinue} disabled={isContinuing}>
+                  {isContinuing && <Loader2 className="animate-spin" />}
+                  {isContinuing ? labels.continuing : labels.continue}
+                </Button>
+              }
+            />
+            {feedback.modelAnswerSuggestion && (
+              <CambaCard variant="lesson" padding="md" className="space-y-2">
+                <p className="camba-caption font-semibold text-foreground">{labels.feedback.modelAnswer}</p>
+                <p className="camba-body text-foreground/90">{feedback.modelAnswerSuggestion}</p>
+                <PracticeModelAnswerTts
+                  text={feedback.modelAnswerSuggestion}
+                  targetLevel={profile.level}
+                  playbackKey={`speaking-${activeSession.promptKey}`}
+                  labels={labels.modelAnswerTts}
+                />
+              </CambaCard>
+            )}
+          </div>
         )}
 
-        <PracticeHistoryPanel
-          skill="speaking"
-          summary={historySummary}
-          labels={historyLabels}
-        />
+        {progress && <PracticeProgressPanel progress={progress} labels={labels.progress} />}
+
+        <PracticeHistoryPanel skill="speaking" summary={historySummary} labels={historyLabels} />
       </div>
     </StudentPageShell>
   );

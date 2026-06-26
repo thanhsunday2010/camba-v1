@@ -187,11 +187,19 @@ export type AiExerciseLabels = {
   errorHighlights: string;
   correctedVersion: string;
   modelAnswer: string;
+  bestPhrase: string;
+  focusFix: string;
   questionAudioPlaying: string;
   replayQuestion: string;
   stopAudio: string;
   modelAnswerAudioPlaying: string;
   replayModelAnswer: string;
+  retrySamePrompt: string;
+  retryHint: string;
+  scoreDelta: string;
+  focusFixTitle: string;
+  attemptPrevious: string;
+  attemptCurrent: string;
 };
 
 export type LessonChromeLabels = {

@@ -37,6 +37,8 @@ export async function submitSpeakingForFeedback(
     sceneDescription?: string;
     followUpQuestions?: string[];
     clientTranscript?: string;
+    attemptNumber?: number;
+    focusFixHint?: string;
   }
 ): Promise<ActionResult<WithGamification<SpeakingFeedback>>> {
   const supabase = await createClient();
@@ -99,6 +101,8 @@ export async function submitSpeakingForFeedback(
         followUpQuestions: context?.followUpQuestions,
         learnerDeclaredLevel,
         clientTranscript: context?.clientTranscript,
+        attemptNumber: context?.attemptNumber,
+        focusFixHint: context?.focusFixHint,
       }),
       audioBase64,
       mimeType
@@ -137,25 +141,36 @@ export async function submitSpeakingForFeedback(
         targetLevel,
         learnerDeclaredLevel,
         context,
+        attemptNumber: context?.attemptNumber,
       },
       responseData: feedback as unknown as Record<string, unknown>,
       shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
     });
 
-    const gamification = await completeAiExercise(
-      exerciseId,
-      lessonId,
-      feedback.overallScore,
-      durationSeconds
-    );
-
-    after(async () => {
+    const isFirstAttempt = (context?.attemptNumber ?? 1) <= 1;
+    let gamification: import("@/lib/gamification/gamification-types").ExerciseGamificationSummary | undefined;
+    if (isFirstAttempt) {
       try {
-        await generateRecommendationsFromFeedback(user.id, feedback.suggestions.slice(0, 2));
-      } catch (postError) {
-        console.error("Post-speaking recommendations failed:", postError);
+        gamification = await completeAiExercise(
+          exerciseId,
+          lessonId,
+          feedback.overallScore,
+          durationSeconds
+        );
+      } catch (completeError) {
+        console.error("completeAiExercise failed:", completeError);
       }
-    });
+    }
+
+    if (isFirstAttempt) {
+      after(async () => {
+        try {
+          await generateRecommendationsFromFeedback(user.id, feedback.suggestions.slice(0, 2));
+        } catch (postError) {
+          console.error("Post-speaking recommendations failed:", postError);
+        }
+      });
+    }
 
     return { success: true, data: { ...feedback, gamification } };
   } catch (error) {

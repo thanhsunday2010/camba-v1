@@ -17,7 +17,9 @@ Listen to the audio and return ONLY valid JSON matching this exact structure:
   "overallScore": 0-100,
   "modelAnswerSuggestion": "Short model spoken response in English (2-4 sentences) calibrated to the learner's declared level",
   "errorHighlights": ["[wrong fragment]{correct fragment} — max 5 key fixes from the student's transcript"],
-  "correctedVersion": "Student's transcript improved with each fix marked as [wrong]{correct}; unchanged text stays plain"
+  "correctedVersion": "Student's transcript improved with each fix marked as [wrong]{correct}; unchanged text stays plain",
+  "bestPhrase": "One strong phrase the learner said well (quote exactly from transcript)",
+  "focusFix": "ONE priority fix in Vietnamese (max 15 words) for the next attempt"
 }
 shieldEstimate.speaking is a shield count from 0 to 15 for the speaking skill only.
 Include shieldEstimate.scaleScore (integer 100-170) ONLY for KET or PET when appropriate; omit for Starters, Movers, and Flyers.
@@ -34,6 +36,8 @@ export function buildSpeakingPrompt(
     followUpQuestions?: string[];
     learnerDeclaredLevel?: string;
     clientTranscript?: string;
+    attemptNumber?: number;
+    focusFixHint?: string;
   }
 ): string {
   const followUpBlock =
@@ -55,11 +59,16 @@ export function buildSpeakingPrompt(
     ? `\nLive speech-to-text transcript captured while the student spoke (copy this EXACTLY into the transcript field — character for character, do not change any word):\n"""\n${clientTranscript}\n"""`
     : `\nNo live transcript was captured. Transcribe the audio verbatim into transcript — include errors and fillers, do not correct.`;
 
+  const retryBlock =
+    (options?.attemptNumber ?? 1) > 1
+      ? `\nThis is retry attempt #${options?.attemptNumber}. Prioritize ONE focusFix${options?.focusFixHint ? `: ${options.focusFixHint}` : ""}. Limit errorHighlights to 1 item.`
+      : "";
+
   return `Assess this Cambridge English speaking submission.
 
 Speaking prompt: ${prompt}
 Target level: ${targetLevel ?? "Unknown"}${sceneBlock}${followUpBlock}${levelBlock}
-${transcriptBlock}
+${transcriptBlock}${retryBlock}
 
 Assess pronunciation, fluency, grammar, and vocabulary from the audio and transcript.
 Include errorHighlights and correctedVersion derived from the student's transcript only.

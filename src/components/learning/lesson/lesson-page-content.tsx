@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { deriveResolvedLessonProgress } from "@/lib/learning/lesson-ui-utils";
 import { useMascotOptional } from "@/components/mascot/mascot-provider";
 import { useCelebrationOptional } from "@/components/camba/celebration/celebration-provider";
-import { celebrateExerciseGamification } from "@/lib/gamification/celebrate-client";
+import { celebrateExerciseOutcome } from "@/lib/gamification/celebrate-client";
 import type {
   AiExerciseLabels,
   LessonChromeLabels,
@@ -128,17 +128,10 @@ export function LessonPageContent({
           next.set(exerciseId, meta.accuracyPercent!);
           return next;
         });
-
-        if (meta.gamification) {
-          celebrateExerciseGamification(meta.gamification, celebration, mascot);
-        } else if (meta.accuracyPercent >= 75) {
-          mascot?.cheerHighScore(meta.accuracyPercent);
-        } else {
-          mascot?.cheerExerciseComplete();
-        }
-      } else if (meta?.gamification) {
-        celebrateExerciseGamification(meta.gamification, celebration, mascot);
       }
+
+      celebrateExerciseOutcome(celebration, meta?.accuracyPercent, meta?.gamification, mascot);
+
       setLastCompletedMeta({
         exerciseId,
         accuracyPercent: meta?.accuracyPercent,

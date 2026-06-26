@@ -25,6 +25,8 @@ interface AiFeedbackPanelProps {
     errorHighlights?: string;
     correctedVersion?: string;
     modelAnswer?: string;
+    bestPhrase?: string;
+    focusFix?: string;
   };
   actions?: ReactNode;
   modelAnswerFooter?: ReactNode;
@@ -62,6 +64,12 @@ export function AiFeedbackPanel({
 
         {writing && (
           <>
+            {writing.focusFix && (
+              <FocusFixBanner label={labels.focusFix ?? "Tập trung sửa"} content={writing.focusFix} />
+            )}
+            {writing.bestPhrase && (
+              <BestPhraseBanner label={labels.bestPhrase ?? "Cụm hay nhất"} content={writing.bestPhrase} />
+            )}
             {writing.errorHighlights && writing.errorHighlights.length > 0 && (
               <div className="rounded-lg border border-red-100 bg-red-50/40 p-3">
                 <p className="text-sm font-medium text-gray-900 mb-2">
@@ -105,6 +113,12 @@ export function AiFeedbackPanel({
 
         {speaking && (
           <>
+            {speaking.focusFix && (
+              <FocusFixBanner label={labels.focusFix ?? "Tập trung sửa"} content={speaking.focusFix} />
+            )}
+            {speaking.bestPhrase && (
+              <BestPhraseBanner label={labels.bestPhrase ?? "Cụm hay nhất"} content={speaking.bestPhrase} />
+            )}
             {speaking.transcript && (
               <div className="bg-gray-50 rounded-lg p-3">
                 <p className="text-sm font-medium text-gray-900 mb-1">
@@ -187,6 +201,24 @@ function ScoreChip({ label, score }: { label: string; score: number }) {
     <div className="bg-gray-50 rounded-lg p-2.5 text-center">
       <p className="text-xs text-gray-500">{label}</p>
       <p className="text-lg font-bold text-primary">{score}</p>
+    </div>
+  );
+}
+
+function FocusFixBanner({ label, content }: { label: string; content: string }) {
+  return (
+    <div className="rounded-lg border border-amber-200/80 bg-amber-50/40 p-3">
+      <p className="text-sm font-medium text-gray-900 mb-1">{label}</p>
+      <p className="text-sm text-gray-800">{content}</p>
+    </div>
+  );
+}
+
+function BestPhraseBanner({ label, content }: { label: string; content: string }) {
+  return (
+    <div className="rounded-lg border border-green-200/80 bg-green-50/30 p-3">
+      <p className="text-sm font-medium text-gray-900 mb-1">{label}</p>
+      <p className="text-sm text-gray-800 italic">&ldquo;{content}&rdquo;</p>
     </div>
   );
 }

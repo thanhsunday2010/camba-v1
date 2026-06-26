@@ -28,7 +28,8 @@ export async function submitWritingForFeedback(
   lessonId: string,
   prompt: string,
   content: string,
-  targetLevel?: string
+  targetLevel?: string,
+  options?: { attemptNumber?: number; focusFixHint?: string }
 ): Promise<ActionResult<WithGamification<WritingFeedback>>> {
   const supabase = await createClient();
 
@@ -89,7 +90,10 @@ export async function submitWritingForFeedback(
 
     const rawJson = await generateJsonResponse(
       WRITING_FEEDBACK_SYSTEM,
-      buildWritingPrompt(prompt, content, targetLevel, learnerDeclaredLevel)
+      buildWritingPrompt(prompt, content, targetLevel, learnerDeclaredLevel, {
+        attemptNumber: options?.attemptNumber,
+        focusFixHint: options?.focusFixHint,
+      })
     );
 
     const feedback = parseGeminiJson(rawJson, WritingFeedbackSchema);
@@ -98,25 +102,37 @@ export async function submitWritingForFeedback(
       feedbackType: "writing",
       referenceType: "writing_submission",
       referenceId: submission.id,
-      inputData: { prompt, content, wordCount, targetLevel, learnerDeclaredLevel },
+      inputData: {
+        prompt,
+        content,
+        wordCount,
+        targetLevel,
+        learnerDeclaredLevel,
+        attemptNumber: options?.attemptNumber,
+      },
       responseData: feedback as unknown as Record<string, unknown>,
       shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
     });
 
-    const gamification = await completeAiExercise(
-      exerciseId,
-      lessonId,
-      feedback.overallScore,
-      0
-    );
-
-    after(async () => {
+    const isFirstAttempt = (options?.attemptNumber ?? 1) <= 1;
+    let gamification: import("@/lib/gamification/gamification-types").ExerciseGamificationSummary | undefined;
+    if (isFirstAttempt) {
       try {
-        await generateRecommendationsFromFeedback(user.id, feedback.weaknesses ?? []);
-      } catch (postError) {
-        console.error("Post-writing recommendations failed:", postError);
+        gamification = await completeAiExercise(exerciseId, lessonId, feedback.overallScore, 0);
+      } catch (completeError) {
+        console.error("completeAiExercise failed:", completeError);
       }
-    });
+    }
+
+    if (isFirstAttempt) {
+      after(async () => {
+        try {
+          await generateRecommendationsFromFeedback(user.id, feedback.weaknesses ?? []);
+        } catch (postError) {
+          console.error("Post-writing recommendations failed:", postError);
+        }
+      });
+    }
 
     return { success: true, data: { ...feedback, gamification } };
   } catch (error) {

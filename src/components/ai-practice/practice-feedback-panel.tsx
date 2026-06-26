@@ -25,6 +25,8 @@ interface PracticeFeedbackPanelProps {
     modelAnswer: string;
     errorHighlights?: string;
     correctedVersion?: string;
+    bestPhrase?: string;
+    focusFix?: string;
   };
   actions?: ReactNode;
 }

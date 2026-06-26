@@ -13,8 +13,14 @@ import {
   buildPracticeWritingFeedbackRequest,
 } from "@/lib/ai/prompts/ai-practice";
 import { finalizeSpeakingTranscript } from "@/lib/ai/learner-level-guidance";
+import {
+  buildPracticeSubmitMeta,
+  fetchRecurringErrorsForUser,
+  getPracticeProgressViewModel,
+} from "@/lib/ai-practice/practice-analytics";
+import type { PracticeSubmitMeta, PracticeProgressViewModel } from "@/lib/ai-practice/practice-enhancement-types";
 import { PracticeProfileSchema } from "@/lib/ai-practice/practice-types";
-import type { PracticeProfile } from "@/lib/ai-practice/practice-types";
+import type { PracticeProfile, PracticeSkill } from "@/lib/ai-practice/practice-types";
 import {
   PracticePromptSchema,
   PracticeSpeakingFeedbackSchema,
@@ -36,6 +42,9 @@ import {
   countWords,
   isWithinSpeakingDurationLimit,
 } from "@/lib/ai/ai-input-limits";
+
+export type PracticeWritingResult = PracticeWritingFeedback & { meta: PracticeSubmitMeta };
+export type PracticeSpeakingResult = PracticeSpeakingFeedback & { meta: PracticeSubmitMeta };
 
 function revalidatePracticePaths(skill: "writing" | "speaking") {
   revalidatePath("/dashboard");
@@ -59,7 +68,8 @@ function mapAiPracticeError(error: unknown): string {
 
 export async function generatePracticePrompt(
   profileInput: PracticeProfile,
-  previousPrompts: string[] = []
+  previousPrompts: string[] = [],
+  options?: { focusFixHint?: string }
 ): Promise<ActionResult<PracticePromptResult>> {
   const parsed = PracticeProfileSchema.safeParse(profileInput);
   if (!parsed.success) {
@@ -83,9 +93,13 @@ export async function generatePracticePrompt(
   }
 
   try {
+    const recurringErrors = await fetchRecurringErrorsForUser(user.id, parsed.data.skill);
     const rawJson = await generateJsonResponse(
       PRACTICE_PROMPT_SYSTEM,
-      buildPracticePromptRequest(parsed.data, previousPrompts)
+      buildPracticePromptRequest(parsed.data, previousPrompts, {
+        recurringErrors,
+        focusFixHint: options?.focusFixHint,
+      })
     );
     const prompt = parseGeminiJson(rawJson, PracticePromptSchema);
     return { success: true, data: prompt };
@@ -94,11 +108,29 @@ export async function generatePracticePrompt(
   }
 }
 
+export async function getPracticeProgress(
+  skill: PracticeSkill
+): Promise<PracticeProgressViewModel | null> {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return null;
+  return getPracticeProgressViewModel(user.id, skill);
+}
+
 export async function submitStandaloneWritingPractice(
   profileInput: PracticeProfile,
   prompt: string,
-  content: string
-): Promise<ActionResult<PracticeWritingFeedback>> {
+  content: string,
+  options?: {
+    outline?: string;
+    attemptNumber?: number;
+    focusFixHint?: string;
+    previousBest?: number | null;
+    previousAttemptScore?: number | null;
+  }
+): Promise<ActionResult<PracticeWritingResult>> {
   const parsed = PracticeProfileSchema.safeParse(profileInput);
   if (!parsed.success) {
     return { success: false, error: "Thông tin luyện tập không hợp lệ." };
@@ -149,7 +181,11 @@ export async function submitStandaloneWritingPractice(
 
     const rawJson = await generateJsonResponse(
       PRACTICE_WRITING_FEEDBACK_SYSTEM,
-      buildPracticeWritingFeedbackRequest(parsed.data, prompt, content)
+      buildPracticeWritingFeedbackRequest(parsed.data, prompt, content, {
+        outline: options?.outline,
+        attemptNumber: options?.attemptNumber,
+        focusFixHint: options?.focusFixHint,
+      })
     );
 
     const feedback = parseGeminiJson(rawJson, PracticeWritingFeedbackSchema);
@@ -158,14 +194,32 @@ export async function submitStandaloneWritingPractice(
       feedbackType: "writing",
       referenceType: "writing_submission",
       referenceId: submission.id,
-      inputData: { profile: parsed.data, prompt, content, wordCount, standalone: true },
+      inputData: {
+        profile: parsed.data,
+        prompt,
+        content,
+        wordCount,
+        outline: options?.outline,
+        attemptNumber: options?.attemptNumber,
+        standalone: true,
+      },
       responseData: feedback as unknown as Record<string, unknown>,
       shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
     });
 
+    const meta = await buildPracticeSubmitMeta(
+      user.id,
+      "writing",
+      parsed.data.level,
+      feedback.overallScore,
+      options?.previousBest ?? null,
+      options?.previousAttemptScore ?? null,
+      0
+    );
+
     revalidatePracticePaths("writing");
 
-    return { success: true, data: feedback };
+    return { success: true, data: { ...feedback, meta } };
   } catch (error) {
     return { success: false, error: mapAiPracticeError(error) };
   }
@@ -177,8 +231,14 @@ export async function submitStandaloneSpeakingPractice(
   audioBase64: string,
   mimeType: string,
   durationSeconds: number,
-  clientTranscript?: string
-): Promise<ActionResult<PracticeSpeakingFeedback>> {
+  clientTranscript?: string,
+  options?: {
+    attemptNumber?: number;
+    focusFixHint?: string;
+    previousBest?: number | null;
+    previousAttemptScore?: number | null;
+  }
+): Promise<ActionResult<PracticeSpeakingResult>> {
   const parsed = PracticeProfileSchema.safeParse(profileInput);
   if (!parsed.success) {
     return { success: false, error: "Thông tin luyện tập không hợp lệ." };
@@ -225,7 +285,10 @@ export async function submitStandaloneSpeakingPractice(
 
     const rawJson = await generateJsonWithAudio(
       PRACTICE_SPEAKING_FEEDBACK_SYSTEM,
-      buildPracticeSpeakingFeedbackRequest(parsed.data, prompt, clientTranscript),
+      buildPracticeSpeakingFeedbackRequest(parsed.data, prompt, clientTranscript, {
+        attemptNumber: options?.attemptNumber,
+        focusFixHint: options?.focusFixHint,
+      }),
       audioBase64,
       mimeType
     );
@@ -262,15 +325,26 @@ export async function submitStandaloneSpeakingPractice(
         prompt,
         durationSeconds,
         clientTranscript,
+        attemptNumber: options?.attemptNumber,
         standalone: true,
       },
       responseData: feedback as unknown as Record<string, unknown>,
       shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
     });
 
+    const meta = await buildPracticeSubmitMeta(
+      user.id,
+      "speaking",
+      parsed.data.level,
+      feedback.overallScore,
+      options?.previousBest ?? null,
+      options?.previousAttemptScore ?? null,
+      durationSeconds
+    );
+
     revalidatePracticePaths("speaking");
 
-    return { success: true, data: feedback };
+    return { success: true, data: { ...feedback, meta } };
   } catch (error) {
     return { success: false, error: mapAiPracticeError(error) };
   }

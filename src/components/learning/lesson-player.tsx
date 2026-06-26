@@ -253,6 +253,7 @@ export function LessonPlayer({
                 markExerciseCompleted(exercise.id, {
                   exerciseId: exercise.id,
                   accuracyPercent: result.accuracyPercent,
+                  gamification: result.gamification,
                 })
               }
               nextExerciseTitle={nextExercise?.title}

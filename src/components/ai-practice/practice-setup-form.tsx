@@ -8,7 +8,7 @@ import {
   PRACTICE_LANGUAGES,
   PRACTICE_PROGRAMS,
 } from "@/lib/ai-practice/practice-config";
-import type { PracticeLanguage, PracticeProfile, PracticeSkill } from "@/lib/ai-practice/practice-types";
+import type { PracticeLanguage, PracticeMode, PracticeProfile, PracticeSkill } from "@/lib/ai-practice/practice-types";
 import type { AiLimitDialogLabels } from "@/components/subscriptions/ai-limit-dialog";
 import type { AiUsageStatus } from "@/lib/subscriptions/subscription-types";
 import { AiUsageBadge } from "@/components/subscriptions/ai-usage-badge";
@@ -26,11 +26,13 @@ export interface PracticeSetupLabels {
   language: string;
   level: string;
   program: string;
+  mode: string;
   start: string;
   starting: string;
   levelRequired: string;
   languages: Record<string, string>;
   programs: Record<string, string>;
+  modes: Record<string, string>;
 }
 
 interface PracticeSetupFormProps {
@@ -55,6 +57,7 @@ export function PracticeSetupForm({
   const [language, setLanguage] = useState<PracticeLanguage>("en");
   const [level, setLevel] = useState(() => LEVELS_BY_LANGUAGE.en[0]?.id ?? "");
   const [program, setProgram] = useState<PracticeProfile["program"]>("general");
+  const [mode, setMode] = useState<PracticeMode>("standard");
   const [error, setError] = useState<string | null>(null);
   const [isPending, startTransition] = useTransition();
 
@@ -73,7 +76,7 @@ export function PracticeSetupForm({
       return;
     }
 
-    const profile: PracticeProfile = { language, level: resolvedLevel, program, skill };
+    const profile: PracticeProfile = { language, level: resolvedLevel, program, skill, mode };
 
     startTransition(async () => {
       const result = await generatePracticePrompt(profile, []);
@@ -129,6 +132,22 @@ export function PracticeSetupForm({
           {levels.map((option) => (
             <option key={option.id} value={option.id}>
               {option.label}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div className="space-y-2">
+        <Label htmlFor="practice-mode">{labels.mode}</Label>
+        <select
+          id="practice-mode"
+          className="w-full rounded-lg border border-border bg-white px-3 py-2.5 text-sm camba-focus-ring"
+          value={mode}
+          onChange={(e) => setMode(e.target.value as PracticeMode)}
+        >
+          {(["standard", "micro", "roleplay"] as const).map((option) => (
+            <option key={option} value={option}>
+              {labels.modes[option] ?? option}
             </option>
           ))}
         </select>

@@ -78,7 +78,16 @@ export async function getStudyCoachPlan(): Promise<ActionResult<StudyCoachRespon
         streak: streak?.current_streak ?? 0,
         recentAccuracy,
         completedLessons,
-        weakSkills: [],
+        weakSkills: await (async () => {
+      const { fetchRecurringErrorsForUser } = await import(
+        "@/lib/ai-practice/practice-analytics"
+      );
+      const [writing, speaking] = await Promise.all([
+        fetchRecurringErrorsForUser(user.id, "writing"),
+        fetchRecurringErrorsForUser(user.id, "speaking"),
+      ]);
+      return [...writing, ...speaking].slice(0, 5);
+    })(),
       })
     );
 

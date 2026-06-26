@@ -15,6 +15,15 @@
     "errorRecoveryDescription": "Đã xảy ra lỗi khi lấy dữ liệu. Hãy thử lại — tiến độ của con vẫn được lưu an toàn.",
     "errorRecoveryRetry": "Thử lại"
   },
+  "contact": {
+    "open": "Liên hệ CAMBA",
+    "close": "Đóng menu liên hệ",
+    "menuLabel": "Kênh liên hệ",
+    "channel": {
+      "zalo": "Chat Zalo",
+      "messenger": "Messenger"
+    }
+  },
   "nav": {
     "dashboard": "Dashboard",
     "journey": "Hành trình học",
@@ -983,11 +992,19 @@
         "errorHighlights": "Lỗi cần sửa",
         "correctedVersion": "Bản sửa gợi ý",
         "modelAnswer": "Gợi ý câu trả lời mẫu",
+        "bestPhrase": "Cụm hay nhất",
+        "focusFix": "Tập trung sửa",
         "questionAudioPlaying": "Đang phát câu hỏi...",
         "replayQuestion": "Nghe lại",
         "stopAudio": "Dừng phát",
         "modelAnswerAudioPlaying": "Đang phát gợi ý mẫu...",
-        "replayModelAnswer": "Nghe lại gợi ý"
+        "replayModelAnswer": "Nghe lại gợi ý",
+        "retrySamePrompt": "Thử lại cùng đề",
+        "retryHint": "Lần thử lại sẽ tập trung vào một lỗi cần sửa.",
+        "scoreDelta": "So với lần trước: {delta} điểm",
+        "focusFixTitle": "Ưu tiên khi thử lại",
+        "attemptPrevious": "Lần {n}",
+        "attemptCurrent": "Lần {n}"
       }
     }
   },
@@ -1365,7 +1382,13 @@
     "fields": {
       "language": "Ngôn ngữ luyện tập",
       "level": "Trình độ hiện tại",
-      "program": "Chương trình luyện tập"
+      "program": "Chương trình luyện tập",
+      "mode": "Chế độ luyện tập"
+    },
+    "modes": {
+      "standard": "Tiêu chuẩn",
+      "micro": "Nhanh (60s / ~50 từ)",
+      "roleplay": "Role-play (tình huống)"
     },
     "languages": {
       "english": "Tiếng Anh",
@@ -1394,7 +1417,12 @@
       "setupTitle": "Luyện tập Writing với AI",
       "setupSubtitle": "Chọn ngôn ngữ, trình độ và chương trình — AI sẽ tạo đề bài phù hợp.",
       "yourWriting": "Bài viết của bạn",
-      "minWordsError": "Bài viết cần ít nhất {min} từ."
+      "minWordsError": "Bài viết cần ít nhất {min} từ.",
+      "outlineStep": "Bước 1: Dàn ý",
+      "outlineHint": "Liệt kê 3–5 ý chính trước khi viết đoạn văn hoàn chỉnh.",
+      "outlinePlaceholder": "1. ...\n2. ...\n3. ...",
+      "outlineRequired": "Vui lòng viết dàn ý trước.",
+      "outlineNext": "Tiếp tục viết bài"
     },
     "speaking": {
       "setupTitle": "Luyện tập Speaking với AI",
@@ -1425,7 +1453,15 @@
       "submitting": "AI đang chấm...",
       "continue": "Tiếp tục luyện tập",
       "continuing": "Đang tạo đề mới...",
-      "changeSetup": "Đổi cài đặt"
+      "changeSetup": "Đổi cài đặt",
+      "sentenceStarters": "Cụm mở đầu gợi ý"
+    },
+    "phases": {
+      "listen": "Nghe đề",
+      "repeat": "Lặp lại mẫu",
+      "answer": "Trả lời",
+      "nextPhase": "Bước tiếp theo",
+      "repeatPrompt": "Hãy lặp lại câu mẫu sau"
     },
     "feedback": {
       "result": "Kết quả",
@@ -1440,7 +1476,39 @@
       "overallScore": "Điểm tổng",
       "modelAnswer": "Gợi ý câu trả lời mẫu",
       "errorHighlights": "Lỗi cần sửa",
-      "correctedVersion": "Bản sửa gợi ý"
+      "correctedVersion": "Bản sửa gợi ý",
+      "bestPhrase": "Cụm hay nhất",
+      "focusFix": "Tập trung sửa"
+    },
+    "enhancement": {
+      "improvementTitle": "Tiến bộ của bạn",
+      "scoreDelta": "So với lần trước: {delta} điểm",
+      "newPersonalBest": "Kỷ lục cá nhân mới!",
+      "peerCompare": "Hơn {percentile}% bạn cùng trình độ",
+      "xpEarned": "+{xp} XP",
+      "focusFixTitle": "Ưu tiên lần thử lại",
+      "bestPhraseTitle": "Cụm bạn làm tốt",
+      "retrySamePrompt": "Thử lại cùng đề",
+      "retryHint": "Lần thử lại sẽ tập trung vào một lỗi chính.",
+      "shareImprovement": "Sao chép thẻ tiến bộ",
+      "shareCopied": "Đã sao chép!"
+    },
+    "progress": {
+      "title": "Tiến độ luyện tập",
+      "overall": "Điểm TB",
+      "personalBest": "Kỷ lục",
+      "thisWeek": "Lượt tuần này",
+      "heatmap": "Hoạt động 28 ngày",
+      "recurringErrors": "Lỗi hay gặp",
+      "weeklySummary": "Tóm tắt tuần",
+      "trendUp": "Đang cải thiện",
+      "trendDown": "Cần củng cố",
+      "trendStable": "Ổn định"
+    },
+    "modelAnswerTts": {
+      "playing": "Đang phát gợi ý mẫu...",
+      "replay": "Nghe lại",
+      "stop": "Dừng phát"
     },
     "history": {
       "title": "Lịch sử luyện tập",

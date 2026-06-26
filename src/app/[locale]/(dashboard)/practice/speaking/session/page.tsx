@@ -5,14 +5,16 @@ import {
   buildSpeakingSessionLabels,
 } from "@/lib/ai-practice/practice-labels";
 import { getPracticeHistorySummary } from "@/lib/ai-practice/practice-history";
+import { getPracticeProgress } from "@/actions/ai-practice";
 import { requirePracticeSubscriptionContext } from "@/lib/subscriptions/practice-subscription-context";
 
 export default async function PracticeSpeakingSessionPage() {
   const t = await getTranslations("aiPractice");
   const labels = buildSpeakingSessionLabels((key) => t(key));
   const historyLabels = buildPracticeHistoryLabels((key) => t(key));
-  const [historySummary, subscriptionContext] = await Promise.all([
+  const [historySummary, progress, subscriptionContext] = await Promise.all([
     getPracticeHistorySummary("speaking"),
+    getPracticeProgress("speaking"),
     requirePracticeSubscriptionContext(),
   ]);
 
@@ -21,6 +23,7 @@ export default async function PracticeSpeakingSessionPage() {
       labels={labels}
       historySummary={historySummary}
       historyLabels={historyLabels}
+      progress={progress}
       aiUsage={subscriptionContext.aiUsage}
       aiUsageLabels={subscriptionContext.aiUsageLabels}
       limitDialogLabels={subscriptionContext.limitDialogLabels}

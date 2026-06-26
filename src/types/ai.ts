@@ -25,6 +25,8 @@ export const WritingFeedbackSchema = z.object({
   weaknesses: z.array(z.string()).optional(),
   errorHighlights: z.array(z.string()).optional(),
   correctedVersion: z.string().optional(),
+  bestPhrase: z.string().optional(),
+  focusFix: z.string().optional(),
 });
 
 export const SpeakingFeedbackSchema = z.object({
@@ -40,6 +42,8 @@ export const SpeakingFeedbackSchema = z.object({
   modelAnswerSuggestion: z.string().optional(),
   errorHighlights: z.array(z.string()).optional(),
   correctedVersion: z.string().optional(),
+  bestPhrase: z.string().optional(),
+  focusFix: z.string().optional(),
 });
 
 export const StudyCoachSchema = z.object({
@@ -88,11 +92,17 @@ export const PracticePromptSchema = z.object({
   maxWords: z.number().optional(),
   maxDurationSeconds: z.number().optional(),
   followUpQuestions: z.array(z.string()).optional(),
+  sentenceStarters: z.array(z.string()).optional(),
+  repeatPhrase: z.string().optional(),
+  rolePlayPersona: z.string().optional(),
 });
 
 export const PracticeWritingFeedbackSchema = WritingFeedbackSchema.extend({
   modelAnswerSuggestion: z.string(),
   errorHighlights: z.array(z.string()).optional(),
+  grammarScore: z.number().min(0).max(100).optional(),
+  vocabularyScore: z.number().min(0).max(100).optional(),
+  coherenceScore: z.number().min(0).max(100).optional(),
 });
 
 export const PracticeSpeakingFeedbackSchema = SpeakingFeedbackSchema.extend({

@@ -8,15 +8,19 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { useTranslations } from "next-intl";
 import { LevelUpModal } from "@/components/camba/celebration/level-up-modal";
 import { BadgeUnlockModal } from "@/components/camba/celebration/badge-unlock-modal";
 import { LeaguePromotionModal } from "@/components/camba/celebration/league-promotion-modal";
+import { ExerciseCelebrationOverlay } from "@/components/camba/celebration/exercise-celebration-overlay";
 import {
   MotionCelebrationProvider,
   useMotionCelebration,
 } from "@/components/camba/motion/motion-celebration-provider";
 import { ConfettiBurst } from "@/components/camba/motion/confetti-burst";
 import { useMascotOptional } from "@/components/mascot/mascot-provider";
+import { pickMessage } from "@/lib/mascot/pick-message";
+import { playCelebrationSound } from "@/lib/sound/play-celebration-sound";
 import {
   showBadgeEarnedToast,
   showLeaguePromotionToast,
@@ -29,10 +33,19 @@ import { leagueTierLabel } from "@/lib/gamification/leaderboard-types";
 export type CelebrateXpOptions = {
   leagueRank?: number | null;
   leagueTier?: string | null;
+  /** When true, only toast + XP burst (overlay already shown). */
+  quiet?: boolean;
+};
+
+export type CelebrateExerciseCompleteOptions = {
+  scorePercent?: number;
+  xpAmount?: number;
+  message?: string;
 };
 
 interface CelebrationContextValue {
   celebrateXp: (amount: number, options?: CelebrateXpOptions) => void;
+  celebrateExerciseComplete: (options?: CelebrateExerciseCompleteOptions) => void;
   celebrateLevelUp: (level: number) => void;
   celebrateBadge: (name: string, description?: string) => void;
   celebrateLeaguePromotion: (tier: string, rank?: number | null) => void;
@@ -47,12 +60,21 @@ interface CelebrationProviderInnerProps {
   useModalsForMajorEvents?: boolean;
 }
 
+function readMessageList(raw: unknown): string[] {
+  if (Array.isArray(raw)) {
+    return raw.filter((item): item is string => typeof item === "string" && item.length > 0);
+  }
+  return typeof raw === "string" && raw.length > 0 ? [raw] : [];
+}
+
 function CelebrationProviderInner({
   children,
   labels,
   tierLabels,
   useModalsForMajorEvents = true,
 }: CelebrationProviderInnerProps) {
+  const tMascot = useTranslations("mascot");
+  const tCommon = useTranslations("common");
   const motionCelebration = useMotionCelebration();
   const mascot = useMascotOptional();
   const [levelUpOpen, setLevelUpOpen] = useState(false);
@@ -64,15 +86,62 @@ function CelebrationProviderInner({
   const [leagueTier, setLeagueTier] = useState("bronze");
   const [leagueRank, setLeagueRank] = useState<number | null>(null);
   const [confettiActive, setConfettiActive] = useState(false);
+  const [exerciseCelebration, setExerciseCelebration] = useState<{
+    message: string;
+    xpAmount?: number;
+  } | null>(null);
 
   const triggerConfetti = useCallback(() => {
     setConfettiActive(true);
   }, []);
 
+  const dismissExerciseCelebration = useCallback(() => {
+    setExerciseCelebration(null);
+  }, []);
+
+  const resolveExerciseMessage = useCallback(
+    (options?: CelebrateExerciseCompleteOptions): string => {
+      if (options?.message?.trim()) return options.message.trim();
+
+      const score = options?.scorePercent;
+      if (score != null && score >= 75) {
+        const pool = readMessageList(tMascot.raw("highScore"));
+        const template = pickMessage(pool.length > 0 ? pool : ["{score}% — giỏi quá!"]);
+        return template.replace("{score}", String(Math.round(score)));
+      }
+
+      return pickMessage(readMessageList(tMascot.raw("exerciseComplete")));
+    },
+    [tMascot]
+  );
+
+  const celebrateExerciseComplete = useCallback(
+    (options?: CelebrateExerciseCompleteOptions) => {
+      const message = resolveExerciseMessage(options);
+      const xpAmount = options?.xpAmount;
+
+      setExerciseCelebration({ message, xpAmount });
+      triggerConfetti();
+      playCelebrationSound();
+
+      if (xpAmount != null && xpAmount > 0) {
+        mascot?.cheerXp(xpAmount);
+      } else if (options?.scorePercent != null && options.scorePercent >= 75) {
+        mascot?.cheerHighScore(options.scorePercent);
+      } else {
+        mascot?.cheerExerciseComplete();
+      }
+    },
+    [mascot, resolveExerciseMessage, triggerConfetti]
+  );
+
   const celebrateXp = useCallback(
     (amount: number, options?: CelebrateXpOptions) => {
       showXpEarnedToast(amount, labels, options);
       motionCelebration?.showXpBurst(amount);
+
+      if (options?.quiet) return;
+
       if (options?.leagueRank != null) {
         mascot?.cheerXpWithRank(amount, options.leagueRank, options.leagueTier);
       } else {
@@ -129,14 +198,28 @@ function CelebrationProviderInner({
   );
 
   const value = useMemo(
-    () => ({ celebrateXp, celebrateLevelUp, celebrateBadge, celebrateLeaguePromotion }),
-    [celebrateXp, celebrateLevelUp, celebrateBadge, celebrateLeaguePromotion]
+    () => ({
+      celebrateXp,
+      celebrateExerciseComplete,
+      celebrateLevelUp,
+      celebrateBadge,
+      celebrateLeaguePromotion,
+    }),
+    [celebrateXp, celebrateExerciseComplete, celebrateLevelUp, celebrateBadge, celebrateLeaguePromotion]
   );
 
   return (
     <CelebrationContext.Provider value={value}>
       {children}
       <ConfettiBurst active={confettiActive} onComplete={() => setConfettiActive(false)} />
+      <ExerciseCelebrationOverlay
+        open={exerciseCelebration != null}
+        message={exerciseCelebration?.message ?? ""}
+        xpAmount={exerciseCelebration?.xpAmount}
+        xpLabel={tMascot("xp", { amount: exerciseCelebration?.xpAmount ?? 0 })}
+        continueLabel={tCommon("continue")}
+        onDismiss={dismissExerciseCelebration}
+      />
       <LevelUpModal open={levelUpOpen} onOpenChange={setLevelUpOpen} level={levelUpLevel} />
       <BadgeUnlockModal
         open={badgeOpen}

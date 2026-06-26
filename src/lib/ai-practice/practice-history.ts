@@ -39,6 +39,7 @@ function parsePracticeProfile(value: unknown): PracticeProfile | null {
     level: row.level,
     program: row.program as PracticeProfile["program"],
     skill: row.skill as PracticeProfile["skill"],
+    mode: (row.mode as PracticeProfile["mode"]) ?? "standard",
   };
 }
 
