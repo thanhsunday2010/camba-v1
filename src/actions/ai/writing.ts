@@ -8,6 +8,7 @@ import {
   WRITING_FEEDBACK_SYSTEM,
   buildWritingPrompt,
 } from "@/lib/ai/prompts/writing-feedback";
+import { resolveLearnerDeclaredLevelName } from "@/lib/ai/learner-level-guidance";
 import { ZodError } from "zod";
 import { WritingFeedbackSchema } from "@/types/ai";
 import type { WritingFeedback, WithGamification } from "@/types/ai";
@@ -84,9 +85,11 @@ export async function submitWritingForFeedback(
       return { success: false, error: subError?.message ?? "Failed to save submission" };
     }
 
+    const learnerDeclaredLevel = await resolveLearnerDeclaredLevelName(user.id);
+
     const rawJson = await generateJsonResponse(
       WRITING_FEEDBACK_SYSTEM,
-      buildWritingPrompt(prompt, content, targetLevel)
+      buildWritingPrompt(prompt, content, targetLevel, learnerDeclaredLevel)
     );
 
     const feedback = parseGeminiJson(rawJson, WritingFeedbackSchema);
@@ -95,7 +98,7 @@ export async function submitWritingForFeedback(
       feedbackType: "writing",
       referenceType: "writing_submission",
       referenceId: submission.id,
-      inputData: { prompt, content, wordCount, targetLevel },
+      inputData: { prompt, content, wordCount, targetLevel, learnerDeclaredLevel },
       responseData: feedback as unknown as Record<string, unknown>,
       shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
     });

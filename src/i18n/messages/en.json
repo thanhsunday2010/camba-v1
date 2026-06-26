@@ -1441,7 +1441,8 @@
       "suggestions": "Suggestions",
       "overallScore": "Overall score",
       "modelAnswer": "Suggested model answer",
-      "errorHighlights": "Errors to fix"
+      "errorHighlights": "Errors to fix",
+      "correctedVersion": "Suggested correction"
     },
     "history": {
       "title": "Practice history",

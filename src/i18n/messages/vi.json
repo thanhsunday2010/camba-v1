@@ -1439,7 +1439,8 @@
       "suggestions": "Gợi ý",
       "overallScore": "Điểm tổng",
       "modelAnswer": "Gợi ý câu trả lời mẫu",
-      "errorHighlights": "Lỗi cần sửa"
+      "errorHighlights": "Lỗi cần sửa",
+      "correctedVersion": "Bản sửa gợi ý"
     },
     "history": {
       "title": "Lịch sử luyện tập",

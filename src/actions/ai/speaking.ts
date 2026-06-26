@@ -8,6 +8,10 @@ import {
   SPEAKING_FEEDBACK_SYSTEM,
   buildSpeakingPrompt,
 } from "@/lib/ai/prompts/speaking-feedback";
+import {
+  finalizeSpeakingTranscript,
+  resolveLearnerDeclaredLevelName,
+} from "@/lib/ai/learner-level-guidance";
 import { SpeakingFeedbackSchema } from "@/types/ai";
 import type { SpeakingFeedback, WithGamification } from "@/types/ai";
 import { ZodError } from "zod";
@@ -32,6 +36,7 @@ export async function submitSpeakingForFeedback(
   context?: {
     sceneDescription?: string;
     followUpQuestions?: string[];
+    clientTranscript?: string;
   }
 ): Promise<ActionResult<WithGamification<SpeakingFeedback>>> {
   const supabase = await createClient();
@@ -85,17 +90,25 @@ export async function submitSpeakingForFeedback(
       }
     }
 
+    const learnerDeclaredLevel = await resolveLearnerDeclaredLevelName(user.id);
+
     const rawJson = await generateJsonWithAudio(
       SPEAKING_FEEDBACK_SYSTEM,
       buildSpeakingPrompt(prompt, targetLevel, {
         sceneDescription: context?.sceneDescription,
         followUpQuestions: context?.followUpQuestions,
+        learnerDeclaredLevel,
+        clientTranscript: context?.clientTranscript,
       }),
       audioBase64,
       mimeType
     );
 
-    const feedback = parseGeminiJson(rawJson, SpeakingFeedbackSchema);
+    const parsed = parseGeminiJson(rawJson, SpeakingFeedbackSchema);
+    const feedback = {
+      ...parsed,
+      transcript: finalizeSpeakingTranscript(parsed, context?.clientTranscript),
+    };
 
     const { data: submission, error: subError } = await supabase
       .from("speaking_submissions")
@@ -118,7 +131,13 @@ export async function submitSpeakingForFeedback(
       feedbackType: "speaking",
       referenceType: "speaking_submission",
       referenceId: submission.id,
-      inputData: { prompt, durationSeconds, targetLevel, context },
+      inputData: {
+        prompt,
+        durationSeconds,
+        targetLevel,
+        learnerDeclaredLevel,
+        context,
+      },
       responseData: feedback as unknown as Record<string, unknown>,
       shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
     });

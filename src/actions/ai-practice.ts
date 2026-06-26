@@ -12,6 +12,7 @@ import {
   buildPracticeSpeakingFeedbackRequest,
   buildPracticeWritingFeedbackRequest,
 } from "@/lib/ai/prompts/ai-practice";
+import { finalizeSpeakingTranscript } from "@/lib/ai/learner-level-guidance";
 import { PracticeProfileSchema } from "@/lib/ai-practice/practice-types";
 import type { PracticeProfile } from "@/lib/ai-practice/practice-types";
 import {
@@ -175,7 +176,8 @@ export async function submitStandaloneSpeakingPractice(
   prompt: string,
   audioBase64: string,
   mimeType: string,
-  durationSeconds: number
+  durationSeconds: number,
+  clientTranscript?: string
 ): Promise<ActionResult<PracticeSpeakingFeedback>> {
   const parsed = PracticeProfileSchema.safeParse(profileInput);
   if (!parsed.success) {
@@ -223,12 +225,16 @@ export async function submitStandaloneSpeakingPractice(
 
     const rawJson = await generateJsonWithAudio(
       PRACTICE_SPEAKING_FEEDBACK_SYSTEM,
-      buildPracticeSpeakingFeedbackRequest(parsed.data, prompt),
+      buildPracticeSpeakingFeedbackRequest(parsed.data, prompt, clientTranscript),
       audioBase64,
       mimeType
     );
 
-    const feedback = parseGeminiJson(rawJson, PracticeSpeakingFeedbackSchema);
+    const parsedFeedback = parseGeminiJson(rawJson, PracticeSpeakingFeedbackSchema);
+    const feedback = {
+      ...parsedFeedback,
+      transcript: finalizeSpeakingTranscript(parsedFeedback, clientTranscript),
+    };
 
     const { data: submission, error: subError } = await supabase
       .from("speaking_submissions")
@@ -255,6 +261,7 @@ export async function submitStandaloneSpeakingPractice(
         profile: parsed.data,
         prompt,
         durationSeconds,
+        clientTranscript,
         standalone: true,
       },
       responseData: feedback as unknown as Record<string, unknown>,

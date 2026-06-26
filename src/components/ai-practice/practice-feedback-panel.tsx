@@ -24,6 +24,7 @@ interface PracticeFeedbackPanelProps {
     transcript?: string;
     modelAnswer: string;
     errorHighlights?: string;
+    correctedVersion?: string;
   };
   actions?: ReactNode;
 }

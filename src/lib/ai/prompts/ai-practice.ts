@@ -4,6 +4,7 @@ import {
   getLevelLabel,
   getProgramLabelKey,
 } from "@/lib/ai-practice/practice-config";
+import { SPEAKING_TRANSCRIPT_RULES } from "@/lib/ai/learner-level-guidance";
 
 export const PRACTICE_PROMPT_SYSTEM = `You are an expert language coach designing personalized speaking/writing practice tasks.
 Return ONLY valid JSON:
@@ -58,10 +59,10 @@ Analyze the learner's writing and return ONLY valid JSON:
   "strengths": ["max 2 short points in Vietnamese"],
   "weaknesses": ["max 2 short points in Vietnamese"],
   "errorHighlights": ["[wrong fragment]{correct fragment} — max 5 key fixes"],
-  "modelAnswerSuggestion": "Model answer in the TARGET LANGUAGE; use [wrong]{correct} markup only when showing a fix inline"
+  "modelAnswerSuggestion": "Model answer in the TARGET LANGUAGE calibrated to the learner's declared level; use [wrong]{correct} markup only when showing a fix inline"
 }
 All feedback fields except modelAnswerSuggestion must be in Vietnamese.
-modelAnswerSuggestion must be in the target practice language.
+modelAnswerSuggestion must be in the target practice language and use only vocabulary/grammar suitable for the declared level.
 Keep every field brief and scannable — no long paragraphs.`;
 
 export function buildPracticeWritingFeedbackRequest(
@@ -73,8 +74,10 @@ export function buildPracticeWritingFeedbackRequest(
   const level = getLevelLabel(profile.language, profile.level);
 
   return `Assess this ${language} writing submission.
-Level: ${level}
+Learner declared level: ${level}
 Program: ${profile.program}
+
+Use only vocabulary, grammar, and sentence complexity typical of ${level} in modelAnswerSuggestion.
 
 Prompt:
 """
@@ -100,28 +103,39 @@ Listen to the audio and return ONLY valid JSON:
   "grammarScore": 0-100,
   "vocabularyScore": 0-100,
   "suggestions": ["max 3 short tips in Vietnamese, each under 15 words"],
-  "transcript": "transcription in target language",
+  "transcript": "Verbatim record of what the student said — never corrected or polished",
   "overallScore": 0-100,
-  "modelAnswerSuggestion": "Short model response in the TARGET LANGUAGE (2-4 sentences)"
+  "modelAnswerSuggestion": "Short model response in the TARGET LANGUAGE (2-4 sentences) calibrated to the learner's declared level",
+  "errorHighlights": ["[wrong fragment]{correct fragment} — max 5 key fixes from the student's transcript"],
+  "correctedVersion": "Student's transcript improved with each fix marked as [wrong]{correct}; unchanged text stays plain"
 }
-Suggestions must be in Vietnamese. modelAnswerSuggestion in target language.
+Suggestions must be in Vietnamese. modelAnswerSuggestion and correctedVersion in target language.
+${SPEAKING_TRANSCRIPT_RULES}
 Keep feedback brief — no long paragraphs.`;
 
 export function buildPracticeSpeakingFeedbackRequest(
   profile: PracticeProfile,
-  prompt: string
+  prompt: string,
+  clientTranscript?: string
 ): string {
   const language = getLanguageLabel(profile.language);
   const level = getLevelLabel(profile.language, profile.level);
 
+  const transcriptBlock = clientTranscript?.trim()
+    ? `\nLive speech-to-text transcript (copy EXACTLY into transcript — do not change any word):\n"""\n${clientTranscript.trim()}\n"""`
+    : `\nNo live transcript was captured. Transcribe the audio verbatim — include errors and fillers, do not correct.`;
+
   return `Assess this ${language} speaking submission.
-Level: ${level}
+Learner declared level: ${level}
 Program: ${profile.program}
+
+Use only vocabulary, grammar, and sentence complexity typical of ${level} in modelAnswerSuggestion and correctedVersion.
 
 Speaking prompt:
 """
 ${prompt}
 """
+${transcriptBlock}
 
-Transcribe and assess. Return JSON only.`;
+Assess and return JSON only.`;
 }

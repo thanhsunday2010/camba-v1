@@ -38,6 +38,8 @@ export const SpeakingFeedbackSchema = z.object({
   transcript: z.string().optional(),
   overallScore: z.number().min(0).max(100),
   modelAnswerSuggestion: z.string().optional(),
+  errorHighlights: z.array(z.string()).optional(),
+  correctedVersion: z.string().optional(),
 });
 
 export const StudyCoachSchema = z.object({

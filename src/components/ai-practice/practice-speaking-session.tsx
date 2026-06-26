@@ -245,7 +245,8 @@ export function PracticeSpeakingSession({
         currentPrompt.prompt,
         base64,
         recorderMimeTypeRef.current,
-        duration
+        duration,
+        transcript.trim() || undefined
       );
       if (result.success && result.data) {
         setFeedback(result.data);

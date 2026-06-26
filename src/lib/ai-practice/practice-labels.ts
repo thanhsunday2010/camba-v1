@@ -19,6 +19,7 @@ function sharedFeedbackLabels(t: Translator) {
     overallScore: t("feedback.overallScore"),
     modelAnswer: t("feedback.modelAnswer"),
     errorHighlights: t("feedback.errorHighlights"),
+    correctedVersion: t("feedback.correctedVersion"),
   };
 }
 

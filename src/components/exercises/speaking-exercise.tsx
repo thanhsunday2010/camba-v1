@@ -212,6 +212,7 @@ export function SpeakingExercise({
         {
           sceneDescription: sceneDescription ?? pictureDescription ?? undefined,
           followUpQuestions,
+          clientTranscript: transcript.trim() || undefined,
         }
       );
       if (result.success && result.data) {

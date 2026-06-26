@@ -113,6 +113,16 @@ export function AiFeedbackPanel({
                 <p className="text-sm text-gray-600 leading-relaxed">{speaking.transcript}</p>
               </div>
             )}
+
+            {speaking.errorHighlights && speaking.errorHighlights.length > 0 && (
+              <div className="rounded-lg border border-red-100 bg-red-50/40 p-3">
+                <p className="text-sm font-medium text-gray-900 mb-2">
+                  {labels.errorHighlights ?? "Lỗi cần sửa"}
+                </p>
+                <ErrorCorrectionList items={speaking.errorHighlights} />
+              </div>
+            )}
+
             <div className="grid grid-cols-2 gap-2">
               <ScoreChip label={labels.pronunciation} score={speaking.pronunciationScore} />
               <ScoreChip label={labels.fluency} score={speaking.fluencyScore} />
@@ -131,6 +141,18 @@ export function AiFeedbackPanel({
                 </ul>
               </div>
             )}
+
+            {speaking.correctedVersion && (
+              <div className="rounded-lg border border-green-200/80 bg-green-50/30 p-3">
+                <p className="text-sm font-medium text-gray-900 mb-1.5">
+                  {labels.correctedVersion ?? "Bản sửa gợi ý"}
+                </p>
+                <p className="text-sm text-gray-800">
+                  <CorrectionMarkupText text={speaking.correctedVersion} />
+                </p>
+              </div>
+            )}
+
             {speaking.modelAnswerSuggestion && (
               <div className="rounded-lg border border-green-200/80 bg-green-50/30 p-3">
                 <p className="text-sm font-medium text-gray-900 mb-1.5">
