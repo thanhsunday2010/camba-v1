@@ -5,57 +5,80 @@ import { useReducedMotion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import type { MascotMood } from "@/components/mascot/mascot-provider";
 
+export type MascotChoreo = "default" | "run" | "jump";
+
 interface CambaRabbitMascotProps {
   mood?: MascotMood;
   className?: string;
+  choreo?: MascotChoreo;
 }
-
-const IDLE_EYE_STEP_MS = 650;
-const PLAYFUL_FACE_COUNT = 10;
-
-type PlayfulFace = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
-
-type EyeLook = "center" | "left" | "right" | "up" | "down";
-type EyeVariant = "open" | "blink" | "squint" | "wide";
-
-const PUPIL_OFFSET: Record<EyeLook, { x: number; y: number }> = {
-  center: { x: 0, y: 0 },
-  left: { x: -1.35, y: 0 },
-  right: { x: 1.35, y: 0 },
-  up: { x: 0, y: -1.1 },
-  down: { x: 0, y: 0.85 },
-};
 
 function MascotEye({
   cx,
   cy,
-  look = "center",
-  variant = "open",
+  blinking,
+  side,
+  mood,
 }: {
   cx: number;
   cy: number;
-  look?: EyeLook;
-  variant?: EyeVariant;
+  blinking: boolean;
+  side: "left" | "right";
+  mood: MascotMood;
 }) {
-  const offset = PUPIL_OFFSET[look];
-
-  if (variant === "blink") {
+  if (blinking) {
     return (
       <path
-        d={`M${cx - 3.4} ${cy} Q${cx} ${cy + 1.4} ${cx + 3.4} ${cy}`}
-        stroke="#0F172A"
-        strokeWidth="2"
+        d={`M${cx - 4} ${cy} Q${cx} ${cy + 1.6} ${cx + 4} ${cy}`}
+        stroke="#0A0A0A"
+        strokeWidth="2.2"
         fill="none"
         strokeLinecap="round"
       />
     );
   }
 
-  if (variant === "squint") {
+  const pupilClass = side === "left" ? "mascot-pupil-left" : "mascot-pupil-right";
+  const pupilR = mood === "excited" ? 2.1 : mood === "clever" ? 1.55 : 1.85;
+  const pupilOffset =
+    mood === "loading"
+      ? side === "left"
+        ? { x: -1.2, y: 0 }
+        : { x: 1.2, y: 0 }
+      : mood === "clever" && side === "left"
+        ? { x: 0, y: 0.8 }
+        : { x: 0, y: 0 };
+
+  return (
+    <>
+      <circle cx={cx} cy={cy} r={5.2} fill="white" stroke="#1E293B" strokeWidth="1.2" />
+      <g className={cn(!blinking && pupilClass)}>
+        <circle
+          cx={cx + pupilOffset.x}
+          cy={cy + pupilOffset.y}
+          r={pupilR}
+          fill="#0A0A0A"
+        />
+        <circle
+          cx={cx + pupilOffset.x - 0.65}
+          cy={cy + pupilOffset.y - 0.65}
+          r={0.55}
+          fill="white"
+          opacity={0.95}
+        />
+      </g>
+    </>
+  );
+}
+
+function MascotSmile({ mood }: { mood: MascotMood }) {
+  const mouthOpen = mood !== "loading";
+
+  if (!mouthOpen) {
     return (
       <path
-        d={`M${cx - 3.2} ${cy + 0.4} Q${cx} ${cy - 0.6} ${cx + 3.2} ${cy + 0.4}`}
-        stroke="#0F172A"
+        d="M30 58 Q40 62 50 58"
+        stroke="#BE123C"
         strokeWidth="1.8"
         fill="none"
         strokeLinecap="round"
@@ -63,302 +86,196 @@ function MascotEye({
     );
   }
 
-  const irisR = variant === "wide" ? 3 : 2.55;
-  const pupilR = variant === "wide" ? 1.75 : 1.45;
-
   return (
     <>
-      <circle cx={cx} cy={cy} r={irisR} fill="#334155" />
-      <circle
-        cx={cx + offset.x}
-        cy={cy + offset.y}
-        r={pupilR}
-        fill="#0A0A0A"
-      />
-      <circle
-        cx={cx + offset.x - 0.55}
-        cy={cy + offset.y - 0.55}
-        r={0.5}
-        fill="white"
-        opacity={0.95}
-      />
-    </>
-  );
-}
-
-function MascotEyes({ mood, playful }: { mood: MascotMood; playful: PlayfulFace }) {
-  if (mood === "clever") {
-    return (
-      <>
-        <MascotEye cx={22} cy={34} variant="squint" />
-        <MascotEye cx={42} cy={34} look="right" variant="open" />
-      </>
-    );
-  }
-
-  if (mood === "loading") {
-    return (
-      <>
-        <MascotEye cx={22} cy={34} look="left" variant="open" />
-        <MascotEye cx={42} cy={34} look="right" variant="open" />
-      </>
-    );
-  }
-
-  if (mood === "idle") {
-    switch (playful) {
-      case 1:
-        return (
-          <>
-            <MascotEye cx={22} cy={34} look="left" />
-            <MascotEye cx={42} cy={34} look="left" />
-          </>
-        );
-      case 2:
-        return (
-          <>
-            <MascotEye cx={22} cy={34} look="right" />
-            <MascotEye cx={42} cy={34} look="right" />
-          </>
-        );
-      case 3:
-        return (
-          <>
-            <MascotEye cx={22} cy={34} look="up" variant="wide" />
-            <MascotEye cx={42} cy={34} look="up" variant="wide" />
-          </>
-        );
-      case 4:
-        return (
-          <>
-            <MascotEye cx={22} cy={34} variant="blink" />
-            <MascotEye cx={42} cy={34} variant="blink" />
-          </>
-        );
-      case 5:
-        return (
-          <>
-            <MascotEye cx={22} cy={34} variant="squint" />
-            <MascotEye cx={42} cy={34} look="center" />
-          </>
-        );
-      case 6:
-        return (
-          <>
-            <MascotEye cx={22} cy={34} look="center" />
-            <MascotEye cx={42} cy={34} variant="squint" />
-          </>
-        );
-      case 7:
-        return (
-          <>
-            <MascotEye cx={22} cy={34} look="down" />
-            <MascotEye cx={42} cy={34} look="down" />
-          </>
-        );
-      case 8:
-        return (
-          <>
-            <MascotEye cx={22} cy={34} look="right" />
-            <MascotEye cx={42} cy={34} look="left" />
-          </>
-        );
-      case 9:
-        return (
-          <>
-            <MascotEye cx={22} cy={34} look="left" />
-            <MascotEye cx={42} cy={34} look="right" />
-          </>
-        );
-      default:
-        return (
-          <>
-            <MascotEye cx={22} cy={34} look="center" />
-            <MascotEye cx={42} cy={34} look="center" />
-          </>
-        );
-    }
-  }
-
-  return (
-    <>
-      <MascotEye cx={22} cy={34} look="center" variant="wide" />
-      <MascotEye cx={42} cy={34} look="center" variant="wide" />
-    </>
-  );
-}
-
-function MascotMouth({ mood, playful }: { mood: MascotMood; playful: PlayfulFace }) {
-  if (mood === "excited") {
-    return (
       <path
-        d="M24 46 Q32 54 40 46"
+        d="M28 56 Q40 68 52 56 Q40 62 28 56 Z"
+        fill="#881337"
         stroke="#BE123C"
-        strokeWidth="2"
+        strokeWidth="1.2"
+        strokeLinejoin="round"
+      />
+      <rect x="36.2" y="57.5" width="3.2" height="4.8" rx="0.8" fill="white" />
+      <rect x="40.6" y="57.5" width="3.2" height="4.8" rx="0.8" fill="white" />
+      <path
+        d="M28 56 Q40 64 52 56"
         fill="none"
+        stroke="#BE123C"
+        strokeWidth="1.4"
         strokeLinecap="round"
       />
-    );
-  }
-
-  if (mood === "idle") {
-    switch (playful) {
-      case 1:
-        return (
-          <path
-            d="M26 47 Q34 51 40 46"
-            stroke="#BE123C"
-            strokeWidth="1.8"
-            fill="none"
-            strokeLinecap="round"
-          />
-        );
-      case 2:
-        return (
-          <path
-            d="M24 46 Q30 50 38 47"
-            stroke="#BE123C"
-            strokeWidth="1.8"
-            fill="none"
-            strokeLinecap="round"
-          />
-        );
-      case 3:
-        return (
-          <>
-            <path
-              d="M24 46 Q32 52 40 46"
-              stroke="#BE123C"
-              strokeWidth="1.8"
-              fill="none"
-              strokeLinecap="round"
-            />
-            <ellipse cx="32" cy="49" rx="1.2" ry="0.8" fill="#FB7185" />
-          </>
-        );
-      case 4:
-        return (
-          <path
-            d="M25 48 Q32 49 39 46"
-            stroke="#BE123C"
-            strokeWidth="1.6"
-            fill="none"
-            strokeLinecap="round"
-          />
-        );
-      case 5:
-        return (
-          <path
-            d="M27 46 Q32 53 37 46"
-            stroke="#BE123C"
-            strokeWidth="2"
-            fill="none"
-            strokeLinecap="round"
-          />
-        );
-      case 6:
-      case 7:
-      case 8:
-      case 9:
-        return (
-          <path
-            d="M26 47 Q32 50 38 47"
-            stroke="#BE123C"
-            strokeWidth="1.6"
-            fill="none"
-            strokeLinecap="round"
-          />
-        );
-      default:
-        return (
-          <path
-            d="M26 47 Q32 50 38 47"
-            stroke="#BE123C"
-            strokeWidth="1.6"
-            fill="none"
-            strokeLinecap="round"
-          />
-        );
-    }
-  }
-
-  return (
-    <path
-      d="M26 47 Q32 50 38 47"
-      stroke="#BE123C"
-      strokeWidth="1.6"
-      fill="none"
-      strokeLinecap="round"
-    />
+    </>
   );
 }
 
-export function CambaRabbitMascot({ mood = "idle", className }: CambaRabbitMascotProps) {
+function MascotLimbs({
+  choreo,
+  animate,
+}: {
+  choreo: MascotChoreo;
+  animate: boolean;
+}) {
+  const isRun = choreo === "run";
+  const isJump = choreo === "jump";
+
+  const earClassLeft = animate ? (isRun ? "mascot-run-bob" : "mascot-ear-left") : "";
+  const earClassRight = animate ? (isRun ? "mascot-run-bob" : "mascot-ear-right") : "";
+  const armClassLeft = animate
+    ? isRun
+      ? "mascot-run-arm-left"
+      : isJump
+        ? ""
+        : "mascot-arm-left"
+    : "";
+  const armClassRight = animate
+    ? isRun
+      ? "mascot-run-arm-right"
+      : isJump
+        ? ""
+        : "mascot-arm-right"
+    : "";
+  const legClassLeft = animate
+    ? isRun
+      ? "mascot-run-leg-left"
+      : isJump
+        ? ""
+        : "mascot-leg-left"
+    : "";
+  const legClassRight = animate
+    ? isRun
+      ? "mascot-run-leg-right"
+      : isJump
+        ? ""
+        : "mascot-leg-right"
+    : "";
+
+  const leftArmRotate = isJump ? -38 : 0;
+  const rightArmRotate = isJump ? 38 : 0;
+  const leftLegRotate = isJump ? -24 : isRun ? 0 : 0;
+  const rightLegRotate = isJump ? 24 : 0;
+
+  return (
+    <>
+      <g className={earClassLeft}>
+        <ellipse cx="28" cy="18" rx="6.5" ry="15" fill="#FDA4AF" />
+        <ellipse cx="28" cy="18" rx="3.8" ry="10" fill="#FECDD3" />
+      </g>
+      <g className={earClassRight}>
+        <ellipse cx="52" cy="18" rx="6.5" ry="15" fill="#FDA4AF" />
+        <ellipse cx="52" cy="18" rx="3.8" ry="10" fill="#FECDD3" />
+      </g>
+
+      <g
+        className={legClassLeft}
+        style={{
+          transform: leftLegRotate ? `rotate(${leftLegRotate}deg)` : undefined,
+          transformBox: "fill-box",
+          transformOrigin: "50% 0%",
+        }}
+      >
+        <ellipse cx="32" cy="72" rx="5" ry="7" fill="#FFF7ED" stroke="#FECDD3" strokeWidth="1" />
+        <ellipse cx="32" cy="79" rx="6" ry="3.2" fill="#FDA4AF" />
+      </g>
+      <g
+        className={legClassRight}
+        style={{
+          transform: rightLegRotate ? `rotate(${rightLegRotate}deg)` : undefined,
+          transformBox: "fill-box",
+          transformOrigin: "50% 0%",
+        }}
+      >
+        <ellipse cx="48" cy="72" rx="5" ry="7" fill="#FFF7ED" stroke="#FECDD3" strokeWidth="1" />
+        <ellipse cx="48" cy="79" rx="6" ry="3.2" fill="#FDA4AF" />
+      </g>
+
+      <circle cx="40" cy="48" r="22" fill="#FFF7ED" />
+      <circle cx="40" cy="50" r="17" fill="#FFEDD5" opacity="0.55" />
+      <ellipse cx="40" cy="64" rx="10" ry="6.5" fill="#FFE4E6" />
+
+      <g
+        className={armClassLeft}
+        style={{
+          transform: leftArmRotate ? `rotate(${leftArmRotate}deg)` : undefined,
+          transformBox: "fill-box",
+          transformOrigin: "80% 20%",
+        }}
+      >
+        <ellipse cx="17" cy="50" rx="4.5" ry="8" fill="#FFF7ED" stroke="#FECDD3" strokeWidth="1" />
+        <circle cx="15" cy="57" r="3.2" fill="#FDA4AF" />
+      </g>
+      <g
+        className={armClassRight}
+        style={{
+          transform: rightArmRotate ? `rotate(${rightArmRotate}deg)` : undefined,
+          transformBox: "fill-box",
+          transformOrigin: "20% 20%",
+        }}
+      >
+        <ellipse cx="63" cy="50" rx="4.5" ry="8" fill="#FFF7ED" stroke="#FECDD3" strokeWidth="1" />
+        <circle cx="65" cy="57" r="3.2" fill="#FDA4AF" />
+      </g>
+    </>
+  );
+}
+
+export function CambaRabbitMascot({
+  mood = "idle",
+  className,
+  choreo = "default",
+}: CambaRabbitMascotProps) {
   const reducedMotion = useReducedMotion();
-  const [playfulFace, setPlayfulFace] = useState<PlayfulFace>(0);
+  const [blinking, setBlinking] = useState(false);
+  const animate = !reducedMotion;
 
   useEffect(() => {
-    if (mood !== "idle" || reducedMotion) {
-      setPlayfulFace(0);
-      return;
-    }
+    if (reducedMotion) return;
 
-    const timer = window.setInterval(() => {
-      setPlayfulFace((current) => ((current + 1) % PLAYFUL_FACE_COUNT) as PlayfulFace);
-    }, IDLE_EYE_STEP_MS);
+    let blinkTimeout: ReturnType<typeof setTimeout> | undefined;
+    const scheduleBlink = () => {
+      const delay = 2200 + Math.random() * 2600;
+      blinkTimeout = setTimeout(() => {
+        setBlinking(true);
+        setTimeout(() => {
+          setBlinking(false);
+          scheduleBlink();
+        }, 140);
+      }, delay);
+    };
 
-    return () => window.clearInterval(timer);
-  }, [mood, reducedMotion]);
-
-  const playfulTilt =
-    mood === "idle" && !reducedMotion
-      ? playfulFace === 1 || playfulFace === 9
-        ? "-rotate-2"
-        : playfulFace === 2 || playfulFace === 8
-          ? "rotate-2"
-          : playfulFace === 3
-            ? "-rotate-1 scale-[1.02]"
-            : ""
-      : "";
+    scheduleBlink();
+    return () => {
+      if (blinkTimeout) clearTimeout(blinkTimeout);
+    };
+  }, [reducedMotion]);
 
   return (
     <div
       className={cn(
         "relative shrink-0",
-        mood === "excited" && "animate-[mascot-bounce_0.6s_ease-in-out_infinite]",
-        mood === "loading" && "animate-[mascot-wiggle_1.2s_ease-in-out_infinite]",
+        choreo === "run" && animate && "mascot-run-bob",
+        mood === "excited" && choreo === "default" && "animate-[mascot-bounce_0.6s_ease-in-out_infinite]",
+        mood === "loading" && choreo === "default" && "animate-[mascot-wiggle_1.2s_ease-in-out_infinite]",
         className
       )}
       aria-hidden
     >
-      <svg viewBox="0 0 64 64" className="h-10 w-10 sm:h-11 sm:w-11 drop-shadow-sm">
-        <g className={cn("origin-center transition-transform duration-300 ease-out", playfulTilt)}>
-          <ellipse cx="18" cy="14" rx="7" ry="16" fill="#FDA4AF" />
-          <ellipse cx="46" cy="14" rx="7" ry="16" fill="#FDA4AF" />
-          <ellipse cx="18" cy="14" rx="4" ry="11" fill="#FECDD3" />
-          <ellipse cx="46" cy="14" rx="4" ry="11" fill="#FECDD3" />
-          <circle cx="32" cy="36" r="22" fill="#FFF7ED" />
-          <circle cx="32" cy="38" r="18" fill="#FFEDD5" opacity="0.55" />
-          <ellipse cx="32" cy="52" rx="9" ry="6" fill="#FFE4E6" />
-          <circle cx="22" cy="34" r="4.8" fill="white" stroke="#334155" strokeWidth="1.3" />
-          <circle cx="42" cy="34" r="4.8" fill="white" stroke="#334155" strokeWidth="1.3" />
-          <g className="transition-all duration-150 ease-out">
-            <MascotEyes mood={mood} playful={playfulFace} />
-          </g>
-          <circle cx="16" cy="40" r="3" fill="#FDA4AF" opacity="0.55" />
-          <circle cx="48" cy="40" r="3" fill="#FDA4AF" opacity="0.55" />
-          <ellipse cx="32" cy="41" rx="2" ry="1.5" fill="#FB7185" />
-          <g className="transition-all duration-200 ease-out">
-            <MascotMouth mood={mood} playful={playfulFace} />
-          </g>
-          <rect x="14" y="31" width="36" height="8" rx="4" fill="#E0F2FE" opacity="0.85" />
-          <rect x="16" y="32.5" width="32" height="5" rx="2.5" fill="#BAE6FD" opacity="0.5" />
-        </g>
+      <svg viewBox="0 0 80 88" className="h-11 w-11 sm:h-12 sm:w-12 drop-shadow-sm overflow-visible">
+        <MascotLimbs choreo={choreo} animate={animate} />
+
+        <MascotEye cx={33} cy={44} blinking={blinking} side="left" mood={mood} />
+        <MascotEye cx={47} cy={44} blinking={blinking} side="right" mood={mood} />
+
+        <circle cx="14" cy="50" r="3.2" fill="#FDA4AF" opacity="0.55" />
+        <circle cx="66" cy="50" r="3.2" fill="#FDA4AF" opacity="0.55" />
+        <ellipse cx="40" cy="51" rx="2.2" ry="1.6" fill="#FB7185" />
+
+        <MascotSmile mood={mood} />
+
         {mood === "excited" && (
           <>
-            <path d="M8 18 L10 22 L6 22 Z" fill="#FBBF24" />
-            <path d="M56 20 L58 24 L54 24 Z" fill="#FBBF24" />
-            <circle cx="54" cy="14" r="2" fill="#FDE68A" />
+            <path d="M6 20 L8.5 25 L3.5 25 Z" fill="#FBBF24" />
+            <path d="M74 22 L76.5 27 L71.5 27 Z" fill="#FBBF24" />
+            <circle cx="70" cy="16" r="2.2" fill="#FDE68A" />
           </>
         )}
       </svg>

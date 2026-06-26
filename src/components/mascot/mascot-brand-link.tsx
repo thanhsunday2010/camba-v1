@@ -4,6 +4,7 @@ import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { CambaRabbitMascot } from "@/components/mascot/camba-rabbit-mascot";
+import { MascotScreenRunner } from "@/components/mascot/mascot-screen-runner";
 import { useMascotOptional } from "@/components/mascot/mascot-provider";
 
 export function MascotBrandLink() {
@@ -16,10 +17,12 @@ export function MascotBrandLink() {
   return (
     <Link
       href="/dashboard"
-      className="group relative flex items-center gap-2 min-w-0 text-primary camba-focus-ring rounded-xl pr-1"
+      className="group relative flex items-center gap-2 min-w-0 text-primary camba-focus-ring rounded-xl pr-1 overflow-visible"
       aria-label={`${tc("appName")} — Dashboard`}
     >
-      <CambaRabbitMascot mood={mood} />
+      <MascotScreenRunner mood={mood}>
+        <CambaRabbitMascot mood={mood} />
+      </MascotScreenRunner>
       <span className="font-bold">{tc("appName")}</span>
       {message && (
         <div

@@ -139,13 +139,232 @@
   }
 }
 
+@keyframes mascot-ear-left {
+  0%,
+  100% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes mascot-ear-right {
+  0%,
+  100% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes mascot-arm-left {
+  0%,
+  100% {
+    transform: rotate(22deg);
+  }
+  50% {
+    transform: rotate(-16deg);
+  }
+}
+
+@keyframes mascot-arm-right {
+  0%,
+  100% {
+    transform: rotate(-22deg);
+  }
+  50% {
+    transform: rotate(16deg);
+  }
+}
+
+@keyframes mascot-leg-left {
+  0%,
+  100% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(14deg);
+  }
+}
+
+@keyframes mascot-leg-right {
+  0%,
+  100% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-14deg);
+  }
+}
+
+@keyframes mascot-pupil-left {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  18% {
+    transform: translate(-2px, -1px);
+  }
+  36% {
+    transform: translate(2px, 0);
+  }
+  54% {
+    transform: translate(1px, 2px);
+  }
+  72% {
+    transform: translate(-2px, 1px);
+  }
+  88% {
+    transform: translate(2px, -1px);
+  }
+}
+
+@keyframes mascot-pupil-right {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(2px, -1px);
+  }
+  33% {
+    transform: translate(-2px, 1px);
+  }
+  51% {
+    transform: translate(-1px, -2px);
+  }
+  69% {
+    transform: translate(2px, 1px);
+  }
+  86% {
+    transform: translate(-2px, 0);
+  }
+}
+
+@keyframes mascot-run-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(2deg);
+  }
+}
+
+@keyframes mascot-run-legs {
+  0%,
+  100% {
+    transform: rotate(-18deg);
+  }
+  50% {
+    transform: rotate(22deg);
+  }
+}
+
+.mascot-ear-left {
+  animation: mascot-ear-left 2.4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+.mascot-ear-right {
+  animation: mascot-ear-right 2.1s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+.mascot-arm-left {
+  animation: mascot-arm-left 1.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 80% 20%;
+}
+
+.mascot-arm-right {
+  animation: mascot-arm-right 1.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 20% 20%;
+}
+
+.mascot-leg-left {
+  animation: mascot-leg-left 1.6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 0%;
+}
+
+.mascot-leg-right {
+  animation: mascot-leg-right 1.6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 0%;
+}
+
+.mascot-pupil-left {
+  animation: mascot-pupil-left 4.2s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.mascot-pupil-right {
+  animation: mascot-pupil-right 3.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.mascot-run-bob {
+  animation: mascot-run-bob 0.35s ease-in-out infinite;
+}
+
+.mascot-run-leg-left {
+  animation: mascot-run-legs 0.22s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 0%;
+}
+
+.mascot-run-leg-right {
+  animation: mascot-run-legs 0.22s ease-in-out infinite reverse;
+  transform-box: fill-box;
+  transform-origin: 50% 0%;
+}
+
+.mascot-run-arm-left {
+  animation: mascot-arm-left 0.28s ease-in-out infinite reverse;
+  transform-box: fill-box;
+  transform-origin: 80% 20%;
+}
+
+.mascot-run-arm-right {
+  animation: mascot-arm-right 0.28s ease-in-out infinite reverse;
+  transform-box: fill-box;
+  transform-origin: 20% 20%;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .camba-skeleton-shimmer,
   .camba-pulse-soft,
   .camba-streak-glow,
   .camba-badge-shine,
   .camba-scale-in,
-  [class*="animate-[mascot-"] {
+  [class*="animate-[mascot-"],
+  .mascot-ear-left,
+  .mascot-ear-right,
+  .mascot-arm-left,
+  .mascot-arm-right,
+  .mascot-leg-left,
+  .mascot-leg-right,
+  .mascot-pupil-left,
+  .mascot-pupil-right,
+  .mascot-run-bob,
+  .mascot-run-leg-left,
+  .mascot-run-leg-right,
+  .mascot-run-arm-left,
+  .mascot-run-arm-right {
     animation: none !important;
   }
 }
