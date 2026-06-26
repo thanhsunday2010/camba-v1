@@ -51,31 +51,35 @@ function NavLink({
 }) {
   const className = cn(
     "flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium transition-all min-h-[var(--touch-target-min)] md:min-h-0 md:py-2",
-    featured
-      ? cn(
-          "camba-gradient-program text-white font-semibold shadow-md hover:opacity-95",
-          isActive && "ring-2 ring-program/50 ring-offset-1 shadow-lg"
-        )
-      : cn(
-          isActive ? "bg-primary/10 text-primary" : "text-gray-600 hover:bg-gray-100"
-        )
+    isActive
+      ? "camba-gradient-program text-white font-semibold shadow-md ring-2 ring-program/50 ring-offset-1"
+      : featured
+        ? "camba-nav-cta-sparkle text-program font-semibold hover:opacity-95"
+        : "text-gray-600 hover:bg-gray-100"
   );
 
-  const iconClassName = cn("h-4 w-4 shrink-0", featured && "text-white");
+  const iconClassName = cn(
+    "h-4 w-4 shrink-0",
+    isActive ? "text-white" : featured ? "text-program" : undefined
+  );
 
   if (href) {
     return (
       <Link href={href} className={className} onClick={onClick}>
-        <Icon className={iconClassName} />
-        <span className={featured ? "tracking-wide" : undefined}>{label}</span>
+        <Icon className={cn(iconClassName, featured && !isActive && "relative z-[1]")} />
+        <span className={cn(featured && "tracking-wide", featured && !isActive && "relative z-[1]")}>
+          {label}
+        </span>
       </Link>
     );
   }
 
   return (
     <button type="button" className={className} onClick={onClick}>
-      <Icon className={iconClassName} />
-      <span className={featured ? "tracking-wide" : undefined}>{label}</span>
+      <Icon className={cn(iconClassName, featured && !isActive && "relative z-[1]")} />
+      <span className={cn(featured && "tracking-wide", featured && !isActive && "relative z-[1]")}>
+        {label}
+      </span>
     </button>
   );
 }

@@ -95,6 +95,57 @@
   animation: camba-badge-shine 3s ease-in-out infinite;
 }
 
+@keyframes camba-nav-cta-sparkle-shine {
+  0%,
+  72%,
+  100% {
+    background-position: -180% center;
+    opacity: 0;
+  }
+  78% {
+    opacity: 1;
+  }
+  88% {
+    background-position: 180% center;
+    opacity: 0;
+  }
+}
+
+@keyframes camba-nav-cta-sparkle-glow {
+  0%,
+  72%,
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  80% {
+    box-shadow: 0 0 10px 2px var(--program-glow);
+  }
+}
+
+.camba-nav-cta-sparkle {
+  position: relative;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--program-primary) 10%, white);
+  border: 1px solid color-mix(in srgb, var(--program-primary) 22%, transparent);
+  animation: camba-nav-cta-sparkle-glow 1s var(--ease-out) infinite;
+}
+
+.camba-nav-cta-sparkle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    105deg,
+    transparent 38%,
+    rgba(255, 255, 255, 0.75) 50%,
+    transparent 62%
+  );
+  background-size: 220% 100%;
+  animation: camba-nav-cta-sparkle-shine 1s var(--ease-out) infinite;
+  pointer-events: none;
+}
+
 .camba-hero-pattern {
   background-image: radial-gradient(circle at 1px 1px, rgb(var(--program-rgb) / 0.07) 1px, transparent 0);
   background-size: 20px 20px;
@@ -350,6 +401,8 @@
   .camba-pulse-soft,
   .camba-streak-glow,
   .camba-badge-shine,
+  .camba-nav-cta-sparkle,
+  .camba-nav-cta-sparkle::after,
   .camba-scale-in,
   [class*="animate-[mascot-"],
   .mascot-ear-left,
