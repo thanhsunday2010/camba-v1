@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { submitMockTest } from "@/actions/mock-tests";
-import { useCelebrationOptional } from "@/components/camba/celebration/celebration-provider";
 import { useMascotOptional } from "@/components/mascot/mascot-provider";
 import { StudentPageShell } from "@/components/camba";
 import { MockTestPageShell } from "@/components/mock-tests/mock-test-page-shell";
@@ -40,9 +39,7 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
   const [activeReviewQuestionId, setActiveReviewQuestionId] = useState<string | null>(null);
   const [startTime, setStartTime] = useState(() => Date.now());
   const [isPending, startTransition] = useTransition();
-  const celebrate = useCelebrationOptional();
   const mascot = useMascotOptional();
-  const wasCompleteRef = useRef(false);
   const hydratedRef = useRef(false);
 
   useEffect(() => {
@@ -95,13 +92,6 @@ export function MockTestPageContent({ viewModel, labels }: MockTestPageContentPr
   const showCompleteLayer = isTestCompleteResolved && !isReviewingTest;
   const showFramedReview =
     showCompleteLayer && activeReviewQuestionId !== null && !isReviewingTest;
-
-  useEffect(() => {
-    if (isTestCompleteResolved && !wasCompleteRef.current) {
-      celebrate?.celebrateMission();
-    }
-    wasCompleteRef.current = isTestCompleteResolved;
-  }, [isTestCompleteResolved, celebrate]);
 
   useEffect(() => {
     if (isTestCompleteResolved) {

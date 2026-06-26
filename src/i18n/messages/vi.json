@@ -912,7 +912,10 @@
         "reviewReasonLowScore": "Điểm thấp",
         "finalExerciseDetailsLabel": "Chi tiết bài tập cuối (chỉ một bài, không phải điểm cả bài học)",
         "backToCompleteSummary": "Quay lại kết quả bài học",
-        "ctaZoneTitle": "Bước tiếp theo"
+        "ctaZoneTitle": "Bước tiếp theo",
+        "ctaNextLesson": "Bài học tiếp theo: {lesson}",
+        "ctaNextSkill": "Luyện kỹ năng tiếp theo: {skill}",
+        "ctaNextUnit": "Unit tiếp theo: {unit}"
       },
       "exerciseTypes": {
         "default": "Bài tập",

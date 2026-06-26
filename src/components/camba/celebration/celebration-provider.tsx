@@ -11,7 +11,6 @@ import { useMascotOptional } from "@/components/mascot/mascot-provider";
 import {
   showBadgeEarnedToast,
   showLevelUpToast,
-  showMissionCompleteToast,
   showXpEarnedToast,
   type RewardToastLabels,
 } from "@/lib/design/rewards";
@@ -20,7 +19,6 @@ interface CelebrationContextValue {
   celebrateXp: (amount: number) => void;
   celebrateLevelUp: (level: number) => void;
   celebrateBadge: (name: string, description?: string) => void;
-  celebrateMission: () => void;
 }
 
 const CelebrationContext = createContext<CelebrationContextValue | null>(null);
@@ -80,13 +78,9 @@ function CelebrationProviderInner({
     [labels, useModalsForMajorEvents, motionCelebration, mascot]
   );
 
-  const celebrateMission = useCallback(() => {
-    showMissionCompleteToast(labels);
-  }, [labels]);
-
   const value = useMemo(
-    () => ({ celebrateXp, celebrateLevelUp, celebrateBadge, celebrateMission }),
-    [celebrateXp, celebrateLevelUp, celebrateBadge, celebrateMission]
+    () => ({ celebrateXp, celebrateLevelUp, celebrateBadge }),
+    [celebrateXp, celebrateLevelUp, celebrateBadge]
   );
 
   return (

@@ -1,12 +1,11 @@
 import { toast } from "sonner";
-import { Sparkles, Trophy, Award, Flame } from "lucide-react";
+import { Sparkles, Trophy, Award } from "lucide-react";
 import { createElement } from "react";
 
 export interface RewardToastLabels {
   xpEarned: string;
   levelUp: string;
   badgeEarned: string;
-  missionComplete: string;
   coinsEarned?: string;
 }
 
@@ -14,7 +13,6 @@ const defaultLabels: RewardToastLabels = {
   xpEarned: "Nhận +{amount} XP",
   levelUp: "Lên cấp {level}!",
   badgeEarned: "Huy hiệu mới: {name}",
-  missionComplete: "Hoàn thành nhiệm vụ!",
   coinsEarned: "Nhận +{amount} xu",
 };
 
@@ -40,13 +38,6 @@ export function showBadgeEarnedToast(name: string, labels: RewardToastLabels = d
   toast.success(interpolate(labels.badgeEarned, { name }), {
     icon: createElement(Award, { className: "h-4 w-4 text-warning" }),
     duration: 5000,
-  });
-}
-
-export function showMissionCompleteToast(labels: RewardToastLabels = defaultLabels) {
-  toast.success(labels.missionComplete, {
-    icon: createElement(Flame, { className: "h-4 w-4 text-error" }),
-    duration: 4000,
   });
 }
 

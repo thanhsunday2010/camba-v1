@@ -56,6 +56,9 @@ export type LessonDisplayState =
 export type LessonNextPathLesson = {
   id: string;
   title: string;
+  kind: "next-lesson" | "next-skill" | "next-unit";
+  skillName?: string;
+  unitTitle?: string;
 } | null;
 
 /** UI/session overlay — derived from server snapshot + in-session completions (not mastery) */
@@ -141,6 +144,9 @@ export type LessonCompleteSummaryLabels = {
   reviewReasonLowScore: string;
   finalExerciseDetailsLabel: string;
   ctaZoneTitle: string;
+  ctaNextLesson: string;
+  ctaNextSkill: string;
+  ctaNextUnit: string;
   backToCompleteSummary: string;
 };
 

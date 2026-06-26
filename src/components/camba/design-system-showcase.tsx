@@ -50,7 +50,7 @@ const TABS = [
 
 export function DesignSystemShowcase() {
   const [tab, setTab] = useState("layout");
-  const { celebrateXp, celebrateLevelUp, celebrateBadge, celebrateMission } = useCelebration();
+  const { celebrateXp, celebrateLevelUp, celebrateBadge } = useCelebration();
 
   return (
     <CambridgeProgramTheme programSlug="starters">
@@ -175,9 +175,6 @@ export function DesignSystemShowcase() {
               </Button>
               <Button variant="outline" onClick={() => celebrateBadge("Chuỗi 7 ngày")}>
                 Huy hiệu
-              </Button>
-              <Button variant="outline" onClick={() => celebrateMission()}>
-                Nhiệm vụ
               </Button>
             </div>
           </div>

@@ -44,6 +44,20 @@ function getRecommendationText(
   }
 }
 
+function getCompleteNextCtaLabel(
+  nextPathLesson: NonNullable<LessonNextPathLesson>,
+  fmt: ReturnType<typeof useLessonI18nFormatters>
+): string {
+  switch (nextPathLesson.kind) {
+    case "next-skill":
+      return fmt.ctaNextSkill(nextPathLesson.skillName ?? nextPathLesson.title);
+    case "next-unit":
+      return fmt.ctaNextUnit(nextPathLesson.unitTitle ?? nextPathLesson.title);
+    case "next-lesson":
+    default:
+      return fmt.ctaNextLesson(nextPathLesson.title);
+  }
+}
 function getRecommendationSupport(
   variant: LessonCompleteRecommendationVariant,
   labels: LessonCompleteSummaryLabels
@@ -194,7 +208,7 @@ export function LessonCompleteSummaryCard({
               <Button variant="quest" size="lg" className="gap-2 w-full" asChild>
                 <Link href={`/learning/lesson/${nextPathLesson.id}`}>
                   <Sparkles className="h-4 w-4" />
-                  {fmt.nextPathLesson(nextPathLesson.title)}
+                  {getCompleteNextCtaLabel(nextPathLesson, fmt)}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>

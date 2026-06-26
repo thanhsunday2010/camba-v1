@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { deriveResolvedLessonProgress } from "@/lib/learning/lesson-ui-utils";
-import { useCelebrationOptional } from "@/components/camba/celebration/celebration-provider";
 import { useMascotOptional } from "@/components/mascot/mascot-provider";
 import type {
   AiExerciseLabels,
@@ -61,7 +60,6 @@ export function LessonPageContent({
     useState<LessonExerciseCompletionMeta | null>(null);
   const [activeExerciseId, setActiveExerciseId] = useState<string | null>(null);
   const [isReviewingLesson, setIsReviewingLesson] = useState(false);
-  const celebrate = useCelebrationOptional();
   const mascot = useMascotOptional();
   const wasCompleteRef = useRef(false);
   const prevLessonCompleteRef = useRef(false);
@@ -94,11 +92,10 @@ export function LessonPageContent({
 
   useEffect(() => {
     if (resolvedProgress.isLessonCompleteResolved && !wasCompleteRef.current) {
-      celebrate?.celebrateMission();
       mascot?.cheerLessonComplete();
     }
     wasCompleteRef.current = resolvedProgress.isLessonCompleteResolved;
-  }, [resolvedProgress.isLessonCompleteResolved, celebrate, mascot]);
+  }, [resolvedProgress.isLessonCompleteResolved, mascot]);
 
   useEffect(() => {
     const justCompleted =

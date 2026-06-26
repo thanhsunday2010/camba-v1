@@ -112,6 +112,9 @@ export default async function LessonPage({ params }: LessonPageProps) {
     finalExerciseDetailsLabel: tcs("finalExerciseDetailsLabel"),
     backToCompleteSummary: tcs("backToCompleteSummary"),
     ctaZoneTitle: tcs("ctaZoneTitle"),
+    ctaNextLesson: tcs("ctaNextLesson"),
+    ctaNextSkill: tcs("ctaNextSkill"),
+    ctaNextUnit: tcs("ctaNextUnit"),
   };
 
   const listLabels = {

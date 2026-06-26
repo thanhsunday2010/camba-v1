@@ -914,7 +914,10 @@
         "reviewReasonLowScore": "Low score",
         "finalExerciseDetailsLabel": "Last exercise details (one exercise only — not the whole-lesson score)",
         "backToCompleteSummary": "Back to lesson results",
-        "ctaZoneTitle": "What’s next"
+        "ctaZoneTitle": "What's next",
+        "ctaNextLesson": "Next lesson: {lesson}",
+        "ctaNextSkill": "Next skill: {skill}",
+        "ctaNextUnit": "Next unit: {unit}"
       },
       "exerciseTypes": {
         "default": "Exercise",

@@ -2,8 +2,8 @@ import { createClient } from "@/lib/supabase/server";
 import {
   getLessonWithExercises,
   getLessonProgress,
-  getNextUnlockedLessonFast,
 } from "@/lib/queries/learning";
+import { resolveLessonCompleteNextCtaForUser } from "@/lib/learning/lesson-complete-cta";
 import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
 import { parseVocabularyBank, type VocabularyWord } from "@/lib/learning/vocabulary-bank";
 import {
@@ -224,11 +224,17 @@ export async function getLessonPageViewModel(
     progress.completionPercent
   );
 
-  let nextPathLesson: { id: string; title: string } | null = null;
+  let nextPathLesson: {
+    id: string;
+    title: string;
+    kind: "next-lesson" | "next-skill" | "next-unit";
+    skillName?: string;
+    unitTitle?: string;
+  } | null = null;
   if (context.levelId) {
-    const next = await getNextUnlockedLessonFast(userId, context.levelId);
-    if (next && next.id !== lessonId) {
-      nextPathLesson = { id: next.id, title: next.title };
+    const next = await resolveLessonCompleteNextCtaForUser(context.levelId, lessonId);
+    if (next) {
+      nextPathLesson = next;
     }
   }
 
