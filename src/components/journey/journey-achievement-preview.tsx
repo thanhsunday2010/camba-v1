@@ -6,6 +6,7 @@ import { resolveAchievementText } from "@/lib/achievements/achievement-i18n";
 import type { EvaluatedAchievement } from "@/lib/achievements/achievement-types";
 import { Award, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { dashboardHubHref } from "@/lib/dashboard/dashboard-hub-routes";
 
 interface JourneyAchievementPreviewProps {
   achievements: EvaluatedAchievement[];
@@ -40,7 +41,7 @@ export function JourneyAchievementPreview({
           </h2>
           <p className="camba-caption text-muted mt-1">{labels.subtitle}</p>
         </div>
-        <Link href="/achievements">
+        <Link href={dashboardHubHref("achievements")}>
           <Button variant="ghost" size="sm">
             {labels.viewAll}
             <ArrowRight className="h-4 w-4" aria-hidden />

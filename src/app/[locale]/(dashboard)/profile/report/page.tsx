@@ -7,6 +7,7 @@ import { StudentProgressReportView } from "@/components/reporting/student-progre
 import { getStudentProgressReport } from "@/lib/reporting/report-view-model";
 import { buildStudentProgressReportLabels } from "@/lib/reporting/report-i18n";
 import { buildReportResolvers } from "@/lib/reporting/report-resolvers";
+import { dashboardHubHref } from "@/lib/dashboard/dashboard-hub-routes";
 import { ArrowLeft } from "lucide-react";
 
 export default async function ProfileReportPage() {
@@ -31,7 +32,7 @@ export default async function ProfileReportPage() {
     <StudentPageShell narrow className="print:max-w-none">
       <nav aria-label={t("backToProfile")} className="print:hidden">
         <Link
-          href="/profile"
+          href={dashboardHubHref("profile")}
           className="inline-flex items-center gap-1.5 camba-caption font-semibold text-program hover:underline camba-focus-ring rounded-lg"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden />

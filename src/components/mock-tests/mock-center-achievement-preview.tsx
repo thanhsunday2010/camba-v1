@@ -6,6 +6,7 @@ import { AchievementCard, type AchievementCardLabels } from "@/components/achiev
 import { withAchievementText, withAchievementTexts, type AchievementItemLabels } from "@/lib/achievements/achievement-i18n";
 import type { EvaluatedAchievement } from "@/lib/achievements/achievement-types";
 import { Award } from "lucide-react";
+import { dashboardHubHref } from "@/lib/dashboard/dashboard-hub-routes";
 
 interface MockCenterAchievementPreviewProps {
   recentUnlocked: EvaluatedAchievement[];
@@ -47,7 +48,7 @@ export function MockCenterAchievementPreview({
         <div className="grid gap-3 sm:grid-cols-2" role="list">
           {resolvedRecent.map((achievement) => (
               <div key={achievement.id} role="listitem">
-                <Link href="/achievements" className="block camba-focus-ring rounded-2xl">
+                <Link href={dashboardHubHref("achievements")} className="block camba-focus-ring rounded-2xl">
                   <AchievementCard
                     achievement={achievement}
                     title={achievement.title}

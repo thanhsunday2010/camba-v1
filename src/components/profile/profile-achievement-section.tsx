@@ -8,6 +8,7 @@ import {
 import type { AchievementPortfolioSlice } from "@/lib/profile/student-profile-types";
 import type { AchievementItemLabels } from "@/lib/achievements/achievement-i18n";
 import { withAchievementText, withAchievementTexts } from "@/lib/achievements/achievement-i18n";
+import { dashboardHubHref } from "@/lib/dashboard/dashboard-hub-routes";
 import { Award } from "lucide-react";
 
 interface ProfileAchievementSectionProps {
@@ -54,7 +55,7 @@ export function ProfileAchievementSection({
             {rareUnlocked.map((achievement) => (
                 <Link
                   key={achievement.id}
-                  href="/achievements"
+                  href={dashboardHubHref("achievements")}
                   className="rounded-2xl border border-[var(--color-badge)]/25 bg-[var(--color-badge)]/5 px-4 py-3 camba-focus-ring"
                 >
                   <p className="camba-body font-semibold text-foreground">{achievement.title}</p>

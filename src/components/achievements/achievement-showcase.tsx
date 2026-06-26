@@ -10,6 +10,7 @@ import { AnimatedAchievement } from "@/components/camba/motion";
 import type { ResolvedEvaluatedAchievement } from "@/lib/achievements/achievement-types";
 import { Award, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { dashboardHubHref } from "@/lib/dashboard/dashboard-hub-routes";
 
 export type AchievementShowcaseLabels = AchievementCardLabels &
   AchievementDetailLabels & {
@@ -51,7 +52,7 @@ export function AchievementShowcase({
         icon={Award}
         action={
           showViewAll ? (
-            <Link href="/achievements">
+            <Link href={dashboardHubHref("achievements")}>
               <Button variant="ghost" size="sm">
                 {labels.viewAll}
                 <ArrowRight className="h-4 w-4" aria-hidden />

@@ -57,6 +57,8 @@ interface StudentProfileViewProps {
   resolveCertificationTitle: (entry: CertificationPortfolio["entries"][number]) => string;
   resolveGoalTitle: (goalKey: string) => string;
   resolveGoalDescription: (goalKey: string) => string;
+  /** When true, hides sections duplicated on the overview tab. */
+  hubMode?: boolean;
 }
 
 export function StudentProfileView({
@@ -66,6 +68,7 @@ export function StudentProfileView({
   resolveCertificationTitle,
   resolveGoalTitle,
   resolveGoalDescription,
+  hubMode = false,
 }: StudentProfileViewProps) {
   return (
     <div className="camba-section-stack gap-8 sm:gap-10">
@@ -77,9 +80,11 @@ export function StudentProfileView({
         <CambridgeSnapshotCard snapshot={model.snapshot} labels={labels.snapshot} />
       </AnimatedSection>
 
-      <AnimatedSection staggerIndex={2}>
-        <LearningProgressSection learning={model.learning} labels={labels.learning} />
-      </AnimatedSection>
+      {!hubMode && (
+        <AnimatedSection staggerIndex={2}>
+          <LearningProgressSection learning={model.learning} labels={labels.learning} />
+        </AnimatedSection>
+      )}
 
       <AnimatedSection staggerIndex={3}>
         <MockPerformanceSection
@@ -103,16 +108,18 @@ export function StudentProfileView({
         />
       </AnimatedSection>
 
-      <AnimatedSection staggerIndex={6}>
-        <ProfileAchievementSection
-          achievements={model.achievements}
-          achievementItemLabels={achievementItemLabels}
-          showcaseLabels={labels.achievements}
-          nextLabels={labels.achievements.next}
-          rareTitle={labels.achievements.rareTitle}
-          rareSubtitle={labels.achievements.rareSubtitle}
-        />
-      </AnimatedSection>
+      {!hubMode && (
+        <AnimatedSection staggerIndex={6}>
+          <ProfileAchievementSection
+            achievements={model.achievements}
+            achievementItemLabels={achievementItemLabels}
+            showcaseLabels={labels.achievements}
+            nextLabels={labels.achievements.next}
+            rareTitle={labels.achievements.rareTitle}
+            rareSubtitle={labels.achievements.rareSubtitle}
+          />
+        </AnimatedSection>
+      )}
 
       <AnimatedSection staggerIndex={7}>
         <JourneyProgressSection journey={model.journey} labels={labels.journey} />

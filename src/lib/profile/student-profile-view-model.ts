@@ -13,6 +13,7 @@ import {
   buildStudentAchievementContext,
 } from "@/lib/achievements/achievement-view-model";
 import { buildAchievementViewModel, pickNextAchievement } from "@/lib/achievements/achievement-utils";
+import { dashboardHubHref } from "@/lib/dashboard/dashboard-hub-routes";
 import { getLearningJourneyViewModel } from "@/lib/learning/journey/learning-journey-view-model";
 import type { AuthUser } from "@/types";
 import type { StudentPortfolioViewModel } from "@/lib/profile/student-profile-types";
@@ -184,7 +185,7 @@ export async function getStudentPortfolioViewModel(
       subtitle: a.category,
       kind: "achievement" as const,
       earnedAt: a.unlockedAt,
-      href: "/achievements",
+      href: dashboardHubHref("achievements"),
     })),
   ];
 

@@ -22,8 +22,6 @@ import type { DashboardSkillInsightsView } from "@/lib/dashboard/skill-insights"
 import type { DashboardActivityItem } from "@/lib/dashboard/recent-activity";
 import { buildJourneyPreview } from "@/lib/learning/journey/learning-journey-utils";
 import type { JourneyPreview } from "@/lib/learning/journey/learning-journey-types";
-import { getStudentDashboardAchievements } from "@/lib/achievements/achievement-view-model";
-import type { EvaluatedAchievement } from "@/lib/achievements/achievement-types";
 
 export type WeeklyProgressStats = {
   xpEarned: number;
@@ -52,12 +50,6 @@ export type StudentDashboardData = {
   skillInsights: DashboardSkillInsightsView;
   recentActivity: DashboardActivityItem[];
   journeyPreview: JourneyPreview;
-  achievements: {
-    recentUnlocked: EvaluatedAchievement[];
-    nextAchievement: EvaluatedAchievement | null;
-    unlockedCount: number;
-    totalCount: number;
-  };
 };
 
 function weekStartIsoDate(): string {
@@ -135,13 +127,12 @@ export async function getStudentDashboardData(
     mockHub.tests.map((test) => [test.id, test.format.includedSkillSlugs])
   );
 
-  const [nextLesson, skillSnapshot, recentActivity, weeklyTasks, achievements] =
+  const [nextLesson, skillSnapshot, recentActivity, weeklyTasks] =
     await Promise.all([
     levelId ? getNextLessonContext(userId, levelId) : Promise.resolve(null),
     levelId ? getSkillProgressSnapshot(userId, levelId) : Promise.resolve([]),
     getDashboardRecentActivity(userId, activityLabels),
     getWeeklyTaskCounts(userId, mockSkillMap),
-    getStudentDashboardAchievements(userId),
   ]);
 
   const skillInsights = await getDashboardSkillInsights(userId, skillSnapshot, insightLabels);
@@ -199,6 +190,5 @@ export async function getStudentDashboardData(
     skillInsights,
     recentActivity,
     journeyPreview,
-    achievements,
   };
 }

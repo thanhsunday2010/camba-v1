@@ -1,24 +1,17 @@
-import { StudentPageShell } from "@/components/camba";
 import { AnimatedSection } from "@/components/camba/motion";
 import { DashboardHero } from "@/components/dashboard/dashboard-hero";
 import { DashboardDailyMissionCard } from "@/components/dashboard/dashboard-daily-mission-card";
 import { DashboardContinueLearningCard } from "@/components/dashboard/dashboard-continue-learning-card";
 import { DashboardWeeklyProgress } from "@/components/dashboard/dashboard-weekly-progress";
 import { DashboardRecommendedMock, type DashboardRecommendedMockLabels } from "@/components/dashboard/dashboard-recommended-mock";
-import { DashboardAchievementsSection } from "@/components/dashboard/dashboard-achievements-section";
-import type { AchievementShowcaseLabels } from "@/components/achievements/achievement-showcase";
-import type { NextAchievementCardLabels } from "@/components/achievements/next-achievement-card";
 import { DashboardSkillInsights } from "@/components/dashboard/dashboard-skill-insights";
 import { DashboardRecentActivity } from "@/components/dashboard/dashboard-recent-activity";
-import { DashboardJourneyPreview } from "@/components/dashboard/dashboard-journey-preview";
 import { DashboardAiPracticeSection } from "@/components/dashboard/dashboard-ai-practice-section";
 import type { PracticeHistoryLabels } from "@/components/ai-practice/practice-history-panel";
 import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
-import { SectionHeader } from "@/components/camba/section-header";
 import { PlacementTestCTA } from "@/components/dashboard/placement-test-cta";
 import { ProgramPicker } from "@/components/programs/program-picker";
 import type { StudentDashboardData } from "@/lib/dashboard/student-dashboard-data";
-import { Route } from "lucide-react";
 
 export interface StudentDashboardLabels {
   hero: {
@@ -29,7 +22,6 @@ export interface StudentDashboardLabels {
     xp: string;
     level: string;
     cefrEstimate: string;
-    viewPortfolio?: string;
   };
   dailyMission: {
     title: string;
@@ -62,12 +54,6 @@ export interface StudentDashboardLabels {
     emptyNote: string;
   };
   recommendedMock: DashboardRecommendedMockLabels;
-  achievements: AchievementShowcaseLabels & {
-    next: NextAchievementCardLabels;
-    toastUnlocked: string;
-    toastCelebration: string;
-    itemLabels: Record<string, { title: string; description: string }>;
-  };
   skillInsights: {
     title: string;
     subtitle: string;
@@ -90,17 +76,6 @@ export interface StudentDashboardLabels {
     kindLesson: string;
     kindMock: string;
     kindBadge: string;
-  };
-  journeyPreview: {
-    title: string;
-    subtitle: string;
-    currentLevel: string;
-    currentUnit: string;
-    nextMilestone: string;
-    openJourney: string;
-    emptyTitle: string;
-    emptyDescription: string;
-    emptyAction: string;
   };
   placement: {
     title: string;
@@ -148,7 +123,7 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
     : undefined;
 
   return (
-    <StudentPageShell>
+    <>
       {!hasProgram && (
         <ProgramPicker programs={data.programs} labels={labels.programPicker} />
       )}
@@ -167,6 +142,7 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
               cefrEstimate={data.cefrEstimate}
               levelProgressPercent={data.levelProgressPercent}
               labels={labels.hero}
+              compact
             />
           </AnimatedSection>
 
@@ -185,34 +161,21 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
             />
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={3} aria-labelledby="journey-preview-heading">
-            <SectionHeader
-              titleId="journey-preview-heading"
-              title={labels.journeyPreview.title}
-              description={labels.journeyPreview.subtitle}
-              icon={Route}
-            />
-            <DashboardJourneyPreview
-              preview={data.journeyPreview}
-              labels={labels.journeyPreview}
-            />
-          </AnimatedSection>
-
-          <AnimatedSection staggerIndex={4}>
+          <AnimatedSection staggerIndex={3}>
             <DashboardWeeklyProgress
               stats={data.weeklyProgress}
               labels={labels.weeklyProgress}
             />
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={5}>
+          <AnimatedSection staggerIndex={4}>
             <DashboardRecommendedMock
               test={data.recommendedMock}
               labels={labels.recommendedMock}
             />
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={6}>
+          <AnimatedSection staggerIndex={5}>
             <DashboardAiPracticeSection
               labels={labels.aiPractice}
               writingSummary={labels.aiPracticeHistory.writingSummary}
@@ -221,37 +184,21 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
             />
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={7}>
-            <DashboardAchievementsSection
-              recentUnlocked={data.achievements.recentUnlocked}
-              nextAchievement={data.achievements.nextAchievement}
-              unlockedCount={data.achievements.unlockedCount}
-              totalCount={data.achievements.totalCount}
-              itemLabels={labels.achievements.itemLabels}
-              showcaseLabels={labels.achievements}
-              nextLabels={labels.achievements.next}
-              toastLabels={{
-                unlocked: labels.achievements.toastUnlocked,
-                celebration: labels.achievements.toastCelebration,
-              }}
-            />
-          </AnimatedSection>
-
-          <AnimatedSection staggerIndex={8}>
+          <AnimatedSection staggerIndex={6}>
             <DashboardSkillInsights
               insights={data.skillInsights}
               labels={labels.skillInsights}
             />
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={9}>
+          <AnimatedSection staggerIndex={7}>
             <DashboardRecentActivity
               items={data.recentActivity}
               labels={labels.recentActivity}
             />
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={10}>
+          <AnimatedSection staggerIndex={8}>
             <PlacementTestCTA
               title={labels.placement.title}
               description={labels.placement.description}
@@ -268,6 +215,6 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
           buttonText={labels.placement.button}
         />
       )}
-    </StudentPageShell>
+    </>
   );
 }

@@ -9,6 +9,7 @@ import type {
   WritingGrowthItem,
 } from "@/lib/profile/student-profile-types";
 import type { Json } from "@/types/database";
+import { dashboardHubHref } from "@/lib/dashboard/dashboard-hub-routes";
 
 type AiFeedbackRow = {
   id: string;
@@ -141,7 +142,7 @@ export function buildFutureGoals(input: {
       kind: "achievement",
       titleKey: "goalNextAchievement",
       descriptionKey: input.nextAchievement.titleKey,
-      href: "/achievements",
+      href: dashboardHubHref("achievements"),
       progressPercent: input.nextAchievement.progressPercent,
     });
   }

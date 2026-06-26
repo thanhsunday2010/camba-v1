@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils";
 import { formatNumber } from "@/lib/utils";
 import { ProgramBadge } from "@/components/camba/cambridge/program-badge";
-import { PortfolioLink } from "@/components/profile/portfolio-link";
 import { AnimatedCounter, AnimatedProgress } from "@/components/camba/motion";
 import { Flame, Sparkles, Zap } from "lucide-react";
 
@@ -15,7 +14,6 @@ export interface DashboardHeroLabels {
   xp: string;
   level: string;
   cefrEstimate: string;
-  viewPortfolio?: string;
 }
 
 interface DashboardHeroProps {
@@ -29,6 +27,8 @@ interface DashboardHeroProps {
   cefrEstimate?: string | null;
   levelProgressPercent: number;
   labels: DashboardHeroLabels;
+  /** When true, hides XP/level cards (shown on Profile tab instead). */
+  compact?: boolean;
   className?: string;
 }
 
@@ -43,6 +43,7 @@ export function DashboardHero({
   cefrEstimate,
   levelProgressPercent,
   labels,
+  compact = false,
   className,
 }: DashboardHeroProps) {
   const programLine =
@@ -97,9 +98,7 @@ export function DashboardHero({
           </header>
 
           <div className="flex shrink-0 flex-col items-stretch gap-3 w-full sm:w-auto sm:items-end">
-            {labels.viewPortfolio && (
-              <PortfolioLink label={labels.viewPortfolio} className="self-start sm:self-end" />
-            )}
+            {!compact && (
             <div className="grid grid-cols-2 gap-3 w-full sm:flex sm:w-auto sm:gap-4">
             <div className="rounded-2xl border border-white/80 bg-white/90 px-4 py-3 shadow-sm min-w-0">
               <p className="camba-caption text-muted flex items-center gap-1">
@@ -123,6 +122,7 @@ export function DashboardHero({
               />
             </div>
             </div>
+            )}
           </div>
         </div>
       </div>

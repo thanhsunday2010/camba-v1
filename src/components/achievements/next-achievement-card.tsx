@@ -6,6 +6,7 @@ import { formatAchievementProgressMessage } from "@/lib/achievements/achievement
 import { Link } from "@/i18n/routing";
 import { Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { dashboardHubHref } from "@/lib/dashboard/dashboard-hub-routes";
 
 export type NextAchievementCardLabels = {
   title: string;
@@ -74,7 +75,7 @@ export function NextAchievementCard({
           </div>
         </div>
         <Button variant="outline" size="sm" className="shrink-0" asChild>
-          <Link href="/achievements">{labels.viewAchievements}</Link>
+          <Link href={dashboardHubHref("achievements")}>{labels.viewAchievements}</Link>
         </Button>
       </div>
     </CambaCard>

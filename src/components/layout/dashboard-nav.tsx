@@ -15,8 +15,6 @@ import {
   LogOut,
   Map,
   Menu,
-  Trophy,
-  UserCircle,
   CreditCard,
   X,
 } from "lucide-react";
@@ -33,9 +31,7 @@ const navItems = [
   { href: "/learning", icon: BookOpen, labelKey: "learningPath" as const, featured: true },
   { href: "/mock-tests", icon: FileText, labelKey: "mockTests" as const },
   { href: "/subscriptions", icon: CreditCard, labelKey: "pricing" as const },
-  { href: "/achievements", icon: Trophy, labelKey: "achievements" as const },
   { href: "/placement-test", icon: ClipboardList, labelKey: "placementTest" as const },
-  { href: "/profile", icon: UserCircle, labelKey: "profile" as const },
 ];
 
 function NavLink({
