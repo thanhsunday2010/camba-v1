@@ -36,6 +36,7 @@ interface LearningLessonCardProps {
   labels: LearningLessonCardLabels;
   skillName?: string;
   className?: string;
+  variant?: "default" | "compact";
 }
 
 export function LearningLessonCard({
@@ -47,6 +48,7 @@ export function LearningLessonCard({
   labels,
   skillName,
   className,
+  variant = "default",
 }: LearningLessonCardProps) {
   const t = useTranslations("learning");
   const presentation = getLessonPresentation(lesson, {
@@ -72,19 +74,24 @@ export function LearningLessonCard({
   }
   if (completion > 0) metaParts.push(`${completion}%`);
 
+  const compact = variant === "compact";
+
   const card = (
     <CambaCard
       variant="lesson"
-      padding="md"
+      padding={compact ? "sm" : "md"}
       interactive={unlocked}
       className={cn(
+        "h-full",
         recommended && "ring-2 ring-[var(--status-recommended)]/40 shadow-md",
         needsReview && "ring-1 ring-[var(--status-needs-review)]/25",
         state === "locked" && "opacity-90",
+        compact && "shadow-sm",
         className
       )}
     >
-      <div className="flex items-start gap-3">
+      <div className={cn("flex gap-2.5", compact ? "flex-col" : "items-start gap-3")}>
+        {!compact && (
         <div
           className={cn(
             "camba-icon-box-md shrink-0",
@@ -103,32 +110,38 @@ export function LearningLessonCard({
             <ChevronRight className="h-5 w-5" />
           )}
         </div>
+        )}
         <div className="flex-1 min-w-0">
-          <div className="flex flex-wrap items-center gap-2">
-            <p className="camba-h3 text-foreground truncate">{lesson.title}</p>
+          <div className="flex flex-wrap items-center gap-1.5">
+            {compact && !unlocked && (
+              <Lock className="h-3.5 w-3.5 text-[var(--status-locked)] shrink-0" aria-hidden />
+            )}
+            <p className={cn("text-foreground truncate", compact ? "camba-caption font-semibold leading-snug" : "camba-h3")}>
+              {lesson.title}
+            </p>
             {recommended && (
-              <span className="inline-flex items-center gap-1 rounded-full bg-violet-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[var(--status-recommended)]">
-                <Sparkles className="h-3 w-3" />
+              <span className="inline-flex items-center gap-0.5 rounded-full bg-violet-100 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wide text-[var(--status-recommended)]">
+                {!compact && <Sparkles className="h-3 w-3" />}
                 {labels.recommended}
               </span>
             )}
             {needsReview && !suppressReviewBadge && (
-              <span className="inline-flex items-center gap-1 rounded-full bg-orange-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[var(--status-needs-review)]">
+              <span className="inline-flex items-center gap-0.5 rounded-full bg-orange-100 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wide text-[var(--status-needs-review)]">
                 {labels.needsReview}
               </span>
             )}
           </div>
           <p className="camba-caption text-muted mt-0.5 truncate">{metaParts.join(" · ")}</p>
-          <div className="flex flex-wrap gap-1.5 mt-2">
+          <div className="flex flex-wrap gap-1 mt-1.5">
             <LessonStatusPill state={state} label={stateLabel} />
-            {lesson.progress && (
+            {lesson.progress && !compact && (
               <MasteryBadge
                 level={mastery as 0 | 1 | 2 | 3 | 4}
                 label={masteryLabels[mastery] ?? masteryLabels[0]}
               />
             )}
           </div>
-          {!unlocked && (
+          {!unlocked && !compact && (
             <LearningLockHint
               compact
               message={labels.lockedHint}
@@ -138,7 +151,7 @@ export function LearningLessonCard({
             />
           )}
         </div>
-        {unlocked && cta && (
+        {unlocked && cta && !compact && (
           <span
             className={cn(
               "shrink-0 self-center text-xs font-bold hidden sm:inline",

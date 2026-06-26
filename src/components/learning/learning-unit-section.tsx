@@ -1,12 +1,14 @@
 "use client";
 
 import { LearningUnitCard } from "@/components/learning/learning-unit-card";
-import { LearningLessonCard } from "@/components/learning/learning-lesson-card";
-import { unitHasSkillEntry } from "@/lib/learning/path-ui-utils";
+import { LearningUnitLessonsPanel } from "@/components/learning/learning-unit-lessons-panel";
+import {
+  LearningLockedUnitsDropdown,
+  partitionUnitsByAccess,
+} from "@/components/learning/learning-locked-units-dropdown";
 import type { CurriculumUnitGroup } from "@/lib/learning/pivot-units";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
 import type { UnitVisualState } from "@/lib/learning/path-ui-utils";
-import type { LessonWithProgress } from "@/types/learning";
 import type { RefObject } from "react";
 
 interface LearningUnitSectionLabels {
@@ -19,6 +21,9 @@ interface LearningUnitSectionLabels {
   recommended: string;
   needsReview: string;
   continueHere: string;
+  lockedLessonsTitle: string;
+  lockedUnitsTitle: string;
+  lockedUnitsSubtitle: string;
   lessonStateLabels: Record<LessonVisualState, string>;
   unitStateLabels: Record<UnitVisualState, string>;
   ctaStart: string;
@@ -28,11 +33,12 @@ interface LearningUnitSectionLabels {
 
 interface LearningUnitSectionProps {
   units: CurriculumUnitGroup[];
-  activeSkill: string;
+  skillLabels: Record<string, string>;
   expandedUnit: string | null;
   onToggleUnit: (slug: string | null) => void;
   recommendedLessonId?: string | null;
   recommendedUnitSlug?: string | null;
+  focusSkillSlug?: string | null;
   continueLessonHref?: string | null;
   recommendedUnitRef?: RefObject<HTMLDivElement | null>;
   reviewLessonIds?: Set<string>;
@@ -42,41 +48,27 @@ interface LearningUnitSectionProps {
 
 export function LearningUnitSection({
   units,
-  activeSkill,
+  skillLabels,
   expandedUnit,
   onToggleUnit,
   recommendedLessonId,
   recommendedUnitSlug,
+  focusSkillSlug,
   continueLessonHref,
   recommendedUnitRef,
   reviewLessonIds,
   masteryLabels,
   labels,
 }: LearningUnitSectionProps) {
-  const visibleUnits = units.filter((unit) => {
-    if (activeSkill === "all") return true;
-    return unitHasSkillEntry(unit, activeSkill);
-  });
+  const { accessible, locked } = partitionUnitsByAccess(units);
 
-  if (visibleUnits.length === 0) {
+  if (accessible.length === 0 && locked.length === 0) {
     return (
-      <p className="camba-body text-muted text-center py-8 rounded-2xl border border-dashed border-border">
+      <p className="camba-body text-muted text-center py-6 rounded-xl border border-dashed border-border">
         {labels.skillNoContent}
       </p>
     );
   }
-
-  const lessonCardLabels = {
-    minutes: labels.minutes,
-    lockedHint: labels.lockedHint,
-    lockContinueLabel: labels.lockContinueLabel,
-    stateLabels: labels.lessonStateLabels,
-    ctaStart: labels.ctaStart,
-    ctaContinue: labels.ctaContinue,
-    ctaReview: labels.ctaReview,
-    recommended: labels.recommended,
-    needsReview: labels.needsReview,
-  };
 
   const unitCardLabels = {
     unitComingSoon: labels.unitComingSoon,
@@ -87,69 +79,65 @@ export function LearningUnitSection({
     continueHere: labels.continueHere,
   };
 
+  const lessonsPanelLabels = {
+    skillNoContent: labels.skillNoContent,
+    minutes: labels.minutes,
+    lockedHint: labels.lockedHint,
+    lockContinueLabel: labels.lockContinueLabel,
+    recommended: labels.recommended,
+    needsReview: labels.needsReview,
+    lockedLessonsTitle: labels.lockedLessonsTitle,
+    lessonStateLabels: labels.lessonStateLabels,
+    ctaStart: labels.ctaStart,
+    ctaContinue: labels.ctaContinue,
+    ctaReview: labels.ctaReview,
+  };
+
   return (
-    <div className="space-y-3">
-      {visibleUnits.map((unit) => {
+    <div className="space-y-2.5">
+      {accessible.map((unit) => {
         const isExpanded = expandedUnit === unit.slug;
         const recommended = unit.slug === recommendedUnitSlug;
-        const isRecommendedUnit = unit.slug === recommendedUnitSlug;
 
         return (
-          <div key={unit.slug} className="space-y-2">
+          <div key={unit.slug} className="space-y-0">
             <LearningUnitCard
               unit={unit}
               expanded={isExpanded}
               onToggle={() => onToggleUnit(isExpanded ? null : unit.slug)}
               recommended={recommended}
               continueLessonHref={continueLessonHref}
-              unitRef={isRecommendedUnit ? recommendedUnitRef : undefined}
+              unitRef={recommended ? recommendedUnitRef : undefined}
               labels={unitCardLabels}
+              compact
             />
             {isExpanded && (
-              <div className="ml-1 sm:ml-3 space-y-3 border-l-2 border-program/15 pl-3 sm:pl-4">
-                {unit.entries.map((entry) => {
-                  if (activeSkill !== "all" && entry.skillSlug !== activeSkill) {
-                    return null;
+              <div className="mt-2 ml-2 sm:ml-3 pl-3 sm:pl-4 border-l-2 border-program/15">
+                <LearningUnitLessonsPanel
+                  unit={unit}
+                  skillLabels={skillLabels}
+                  initialSkillSlug={
+                    recommended && focusSkillSlug ? focusSkillSlug : null
                   }
-                  if (entry.lessons.length === 0) {
-                    return (
-                      <p
-                        key={entry.skillSlug}
-                        className="camba-caption text-muted italic py-2"
-                      >
-                        {labels.skillNoContent}
-                      </p>
-                    );
-                  }
-                  return (
-                    <div key={entry.skillSlug} className="space-y-2">
-                      {activeSkill === "all" && (
-                        <h4 className="camba-caption font-semibold uppercase tracking-wide text-muted">
-                          {entry.skillName}
-                        </h4>
-                      )}
-                      <div className="space-y-2">
-                        {entry.lessons.map((lesson: LessonWithProgress) => (
-                          <LearningLessonCard
-                            key={lesson.id}
-                            lesson={lesson}
-                            masteryLabels={masteryLabels}
-                            recommendedLessonId={recommendedLessonId}
-                            continueLessonHref={continueLessonHref}
-                            suppressReviewBadge={reviewLessonIds?.has(lesson.id)}
-                            skillName={activeSkill === "all" ? undefined : entry.skillName}
-                            labels={lessonCardLabels}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  );
-                })}
+                  recommendedLessonId={recommendedLessonId}
+                  continueLessonHref={continueLessonHref}
+                  reviewLessonIds={reviewLessonIds}
+                  masteryLabels={masteryLabels}
+                  labels={lessonsPanelLabels}
+                />
               </div>
             )}
           </div>
         );
       })}
+
+      <LearningLockedUnitsDropdown
+        units={locked}
+        title={labels.lockedUnitsTitle}
+        subtitle={labels.lockedUnitsSubtitle}
+        continueLessonHref={continueLessonHref}
+        labels={unitCardLabels}
+      />
     </div>
   );
 }

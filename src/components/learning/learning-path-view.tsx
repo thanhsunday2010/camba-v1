@@ -1,26 +1,18 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { useTranslations } from "next-intl";
 import { ContentSection, StudentPageShell } from "@/components/camba";
-import { SectionHeader } from "@/components/camba/section-header";
-import { LessonCard } from "@/components/camba/cards/learning-cards";
-import { LearningPathHero, type LearningPathHeroLabels } from "@/components/learning/learning-path-hero";
+import { LearningPathHero } from "@/components/learning/learning-path-hero";
 import { LearningLevelSwitcher } from "@/components/learning/learning-level-switcher";
-import { LearningSkillNav } from "@/components/learning/learning-skill-nav";
 import { LearningUnitSection } from "@/components/learning/learning-unit-section";
 import { LearningPathEmpty } from "@/components/learning/learning-path-empty";
-import { LearningSkillFilterNotice } from "@/components/learning/learning-skill-filter-notice";
 import { LearningReviewSection } from "@/components/learning/learning-review-section";
 import {
   collectReviewLessons,
   computeLevelProgressPercent,
-  findLessonInUnits,
   findSkillSlugForLesson,
   findUnitSlugForLesson,
-  getLessonPresentation,
   getWeakestSkillSlug,
-  isLessonVisibleInSkillFilter,
   resolveFocusLesson,
   type FocusLessonResult,
 } from "@/lib/learning/path-ui-utils";
@@ -29,10 +21,11 @@ import type { SkillProgressRow, NextLessonContext } from "@/lib/queries/dashboar
 import type { Skill } from "@/types/learning";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
 import type { ReviewReasonKey, UnitVisualState } from "@/lib/learning/path-ui-utils";
-import { BookOpen, Sparkles } from "lucide-react";
+import { BookOpen } from "lucide-react";
 import { DashboardAiPracticeSection, type DashboardAiPracticeLabels } from "@/components/dashboard/dashboard-ai-practice-section";
-import type { PracticeHistoryLabels } from "@/components/ai-practice/practice-history-panel";
 import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
+import type { PracticeHistoryLabels } from "@/components/ai-practice/practice-history-panel";
+import { useTranslations } from "next-intl";
 
 interface LevelOption {
   id: string;
@@ -41,24 +34,11 @@ interface LevelOption {
 }
 
 export interface LearningPathViewLabels {
-  hero: LearningPathHeroLabels;
+  hero: import("@/components/learning/learning-path-hero").LearningPathHeroLabels;
   levelSwitcher: {
     title: string;
     selecting: string;
     current: string;
-  };
-  recommended: {
-    title: string;
-    subtitle: string;
-    skillPrefix: string;
-    unitPrefix: string;
-    minutes: string;
-  };
-  skillFilter: {
-    showAll: string;
-  };
-  skillNav: {
-    all: string;
   };
   skillLabels: Record<string, string>;
   review: {
@@ -79,6 +59,9 @@ export interface LearningPathViewLabels {
     recommended: string;
     needsReview: string;
     continueHere: string;
+    lockedLessonsTitle: string;
+    lockedUnitsTitle: string;
+    lockedUnitsSubtitle: string;
     lessonStateLabels: Record<LessonVisualState, string>;
     unitStateLabels: Record<UnitVisualState, string>;
     ctaStart: string;
@@ -109,20 +92,6 @@ interface LearningPathViewProps {
     speakingSummary: PracticeHistorySummary;
     historyLabels: PracticeHistoryLabels;
   };
-}
-
-function buildRecommendedSubtitle(
-  lesson: NextLessonContext,
-  labels: LearningPathViewLabels["recommended"]
-): string {
-  return [
-    lesson.unitTitle && `${labels.unitPrefix}: ${lesson.unitTitle}`,
-    lesson.skillName && `${labels.skillPrefix}: ${lesson.skillName}`,
-    `${lesson.estimated_minutes} ${labels.minutes}`,
-    lesson.completionPercent > 0 ? `${lesson.completionPercent}%` : null,
-  ]
-    .filter(Boolean)
-    .join(" · ");
 }
 
 function focusToNextContext(focus: FocusLessonResult): NextLessonContext {
@@ -188,7 +157,6 @@ export function LearningPathView({
     units[0]?.slug ??
     null;
 
-  const [activeSkill, setActiveSkill] = useState("all");
   const [expandedUnit, setExpandedUnit] = useState<string | null>(firstActiveUnit);
   const focusUnitRef = useRef<HTMLDivElement>(null);
   const hasScrolledRef = useRef(false);
@@ -211,41 +179,10 @@ export function LearningPathView({
     ? `/learning/lesson/${focusLessonId}`
     : null;
 
-  const focusPathLesson = focusLessonId
-    ? findLessonInUnits(units, focusLessonId)?.lesson ?? null
-    : null;
-
-  const presentationOptions = {
-    recommendedLessonId: focusLessonId,
-    stateLabels: labels.units.lessonStateLabels,
-    ctaStart: labels.units.ctaStart,
-    ctaContinue: labels.units.ctaContinue,
-    ctaReview: labels.units.ctaReview,
-  };
-
-  const focusPresentation = focusPathLesson
-    ? getLessonPresentation(focusPathLesson, presentationOptions)
-    : null;
-
-  const recommendedSubtitle = displayLesson
-    ? buildRecommendedSubtitle(displayLesson, labels.recommended)
-    : labels.recommended.subtitle;
-
   const displayObjective =
     nextLesson || !focusFromPath
       ? objectiveText
       : t("objectiveNextLesson", { lesson: focusFromPath.lesson.title });
-
-  const focusHiddenByFilter =
-    !!focusLessonId &&
-    activeSkill !== "all" &&
-    !isLessonVisibleInSkillFilter(focusLessonId, units, activeSkill);
-
-  const focusSkillLabel =
-    (focusSkillSlug && labels.skillLabels[focusSkillSlug]) ||
-    displayLesson?.skillName ||
-    focusSkillSlug ||
-    "";
 
   useEffect(() => {
     if (hasScrolledRef.current || !focusUnitSlug || !focusUnitRef.current) return;
@@ -270,123 +207,77 @@ export function LearningPathView({
 
   return (
     <StudentPageShell>
-      {aiPractice && (
-        <DashboardAiPracticeSection
-          variant="strip"
-          labels={aiPractice.labels}
-          writingSummary={aiPractice.writingSummary}
-          speakingSummary={aiPractice.speakingSummary}
-          historyLabels={aiPractice.historyLabels}
-        />
-      )}
-
-      {showUnlockAllBanner && (
-        <div className="rounded-2xl border border-amber-200/80 bg-amber-50 px-4 py-3 text-sm text-amber-950 camba-body">
-          {labels.unlockAllBanner}
-        </div>
-      )}
-
-      <LearningPathHero
-        programSlug={programSlug}
-        levelName={levelName}
-        levelSlug={levelSlug}
-        levelProgressPercent={levelProgressPercent}
-        unitCount={units.length}
-        unitsWithContent={unitsWithContent}
-        lessonCount={lessonCount}
-        nextLesson={displayLesson}
-        objectiveText={displayObjective}
-        labels={labels.hero}
-      />
-
-      {displayLesson && focusPresentation && focusPathLesson && (
-        <ContentSection className="hidden md:block">
-          <SectionHeader
-            title={labels.recommended.title}
-            description={recommendedSubtitle}
-            icon={Sparkles}
+      <div className="camba-section-stack gap-4 sm:gap-5">
+        {aiPractice && (
+          <DashboardAiPracticeSection
+            variant="strip"
+            labels={aiPractice.labels}
+            writingSummary={aiPractice.writingSummary}
+            speakingSummary={aiPractice.speakingSummary}
+            historyLabels={aiPractice.historyLabels}
           />
-          <LessonCard
-            title={displayLesson.title}
-            subtitle={recommendedSubtitle}
-            href={`/learning/lesson/${displayLesson.id}`}
-            state={focusPresentation.state}
-            stateLabel={focusPresentation.stateLabel}
-            masteryLevel={displayLesson.masteryLevel}
-            masteryLabel={masteryLabels[displayLesson.masteryLevel]}
-            recommended
-          />
-        </ContentSection>
-      )}
+        )}
 
-      {levels.length > 0 && (
-        <LearningLevelSwitcher
-          levels={levels}
-          currentLevelId={currentLevelId}
-          labels={labels.levelSwitcher}
+        {showUnlockAllBanner && (
+          <div className="rounded-xl border border-amber-200/80 bg-amber-50 px-3 py-2 text-sm text-amber-950 camba-body">
+            {labels.unlockAllBanner}
+          </div>
+        )}
+
+        <LearningPathHero
+          programSlug={programSlug}
+          levelName={levelName}
+          levelSlug={levelSlug}
+          levelProgressPercent={levelProgressPercent}
+          unitCount={units.length}
+          unitsWithContent={unitsWithContent}
+          lessonCount={lessonCount}
+          nextLesson={displayLesson}
+          objectiveText={displayObjective}
+          labels={labels.hero}
+          compact
         />
-      )}
 
-      {skillProgress.length > 0 && (
-        <ContentSection>
-          <LearningSkillNav
-            skills={skillProgress}
-            activeSkill={activeSkill}
-            onChange={setActiveSkill}
+        {levels.length > 0 && (
+          <LearningLevelSwitcher
+            levels={levels}
+            currentLevelId={currentLevelId}
+            labels={labels.levelSwitcher}
+          />
+        )}
+
+        <ContentSection id="learning-journey" className="space-y-3">
+          <div>
+            <h2 className="camba-h3 text-foreground">{labels.units.sectionTitle}</h2>
+            <p className="camba-caption text-muted mt-0.5">{labels.units.sectionSubtitle}</p>
+          </div>
+          <LearningUnitSection
+            units={units}
             skillLabels={labels.skillLabels}
-            allLabel={labels.skillNav.all}
-          />
-        </ContentSection>
-      )}
-
-      {focusHiddenByFilter && (
-        <LearningSkillFilterNotice
-          message={t("skillFilterHidden", { skill: focusSkillLabel })}
-          skillLabel={focusSkillLabel}
-          showAllLabel={labels.skillFilter.showAll}
-          switchSkillLabel={t("skillFilterSwitch", { skill: focusSkillLabel })}
-          onShowAll={() => {
-            setActiveSkill("all");
-            if (focusUnitSlug) setExpandedUnit(focusUnitSlug);
-          }}
-          onSwitchSkill={() => {
-            if (focusSkillSlug) setActiveSkill(focusSkillSlug);
-            if (focusUnitSlug) setExpandedUnit(focusUnitSlug);
-          }}
-        />
-      )}
-
-      <ContentSection id="learning-journey">
-        <SectionHeader
-          title={labels.units.sectionTitle}
-          description={labels.units.sectionSubtitle}
-          icon={BookOpen}
-        />
-        <LearningUnitSection
-          units={units}
-          activeSkill={activeSkill}
-          expandedUnit={expandedUnit}
-          onToggleUnit={setExpandedUnit}
-          recommendedLessonId={focusLessonId}
-          recommendedUnitSlug={focusUnitSlug}
-          continueLessonHref={continueLessonHref}
-          recommendedUnitRef={focusUnitRef}
-          reviewLessonIds={reviewLessonIds}
-          masteryLabels={masteryLabels}
-          labels={labels.units}
-        />
-      </ContentSection>
-
-      {reviewItems.length > 0 && (
-        <ContentSection>
-          <LearningReviewSection
-            items={reviewItems}
+            expandedUnit={expandedUnit}
+            onToggleUnit={setExpandedUnit}
+            recommendedLessonId={focusLessonId}
+            recommendedUnitSlug={focusUnitSlug}
+            focusSkillSlug={focusSkillSlug}
+            continueLessonHref={continueLessonHref}
+            recommendedUnitRef={focusUnitRef}
+            reviewLessonIds={reviewLessonIds}
             masteryLabels={masteryLabels}
-            weakSkillLabel={weakSkillLabel}
-            labels={labels.review}
+            labels={labels.units}
           />
         </ContentSection>
-      )}
+
+        {reviewItems.length > 0 && (
+          <ContentSection>
+            <LearningReviewSection
+              items={reviewItems}
+              masteryLabels={masteryLabels}
+              weakSkillLabel={weakSkillLabel}
+              labels={labels.review}
+            />
+          </ContentSection>
+        )}
+      </div>
     </StudentPageShell>
   );
 }

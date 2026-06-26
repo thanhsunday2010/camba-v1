@@ -164,19 +164,6 @@ export default async function LearningPage() {
           selecting: tp("selecting"),
           current: tp("currentLevel"),
         },
-        recommended: {
-          title: t("recommendedTitle"),
-          subtitle: t("recommendedSubtitle"),
-          skillPrefix: td("skillPrefix"),
-          unitPrefix: td("unitPrefix"),
-          minutes: t("minutes"),
-        },
-        skillFilter: {
-          showAll: t("skillFilterShowAll"),
-        },
-        skillNav: {
-          all: t("skillAll"),
-        },
         skillLabels,
         review: {
           title: t("reviewTitle"),
@@ -201,6 +188,9 @@ export default async function LearningPage() {
           recommended: t("stateRecommended"),
           needsReview: t("needsReviewMarker"),
           continueHere: t("continueHere"),
+          lockedLessonsTitle: t("lockedLessonsTitle"),
+          lockedUnitsTitle: t("lockedUnitsTitle"),
+          lockedUnitsSubtitle: t("lockedUnitsSubtitle"),
           lessonStateLabels,
           unitStateLabels,
           ctaStart: t("ctaStart"),
