@@ -9,12 +9,16 @@ import { DashboardSkillInsights } from "@/components/dashboard/dashboard-skill-i
 import { DashboardRecentActivity } from "@/components/dashboard/dashboard-recent-activity";
 import { DashboardAiPracticeSection } from "@/components/dashboard/dashboard-ai-practice-section";
 import { DashboardCollapsibleSection } from "@/components/dashboard/dashboard-collapsible-section";
+import {
+  DashboardLeaderboardsSection,
+  type DashboardLeaderboardsLabels,
+} from "@/components/dashboard/dashboard-leaderboards-section";
 import type { PracticeHistoryLabels } from "@/components/ai-practice/practice-history-panel";
 import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
 import { PlacementTestCTA } from "@/components/dashboard/placement-test-cta";
 import { ProgramPicker } from "@/components/programs/program-picker";
 import type { StudentDashboardData } from "@/lib/dashboard/student-dashboard-data";
-import { Activity, Brain, ClipboardList } from "lucide-react";
+import { Activity, Brain, ClipboardList, Trophy } from "lucide-react";
 
 export interface StudentDashboardLabels {
   hero: {
@@ -111,6 +115,7 @@ export interface StudentDashboardLabels {
   sectionExpand: string;
   sectionCollapse: string;
   progressStripLabel: string;
+  leaderboards: DashboardLeaderboardsLabels;
 }
 
 interface StudentDashboardViewProps {
@@ -191,8 +196,18 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
           </AnimatedSection>
 
           <AnimatedSection staggerIndex={3}>
+            <DashboardLeaderboardsSection
+              leaderboards={data.leaderboards}
+              labels={labels.leaderboards}
+            />
+          </AnimatedSection>
+
+          <AnimatedSection staggerIndex={4}>
             <div className="space-y-3">
-              <h2 className="camba-h3 text-foreground">{labels.progressStripLabel}</h2>
+              <h2 className="camba-h3 text-foreground flex items-center gap-2">
+                <Trophy className="h-5 w-5 text-warning" aria-hidden />
+                {labels.progressStripLabel}
+              </h2>
               <div className="grid gap-4 lg:grid-cols-2 lg:items-start">
                 <CambaCard variant="default" padding="md" className="h-full">
                   <DashboardWeeklyProgress
@@ -208,7 +223,7 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
             </div>
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={4}>
+          <AnimatedSection staggerIndex={5}>
             <div className="rounded-2xl border border-border/60 bg-[var(--surface-sunken)]/40 p-3 sm:p-4 space-y-1">
               <DashboardCollapsibleSection
                 title={labels.skillInsights.title}

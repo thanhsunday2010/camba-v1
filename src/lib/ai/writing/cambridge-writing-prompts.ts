@@ -9,7 +9,9 @@ grammar, vocabulary, task_achievement, organization, communicative_effectiveness
 
 Return ONLY valid JSON matching the required schema. No markdown. No prose outside JSON.
 Feedback must be constructive, age-appropriate, and in the learner's locale when provided.
+Keep feedback concise: one short sentence per dimension, max 2 strengths/weaknesses, max 3 suggestedImprovements.
 The correctedVersion is a model answer — not the only correct answer.
+Mark each fix inline as [incorrect fragment]{corrected fragment}; leave unchanged text plain.
 Do not invent scores outside 0–100 for dimension and overall scores.`;
 
 const LEVEL_RUBRIC: Record<CambridgeExamLevel, string> = {
@@ -73,8 +75,8 @@ ${WRITING_DIMENSION_ORDER.map(
   ],
   "strengths": ["..."],
   "weaknesses": ["..."],
-  "feedback": "<summary>",
-  "correctedVersion": "<improved version>",
-  "suggestedImprovements": ["..."]
+  "feedback": "<summary — max 2 short sentences>",
+  "correctedVersion": "<improved version with [wrong]{correct} markup for each fix>",
+  "suggestedImprovements": ["max 3 short tips"]
 }`;
 }

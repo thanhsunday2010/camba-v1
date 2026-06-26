@@ -263,7 +263,27 @@
     "journeyPreviewOpen": "Open journey",
     "journeyPreviewEmptyTitle": "Start your Cambridge pathway",
     "journeyPreviewEmptyDesc": "Open your learning journey to see the full Cambridge roadmap — from Starters through PET — and your next milestone.",
-    "journeyPreviewEmptyAction": "View journey"
+    "journeyPreviewEmptyAction": "View journey",
+    "leaderboardsTitle": "Leaderboards",
+    "leaderboardsSubtitle": "Study hard to climb the ranks — resets every Monday",
+    "leaderboardsWeekly": "Weekly league",
+    "leaderboardsLevel": "Same level",
+    "leaderboardsStreak": "Streak",
+    "leaderboardsYourRank": "Your rank",
+    "leaderboardsEmpty": "No rankings yet — complete lessons or mock tests to appear",
+    "leaderboardsXpUnit": "XP",
+    "leaderboardsStreakUnit": "days",
+    "leaderboardsTierLabel": "League tier",
+    "leaderboardsPromoteHint": "{tier} tier · {xp} XP to reach {nextTier}",
+    "leaderboardsMaxTierHint": "{tier} tier · you're at the top league this week",
+    "leaderboardTierBronze": "Bronze",
+    "leaderboardTierSilver": "Silver",
+    "leaderboardTierGold": "Gold",
+    "leaderboardTierPlatinum": "Platinum",
+    "leaderboardTierDiamond": "Diamond",
+    "leaderboardTierMaster": "Master",
+    "leaderboardTierGrandmaster": "Grandmaster",
+    "leaderboardTierChampion": "Champion"
   },
   "gamification": {
     "coins": "Coins",
@@ -947,7 +967,9 @@
         "micInsecureContext": "Microphone only works on https:// or http://localhost — not on a LAN IP address.",
         "micNotSupported": "Recording is not supported in this browser. Open the lesson in Chrome or Edge (not an IDE preview pane).",
         "micRecorderUnsupported": "This browser does not support the required audio format. Try Chrome or Edge.",
-        "micUnknownError": "Could not access the microphone. Check browser and system microphone permissions."
+        "micUnknownError": "Could not access the microphone. Check browser and system microphone permissions.",
+        "errorHighlights": "Errors to fix",
+        "correctedVersion": "Suggested correction"
       }
     }
   },

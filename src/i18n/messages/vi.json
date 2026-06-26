@@ -263,7 +263,27 @@
     "journeyPreviewOpen": "Mở hành trình",
     "journeyPreviewEmptyTitle": "Bắt đầu hành trình Cambridge",
     "journeyPreviewEmptyDesc": "Mở hành trình học để xem lộ trình đầy đủ từ Starters đến PET.",
-    "journeyPreviewEmptyAction": "Xem hành trình"
+    "journeyPreviewEmptyAction": "Xem hành trình",
+    "leaderboardsTitle": "Bảng xếp hạng",
+    "leaderboardsSubtitle": "Học chăm để leo hạng — reset mỗi tuần (Thứ 2)",
+    "leaderboardsWeekly": "Giải tuần",
+    "leaderboardsLevel": "Cùng level",
+    "leaderboardsStreak": "Chuỗi ngày",
+    "leaderboardsYourRank": "Hạng của bạn",
+    "leaderboardsEmpty": "Chưa có dữ liệu — học bài hoặc làm thi thử để lên bảng",
+    "leaderboardsXpUnit": "XP",
+    "leaderboardsStreakUnit": "ngày",
+    "leaderboardsTierLabel": "Hạng giải",
+    "leaderboardsPromoteHint": "Hạng {tier} · còn {xp} XP để lên {nextTier}",
+    "leaderboardsMaxTierHint": "Hạng {tier} · bạn đang ở bậc cao nhất tuần này",
+    "leaderboardTierBronze": "Đồng",
+    "leaderboardTierSilver": "Bạc",
+    "leaderboardTierGold": "Vàng",
+    "leaderboardTierPlatinum": "Bạch kim",
+    "leaderboardTierDiamond": "Kim cương",
+    "leaderboardTierMaster": "Cao thủ",
+    "leaderboardTierGrandmaster": "Đại cao thủ",
+    "leaderboardTierChampion": "Quán quân"
   },
   "gamification": {
     "coins": "Xu",
@@ -945,7 +965,9 @@
         "micInsecureContext": "Micro chỉ hoạt động trên https:// hoặc http://localhost:3000 — không dùng địa chỉ IP LAN.",
         "micNotSupported": "Trình duyệt không hỗ trợ ghi âm. Mở bài bằng Chrome hoặc Edge (không dùng cửa sổ preview trong IDE).",
         "micRecorderUnsupported": "Trình duyệt không hỗ trợ định dạng ghi âm. Thử Chrome hoặc Edge phiên bản mới.",
-        "micUnknownError": "Không thể truy cập micro. Kiểm tra quyền micro của trình duyệt và Windows."
+        "micUnknownError": "Không thể truy cập micro. Kiểm tra quyền micro của trình duyệt và Windows.",
+        "errorHighlights": "Lỗi cần sửa",
+        "correctedVersion": "Bản sửa gợi ý"
       }
     }
   },

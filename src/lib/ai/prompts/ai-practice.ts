@@ -50,18 +50,19 @@ Analyze the learner's writing and return ONLY valid JSON:
 {
   "estimatedLevel": "string — level label matching the target framework",
   "shieldEstimate": { "writing": 0-15 },
-  "grammarFeedback": "Detailed grammar analysis in Vietnamese",
-  "vocabularyFeedback": "Vocabulary analysis in Vietnamese",
-  "coherenceFeedback": "Organization and coherence in Vietnamese",
-  "suggestedImprovements": ["actionable tip in Vietnamese"],
+  "grammarFeedback": "One short sentence in Vietnamese (max 20 words)",
+  "vocabularyFeedback": "One short sentence in Vietnamese (max 20 words)",
+  "coherenceFeedback": "One short sentence in Vietnamese (max 20 words)",
+  "suggestedImprovements": ["max 2 short tips in Vietnamese, each under 15 words"],
   "overallScore": 0-100,
-  "strengths": ["strength in Vietnamese"],
-  "weaknesses": ["weakness in Vietnamese"],
-  "errorHighlights": ["specific error → correction in Vietnamese"],
-  "modelAnswerSuggestion": "A model answer in the TARGET LANGUAGE appropriate to the prompt and level"
+  "strengths": ["max 2 short points in Vietnamese"],
+  "weaknesses": ["max 2 short points in Vietnamese"],
+  "errorHighlights": ["[wrong fragment]{correct fragment} — max 5 key fixes"],
+  "modelAnswerSuggestion": "Model answer in the TARGET LANGUAGE; use [wrong]{correct} markup only when showing a fix inline"
 }
 All feedback fields except modelAnswerSuggestion must be in Vietnamese.
-modelAnswerSuggestion must be in the target practice language.`;
+modelAnswerSuggestion must be in the target practice language.
+Keep every field brief and scannable — no long paragraphs.`;
 
 export function buildPracticeWritingFeedbackRequest(
   profile: PracticeProfile,
@@ -98,12 +99,13 @@ Listen to the audio and return ONLY valid JSON:
   "fluencyScore": 0-100,
   "grammarScore": 0-100,
   "vocabularyScore": 0-100,
-  "suggestions": ["tip in Vietnamese"],
+  "suggestions": ["max 3 short tips in Vietnamese, each under 15 words"],
   "transcript": "transcription in target language",
   "overallScore": 0-100,
-  "modelAnswerSuggestion": "A model spoken response in the TARGET LANGUAGE (short paragraph)"
+  "modelAnswerSuggestion": "Short model response in the TARGET LANGUAGE (2-4 sentences)"
 }
-Suggestions must be in Vietnamese. modelAnswerSuggestion in target language.`;
+Suggestions must be in Vietnamese. modelAnswerSuggestion in target language.
+Keep feedback brief — no long paragraphs.`;
 
 export function buildPracticeSpeakingFeedbackRequest(
   profile: PracticeProfile,

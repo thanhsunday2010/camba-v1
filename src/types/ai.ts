@@ -18,6 +18,8 @@ export const WritingFeedbackSchema = z.object({
   overallScore: z.number().min(0).max(100),
   strengths: z.array(z.string()).optional(),
   weaknesses: z.array(z.string()).optional(),
+  errorHighlights: z.array(z.string()).optional(),
+  correctedVersion: z.string().optional(),
 });
 
 export const SpeakingFeedbackSchema = z.object({

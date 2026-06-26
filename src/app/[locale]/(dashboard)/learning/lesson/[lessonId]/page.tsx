@@ -158,6 +158,8 @@ export default async function LessonPage({ params }: LessonPageProps) {
     micNotSupported: t("ai.micNotSupported"),
     micRecorderUnsupported: t("ai.micRecorderUnsupported"),
     micUnknownError: t("ai.micUnknownError"),
+    errorHighlights: t("ai.errorHighlights"),
+    correctedVersion: t("ai.correctedVersion"),
   };
 
   const chromeLabels = {

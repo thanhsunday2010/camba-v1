@@ -177,6 +177,8 @@ export type AiExerciseLabels = {
   micNotSupported: string;
   micRecorderUnsupported: string;
   micUnknownError: string;
+  errorHighlights: string;
+  correctedVersion: string;
 };
 
 export type LessonChromeLabels = {

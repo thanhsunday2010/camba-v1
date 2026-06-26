@@ -22,6 +22,8 @@ import type { DashboardSkillInsightsView } from "@/lib/dashboard/skill-insights"
 import type { DashboardActivityItem } from "@/lib/dashboard/recent-activity";
 import { buildJourneyPreview } from "@/lib/learning/journey/learning-journey-utils";
 import type { JourneyPreview } from "@/lib/learning/journey/learning-journey-types";
+import { getDashboardLeaderboards } from "@/lib/gamification/leaderboards";
+import type { DashboardLeaderboardsView } from "@/lib/gamification/leaderboard-types";
 
 export type WeeklyProgressStats = {
   xpEarned: number;
@@ -50,6 +52,7 @@ export type StudentDashboardData = {
   skillInsights: DashboardSkillInsightsView;
   recentActivity: DashboardActivityItem[];
   journeyPreview: JourneyPreview;
+  leaderboards: DashboardLeaderboardsView;
 };
 
 function weekStartIsoDate(): string {
@@ -166,6 +169,12 @@ export async function getStudentDashboardData(
     nextMilestoneTitle: dailyMission?.title ?? recommendedMock?.title ?? null,
   });
 
+  const leaderboards = await getDashboardLeaderboards(
+    userId,
+    levelId,
+    programContext?.level?.name ?? null
+  );
+
   return {
     programs,
     programContext,
@@ -190,5 +199,6 @@ export async function getStudentDashboardData(
     skillInsights,
     recentActivity,
     journeyPreview,
+    leaderboards,
   };
 }

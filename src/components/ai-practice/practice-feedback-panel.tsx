@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import type { PracticeSpeakingFeedback, PracticeWritingFeedback } from "@/types/ai";
 import { AiFeedbackPanel } from "@/components/ai/ai-feedback-panel";
+import { CorrectionMarkupText } from "@/components/ai/correction-markup-text";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Lightbulb } from "lucide-react";
 
@@ -33,40 +34,25 @@ export function PracticeFeedbackPanel({
   labels,
   actions,
 }: PracticeFeedbackPanelProps) {
-  const writingFeedback = feedback as PracticeWritingFeedback;
-
   return (
-    <div className="space-y-4">
+    <div className="space-y-3">
       <AiFeedbackPanel type={type} feedback={feedback} labels={labels} />
 
-      {type === "writing" && writingFeedback.errorHighlights && writingFeedback.errorHighlights.length > 0 && (
-        <Card className="border-warning/30">
+      {type === "writing" && (
+        <Card className="border-green-200/80 bg-green-50/30">
           <CardHeader className="pb-2">
-            <CardTitle className="text-base">{labels.errorHighlights}</CardTitle>
+            <CardTitle className="text-base flex items-center gap-2">
+              <Lightbulb className="h-4 w-4 text-green-800" />
+              {labels.modelAnswer}
+            </CardTitle>
           </CardHeader>
           <CardContent>
-            <ul className="space-y-1 text-sm text-gray-700">
-              {writingFeedback.errorHighlights.map((item, index) => (
-                <li key={index}>• {item}</li>
-              ))}
-            </ul>
+            <p className="text-sm text-gray-800 leading-relaxed">
+              <CorrectionMarkupText text={feedback.modelAnswerSuggestion} />
+            </p>
           </CardContent>
         </Card>
       )}
-
-      <Card className="border-program/20 bg-program/5">
-        <CardHeader className="pb-2">
-          <CardTitle className="text-base flex items-center gap-2">
-            <Lightbulb className="h-4 w-4 text-program" />
-            {labels.modelAnswer}
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="text-sm text-gray-800 whitespace-pre-wrap leading-relaxed">
-            {feedback.modelAnswerSuggestion}
-          </p>
-        </CardContent>
-      </Card>
 
       {actions}
     </div>

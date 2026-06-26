@@ -3,7 +3,9 @@
 import type { ReactNode } from "react";
 import type { WritingFeedback, SpeakingFeedback } from "@/types/ai";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Star, TrendingUp, BookOpen, MessageSquare } from "lucide-react";
+import { CorrectionMarkupText } from "@/components/ai/correction-markup-text";
+import { ErrorCorrectionList } from "@/components/ai/error-correction-list";
+import { Star } from "lucide-react";
 
 interface AiFeedbackPanelProps {
   type: "writing" | "speaking";
@@ -20,6 +22,8 @@ interface AiFeedbackPanelProps {
     suggestions: string;
     overallScore: string;
     transcript?: string;
+    errorHighlights?: string;
+    correctedVersion?: string;
   };
   actions?: ReactNode;
 }
@@ -30,19 +34,19 @@ export function AiFeedbackPanel({ type, feedback, labels, actions }: AiFeedbackP
 
   return (
     <Card className="border-primary/20">
-      <CardHeader>
+      <CardHeader className="pb-3">
         <CardTitle className="flex items-center gap-2 text-lg">
           <Star className="h-5 w-5 text-warning" />
           {labels.result}
         </CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4">
-        <div className="flex flex-wrap gap-4">
-          <div className="bg-primary/5 rounded-lg px-4 py-2">
+      <CardContent className="space-y-3">
+        <div className="flex flex-wrap gap-3">
+          <div className="bg-primary/5 rounded-lg px-3 py-1.5">
             <p className="text-xs text-gray-500">{labels.estimatedLevel}</p>
             <p className="font-bold text-primary">{feedback.estimatedLevel}</p>
           </div>
-          <div className="bg-accent/5 rounded-lg px-4 py-2">
+          <div className="bg-accent/5 rounded-lg px-3 py-1.5">
             <p className="text-xs text-gray-500">{labels.overallScore}</p>
             <p className="font-bold text-accent">{feedback.overallScore}/100</p>
           </div>
@@ -50,19 +54,42 @@ export function AiFeedbackPanel({ type, feedback, labels, actions }: AiFeedbackP
 
         {writing && (
           <>
-            <FeedbackSection icon={BookOpen} title={labels.grammar} content={writing.grammarFeedback} />
-            <FeedbackSection icon={TrendingUp} title={labels.vocabulary} content={writing.vocabularyFeedback} />
-            <FeedbackSection icon={MessageSquare} title={labels.coherence} content={writing.coherenceFeedback} />
+            {writing.errorHighlights && writing.errorHighlights.length > 0 && (
+              <div className="rounded-lg border border-red-100 bg-red-50/40 p-3">
+                <p className="text-sm font-medium text-gray-900 mb-2">
+                  {labels.errorHighlights ?? "Lỗi cần sửa"}
+                </p>
+                <ErrorCorrectionList items={writing.errorHighlights} />
+              </div>
+            )}
+
+            <div className="rounded-lg bg-gray-50 p-3 space-y-1.5">
+              <CompactFeedbackLine label={labels.grammar} content={writing.grammarFeedback} />
+              <CompactFeedbackLine label={labels.vocabulary} content={writing.vocabularyFeedback} />
+              <CompactFeedbackLine label={labels.coherence} content={writing.coherenceFeedback} />
+            </div>
+
             {writing.suggestedImprovements.length > 0 && (
               <div>
-                <p className="text-sm font-medium text-gray-900 mb-2">{labels.improvements}</p>
-                <ul className="space-y-1">
+                <p className="text-sm font-medium text-gray-900 mb-1">{labels.improvements}</p>
+                <ul className="space-y-0.5">
                   {writing.suggestedImprovements.map((item, i) => (
-                    <li key={i} className="text-sm text-gray-600 flex gap-2">
-                      <span className="text-primary">•</span> {item}
+                    <li key={i} className="text-sm text-gray-600">
+                      • {item}
                     </li>
                   ))}
                 </ul>
+              </div>
+            )}
+
+            {writing.correctedVersion && (
+              <div className="rounded-lg border border-green-200/80 bg-green-50/30 p-3">
+                <p className="text-sm font-medium text-gray-900 mb-1.5">
+                  {labels.correctedVersion ?? "Bản sửa gợi ý"}
+                </p>
+                <p className="text-sm text-gray-800">
+                  <CorrectionMarkupText text={writing.correctedVersion} />
+                </p>
               </div>
             )}
           </>
@@ -78,7 +105,7 @@ export function AiFeedbackPanel({ type, feedback, labels, actions }: AiFeedbackP
                 <p className="text-sm text-gray-600 leading-relaxed">{speaking.transcript}</p>
               </div>
             )}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-2">
               <ScoreChip label={labels.pronunciation} score={speaking.pronunciationScore} />
               <ScoreChip label={labels.fluency} score={speaking.fluencyScore} />
               <ScoreChip label={labels.grammar} score={speaking.grammarScore} />
@@ -86,11 +113,11 @@ export function AiFeedbackPanel({ type, feedback, labels, actions }: AiFeedbackP
             </div>
             {speaking.suggestions.length > 0 && (
               <div>
-                <p className="text-sm font-medium text-gray-900 mb-2">{labels.suggestions}</p>
-                <ul className="space-y-1">
+                <p className="text-sm font-medium text-gray-900 mb-1">{labels.suggestions}</p>
+                <ul className="space-y-0.5">
                   {speaking.suggestions.map((item, i) => (
-                    <li key={i} className="text-sm text-gray-600 flex gap-2">
-                      <span className="text-primary">•</span> {item}
+                    <li key={i} className="text-sm text-gray-600">
+                      • {item}
                     </li>
                   ))}
                 </ul>
@@ -105,29 +132,18 @@ export function AiFeedbackPanel({ type, feedback, labels, actions }: AiFeedbackP
   );
 }
 
-function FeedbackSection({
-  icon: Icon,
-  title,
-  content,
-}: {
-  icon: React.ComponentType<{ className?: string }>;
-  title: string;
-  content: string;
-}) {
+function CompactFeedbackLine({ label, content }: { label: string; content: string }) {
   return (
-    <div className="bg-gray-50 rounded-lg p-3">
-      <p className="text-sm font-medium text-gray-900 flex items-center gap-2 mb-1">
-        <Icon className="h-4 w-4 text-primary" />
-        {title}
-      </p>
-      <p className="text-sm text-gray-600">{content}</p>
-    </div>
+    <p className="text-sm text-gray-700">
+      <span className="font-medium text-gray-900">{label}: </span>
+      {content}
+    </p>
   );
 }
 
 function ScoreChip({ label, score }: { label: string; score: number }) {
   return (
-    <div className="bg-gray-50 rounded-lg p-3 text-center">
+    <div className="bg-gray-50 rounded-lg p-2.5 text-center">
       <p className="text-xs text-gray-500">{label}</p>
       <p className="text-lg font-bold text-primary">{score}</p>
     </div>
