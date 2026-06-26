@@ -10,7 +10,7 @@ import {
 } from "@/lib/ai/prompts/writing-feedback";
 import { ZodError } from "zod";
 import { WritingFeedbackSchema } from "@/types/ai";
-import type { WritingFeedback } from "@/types/ai";
+import type { WritingFeedback, WithGamification } from "@/types/ai";
 import type { ActionResult } from "@/types";
 import { assertLessonUnlockedForUser, assertExerciseInLesson } from "@/lib/auth/lesson-access";
 import { assertAiUsageAllowed } from "@/lib/subscriptions/assert-ai-usage";
@@ -28,7 +28,7 @@ export async function submitWritingForFeedback(
   prompt: string,
   content: string,
   targetLevel?: string
-): Promise<ActionResult<WritingFeedback>> {
+): Promise<ActionResult<WithGamification<WritingFeedback>>> {
   const supabase = await createClient();
 
   const {
@@ -100,16 +100,22 @@ export async function submitWritingForFeedback(
       shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
     });
 
+    const gamification = await completeAiExercise(
+      exerciseId,
+      lessonId,
+      feedback.overallScore,
+      0
+    );
+
     after(async () => {
       try {
-        await completeAiExercise(exerciseId, lessonId, feedback.overallScore, 0);
         await generateRecommendationsFromFeedback(user.id, feedback.weaknesses ?? []);
       } catch (postError) {
-        console.error("Post-writing progress failed:", postError);
+        console.error("Post-writing recommendations failed:", postError);
       }
     });
 
-    return { success: true, data: feedback };
+    return { success: true, data: { ...feedback, gamification } };
   } catch (error) {
     const message = mapAiSubmitError(error);
     return { success: false, error: message };

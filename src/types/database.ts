@@ -44,6 +44,7 @@ export type LeagueTier =
 export type XpEventType =
   | "lesson_complete"
   | "daily_practice"
+  | "exercise_complete"
   | "perfect_score"
   | "streak_bonus"
   | "mission_complete"
@@ -1313,6 +1314,14 @@ export interface Database {
       ensure_user_bootstrap: {
         Args: { p_user_id?: string };
         Returns: undefined;
+      };
+      ensure_week_league: {
+        Args: {
+          p_week_start: string;
+          p_week_end: string;
+          p_tier: LeagueTier;
+        };
+        Returns: string;
       };
     };
     Enums: {

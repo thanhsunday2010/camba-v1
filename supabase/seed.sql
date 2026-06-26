@@ -14,6 +14,7 @@ INSERT INTO public.levels (id, program_id, slug, name, description, sort_order, 
 
 INSERT INTO public.xp_rules (event_type, xp_amount, coin_amount, description) VALUES
   ('lesson_complete', 50, 10, 'Complete a lesson'),
+  ('exercise_complete', 10, 2, 'Complete an exercise'),
   ('daily_practice', 25, 5, 'Daily practice session'),
   ('perfect_score', 100, 25, 'Achieve perfect score'),
   ('streak_bonus', 30, 10, 'Maintain learning streak'),

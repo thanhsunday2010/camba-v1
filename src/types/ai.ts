@@ -1,4 +1,9 @@
 import { z } from "zod";
+import type { ExerciseGamificationSummary } from "@/lib/gamification/gamification-types";
+
+export type WithGamification<T> = T & {
+  gamification?: ExerciseGamificationSummary;
+};
 
 export const ShieldEstimateSchema = z.object({
   reading: z.number().min(0).max(15).optional(),

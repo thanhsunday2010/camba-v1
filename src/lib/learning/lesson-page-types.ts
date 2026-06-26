@@ -153,6 +153,7 @@ export type LessonCompleteSummaryLabels = {
 export type LessonExerciseCompletionMeta = {
   exerciseId: string;
   accuracyPercent?: number;
+  gamification?: import("@/lib/gamification/gamification-types").ExerciseGamificationSummary;
 };
 
 export type AiExerciseLabels = {

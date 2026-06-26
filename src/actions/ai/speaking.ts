@@ -9,7 +9,7 @@ import {
   buildSpeakingPrompt,
 } from "@/lib/ai/prompts/speaking-feedback";
 import { SpeakingFeedbackSchema } from "@/types/ai";
-import type { SpeakingFeedback } from "@/types/ai";
+import type { SpeakingFeedback, WithGamification } from "@/types/ai";
 import { ZodError } from "zod";
 import type { ActionResult } from "@/types";
 import { assertExerciseInLesson, assertLessonUnlockedForUser } from "@/lib/auth/lesson-access";
@@ -29,7 +29,7 @@ export async function submitSpeakingForFeedback(
   mimeType: string,
   durationSeconds: number,
   targetLevel?: string
-): Promise<ActionResult<SpeakingFeedback>> {
+): Promise<ActionResult<WithGamification<SpeakingFeedback>>> {
   const supabase = await createClient();
 
   const {
@@ -116,16 +116,22 @@ export async function submitSpeakingForFeedback(
       shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
     });
 
+    const gamification = await completeAiExercise(
+      exerciseId,
+      lessonId,
+      feedback.overallScore,
+      durationSeconds
+    );
+
     after(async () => {
       try {
-        await completeAiExercise(exerciseId, lessonId, feedback.overallScore, durationSeconds);
         await generateRecommendationsFromFeedback(user.id, feedback.suggestions.slice(0, 2));
       } catch (postError) {
-        console.error("Post-speaking progress failed:", postError);
+        console.error("Post-speaking recommendations failed:", postError);
       }
     });
 
-    return { success: true, data: feedback };
+    return { success: true, data: { ...feedback, gamification } };
   } catch (error) {
     const message = mapAiSubmitError(error);
     return { success: false, error: message };

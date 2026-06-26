@@ -56,7 +56,11 @@
     ],
     "levelUp": "Level {level}! You're getting stronger!",
     "badge": "New badge: {name}!",
-    "xp": "+{amount} XP — nice!"
+    "xp": "+{amount} XP — nice!",
+    "xpWithRank": "+{amount} XP · Rank #{rank} this week!",
+    "leagueRank": "Rank #{rank} this week — keep going!",
+    "leaguePromotion": "Promoted to {tier}! · Rank #{rank}",
+    "leaguePromotionNoRank": "Promoted to {tier} — amazing!"
   },
   "auth": {
     "login": "Log in",

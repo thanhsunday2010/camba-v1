@@ -57,7 +57,10 @@ interface SpeakingExerciseProps {
     micRecorderUnsupported: string;
     micUnknownError: string;
   };
-  onComplete?: () => void;
+  onComplete?: (meta?: {
+    accuracyPercent?: number;
+    gamification?: import("@/lib/gamification/gamification-types").ExerciseGamificationSummary;
+  }) => void;
   nextExerciseTitle?: string;
   onNextExercise?: () => void;
 }
@@ -192,7 +195,10 @@ export function SpeakingExercise({
       );
       if (result.success && result.data) {
         setFeedback(result.data);
-        onComplete?.();
+        onComplete?.({
+          accuracyPercent: result.data.overallScore,
+          gamification: result.data.gamification,
+        });
       } else {
         const message = result.error ?? "Không gửi được bài. Vui lòng thử lại.";
         setError(message);

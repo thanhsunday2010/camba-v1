@@ -158,6 +158,7 @@ export interface ExerciseResult {
   questionResults: QuestionResult[];
   /** Enriched answers including writing evaluations when applicable. */
   answers?: Record<string, UserAnswer>;
+  gamification?: import("@/lib/gamification/gamification-types").ExerciseGamificationSummary;
 }
 
 export interface PlacementQuestion extends PublicQuestion {

@@ -5,6 +5,7 @@ import {
   type DashboardLeaderboardsView,
   type LeaderboardEntry,
 } from "@/lib/gamification/leaderboard-types";
+import { buildContextualLeaderboardRows } from "@/lib/gamification/leaderboard-utils";
 import { getWeeklyLeagueRanking, getWeeklyXpEarned } from "@/lib/gamification/league";
 
 const LEADERBOARD_LIMIT = 8;
@@ -67,25 +68,23 @@ async function getLevelLeaderboard(
     .gte("created_at", weekStartDate.toISOString());
 
   const scoreByUser = new Map<string, number>();
+  for (const peerId of peerIds) {
+    scoreByUser.set(peerId, 0);
+  }
   for (const log of logs ?? []) {
     scoreByUser.set(log.user_id, (scoreByUser.get(log.user_id) ?? 0) + log.xp_amount);
   }
 
-  const sorted = [...scoreByUser.entries()]
+  const sortedAll = [...scoreByUser.entries()]
     .map(([id, score]) => ({ userId: id, score }))
-    .sort((a, b) => b.score - a.score);
+    .sort((a, b) => b.score - a.score || a.userId.localeCompare(b.userId));
 
   const userScore = scoreByUser.get(userId) ?? 0;
-  const userRankIndex = sorted.findIndex((row) => row.userId === userId);
-  const userRank = userScore > 0 && userRankIndex >= 0 ? userRankIndex + 1 : userScore > 0 ? sorted.length + 1 : null;
+  const userRankIndex = sortedAll.findIndex((row) => row.userId === userId);
+  const userRank = userRankIndex >= 0 ? userRankIndex + 1 : null;
 
-  const topRows = sorted.slice(0, LEADERBOARD_LIMIT).map((row, index) => ({
-    userId: row.userId,
-    score: row.score,
-    rank: index + 1,
-  }));
-
-  const entries = await attachProfiles(topRows, userId);
+  const contextualRows = buildContextualLeaderboardRows(sortedAll, userId, LEADERBOARD_LIMIT);
+  const entries = await attachProfiles(contextualRows, userId);
 
   return { levelName, entries, userRank, userScore };
 }
@@ -95,12 +94,12 @@ async function getStreakLeaderboard(
 ): Promise<DashboardLeaderboardsView["streakBoard"]> {
   const supabase = await createClient();
 
-  const { data: topStreaks } = await supabase
+  const { data: allStreaks } = await supabase
     .from("user_streaks")
     .select("user_id, current_streak")
     .gt("current_streak", 0)
     .order("current_streak", { ascending: false })
-    .limit(LEADERBOARD_LIMIT);
+    .limit(50);
 
   const { data: userStreakRow } = await supabase
     .from("user_streaks")
@@ -119,13 +118,18 @@ async function getStreakLeaderboard(
     userRank = (count ?? 0) + 1;
   }
 
-  const topRows = (topStreaks ?? []).map((row, index) => ({
+  const sortedAll = (allStreaks ?? []).map((row) => ({
     userId: row.user_id,
     score: row.current_streak,
-    rank: index + 1,
   }));
 
-  const entries = await attachProfiles(topRows, userId);
+  if (userScore > 0 && !sortedAll.some((row) => row.userId === userId)) {
+    sortedAll.push({ userId, score: userScore });
+    sortedAll.sort((a, b) => b.score - a.score || a.userId.localeCompare(b.userId));
+  }
+
+  const contextualRows = buildContextualLeaderboardRows(sortedAll, userId, LEADERBOARD_LIMIT);
+  const entries = await attachProfiles(contextualRows, userId);
 
   return { entries, userRank, userScore };
 }
@@ -144,14 +148,29 @@ export async function getDashboardLeaderboards(
   const weeklyXp = weeklyLeagueRaw.userWeeklyXp ?? (await getWeeklyXpEarned(userId));
   const nextTierInfo = getNextLeagueTierInfo(weeklyXp);
 
-  const weeklyEntries: LeaderboardEntry[] = weeklyLeagueRaw.rankings.map((r) => ({
+  const weeklySortedAll = weeklyLeagueRaw.rankings.map((r) => ({
     userId: r.userId,
-    fullName: r.fullName?.trim() || "Học sinh",
-    avatarUrl: r.avatarUrl,
-    rank: r.rank ?? 0,
     score: r.weeklyXp,
-    isCurrentUser: r.userId === userId,
   }));
+
+  if (
+    weeklyLeagueRaw.userRank &&
+    !weeklySortedAll.some((row) => row.userId === userId)
+  ) {
+    weeklySortedAll.push({
+      userId,
+      score: weeklyLeagueRaw.userRank.weeklyXp,
+    });
+    weeklySortedAll.sort((a, b) => b.score - a.score || a.userId.localeCompare(b.userId));
+  }
+
+  const weeklyContextual = buildContextualLeaderboardRows(
+    weeklySortedAll,
+    userId,
+    LEADERBOARD_LIMIT
+  );
+
+  const weeklyEntries = await attachProfiles(weeklyContextual, userId);
 
   return {
     weeklyLeague: {

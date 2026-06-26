@@ -6,33 +6,30 @@ import type { Database } from "@/types/database";
 
 type ServerClient = SupabaseClient<Database>;
 
-async function findOrCreateLeague(
+export type UserLeagueSnapshot = {
+  rank: number | null;
+  tier: LeagueTier;
+  weeklyXp: number;
+};
+
+async function ensureWeekLeagueId(
   supabase: ServerClient,
   weekStart: string,
   weekEnd: string,
   tier: LeagueTier
-) {
-  const { data: existing } = await supabase
-    .from("leagues")
-    .select("*")
-    .eq("week_start", weekStart)
-    .eq("tier", tier)
-    .maybeSingle();
+): Promise<string | null> {
+  const { data, error } = await supabase.rpc("ensure_week_league", {
+    p_week_start: weekStart,
+    p_week_end: weekEnd,
+    p_tier: tier,
+  });
 
-  if (existing) return existing;
+  if (error) {
+    console.error("ensure_week_league failed:", error.message);
+    return null;
+  }
 
-  const { data: created } = await supabase
-    .from("leagues")
-    .insert({
-      week_start: weekStart,
-      week_end: weekEnd,
-      tier,
-      is_active: true,
-    })
-    .select("*")
-    .single();
-
-  return created;
+  return typeof data === "string" ? data : null;
 }
 
 async function recalculateRanks(supabase: ServerClient, leagueId: string): Promise<void> {
@@ -69,6 +66,61 @@ async function findUserWeekRanking(supabase: ServerClient, userId: string, weekS
   return data;
 }
 
+export async function getUserLeagueSnapshot(userId: string): Promise<UserLeagueSnapshot> {
+  const supabase = await createClient();
+  const { weekStart, weekEnd } = getWeekBounds();
+  const weeklyXp = await getWeeklyXpEarned(userId);
+  const tier = getTierFromWeeklyXp(weeklyXp) as LeagueTier;
+
+  let { data: league } = await supabase
+    .from("leagues")
+    .select("id")
+    .eq("week_start", weekStart)
+    .eq("tier", tier)
+    .maybeSingle();
+
+  if (!league && weeklyXp > 0) {
+    const leagueId = await ensureWeekLeagueId(supabase, weekStart, weekEnd, tier);
+    if (leagueId) {
+      league = { id: leagueId };
+    }
+  }
+
+  if (!league) {
+    return { rank: null, tier, weeklyXp };
+  }
+
+  let { data: userRanking } = await supabase
+    .from("league_rankings")
+    .select("rank, weekly_xp")
+    .eq("league_id", league.id)
+    .eq("user_id", userId)
+    .maybeSingle();
+
+  if (!userRanking && weeklyXp > 0) {
+    await supabase.from("league_rankings").insert({
+      league_id: league.id,
+      user_id: userId,
+      weekly_xp: weeklyXp,
+      tier,
+    });
+    await recalculateRanks(supabase, league.id);
+    const refreshed = await supabase
+      .from("league_rankings")
+      .select("rank, weekly_xp")
+      .eq("league_id", league.id)
+      .eq("user_id", userId)
+      .maybeSingle();
+    userRanking = refreshed.data;
+  }
+
+  return {
+    rank: userRanking?.rank ?? null,
+    tier,
+    weeklyXp: userRanking?.weekly_xp ?? weeklyXp,
+  };
+}
+
 export async function updateLeagueRanking(
   userId: string,
   xpAmount: number
@@ -81,10 +133,10 @@ export async function updateLeagueRanking(
   const newTier = getTierFromWeeklyXp(newWeeklyXp) as LeagueTier;
   const oldLeagueId = existing?.league_id ?? null;
 
-  const league = await findOrCreateLeague(supabase, weekStart, weekEnd, newTier);
-  if (!league) return;
+  const leagueId = await ensureWeekLeagueId(supabase, weekStart, weekEnd, newTier);
+  if (!leagueId) return;
 
-  if (existing && existing.league_id === league.id) {
+  if (existing && existing.league_id === leagueId) {
     await supabase
       .from("league_rankings")
       .update({
@@ -100,14 +152,14 @@ export async function updateLeagueRanking(
     }
 
     await supabase.from("league_rankings").insert({
-      league_id: league.id,
+      league_id: leagueId,
       user_id: userId,
       weekly_xp: newWeeklyXp,
       tier: newTier,
     });
   }
 
-  await recalculateRanks(supabase, league.id);
+  await recalculateRanks(supabase, leagueId);
 }
 
 export async function getWeeklyXpEarned(userId: string): Promise<number> {
@@ -126,34 +178,39 @@ export async function getWeeklyXpEarned(userId: string): Promise<number> {
 
 export async function getWeeklyLeagueRanking(userId: string, limit = 10) {
   const supabase = await createClient();
-  const { weekStart } = getWeekBounds();
+  const { weekStart, weekEnd } = getWeekBounds();
   const weeklyXp = await getWeeklyXpEarned(userId);
   const tier = getTierFromWeeklyXp(weeklyXp) as LeagueTier;
 
-  const { data: league } = await supabase
+  let { data: league } = await supabase
     .from("leagues")
     .select("*")
     .eq("week_start", weekStart)
     .eq("tier", tier)
     .maybeSingle();
 
+  if (!league && weeklyXp > 0) {
+    const leagueId = await ensureWeekLeagueId(supabase, weekStart, weekEnd, tier);
+    if (leagueId) {
+      const { data: createdLeague } = await supabase
+        .from("leagues")
+        .select("*")
+        .eq("id", leagueId)
+        .maybeSingle();
+      league = createdLeague;
+    }
+  }
+
   if (!league) {
     return { rankings: [], userRank: null, tier, userWeeklyXp: weeklyXp };
   }
 
-  const { data: rankings } = await supabase
+  const { data: allRankings } = await supabase
     .from("league_rankings")
     .select("*")
     .eq("league_id", league.id)
     .order("weekly_xp", { ascending: false })
-    .limit(limit);
-
-  const userIds = rankings?.map((r) => r.user_id) ?? [];
-  const { data: profiles } = userIds.length
-    ? await supabase.from("profiles").select("id, full_name, avatar_url").in("id", userIds)
-    : { data: [] };
-
-  const profileMap = new Map(profiles?.map((p) => [p.id, p]) ?? []);
+    .limit(Math.max(limit, 50));
 
   const { data: userRanking } = await supabase
     .from("league_rankings")
@@ -162,8 +219,15 @@ export async function getWeeklyLeagueRanking(userId: string, limit = 10) {
     .eq("user_id", userId)
     .maybeSingle();
 
+  const userIds = allRankings?.map((r) => r.user_id) ?? [];
+  const { data: profiles } = userIds.length
+    ? await supabase.from("profiles").select("id, full_name, avatar_url").in("id", userIds)
+    : { data: [] };
+
+  const profileMap = new Map(profiles?.map((p) => [p.id, p]) ?? []);
+
   return {
-    rankings: (rankings ?? []).map((r, index) => {
+    rankings: (allRankings ?? []).map((r, index) => {
       const profile = profileMap.get(r.user_id);
       return {
         id: r.id,

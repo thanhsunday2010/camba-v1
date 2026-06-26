@@ -12,12 +12,14 @@ import { getLevelIdForLesson } from "@/lib/queries/learning";
 import { unlockNextLessonsInLevel } from "@/lib/learning/unlock-lessons";
 import type { Json } from "@/types/database";
 
+import type { ExerciseGamificationSummary } from "@/lib/gamification/gamification-types";
+
 export async function completeAiExercise(
   exerciseId: string,
   lessonId: string,
   overallScore: number,
   timeSpentSeconds: number
-): Promise<void> {
+): Promise<ExerciseGamificationSummary> {
   const user = await requireSessionUser();
   const userId = user.id;
 
@@ -32,15 +34,6 @@ export async function completeAiExercise(
   }
 
   const supabase = await createClient();
-
-  const { data: existingAttempts } = await supabase
-    .from("exercise_attempts")
-    .select("id")
-    .eq("user_id", userId)
-    .eq("exercise_id", exerciseId)
-    .eq("is_completed", true);
-
-  const isFirstCompletion = !existingAttempts?.length;
 
   await supabase.from("exercise_attempts").insert({
     user_id: userId,
@@ -57,7 +50,16 @@ export async function completeAiExercise(
 
   const { getLessonWithExercises } = await import("@/lib/queries/learning");
   const lesson = await getLessonWithExercises(lessonId);
-  if (!lesson?.exercises?.length) return;
+  if (!lesson?.exercises?.length) {
+    return {
+      totalXpAwarded: 0,
+      leveledUp: false,
+      newLevel: 1,
+      leagueRank: null,
+      leagueTier: null,
+      tierPromoted: false,
+    };
+  }
 
   const exerciseIds = lesson.exercises.map((e) => e.id);
   const { data: attempts } = await supabase
@@ -98,7 +100,16 @@ export async function completeAiExercise(
   const wasLessonComplete = Number(existing?.completion_percent ?? 0) >= 100;
 
   const programId = (await getProgramIdForLesson(lessonId)) ?? (await resolveProgramId(userId));
-  if (!programId) return;
+  if (!programId) {
+    return {
+      totalXpAwarded: 0,
+      leveledUp: false,
+      newLevel: 1,
+      leagueRank: null,
+      leagueTier: null,
+      tierPromoted: false,
+    };
+  }
 
   await supabase.from("lesson_progress").upsert(
     {
@@ -133,20 +144,21 @@ export async function completeAiExercise(
   }
 
   const lessonJustCompleted = !wasLessonComplete && completionPercent >= 100;
-  if (isFirstCompletion || lessonJustCompleted) {
-    await onExerciseCompleted(
-      userId,
-      lessonId,
-      exerciseId,
-      overallScore,
-      timeSpentSeconds,
-      lessonJustCompleted
-    );
-  }
+
+  const gamification = await onExerciseCompleted(
+    userId,
+    lessonId,
+    exerciseId,
+    overallScore,
+    timeSpentSeconds,
+    lessonJustCompleted
+  );
 
   revalidatePath("/learning");
   revalidatePath(`/learning/lesson/${lessonId}`);
   revalidatePath("/dashboard");
+
+  return gamification;
 }
 
 export async function saveAiFeedback(params: {

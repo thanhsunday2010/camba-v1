@@ -35,6 +35,7 @@ import { generateRecommendationsFromFeedback } from "@/lib/ai/recommendations-en
 import type { ActionResult } from "@/types";
 import type { Json } from "@/types/database";
 import type { ExerciseResult, UserAnswer } from "@/types/learning";
+import type { ExerciseGamificationSummary } from "@/lib/gamification/gamification-types";
 
 export async function submitExerciseAttempt(
   exerciseId: string,
@@ -97,39 +98,27 @@ export async function submitExerciseAttempt(
       return { success: false, error: attemptError.message };
     }
 
+    const gamification = await runPostExerciseGamification(
+      user.id,
+      lessonId,
+      exerciseId,
+      result.accuracyPercent,
+      timeSpentSeconds,
+      wasLessonComplete,
+      supabase
+    );
+
     after(async () => {
       try {
-        await updateLessonProgress(user.id, lessonId);
-        const exerciseIds = await getLessonExerciseIds(lessonId);
-        const { data: attemptsAfter } = await supabase
-          .from("exercise_attempts")
-          .select("exercise_id")
-          .eq("user_id", user.id)
-          .eq("lesson_id", lessonId)
-          .eq("is_completed", true);
-
-        const completedCount = new Set(attemptsAfter?.map((a) => a.exercise_id)).size;
-        const lessonJustCompleted =
-          !wasLessonComplete && exerciseIds.length > 0 && completedCount >= exerciseIds.length;
-
-        await onExerciseCompleted(
-          user.id,
-          lessonId,
-          exerciseId,
-          result.accuracyPercent,
-          timeSpentSeconds,
-          lessonJustCompleted
-        );
-
         revalidatePath("/learning");
         revalidatePath(`/learning/lesson/${lessonId}`);
         revalidatePath("/dashboard");
       } catch (error) {
-        console.error("Post-submit progress/gamification failed:", error);
+        console.error("Post-submit revalidation failed:", error);
       }
     });
 
-    return { success: true, data: result };
+    return { success: true, data: { ...result, gamification } };
   }
 
   const pendingAnswers = markCambridgeAiAnswersPending(questions, normalizedAnswers);
@@ -183,6 +172,16 @@ export async function submitExerciseAttempt(
     return { success: false, error: attemptError.message };
   }
 
+  const gamification = await runPostExerciseGamification(
+    user.id,
+    lessonId,
+    exerciseId,
+    result.accuracyPercent,
+    timeSpentSeconds,
+    wasLessonComplete,
+    supabase
+  );
+
   after(async () => {
     try {
       await persistWritingEvaluationsForAttempt(
@@ -202,45 +201,53 @@ export async function submitExerciseAttempt(
       if (pipeline.analyticsWeaknesses.length) {
         await generateRecommendationsFromFeedback(user.id, pipeline.analyticsWeaknesses);
       }
+      revalidatePath("/learning");
+      revalidatePath(`/learning/lesson/${lessonId}`);
+      revalidatePath("/dashboard");
     } catch (error) {
       console.error("Post-writing evaluation persistence failed:", error);
     }
   });
 
-  after(async () => {
-    try {
-      await updateLessonProgress(user.id, lessonId);
+  return {
+    success: true,
+    data: { ...result, answers: pipeline.enrichedAnswers, gamification },
+  };
+}
 
-      const exerciseIds = await getLessonExerciseIds(lessonId);
-      const { data: attemptsAfter } = await supabase
-        .from("exercise_attempts")
-        .select("exercise_id")
-        .eq("user_id", user.id)
-        .eq("lesson_id", lessonId)
-        .eq("is_completed", true);
+async function runPostExerciseGamification(
+  userId: string,
+  lessonId: string,
+  exerciseId: string,
+  accuracyPercent: number,
+  timeSpentSeconds: number,
+  previousCompletionPercent: number,
+  supabase: Awaited<ReturnType<typeof createClient>>
+): Promise<ExerciseGamificationSummary> {
+  await updateLessonProgress(userId, lessonId);
 
-      const completedCount = new Set(attemptsAfter?.map((a) => a.exercise_id)).size;
-      const lessonJustCompleted =
-        !wasLessonComplete && exerciseIds.length > 0 && completedCount >= exerciseIds.length;
+  const exerciseIds = await getLessonExerciseIds(lessonId);
+  const { data: attemptsAfter } = await supabase
+    .from("exercise_attempts")
+    .select("exercise_id")
+    .eq("user_id", userId)
+    .eq("lesson_id", lessonId)
+    .eq("is_completed", true);
 
-      await onExerciseCompleted(
-        user.id,
-        lessonId,
-        exerciseId,
-        result.accuracyPercent,
-        timeSpentSeconds,
-        lessonJustCompleted
-      );
+  const completedCount = new Set(attemptsAfter?.map((a) => a.exercise_id)).size;
+  const lessonJustCompleted =
+    previousCompletionPercent < 100 &&
+    exerciseIds.length > 0 &&
+    completedCount >= exerciseIds.length;
 
-      revalidatePath("/learning");
-      revalidatePath(`/learning/lesson/${lessonId}`);
-      revalidatePath("/dashboard");
-    } catch (error) {
-      console.error("Post-submit progress/gamification failed:", error);
-    }
-  });
-
-  return { success: true, data: { ...result, answers: pipeline.enrichedAnswers } };
+  return onExerciseCompleted(
+    userId,
+    lessonId,
+    exerciseId,
+    accuracyPercent,
+    timeSpentSeconds,
+    lessonJustCompleted
+  );
 }
 
 async function getPreviousCompletion(userId: string, lessonId: string): Promise<number> {

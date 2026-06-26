@@ -27,6 +27,9 @@ interface MascotContextValue {
   cheerLevelUp: (level: number) => void;
   cheerBadge: (name: string) => void;
   cheerXp: (amount: number) => void;
+  cheerXpWithRank: (amount: number, rank: number, tier?: string | null) => void;
+  cheerLeagueRank: (rank: number, tier?: string | null) => void;
+  cheerLeaguePromotion: (tierName: string, rank: number | null) => void;
   showLoading: () => void;
   resetToIdle: () => void;
 }
@@ -170,8 +173,40 @@ export function MascotProvider({ children }: { children: ReactNode }) {
 
   const cheerXp = useCallback(
     (amount: number) => {
-      if (amount < 10) return;
+      if (amount < 1) return;
       showMessage(t("xp", { amount }), "clever");
+    },
+    [showMessage, t]
+  );
+
+  const cheerXpWithRank = useCallback(
+    (amount: number, rank: number, tier?: string | null) => {
+      if (amount < 1) return;
+      showMessage(
+        t("xpWithRank", { amount, rank, tier: tier ?? "" }),
+        "clever",
+        5000
+      );
+    },
+    [showMessage, t]
+  );
+
+  const cheerLeagueRank = useCallback(
+    (rank: number, tier?: string | null) => {
+      showMessage(t("leagueRank", { rank, tier: tier ?? "" }), "clever", 4500);
+    },
+    [showMessage, t]
+  );
+
+  const cheerLeaguePromotion = useCallback(
+    (tierName: string, rank: number | null) => {
+      showMessage(
+        rank != null
+          ? t("leaguePromotion", { tier: tierName, rank })
+          : t("leaguePromotionNoRank", { tier: tierName }),
+        "excited",
+        5500
+      );
     },
     [showMessage, t]
   );
@@ -188,6 +223,9 @@ export function MascotProvider({ children }: { children: ReactNode }) {
       cheerLevelUp,
       cheerBadge,
       cheerXp,
+      cheerXpWithRank,
+      cheerLeagueRank,
+      cheerLeaguePromotion,
       showLoading,
       resetToIdle,
     }),
@@ -202,6 +240,9 @@ export function MascotProvider({ children }: { children: ReactNode }) {
       cheerLevelUp,
       cheerBadge,
       cheerXp,
+      cheerXpWithRank,
+      cheerLeagueRank,
+      cheerLeaguePromotion,
       showLoading,
       resetToIdle,
     ]

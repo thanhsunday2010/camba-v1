@@ -158,6 +158,7 @@ export function LessonPlayer({
       markExerciseCompleted(exerciseId, {
         exerciseId,
         accuracyPercent: result.data.accuracyPercent,
+        gamification: result.data.gamification,
       });
       return result.data;
     }
@@ -207,7 +208,9 @@ export function LessonPlayer({
               minWords={resolveWritingMinWords(content)}
               targetLevel={targetLevel}
               labels={aiLabels}
-              onComplete={() => markExerciseCompleted(exercise.id, { exerciseId: exercise.id })}
+              onComplete={(meta) =>
+                markExerciseCompleted(exercise.id, { exerciseId: exercise.id, ...meta })
+              }
               nextExerciseTitle={nextExercise?.title}
               onNextExercise={
                 nextExercise && !showFinalExerciseFrame ? openNextExercise : undefined
@@ -227,7 +230,9 @@ export function LessonPlayer({
               }
               targetLevel={targetLevel}
               labels={aiLabels}
-              onComplete={() => markExerciseCompleted(exercise.id, { exerciseId: exercise.id })}
+              onComplete={(meta) =>
+                markExerciseCompleted(exercise.id, { exerciseId: exercise.id, ...meta })
+              }
               nextExerciseTitle={nextExercise?.title}
               onNextExercise={
                 nextExercise && !showFinalExerciseFrame ? openNextExercise : undefined

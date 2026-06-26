@@ -56,7 +56,11 @@
     ],
     "levelUp": "Level {level}! Con mạnh hơn rồi!",
     "badge": "Huy hiệu mới: {name}!",
-    "xp": "+{amount} XP — lụm đi!"
+    "xp": "+{amount} XP — lụm đi!",
+    "xpWithRank": "+{amount} XP · Hạng #{rank} tuần này!",
+    "leagueRank": "Hạng #{rank} tuần này — cố lên!",
+    "leaguePromotion": "Thăng hạng {tier}! · Hạng #{rank}",
+    "leaguePromotionNoRank": "Thăng hạng {tier} — giỏi quá!"
   },
   "auth": {
     "login": "Đăng nhập",
