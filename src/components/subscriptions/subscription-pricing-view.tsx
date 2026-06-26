@@ -28,6 +28,8 @@ export type SubscriptionPricingLabels = {
   };
   features: {
     accessAll: string;
+    practiceLimitLimited: string;
+    practiceLimitUnlimited: string;
     aiLimit: string;
   };
   planCard: SubscriptionPlanCardLabels;

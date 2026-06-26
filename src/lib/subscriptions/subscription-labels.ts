@@ -20,6 +20,8 @@ export function buildSubscriptionPricingLabels(
     },
     features: {
       accessAll: t("features.accessAll"),
+      practiceLimitLimited: t("features.practiceLimitLimited"),
+      practiceLimitUnlimited: t("features.practiceLimitUnlimited"),
       aiLimit: t("features.aiLimit"),
     },
     planCard: {

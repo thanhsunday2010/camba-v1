@@ -6,7 +6,9 @@ import { getLessonPageViewModel } from "@/lib/learning/lesson-page";
 import { StudentPageShell } from "@/components/camba";
 import { LessonPageContent } from "@/components/learning/lesson/lesson-page-content";
 import { LessonLockedState } from "@/components/learning/lesson/lesson-locked-state";
+import { LessonPracticeLimitState } from "@/components/learning/lesson/lesson-practice-limit-state";
 import { LessonEmptyState } from "@/components/learning/lesson/lesson-empty-state";
+import { canPracticeLesson } from "@/lib/subscriptions/lesson-practice-usage";
 import type { LessonDisplayState, LessonCompleteSummaryLabels } from "@/lib/learning/lesson-page-types";
 
 interface LessonPageProps {
@@ -34,6 +36,8 @@ export default async function LessonPage({ params }: LessonPageProps) {
   if (!user) redirect("/login");
 
   await ensureLessonUnlockedForUser(user.id, lessonId);
+
+  const practiceCheck = await canPracticeLesson(user.id, lessonId);
 
   const viewModel = await getLessonPageViewModel(user.id, lessonId);
   if (!viewModel) notFound();
@@ -196,6 +200,26 @@ export default async function LessonPage({ params }: LessonPageProps) {
             backToPath: t("backToPath"),
             lockedHint: tl("lockedHint"),
             lockContinueLabel: tl("lockContinueLabel"),
+          }}
+        />
+      </StudentPageShell>
+    );
+  }
+
+  if (!practiceCheck.allowed && practiceCheck.status.dailyLimit != null) {
+    const { usedToday, dailyLimit } = practiceCheck.status;
+    return (
+      <StudentPageShell narrow>
+        <LessonPracticeLimitState
+          labels={{
+            title: t("practiceLimitTitle"),
+            description: t("practiceLimitDescription"),
+            usageSummary: t("practiceLimitUsageSummary", {
+              used: usedToday,
+              limit: dailyLimit,
+            }),
+            backToPath: t("backToPath"),
+            upgradeCta: t("practiceLimitUpgradeCta"),
           }}
         />
       </StudentPageShell>

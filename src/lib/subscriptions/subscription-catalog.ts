@@ -10,6 +10,13 @@ export const AI_DAILY_LIMITS: Record<SubscriptionTier, number> = {
   vip: 10,
 };
 
+/** null = unlimited lesson practice per day */
+export const LESSON_PRACTICE_DAILY_LIMITS: Record<SubscriptionTier, number | null> = {
+  free: 1,
+  pro: null,
+  vip: null,
+};
+
 export const TIER_ORDER: Record<SubscriptionTier, number> = {
   free: 0,
   pro: 1,
@@ -35,6 +42,7 @@ function buildTierPlans(): SubscriptionProgramCatalog["plans"] {
       yearlyPriceVnd: null,
       yearlySavingsPercent: null,
       dailyAiLimit: AI_DAILY_LIMITS.free,
+      dailyPracticeLimit: LESSON_PRACTICE_DAILY_LIMITS.free,
       isPaid: false,
     },
     {
@@ -43,6 +51,7 @@ function buildTierPlans(): SubscriptionProgramCatalog["plans"] {
       yearlyPriceVnd: PRO_YEARLY,
       yearlySavingsPercent: yearlySavingsPercent(PRO_MONTHLY, PRO_YEARLY),
       dailyAiLimit: AI_DAILY_LIMITS.pro,
+      dailyPracticeLimit: LESSON_PRACTICE_DAILY_LIMITS.pro,
       isPaid: true,
     },
     {
@@ -51,6 +60,7 @@ function buildTierPlans(): SubscriptionProgramCatalog["plans"] {
       yearlyPriceVnd: VIP_YEARLY,
       yearlySavingsPercent: yearlySavingsPercent(VIP_MONTHLY, VIP_YEARLY),
       dailyAiLimit: AI_DAILY_LIMITS.vip,
+      dailyPracticeLimit: LESSON_PRACTICE_DAILY_LIMITS.vip,
       isPaid: true,
     },
   ];

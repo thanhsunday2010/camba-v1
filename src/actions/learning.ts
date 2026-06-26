@@ -16,6 +16,7 @@ import {
   getLevelIdForLesson,
 } from "@/lib/queries/learning";
 import { assertExerciseInLesson, assertLessonUnlockedForUser } from "@/lib/auth/lesson-access";
+import { assertLessonPracticeAllowed } from "@/lib/subscriptions/assert-lesson-practice-allowed";
 import { getAuthUser } from "@/lib/auth/session";
 import { onExerciseCompleted } from "@/lib/gamification/events";
 import { resolveProgramId } from "@/lib/programs/context";
@@ -44,9 +45,10 @@ export async function submitExerciseAttempt(
   const user = await getAuthUser();
   if (!user) return { success: false, error: "Unauthorized" };
 
-  const [unlockCheck, exerciseCheck] = await Promise.all([
+  const [unlockCheck, exerciseCheck, practiceCheck] = await Promise.all([
     assertLessonUnlockedForUser(user.id, lessonId),
     assertExerciseInLesson(exerciseId, lessonId),
+    assertLessonPracticeAllowed(user.id, lessonId),
   ]);
 
   if (!unlockCheck.ok) {
@@ -55,6 +57,15 @@ export async function submitExerciseAttempt(
 
   if (!exerciseCheck.ok) {
     return { success: false, error: exerciseCheck.error };
+  }
+
+  if (!practiceCheck.success) {
+    return {
+      success: false,
+      error: practiceCheck.error,
+      code: practiceCheck.code,
+      practiceLimitMeta: practiceCheck.practiceLimitMeta,
+    };
   }
 
   const questions = await fetchExerciseQuestionsFull(exerciseId);
@@ -332,6 +343,11 @@ export async function startLesson(lessonId: string): Promise<ActionResult> {
   const unlockCheck = await assertLessonUnlockedForUser(user.id, lessonId);
   if (!unlockCheck.ok) {
     return { success: false, error: unlockCheck.error };
+  }
+
+  const practiceCheck = await assertLessonPracticeAllowed(user.id, lessonId);
+  if (!practiceCheck.success) {
+    return practiceCheck;
   }
 
   return { success: true };

@@ -35,6 +35,8 @@ interface SubscriptionPlanCardProps {
   labels: SubscriptionPlanCardLabels;
   featureLabels: {
     accessAll: string;
+    practiceLimitLimited: string;
+    practiceLimitUnlimited: string;
     aiLimit: string;
   };
   isCurrent?: boolean;
@@ -99,6 +101,17 @@ export function SubscriptionPlanCard({
         <li className="flex items-start gap-2 text-sm">
           <Check className="h-4 w-4 text-success shrink-0 mt-0.5" aria-hidden />
           <span>{featureLabels.accessAll}</span>
+        </li>
+        <li className="flex items-start gap-2 text-sm">
+          <Check className="h-4 w-4 text-success shrink-0 mt-0.5" aria-hidden />
+          <span>
+            {plan.dailyPracticeLimit != null
+              ? featureLabels.practiceLimitLimited.replace(
+                  "{count}",
+                  String(plan.dailyPracticeLimit)
+                )
+              : featureLabels.practiceLimitUnlimited}
+          </span>
         </li>
         <li className="flex items-start gap-2 text-sm">
           <Check className="h-4 w-4 text-success shrink-0 mt-0.5" aria-hidden />

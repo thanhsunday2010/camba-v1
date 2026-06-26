@@ -399,8 +399,10 @@
       "vip": "Camba VIP"
     },
     "features": {
-      "accessAll": "Access all programs & practice",
-      "aiLimit": "{count} AI uses / day"
+      "accessAll": "Access all courses & practice",
+      "practiceLimitLimited": "{count} lesson / day",
+      "practiceLimitUnlimited": "Unlimited practice",
+      "aiLimit": "{count} AI grading uses / day"
     },
     "pricing": {
       "perMonth": "/ month",

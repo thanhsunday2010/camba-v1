@@ -13,12 +13,22 @@ export type AiUsageStatus = {
   remaining: number;
 };
 
+export type LessonPracticeUsageStatus = {
+  tier: SubscriptionTier;
+  usedToday: number;
+  /** null = unlimited */
+  dailyLimit: number | null;
+  remaining: number | null;
+  practicedLessonIds: string[];
+};
+
 export type SubscriptionPlanPricing = {
   tier: SubscriptionTier;
   monthlyPriceVnd: number | null;
   yearlyPriceVnd: number | null;
   yearlySavingsPercent: number | null;
   dailyAiLimit: number;
+  dailyPracticeLimit: number | null;
   isPaid: boolean;
 };
 

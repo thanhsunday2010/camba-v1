@@ -825,6 +825,10 @@
       "backToList": "Back to exercise list",
       "lockedTitle": "Lesson locked",
       "lockedDescription": "Complete earlier lessons to unlock this one.",
+      "practiceLimitTitle": "Daily practice limit reached",
+      "practiceLimitDescription": "Free plan includes 1 lesson per day. Upgrade to Pro or VIP for unlimited practice.",
+      "practiceLimitUsageSummary": "Practiced {used}/{limit} lessons today.",
+      "practiceLimitUpgradeCta": "View pricing",
       "emptyTitle": "No exercises yet",
       "emptyDescription": "This lesson has no practice content yet. Return to the path and pick another lesson.",
       "exercisesTitle": "Lesson exercises",
@@ -1447,7 +1451,7 @@
   },
   "subscriptions": {
     "pageTitle": "Pricing",
-    "pageSubtitle": "Choose the Camba plan that fits your goals. Access every program — daily AI limits differ by tier.",
+    "pageSubtitle": "Every tier gets full course and practice access. Free is limited to 1 lesson per day; Pro and VIP are unlimited. AI grading limits stay the same by plan.",
     "currentTier": "Current plan: {tier}",
     "programs": {
       "cambridge": {
@@ -1465,8 +1469,10 @@
       "vip": "Camba VIP"
     },
     "features": {
-      "accessAll": "Access all programs & practice",
-      "aiLimit": "{count} AI uses / day"
+      "accessAll": "Access all courses & practice",
+      "practiceLimitLimited": "{count} lesson / day",
+      "practiceLimitUnlimited": "Unlimited practice",
+      "aiLimit": "{count} AI grading uses / day"
     },
     "pricing": {
       "perMonth": "/ month",

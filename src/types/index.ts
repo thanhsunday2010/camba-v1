@@ -17,7 +17,15 @@ export interface AiLimitMeta {
   remaining: number;
 }
 
-export type ActionErrorCode = "AI_LIMIT_EXCEEDED";
+export interface PracticeLimitMeta {
+  tier: "free" | "pro" | "vip";
+  usedToday: number;
+  dailyLimit: number;
+  remaining: number;
+  practicedLessonIds: string[];
+}
+
+export type ActionErrorCode = "AI_LIMIT_EXCEEDED" | "PRACTICE_LIMIT_EXCEEDED";
 
 export interface ActionResult<T = void> {
   success: boolean;
@@ -25,4 +33,5 @@ export interface ActionResult<T = void> {
   error?: string;
   code?: ActionErrorCode;
   limitMeta?: AiLimitMeta;
+  practiceLimitMeta?: PracticeLimitMeta;
 }

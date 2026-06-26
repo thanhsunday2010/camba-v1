@@ -823,6 +823,10 @@
       "backToList": "Quay lại danh sách bài tập",
       "lockedTitle": "Bài học chưa mở khóa",
       "lockedDescription": "Hoàn thành các bài học trước để mở khóa bài này.",
+      "practiceLimitTitle": "Đã hết lượt luyện tập hôm nay",
+      "practiceLimitDescription": "Gói Free được luyện 1 bài học mỗi ngày. Nâng cấp Pro hoặc VIP để luyện tập không giới hạn.",
+      "practiceLimitUsageSummary": "Đã luyện {used}/{limit} bài học hôm nay.",
+      "practiceLimitUpgradeCta": "Xem bảng giá",
       "emptyTitle": "Chưa có bài tập",
       "emptyDescription": "Bài học này chưa có nội dung luyện tập. Hãy quay lại lộ trình và chọn bài khác.",
       "exercisesTitle": "Bài tập trong bài học",
@@ -1445,7 +1449,7 @@
   },
   "subscriptions": {
     "pageTitle": "Bảng giá",
-    "pageSubtitle": "Chọn gói Camba phù hợp với mục tiêu học tập. Truy cập mọi chương trình — khác nhau ở số lượt AI mỗi ngày.",
+    "pageSubtitle": "Mọi hạng đều truy cập đầy đủ khóa học & luyện tập. Free giới hạn 1 bài học/ngày — Pro & VIP không giới hạn. Quyền lợi AI chấm giữ nguyên theo gói.",
     "currentTier": "Gói hiện tại: {tier}",
     "programs": {
       "cambridge": {
@@ -1463,8 +1467,10 @@
       "vip": "Camba VIP"
     },
     "features": {
-      "accessAll": "Truy cập tất cả chương trình & luyện tập",
-      "aiLimit": "{count} lượt AI / ngày"
+      "accessAll": "Truy cập tất cả khóa học & luyện tập",
+      "practiceLimitLimited": "{count} bài học / ngày",
+      "practiceLimitUnlimited": "Luyện tập không giới hạn",
+      "aiLimit": "{count} lượt AI chấm / ngày"
     },
     "pricing": {
       "perMonth": "/ tháng",
