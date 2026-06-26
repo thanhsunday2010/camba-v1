@@ -12,27 +12,22 @@ export function isWithinWritingWordLimit(text: string): boolean {
 }
 
 export function clampWritingToWordLimit(text: string): string {
-  const trimmed = text.trimEnd();
-  if (!trimmed) return text;
-
-  const tokens = trimmed.split(/(\s+)/);
-  let words = 0;
-  let result = "";
-
-  for (const token of tokens) {
-    if (!token) continue;
-    if (/^\s+$/.test(token)) {
-      if (words > 0 && words < AI_WRITING_MAX_WORDS) {
-        result += token;
-      }
-      continue;
-    }
-    if (words >= AI_WRITING_MAX_WORDS) break;
-    result += token;
-    words += 1;
+  if (countWords(text) <= AI_WRITING_MAX_WORDS) {
+    return text;
   }
 
-  return result.trimStart();
+  const wordPattern = /\S+/g;
+  let match: RegExpExecArray | null;
+  let wordsSeen = 0;
+
+  while ((match = wordPattern.exec(text)) !== null) {
+    wordsSeen += 1;
+    if (wordsSeen === AI_WRITING_MAX_WORDS) {
+      return text.slice(0, match.index + match[0].length);
+    }
+  }
+
+  return text;
 }
 
 export function isWithinSpeakingDurationLimit(durationSeconds: number): boolean {
