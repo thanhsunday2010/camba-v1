@@ -84,18 +84,10 @@ export function PracticeWritingSession({
     }
   }, [session, router, labels.setupPath]);
 
-  if (!session || session.profile.skill !== "writing") {
-    return null;
-  }
-
-  const activeSession = session;
-  const { currentPrompt, profile, round } = activeSession;
-  const writingStep = activeSession.writingStep ?? "outline";
-
   const retryContext = useMemo(() => {
-    if (!feedback || activeSession.attempts.length < 2) return null;
-    const prev = activeSession.attempts[activeSession.attempts.length - 2];
-    const current = activeSession.attempts[activeSession.attempts.length - 1];
+    if (!feedback || !session || session.attempts.length < 2) return null;
+    const prev = session.attempts[session.attempts.length - 2];
+    const current = session.attempts[session.attempts.length - 1];
     return {
       previousScore: prev.overallScore,
       previousPreview: prev.preview,
@@ -103,7 +95,15 @@ export function PracticeWritingSession({
       currentPreview: current.preview,
       attemptNumber: current.attemptNumber,
     };
-  }, [feedback, activeSession]);
+  }, [feedback, session]);
+
+  if (!session || session.profile.skill !== "writing") {
+    return null;
+  }
+
+  const activeSession = session;
+  const { currentPrompt, profile, round } = activeSession;
+  const writingStep = activeSession.writingStep ?? "outline";
 
   const minWords = currentPrompt.minWords ?? (profile.mode === "micro" ? 40 : 40);
   const maxWords = currentPrompt.maxWords ?? AI_WRITING_MAX_WORDS;
