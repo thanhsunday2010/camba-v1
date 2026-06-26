@@ -71,10 +71,34 @@ Authoring checklist for vocabulary popup:
 
 Use `buildVocabWord({ word, ipa, partOfSpeech, vietnameseMeaning, exampleSentence, exampleTranslation, … })` in blueprints so new units stay consistent.
 | **grammar** | Items in `grammarReference` with `commonMistakes`; **3 lessons × 5 exercises** |
-| **reading** | Passage(s) with `wordCount`, `imagePrompt`; **3 lessons × 5 exercises** |
+| **reading** | Passage(s) with `wordCount` (text only — no images); **3 lessons × 5 exercises** |
 | **listening** | Script(s) with `speakers`, `lines`; **3 lessons × 5 exercises**; run `npm run generate:listening-audio` |
 | **writing** | **3 lessons × 5 exercises**; only Check uses AI `exerciseType: writing` |
-| **speaking** | **3 lessons × 5 exercises**; only Check uses AI `exerciseType: speaking` |
+| **speaking** | **3 lessons × 5 exercises**; only Check uses AI `exerciseType: speaking`; use `sceneDescription` for text scenes (never images) |
+
+## No image-based lesson questions
+
+Practice lessons must **not** use image stimuli. Learners answer from text and audio only.
+
+**Prohibited:**
+
+- `imageUrl`, `imagePrompt`, `pictureDescription`, `imageOptions`, choice `mediaUrl`
+- Question type `image_selection`
+- Stems like "Look at the picture" without a text `sceneDescription`
+- MCQ/listening tasks that require viewing an image
+
+**Use instead:**
+
+| Former pattern | Text-only replacement |
+|----------------|----------------------|
+| Picture MCQ / tick-the-picture | Text choices; stem "Choose the best answer" |
+| Word–picture matching | Word–description matching |
+| Writing from a picture | `taskDescription` with a clear text scene |
+| Speaking picture description | `sceneDescription` in exercise `content` |
+| Speaking story from pictures | Numbered story outline in `sceneDescription` |
+| Reading passage illustration | Passage text only (`title`, `text`, `wordCount`) |
+
+Use `buildSpeakingCheck({ sceneDescription, … })` and `buildPassage({ title, text })` — do not pass image fields.
 
 ### Multi-Exercise Template (per lesson)
 
@@ -151,6 +175,7 @@ From `meta.contentReview`:
 - Leave MCQ distractors without `distractorNote`.
 - Skip `qualityScores` on vocabulary, exercises, or questions.
 - Publish content with `needsReview: true` without explicit user approval.
+- Create lesson questions that depend on images (`imagePrompt`, `pictureDescription`, `imageUrl`, `image_selection`).
 
 ## After Writing
 

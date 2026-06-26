@@ -617,7 +617,7 @@ const QUESTIONS = [
     grammarTags: ["articles"],
     vocabularyTopics: ["community"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "volunteer", rightText: "Person who helps without being paid" }],
   }),
 
@@ -632,7 +632,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["shopping"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "receipt", rightText: "Paper that shows what you paid in a shop" }],
   }),
 
@@ -647,7 +647,7 @@ const QUESTIONS = [
     grammarTags: ["verb_be"],
     vocabularyTopics: ["hobbies"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "tripod", rightText: "Stand that holds a camera steady" }],
   }),
 
@@ -662,7 +662,7 @@ const QUESTIONS = [
     grammarTags: ["there_is_are"],
     vocabularyTopics: ["shopping", "food"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "stall", rightText: "Small table where someone sells things outdoors" }],
   }),
 
@@ -677,7 +677,7 @@ const QUESTIONS = [
     grammarTags: ["comparatives"],
     vocabularyTopics: ["hobbies"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "knitting", rightText: "Making clothes using wool and two needles" }],
   }),
 
@@ -692,7 +692,7 @@ const QUESTIONS = [
     grammarTags: ["possessives"],
     vocabularyTopics: ["community", "places"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "noticeboard", rightText: "Board where local news is posted" }],
   }),
 
@@ -707,7 +707,7 @@ const QUESTIONS = [
     grammarTags: ["superlatives"],
     vocabularyTopics: ["hobbies", "shopping"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "collection", rightText: "Group of similar items someone keeps as a hobby" }],
   }),
 
@@ -722,7 +722,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["community", "food"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Volunteers at the food bank are packing boxes of groceries for families in need.",
     choices: [
       { text: "Volunteers packing food boxes", isCorrect: true },
@@ -742,7 +742,7 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["shopping"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Shoppers are trying on winter coats on the third floor of the department store.",
     choices: [
       { text: "People trying on coats in a shop", isCorrect: true },
@@ -762,7 +762,7 @@ const QUESTIONS = [
     grammarTags: ["past_simple"],
     vocabularyTopics: ["hobbies", "community"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Last month the drama club performed a play about friendship at the community hall.",
     choices: [
       { text: "Children performing on a stage", isCorrect: true },
@@ -782,7 +782,7 @@ const QUESTIONS = [
     grammarTags: ["future_going_to"],
     vocabularyTopics: ["shopping", "community"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The charity shop is going to sell handmade gifts before the winter festival.",
     choices: [
       { text: "Charity shop with handmade gifts", isCorrect: true },
@@ -802,7 +802,7 @@ const QUESTIONS = [
     grammarTags: ["have_got"],
     vocabularyTopics: ["hobbies", "sports"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The skate park has got new ramps and a safe area for beginners.",
     choices: [
       { text: "Skate park with ramps", isCorrect: true },
@@ -822,7 +822,7 @@ const QUESTIONS = [
     grammarTags: ["past_continuous"],
     vocabularyTopics: ["community", "culture"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "While musicians were playing, families were dancing in the street during the neighbourhood festival.",
     choices: [
       { text: "Street festival with music and dancing", isCorrect: true },
@@ -842,7 +842,7 @@ const QUESTIONS = [
     grammarTags: ["modal_can"],
     vocabularyTopics: ["shopping", "technology"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Customers can compare prices online before they visit the high street shops.",
     choices: [
       { text: "Person comparing prices on a laptop", isCorrect: true },
@@ -1137,13 +1137,12 @@ const QUESTIONS = [
     grammarTags: ["present_continuous", "prepositions"],
     vocabularyTopics: ["shopping", "community"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write about the busy market scene.",
+    questionText: "Read the scene below. Write about the busy market scene.",
     cambridgeTaskType: "picture_description",
     prompt:
-      "Look at the picture. Write three or four sentences about the busy market. Say what people are buying and what different stallholders are doing.",
+      "Read the scene below. Write three or four sentences about the busy market. Say what people are buying and what different stallholders are doing.",
     minWords: 15,
     maxWords: 50,
-    imageUrl: "/images/gold-mocks/flyers/fgm2-055-market.png",
     taskDescription: "Describe the market scene.",
     requiredPoints: [
       "Say what people are buying or selling",
@@ -1163,13 +1162,12 @@ const QUESTIONS = [
     grammarTags: ["there_is_are", "comparatives"],
     vocabularyTopics: ["hobbies", "home"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write about the hobby room.",
+    questionText: "Read the scene below. Write about the hobby room.",
     cambridgeTaskType: "picture_description",
     prompt:
-      "Look at the picture. Write three or four sentences about the hobby room. Compare two areas of the room and say what the people are doing.",
+      "Read the scene below. Write three or four sentences about the hobby room. Compare two areas of the room and say what the people are doing.",
     minWords: 15,
     maxWords: 55,
-    imageUrl: "/images/gold-mocks/flyers/fgm2-056-hobby-room.png",
     taskDescription: "Describe the hobby room.",
     requiredPoints: [
       "Compare two things in the picture",
@@ -1189,18 +1187,19 @@ const QUESTIONS = [
     grammarTags: ["there_is_are", "prepositions"],
     vocabularyTopics: ["shopping", "places"],
     skillTag: "speaking",
-    questionText: "Look at the two pictures. Tell your partner about the differences.",
+    questionText: "Read the two scenes below. Tell your partner about the differences.",
     cambridgeTaskType: "speaking_picture_description",
     prompt:
-      "Look at these two pictures of a shopping street. Tell your partner about five differences between them. Explain what you see and where things are.",
+      "Read the two descriptions of a shopping street. Tell your partner about five differences between them. Explain what you see and where things are.",
+    taskDescription: `Scene A: A shopping street with a bookshop, a bakery with a long queue, and a bus stop.
+Scene B: The same street with the bookshop closed, no queue at the bakery, and a taxi rank.`,
     maxDurationSeconds: 120,
-    imageUrl: "/images/gold-mocks/flyers/fgm2-057-shopping-pair.png",
     followUpQuestions: [
       "What is different about the bakery window?",
-      "How many shoppers can you see in picture B?",
-      "Is there a bus in both pictures?",
-      "Where is the bicycle in picture A?",
-      "What colour is the awning in picture B?",
+      "How many shoppers can you see in Scene B?",
+      "Is there a bus in both scenes?",
+      "Where is the bicycle in Scene A?",
+      "What colour is the awning in Scene B?",
     ],
   }),
 
@@ -1240,17 +1239,16 @@ const QUESTIONS = [
     grammarTags: ["past_simple", "past_continuous"],
     vocabularyTopics: ["community", "shopping", "hobbies"],
     skillTag: "speaking",
-    questionText: "Look at the pictures and tell the story.",
+    questionText: "Use the story outline and tell the story.",
     cambridgeTaskType: "speaking_storytelling",
     prompt:
-      "Look at these pictures and tell the story of a family visit to the community fair. Describe what happened, how people felt, and how the day ended.",
+      "Use the story outline to tell the story of a family visit to the community fair. Describe what happened, how people felt, and how the day ended.",
+    taskDescription: `Story outline:
+1. A family arrives at the community fair.
+2. They visit a hobby stall and try a craft activity.
+3. The youngest child gets lost for a short time.
+4. They find each other and leave the fair happy.`,
     maxDurationSeconds: 180,
-    pictureSequence: [
-      "/images/gold-mocks/flyers/fgm2-059-story-1-arrive.png",
-      "/images/gold-mocks/flyers/fgm2-059-story-2-stall.png",
-      "/images/gold-mocks/flyers/fgm2-059-story-3-lost.png",
-      "/images/gold-mocks/flyers/fgm2-059-story-4-happy.png",
-    ],
     followUpQuestions: [
       "Why did the family go to the fair?",
       "What did they buy or try at the hobby stall?",
@@ -1272,7 +1270,7 @@ export const FLYERS_GOLD_MOCK_2 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Link names to pictures",
+      "Link names to descriptions",
       "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mrs Okonkwo. She's serving soup at the community stall.\nDylan's building a model aeroplane at the hobby club table.\nAmira is arranging second-hand books on the charity sale table.\nMr Hughes fixes bicycles for the neighbourhood project every Saturday.\nSofia's got a colourful handmade bracelet she's selling at her craft stall.\nKai is standing beside a rack of football boots at the sports shop display.\nThe coordinator gave clear instructions to all the volunteers yesterday morning."
     ),
     listeningAudio(
@@ -1284,8 +1282,8 @@ export const FLYERS_GOLD_MOCK_2 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-3",
       3,
-      "Tick the correct picture",
-      "Examiner: Listen and tick the correct picture.\n\nThe children are choosing fresh vegetables at the Saturday market.\nIn the music shop you can try different guitars before you buy one.\nLast weekend volunteers cleaned litter from the park near the community centre.\nThe bookshop sells comics and magazines on Sundays.\nThe youth club is behind the library, next to the sports hall.\nTomorrow there will be a pottery demonstration at the community craft fair.\nThe handmade kite was the best hobby project and won first prize."
+      "Choose the correct answer",
+      "Examiner: Listen and Choose the correct answer.\n\nThe children are choosing fresh vegetables at the Saturday market.\nIn the music shop you can try different guitars before you buy one.\nLast weekend volunteers cleaned litter from the park near the community centre.\nThe bookshop sells comics and magazines on Sundays.\nThe youth club is behind the library, next to the sports hall.\nTomorrow there will be a pottery demonstration at the community craft fair.\nThe handmade kite was the best hobby project and won first prize."
     ),
     listeningAudio(
       "listening-part-4",

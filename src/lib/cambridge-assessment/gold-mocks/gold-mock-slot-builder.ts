@@ -93,7 +93,6 @@ export type GoldMockSlot =
       minWords?: number;
       maxWords?: number;
       requiredPoints?: string[];
-      imageUrl?: string;
       points?: number;
     }
   | {
@@ -108,10 +107,9 @@ export type GoldMockSlot =
       questionText: string;
       cambridgeTaskType: string;
       prompt: string;
+      taskDescription?: string;
       maxDurationSeconds: number;
       followUpQuestions?: string[];
-      imageUrl?: string;
-      pictureSequence?: string[];
       points?: number;
     };
 
@@ -174,7 +172,6 @@ export function slotToQuestion(slot: GoldMockSlot, sortOrder: number): GoldMockQ
         minWords: slot.minWords,
         maxWords: slot.maxWords,
         requiredPoints: slot.requiredPoints,
-        imageUrl: slot.imageUrl,
       });
     case "speaking":
       return goldSpeaking({
@@ -183,10 +180,9 @@ export function slotToQuestion(slot: GoldMockSlot, sortOrder: number): GoldMockQ
         points: slot.points ?? 5,
         cambridgeTaskType: slot.cambridgeTaskType,
         prompt: slot.prompt,
+        taskDescription: slot.taskDescription,
         maxDurationSeconds: slot.maxDurationSeconds,
         followUpQuestions: slot.followUpQuestions,
-        imageUrl: slot.imageUrl,
-        pictureSequence: slot.pictureSequence,
       });
     default:
       throw new Error("Unknown slot kind");

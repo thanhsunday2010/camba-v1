@@ -28,3 +28,4 @@ npm run seed:pet -- --from <N> --to <N> --unlock-test-student
 - Speaking `maxDurationSeconds`: 150
 - Character: **Minh (15)** — education/career arc
 - 18 lessons × 90 exercises; AI only on Check
+- **No image-based lesson questions** — text-only `sceneDescription`; see `unit-content-authoring.mdc`.

@@ -47,10 +47,6 @@ For a routine appointment, call reception before 4 p.m. If you have a complaint 
 
 Message D — Council Office
 Lost your parking permit? Make an enquiry online or at the help desk. You have to pay a small fee and show your receipt from the last payment. Registration for new residents opens every Monday morning.`,
-  imagePrompt:
-    "Four short official notices on a help desk board about bank, post office, medical centre and council services; clean A2 infographic style.",
-});
-
 const listeningScript1 = buildListeningScript({
   title: "Making a Doctor's Appointment",
   setting: "Medical centre reception desk",
@@ -1069,7 +1065,7 @@ export default {
           content: {
             prompt:
               "The examiner will ask you about services in your town — post office, bank, medical centre or council office.",
-            pictureDescription:
+            sceneDescription:
               "A simple scene of a reception desk with a queue, a counter sign and a registration form on the desk.",
             followUpQuestions: [
               "Which services do you use in your town?",

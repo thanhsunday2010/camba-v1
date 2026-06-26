@@ -78,19 +78,41 @@ export function DashboardHero({
                   {labels.cefrEstimate}: {cefrEstimate}
                 </span>
               )}
-              {compact && (
+            </div>
+            <h1
+              id="dashboard-hero-heading"
+              className={cn("text-foreground", compact ? "camba-h2" : "camba-display mt-0.5")}
+            >
+              {greeting}
+            </h1>
+            {compact && levelName && (
+              <p className="camba-caption text-muted">
+                {labels.progressingThrough.replace("{level}", levelName)}
+              </p>
+            )}
+            {compact && (
+              <div className="flex flex-wrap items-center gap-2 pt-0.5">
                 <span className="inline-flex items-center gap-1 rounded-full bg-white/80 px-2.5 py-0.5 camba-caption font-semibold text-muted border border-border/60">
                   <Flame className="h-3.5 w-3.5 text-[var(--color-streak)]" aria-hidden />
                   {streakLine}
                 </span>
-              )}
-            </div>
-            <h1
-              id="dashboard-hero-heading"
-              className={cn("text-foreground mt-0.5", compact ? "camba-h2" : "camba-display")}
-            >
-              {greeting}
-            </h1>
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/80 px-2.5 py-0.5 camba-caption font-semibold text-muted border border-border/60">
+                  <Zap className="h-3.5 w-3.5 text-[var(--color-xp)]" aria-hidden />
+                  {labels.xp}: {formatNumber(totalXp)}
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/80 px-2.5 py-0.5 camba-caption font-semibold text-muted border border-border/60">
+                  <Sparkles className="h-3.5 w-3.5 text-[var(--color-level-up)]" aria-hidden />
+                  {labels.level} {level}
+                </span>
+              </div>
+            )}
+            {compact && (
+              <AnimatedProgress
+                className="max-w-xs"
+                percent={levelProgressPercent}
+                ariaLabel={`${labels.level} ${levelProgressPercent}%`}
+              />
+            )}
             {programLine && (
               <p className="camba-body text-foreground/85 font-medium leading-relaxed max-w-xl">
                 {programLine}

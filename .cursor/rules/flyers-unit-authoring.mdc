@@ -22,6 +22,7 @@ alwaysApply: false
 6. Only **Check** uses AI `writing` / `speaking`.
 7. Flyers: `minWords` 25, speaking `maxDurationSeconds` 120, `levelTag: "flyers"`.
 8. All explanations in **Vietnamese**.
+9. **No image-based questions** — use `sceneDescription` (text) only; see `unit-content-authoring.mdc`.
 
 ## Pipeline
 

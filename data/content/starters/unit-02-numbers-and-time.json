@@ -2545,8 +2545,7 @@
             "passage": {
               "title": "Tom's Birthday",
               "text": "Hello! My name is Tom. I am seven years old. My birthday is on Monday.\n\nToday is Tuesday. I am at school. I have two friends. Their names are Ben and Kim. Ben is ten. Kim is five.\n\nWe go home at four o'clock. On Monday I had five candles on my cake. I was very happy!",
-              "wordCount": 56,
-              "imagePrompt": "A boy with a birthday cake showing five candles; a calendar with Monday circled; a clock showing four o'clock."
+              "wordCount": 56
             }
           },
           "questions": [
@@ -2733,7 +2732,6 @@
             "passage": {
               "title": "Tom's Birthday",
               "text": "Hello! My name is Tom. I am seven years old.\n\nMy birthday is on Tuesday. Today is Monday. I am very happy!\n\nI have ten friends at my party. We eat cake. My mother says: \"Happy birthday, Tom!\"\n\nSchool starts at eight o'clock. I love my birthday!",
-              "imagePrompt": "A boy with a birthday cake and friends, calendar showing Tuesday.",
               "wordCount": 47
             }
           },
@@ -2820,7 +2818,6 @@
             "passage": {
               "title": "Tom's Birthday",
               "text": "Hello! My name is Tom. I am seven years old.\n\nMy birthday is on Tuesday. Today is Monday. I am very happy!\n\nI have ten friends at my party. We eat cake. My mother says: \"Happy birthday, Tom!\"\n\nSchool starts at eight o'clock. I love my birthday!",
-              "imagePrompt": "A boy with a birthday cake and friends, calendar showing Tuesday.",
               "wordCount": 47
             }
           },
@@ -2954,7 +2951,6 @@
             "passage": {
               "title": "Tom's Birthday",
               "text": "Hello! My name is Tom. I am seven years old.\n\nMy birthday is on Tuesday. Today is Monday. I am very happy!\n\nI have ten friends at my party. We eat cake. My mother says: \"Happy birthday, Tom!\"\n\nSchool starts at eight o'clock. I love my birthday!",
-              "imagePrompt": "A boy with a birthday cake and friends, calendar showing Tuesday.",
               "wordCount": 47
             }
           },
@@ -3054,7 +3050,6 @@
             "passage": {
               "title": "Our Class Clock",
               "text": "This is our classroom. Look at the clock on the wall.\n\nIt is three o'clock. We have twenty books on the desk.\n\nHow many pens? One, two, three — three pens.\n\nHow old is our teacher? She is thirty. We say: \"Good afternoon!\"",
-              "imagePrompt": "Classroom with clock showing three o'clock, books and pens on desks.",
               "wordCount": 43
             }
           },
@@ -3141,7 +3136,6 @@
             "passage": {
               "title": "Our Class Clock",
               "text": "This is our classroom. Look at the clock on the wall.\n\nIt is three o'clock. We have twenty books on the desk.\n\nHow many pens? One, two, three — three pens.\n\nHow old is our teacher? She is thirty. We say: \"Good afternoon!\"",
-              "imagePrompt": "Classroom with clock showing three o'clock, books and pens on desks.",
               "wordCount": 43
             }
           },
@@ -3228,7 +3222,6 @@
             "passage": {
               "title": "Our Class Clock",
               "text": "This is our classroom. Look at the clock on the wall.\n\nIt is three o'clock. We have twenty books on the desk.\n\nHow many pens? One, two, three — three pens.\n\nHow old is our teacher? She is thirty. We say: \"Good afternoon!\"",
-              "imagePrompt": "Classroom with clock showing three o'clock, books and pens on desks.",
               "wordCount": 43
             }
           },
@@ -3330,7 +3323,6 @@
             "passage": {
               "title": "Our Class Clock",
               "text": "This is our classroom. Look at the clock on the wall.\n\nIt is three o'clock. We have twenty books on the desk.\n\nHow many pens? One, two, three — three pens.\n\nHow old is our teacher? She is thirty. We say: \"Good afternoon!\"",
-              "imagePrompt": "Classroom with clock showing three o'clock, books and pens on desks.",
               "wordCount": 43
             }
           },
@@ -3397,7 +3389,6 @@
             "passage": {
               "title": "Days at School",
               "text": "We go to school on Monday and Tuesday. On Wednesday we play in the park.\n\nToday is Thursday. I am eight. My friend Lin is seven.\n\nHow many days? One, two, three, four days this week.\n\nSchool finishes at four o'clock. We are tired and happy!",
-              "imagePrompt": "Children at school with a weekly calendar and clock.",
               "wordCount": 46
             }
           },
@@ -3484,7 +3475,6 @@
             "passage": {
               "title": "Days at School",
               "text": "We go to school on Monday and Tuesday. On Wednesday we play in the park.\n\nToday is Thursday. I am eight. My friend Lin is seven.\n\nHow many days? One, two, three, four days this week.\n\nSchool finishes at four o'clock. We are tired and happy!",
-              "imagePrompt": "Children at school with a weekly calendar and clock.",
               "wordCount": 46
             }
           },
@@ -3571,7 +3561,6 @@
             "passage": {
               "title": "Days at School",
               "text": "We go to school on Monday and Tuesday. On Wednesday we play in the park.\n\nToday is Thursday. I am eight. My friend Lin is seven.\n\nHow many days? One, two, three, four days this week.\n\nSchool finishes at four o'clock. We are tired and happy!",
-              "imagePrompt": "Children at school with a weekly calendar and clock.",
               "wordCount": 46
             }
           },
@@ -3676,7 +3665,6 @@
             "passage": {
               "title": "Days at School",
               "text": "We go to school on Monday and Tuesday. On Wednesday we play in the park.\n\nToday is Thursday. I am eight. My friend Lin is seven.\n\nHow many days? One, two, three, four days this week.\n\nSchool finishes at four o'clock. We are tired and happy!",
-              "imagePrompt": "Children at school with a weekly calendar and clock.",
               "wordCount": 46
             }
           },
@@ -6296,7 +6284,7 @@
           },
           "content": {
             "prompt": "Say your age and how many books you have.",
-            "pictureDescription": "A child in a classroom with books on a desk.",
+            "sceneDescription": "A child in a classroom with books on a desk.",
             "followUpQuestions": [
               "How old are you?",
               "How many books do you have?"
@@ -6398,7 +6386,7 @@
           },
           "content": {
             "prompt": "Say your age and how many books you have.",
-            "pictureDescription": "A child in a classroom with books on a desk.",
+            "sceneDescription": "A child in a classroom with books on a desk.",
             "followUpQuestions": [
               "How old are you?",
               "How many books do you have?"
@@ -6560,7 +6548,7 @@
           },
           "content": {
             "prompt": "Say your age and how many pencils you have.",
-            "pictureDescription": "Child at desk with pencils.",
+            "sceneDescription": "Child at desk with pencils.",
             "followUpQuestions": [
               "How old are you?",
               "How many pencils do you have?"
@@ -6662,7 +6650,7 @@
           },
           "content": {
             "prompt": "Say your age and how many pencils you have.",
-            "pictureDescription": "Child at desk with pencils.",
+            "sceneDescription": "Child at desk with pencils.",
             "followUpQuestions": [
               "How old are you?",
               "How many pencils do you have?"
@@ -6823,7 +6811,7 @@
           },
           "content": {
             "prompt": "Say today's day and a time with o'clock.",
-            "pictureDescription": "Calendar and classroom clock.",
+            "sceneDescription": "Calendar and classroom clock.",
             "followUpQuestions": [
               "What day is it?",
               "What time is it?"
@@ -6925,7 +6913,7 @@
           },
           "content": {
             "prompt": "Say today's day and a time with o'clock.",
-            "pictureDescription": "Calendar and classroom clock.",
+            "sceneDescription": "Calendar and classroom clock.",
             "followUpQuestions": [
               "What day is it?",
               "What time is it?"

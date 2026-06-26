@@ -85,7 +85,6 @@ const grammarReference = [
 const opinionPassage = buildPassage({
   title: "Online Advice: Neighbours and Noise",
   text: "Posted by Linh, age 13\n\nLast week my neighbour played loud music every evening. I felt angry because I couldn't do my homework. My mum said I should talk to him politely first.\n\nI knocked on his door when he came home from work. I explained the problem and he apologised immediately. He didn't know the music was so loud in my room.\n\nIn my opinion, good neighbours communicate before they argue. Although we are different ages, we now have a better relationship. I have never had a serious argument with a neighbour before, but this experience taught me to speak up calmly.\n\nWhat do you think? Should young people always tell an adult first?",
-  imagePrompt: "A teenager and an adult neighbour talking at a front door; friendly but serious conversation about noise.",
 });
 
 const partyScript = buildListeningScript({
@@ -567,7 +566,7 @@ export default {
           instructions: "Answer the examiner's questions about friends and neighbours. Speak for up to two minutes.",
           sortOrder: 2,
           prompt: "The examiner will ask you about your friends, neighbours and how you solve problems in relationships.",
-          pictureDescription: "Two teenagers talking in a park; one holds a party invitation, the other waves to a neighbour across the street.",
+          sceneDescription: "Two teenagers talking in a park; one holds a party invitation, the other waves to a neighbour across the street.",
           followUpQuestions: [
             "Do you know your neighbours well?",
             "Have you ever argued with a friend?",

@@ -679,7 +679,6 @@ const petQuestions = [
     taskDescription: "Write about 100 words.",
     minWords: 100,
     maxWords: 130,
-    imageUrl: "/images/gold-mocks/pet-gold-mock-1-story.svg",
   }),
 
   // ── listening-part-1 (5) ─────────────────────────────────────────────────
@@ -1156,12 +1155,12 @@ const petQuestions = [
     grammarTags: ["present_continuous", "prepositions"],
     vocabularyTopics: ["travel", "places"],
     skillTag: "speaking",
-    questionText: "Describe the photograph and say what you think is happening.",
+    questionText: "Read the scene description and say what you think is happening.",
     cambridgeTaskType: "picture_description_speaking",
     prompt:
-      "Look at the photograph. Describe the place and the people, and explain why they might be there.",
+      "Read the scene description. Describe the place and the people, and explain why they might be there.",
+    taskDescription: "Scene: Two friends are visiting a historic city. They are standing near an old bridge, taking photos, and reading a tourist map.",
     maxDurationSeconds: 180,
-    imageUrl: "/images/gold-mocks/pet-gold-mock-1-speaking-photo.svg",
   }),
   goldSpeaking({
     questionRef: "pgm-064",
@@ -1198,7 +1197,7 @@ export const PET_GOLD_MOCK_1 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Part 1 — Listen and choose the correct picture",
+      "Part 1 — Listen and choose the correct answer",
       "Man: Could I have the chicken sandwich and a glass of water, please? Waiter: Of course. I'll bring it to your table."
     ),
     listeningAudio(

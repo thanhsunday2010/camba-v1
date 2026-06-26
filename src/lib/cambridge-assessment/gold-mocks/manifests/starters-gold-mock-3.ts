@@ -7,7 +7,7 @@ import { listeningAudio } from "@/lib/cambridge-assessment/gold-mocks/gold-mock-
 
 /** M4.1 — Starters Gold Mock 3 (Food, Sports, Travel). */
 const SLOTS: GoldMockSlot[] = [
-  // ── Listening Part 1: Link names to pictures ─────────────────────────────
+  // ── Listening Part 1: Link names to descriptions ─────────────────────────────
   {
     kind: "matching",
     ref: "sgm3-001",
@@ -161,7 +161,7 @@ const SLOTS: GoldMockSlot[] = [
     transcriptSnippet: "The big tour bus is yellow with black windows.",
   },
 
-  // ── Listening Part 3: Tick the correct picture ───────────────────────────
+  // ── Listening Part 3: Choose the correct answer ───────────────────────────
   {
     kind: "mcq",
     ref: "sgm3-011",
@@ -307,7 +307,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "travel_map",
     grammarTags: ["imperatives"],
     vocabularyTopics: ["travel"],
-    questionText: "Draw an X on the airport on the map. Which picture shows this?",
+    questionText: "Draw an X on the airport on the map. Which option is correct?",
     blueprintQuestionType: "mcq_listening",
     choices: [
       { text: "X marked on the airport symbol", isCorrect: true },
@@ -345,7 +345,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "travel_boat",
     grammarTags: ["imperatives"],
     vocabularyTopics: ["travel", "places"],
-    questionText: "Draw a line from the boy to the boat. Which picture shows this?",
+    questionText: "Draw a line from the boy to the boat. Which option is correct?",
     blueprintQuestionType: "mcq_listening",
     choices: [
       { text: "Boy standing next to the small boat", isCorrect: true },
@@ -366,7 +366,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "food",
     grammarTags: ["articles"],
     vocabularyTopics: ["food"],
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     leftText: "sandwich",
     rightText: "Food with bread, cheese and salad inside",
   },
@@ -380,7 +380,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "sports",
     grammarTags: ["articles"],
     vocabularyTopics: ["sports"],
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     leftText: "helmet",
     rightText: "Hard hat you wear when riding a bike",
   },
@@ -394,7 +394,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "travel",
     grammarTags: ["verb_be"],
     vocabularyTopics: ["travel"],
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     leftText: "passport",
     rightText: "Small book you need when you travel to another country",
   },
@@ -408,7 +408,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "food_drink",
     grammarTags: ["verb_be"],
     vocabularyTopics: ["food", "drink"],
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     leftText: "lemonade",
     rightText: "Cold sweet drink made from lemons",
   },
@@ -422,7 +422,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "sports",
     grammarTags: ["present_simple"],
     vocabularyTopics: ["sports", "places"],
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     leftText: "stadium",
     rightText: "Big building where people watch football matches",
   },
@@ -438,7 +438,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "food_kitchen",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["food", "family"],
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Grandpa is making vegetable soup in a big pot on the stove.",
     choices: [
       { text: "Old man cooking soup in a kitchen", isCorrect: true },
@@ -456,7 +456,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "sports_running",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["sports"],
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The children are running a race on the school sports field.",
     choices: [
       { text: "Children running on a sports field", isCorrect: true },
@@ -474,7 +474,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "travel_station",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["travel"],
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "We are waiting for our train on platform three at the station.",
     choices: [
       { text: "Family waiting on a train platform", isCorrect: true },
@@ -492,7 +492,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "food_market",
     grammarTags: ["present_simple"],
     vocabularyTopics: ["food", "shopping"],
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Every Friday Dad buys fresh bread and grapes at the market.",
     choices: [
       { text: "Man buying bread and grapes at a market", isCorrect: true },
@@ -510,7 +510,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "travel_camping",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["travel", "weather"],
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "It is getting dark, so we are putting up our tent at the campsite near the lake.",
     choices: [
       { text: "Family putting up a tent at a campsite", isCorrect: true },
@@ -626,12 +626,12 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "food_table",
     grammarTags: ["verb_be"],
     vocabularyTopics: ["food"],
-    questionText: "Look at the picture. Write one sentence about the fruit on the table.",
+    questionText: "Read the scene below. Write one sentence about the fruit on the table.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the fruit on the table.",
+    prompt: "Read the scene below. Write one sentence about the fruit on the table.",
     minWords: 3,
     maxWords: 15,
-    imageUrl: "/images/gold-mocks/starters/sgm3-036-fruit-table.png",
+    taskDescription: "Scene: There is a bowl of apples, bananas, and oranges on the kitchen table.",
   },
   {
     kind: "writing",
@@ -642,12 +642,12 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "sports_football",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["sports"],
-    questionText: "Look at the picture. Write one sentence about the boy and the football.",
+    questionText: "Read the scene below. Write one sentence about the boy and the football.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the boy and the football.",
+    prompt: "Read the scene below. Write one sentence about the boy and the football.",
     minWords: 3,
     maxWords: 15,
-    imageUrl: "/images/gold-mocks/starters/sgm3-037-boy-football.png",
+    taskDescription: "Scene: A boy is kicking a football on a field near some trees.",
   },
   {
     kind: "writing",
@@ -658,12 +658,12 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "travel_airport",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["travel"],
-    questionText: "Look at the picture. Write one sentence about the family at the airport.",
+    questionText: "Read the scene below. Write one sentence about the family at the airport.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the family at the airport.",
+    prompt: "Read the scene below. Write one sentence about the family at the airport.",
     minWords: 4,
     maxWords: 18,
-    imageUrl: "/images/gold-mocks/starters/sgm3-038-airport-family.png",
+    taskDescription: "Scene: A family is at the airport with suitcases, waiting near the check-in desk.",
   },
   {
     kind: "writing",
@@ -674,13 +674,12 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "sports_pool",
     grammarTags: ["there_is_are"],
     vocabularyTopics: ["sports", "places"],
-    questionText: "Look at the picture. Write two or three sentences about the swimming pool.",
+    questionText: "Read the scene below. Write two or three sentences about the swimming pool.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write two or three sentences about the swimming pool.",
+    prompt: "Read the scene below. Write two or three sentences about the swimming pool.",
     taskDescription: "Describe what you can see at the swimming pool.",
     minWords: 5,
     maxWords: 25,
-    imageUrl: "/images/gold-mocks/starters/sgm3-039-swimming-pool.png",
     requiredPoints: ["Say who is at the pool", "Say what people are doing"],
   },
   {
@@ -692,13 +691,12 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "travel_beach",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["travel", "food"],
-    questionText: "Look at the picture. Write two or three sentences about the beach picnic.",
+    questionText: "Read the scene below. Write two or three sentences about the beach picnic.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write two or three sentences about the beach picnic.",
+    prompt: "Read the scene below. Write two or three sentences about the beach picnic.",
     taskDescription: "Describe the beach and the food people are eating.",
     minWords: 5,
     maxWords: 25,
-    imageUrl: "/images/gold-mocks/starters/sgm3-040-beach-picnic.png",
     requiredPoints: ["Say where the people are", "Say what food you can see"],
   },
 
@@ -712,18 +710,18 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "sports_hall",
     grammarTags: ["there_is_are", "prepositions"],
     vocabularyTopics: ["sports", "places"],
-    questionText: "Look at the two pictures. Tell your partner about the differences.",
+    questionText: "Read the two scenes below. Tell your partner about the differences.",
     cambridgeTaskType: "speaking_picture_description",
     prompt:
-      "Look at the two pictures of a sports hall. Tell your partner about five differences between them.",
+      "Read Scene A and Scene B below. Tell your partner about five differences between them.",
     maxDurationSeconds: 120,
-    imageUrl: "/images/gold-mocks/starters/sgm3-041-sports-hall-pair.png",
+    taskDescription: "Scene A: A sports hall with a basketball on the floor, five children, and an open door.\nScene B: The same hall with a football, three children, and a closed door.",
     followUpQuestions: [
-      "How many basketballs are on the floor in picture A?",
-      "What colour is the goal in picture B?",
-      "Is there a coach in both pictures?",
-      "Where is the water bottle in picture A?",
-      "What are the children doing in picture B?",
+      "How many basketballs are on the floor in Scene A?",
+      "What colour is the goal in Scene B?",
+      "Is there a coach in both scenes?",
+      "Where is the water bottle in Scene A?",
+      "What are the children doing in Scene B?",
     ],
   },
   {
@@ -757,16 +755,10 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "story_train_trip",
     grammarTags: ["past_simple", "past_continuous"],
     vocabularyTopics: ["travel", "food", "family"],
-    questionText: "Look at the pictures and tell the story.",
+    questionText: "Use the story outline and tell the story.",
     cambridgeTaskType: "speaking_storytelling",
-    prompt: "Look at these pictures and tell the story of Ana's train trip to the city.",
+    prompt: "Use the story outline to tell the story of Ana's train trip to the city.",
     maxDurationSeconds: 180,
-    pictureSequence: [
-      "/images/gold-mocks/starters/sgm3-043-story-1-tickets.png",
-      "/images/gold-mocks/starters/sgm3-043-story-2-train.png",
-      "/images/gold-mocks/starters/sgm3-043-story-3-cafe.png",
-      "/images/gold-mocks/starters/sgm3-043-story-4-souvenir.png",
-    ],
     followUpQuestions: [
       "Who travelled with Ana?",
       "What did they buy at the station?",
@@ -790,7 +782,7 @@ const composed = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Link names to pictures",
+      "Link names to descriptions",
       `Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.
 
 This is Jake. He's wearing a green football shirt today.
@@ -814,8 +806,8 @@ The big tour bus is yellow with black windows.`
     listeningAudio(
       "listening-part-3",
       3,
-      "Tick the correct picture",
-      `Examiner: Listen and tick the correct picture.
+      "Choose the correct answer",
+      `Examiner: Listen and Choose the correct answer.
 
 The girl is eating a big red strawberry.
 The boys are playing basketball in the sports hall.

@@ -125,13 +125,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Link names to pictures",
-      "instructions": "Link names to pictures",
+      "title": "Link names to descriptions",
+      "instructions": "Link names to descriptions",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/flyers-gold-mock-2/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mrs Okonkwo. She's serving soup at the community stall.\nDylan's building a model aeroplane at the hobby club table.\nAmira is arranging second-hand books on the charity sale table.\nMr Hughes fixes bicycles for the neighbourhood project every Saturday.\nSofia's got a colourful handmade bracelet she's selling at her craft stall.\nKai is standing beside a rack of football boots at the sports shop display.\nThe coordinator gave clear instructions to all the volunteers yesterday morning.",
-        "caption": "Link names to pictures"
+        "caption": "Link names to descriptions"
       }
     },
     {
@@ -151,13 +151,13 @@
       "partSlug": "listening-part-3",
       "sectionSlug": "listening",
       "partNumber": 3,
-      "title": "Tick the correct picture",
-      "instructions": "Tick the correct picture",
+      "title": "Choose the correct answer",
+      "instructions": "Choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/flyers-gold-mock-2/listening-part-3.mp3",
-        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe children are choosing fresh vegetables at the Saturday market.\nIn the music shop you can try different guitars before you buy one.\nLast weekend volunteers cleaned litter from the park near the community centre.\nThe bookshop sells comics and magazines on Sundays.\nThe youth club is behind the library, next to the sports hall.\nTomorrow there will be a pottery demonstration at the community craft fair.\nThe handmade kite was the best hobby project and won first prize.",
-        "caption": "Tick the correct picture"
+        "transcript": "Examiner: Listen and Choose the correct answer.\n\nThe children are choosing fresh vegetables at the Saturday market.\nIn the music shop you can try different guitars before you buy one.\nLast weekend volunteers cleaned litter from the park near the community centre.\nThe bookshop sells comics and magazines on Sundays.\nThe youth club is behind the library, next to the sports hall.\nTomorrow there will be a pottery demonstration at the community craft fair.\nThe handmade kite was the best hobby project and won first prize.",
+        "caption": "Choose the correct answer"
       }
     },
     {
@@ -1209,7 +1209,7 @@
         "community"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'volunteer' to the picture.",
+      "questionText": "Match the word 'volunteer' to the description.",
       "pairs": [
         {
           "leftText": "volunteer",
@@ -1235,7 +1235,7 @@
         "shopping"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'receipt' to the picture.",
+      "questionText": "Match the word 'receipt' to the description.",
       "pairs": [
         {
           "leftText": "receipt",
@@ -1261,7 +1261,7 @@
         "hobbies"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'tripod' to the picture.",
+      "questionText": "Match the word 'tripod' to the description.",
       "pairs": [
         {
           "leftText": "tripod",
@@ -1288,7 +1288,7 @@
         "food"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'stall' to the picture.",
+      "questionText": "Match the word 'stall' to the description.",
       "pairs": [
         {
           "leftText": "stall",
@@ -1314,7 +1314,7 @@
         "hobbies"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'knitting' to the picture.",
+      "questionText": "Match the word 'knitting' to the description.",
       "pairs": [
         {
           "leftText": "knitting",
@@ -1341,7 +1341,7 @@
         "places"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'noticeboard' to the picture.",
+      "questionText": "Match the word 'noticeboard' to the description.",
       "pairs": [
         {
           "leftText": "noticeboard",
@@ -1368,7 +1368,7 @@
         "shopping"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'collection' to the picture.",
+      "questionText": "Match the word 'collection' to the description.",
       "pairs": [
         {
           "leftText": "collection",
@@ -1395,7 +1395,7 @@
         "food"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"Volunteers at the food bank are packing…\" Choose the correct picture.",
+      "questionText": "Read: \"Volunteers at the food bank are packing…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1437,7 +1437,7 @@
         "shopping"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"Shoppers are trying on winter coats on t…\" Choose the correct picture.",
+      "questionText": "Read: \"Shoppers are trying on winter coats on t…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1480,7 +1480,7 @@
         "community"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"Last month the drama club performed a pl…\" Choose the correct picture.",
+      "questionText": "Read: \"Last month the drama club performed a pl…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1523,7 +1523,7 @@
         "community"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"The charity shop is going to sell handma…\" Choose the correct picture.",
+      "questionText": "Read: \"The charity shop is going to sell handma…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1566,7 +1566,7 @@
         "sports"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"The skate park has got new ramps and a s…\" Choose the correct picture.",
+      "questionText": "Read: \"The skate park has got new ramps and a s…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1609,7 +1609,7 @@
         "culture"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"While musicians were playing, families w…\" Choose the correct picture.",
+      "questionText": "Read: \"While musicians were playing, families w…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1652,7 +1652,7 @@
         "technology"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"Customers can compare prices online befo…\" Choose the correct picture.",
+      "questionText": "Read: \"Customers can compare prices online befo…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -2167,16 +2167,15 @@
         "community"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write about the busy market scene.",
+      "questionText": "Read the scene below. Write about the busy market scene.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write three or four sentences about the busy market. Say what people are buying and what different stallholders are doing.",
+        "prompt": "Read the scene below. Write three or four sentences about the busy market. Say what people are buying and what different stallholders are doing.",
         "taskDescription": "Describe the market scene.",
         "minWords": 15,
         "maxWords": 50,
-        "imageUrl": "/images/gold-mocks/flyers/fgm2-055-market.svg",
         "requiredPoints": [
           "Say what people are buying or selling",
           "Describe at least two different activities in the picture",
@@ -2202,16 +2201,15 @@
         "home"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write about the hobby room.",
+      "questionText": "Read the scene below. Write about the hobby room.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write three or four sentences about the hobby room. Compare two areas of the room and say what the people are doing.",
+        "prompt": "Read the scene below. Write three or four sentences about the hobby room. Compare two areas of the room and say what the people are doing.",
         "taskDescription": "Describe the hobby room.",
         "minWords": 15,
         "maxWords": 55,
-        "imageUrl": "/images/gold-mocks/flyers/fgm2-056-hobby-room.svg",
         "requiredPoints": [
           "Compare two things in the picture",
           "Say what at least two people are doing",
@@ -2237,21 +2235,21 @@
         "places"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at the two shop differences pictures. Tell your partner about the differences.",
+      "questionText": "Read the two shop differences scenes below. Tell your partner about the differences.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_picture_description",
-        "prompt": "Look at these two pictures of a shopping street. Tell your partner about five differences between them. Explain what you see and where things are.",
+        "prompt": "Read the two descriptions of a shopping street. Tell your partner about five differences between them. Explain what you see and where things are.",
+        "taskDescription": "Scene A: A shopping street with a bookshop, a bakery with a long queue, and a bus stop.\nScene B: The same street with the bookshop closed, no queue at the bakery, and a taxi rank.",
         "maxDurationSeconds": 120,
         "followUpQuestions": [
           "What is different about the bakery window?",
-          "How many shoppers can you see in picture B?",
-          "Is there a bus in both pictures?",
-          "Where is the bicycle in picture A?",
-          "What colour is the awning in picture B?"
+          "How many shoppers can you see in Scene B?",
+          "Is there a bus in both scenes?",
+          "Where is the bicycle in Scene A?",
+          "What colour is the awning in Scene B?"
         ],
-        "imageUrl": "/images/gold-mocks/flyers/fgm2-057-shopping-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -2308,12 +2306,13 @@
         "hobbies"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at these pictures and tell the story of a family visit to the community fair. Describe what happened, how people felt, and how the day ended.",
+      "questionText": "Use the story outline to tell the story of a family visit to the community fair. Describe what happened, how people felt, and how the day ended.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_storytelling",
-        "prompt": "Look at these pictures and tell the story of a family visit to the community fair. Describe what happened, how people felt, and how the day ended.",
+        "prompt": "Use the story outline to tell the story of a family visit to the community fair. Describe what happened, how people felt, and how the day ended.",
+        "taskDescription": "Story outline:\n1. A family arrives at the community fair.\n2. They visit a hobby stall and try a craft activity.\n3. The youngest child gets lost for a short time.\n4. They find each other and leave the fair happy.",
         "maxDurationSeconds": 180,
         "followUpQuestions": [
           "Why did the family go to the fair?",
@@ -2321,12 +2320,6 @@
           "What problem happened in the third picture?",
           "How did they solve the problem?",
           "How did everyone feel at the end of the day?"
-        ],
-        "pictureSequence": [
-          "/images/gold-mocks/flyers/fgm2-059-story-1-arrive.svg",
-          "/images/gold-mocks/flyers/fgm2-059-story-2-stall.svg",
-          "/images/gold-mocks/flyers/fgm2-059-story-3-lost.svg",
-          "/images/gold-mocks/flyers/fgm2-059-story-4-happy.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

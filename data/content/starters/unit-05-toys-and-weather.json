@@ -2597,8 +2597,7 @@
             "passage": {
               "title": "A Windy Day in the Park",
               "text": "Today is windy but sunny. Tom and Sue go to the park.\n\nThese are Tom's toys: a robot and a teddy. Those are Sue's toys: two dolls and a puzzle.\n\nTom flies his kite. The kite is in the sky! Sue has red balloons. One balloon goes up, up, up!\n\nThere is a big cloud. It is not rainy. The children are happy.",
-              "wordCount": 58,
-              "imagePrompt": "A sunny windy park: a boy flying a kite, a girl with dolls and red balloons, a robot and teddy on the grass, one cloud in the sky."
+              "wordCount": 58
             }
           },
           "questions": [
@@ -2785,7 +2784,6 @@
             "passage": {
               "title": "A Rainy Day",
               "text": "Today the sky is grey. It is rainy and windy. We stay inside.\n\nI play with my teddy and my doll. My brother flies his kite when it is sunny.\n\nLook at those clouds! But now we do a puzzle. It is fun.\n\nTomorrow will be sunny. We can play outside!",
-              "imagePrompt": "Rainy window, teddy, doll, puzzle indoors; kite and clouds visible.",
               "wordCount": 51
             }
           },
@@ -2872,7 +2870,6 @@
             "passage": {
               "title": "A Rainy Day",
               "text": "Today the sky is grey. It is rainy and windy. We stay inside.\n\nI play with my teddy and my doll. My brother flies his kite when it is sunny.\n\nLook at those clouds! But now we do a puzzle. It is fun.\n\nTomorrow will be sunny. We can play outside!",
-              "imagePrompt": "Rainy window, teddy, doll, puzzle indoors; kite and clouds visible.",
               "wordCount": 51
             }
           },
@@ -3006,7 +3003,6 @@
             "passage": {
               "title": "A Rainy Day",
               "text": "Today the sky is grey. It is rainy and windy. We stay inside.\n\nI play with my teddy and my doll. My brother flies his kite when it is sunny.\n\nLook at those clouds! But now we do a puzzle. It is fun.\n\nTomorrow will be sunny. We can play outside!",
-              "imagePrompt": "Rainy window, teddy, doll, puzzle indoors; kite and clouds visible.",
               "wordCount": 51
             }
           },
@@ -3106,7 +3102,6 @@
             "passage": {
               "title": "Toy Shop Visit",
               "text": "Lin goes to a toy shop with her mother. She sees a red robot and a blue balloon.\n\n\"Can I have the teddy?\" asks Lin. Her mother says yes.\n\nThey buy a small puzzle too. Lin is very happy with her new toys.",
-              "imagePrompt": "Toy shop with robot, balloon, teddy bear and puzzle boxes.",
               "wordCount": 43
             }
           },
@@ -3193,7 +3188,6 @@
             "passage": {
               "title": "Toy Shop Visit",
               "text": "Lin goes to a toy shop with her mother. She sees a red robot and a blue balloon.\n\n\"Can I have the teddy?\" asks Lin. Her mother says yes.\n\nThey buy a small puzzle too. Lin is very happy with her new toys.",
-              "imagePrompt": "Toy shop with robot, balloon, teddy bear and puzzle boxes.",
               "wordCount": 43
             }
           },
@@ -3280,7 +3274,6 @@
             "passage": {
               "title": "Toy Shop Visit",
               "text": "Lin goes to a toy shop with her mother. She sees a red robot and a blue balloon.\n\n\"Can I have the teddy?\" asks Lin. Her mother says yes.\n\nThey buy a small puzzle too. Lin is very happy with her new toys.",
-              "imagePrompt": "Toy shop with robot, balloon, teddy bear and puzzle boxes.",
               "wordCount": 43
             }
           },
@@ -3382,7 +3375,6 @@
             "passage": {
               "title": "Toy Shop Visit",
               "text": "Lin goes to a toy shop with her mother. She sees a red robot and a blue balloon.\n\n\"Can I have the teddy?\" asks Lin. Her mother says yes.\n\nThey buy a small puzzle too. Lin is very happy with her new toys.",
-              "imagePrompt": "Toy shop with robot, balloon, teddy bear and puzzle boxes.",
               "wordCount": 43
             }
           },
@@ -3449,7 +3441,6 @@
             "passage": {
               "title": "Park in the Sun",
               "text": "It is sunny today! We go to the park with our toys.\n\nTom has a ball and a kite. Anna brings her doll.\n\nThe wind is strong — the kite flies high! These clouds are white.\n\nWe play until four o'clock. What a lovely day!",
-              "imagePrompt": "Sunny park with kite, ball, doll and white clouds.",
               "wordCount": 45
             }
           },
@@ -3536,7 +3527,6 @@
             "passage": {
               "title": "Park in the Sun",
               "text": "It is sunny today! We go to the park with our toys.\n\nTom has a ball and a kite. Anna brings her doll.\n\nThe wind is strong — the kite flies high! These clouds are white.\n\nWe play until four o'clock. What a lovely day!",
-              "imagePrompt": "Sunny park with kite, ball, doll and white clouds.",
               "wordCount": 45
             }
           },
@@ -3623,7 +3613,6 @@
             "passage": {
               "title": "Park in the Sun",
               "text": "It is sunny today! We go to the park with our toys.\n\nTom has a ball and a kite. Anna brings her doll.\n\nThe wind is strong — the kite flies high! These clouds are white.\n\nWe play until four o'clock. What a lovely day!",
-              "imagePrompt": "Sunny park with kite, ball, doll and white clouds.",
               "wordCount": 45
             }
           },
@@ -3729,7 +3718,6 @@
             "passage": {
               "title": "Park in the Sun",
               "text": "It is sunny today! We go to the park with our toys.\n\nTom has a ball and a kite. Anna brings her doll.\n\nThe wind is strong — the kite flies high! These clouds are white.\n\nWe play until four o'clock. What a lovely day!",
-              "imagePrompt": "Sunny park with kite, ball, doll and white clouds.",
               "wordCount": 45
             }
           },
@@ -6307,7 +6295,7 @@
           },
           "content": {
             "prompt": "Say what the weather is like and name a toy you like.",
-            "pictureDescription": "Window showing rain and clouds; teddy and doll on a table.",
+            "sceneDescription": "Window showing rain and clouds; teddy and doll on a table.",
             "followUpQuestions": [
               "What's the weather like?",
               "What toy do you like?"
@@ -6409,7 +6397,7 @@
           },
           "content": {
             "prompt": "Say what the weather is like and name a toy you like.",
-            "pictureDescription": "Window showing rain and clouds; teddy and doll on a table.",
+            "sceneDescription": "Window showing rain and clouds; teddy and doll on a table.",
             "followUpQuestions": [
               "What's the weather like?",
               "What toy do you like?"
@@ -6571,7 +6559,7 @@
           },
           "content": {
             "prompt": "Say what the weather is like and what you do when it rains.",
-            "pictureDescription": "Rain on the window; children with a puzzle indoors.",
+            "sceneDescription": "Rain on the window; children with a puzzle indoors.",
             "followUpQuestions": [
               "What's the weather like?",
               "What do you play with inside?"
@@ -6673,7 +6661,7 @@
           },
           "content": {
             "prompt": "Say what the weather is like and what you do when it rains.",
-            "pictureDescription": "Rain on the window; children with a puzzle indoors.",
+            "sceneDescription": "Rain on the window; children with a puzzle indoors.",
             "followUpQuestions": [
               "What's the weather like?",
               "What do you play with inside?"
@@ -6834,7 +6822,7 @@
           },
           "content": {
             "prompt": "Name two toys you like and say if it is sunny or rainy.",
-            "pictureDescription": "Sunny park with kite, ball and doll.",
+            "sceneDescription": "Sunny park with kite, ball and doll.",
             "followUpQuestions": [
               "What toys do you like?",
               "Is it sunny or rainy?"
@@ -6936,7 +6924,7 @@
           },
           "content": {
             "prompt": "Name two toys you like and say if it is sunny or rainy.",
-            "pictureDescription": "Sunny park with kite, ball and doll.",
+            "sceneDescription": "Sunny park with kite, ball and doll.",
             "followUpQuestions": [
               "What toys do you like?",
               "Is it sunny or rainy?"

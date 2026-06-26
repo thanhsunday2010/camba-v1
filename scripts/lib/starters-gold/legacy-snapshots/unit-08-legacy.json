@@ -803,8 +803,7 @@
             "passage": {
               "title": "Our Classroom",
               "text": "We are in our classroom. It is a nice room.\n\nThere are twenty desks. Every student has a desk. I've got a book and a pencil on my desk. My friend Nam has got a pen and a ruler.\n\nOur teacher is Miss Lan. She teaches English. She says: 'Open your books!' We like our lessons.\n\nNam's father is a farmer. My mother is a worker.",
-              "wordCount": 58,
-              "imagePrompt": "A classroom with desks, books, pens and pencils; a teacher at the front; students sitting at desks."
+              "wordCount": 58
             }
           },
           "questions": [
@@ -1199,7 +1198,7 @@
             "needsReview": false
           },
           "content": {
-            "taskDescription": "Look at the picture of a school bag and desk. Write short answers to the three questions.",
+            "taskDescription": "Read the scene about a school bag and desk. Write short answers to the three questions.",
             "prompts": [
               "1. What have you got in your bag? (Write: I've got a _____)",
               "2. What is on your desk? (Write one or two words)",
@@ -1295,8 +1294,8 @@
             "needsReview": false
           },
           "content": {
-            "prompt": "The examiner will ask you about school. Look at the picture of a classroom.",
-            "pictureDescription": "A classroom with a teacher, desks, books, pens, pencils and students.",
+            "prompt": "The examiner will ask you about school. Read the scene about a classroom.",
+            "sceneDescription": "A classroom with a teacher, desks, books, pens, pencils and students.",
             "followUpQuestions": [
               "Do you go to school?",
               "What have you got in your bag?",

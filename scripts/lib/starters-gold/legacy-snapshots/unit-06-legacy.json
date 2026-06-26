@@ -787,8 +787,7 @@
             "passage": {
               "title": "Tom's Lunch",
               "text": "Tom is hungry. It is lunch time.\n\nTom likes rice. He eats rice every day. He likes chicken too. He drinks water with his lunch.\n\nTom does not like fish. He does not like eggs.\n\nHis friend Anna likes apples and juice. She eats an apple after lunch. Tom likes cake on his birthday.",
-              "wordCount": 52,
-              "imagePrompt": "A boy at a table with rice, chicken, water and an apple; a girl with juice nearby."
+              "wordCount": 52
             }
           },
           "questions": [
@@ -1187,7 +1186,7 @@
             "needsReview": false
           },
           "content": {
-            "taskDescription": "Look at the picture of food on a table. Write short answers to the three questions.",
+            "taskDescription": "Read the scene about food on a table. Write short answers to the three questions.",
             "prompts": [
               "1. What food do you like? (Write: I like _____)",
               "2. What do you drink? (Write one word: milk / water / juice)",
@@ -1284,8 +1283,8 @@
             "needsReview": false
           },
           "content": {
-            "prompt": "The examiner will ask you about food and drink. Look at the picture of food on the table.",
-            "pictureDescription": "A table with rice, chicken, an apple, a glass of water and a banana.",
+            "prompt": "The examiner will ask you about food and drink. Read the scene about food on the table.",
+            "sceneDescription": "A table with rice, chicken, an apple, a glass of water and a banana.",
             "followUpQuestions": [
               "Are you hungry?",
               "What do you like to eat?",

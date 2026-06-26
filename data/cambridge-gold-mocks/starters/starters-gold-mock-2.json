@@ -109,13 +109,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Link names to pictures",
-      "instructions": "Link names to pictures",
+      "title": "Link names to descriptions",
+      "instructions": "Link names to descriptions",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/starters-gold-mock-2/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Max. He's feeding a brown rabbit in the garden.\nMia has got a small kitten. She's holding it carefully.\nLeo is wearing a blue shirt. A green parrot is on his shoulder.\nEva is riding a white pony near the farm gate.\nLook at Hugo. He's watching ducks on the pond in the park.",
-        "caption": "Link names to pictures"
+        "caption": "Link names to descriptions"
       }
     },
     {
@@ -135,13 +135,13 @@
       "partSlug": "listening-part-3",
       "sectionSlug": "listening",
       "partNumber": 3,
-      "title": "Tick the correct picture",
-      "instructions": "Tick the correct picture",
+      "title": "Choose the correct answer",
+      "instructions": "Choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/starters-gold-mock-2/listening-part-3.mp3",
-        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe cat is sleeping on the sofa in the living room.\nThe hungry dog is eating a big bone in the kitchen.\nThe rabbit is eating carrots near the fence.\nThe ducks are on the pond near the big willow tree.\nThe horse can jump over the fence very well.",
-        "caption": "Tick the correct picture"
+        "transcript": "Examiner: Listen and Choose the correct answer.\n\nThe cat is sleeping on the sofa in the living room.\nThe hungry dog is eating a big bone in the kitchen.\nThe rabbit is eating carrots near the fence.\nThe ducks are on the pond near the big willow tree.\nThe horse can jump over the fence very well.",
+        "caption": "Choose the correct answer"
       }
     },
     {
@@ -754,7 +754,7 @@
       "vocabularyTopics": [
         "animals"
       ],
-      "questionText": "Draw a bone next to the puppy. Which picture shows this?",
+      "questionText": "Draw a bone next to the puppy. Which option is correct?",
       "skillTag": "listening",
       "points": 1,
       "blueprintQuestionType": "mcq_listening",
@@ -840,7 +840,7 @@
         "animals",
         "park"
       ],
-      "questionText": "Draw a line from the girl to the horse. Which picture shows this?",
+      "questionText": "Draw a line from the girl to the horse. Which option is correct?",
       "skillTag": "listening",
       "points": 1,
       "blueprintQuestionType": "mcq_listening",
@@ -882,7 +882,7 @@
       "vocabularyTopics": [
         "animals"
       ],
-      "questionText": "Match the word 'rabbit' to the picture.",
+      "questionText": "Match the word 'rabbit' to the description.",
       "skillTag": "reading",
       "points": 1,
       "pairs": [
@@ -908,7 +908,7 @@
       "vocabularyTopics": [
         "home"
       ],
-      "questionText": "Match the word 'sofa' to the picture.",
+      "questionText": "Match the word 'sofa' to the description.",
       "skillTag": "reading",
       "points": 1,
       "pairs": [
@@ -935,7 +935,7 @@
         "park",
         "leisure"
       ],
-      "questionText": "Match the word 'swing' to the picture.",
+      "questionText": "Match the word 'swing' to the description.",
       "skillTag": "reading",
       "points": 1,
       "pairs": [
@@ -961,7 +961,7 @@
       "vocabularyTopics": [
         "animals"
       ],
-      "questionText": "Match the word 'duck' to the picture.",
+      "questionText": "Match the word 'duck' to the description.",
       "skillTag": "reading",
       "points": 1,
       "pairs": [
@@ -987,7 +987,7 @@
       "vocabularyTopics": [
         "home"
       ],
-      "questionText": "Match the word 'bedroom' to the picture.",
+      "questionText": "Match the word 'bedroom' to the description.",
       "skillTag": "reading",
       "points": 1,
       "pairs": [
@@ -1014,7 +1014,7 @@
         "home",
         "family"
       ],
-      "questionText": "Read: \"Dad is cooking pasta for dinner in the k…\" Choose the correct picture.",
+      "questionText": "Read: \"Dad is cooking pasta for dinner in the k…\" Choose the best answer.",
       "skillTag": "reading",
       "points": 1,
       "blueprintQuestionType": "reading_comprehension",
@@ -1057,7 +1057,7 @@
         "animals",
         "home"
       ],
-      "questionText": "Read: \"The grey cat is sleeping on the bed in t…\" Choose the correct picture.",
+      "questionText": "Read: \"The grey cat is sleeping on the bed in t…\" Choose the best answer.",
       "skillTag": "reading",
       "points": 1,
       "blueprintQuestionType": "reading_comprehension",
@@ -1100,7 +1100,7 @@
         "park",
         "leisure"
       ],
-      "questionText": "Read: \"The children are playing on the swings a…\" Choose the correct picture.",
+      "questionText": "Read: \"The children are playing on the swings a…\" Choose the best answer.",
       "skillTag": "reading",
       "points": 1,
       "blueprintQuestionType": "reading_comprehension",
@@ -1143,7 +1143,7 @@
         "home",
         "leisure"
       ],
-      "questionText": "Read: \"Grandma is reading a story book in the a…\" Choose the correct picture.",
+      "questionText": "Read: \"Grandma is reading a story book in the a…\" Choose the best answer.",
       "skillTag": "reading",
       "points": 1,
       "blueprintQuestionType": "reading_comprehension",
@@ -1186,7 +1186,7 @@
         "park",
         "weather"
       ],
-      "questionText": "Read: \"It is windy today, so Ben is flying his…\" Choose the correct picture.",
+      "questionText": "Read: \"It is windy today, so Ben is flying his…\" Choose the best answer.",
       "skillTag": "reading",
       "points": 1,
       "blueprintQuestionType": "reading_comprehension",
@@ -1443,17 +1443,17 @@
         "animals",
         "home"
       ],
-      "questionText": "Look at the picture. Write one sentence about the boy and his dog.",
+      "questionText": "Read the scene below. Write one sentence about the boy and his dog.",
       "skillTag": "writing",
       "points": 1,
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the boy and his dog.",
+        "prompt": "Read the scene below. Write one sentence about the boy and his dog.",
+        "taskDescription": "Scene: A boy is sitting on the sofa with his brown dog. The dog is resting its head on his lap.",
         "minWords": 3,
         "maxWords": 15,
-        "imageUrl": "/images/gold-mocks/starters/sgm2-036-boy-dog-sofa.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1471,17 +1471,17 @@
         "home",
         "family"
       ],
-      "questionText": "Look at the picture. Write one sentence about Mum in the kitchen.",
+      "questionText": "Read the scene below. Write one sentence about Mum in the kitchen.",
       "skillTag": "writing",
       "points": 1,
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about Mum in the kitchen.",
+        "prompt": "Read the scene below. Write one sentence about Mum in the kitchen.",
+        "taskDescription": "Scene: Mum is cooking dinner in the kitchen. There are pots on the stove and fruit on the counter.",
         "minWords": 3,
         "maxWords": 15,
-        "imageUrl": "/images/gold-mocks/starters/sgm2-037-mum-kitchen.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1499,17 +1499,17 @@
         "park",
         "animals"
       ],
-      "questionText": "Look at the picture. Write one sentence about the ducks on the pond.",
+      "questionText": "Read the scene below. Write one sentence about the ducks on the pond.",
       "skillTag": "writing",
       "points": 1,
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the ducks on the pond.",
+        "prompt": "Read the scene below. Write one sentence about the ducks on the pond.",
+        "taskDescription": "Scene: Five ducks are swimming on a pond in the park on a sunny day.",
         "minWords": 4,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/starters/sgm2-038-ducks-pond.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1527,18 +1527,17 @@
         "park",
         "leisure"
       ],
-      "questionText": "Look at the picture. Write two or three sentences about the playground.",
+      "questionText": "Read the scene below. Write two or three sentences about the playground.",
       "skillTag": "writing",
       "points": 1,
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write two or three sentences about the playground.",
+        "prompt": "Read the scene below. Write two or three sentences about the playground.",
         "taskDescription": "Describe what you can see in the park playground picture.",
         "minWords": 5,
         "maxWords": 25,
-        "imageUrl": "/images/gold-mocks/starters/sgm2-039-playground.svg",
         "requiredPoints": [
           "Say what is in the playground",
           "Say what the children are doing"
@@ -1560,18 +1559,17 @@
         "home",
         "animals"
       ],
-      "questionText": "Look at the picture. Write two or three sentences about the garden and the pets.",
+      "questionText": "Read the scene below. Write two or three sentences about the garden and the pets.",
       "skillTag": "writing",
       "points": 1,
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write two or three sentences about the garden and the pets.",
+        "prompt": "Read the scene below. Write two or three sentences about the garden and the pets.",
         "taskDescription": "Describe the garden and the animals you can see.",
         "minWords": 5,
         "maxWords": 25,
-        "imageUrl": "/images/gold-mocks/starters/sgm2-040-garden-pets.svg",
         "requiredPoints": [
           "Say what animals are in the garden",
           "Say what someone is doing"
@@ -1594,23 +1592,23 @@
         "park",
         "animals"
       ],
-      "questionText": "Look at the two park scene pictures. Tell your partner about the differences.",
+      "questionText": "Read the two park scene scenes below. Tell your partner about the differences.",
       "skillTag": "speaking",
       "points": 5,
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_picture_description",
-        "prompt": "Look at the two pictures of a park. Tell your partner about five differences between them.",
+        "prompt": "Read Scene A and Scene B below. Tell your partner about five differences between them.",
+        "taskDescription": "Scene A: A park with two ducks on the pond, a boy on the swing, and a red kite in the sky.\nScene B: The same park with four ducks, no boy on the swing, and a blue kite.",
         "maxDurationSeconds": 120,
         "followUpQuestions": [
-          "How many ducks are on the pond in picture A?",
-          "What colour is the bench in picture B?",
-          "Is there a dog in both pictures?",
-          "Where is the kite in picture A?",
-          "What is the girl doing in picture B?"
+          "How many ducks are on the pond in Scene A?",
+          "What colour is the bench in Scene B?",
+          "Is there a dog in both scenes?",
+          "Where is the kite in Scene A?",
+          "What is the girl doing in Scene B?"
         ],
-        "imageUrl": "/images/gold-mocks/starters/sgm2-041-park-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -1664,14 +1662,14 @@
         "animals",
         "family"
       ],
-      "questionText": "Look at these pictures and tell the story of Lily's day in the park with her dog.",
+      "questionText": "Use the story outline to tell the story of Lily's day in the park with her dog.",
       "skillTag": "speaking",
       "points": 5,
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_storytelling",
-        "prompt": "Look at these pictures and tell the story of Lily's day in the park with her dog.",
+        "prompt": "Use the story outline to tell the story of Lily's day in the park with her dog.",
         "maxDurationSeconds": 180,
         "followUpQuestions": [
           "Who went to the park with Lily?",
@@ -1679,12 +1677,6 @@
           "What did Lily eat?",
           "What was the weather like?",
           "What happened when they got home?"
-        ],
-        "pictureSequence": [
-          "/images/gold-mocks/starters/sgm2-043-story-1-leash.svg",
-          "/images/gold-mocks/starters/sgm2-043-story-2-pond.svg",
-          "/images/gold-mocks/starters/sgm2-043-story-3-icecream.svg",
-          "/images/gold-mocks/starters/sgm2-043-story-4-home.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

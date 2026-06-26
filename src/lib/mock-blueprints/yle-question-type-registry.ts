@@ -187,7 +187,7 @@ export const YLE_MOCK_QUESTION_TYPE_REGISTRY: Record<
     runtimeSupport: "supported",
     answerShape: "audio_response",
     requiredContentFields: ["question_text", "content.prompt"],
-    optionalContentFields: ["content.pictureDescription", "content.followUpQuestions"],
+    optionalContentFields: ["content.sceneDescription", "content.followUpQuestions"],
     mediaRequirements: { audio: false, image: true, passage: false },
     scoringAssumption: "Lesson speaking AI flow only.",
     reviewModeNotes: "Not in mock take flow.",

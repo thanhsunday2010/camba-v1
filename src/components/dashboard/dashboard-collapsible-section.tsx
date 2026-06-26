@@ -14,6 +14,8 @@ interface DashboardCollapsibleSectionProps {
   action?: React.ReactNode;
   children: React.ReactNode;
   className?: string;
+  /** Flat list style inside grouped secondary panel */
+  panel?: boolean;
 }
 
 export function DashboardCollapsibleSection({
@@ -25,17 +27,24 @@ export function DashboardCollapsibleSection({
   action,
   children,
   className,
+  panel = false,
 }: DashboardCollapsibleSectionProps) {
   const [open, setOpen] = useState(defaultOpen);
   const titleId = useId();
   const panelId = useId();
 
   return (
-    <section aria-labelledby={titleId} className={className}>
+    <section
+      aria-labelledby={titleId}
+      className={cn(panel && "border-t border-border/50 first:border-t-0 pt-3 first:pt-0", className)}
+    >
       <div className="flex items-center justify-between gap-2">
         <button
           type="button"
-          className="flex min-w-0 flex-1 items-center gap-2 rounded-xl py-1 text-left camba-focus-ring"
+          className={cn(
+            "flex min-w-0 flex-1 items-center gap-2 rounded-xl py-1 text-left camba-focus-ring",
+            panel && "py-1.5"
+          )}
           aria-expanded={open}
           aria-controls={panelId}
           onClick={() => setOpen((value) => !value)}
@@ -45,7 +54,7 @@ export function DashboardCollapsibleSection({
               <Icon className="h-4 w-4" />
             </div>
           ) : null}
-          <span id={titleId} className="camba-h3 text-foreground flex-1">
+          <span id={titleId} className={cn("text-foreground flex-1", panel ? "camba-body font-semibold" : "camba-h3")}>
             {title}
           </span>
           <ChevronDown

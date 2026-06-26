@@ -222,7 +222,9 @@ export function LessonPlayer({
               instructions={exercise.instructions}
               prompt={speakingPrompt}
               followUpQuestions={getFollowUpQuestions(content)}
-              pictureDescription={content.pictureDescription as string | undefined}
+              sceneDescription={
+                (content.sceneDescription ?? content.pictureDescription) as string | undefined
+              }
               targetLevel={targetLevel}
               labels={aiLabels}
               onComplete={() => markExerciseCompleted(exercise.id, { exerciseId: exercise.id })}

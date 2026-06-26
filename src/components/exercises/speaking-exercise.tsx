@@ -26,6 +26,8 @@ interface SpeakingExerciseProps {
   instructions?: string | null;
   prompt: string;
   followUpQuestions?: string[];
+  sceneDescription?: string;
+  /** @deprecated Use sceneDescription — kept for seeded DB rows not yet migrated */
   pictureDescription?: string;
   targetLevel?: string;
   labels: {
@@ -67,6 +69,7 @@ export function SpeakingExercise({
   instructions,
   prompt,
   followUpQuestions = [],
+  sceneDescription,
   pictureDescription,
   targetLevel,
   labels,
@@ -237,8 +240,8 @@ export function SpeakingExercise({
 
       <div className="rounded-xl border border-program/15 bg-program/5 p-4 space-y-3">
         <p className="camba-body font-medium text-foreground">{prompt}</p>
-        {pictureDescription && (
-          <p className="camba-caption text-muted italic">{pictureDescription}</p>
+        {(sceneDescription ?? pictureDescription) && (
+          <p className="camba-caption text-muted italic">{sceneDescription ?? pictureDescription}</p>
         )}
         {followUpQuestions.length > 0 && (
           <div>

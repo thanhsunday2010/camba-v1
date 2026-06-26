@@ -52,10 +52,6 @@ Year 8 students will visit the river habitat with a park ranger. Rare birds are 
 
 Friday — Community Action
 Families are invited to plant trees and learn about renewable energy at the town square. Registration is free at reception.`,
-  imagePrompt:
-    "School eco week poster with icons for solar energy, recycling bins, river wildlife, trees and climate; green educational infographic.",
-});
-
 const listeningScript1 = buildListeningScript({
   title: "Eco Week Assembly Talk",
   setting: "School assembly hall",
@@ -1073,7 +1069,7 @@ export default {
           content: {
             prompt:
               "The examiner will ask about energy, waste, climate, wildlife and environmental problems in your area.",
-            pictureDescription:
+            sceneDescription:
               "A simple scene with solar panels on a school roof, blue recycling bins, a river habitat with birds and a tree-planting event.",
             followUpQuestions: [
               "Do you try to save energy at home or at school? How?",

@@ -756,8 +756,7 @@
             "passage": {
               "title": "My Town",
               "text": "Hello! My name is Linh. I live in a small town.\n\nMy house is on Oak Street. There is a tree in front of my house. My school is next to the park. I walk to school every day.\n\nOn Main Street there is a shop. The shop is behind the bus stop. Many people go to the shop by bus.\n\nOn Sunday, my family goes to the park. We ride our bikes. I love my town!",
-              "wordCount": 68,
-              "imagePrompt": "A simple town map: a house on Oak Street with a tree in front, a school next to a park, a shop behind a bus stop on Main Street."
+              "wordCount": 68
             }
           },
           "questions": [
@@ -1164,7 +1163,7 @@
             "needsReview": false
           },
           "content": {
-            "taskDescription": "Look at the town map picture. Write short answers to the three questions.",
+            "taskDescription": "Read the town map description. Write short answers to the three questions.",
             "prompts": [
               "1. Where do you live? (Write: I live in a _____.)",
               "2. How do you go to school? (Write: I go by _____. — use bus, car or bike)",
@@ -1266,11 +1265,11 @@
           },
           "content": {
             "prompt": "The examiner will ask you about transport and places. Look at the town map picture if you have one.",
-            "pictureDescription": "A simple town map showing a house, school, park, shop, bus and car on a street.",
+            "sceneDescription": "A simple town map showing a house, school, park, shop, bus and car on a street.",
             "followUpQuestions": [
               "Where do you live?",
               "How do you go to school — by bus, car or bike?",
-              "What is this? (Point to a bus or car in the picture.)",
+              "What is this? (Point to a bus or car in the scene.)",
               "Where is the shop?",
               "Is the tree in front of the house or behind the house?"
             ],

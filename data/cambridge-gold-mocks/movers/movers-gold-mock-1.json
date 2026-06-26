@@ -117,13 +117,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Link names to pictures",
-      "instructions": "Link names to pictures",
+      "title": "Link names to descriptions",
+      "instructions": "Link names to descriptions",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/movers-gold-mock-1/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mia. She's holding a tennis racket.\nHugo is my classmate. He's got curly black hair.\nEva always sits at the front desk in our classroom.\nLook at Leo. He's running in the school race.\nNina's got a new green scarf today.\nMax is standing between Anna and Kim in the team photo.",
-        "caption": "Link names to pictures"
+        "caption": "Link names to descriptions"
       }
     },
     {
@@ -143,13 +143,13 @@
       "partSlug": "listening-part-3",
       "sectionSlug": "listening",
       "partNumber": 3,
-      "title": "Tick the correct picture",
-      "instructions": "Tick the correct picture",
+      "title": "Choose the correct answer",
+      "instructions": "Choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/movers-gold-mock-1/listening-part-3.mp3",
-        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe children are swimming in the lake at summer camp.\nThey eat cereal and fruit for breakfast every morning.\nTom can play the guitar and he loves singing too.\nThe weather at camp is hot and sunny this week.\nOn the forest walk they see rabbits and squirrels.\nTonight they are going to watch a film outside under the stars.",
-        "caption": "Tick the correct picture"
+        "transcript": "Examiner: Listen and Choose the correct answer.\n\nThe children are swimming in the lake at summer camp.\nThey eat cereal and fruit for breakfast every morning.\nTom can play the guitar and he loves singing too.\nThe weather at camp is hot and sunny this week.\nOn the forest walk they see rabbits and squirrels.\nTonight they are going to watch a film outside under the stars.",
+        "caption": "Choose the correct answer"
       }
     },
     {
@@ -1049,7 +1049,7 @@
         "hobbies"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "guitar",
@@ -1075,7 +1075,7 @@
         "sports"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "skateboard",
@@ -1101,7 +1101,7 @@
         "leisure"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "camera",
@@ -1127,7 +1127,7 @@
         "school"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "dictionary",
@@ -1153,7 +1153,7 @@
         "transport"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "helicopter",
@@ -1179,7 +1179,7 @@
         "nature"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "waterfall",
@@ -1206,7 +1206,7 @@
         "time"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1249,7 +1249,7 @@
         "sports"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1292,7 +1292,7 @@
         "leisure"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1335,7 +1335,7 @@
         "clothes"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1378,7 +1378,7 @@
         "home"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1421,7 +1421,7 @@
         "transport"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1721,15 +1721,15 @@
         "animals"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write one sentence about the giraffe.",
+      "questionText": "Read the scene below. Write one sentence about the giraffe.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the giraffe.",
+        "prompt": "Read the scene below. Write one sentence about the giraffe.",
+        "taskDescription": "Scene: A tall giraffe is eating leaves from a tree at the zoo.",
         "minWords": 3,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/movers/mgm-043-giraffe.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1749,15 +1749,15 @@
         "places"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write one sentence about the children in the park.",
+      "questionText": "Read the scene below. Write one sentence about the children in the park.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the children in the park.",
+        "prompt": "Read the scene below. Write one sentence about the children in the park.",
+        "taskDescription": "Scene: Children are playing football and riding bikes in a sunny park.",
         "minWords": 3,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/movers/mgm-044-park.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1844,16 +1844,15 @@
         "food"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write two or three sentences about the market.",
+      "questionText": "Read the scene below. Write two or three sentences about the market.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write two or three sentences about the market.",
+        "prompt": "Read the scene below. Write two or three sentences about the market.",
         "taskDescription": "Describe the market scene.",
         "minWords": 8,
         "maxWords": 30,
-        "imageUrl": "/images/gold-mocks/movers/mgm-047-market.svg",
         "requiredPoints": [
           "Say what people are buying",
           "Say where things are"
@@ -1877,16 +1876,15 @@
         "sports"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write two or three sentences about the football match.",
+      "questionText": "Read the scene below. Write two or three sentences about the football match.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write two or three sentences about the football match.",
+        "prompt": "Read the scene below. Write two or three sentences about the football match.",
         "taskDescription": "Describe what happened in the match.",
         "minWords": 8,
         "maxWords": 35,
-        "imageUrl": "/images/gold-mocks/movers/mgm-048-football.svg",
         "requiredPoints": [
           "Say who is playing",
           "Say what is happening"
@@ -1911,21 +1909,21 @@
         "places"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at the two pictures. Tell your partner about the differences.",
+      "questionText": "Read the two scenes below. Tell your partner about the differences.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_picture_description",
-        "prompt": "Look at the two pictures of a park. Tell your partner about five differences between them.",
+        "prompt": "Read Scene A and Scene B below. Tell your partner about five differences between them.",
+        "taskDescription": "Scene A: A sunny park with children on the grass, a dog running, and flowers in bloom.\nScene B: The same park on a rainy day with empty benches, no dog, and grey skies.",
         "maxDurationSeconds": 120,
         "followUpQuestions": [
-          "How many ducks are in the lake in picture A?",
-          "What colour is the bench in picture B?",
-          "Is there a dog in both pictures?",
-          "Where is the kite in picture A?",
-          "What is the boy holding in picture B?"
+          "How many ducks are in the lake in Scene A?",
+          "What colour is the bench in Scene B?",
+          "Is there a dog in both scenes?",
+          "Where is the kite in Scene A?",
+          "What is the boy holding in Scene B?"
         ],
-        "imageUrl": "/images/gold-mocks/movers/mgm-049-park-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -1982,12 +1980,13 @@
         "feelings"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at the pictures and tell the story.",
+      "questionText": "Use the story outline and tell the story.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_storytelling",
-        "prompt": "Look at these pictures and tell the story of how Anna found her lost dog.",
+        "prompt": "Use the story outline to tell the story of how Anna found her lost dog.",
+        "taskDescription": "Story outline:\n1. Anna is worried because her dog is missing.\n2. She searches the neighbourhood with her mum.\n3. They find the dog in the park near the trees.\n4. Anna hugs her dog and feels very happy.",
         "maxDurationSeconds": 180,
         "followUpQuestions": [
           "Where did Anna look first?",
@@ -1995,12 +1994,6 @@
           "Where did she find the dog?",
           "How did Anna feel at the end?",
           "What did she do when she saw her dog?"
-        ],
-        "pictureSequence": [
-          "/images/gold-mocks/movers/mgm-051-story-1-worry.svg",
-          "/images/gold-mocks/movers/mgm-051-story-2-search.svg",
-          "/images/gold-mocks/movers/mgm-051-story-3-park.svg",
-          "/images/gold-mocks/movers/mgm-051-story-4-happy.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

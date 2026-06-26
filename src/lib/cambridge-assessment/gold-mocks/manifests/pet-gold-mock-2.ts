@@ -660,7 +660,6 @@ const petQuestions = [
     taskDescription: "Write about 100 words.",
     minWords: 100,
     maxWords: 130,
-    imageUrl: "/images/gold-mocks/pet-gold-mock-2-story.svg",
   }),
   goldMcq({
     questionRef: "pgm2-037",
@@ -1126,11 +1125,11 @@ const petQuestions = [
     grammarTags: ["present_continuous","prepositions"],
     vocabularyTopics: ["health","places"],
     skillTag: "speaking",
-    questionText: "Describe the photograph and say what you think is happening.",
+    questionText: "Read the scene description and say what you think is happening.",
     cambridgeTaskType: "picture_description_speaking",
-    prompt: "Look at the photograph. Describe the people, the place, and explain why they might be there.",
+    prompt: "Read the scene description. Describe the people, the place, and explain why they might be there.",
+    taskDescription: "Scene: People are exercising in an outdoor fitness area. Some are jogging, others are stretching near trees in a public park.",
     maxDurationSeconds: 240,
-    imageUrl: "/images/gold-mocks/pet-gold-mock-2-speaking-photo.svg"
   }),
   goldSpeaking({
     questionRef: "pgm2-064",
@@ -1168,7 +1167,7 @@ export const PET_GOLD_MOCK_2 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Part 1 — Listen and choose the correct picture",
+      "Part 1 — Listen and choose the correct answer",
       "Girl: I'm recording a short video review in the studio. Boy: At the beach, we're carrying rubbish bags and gloves for the clean-up."
     ),
     listeningAudio(

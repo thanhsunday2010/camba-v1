@@ -184,10 +184,6 @@ export const passageMinhSchoolDay = buildPassage({
 At seven thirty Minh goes to school. He has lunch at twelve. After school he always does his homework before dinner. He sometimes plays football in the park.
 
 Minh never watches TV before homework. He eats dinner at six and goes to bed at nine.`,
-  imagePrompt:
-    "A Vietnamese boy aged nine in a bright bedroom getting ready for school, with a school bag, clock showing morning time, and a family breakfast table in the background; cheerful children's book illustration style.",
-});
-
 export const listeningScriptMorning = buildListeningScript({
   title: "At Home in the Morning",
   setting: "A kitchen in the morning, light traffic outside",
@@ -342,8 +338,8 @@ export const speakingChecks = [
     instructions: "Answer the questions about your morning routine. Speak for up to 90 seconds.",
     sortOrder: 2,
     prompt: "The examiner asks about your morning habits before school.",
-    pictureDescription:
-      "Four frames: (1) child waking up with an alarm clock, (2) eating breakfast at a table, (3) brushing teeth in a bathroom, (4) walking to school with a bag.",
+    sceneDescription:
+      "Story outline: (1) child waking up with an alarm clock, (2) eating breakfast at a table, (3) brushing teeth in a bathroom, (4) walking to school with a bag.",
     followUpQuestions: [
       "What time do you wake up?",
       "What do you have for breakfast?",
@@ -368,7 +364,7 @@ export const speakingChecks = [
     instructions: "Answer using always, sometimes or never. Speak for up to 90 seconds.",
     sortOrder: 2,
     prompt: "The examiner asks how often you do different activities.",
-    pictureDescription:
+    sceneDescription:
       "A boy doing homework at a desk, playing football in a park, and watching TV — labels show always, sometimes, never.",
     followUpQuestions: [
       "Do you always do your homework after school?",
@@ -394,8 +390,8 @@ export const speakingChecks = [
     instructions: "Describe your day from morning to bedtime. Speak for up to 90 seconds.",
     sortOrder: 2,
     prompt: "Tell the examiner about your typical school day.",
-    pictureDescription:
-      "A timeline illustration: wake up → school → lunch → homework → dinner → bed, with clock times for a Vietnamese primary student.",
+    sceneDescription:
+      "Timeline: wake up → school → lunch → homework → dinner → bed, with clock times for a Vietnamese primary student.",
     followUpQuestions: [
       "What time do you go to school?",
       "Where do you have lunch?",

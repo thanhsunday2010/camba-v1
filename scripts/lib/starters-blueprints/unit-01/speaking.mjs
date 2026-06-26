@@ -25,7 +25,7 @@ export function speakingLessons({
           instructions: "Choose the best thing to say.",
           exerciseType: "multiple_choice",
           sortOrder: 0,
-          content: { pictureDescription: FAMILY_PICTURE },
+          content: { sceneDescription: FAMILY_PICTURE },
           questions: [
             buildMcq({
               questionText: "Someone asks: What is your name? You say:",
@@ -55,7 +55,7 @@ export function speakingLessons({
           instructions: "Choose the best reply.",
           exerciseType: "multiple_choice",
           sortOrder: 1,
-          content: { pictureDescription: FAMILY_PICTURE },
+          content: { sceneDescription: FAMILY_PICTURE },
           questions: [
             buildMcq({
               questionText: "Who is she? (your mother) You say:",
@@ -154,16 +154,16 @@ export function speakingLessons({
       slug: "speaking-picture-who-is-who",
       title: "Lesson 2: Picture — Who Is Who?",
       learningObjective:
-        "Identify and name family and friends in a picture using short phrases.",
+        "Identify and name family and friends from a scene description using short phrases.",
       estimatedMinutes: 18,
       exercises: [
         buildExercise({
           slug: "speaking-picture-learn",
           title: "Learn: Who Is in the Picture?",
-          instructions: "Imagine a family picture. Choose the best answer.",
+          instructions: "Read the scene description. Choose the best answer.",
           exerciseType: "multiple_choice",
           sortOrder: 0,
-          content: { pictureDescription: FAMILY_PICTURE },
+          content: { sceneDescription: FAMILY_PICTURE },
           questions: [
             buildMcq({
               questionText: "The tall man is the _____.",
@@ -196,7 +196,7 @@ export function speakingLessons({
           instructions: "Choose what you would say for each person.",
           exerciseType: "multiple_choice",
           sortOrder: 1,
-          content: { pictureDescription: FAMILY_PICTURE },
+          content: { sceneDescription: FAMILY_PICTURE },
           questions: [
             buildMcq({
               questionText: "Point to your mother. You say:",

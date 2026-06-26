@@ -181,10 +181,6 @@ His career counsellor, Ms Phuong, thinks Minh is realistic. "He has prepared wel
 Minh disagrees slightly with one point. "Some people say scholarships are only for perfect students," he argued. "I don't think that's fair. Hard work and clear ambitions matter too."
 
 The school will hold a scholarship information session next Thursday. Minh hopes more Year 10 students will attend.`,
-  imagePrompt:
-    "A fifteen-year-old Vietnamese student at a laptop writing a blog; thought bubbles show university campus, engineering tools and a scholarship certificate; Hanoi school setting.",
-});
-
 export const listeningScriptCareerTalk = buildListeningScript({
   title: "School Career Talk — Engineering Pathways",
   setting: "School hall, career day afternoon",
@@ -394,7 +390,7 @@ export const speakingChecks = [
     instructions: "Answer the questions about ambitions and careers. Speak for up to 150 seconds.",
     sortOrder: 2,
     prompt: "The examiner asks about your career ambitions and university plans.",
-    pictureDescription:
+    sceneDescription:
       "A fifteen-year-old student at a careers fair with university brochures, engineering display and scholarship poster — Minh in school uniform.",
     followUpQuestions: [
       "What is your main career ambition?",
@@ -420,7 +416,7 @@ export const speakingChecks = [
     instructions: "Answer using scholarship vocabulary. Speak for up to 150 seconds.",
     sortOrder: 2,
     prompt: "The examiner asks about scholarships and applications.",
-    pictureDescription:
+    sceneDescription:
       "Scholarship information session at school; students with application forms; deadline poster shows 15 May.",
     followUpQuestions: [
       "Have you ever applied for a scholarship?",
@@ -446,7 +442,7 @@ export const speakingChecks = [
     instructions: "Discuss career advice and attitudes. Speak for up to 150 seconds.",
     sortOrder: 2,
     prompt: "The examiner asks about career talks and realistic planning.",
-    pictureDescription:
+    sceneDescription:
       "Careers adviser speaking in school hall; students listening; slide shows engineering pathways and university degree requirements.",
     followUpQuestions: [
       "What was the main purpose of the last career talk you attended?",

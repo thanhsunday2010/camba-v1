@@ -22,7 +22,7 @@
       "Name family members and friends using core Starters vocabulary.",
       "Use verb be (am, is, are) to describe people.",
       "Use possessive adjectives my, your, his, her correctly.",
-      "Answer who-questions about people in pictures and short texts.",
+      "Answer who-questions about people in scene descriptions and short texts.",
       "Introduce yourself and one family member in words and short phrases."
     ],
     "grammarFocus": [
@@ -770,8 +770,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 58,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 58
             }
           },
           "questions": [
@@ -1169,7 +1168,7 @@
             "needsReview": false
           },
           "content": {
-            "taskDescription": "Look at the picture of a family. Write short answers to the three questions.",
+            "taskDescription": "Read the scene about a family. Write short answers to the three questions.",
             "prompts": [
               "1. What is your name?",
               "2. Who is the woman? (Write: my mother / my sister / my friend)",
@@ -1266,7 +1265,7 @@
           },
           "content": {
             "prompt": "The examiner will ask you about you and your family. Look at your family photo if you have one.",
-            "pictureDescription": "A simple picture showing a mother, father, two children and a friend in a garden.",
+            "sceneDescription": "Scene: a mother, father, two children and a friend in a garden.",
             "followUpQuestions": [
               "What is your name?",
               "How old are you?",

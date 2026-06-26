@@ -187,8 +187,6 @@ Linh doesn't have to go to revision club on Wednesday, but she wants extra help 
 
 LIBRARY NOTICE (posted outside the lecture hall)
 Revision week: 10–14 March. The library is open Monday–Thursday, 3:30–6:00 p.m. Friday: CLOSED (staff meeting). All books must be returned before 7 March.`,
-  imagePrompt:
-    "A thirteen-year-old Vietnamese secondary student with books and timetable in a school library corridor; a printed library notice on the wall with opening hours and revision week dates.",
 });
 
 export const listeningScriptLibraryNotice = buildListeningScript({
@@ -362,7 +360,7 @@ export const speakingChecks = [
     instructions: "Answer the questions about study habits. Speak for up to 120 seconds.",
     sortOrder: 2,
     prompt: "The examiner asks about your subjects, timetable and revision.",
-    pictureDescription:
+    sceneDescription:
       "A secondary student at a desk with timetable, books and library notice on the wall — labels show subject, revision, homework.",
     followUpQuestions: [
       "What is your favourite subject?",
@@ -388,7 +386,7 @@ export const speakingChecks = [
     instructions: "Answer using assignment vocabulary. Speak for up to 120 seconds.",
     sortOrder: 2,
     prompt: "The examiner asks about your homework and deadlines.",
-    pictureDescription:
+    sceneDescription:
       "A student talking to a teacher about a history assignment; calendar shows Friday deadline and revision club on Wednesday.",
     followUpQuestions: [
       "Tell me about your history assignment.",
@@ -414,7 +412,7 @@ export const speakingChecks = [
     instructions: "Describe your school and future plans. Speak for up to 120 seconds.",
     sortOrder: 2,
     prompt: "Tell the examiner about your campus, semester and future study plans.",
-    pictureDescription:
+    sceneDescription:
       "West Hill Secondary campus with library, lecture hall and students with timetables — Linh (13) in school uniform.",
     followUpQuestions: [
       "Tell me about your school campus.",

@@ -22,7 +22,7 @@
       "Name furniture and rooms in a home using Starters vocabulary.",
       "Use there is and there are to describe a room.",
       "Use prepositions in, on and under to say where things are.",
-      "Find objects in a picture scene when reading short texts.",
+      "Find objects in a scene when reading short texts.",
       "Follow simple instructions about objects in a room."
     ],
     "grammarFocus": [
@@ -2708,8 +2708,7 @@
             "passage": {
               "title": "Our Living Room",
               "text": "This is our living room. There is a big sofa. There are two chairs.\n\nThere is a table. A lamp is on the table. A cup is on the table too.\n\nThere is a picture on the wall. The door is next to the window.\n\nMy cat is under the chair. It likes to sleep there!",
-              "wordCount": 52,
-              "imagePrompt": "A living room with sofa, two chairs, table with lamp and cup, picture on wall, door, window, and a cat under a chair."
+              "wordCount": 52
             }
           },
           "questions": [
@@ -2896,7 +2895,6 @@
             "passage": {
               "title": "My Bedroom",
               "text": "This is my bedroom. There is a bed and a lamp. My bag is on the chair.\n\nThere are two books under the table. The window is big.\n\nLook! My shoes are under the bed. The door is open.\n\nI love my room. It is small but nice!",
-              "imagePrompt": "Bedroom with bed, lamp, chair, table, window, door and bag.",
               "wordCount": 48
             }
           },
@@ -2983,7 +2981,6 @@
             "passage": {
               "title": "My Bedroom",
               "text": "This is my bedroom. There is a bed and a lamp. My bag is on the chair.\n\nThere are two books under the table. The window is big.\n\nLook! My shoes are under the bed. The door is open.\n\nI love my room. It is small but nice!",
-              "imagePrompt": "Bedroom with bed, lamp, chair, table, window, door and bag.",
               "wordCount": 48
             }
           },
@@ -3117,7 +3114,6 @@
             "passage": {
               "title": "My Bedroom",
               "text": "This is my bedroom. There is a bed and a lamp. My bag is on the chair.\n\nThere are two books under the table. The window is big.\n\nLook! My shoes are under the bed. The door is open.\n\nI love my room. It is small but nice!",
-              "imagePrompt": "Bedroom with bed, lamp, chair, table, window, door and bag.",
               "wordCount": 48
             }
           },
@@ -3217,7 +3213,6 @@
             "passage": {
               "title": "My Bedroom",
               "text": "This is my bedroom. There is a bed and a lamp. My bag is on the chair.\n\nThere are two books under the table. The window is big.\n\nLook! My shoes are under the bed. The door is open.\n\nI love my room. It is small but nice!",
-              "imagePrompt": "Bedroom with bed, lamp, chair, table, window, door and bag.",
               "wordCount": 48
             }
           },
@@ -3304,7 +3299,6 @@
             "passage": {
               "title": "My Bedroom",
               "text": "This is my bedroom. There is a bed and a lamp. My bag is on the chair.\n\nThere are two books under the table. The window is big.\n\nLook! My shoes are under the bed. The door is open.\n\nI love my room. It is small but nice!",
-              "imagePrompt": "Bedroom with bed, lamp, chair, table, window, door and bag.",
               "wordCount": 48
             }
           },
@@ -3391,7 +3385,6 @@
             "passage": {
               "title": "My Bedroom",
               "text": "This is my bedroom. There is a bed and a lamp. My bag is on the chair.\n\nThere are two books under the table. The window is big.\n\nLook! My shoes are under the bed. The door is open.\n\nI love my room. It is small but nice!",
-              "imagePrompt": "Bedroom with bed, lamp, chair, table, window, door and bag.",
               "wordCount": 48
             }
           },
@@ -3497,7 +3490,6 @@
             "passage": {
               "title": "My Bedroom",
               "text": "This is my bedroom. There is a bed and a lamp. My bag is on the chair.\n\nThere are two books under the table. The window is big.\n\nLook! My shoes are under the bed. The door is open.\n\nI love my room. It is small but nice!",
-              "imagePrompt": "Bedroom with bed, lamp, chair, table, window, door and bag.",
               "wordCount": 48
             }
           },
@@ -3564,7 +3556,6 @@
             "passage": {
               "title": "In the Kitchen",
               "text": "Mother is in the kitchen. There is a table and four chairs.\n\nThe milk is in the fridge. The rice is in a cupboard.\n\nThere are apples on the table. The lamp is on — it is dark outside.\n\nWe eat dinner here every day.",
-              "imagePrompt": "Kitchen with table, chairs, fridge, food on table and lamp on.",
               "wordCount": 45
             }
           },
@@ -3651,7 +3642,6 @@
             "passage": {
               "title": "Living Room",
               "text": "We sit in the living room. There is a big sofa and a small table.\n\nThe TV is on the table. My cat sleeps on the sofa.\n\nThere is a plant near the window. My shoes are in front of the door.\n\nOur home is warm and happy!",
-              "imagePrompt": "Living room with sofa, table, TV, window, door and cat.",
               "wordCount": 48
             }
           },
@@ -3738,7 +3728,6 @@
             "passage": {
               "title": "Living Room",
               "text": "We sit in the living room. There is a big sofa and a small table.\n\nThe TV is on the table. My cat sleeps on the sofa.\n\nThere is a plant near the window. My shoes are in front of the door.\n\nOur home is warm and happy!",
-              "imagePrompt": "Living room with sofa, table, TV, window, door and cat.",
               "wordCount": 48
             }
           },
@@ -3840,7 +3829,6 @@
             "passage": {
               "title": "Living Room",
               "text": "We sit in the living room. There is a big sofa and a small table.\n\nThe TV is on the table. My cat sleeps on the sofa.\n\nThere is a plant near the window. My shoes are in front of the door.\n\nOur home is warm and happy!",
-              "imagePrompt": "Living room with sofa, table, TV, window, door and cat.",
               "wordCount": 48
             }
           },
@@ -6452,7 +6440,7 @@
           },
           "content": {
             "prompt": "Say what is in your room and where two things are.",
-            "pictureDescription": "A bedroom with bed, lamp, chair, bag and books.",
+            "sceneDescription": "A bedroom with bed, lamp, chair, bag and books.",
             "followUpQuestions": [
               "What is in your room?",
               "Where is your bag?"
@@ -6554,7 +6542,7 @@
           },
           "content": {
             "prompt": "Say what is in your room and where two things are.",
-            "pictureDescription": "A bedroom with bed, lamp, chair, bag and books.",
+            "sceneDescription": "A bedroom with bed, lamp, chair, bag and books.",
             "followUpQuestions": [
               "What is in your room?",
               "Where is your bag?"
@@ -6716,7 +6704,7 @@
           },
           "content": {
             "prompt": "Say where your bag and shoes are at home.",
-            "pictureDescription": "Bedroom with bag on a chair and shoes under a bed.",
+            "sceneDescription": "Bedroom with bag on a chair and shoes under a bed.",
             "followUpQuestions": [
               "Where is your bag?",
               "Where are your shoes?"
@@ -6818,7 +6806,7 @@
           },
           "content": {
             "prompt": "Say where your bag and shoes are at home.",
-            "pictureDescription": "Bedroom with bag on a chair and shoes under a bed.",
+            "sceneDescription": "Bedroom with bag on a chair and shoes under a bed.",
             "followUpQuestions": [
               "Where is your bag?",
               "Where are your shoes?"
@@ -6979,7 +6967,7 @@
           },
           "content": {
             "prompt": "Say two rooms in your home and one thing in each room.",
-            "pictureDescription": "House cutaway showing kitchen, bedroom and living room.",
+            "sceneDescription": "House cutaway showing kitchen, bedroom and living room.",
             "followUpQuestions": [
               "What rooms do you have?",
               "What is in your kitchen?"
@@ -7081,7 +7069,7 @@
           },
           "content": {
             "prompt": "Say two rooms in your home and one thing in each room.",
-            "pictureDescription": "House cutaway showing kitchen, bedroom and living room.",
+            "sceneDescription": "House cutaway showing kitchen, bedroom and living room.",
             "followUpQuestions": [
               "What rooms do you have?",
               "What is in your kitchen?"

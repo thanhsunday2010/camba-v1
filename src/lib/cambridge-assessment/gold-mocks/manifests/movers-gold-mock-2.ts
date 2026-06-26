@@ -532,7 +532,7 @@ const QUESTIONS = [
     grammarTags: ["articles"],
     vocabularyTopics: ["weather"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "thunderstorm", rightText: "Storm with loud thunder and rain" }],
   }),
 
@@ -547,7 +547,7 @@ const QUESTIONS = [
     grammarTags: ["verb_be"],
     vocabularyTopics: ["jobs"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "astronaut", rightText: "Person who travels in space" }],
   }),
 
@@ -562,7 +562,7 @@ const QUESTIONS = [
     grammarTags: ["there_is_are"],
     vocabularyTopics: ["technology"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "keyboard", rightText: "Part of a computer with letters on it" }],
   }),
 
@@ -577,7 +577,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["jobs"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "firefighter", rightText: "Person who puts out fires" }],
   }),
 
@@ -592,7 +592,7 @@ const QUESTIONS = [
     grammarTags: ["prepositions"],
     vocabularyTopics: ["technology"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "smartphone", rightText: "Small phone you can carry in your pocket" }],
   }),
 
@@ -607,7 +607,7 @@ const QUESTIONS = [
     grammarTags: ["comparatives"],
     vocabularyTopics: ["weather"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "lightning", rightText: "Bright flash of light in the sky during a storm" }],
   }),
 
@@ -622,7 +622,7 @@ const QUESTIONS = [
     grammarTags: ["verb_be"],
     vocabularyTopics: ["weather", "home"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The thunderstorm is very loud tonight and we can't sleep.",
     choices: [
       { text: "Dark sky with lightning", isCorrect: true },
@@ -642,7 +642,7 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["jobs", "technology"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "My uncle is teaching computer skills at our school.",
     choices: [
       { text: "Man helping children use computers", isCorrect: true },
@@ -662,7 +662,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["weather", "leisure"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "We watch the weather news on TV every evening after dinner.",
     choices: [
       { text: "Family watching weather on TV", isCorrect: true },
@@ -682,7 +682,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["jobs", "clothes"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "My mum wears a blue uniform when she works at the hospital.",
     choices: [
       { text: "Woman in blue nurse uniform", isCorrect: true },
@@ -702,7 +702,7 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["technology", "school"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The robot is moving around the classroom and saying hello.",
     choices: [
       { text: "Robot in a classroom", isCorrect: true },
@@ -722,7 +722,7 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["weather", "transport"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "It's snowing heavily so we can't ride our bikes to school today.",
     choices: [
       { text: "Snow falling, bikes in garage", isCorrect: true },
@@ -868,12 +868,12 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["weather"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write one sentence about the thunderstorm.",
+    questionText: "Read the scene below. Write one sentence about the thunderstorm.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the thunderstorm.",
+    prompt: "Read the scene below. Write one sentence about the thunderstorm.",
     minWords: 3,
     maxWords: 18,
-    imageUrl: "/images/gold-mocks/movers/mgm2-043-thunderstorm.png",
+    taskDescription: "Scene: Dark clouds are over a town and lightning is flashing during a thunderstorm.",
   }),
 
   goldWriting({
@@ -887,12 +887,12 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["jobs", "food"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write one sentence about the chef.",
+    questionText: "Read the scene below. Write one sentence about the chef.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the chef in the kitchen.",
+    prompt: "Read the scene below. Write one sentence about the chef in the kitchen.",
     minWords: 3,
     maxWords: 18,
-    imageUrl: "/images/gold-mocks/movers/mgm2-044-chef.png",
+    taskDescription: "Scene: A chef in a white hat is cooking pasta in a busy restaurant kitchen.",
   }),
 
   goldWriting({
@@ -946,12 +946,11 @@ const QUESTIONS = [
     grammarTags: ["present_continuous", "prepositions"],
     vocabularyTopics: ["technology", "school"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write two or three sentences about the computer lab.",
+    questionText: "Read the scene below. Write two or three sentences about the computer lab.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write two or three sentences about the computer lab.",
+    prompt: "Read the scene below. Write two or three sentences about the computer lab.",
     minWords: 8,
     maxWords: 30,
-    imageUrl: "/images/gold-mocks/movers/mgm2-047-computer-lab.png",
     taskDescription: "Describe the computer lab scene.",
     requiredPoints: ["Say what the children are doing", "Say what technology you can see"],
   }),
@@ -967,12 +966,11 @@ const QUESTIONS = [
     grammarTags: ["past_simple", "adverbs_frequency"],
     vocabularyTopics: ["weather", "transport"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write two or three sentences about the rainy street.",
+    questionText: "Read the scene below. Write two or three sentences about the rainy street.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write two or three sentences about the rainy street.",
+    prompt: "Read the scene below. Write two or three sentences about the rainy street.",
     minWords: 8,
     maxWords: 35,
-    imageUrl: "/images/gold-mocks/movers/mgm2-048-rainy-street.png",
     taskDescription: "Describe the rainy street scene.",
     requiredPoints: ["Say what the weather is like", "Say what people are doing"],
   }),
@@ -988,18 +986,19 @@ const QUESTIONS = [
     grammarTags: ["there_is_are", "prepositions"],
     vocabularyTopics: ["weather", "places"],
     skillTag: "speaking",
-    questionText: "Look at the two pictures. Tell your partner about the differences.",
+    questionText: "Read the two scenes below. Tell your partner about the differences.",
     cambridgeTaskType: "speaking_picture_description",
     prompt:
-      "Look at the two pictures of a town in different weather. Tell your partner about five differences between them.",
+      "Read Scene A and Scene B below. Tell your partner about five differences between them.",
+    taskDescription: `Scene A: A town street on a sunny day with people in T-shirts and open shop doors.
+Scene B: The same street in heavy rain with umbrellas, wet roads, and closed café tables.`,
     maxDurationSeconds: 120,
-    imageUrl: "/images/gold-mocks/movers/mgm2-049-weather-pair.png",
     followUpQuestions: [
-      "Is it sunny in picture A?",
-      "How many clouds are in picture B?",
-      "Are people wearing raincoats in picture B?",
-      "Where is the rainbow in picture A?",
-      "What is the boy holding in picture B?",
+      "Is it sunny in Scene A?",
+      "How many clouds are in Scene B?",
+      "Are people wearing raincoats in Scene B?",
+      "Where is the rainbow in Scene A?",
+      "What is the boy holding in Scene B?",
     ],
   }),
 
@@ -1039,16 +1038,15 @@ const QUESTIONS = [
     grammarTags: ["past_simple", "past_continuous"],
     vocabularyTopics: ["technology", "places", "feelings"],
     skillTag: "speaking",
-    questionText: "Look at the pictures and tell the story.",
+    questionText: "Use the story outline and tell the story.",
     cambridgeTaskType: "speaking_storytelling",
-    prompt: "Look at these pictures and tell the story of how Tom found his lost tablet.",
+    prompt: "Use the story outline to tell the story of how Tom found his lost tablet.",
+    taskDescription: `Story outline:
+1. Tom realises his tablet is missing and looks worried.
+2. He searches his bag and asks his sister for help.
+3. They find the tablet in the school library.
+4. Tom smiles and thanks his sister.`,
     maxDurationSeconds: 180,
-    pictureSequence: [
-      "/images/gold-mocks/movers/mgm2-051-story-1-worry.png",
-      "/images/gold-mocks/movers/mgm2-051-story-2-search.png",
-      "/images/gold-mocks/movers/mgm2-051-story-3-library.png",
-      "/images/gold-mocks/movers/mgm2-051-story-4-happy.png",
-    ],
     followUpQuestions: [
       "Where did Tom look first?",
       "Who helped him?",
@@ -1070,7 +1068,7 @@ export const MOVERS_GOLD_MOCK_2 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Link names to pictures",
+      "Link names to descriptions",
       "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Emma. She's holding a red umbrella because it's raining.\nSam is working on the building site. He's wearing a yellow hard hat.\nLily always uses a laptop in computer class.\nBen is pointing at the weather map on the TV screen.\nZoe's got small tools and she's fixing a computer.\nJake is standing between two computer screens in the office."
     ),
     listeningAudio(
@@ -1082,8 +1080,8 @@ export const MOVERS_GOLD_MOCK_2 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-3",
       3,
-      "Tick the correct picture",
-      "Examiner: Listen and tick the correct picture.\n\nAt robot club the children are learning how to build robots.\nMaria uses a weather app every morning before school.\nOur robot can play music when we clap our hands.\nThe forecast says it is going to rain tomorrow.\nThey use a tablet to film their school technology project.\nThis afternoon they are going to test the new drone in the playground."
+      "Choose the correct answer",
+      "Examiner: Listen and Choose the correct answer.\n\nAt robot club the children are learning how to build robots.\nMaria uses a weather app every morning before school.\nOur robot can play music when we clap our hands.\nThe forecast says it is going to rain tomorrow.\nThey use a tablet to film their school technology project.\nThis afternoon they are going to test the new drone in the playground."
     ),
     listeningAudio(
       "listening-part-4",

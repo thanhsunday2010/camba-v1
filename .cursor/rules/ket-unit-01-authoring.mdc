@@ -28,6 +28,7 @@ Legacy monolithic `unit-0N.mjs` (6 lessons) — migrate to modular gold using TE
 ## Settings
 
 - `levelTag`: `"ket"`
+- **No image-based lesson questions** — text-only `sceneDescription`; see `unit-content-authoring.mdc`.
 - Writing `minWords`: 25
 - Speaking `maxDurationSeconds`: 120
 - Character: **Linh (13)** — secondary student

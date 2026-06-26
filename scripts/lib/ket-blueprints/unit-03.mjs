@@ -27,7 +27,6 @@ When you feel unwell, note your symptoms and rest at home. You should drink a li
 For a bad injury, go to hospital immediately. The nurse will clean the wound and give you a prescription for medicine. Most people recover in a week if they follow the doctor's advice.
 
 Remember: you need to finish all your medicine, even when you feel better. If symptoms continue, book another appointment. Prevention, rest and good habits help you stay healthy all year.`,
-  imagePrompt: 'A friendly doctor in a clinic giving health advice on a poster about symptoms, prevention and appointments; clean medical setting.',
 });
 
 const doctorVisitScript1 = buildListeningScript({
@@ -546,7 +545,7 @@ export default {
           sortOrder: 2,
           content: {
             prompt: 'The examiner will ask you about your health, symptoms, doctor visits and healthy habits.',
-            pictureDescription: 'A person resting at home with a cup of warm water, a calendar showing a doctor appointment, and a poster about prevention.',
+            sceneDescription: 'A person resting at home with a cup of warm water, a calendar showing a doctor appointment, and a poster about prevention.',
             followUpQuestions: [
               'Do you usually eat healthy food? What do you eat?',
               'How often do you exercise?',

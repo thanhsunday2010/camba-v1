@@ -166,7 +166,7 @@ export const unit = {
     "Name family members and friends using twelve Starters vocabulary words.",
     "Use am, is and are to describe people at Pre-A1 level.",
     "Use possessive adjectives my, your, his and her before family nouns.",
-    "Answer who-questions about people in pictures and short texts.",
+    "Answer who-questions about people in scene descriptions and short texts.",
     "Read Mai's family text and listen for names and relationships.",
     "Write and speak short answers about yourself, family and friends.",
   ],
@@ -181,10 +181,6 @@ My father is tall. His hair is black. My mother is kind. Her eyes are brown.
 I have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.
 
 We are happy!`,
-  imagePrompt:
-    "A cheerful family photo: parents, two children, and a friend waving.",
-});
-
 export const listeningScriptAtHome = buildListeningScript({
   title: "At Home",
   setting: "A living room after school",
@@ -249,7 +245,7 @@ export const writingChecks = [
     instructions: "Write short answers. Use 1–5 words for each answer.",
     sortOrder: 2,
     taskDescription:
-      "Look at the picture of a family. Write short answers to the three questions.",
+      "Read the scene about a family. Write short answers to the three questions.",
     prompts: [
       "1. What is your name?",
       "2. Who is the woman? (Write: my mother / my sister / my friend)",
@@ -341,7 +337,7 @@ const STARTERS_SPEAKING_CRITERIA = {
 };
 
 const FAMILY_PICTURE =
-  "A simple picture showing a mother, father, two children and a friend in a garden.";
+  "Scene: a mother, father, two children and a friend in a garden.";
 
 export const speakingChecks = [
   buildSpeakingCheck({
@@ -353,7 +349,7 @@ export const speakingChecks = [
     sortOrder: 2,
     prompt:
       "The examiner will ask you about you and your family. Look at your family photo if you have one.",
-    pictureDescription: FAMILY_PICTURE,
+    sceneDescription: FAMILY_PICTURE,
     followUpQuestions: [
       "What is your name?",
       "How old are you?",
@@ -375,10 +371,10 @@ export const speakingChecks = [
     slug: "speaking-picture-check",
     topicTag: TOPIC,
     title: "Check: Picture Interview",
-    instructions: "Answer about people in a family picture.",
+    instructions: "Answer about people in the scene.",
     sortOrder: 2,
-    prompt: "Look at a family picture. The examiner asks about the people.",
-    pictureDescription: FAMILY_PICTURE,
+    prompt: "Read the scene below about a family. The examiner asks about the people.",
+    sceneDescription: FAMILY_PICTURE,
     followUpQuestions: [
       "Who is the woman?",
       "Who is the boy?",
@@ -402,7 +398,7 @@ export const speakingChecks = [
     sortOrder: 2,
     prompt:
       "The examiner asks everyday questions about you, your family and friends.",
-    pictureDescription: FAMILY_PICTURE,
+    sceneDescription: FAMILY_PICTURE,
     followUpQuestions: [
       "What is your name?",
       "Who is he in the picture?",

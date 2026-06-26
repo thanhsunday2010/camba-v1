@@ -184,7 +184,6 @@ export const passageMinhFamilyVisit = buildPassage({
 His aunt, who works at a hospital, welcomed him at the door. His cousin Nam, who is the same age as Minh, showed him the beach. Their neighbour Linh, who is a good friend of the family, came to dinner on the first night.
 
 On Saturday the family had a party. They invited many relatives and guests. Minh has never seen so many cousins! They celebrated Uncle Binh's birthday with cake and music. Minh stayed for three days and has already promised to visit again.`,
-  imagePrompt:
     "An eleven-year-old Vietnamese boy on a sunny beach in Da Nang with his aunt, uncle and cousin, a family party with guests in the background, cheerful children's book illustration style.",
 });
 
@@ -345,8 +344,8 @@ export const speakingChecks = [
     instructions: "Answer the questions about visiting family. Speak for up to 120 seconds.",
     sortOrder: 2,
     prompt: "The examiner asks about visits to relatives.",
-    pictureDescription:
-      "Four frames: (1) boy arriving at aunt's house with a bag, (2) cousins at the beach, (3) family dinner table, (4) boy waving goodbye at the door.",
+    sceneDescription:
+      "Story outline: (1) boy arriving at aunt's house with a bag, (2) cousins at the beach, (3) family dinner table, (4) boy waving goodbye at the door.",
     followUpQuestions: [
       "Have you ever visited an aunt or uncle in another city?",
       "Who did you stay with?",
@@ -371,7 +370,7 @@ export const speakingChecks = [
     instructions: "Answer using party vocabulary. Speak for up to 120 seconds.",
     sortOrder: 2,
     prompt: "The examiner asks about a family party or celebration.",
-    pictureDescription:
+    sceneDescription:
       "A family party with guests, cake, balloons and relatives talking — labels show invite, guest, celebrate, welcome.",
     followUpQuestions: [
       "Have you ever been to a big family party?",
@@ -397,7 +396,7 @@ export const speakingChecks = [
     instructions: "Describe relatives and neighbours. Speak for up to 120 seconds.",
     sortOrder: 2,
     prompt: "Tell the examiner about your extended family and neighbours.",
-    pictureDescription:
+    sceneDescription:
       "A family tree sketch with aunt, uncle, cousin labels plus a neighbour's house next door — Minh and Linh waving.",
     followUpQuestions: [
       "Do you have a cousin who lives near you?",

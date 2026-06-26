@@ -148,10 +148,10 @@ export function createExerciseFactory(level, topicTag) {
     };
   }
 
-  function buildPassage({ title, text, imagePrompt, wordCount }) {
+  function buildPassage({ title, text, wordCount }) {
     const wc =
       wordCount ?? text.split(/\s+/).filter(Boolean).length;
-    return { title, text, wordCount: wc, imagePrompt };
+    return { title, text, wordCount: wc };
   }
 
   function buildListeningScript({
@@ -322,7 +322,7 @@ export function createExerciseFactory(level, topicTag) {
     instructions,
     sortOrder,
     prompt,
-    pictureDescription,
+    sceneDescription,
     followUpQuestions,
     suggestedAnswers,
     assessmentCriteria,
@@ -337,7 +337,7 @@ export function createExerciseFactory(level, topicTag) {
       sortOrder,
       content: {
         prompt,
-        pictureDescription,
+        sceneDescription,
         followUpQuestions,
         suggestedAnswers,
         assessmentCriteria,

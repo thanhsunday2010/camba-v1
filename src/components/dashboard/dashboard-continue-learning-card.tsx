@@ -71,32 +71,24 @@ export function DashboardContinueLearningCard({
       />
 
       {nextLesson ? (
-        <div className="space-y-2">
-          <LessonCard
-            title={nextLesson.title}
-            subtitle={
-              compact
-                ? `${nextLesson.estimated_minutes} ${labels.minutes}`
-                : `${nextLesson.estimated_minutes} ${labels.minutes} · ${nextLesson.completionPercent}%${
-                    nextLesson.lastActivityAt
-                      ? ` · ${formatRelativeDate(nextLesson.lastActivityAt, labels.lastActivity)}`
-                      : ""
-                  }`
-            }
-            href={`/learning/lesson/${nextLesson.id}`}
-            state={lessonState(nextLesson.completionPercent)}
-            stateLabel={
-              nextLesson.completionPercent > 0 ? labels.inProgress : labels.continueLesson
-            }
-            recommended
-          />
-          <Link href={`/learning/lesson/${nextLesson.id}`} className="camba-focus-ring rounded-xl block">
-            <Button variant="quest" size={compact ? "default" : "default"} className="w-full sm:w-auto">
-              {nextLesson.completionPercent > 0 ? labels.continueLesson : labels.startLearning}
-              <ArrowRight className="h-4 w-4 ml-1" aria-hidden />
-            </Button>
-          </Link>
-        </div>
+        <LessonCard
+          title={nextLesson.title}
+          subtitle={
+            compact
+              ? `${nextLesson.estimated_minutes} ${labels.minutes}`
+              : `${nextLesson.estimated_minutes} ${labels.minutes} · ${nextLesson.completionPercent}%${
+                  nextLesson.lastActivityAt
+                    ? ` · ${formatRelativeDate(nextLesson.lastActivityAt, labels.lastActivity)}`
+                    : ""
+                }`
+          }
+          href={`/learning/lesson/${nextLesson.id}`}
+          state={lessonState(nextLesson.completionPercent)}
+          stateLabel={
+            nextLesson.completionPercent > 0 ? labels.inProgress : labels.continueLesson
+          }
+          recommended
+        />
       ) : (
         <DashboardEmptyState
           icon={BookOpen}

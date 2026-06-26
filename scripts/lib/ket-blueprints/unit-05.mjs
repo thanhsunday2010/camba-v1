@@ -22,10 +22,6 @@ Train travel has some clear advantages. You can book a reservation online and ch
 However, not everyone agrees. Some parents worry when there is a long delay in winter. Others think the destination station is too far from the sports centre. The school newspaper asked readers: "Is the train really the best choice?"
 
 Most students answered yes. They explained that they were reading or doing homework while they were travelling. One student wrote, "I will keep using the train next term because it saves time on busy days."`,
-  imagePrompt:
-    "A modern train station platform with students carrying backpacks, a departure board showing times, and a train arriving.",
-});
-
 const trainAnnouncementScript = buildListeningScript({
   title: "Platform Change Announcement",
   setting: "City Central Station, loudspeaker",
@@ -1097,7 +1093,7 @@ export default {
           content: {
             prompt:
               "The examiner will ask you about how you travel, your plans and experiences with delays or reservations.",
-            pictureDescription:
+            sceneDescription:
               "A busy train station with a departure board, passengers with luggage on platform 3, and a ticket machine.",
             followUpQuestions: [
               "How do you usually travel to school or work?",

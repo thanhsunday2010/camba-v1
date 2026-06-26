@@ -590,7 +590,6 @@ const ketQuestions = [
     taskDescription: "Write 35 words or more.",
     minWords: 35,
     maxWords: 100,
-    imageUrl: "/images/gold-mocks/ket-gold-mock-2-story.svg",
   }),
 
   // ── listening-part-1: MCQ pictures (5) ────────────────────────────────────
@@ -1067,12 +1066,12 @@ const ketQuestions = [
     grammarTags: ["present_continuous", "prepositions"],
     vocabularyTopics: ["travel", "transport"],
     skillTag: "speaking",
-    questionText: "Describe the picture and say what the people are doing.",
+    questionText: "Read the scene description and say what the people are doing.",
     cambridgeTaskType: "picture_description_speaking",
     prompt:
-      "Look at the photograph of a busy train station. Describe what you can see and say where the people might be going.",
+      "Read the scene description. Describe what you can see and say where the people might be going.",
+    taskDescription: "Scene: Travellers are waiting on a busy train platform. A train is arriving, people are checking timetables, and a family is carrying suitcases.",
     maxDurationSeconds: 120,
-    imageUrl: "/images/gold-mocks/ket-gold-mock-2-speaking-photo.svg",
   }),
 ];
 
@@ -1087,7 +1086,7 @@ export const KET_GOLD_MOCK_2 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Part 1 — Listen and choose the correct picture",
+      "Part 1 — Listen and choose the correct answer",
       "Man: I think I've got everything — passport, tickets, and my suitcase is ready by the door."
     ),
     listeningAudio(

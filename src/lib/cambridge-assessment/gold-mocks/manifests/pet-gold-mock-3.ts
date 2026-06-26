@@ -660,7 +660,6 @@ const petQuestions = [
     taskDescription: "Write about 100 words.",
     minWords: 100,
     maxWords: 130,
-    imageUrl: "/images/gold-mocks/pet-gold-mock-3-story.svg",
   }),
   goldMcq({
     questionRef: "pgm3-037",
@@ -1126,11 +1125,11 @@ const petQuestions = [
     grammarTags: ["present_continuous","prepositions"],
     vocabularyTopics: ["culture","places"],
     skillTag: "speaking",
-    questionText: "Describe the photograph and say what you think is happening.",
+    questionText: "Read the scene description and say what you think is happening.",
     cambridgeTaskType: "picture_description_speaking",
-    prompt: "Look at the photograph. Describe the setting, the people, and what you think they are doing.",
+    prompt: "Read the scene description. Describe the setting, the people, and what you think they are doing.",
+    taskDescription: "Scene: Students are at an international cultural festival. They are watching a dance performance and trying food from different countries.",
     maxDurationSeconds: 240,
-    imageUrl: "/images/gold-mocks/pet-gold-mock-3-speaking-photo.svg"
   }),
   goldSpeaking({
     questionRef: "pgm3-064",
@@ -1168,7 +1167,7 @@ export const PET_GOLD_MOCK_3 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Part 1 — Listen and choose the correct picture",
+      "Part 1 — Listen and choose the correct answer",
       "Woman: I'm asking about internship forms at the careers desk. Friends: We're celebrating a reunion with food in the park."
     ),
     listeningAudio(

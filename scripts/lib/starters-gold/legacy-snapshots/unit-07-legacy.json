@@ -22,7 +22,7 @@
       "Name furniture and rooms in a home using Starters vocabulary.",
       "Use there is and there are to describe a room.",
       "Use prepositions in, on and under to say where things are.",
-      "Find objects in a picture scene when reading short texts.",
+      "Find objects in a scene when reading short texts.",
       "Follow simple instructions about objects in a room."
     ],
     "grammarFocus": [
@@ -787,8 +787,7 @@
             "passage": {
               "title": "Our Living Room",
               "text": "This is our living room. There is a big sofa. There are two chairs.\n\nThere is a table. A lamp is on the table. A cup is on the table too.\n\nThere is a picture on the wall. The door is next to the window.\n\nMy cat is under the chair. It likes to sleep there!",
-              "wordCount": 52,
-              "imagePrompt": "A living room with sofa, two chairs, table with lamp and cup, picture on wall, door, window, and a cat under a chair."
+              "wordCount": 52
             }
           },
           "questions": [
@@ -1191,7 +1190,7 @@
             "needsReview": false
           },
           "content": {
-            "taskDescription": "Look at the picture of a bedroom. Write short answers to the three questions.",
+            "taskDescription": "Read the scene about a bedroom. Write short answers to the three questions.",
             "prompts": [
               "1. What is in your room? (Write: There is a _____)",
               "2. Where is your bag? (Write: on / in / under + furniture)",
@@ -1289,8 +1288,8 @@
             "needsReview": false
           },
           "content": {
-            "prompt": "The examiner will ask you about your home. Look at the picture of a house.",
-            "pictureDescription": "A simple house picture showing a living room with sofa and lamp, a kitchen, and a bedroom with a bed.",
+            "prompt": "The examiner will ask you about your home. Read the scene about a house.",
+            "sceneDescription": "A simple house picture showing a living room with sofa and lamp, a kitchen, and a bedroom with a bed.",
             "followUpQuestions": [
               "Where do you sleep?",
               "What is in your living room?",

@@ -301,7 +301,7 @@ export function vocabularyLessons({
               difficultyRating: 2,
             }),
             buildMcq({
-              questionText: "Look at the picture: a young male child. He is a _____.",
+              questionText: "Read the description: a young male child. He is a _____.",
               skillTag: "vocabulary",
               topicTag,
               explanation: "Boy (cậu bé) = young male. Girl là nữ.",

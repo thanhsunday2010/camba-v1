@@ -22,7 +22,7 @@
       "Name common sports and leisure activities using Starters vocabulary.",
       "Use can to talk about what you are able to do.",
       "Use play and go with sports and activities correctly.",
-      "Match activities to pictures in short texts.",
+      "Match activities to descriptions in short texts.",
       "Listen and identify sports, games and actions.",
       "Talk about what you can do and what games you play."
     ],
@@ -2646,8 +2646,7 @@
             "passage": {
               "title": "Sports Day at School",
               "text": "Hello! My name is Ben. Today is Sports Day at school.\n\nI can run fast. My friend Kim can jump high. Tom plays football. He can kick the ball very well.\n\nAfter lunch, we play a game. Anna can catch the ball. Lily plays tennis. She has a racket and a ball.\n\nIn the afternoon, we ride our bikes. Sports Day is fun!",
-              "wordCount": 58,
-              "imagePrompt": "A school sports day: children running, kicking a football, playing tennis, and riding bikes on a field."
+              "wordCount": 58
             }
           },
           "questions": [
@@ -2834,7 +2833,6 @@
             "passage": {
               "title": "Sports Day",
               "text": "Today is Sports Day at school. We run and play games.\n\nTom can run fast. Anna can swim well. I can play football.\n\nMy friend likes tennis. We use a ball for many games.\n\nLook! Ben rides his bike. Sports are fun!",
-              "imagePrompt": "School sports day with running, football, tennis and bike.",
               "wordCount": 42
             }
           },
@@ -2921,7 +2919,6 @@
             "passage": {
               "title": "Sports Day",
               "text": "Today is Sports Day at school. We run and play games.\n\nTom can run fast. Anna can swim well. I can play football.\n\nMy friend likes tennis. We use a ball for many games.\n\nLook! Ben rides his bike. Sports are fun!",
-              "imagePrompt": "School sports day with running, football, tennis and bike.",
               "wordCount": 42
             }
           },
@@ -3055,7 +3052,6 @@
             "passage": {
               "title": "Sports Day",
               "text": "Today is Sports Day at school. We run and play games.\n\nTom can run fast. Anna can swim well. I can play football.\n\nMy friend likes tennis. We use a ball for many games.\n\nLook! Ben rides his bike. Sports are fun!",
-              "imagePrompt": "School sports day with running, football, tennis and bike.",
               "wordCount": 42
             }
           },
@@ -3155,7 +3151,6 @@
             "passage": {
               "title": "Sports Day",
               "text": "Today is Sports Day at school. We run and play games.\n\nTom can run fast. Anna can swim well. I can play football.\n\nMy friend likes tennis. We use a ball for many games.\n\nLook! Ben rides his bike. Sports are fun!",
-              "imagePrompt": "School sports day with running, football, tennis and bike.",
               "wordCount": 42
             }
           },
@@ -3242,7 +3237,6 @@
             "passage": {
               "title": "Sports Day",
               "text": "Today is Sports Day at school. We run and play games.\n\nTom can run fast. Anna can swim well. I can play football.\n\nMy friend likes tennis. We use a ball for many games.\n\nLook! Ben rides his bike. Sports are fun!",
-              "imagePrompt": "School sports day with running, football, tennis and bike.",
               "wordCount": 42
             }
           },
@@ -3329,7 +3323,6 @@
             "passage": {
               "title": "Sports Day",
               "text": "Today is Sports Day at school. We run and play games.\n\nTom can run fast. Anna can swim well. I can play football.\n\nMy friend likes tennis. We use a ball for many games.\n\nLook! Ben rides his bike. Sports are fun!",
-              "imagePrompt": "School sports day with running, football, tennis and bike.",
               "wordCount": 42
             }
           },
@@ -3433,7 +3426,6 @@
             "passage": {
               "title": "Sports Day",
               "text": "Today is Sports Day at school. We run and play games.\n\nTom can run fast. Anna can swim well. I can play football.\n\nMy friend likes tennis. We use a ball for many games.\n\nLook! Ben rides his bike. Sports are fun!",
-              "imagePrompt": "School sports day with running, football, tennis and bike.",
               "wordCount": 42
             }
           },
@@ -3500,7 +3492,6 @@
             "passage": {
               "title": "Weekend Fun",
               "text": "On Saturday I play football in the park with my friends.\n\nOn Sunday we swim in the pool. My sister can't swim — she plays with a ball.\n\nFather runs every morning. Can you ride a bike? Yes, I can!\n\nWe love sports and games!",
-              "imagePrompt": "Park and pool scenes with football, swimming, running and bike.",
               "wordCount": 45
             }
           },
@@ -3587,7 +3578,6 @@
             "passage": {
               "title": "After School",
               "text": "School finishes at three o'clock. What do you do after school?\n\nI play a game on the computer. Then I go outside.\n\nMy brother plays tennis. I ride my bike. We run in the garden.\n\nIn the evening we are tired. Sport makes us strong!",
-              "imagePrompt": "Children playing football, tennis and riding bikes after school.",
               "wordCount": 45
             }
           },
@@ -3674,7 +3664,6 @@
             "passage": {
               "title": "Weekend Fun",
               "text": "On Saturday I play football in the park with my friends.\n\nOn Sunday we swim in the pool. My sister can't swim — she plays with a ball.\n\nFather runs every morning. Can you ride a bike? Yes, I can!\n\nWe love sports and games!",
-              "imagePrompt": "Park and pool scenes with football, swimming, running and bike.",
               "wordCount": 45
             }
           },
@@ -3776,7 +3765,6 @@
             "passage": {
               "title": "Weekend Fun",
               "text": "On Saturday I play football in the park with my friends.\n\nOn Sunday we swim in the pool. My sister can't swim — she plays with a ball.\n\nFather runs every morning. Can you ride a bike? Yes, I can!\n\nWe love sports and games!",
-              "imagePrompt": "Park and pool scenes with football, swimming, running and bike.",
               "wordCount": 45
             }
           },
@@ -6396,7 +6384,7 @@
           },
           "content": {
             "prompt": "Say two sports or activities you can do.",
-            "pictureDescription": "Children playing football, swimming and riding bikes.",
+            "sceneDescription": "Children playing football, swimming and riding bikes.",
             "followUpQuestions": [
               "Can you swim?",
               "What sport do you play?"
@@ -6498,7 +6486,7 @@
           },
           "content": {
             "prompt": "Say two sports or activities you can do.",
-            "pictureDescription": "Children playing football, swimming and riding bikes.",
+            "sceneDescription": "Children playing football, swimming and riding bikes.",
             "followUpQuestions": [
               "Can you swim?",
               "What sport do you play?"
@@ -6660,7 +6648,7 @@
           },
           "content": {
             "prompt": "Say one sport you can play and one you can't.",
-            "pictureDescription": "Sports field with football, tennis and swimming pool.",
+            "sceneDescription": "Sports field with football, tennis and swimming pool.",
             "followUpQuestions": [
               "Can you play football?",
               "Can you swim?"
@@ -6762,7 +6750,7 @@
           },
           "content": {
             "prompt": "Say one sport you can play and one you can't.",
-            "pictureDescription": "Sports field with football, tennis and swimming pool.",
+            "sceneDescription": "Sports field with football, tennis and swimming pool.",
             "followUpQuestions": [
               "Can you play football?",
               "Can you swim?"
@@ -6923,7 +6911,7 @@
           },
           "content": {
             "prompt": "Say what you do after school and one sport you play.",
-            "pictureDescription": "Children with ball, bike and tennis racket after school.",
+            "sceneDescription": "Children with ball, bike and tennis racket after school.",
             "followUpQuestions": [
               "What do you do after school?",
               "What sport do you play?"
@@ -7025,7 +7013,7 @@
           },
           "content": {
             "prompt": "Say what you do after school and one sport you play.",
-            "pictureDescription": "Children with ball, bike and tennis racket after school.",
+            "sceneDescription": "Children with ball, bike and tennis racket after school.",
             "followUpQuestions": [
               "What do you do after school?",
               "What sport do you play?"

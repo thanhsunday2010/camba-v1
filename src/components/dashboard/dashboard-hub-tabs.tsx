@@ -34,7 +34,7 @@ export function DashboardHubTabs({ activeTab, labels }: DashboardHubTabsProps) {
       onChange={(id) => {
         router.replace(dashboardHubHref(id as DashboardHubTab));
       }}
-      className="mb-6 sm:mb-8"
+      className="mb-4 sm:mb-5"
     />
   );
 }

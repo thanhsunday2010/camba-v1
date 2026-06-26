@@ -36,7 +36,6 @@ HOW TO APPLY
 Send a short email with your name and work experience to jobs@greenwaybooks.co.uk before 30 April. We will contact successful candidates for an interview.
 
 Our shop manager, Ms Pham, started here as a student. She says: "This job helped me build skills for my career."`,
-  imagePrompt: 'A bookshop window display with a hiring poster showing salary, shift hours and apply-by email details; friendly urban shop front.',
 });
 
 const interviewScript1 = buildListeningScript({
@@ -556,7 +555,7 @@ export default {
           sortOrder: 2,
           content: {
             prompt: 'The examiner will ask you about your job, work experience, salary and career plans.',
-            pictureDescription: 'A young person in a shop uniform talking to a manager, with a shift schedule on the wall.',
+            sceneDescription: 'A young person in a shop uniform talking to a manager, with a shift schedule on the wall.',
             followUpQuestions: [
               'Do you have a part-time job now? What do you do?',
               'Where do you work and who are your colleagues?',

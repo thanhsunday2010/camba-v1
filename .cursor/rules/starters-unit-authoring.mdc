@@ -23,6 +23,7 @@ alwaysApply: false
 7. Review exercises must be **hand-crafted**, not duplicates of Check.
 8. All `explanation` fields in **Vietnamese** with pedagogical distractor notes on MCQ.
 9. `topicTag` = unit slug; `levelTag` = `"starters"`.
+10. **No image-based questions** — use `sceneDescription` (text) only; see `unit-content-authoring.mdc`.
 
 ## Pipeline (run in order)
 

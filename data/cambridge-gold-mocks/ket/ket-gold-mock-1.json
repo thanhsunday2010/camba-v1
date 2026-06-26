@@ -128,13 +128,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Part 1 — Listen and choose the correct picture",
-      "instructions": "Part 1 — Listen and choose the correct picture",
+      "title": "Part 1 — Listen and choose the correct answer",
+      "instructions": "Part 1 — Listen and choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/ket-gold-mock-1/listening-part-1.mp3",
         "transcript": "Woman: I'd like six of those red apples, please. Shop assistant: Here you are. That's three pounds.",
-        "caption": "Part 1 — Listen and choose the correct picture"
+        "caption": "Part 1 — Listen and choose the correct answer"
       }
     },
     {
@@ -1283,7 +1283,6 @@
         "taskDescription": "Write 35 words or more.",
         "minWords": 35,
         "maxWords": 100,
-        "imageUrl": "/images/gold-mocks/ket-gold-mock-1-story.svg",
         "rubricId": "gold-write_story-v1"
       }
     },
@@ -2179,14 +2178,14 @@
         "leisure"
       ],
       "skillTag": "speaking",
-      "questionText": "Talk about the picture and compare the two scenes.",
+      "questionText": "Read the scene description and describe what you see.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "picture_description_speaking",
-        "prompt": "Look at the photograph. Describe what you can see and say how the people might be feeling.",
+        "prompt": "Read the scene description. Describe what you can see and say how the people might be feeling.",
+        "taskDescription": "Scene: A group of teenagers are in a city park on a sunny afternoon. Some are sitting on benches talking, others are playing with a ball near a fountain.",
         "maxDurationSeconds": 120,
-        "imageUrl": "/images/gold-mocks/ket-gold-mock-1-speaking-photo.svg",
         "rubricId": "gold-picture_description_speaking-v1"
       }
     }

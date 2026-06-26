@@ -617,7 +617,7 @@ const QUESTIONS = [
     grammarTags: ["articles"],
     vocabularyTopics: ["nature"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "meadow", rightText: "Grassy field full of wild flowers" }],
   }),
 
@@ -632,7 +632,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["feelings"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "relieved", rightText: "Feeling happy because a worry has gone" }],
   }),
 
@@ -647,7 +647,7 @@ const QUESTIONS = [
     grammarTags: ["verb_be"],
     vocabularyTopics: ["leisure"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "board game", rightText: "Game you play on a table with pieces and rules" }],
   }),
 
@@ -662,7 +662,7 @@ const QUESTIONS = [
     grammarTags: ["there_is_are"],
     vocabularyTopics: ["nature", "places"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "cliff", rightText: "High rock face beside the sea" }],
   }),
 
@@ -677,7 +677,7 @@ const QUESTIONS = [
     grammarTags: ["comparatives"],
     vocabularyTopics: ["feelings"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "embarrassed", rightText: "Feeling shy or uncomfortable in front of others" }],
   }),
 
@@ -692,7 +692,7 @@ const QUESTIONS = [
     grammarTags: ["possessives"],
     vocabularyTopics: ["leisure", "sports"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "frisbee", rightText: "Flat disc you throw and catch in the park" }],
   }),
 
@@ -707,7 +707,7 @@ const QUESTIONS = [
     grammarTags: ["superlatives"],
     vocabularyTopics: ["nature", "animals"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "habitat", rightText: "Natural home where an animal or plant lives" }],
   }),
 
@@ -722,7 +722,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["nature", "animals"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The school butterfly garden attracts bees and colourful insects every spring.",
     choices: [
       { text: "Garden with butterflies and flowers", isCorrect: true },
@@ -742,7 +742,7 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["leisure", "feelings"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The crowd is cheering because their favourite band is playing on stage.",
     choices: [
       { text: "Excited crowd at a concert", isCorrect: true },
@@ -762,7 +762,7 @@ const QUESTIONS = [
     grammarTags: ["past_simple"],
     vocabularyTopics: ["nature", "feelings"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Last week rangers rescued a young fox that was trapped near the forest path.",
     choices: [
       { text: "Rangers helping a fox", isCorrect: true },
@@ -782,7 +782,7 @@ const QUESTIONS = [
     grammarTags: ["future_going_to"],
     vocabularyTopics: ["leisure", "travel"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "We are going to pack swimming costumes and sun hats for our lakeside holiday.",
     choices: [
       { text: "Family packing holiday bags", isCorrect: true },
@@ -802,7 +802,7 @@ const QUESTIONS = [
     grammarTags: ["have_got"],
     vocabularyTopics: ["nature", "leisure"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The lake has got clear water and small boats for visitors to rent.",
     choices: [
       { text: "Calm lake with rental boats", isCorrect: true },
@@ -822,7 +822,7 @@ const QUESTIONS = [
     grammarTags: ["past_continuous"],
     vocabularyTopics: ["feelings", "nature"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "While the wind was blowing, the climber was feeling nervous on the narrow ridge.",
     choices: [
       { text: "Climber on a windy ridge", isCorrect: true },
@@ -842,7 +842,7 @@ const QUESTIONS = [
     grammarTags: ["modal_can"],
     vocabularyTopics: ["leisure", "friends"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Friends can borrow films from the library and watch them together at home.",
     choices: [
       { text: "Friends watching a film at home", isCorrect: true },
@@ -1139,13 +1139,12 @@ const QUESTIONS = [
     grammarTags: ["present_continuous", "prepositions"],
     vocabularyTopics: ["nature", "leisure"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write about the waterfall scene.",
+    questionText: "Read the scene below. Write about the waterfall scene.",
     cambridgeTaskType: "picture_description",
     prompt:
-      "Look at the picture. Write three or four sentences about the waterfall scene. Say what people and animals are doing and describe the natural surroundings.",
+      "Read the scene below. Write three or four sentences about the waterfall scene. Say what people and animals are doing and describe the natural surroundings.",
     minWords: 15,
     maxWords: 50,
-    imageUrl: "/images/gold-mocks/flyers/fgm3-055-waterfall.png",
     taskDescription: "Describe the waterfall scene.",
     requiredPoints: [
       "Describe the natural surroundings",
@@ -1165,13 +1164,12 @@ const QUESTIONS = [
     grammarTags: ["there_is_are", "comparatives"],
     vocabularyTopics: ["leisure", "nature"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write about the leisure park.",
+    questionText: "Read the scene below. Write about the leisure park.",
     cambridgeTaskType: "picture_description",
     prompt:
-      "Look at the picture. Write three or four sentences about the leisure park. Compare two areas and say what visitors are enjoying.",
+      "Read the scene below. Write three or four sentences about the leisure park. Compare two areas and say what visitors are enjoying.",
     minWords: 15,
     maxWords: 55,
-    imageUrl: "/images/gold-mocks/flyers/fgm3-056-leisure-park.png",
     taskDescription: "Describe the leisure park.",
     requiredPoints: [
       "Compare two areas or activities in the picture",
@@ -1191,18 +1189,19 @@ const QUESTIONS = [
     grammarTags: ["there_is_are", "prepositions"],
     vocabularyTopics: ["nature", "leisure"],
     skillTag: "speaking",
-    questionText: "Look at the two pictures. Tell your partner about the differences.",
+    questionText: "Read the two scenes below. Tell your partner about the differences.",
     cambridgeTaskType: "speaking_picture_description",
     prompt:
-      "Look at these two pictures of a nature park. Tell your partner about five differences between them. Describe what you see and how the scene feels.",
+      "Read the two descriptions of a nature park. Tell your partner about five differences between them. Describe what you see and how the scene feels.",
+    taskDescription: `Scene A: A nature park with hikers on a forest trail, a canoe on the lake, and sunny weather.
+Scene B: The same park with hikers in raincoats, no canoe, and dark clouds.`,
     maxDurationSeconds: 120,
-    imageUrl: "/images/gold-mocks/flyers/fgm3-057-park-pair.png",
     followUpQuestions: [
-      "What is different about the trees in picture B?",
-      "How many people are sitting by the lake in picture A?",
-      "Is there a kite in both pictures?",
-      "Where is the dog in picture B?",
-      "What colour are the flowers in picture A?",
+      "What is different about the trees in Scene B?",
+      "How many people are sitting by the lake in Scene A?",
+      "Is there a kite in both scenes?",
+      "Where is the dog in Scene B?",
+      "What colour are the flowers in Scene A?",
     ],
   }),
 
@@ -1242,17 +1241,16 @@ const QUESTIONS = [
     grammarTags: ["past_simple", "past_continuous"],
     vocabularyTopics: ["nature", "feelings", "leisure"],
     skillTag: "speaking",
-    questionText: "Look at the pictures and tell the story.",
+    questionText: "Use the story outline and tell the story.",
     cambridgeTaskType: "speaking_storytelling",
     prompt:
-      "Look at these pictures and tell the story of a family camping trip by the lake. Describe what happened, how people felt at different moments, and how the trip ended.",
+      "Use the story outline to tell the story of a family camping trip by the lake. Describe what happened, how people felt at different moments, and how the trip ended.",
+    taskDescription: `Story outline:
+1. A family arrives at a lakeside campsite.
+2. Heavy rain starts and everyone looks worried.
+3. They shelter in their tent and stay warm.
+4. The rain stops and they watch stars in the clear night sky.`,
     maxDurationSeconds: 180,
-    pictureSequence: [
-      "/images/gold-mocks/flyers/fgm3-059-story-1-arrive.png",
-      "/images/gold-mocks/flyers/fgm3-059-story-2-rain.png",
-      "/images/gold-mocks/flyers/fgm3-059-story-3-shelter.png",
-      "/images/gold-mocks/flyers/fgm3-059-story-4-stars.png",
-    ],
     followUpQuestions: [
       "Why did the family choose to camp by the lake?",
       "What happened when the weather changed?",
@@ -1274,7 +1272,7 @@ export const FLYERS_GOLD_MOCK_3 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Link names to pictures",
+      "Link names to descriptions",
       "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Dr Tan. She's pointing at birds with her binoculars.\nHugo's building a sandcastle near the sea.\nMei is sketching wild flowers in her woodland notebook.\nMr Costa plays guitar while families relax on the grass every Sunday.\nRuby's got a hat with a bright butterfly badge on it.\nSamir is standing beside a canoe on the riverbank with his team.\nThe ranger showed a trail map at the hilltop viewpoint yesterday evening."
     ),
     listeningAudio(
@@ -1286,8 +1284,8 @@ export const FLYERS_GOLD_MOCK_3 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-3",
       3,
-      "Tick the correct picture",
-      "Examiner: Listen and tick the correct picture.\n\nThe children are watching colourful birds in the trees near the lake.\nAt the theme park visitors can ride a fast wooden roller coaster.\nDuring the hike it started raining heavily so they put on waterproof jackets.\nThe leisure centre offers swimming and badminton on Fridays.\nThe cave entrance is at the bottom of the cliff path by the sea.\nOn the first day of their holiday the family will explore a coastal nature reserve.\nThe otter was the most surprising animal to see on the river walk."
+      "Choose the correct answer",
+      "Examiner: Listen and Choose the correct answer.\n\nThe children are watching colourful birds in the trees near the lake.\nAt the theme park visitors can ride a fast wooden roller coaster.\nDuring the hike it started raining heavily so they put on waterproof jackets.\nThe leisure centre offers swimming and badminton on Fridays.\nThe cave entrance is at the bottom of the cliff path by the sea.\nOn the first day of their holiday the family will explore a coastal nature reserve.\nThe otter was the most surprising animal to see on the river walk."
     ),
     listeningAudio(
       "listening-part-4",

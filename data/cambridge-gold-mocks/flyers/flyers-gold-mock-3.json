@@ -125,13 +125,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Link names to pictures",
-      "instructions": "Link names to pictures",
+      "title": "Link names to descriptions",
+      "instructions": "Link names to descriptions",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/flyers-gold-mock-3/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Dr Tan. She's pointing at birds with her binoculars.\nHugo's building a sandcastle near the sea.\nMei is sketching wild flowers in her woodland notebook.\nMr Costa plays guitar while families relax on the grass every Sunday.\nRuby's got a hat with a bright butterfly badge on it.\nSamir is standing beside a canoe on the riverbank with his team.\nThe ranger showed a trail map at the hilltop viewpoint yesterday evening.",
-        "caption": "Link names to pictures"
+        "caption": "Link names to descriptions"
       }
     },
     {
@@ -151,13 +151,13 @@
       "partSlug": "listening-part-3",
       "sectionSlug": "listening",
       "partNumber": 3,
-      "title": "Tick the correct picture",
-      "instructions": "Tick the correct picture",
+      "title": "Choose the correct answer",
+      "instructions": "Choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/flyers-gold-mock-3/listening-part-3.mp3",
-        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe children are watching colourful birds in the trees near the lake.\nAt the theme park visitors can ride a fast wooden roller coaster.\nDuring the hike it started raining heavily so they put on waterproof jackets.\nThe leisure centre offers swimming and badminton on Fridays.\nThe cave entrance is at the bottom of the cliff path by the sea.\nOn the first day of their holiday the family will explore a coastal nature reserve.\nThe otter was the most surprising animal to see on the river walk.",
-        "caption": "Tick the correct picture"
+        "transcript": "Examiner: Listen and Choose the correct answer.\n\nThe children are watching colourful birds in the trees near the lake.\nAt the theme park visitors can ride a fast wooden roller coaster.\nDuring the hike it started raining heavily so they put on waterproof jackets.\nThe leisure centre offers swimming and badminton on Fridays.\nThe cave entrance is at the bottom of the cliff path by the sea.\nOn the first day of their holiday the family will explore a coastal nature reserve.\nThe otter was the most surprising animal to see on the river walk.",
+        "caption": "Choose the correct answer"
       }
     },
     {
@@ -1210,7 +1210,7 @@
         "nature"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'meadow' to the picture.",
+      "questionText": "Match the word 'meadow' to the description.",
       "pairs": [
         {
           "leftText": "meadow",
@@ -1236,7 +1236,7 @@
         "feelings"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'relieved' to the picture.",
+      "questionText": "Match the word 'relieved' to the description.",
       "pairs": [
         {
           "leftText": "relieved",
@@ -1262,7 +1262,7 @@
         "leisure"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'board game' to the picture.",
+      "questionText": "Match the word 'board game' to the description.",
       "pairs": [
         {
           "leftText": "board game",
@@ -1289,7 +1289,7 @@
         "places"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'cliff' to the picture.",
+      "questionText": "Match the word 'cliff' to the description.",
       "pairs": [
         {
           "leftText": "cliff",
@@ -1315,7 +1315,7 @@
         "feelings"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'embarrassed' to the picture.",
+      "questionText": "Match the word 'embarrassed' to the description.",
       "pairs": [
         {
           "leftText": "embarrassed",
@@ -1342,7 +1342,7 @@
         "sports"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'frisbee' to the picture.",
+      "questionText": "Match the word 'frisbee' to the description.",
       "pairs": [
         {
           "leftText": "frisbee",
@@ -1369,7 +1369,7 @@
         "animals"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'habitat' to the picture.",
+      "questionText": "Match the word 'habitat' to the description.",
       "pairs": [
         {
           "leftText": "habitat",
@@ -1396,7 +1396,7 @@
         "animals"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"The school butterfly garden attracts bee…\" Choose the correct picture.",
+      "questionText": "Read: \"The school butterfly garden attracts bee…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1439,7 +1439,7 @@
         "feelings"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"The crowd is cheering because their favo…\" Choose the correct picture.",
+      "questionText": "Read: \"The crowd is cheering because their favo…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1482,7 +1482,7 @@
         "feelings"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"Last week rangers rescued a young fox th…\" Choose the correct picture.",
+      "questionText": "Read: \"Last week rangers rescued a young fox th…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1525,7 +1525,7 @@
         "travel"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"We are going to pack swimming costumes a…\" Choose the correct picture.",
+      "questionText": "Read: \"We are going to pack swimming costumes a…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1568,7 +1568,7 @@
         "leisure"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"The lake has got clear water and small b…\" Choose the correct picture.",
+      "questionText": "Read: \"The lake has got clear water and small b…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1611,7 +1611,7 @@
         "nature"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"While the wind was blowing, the climber…\" Choose the correct picture.",
+      "questionText": "Read: \"While the wind was blowing, the climber…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1654,7 +1654,7 @@
         "friends"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"Friends can borrow films from the librar…\" Choose the correct picture.",
+      "questionText": "Read: \"Friends can borrow films from the librar…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -2172,16 +2172,15 @@
         "leisure"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write about the waterfall scene.",
+      "questionText": "Read the scene below. Write about the waterfall scene.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write three or four sentences about the waterfall scene. Say what people and animals are doing and describe the natural surroundings.",
+        "prompt": "Read the scene below. Write three or four sentences about the waterfall scene. Say what people and animals are doing and describe the natural surroundings.",
         "taskDescription": "Describe the waterfall scene.",
         "minWords": 15,
         "maxWords": 50,
-        "imageUrl": "/images/gold-mocks/flyers/fgm3-055-waterfall.svg",
         "requiredPoints": [
           "Describe the natural surroundings",
           "Say what at least two people or animals are doing",
@@ -2207,16 +2206,15 @@
         "nature"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write about the leisure park.",
+      "questionText": "Read the scene below. Write about the leisure park.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write three or four sentences about the leisure park. Compare two areas and say what visitors are enjoying.",
+        "prompt": "Read the scene below. Write three or four sentences about the leisure park. Compare two areas and say what visitors are enjoying.",
         "taskDescription": "Describe the leisure park.",
         "minWords": 15,
         "maxWords": 55,
-        "imageUrl": "/images/gold-mocks/flyers/fgm3-056-leisure-park.svg",
         "requiredPoints": [
           "Compare two areas or activities in the picture",
           "Say what visitors are enjoying",
@@ -2242,21 +2240,21 @@
         "leisure"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at the two park differences pictures. Tell your partner about the differences.",
+      "questionText": "Read the two park differences scenes below. Tell your partner about the differences.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_picture_description",
-        "prompt": "Look at these two pictures of a nature park. Tell your partner about five differences between them. Describe what you see and how the scene feels.",
+        "prompt": "Read the two descriptions of a nature park. Tell your partner about five differences between them. Describe what you see and how the scene feels.",
+        "taskDescription": "Scene A: A nature park with hikers on a forest trail, a canoe on the lake, and sunny weather.\nScene B: The same park with hikers in raincoats, no canoe, and dark clouds.",
         "maxDurationSeconds": 120,
         "followUpQuestions": [
-          "What is different about the trees in picture B?",
-          "How many people are sitting by the lake in picture A?",
-          "Is there a kite in both pictures?",
-          "Where is the dog in picture B?",
-          "What colour are the flowers in picture A?"
+          "What is different about the trees in Scene B?",
+          "How many people are sitting by the lake in Scene A?",
+          "Is there a kite in both scenes?",
+          "Where is the dog in Scene B?",
+          "What colour are the flowers in Scene A?"
         ],
-        "imageUrl": "/images/gold-mocks/flyers/fgm3-057-park-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -2313,12 +2311,13 @@
         "leisure"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at these pictures and tell the story of a family camping trip by the lake. Describe what happened, how people felt at different moments, and how the trip ended.",
+      "questionText": "Use the story outline to tell the story of a family camping trip by the lake. Describe what happened, how people felt at different moments, and how the trip ended.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_storytelling",
-        "prompt": "Look at these pictures and tell the story of a family camping trip by the lake. Describe what happened, how people felt at different moments, and how the trip ended.",
+        "prompt": "Use the story outline to tell the story of a family camping trip by the lake. Describe what happened, how people felt at different moments, and how the trip ended.",
+        "taskDescription": "Story outline:\n1. A family arrives at a lakeside campsite.\n2. Heavy rain starts and everyone looks worried.\n3. They shelter in their tent and stay warm.\n4. The rain stops and they watch stars in the clear night sky.",
         "maxDurationSeconds": 180,
         "followUpQuestions": [
           "Why did the family choose to camp by the lake?",
@@ -2326,12 +2325,6 @@
           "How did the family feel during the problem?",
           "What did they do to stay comfortable?",
           "How did they feel when they saw the stars?"
-        ],
-        "pictureSequence": [
-          "/images/gold-mocks/flyers/fgm3-059-story-1-arrive.svg",
-          "/images/gold-mocks/flyers/fgm3-059-story-2-rain.svg",
-          "/images/gold-mocks/flyers/fgm3-059-story-3-shelter.svg",
-          "/images/gold-mocks/flyers/fgm3-059-story-4-stars.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

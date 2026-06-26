@@ -120,7 +120,7 @@ Learn / Practice / Apply / Review must **not** use AI exercise types.
    - `vocabularyBank` (~12 words, expand beyond map minimum where natural)
    - `grammarReference` with `commonMistakes`
    - `unit` metadata block (learning objectives, character note)
-   - `passage*` for reading (wordCount, imagePrompt)
+   - `passage*` for reading (`title`, `text`, `wordCount` only — no images)
    - `listeningScript*` (2 scripts for L1/L2 listening lessons)
    - `listeningAnswerKeys`
    - `writingChecks` (3 prompts for 3 writing lessons)

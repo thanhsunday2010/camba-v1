@@ -2677,8 +2677,7 @@
             "passage": {
               "title": "Tom's Lunch",
               "text": "Tom is hungry. It is lunch time.\n\nTom likes rice. He eats rice every day. He likes chicken too. He drinks water with his lunch.\n\nTom does not like fish. He does not like eggs.\n\nHis friend Anna likes apples and juice. She eats an apple after lunch. Tom likes cake on his birthday.",
-              "wordCount": 52,
-              "imagePrompt": "A boy at a table with rice, chicken, water and an apple; a girl with juice nearby."
+              "wordCount": 52
             }
           },
           "questions": [
@@ -2865,7 +2864,6 @@
             "passage": {
               "title": "Lunch at School",
               "text": "It is twelve o'clock. We eat lunch at school.\n\nI have rice and chicken. My friend eats an egg and bread.\n\nShe drinks milk. I drink water. Tom likes bananas.\n\nAnna doesn't like fish. She eats an apple. We are not hungry now!",
-              "imagePrompt": "School lunch trays with rice, chicken, egg, fruit and drinks.",
               "wordCount": 43
             }
           },
@@ -2952,7 +2950,6 @@
             "passage": {
               "title": "Lunch at School",
               "text": "It is twelve o'clock. We eat lunch at school.\n\nI have rice and chicken. My friend eats an egg and bread.\n\nShe drinks milk. I drink water. Tom likes bananas.\n\nAnna doesn't like fish. She eats an apple. We are not hungry now!",
-              "imagePrompt": "School lunch trays with rice, chicken, egg, fruit and drinks.",
               "wordCount": 43
             }
           },
@@ -3086,7 +3083,6 @@
             "passage": {
               "title": "Lunch at School",
               "text": "It is twelve o'clock. We eat lunch at school.\n\nI have rice and chicken. My friend eats an egg and bread.\n\nShe drinks milk. I drink water. Tom likes bananas.\n\nAnna doesn't like fish. She eats an apple. We are not hungry now!",
-              "imagePrompt": "School lunch trays with rice, chicken, egg, fruit and drinks.",
               "wordCount": 43
             }
           },
@@ -3186,7 +3182,6 @@
             "passage": {
               "title": "Shopping for Food",
               "text": "Mother and I go to the shop. We buy apples, oranges and bananas.\n\n\"Do you like juice?\" asks Mother. \"Yes! Orange juice!\" I say.\n\nWe get milk and water too. Father likes chicken for dinner.\n\nWe also buy a small cake. Yummy!",
-              "imagePrompt": "Grocery shop with fruit, milk, juice and cake on shelves.",
               "wordCount": 42
             }
           },
@@ -3273,7 +3268,6 @@
             "passage": {
               "title": "Shopping for Food",
               "text": "Mother and I go to the shop. We buy apples, oranges and bananas.\n\n\"Do you like juice?\" asks Mother. \"Yes! Orange juice!\" I say.\n\nWe get milk and water too. Father likes chicken for dinner.\n\nWe also buy a small cake. Yummy!",
-              "imagePrompt": "Grocery shop with fruit, milk, juice and cake on shelves.",
               "wordCount": 42
             }
           },
@@ -3360,7 +3354,6 @@
             "passage": {
               "title": "Shopping for Food",
               "text": "Mother and I go to the shop. We buy apples, oranges and bananas.\n\n\"Do you like juice?\" asks Mother. \"Yes! Orange juice!\" I say.\n\nWe get milk and water too. Father likes chicken for dinner.\n\nWe also buy a small cake. Yummy!",
-              "imagePrompt": "Grocery shop with fruit, milk, juice and cake on shelves.",
               "wordCount": 42
             }
           },
@@ -3462,7 +3455,6 @@
             "passage": {
               "title": "Shopping for Food",
               "text": "Mother and I go to the shop. We buy apples, oranges and bananas.\n\n\"Do you like juice?\" asks Mother. \"Yes! Orange juice!\" I say.\n\nWe get milk and water too. Father likes chicken for dinner.\n\nWe also buy a small cake. Yummy!",
-              "imagePrompt": "Grocery shop with fruit, milk, juice and cake on shelves.",
               "wordCount": 42
             }
           },
@@ -3529,7 +3521,6 @@
             "passage": {
               "title": "Breakfast Time",
               "text": "Good morning! I am hungry. For breakfast I eat an egg and bread.\n\nMy sister drinks milk. My brother eats a banana.\n\nMother says: \"Eat your apple!\" Father drinks water.\n\nWe don't eat chicken for breakfast. We eat fruit and drink milk.",
-              "imagePrompt": "Family breakfast table with egg, bread, fruit and milk.",
               "wordCount": 42
             }
           },
@@ -3616,7 +3607,6 @@
             "passage": {
               "title": "Breakfast Time",
               "text": "Good morning! I am hungry. For breakfast I eat an egg and bread.\n\nMy sister drinks milk. My brother eats a banana.\n\nMother says: \"Eat your apple!\" Father drinks water.\n\nWe don't eat chicken for breakfast. We eat fruit and drink milk.",
-              "imagePrompt": "Family breakfast table with egg, bread, fruit and milk.",
               "wordCount": 42
             }
           },
@@ -3703,7 +3693,6 @@
             "passage": {
               "title": "Breakfast Time",
               "text": "Good morning! I am hungry. For breakfast I eat an egg and bread.\n\nMy sister drinks milk. My brother eats a banana.\n\nMother says: \"Eat your apple!\" Father drinks water.\n\nWe don't eat chicken for breakfast. We eat fruit and drink milk.",
-              "imagePrompt": "Family breakfast table with egg, bread, fruit and milk.",
               "wordCount": 42
             }
           },
@@ -3809,7 +3798,6 @@
             "passage": {
               "title": "Breakfast Time",
               "text": "Good morning! I am hungry. For breakfast I eat an egg and bread.\n\nMy sister drinks milk. My brother eats a banana.\n\nMother says: \"Eat your apple!\" Father drinks water.\n\nWe don't eat chicken for breakfast. We eat fruit and drink milk.",
-              "imagePrompt": "Family breakfast table with egg, bread, fruit and milk.",
               "wordCount": 42
             }
           },
@@ -6410,7 +6398,7 @@
           },
           "content": {
             "prompt": "Say what you like to eat and drink for lunch.",
-            "pictureDescription": "School lunch tray with rice, chicken, fruit and milk.",
+            "sceneDescription": "School lunch tray with rice, chicken, fruit and milk.",
             "followUpQuestions": [
               "What do you like to eat?",
               "What do you drink?"
@@ -6512,7 +6500,7 @@
           },
           "content": {
             "prompt": "Say what you like to eat and drink for lunch.",
-            "pictureDescription": "School lunch tray with rice, chicken, fruit and milk.",
+            "sceneDescription": "School lunch tray with rice, chicken, fruit and milk.",
             "followUpQuestions": [
               "What do you like to eat?",
               "What do you drink?"
@@ -6674,7 +6662,7 @@
           },
           "content": {
             "prompt": "Say what you eat and drink for lunch.",
-            "pictureDescription": "School canteen with rice, chicken, fruit and milk.",
+            "sceneDescription": "School canteen with rice, chicken, fruit and milk.",
             "followUpQuestions": [
               "What do you eat for lunch?",
               "What do you drink?"
@@ -6776,7 +6764,7 @@
           },
           "content": {
             "prompt": "Say what you eat and drink for lunch.",
-            "pictureDescription": "School canteen with rice, chicken, fruit and milk.",
+            "sceneDescription": "School canteen with rice, chicken, fruit and milk.",
             "followUpQuestions": [
               "What do you eat for lunch?",
               "What do you drink?"
@@ -6937,7 +6925,7 @@
           },
           "content": {
             "prompt": "Say one food you like and one food you don't like.",
-            "pictureDescription": "Breakfast table with egg, bread, apple and milk.",
+            "sceneDescription": "Breakfast table with egg, bread, apple and milk.",
             "followUpQuestions": [
               "What do you like?",
               "What don't you like?"
@@ -7039,7 +7027,7 @@
           },
           "content": {
             "prompt": "Say one food you like and one food you don't like.",
-            "pictureDescription": "Breakfast table with egg, bread, apple and milk.",
+            "sceneDescription": "Breakfast table with egg, bread, apple and milk.",
             "followUpQuestions": [
               "What do you like?",
               "What don't you like?"

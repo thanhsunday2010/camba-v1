@@ -117,13 +117,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Link names to pictures",
-      "instructions": "Link names to pictures",
+      "title": "Link names to descriptions",
+      "instructions": "Link names to descriptions",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/movers-gold-mock-3/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mia. She's brushing her teeth in the bathroom.\nOmar is wearing a colourful traditional costume for the festival.\nClara is putting empty bottles in the green recycling bin.\nFinn always eats fruit at break time. Today he's eating an apple.\nAisha is dancing a folk dance on the stage.\nNoah is planting a tree between two benches in the park.",
-        "caption": "Link names to pictures"
+        "caption": "Link names to descriptions"
       }
     },
     {
@@ -143,13 +143,13 @@
       "partSlug": "listening-part-3",
       "sectionSlug": "listening",
       "partNumber": 3,
-      "title": "Tick the correct picture",
-      "instructions": "Tick the correct picture",
+      "title": "Choose the correct answer",
+      "instructions": "Choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/movers-gold-mock-3/listening-part-3.mp3",
-        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe children are doing yoga in the sports hall.\nSalad with vegetables is healthy for lunch.\nIn culture club they are learning salsa dancing.\nAt school we must recycle paper and glass in different bins.\nThe museum is about ancient history and old objects.\nOn Saturday they are going to clean the beach near our town.",
-        "caption": "Tick the correct picture"
+        "transcript": "Examiner: Listen and Choose the correct answer.\n\nThe children are doing yoga in the sports hall.\nSalad with vegetables is healthy for lunch.\nIn culture club they are learning salsa dancing.\nAt school we must recycle paper and glass in different bins.\nThe museum is about ancient history and old objects.\nOn Saturday they are going to clean the beach near our town.",
+        "caption": "Choose the correct answer"
       }
     },
     {
@@ -1056,7 +1056,7 @@
         "places"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'hospital' to the picture.",
+      "questionText": "Match the word 'hospital' to the description.",
       "pairs": [
         {
           "leftText": "hospital",
@@ -1083,7 +1083,7 @@
         "leisure"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'festival' to the picture.",
+      "questionText": "Match the word 'festival' to the description.",
       "pairs": [
         {
           "leftText": "festival",
@@ -1109,7 +1109,7 @@
         "environment"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'recycling' to the picture.",
+      "questionText": "Match the word 'recycling' to the description.",
       "pairs": [
         {
           "leftText": "recycling",
@@ -1136,7 +1136,7 @@
         "jobs"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'dentist' to the picture.",
+      "questionText": "Match the word 'dentist' to the description.",
       "pairs": [
         {
           "leftText": "dentist",
@@ -1163,7 +1163,7 @@
         "travel"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'passport' to the picture.",
+      "questionText": "Match the word 'passport' to the description.",
       "pairs": [
         {
           "leftText": "passport",
@@ -1189,7 +1189,7 @@
         "environment"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'pollution' to the picture.",
+      "questionText": "Match the word 'pollution' to the description.",
       "pairs": [
         {
           "leftText": "pollution",
@@ -1216,7 +1216,7 @@
         "jobs"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"The nurse is helping the patient in the…\" Choose the correct picture.",
+      "questionText": "Read: \"The nurse is helping the patient in the…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1259,7 +1259,7 @@
         "clothes"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"We wear special colourful clothes for th…\" Choose the correct picture.",
+      "questionText": "Read: \"We wear special colourful clothes for th…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1302,7 +1302,7 @@
         "nature"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"Don't throw rubbish in the river because…\" Choose the correct picture.",
+      "questionText": "Read: \"Don't throw rubbish in the river because…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1345,7 +1345,7 @@
         "food"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"I drink milk every day because it is goo…\" Choose the correct picture.",
+      "questionText": "Read: \"I drink milk every day because it is goo…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1388,7 +1388,7 @@
         "food"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"Our class is learning about Japanese foo…\" Choose the correct picture.",
+      "questionText": "Read: \"Our class is learning about Japanese foo…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1431,7 +1431,7 @@
         "leisure"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"The beach is dirty so we must pick up li…\" Choose the correct picture.",
+      "questionText": "Read: \"The beach is dirty so we must pick up li…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1731,15 +1731,15 @@
         "health"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write one sentence about the dentist.",
+      "questionText": "Read the scene below. Write one sentence about the dentist.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the dentist.",
+        "prompt": "Read the scene below. Write one sentence about the dentist.",
+        "taskDescription": "Scene: A dentist is checking a child's teeth in a bright dental clinic.",
         "minWords": 3,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/movers/mgm3-043-dentist.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1759,15 +1759,15 @@
         "leisure"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write one sentence about the festival.",
+      "questionText": "Read the scene below. Write one sentence about the festival.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the children at the festival.",
+        "prompt": "Read the scene below. Write one sentence about the children at the festival.",
+        "taskDescription": "Scene: Children in colourful costumes are dancing at an outdoor festival.",
         "minWords": 3,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/movers/mgm3-044-festival.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1854,16 +1854,15 @@
         "places"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write two or three sentences about the recycling centre.",
+      "questionText": "Read the scene below. Write two or three sentences about the recycling centre.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write two or three sentences about the recycling centre.",
+        "prompt": "Read the scene below. Write two or three sentences about the recycling centre.",
         "taskDescription": "Describe the recycling centre scene.",
         "minWords": 8,
         "maxWords": 30,
-        "imageUrl": "/images/gold-mocks/movers/mgm3-047-recycling.svg",
         "requiredPoints": [
           "Say what people are recycling",
           "Say where the bins are"
@@ -1888,16 +1887,15 @@
         "food"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write two or three sentences about the healthy lunch.",
+      "questionText": "Read the scene below. Write two or three sentences about the healthy lunch.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write two or three sentences about the healthy lunch.",
+        "prompt": "Read the scene below. Write two or three sentences about the healthy lunch.",
         "taskDescription": "Describe the healthy lunch on the table.",
         "minWords": 8,
         "maxWords": 35,
-        "imageUrl": "/images/gold-mocks/movers/mgm3-048-lunch.svg",
         "requiredPoints": [
           "Say what food you can see",
           "Say why it is healthy"
@@ -1922,21 +1920,21 @@
         "places"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at the two park differences env pictures. Tell your partner about the differences.",
+      "questionText": "Read the two park differences env scenes below. Tell your partner about the differences.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_picture_description",
-        "prompt": "Look at the two pictures of a park — one clean and one dirty. Tell your partner about five differences between them.",
+        "prompt": "Read Scene A and Scene B below. Tell your partner about five differences between them.",
+        "taskDescription": "Scene A: A clean park with green grass, full recycling bins, and families picnicking.\nScene B: The same park with litter on the grass, overflowing bins, and no picnic blankets.",
         "maxDurationSeconds": 120,
         "followUpQuestions": [
-          "Is there litter in picture B?",
-          "How many trees are in picture A?",
-          "Are birds in both pictures?",
-          "Where is the recycling bin in picture A?",
-          "What is the boy doing in picture B?"
+          "Is there litter in Scene B?",
+          "How many trees are in Scene A?",
+          "Are birds in both scenes?",
+          "Where is the recycling bin in Scene A?",
+          "What is the boy doing in Scene B?"
         ],
-        "imageUrl": "/images/gold-mocks/movers/mgm3-049-park-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -1993,12 +1991,13 @@
         "feelings"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at these pictures and tell the story of how the children cleaned the beach.",
+      "questionText": "Use the story outline to tell the story of how the children cleaned the beach.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_storytelling",
-        "prompt": "Look at these pictures and tell the story of how the children cleaned the beach.",
+        "prompt": "Use the story outline to tell the story of how the children cleaned the beach.",
+        "taskDescription": "Story outline:\n1. The beach is dirty with plastic bottles and paper.\n2. The children make a plan and bring gloves and bags.\n3. They work together to collect the rubbish.\n4. The beach is clean and the children celebrate.",
         "maxDurationSeconds": 180,
         "followUpQuestions": [
           "What was wrong with the beach at the start?",
@@ -2006,12 +2005,6 @@
           "How long did they work?",
           "How did they feel at the end?",
           "What did they do when the beach was clean?"
-        ],
-        "pictureSequence": [
-          "/images/gold-mocks/movers/mgm3-051-story-1-dirty.svg",
-          "/images/gold-mocks/movers/mgm3-051-story-2-plan.svg",
-          "/images/gold-mocks/movers/mgm3-051-story-3-work.svg",
-          "/images/gold-mocks/movers/mgm3-051-story-4-clean.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

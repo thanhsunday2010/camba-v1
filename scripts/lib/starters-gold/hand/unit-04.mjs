@@ -163,14 +163,14 @@ export const HAND_UNIT_04 = {
         type: "mcq",
         label: "Point to an Animal",
         tuples: [
-          ["The tiger is far away in the picture. You say:", "That is a tiger.", "This is a tiger.", "That are a tiger.", "Xa → That is.", "This — gần", "That is — số ít", 1],
+          ["The tiger is far away in the scene. You say:", "That is a tiger.", "This is a tiger.", "That are a tiger.", "Xa → That is.", "This — gần", "That is — số ít", 1],
         ],
       },
       check: {
         type: "speaking",
         label: "Say Your Favourite Animal",
         prompt: "Say your favourite animal and whether it is a pet.",
-        pictureDescription: "Children at a zoo and at home with a cat and dog.",
+        sceneDescription: "Children at a zoo and at home with a cat and dog.",
         followUpQuestions: ["What is your favourite animal?", "Do you have a pet?"],
         suggestedAnswers: ["My favourite animal is a cat.", "Yes. I have a dog."],
         assessmentCriteria: ["Names an animal clearly", "Uses pet or This/That", "Short clear phrases"],
@@ -282,7 +282,7 @@ export const HAND_UNIT_04 = {
           label: "This or That?",
           tuples: [
             ["_____ is my dog. (You are holding the dog.)", "This", "That", "These", "Cầm trong tay → gần → This.", "That — xa", "These — số nhiều", 1],
-            ["_____ is a tiger. (The tiger is far in the picture.)", "That", "This", "Those", "Trong tranh xa → That.", "This — gần", "Those — số nhiều", 1],
+            ["_____ is a tiger. (The tiger is far in the scene.)", "That", "This", "Those", "Trong tranh xa → That.", "This — gần", "Those — số nhiều", 1],
           ],
         },
         practice: {
@@ -604,7 +604,7 @@ export const HAND_UNIT_04 = {
           type: "speaking",
           label: "Say This and That",
           prompt: "Point to a pet near you and one far away. Say This is… and That is…",
-          pictureDescription: "A boy with a cat on his lap and a dog across the room.",
+          sceneDescription: "A boy with a cat on his lap and a dog across the room.",
           followUpQuestions: ["What is this?", "What is that?"],
           suggestedAnswers: ["This is my cat.", "That is my dog."],
           assessmentCriteria: ["Uses This for near", "Uses That for far", "Clear animal names"],
@@ -639,7 +639,7 @@ export const HAND_UNIT_04 = {
           type: "speaking",
           label: "Say Your Favourite Zoo Animal",
           prompt: "Name your favourite zoo animal and say if it is big or small.",
-          pictureDescription: "Zoo scene with elephant, monkey, tiger and bear.",
+          sceneDescription: "Zoo scene with elephant, monkey, tiger and bear.",
           followUpQuestions: ["What is your favourite animal?", "Is it big or small?"],
           suggestedAnswers: ["My favourite animal is the monkey.", "It is small."],
           assessmentCriteria: ["Names a zoo animal", "Uses big or small", "Intelligible pronunciation"],

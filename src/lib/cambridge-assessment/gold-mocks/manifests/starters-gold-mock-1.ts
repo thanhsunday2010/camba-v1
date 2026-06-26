@@ -10,7 +10,7 @@ import {
 } from "@/lib/cambridge-assessment/gold-mocks/gold-mock-helpers";
 
 const QUESTIONS = [
-  // ── Listening Part 1: Link names to pictures (5 × audio_matching) ──────────
+  // ── Listening Part 1: Link names to descriptions (5 × audio_matching) ──────────
   goldMatching({
     questionRef: "sgm-001",
     partSlug: "listening-part-1",
@@ -199,7 +199,7 @@ const QUESTIONS = [
     },
   }),
 
-  // ── Listening Part 3: Tick the correct picture (5 × mcq_listening) ─────────
+  // ── Listening Part 3: Choose the correct answer (5 × mcq_listening) ─────────
   goldMcq({
     questionRef: "sgm-011",
     partSlug: "listening-part-3",
@@ -220,7 +220,6 @@ const QUESTIONS = [
     ],
     content: {
       transcriptSnippet: "The horse is running in the field near the farm.",
-      imageOptions: ["field", "kitchen", "bus"],
     },
   }),
   goldMcq({
@@ -243,7 +242,6 @@ const QUESTIONS = [
     ],
     content: {
       transcriptSnippet: "Mum is drinking a glass of orange juice at breakfast.",
-      imageOptions: ["juice", "soup", "ice_cream"],
     },
   }),
   goldMcq({
@@ -266,7 +264,6 @@ const QUESTIONS = [
     ],
     content: {
       transcriptSnippet: "The boy is playing with his toy train on the floor.",
-      imageOptions: ["train", "football", "kite"],
     },
   }),
   goldMcq({
@@ -289,7 +286,6 @@ const QUESTIONS = [
     ],
     content: {
       transcriptSnippet: "The girl can play the piano very well.",
-      imageOptions: ["piano", "guitar", "drums"],
     },
   }),
   goldMcq({
@@ -312,7 +308,6 @@ const QUESTIONS = [
     ],
     content: {
       transcriptSnippet: "Dad and Grandpa are building a big sandcastle on the beach.",
-      imageOptions: ["sandcastle", "book", "cooking"],
     },
   }),
 
@@ -421,7 +416,7 @@ const QUESTIONS = [
     vocabularyTopics: ["leisure", "places"],
     skillTag: "listening",
     blueprintQuestionType: "mcq_listening",
-    questionText: "Draw a line from the girl to the swing. Which picture shows this?",
+    questionText: "Draw a line from the girl to the swing. Which option is correct?",
     choices: [
       { text: "Girl standing next to the swing", isCorrect: true },
       { text: "Girl sitting on a bench far away", isCorrect: false },
@@ -445,7 +440,7 @@ const QUESTIONS = [
     grammarTags: ["articles"],
     vocabularyTopics: ["animals"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "elephant", rightText: "Big grey animal with a long nose" }],
   }),
   goldMatching({
@@ -459,7 +454,7 @@ const QUESTIONS = [
     grammarTags: ["articles"],
     vocabularyTopics: ["food"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "banana", rightText: "Long yellow fruit" }],
   }),
   goldMatching({
@@ -473,7 +468,7 @@ const QUESTIONS = [
     grammarTags: ["verb_be"],
     vocabularyTopics: ["clothes"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "trousers", rightText: "Clothes you wear on your legs" }],
   }),
   goldMatching({
@@ -487,7 +482,7 @@ const QUESTIONS = [
     grammarTags: ["there_is_are"],
     vocabularyTopics: ["school"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "ruler", rightText: "Tool for drawing straight lines" }],
   }),
   goldMatching({
@@ -501,7 +496,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["weather"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "cloud", rightText: "White or grey thing in the sky" }],
   }),
 
@@ -517,7 +512,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["family", "home"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "My brother likes playing computer games in his bedroom.",
     choices: [
       { text: "Boy playing on a computer", isCorrect: true },
@@ -536,7 +531,7 @@ const QUESTIONS = [
     grammarTags: ["verb_be"],
     vocabularyTopics: ["animals", "places"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The monkeys are funny. They are jumping in the zoo.",
     choices: [
       { text: "Monkeys jumping in a zoo", isCorrect: true },
@@ -555,7 +550,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["food", "shopping"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Mum buys apples and oranges at the market every Saturday.",
     choices: [
       { text: "Woman buying fruit at a market", isCorrect: true },
@@ -574,7 +569,7 @@ const QUESTIONS = [
     grammarTags: ["have_got"],
     vocabularyTopics: ["school", "food"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The children have got sandwiches and milk for lunch at school.",
     choices: [
       { text: "Children eating sandwiches at school", isCorrect: true },
@@ -593,7 +588,7 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["weather", "clothes"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "It is raining today, so the children are wearing boots and coats.",
     choices: [
       { text: "Children in coats and boots in the rain", isCorrect: true },
@@ -716,12 +711,12 @@ const QUESTIONS = [
     grammarTags: ["verb_be"],
     vocabularyTopics: ["family"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write one sentence about the girl and her mum.",
+    questionText: "Read the scene below. Write one sentence about the girl and her mum.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the girl and her mum.",
+    prompt: "Read the scene below. Write one sentence about the girl and her mum.",
     minWords: 3,
     maxWords: 15,
-    imageUrl: "/images/gold-mocks/starters/sgm-036-family-kitchen.png",
+    taskDescription: "Scene: A girl and her mum are in the kitchen. Mum is washing vegetables and the girl is setting the table.",
   }),
   goldWriting({
     questionRef: "sgm-037",
@@ -734,12 +729,12 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["animals"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write one sentence about the cat.",
+    questionText: "Read the scene below. Write one sentence about the cat.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the cat.",
+    prompt: "Read the scene below. Write one sentence about the cat.",
     minWords: 3,
     maxWords: 15,
-    imageUrl: "/images/gold-mocks/starters/sgm-037-cat-window.png",
+    taskDescription: "Scene: A grey cat is sitting on the window sill and looking outside at the garden.",
   }),
   goldWriting({
     questionRef: "sgm-038",
@@ -752,12 +747,12 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["school"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write one sentence about what the children are doing.",
+    questionText: "Read the scene below. Write one sentence about what the children are doing.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about what the children are doing.",
+    prompt: "Read the scene below. Write one sentence about what the children are doing.",
     minWords: 4,
     maxWords: 18,
-    imageUrl: "/images/gold-mocks/starters/sgm-038-classroom-drawing.png",
+    taskDescription: "Scene: Three children are in a classroom. They are drawing colourful pictures at their desks.",
   }),
   goldWriting({
     questionRef: "sgm-039",
@@ -770,13 +765,12 @@ const QUESTIONS = [
     grammarTags: ["there_is_are"],
     vocabularyTopics: ["leisure", "places"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write two or three sentences about the park.",
+    questionText: "Read the scene below. Write two or three sentences about the park.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write two or three sentences about the park.",
+    prompt: "Read the scene below. Write two or three sentences about the park.",
     taskDescription: "Describe what you can see in the park picture.",
     minWords: 5,
     maxWords: 25,
-    imageUrl: "/images/gold-mocks/starters/sgm-039-park-scene.png",
     requiredPoints: ["Say what is in the park", "Say what someone is doing"],
   }),
   goldWriting({
@@ -790,13 +784,12 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["weather", "clothes"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write two or three sentences about the children in the rain.",
+    questionText: "Read the scene below. Write two or three sentences about the children in the rain.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write two or three sentences about the children in the rain.",
+    prompt: "Read the scene below. Write two or three sentences about the children in the rain.",
     taskDescription: "Describe the weather and what the children are wearing.",
     minWords: 5,
     maxWords: 25,
-    imageUrl: "/images/gold-mocks/starters/sgm-040-rainy-street.png",
     requiredPoints: ["Say what the weather is like", "Say what the children are wearing"],
   }),
 
@@ -812,18 +805,19 @@ const QUESTIONS = [
     grammarTags: ["there_is_are", "prepositions"],
     vocabularyTopics: ["home", "leisure"],
     skillTag: "speaking",
-    questionText: "Look at the two pictures. Tell your partner about the differences.",
+    questionText: "Read the two scenes below. Tell your partner about the differences.",
     cambridgeTaskType: "speaking_picture_description",
     prompt:
-      "Look at the two pictures of a living room. Tell your partner about five differences between them.",
+      "Read Scene A and Scene B below. Tell your partner about five differences between them.",
+    taskDescription: `Scene A: A living room with toys on the floor, a blue sofa, a lamp on the left table, and a cat under the chair.
+Scene B: The same room with no toys on the floor, a red sofa, the lamp on the right table, and no cat.`,
     maxDurationSeconds: 120,
-    imageUrl: "/images/gold-mocks/starters/sgm-041-living-room-pair.png",
     followUpQuestions: [
-      "How many toys are on the floor in picture A?",
-      "What colour is the sofa in picture B?",
-      "Is there a cat in both pictures?",
-      "Where is the lamp in picture A?",
-      "What is on the table in picture B?",
+      "How many toys are on the floor in Scene A?",
+      "What colour is the sofa in Scene B?",
+      "Is there a cat in both scenes?",
+      "Where is the lamp in Scene A?",
+      "What is on the table in Scene B?",
     ],
   }),
 
@@ -864,16 +858,15 @@ const QUESTIONS = [
     grammarTags: ["past_simple", "past_continuous"],
     vocabularyTopics: ["family", "weather", "food"],
     skillTag: "speaking",
-    questionText: "Look at the pictures and tell the story.",
+    questionText: "Use the story outline and tell the story.",
     cambridgeTaskType: "speaking_storytelling",
-    prompt: "Look at these pictures and tell the story of Tom's day at the beach.",
+    prompt: "Use the story outline to tell the story of Tom's day at the beach.",
+    taskDescription: `Story outline:
+1. Tom and his family drive to the beach in a red car.
+2. They play on the sandy beach in the sunshine.
+3. Tom eats a big ice cream.
+4. They drive home tired but happy.`,
     maxDurationSeconds: 180,
-    pictureSequence: [
-      "/images/gold-mocks/starters/sgm-043-story-1-car.png",
-      "/images/gold-mocks/starters/sgm-043-story-2-beach.png",
-      "/images/gold-mocks/starters/sgm-043-story-3-icecream.png",
-      "/images/gold-mocks/starters/sgm-043-story-4-home.png",
-    ],
     followUpQuestions: [
       "Who went to the beach with Tom?",
       "What did they do first?",
@@ -895,7 +888,7 @@ export const STARTERS_GOLD_MOCK_1 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Link names to pictures",
+      "Link names to descriptions",
       `Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.
 
 This is Tom. He's got a red school bag.
@@ -919,8 +912,8 @@ Emma is wearing a new blue hat today.`
     listeningAudio(
       "listening-part-3",
       3,
-      "Tick the correct picture",
-      `Examiner: Listen and tick the correct picture.
+      "Choose the correct answer",
+      `Examiner: Listen and Choose the correct answer.
 
 The horse is running in the field near the farm.
 Mum is drinking a glass of orange juice at breakfast.

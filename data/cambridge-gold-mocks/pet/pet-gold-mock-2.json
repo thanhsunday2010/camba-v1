@@ -146,13 +146,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Part 1 — Listen and choose the correct picture",
-      "instructions": "Part 1 — Listen and choose the correct picture",
+      "title": "Part 1 — Listen and choose the correct answer",
+      "instructions": "Part 1 — Listen and choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/pet-gold-mock-2/listening-part-1.mp3",
         "transcript": "Girl: I'm recording a short video review in the studio. Boy: At the beach, we're carrying rubbish bags and gloves for the clean-up.",
-        "caption": "Part 1 — Listen and choose the correct picture"
+        "caption": "Part 1 — Listen and choose the correct answer"
       }
     },
     {
@@ -1505,7 +1505,6 @@
         "taskDescription": "Write about 100 words.",
         "minWords": 100,
         "maxWords": 130,
-        "imageUrl": "/images/gold-mocks/pet-gold-mock-2-story.svg",
         "rubricId": "gold-write_story-v1"
       }
     },
@@ -2403,14 +2402,14 @@
         "places"
       ],
       "skillTag": "speaking",
-      "questionText": "Describe the lifestyle and say what you think is happening.",
+      "questionText": "Read the lifestyle description and say what you think is happening.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "picture_description_speaking",
-        "prompt": "Look at the photograph. Describe the people, the place, and explain why they might be there.",
+        "prompt": "Read the scene description. Describe the people, the place, and explain why they might be there.",
+        "taskDescription": "Scene: People are exercising in an outdoor fitness area. Some are jogging, others are stretching near trees in a public park.",
         "maxDurationSeconds": 240,
-        "imageUrl": "/images/gold-mocks/pet-gold-mock-2-speaking-photo.svg",
         "rubricId": "gold-picture_description_speaking-v1"
       }
     },

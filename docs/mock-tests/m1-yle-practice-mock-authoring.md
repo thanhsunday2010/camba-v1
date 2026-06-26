@@ -34,7 +34,7 @@ These types are **approved** for seeded playable practice mocks:
 **Excluded from seeding** (blueprint-only or unsafe):
 
 - `mcq_listening` — use `matching` / `gap_fill` + `parts[].audio` until native listening type ships
-- `mcq_image` / `image_selection` — needs image assets
+- `mcq_image` / `image_selection` — **prohibited**; use text choices and scene descriptions instead
 - `writing_*`, `speaking_*` — not auto-scored in U6 submit path
 - `listening-part-4-colour` and other `blueprint_only` parts
 

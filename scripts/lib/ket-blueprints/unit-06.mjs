@@ -22,10 +22,6 @@ First, they checked the discount labels near the checkout. Many customers were p
 At the meat counter, Linh asked the assistant about a refund policy. The assistant explained that customers could return items with a receipt within seven days. Linh felt happier because she had forgotten an ingredient last week and lost money.
 
 Before they paid, they joined a short queue at the checkout. The total was lower than Linh expected because of a ten-percent discount on vegetables. On the way home, Linh decided she would shop more carefully every week. "Fewer impulse buys mean more savings," her mother smiled.`,
-  imagePrompt:
-    "A bright supermarket with discount signs, customers at checkout queues, and a shopping trolley full of groceries.",
-});
-
 const checkoutScript = buildListeningScript({
   title: "At the Supermarket Checkout",
   setting: "GreenMart supermarket checkout",
@@ -1082,7 +1078,7 @@ export default {
           content: {
             prompt:
               "The examiner will ask you about where you shop, what you buy and how you save money.",
-            pictureDescription:
+            sceneDescription:
               "A supermarket checkout with a customer holding a receipt, discount signs on shelves, and a short queue.",
             followUpQuestions: [
               "Where do you usually buy food and ingredients?",

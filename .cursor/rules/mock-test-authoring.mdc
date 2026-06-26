@@ -1,0 +1,53 @@
+---
+description: Rules for authoring CAMBA mock tests (gold mocks and practice mocks). Apply when creating or editing mock test manifests, seed data, or mock question content.
+globs:
+  - src/lib/cambridge-assessment/gold-mocks/**
+  - data/mock-tests/**
+  - data/cambridge-gold-mocks/**
+  - docs/mock-tests/**
+  - docs/cambridge-assessment/**
+  - scripts/lib/*mock*
+  - scripts/*mock*
+---
+
+# Mock test authoring
+
+## No image-based questions
+
+Mock tests must **not** use image stimuli. Students answer from text only.
+
+**Prohibited fields and patterns:**
+
+- `content.imageUrl`, `content.pictureSequence`, `content.imageOptions`
+- Choice `mediaUrl` pointing to images
+- Question types `image_selection`, `mcq_image`
+- Stems that require viewing a picture without a text scene (e.g. "Look at the picture" with no `taskDescription`)
+
+**Use instead:**
+
+| Former pattern | Text-only replacement |
+|----------------|----------------------|
+| Picture MCQ / listening tick-the-picture | Text choices; stem: "Choose the best answer" |
+| Word–picture matching | Word–description matching (`rightText` describes the item) |
+| Writing from a picture | `taskDescription: "Scene: …"` with a clear text scene |
+| Speaking spot-the-difference | `taskDescription` with **Scene A** / **Scene B** paragraphs |
+| Speaking story from pictures | `taskDescription` with numbered **Story outline** beats |
+| KET/PET photo description | `taskDescription: "Scene: …"` describing the setting |
+
+## Helpers
+
+- Gold mocks: `goldWriting()`, `goldSpeaking()`, `goldMcq()` from `gold-mock-helpers.ts`
+- Do not pass `imageUrl`, `pictureSequence`, or `imageOptions` to helpers
+- Practice mocks: follow `docs/mock-tests/m1-yle-practice-mock-authoring.md`
+
+## Quality
+
+- One learning objective per item; age-appropriate language
+- MCQ distractors plausible and same category as the key
+- Writing/speaking tasks must be evaluable without image context (M2.2 / M2.3 rubrics)
+- Run `npm run test -- gold-mock.validation` before seeding
+
+## References
+
+- `docs/cambridge-assessment/gold-mock-authoring-standard.md`
+- `docs/cambridge-assessment/gold-mock-authoring-guide.md`

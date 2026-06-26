@@ -8,153 +8,126 @@ export const UNIT_PASSAGES = {
     {
       title: "Tom's Birthday",
       text: "Hello! My name is Tom. I am seven years old.\n\nMy birthday is on Tuesday. Today is Monday. I am very happy!\n\nI have ten friends at my party. We eat cake. My mother says: \"Happy birthday, Tom!\"\n\nSchool starts at eight o'clock. I love my birthday!",
-      imagePrompt: "A boy with a birthday cake and friends, calendar showing Tuesday.",
     },
     {
       title: "Our Class Clock",
       text: "This is our classroom. Look at the clock on the wall.\n\nIt is three o'clock. We have twenty books on the desk.\n\nHow many pens? One, two, three — three pens.\n\nHow old is our teacher? She is thirty. We say: \"Good afternoon!\"",
-      imagePrompt: "Classroom with clock showing three o'clock, books and pens on desks.",
     },
     {
       title: "Days at School",
       text: "We go to school on Monday and Tuesday. On Wednesday we play in the park.\n\nToday is Thursday. I am eight. My friend Lin is seven.\n\nHow many days? One, two, three, four days this week.\n\nSchool finishes at four o'clock. We are tired and happy!",
-      imagePrompt: "Children at school with a weekly calendar and clock.",
     },
   ],
   3: [
     {
       title: "Anna Gets Dressed",
       text: "Anna wakes up. She opens her cupboard.\n\nShe has a red shirt and blue trousers. She puts on a green dress.\n\nHer shoes are yellow. Her hat is pink.\n\n\"What colour is your dress?\" asks her mother. \"It is green!\" says Anna.",
-      imagePrompt: "Girl choosing clothes: red shirt, blue trousers, green dress, yellow shoes.",
     },
     {
       title: "The Clothes Shop",
       text: "Tom and his father go to a shop. Tom sees a blue jacket and a red hat.\n\n\"I like the yellow shirt,\" says Tom. The shoes are green.\n\nHis father buys black trousers. Tom is happy with his new clothes.",
-      imagePrompt: "Clothes shop with colourful shirts, dresses, shoes and hats on display.",
     },
     {
       title: "School Uniform Day",
       text: "Today is special at school. All children wear smart clothes.\n\nMai has a white shirt and a blue skirt. Nam wears grey trousers.\n\nTheir shoes are black. \"You look nice!\" says the teacher.\n\nWhat colour is your shirt? Mine is blue!",
-      imagePrompt: "Children in school uniforms with different coloured shirts and shoes.",
     },
   ],
   4: [
     {
       title: "At the Zoo",
       text: "We go to the zoo on Saturday. Look! This is a big elephant.\n\nThat tiger is orange and black. The monkey is funny — it jumps!\n\nI see a bear near the river. My sister likes the birds.\n\nWe also see cats and dogs in the pet area. We love animals!",
-      imagePrompt: "Zoo scene with elephant, tiger, monkey, bear and birds.",
     },
     {
       title: "Pets at Home",
       text: "Hello! I am Ben. I have two pets at home.\n\nThis is my cat. Her name is Mimi. That is my dog. His name is Rex.\n\nWe have fish in a small tank. They are orange and blue.\n\nMy friend has a bird. It can sing!",
-      imagePrompt: "Home with cat, dog, fish tank and bird cage.",
     },
     {
       title: "Farm Animals",
       text: "Grandpa lives on a farm. We visit him on Sunday.\n\nThere are cows and chickens. This duck is small and yellow.\n\nThat horse is big and brown. We feed the animals.\n\nI count the dogs: one, two — two dogs! The farm is fun.",
-      imagePrompt: "Farm with cows, chickens, duck, horse and dogs.",
     },
   ],
   5: [
     {
       title: "A Rainy Day",
       text: "Today the sky is grey. It is rainy and windy. We stay inside.\n\nI play with my teddy and my doll. My brother flies his kite when it is sunny.\n\nLook at those clouds! But now we do a puzzle. It is fun.\n\nTomorrow will be sunny. We can play outside!",
-      imagePrompt: "Rainy window, teddy, doll, puzzle indoors; kite and clouds visible.",
     },
     {
       title: "Toy Shop Visit",
       text: "Lin goes to a toy shop with her mother. She sees a red robot and a blue balloon.\n\n\"Can I have the teddy?\" asks Lin. Her mother says yes.\n\nThey buy a small puzzle too. Lin is very happy with her new toys.",
-      imagePrompt: "Toy shop with robot, balloon, teddy bear and puzzle boxes.",
     },
     {
       title: "Park in the Sun",
       text: "It is sunny today! We go to the park with our toys.\n\nTom has a ball and a kite. Anna brings her doll.\n\nThe wind is strong — the kite flies high! These clouds are white.\n\nWe play until four o'clock. What a lovely day!",
-      imagePrompt: "Sunny park with kite, ball, doll and white clouds.",
     },
   ],
   6: [
     {
       title: "Lunch at School",
       text: "It is twelve o'clock. We eat lunch at school.\n\nI have rice and chicken. My friend eats an egg and bread.\n\nShe drinks milk. I drink water. Tom likes bananas.\n\nAnna doesn't like fish. She eats an apple. We are not hungry now!",
-      imagePrompt: "School lunch trays with rice, chicken, egg, fruit and drinks.",
     },
     {
       title: "Shopping for Food",
       text: "Mother and I go to the shop. We buy apples, oranges and bananas.\n\n\"Do you like juice?\" asks Mother. \"Yes! Orange juice!\" I say.\n\nWe get milk and water too. Father likes chicken for dinner.\n\nWe also buy a small cake. Yummy!",
-      imagePrompt: "Grocery shop with fruit, milk, juice and cake on shelves.",
     },
     {
       title: "Breakfast Time",
       text: "Good morning! I am hungry. For breakfast I eat an egg and bread.\n\nMy sister drinks milk. My brother eats a banana.\n\nMother says: \"Eat your apple!\" Father drinks water.\n\nWe don't eat chicken for breakfast. We eat fruit and drink milk.",
-      imagePrompt: "Family breakfast table with egg, bread, fruit and milk.",
     },
   ],
   7: [
     {
       title: "My Bedroom",
       text: "This is my bedroom. There is a bed and a lamp. My bag is on the chair.\n\nThere are two books under the table. The window is big.\n\nLook! My shoes are under the bed. The door is open.\n\nI love my room. It is small but nice!",
-      imagePrompt: "Bedroom with bed, lamp, chair, table, window, door and bag.",
     },
     {
       title: "In the Kitchen",
       text: "Mother is in the kitchen. There is a table and four chairs.\n\nThe milk is in the fridge. The rice is in a cupboard.\n\nThere are apples on the table. The lamp is on — it is dark outside.\n\nWe eat dinner here every day.",
-      imagePrompt: "Kitchen with table, chairs, fridge, food on table and lamp on.",
     },
     {
       title: "Living Room",
       text: "We sit in the living room. There is a big sofa and a small table.\n\nThe TV is on the table. My cat sleeps on the sofa.\n\nThere is a plant near the window. My shoes are in front of the door.\n\nOur home is warm and happy!",
-      imagePrompt: "Living room with sofa, table, TV, window, door and cat.",
     },
   ],
   8: [
     {
       title: "Our Classroom",
       text: "Welcome to our classroom! The teacher is kind. Her name is Ms Lan.\n\nThere are twenty desks and chairs. I have a pen, a pencil and a book in my bag.\n\nWe have an English lesson today. Open your book, please!\n\nSchool is fun. I like my classroom!",
-      imagePrompt: "Classroom with teacher, desks, bags, books and pens.",
     },
     {
       title: "Jobs Day at School",
       text: "Today we learn about jobs. A farmer works on a farm. He has animals and food.\n\nA worker builds houses. Our teacher teaches children every day.\n\n\"What do you want to be?\" asks Ms Lan. Tom says: \"A teacher!\"\n\nWe draw pictures of workers and farmers.",
-      imagePrompt: "School display with farmer, worker and teacher pictures.",
     },
     {
       title: "Pack Your Bag",
       text: "Hurry! School starts at eight o'clock. Put your book in your bag.\n\nTake your pen and pencil. Close the door. Sit down at your desk.\n\nThe lesson begins. Listen to the teacher. Write in your book.\n\nDon't run in the classroom!",
-      imagePrompt: "Child packing school bag with book, pen and pencil near desk.",
     },
   ],
   9: [
     {
       title: "Sports Day",
       text: "Today is Sports Day at school. We run and play games.\n\nTom can run fast. Anna can swim well. I can play football.\n\nMy friend likes tennis. We use a ball for many games.\n\nLook! Ben rides his bike. Sports are fun!",
-      imagePrompt: "School sports day with running, football, tennis and bike.",
     },
     {
       title: "Weekend Fun",
       text: "On Saturday I play football in the park with my friends.\n\nOn Sunday we swim in the pool. My sister can't swim — she plays with a ball.\n\nFather runs every morning. Can you ride a bike? Yes, I can!\n\nWe love sports and games!",
-      imagePrompt: "Park and pool scenes with football, swimming, running and bike.",
     },
     {
       title: "After School",
       text: "School finishes at three o'clock. What do you do after school?\n\nI play a game on the computer. Then I go outside.\n\nMy brother plays tennis. I ride my bike. We run in the garden.\n\nIn the evening we are tired. Sport makes us strong!",
-      imagePrompt: "Children playing football, tennis and riding bikes after school.",
     },
   ],
   10: [
     {
       title: "Going to the Park",
       text: "We live in a small house on this street. The park is next to our house.\n\nWe walk to the park. My father goes by bike. My mother takes the bus.\n\nIn the park we see birds and trees. The shop is behind the park.\n\nWhere is the car? It is in front of our house!",
-      imagePrompt: "Street with house, park, shop, bus and bike.",
     },
     {
       title: "A Trip by Plane",
       text: "We go on holiday. We take a taxi to the airport. Then we fly by plane!\n\nThe plane is big. We look down — there are houses and streets.\n\nGrandma waits at her house. \"Welcome!\" she says. We are happy.",
-      imagePrompt: "Airport, plane, taxi and grandmother's house from above.",
     },
     {
       title: "Find the Shop",
       text: "Excuse me — where is the shop? Go straight. Turn left at the park.\n\nThe shop is next to the bus stop. The street is busy. I see a red car and a blue bus.\n\nMy house is behind the school. The bike is in front of the door.\n\nThank you! Now I know the way.",
-      imagePrompt: "Map-like street scene with shop, park, bus, car and directions.",
     },
   ],
 };

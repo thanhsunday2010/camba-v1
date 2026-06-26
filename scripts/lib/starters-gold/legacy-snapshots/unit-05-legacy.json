@@ -716,8 +716,7 @@
             "passage": {
               "title": "A Windy Day in the Park",
               "text": "Today is windy but sunny. Tom and Sue go to the park.\n\nThese are Tom's toys: a robot and a teddy. Those are Sue's toys: two dolls and a puzzle.\n\nTom flies his kite. The kite is in the sky! Sue has red balloons. One balloon goes up, up, up!\n\nThere is a big cloud. It is not rainy. The children are happy.",
-              "wordCount": 58,
-              "imagePrompt": "A sunny windy park: a boy flying a kite, a girl with dolls and red balloons, a robot and teddy on the grass, one cloud in the sky."
+              "wordCount": 58
             }
           },
           "questions": [
@@ -1083,7 +1082,7 @@
             "needsReview": false
           },
           "content": {
-            "taskDescription": "Look at the picture of toys and weather. Write short answers to the three questions.",
+            "taskDescription": "Read the scene about toys and weather. Write short answers to the three questions.",
             "prompts": [
               "1. What is the weather? (Write: It's _____)",
               "2. Name two toys you see. (Use plurals if needed)",
@@ -1183,8 +1182,8 @@
             "needsReview": false
           },
           "content": {
-            "prompt": "The examiner will ask you about toys and weather. Look at the picture of a park with toys and clouds.",
-            "pictureDescription": "A sunny windy day: a child with a kite, dolls and balloons on the grass, a few clouds in the sky.",
+            "prompt": "The examiner will ask you about toys and weather. Read the scene about a park with toys and clouds.",
+            "sceneDescription": "A sunny windy day: a child with a kite, dolls and balloons on the grass, a few clouds in the sky.",
             "followUpQuestions": [
               "What's the weather like today?",
               "What is your favourite toy?",

@@ -85,7 +85,6 @@ const grammarReference = [
 const museumSignPassage = buildPassage({
   title: "City Museum — Visitor Information",
   text: "WELCOME TO RIVERSIDE CITY MUSEUM\n\nENTRANCE: Main door on River Street (near the statue).\nEXIT: Side door to the square — for pedestrians only.\n\nVISITOR ROUTE\n1. Enter through the main entrance.\n2. Walk along the gallery to the monument room.\n3. Cross the footbridge display area to the exit.\n\nSAFETY\n• Do not run on the pavement outside.\n• Use the marked crossing on River Street.\n• The nearest landmark for taxis is the clock tower at the junction.\n\nOPEN: Tuesday–Sunday, 9 a.m. – 5 p.m.\nClosed Mondays.\n\nQuestions? Ask at the information desk by the entrance.",
-  imagePrompt: "A printed museum information sign with entrance and exit arrows, a small map and safety icons near a city statue.",
 });
 
 const tourScript = buildListeningScript({
@@ -568,7 +567,7 @@ export default {
           instructions: "Answer the examiner's questions about public places and directions. Speak for up to two minutes.",
           sortOrder: 2,
           prompt: "The examiner will ask you about landmarks, public places and how to give directions in your town.",
-          pictureDescription: "A city map showing a square with a statue, a footbridge over a river, a pedestrian crossing and a museum entrance.",
+          sceneDescription: "A city map showing a square with a statue, a footbridge over a river, a pedestrian crossing and a museum entrance.",
           followUpQuestions: [
             "What is a famous landmark in your area?",
             "Where do pedestrians walk in busy streets?",

@@ -87,7 +87,6 @@ export function goldWriting(
     taskDescription?: string;
     minWords?: number;
     maxWords?: number;
-    imageUrl?: string;
     requiredPoints?: string[];
   }
 ): GoldMockQuestionBlock {
@@ -97,7 +96,6 @@ export function goldWriting(
     taskDescription,
     minWords,
     maxWords,
-    imageUrl,
     requiredPoints,
     ...base
   } = opts;
@@ -112,7 +110,6 @@ export function goldWriting(
       taskDescription,
       minWords,
       maxWords,
-      imageUrl,
       requiredPoints,
       rubricId: `gold-${cambridgeTaskType}-v1`,
     },
@@ -123,19 +120,17 @@ export function goldSpeaking(
   opts: BaseOpts & {
     cambridgeTaskType: string;
     prompt: string;
+    taskDescription?: string;
     maxDurationSeconds: number;
     followUpQuestions?: string[];
-    imageUrl?: string;
-    pictureSequence?: string[];
   }
 ): GoldMockQuestionBlock {
   const {
     cambridgeTaskType,
     prompt,
+    taskDescription,
     maxDurationSeconds,
     followUpQuestions,
-    imageUrl,
-    pictureSequence,
     ...base
   } = opts;
   return {
@@ -147,10 +142,9 @@ export function goldSpeaking(
     content: {
       cambridgeTaskType,
       prompt,
+      taskDescription,
       maxDurationSeconds,
       followUpQuestions,
-      imageUrl,
-      pictureSequence,
       rubricId: `gold-${cambridgeTaskType}-v1`,
     },
   };
@@ -217,21 +211,21 @@ export function uniquifyQuestionStems(
     const prompt = q.content?.prompt;
     let next = text;
 
-    if (text === "Match the word to the picture." && q.pairs?.[0]?.leftText) {
-      next = `Match the word '${q.pairs[0].leftText}' to the picture.`;
-    } else if (text === "Read the sentence. Choose the correct picture." && passage) {
+    if (text === "Match the word to the description." && q.pairs?.[0]?.leftText) {
+      next = `Match the word '${q.pairs[0].leftText}' to the description.`;
+    } else if (text === "Read the sentence. Choose the best answer." && passage) {
       const preview = passagePreview(passage);
-      if (preview) next = `Read: "${preview}" Choose the correct picture.`;
+      if (preview) next = `Read: "${preview}" Choose the best answer.`;
     } else if (text === "Read and choose the best answer." && passage) {
       const preview = passagePreview(passage, 35);
       if (preview) next = `Read the text beginning "${preview}" and choose the best answer.`;
     } else if (
-      text === "Look at the two pictures. Tell your partner about the differences." ||
-      text === "Look at the two pictures. Tell your partner about five differences between them."
+      text === "Read the two scenes below. Tell your partner about the differences." ||
+      text === "Read the two scenes below. Tell your partner about five differences between them."
     ) {
       const label = topicLabel(q.topicTag);
-      if (label) next = `Look at the two ${label} pictures. Tell your partner about the differences.`;
-    } else if (text === "Look at the pictures and tell the story." && typeof prompt === "string") {
+      if (label) next = `Read the two ${label} scenes below. Tell your partner about the differences.`;
+    } else if (text === "Use the story outline and tell the story." && typeof prompt === "string") {
       next = prompt;
     } else if (text.startsWith("Answer the examiner's questions about") && q.topicTag) {
       next = `Answer the examiner's questions about ${topicLabel(q.topicTag)}.`;
@@ -241,10 +235,10 @@ export function uniquifyQuestionStems(
       next = `Write an email in response to your English teacher about ${topicLabel(q.topicTag) || "your studies"}.`;
     } else if (text === "Write a story that begins with the sentence below.") {
       next = `Write a story about ${topicLabel(q.topicTag) || "an experience"} that begins with the sentence below.`;
-    } else if (text === "Describe the picture and say what the people are doing.") {
-      next = `Describe the ${topicLabel(q.topicTag) || "scene"} picture and say what the people are doing.`;
-    } else if (text === "Describe the photograph and say what you think is happening.") {
-      next = `Describe the ${topicLabel(q.topicTag) || "photograph"} and say what you think is happening.`;
+    } else if (text === "Read the scene description and say what the people are doing.") {
+      next = `Read the ${topicLabel(q.topicTag) || "scene"} description and say what the people are doing.`;
+    } else if (text === "Read the scene description and say what you think is happening.") {
+      next = `Read the ${topicLabel(q.topicTag) || "scene"} description and say what you think is happening.`;
     }
 
     return next === text ? q : { ...q, questionText: next };

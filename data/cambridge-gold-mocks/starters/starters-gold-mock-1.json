@@ -109,13 +109,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Link names to pictures",
-      "instructions": "Link names to pictures",
+      "title": "Link names to descriptions",
+      "instructions": "Link names to descriptions",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/starters-gold-mock-1/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Tom. He's got a red school bag.\nAnna is my sister. She's got long brown hair.\nBen wears glasses in class every day.\nLucy is my friend. She's wearing a yellow T-shirt today.\nLook at Sam. He's playing football in the playground.",
-        "caption": "Link names to pictures"
+        "caption": "Link names to descriptions"
       }
     },
     {
@@ -135,13 +135,13 @@
       "partSlug": "listening-part-3",
       "sectionSlug": "listening",
       "partNumber": 3,
-      "title": "Tick the correct picture",
-      "instructions": "Tick the correct picture",
+      "title": "Choose the correct answer",
+      "instructions": "Choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/starters-gold-mock-1/listening-part-3.mp3",
-        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe horse is running in the field near the farm.\nMum is drinking a glass of orange juice at breakfast.\nThe boy is playing with his toy train on the floor.\nThe girl can play the piano very well.\nDad and Grandpa are building a big sandcastle on the beach.",
-        "caption": "Tick the correct picture"
+        "transcript": "Examiner: Listen and Choose the correct answer.\n\nThe horse is running in the field near the farm.\nMum is drinking a glass of orange juice at breakfast.\nThe boy is playing with his toy train on the floor.\nThe girl can play the piano very well.\nDad and Grandpa are building a big sandcastle on the beach.",
+        "caption": "Choose the correct answer"
       }
     },
     {
@@ -485,12 +485,7 @@
         }
       ],
       "content": {
-        "transcriptSnippet": "The horse is running in the field near the farm.",
-        "imageOptions": [
-          "field",
-          "kitchen",
-          "bus"
-        ]
+        "transcriptSnippet": "The horse is running in the field near the farm."
       },
       "cambaQuestionType": "listening"
     },
@@ -533,12 +528,7 @@
         }
       ],
       "content": {
-        "transcriptSnippet": "Mum is drinking a glass of orange juice at breakfast.",
-        "imageOptions": [
-          "juice",
-          "soup",
-          "ice_cream"
-        ]
+        "transcriptSnippet": "Mum is drinking a glass of orange juice at breakfast."
       },
       "cambaQuestionType": "listening"
     },
@@ -581,12 +571,7 @@
         }
       ],
       "content": {
-        "transcriptSnippet": "The boy is playing with his toy train on the floor.",
-        "imageOptions": [
-          "train",
-          "football",
-          "kite"
-        ]
+        "transcriptSnippet": "The boy is playing with his toy train on the floor."
       },
       "cambaQuestionType": "listening"
     },
@@ -629,12 +614,7 @@
         }
       ],
       "content": {
-        "transcriptSnippet": "The girl can play the piano very well.",
-        "imageOptions": [
-          "piano",
-          "guitar",
-          "drums"
-        ]
+        "transcriptSnippet": "The girl can play the piano very well."
       },
       "cambaQuestionType": "listening"
     },
@@ -677,12 +657,7 @@
         }
       ],
       "content": {
-        "transcriptSnippet": "Dad and Grandpa are building a big sandcastle on the beach.",
-        "imageOptions": [
-          "sandcastle",
-          "book",
-          "cooking"
-        ]
+        "transcriptSnippet": "Dad and Grandpa are building a big sandcastle on the beach."
       },
       "cambaQuestionType": "listening"
     },
@@ -878,7 +853,7 @@
       ],
       "skillTag": "listening",
       "blueprintQuestionType": "mcq_listening",
-      "questionText": "Draw a line from the girl to the swing. Which picture shows this?",
+      "questionText": "Draw a line from the girl to the swing. Which option is correct?",
       "choices": [
         {
           "text": "Girl standing next to the swing",
@@ -920,7 +895,7 @@
         "animals"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "elephant",
@@ -946,7 +921,7 @@
         "food"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "banana",
@@ -972,7 +947,7 @@
         "clothes"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "trousers",
@@ -998,7 +973,7 @@
         "school"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "ruler",
@@ -1024,7 +999,7 @@
         "weather"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "cloud",
@@ -1051,7 +1026,7 @@
         "home"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1094,7 +1069,7 @@
         "places"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1137,7 +1112,7 @@
         "shopping"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1180,7 +1155,7 @@
         "food"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1223,7 +1198,7 @@
         "clothes"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1482,15 +1457,15 @@
         "family"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write one sentence about the girl and her mum.",
+      "questionText": "Read the scene below. Write one sentence about the girl and her mum.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the girl and her mum.",
+        "prompt": "Read the scene below. Write one sentence about the girl and her mum.",
+        "taskDescription": "Scene: A girl and her mum are in the kitchen. Mum is washing vegetables and the girl is setting the table.",
         "minWords": 3,
         "maxWords": 15,
-        "imageUrl": "/images/gold-mocks/starters/sgm-036-family-kitchen.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1509,15 +1484,15 @@
         "animals"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write one sentence about the cat.",
+      "questionText": "Read the scene below. Write one sentence about the cat.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the cat.",
+        "prompt": "Read the scene below. Write one sentence about the cat.",
+        "taskDescription": "Scene: A grey cat is sitting on the window sill and looking outside at the garden.",
         "minWords": 3,
         "maxWords": 15,
-        "imageUrl": "/images/gold-mocks/starters/sgm-037-cat-window.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1536,15 +1511,15 @@
         "school"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write one sentence about what the children are doing.",
+      "questionText": "Read the scene below. Write one sentence about what the children are doing.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about what the children are doing.",
+        "prompt": "Read the scene below. Write one sentence about what the children are doing.",
+        "taskDescription": "Scene: Three children are in a classroom. They are drawing colourful pictures at their desks.",
         "minWords": 4,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/starters/sgm-038-classroom-drawing.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1564,16 +1539,15 @@
         "places"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write two or three sentences about the park.",
+      "questionText": "Read the scene below. Write two or three sentences about the park.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write two or three sentences about the park.",
+        "prompt": "Read the scene below. Write two or three sentences about the park.",
         "taskDescription": "Describe what you can see in the park picture.",
         "minWords": 5,
         "maxWords": 25,
-        "imageUrl": "/images/gold-mocks/starters/sgm-039-park-scene.svg",
         "requiredPoints": [
           "Say what is in the park",
           "Say what someone is doing"
@@ -1597,16 +1571,15 @@
         "clothes"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write two or three sentences about the children in the rain.",
+      "questionText": "Read the scene below. Write two or three sentences about the children in the rain.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write two or three sentences about the children in the rain.",
+        "prompt": "Read the scene below. Write two or three sentences about the children in the rain.",
         "taskDescription": "Describe the weather and what the children are wearing.",
         "minWords": 5,
         "maxWords": 25,
-        "imageUrl": "/images/gold-mocks/starters/sgm-040-rainy-street.svg",
         "requiredPoints": [
           "Say what the weather is like",
           "Say what the children are wearing"
@@ -1631,21 +1604,21 @@
         "leisure"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at the two pictures. Tell your partner about the differences.",
+      "questionText": "Read the two scenes below. Tell your partner about the differences.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_picture_description",
-        "prompt": "Look at the two pictures of a living room. Tell your partner about five differences between them.",
+        "prompt": "Read Scene A and Scene B below. Tell your partner about five differences between them.",
+        "taskDescription": "Scene A: A living room with toys on the floor, a blue sofa, a lamp on the left table, and a cat under the chair.\nScene B: The same room with no toys on the floor, a red sofa, the lamp on the right table, and no cat.",
         "maxDurationSeconds": 120,
         "followUpQuestions": [
-          "How many toys are on the floor in picture A?",
-          "What colour is the sofa in picture B?",
-          "Is there a cat in both pictures?",
-          "Where is the lamp in picture A?",
-          "What is on the table in picture B?"
+          "How many toys are on the floor in Scene A?",
+          "What colour is the sofa in Scene B?",
+          "Is there a cat in both scenes?",
+          "Where is the lamp in Scene A?",
+          "What is on the table in Scene B?"
         ],
-        "imageUrl": "/images/gold-mocks/starters/sgm-041-living-room-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -1702,12 +1675,13 @@
         "food"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at the pictures and tell the story.",
+      "questionText": "Use the story outline and tell the story.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_storytelling",
-        "prompt": "Look at these pictures and tell the story of Tom's day at the beach.",
+        "prompt": "Use the story outline to tell the story of Tom's day at the beach.",
+        "taskDescription": "Story outline:\n1. Tom and his family drive to the beach in a red car.\n2. They play on the sandy beach in the sunshine.\n3. Tom eats a big ice cream.\n4. They drive home tired but happy.",
         "maxDurationSeconds": 180,
         "followUpQuestions": [
           "Who went to the beach with Tom?",
@@ -1715,12 +1689,6 @@
           "What did Tom eat?",
           "How was the weather?",
           "What happened at the end of the day?"
-        ],
-        "pictureSequence": [
-          "/images/gold-mocks/starters/sgm-043-story-1-car.svg",
-          "/images/gold-mocks/starters/sgm-043-story-2-beach.svg",
-          "/images/gold-mocks/starters/sgm-043-story-3-icecream.svg",
-          "/images/gold-mocks/starters/sgm-043-story-4-home.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

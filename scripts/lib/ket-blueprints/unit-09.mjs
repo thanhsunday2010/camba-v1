@@ -48,10 +48,6 @@ Student C — Priya, age 13
 Priya is careful about her online profile. She uploads photos only on weekends and never shares personal details in a message to strangers. She told us, "If someone sends a strange notification, I tell my parents."
 
 The school will use these answers to plan safer media lessons next term.`,
-  imagePrompt:
-    "School survey infographic with three student profiles, phone icons, video play buttons and notification badges; friendly teen magazine style.",
-});
-
 const listeningScript1 = buildListeningScript({
   title: "School Radio Interview with a Blogger",
   setting: "School radio studio",
@@ -1068,7 +1064,7 @@ export default {
           content: {
             prompt:
               "The examiner will ask about how you use messages, social media, blogs and online video.",
-            pictureDescription:
+            sceneDescription:
               "A teenager looking at a phone with message bubbles, a play button for a video channel and a notification icon.",
             followUpQuestions: [
               "How often do you send messages to friends?",

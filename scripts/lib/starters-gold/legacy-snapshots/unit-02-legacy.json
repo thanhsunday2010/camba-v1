@@ -709,8 +709,7 @@
             "passage": {
               "title": "Tom's Birthday",
               "text": "Hello! My name is Tom. I am seven years old. My birthday is on Monday.\n\nToday is Tuesday. I am at school. I have two friends. Their names are Ben and Kim. Ben is ten. Kim is five.\n\nWe go home at four o'clock. On Monday I had five candles on my cake. I was very happy!",
-              "wordCount": 56,
-              "imagePrompt": "A boy with a birthday cake showing five candles; a calendar with Monday circled; a clock showing four o'clock."
+              "wordCount": 56
             }
           },
           "questions": [
@@ -1117,7 +1116,7 @@
             "needsReview": false
           },
           "content": {
-            "taskDescription": "Look at the picture of a child with a clock and calendar. Write short answers to the three questions.",
+            "taskDescription": "Read the scene about a child with a clock and calendar. Write short answers to the three questions.",
             "prompts": [
               "1. How old are you? (Write: I am _____ years old.)",
               "2. What day is today? (Write: Today is _____.)",
@@ -1220,7 +1219,7 @@
           },
           "content": {
             "prompt": "The examiner will ask you about your age, numbers and time. Look at the clock and calendar picture if you have one.",
-            "pictureDescription": "A simple picture showing a clock at three o'clock and a calendar with Tuesday circled.",
+            "sceneDescription": "Scene: a clock at three o'clock and a calendar with Tuesday circled.",
             "followUpQuestions": [
               "How old are you?",
               "How many fingers can you show on one hand?",

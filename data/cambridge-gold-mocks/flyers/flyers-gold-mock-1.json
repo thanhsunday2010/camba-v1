@@ -125,13 +125,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Link names to pictures",
-      "instructions": "Link names to pictures",
+      "title": "Link names to descriptions",
+      "instructions": "Link names to descriptions",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/flyers-gold-mock-1/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mrs Chen. She's selling flowers at the festival stall.\nOmar is playing the drums on the main stage.\nPriya is taking photos of the dancers.\nMr Lopez cooks paella at the food stand every year.\nFinn's got a bright green festival wristband on his arm.\nZoe is standing next to the painting display near the entrance.\nThe mayor gave a short speech on the platform last night.",
-        "caption": "Link names to pictures"
+        "caption": "Link names to descriptions"
       }
     },
     {
@@ -151,13 +151,13 @@
       "partSlug": "listening-part-3",
       "sectionSlug": "listening",
       "partNumber": 3,
-      "title": "Tick the correct picture",
-      "instructions": "Tick the correct picture",
+      "title": "Choose the correct answer",
+      "instructions": "Choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/flyers-gold-mock-1/listening-part-3.mp3",
-        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe explorers are carefully crossing a wooden bridge over the river.\nFrom the top of the hill they can see a green valley and a lake.\nLast night there was a thunderstorm but everyone stayed safe in the tents.\nThey cook a tasty vegetable stew on the campfire every evening.\nThe campsite is next to a forest path, two kilometres from the village.\nTomorrow morning they will canoe on the river if the weather is good.\nThey thought the eagle was the most interesting animal on the walk.",
-        "caption": "Tick the correct picture"
+        "transcript": "Examiner: Listen and Choose the correct answer.\n\nThe explorers are carefully crossing a wooden bridge over the river.\nFrom the top of the hill they can see a green valley and a lake.\nLast night there was a thunderstorm but everyone stayed safe in the tents.\nThey cook a tasty vegetable stew on the campfire every evening.\nThe campsite is next to a forest path, two kilometres from the village.\nTomorrow morning they will canoe on the river if the weather is good.\nThey thought the eagle was the most interesting animal on the walk.",
+        "caption": "Choose the correct answer"
       }
     },
     {
@@ -1200,7 +1200,7 @@
         "technology"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "tablet",
@@ -1226,7 +1226,7 @@
         "environment"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "recycling",
@@ -1252,7 +1252,7 @@
         "travel"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "luggage",
@@ -1278,7 +1278,7 @@
         "health"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "ambulance",
@@ -1304,7 +1304,7 @@
         "culture"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "sculpture",
@@ -1330,7 +1330,7 @@
         "jobs"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "mechanic",
@@ -1356,7 +1356,7 @@
         "nature"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word to the picture.",
+      "questionText": "Match the word to the description.",
       "pairs": [
         {
           "leftText": "volcano",
@@ -1382,7 +1382,7 @@
         "community"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1424,7 +1424,7 @@
         "technology"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1467,7 +1467,7 @@
         "animals"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1509,7 +1509,7 @@
         "school"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1551,7 +1551,7 @@
         "food"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1594,7 +1594,7 @@
         "home"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1637,7 +1637,7 @@
         "community"
       ],
       "skillTag": "reading",
-      "questionText": "Read the sentence. Choose the correct picture.",
+      "questionText": "Read the sentence. Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -2147,16 +2147,15 @@
         "transport"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write three or four sentences about the harbour.",
+      "questionText": "Read the scene below. Write three or four sentences about the harbour.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write three or four sentences about the harbour.",
+        "prompt": "Read the scene below. Write three or four sentences about the harbour.",
         "taskDescription": "Describe the harbour scene.",
         "minWords": 12,
         "maxWords": 40,
-        "imageUrl": "/images/gold-mocks/flyers/fgm-053-harbour.svg",
         "requiredPoints": [
           "Say what boats are doing",
           "Say where people are"
@@ -2181,16 +2180,15 @@
         "community"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write three or four sentences about the city square.",
+      "questionText": "Read the scene below. Write three or four sentences about the city square.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write three or four sentences about the city square.",
+        "prompt": "Read the scene below. Write three or four sentences about the city square.",
         "taskDescription": "Describe the busy square.",
         "minWords": 12,
         "maxWords": 45,
-        "imageUrl": "/images/gold-mocks/flyers/fgm-054-city-square.svg",
         "requiredPoints": [
           "Compare two things in the picture",
           "Say what different people are doing"
@@ -2215,21 +2213,21 @@
         "transport"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at the two pictures. Tell your partner about the differences.",
+      "questionText": "Read the two scenes below. Tell your partner about the differences.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_picture_description",
-        "prompt": "Look at the two pictures of a city street. Tell your partner about five differences between them.",
+        "prompt": "Read Scene A and Scene B below. Tell your partner about five differences between them.",
+        "taskDescription": "Story outline:\n1. The children find an old map in the attic.\n2. They explore a dark cave and feel nervous.\n3. They build a bridge to cross a river.\n4. They discover a treasure chest and celebrate.",
         "maxDurationSeconds": 120,
         "followUpQuestions": [
-          "How many cars are in picture A?",
+          "How many cars are in Scene A?",
           "What is different about the café?",
-          "Is there a cyclist in both pictures?",
-          "Where is the bus in picture B?",
-          "What colour is the traffic light in picture A?"
+          "Is there a cyclist in both scenes?",
+          "Where is the bus in Scene B?",
+          "What colour is the traffic light in Scene A?"
         ],
-        "imageUrl": "/images/gold-mocks/flyers/fgm-055-city-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -2286,12 +2284,12 @@
         "nature"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at the pictures and tell the story.",
+      "questionText": "Use the story outline and tell the story.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_storytelling",
-        "prompt": "Look at these pictures and tell the story of the treasure map adventure.",
+        "prompt": "Use the story outline to tell the story of the treasure map adventure.",
         "maxDurationSeconds": 180,
         "followUpQuestions": [
           "Where did the children find the map?",
@@ -2299,12 +2297,6 @@
           "How did they cross the river?",
           "What did they discover?",
           "How did they feel at the end?"
-        ],
-        "pictureSequence": [
-          "/images/gold-mocks/flyers/fgm-057-story-1-map.svg",
-          "/images/gold-mocks/flyers/fgm-057-story-2-cave.svg",
-          "/images/gold-mocks/flyers/fgm-057-story-3-bridge.svg",
-          "/images/gold-mocks/flyers/fgm-057-story-4-celebrate.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

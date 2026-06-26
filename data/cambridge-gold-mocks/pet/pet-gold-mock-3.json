@@ -146,13 +146,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Part 1 — Listen and choose the correct picture",
-      "instructions": "Part 1 — Listen and choose the correct picture",
+      "title": "Part 1 — Listen and choose the correct answer",
+      "instructions": "Part 1 — Listen and choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/pet-gold-mock-3/listening-part-1.mp3",
         "transcript": "Woman: I'm asking about internship forms at the careers desk. Friends: We're celebrating a reunion with food in the park.",
-        "caption": "Part 1 — Listen and choose the correct picture"
+        "caption": "Part 1 — Listen and choose the correct answer"
       }
     },
     {
@@ -1505,7 +1505,6 @@
         "taskDescription": "Write about 100 words.",
         "minWords": 100,
         "maxWords": 130,
-        "imageUrl": "/images/gold-mocks/pet-gold-mock-3-story.svg",
         "rubricId": "gold-write_story-v1"
       }
     },
@@ -2402,14 +2401,14 @@
         "places"
       ],
       "skillTag": "speaking",
-      "questionText": "Describe the global and say what you think is happening.",
+      "questionText": "Read the global description and say what you think is happening.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "picture_description_speaking",
-        "prompt": "Look at the photograph. Describe the setting, the people, and what you think they are doing.",
+        "prompt": "Read the scene description. Describe the setting, the people, and what you think they are doing.",
+        "taskDescription": "Scene: Students are at an international cultural festival. They are watching a dance performance and trying food from different countries.",
         "maxDurationSeconds": 240,
-        "imageUrl": "/images/gold-mocks/pet-gold-mock-3-speaking-photo.svg",
         "rubricId": "gold-picture_description_speaking-v1"
       }
     },

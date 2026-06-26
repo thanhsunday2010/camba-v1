@@ -532,7 +532,7 @@ const QUESTIONS = [
     grammarTags: ["articles"],
     vocabularyTopics: ["health", "places"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "hospital", rightText: "Place where doctors help sick people" }],
   }),
 
@@ -547,7 +547,7 @@ const QUESTIONS = [
     grammarTags: ["verb_be"],
     vocabularyTopics: ["culture", "leisure"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "festival", rightText: "Special event with music, food and dancing" }],
   }),
 
@@ -562,7 +562,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["environment"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "recycling", rightText: "Using old things again instead of throwing them away" }],
   }),
 
@@ -577,7 +577,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["health", "jobs"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "dentist", rightText: "Person who looks after your teeth" }],
   }),
 
@@ -592,7 +592,7 @@ const QUESTIONS = [
     grammarTags: ["have_got"],
     vocabularyTopics: ["culture", "travel"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "passport", rightText: "Book you need to travel to another country" }],
   }),
 
@@ -607,7 +607,7 @@ const QUESTIONS = [
     grammarTags: ["comparatives"],
     vocabularyTopics: ["environment"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "pollution", rightText: "Dirty smoke and rubbish that hurts nature" }],
   }),
 
@@ -622,7 +622,7 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["health", "jobs"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The nurse is helping the patient in the hospital room.",
     choices: [
       { text: "Nurse with patient in bed", isCorrect: true },
@@ -642,7 +642,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["culture", "clothes"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "We wear special colourful clothes for the carnival parade.",
     choices: [
       { text: "Children in carnival costumes", isCorrect: true },
@@ -662,7 +662,7 @@ const QUESTIONS = [
     grammarTags: ["imperatives"],
     vocabularyTopics: ["environment", "nature"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Don't throw rubbish in the river because fish live there.",
     choices: [
       { text: "Clean river with fish", isCorrect: true },
@@ -682,7 +682,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["health", "food"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "I drink milk every day because it is good for my bones.",
     choices: [
       { text: "Child drinking a glass of milk", isCorrect: true },
@@ -702,7 +702,7 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["culture", "food"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Our class is learning about Japanese food and chopsticks.",
     choices: [
       { text: "Children trying Japanese food", isCorrect: true },
@@ -722,7 +722,7 @@ const QUESTIONS = [
     grammarTags: ["modal_must"],
     vocabularyTopics: ["environment", "leisure"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The beach is dirty so we must pick up litter before we swim.",
     choices: [
       { text: "Children collecting litter on beach", isCorrect: true },
@@ -868,12 +868,12 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["health"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write one sentence about the dentist.",
+    questionText: "Read the scene below. Write one sentence about the dentist.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the dentist.",
+    prompt: "Read the scene below. Write one sentence about the dentist.",
     minWords: 3,
     maxWords: 18,
-    imageUrl: "/images/gold-mocks/movers/mgm3-043-dentist.png",
+    taskDescription: "Scene: A dentist is checking a child's teeth in a bright dental clinic.",
   }),
 
   goldWriting({
@@ -887,12 +887,12 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["culture", "leisure"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write one sentence about the festival.",
+    questionText: "Read the scene below. Write one sentence about the festival.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the children at the festival.",
+    prompt: "Read the scene below. Write one sentence about the children at the festival.",
     minWords: 3,
     maxWords: 18,
-    imageUrl: "/images/gold-mocks/movers/mgm3-044-festival.png",
+    taskDescription: "Scene: Children in colourful costumes are dancing at an outdoor festival.",
   }),
 
   goldWriting({
@@ -946,12 +946,11 @@ const QUESTIONS = [
     grammarTags: ["present_continuous", "prepositions"],
     vocabularyTopics: ["environment", "places"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write two or three sentences about the recycling centre.",
+    questionText: "Read the scene below. Write two or three sentences about the recycling centre.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write two or three sentences about the recycling centre.",
+    prompt: "Read the scene below. Write two or three sentences about the recycling centre.",
     minWords: 8,
     maxWords: 30,
-    imageUrl: "/images/gold-mocks/movers/mgm3-047-recycling.png",
     taskDescription: "Describe the recycling centre scene.",
     requiredPoints: ["Say what people are recycling", "Say where the bins are"],
   }),
@@ -967,12 +966,11 @@ const QUESTIONS = [
     grammarTags: ["present_simple", "adverbs_frequency"],
     vocabularyTopics: ["health", "food"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write two or three sentences about the healthy lunch.",
+    questionText: "Read the scene below. Write two or three sentences about the healthy lunch.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write two or three sentences about the healthy lunch.",
+    prompt: "Read the scene below. Write two or three sentences about the healthy lunch.",
     minWords: 8,
     maxWords: 35,
-    imageUrl: "/images/gold-mocks/movers/mgm3-048-lunch.png",
     taskDescription: "Describe the healthy lunch on the table.",
     requiredPoints: ["Say what food you can see", "Say why it is healthy"],
   }),
@@ -988,18 +986,19 @@ const QUESTIONS = [
     grammarTags: ["there_is_are", "prepositions"],
     vocabularyTopics: ["environment", "places"],
     skillTag: "speaking",
-    questionText: "Look at the two pictures. Tell your partner about the differences.",
+    questionText: "Read the two scenes below. Tell your partner about the differences.",
     cambridgeTaskType: "speaking_picture_description",
     prompt:
-      "Look at the two pictures of a park — one clean and one dirty. Tell your partner about five differences between them.",
+      "Read Scene A and Scene B below. Tell your partner about five differences between them.",
+    taskDescription: `Scene A: A clean park with green grass, full recycling bins, and families picnicking.
+Scene B: The same park with litter on the grass, overflowing bins, and no picnic blankets.`,
     maxDurationSeconds: 120,
-    imageUrl: "/images/gold-mocks/movers/mgm3-049-park-pair.png",
     followUpQuestions: [
-      "Is there litter in picture B?",
-      "How many trees are in picture A?",
-      "Are birds in both pictures?",
-      "Where is the recycling bin in picture A?",
-      "What is the boy doing in picture B?",
+      "Is there litter in Scene B?",
+      "How many trees are in Scene A?",
+      "Are birds in both scenes?",
+      "Where is the recycling bin in Scene A?",
+      "What is the boy doing in Scene B?",
     ],
   }),
 
@@ -1039,16 +1038,15 @@ const QUESTIONS = [
     grammarTags: ["past_simple", "past_continuous"],
     vocabularyTopics: ["environment", "places", "feelings"],
     skillTag: "speaking",
-    questionText: "Look at the pictures and tell the story.",
+    questionText: "Use the story outline and tell the story.",
     cambridgeTaskType: "speaking_storytelling",
-    prompt: "Look at these pictures and tell the story of how the children cleaned the beach.",
+    prompt: "Use the story outline to tell the story of how the children cleaned the beach.",
+    taskDescription: `Story outline:
+1. The beach is dirty with plastic bottles and paper.
+2. The children make a plan and bring gloves and bags.
+3. They work together to collect the rubbish.
+4. The beach is clean and the children celebrate.`,
     maxDurationSeconds: 180,
-    pictureSequence: [
-      "/images/gold-mocks/movers/mgm3-051-story-1-dirty.png",
-      "/images/gold-mocks/movers/mgm3-051-story-2-plan.png",
-      "/images/gold-mocks/movers/mgm3-051-story-3-work.png",
-      "/images/gold-mocks/movers/mgm3-051-story-4-clean.png",
-    ],
     followUpQuestions: [
       "What was wrong with the beach at the start?",
       "What did the children take with them?",
@@ -1070,7 +1068,7 @@ export const MOVERS_GOLD_MOCK_3 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Link names to pictures",
+      "Link names to descriptions",
       "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mia. She's brushing her teeth in the bathroom.\nOmar is wearing a colourful traditional costume for the festival.\nClara is putting empty bottles in the green recycling bin.\nFinn always eats fruit at break time. Today he's eating an apple.\nAisha is dancing a folk dance on the stage.\nNoah is planting a tree between two benches in the park."
     ),
     listeningAudio(
@@ -1082,8 +1080,8 @@ export const MOVERS_GOLD_MOCK_3 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-3",
       3,
-      "Tick the correct picture",
-      "Examiner: Listen and tick the correct picture.\n\nThe children are doing yoga in the sports hall.\nSalad with vegetables is healthy for lunch.\nIn culture club they are learning salsa dancing.\nAt school we must recycle paper and glass in different bins.\nThe museum is about ancient history and old objects.\nOn Saturday they are going to clean the beach near our town."
+      "Choose the correct answer",
+      "Examiner: Listen and Choose the correct answer.\n\nThe children are doing yoga in the sports hall.\nSalad with vegetables is healthy for lunch.\nIn culture club they are learning salsa dancing.\nAt school we must recycle paper and glass in different bins.\nThe museum is about ancient history and old objects.\nOn Saturday they are going to clean the beach near our town."
     ),
     listeningAudio(
       "listening-part-4",

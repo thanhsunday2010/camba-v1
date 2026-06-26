@@ -128,13 +128,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Part 1 — Listen and choose the correct picture",
-      "instructions": "Part 1 — Listen and choose the correct picture",
+      "title": "Part 1 — Listen and choose the correct answer",
+      "instructions": "Part 1 — Listen and choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/ket-gold-mock-2/listening-part-1.mp3",
         "transcript": "Man: I think I've got everything — passport, tickets, and my suitcase is ready by the door.",
-        "caption": "Part 1 — Listen and choose the correct picture"
+        "caption": "Part 1 — Listen and choose the correct answer"
       }
     },
     {
@@ -1285,7 +1285,6 @@
         "taskDescription": "Write 35 words or more.",
         "minWords": 35,
         "maxWords": 100,
-        "imageUrl": "/images/gold-mocks/ket-gold-mock-2-story.svg",
         "rubricId": "gold-write_story-v1"
       }
     },
@@ -2185,14 +2184,14 @@
         "transport"
       ],
       "skillTag": "speaking",
-      "questionText": "Describe the travel picture and say what the people are doing.",
+      "questionText": "Read the travel description and say what the people are doing.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "picture_description_speaking",
-        "prompt": "Look at the photograph of a busy train station. Describe what you can see and say where the people might be going.",
+        "prompt": "Read the scene description. Describe what you can see and say where the people might be going.",
+        "taskDescription": "Scene: Travellers are waiting on a busy train platform. A train is arriving, people are checking timetables, and a family is carrying suitcases.",
         "maxDurationSeconds": 120,
-        "imageUrl": "/images/gold-mocks/ket-gold-mock-2-speaking-photo.svg",
         "rubricId": "gold-picture_description_speaking-v1"
       }
     }

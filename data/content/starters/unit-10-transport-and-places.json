@@ -2658,8 +2658,7 @@
             "passage": {
               "title": "My Town",
               "text": "Hello! My name is Linh. I live in a small town.\n\nMy house is on Oak Street. There is a tree in front of my house. My school is next to the park. I walk to school every day.\n\nOn Main Street there is a shop. The shop is behind the bus stop. Many people go to the shop by bus.\n\nOn Sunday, my family goes to the park. We ride our bikes. I love my town!",
-              "wordCount": 68,
-              "imagePrompt": "A simple town map: a house on Oak Street with a tree in front, a school next to a park, a shop behind a bus stop on Main Street."
+              "wordCount": 68
             }
           },
           "questions": [
@@ -2846,7 +2845,6 @@
             "passage": {
               "title": "Going to the Park",
               "text": "We live in a small house on this street. The park is next to our house.\n\nWe walk to the park. My father goes by bike. My mother takes the bus.\n\nIn the park we see birds and trees. The shop is behind the park.\n\nWhere is the car? It is in front of our house!",
-              "imagePrompt": "Street with house, park, shop, bus and bike.",
               "wordCount": 56
             }
           },
@@ -2933,7 +2931,6 @@
             "passage": {
               "title": "Going to the Park",
               "text": "We live in a small house on this street. The park is next to our house.\n\nWe walk to the park. My father goes by bike. My mother takes the bus.\n\nIn the park we see birds and trees. The shop is behind the park.\n\nWhere is the car? It is in front of our house!",
-              "imagePrompt": "Street with house, park, shop, bus and bike.",
               "wordCount": 56
             }
           },
@@ -3067,7 +3064,6 @@
             "passage": {
               "title": "Going to the Park",
               "text": "We live in a small house on this street. The park is next to our house.\n\nWe walk to the park. My father goes by bike. My mother takes the bus.\n\nIn the park we see birds and trees. The shop is behind the park.\n\nWhere is the car? It is in front of our house!",
-              "imagePrompt": "Street with house, park, shop, bus and bike.",
               "wordCount": 56
             }
           },
@@ -3167,7 +3163,6 @@
             "passage": {
               "title": "Going to the Park",
               "text": "We live in a small house on this street. The park is next to our house.\n\nWe walk to the park. My father goes by bike. My mother takes the bus.\n\nIn the park we see birds and trees. The shop is behind the park.\n\nWhere is the car? It is in front of our house!",
-              "imagePrompt": "Street with house, park, shop, bus and bike.",
               "wordCount": 56
             }
           },
@@ -3254,7 +3249,6 @@
             "passage": {
               "title": "Going to the Park",
               "text": "We live in a small house on this street. The park is next to our house.\n\nWe walk to the park. My father goes by bike. My mother takes the bus.\n\nIn the park we see birds and trees. The shop is behind the park.\n\nWhere is the car? It is in front of our house!",
-              "imagePrompt": "Street with house, park, shop, bus and bike.",
               "wordCount": 56
             }
           },
@@ -3341,7 +3335,6 @@
             "passage": {
               "title": "Going to the Park",
               "text": "We live in a small house on this street. The park is next to our house.\n\nWe walk to the park. My father goes by bike. My mother takes the bus.\n\nIn the park we see birds and trees. The shop is behind the park.\n\nWhere is the car? It is in front of our house!",
-              "imagePrompt": "Street with house, park, shop, bus and bike.",
               "wordCount": 56
             }
           },
@@ -3447,7 +3440,6 @@
             "passage": {
               "title": "Going to the Park",
               "text": "We live in a small house on this street. The park is next to our house.\n\nWe walk to the park. My father goes by bike. My mother takes the bus.\n\nIn the park we see birds and trees. The shop is behind the park.\n\nWhere is the car? It is in front of our house!",
-              "imagePrompt": "Street with house, park, shop, bus and bike.",
               "wordCount": 56
             }
           },
@@ -3514,7 +3506,6 @@
             "passage": {
               "title": "A Trip by Plane",
               "text": "We go on holiday. We take a taxi to the airport. Then we fly by plane!\n\nThe plane is big. We look down — there are houses and streets.\n\nGrandma waits at her house. \"Welcome!\" she says. We are happy.",
-              "imagePrompt": "Airport, plane, taxi and grandmother's house from above.",
               "wordCount": 40
             }
           },
@@ -3601,7 +3592,6 @@
             "passage": {
               "title": "Find the Shop",
               "text": "Excuse me — where is the shop? Go straight. Turn left at the park.\n\nThe shop is next to the bus stop. The street is busy. I see a red car and a blue bus.\n\nMy house is behind the school. The bike is in front of the door.\n\nThank you! Now I know the way.",
-              "imagePrompt": "Map-like street scene with shop, park, bus, car and directions.",
               "wordCount": 56
             }
           },
@@ -3688,7 +3678,6 @@
             "passage": {
               "title": "Find the Shop",
               "text": "Excuse me — where is the shop? Go straight. Turn left at the park.\n\nThe shop is next to the bus stop. The street is busy. I see a red car and a blue bus.\n\nMy house is behind the school. The bike is in front of the door.\n\nThank you! Now I know the way.",
-              "imagePrompt": "Map-like street scene with shop, park, bus, car and directions.",
               "wordCount": 56
             }
           },
@@ -3790,7 +3779,6 @@
             "passage": {
               "title": "Find the Shop",
               "text": "Excuse me — where is the shop? Go straight. Turn left at the park.\n\nThe shop is next to the bus stop. The street is busy. I see a red car and a blue bus.\n\nMy house is behind the school. The bike is in front of the door.\n\nThank you! Now I know the way.",
-              "imagePrompt": "Map-like street scene with shop, park, bus, car and directions.",
               "wordCount": 56
             }
           },
@@ -6409,7 +6397,7 @@
           },
           "content": {
             "prompt": "Say how you go to one place and where something is near your home.",
-            "pictureDescription": "Street with house, park, shop, bus and car.",
+            "sceneDescription": "Street with house, park, shop, bus and car.",
             "followUpQuestions": [
               "How do you go to the park?",
               "Where is the shop?"
@@ -6511,7 +6499,7 @@
           },
           "content": {
             "prompt": "Say how you go to one place and where something is near your home.",
-            "pictureDescription": "Street with house, park, shop, bus and car.",
+            "sceneDescription": "Street with house, park, shop, bus and car.",
             "followUpQuestions": [
               "How do you go to the park?",
               "Where is the shop?"
@@ -6673,7 +6661,7 @@
           },
           "content": {
             "prompt": "Say how you go to school and to the park.",
-            "pictureDescription": "Street scene with bus, bike, car and park.",
+            "sceneDescription": "Street scene with bus, bike, car and park.",
             "followUpQuestions": [
               "How do you go to school?",
               "How do you go to the park?"
@@ -6775,7 +6763,7 @@
           },
           "content": {
             "prompt": "Say how you go to school and to the park.",
-            "pictureDescription": "Street scene with bus, bike, car and park.",
+            "sceneDescription": "Street scene with bus, bike, car and park.",
             "followUpQuestions": [
               "How do you go to school?",
               "How do you go to the park?"
@@ -6936,7 +6924,7 @@
           },
           "content": {
             "prompt": "Say where the park, shop and your house are.",
-            "pictureDescription": "Map-like street with park, shop, school and house.",
+            "sceneDescription": "Map-like street with park, shop, school and house.",
             "followUpQuestions": [
               "Where is the park?",
               "Where is your house?"
@@ -7038,7 +7026,7 @@
           },
           "content": {
             "prompt": "Say where the park, shop and your house are.",
-            "pictureDescription": "Map-like street with park, shop, school and house.",
+            "sceneDescription": "Map-like street with park, shop, school and house.",
             "followUpQuestions": [
               "Where is the park?",
               "Where is your house?"

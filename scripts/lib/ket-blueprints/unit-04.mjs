@@ -27,7 +27,6 @@ In the afternoon we watched a short dance performance. The dancers took off thei
 We spent the evening at home streaming a film. My brother prefers streaming to going out, but I still enjoy live events. Next week there is a jazz concert in the park. I will download the programme tonight and invite my classmates.
 
 If you like art and music, check the centre website. You can find out about every exhibition and performance there.`,
-  imagePrompt: 'A blog-style illustration of teenagers at an arts centre with exhibition posters, a concert flyer and phones showing streaming apps; bright cultural venue.',
 });
 
 const ticketOfficeScript1 = buildListeningScript({
@@ -547,7 +546,7 @@ export default {
           sortOrder: 2,
           content: {
             prompt: 'The examiner will ask you about concerts, exhibitions, streaming and how you spend your free time.',
-            pictureDescription: 'Teenagers at a concert venue with tickets, a programme and phones showing a streaming app.',
+            sceneDescription: 'Teenagers at a concert venue with tickets, a programme and phones showing a streaming app.',
             followUpQuestions: [
               'Do you prefer going to live concerts or watching at home?',
               'When did you last go to an exhibition?',

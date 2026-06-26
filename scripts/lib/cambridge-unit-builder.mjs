@@ -251,9 +251,9 @@ export function createCambridgeUnitBuilder(levelSlug) {
     };
   }
 
-  function buildPassage({ title, text, imagePrompt }) {
+  function buildPassage({ title, text }) {
     const wordCount = text.split(/\s+/).filter(Boolean).length;
-    return { title, text, wordCount, imagePrompt };
+    return { title, text, wordCount };
   }
 
   function buildListeningScript({ title, setting, speakers, lines, audioNotes }) {
@@ -369,7 +369,7 @@ export function createCambridgeUnitBuilder(levelSlug) {
     instructions,
     sortOrder,
     prompt,
-    pictureDescription,
+    sceneDescription,
     followUpQuestions,
     suggestedAnswers,
     assessmentCriteria,
@@ -383,7 +383,7 @@ export function createCambridgeUnitBuilder(levelSlug) {
       sortOrder,
       content: {
         prompt,
-        pictureDescription,
+        sceneDescription,
         followUpQuestions,
         suggestedAnswers,
         assessmentCriteria,

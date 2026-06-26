@@ -194,7 +194,7 @@ function buildFivePhaseLesson({
           instructions: def.instructions ?? "Record your answers.",
           sortOrder: phase.sort,
           prompt: def.prompt,
-          pictureDescription: def.pictureDescription,
+          sceneDescription: def.sceneDescription,
           followUpQuestions: def.followUpQuestions,
           suggestedAnswers: def.suggestedAnswers,
           assessmentCriteria: def.assessmentCriteria,

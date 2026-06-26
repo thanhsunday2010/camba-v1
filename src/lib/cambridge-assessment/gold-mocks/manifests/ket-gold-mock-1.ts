@@ -589,7 +589,6 @@ const ketQuestions = [
     taskDescription: "Write 35 words or more.",
     minWords: 35,
     maxWords: 100,
-    imageUrl: "/images/gold-mocks/ket-gold-mock-1-story.svg",
   }),
 
   // ── listening-part-1: MCQ pictures (5) ────────────────────────────────────
@@ -1065,12 +1064,12 @@ const ketQuestions = [
     grammarTags: ["present_continuous", "prepositions"],
     vocabularyTopics: ["places", "leisure"],
     skillTag: "speaking",
-    questionText: "Talk about the picture and compare the two scenes.",
+    questionText: "Read the scene description and describe what you see.",
     cambridgeTaskType: "picture_description_speaking",
     prompt:
-      "Look at the photograph. Describe what you can see and say how the people might be feeling.",
+      "Read the scene description. Describe what you can see and say how the people might be feeling.",
+    taskDescription: "Scene: A group of teenagers are in a city park on a sunny afternoon. Some are sitting on benches talking, others are playing with a ball near a fountain.",
     maxDurationSeconds: 120,
-    imageUrl: "/images/gold-mocks/ket-gold-mock-1-speaking-photo.svg",
   }),
 ];
 
@@ -1085,7 +1084,7 @@ export const KET_GOLD_MOCK_1 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Part 1 — Listen and choose the correct picture",
+      "Part 1 — Listen and choose the correct answer",
       "Woman: I'd like six of those red apples, please. Shop assistant: Here you are. That's three pounds."
     ),
     listeningAudio(

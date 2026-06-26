@@ -200,9 +200,9 @@ export function buildGrammarRef({
   };
 }
 
-export function buildPassage({ title, text, imagePrompt }) {
+export function buildPassage({ title, text }) {
   const wordCount = text.split(/\s+/).filter(Boolean).length;
-  return { title, text, wordCount, imagePrompt };
+  return { title, text, wordCount };
 }
 
 export function buildListeningScript({
@@ -324,7 +324,7 @@ export function buildSpeakingCheck({
   instructions,
   sortOrder,
   prompt,
-  pictureDescription,
+  sceneDescription,
   followUpQuestions,
   suggestedAnswers,
   assessmentCriteria,
@@ -338,7 +338,7 @@ export function buildSpeakingCheck({
     sortOrder,
     content: {
       prompt,
-      pictureDescription,
+      sceneDescription,
       followUpQuestions,
       suggestedAnswers,
       assessmentCriteria,

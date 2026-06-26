@@ -146,13 +146,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Part 1 — Listen and choose the correct picture",
-      "instructions": "Part 1 — Listen and choose the correct picture",
+      "title": "Part 1 — Listen and choose the correct answer",
+      "instructions": "Part 1 — Listen and choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/pet-gold-mock-1/listening-part-1.mp3",
         "transcript": "Man: Could I have the chicken sandwich and a glass of water, please? Waiter: Of course. I'll bring it to your table.",
-        "caption": "Part 1 — Listen and choose the correct picture"
+        "caption": "Part 1 — Listen and choose the correct answer"
       }
     },
     {
@@ -1507,7 +1507,6 @@
         "taskDescription": "Write about 100 words.",
         "minWords": 100,
         "maxWords": 130,
-        "imageUrl": "/images/gold-mocks/pet-gold-mock-1-story.svg",
         "rubricId": "gold-write_story-v1"
       }
     },
@@ -2403,14 +2402,14 @@
         "places"
       ],
       "skillTag": "speaking",
-      "questionText": "Describe the photograph and say what you think is happening.",
+      "questionText": "Read the scene description and say what you think is happening.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "picture_description_speaking",
-        "prompt": "Look at the photograph. Describe the place and the people, and explain why they might be there.",
+        "prompt": "Read the scene description. Describe the place and the people, and explain why they might be there.",
+        "taskDescription": "Scene: Two friends are visiting a historic city. They are standing near an old bridge, taking photos, and reading a tourist map.",
         "maxDurationSeconds": 180,
-        "imageUrl": "/images/gold-mocks/pet-gold-mock-1-speaking-photo.svg",
         "rubricId": "gold-picture_description_speaking-v1"
       }
     },

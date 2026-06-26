@@ -531,7 +531,7 @@ const QUESTIONS = [
     grammarTags: ["articles"],
     vocabularyTopics: ["hobbies"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "guitar", rightText: "Musical instrument with six strings" }],
   }),
 
@@ -546,7 +546,7 @@ const QUESTIONS = [
     grammarTags: ["verb_be"],
     vocabularyTopics: ["sports"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "skateboard", rightText: "Board with wheels for riding" }],
   }),
 
@@ -561,7 +561,7 @@ const QUESTIONS = [
     grammarTags: ["there_is_are"],
     vocabularyTopics: ["leisure"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "camera", rightText: "Thing you use to take photos" }],
   }),
 
@@ -576,7 +576,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["school"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "dictionary", rightText: "Book that helps you find word meanings" }],
   }),
 
@@ -591,7 +591,7 @@ const QUESTIONS = [
     grammarTags: ["prepositions"],
     vocabularyTopics: ["transport"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "helicopter", rightText: "Flying machine with big blades on top" }],
   }),
 
@@ -606,7 +606,7 @@ const QUESTIONS = [
     grammarTags: ["comparatives"],
     vocabularyTopics: ["nature"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "waterfall", rightText: "Water falling from a high place" }],
   }),
 
@@ -621,7 +621,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["school","time"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Every morning I brush my teeth before breakfast.",
     choices: [
       { text: "Child brushing teeth", isCorrect: true },
@@ -641,7 +641,7 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["hobbies","sports"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "After school my sister is practising the piano.",
     choices: [
       { text: "Girl playing piano", isCorrect: true },
@@ -661,7 +661,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["family","leisure"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "On Saturdays we visit our grandparents and play board games.",
     choices: [
       { text: "Family playing board games", isCorrect: true },
@@ -681,7 +681,7 @@ const QUESTIONS = [
     grammarTags: ["have_got"],
     vocabularyTopics: ["shopping","clothes"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "I've got a new pair of trainers for the school sports club.",
     choices: [
       { text: "New sports shoes", isCorrect: true },
@@ -701,7 +701,7 @@ const QUESTIONS = [
     grammarTags: ["verb_be"],
     vocabularyTopics: ["animals","home"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Our rabbit is sleeping under the table in the living room.",
     choices: [
       { text: "Rabbit under a table", isCorrect: true },
@@ -721,7 +721,7 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["weather","transport"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "It's raining, so Dad is driving us to school today.",
     choices: [
       { text: "Car in the rain", isCorrect: true },
@@ -861,12 +861,12 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["animals"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write one sentence about the giraffe.",
+    questionText: "Read the scene below. Write one sentence about the giraffe.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the giraffe.",
+    prompt: "Read the scene below. Write one sentence about the giraffe.",
     minWords: 3,
     maxWords: 18,
-    imageUrl: "/images/gold-mocks/movers/mgm-043-giraffe.png",
+    taskDescription: "Scene: A tall giraffe is eating leaves from a tree at the zoo.",
   }),
 
   goldWriting({
@@ -880,12 +880,12 @@ const QUESTIONS = [
     grammarTags: ["there_is_are"],
     vocabularyTopics: ["leisure","places"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write one sentence about the children in the park.",
+    questionText: "Read the scene below. Write one sentence about the children in the park.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the children in the park.",
+    prompt: "Read the scene below. Write one sentence about the children in the park.",
     minWords: 3,
     maxWords: 18,
-    imageUrl: "/images/gold-mocks/movers/mgm-044-park.png",
+    taskDescription: "Scene: Children are playing football and riding bikes in a sunny park.",
   }),
 
   goldWriting({
@@ -939,12 +939,11 @@ const QUESTIONS = [
     grammarTags: ["present_continuous","prepositions"],
     vocabularyTopics: ["shopping","food"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write two or three sentences about the market.",
+    questionText: "Read the scene below. Write two or three sentences about the market.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write two or three sentences about the market.",
+    prompt: "Read the scene below. Write two or three sentences about the market.",
     minWords: 8,
     maxWords: 30,
-    imageUrl: "/images/gold-mocks/movers/mgm-047-market.png",
     taskDescription: "Describe the market scene.",
     requiredPoints: ["Say what people are buying","Say where things are"],
   }),
@@ -960,12 +959,11 @@ const QUESTIONS = [
     grammarTags: ["past_simple","adverbs_frequency"],
     vocabularyTopics: ["sports"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write two or three sentences about the football match.",
+    questionText: "Read the scene below. Write two or three sentences about the football match.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write two or three sentences about the football match.",
+    prompt: "Read the scene below. Write two or three sentences about the football match.",
     minWords: 8,
     maxWords: 35,
-    imageUrl: "/images/gold-mocks/movers/mgm-048-football.png",
     taskDescription: "Describe what happened in the match.",
     requiredPoints: ["Say who is playing","Say what is happening"],
   }),
@@ -981,12 +979,13 @@ const QUESTIONS = [
     grammarTags: ["there_is_are","prepositions"],
     vocabularyTopics: ["leisure","places"],
     skillTag: "speaking",
-    questionText: "Look at the two pictures. Tell your partner about the differences.",
+    questionText: "Read the two scenes below. Tell your partner about the differences.",
     cambridgeTaskType: "speaking_picture_description",
-    prompt: "Look at the two pictures of a park. Tell your partner about five differences between them.",
+    prompt: "Read Scene A and Scene B below. Tell your partner about five differences between them.",
+    taskDescription: `Scene A: A sunny park with children on the grass, a dog running, and flowers in bloom.
+Scene B: The same park on a rainy day with empty benches, no dog, and grey skies.`,
     maxDurationSeconds: 120,
-    imageUrl: "/images/gold-mocks/movers/mgm-049-park-pair.png",
-    followUpQuestions: ["How many ducks are in the lake in picture A?","What colour is the bench in picture B?","Is there a dog in both pictures?","Where is the kite in picture A?","What is the boy holding in picture B?"],
+    followUpQuestions: ["How many ducks are in the lake in Scene A?","What colour is the bench in Scene B?","Is there a dog in both scenes?","Where is the kite in Scene A?","What is the boy holding in Scene B?"],
   }),
 
   goldSpeaking({
@@ -1018,11 +1017,15 @@ const QUESTIONS = [
     grammarTags: ["past_simple","past_continuous"],
     vocabularyTopics: ["animals","places","feelings"],
     skillTag: "speaking",
-    questionText: "Look at the pictures and tell the story.",
+    questionText: "Use the story outline and tell the story.",
     cambridgeTaskType: "speaking_storytelling",
-    prompt: "Look at these pictures and tell the story of how Anna found her lost dog.",
+    prompt: "Use the story outline to tell the story of how Anna found her lost dog.",
+    taskDescription: `Story outline:
+1. Anna is worried because her dog is missing.
+2. She searches the neighbourhood with her mum.
+3. They find the dog in the park near the trees.
+4. Anna hugs her dog and feels very happy.`,
     maxDurationSeconds: 180,
-    pictureSequence: ["/images/gold-mocks/movers/mgm-051-story-1-worry.png","/images/gold-mocks/movers/mgm-051-story-2-search.png","/images/gold-mocks/movers/mgm-051-story-3-park.png","/images/gold-mocks/movers/mgm-051-story-4-happy.png"],
     followUpQuestions: ["Where did Anna look first?","Who helped her?","Where did she find the dog?","How did Anna feel at the end?","What did she do when she saw her dog?"],
   }),
 ];
@@ -1035,9 +1038,9 @@ export const MOVERS_GOLD_MOCK_1 = composeGoldMockManifest({
     "Manually authored A1 Movers gold mock — full 51-item form with listening, reading & writing, and speaking tasks aligned to the M2.0 blueprint.",
   questions: QUESTIONS,
   parts: [
-    listeningAudio("listening-part-1", 1, "Link names to pictures", "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mia. She's holding a tennis racket.\nHugo is my classmate. He's got curly black hair.\nEva always sits at the front desk in our classroom.\nLook at Leo. He's running in the school race.\nNina's got a new green scarf today.\nMax is standing between Anna and Kim in the team photo."),
+    listeningAudio("listening-part-1", 1, "Link names to descriptions", "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mia. She's holding a tennis racket.\nHugo is my classmate. He's got curly black hair.\nEva always sits at the front desk in our classroom.\nLook at Leo. He's running in the school race.\nNina's got a new green scarf today.\nMax is standing between Anna and Kim in the team photo."),
     listeningAudio("listening-part-2", 2, "Write words or numbers", "Examiner: Listen and write the missing word or number.\n\nGrandma has got a friendly brown dog called Patch.\nThe roses in Grandma's garden are red.\nGrandma is making biscuits in the kitchen.\nThere are ten chairs in the dining room.\nThe weather is windy today.\nThe train arrived at half past three."),
-    listeningAudio("listening-part-3", 3, "Tick the correct picture", "Examiner: Listen and tick the correct picture.\n\nThe children are swimming in the lake at summer camp.\nThey eat cereal and fruit for breakfast every morning.\nTom can play the guitar and he loves singing too.\nThe weather at camp is hot and sunny this week.\nOn the forest walk they see rabbits and squirrels.\nTonight they are going to watch a film outside under the stars."),
+    listeningAudio("listening-part-3", 3, "Choose the correct answer", "Examiner: Listen and Choose the correct answer.\n\nThe children are swimming in the lake at summer camp.\nThey eat cereal and fruit for breakfast every morning.\nTom can play the guitar and he loves singing too.\nThe weather at camp is hot and sunny this week.\nOn the forest walk they see rabbits and squirrels.\nTonight they are going to watch a film outside under the stars."),
     listeningAudio("listening-part-4", 4, "Colour and draw", "Examiner: Listen and colour or draw.\n\nColour the lamp purple, please.\nNow colour the jacket on the chair orange.\nDraw a clock on the wall above the bed.\nColour the fish in the bowl blue.\nDraw a plant next to the window.\nDraw a line from the boy to his school bag."),
   ],
 });

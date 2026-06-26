@@ -23,7 +23,7 @@
       "Use this and that to point to animals near and far.",
       "Form regular plural nouns with -s: one cat, two cats.",
       "Decode familiar animal words in short texts.",
-      "Identify animals from short listening recordings with picture support."
+      "Identify animals from short listening recordings with listening clues."
     ],
     "grammarFocus": [
       "Demonstratives: this, that",
@@ -539,7 +539,7 @@
               ]
             },
             {
-              "questionText": "_____ is a tiger. (The tiger is far away in the picture.)",
+              "questionText": "_____ is a tiger. (The tiger is far away in the scene.)",
               "questionType": "multiple_choice",
               "skillTag": "grammar",
               "topicTag": "animals",
@@ -714,8 +714,7 @@
             "passage": {
               "title": "A Day at the Zoo",
               "text": "Hello! We are at the zoo today.\n\nThis is a small monkey. It is funny! That is a big elephant. It is grey.\n\nLook! Two tigers are there. They have stripes. We see birds too. The birds can fly.\n\nI like the zoo. My favourite animal is the bear.",
-              "wordCount": 52,
-              "imagePrompt": "A zoo scene with a monkey, elephant, tigers behind a fence, flying birds, and a brown bear."
+              "wordCount": 52
             }
           },
           "questions": [
@@ -926,7 +925,7 @@
               "lines": [
                 {
                   "speaker": "Examiner",
-                  "text": "Look at the pictures, Kim. Which is your pet?"
+                  "text": "Listen carefully. Kim. Which animal is your pet?"
                 },
                 {
                   "speaker": "Kim",
@@ -1081,11 +1080,11 @@
             "needsReview": false
           },
           "content": {
-            "taskDescription": "Look at the picture of animals. Write short answers to the three questions.",
+            "taskDescription": "Read the scene about animals. Write short answers to the three questions.",
             "prompts": [
               "1. What is this? (Write: This is a _____)",
               "2. Name two animals you see. (Use plurals: two _____)",
-              "3. Write one sentence: That is a _____. (Choose any animal from the picture)"
+              "3. Write one sentence: That is a _____. (Choose any animal from the scene)"
             ],
             "expectedLength": "3 short answers; 1–5 words each; one sentence up to 6 words",
             "successCriteria": [
@@ -1180,8 +1179,8 @@
             "needsReview": false
           },
           "content": {
-            "prompt": "The examiner will ask you about animals. Look at the picture of pets and zoo animals.",
-            "pictureDescription": "A cat and dog near the child; an elephant and tiger far away in a zoo scene.",
+            "prompt": "The examiner will ask you about animals. Read the scene about pets and zoo animals.",
+            "sceneDescription": "A cat and dog near the child; an elephant and tiger far away in a zoo scene.",
             "followUpQuestions": [
               "What is this?",
               "What is that?",

@@ -2605,8 +2605,7 @@
             "passage": {
               "title": "Getting Dressed",
               "text": "Hello! My name is Linh. Today is cold.\n\nI put on my green jacket. Under it, I wear a red shirt. My trousers are blue. On my feet, I have yellow shoes.\n\nMy friend Anna is here. Her dress is pink. Her hat is yellow too!\n\nWe go to school. What colour are your clothes today?",
-              "wordCount": 56,
-              "imagePrompt": "Two children getting dressed: one in a green jacket, red shirt, blue trousers and yellow shoes; another in a pink dress and yellow hat."
+              "wordCount": 56
             }
           },
           "questions": [
@@ -2793,7 +2792,6 @@
             "passage": {
               "title": "Anna Gets Dressed",
               "text": "Anna wakes up. She opens her cupboard.\n\nShe has a red shirt and blue trousers. She puts on a green dress.\n\nHer shoes are yellow. Her hat is pink.\n\n\"What colour is your dress?\" asks her mother. \"It is green!\" says Anna.",
-              "imagePrompt": "Girl choosing clothes: red shirt, blue trousers, green dress, yellow shoes.",
               "wordCount": 42
             }
           },
@@ -2880,7 +2878,6 @@
             "passage": {
               "title": "Anna Gets Dressed",
               "text": "Anna wakes up. She opens her cupboard.\n\nShe has a red shirt and blue trousers. She puts on a green dress.\n\nHer shoes are yellow. Her hat is pink.\n\n\"What colour is your dress?\" asks her mother. \"It is green!\" says Anna.",
-              "imagePrompt": "Girl choosing clothes: red shirt, blue trousers, green dress, yellow shoes.",
               "wordCount": 42
             }
           },
@@ -3014,7 +3011,6 @@
             "passage": {
               "title": "Anna Gets Dressed",
               "text": "Anna wakes up. She opens her cupboard.\n\nShe has a red shirt and blue trousers. She puts on a green dress.\n\nHer shoes are yellow. Her hat is pink.\n\n\"What colour is your dress?\" asks her mother. \"It is green!\" says Anna.",
-              "imagePrompt": "Girl choosing clothes: red shirt, blue trousers, green dress, yellow shoes.",
               "wordCount": 42
             }
           },
@@ -3114,7 +3110,6 @@
             "passage": {
               "title": "The Clothes Shop",
               "text": "Tom and his father go to a shop. Tom sees a blue jacket and a red hat.\n\n\"I like the yellow shirt,\" says Tom. The shoes are green.\n\nHis father buys black trousers. Tom is happy with his new clothes.",
-              "imagePrompt": "Clothes shop with colourful shirts, dresses, shoes and hats on display.",
               "wordCount": 40
             }
           },
@@ -3201,7 +3196,6 @@
             "passage": {
               "title": "The Clothes Shop",
               "text": "Tom and his father go to a shop. Tom sees a blue jacket and a red hat.\n\n\"I like the yellow shirt,\" says Tom. The shoes are green.\n\nHis father buys black trousers. Tom is happy with his new clothes.",
-              "imagePrompt": "Clothes shop with colourful shirts, dresses, shoes and hats on display.",
               "wordCount": 40
             }
           },
@@ -3288,7 +3282,6 @@
             "passage": {
               "title": "The Clothes Shop",
               "text": "Tom and his father go to a shop. Tom sees a blue jacket and a red hat.\n\n\"I like the yellow shirt,\" says Tom. The shoes are green.\n\nHis father buys black trousers. Tom is happy with his new clothes.",
-              "imagePrompt": "Clothes shop with colourful shirts, dresses, shoes and hats on display.",
               "wordCount": 40
             }
           },
@@ -3390,7 +3383,6 @@
             "passage": {
               "title": "The Clothes Shop",
               "text": "Tom and his father go to a shop. Tom sees a blue jacket and a red hat.\n\n\"I like the yellow shirt,\" says Tom. The shoes are green.\n\nHis father buys black trousers. Tom is happy with his new clothes.",
-              "imagePrompt": "Clothes shop with colourful shirts, dresses, shoes and hats on display.",
               "wordCount": 40
             }
           },
@@ -3457,7 +3449,6 @@
             "passage": {
               "title": "School Uniform Day",
               "text": "Today is special at school. All children wear smart clothes.\n\nMai has a white shirt and a blue skirt. Nam wears grey trousers.\n\nTheir shoes are black. \"You look nice!\" says the teacher.\n\nWhat colour is your shirt? Mine is blue!",
-              "imagePrompt": "Children in school uniforms with different coloured shirts and shoes.",
               "wordCount": 41
             }
           },
@@ -3544,7 +3535,6 @@
             "passage": {
               "title": "School Uniform Day",
               "text": "Today is special at school. All children wear smart clothes.\n\nMai has a white shirt and a blue skirt. Nam wears grey trousers.\n\nTheir shoes are black. \"You look nice!\" says the teacher.\n\nWhat colour is your shirt? Mine is blue!",
-              "imagePrompt": "Children in school uniforms with different coloured shirts and shoes.",
               "wordCount": 41
             }
           },
@@ -3631,7 +3621,6 @@
             "passage": {
               "title": "School Uniform Day",
               "text": "Today is special at school. All children wear smart clothes.\n\nMai has a white shirt and a blue skirt. Nam wears grey trousers.\n\nTheir shoes are black. \"You look nice!\" says the teacher.\n\nWhat colour is your shirt? Mine is blue!",
-              "imagePrompt": "Children in school uniforms with different coloured shirts and shoes.",
               "wordCount": 41
             }
           },
@@ -3737,7 +3726,6 @@
             "passage": {
               "title": "School Uniform Day",
               "text": "Today is special at school. All children wear smart clothes.\n\nMai has a white shirt and a blue skirt. Nam wears grey trousers.\n\nTheir shoes are black. \"You look nice!\" says the teacher.\n\nWhat colour is your shirt? Mine is blue!",
-              "imagePrompt": "Children in school uniforms with different coloured shirts and shoes.",
               "wordCount": 41
             }
           },
@@ -3816,7 +3804,7 @@
               "lines": [
                 {
                   "speaker": "Teacher",
-                  "text": "Look at the picture, Ben. Colour the shirt red."
+                  "text": "Ben. Colour the shirt red."
                 },
                 {
                   "speaker": "Ben",
@@ -6315,7 +6303,7 @@
           },
           "content": {
             "prompt": "Say what you are wearing and two colours.",
-            "pictureDescription": "Children in colourful clothes: red shirt, blue trousers, green dress, yellow shoes.",
+            "sceneDescription": "Children in colourful clothes: red shirt, blue trousers, green dress, yellow shoes.",
             "followUpQuestions": [
               "What colour is your shirt?",
               "What are you wearing today?",
@@ -6419,7 +6407,7 @@
           },
           "content": {
             "prompt": "Say what you are wearing and two colours.",
-            "pictureDescription": "Children in colourful clothes: red shirt, blue trousers, green dress, yellow shoes.",
+            "sceneDescription": "Children in colourful clothes: red shirt, blue trousers, green dress, yellow shoes.",
             "followUpQuestions": [
               "What colour is your shirt?",
               "What are you wearing today?",
@@ -6583,7 +6571,7 @@
           },
           "content": {
             "prompt": "Say three clothes items you wear and their colours.",
-            "pictureDescription": "Child in bedroom with shirt, trousers, shoes and hat on a chair.",
+            "sceneDescription": "Child in bedroom with shirt, trousers, shoes and hat on a chair.",
             "followUpQuestions": [
               "What colour is your shirt?",
               "What are you wearing?",
@@ -6687,7 +6675,7 @@
           },
           "content": {
             "prompt": "Say three clothes items you wear and their colours.",
-            "pictureDescription": "Child in bedroom with shirt, trousers, shoes and hat on a chair.",
+            "sceneDescription": "Child in bedroom with shirt, trousers, shoes and hat on a chair.",
             "followUpQuestions": [
               "What colour is your shirt?",
               "What are you wearing?",
@@ -6850,7 +6838,7 @@
           },
           "content": {
             "prompt": "Pretend you are at a clothes shop. Say what you like and ask one colour question.",
-            "pictureDescription": "Clothes shop with dresses, jackets, shirts and shoes on display.",
+            "sceneDescription": "Clothes shop with dresses, jackets, shirts and shoes on display.",
             "followUpQuestions": [
               "What do you like?",
               "What colour are the shoes?",
@@ -6954,7 +6942,7 @@
           },
           "content": {
             "prompt": "Pretend you are at a clothes shop. Say what you like and ask one colour question.",
-            "pictureDescription": "Clothes shop with dresses, jackets, shirts and shoes on display.",
+            "sceneDescription": "Clothes shop with dresses, jackets, shirts and shoes on display.",
             "followUpQuestions": [
               "What do you like?",
               "What colour are the shoes?",

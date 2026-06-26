@@ -40,6 +40,7 @@ Every Gold Mock is registered in `src/lib/cambridge-assessment/gold-mock-registr
 3. **Age-appropriate** — vocabulary and themes match CEFR band and target age.
 4. **Authentic progression** — parts follow Cambridge task flow within each paper.
 5. **No cross-mock duplication** — stems, prompts, and passages must be unique across all 3 mocks at the same level.
+6. **No image-based items** — do not use `imageUrl`, `pictureSequence`, `imageOptions`, or choice `mediaUrl`. Use text-only scene descriptions in `taskDescription` or `prompt` instead.
 
 ### Required metadata (every question)
 

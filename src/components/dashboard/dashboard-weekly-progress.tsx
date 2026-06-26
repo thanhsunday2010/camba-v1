@@ -17,7 +17,7 @@ interface DashboardWeeklyProgressProps {
     speakingTasksCompleted: string;
     emptyNote: string;
   };
-  variant?: "grid" | "strip";
+  variant?: "grid" | "strip" | "panel";
 }
 
 function StatTile({
@@ -100,6 +100,19 @@ export function DashboardWeeklyProgress({
   const tileNodes = tiles.map((tile) => (
     <StatTile key={tile.label} {...tile} compact={variant === "strip"} />
   ));
+
+  if (variant === "panel") {
+    return (
+      <div className="space-y-3">
+        <div>
+          <p className="camba-body font-semibold text-foreground">{labels.title}</p>
+          <p className="camba-caption text-muted mt-0.5">{labels.subtitle}</p>
+        </div>
+        {!hasActivity && <p className="camba-caption text-muted">{labels.emptyNote}</p>}
+        <div className="grid grid-cols-2 gap-2.5">{tileNodes}</div>
+      </div>
+    );
+  }
 
   if (variant === "strip") {
     return (

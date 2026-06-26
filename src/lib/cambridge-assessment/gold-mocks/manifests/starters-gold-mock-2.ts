@@ -7,7 +7,7 @@ import { listeningAudio } from "@/lib/cambridge-assessment/gold-mocks/gold-mock-
 
 /** M4.1 — Starters Gold Mock 2 (Animals, Home, Park). */
 const SLOTS: GoldMockSlot[] = [
-  // ── Listening Part 1: Link names to pictures ─────────────────────────────
+  // ── Listening Part 1: Link names to descriptions ─────────────────────────────
   {
     kind: "matching",
     ref: "sgm2-001",
@@ -161,7 +161,7 @@ const SLOTS: GoldMockSlot[] = [
     transcriptSnippet: "The bird on the tree is orange and very noisy.",
   },
 
-  // ── Listening Part 3: Tick the correct picture ───────────────────────────
+  // ── Listening Part 3: Choose the correct answer ───────────────────────────
   {
     kind: "mcq",
     ref: "sgm2-011",
@@ -307,7 +307,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "animals_puppy",
     grammarTags: ["imperatives"],
     vocabularyTopics: ["animals"],
-    questionText: "Draw a bone next to the puppy. Which picture shows this?",
+    questionText: "Draw a bone next to the puppy. Which option is correct?",
     blueprintQuestionType: "mcq_listening",
     choices: [
       { text: "Bone beside the puppy", isCorrect: true },
@@ -345,7 +345,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "park_horse",
     grammarTags: ["imperatives"],
     vocabularyTopics: ["animals", "park"],
-    questionText: "Draw a line from the girl to the horse. Which picture shows this?",
+    questionText: "Draw a line from the girl to the horse. Which option is correct?",
     blueprintQuestionType: "mcq_listening",
     choices: [
       { text: "Girl standing next to the horse", isCorrect: true },
@@ -366,7 +366,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "animals",
     grammarTags: ["articles"],
     vocabularyTopics: ["animals"],
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     leftText: "rabbit",
     rightText: "Small animal with long ears that hops",
   },
@@ -380,7 +380,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "home_furniture",
     grammarTags: ["articles"],
     vocabularyTopics: ["home"],
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     leftText: "sofa",
     rightText: "Soft seat in the living room",
   },
@@ -394,7 +394,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "park_play",
     grammarTags: ["verb_be"],
     vocabularyTopics: ["park", "leisure"],
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     leftText: "swing",
     rightText: "Seat that moves back and forth in the park",
   },
@@ -408,7 +408,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "animals_birds",
     grammarTags: ["verb_be"],
     vocabularyTopics: ["animals"],
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     leftText: "duck",
     rightText: "Bird that swims on water",
   },
@@ -422,7 +422,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "home_rooms",
     grammarTags: ["there_is_are"],
     vocabularyTopics: ["home"],
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     leftText: "bedroom",
     rightText: "Room where you sleep at night",
   },
@@ -438,7 +438,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "home_kitchen",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["home", "family"],
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Dad is cooking pasta for dinner in the kitchen.",
     choices: [
       { text: "Man cooking in a kitchen", isCorrect: true },
@@ -456,7 +456,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "home_bedroom",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["animals", "home"],
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The grey cat is sleeping on the bed in the bedroom.",
     choices: [
       { text: "Cat sleeping on a bed", isCorrect: true },
@@ -474,7 +474,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "park_playground",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["park", "leisure"],
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The children are playing on the swings and the slide in the park.",
     choices: [
       { text: "Children on swings and a slide", isCorrect: true },
@@ -492,7 +492,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "home_living_room",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["home", "leisure"],
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Grandma is reading a story book in the armchair by the window.",
     choices: [
       { text: "Old woman reading in an armchair", isCorrect: true },
@@ -510,7 +510,7 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "park_kite",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["park", "weather"],
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "It is windy today, so Ben is flying his kite high above the park trees.",
     choices: [
       { text: "Boy flying a kite in a windy park", isCorrect: true },
@@ -626,12 +626,12 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "animals_pets",
     grammarTags: ["verb_be"],
     vocabularyTopics: ["animals", "home"],
-    questionText: "Look at the picture. Write one sentence about the boy and his dog.",
+    questionText: "Read the scene below. Write one sentence about the boy and his dog.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the boy and his dog.",
+    prompt: "Read the scene below. Write one sentence about the boy and his dog.",
     minWords: 3,
     maxWords: 15,
-    imageUrl: "/images/gold-mocks/starters/sgm2-036-boy-dog-sofa.png",
+    taskDescription: "Scene: A boy is sitting on the sofa with his brown dog. The dog is resting its head on his lap.",
   },
   {
     kind: "writing",
@@ -642,12 +642,12 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "home_kitchen",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["home", "family"],
-    questionText: "Look at the picture. Write one sentence about Mum in the kitchen.",
+    questionText: "Read the scene below. Write one sentence about Mum in the kitchen.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about Mum in the kitchen.",
+    prompt: "Read the scene below. Write one sentence about Mum in the kitchen.",
     minWords: 3,
     maxWords: 15,
-    imageUrl: "/images/gold-mocks/starters/sgm2-037-mum-kitchen.png",
+    taskDescription: "Scene: Mum is cooking dinner in the kitchen. There are pots on the stove and fruit on the counter.",
   },
   {
     kind: "writing",
@@ -658,12 +658,12 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "park_animals",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["park", "animals"],
-    questionText: "Look at the picture. Write one sentence about the ducks on the pond.",
+    questionText: "Read the scene below. Write one sentence about the ducks on the pond.",
     cambridgeTaskType: "write_sentence",
-    prompt: "Look at the picture. Write one sentence about the ducks on the pond.",
+    prompt: "Read the scene below. Write one sentence about the ducks on the pond.",
     minWords: 4,
     maxWords: 18,
-    imageUrl: "/images/gold-mocks/starters/sgm2-038-ducks-pond.png",
+    taskDescription: "Scene: Five ducks are swimming on a pond in the park on a sunny day.",
   },
   {
     kind: "writing",
@@ -674,13 +674,12 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "park_playground",
     grammarTags: ["there_is_are"],
     vocabularyTopics: ["park", "leisure"],
-    questionText: "Look at the picture. Write two or three sentences about the playground.",
+    questionText: "Read the scene below. Write two or three sentences about the playground.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write two or three sentences about the playground.",
+    prompt: "Read the scene below. Write two or three sentences about the playground.",
     taskDescription: "Describe what you can see in the park playground picture.",
     minWords: 5,
     maxWords: 25,
-    imageUrl: "/images/gold-mocks/starters/sgm2-039-playground.png",
     requiredPoints: ["Say what is in the playground", "Say what the children are doing"],
   },
   {
@@ -692,13 +691,12 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "home_garden",
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["home", "animals"],
-    questionText: "Look at the picture. Write two or three sentences about the garden and the pets.",
+    questionText: "Read the scene below. Write two or three sentences about the garden and the pets.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write two or three sentences about the garden and the pets.",
+    prompt: "Read the scene below. Write two or three sentences about the garden and the pets.",
     taskDescription: "Describe the garden and the animals you can see.",
     minWords: 5,
     maxWords: 25,
-    imageUrl: "/images/gold-mocks/starters/sgm2-040-garden-pets.png",
     requiredPoints: ["Say what animals are in the garden", "Say what someone is doing"],
   },
 
@@ -712,18 +710,18 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "park_scene",
     grammarTags: ["there_is_are", "prepositions"],
     vocabularyTopics: ["park", "animals"],
-    questionText: "Look at the two pictures. Tell your partner about the differences.",
+    questionText: "Read the two scenes below. Tell your partner about the differences.",
     cambridgeTaskType: "speaking_picture_description",
     prompt:
-      "Look at the two pictures of a park. Tell your partner about five differences between them.",
+      "Read Scene A and Scene B below. Tell your partner about five differences between them.",
     maxDurationSeconds: 120,
-    imageUrl: "/images/gold-mocks/starters/sgm2-041-park-pair.png",
+    taskDescription: "Scene A: A park with two ducks on the pond, a boy on the swing, and a red kite in the sky.\nScene B: The same park with four ducks, no boy on the swing, and a blue kite.",
     followUpQuestions: [
-      "How many ducks are on the pond in picture A?",
-      "What colour is the bench in picture B?",
-      "Is there a dog in both pictures?",
-      "Where is the kite in picture A?",
-      "What is the girl doing in picture B?",
+      "How many ducks are on the pond in Scene A?",
+      "What colour is the bench in Scene B?",
+      "Is there a dog in both scenes?",
+      "Where is the kite in Scene A?",
+      "What is the girl doing in Scene B?",
     ],
   },
   {
@@ -757,16 +755,10 @@ const SLOTS: GoldMockSlot[] = [
     topicTag: "story_park_day",
     grammarTags: ["past_simple", "past_continuous"],
     vocabularyTopics: ["park", "animals", "family"],
-    questionText: "Look at the pictures and tell the story.",
+    questionText: "Use the story outline and tell the story.",
     cambridgeTaskType: "speaking_storytelling",
-    prompt: "Look at these pictures and tell the story of Lily's day in the park with her dog.",
+    prompt: "Use the story outline to tell the story of Lily's day in the park with her dog.",
     maxDurationSeconds: 180,
-    pictureSequence: [
-      "/images/gold-mocks/starters/sgm2-043-story-1-leash.png",
-      "/images/gold-mocks/starters/sgm2-043-story-2-pond.png",
-      "/images/gold-mocks/starters/sgm2-043-story-3-icecream.png",
-      "/images/gold-mocks/starters/sgm2-043-story-4-home.png",
-    ],
     followUpQuestions: [
       "Who went to the park with Lily?",
       "What did they do at the pond?",
@@ -790,7 +782,7 @@ const composed = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Link names to pictures",
+      "Link names to descriptions",
       `Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.
 
 This is Max. He's feeding a brown rabbit in the garden.
@@ -814,8 +806,8 @@ The bird on the tree is orange and very noisy.`
     listeningAudio(
       "listening-part-3",
       3,
-      "Tick the correct picture",
-      `Examiner: Listen and tick the correct picture.
+      "Choose the correct answer",
+      `Examiner: Listen and Choose the correct answer.
 
 The cat is sleeping on the sofa in the living room.
 The hungry dog is eating a big bone in the kitchen.

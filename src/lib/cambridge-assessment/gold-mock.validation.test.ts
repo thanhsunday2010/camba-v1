@@ -172,19 +172,15 @@ describe("M4.1 Gold Mock Program", () => {
     }
   });
 
-  it("uses normalized SVG paths for gold mock images", () => {
+  it("uses no image-based question stimuli", () => {
     for (const mock of getAllGoldMockManifests()) {
       for (const q of mock.questions) {
         const content = q.content ?? {};
-        if (typeof content.imageUrl === "string") {
-          expect(content.imageUrl.startsWith("/images/gold-mocks/")).toBe(true);
-          expect(content.imageUrl.endsWith(".svg")).toBe(true);
-        }
-        if (Array.isArray(content.pictureSequence)) {
-          for (const url of content.pictureSequence) {
-            expect(typeof url).toBe("string");
-            expect(url.endsWith(".svg")).toBe(true);
-          }
+        expect(content.imageUrl).toBeUndefined();
+        expect(content.pictureSequence).toBeUndefined();
+        expect(content.imageOptions).toBeUndefined();
+        for (const choice of q.choices ?? []) {
+          expect(choice.mediaUrl).toBeNull();
         }
       }
     }

@@ -713,8 +713,7 @@
             "passage": {
               "title": "Getting Dressed",
               "text": "Hello! My name is Linh. Today is cold.\n\nI put on my green jacket. Under it, I wear a red shirt. My trousers are blue. On my feet, I have yellow shoes.\n\nMy friend Anna is here. Her dress is pink. Her hat is yellow too!\n\nWe go to school. What colour are your clothes today?",
-              "wordCount": 56,
-              "imagePrompt": "Two children getting dressed: one in a green jacket, red shirt, blue trousers and yellow shoes; another in a pink dress and yellow hat."
+              "wordCount": 56
             }
           },
           "questions": [
@@ -925,7 +924,7 @@
               "lines": [
                 {
                   "speaker": "Teacher",
-                  "text": "Look at the picture, Ben. Colour the shirt red."
+                  "text": "Ben. Colour the shirt red."
                 },
                 {
                   "speaker": "Ben",
@@ -1080,7 +1079,7 @@
             "needsReview": false
           },
           "content": {
-            "taskDescription": "Look at the picture of a boy and a girl. Write short answers to the three questions.",
+            "taskDescription": "Read the scene about a boy and a girl. Write short answers to the three questions.",
             "prompts": [
               "1. What colour is the boy's shirt?",
               "2. What is the girl wearing? (Write: a dress / a shirt / trousers)",
@@ -1178,8 +1177,8 @@
             "needsReview": false
           },
           "content": {
-            "prompt": "The examiner will ask you about your clothes and colours. Look at the picture of children in colourful clothes.",
-            "pictureDescription": "A boy in a red shirt and blue trousers, and a girl in a green dress and yellow shoes.",
+            "prompt": "The examiner will ask you about your clothes and colours. Read the scene about children in colourful clothes.",
+            "sceneDescription": "A boy in a red shirt and blue trousers, and a girl in a green dress and yellow shoes.",
             "followUpQuestions": [
               "What colour is your shirt?",
               "Are your shoes red or blue?",

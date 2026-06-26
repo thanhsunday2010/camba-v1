@@ -40,7 +40,7 @@ M3.1 standards for manually authoring Cambridge Gold Mocks — the academic sour
 - Prompt must state audience, purpose, and content points clearly.
 - Word limits match level (Starters: 3–25 words; KET email: 25–35; PET: 100+).
 - Include `cambridgeTaskType`, `prompt`, `minWords`/`maxWords`, `rubricId`.
-- Picture tasks include `imageUrl` or descriptive stimulus.
+- Picture-style tasks use a text `taskDescription` (scene outline) — **never** `imageUrl`.
 - Required bullet points for KET/PET must appear in prompt or `requiredPoints`.
 - Tasks must be evaluable by M2.2 Gemini rubric without custom adapters.
 
@@ -50,9 +50,9 @@ M3.1 standards for manually authoring Cambridge Gold Mocks — the academic sour
 
 - Examiner-style instructions in `prompt` / `taskDescription`.
 - `maxDurationSeconds` realistic (YLE: 60–120s; KET/PET: up to 240s).
-- Picture description: include image or sequence reference.
+- Picture description / spot-the-difference: describe scenes in `taskDescription` — **no images**.
 - Personal questions: 2–4 `followUpQuestions` for YLE interview parts.
-- Story telling: `pictureSequence` with 3+ panels described in authoring notes.
+- Story telling: numbered story outline in `taskDescription` — **no** `pictureSequence`.
 - Use M2.3 runtime aliases (`speaking_picture_description`, etc.).
 
 ---

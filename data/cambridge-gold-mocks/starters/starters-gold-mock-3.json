@@ -109,13 +109,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Link names to pictures",
-      "instructions": "Link names to pictures",
+      "title": "Link names to descriptions",
+      "instructions": "Link names to descriptions",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/starters-gold-mock-3/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Jake. He's wearing a green football shirt today.\nSofia is holding a big bowl of fruit for the picnic.\nOmar has got a blue suitcase. He's ready to travel.\nPriya is wearing a red swimming cap at the pool.\nLook at Finn. He's eating a sandwich on the train.",
-        "caption": "Link names to pictures"
+        "caption": "Link names to descriptions"
       }
     },
     {
@@ -135,13 +135,13 @@
       "partSlug": "listening-part-3",
       "sectionSlug": "listening",
       "partNumber": 3,
-      "title": "Tick the correct picture",
-      "instructions": "Tick the correct picture",
+      "title": "Choose the correct answer",
+      "instructions": "Choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/starters-gold-mock-3/listening-part-3.mp3",
-        "transcript": "Examiner: Listen and tick the correct picture.\n\nThe girl is eating a big red strawberry.\nThe boys are playing basketball in the sports hall.\nThe plane is flying high in the sky.\nDad orders a cup of hot tea at the café.\nThe tourists are looking at the sea and taking photos on the ferry.",
-        "caption": "Tick the correct picture"
+        "transcript": "Examiner: Listen and Choose the correct answer.\n\nThe girl is eating a big red strawberry.\nThe boys are playing basketball in the sports hall.\nThe plane is flying high in the sky.\nDad orders a cup of hot tea at the café.\nThe tourists are looking at the sea and taking photos on the ferry.",
+        "caption": "Choose the correct answer"
       }
     },
     {
@@ -748,7 +748,7 @@
       "vocabularyTopics": [
         "travel"
       ],
-      "questionText": "Draw an X on the airport on the map. Which picture shows this?",
+      "questionText": "Draw an X on the airport on the map. Which option is correct?",
       "skillTag": "listening",
       "points": 1,
       "blueprintQuestionType": "mcq_listening",
@@ -834,7 +834,7 @@
         "travel",
         "places"
       ],
-      "questionText": "Draw a line from the boy to the boat. Which picture shows this?",
+      "questionText": "Draw a line from the boy to the boat. Which option is correct?",
       "skillTag": "listening",
       "points": 1,
       "blueprintQuestionType": "mcq_listening",
@@ -876,7 +876,7 @@
       "vocabularyTopics": [
         "food"
       ],
-      "questionText": "Match the word 'sandwich' to the picture.",
+      "questionText": "Match the word 'sandwich' to the description.",
       "skillTag": "reading",
       "points": 1,
       "pairs": [
@@ -902,7 +902,7 @@
       "vocabularyTopics": [
         "sports"
       ],
-      "questionText": "Match the word 'helmet' to the picture.",
+      "questionText": "Match the word 'helmet' to the description.",
       "skillTag": "reading",
       "points": 1,
       "pairs": [
@@ -928,7 +928,7 @@
       "vocabularyTopics": [
         "travel"
       ],
-      "questionText": "Match the word 'passport' to the picture.",
+      "questionText": "Match the word 'passport' to the description.",
       "skillTag": "reading",
       "points": 1,
       "pairs": [
@@ -955,7 +955,7 @@
         "food",
         "drink"
       ],
-      "questionText": "Match the word 'lemonade' to the picture.",
+      "questionText": "Match the word 'lemonade' to the description.",
       "skillTag": "reading",
       "points": 1,
       "pairs": [
@@ -982,7 +982,7 @@
         "sports",
         "places"
       ],
-      "questionText": "Match the word 'stadium' to the picture.",
+      "questionText": "Match the word 'stadium' to the description.",
       "skillTag": "reading",
       "points": 1,
       "pairs": [
@@ -1009,7 +1009,7 @@
         "food",
         "family"
       ],
-      "questionText": "Read: \"Grandpa is making vegetable soup in a bi…\" Choose the correct picture.",
+      "questionText": "Read: \"Grandpa is making vegetable soup in a bi…\" Choose the best answer.",
       "skillTag": "reading",
       "points": 1,
       "blueprintQuestionType": "reading_comprehension",
@@ -1051,7 +1051,7 @@
       "vocabularyTopics": [
         "sports"
       ],
-      "questionText": "Read: \"The children are running a race on the s…\" Choose the correct picture.",
+      "questionText": "Read: \"The children are running a race on the s…\" Choose the best answer.",
       "skillTag": "reading",
       "points": 1,
       "blueprintQuestionType": "reading_comprehension",
@@ -1093,7 +1093,7 @@
       "vocabularyTopics": [
         "travel"
       ],
-      "questionText": "Read: \"We are waiting for our train on platform…\" Choose the correct picture.",
+      "questionText": "Read: \"We are waiting for our train on platform…\" Choose the best answer.",
       "skillTag": "reading",
       "points": 1,
       "blueprintQuestionType": "reading_comprehension",
@@ -1136,7 +1136,7 @@
         "food",
         "shopping"
       ],
-      "questionText": "Read: \"Every Friday Dad buys fresh bread and gr…\" Choose the correct picture.",
+      "questionText": "Read: \"Every Friday Dad buys fresh bread and gr…\" Choose the best answer.",
       "skillTag": "reading",
       "points": 1,
       "blueprintQuestionType": "reading_comprehension",
@@ -1179,7 +1179,7 @@
         "travel",
         "weather"
       ],
-      "questionText": "Read: \"It is getting dark, so we are putting up…\" Choose the correct picture.",
+      "questionText": "Read: \"It is getting dark, so we are putting up…\" Choose the best answer.",
       "skillTag": "reading",
       "points": 1,
       "blueprintQuestionType": "reading_comprehension",
@@ -1434,17 +1434,17 @@
       "vocabularyTopics": [
         "food"
       ],
-      "questionText": "Look at the picture. Write one sentence about the fruit on the table.",
+      "questionText": "Read the scene below. Write one sentence about the fruit on the table.",
       "skillTag": "writing",
       "points": 1,
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the fruit on the table.",
+        "prompt": "Read the scene below. Write one sentence about the fruit on the table.",
+        "taskDescription": "Scene: There is a bowl of apples, bananas, and oranges on the kitchen table.",
         "minWords": 3,
         "maxWords": 15,
-        "imageUrl": "/images/gold-mocks/starters/sgm3-036-fruit-table.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1461,17 +1461,17 @@
       "vocabularyTopics": [
         "sports"
       ],
-      "questionText": "Look at the picture. Write one sentence about the boy and the football.",
+      "questionText": "Read the scene below. Write one sentence about the boy and the football.",
       "skillTag": "writing",
       "points": 1,
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the boy and the football.",
+        "prompt": "Read the scene below. Write one sentence about the boy and the football.",
+        "taskDescription": "Scene: A boy is kicking a football on a field near some trees.",
         "minWords": 3,
         "maxWords": 15,
-        "imageUrl": "/images/gold-mocks/starters/sgm3-037-boy-football.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1488,17 +1488,17 @@
       "vocabularyTopics": [
         "travel"
       ],
-      "questionText": "Look at the picture. Write one sentence about the family at the airport.",
+      "questionText": "Read the scene below. Write one sentence about the family at the airport.",
       "skillTag": "writing",
       "points": 1,
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the family at the airport.",
+        "prompt": "Read the scene below. Write one sentence about the family at the airport.",
+        "taskDescription": "Scene: A family is at the airport with suitcases, waiting near the check-in desk.",
         "minWords": 4,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/starters/sgm3-038-airport-family.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1516,18 +1516,17 @@
         "sports",
         "places"
       ],
-      "questionText": "Look at the picture. Write two or three sentences about the swimming pool.",
+      "questionText": "Read the scene below. Write two or three sentences about the swimming pool.",
       "skillTag": "writing",
       "points": 1,
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write two or three sentences about the swimming pool.",
+        "prompt": "Read the scene below. Write two or three sentences about the swimming pool.",
         "taskDescription": "Describe what you can see at the swimming pool.",
         "minWords": 5,
         "maxWords": 25,
-        "imageUrl": "/images/gold-mocks/starters/sgm3-039-swimming-pool.svg",
         "requiredPoints": [
           "Say who is at the pool",
           "Say what people are doing"
@@ -1549,18 +1548,17 @@
         "travel",
         "food"
       ],
-      "questionText": "Look at the picture. Write two or three sentences about the beach picnic.",
+      "questionText": "Read the scene below. Write two or three sentences about the beach picnic.",
       "skillTag": "writing",
       "points": 1,
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write two or three sentences about the beach picnic.",
+        "prompt": "Read the scene below. Write two or three sentences about the beach picnic.",
         "taskDescription": "Describe the beach and the food people are eating.",
         "minWords": 5,
         "maxWords": 25,
-        "imageUrl": "/images/gold-mocks/starters/sgm3-040-beach-picnic.svg",
         "requiredPoints": [
           "Say where the people are",
           "Say what food you can see"
@@ -1583,23 +1581,23 @@
         "sports",
         "places"
       ],
-      "questionText": "Look at the two sports hall pictures. Tell your partner about the differences.",
+      "questionText": "Read the two sports hall scenes below. Tell your partner about the differences.",
       "skillTag": "speaking",
       "points": 5,
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_picture_description",
-        "prompt": "Look at the two pictures of a sports hall. Tell your partner about five differences between them.",
+        "prompt": "Read Scene A and Scene B below. Tell your partner about five differences between them.",
+        "taskDescription": "Scene A: A sports hall with a basketball on the floor, five children, and an open door.\nScene B: The same hall with a football, three children, and a closed door.",
         "maxDurationSeconds": 120,
         "followUpQuestions": [
-          "How many basketballs are on the floor in picture A?",
-          "What colour is the goal in picture B?",
-          "Is there a coach in both pictures?",
-          "Where is the water bottle in picture A?",
-          "What are the children doing in picture B?"
+          "How many basketballs are on the floor in Scene A?",
+          "What colour is the goal in Scene B?",
+          "Is there a coach in both scenes?",
+          "Where is the water bottle in Scene A?",
+          "What are the children doing in Scene B?"
         ],
-        "imageUrl": "/images/gold-mocks/starters/sgm3-041-sports-hall-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -1653,14 +1651,14 @@
         "food",
         "family"
       ],
-      "questionText": "Look at these pictures and tell the story of Ana's train trip to the city.",
+      "questionText": "Use the story outline to tell the story of Ana's train trip to the city.",
       "skillTag": "speaking",
       "points": 5,
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_storytelling",
-        "prompt": "Look at these pictures and tell the story of Ana's train trip to the city.",
+        "prompt": "Use the story outline to tell the story of Ana's train trip to the city.",
         "maxDurationSeconds": 180,
         "followUpQuestions": [
           "Who travelled with Ana?",
@@ -1668,12 +1666,6 @@
           "What did Ana eat at the café?",
           "What did they see from the train window?",
           "What did Ana buy before going home?"
-        ],
-        "pictureSequence": [
-          "/images/gold-mocks/starters/sgm3-043-story-1-tickets.svg",
-          "/images/gold-mocks/starters/sgm3-043-story-2-train.svg",
-          "/images/gold-mocks/starters/sgm3-043-story-3-cafe.svg",
-          "/images/gold-mocks/starters/sgm3-043-story-4-souvenir.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

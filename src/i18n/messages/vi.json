@@ -18,7 +18,7 @@
   "nav": {
     "dashboard": "Dashboard",
     "journey": "Hành trình học",
-    "learningPath": "Học mà vui",
+    "learningPath": "Học là giỏi",
     "mockTests": "Thi thử",
     "achievements": "Thành tích",
     "placementTest": "Test trình độ",
@@ -727,7 +727,7 @@
     "backToProfile": "Về hồ sơ"
   },
   "learning": {
-    "title": "Học mà vui",
+    "title": "Học là giỏi",
     "subtitle": "Hoàn thành bài học để mở khóa bài tiếp theo",
     "noLevelTitle": "Chọn level để bắt đầu học",
     "noLevelDesc": "Chọn level phù hợp — bài học sẽ mở khóa tuần tự theo thứ tự unit/lesson",

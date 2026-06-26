@@ -1,4 +1,5 @@
 import { AnimatedSection } from "@/components/camba/motion";
+import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { DashboardHero } from "@/components/dashboard/dashboard-hero";
 import { DashboardDailyMissionCard } from "@/components/dashboard/dashboard-daily-mission-card";
 import { DashboardContinueLearningCard } from "@/components/dashboard/dashboard-continue-learning-card";
@@ -8,7 +9,6 @@ import { DashboardSkillInsights } from "@/components/dashboard/dashboard-skill-i
 import { DashboardRecentActivity } from "@/components/dashboard/dashboard-recent-activity";
 import { DashboardAiPracticeSection } from "@/components/dashboard/dashboard-ai-practice-section";
 import { DashboardCollapsibleSection } from "@/components/dashboard/dashboard-collapsible-section";
-import { DashboardSlideItem, DashboardSlideStrip } from "@/components/dashboard/dashboard-slide-strip";
 import type { PracticeHistoryLabels } from "@/components/ai-practice/practice-history-panel";
 import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
 import { PlacementTestCTA } from "@/components/dashboard/placement-test-cta";
@@ -119,6 +119,17 @@ interface StudentDashboardViewProps {
   labels: StudentDashboardLabels;
 }
 
+function hasSkillInsightsContent(data: StudentDashboardData): boolean {
+  const insights = data.skillInsights;
+  return (
+    insights.hasAnalytics ||
+    insights.skillStrengths.length > 0 ||
+    insights.skillWeaknesses.length > 0 ||
+    insights.grammarStrengths.length > 0 ||
+    insights.grammarWeaknesses.length > 0
+  );
+}
+
 export function StudentDashboardView({ userName, data, labels }: StudentDashboardViewProps) {
   const hasProgram = !!data.programContext?.programId;
   const programName = data.programContext?.program.name;
@@ -133,12 +144,15 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
     collapseLabel: labels.sectionCollapse,
   };
 
+  const showSkillInsights = hasSkillInsightsContent(data);
+  const hasRecentActivity = data.recentActivity.length > 0;
+
   return (
     <>
       {!hasProgram && <ProgramPicker programs={data.programs} labels={labels.programPicker} />}
 
       {hasProgram && data.gamification && (
-        <div className="camba-section-stack gap-4 sm:gap-6">
+        <div className="camba-section-stack gap-5 sm:gap-6">
           <AnimatedSection staggerIndex={0}>
             <DashboardHero
               studentName={userName}
@@ -156,7 +170,7 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
           </AnimatedSection>
 
           <AnimatedSection staggerIndex={1}>
-            <div className="grid gap-4 lg:grid-cols-2">
+            <div className="grid gap-4 lg:grid-cols-2 lg:items-start">
               <DashboardDailyMissionCard mission={data.dailyMission} labels={labels.dailyMission} compact />
               <DashboardContinueLearningCard
                 nextLesson={data.nextLesson}
@@ -169,7 +183,6 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
 
           <AnimatedSection staggerIndex={2}>
             <DashboardAiPracticeSection
-              variant="strip"
               labels={labels.aiPractice}
               writingSummary={labels.aiPracticeHistory.writingSummary}
               speakingSummary={labels.aiPracticeHistory.speakingSummary}
@@ -178,58 +191,66 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
           </AnimatedSection>
 
           <AnimatedSection staggerIndex={3}>
-            <DashboardSlideStrip label={labels.progressStripLabel}>
-              <DashboardSlideItem className="w-[min(100%,20rem)] sm:w-[22rem]">
-                <DashboardWeeklyProgress stats={data.weeklyProgress} labels={labels.weeklyProgress} variant="strip" />
-              </DashboardSlideItem>
-              <DashboardSlideItem className="w-[min(100%,20rem)] sm:w-[22rem]">
-                <DashboardRecommendedMock test={data.recommendedMock} labels={labels.recommendedMock} compact />
-              </DashboardSlideItem>
-            </DashboardSlideStrip>
+            <div className="space-y-3">
+              <h2 className="camba-h3 text-foreground">{labels.progressStripLabel}</h2>
+              <div className="grid gap-4 lg:grid-cols-2 lg:items-start">
+                <CambaCard variant="default" padding="md" className="h-full">
+                  <DashboardWeeklyProgress
+                    stats={data.weeklyProgress}
+                    labels={labels.weeklyProgress}
+                    variant="panel"
+                  />
+                </CambaCard>
+                <CambaCard variant="default" padding="md" className="h-full">
+                  <DashboardRecommendedMock test={data.recommendedMock} labels={labels.recommendedMock} compact />
+                </CambaCard>
+              </div>
+            </div>
           </AnimatedSection>
 
           <AnimatedSection staggerIndex={4}>
-            <DashboardCollapsibleSection
-              title={labels.skillInsights.title}
-              icon={Brain}
-              defaultOpen={false}
-              {...sectionToggle}
-            >
-              <DashboardSkillInsights insights={data.skillInsights} labels={labels.skillInsights} bodyOnly />
-            </DashboardCollapsibleSection>
-          </AnimatedSection>
+            <div className="rounded-2xl border border-border/60 bg-[var(--surface-sunken)]/40 p-3 sm:p-4 space-y-1">
+              <DashboardCollapsibleSection
+                title={labels.skillInsights.title}
+                icon={Brain}
+                defaultOpen={showSkillInsights}
+                panel
+                {...sectionToggle}
+              >
+                <DashboardSkillInsights insights={data.skillInsights} labels={labels.skillInsights} bodyOnly />
+              </DashboardCollapsibleSection>
 
-          <AnimatedSection staggerIndex={5}>
-            <DashboardCollapsibleSection
-              title={labels.recentActivity.title}
-              icon={Activity}
-              defaultOpen={false}
-              {...sectionToggle}
-            >
-              <DashboardRecentActivity
-                items={data.recentActivity}
-                labels={labels.recentActivity}
-                bodyOnly
-                variant="strip"
-                maxVisible={8}
-              />
-            </DashboardCollapsibleSection>
-          </AnimatedSection>
+              <DashboardCollapsibleSection
+                title={labels.recentActivity.title}
+                icon={Activity}
+                defaultOpen={hasRecentActivity}
+                panel
+                {...sectionToggle}
+              >
+                <DashboardRecentActivity
+                  items={data.recentActivity}
+                  labels={labels.recentActivity}
+                  bodyOnly
+                  variant="strip"
+                  maxVisible={6}
+                />
+              </DashboardCollapsibleSection>
 
-          <AnimatedSection staggerIndex={6}>
-            <DashboardCollapsibleSection
-              title={labels.placement.title}
-              icon={ClipboardList}
-              defaultOpen={false}
-              {...sectionToggle}
-            >
-              <PlacementTestCTA
+              <DashboardCollapsibleSection
                 title={labels.placement.title}
-                description={labels.placement.description}
-                buttonText={labels.placement.button}
-                compact
-              />
-            </DashboardCollapsibleSection>
+                icon={ClipboardList}
+                defaultOpen={false}
+                panel
+                {...sectionToggle}
+              >
+                <PlacementTestCTA
+                  title={labels.placement.title}
+                  description={labels.placement.description}
+                  buttonText={labels.placement.button}
+                  compact
+                />
+              </DashboardCollapsibleSection>
+            </div>
           </AnimatedSection>
         </div>
       )}

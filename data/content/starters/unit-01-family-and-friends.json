@@ -22,7 +22,7 @@
       "Name family members and friends using twelve Starters vocabulary words.",
       "Use am, is and are to describe people at Pre-A1 level.",
       "Use possessive adjectives my, your, his and her before family nouns.",
-      "Answer who-questions about people in pictures and short texts.",
+      "Answer who-questions about people in scene descriptions and short texts.",
       "Read Mai's family text and listen for names and relationships.",
       "Write and speak short answers about yourself, family and friends."
     ],
@@ -1001,7 +1001,7 @@
               ]
             },
             {
-              "questionText": "Look at the picture: a young male child. He is a _____.",
+              "questionText": "Read the description: a young male child. He is a _____.",
               "questionType": "multiple_choice",
               "skillTag": "vocabulary",
               "topicTag": "family-and-friends",
@@ -3310,8 +3310,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -3399,8 +3398,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -3488,8 +3486,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -3577,8 +3574,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -3634,8 +3630,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -3768,8 +3763,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -3857,8 +3851,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -3946,8 +3939,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -4035,8 +4027,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -4092,8 +4083,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -4226,8 +4216,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -4315,8 +4304,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -4404,8 +4392,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -4493,8 +4480,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -4550,8 +4536,7 @@
             "passage": {
               "title": "Mai's Family",
               "text": "Hello! My name is Mai. I am eight years old. This is my family photo.\n\nMy father is tall. His hair is black. My mother is kind. Her eyes are brown.\n\nI have one brother. His name is Nam. He is a boy. He is six. We have a friend. Her name is Anna. She is a girl in our class.\n\nWe are happy!",
-              "wordCount": 64,
-              "imagePrompt": "A cheerful family photo: parents, two children, and a friend waving."
+              "wordCount": 64
             }
           },
           "questions": [
@@ -6824,7 +6809,7 @@
             "needsReview": false
           },
           "content": {
-            "taskDescription": "Look at the picture of a family. Write short answers to the three questions.",
+            "taskDescription": "Read the scene about a family. Write short answers to the three questions.",
             "prompts": [
               "1. What is your name?",
               "2. Who is the woman? (Write: my mother / my sister / my friend)",
@@ -7875,7 +7860,7 @@
             "needsReview": false
           },
           "content": {
-            "pictureDescription": "A mother, father, boy, girl and friend in a garden."
+            "sceneDescription": "A mother, father, boy, girl and friend in a garden."
           },
           "questions": [
             {
@@ -7957,7 +7942,7 @@
             "needsReview": false
           },
           "content": {
-            "pictureDescription": "A mother, father, boy, girl and friend in a garden."
+            "sceneDescription": "A mother, father, boy, girl and friend in a garden."
           },
           "questions": [
             {
@@ -8040,7 +8025,7 @@
           },
           "content": {
             "prompt": "The examiner will ask you about you and your family. Look at your family photo if you have one.",
-            "pictureDescription": "A simple picture showing a mother, father, two children and a friend in a garden.",
+            "sceneDescription": "Scene: a mother, father, two children and a friend in a garden.",
             "followUpQuestions": [
               "What is your name?",
               "How old are you?",
@@ -8288,13 +8273,13 @@
       "sortOrder": 16,
       "unlockAfterLessonId": "e2000001-0000-4000-8000-000000000006",
       "title": "Lesson 2: Picture — Who Is Who?",
-      "learningObjective": "Identify and name family and friends in a picture using short phrases.",
+      "learningObjective": "Identify and name family and friends from a scene description using short phrases.",
       "estimatedMinutes": 18,
       "exercises": [
         {
           "slug": "speaking-picture-learn",
           "title": "Learn: Who Is in the Picture?",
-          "instructions": "Imagine a family picture. Choose the best answer.",
+          "instructions": "Read the scene description. Choose the best answer.",
           "exerciseType": "multiple_choice",
           "sortOrder": 0,
           "qualityScores": {
@@ -8304,7 +8289,7 @@
             "needsReview": false
           },
           "content": {
-            "pictureDescription": "A mother, father, boy, girl and friend in a garden."
+            "sceneDescription": "A mother, father, boy, girl and friend in a garden."
           },
           "questions": [
             {
@@ -8386,7 +8371,7 @@
             "needsReview": false
           },
           "content": {
-            "pictureDescription": "A mother, father, boy, girl and friend in a garden."
+            "sceneDescription": "A mother, father, boy, girl and friend in a garden."
           },
           "questions": [
             {
@@ -8458,7 +8443,7 @@
         {
           "slug": "speaking-picture-check",
           "title": "Check: Picture Interview",
-          "instructions": "Answer about people in a family picture.",
+          "instructions": "Answer about people in the scene.",
           "exerciseType": "speaking",
           "sortOrder": 2,
           "qualityScores": {
@@ -8468,8 +8453,8 @@
             "needsReview": false
           },
           "content": {
-            "prompt": "Look at a family picture. The examiner asks about the people.",
-            "pictureDescription": "A simple picture showing a mother, father, two children and a friend in a garden.",
+            "prompt": "Read the scene below about a family. The examiner asks about the people.",
+            "sceneDescription": "Scene: a mother, father, two children and a friend in a garden.",
             "followUpQuestions": [
               "Who is the woman?",
               "Who is the boy?",
@@ -8922,7 +8907,7 @@
           },
           "content": {
             "prompt": "The examiner asks everyday questions about you, your family and friends.",
-            "pictureDescription": "A simple picture showing a mother, father, two children and a friend in a garden.",
+            "sceneDescription": "Scene: a mother, father, two children and a friend in a garden.",
             "followUpQuestions": [
               "What is your name?",
               "Who is he in the picture?",

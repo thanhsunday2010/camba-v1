@@ -22,10 +22,6 @@ The landlord explained that the rent includes water, but electricity is extra. T
 On the first weekend, they needed a repair because the bathroom tap was broken. A plumber came quickly and fixed it. Their mother was worried about the mortgage because the family had saved for years to buy this home.
 
 Lan likes the area. She says, "The house which we visited last year was smaller. Our new home, which has a large balcony, is perfect for studying." Her neighbour, who works at the bank, gave useful advice about home insurance. Lan feels happy that the flat was built in 2010 and is well looked after.`,
-  imagePrompt:
-    "A modern flat interior with balcony view, kitchen appliances, and a quiet residential neighbourhood street with garages.",
-});
-
 const viewingScript = buildListeningScript({
   title: "Flat Viewing Phone Call",
   setting: "Phone call between tenant and landlord",
@@ -1088,7 +1084,7 @@ export default {
           content: {
             prompt:
               "The examiner will ask you about your home, neighbourhood and any repairs or appliances.",
-            pictureDescription:
+            sceneDescription:
               "A modern flat with a balcony, kitchen appliances, a garage entrance below, and a quiet tree-lined street.",
             followUpQuestions: [
               "Do you live in a house or a flat? Describe it.",

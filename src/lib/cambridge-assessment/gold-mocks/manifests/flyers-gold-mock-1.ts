@@ -616,7 +616,7 @@ const QUESTIONS = [
     grammarTags: ["articles"],
     vocabularyTopics: ["technology"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "tablet", rightText: "Flat screen device you can carry" }],
   }),
 
@@ -631,7 +631,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["environment"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "recycling", rightText: "Putting used materials in special bins" }],
   }),
 
@@ -646,7 +646,7 @@ const QUESTIONS = [
     grammarTags: ["verb_be"],
     vocabularyTopics: ["travel"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "luggage", rightText: "Bags you take on a journey" }],
   }),
 
@@ -661,7 +661,7 @@ const QUESTIONS = [
     grammarTags: ["there_is_are"],
     vocabularyTopics: ["health"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "ambulance", rightText: "Vehicle that takes sick people to hospital" }],
   }),
 
@@ -676,7 +676,7 @@ const QUESTIONS = [
     grammarTags: ["comparatives"],
     vocabularyTopics: ["culture"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "sculpture", rightText: "Art made of stone, wood or metal" }],
   }),
 
@@ -691,7 +691,7 @@ const QUESTIONS = [
     grammarTags: ["possessives"],
     vocabularyTopics: ["jobs"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "mechanic", rightText: "Person who repairs cars" }],
   }),
 
@@ -706,7 +706,7 @@ const QUESTIONS = [
     grammarTags: ["superlatives"],
     vocabularyTopics: ["nature"],
     skillTag: "reading",
-    questionText: "Match the word to the picture.",
+    questionText: "Match the word to the description.",
     pairs: [{ leftText: "volcano", rightText: "Mountain that can shoot out hot lava" }],
   }),
 
@@ -721,7 +721,7 @@ const QUESTIONS = [
     grammarTags: ["present_simple"],
     vocabularyTopics: ["community"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The local library is organising a reading festival for children this month.",
     choices: [
       { text: "Library festival poster", isCorrect: true },
@@ -741,7 +741,7 @@ const QUESTIONS = [
     grammarTags: ["present_continuous"],
     vocabularyTopics: ["technology"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Engineers are testing a new electric bus in the city centre.",
     choices: [
       { text: "Electric bus on a city street", isCorrect: true },
@@ -761,7 +761,7 @@ const QUESTIONS = [
     grammarTags: ["past_simple"],
     vocabularyTopics: ["environment","animals"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Last year volunteers cleaned plastic from the beach and helped baby turtles reach the sea.",
     choices: [
       { text: "Beach clean-up and turtles", isCorrect: true },
@@ -781,7 +781,7 @@ const QUESTIONS = [
     grammarTags: ["future_going_to"],
     vocabularyTopics: ["school"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Our class is going to design a website about famous inventors.",
     choices: [
       { text: "Students using computers", isCorrect: true },
@@ -801,7 +801,7 @@ const QUESTIONS = [
     grammarTags: ["have_got"],
     vocabularyTopics: ["food"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "The restaurant has got a menu with vegetarian and vegan dishes.",
     choices: [
       { text: "Restaurant menu with vegetables", isCorrect: true },
@@ -821,7 +821,7 @@ const QUESTIONS = [
     grammarTags: ["past_continuous"],
     vocabularyTopics: ["weather","home"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "While the storm was blowing, branches were falling from the old tree in the garden.",
     choices: [
       { text: "Tree in strong wind", isCorrect: true },
@@ -841,7 +841,7 @@ const QUESTIONS = [
     grammarTags: ["modal_can"],
     vocabularyTopics: ["sports","community"],
     skillTag: "reading",
-    questionText: "Read the sentence. Choose the correct picture.",
+    questionText: "Read the sentence. Choose the best answer.",
     passage: "Runners can collect sponsorship money to help build a new children's hospital.",
     choices: [
       { text: "Charity running event", isCorrect: true },
@@ -1101,12 +1101,11 @@ const QUESTIONS = [
     grammarTags: ["present_continuous","prepositions"],
     vocabularyTopics: ["travel","transport"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write three or four sentences about the harbour.",
+    questionText: "Read the scene below. Write three or four sentences about the harbour.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write three or four sentences about the harbour.",
+    prompt: "Read the scene below. Write three or four sentences about the harbour.",
     minWords: 12,
     maxWords: 40,
-    imageUrl: "/images/gold-mocks/flyers/fgm-053-harbour.png",
     taskDescription: "Describe the harbour scene.",
     requiredPoints: ["Say what boats are doing","Say where people are"],
   }),
@@ -1122,12 +1121,11 @@ const QUESTIONS = [
     grammarTags: ["there_is_are","comparatives"],
     vocabularyTopics: ["places","community"],
     skillTag: "writing",
-    questionText: "Look at the picture. Write three or four sentences about the city square.",
+    questionText: "Read the scene below. Write three or four sentences about the city square.",
     cambridgeTaskType: "picture_description",
-    prompt: "Look at the picture. Write three or four sentences about the city square.",
+    prompt: "Read the scene below. Write three or four sentences about the city square.",
     minWords: 12,
     maxWords: 45,
-    imageUrl: "/images/gold-mocks/flyers/fgm-054-city-square.png",
     taskDescription: "Describe the busy square.",
     requiredPoints: ["Compare two things in the picture","Say what different people are doing"],
   }),
@@ -1143,12 +1141,16 @@ const QUESTIONS = [
     grammarTags: ["there_is_are","prepositions"],
     vocabularyTopics: ["places","transport"],
     skillTag: "speaking",
-    questionText: "Look at the two pictures. Tell your partner about the differences.",
+    questionText: "Read the two scenes below. Tell your partner about the differences.",
     cambridgeTaskType: "speaking_picture_description",
-    prompt: "Look at the two pictures of a city street. Tell your partner about five differences between them.",
+    prompt: "Read Scene A and Scene B below. Tell your partner about five differences between them.",
+    taskDescription: `Story outline:
+1. The children find an old map in the attic.
+2. They explore a dark cave and feel nervous.
+3. They build a bridge to cross a river.
+4. They discover a treasure chest and celebrate.`,
     maxDurationSeconds: 120,
-    imageUrl: "/images/gold-mocks/flyers/fgm-055-city-pair.png",
-    followUpQuestions: ["How many cars are in picture A?","What is different about the café?","Is there a cyclist in both pictures?","Where is the bus in picture B?","What colour is the traffic light in picture A?"],
+    followUpQuestions: ["How many cars are in Scene A?","What is different about the café?","Is there a cyclist in both scenes?","Where is the bus in Scene B?","What colour is the traffic light in Scene A?"],
   }),
 
   goldSpeaking({
@@ -1180,11 +1182,10 @@ const QUESTIONS = [
     grammarTags: ["past_simple","past_continuous"],
     vocabularyTopics: ["travel","feelings","nature"],
     skillTag: "speaking",
-    questionText: "Look at the pictures and tell the story.",
+    questionText: "Use the story outline and tell the story.",
     cambridgeTaskType: "speaking_storytelling",
-    prompt: "Look at these pictures and tell the story of the treasure map adventure.",
+    prompt: "Use the story outline to tell the story of the treasure map adventure.",
     maxDurationSeconds: 180,
-    pictureSequence: ["/images/gold-mocks/flyers/fgm-057-story-1-map.png","/images/gold-mocks/flyers/fgm-057-story-2-cave.png","/images/gold-mocks/flyers/fgm-057-story-3-bridge.png","/images/gold-mocks/flyers/fgm-057-story-4-celebrate.png"],
     followUpQuestions: ["Where did the children find the map?","What problem did they have at the cave?","How did they cross the river?","What did they discover?","How did they feel at the end?"],
   }),
 ];
@@ -1197,9 +1198,9 @@ export const FLYERS_GOLD_MOCK_1 = composeGoldMockManifest({
     "Manually authored A2 Flyers gold mock — full 59-item form with listening, reading & writing, and speaking tasks aligned to the M2.0 blueprint.",
   questions: QUESTIONS,
   parts: [
-    listeningAudio("listening-part-1", 1, "Link names to pictures", "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mrs Chen. She's selling flowers at the festival stall.\nOmar is playing the drums on the main stage.\nPriya is taking photos of the dancers.\nMr Lopez cooks paella at the food stand every year.\nFinn's got a bright green festival wristband on his arm.\nZoe is standing next to the painting display near the entrance.\nThe mayor gave a short speech on the platform last night."),
+    listeningAudio("listening-part-1", 1, "Link names to descriptions", "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Mrs Chen. She's selling flowers at the festival stall.\nOmar is playing the drums on the main stage.\nPriya is taking photos of the dancers.\nMr Lopez cooks paella at the food stand every year.\nFinn's got a bright green festival wristband on his arm.\nZoe is standing next to the painting display near the entrance.\nThe mayor gave a short speech on the platform last night."),
     listeningAudio("listening-part-2", 2, "Write words or numbers", "Examiner: Listen and write the missing word or number.\n\nThe guest works as an engineer at a technology company.\nThe students are building a robot for the science fair.\nTomorrow the temperature will be twenty-two degrees.\nThe train to Brighton is leaving from platform five.\nThe old castle was built in eleven fifty.\nMaria was the fastest runner in the school competition.\nYou need two hundred grams of flour for the cake."),
-    listeningAudio("listening-part-3", 3, "Tick the correct picture", "Examiner: Listen and tick the correct picture.\n\nThe explorers are carefully crossing a wooden bridge over the river.\nFrom the top of the hill they can see a green valley and a lake.\nLast night there was a thunderstorm but everyone stayed safe in the tents.\nThey cook a tasty vegetable stew on the campfire every evening.\nThe campsite is next to a forest path, two kilometres from the village.\nTomorrow morning they will canoe on the river if the weather is good.\nThey thought the eagle was the most interesting animal on the walk."),
+    listeningAudio("listening-part-3", 3, "Choose the correct answer", "Examiner: Listen and Choose the correct answer.\n\nThe explorers are carefully crossing a wooden bridge over the river.\nFrom the top of the hill they can see a green valley and a lake.\nLast night there was a thunderstorm but everyone stayed safe in the tents.\nThey cook a tasty vegetable stew on the campfire every evening.\nThe campsite is next to a forest path, two kilometres from the village.\nTomorrow morning they will canoe on the river if the weather is good.\nThey thought the eagle was the most interesting animal on the walk."),
     listeningAudio("listening-part-4", 4, "Colour and draw", "Examiner: Listen and colour or draw.\n\nColour the shop sign turquoise.\nDraw a bicycle next to the bus stop sign.\nColour the woman's scarf scarlet.\nDraw an arrow from the boy to the library.\nDraw three clouds in the sky above the street.\nColour the post box red.\nDraw a cat sitting on the garden wall."),
   ],
 });

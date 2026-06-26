@@ -117,13 +117,13 @@
       "partSlug": "listening-part-1",
       "sectionSlug": "listening",
       "partNumber": 1,
-      "title": "Link names to pictures",
-      "instructions": "Link names to pictures",
+      "title": "Link names to descriptions",
+      "instructions": "Link names to descriptions",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/movers-gold-mock-2/listening-part-1.mp3",
         "transcript": "Examiner: Look at the pictures. Listen and draw a line from each name to the correct person.\n\nThis is Emma. She's holding a red umbrella because it's raining.\nSam is working on the building site. He's wearing a yellow hard hat.\nLily always uses a laptop in computer class.\nBen is pointing at the weather map on the TV screen.\nZoe's got small tools and she's fixing a computer.\nJake is standing between two computer screens in the office.",
-        "caption": "Link names to pictures"
+        "caption": "Link names to descriptions"
       }
     },
     {
@@ -143,13 +143,13 @@
       "partSlug": "listening-part-3",
       "sectionSlug": "listening",
       "partNumber": 3,
-      "title": "Tick the correct picture",
-      "instructions": "Tick the correct picture",
+      "title": "Choose the correct answer",
+      "instructions": "Choose the correct answer",
       "contextType": "listening",
       "audio": {
         "src": "/audio/gold-mocks/movers-gold-mock-2/listening-part-3.mp3",
-        "transcript": "Examiner: Listen and tick the correct picture.\n\nAt robot club the children are learning how to build robots.\nMaria uses a weather app every morning before school.\nOur robot can play music when we clap our hands.\nThe forecast says it is going to rain tomorrow.\nThey use a tablet to film their school technology project.\nThis afternoon they are going to test the new drone in the playground.",
-        "caption": "Tick the correct picture"
+        "transcript": "Examiner: Listen and Choose the correct answer.\n\nAt robot club the children are learning how to build robots.\nMaria uses a weather app every morning before school.\nOur robot can play music when we clap our hands.\nThe forecast says it is going to rain tomorrow.\nThey use a tablet to film their school technology project.\nThis afternoon they are going to test the new drone in the playground.",
+        "caption": "Choose the correct answer"
       }
     },
     {
@@ -1054,7 +1054,7 @@
         "weather"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'thunderstorm' to the picture.",
+      "questionText": "Match the word 'thunderstorm' to the description.",
       "pairs": [
         {
           "leftText": "thunderstorm",
@@ -1080,7 +1080,7 @@
         "jobs"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'astronaut' to the picture.",
+      "questionText": "Match the word 'astronaut' to the description.",
       "pairs": [
         {
           "leftText": "astronaut",
@@ -1106,7 +1106,7 @@
         "technology"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'keyboard' to the picture.",
+      "questionText": "Match the word 'keyboard' to the description.",
       "pairs": [
         {
           "leftText": "keyboard",
@@ -1132,7 +1132,7 @@
         "jobs"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'firefighter' to the picture.",
+      "questionText": "Match the word 'firefighter' to the description.",
       "pairs": [
         {
           "leftText": "firefighter",
@@ -1158,7 +1158,7 @@
         "technology"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'smartphone' to the picture.",
+      "questionText": "Match the word 'smartphone' to the description.",
       "pairs": [
         {
           "leftText": "smartphone",
@@ -1184,7 +1184,7 @@
         "weather"
       ],
       "skillTag": "reading",
-      "questionText": "Match the word 'lightning' to the picture.",
+      "questionText": "Match the word 'lightning' to the description.",
       "pairs": [
         {
           "leftText": "lightning",
@@ -1211,7 +1211,7 @@
         "home"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"The thunderstorm is very loud tonight an…\" Choose the correct picture.",
+      "questionText": "Read: \"The thunderstorm is very loud tonight an…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1254,7 +1254,7 @@
         "technology"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"My uncle is teaching computer skills at…\" Choose the correct picture.",
+      "questionText": "Read: \"My uncle is teaching computer skills at…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1297,7 +1297,7 @@
         "leisure"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"We watch the weather news on TV every ev…\" Choose the correct picture.",
+      "questionText": "Read: \"We watch the weather news on TV every ev…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1340,7 +1340,7 @@
         "clothes"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"My mum wears a blue uniform when she wor…\" Choose the correct picture.",
+      "questionText": "Read: \"My mum wears a blue uniform when she wor…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1383,7 +1383,7 @@
         "school"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"The robot is moving around the classroom…\" Choose the correct picture.",
+      "questionText": "Read: \"The robot is moving around the classroom…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1426,7 +1426,7 @@
         "transport"
       ],
       "skillTag": "reading",
-      "questionText": "Read: \"It's snowing heavily so we can't ride ou…\" Choose the correct picture.",
+      "questionText": "Read: \"It's snowing heavily so we can't ride ou…\" Choose the best answer.",
       "blueprintQuestionType": "reading_comprehension",
       "cambaQuestionType": "reading_comprehension",
       "content": {
@@ -1726,15 +1726,15 @@
         "weather"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write one sentence about the thunderstorm.",
+      "questionText": "Read the scene below. Write one sentence about the thunderstorm.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the thunderstorm.",
+        "prompt": "Read the scene below. Write one sentence about the thunderstorm.",
+        "taskDescription": "Scene: Dark clouds are over a town and lightning is flashing during a thunderstorm.",
         "minWords": 3,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/movers/mgm2-043-thunderstorm.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1754,15 +1754,15 @@
         "food"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write one sentence about the chef.",
+      "questionText": "Read the scene below. Write one sentence about the chef.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "write_sentence",
-        "prompt": "Look at the picture. Write one sentence about the chef in the kitchen.",
+        "prompt": "Read the scene below. Write one sentence about the chef in the kitchen.",
+        "taskDescription": "Scene: A chef in a white hat is cooking pasta in a busy restaurant kitchen.",
         "minWords": 3,
         "maxWords": 18,
-        "imageUrl": "/images/gold-mocks/movers/mgm2-044-chef.svg",
         "rubricId": "gold-write_sentence-v1"
       }
     },
@@ -1849,16 +1849,15 @@
         "school"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write two or three sentences about the computer lab.",
+      "questionText": "Read the scene below. Write two or three sentences about the computer lab.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write two or three sentences about the computer lab.",
+        "prompt": "Read the scene below. Write two or three sentences about the computer lab.",
         "taskDescription": "Describe the computer lab scene.",
         "minWords": 8,
         "maxWords": 30,
-        "imageUrl": "/images/gold-mocks/movers/mgm2-047-computer-lab.svg",
         "requiredPoints": [
           "Say what the children are doing",
           "Say what technology you can see"
@@ -1883,16 +1882,15 @@
         "transport"
       ],
       "skillTag": "writing",
-      "questionText": "Look at the picture. Write two or three sentences about the rainy street.",
+      "questionText": "Read the scene below. Write two or three sentences about the rainy street.",
       "blueprintQuestionType": "writing_copy",
       "cambaQuestionType": "writing",
       "content": {
         "cambridgeTaskType": "picture_description",
-        "prompt": "Look at the picture. Write two or three sentences about the rainy street.",
+        "prompt": "Read the scene below. Write two or three sentences about the rainy street.",
         "taskDescription": "Describe the rainy street scene.",
         "minWords": 8,
         "maxWords": 35,
-        "imageUrl": "/images/gold-mocks/movers/mgm2-048-rainy-street.svg",
         "requiredPoints": [
           "Say what the weather is like",
           "Say what people are doing"
@@ -1917,21 +1915,21 @@
         "places"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at the two weather differences pictures. Tell your partner about the differences.",
+      "questionText": "Read the two weather differences scenes below. Tell your partner about the differences.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_picture_description",
-        "prompt": "Look at the two pictures of a town in different weather. Tell your partner about five differences between them.",
+        "prompt": "Read Scene A and Scene B below. Tell your partner about five differences between them.",
+        "taskDescription": "Scene A: A town street on a sunny day with people in T-shirts and open shop doors.\nScene B: The same street in heavy rain with umbrellas, wet roads, and closed café tables.",
         "maxDurationSeconds": 120,
         "followUpQuestions": [
-          "Is it sunny in picture A?",
-          "How many clouds are in picture B?",
-          "Are people wearing raincoats in picture B?",
-          "Where is the rainbow in picture A?",
-          "What is the boy holding in picture B?"
+          "Is it sunny in Scene A?",
+          "How many clouds are in Scene B?",
+          "Are people wearing raincoats in Scene B?",
+          "Where is the rainbow in Scene A?",
+          "What is the boy holding in Scene B?"
         ],
-        "imageUrl": "/images/gold-mocks/movers/mgm2-049-weather-pair.svg",
         "rubricId": "gold-speaking_picture_description-v1"
       }
     },
@@ -1988,12 +1986,13 @@
         "feelings"
       ],
       "skillTag": "speaking",
-      "questionText": "Look at these pictures and tell the story of how Tom found his lost tablet.",
+      "questionText": "Use the story outline to tell the story of how Tom found his lost tablet.",
       "blueprintQuestionType": "speaking_interview",
       "cambaQuestionType": "speaking",
       "content": {
         "cambridgeTaskType": "speaking_storytelling",
-        "prompt": "Look at these pictures and tell the story of how Tom found his lost tablet.",
+        "prompt": "Use the story outline to tell the story of how Tom found his lost tablet.",
+        "taskDescription": "Story outline:\n1. Tom realises his tablet is missing and looks worried.\n2. He searches his bag and asks his sister for help.\n3. They find the tablet in the school library.\n4. Tom smiles and thanks his sister.",
         "maxDurationSeconds": 180,
         "followUpQuestions": [
           "Where did Tom look first?",
@@ -2001,12 +2000,6 @@
           "Where did he find the tablet?",
           "How did Tom feel at the end?",
           "What did he do when he found it?"
-        ],
-        "pictureSequence": [
-          "/images/gold-mocks/movers/mgm2-051-story-1-worry.svg",
-          "/images/gold-mocks/movers/mgm2-051-story-2-search.svg",
-          "/images/gold-mocks/movers/mgm2-051-story-3-library.svg",
-          "/images/gold-mocks/movers/mgm2-051-story-4-happy.svg"
         ],
         "rubricId": "gold-speaking_storytelling-v1"
       }

@@ -590,7 +590,6 @@ const ketQuestions = [
     taskDescription: "Write 35 words or more.",
     minWords: 35,
     maxWords: 100,
-    imageUrl: "/images/gold-mocks/ket-gold-mock-3-story.svg",
   }),
 
   // ── listening-part-1: MCQ pictures (5) ────────────────────────────────────
@@ -1067,12 +1066,12 @@ const ketQuestions = [
     grammarTags: ["present_continuous", "prepositions"],
     vocabularyTopics: ["leisure", "friends"],
     skillTag: "speaking",
-    questionText: "Describe the picture and say what the people are doing.",
+    questionText: "Read the scene description and say what the people are doing.",
     cambridgeTaskType: "picture_description_speaking",
     prompt:
-      "Look at the photograph of teenagers at an outdoor concert. Describe what you can see and say how the people might be feeling.",
+      "Read the scene description. Describe what you can see and say how the people might be feeling.",
+    taskDescription: "Scene: Teenagers are at an outdoor concert. A band is playing on stage and the crowd is clapping and singing along.",
     maxDurationSeconds: 120,
-    imageUrl: "/images/gold-mocks/ket-gold-mock-3-speaking-photo.svg",
   }),
 ];
 
@@ -1087,7 +1086,7 @@ export const KET_GOLD_MOCK_3 = composeGoldMockManifest({
     listeningAudio(
       "listening-part-1",
       1,
-      "Part 1 — Listen and choose the correct picture",
+      "Part 1 — Listen and choose the correct answer",
       "Teacher: Please write the answer on the board so everyone can see it. Student: OK, I'll write the example now."
     ),
     listeningAudio(
