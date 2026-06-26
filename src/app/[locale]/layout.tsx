@@ -5,6 +5,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { getAppUrl } from "@/lib/env";
+import { ContactFab } from "@/components/contact/contact-fab";
 import { Toaster } from "sonner";
 import "../globals.css";
 
@@ -75,6 +76,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
           <Toaster position="top-right" richColors />
+          <ContactFab />
         </NextIntlClientProvider>
       </body>
     </html>
