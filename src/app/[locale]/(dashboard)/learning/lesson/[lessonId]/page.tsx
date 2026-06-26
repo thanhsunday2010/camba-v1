@@ -167,6 +167,12 @@ export default async function LessonPage({ params }: LessonPageProps) {
     micUnknownError: t("ai.micUnknownError"),
     errorHighlights: t("ai.errorHighlights"),
     correctedVersion: t("ai.correctedVersion"),
+    modelAnswer: t("ai.modelAnswer"),
+    questionAudioPlaying: t("ai.questionAudioPlaying"),
+    replayQuestion: t("ai.replayQuestion"),
+    stopAudio: t("ai.stopAudio"),
+    modelAnswerAudioPlaying: t("ai.modelAnswerAudioPlaying"),
+    replayModelAnswer: t("ai.replayModelAnswer"),
   };
 
   const chromeLabels = {

@@ -9,6 +9,7 @@ import {
   buildSpeakingPromptText,
   buildWritingPromptText,
   getFollowUpQuestions,
+  getSpeakingSpeechTexts,
   getWritingPrompts,
   resolveTargetLevel,
   resolveWritingMinWords,
@@ -229,6 +230,7 @@ export function LessonPlayer({
                 (content.sceneDescription ?? content.pictureDescription) as string | undefined
               }
               targetLevel={targetLevel}
+              speechTexts={getSpeakingSpeechTexts(content, speakingPrompt)}
               labels={aiLabels}
               onComplete={(meta) =>
                 markExerciseCompleted(exercise.id, { exerciseId: exercise.id, ...meta })

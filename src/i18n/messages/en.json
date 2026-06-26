@@ -983,7 +983,13 @@
         "micRecorderUnsupported": "This browser does not support the required audio format. Try Chrome or Edge.",
         "micUnknownError": "Could not access the microphone. Check browser and system microphone permissions.",
         "errorHighlights": "Errors to fix",
-        "correctedVersion": "Suggested correction"
+        "correctedVersion": "Suggested correction",
+        "modelAnswer": "Suggested model answer",
+        "questionAudioPlaying": "Playing question...",
+        "replayQuestion": "Listen again",
+        "stopAudio": "Stop audio",
+        "modelAnswerAudioPlaying": "Playing model answer...",
+        "replayModelAnswer": "Replay model answer"
       }
     }
   },

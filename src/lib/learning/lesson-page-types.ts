@@ -186,6 +186,12 @@ export type AiExerciseLabels = {
   micUnknownError: string;
   errorHighlights: string;
   correctedVersion: string;
+  modelAnswer: string;
+  questionAudioPlaying: string;
+  replayQuestion: string;
+  stopAudio: string;
+  modelAnswerAudioPlaying: string;
+  replayModelAnswer: string;
 };
 
 export type LessonChromeLabels = {

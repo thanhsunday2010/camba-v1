@@ -28,7 +28,11 @@ export async function submitSpeakingForFeedback(
   audioBase64: string,
   mimeType: string,
   durationSeconds: number,
-  targetLevel?: string
+  targetLevel?: string,
+  context?: {
+    sceneDescription?: string;
+    followUpQuestions?: string[];
+  }
 ): Promise<ActionResult<WithGamification<SpeakingFeedback>>> {
   const supabase = await createClient();
 
@@ -83,7 +87,10 @@ export async function submitSpeakingForFeedback(
 
     const rawJson = await generateJsonWithAudio(
       SPEAKING_FEEDBACK_SYSTEM,
-      buildSpeakingPrompt(prompt, targetLevel),
+      buildSpeakingPrompt(prompt, targetLevel, {
+        sceneDescription: context?.sceneDescription,
+        followUpQuestions: context?.followUpQuestions,
+      }),
       audioBase64,
       mimeType
     );
@@ -111,7 +118,7 @@ export async function submitSpeakingForFeedback(
       feedbackType: "speaking",
       referenceType: "speaking_submission",
       referenceId: submission.id,
-      inputData: { prompt, durationSeconds, targetLevel },
+      inputData: { prompt, durationSeconds, targetLevel, context },
       responseData: feedback as unknown as Record<string, unknown>,
       shieldEstimate: feedback.shieldEstimate as Record<string, unknown>,
     });

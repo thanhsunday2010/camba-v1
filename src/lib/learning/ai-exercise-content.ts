@@ -72,6 +72,19 @@ export function getFollowUpQuestions(content: Record<string, unknown>): string[]
   );
 }
 
+/** English-only lines for lesson speaking TTS (prompt + follow-ups). */
+export function getSpeakingSpeechTexts(
+  content: Record<string, unknown>,
+  fallback: string
+): string[] {
+  const main =
+    typeof content.prompt === "string" && content.prompt.trim()
+      ? content.prompt.trim()
+      : fallback.trim();
+
+  return [main, ...getFollowUpQuestions(content)].filter((text) => text.length > 0);
+}
+
 export function getWritingPrompts(content: Record<string, unknown>): string[] {
   if (!Array.isArray(content.prompts)) return [];
   return (content.prompts as string[]).filter((p) => typeof p === "string" && p.trim());

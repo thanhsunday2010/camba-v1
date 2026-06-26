@@ -981,7 +981,13 @@
         "micRecorderUnsupported": "Trình duyệt không hỗ trợ định dạng ghi âm. Thử Chrome hoặc Edge phiên bản mới.",
         "micUnknownError": "Không thể truy cập micro. Kiểm tra quyền micro của trình duyệt và Windows.",
         "errorHighlights": "Lỗi cần sửa",
-        "correctedVersion": "Bản sửa gợi ý"
+        "correctedVersion": "Bản sửa gợi ý",
+        "modelAnswer": "Gợi ý câu trả lời mẫu",
+        "questionAudioPlaying": "Đang phát câu hỏi...",
+        "replayQuestion": "Nghe lại",
+        "stopAudio": "Dừng phát",
+        "modelAnswerAudioPlaying": "Đang phát gợi ý mẫu...",
+        "replayModelAnswer": "Nghe lại gợi ý"
       }
     }
   },

@@ -1,12 +1,15 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useMemo, useState, useRef } from "react";
 import { submitSpeakingForFeedback } from "@/actions/ai/speaking";
 import { AiFeedbackPanel } from "@/components/ai/ai-feedback-panel";
+import { SpeakingSpeechControls } from "@/components/exercises/speaking-speech-controls";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Loader2, Mic, Square } from "lucide-react";
 import { useTranslations } from "next-intl";
+import type { AiExerciseLabels } from "@/lib/learning/lesson-page-types";
 import { useLessonI18nFormatters } from "@/lib/learning/use-lesson-i18n-formatters";
+import { useLessonSpeakingSpeech } from "@/lib/speech/use-lesson-speaking-speech";
 import { useSpeechRecognition } from "@/lib/speech/use-speech-recognition";
 import { readBlobAsBase64 } from "@/lib/speech/blob-to-base64";
 import {
@@ -30,33 +33,8 @@ interface SpeakingExerciseProps {
   /** @deprecated Use sceneDescription — kept for seeded DB rows not yet migrated */
   pictureDescription?: string;
   targetLevel?: string;
-  labels: {
-    startRecording: string;
-    stopRecording: string;
-    submit: string;
-    submitting: string;
-    noRecording: string;
-    result: string;
-    estimatedLevel: string;
-    grammar: string;
-    vocabulary: string;
-    coherence: string;
-    improvements: string;
-    pronunciation: string;
-    fluency: string;
-    suggestions: string;
-    overallScore: string;
-    recording: string;
-    transcript: string;
-    transcriptPlaceholder: string;
-    transcriptUnsupported: string;
-    micAccessDenied: string;
-    micNotFound: string;
-    micInsecureContext: string;
-    micNotSupported: string;
-    micRecorderUnsupported: string;
-    micUnknownError: string;
-  };
+  speechTexts: string[];
+  labels: AiExerciseLabels;
   onComplete?: (meta?: {
     accuracyPercent?: number;
     gamification?: import("@/lib/gamification/gamification-types").ExerciseGamificationSummary;
@@ -75,6 +53,7 @@ export function SpeakingExercise({
   sceneDescription,
   pictureDescription,
   targetLevel,
+  speechTexts,
   labels,
   onComplete,
   nextExerciseTitle,
@@ -105,6 +84,42 @@ export function SpeakingExercise({
   const chunksRef = useRef<Blob[]>([]);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  const questionPlaybackKey = `${exerciseId}:${speechTexts.join("\n")}`;
+
+  const {
+    isSpeaking: isQuestionSpeaking,
+    play: replayQuestionAudio,
+    cancel: cancelQuestionAudio,
+  } = useLessonSpeakingSpeech({
+    texts: speechTexts,
+    targetLevel,
+    playbackKey: questionPlaybackKey,
+    enabled: !feedback,
+  });
+
+  const modelAnswerTexts = useMemo(
+    () =>
+      feedback?.modelAnswerSuggestion?.trim()
+        ? [feedback.modelAnswerSuggestion.trim()]
+        : [],
+    [feedback?.modelAnswerSuggestion]
+  );
+
+  const modelAnswerPlaybackKey = feedback
+    ? `${exerciseId}:model:${feedback.modelAnswerSuggestion ?? ""}`
+    : "";
+
+  const {
+    isSpeaking: isModelAnswerSpeaking,
+    play: replayModelAnswerAudio,
+    cancel: cancelModelAnswerAudio,
+  } = useLessonSpeakingSpeech({
+    texts: modelAnswerTexts,
+    targetLevel,
+    playbackKey: modelAnswerPlaybackKey,
+    enabled: !!feedback && modelAnswerTexts.length > 0,
+  });
+
   function getMicrophoneErrorMessage(error: unknown): string {
     if (error instanceof MicrophoneAccessError) {
       switch (error.code) {
@@ -127,6 +142,7 @@ export function SpeakingExercise({
 
   async function startRecording() {
     try {
+      cancelQuestionAudio();
       setAudioBlob(null);
       resetTranscription();
       setError(null);
@@ -180,6 +196,7 @@ export function SpeakingExercise({
       return;
     }
 
+    cancelQuestionAudio();
     setError(null);
     setIsSubmitting(true);
     try {
@@ -191,7 +208,11 @@ export function SpeakingExercise({
         base64,
         recorderMimeTypeRef.current,
         duration,
-        targetLevel
+        targetLevel,
+        {
+          sceneDescription: sceneDescription ?? pictureDescription ?? undefined,
+          followUpQuestions,
+        }
       );
       if (result.success && result.data) {
         setFeedback(result.data);
@@ -220,6 +241,18 @@ export function SpeakingExercise({
         type="speaking"
         feedback={feedback}
         labels={labels}
+        modelAnswerFooter={
+          feedback.modelAnswerSuggestion?.trim() ? (
+            <SpeakingSpeechControls
+              isSpeaking={isModelAnswerSpeaking}
+              playingLabel={labels.modelAnswerAudioPlaying}
+              replayLabel={labels.replayModelAnswer}
+              stopLabel={labels.stopAudio}
+              onReplay={replayModelAnswerAudio}
+              onStop={cancelModelAnswerAudio}
+            />
+          ) : undefined
+        }
         actions={
           onNextExercise ? (
             <div className="flex justify-end">
@@ -245,7 +278,18 @@ export function SpeakingExercise({
       </header>
 
       <div className="rounded-xl border border-program/15 bg-program/5 p-4 space-y-3">
-        <p className="camba-body font-medium text-foreground">{prompt}</p>
+        <div className="flex flex-wrap items-start justify-between gap-2">
+          <p className="camba-body font-medium text-foreground flex-1 min-w-0">{prompt}</p>
+          <SpeakingSpeechControls
+            isSpeaking={isQuestionSpeaking}
+            playingLabel={labels.questionAudioPlaying}
+            replayLabel={labels.replayQuestion}
+            stopLabel={labels.stopAudio}
+            onReplay={replayQuestionAudio}
+            onStop={cancelQuestionAudio}
+            disabled={isRecording}
+          />
+        </div>
         {(sceneDescription ?? pictureDescription) && (
           <p className="camba-caption text-muted italic">{sceneDescription ?? pictureDescription}</p>
         )}

@@ -24,11 +24,19 @@ interface AiFeedbackPanelProps {
     transcript?: string;
     errorHighlights?: string;
     correctedVersion?: string;
+    modelAnswer?: string;
   };
   actions?: ReactNode;
+  modelAnswerFooter?: ReactNode;
 }
 
-export function AiFeedbackPanel({ type, feedback, labels, actions }: AiFeedbackPanelProps) {
+export function AiFeedbackPanel({
+  type,
+  feedback,
+  labels,
+  actions,
+  modelAnswerFooter,
+}: AiFeedbackPanelProps) {
   const writing = type === "writing" ? (feedback as WritingFeedback) : null;
   const speaking = type === "speaking" ? (feedback as SpeakingFeedback) : null;
 
@@ -121,6 +129,17 @@ export function AiFeedbackPanel({ type, feedback, labels, actions }: AiFeedbackP
                     </li>
                   ))}
                 </ul>
+              </div>
+            )}
+            {speaking.modelAnswerSuggestion && (
+              <div className="rounded-lg border border-green-200/80 bg-green-50/30 p-3">
+                <p className="text-sm font-medium text-gray-900 mb-1.5">
+                  {labels.modelAnswer ?? "Gợi ý câu trả lời mẫu"}
+                </p>
+                <p className="text-sm text-gray-800 leading-relaxed">
+                  {speaking.modelAnswerSuggestion}
+                </p>
+                {modelAnswerFooter}
               </div>
             )}
           </>
