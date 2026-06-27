@@ -1,5 +1,6 @@
 "use client";
 
+import { Link } from "@/i18n/routing";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import { Input } from "@/components/ui/input";
@@ -151,9 +152,9 @@ export function AdminPlatformSettingsClient({
           <p className="mt-3 text-xs text-gray-500">
             Giới hạn được cấu hình trong <code>subscription-catalog.ts</code>. Whitelist không
             giới hạn qua biến môi trường <code>AI_UNLIMITED_USER_EMAILS</code> — xem tại{" "}
-            <a href="/admin/tools/ai-limits" className="text-violet-600 underline">
+            <Link href="/admin/tools/ai-limits" className="text-violet-600 underline">
               Giới hạn AI
-            </a>
+            </Link>
             .
           </p>
         </CardContent>
