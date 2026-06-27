@@ -17,6 +17,7 @@ import type { PracticeHistoryLabels } from "@/components/ai-practice/practice-hi
 import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
 import { PlacementTestCTA } from "@/components/dashboard/placement-test-cta";
 import { ProgramPicker } from "@/components/programs/program-picker";
+import { StreakRestoreBanner } from "@/components/gamification/streak-restore-banner";
 import type { StudentDashboardData } from "@/lib/dashboard/student-dashboard-data";
 import { Activity, Brain, ClipboardList, Trophy } from "lucide-react";
 
@@ -116,6 +117,15 @@ export interface StudentDashboardLabels {
   sectionCollapse: string;
   progressStripLabel: string;
   leaderboards: DashboardLeaderboardsLabels;
+  streakRestore: {
+    title: string;
+    description: string;
+    cta: string;
+    pending: string;
+    insufficientXp: string;
+    daysLeft: string;
+    error: string;
+  };
 }
 
 interface StudentDashboardViewProps {
@@ -175,6 +185,13 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
           </AnimatedSection>
 
           <AnimatedSection staggerIndex={1}>
+            <StreakRestoreBanner
+              offer={data.streakRestoreOffer}
+              labels={labels.streakRestore}
+            />
+          </AnimatedSection>
+
+          <AnimatedSection staggerIndex={2}>
             <div className="grid gap-4 lg:grid-cols-2 lg:items-start">
               <DashboardDailyMissionCard mission={data.dailyMission} labels={labels.dailyMission} compact />
               <DashboardContinueLearningCard
@@ -186,7 +203,7 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
             </div>
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={2}>
+          <AnimatedSection staggerIndex={3}>
             <DashboardAiPracticeSection
               labels={labels.aiPractice}
               writingSummary={labels.aiPracticeHistory.writingSummary}
@@ -195,14 +212,14 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
             />
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={3}>
+          <AnimatedSection staggerIndex={4}>
             <DashboardLeaderboardsSection
               leaderboards={data.leaderboards}
               labels={labels.leaderboards}
             />
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={4}>
+          <AnimatedSection staggerIndex={5}>
             <div className="space-y-3">
               <h2 className="camba-h3 text-foreground flex items-center gap-2">
                 <Trophy className="h-5 w-5 text-warning" aria-hidden />
@@ -223,7 +240,7 @@ export function StudentDashboardView({ userName, data, labels }: StudentDashboar
             </div>
           </AnimatedSection>
 
-          <AnimatedSection staggerIndex={5}>
+          <AnimatedSection staggerIndex={6}>
             <div className="rounded-2xl border border-border/60 bg-[var(--surface-sunken)]/40 p-3 sm:p-4 space-y-1">
               <DashboardCollapsibleSection
                 title={labels.skillInsights.title}

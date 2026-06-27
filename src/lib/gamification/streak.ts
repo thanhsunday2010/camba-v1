@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { todayDateString } from "@/lib/gamification/constants";
+import { markStreakBrokenForRestore } from "@/lib/gamification/streak-restore";
 
 interface ActivityOptions {
   xpEarned?: number;
@@ -71,10 +72,28 @@ async function updateStreak(
     const diffDays = Math.floor(
       (current.getTime() - last.getTime()) / (1000 * 60 * 60 * 24)
     );
-    newStreak = diffDays === 1 ? streak.current_streak + 1 : 1;
+    if (diffDays === 1) {
+      newStreak = streak.current_streak + 1;
+    } else {
+      newStreak = 1;
+    }
   }
 
   const bestStreak = Math.max(streak.best_streak, newStreak);
+  const brokeStreak =
+    !!lastDate &&
+    lastDate !== today &&
+    Math.floor(
+      (new Date(today).getTime() - new Date(lastDate).getTime()) / (1000 * 60 * 60 * 24)
+    ) > 1;
+
+  const restoreFields = brokeStreak
+    ? markStreakBrokenForRestore(lastDate, streak.current_streak, today)
+    : {
+        pending_restore_streak: streak.pending_restore_streak,
+        restore_available_until: streak.restore_available_until,
+        restore_anchor_date: streak.restore_anchor_date,
+      };
 
   await supabase
     .from("user_streaks")
@@ -82,6 +101,7 @@ async function updateStreak(
       current_streak: newStreak,
       best_streak: bestStreak,
       last_activity_date: today,
+      ...restoreFields,
     })
     .eq("user_id", userId);
 

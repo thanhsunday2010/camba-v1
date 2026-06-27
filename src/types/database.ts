@@ -51,7 +51,8 @@ export type XpEventType =
   | "mock_test_complete"
   | "placement_test_complete"
   | "badge_earned"
-  | "admin_adjustment";
+  | "admin_adjustment"
+  | "streak_restore";
 
 export type AiFeedbackType =
   | "writing"
@@ -283,6 +284,9 @@ export interface Database {
           current_streak: number;
           best_streak: number;
           last_activity_date: string | null;
+          pending_restore_streak: number | null;
+          restore_available_until: string | null;
+          restore_anchor_date: string | null;
           created_at: string;
           updated_at: string;
         };
@@ -292,11 +296,17 @@ export interface Database {
           current_streak?: number;
           best_streak?: number;
           last_activity_date?: string | null;
+          pending_restore_streak?: number | null;
+          restore_available_until?: string | null;
+          restore_anchor_date?: string | null;
         };
         Update: {
           current_streak?: number;
           best_streak?: number;
           last_activity_date?: string | null;
+          pending_restore_streak?: number | null;
+          restore_available_until?: string | null;
+          restore_anchor_date?: string | null;
         };
         Relationships: [];
       };

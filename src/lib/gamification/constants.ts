@@ -43,6 +43,25 @@ export function getWeekBounds(date = new Date()): { weekStart: string; weekEnd: 
   };
 }
 
+export function getMonthBounds(
+  date = new Date(),
+  timezone = "Asia/Ho_Chi_Minh"
+): { monthStart: string; monthEnd: string } {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: timezone,
+    year: "numeric",
+    month: "2-digit",
+  }).formatToParts(date);
+
+  const year = parts.find((p) => p.type === "year")?.value ?? "1970";
+  const month = parts.find((p) => p.type === "month")?.value ?? "01";
+  const monthStart = `${year}-${month}-01`;
+  const lastDay = new Date(Number(year), Number(month), 0).getDate();
+  const monthEnd = `${year}-${month}-${String(lastDay).padStart(2, "0")}`;
+
+  return { monthStart, monthEnd };
+}
+
 export function getTierFromWeeklyXp(weeklyXp: number): string {
   let tier = "bronze";
   for (const t of LEAGUE_TIER_THRESHOLDS) {

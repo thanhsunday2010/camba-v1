@@ -3,16 +3,19 @@
 import { useState } from "react";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { formatNumber } from "@/lib/utils";
-import type { DashboardLeaderboardsView, LeaderboardEntry } from "@/lib/gamification/leaderboard-types";
+import type { DashboardLeaderboardsView } from "@/lib/gamification/leaderboard-types";
 import { cn } from "@/lib/utils";
-import { Flame, Trophy, Users } from "lucide-react";
+import { Award, Calendar, Flame, Medal, Trophy, Users } from "lucide-react";
 
 export type DashboardLeaderboardsLabels = {
   sectionTitle: string;
   sectionSubtitle: string;
   weeklyLeague: string;
+  monthlyBoard: string;
+  allTimeBoard: string;
   levelBoard: string;
   streakBoard: string;
+  bestStreakBoard: string;
   yourRank: string;
   empty: string;
   xpUnit: string;
@@ -20,10 +23,22 @@ export type DashboardLeaderboardsLabels = {
   tierLabel: string;
   promoteHint: string;
   maxTierHint: string;
+  weeklyMeta: string;
+  monthlyMeta: string;
+  allTimeMeta: string;
+  levelMeta: string;
+  streakMeta: string;
+  bestStreakMeta: string;
   tierNames: Record<string, string>;
 };
 
-type LeaderboardTab = "weekly" | "level" | "streak";
+type LeaderboardTab =
+  | "weekly"
+  | "monthly"
+  | "allTime"
+  | "level"
+  | "streak"
+  | "bestStreak";
 
 interface DashboardLeaderboardsSectionProps {
   leaderboards: DashboardLeaderboardsView;
@@ -38,34 +53,14 @@ export function DashboardLeaderboardsSection({
 
   const tabs: { id: LeaderboardTab; label: string; icon: typeof Trophy }[] = [
     { id: "weekly", label: labels.weeklyLeague, icon: Trophy },
+    { id: "monthly", label: labels.monthlyBoard, icon: Calendar },
+    { id: "allTime", label: labels.allTimeBoard, icon: Medal },
     { id: "level", label: labels.levelBoard, icon: Users },
     { id: "streak", label: labels.streakBoard, icon: Flame },
+    { id: "bestStreak", label: labels.bestStreakBoard, icon: Award },
   ];
 
-  const activeBoard =
-    activeTab === "weekly"
-      ? {
-          entries: leaderboards.weeklyLeague.entries,
-          userRank: leaderboards.weeklyLeague.userRank,
-          userScore: leaderboards.weeklyLeague.userScore,
-          scoreUnit: labels.xpUnit,
-          meta: buildWeeklyMeta(leaderboards, labels),
-        }
-      : activeTab === "level"
-        ? {
-            entries: leaderboards.levelBoard.entries,
-            userRank: leaderboards.levelBoard.userRank,
-            userScore: leaderboards.levelBoard.userScore,
-            scoreUnit: labels.xpUnit,
-            meta: leaderboards.levelBoard.levelName ?? null,
-          }
-        : {
-            entries: leaderboards.streakBoard.entries,
-            userRank: leaderboards.streakBoard.userRank,
-            userScore: leaderboards.streakBoard.userScore,
-            scoreUnit: labels.streakUnit,
-            meta: null,
-          };
+  const activeBoard = resolveActiveBoard(activeTab, leaderboards, labels);
 
   return (
     <section aria-labelledby="leaderboards-heading" className="space-y-3">
@@ -120,6 +115,65 @@ export function DashboardLeaderboardsSection({
   );
 }
 
+function resolveActiveBoard(
+  tab: LeaderboardTab,
+  leaderboards: DashboardLeaderboardsView,
+  labels: DashboardLeaderboardsLabels
+) {
+  switch (tab) {
+    case "weekly":
+      return {
+        entries: leaderboards.weeklyLeague.entries,
+        userRank: leaderboards.weeklyLeague.userRank,
+        userScore: leaderboards.weeklyLeague.userScore,
+        scoreUnit: labels.xpUnit,
+        meta: buildWeeklyMeta(leaderboards, labels),
+      };
+    case "monthly":
+      return {
+        entries: leaderboards.monthlyBoard.entries,
+        userRank: leaderboards.monthlyBoard.userRank,
+        userScore: leaderboards.monthlyBoard.userScore,
+        scoreUnit: labels.xpUnit,
+        meta: labels.monthlyMeta,
+      };
+    case "allTime":
+      return {
+        entries: leaderboards.allTimeBoard.entries,
+        userRank: leaderboards.allTimeBoard.userRank,
+        userScore: leaderboards.allTimeBoard.userScore,
+        scoreUnit: labels.xpUnit,
+        meta: labels.allTimeMeta,
+      };
+    case "level":
+      return {
+        entries: leaderboards.levelBoard.entries,
+        userRank: leaderboards.levelBoard.userRank,
+        userScore: leaderboards.levelBoard.userScore,
+        scoreUnit: labels.xpUnit,
+        meta: leaderboards.levelBoard.levelName
+          ? labels.levelMeta.replace("{level}", leaderboards.levelBoard.levelName)
+          : labels.levelMeta.replace("{level}", "—"),
+      };
+    case "streak":
+      return {
+        entries: leaderboards.streakBoard.entries,
+        userRank: leaderboards.streakBoard.userRank,
+        userScore: leaderboards.streakBoard.userScore,
+        scoreUnit: labels.streakUnit,
+        meta: labels.streakMeta,
+      };
+    case "bestStreak":
+      return {
+        entries: leaderboards.bestStreakBoard.entries,
+        userRank: leaderboards.bestStreakBoard.userRank,
+        userScore: leaderboards.bestStreakBoard.userScore,
+        scoreUnit: labels.streakUnit,
+        meta: labels.bestStreakMeta,
+      };
+  }
+}
+
 function buildWeeklyMeta(
   leaderboards: DashboardLeaderboardsView,
   labels: DashboardLeaderboardsLabels
@@ -136,7 +190,7 @@ function buildWeeklyMeta(
       .replace("{xp}", String(leaderboards.weeklyLeague.xpToNextTier));
   }
 
-  return labels.maxTierHint.replace("{tier}", tierName);
+  return `${labels.weeklyMeta} · ${labels.maxTierHint.replace("{tier}", tierName)}`;
 }
 
 function LeaderboardList({
@@ -144,7 +198,7 @@ function LeaderboardList({
   scoreUnit,
   emptyText,
 }: {
-  entries: LeaderboardEntry[];
+  entries: DashboardLeaderboardsView["monthlyBoard"]["entries"];
   scoreUnit: string;
   emptyText: string;
 }) {

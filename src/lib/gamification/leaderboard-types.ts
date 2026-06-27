@@ -9,32 +9,29 @@ export type LeaderboardEntry = {
   isCurrentUser: boolean;
 };
 
-export type WeeklyLeagueBoardView = {
-  tier: string;
+export type LeaderboardBoardView = {
   entries: LeaderboardEntry[];
   userRank: number | null;
   userScore: number;
+};
+
+export type WeeklyLeagueBoardView = LeaderboardBoardView & {
+  tier: string;
   nextTier: string | null;
   xpToNextTier: number | null;
 };
 
-export type LevelLeaderboardView = {
+export type LevelLeaderboardView = LeaderboardBoardView & {
   levelName: string | null;
-  entries: LeaderboardEntry[];
-  userRank: number | null;
-  userScore: number;
-};
-
-export type StreakLeaderboardView = {
-  entries: LeaderboardEntry[];
-  userRank: number | null;
-  userScore: number;
 };
 
 export type DashboardLeaderboardsView = {
   weeklyLeague: WeeklyLeagueBoardView;
+  monthlyBoard: LeaderboardBoardView;
+  allTimeBoard: LeaderboardBoardView;
   levelBoard: LevelLeaderboardView;
-  streakBoard: StreakLeaderboardView;
+  streakBoard: LeaderboardBoardView;
+  bestStreakBoard: LeaderboardBoardView;
 };
 
 export const LEAGUE_TIER_LABELS: Record<string, string> = {

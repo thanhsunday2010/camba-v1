@@ -24,6 +24,8 @@ import { buildJourneyPreview } from "@/lib/learning/journey/learning-journey-uti
 import type { JourneyPreview } from "@/lib/learning/journey/learning-journey-types";
 import { getDashboardLeaderboards } from "@/lib/gamification/leaderboards";
 import type { DashboardLeaderboardsView } from "@/lib/gamification/leaderboard-types";
+import { getStreakRestoreOffer } from "@/lib/gamification/streak-restore";
+import type { StreakRestoreOffer } from "@/lib/gamification/streak-restore";
 
 export type WeeklyProgressStats = {
   xpEarned: number;
@@ -53,6 +55,7 @@ export type StudentDashboardData = {
   recentActivity: DashboardActivityItem[];
   journeyPreview: JourneyPreview;
   leaderboards: DashboardLeaderboardsView;
+  streakRestoreOffer: StreakRestoreOffer;
 };
 
 function weekStartIsoDate(): string {
@@ -175,6 +178,8 @@ export async function getStudentDashboardData(
     programContext?.level?.name ?? null
   );
 
+  const streakRestoreOffer = await getStreakRestoreOffer(userId);
+
   return {
     programs,
     programContext,
@@ -200,5 +205,6 @@ export async function getStudentDashboardData(
     recentActivity,
     journeyPreview,
     leaderboards,
+    streakRestoreOffer,
   };
 }
