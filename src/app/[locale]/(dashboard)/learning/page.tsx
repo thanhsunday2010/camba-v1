@@ -144,7 +144,7 @@ export default async function LearningPage() {
       nextLesson={nextLesson}
       masteryLabels={masteryLabels}
       objectiveText={objectiveText}
-      showUnlockAllBanner={isUnlockAllLessonsEnabled() || canBypassLessonUnlock(user.roles)}
+      showUnlockAllBanner={isUnlockAllLessonsEnabled() || canBypassLessonUnlock(user.roles, user.isSuperAdmin)}
       labels={{
         hero: {
           title: t("title"),

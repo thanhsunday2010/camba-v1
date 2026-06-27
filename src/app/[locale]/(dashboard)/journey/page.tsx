@@ -28,7 +28,7 @@ export default async function JourneyPage() {
     throw new Error("Unreachable");
   }
 
-  if (gamification?.current_level_id && canBypassLessonUnlock(user.roles)) {
+  if (gamification?.current_level_id && canBypassLessonUnlock(user.roles, user.isSuperAdmin)) {
     await initializeLessonUnlocks(user.id, gamification.current_level_id);
   }
 

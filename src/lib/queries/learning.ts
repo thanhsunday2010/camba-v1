@@ -19,7 +19,7 @@ import {
   getFirstLessonIdForLevel,
   getSequentialEntryLessonIds,
 } from "@/lib/learning/curriculum-unlock";
-import { isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
+import { isUnlockAllLessonsEnabled, mergeLessonProgressWithBypass } from "@/lib/learning/unlock-all-lessons";
 import { userCanBypassLessonUnlock } from "@/lib/learning/unlock-all-lessons.server";
 import type {
   Exercise,
@@ -62,6 +62,7 @@ export async function getLearningPath(
 
   if (!program || !skills?.length) return null;
 
+  const bypassUnlock = await userCanBypassLessonUnlock(userId);
   const skillIds = skills.map((skill) => skill.id);
 
   const { data: units } = await supabase
@@ -115,15 +116,7 @@ export async function getLearningPath(
     const lessonWithProgress: LessonWithProgress = {
       ...lesson,
       exercise_count: exerciseCountMap.get(lesson.id) ?? 0,
-      progress: progress
-        ? {
-            completion_percent: Number(progress.completion_percent),
-            accuracy_percent: Number(progress.accuracy_percent),
-            mastery_level: progress.mastery_level,
-            is_unlocked: progress.is_unlocked,
-            attempts_count: progress.attempts_count,
-          }
-        : undefined,
+      progress: mergeLessonProgressWithBypass(progress, bypassUnlock),
     };
     const bucket = lessonsByUnit.get(lesson.unit_id) ?? [];
     bucket.push(lessonWithProgress);
