@@ -1379,7 +1379,32 @@
   },
   "admin": {
     "title": "Content Management",
-    "subtitle": "Create and manage programs, lessons, exercises and questions"
+    "subtitle": "Create and manage programs, lessons, exercises and questions",
+    "dashboard": {
+      "eyebrow": "Dashboard",
+      "title": "Camba Overview",
+      "subtitle": "Platform growth and operations metrics",
+      "roleSuperAdmin": "Super Admin",
+      "roleAdmin": "Admin",
+      "sessionBanner": "Signed in as {role}. Updated at {time}.",
+      "exportCsv": "Export CSV",
+      "range": {
+        "7d": "7 days",
+        "30d": "30 days",
+        "90d": "90 days"
+      },
+      "funnel": {
+        "title": "Conversion funnel"
+      }
+    },
+    "settings": {
+      "title": "Platform settings",
+      "subtitle": "Program configuration and default AI limits"
+    },
+    "aiLimits": {
+      "title": "AI limits",
+      "subtitle": "Track AI usage and unlimited whitelist"
+    }
   },
   "superAdmin": {
     "title": "Super Admin Dashboard",

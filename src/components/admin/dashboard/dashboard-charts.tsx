@@ -36,7 +36,9 @@ export function DashboardCharts({ stats }: DashboardChartsProps) {
             <CardTitle className="text-base">Tăng trưởng người dùng</CardTitle>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={260}>
+            <div className="-mx-2 overflow-x-auto sm:mx-0">
+              <div className="min-w-[300px]">
+                <ResponsiveContainer width="100%" height={260}>
               <AreaChart data={stats.userGrowth.cumulative}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="label" tick={{ fontSize: 11 }} />
@@ -50,8 +52,10 @@ export function DashboardCharts({ stats }: DashboardChartsProps) {
                   fill="#ede9fe"
                   strokeWidth={2}
                 />
-              </AreaChart>
-            </ResponsiveContainer>
+                </AreaChart>
+              </ResponsiveContainer>
+              </div>
+            </div>
           </CardContent>
         </Card>
 
@@ -60,7 +64,9 @@ export function DashboardCharts({ stats }: DashboardChartsProps) {
             <CardTitle className="text-base">Đăng ký mới theo ngày</CardTitle>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={260}>
+            <div className="-mx-2 overflow-x-auto sm:mx-0">
+              <div className="min-w-[300px]">
+                <ResponsiveContainer width="100%" height={260}>
               <BarChart data={stats.userGrowth.newUsers}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="label" tick={{ fontSize: 11 }} />
@@ -68,7 +74,9 @@ export function DashboardCharts({ stats }: DashboardChartsProps) {
                 <Tooltip />
                 <Bar dataKey="value" name="User mới" fill="#7c3aed" radius={[4, 4, 0, 0]} />
               </BarChart>
-            </ResponsiveContainer>
+              </ResponsiveContainer>
+              </div>
+            </div>
           </CardContent>
         </Card>
       </div>

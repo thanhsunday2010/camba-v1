@@ -52,18 +52,22 @@ ALTER TABLE public.admin_assignments ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.admin_permission_overrides ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.admin_audit_logs ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS "Admins read role templates" ON public.admin_role_templates;
 CREATE POLICY "Admins read role templates"
   ON public.admin_role_templates FOR SELECT
   USING (public.is_admin());
 
+DROP POLICY IF EXISTS "Admins read template permissions" ON public.admin_template_permissions;
 CREATE POLICY "Admins read template permissions"
   ON public.admin_template_permissions FOR SELECT
   USING (public.is_admin());
 
+DROP POLICY IF EXISTS "Admins read own assignment" ON public.admin_assignments;
 CREATE POLICY "Admins read own assignment"
   ON public.admin_assignments FOR SELECT
   USING (auth.uid() = user_id OR public.is_admin());
 
+DROP POLICY IF EXISTS "Super admins manage assignments" ON public.admin_assignments;
 CREATE POLICY "Super admins manage assignments"
   ON public.admin_assignments FOR ALL
   USING (
@@ -73,10 +77,12 @@ CREATE POLICY "Super admins manage assignments"
     )
   );
 
+DROP POLICY IF EXISTS "Admins read own overrides" ON public.admin_permission_overrides;
 CREATE POLICY "Admins read own overrides"
   ON public.admin_permission_overrides FOR SELECT
   USING (auth.uid() = user_id OR public.is_admin());
 
+DROP POLICY IF EXISTS "Super admins manage overrides" ON public.admin_permission_overrides;
 CREATE POLICY "Super admins manage overrides"
   ON public.admin_permission_overrides FOR ALL
   USING (
@@ -86,6 +92,7 @@ CREATE POLICY "Super admins manage overrides"
     )
   );
 
+DROP POLICY IF EXISTS "Super admins read audit logs" ON public.admin_audit_logs;
 CREATE POLICY "Super admins read audit logs"
   ON public.admin_audit_logs FOR SELECT
   USING (
@@ -95,6 +102,7 @@ CREATE POLICY "Super admins read audit logs"
     )
   );
 
+DROP POLICY IF EXISTS "Admins insert audit logs" ON public.admin_audit_logs;
 CREATE POLICY "Admins insert audit logs"
   ON public.admin_audit_logs FOR INSERT
   WITH CHECK (public.is_admin());

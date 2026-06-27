@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { getCurrentUser } from "@/lib/auth/current-user";
 import { canAccess } from "@/lib/auth/admin-permissions";
 import { getAdminDashboardStats } from "@/lib/admin/analytics/get-dashboard-stats";
+import { getConversionFunnel } from "@/lib/admin/analytics/funnel";
 import { AdminDashboard } from "@/components/admin/dashboard/admin-dashboard";
 import type { DashboardTimeRange } from "@/lib/admin/analytics/types";
 
@@ -24,11 +25,14 @@ export default async function AdminPage({
   const canViewRevenue =
     user.isSuperAdmin || canAccess(user, "subscriptions.read");
 
-  const stats = await getAdminDashboardStats(range, canViewRevenue);
+  const [stats, funnel] = await Promise.all([
+    getAdminDashboardStats(range, canViewRevenue),
+    getConversionFunnel(),
+  ]);
 
   return (
     <Suspense fallback={<div className="py-12 text-center text-sm text-gray-500">Đang tải...</div>}>
-      <AdminDashboard stats={stats} user={user} />
+      <AdminDashboard stats={stats} funnel={funnel} user={user} />
     </Suspense>
   );
 }

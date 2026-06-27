@@ -1377,7 +1377,32 @@
   },
   "admin": {
     "title": "Quản lý nội dung",
-    "subtitle": "Tạo và quản lý chương trình học, bài học, bài tập và câu hỏi"
+    "subtitle": "Tạo và quản lý chương trình học, bài học, bài tập và câu hỏi",
+    "dashboard": {
+      "eyebrow": "Bảng điều khiển",
+      "title": "Tổng quan Camba",
+      "subtitle": "Thống kê tăng trưởng và vận hành nền tảng",
+      "roleSuperAdmin": "Super Admin",
+      "roleAdmin": "Admin",
+      "sessionBanner": "Bạn đang đăng nhập với quyền {role}. Cập nhật lúc {time}.",
+      "exportCsv": "Xuất CSV",
+      "range": {
+        "7d": "7 ngày",
+        "30d": "30 ngày",
+        "90d": "90 ngày"
+      },
+      "funnel": {
+        "title": "Phễu chuyển đổi"
+      }
+    },
+    "settings": {
+      "title": "Cài đặt nền tảng",
+      "subtitle": "Cấu hình chương trình học và giới hạn AI mặc định"
+    },
+    "aiLimits": {
+      "title": "Giới hạn AI",
+      "subtitle": "Theo dõi lượt dùng AI và whitelist không giới hạn"
+    }
   },
   "superAdmin": {
     "title": "Bảng điều khiển Super Admin",
