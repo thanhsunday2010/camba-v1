@@ -8,6 +8,8 @@ export interface AuthUser {
   avatarUrl: string | null;
   roles: import("./database").UserRole[];
   onboardingCompleted: boolean;
+  isSuperAdmin: boolean;
+  adminPermissions: import("@/lib/auth/admin-permissions").AdminPermission[];
 }
 
 export interface AiLimitMeta {

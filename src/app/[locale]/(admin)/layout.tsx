@@ -1,7 +1,8 @@
 import { redirect } from "next/navigation";
 import { getCurrentUser } from "@/lib/auth/current-user";
-import { isSuperAdmin } from "@/lib/auth/roles";
-import { SuperAdminNav } from "@/components/layout/super-admin-nav";
+import { canAccessAdmin } from "@/lib/auth/roles";
+import { getPendingReviewExercises } from "@/actions/admin/content";
+import { AdminShell } from "@/components/admin/shell/admin-shell";
 
 export default async function AdminLayout({
   children,
@@ -11,12 +12,19 @@ export default async function AdminLayout({
   const user = await getCurrentUser();
 
   if (!user) redirect("/login");
-  if (!isSuperAdmin(user.roles)) redirect("/dashboard");
+  if (!canAccessAdmin(user)) redirect("/dashboard");
+
+  let pendingReview = 0;
+  try {
+    const pending = await getPendingReviewExercises();
+    pendingReview = pending.length;
+  } catch {
+    pendingReview = 0;
+  }
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <SuperAdminNav user={user} />
-      <main className="mx-auto max-w-7xl px-4 py-6">{children}</main>
-    </div>
+    <AdminShell user={user} pendingReview={pendingReview}>
+      {children}
+    </AdminShell>
   );
 }

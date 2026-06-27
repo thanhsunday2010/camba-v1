@@ -4,8 +4,13 @@ import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
 import { getCurrentUser } from "@/lib/auth/current-user";
 import { isAdmin } from "@/lib/auth/roles";
+import {
+  canAccess,
+  type AdminPermission,
+} from "@/lib/auth/admin-permissions";
+import type { AuthUser } from "@/types";
 
-export async function requireAdmin() {
+export async function requireAdmin(): Promise<AuthUser> {
   const user = await getCurrentUser();
   if (!user || !isAdmin(user.roles)) {
     throw new Error("Unauthorized");
@@ -13,8 +18,18 @@ export async function requireAdmin() {
   return user;
 }
 
+export async function requirePermission(
+  permission: AdminPermission
+): Promise<AuthUser> {
+  const user = await requireAdmin();
+  if (!canAccess(user, permission)) {
+    throw new Error("Unauthorized");
+  }
+  return user;
+}
+
 export async function revalidateAdmin() {
-  revalidatePath("/admin");
+  revalidatePath("/admin", "layout");
 }
 
 export async function nextSortOrder(

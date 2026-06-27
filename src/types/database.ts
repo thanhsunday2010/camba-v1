@@ -75,6 +75,7 @@ export interface Database {
           phone: string | null;
           is_active: boolean;
           onboarding_completed: boolean;
+          is_super_admin: boolean;
           created_at: string;
           updated_at: string;
         };
