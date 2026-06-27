@@ -184,6 +184,8 @@ export const passageMinhSchoolDay = buildPassage({
 At seven thirty Minh goes to school. He has lunch at twelve. After school he always does his homework before dinner. He sometimes plays football in the park.
 
 Minh never watches TV before homework. He eats dinner at six and goes to bed at nine.`,
+});
+
 export const listeningScriptMorning = buildListeningScript({
   title: "At Home in the Morning",
   setting: "A kitchen in the morning, light traffic outside",
