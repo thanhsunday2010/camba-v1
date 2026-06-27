@@ -7,6 +7,8 @@ import { buildSharedAchievementLabels } from "@/lib/achievements/achievement-i18
 import { JourneyView } from "@/components/journey/journey-view";
 import { fetchActiveProgramContext, fetchLevelsForProgram } from "@/actions/programs";
 import { getUserGamification } from "@/lib/queries/user";
+import { initializeLessonUnlocks } from "@/lib/queries/learning";
+import { canBypassLessonUnlock } from "@/lib/learning/unlock-all-lessons";
 
 export const dynamic = "force-dynamic";
 
@@ -24,6 +26,10 @@ export default async function JourneyPage() {
   if (!programId) {
     await redirectToPath("/settings");
     throw new Error("Unreachable");
+  }
+
+  if (gamification?.current_level_id && canBypassLessonUnlock(user.roles)) {
+    await initializeLessonUnlocks(user.id, gamification.current_level_id);
   }
 
   const [journeyModel, levels, journeyAchievementPreview] = await Promise.all([

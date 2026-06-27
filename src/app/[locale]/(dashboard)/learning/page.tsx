@@ -15,7 +15,7 @@ import { LearningPathEmpty } from "@/components/learning/learning-path-empty";
 import { LearningLevelSwitcher } from "@/components/learning/learning-level-switcher";
 import { StudentPageShell } from "@/components/camba";
 import { fetchActiveProgramContext, fetchLevelsForProgram } from "@/actions/programs";
-import { isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
+import { canBypassLessonUnlock, isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
 import { buildDashboardAiPracticeLabels, buildPracticeHistoryLabels } from "@/lib/ai-practice/practice-labels";
 import { getPracticeDashboardSummaries } from "@/lib/ai-practice/practice-history";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
@@ -144,7 +144,7 @@ export default async function LearningPage() {
       nextLesson={nextLesson}
       masteryLabels={masteryLabels}
       objectiveText={objectiveText}
-      showUnlockAllBanner={isUnlockAllLessonsEnabled()}
+      showUnlockAllBanner={isUnlockAllLessonsEnabled() || canBypassLessonUnlock(user.roles)}
       labels={{
         hero: {
           title: t("title"),

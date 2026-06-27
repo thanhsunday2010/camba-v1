@@ -1,11 +1,14 @@
 import { createClient } from "@/lib/supabase/server";
-import { isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
+import {
+  isUnlockAllLessonsEnabled,
+  userCanBypassLessonUnlock,
+} from "@/lib/learning/unlock-all-lessons";
 
 export async function assertLessonUnlockedForUser(
   userId: string,
   lessonId: string
 ): Promise<{ ok: true } | { ok: false; error: string }> {
-  if (isUnlockAllLessonsEnabled()) {
+  if (isUnlockAllLessonsEnabled() || (await userCanBypassLessonUnlock(userId))) {
     return { ok: true };
   }
 

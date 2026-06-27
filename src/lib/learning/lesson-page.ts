@@ -5,6 +5,7 @@ import {
 } from "@/lib/queries/learning";
 import { resolveLessonCompleteNextCtaForUser } from "@/lib/learning/lesson-complete-cta";
 import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
+import { userCanBypassLessonUnlock } from "@/lib/learning/unlock-all-lessons";
 import { parseVocabularyBank, type VocabularyWord } from "@/lib/learning/vocabulary-bank";
 import {
   getExerciseUiState,
@@ -201,6 +202,7 @@ export async function getLessonPageViewModel(
 
   if (!lesson) return null;
 
+  const bypassUnlock = await userCanBypassLessonUnlock(userId);
   const exercises = lesson.exercises ?? [];
   const attemptsByExercise = groupAttemptsByExercise(attempts);
   const exerciseSummaries = buildExerciseSummaries(exercises, attemptsByExercise);
@@ -211,7 +213,7 @@ export async function getLessonPageViewModel(
       : [];
 
   const progress = {
-    isUnlocked: isLessonUnlockedFromProgress(progressRow),
+    isUnlocked: isLessonUnlockedFromProgress(progressRow, { bypassUnlock }),
     completionPercent: Number(progressRow?.completion_percent ?? 0),
     accuracyPercent: Number(progressRow?.accuracy_percent ?? 0),
     masteryLevel: progressRow?.mastery_level ?? 0,

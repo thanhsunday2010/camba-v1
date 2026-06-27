@@ -52,8 +52,9 @@ export function resolveNextUnlockLessonIds(
 }
 
 export function isLessonUnlockedFromProgress(
-  progress: { is_unlocked: boolean } | undefined | null
+  progress: { is_unlocked: boolean } | undefined | null,
+  options?: { bypassUnlock?: boolean }
 ): boolean {
-  if (isUnlockAllLessonsEnabled()) return true;
+  if (isUnlockAllLessonsEnabled() || options?.bypassUnlock) return true;
   return progress?.is_unlocked === true;
 }
