@@ -23,9 +23,14 @@ interface DashboardNavProps {
   user: AuthUser;
 }
 
+/** Temporarily hide Journey from the top nav — set true to show again */
+const JOURNEY_NAV_ENABLED = false;
+
 const navItems = [
   { href: "/dashboard", icon: LayoutDashboard, labelKey: "dashboard" as const },
-  { href: "/journey", icon: Map, labelKey: "journey" as const },
+  ...(JOURNEY_NAV_ENABLED
+    ? [{ href: "/journey" as const, icon: Map, labelKey: "journey" as const }]
+    : []),
   { href: "/learning", icon: BookOpen, labelKey: "learningPath" as const, featured: true },
   { href: "/mock-tests", icon: FileText, labelKey: "mockTests" as const },
   { href: "/subscriptions", icon: CreditCard, labelKey: "pricing" as const },
