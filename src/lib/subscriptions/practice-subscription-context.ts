@@ -12,7 +12,7 @@ export async function getPracticeSubscriptionContext() {
   if (!user) return null;
 
   const [aiUsage, tSub] = await Promise.all([
-    getAiUsageStatus(user.id),
+    getAiUsageStatus(user.id, user.email),
     getTranslations("subscriptions"),
   ]);
 

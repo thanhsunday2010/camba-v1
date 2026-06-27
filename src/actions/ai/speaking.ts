@@ -63,7 +63,7 @@ export async function submitSpeakingForFeedback(
     return { success: false, error: AI_SPEAKING_DURATION_LIMIT_ERROR };
   }
 
-  const usageCheck = await assertAiUsageAllowed(user.id);
+  const usageCheck = await assertAiUsageAllowed(user.id, user.email);
   if (!usageCheck.success) {
     return {
       success: false,
@@ -114,7 +114,7 @@ export async function submitSpeakingForFeedback(
       transcript: finalizeSpeakingTranscript(parsed, context?.clientTranscript),
     };
 
-    await recordSuccessfulAiUsage(user.id);
+    await recordSuccessfulAiUsage(user.id, user.email);
 
     const { data: submission, error: subError } = await supabase
       .from("speaking_submissions")

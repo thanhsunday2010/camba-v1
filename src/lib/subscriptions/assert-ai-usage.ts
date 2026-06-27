@@ -8,8 +8,11 @@ const AI_LIMIT_MESSAGES: Record<"free" | "pro" | "vip", string> = {
   vip: `Bạn đã hết ${AI_DAILY_LIMITS.vip} lượt AI hôm nay. Hãy quay lại vào ngày mai nhé!`,
 };
 
-export async function assertAiUsageAllowed(userId: string): Promise<ActionResult<void>> {
-  const check = await checkAiUsageAllowed(userId);
+export async function assertAiUsageAllowed(
+  userId: string,
+  emailHint?: string | null
+): Promise<ActionResult<void>> {
+  const check = await checkAiUsageAllowed(userId, emailHint);
   if (check.allowed) {
     return { success: true };
   }
@@ -24,6 +27,9 @@ export async function assertAiUsageAllowed(userId: string): Promise<ActionResult
   };
 }
 
-export async function recordSuccessfulAiUsage(userId: string): Promise<void> {
-  await recordAiUsage(userId);
+export async function recordSuccessfulAiUsage(
+  userId: string,
+  emailHint?: string | null
+): Promise<void> {
+  await recordAiUsage(userId, emailHint);
 }

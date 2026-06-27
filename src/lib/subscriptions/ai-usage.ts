@@ -1,4 +1,5 @@
 import { createClient } from "@/lib/supabase/server";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { AI_DAILY_LIMITS, TIER_ORDER } from "@/lib/subscriptions/subscription-catalog";
 import { isAiUnlimitedEmail } from "@/lib/subscriptions/ai-usage-exemptions";
 import type {
@@ -71,7 +72,13 @@ export async function getAiUsageToday(userId: string): Promise<number> {
   return countAiFeedbackToday(userId);
 }
 
-async function resolveUserEmail(userId: string): Promise<string | null> {
+async function resolveUserEmail(
+  userId: string,
+  emailHint?: string | null
+): Promise<string | null> {
+  const hinted = emailHint?.trim();
+  if (hinted) return hinted;
+
   const supabase = await createClient();
   const { data } = await supabase
     .from("profiles")
@@ -79,12 +86,23 @@ async function resolveUserEmail(userId: string): Promise<string | null> {
     .eq("id", userId)
     .maybeSingle();
 
-  const row = data as { email?: string } | null;
-  return row?.email ?? null;
+  const profileEmail = (data as { email?: string } | null)?.email?.trim();
+  if (profileEmail) return profileEmail;
+
+  try {
+    const admin = createAdminClient();
+    const { data: authData } = await admin.auth.admin.getUserById(userId);
+    return authData.user?.email?.trim() ?? null;
+  } catch {
+    return null;
+  }
 }
 
-export async function isUserAiUnlimited(userId: string): Promise<boolean> {
-  const email = await resolveUserEmail(userId);
+export async function isUserAiUnlimited(
+  userId: string,
+  emailHint?: string | null
+): Promise<boolean> {
+  const email = await resolveUserEmail(userId, emailHint);
   return isAiUnlimitedEmail(email);
 }
 
@@ -101,11 +119,14 @@ function buildUnlimitedAiUsageStatus(
   };
 }
 
-export async function getAiUsageStatus(userId: string): Promise<AiUsageStatus> {
+export async function getAiUsageStatus(
+  userId: string,
+  emailHint?: string | null
+): Promise<AiUsageStatus> {
   const tier = await getEffectiveSubscriptionTier(userId);
   const usedToday = await getAiUsageToday(userId);
 
-  if (await isUserAiUnlimited(userId)) {
+  if (await isUserAiUnlimited(userId, emailHint)) {
     return buildUnlimitedAiUsageStatus(tier, usedToday);
   }
 
@@ -123,11 +144,14 @@ export type AiUsageReservationResult =
   | { allowed: true; status: AiUsageStatus }
   | { allowed: false; status: AiUsageStatus };
 
-export async function checkAiUsageAllowed(userId: string): Promise<AiUsageReservationResult> {
+export async function checkAiUsageAllowed(
+  userId: string,
+  emailHint?: string | null
+): Promise<AiUsageReservationResult> {
   const tier = await getEffectiveSubscriptionTier(userId);
   const usedToday = await getAiUsageToday(userId);
 
-  if (await isUserAiUnlimited(userId)) {
+  if (await isUserAiUnlimited(userId, emailHint)) {
     return { allowed: true, status: buildUnlimitedAiUsageStatus(tier, usedToday) };
   }
 
@@ -146,8 +170,11 @@ export async function checkAiUsageAllowed(userId: string): Promise<AiUsageReserv
   return { allowed: true, status };
 }
 
-export async function recordAiUsage(userId: string): Promise<void> {
-  if (await isUserAiUnlimited(userId)) {
+export async function recordAiUsage(
+  userId: string,
+  emailHint?: string | null
+): Promise<void> {
+  if (await isUserAiUnlimited(userId, emailHint)) {
     return;
   }
 

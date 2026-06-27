@@ -84,7 +84,7 @@ export async function generatePracticePrompt(
   } = await supabase.auth.getUser();
   if (!user) return { success: false, error: "Unauthorized" };
 
-  const usageCheck = await assertAiUsageAllowed(user.id);
+  const usageCheck = await assertAiUsageAllowed(user.id, user.email);
   if (!usageCheck.success) {
     return {
       success: false,
@@ -104,7 +104,7 @@ export async function generatePracticePrompt(
       })
     );
     const prompt = parseGeminiJson(rawJson, PracticePromptSchema);
-    await recordSuccessfulAiUsage(user.id);
+    await recordSuccessfulAiUsage(user.id, user.email);
     return { success: true, data: prompt };
   } catch (error) {
     return { success: false, error: mapAiPracticeError(error) };
@@ -158,7 +158,7 @@ export async function submitStandaloneWritingPractice(
   } = await supabase.auth.getUser();
   if (!user) return { success: false, error: "Unauthorized" };
 
-  const usageCheck = await assertAiUsageAllowed(user.id);
+  const usageCheck = await assertAiUsageAllowed(user.id, user.email);
   if (!usageCheck.success) {
     return {
       success: false,
@@ -196,7 +196,7 @@ export async function submitStandaloneWritingPractice(
 
     const feedback = parseGeminiJson(rawJson, PracticeWritingFeedbackSchema);
 
-    await recordSuccessfulAiUsage(user.id);
+    await recordSuccessfulAiUsage(user.id, user.email);
 
     await saveAiFeedback({
       feedbackType: "writing",
@@ -262,7 +262,7 @@ export async function submitStandaloneSpeakingPractice(
     return { success: false, error: AI_SPEAKING_DURATION_LIMIT_ERROR };
   }
 
-  const usageCheck = await assertAiUsageAllowed(user.id);
+  const usageCheck = await assertAiUsageAllowed(user.id, user.email);
   if (!usageCheck.success) {
     return {
       success: false,
@@ -307,7 +307,7 @@ export async function submitStandaloneSpeakingPractice(
       transcript: finalizeSpeakingTranscript(parsedFeedback, clientTranscript),
     };
 
-    await recordSuccessfulAiUsage(user.id);
+    await recordSuccessfulAiUsage(user.id, user.email);
 
     const { data: submission, error: subError } = await supabase
       .from("speaking_submissions")

@@ -4,6 +4,10 @@
  */
 let cachedEmails: Set<string> | null = null;
 
+function normalizeAllowlistEmail(raw: string): string {
+  return raw.trim().replace(/^["']|["']$/g, "").toLowerCase();
+}
+
 export function getAiUnlimitedEmails(): Set<string> {
   if (cachedEmails) return cachedEmails;
 
@@ -15,8 +19,8 @@ export function getAiUnlimitedEmails(): Set<string> {
 
   cachedEmails = new Set(
     raw
-      .split(",")
-      .map((email) => email.trim().toLowerCase())
+      .split(/[,;]/)
+      .map(normalizeAllowlistEmail)
       .filter(Boolean)
   );
   return cachedEmails;

@@ -14,7 +14,7 @@ export async function getUserSubscriptionStatus(): Promise<UserSubscriptionStatu
 
   const supabase = await createClient();
   const [aiUsage, { data: subscriptions }] = await Promise.all([
-    getAiUsageStatus(user.id),
+    getAiUsageStatus(user.id, user.email),
     supabase
       .from("user_subscriptions")
       .select("program, tier, status")

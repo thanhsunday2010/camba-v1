@@ -18,6 +18,13 @@ describe("ai usage exemptions", () => {
     expect(isAiUnlimitedEmail("other@example.com")).toBe(false);
   });
 
+  it("strips surrounding quotes from env entries", () => {
+    process.env.AI_UNLIMITED_USER_EMAILS =
+      '"admin@camba.me", nguyentrinhphugia@gmail.com';
+    expect(isAiUnlimitedEmail("admin@camba.me")).toBe(true);
+    expect(isAiUnlimitedEmail("nguyentrinhphugia@gmail.com")).toBe(true);
+  });
+
   it("returns empty set when env is unset", () => {
     expect(getAiUnlimitedEmails().size).toBe(0);
     expect(isAiUnlimitedEmail("student@camba.me")).toBe(false);

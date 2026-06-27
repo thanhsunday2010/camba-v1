@@ -57,7 +57,7 @@ export async function submitWritingForFeedback(
     return { success: false, error: AI_WRITING_WORD_LIMIT_ERROR };
   }
 
-  const usageCheck = await assertAiUsageAllowed(user.id);
+  const usageCheck = await assertAiUsageAllowed(user.id, user.email);
   if (!usageCheck.success) {
     return {
       success: false,
@@ -98,7 +98,7 @@ export async function submitWritingForFeedback(
 
     const feedback = parseGeminiJson(rawJson, WritingFeedbackSchema);
 
-    await recordSuccessfulAiUsage(user.id);
+    await recordSuccessfulAiUsage(user.id, user.email);
 
     await saveAiFeedback({
       feedbackType: "writing",
