@@ -23,7 +23,6 @@ import {
   PracticeEnhancementCards,
   PracticeSentenceStarters,
 } from "@/components/ai-practice/practice-enhancement-cards";
-import { PracticeModelAnswerTts } from "@/components/ai-practice/practice-model-answer-tts";
 import {
   PracticeHistoryPanel,
   type PracticeHistoryLabels,
@@ -315,16 +314,6 @@ export function PracticeWritingSession({
                 </div>
               }
             />
-            <CambaCard variant="lesson" padding="md" className="space-y-2">
-              <p className="camba-caption font-semibold text-foreground">{labels.feedback.modelAnswer}</p>
-              <p className="camba-body text-foreground/90 whitespace-pre-wrap">{feedback.modelAnswerSuggestion}</p>
-              <PracticeModelAnswerTts
-                text={feedback.modelAnswerSuggestion}
-                targetLevel={profile.level}
-                playbackKey={`writing-${activeSession.promptKey}`}
-                labels={labels.modelAnswerTts}
-              />
-            </CambaCard>
           </div>
         )}
 
