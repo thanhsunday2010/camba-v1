@@ -38,7 +38,10 @@ import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-
 import type { PracticeProgressViewModel } from "@/lib/ai-practice/practice-enhancement-types";
 import { AiWritingWordCounter } from "@/components/ai/ai-writing-word-counter";
 import {
-  AI_WRITING_MAX_WORDS,
+  PRACTICE_WRITING_MAX_WORDS,
+  PRACTICE_WRITING_MAX_WORDS_ERROR,
+  PRACTICE_WRITING_MIN_WORDS,
+  PRACTICE_WRITING_MIN_WORDS_ERROR,
   clampWritingToWordLimit,
   countWords,
 } from "@/lib/ai/ai-input-limits";
@@ -105,8 +108,8 @@ export function PracticeWritingSession({
   const { currentPrompt, profile, round } = activeSession;
   const writingStep = activeSession.writingStep ?? "outline";
 
-  const minWords = currentPrompt.minWords ?? (profile.mode === "micro" ? 40 : 40);
-  const maxWords = currentPrompt.maxWords ?? AI_WRITING_MAX_WORDS;
+  const minWords = PRACTICE_WRITING_MIN_WORDS;
+  const maxWords = PRACTICE_WRITING_MAX_WORDS;
   const wordCount = countWords(content);
   const previousBest = progress?.personalBest ?? historySummary.bestScore;
 
@@ -128,6 +131,10 @@ export function PracticeWritingSession({
     setError(null);
     if (wordCount < minWords) {
       setError(labels.minWordsError.replace("{min}", String(minWords)));
+      return;
+    }
+    if (wordCount > maxWords) {
+      setError(PRACTICE_WRITING_MAX_WORDS_ERROR);
       return;
     }
 
@@ -275,7 +282,7 @@ export function PracticeWritingSession({
                 id="writing-content"
                 className="w-full min-h-[200px] rounded-xl border border-border p-4 text-sm camba-focus-ring resize-y"
                 value={content}
-                onChange={(e) => setContent(clampWritingToWordLimit(e.target.value))}
+                onChange={(e) => setContent(clampWritingToWordLimit(e.target.value, maxWords))}
               />
               <AiWritingWordCounter text={content} maxWords={maxWords} minWords={minWords} />
               {error && <p className="text-sm text-error">{error}</p>}

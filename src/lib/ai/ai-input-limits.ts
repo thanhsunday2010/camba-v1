@@ -1,6 +1,10 @@
 export const AI_WRITING_MAX_WORDS = 500;
 export const AI_SPEAKING_MAX_SECONDS = 120;
 
+/** Standalone Writing practice (Luyện Writing) word bounds */
+export const PRACTICE_WRITING_MIN_WORDS = 10;
+export const PRACTICE_WRITING_MAX_WORDS = 300;
+
 export function countWords(text: string): number {
   const trimmed = text.trim();
   if (!trimmed) return 0;
@@ -11,8 +15,8 @@ export function isWithinWritingWordLimit(text: string): boolean {
   return countWords(text) <= AI_WRITING_MAX_WORDS;
 }
 
-export function clampWritingToWordLimit(text: string): string {
-  if (countWords(text) <= AI_WRITING_MAX_WORDS) {
+export function clampWritingToWordLimit(text: string, maxWords = AI_WRITING_MAX_WORDS): string {
+  if (countWords(text) <= maxWords) {
     return text;
   }
 
@@ -22,7 +26,7 @@ export function clampWritingToWordLimit(text: string): string {
 
   while ((match = wordPattern.exec(text)) !== null) {
     wordsSeen += 1;
-    if (wordsSeen === AI_WRITING_MAX_WORDS) {
+    if (wordsSeen === maxWords) {
       return text.slice(0, match.index + match[0].length);
     }
   }
@@ -46,4 +50,6 @@ export function speakingCountdownRemaining(elapsedSeconds: number, maxSeconds = 
 }
 
 export const AI_WRITING_WORD_LIMIT_ERROR = `Bài viết tối đa ${AI_WRITING_MAX_WORDS} từ.`;
+export const PRACTICE_WRITING_MIN_WORDS_ERROR = `Bài viết cần ít nhất ${PRACTICE_WRITING_MIN_WORDS} từ.`;
+export const PRACTICE_WRITING_MAX_WORDS_ERROR = `Bài viết tối đa ${PRACTICE_WRITING_MAX_WORDS} từ.`;
 export const AI_SPEAKING_DURATION_LIMIT_ERROR = `Bài nói tối đa ${AI_SPEAKING_MAX_SECONDS / 60} phút.`;

@@ -22,7 +22,8 @@ Return ONLY valid JSON:
 }
 Rules:
 - Match difficulty to declared level and program (general conversation, IELTS-style, or TOEIC-style).
-- For micro mode: speaking max ~60 seconds; writing minWords ~40, maxWords ~80.
+- For micro mode: speaking max ~60 seconds; writing minWords ~10, maxWords ~80.
+- For standard writing practice: minWords 10, maxWords 300.
 - For roleplay mode: create a realistic spoken/written scenario with a clear persona — NO picture descriptions.
 - Include sentenceStarters suitable for the learner's declared level.
 - If recurringErrors are provided, design a task that naturally practices those weak points.
@@ -43,7 +44,7 @@ export function buildPracticePromptRequest(
 
   const modeBlock =
     mode === "micro"
-      ? "\nMode: MICRO — short, focused session (speaking ~60s, writing ~40-80 words)."
+      ? "\nMode: MICRO — short, focused session (speaking ~60s, writing ~10-80 words)."
       : mode === "roleplay"
         ? "\nMode: ROLEPLAY — immersive scenario with a clear partner persona. No picture prompts."
         : "\nMode: STANDARD — full-length practice task.";

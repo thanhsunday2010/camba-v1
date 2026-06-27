@@ -37,8 +37,10 @@ import { saveAiFeedback } from "@/actions/ai/_shared";
 import { assertAiUsageAllowed, recordSuccessfulAiUsage } from "@/lib/subscriptions/assert-ai-usage";
 import {
   AI_SPEAKING_DURATION_LIMIT_ERROR,
-  AI_WRITING_MAX_WORDS,
-  AI_WRITING_WORD_LIMIT_ERROR,
+  PRACTICE_WRITING_MAX_WORDS,
+  PRACTICE_WRITING_MAX_WORDS_ERROR,
+  PRACTICE_WRITING_MIN_WORDS,
+  PRACTICE_WRITING_MIN_WORDS_ERROR,
   countWords,
   isWithinSpeakingDurationLimit,
 } from "@/lib/ai/ai-input-limits";
@@ -141,8 +143,13 @@ export async function submitStandaloneWritingPractice(
     return { success: false, error: "Nội dung bài viết không được để trống." };
   }
 
-  if (countWords(content) > AI_WRITING_MAX_WORDS) {
-    return { success: false, error: AI_WRITING_WORD_LIMIT_ERROR };
+  const wordCount = countWords(content);
+  if (wordCount < PRACTICE_WRITING_MIN_WORDS) {
+    return { success: false, error: PRACTICE_WRITING_MIN_WORDS_ERROR };
+  }
+
+  if (wordCount > PRACTICE_WRITING_MAX_WORDS) {
+    return { success: false, error: PRACTICE_WRITING_MAX_WORDS_ERROR };
   }
 
   const supabase = await createClient();
@@ -162,8 +169,6 @@ export async function submitStandaloneWritingPractice(
   }
 
   try {
-    const wordCount = content.split(/\s+/).filter(Boolean).length;
-
     const { data: submission, error: subError } = await supabase
       .from("writing_submissions")
       .insert({
