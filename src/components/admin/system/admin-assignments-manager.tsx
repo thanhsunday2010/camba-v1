@@ -8,14 +8,16 @@ import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  ALL_ADMIN_PERMISSIONS,
   assignAdminTemplate,
   grantAdminAccess,
   revokeAdminAccess,
   savePermissionOverrides,
   setSuperAdminFlag,
-  type AdminPermission,
 } from "@/actions/admin/admins";
+import {
+  ALL_ADMIN_PERMISSIONS,
+  type AdminPermission,
+} from "@/lib/auth/admin-permissions";
 import type { AdminAssignmentRow, AdminRoleTemplateRow } from "@/lib/admin/users/types";
 
 const PERM_GROUPS: { label: string; perms: AdminPermission[] }[] = [

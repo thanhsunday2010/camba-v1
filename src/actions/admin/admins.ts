@@ -4,9 +4,7 @@ import { revalidatePath } from "next/cache";
 import { createAdminAnalyticsClient } from "@/lib/supabase/admin-analytics";
 import { writeAuditLog } from "@/lib/admin/audit";
 import {
-  ALL_ADMIN_PERMISSIONS,
   isAdminPermission,
-  type AdminPermission,
 } from "@/lib/auth/admin-permissions";
 import type { AdminAssignmentRow, AdminRoleTemplateRow } from "@/lib/admin/users/types";
 import type {
@@ -329,5 +327,3 @@ export async function revokeAdminAccess(userId: string): Promise<{ success: bool
   revalidateAdminSystem();
   return { success: true };
 }
-
-export { ALL_ADMIN_PERMISSIONS, type AdminPermission };
