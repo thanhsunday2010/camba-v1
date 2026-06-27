@@ -6,6 +6,7 @@ import {
   LearningLockedUnitsDropdown,
   partitionUnitsByAccess,
 } from "@/components/learning/learning-locked-units-dropdown";
+import { useLessonUnlockBypass } from "@/components/learning/lesson-unlock-bypass-context";
 import type { CurriculumUnitGroup } from "@/lib/learning/pivot-units";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
 import type { UnitVisualState } from "@/lib/learning/path-ui-utils";
@@ -60,7 +61,8 @@ export function LearningUnitSection({
   masteryLabels,
   labels,
 }: LearningUnitSectionProps) {
-  const { accessible, locked } = partitionUnitsByAccess(units);
+  const lessonUnlockBypass = useLessonUnlockBypass();
+  const { accessible, locked } = partitionUnitsByAccess(units, lessonUnlockBypass);
 
   if (accessible.length === 0 && locked.length === 0) {
     return (

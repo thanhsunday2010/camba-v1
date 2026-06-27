@@ -11,6 +11,7 @@ import {
 import { LearningLockHint } from "@/components/learning/learning-lock-hint";
 import { getLessonPresentation } from "@/lib/learning/path-ui-utils";
 import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
+import { useLessonUnlockBypass } from "@/components/learning/lesson-unlock-bypass-context";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
 import type { LessonWithProgress } from "@/types/learning";
 import { ChevronRight, Lock, RefreshCw, Sparkles } from "lucide-react";
@@ -51,15 +52,18 @@ export function LearningLessonCard({
   variant = "default",
 }: LearningLessonCardProps) {
   const t = useTranslations("learning");
+  const lessonUnlockBypass = useLessonUnlockBypass();
   const presentation = getLessonPresentation(lesson, {
     recommendedLessonId,
     stateLabels: labels.stateLabels,
     ctaStart: labels.ctaStart,
     ctaContinue: labels.ctaContinue,
     ctaReview: labels.ctaReview,
+    bypassUnlock: lessonUnlockBypass,
   });
   const { state, stateLabel, cta } = presentation;
-  const unlocked = isLessonUnlockedFromProgress(lesson.progress);
+  const unlocked =
+    lessonUnlockBypass || isLessonUnlockedFromProgress(lesson.progress);
   const mastery = lesson.progress?.mastery_level ?? 0;
   const completion = lesson.progress?.completion_percent ?? 0;
   const exerciseCount = lesson.exercise_count ?? 0;

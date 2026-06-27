@@ -14,8 +14,8 @@ export function isSuperAdmin(user: Pick<AuthUser, "isSuperAdmin">): boolean {
   return user.isSuperAdmin;
 }
 
-export function canAccessAdmin(user: Pick<AuthUser, "roles">): boolean {
-  return isAdmin(user.roles);
+export function canAccessAdmin(user: Pick<AuthUser, "roles" | "isSuperAdmin">): boolean {
+  return user.isSuperAdmin || isAdmin(user.roles);
 }
 
 export function isTeacher(roles: UserRole[]): boolean {

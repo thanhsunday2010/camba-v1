@@ -26,6 +26,7 @@ import { DashboardAiPracticeSection, type DashboardAiPracticeLabels } from "@/co
 import type { PracticeHistorySummary } from "@/lib/ai-practice/practice-history-types";
 import type { PracticeHistoryLabels } from "@/components/ai-practice/practice-history-panel";
 import { useTranslations } from "next-intl";
+import { LessonUnlockBypassProvider } from "@/components/learning/lesson-unlock-bypass-context";
 
 interface LevelOption {
   id: string;
@@ -86,6 +87,7 @@ interface LearningPathViewProps {
   objectiveText: string;
   labels: LearningPathViewLabels;
   showUnlockAllBanner?: boolean;
+  lessonUnlockBypass?: boolean;
   aiPractice?: {
     labels: DashboardAiPracticeLabels;
     writingSummary: PracticeHistorySummary;
@@ -121,6 +123,7 @@ export function LearningPathView({
   objectiveText,
   labels,
   showUnlockAllBanner,
+  lessonUnlockBypass = false,
   aiPractice,
 }: LearningPathViewProps) {
   const t = useTranslations("learning");
@@ -133,8 +136,8 @@ export function LearningPathView({
   const unitsWithContent = units.filter((unit) => unit.hasContent).length;
 
   const focusFromPath = useMemo(
-    () => (nextLesson ? null : resolveFocusLesson(units)),
-    [nextLesson, units]
+    () => (nextLesson ? null : resolveFocusLesson(units, lessonUnlockBypass)),
+    [nextLesson, units, lessonUnlockBypass]
   );
 
   const displayLesson: NextLessonContext | null = nextLesson
@@ -162,8 +165,8 @@ export function LearningPathView({
   const hasScrolledRef = useRef(false);
 
   const reviewItems = useMemo(
-    () => collectReviewLessons(units, focusLessonId),
-    [units, focusLessonId]
+    () => collectReviewLessons(units, focusLessonId, 4, lessonUnlockBypass),
+    [units, focusLessonId, lessonUnlockBypass]
   );
   const reviewLessonIds = useMemo(
     () => new Set(reviewItems.map((item) => item.lesson.id)),
@@ -206,8 +209,9 @@ export function LearningPathView({
   }
 
   return (
-    <StudentPageShell>
-      <div className="camba-section-stack gap-4 sm:gap-5">
+    <LessonUnlockBypassProvider value={lessonUnlockBypass}>
+      <StudentPageShell>
+        <div className="camba-section-stack gap-4 sm:gap-5">
         {aiPractice && (
           <DashboardAiPracticeSection
             variant="strip"
@@ -279,5 +283,6 @@ export function LearningPathView({
         )}
       </div>
     </StudentPageShell>
+    </LessonUnlockBypassProvider>
   );
 }

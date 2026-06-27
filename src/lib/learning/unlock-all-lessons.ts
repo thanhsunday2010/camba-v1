@@ -1,4 +1,5 @@
 import { isAdmin } from "@/lib/auth/roles";
+import type { AuthUser } from "@/types";
 import type { UserRole } from "@/types/database";
 
 /**
@@ -15,6 +16,13 @@ export function canBypassLessonUnlock(
   isSuperAdmin = false
 ): boolean {
   return isSuperAdmin || isAdmin(roles);
+}
+
+export function canBypassLessonUnlockForUser(
+  user: Pick<AuthUser, "roles" | "isSuperAdmin" | "adminPermissions">
+): boolean {
+  if (user.isSuperAdmin || isAdmin(user.roles)) return true;
+  return user.adminPermissions.length > 0;
 }
 
 export function shouldUnlockAllLessons(options?: {

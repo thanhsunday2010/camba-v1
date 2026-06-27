@@ -8,6 +8,7 @@ import {
 } from "@/components/dashboard/dashboard-slide-strip";
 import { LearningLessonCard } from "@/components/learning/learning-lesson-card";
 import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
+import { useLessonUnlockBypass } from "@/components/learning/lesson-unlock-bypass-context";
 import type { CurriculumUnitGroup } from "@/lib/learning/pivot-units";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
 import type { LessonWithProgress } from "@/types/learning";
@@ -51,6 +52,7 @@ export function LearningUnitLessonsPanel({
   masteryLabels,
   labels,
 }: LearningUnitLessonsPanelProps) {
+  const lessonUnlockBypass = useLessonUnlockBypass();
   const entriesWithLessons = useMemo(
     () => unit.entries.filter((entry) => entry.lessons.length > 0),
     [unit.entries]
@@ -82,12 +84,12 @@ export function LearningUnitLessonsPanel({
   const activeEntry = entriesWithLessons.find((entry) => entry.skillSlug === activeSkill);
   const lessons = activeEntry?.lessons ?? [];
 
-  const unlockedLessons = lessons.filter((lesson) =>
-    isLessonUnlockedFromProgress(lesson.progress)
-  );
-  const lockedLessons = lessons.filter(
-    (lesson) => !isLessonUnlockedFromProgress(lesson.progress)
-  );
+  const unlockedLessons = lessonUnlockBypass
+    ? lessons
+    : lessons.filter((lesson) => isLessonUnlockedFromProgress(lesson.progress));
+  const lockedLessons = lessonUnlockBypass
+    ? []
+    : lessons.filter((lesson) => !isLessonUnlockedFromProgress(lesson.progress));
 
   const useSlide = unlockedLessons.length > SLIDE_THRESHOLD;
 

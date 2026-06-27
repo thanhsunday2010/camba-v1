@@ -5,6 +5,7 @@ import {
 } from "@/lib/queries/learning";
 import { resolveLessonCompleteNextCtaForUser } from "@/lib/learning/lesson-complete-cta";
 import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
+import { isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
 import { userCanBypassLessonUnlock } from "@/lib/learning/unlock-all-lessons.server";
 import { parseVocabularyBank, type VocabularyWord } from "@/lib/learning/vocabulary-bank";
 import {
@@ -191,7 +192,8 @@ function buildExerciseSummaries(
 
 export async function getLessonPageViewModel(
   userId: string,
-  lessonId: string
+  lessonId: string,
+  bypassUnlockOverride?: boolean
 ): Promise<LessonPageViewModel | null> {
   const [lesson, progressRow, context, attempts] = await Promise.all([
     getLessonWithExercises(lessonId),
@@ -202,7 +204,9 @@ export async function getLessonPageViewModel(
 
   if (!lesson) return null;
 
-  const bypassUnlock = await userCanBypassLessonUnlock(userId);
+  const bypassUnlock =
+    isUnlockAllLessonsEnabled() ||
+    (bypassUnlockOverride ?? (await userCanBypassLessonUnlock(userId)));
   const exercises = lesson.exercises ?? [];
   const attemptsByExercise = groupAttemptsByExercise(attempts);
   const exerciseSummaries = buildExerciseSummaries(exercises, attemptsByExercise);

@@ -77,7 +77,14 @@ export function LearningLockedUnitsDropdown({
   );
 }
 
-export function partitionUnitsByAccess(units: CurriculumUnitGroup[]) {
+export function partitionUnitsByAccess(
+  units: CurriculumUnitGroup[],
+  bypassUnlock = false
+) {
+  if (bypassUnlock) {
+    return { accessible: units, locked: [] as CurriculumUnitGroup[] };
+  }
+
   const accessible: CurriculumUnitGroup[] = [];
   const locked: CurriculumUnitGroup[] = [];
 

@@ -10,6 +10,7 @@ import {
   getUnitVisualState,
   type UnitVisualState,
 } from "@/lib/learning/path-ui-utils";
+import { useLessonUnlockBypass } from "@/components/learning/lesson-unlock-bypass-context";
 import type { CurriculumUnitGroup } from "@/lib/learning/pivot-units";
 import { ChevronRight, Lock, Sparkles } from "lucide-react";
 
@@ -57,7 +58,8 @@ export function LearningUnitCard({
   compact = false,
   previewOnly = false,
 }: LearningUnitCardProps) {
-  const unitState = getUnitVisualState(unit);
+  const lessonUnlockBypass = useLessonUnlockBypass();
+  const unitState = getUnitVisualState(unit, lessonUnlockBypass);
   const progress = computeUnitProgressPercent(unit);
   const completedCount = computeUnitCompletedLessonCount(unit);
   const isLocked = unitState === "locked";

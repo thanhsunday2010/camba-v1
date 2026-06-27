@@ -35,7 +35,8 @@ import type {
 
 export async function getLearningPath(
   userId: string,
-  levelId: string
+  levelId: string,
+  bypassUnlockOverride?: boolean
 ): Promise<LearningPath | null> {
   const supabase = await createClient();
 
@@ -62,7 +63,10 @@ export async function getLearningPath(
 
   if (!program || !skills?.length) return null;
 
-  const bypassUnlock = await userCanBypassLessonUnlock(userId);
+  const bypassUnlock =
+    isUnlockAllLessonsEnabled() ||
+    bypassUnlockOverride === true ||
+    (bypassUnlockOverride === undefined && (await userCanBypassLessonUnlock(userId)));
   const skillIds = skills.map((skill) => skill.id);
 
   const { data: units } = await supabase
@@ -465,9 +469,13 @@ export async function getPlacementTest(programId: string): Promise<PlacementTest
   };
 }
 
-export async function initializeLessonUnlocks(userId: string, levelId: string) {
+export async function initializeLessonUnlocks(
+  userId: string,
+  levelId: string,
+  bypassUnlockOverride?: boolean
+) {
   const supabase = await createClient();
-  const path = await getLearningPath(userId, levelId);
+  const path = await getLearningPath(userId, levelId, bypassUnlockOverride);
   if (!path) return;
 
   const programId = path.program.id;
@@ -475,7 +483,9 @@ export async function initializeLessonUnlocks(userId: string, levelId: string) {
 
   let lessonIds: string[];
   const unlockAllLessons =
-    isUnlockAllLessonsEnabled() || (await userCanBypassLessonUnlock(userId));
+    isUnlockAllLessonsEnabled() ||
+    bypassUnlockOverride === true ||
+    (bypassUnlockOverride !== false && (await userCanBypassLessonUnlock(userId)));
   if (unlockAllLessons) {
     lessonIds = levelLessons.map((l) => l.id);
   } else {
@@ -540,7 +550,8 @@ export async function getLevelIdForLesson(lessonId: string): Promise<string | nu
 /** Unlock entry lessons for the lesson's level (e.g. direct /learning/lesson/[id] links). */
 export async function ensureLessonUnlockedForUser(
   userId: string,
-  lessonId: string
+  lessonId: string,
+  bypassUnlockOverride?: boolean
 ): Promise<void> {
   const supabase = await createClient();
   const levelId = await getLevelIdForLesson(lessonId);
@@ -574,5 +585,5 @@ export async function ensureLessonUnlockedForUser(
     }
   }
 
-  await initializeLessonUnlocks(userId, levelId);
+  await initializeLessonUnlocks(userId, levelId, bypassUnlockOverride);
 }

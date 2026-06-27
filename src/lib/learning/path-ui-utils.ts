@@ -31,6 +31,7 @@ export interface LessonPresentationOptions {
   ctaStart: string;
   ctaContinue: string;
   ctaReview: string;
+  bypassUnlock?: boolean;
 }
 
 export interface LessonPresentation {
@@ -41,8 +42,13 @@ export interface LessonPresentation {
 }
 
 /** Whether a lesson qualifies for review — server fields only, no mastery recompute */
-export function needsReviewFromServer(lesson: LessonWithProgress): boolean {
-  if (!isLessonUnlockedFromProgress(lesson.progress) || !lesson.progress) return false;
+export function needsReviewFromServer(
+  lesson: LessonWithProgress,
+  bypassUnlock = false
+): boolean {
+  if (!isLessonUnlockedFromProgress(lesson.progress, { bypassUnlock }) || !lesson.progress) {
+    return false;
+  }
 
   const completion = lesson.progress.completion_percent ?? 0;
   const mastery = lesson.progress.mastery_level ?? 0;
@@ -70,16 +76,17 @@ export function getReviewReasonKey(lesson: LessonWithProgress): ReviewReasonKey 
 /** Single source of truth for lesson visual state across hero, recommended block, and path */
 export function getLessonVisualState(
   lesson: LessonWithProgress,
-  recommendedLessonId?: string | null
+  recommendedLessonId?: string | null,
+  bypassUnlock = false
 ): LessonVisualState {
-  const unlocked = isLessonUnlockedFromProgress(lesson.progress);
+  const unlocked = isLessonUnlockedFromProgress(lesson.progress, { bypassUnlock });
   if (!unlocked) return "locked";
 
   const mastery = lesson.progress?.mastery_level ?? 0;
   const completion = lesson.progress?.completion_percent ?? 0;
 
   if (recommendedLessonId === lesson.id) return "recommended";
-  if (needsReviewFromServer(lesson)) return "needs-review";
+  if (needsReviewFromServer(lesson, bypassUnlock)) return "needs-review";
   if (mastery >= 4 && completion >= 100) return "mastered";
   if (completion >= 100) return "completed";
   if (completion > 0) return "in-progress";
@@ -111,7 +118,8 @@ export function getLessonPresentation(
   lesson: LessonWithProgress,
   options: LessonPresentationOptions
 ): LessonPresentation {
-  const state = getLessonVisualState(lesson, options.recommendedLessonId);
+  const bypassUnlock = options.bypassUnlock ?? false;
+  const state = getLessonVisualState(lesson, options.recommendedLessonId, bypassUnlock);
   const completion = lesson.progress?.completion_percent ?? 0;
   return {
     state,
@@ -121,14 +129,17 @@ export function getLessonPresentation(
   };
 }
 
-export function getUnitVisualState(unit: CurriculumUnitGroup): UnitVisualState {
+export function getUnitVisualState(
+  unit: CurriculumUnitGroup,
+  bypassUnlock = false
+): UnitVisualState {
   if (!unit.hasContent) return "coming-soon";
 
   const lessons = unit.entries.flatMap((entry) => entry.lessons);
   if (lessons.length === 0) return "coming-soon";
 
   const unlockedCount = lessons.filter((lesson) =>
-    isLessonUnlockedFromProgress(lesson.progress)
+    isLessonUnlockedFromProgress(lesson.progress, { bypassUnlock })
   ).length;
   if (unlockedCount === 0) return "locked";
 
@@ -246,7 +257,8 @@ export function isLessonVisibleInSkillFilter(
 export function collectReviewLessons(
   units: CurriculumUnitGroup[],
   recommendedLessonId?: string | null,
-  limit = 4
+  limit = 4,
+  bypassUnlock = false
 ): ReviewLessonItem[] {
   const items: ReviewLessonItem[] = [];
 
@@ -254,7 +266,7 @@ export function collectReviewLessons(
     for (const entry of unit.entries) {
       for (const lesson of entry.lessons) {
         if (lesson.id === recommendedLessonId) continue;
-        if (!needsReviewFromServer(lesson)) continue;
+        if (!needsReviewFromServer(lesson, bypassUnlock)) continue;
         items.push({
           lesson,
           skillSlug: entry.skillSlug,
@@ -316,11 +328,14 @@ function collectLessonsInPathOrder(units: CurriculumUnitGroup[]) {
 }
 
 /** UI-only focus when server nextLesson is null: in-progress → unlocked incomplete → review */
-export function resolveFocusLesson(units: CurriculumUnitGroup[]): FocusLessonResult | null {
+export function resolveFocusLesson(
+  units: CurriculumUnitGroup[],
+  bypassUnlock = false
+): FocusLessonResult | null {
   const ordered = collectLessonsInPathOrder(units);
 
   for (const item of ordered) {
-    if (!isLessonUnlockedFromProgress(item.lesson.progress)) continue;
+    if (!isLessonUnlockedFromProgress(item.lesson.progress, { bypassUnlock })) continue;
     const completion = item.lesson.progress?.completion_percent ?? 0;
     if (completion > 0 && completion < 100) {
       return { ...item, source: "in-progress" };
@@ -328,7 +343,7 @@ export function resolveFocusLesson(units: CurriculumUnitGroup[]): FocusLessonRes
   }
 
   for (const item of ordered) {
-    if (!isLessonUnlockedFromProgress(item.lesson.progress)) continue;
+    if (!isLessonUnlockedFromProgress(item.lesson.progress, { bypassUnlock })) continue;
     const completion = item.lesson.progress?.completion_percent ?? 0;
     if (completion < 100) {
       return { ...item, source: "unlocked" };
@@ -336,7 +351,7 @@ export function resolveFocusLesson(units: CurriculumUnitGroup[]): FocusLessonRes
   }
 
   for (const item of ordered) {
-    if (needsReviewFromServer(item.lesson)) {
+    if (needsReviewFromServer(item.lesson, bypassUnlock)) {
       return { ...item, source: "review" };
     }
   }

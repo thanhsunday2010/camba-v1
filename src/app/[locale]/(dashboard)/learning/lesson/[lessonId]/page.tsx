@@ -9,6 +9,7 @@ import { LessonLockedState } from "@/components/learning/lesson/lesson-locked-st
 import { LessonPracticeLimitState } from "@/components/learning/lesson/lesson-practice-limit-state";
 import { LessonEmptyState } from "@/components/learning/lesson/lesson-empty-state";
 import { canPracticeLesson } from "@/lib/subscriptions/lesson-practice-usage";
+import { canBypassLessonUnlockForUser } from "@/lib/learning/unlock-all-lessons";
 import type { LessonDisplayState, LessonCompleteSummaryLabels } from "@/lib/learning/lesson-page-types";
 
 interface LessonPageProps {
@@ -35,11 +36,13 @@ export default async function LessonPage({ params }: LessonPageProps) {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
 
-  await ensureLessonUnlockedForUser(user.id, lessonId);
+  const lessonUnlockBypass = canBypassLessonUnlockForUser(user);
+
+  await ensureLessonUnlockedForUser(user.id, lessonId, lessonUnlockBypass);
 
   const practiceCheck = await canPracticeLesson(user.id, lessonId);
 
-  const viewModel = await getLessonPageViewModel(user.id, lessonId);
+  const viewModel = await getLessonPageViewModel(user.id, lessonId, lessonUnlockBypass);
   if (!viewModel) notFound();
 
   const t = await getTranslations("learning.lesson");

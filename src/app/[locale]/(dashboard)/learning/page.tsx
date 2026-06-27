@@ -15,7 +15,7 @@ import { LearningPathEmpty } from "@/components/learning/learning-path-empty";
 import { LearningLevelSwitcher } from "@/components/learning/learning-level-switcher";
 import { StudentPageShell } from "@/components/camba";
 import { fetchActiveProgramContext, fetchLevelsForProgram } from "@/actions/programs";
-import { canBypassLessonUnlock, isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
+import { canBypassLessonUnlockForUser, isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
 import { buildDashboardAiPracticeLabels, buildPracticeHistoryLabels } from "@/lib/ai-practice/practice-labels";
 import { getPracticeDashboardSummaries } from "@/lib/ai-practice/practice-history";
 import type { LessonVisualState } from "@/lib/design/status-tokens";
@@ -104,11 +104,12 @@ export default async function LearningPage() {
   }
 
   const levelId = gamification.current_level_id;
+  const lessonUnlockBypass = canBypassLessonUnlockForUser(user);
 
-  await initializeLessonUnlocks(user.id, levelId);
+  await initializeLessonUnlocks(user.id, levelId, lessonUnlockBypass);
 
   const [path, nextLesson, skillProgress, practiceSummaries] = await Promise.all([
-    getLearningPath(user.id, levelId),
+    getLearningPath(user.id, levelId, lessonUnlockBypass),
     getNextLessonContext(user.id, levelId),
     getSkillProgressSnapshot(user.id, levelId),
     getPracticeDashboardSummaries(),
@@ -144,7 +145,8 @@ export default async function LearningPage() {
       nextLesson={nextLesson}
       masteryLabels={masteryLabels}
       objectiveText={objectiveText}
-      showUnlockAllBanner={isUnlockAllLessonsEnabled() || canBypassLessonUnlock(user.roles, user.isSuperAdmin)}
+      showUnlockAllBanner={isUnlockAllLessonsEnabled() || lessonUnlockBypass}
+      lessonUnlockBypass={lessonUnlockBypass}
       labels={{
         hero: {
           title: t("title"),
