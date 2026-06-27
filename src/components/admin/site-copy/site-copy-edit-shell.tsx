@@ -10,7 +10,7 @@ import {
   type ReactNode,
 } from "react";
 import { NextIntlClientProvider, type AbstractIntlMessages } from "next-intl";
-import { useRouter } from "@/i18n/routing";
+import { useRouter } from "next/navigation";
 import {
   mergeSiteTextOverrides,
   setNestedMessage,

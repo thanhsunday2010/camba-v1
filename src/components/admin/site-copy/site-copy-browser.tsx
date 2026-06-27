@@ -2,7 +2,7 @@
 
 import { useMemo, useState, useTransition } from "react";
 import type { AbstractIntlMessages } from "next-intl";
-import { useRouter } from "@/i18n/routing";
+import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
