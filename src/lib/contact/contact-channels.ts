@@ -35,10 +35,18 @@ function normalizeMessengerUsername(raw: string): string | null {
   return username || null;
 }
 
+function readEnv(...keys: string[]): string | undefined {
+  for (const key of keys) {
+    const value = process.env[key]?.trim();
+    if (value) return value;
+  }
+  return undefined;
+}
+
 export function getContactChannels(): ContactChannel[] {
   const channels: ContactChannel[] = [];
 
-  const zaloRaw = process.env.NEXT_PUBLIC_CONTACT_ZALO?.trim();
+  const zaloRaw = readEnv("NEXT_PUBLIC_CONTACT_ZALO", "CONTACT_ZALO");
   if (zaloRaw) {
     const phone = normalizeZaloPhone(zaloRaw);
     if (phone) {
@@ -46,7 +54,7 @@ export function getContactChannels(): ContactChannel[] {
     }
   }
 
-  const messengerRaw = process.env.NEXT_PUBLIC_CONTACT_MESSENGER?.trim();
+  const messengerRaw = readEnv("NEXT_PUBLIC_CONTACT_MESSENGER", "CONTACT_MESSENGER");
   if (messengerRaw) {
     const username = normalizeMessengerUsername(messengerRaw);
     if (username) {

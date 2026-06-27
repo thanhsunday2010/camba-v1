@@ -21,11 +21,9 @@ interface DashboardHubTabsProps {
 export function DashboardHubTabs({ activeTab, labels }: DashboardHubTabsProps) {
   const router = useRouter();
 
-  const tabs = [
-    { id: "overview", label: labels.overview },
-    { id: "achievements", label: labels.achievements },
-    { id: "profile", label: labels.profile },
-  ] as const;
+  const tabs = [{ id: "overview" as const, label: labels.overview }];
+
+  if (tabs.length <= 1) return null;
 
   return (
     <AppTabs

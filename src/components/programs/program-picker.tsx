@@ -24,6 +24,7 @@ interface ProgramPickerProps {
     current: string;
   };
   onSelected?: () => void;
+  showHeader?: boolean;
 }
 
 export function ProgramPicker({
@@ -31,6 +32,7 @@ export function ProgramPicker({
   currentProgramId,
   labels,
   onSelected,
+  showHeader = true,
 }: ProgramPickerProps) {
   const [isPending, startTransition] = useTransition();
 
@@ -43,10 +45,12 @@ export function ProgramPicker({
 
   return (
     <div className="space-y-4">
-      <div>
-        <h2 className="text-lg font-semibold text-gray-900">{labels.title}</h2>
-        <p className="text-sm text-gray-500">{labels.subtitle}</p>
-      </div>
+      {showHeader && (
+        <div>
+          <h2 className="text-lg font-semibold text-gray-900">{labels.title}</h2>
+          <p className="text-sm text-gray-500">{labels.subtitle}</p>
+        </div>
+      )}
       <div className="grid gap-4 md:grid-cols-2">
         {programs.map((program) => {
           const isCurrent = program.id === currentProgramId;

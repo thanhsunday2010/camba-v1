@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useId, useMemo, useState, type ReactNode } from "react";
+import { useEffect, useId, useState, type ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { MessageCircle, X } from "lucide-react";
-import { getContactChannels, type ContactChannel, type ContactChannelId } from "@/lib/contact/contact-channels";
+import type { ContactChannel, ContactChannelId } from "@/lib/contact/contact-channels";
 import { cn } from "@/lib/utils";
 
 const CHANNEL_STYLES: Record<
@@ -62,10 +62,13 @@ function ChannelLink({
   );
 }
 
-export function ContactFab() {
+interface ContactFabProps {
+  channels: ContactChannel[];
+}
+
+export function ContactFab({ channels }: ContactFabProps) {
   const t = useTranslations("contact");
   const menuId = useId();
-  const channels = useMemo(() => getContactChannels(), []);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -79,15 +82,13 @@ export function ContactFab() {
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
-  if (channels.length === 0) return null;
-
   const singleChannel = channels.length === 1 ? channels[0] : null;
 
   if (singleChannel) {
     const style = CHANNEL_STYLES[singleChannel.id];
     return (
       <div
-        className="fixed z-[90] flex flex-col items-end gap-2"
+        className="fixed z-[110] flex flex-col items-end gap-2"
         style={{
           bottom: "max(1rem, env(safe-area-inset-bottom))",
           right: "max(1rem, env(safe-area-inset-right))",
@@ -111,7 +112,7 @@ export function ContactFab() {
 
   return (
     <div
-      className="fixed z-[90] flex flex-col items-end gap-3"
+      className="fixed z-[110] flex flex-col items-end gap-3"
       style={{
         bottom: "max(1rem, env(safe-area-inset-bottom))",
         right: "max(1rem, env(safe-area-inset-right))",

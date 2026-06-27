@@ -2,7 +2,6 @@
 
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/routing";
-import { signOut } from "@/actions/auth";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { MascotBrandLink } from "@/components/mascot";
@@ -12,7 +11,6 @@ import {
   FileText,
   ClipboardList,
   Settings,
-  LogOut,
   Map,
   Menu,
   CreditCard,
@@ -133,11 +131,6 @@ export function DashboardNav({ user }: DashboardNavProps) {
                 <Settings className="h-4 w-4" />
               </Button>
             </Link>
-            <form action={signOut}>
-              <Button variant="ghost" size="icon" type="submit" className="camba-touch-target md:h-9 md:w-9">
-                <LogOut className="h-4 w-4" />
-              </Button>
-            </form>
           </div>
         </div>
 

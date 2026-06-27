@@ -9,6 +9,6 @@ export function dashboardHubHref(tab: DashboardHubTab = "overview"): string {
 
 export function parseDashboardHubTab(value: string | string[] | undefined): DashboardHubTab {
   const raw = Array.isArray(value) ? value[0] : value;
-  if (raw === "achievements" || raw === "profile") return raw;
+  if (raw === "achievements" || raw === "profile") return "overview";
   return "overview";
 }

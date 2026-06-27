@@ -12,6 +12,15 @@
     "error": "An error occurred",
     "success": "Success"
   },
+  "contact": {
+    "open": "Contact CAMBA",
+    "close": "Close contact menu",
+    "menuLabel": "Contact channels",
+    "channel": {
+      "zalo": "Chat on Zalo",
+      "messenger": "Messenger"
+    }
+  },
   "nav": {
     "dashboard": "Dashboard",
     "learningPath": "Learning Path",

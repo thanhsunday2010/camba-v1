@@ -7,7 +7,7 @@ import { fetchActiveProgramContext, fetchAvailablePrograms, fetchLevelsForProgra
 import { ProgramPicker } from "@/components/programs/program-picker";
 import { LevelPicker } from "@/components/programs/level-picker";
 import { StudentSettingsPanel } from "@/components/settings/student-settings-panel";
-import { ProfileForm } from "@/components/settings/profile-form";
+import { SettingsAccountSection } from "@/components/settings/settings-account-section";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default async function SettingsPage() {
@@ -33,31 +33,28 @@ export default async function SettingsPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-gray-900">{tn("settings")}</h1>
-        <p className="text-sm text-gray-500 mt-1">{t("subtitle")}</p>
+        <h1 className="camba-h1 text-foreground">{tn("settings")}</h1>
+        <p className="camba-body text-muted mt-1">{t("subtitle")}</p>
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-base">{t("profileTitle")}</CardTitle>
+          <CardTitle className="text-base">{t("accountTitle")}</CardTitle>
         </CardHeader>
         <CardContent>
-          <ProfileForm
-            fullName={user.fullName}
-            saveLabel={t("saveProfile")}
-            nameLabel={t("fullName")}
-          />
+          <SettingsAccountSection email={user.email} fullName={user.fullName} />
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-base">{tp("switchTitle")}</CardTitle>
+          <CardTitle className="text-base">{t("learningTitle")}</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="space-y-6">
           <ProgramPicker
             programs={programs}
             currentProgramId={programContext?.programId}
+            showHeader={false}
             labels={{
               title: tp("switchTitle"),
               subtitle: tp("switchSubtitle"),
@@ -66,29 +63,28 @@ export default async function SettingsPage() {
               current: tp("current"),
             }}
           />
+          {programContext?.programId && levels.length > 0 && (
+            <div className="border-t border-gray-100 pt-6">
+              <LevelPicker
+                levels={levels}
+                currentLevelId={programContext.levelId}
+                compact
+                showHeader
+                labels={{
+                  title: tp("levelTitle"),
+                  subtitle: programContext.levelId
+                    ? tp("levelChangeSubtitle")
+                    : tp("levelSubtitle"),
+                  select: tp("levelSelect"),
+                  selecting: tp("selecting"),
+                  current: tp("currentLevel"),
+                  startLearning: tp("startLearning"),
+                }}
+              />
+            </div>
+          )}
         </CardContent>
       </Card>
-
-      {programContext?.programId && levels.length > 0 && (
-        <Card>
-          <CardContent className="pt-6">
-            <LevelPicker
-              levels={levels}
-              currentLevelId={programContext.levelId}
-              labels={{
-                title: tp("levelTitle"),
-                subtitle: programContext.levelId
-                  ? tp("levelChangeSubtitle")
-                  : tp("levelSubtitle"),
-                select: tp("levelSelect"),
-                selecting: tp("selecting"),
-                current: tp("currentLevel"),
-                startLearning: tp("startLearning"),
-              }}
-            />
-          </CardContent>
-        </Card>
-      )}
 
       <StudentSettingsPanel
         pendingParentLinks={pendingLinks}
