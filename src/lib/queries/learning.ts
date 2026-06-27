@@ -19,7 +19,8 @@ import {
   getFirstLessonIdForLevel,
   getSequentialEntryLessonIds,
 } from "@/lib/learning/curriculum-unlock";
-import { isUnlockAllLessonsEnabled, userCanBypassLessonUnlock } from "@/lib/learning/unlock-all-lessons";
+import { isUnlockAllLessonsEnabled } from "@/lib/learning/unlock-all-lessons";
+import { userCanBypassLessonUnlock } from "@/lib/learning/unlock-all-lessons.server";
 import type {
   Exercise,
   LearningPath,

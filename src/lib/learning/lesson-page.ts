@@ -5,7 +5,7 @@ import {
 } from "@/lib/queries/learning";
 import { resolveLessonCompleteNextCtaForUser } from "@/lib/learning/lesson-complete-cta";
 import { isLessonUnlockedFromProgress } from "@/lib/learning/unlock";
-import { userCanBypassLessonUnlock } from "@/lib/learning/unlock-all-lessons";
+import { userCanBypassLessonUnlock } from "@/lib/learning/unlock-all-lessons.server";
 import { parseVocabularyBank, type VocabularyWord } from "@/lib/learning/vocabulary-bank";
 import {
   getExerciseUiState,

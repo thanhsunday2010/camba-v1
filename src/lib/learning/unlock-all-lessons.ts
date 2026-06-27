@@ -1,5 +1,3 @@
-import { cache } from "react";
-import { createClient } from "@/lib/supabase/server";
 import { isAdmin } from "@/lib/auth/roles";
 import type { UserRole } from "@/types/database";
 
@@ -15,16 +13,6 @@ export function isUnlockAllLessonsEnabled(): boolean {
 export function canBypassLessonUnlock(roles: UserRole[]): boolean {
   return isAdmin(roles);
 }
-
-export const userCanBypassLessonUnlock = cache(async (userId: string): Promise<boolean> => {
-  const supabase = await createClient();
-  const { data: roles } = await supabase
-    .from("user_roles")
-    .select("role")
-    .eq("user_id", userId);
-
-  return canBypassLessonUnlock((roles?.map((row) => row.role) ?? []) as UserRole[]);
-});
 
 export function shouldUnlockAllLessons(options?: {
   roles?: UserRole[];
