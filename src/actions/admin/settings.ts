@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { createAdminAnalyticsClient } from "@/lib/supabase/admin-analytics";
 import { writeAuditLog } from "@/lib/admin/audit";
+import { KNOWN_PROGRAM_SETTING_KEYS } from "@/lib/admin/settings-keys";
 import { requirePermission } from "@/actions/admin/_shared";
 import { AI_DAILY_LIMITS, SUBSCRIPTION_PROGRAMS } from "@/lib/subscriptions/subscription-catalog";
 import type { SubscriptionTier } from "@/lib/subscriptions/subscription-types";
@@ -25,30 +26,6 @@ export interface AdminAiLimitTierRow {
   tierLabel: string;
   dailyAiLimit: number;
 }
-
-const KNOWN_SETTING_KEYS = [
-  {
-    key: "mastery_unlock_threshold",
-    label: "Ngưỡng mastery mở khóa",
-    type: "number" as const,
-    defaultValue: 3,
-    description: "Mức mastery cần để mở bài học tiếp theo",
-  },
-  {
-    key: "shield_scale_max",
-    label: "Shield tối đa",
-    type: "number" as const,
-    defaultValue: 15,
-    description: "Thang điểm shield tối đa cho chương trình YLE",
-  },
-  {
-    key: "placement_test_questions",
-    label: "Số câu placement test",
-    type: "number" as const,
-    defaultValue: 20,
-    description: "Số câu hỏi trong bài placement test",
-  },
-];
 
 function revalidateSettings() {
   revalidatePath("/admin/system/settings", "layout");
@@ -81,7 +58,7 @@ export async function getProgramSettings(
 
   const map = new Map((data ?? []).map((r) => [r.key, r]));
 
-  return KNOWN_SETTING_KEYS.map((def) => {
+  return KNOWN_PROGRAM_SETTING_KEYS.map((def) => {
     const existing = map.get(def.key);
     let value: unknown = existing?.value ?? def.defaultValue;
     if (typeof value === "object" && value !== null && "value" in (value as object)) {
@@ -98,15 +75,13 @@ export async function getProgramSettings(
   });
 }
 
-export { KNOWN_SETTING_KEYS };
-
 export async function saveProgramSetting(input: {
   programId: string;
   key: string;
   value: number | string;
 }): Promise<{ success: boolean; error?: string }> {
   const actor = await requirePermission("platform.settings");
-  const def = KNOWN_SETTING_KEYS.find((k) => k.key === input.key);
+  const def = KNOWN_PROGRAM_SETTING_KEYS.find((k) => k.key === input.key);
   if (!def) return { success: false, error: "Khóa cài đặt không hợp lệ" };
 
   const supabase = createAdminAnalyticsClient();

@@ -6,7 +6,6 @@ import { writeAuditLog } from "@/lib/admin/audit";
 import { requirePermission } from "@/actions/admin/_shared";
 import {
   SUBSCRIPTION_PROGRAMS,
-  formatVnd,
 } from "@/lib/subscriptions/subscription-catalog";
 import type {
   AdminPaymentOrderRow,
@@ -293,5 +292,3 @@ export async function setUserSubscription(input: {
   revalidateSubscriptions();
   return { success: true };
 }
-
-export { formatVnd, PROGRAM_LABELS, TIER_LABELS };

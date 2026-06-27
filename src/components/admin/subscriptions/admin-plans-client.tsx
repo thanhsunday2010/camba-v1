@@ -7,10 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  formatVnd,
-  setUserSubscription,
-} from "@/actions/admin/subscriptions";
+import { formatVnd } from "@/lib/subscriptions/subscription-catalog";
+import { setUserSubscription } from "@/actions/admin/subscriptions";
 import type {
   AdminPlanDisplayRow,
   AdminUserSubscriptionRow,

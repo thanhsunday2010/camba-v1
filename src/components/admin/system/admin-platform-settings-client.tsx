@@ -7,9 +7,9 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { KNOWN_PROGRAM_SETTING_KEYS } from "@/lib/admin/settings-keys";
 import {
   getProgramSettings,
-  KNOWN_SETTING_KEYS,
   saveProgramSetting,
   type AdminProgramRow,
 } from "@/actions/admin/settings";
@@ -46,7 +46,7 @@ export function AdminPlatformSettingsClient({
 
   function save(key: string) {
     const raw = draft[key];
-    const def = KNOWN_SETTING_KEYS.find((k) => k.key === key);
+    const def = KNOWN_PROGRAM_SETTING_KEYS.find((k) => k.key === key);
     if (!def) return;
     const value = def.type === "number" ? parseInt(raw ?? String(settings.find((s) => s.key === key)?.value ?? def.defaultValue), 10) : raw;
 
@@ -92,7 +92,7 @@ export function AdminPlatformSettingsClient({
           </div>
 
           <div className="space-y-3">
-            {KNOWN_SETTING_KEYS.map((def) => {
+            {KNOWN_PROGRAM_SETTING_KEYS.map((def) => {
               const current = settings.find((s) => s.key === def.key);
               const value = draft[def.key] ?? String(current?.value ?? def.defaultValue);
               return (
