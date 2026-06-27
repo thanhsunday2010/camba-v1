@@ -1,15 +1,19 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import { getAdminContentTree, getPendingReviewExercises } from "@/actions/admin/content";
 import { getAdminAssessments } from "@/actions/admin/assessments";
 import { CmsDashboard } from "@/components/admin/cms-dashboard";
+import { getSiteTextOverrideRows } from "@/lib/site-copy/overrides";
 
 export default async function AdminPage() {
   const t = await getTranslations("admin");
-  const [content, pendingExercises, assessments] = await Promise.all([
+  const locale = await getLocale();
+  const [content, pendingExercises, assessments, siteCopyOverrides] = await Promise.all([
     getAdminContentTree(),
     getPendingReviewExercises(),
     getAdminAssessments(),
+    getSiteTextOverrideRows(locale),
   ]);
+  const baseMessages = (await import(`@/i18n/messages/${locale}.json`)).default;
 
   return (
     <div className="space-y-6">
@@ -22,6 +26,9 @@ export default async function AdminPage() {
         pendingExercises={pendingExercises}
         placementTests={assessments.placementTests}
         mockTests={assessments.mockTests}
+        siteCopyLocale={locale}
+        siteCopyBaseMessages={baseMessages}
+        siteCopyOverrides={siteCopyOverrides}
       />
     </div>
   );

@@ -184,6 +184,31 @@ export interface Database {
         };
         Relationships: [];
       };
+      site_text_overrides: {
+        Row: {
+          id: string;
+          locale: string;
+          message_key: string;
+          value: string;
+          updated_by: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          locale: string;
+          message_key: string;
+          value: string;
+          updated_by?: string | null;
+        };
+        Update: {
+          locale?: string;
+          message_key?: string;
+          value?: string;
+          updated_by?: string | null;
+        };
+        Relationships: [];
+      };
       levels: {
         Row: {
           id: string;

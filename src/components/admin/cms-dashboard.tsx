@@ -21,9 +21,12 @@ import { BulkImportExport } from "./bulk-import-export";
 import { AiQuestionGenerator } from "./ai-question-generator";
 import { QuestionBankEditor } from "./question-bank-editor";
 import { ExerciseTypeSelect } from "./exercise-type-select";
+import { SiteCopyBrowser } from "@/components/admin/site-copy/site-copy-browser";
 import { AdminMessage, useAdminMessage } from "./shared/admin-message";
 import type { AdminContentTree, AdminExercise } from "@/lib/admin/types";
 import type { AdminMockTest, AdminPlacementTest } from "@/lib/admin/types";
+import type { AbstractIntlMessages } from "next-intl";
+import type { SiteTextOverrideRow } from "@/lib/site-copy/overrides";
 
 type CmsTab =
   | "content"
@@ -33,13 +36,17 @@ type CmsTab =
   | "placement"
   | "mock"
   | "bulk"
-  | "ai";
+  | "ai"
+  | "site-copy";
 
 interface CmsDashboardProps {
   content: AdminContentTree;
   pendingExercises: AdminExercise[];
   placementTests: AdminPlacementTest[];
   mockTests: AdminMockTest[];
+  siteCopyLocale: string;
+  siteCopyBaseMessages: AbstractIntlMessages;
+  siteCopyOverrides: SiteTextOverrideRow[];
 }
 
 const TABS: { id: CmsTab; label: string }[] = [
@@ -51,6 +58,7 @@ const TABS: { id: CmsTab; label: string }[] = [
   { id: "mock", label: "Mock test" },
   { id: "bulk", label: "Import/Export" },
   { id: "ai", label: "AI" },
+  { id: "site-copy", label: "Nội dung trang" },
 ];
 
 export function CmsDashboard({
@@ -58,6 +66,9 @@ export function CmsDashboard({
   pendingExercises,
   placementTests,
   mockTests,
+  siteCopyLocale,
+  siteCopyBaseMessages,
+  siteCopyOverrides,
 }: CmsDashboardProps) {
   const [tab, setTab] = useState<CmsTab>("content");
   const [selection, setSelection] = useState<TreeSelection | null>(null);
@@ -289,6 +300,14 @@ export function CmsDashboard({
       {tab === "ai" && (
         <AiQuestionGenerator
           lessons={content.lessons.map((l) => ({ id: l.id, title: l.title }))}
+        />
+      )}
+
+      {tab === "site-copy" && (
+        <SiteCopyBrowser
+          locale={siteCopyLocale}
+          baseMessages={siteCopyBaseMessages}
+          overrides={siteCopyOverrides}
         />
       )}
 

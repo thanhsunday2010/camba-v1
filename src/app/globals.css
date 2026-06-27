@@ -91,3 +91,50 @@ body {
   box-shadow: var(--shadow-card-hover);
   border-color: color-mix(in srgb, var(--program-primary) 35%, var(--border));
 }
+
+.site-copy-edit-mode :is(
+    button,
+    a,
+    p,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label,
+    li,
+    td,
+    th,
+    strong,
+    em,
+    small
+  ):not([data-copy-edit-ui] *) {
+  cursor: pointer;
+}
+
+.site-copy-edit-mode
+  :is(
+    button,
+    a,
+    p,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label,
+    li,
+    td,
+    th,
+    strong,
+    em,
+    small
+  ):hover:not([data-copy-edit-ui] *) {
+  outline: 2px dashed color-mix(in srgb, #7c3aed 55%, transparent);
+  outline-offset: 2px;
+  border-radius: 0.35rem;
+}

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { getAppUrl } from "@/lib/env";
 import { ContactFabHost } from "@/components/contact/contact-fab-host";
+import { SiteCopyEditShell } from "@/components/admin/site-copy/site-copy-edit-shell";
+import { getCurrentUser } from "@/lib/auth/current-user";
+import { isAdmin } from "@/lib/auth/roles";
+import { getSiteTextOverrides } from "@/lib/site-copy/overrides";
 import { Toaster } from "sonner";
 import "../globals.css";
 
@@ -66,6 +69,12 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const user = await getCurrentUser();
+  const admin = user ? isAdmin(user.roles) : false;
+  const overrides = admin ? await getSiteTextOverrides(locale) : {};
+  const baseMessages = admin
+    ? (await import(`@/i18n/messages/${locale}.json`)).default
+    : messages;
 
   return (
     <html
@@ -73,11 +82,17 @@ export default async function LocaleLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <NextIntlClientProvider messages={messages}>
+        <SiteCopyEditShell
+          locale={locale}
+          isAdmin={admin}
+          messages={messages}
+          baseMessages={baseMessages}
+          overrides={overrides}
+        >
           {children}
           <Toaster position="top-right" richColors />
           <ContactFabHost />
-        </NextIntlClientProvider>
+        </SiteCopyEditShell>
       </body>
     </html>
   );
