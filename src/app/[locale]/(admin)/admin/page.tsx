@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { redirect } from "next/navigation";
 import { getCurrentUser } from "@/lib/auth/current-user";
-import { canAccess } from "@/lib/auth/admin-permissions";
+import { canAccess, getAdminFallbackPath } from "@/lib/auth/admin-permissions";
 import { getAdminDashboardStats } from "@/lib/admin/analytics/get-dashboard-stats";
 import { getConversionFunnel } from "@/lib/admin/analytics/funnel";
 import { AdminDashboard } from "@/components/admin/dashboard/admin-dashboard";
@@ -19,6 +19,7 @@ export default async function AdminPage({
 }) {
   const user = await getCurrentUser();
   if (!user) redirect("/login");
+  if (!canAccess(user, "dashboard.read")) redirect(getAdminFallbackPath(user));
 
   const params = await searchParams;
   const range = parseRange(params.range);

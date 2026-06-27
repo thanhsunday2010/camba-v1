@@ -16,7 +16,14 @@ export default async function AdminAiLimitsPage({
   searchParams: Promise<{ date?: string; q?: string; page?: string }>;
 }) {
   const user = await getCurrentUser();
-  if (!user || !canAccess(user, "tools.ai")) redirect("/admin/tools");
+  if (
+    !user ||
+    (!canAccess(user, "platform.settings") &&
+      !canAccess(user, "subscriptions.read") &&
+      !canAccess(user, "tools.ai"))
+  ) {
+    redirect("/admin/tools");
+  }
 
   const params = await searchParams;
   const page = Math.max(1, parseInt(params.page ?? "1", 10) || 1);

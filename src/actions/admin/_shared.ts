@@ -28,6 +28,15 @@ export async function requirePermission(
   return user;
 }
 
+export async function requireAnyPermission(
+  ...permissions: AdminPermission[]
+): Promise<AuthUser> {
+  const user = await requireAdmin();
+  if (user.isSuperAdmin) return user;
+  if (permissions.some((p) => canAccess(user, p))) return user;
+  throw new Error("Unauthorized");
+}
+
 export async function revalidateAdmin() {
   revalidatePath("/admin", "layout");
 }

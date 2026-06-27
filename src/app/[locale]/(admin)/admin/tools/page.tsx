@@ -33,13 +33,18 @@ export default async function AdminToolsHubPage() {
           stat: `${content.lessons.length} bài học`,
         }
       : null,
-    {
-      id: "ai-limits",
-      title: "Giới hạn AI",
-      description: "Theo dõi usage AI hàng ngày",
-      href: "/admin/tools/ai-limits",
-      icon: Sparkles,
-    },
+    canAccess(user, "platform.settings") ||
+    canAccess(user, "subscriptions.read") ||
+    canAccess(user, "tools.ai") ||
+    user.isSuperAdmin
+      ? {
+          id: "ai-limits",
+          title: "Giới hạn AI",
+          description: "Theo dõi usage AI hàng ngày",
+          href: "/admin/tools/ai-limits",
+          icon: Sparkles,
+        }
+      : null,
   ].filter(Boolean) as Parameters<typeof AdminModuleHub>[0]["cards"];
 
   return (

@@ -6,12 +6,12 @@ import type { Json } from "@/types/database";
 import type { BulkExportBundle } from "@/lib/admin/types";
 import { getAdminAssessments } from "./assessments";
 import { getAdminContentTree } from "./content";
-import { requireAdmin, revalidateAdmin } from "./_shared";
+import { requirePermission, revalidateAdmin } from "./_shared";
 
 export async function exportContentBundle(
   programId?: string
 ): Promise<ActionResult<BulkExportBundle>> {
-  await requireAdmin();
+  await requirePermission("tools.bulk");
 
   const tree = await getAdminContentTree();
   const { placementTests, mockTests } = await getAdminAssessments();
@@ -97,7 +97,7 @@ export async function exportContentBundle(
 export async function importContentBundle(
   json: string
 ): Promise<ActionResult<{ imported: number }>> {
-  await requireAdmin();
+  await requirePermission("tools.bulk");
   const supabase = await createClient();
 
   let bundle: BulkExportBundle;

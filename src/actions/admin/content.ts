@@ -10,7 +10,7 @@ import type {
 } from "@/lib/admin/types";
 import {
   nextSortOrder,
-  requireAdmin,
+  requirePermission,
   revalidateAdmin,
 } from "./_shared";
 import {
@@ -22,7 +22,7 @@ import {
 import { QUESTION_BANK_METADATA_KEY } from "@/lib/admin/constants";
 
 export async function getAdminContentTree(): Promise<AdminContentTree> {
-  await requireAdmin();
+  await requirePermission("content.read");
   const supabase = await createClient();
 
   const [
@@ -73,7 +73,7 @@ export async function getAdminContentTree(): Promise<AdminContentTree> {
 }
 
 export async function getPendingReviewExercises(): Promise<AdminExercise[]> {
-  await requireAdmin();
+  await requirePermission("content.read");
   const supabase = await createClient();
   const { data } = await supabase
     .from("exercises")
@@ -89,7 +89,7 @@ export async function getPendingReviewExercises(): Promise<AdminExercise[]> {
 
 // --- Skills ---
 export async function createSkill(formData: FormData): Promise<ActionResult<{ id: string }>> {
-  await requireAdmin();
+  await requirePermission("content.write");
   const supabase = await createClient();
   const levelId = str(formData, "levelId");
   const name = str(formData, "name");
@@ -115,7 +115,7 @@ export async function createSkill(formData: FormData): Promise<ActionResult<{ id
 }
 
 export async function updateSkill(formData: FormData): Promise<ActionResult> {
-  await requireAdmin();
+  await requirePermission("content.write");
   const supabase = await createClient();
   const id = str(formData, "id");
 
@@ -137,7 +137,7 @@ export async function updateSkill(formData: FormData): Promise<ActionResult> {
 }
 
 export async function deleteSkill(id: string): Promise<ActionResult> {
-  await requireAdmin();
+  await requirePermission("content.delete");
   const supabase = await createClient();
   const { error } = await supabase.from("skills").delete().eq("id", id);
   if (error) return { success: false, error: error.message };
@@ -147,7 +147,7 @@ export async function deleteSkill(id: string): Promise<ActionResult> {
 
 // --- Units ---
 export async function createUnit(formData: FormData): Promise<ActionResult<{ id: string }>> {
-  await requireAdmin();
+  await requirePermission("content.write");
   const supabase = await createClient();
   const skillId = str(formData, "skillId");
   const title = str(formData, "title");
@@ -173,7 +173,7 @@ export async function createUnit(formData: FormData): Promise<ActionResult<{ id:
 }
 
 export async function updateUnit(formData: FormData): Promise<ActionResult> {
-  await requireAdmin();
+  await requirePermission("content.write");
   const supabase = await createClient();
   const id = str(formData, "id");
 
@@ -195,7 +195,7 @@ export async function updateUnit(formData: FormData): Promise<ActionResult> {
 }
 
 export async function deleteUnit(id: string): Promise<ActionResult> {
-  await requireAdmin();
+  await requirePermission("content.delete");
   const supabase = await createClient();
   const { error } = await supabase.from("units").delete().eq("id", id);
   if (error) return { success: false, error: error.message };
@@ -205,7 +205,7 @@ export async function deleteUnit(id: string): Promise<ActionResult> {
 
 // --- Lessons ---
 export async function createLesson(formData: FormData): Promise<ActionResult<{ id: string }>> {
-  await requireAdmin();
+  await requirePermission("content.write");
   const supabase = await createClient();
   const unitId = str(formData, "unitId");
 
@@ -230,7 +230,7 @@ export async function createLesson(formData: FormData): Promise<ActionResult<{ i
 }
 
 export async function updateLesson(formData: FormData): Promise<ActionResult> {
-  await requireAdmin();
+  await requirePermission("content.write");
   const supabase = await createClient();
   const id = str(formData, "id");
 
@@ -253,7 +253,7 @@ export async function updateLesson(formData: FormData): Promise<ActionResult> {
 }
 
 export async function deleteLesson(id: string): Promise<ActionResult> {
-  await requireAdmin();
+  await requirePermission("content.delete");
   const supabase = await createClient();
   const { error } = await supabase.from("lessons").delete().eq("id", id);
   if (error) return { success: false, error: error.message };
@@ -263,7 +263,7 @@ export async function deleteLesson(id: string): Promise<ActionResult> {
 
 // --- Exercises ---
 export async function createExercise(formData: FormData): Promise<ActionResult<{ id: string }>> {
-  await requireAdmin();
+  await requirePermission("content.write");
   const supabase = await createClient();
   const lessonId = str(formData, "lessonId");
   const exerciseType = str(formData, "exerciseType") as ExerciseType;
@@ -296,7 +296,7 @@ export async function createExercise(formData: FormData): Promise<ActionResult<{
 }
 
 export async function updateExercise(formData: FormData): Promise<ActionResult> {
-  await requireAdmin();
+  await requirePermission("content.write");
   const supabase = await createClient();
   const id = str(formData, "id");
   const content = parseJsonField<Record<string, unknown>>(
@@ -324,7 +324,7 @@ export async function updateExercise(formData: FormData): Promise<ActionResult> 
 }
 
 export async function deleteExercise(id: string): Promise<ActionResult> {
-  await requireAdmin();
+  await requirePermission("content.delete");
   const supabase = await createClient();
   const { error } = await supabase.from("exercises").delete().eq("id", id);
   if (error) return { success: false, error: error.message };
@@ -336,7 +336,12 @@ export async function updateExerciseStatus(
   exerciseId: string,
   status: ContentStatus
 ): Promise<ActionResult> {
-  const user = await requireAdmin();
+  const user =
+    status === "published"
+      ? await requirePermission("workflow.publish")
+      : status === "pending_review"
+        ? await requirePermission("workflow.review")
+        : await requirePermission("content.write");
   const supabase = await createClient();
 
   const base = {
@@ -490,7 +495,7 @@ async function ensureQuestionBankLesson(programId: string): Promise<string> {
 export async function createQuestionBank(
   formData: FormData
 ): Promise<ActionResult<{ id: string }>> {
-  const user = await requireAdmin();
+  const user = await requirePermission("content.write");
   const supabase = await createClient();
 
   const programId = str(formData, "programId");

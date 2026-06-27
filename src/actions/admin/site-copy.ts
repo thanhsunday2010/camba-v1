@@ -2,7 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
-import { requireAdmin } from "@/actions/admin/_shared";
+import { requirePermission } from "@/actions/admin/_shared";
 import { getNestedMessage } from "@/lib/site-copy/messages";
 import { routing } from "@/i18n/routing";
 
@@ -24,7 +24,7 @@ export async function saveSiteTextOverride(
   value: string
 ): Promise<SiteCopyActionResult> {
   try {
-    const user = await requireAdmin();
+    const user = await requirePermission("site.write");
     const trimmedKey = messageKey.trim();
     const trimmedValue = value.trim();
 
@@ -68,7 +68,7 @@ export async function resetSiteTextOverride(
   messageKey: string
 ): Promise<SiteCopyActionResult> {
   try {
-    await requireAdmin();
+    await requirePermission("site.write");
     const trimmedKey = messageKey.trim();
     if (!trimmedKey) {
       return { success: false, error: "Key không hợp lệ" };
@@ -99,7 +99,7 @@ export async function getSiteTextDefaultValue(
   locale: string,
   messageKey: string
 ): Promise<string | null> {
-  await requireAdmin();
+  await requirePermission("site.read");
   const baseMessages = await loadBaseMessages(locale);
   return getNestedMessage(baseMessages, messageKey.trim());
 }

@@ -142,6 +142,24 @@ export async function getAdminUserDetail(userId: string): Promise<AdminUserDetai
   const base = summaryMap.get(userId);
   if (!base) return null;
 
+  const metrics = await fetchUserProgressMetrics(userId);
+
+  return {
+    ...base,
+    phone: profile.phone,
+    locale: profile.locale,
+    ...metrics,
+  };
+}
+
+async function fetchUserProgressMetrics(userId: string): Promise<{
+  lessonsCompleted: number;
+  exerciseAttempts: number;
+  mockAttempts: number;
+  totalXp: number;
+  currentStreak: number;
+}> {
+  const supabase = createAdminAnalyticsClient();
   const [
     { count: lessonsCompleted },
     { count: exerciseAttempts },
@@ -167,9 +185,6 @@ export async function getAdminUserDetail(userId: string): Promise<AdminUserDetai
   ]);
 
   return {
-    ...base,
-    phone: profile.phone,
-    locale: profile.locale,
     lessonsCompleted: lessonsCompleted ?? 0,
     exerciseAttempts: exerciseAttempts ?? 0,
     mockAttempts: mockAttempts ?? 0,
@@ -310,12 +325,33 @@ export async function listParentLinks(options: {
   const supabase = createAdminAnalyticsClient();
   const page = Math.max(1, options.page ?? 1);
   const offset = (page - 1) * PAGE_SIZE;
+  const q = options.query?.trim() ?? "";
 
-  const { data: links, count } = (await supabase
+  let filterIds: string[] | null = null;
+  if (q) {
+    const { data: profiles } = (await supabase
+      .from("profiles")
+      .select("id")
+      .or(`email.ilike.%${q}%,full_name.ilike.%${q}%`)
+      .limit(100)) as { data: { id: string }[] | null };
+    filterIds = (profiles ?? []).map((p) => p.id);
+    if (filterIds.length === 0) {
+      return { links: [], total: 0, page };
+    }
+  }
+
+  let linkQuery = supabase
     .from("parent_student_links")
     .select("id, parent_id, student_id, status, invited_at", { count: "exact" })
-    .order("invited_at", { ascending: false })
-    .range(offset, offset + PAGE_SIZE - 1)) as {
+    .order("invited_at", { ascending: false });
+
+  if (filterIds) {
+    linkQuery = linkQuery.or(
+      `parent_id.in.(${filterIds.join(",")}),student_id.in.(${filterIds.join(",")})`
+    );
+  }
+
+  const { data: links, count } = (await linkQuery.range(offset, offset + PAGE_SIZE - 1)) as {
     data: ParentLinkRow[] | null;
     count: number | null;
   };
@@ -327,7 +363,7 @@ export async function listParentLinks(options: {
   }
   const profiles = await fetchUserSummaries([...ids]);
 
-  let rows: AdminParentLinkRow[] = (links ?? []).map((link: ParentLinkRow) => {
+  const rows: AdminParentLinkRow[] = (links ?? []).map((link: ParentLinkRow) => {
     const parent = profiles.get(link.parent_id);
     const student = profiles.get(link.student_id);
     return {
@@ -342,17 +378,6 @@ export async function listParentLinks(options: {
       invitedAt: link.invited_at,
     };
   });
-
-  const q = options.query?.trim().toLowerCase();
-  if (q) {
-    rows = rows.filter(
-      (r) =>
-        r.parentEmail.toLowerCase().includes(q) ||
-        r.studentEmail.toLowerCase().includes(q) ||
-        r.parentName.toLowerCase().includes(q) ||
-        r.studentName.toLowerCase().includes(q)
-    );
-  }
 
   return { links: rows, total: count ?? 0, page };
 }
@@ -462,8 +487,10 @@ export async function lookupUserProgress(
 
   if (!profile) return null;
 
-  const detail = await getAdminUserDetail(profile.id);
-  if (!detail) return null;
+  const metrics = await fetchUserProgressMetrics(profile.id);
+  const summaryMap = await fetchUserSummaries([profile.id]);
+  const user = summaryMap.get(profile.id);
+  if (!user) return null;
 
   const { count: inProgress } = await supabase
     .from("lesson_progress")
@@ -472,16 +499,13 @@ export async function lookupUserProgress(
     .gt("completion_percent", 0)
     .lt("completion_percent", 100);
 
-  const summaryMap = await fetchUserSummaries([profile.id]);
-  const user = summaryMap.get(profile.id)!;
-
   return {
     user,
-    lessonsCompleted: detail.lessonsCompleted,
+    lessonsCompleted: metrics.lessonsCompleted,
     lessonsInProgress: inProgress ?? 0,
-    exerciseAttempts: detail.exerciseAttempts,
-    mockAttempts: detail.mockAttempts,
-    totalXp: detail.totalXp,
-    currentStreak: detail.currentStreak,
+    exerciseAttempts: metrics.exerciseAttempts,
+    mockAttempts: metrics.mockAttempts,
+    totalXp: metrics.totalXp,
+    currentStreak: metrics.currentStreak,
   };
 }

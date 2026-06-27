@@ -1,13 +1,23 @@
 "use server";
 
 import { createAdminAnalyticsClient } from "@/lib/supabase/admin-analytics";
-import { requirePermission } from "@/actions/admin/_shared";
+import { requireAnyPermission } from "@/actions/admin/_shared";
 import { getAiUnlimitedEmails } from "@/lib/subscriptions/ai-usage-exemptions";
 import { AI_DAILY_LIMITS } from "@/lib/subscriptions/subscription-catalog";
 import type { ProfileRow } from "@/lib/admin/db-rows";
 import type { SubscriptionTier } from "@/lib/subscriptions/subscription-types";
 
 const PAGE_SIZE = 30;
+
+const AI_LIMITS_PERMISSIONS = [
+  "platform.settings",
+  "subscriptions.read",
+  "tools.ai",
+] as const;
+
+async function requireAiLimitsAccess() {
+  return requireAnyPermission(...AI_LIMITS_PERMISSIONS);
+}
 
 export interface AdminAiUsageRow {
   userId: string;
@@ -21,7 +31,7 @@ export interface AdminAiUsageRow {
 }
 
 export async function listAiUnlimitedEmails(): Promise<string[]> {
-  await requirePermission("tools.ai");
+  await requireAiLimitsAccess();
   return [...getAiUnlimitedEmails()];
 }
 
@@ -30,7 +40,7 @@ export async function listAiUsageDaily(options: {
   query?: string;
   page?: number;
 }): Promise<{ rows: AdminAiUsageRow[]; total: number; page: number; date: string }> {
-  await requirePermission("tools.ai");
+  await requireAiLimitsAccess();
 
   const supabase = createAdminAnalyticsClient();
   const page = Math.max(1, options.page ?? 1);
@@ -118,7 +128,7 @@ export async function getAiUsageSummary(date?: string): Promise<{
   uniqueUsers: number;
   unlimitedCount: number;
 }> {
-  await requirePermission("tools.ai");
+  await requireAiLimitsAccess();
 
   const supabase = createAdminAnalyticsClient();
   const usageDate = date ?? new Date().toISOString().slice(0, 10);

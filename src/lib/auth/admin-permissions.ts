@@ -63,6 +63,28 @@ export function hasAnyAdminPermission(
   return required.some((p) => permissions.includes(p));
 }
 
+/** First admin route the user may access (when dashboard is denied). */
+export function getAdminFallbackPath(
+  user: Pick<AuthUser, "isSuperAdmin" | "adminPermissions">
+): string {
+  const routes: { permission: AdminPermission; path: string }[] = [
+    { permission: "content.read", path: "/admin/content" },
+    { permission: "users.read", path: "/admin/users" },
+    { permission: "subscriptions.read", path: "/admin/subscriptions" },
+    { permission: "gamification.read", path: "/admin/gamification" },
+    { permission: "assessments.read", path: "/admin/assessments" },
+    { permission: "site.read", path: "/admin/site" },
+    { permission: "tools.bulk", path: "/admin/tools/bulk" },
+    { permission: "tools.ai", path: "/admin/tools/ai-generator" },
+    { permission: "audit.read", path: "/admin/system/audit" },
+    { permission: "platform.settings", path: "/admin/system/settings" },
+  ];
+  for (const { permission, path } of routes) {
+    if (canAccess(user, permission)) return path;
+  }
+  return "/dashboard";
+}
+
 /** Super Admin or explicit permission. */
 export function canAccess(
   user: Pick<AuthUser, "isSuperAdmin" | "adminPermissions">,
@@ -87,7 +109,10 @@ export async function loadAdminPermissionsForUser(
       .eq("user_id", userId)
       .maybeSingle();
 
-    if (assignError) return ALL_ADMIN_PERMISSIONS;
+    if (assignError) {
+      console.error("[admin-permissions] assignment load failed:", assignError.message);
+      return ["dashboard.read"];
+    }
     if (!assignment?.template_id) return ALL_ADMIN_PERMISSIONS;
 
     const [{ data: templatePerms }, { data: overrides }] = await Promise.all([
@@ -113,7 +138,8 @@ export async function loadAdminPermissionsForUser(
 
     if (!set.has("dashboard.read")) set.add("dashboard.read");
     return [...set];
-  } catch {
-    return ALL_ADMIN_PERMISSIONS;
+  } catch (error) {
+    console.error("[admin-permissions] load failed:", error);
+    return ["dashboard.read"];
   }
 }
