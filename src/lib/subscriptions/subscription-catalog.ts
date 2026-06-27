@@ -6,13 +6,13 @@ import type {
 
 export const AI_DAILY_LIMITS: Record<SubscriptionTier, number> = {
   free: 1,
-  pro: 5,
-  vip: 10,
+  pro: 10,
+  vip: 30,
 };
 
 /** null = unlimited lesson practice per day */
 export const LESSON_PRACTICE_DAILY_LIMITS: Record<SubscriptionTier, number | null> = {
-  free: 1,
+  free: null,
   pro: null,
   vip: null,
 };

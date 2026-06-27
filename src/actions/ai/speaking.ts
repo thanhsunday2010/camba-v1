@@ -17,7 +17,7 @@ import type { SpeakingFeedback, WithGamification } from "@/types/ai";
 import { ZodError } from "zod";
 import type { ActionResult } from "@/types";
 import { assertExerciseInLesson, assertLessonUnlockedForUser } from "@/lib/auth/lesson-access";
-import { assertAiUsageAllowed } from "@/lib/subscriptions/assert-ai-usage";
+import { assertAiUsageAllowed, recordSuccessfulAiUsage } from "@/lib/subscriptions/assert-ai-usage";
 import {
   AI_SPEAKING_DURATION_LIMIT_ERROR,
   isWithinSpeakingDurationLimit,
@@ -113,6 +113,8 @@ export async function submitSpeakingForFeedback(
       ...parsed,
       transcript: finalizeSpeakingTranscript(parsed, context?.clientTranscript),
     };
+
+    await recordSuccessfulAiUsage(user.id);
 
     const { data: submission, error: subError } = await supabase
       .from("speaking_submissions")

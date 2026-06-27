@@ -837,7 +837,7 @@
       "lockedTitle": "Bài học chưa mở khóa",
       "lockedDescription": "Hoàn thành các bài học trước để mở khóa bài này.",
       "practiceLimitTitle": "Đã hết lượt luyện tập hôm nay",
-      "practiceLimitDescription": "Gói Free được luyện 1 bài học mỗi ngày. Nâng cấp Pro hoặc VIP để luyện tập không giới hạn.",
+      "practiceLimitDescription": "Bạn đã đạt giới hạn luyện tập bài học hôm nay.",
       "practiceLimitUsageSummary": "Đã luyện {used}/{limit} bài học hôm nay.",
       "practiceLimitUpgradeCta": "Xem bảng giá",
       "emptyTitle": "Chưa có bài tập",
@@ -1537,7 +1537,7 @@
   },
   "subscriptions": {
     "pageTitle": "Bảng giá",
-    "pageSubtitle": "Mọi hạng đều truy cập đầy đủ khóa học & luyện tập. Free giới hạn 1 bài học/ngày — Pro & VIP không giới hạn. Quyền lợi AI chấm giữ nguyên theo gói.",
+    "pageSubtitle": "Mọi hạng đều truy cập đầy đủ khóa học & luyện tập không giới hạn. Quyền lợi AI chấm giữ nguyên theo gói.",
     "currentTier": "Gói hiện tại: {tier}",
     "programs": {
       "cambridge": {
@@ -1590,15 +1590,16 @@
     },
     "aiUsage": {
       "label": "AI hôm nay: {used}/{limit}",
-      "remaining": "còn {count} lượt"
+      "remaining": "còn {count} lượt",
+      "unlimited": "AI không giới hạn"
     },
     "limitDialog": {
       "freeTitle": "Hết lượt AI miễn phí",
       "freeDescription": "Bạn đã dùng hết lượt AI miễn phí hôm nay. Đăng ký gói Pro hoặc VIP để luyện tập nhiều hơn với AI.",
       "proTitle": "Hết lượt AI trong ngày",
-      "proDescription": "Bạn đã dùng hết 5 lượt AI hôm nay. Nâng cấp lên VIP để có thêm lượt mỗi ngày.",
+      "proDescription": "Bạn đã dùng hết {limit} lượt AI hôm nay. Nâng cấp lên VIP để có thêm lượt mỗi ngày.",
       "vipTitle": "Hết lượt AI trong ngày",
-      "vipDescription": "Bạn đã dùng hết 10 lượt AI hôm nay. Hãy quay lại vào ngày mai để tiếp tục luyện tập với AI.",
+      "vipDescription": "Bạn đã dùng hết {limit} lượt AI hôm nay. Hãy quay lại vào ngày mai để tiếp tục luyện tập với AI.",
       "usageSummary": "Đã dùng {used}/{limit} lượt AI hôm nay.",
       "subscribeCta": "Xem bảng giá",
       "upgradeCta": "Nâng cấp VIP",

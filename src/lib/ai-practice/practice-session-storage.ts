@@ -23,7 +23,7 @@ function normalizeSession(session: PracticeSessionState): PracticeSessionState {
     attempts: session.attempts ?? [],
     writingStep: session.writingStep ?? "outline",
     outline: session.outline ?? "",
-    speakingPhase: session.speakingPhase ?? "listen",
+    speakingPhase: session.speakingPhase ?? "answer",
     profile: {
       ...session.profile,
       mode: session.profile.mode ?? "standard",
@@ -52,7 +52,7 @@ export function createPracticeSession(
     attempts: [],
     writingStep: "outline",
     outline: "",
-    speakingPhase: "listen",
+    speakingPhase: "answer",
   };
 }
 
@@ -69,7 +69,7 @@ export function advancePracticeSession(
     attempts: [],
     writingStep: "outline",
     outline: "",
-    speakingPhase: "listen",
+    speakingPhase: "answer",
     focusFixHint: undefined,
   };
 }
@@ -89,7 +89,7 @@ export function resetPracticeForRetry(session: PracticeSessionState): PracticeSe
     ...session,
     writingStep: "outline",
     outline: "",
-    speakingPhase: "listen",
+    speakingPhase: "answer",
   };
 }
 

@@ -36,6 +36,7 @@ export type SubscriptionPricingLabels = {
   aiUsage: {
     label: string;
     remaining: string;
+    unlimited?: string;
   };
   subscribeToast: string;
   checkout: SubscriptionCheckoutLabels;

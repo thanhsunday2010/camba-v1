@@ -2,7 +2,7 @@ import type { ActionResult } from "@/types";
 import { canPracticeLesson } from "@/lib/subscriptions/lesson-practice-usage";
 
 const PRACTICE_LIMIT_MESSAGES: Record<"free" | "pro" | "vip", string> = {
-  free: "Bạn đã hết lượt luyện tập bài học miễn phí hôm nay. Nâng cấp Pro hoặc VIP để luyện tập không giới hạn.",
+  free: "Bạn đã đạt giới hạn luyện tập bài học hôm nay.",
   pro: "Bạn đã đạt giới hạn luyện tập bài học hôm nay.",
   vip: "Bạn đã đạt giới hạn luyện tập bài học hôm nay.",
 };

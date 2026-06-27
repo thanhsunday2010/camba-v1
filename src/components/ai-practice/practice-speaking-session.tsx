@@ -14,7 +14,6 @@ import {
   recordPracticeAttempt,
   resetPracticeForRetry,
   setFocusFixHint,
-  updateSpeakingPhase,
   writePracticeSession,
 } from "@/lib/ai-practice/practice-session-storage";
 import { useCelebrationOptional } from "@/components/camba/celebration/celebration-provider";
@@ -23,7 +22,6 @@ import { PracticeFeedbackPanel } from "@/components/ai-practice/practice-feedbac
 import {
   PracticeEnhancementCards,
   PracticeSentenceStarters,
-  PracticeSpeakingPhaseBar,
 } from "@/components/ai-practice/practice-enhancement-cards";
 import { PracticeModelAnswerTts } from "@/components/ai-practice/practice-model-answer-tts";
 import {
@@ -35,10 +33,10 @@ import type { PracticeSpeakingSessionLabels } from "@/lib/ai-practice/practice-s
 import { StudentPageShell } from "@/components/camba";
 import { CambaCard } from "@/components/camba/primitives/camba-card";
 import { Button } from "@/components/ui/button";
-import { Loader2, Mic, RotateCcw, Square, Volume2 } from "lucide-react";
+import { Loader2, Mic, RotateCcw, Square } from "lucide-react";
+import { SpeakingSpeechControls } from "@/components/exercises/speaking-speech-controls";
 import { useSpeechRecognition } from "@/lib/speech/use-speech-recognition";
 import { usePracticePromptSpeech } from "@/lib/speech/use-practice-prompt-speech";
-import { useLessonSpeakingSpeech } from "@/lib/speech/use-lesson-speaking-speech";
 import { readBlobAsBase64 } from "@/lib/speech/blob-to-base64";
 import {
   MicrophoneAccessError,
@@ -102,7 +100,6 @@ export function PracticeSpeakingSession({
     reset: resetTranscription,
   } = useSpeechRecognition(speechLocale);
 
-  const speakingPhase = session?.speakingPhase ?? "listen";
   const promptPlaybackKey = session ? `${session.round}:${session.currentPrompt.prompt}` : "";
 
   const {
@@ -115,19 +112,7 @@ export function PracticeSpeakingSession({
     promptText: session?.currentPrompt.prompt ?? "",
     followUpQuestions: session?.currentPrompt.followUpQuestions,
     playbackKey: promptPlaybackKey,
-    enabled:
-      !!session &&
-      session.profile.skill === "speaking" &&
-      !feedback &&
-      speakingPhase === "listen",
-  });
-
-  const repeatText = session?.currentPrompt.repeatPhrase?.trim() ?? "";
-  const { play: playRepeatPhrase, isSpeaking: isRepeatSpeaking } = useLessonSpeakingSpeech({
-    texts: repeatText ? [repeatText] : [],
-    targetLevel: session?.profile.level,
-    playbackKey: `${promptPlaybackKey}:repeat`,
-    enabled: !!repeatText && speakingPhase === "repeat" && !feedback,
+    enabled: false,
   });
 
   useEffect(() => {
@@ -159,18 +144,10 @@ export function PracticeSpeakingSession({
     currentPrompt.maxDurationSeconds ??
     (profile.mode === "micro" ? 60 : AI_SPEAKING_MAX_SECONDS);
   const previousBest = progress?.personalBest ?? historySummary.bestScore;
-  const canRecord = speakingPhase === "answer";
 
   function persistSession(next: typeof activeSession) {
     writePracticeSession(next);
     setSession(next);
-  }
-
-  function advancePhase() {
-    const nextPhase =
-      speakingPhase === "listen" ? "repeat" : speakingPhase === "repeat" ? "answer" : "answer";
-    cancelQuestionAudio();
-    persistSession(updateSpeakingPhase(activeSession, nextPhase));
   }
 
   function getMicrophoneErrorMessage(err: unknown): string {
@@ -194,7 +171,6 @@ export function PracticeSpeakingSession({
   }
 
   async function startRecording() {
-    if (!canRecord) return;
     try {
       cancelQuestionAudio();
       setAudioBlob(null);
@@ -364,26 +340,16 @@ export function PracticeSpeakingSession({
           <div>
             <div className="flex flex-wrap items-center justify-between gap-2">
               <p className="camba-caption font-semibold text-foreground">{labels.prompt}</p>
-              {!feedback && speakingPhase === "listen" && (
-                <div className="flex items-center gap-2">
-                  {isQuestionSpeaking && (
-                    <span className="inline-flex items-center gap-1.5 text-xs text-program font-medium">
-                      <Volume2 className="h-3.5 w-3.5 animate-pulse" />
-                      {labels.questionAudioPlaying}
-                    </span>
-                  )}
-                  <Button
-                    type="button"
-                    variant="ghost"
-                    size="sm"
-                    className="h-8 px-2"
-                    onClick={() => void replayQuestionAudio()}
-                    disabled={isQuestionSpeaking || isRecording}
-                  >
-                    <Volume2 className="h-4 w-4" />
-                    {labels.replayQuestion}
-                  </Button>
-                </div>
+              {!feedback && (
+                <SpeakingSpeechControls
+                  isSpeaking={isQuestionSpeaking}
+                  playingLabel={labels.questionAudioPlaying}
+                  replayLabel={labels.replayQuestion}
+                  stopLabel={labels.stopAudio}
+                  onReplay={replayQuestionAudio}
+                  onStop={cancelQuestionAudio}
+                  disabled={isRecording}
+                />
               )}
             </div>
             <p className="camba-body mt-1 whitespace-pre-wrap">{currentPrompt.prompt}</p>
@@ -407,25 +373,7 @@ export function PracticeSpeakingSession({
 
         {!feedback ? (
           <CambaCard variant="elevated" padding="md" className="space-y-4">
-            <PracticeSpeakingPhaseBar
-              phase={speakingPhase}
-              labels={labels.phases}
-              onAdvance={speakingPhase !== "answer" ? advancePhase : undefined}
-            />
-
-            {speakingPhase === "repeat" && repeatText && (
-              <div className="rounded-lg bg-program/5 border border-program/15 p-3 space-y-2">
-                <p className="camba-caption font-medium text-muted">{labels.phases.repeatPrompt}</p>
-                <p className="camba-body font-medium text-foreground">{repeatText}</p>
-                <Button type="button" variant="outline" size="sm" onClick={() => void playRepeatPhrase()} disabled={isRepeatSpeaking}>
-                  <Volume2 className="h-4 w-4" />
-                  {labels.replayQuestion}
-                </Button>
-              </div>
-            )}
-
-            {canRecord && (
-              <div className="flex flex-col items-center gap-4 py-2">
+            <div className="flex flex-col items-center gap-4 py-2">
                 <AiSpeakingCountdown
                   elapsedSeconds={duration}
                   maxSeconds={maxDurationSeconds}
@@ -483,7 +431,6 @@ export function PracticeSpeakingSession({
                   )}
                 </div>
               </div>
-            )}
 
             {error && (
               <p className="text-sm text-error bg-red-50 border border-red-100 rounded-lg px-3 py-2">

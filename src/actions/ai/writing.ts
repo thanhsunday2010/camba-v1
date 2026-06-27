@@ -14,7 +14,7 @@ import { WritingFeedbackSchema } from "@/types/ai";
 import type { WritingFeedback, WithGamification } from "@/types/ai";
 import type { ActionResult } from "@/types";
 import { assertLessonUnlockedForUser, assertExerciseInLesson } from "@/lib/auth/lesson-access";
-import { assertAiUsageAllowed } from "@/lib/subscriptions/assert-ai-usage";
+import { assertAiUsageAllowed, recordSuccessfulAiUsage } from "@/lib/subscriptions/assert-ai-usage";
 import {
   AI_WRITING_MAX_WORDS,
   AI_WRITING_WORD_LIMIT_ERROR,
@@ -97,6 +97,8 @@ export async function submitWritingForFeedback(
     );
 
     const feedback = parseGeminiJson(rawJson, WritingFeedbackSchema);
+
+    await recordSuccessfulAiUsage(user.id);
 
     await saveAiFeedback({
       feedbackType: "writing",

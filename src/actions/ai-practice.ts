@@ -34,7 +34,7 @@ import type {
 import { ZodError } from "zod";
 import type { ActionResult } from "@/types";
 import { saveAiFeedback } from "@/actions/ai/_shared";
-import { assertAiUsageAllowed } from "@/lib/subscriptions/assert-ai-usage";
+import { assertAiUsageAllowed, recordSuccessfulAiUsage } from "@/lib/subscriptions/assert-ai-usage";
 import {
   AI_SPEAKING_DURATION_LIMIT_ERROR,
   AI_WRITING_MAX_WORDS,
@@ -102,6 +102,7 @@ export async function generatePracticePrompt(
       })
     );
     const prompt = parseGeminiJson(rawJson, PracticePromptSchema);
+    await recordSuccessfulAiUsage(user.id);
     return { success: true, data: prompt };
   } catch (error) {
     return { success: false, error: mapAiPracticeError(error) };
@@ -189,6 +190,8 @@ export async function submitStandaloneWritingPractice(
     );
 
     const feedback = parseGeminiJson(rawJson, PracticeWritingFeedbackSchema);
+
+    await recordSuccessfulAiUsage(user.id);
 
     await saveAiFeedback({
       feedbackType: "writing",
@@ -298,6 +301,8 @@ export async function submitStandaloneSpeakingPractice(
       ...parsedFeedback,
       transcript: finalizeSpeakingTranscript(parsedFeedback, clientTranscript),
     };
+
+    await recordSuccessfulAiUsage(user.id);
 
     const { data: submission, error: subError } = await supabase
       .from("speaking_submissions")

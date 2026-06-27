@@ -25,7 +25,7 @@ export function PracticeModelAnswerTts({
     texts: trimmed ? [trimmed] : [],
     targetLevel,
     playbackKey: `${playbackKey}:${trimmed}`,
-    enabled: !!trimmed,
+    enabled: false,
   });
 
   if (!trimmed) return null;

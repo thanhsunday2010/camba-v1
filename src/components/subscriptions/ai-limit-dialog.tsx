@@ -56,7 +56,7 @@ export function AiLimitDialog({ open, onOpenChange, meta, labels }: AiLimitDialo
             <DialogTitle>{title}</DialogTitle>
           </div>
           <DialogDescription className="text-left pt-2 space-y-2">
-            <p>{description}</p>
+            <p>{description.replace("{limit}", String(meta.dailyLimit))}</p>
             <p className="font-medium text-foreground">
               {labels.usageSummary
                 .replace("{used}", String(meta.usedToday))

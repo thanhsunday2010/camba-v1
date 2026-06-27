@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { AI_DAILY_LIMITS, TIER_ORDER } from "@/lib/subscriptions/subscription-catalog";
+import { isAiUnlimitedEmail } from "@/lib/subscriptions/ai-usage-exemptions";
 import type {
   AiUsageStatus,
   SubscriptionTier,
@@ -70,10 +71,45 @@ export async function getAiUsageToday(userId: string): Promise<number> {
   return countAiFeedbackToday(userId);
 }
 
+async function resolveUserEmail(userId: string): Promise<string | null> {
+  const supabase = await createClient();
+  const { data } = await supabase
+    .from("profiles")
+    .select("email")
+    .eq("id", userId)
+    .maybeSingle();
+
+  const row = data as { email?: string } | null;
+  return row?.email ?? null;
+}
+
+export async function isUserAiUnlimited(userId: string): Promise<boolean> {
+  const email = await resolveUserEmail(userId);
+  return isAiUnlimitedEmail(email);
+}
+
+function buildUnlimitedAiUsageStatus(
+  tier: SubscriptionTier,
+  usedToday: number
+): AiUsageStatus {
+  return {
+    tier,
+    usedToday,
+    dailyLimit: AI_DAILY_LIMITS[tier],
+    remaining: AI_DAILY_LIMITS[tier],
+    unlimited: true,
+  };
+}
+
 export async function getAiUsageStatus(userId: string): Promise<AiUsageStatus> {
   const tier = await getEffectiveSubscriptionTier(userId);
-  const dailyLimit = AI_DAILY_LIMITS[tier];
   const usedToday = await getAiUsageToday(userId);
+
+  if (await isUserAiUnlimited(userId)) {
+    return buildUnlimitedAiUsageStatus(tier, usedToday);
+  }
+
+  const dailyLimit = AI_DAILY_LIMITS[tier];
 
   return {
     tier,
@@ -87,13 +123,15 @@ export type AiUsageReservationResult =
   | { allowed: true; status: AiUsageStatus }
   | { allowed: false; status: AiUsageStatus };
 
-export async function reserveAiUsage(userId: string): Promise<AiUsageReservationResult> {
+export async function checkAiUsageAllowed(userId: string): Promise<AiUsageReservationResult> {
   const tier = await getEffectiveSubscriptionTier(userId);
-  const dailyLimit = AI_DAILY_LIMITS[tier];
-  const usageDate = getVnUsageDate();
-  const supabase = await createClient();
-
   const usedToday = await getAiUsageToday(userId);
+
+  if (await isUserAiUnlimited(userId)) {
+    return { allowed: true, status: buildUnlimitedAiUsageStatus(tier, usedToday) };
+  }
+
+  const dailyLimit = AI_DAILY_LIMITS[tier];
   const status: AiUsageStatus = {
     tier,
     usedToday,
@@ -105,8 +143,20 @@ export async function reserveAiUsage(userId: string): Promise<AiUsageReservation
     return { allowed: false, status };
   }
 
+  return { allowed: true, status };
+}
+
+export async function recordAiUsage(userId: string): Promise<void> {
+  if (await isUserAiUnlimited(userId)) {
+    return;
+  }
+
+  const usageDate = getVnUsageDate();
+  const supabase = await createClient();
+  const usedToday = await getAiUsageToday(userId);
   const nextCount = usedToday + 1;
-  const { error: upsertError } = await supabase.from("ai_usage_daily").upsert(
+
+  await supabase.from("ai_usage_daily").upsert(
     {
       user_id: userId,
       usage_date: usageDate,
@@ -114,26 +164,4 @@ export async function reserveAiUsage(userId: string): Promise<AiUsageReservation
     } as never,
     { onConflict: "user_id,usage_date" }
   );
-
-  if (upsertError) {
-    return {
-      allowed: true,
-      status: {
-        tier,
-        usedToday: nextCount,
-        dailyLimit,
-        remaining: Math.max(0, dailyLimit - nextCount),
-      },
-    };
-  }
-
-  return {
-    allowed: true,
-    status: {
-      tier,
-      usedToday: nextCount,
-      dailyLimit,
-      remaining: Math.max(0, dailyLimit - nextCount),
-    },
-  };
 }

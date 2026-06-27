@@ -11,6 +11,8 @@ export type AiUsageStatus = {
   usedToday: number;
   dailyLimit: number;
   remaining: number;
+  /** Bypass daily AI cap (configured via AI_UNLIMITED_USER_EMAILS). */
+  unlimited?: boolean;
 };
 
 export type LessonPracticeUsageStatus = {

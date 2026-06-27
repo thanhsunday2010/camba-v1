@@ -6,10 +6,20 @@ interface AiUsageBadgeProps {
   labels: {
     label: string;
     remaining: string;
+    unlimited?: string;
   };
 }
 
 export function AiUsageBadge({ aiUsage, labels }: AiUsageBadgeProps) {
+  if (aiUsage.unlimited) {
+    return (
+      <div className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium bg-program-muted text-program">
+        <Sparkles className="h-4 w-4 shrink-0" aria-hidden />
+        <span>{labels.unlimited ?? "Unlimited AI"}</span>
+      </div>
+    );
+  }
+
   const isLow = aiUsage.remaining <= 1;
 
   return (

@@ -42,6 +42,7 @@ export function buildSubscriptionPricingLabels(
     aiUsage: {
       label: t("aiUsage.label"),
       remaining: t("aiUsage.remaining"),
+      unlimited: t("aiUsage.unlimited"),
     },
     subscribeToast: t("pricing.subscribeToast"),
     checkout: {
@@ -83,5 +84,6 @@ export function buildAiUsageBadgeLabels(t: (key: string) => string) {
   return {
     label: t("aiUsage.label"),
     remaining: t("aiUsage.remaining"),
+    unlimited: t("aiUsage.unlimited"),
   };
 }

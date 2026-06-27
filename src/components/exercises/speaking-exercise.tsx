@@ -102,7 +102,7 @@ export function SpeakingExercise({
     texts: speechTexts,
     targetLevel,
     playbackKey: questionPlaybackKey,
-    enabled: !feedback,
+    enabled: false,
   });
 
   const retryContext = useMemo(() => buildLessonRetryContext(attempts), [attempts]);
@@ -140,7 +140,7 @@ export function SpeakingExercise({
     texts: modelAnswerTexts,
     targetLevel,
     playbackKey: modelAnswerPlaybackKey,
-    enabled: !!feedback && modelAnswerTexts.length > 0,
+    enabled: false,
   });
 
   function getMicrophoneErrorMessage(error: unknown): string {

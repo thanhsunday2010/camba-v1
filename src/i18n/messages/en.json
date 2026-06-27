@@ -839,7 +839,7 @@
       "lockedTitle": "Lesson locked",
       "lockedDescription": "Complete earlier lessons to unlock this one.",
       "practiceLimitTitle": "Daily practice limit reached",
-      "practiceLimitDescription": "Free plan includes 1 lesson per day. Upgrade to Pro or VIP for unlimited practice.",
+      "practiceLimitDescription": "You've reached today's lesson practice limit.",
       "practiceLimitUsageSummary": "Practiced {used}/{limit} lessons today.",
       "practiceLimitUpgradeCta": "View pricing",
       "emptyTitle": "No exercises yet",
@@ -1539,7 +1539,7 @@
   },
   "subscriptions": {
     "pageTitle": "Pricing",
-    "pageSubtitle": "Every tier gets full course and practice access. Free is limited to 1 lesson per day; Pro and VIP are unlimited. AI grading limits stay the same by plan.",
+    "pageSubtitle": "Every tier gets full course access and unlimited lesson practice. AI grading limits stay the same by plan.",
     "currentTier": "Current plan: {tier}",
     "programs": {
       "cambridge": {
@@ -1592,15 +1592,16 @@
     },
     "aiUsage": {
       "label": "AI today: {used}/{limit}",
-      "remaining": "{count} left"
+      "remaining": "{count} left",
+      "unlimited": "Unlimited AI"
     },
     "limitDialog": {
       "freeTitle": "Free AI limit reached",
       "freeDescription": "You've used today's free AI session. Subscribe to Pro or VIP for more daily AI practice.",
       "proTitle": "Daily AI limit reached",
-      "proDescription": "You've used all 5 AI sessions today. Upgrade to VIP for more daily AI practice.",
+      "proDescription": "You've used all {limit} AI sessions today. Upgrade to VIP for more daily AI practice.",
       "vipTitle": "Daily AI limit reached",
-      "vipDescription": "You've used all 10 AI sessions today. Come back tomorrow to continue with AI.",
+      "vipDescription": "You've used all {limit} AI sessions today. Come back tomorrow to continue with AI.",
       "usageSummary": "Used {used}/{limit} AI sessions today.",
       "subscribeCta": "View pricing",
       "upgradeCta": "Upgrade to VIP",
