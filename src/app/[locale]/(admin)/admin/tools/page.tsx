@@ -1,17 +1,23 @@
 import { redirect } from "next/navigation";
 import { getCurrentUser } from "@/lib/auth/current-user";
-import { canAccess, hasAnyAdminPermission } from "@/lib/auth/admin-permissions";
+import { canAccess, hasAnyAdminPermission, TOOLS_MODULE_PERMISSIONS } from "@/lib/auth/admin-permissions";
 import { getAdminContentTree } from "@/actions/admin/content";
 import { AdminModuleHub } from "@/components/admin/shell/admin-module-hub";
 import { Sparkles, Upload } from "lucide-react";
 
 export default async function AdminToolsHubPage() {
   const user = await getCurrentUser();
-  if (!user || !hasAnyAdminPermission(user.adminPermissions, ["tools.ai", "tools.bulk"]) && !user.isSuperAdmin) {
+  if (
+    !user ||
+    (!user.isSuperAdmin &&
+      !hasAnyAdminPermission(user.adminPermissions, TOOLS_MODULE_PERMISSIONS))
+  ) {
     redirect("/admin");
   }
 
-  const content = await getAdminContentTree();
+  const content = canAccess(user, "content.read")
+    ? await getAdminContentTree()
+    : { lessons: [] as { id: string }[] };
 
   const cards = [
     canAccess(user, "tools.bulk") || user.isSuperAdmin

@@ -63,24 +63,87 @@ export function hasAnyAdminPermission(
   return required.some((p) => permissions.includes(p));
 }
 
+export const CONTENT_MODULE_PERMISSIONS: AdminPermission[] = [
+  "content.read",
+  "content.write",
+  "content.delete",
+  "content.programs",
+  "content.lessons",
+  "content.exercises",
+  "content.translations",
+  "workflow.review",
+  "workflow.publish",
+];
+
+export const USERS_MODULE_PERMISSIONS: AdminPermission[] = [
+  "users.read",
+  "users.students",
+  "users.teachers",
+  "users.parents",
+  "users.progress",
+  "users.roles",
+];
+
+export const SUBSCRIPTIONS_MODULE_PERMISSIONS: AdminPermission[] = [
+  "subscriptions.read",
+  "subscriptions.plans",
+  "subscriptions.orders",
+  "subscriptions.webhooks",
+  "subscriptions.manage",
+];
+
+export const GAMIFICATION_MODULE_PERMISSIONS: AdminPermission[] = [
+  "gamification.read",
+  "gamification.manage",
+  "gamification.xp",
+  "gamification.badges",
+  "gamification.missions",
+  "gamification.leagues",
+];
+
+export const ASSESSMENTS_MODULE_PERMISSIONS: AdminPermission[] = [
+  "assessments.read",
+  "assessments.write",
+];
+
+export const TOOLS_MODULE_PERMISSIONS: AdminPermission[] = [
+  "tools.ai",
+  "tools.bulk",
+  "platform.settings",
+  "subscriptions.read",
+];
+
+export const SYSTEM_MODULE_PERMISSIONS: AdminPermission[] = [
+  "users.admin",
+  "platform.settings",
+  "audit.read",
+];
+
+/** Super Admin or any permission in a module group. */
+export function canAccessAdminModule(
+  user: Pick<AuthUser, "isSuperAdmin" | "adminPermissions">,
+  permissions: AdminPermission[]
+): boolean {
+  if (user.isSuperAdmin) return true;
+  return hasAnyAdminPermission(user.adminPermissions, permissions);
+}
+
 /** First admin route the user may access (when dashboard is denied). */
 export function getAdminFallbackPath(
   user: Pick<AuthUser, "isSuperAdmin" | "adminPermissions">
 ): string {
-  const routes: { permission: AdminPermission; path: string }[] = [
-    { permission: "content.read", path: "/admin/content" },
-    { permission: "users.read", path: "/admin/users" },
-    { permission: "subscriptions.read", path: "/admin/subscriptions" },
-    { permission: "gamification.read", path: "/admin/gamification" },
-    { permission: "assessments.read", path: "/admin/assessments" },
-    { permission: "site.read", path: "/admin/site" },
-    { permission: "tools.bulk", path: "/admin/tools/bulk" },
-    { permission: "tools.ai", path: "/admin/tools/ai-generator" },
-    { permission: "audit.read", path: "/admin/system/audit" },
-    { permission: "platform.settings", path: "/admin/system/settings" },
+  const routes: { permissions: AdminPermission[]; path: string }[] = [
+    { permissions: CONTENT_MODULE_PERMISSIONS, path: "/admin/content" },
+    { permissions: USERS_MODULE_PERMISSIONS, path: "/admin/users" },
+    { permissions: SUBSCRIPTIONS_MODULE_PERMISSIONS, path: "/admin/subscriptions" },
+    { permissions: GAMIFICATION_MODULE_PERMISSIONS, path: "/admin/gamification" },
+    { permissions: ASSESSMENTS_MODULE_PERMISSIONS, path: "/admin/assessments" },
+    { permissions: ["site.read"], path: "/admin/site" },
+    { permissions: TOOLS_MODULE_PERMISSIONS, path: "/admin/tools" },
+    { permissions: SYSTEM_MODULE_PERMISSIONS, path: "/admin/system" },
   ];
-  for (const { permission, path } of routes) {
-    if (canAccess(user, permission)) return path;
+  for (const { permissions, path } of routes) {
+    if (canAccessAdminModule(user, permissions)) return path;
   }
   return "/dashboard";
 }
@@ -111,7 +174,7 @@ export async function loadAdminPermissionsForUser(
 
     if (assignError) {
       console.error("[admin-permissions] assignment load failed:", assignError.message);
-      return ["dashboard.read"];
+      return ALL_ADMIN_PERMISSIONS;
     }
     if (!assignment?.template_id) return ALL_ADMIN_PERMISSIONS;
 
@@ -140,6 +203,6 @@ export async function loadAdminPermissionsForUser(
     return [...set];
   } catch (error) {
     console.error("[admin-permissions] load failed:", error);
-    return ["dashboard.read"];
+    return ALL_ADMIN_PERMISSIONS;
   }
 }

@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { getCurrentUser } from "@/lib/auth/current-user";
-import { hasAnyAdminPermission } from "@/lib/auth/admin-permissions";
+import { hasAnyAdminPermission, SYSTEM_MODULE_PERMISSIONS } from "@/lib/auth/admin-permissions";
 import { AdminModuleHub } from "@/components/admin/shell/admin-module-hub";
 import { filterModuleCards } from "@/components/admin/shell/admin-sidebar";
 import { SYSTEM_MODULE_CARDS } from "@/lib/admin/nav-config";
@@ -10,11 +10,7 @@ export default async function AdminSystemHubPage() {
   if (
     !user ||
     (!user.isSuperAdmin &&
-      !hasAnyAdminPermission(user.adminPermissions, [
-        "users.admin",
-        "platform.settings",
-        "audit.read",
-      ]))
+      !hasAnyAdminPermission(user.adminPermissions, SYSTEM_MODULE_PERMISSIONS))
   ) {
     redirect("/admin");
   }

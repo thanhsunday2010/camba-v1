@@ -13,6 +13,15 @@ import {
   Wrench,
 } from "lucide-react";
 import type { AdminPermission } from "@/lib/auth/admin-permissions";
+import {
+  ASSESSMENTS_MODULE_PERMISSIONS,
+  CONTENT_MODULE_PERMISSIONS,
+  GAMIFICATION_MODULE_PERMISSIONS,
+  SUBSCRIPTIONS_MODULE_PERMISSIONS,
+  SYSTEM_MODULE_PERMISSIONS,
+  TOOLS_MODULE_PERMISSIONS,
+  USERS_MODULE_PERMISSIONS,
+} from "@/lib/auth/admin-permissions";
 
 export interface AdminNavItem {
   id: string;
@@ -52,21 +61,21 @@ export const ADMIN_NAV_GROUPS: AdminNavGroup[] = [
         label: "Nội dung",
         href: "/admin/content",
         icon: BookOpen,
-        permissions: ["content.read"],
+        permissions: CONTENT_MODULE_PERMISSIONS,
       },
       {
         id: "assessments",
         label: "Bài kiểm tra",
         href: "/admin/assessments",
         icon: FileText,
-        permissions: ["assessments.read"],
+        permissions: ASSESSMENTS_MODULE_PERMISSIONS,
       },
       {
         id: "tools",
         label: "AI & Công cụ",
         href: "/admin/tools",
         icon: Sparkles,
-        permissions: ["tools.ai", "tools.bulk"],
+        permissions: TOOLS_MODULE_PERMISSIONS,
       },
     ],
   },
@@ -79,21 +88,21 @@ export const ADMIN_NAV_GROUPS: AdminNavGroup[] = [
         label: "Người dùng",
         href: "/admin/users",
         icon: Users,
-        permissions: ["users.read"],
+        permissions: USERS_MODULE_PERMISSIONS,
       },
       {
         id: "subscriptions",
         label: "Đăng ký & TT",
         href: "/admin/subscriptions",
         icon: CreditCard,
-        permissions: ["subscriptions.read"],
+        permissions: SUBSCRIPTIONS_MODULE_PERMISSIONS,
       },
       {
         id: "gamification",
         label: "Gamification",
         href: "/admin/gamification",
         icon: Trophy,
-        permissions: ["gamification.read"],
+        permissions: GAMIFICATION_MODULE_PERMISSIONS,
       },
       {
         id: "site",
@@ -113,7 +122,7 @@ export const ADMIN_NAV_GROUPS: AdminNavGroup[] = [
         label: "Hệ thống",
         href: "/admin/system",
         icon: Settings,
-        permissions: ["users.admin", "platform.settings", "audit.read"],
+        permissions: SYSTEM_MODULE_PERMISSIONS,
       },
     ],
   },

@@ -1,6 +1,9 @@
 import { redirect } from "next/navigation";
 import { getCurrentUser } from "@/lib/auth/current-user";
-import { canAccess } from "@/lib/auth/admin-permissions";
+import {
+  canAccessAdminModule,
+  ASSESSMENTS_MODULE_PERMISSIONS,
+} from "@/lib/auth/admin-permissions";
 import { getAdminContentTree } from "@/actions/admin/content";
 import { getAdminAssessments } from "@/actions/admin/assessments";
 import { AdminModuleHub } from "@/components/admin/shell/admin-module-hub";
@@ -8,7 +11,9 @@ import { FileText, BarChart3 } from "lucide-react";
 
 export default async function AdminAssessmentsHubPage() {
   const user = await getCurrentUser();
-  if (!user || !canAccess(user, "assessments.read")) redirect("/admin");
+  if (!user || !canAccessAdminModule(user, ASSESSMENTS_MODULE_PERMISSIONS)) {
+    redirect("/admin");
+  }
 
   const assessments = await getAdminAssessments();
 
