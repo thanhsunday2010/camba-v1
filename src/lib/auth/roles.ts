@@ -8,6 +8,11 @@ export function isAdmin(roles: UserRole[]): boolean {
   return hasRole(roles, "admin");
 }
 
+/** Super Admin — highest privilege tier (maps to `admin` role in DB). */
+export function isSuperAdmin(roles: UserRole[]): boolean {
+  return isAdmin(roles);
+}
+
 export function isTeacher(roles: UserRole[]): boolean {
   return hasRole(roles, "teacher");
 }

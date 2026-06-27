@@ -36,7 +36,8 @@
     "settings": "Settings",
     "logout": "Log out",
     "parentDashboard": "Parent",
-    "teacherDashboard": "Teacher"
+    "teacherDashboard": "Teacher",
+    "superAdminDashboard": "Super Admin"
   },
   "mascot": {
     "loading": "Hold on a sec...",
@@ -345,7 +346,7 @@
     "student": "Student",
     "parent": "Parent",
     "teacher": "Teacher",
-    "admin": "Admin"
+    "admin": "Super Admin"
   },
   "mastery": {
     "notStarted": "Not Started",
@@ -1363,6 +1364,10 @@
   "admin": {
     "title": "Content Management",
     "subtitle": "Create and manage programs, lessons, exercises and questions"
+  },
+  "superAdmin": {
+    "title": "Super Admin Dashboard",
+    "subtitle": "Manage content, assessments, site copy, and platform settings for CAMBA"
   },
   "exercise": {
     "question": "Question",

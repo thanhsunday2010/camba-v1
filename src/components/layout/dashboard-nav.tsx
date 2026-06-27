@@ -15,9 +15,11 @@ import {
   Menu,
   CreditCard,
   X,
+  Shield,
 } from "lucide-react";
 import { useState } from "react";
 import type { AuthUser } from "@/types";
+import { isAdmin } from "@/lib/auth/roles";
 
 interface DashboardNavProps {
   user: AuthUser;
@@ -91,6 +93,14 @@ export function DashboardNav({ user }: DashboardNavProps) {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const showSuperAdmin = isAdmin(user.roles);
+
+  const allNavItems = [
+    ...navItems,
+    ...(showSuperAdmin
+      ? [{ href: "/admin" as const, icon: Shield, labelKey: "superAdminDashboard" as const }]
+      : []),
+  ];
 
   return (
     <>
@@ -112,7 +122,7 @@ export function DashboardNav({ user }: DashboardNavProps) {
           </div>
 
           <nav className="hidden md:flex items-center gap-1">
-            {navItems.map((item) => {
+            {allNavItems.map((item) => {
               const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`);
               return (
                 <NavLink
@@ -141,7 +151,7 @@ export function DashboardNav({ user }: DashboardNavProps) {
 
         {mobileOpen && (
           <nav className="md:hidden border-t border-gray-200 bg-white px-4 py-3 space-y-1">
-            {navItems.map((item) => {
+            {allNavItems.map((item) => {
               const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`);
               return (
                 <NavLink

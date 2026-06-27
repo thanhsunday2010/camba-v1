@@ -36,7 +36,8 @@
     "settings": "Cài đặt",
     "logout": "Đăng xuất",
     "parentDashboard": "Phụ huynh",
-    "teacherDashboard": "Giáo viên"
+    "teacherDashboard": "Giáo viên",
+    "superAdminDashboard": "Super Admin"
   },
   "mascot": {
     "loading": "Chờ mình chút nhé...",
@@ -345,7 +346,7 @@
     "student": "Học sinh",
     "parent": "Phụ huynh",
     "teacher": "Giáo viên",
-    "admin": "Quản trị viên"
+    "admin": "Super Admin"
   },
   "mastery": {
     "notStarted": "Chưa bắt đầu",
@@ -1361,6 +1362,10 @@
   "admin": {
     "title": "Quản lý nội dung",
     "subtitle": "Tạo và quản lý chương trình học, bài học, bài tập và câu hỏi"
+  },
+  "superAdmin": {
+    "title": "Bảng điều khiển Super Admin",
+    "subtitle": "Quản trị nội dung, bài kiểm tra, trang web và nền tảng CAMBA"
   },
   "exercise": {
     "question": "Câu",
