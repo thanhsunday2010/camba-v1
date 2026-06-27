@@ -4,6 +4,7 @@ import { useEffect, useId, useState, type ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { MessageCircle, X } from "lucide-react";
 import type { ContactChannel, ContactChannelId } from "@/lib/contact/contact-channels";
+import { getContactChannels } from "@/lib/contact/contact-channels";
 import { cn } from "@/lib/utils";
 
 const CHANNEL_STYLES: Record<
@@ -63,13 +64,22 @@ function ChannelLink({
 }
 
 interface ContactFabProps {
-  channels: ContactChannel[];
+  initialChannels?: ContactChannel[];
 }
 
-export function ContactFab({ channels }: ContactFabProps) {
+export function ContactFab({ initialChannels = [] }: ContactFabProps) {
   const t = useTranslations("contact");
   const menuId = useId();
   const [open, setOpen] = useState(false);
+  const [channels, setChannels] = useState(initialChannels);
+
+  useEffect(() => {
+    if (initialChannels.length > 0) {
+      setChannels(initialChannels);
+      return;
+    }
+    setChannels(getContactChannels());
+  }, [initialChannels]);
 
   useEffect(() => {
     if (!open) return;
@@ -81,6 +91,10 @@ export function ContactFab({ channels }: ContactFabProps) {
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open]);
+
+  if (channels.length === 0) {
+    return null;
+  }
 
   const singleChannel = channels.length === 1 ? channels[0] : null;
 

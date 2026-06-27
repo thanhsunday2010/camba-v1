@@ -7,7 +7,12 @@ import { CambaRabbitMascot } from "@/components/mascot/camba-rabbit-mascot";
 import { MascotScreenRunner } from "@/components/mascot/mascot-screen-runner";
 import { useMascotOptional } from "@/components/mascot/mascot-provider";
 
-export function MascotBrandLink() {
+interface MascotBrandLinkProps {
+  href?: string;
+  ariaLabel?: string;
+}
+
+export function MascotBrandLink({ href = "/dashboard", ariaLabel }: MascotBrandLinkProps) {
   const tc = useTranslations("common");
   const mascot = useMascotOptional();
   const mood = mascot?.mood ?? "idle";
@@ -16,9 +21,9 @@ export function MascotBrandLink() {
 
   return (
     <Link
-      href="/dashboard"
+      href={href}
       className="group relative flex items-center gap-2 min-w-0 text-primary camba-focus-ring rounded-xl pr-1 overflow-visible"
-      aria-label={`${tc("appName")} — Dashboard`}
+      aria-label={ariaLabel ?? `${tc("appName")} — Dashboard`}
     >
       <MascotScreenRunner mood={mood}>
         <CambaRabbitMascot mood={mood} />
